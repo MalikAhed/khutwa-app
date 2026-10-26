@@ -1,0 +1,1 @@
+export const EXPLANATION_GEM_COST=50;export function questionExplanation(n){const t=n?.content,o=n?.type==="exam-question"?t?.solution:t?.correctFeedback==="Correct."?"":t?.correctFeedback;return o?.trim()?{markdown:o,note:""}:null}

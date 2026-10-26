@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="844" viewBox="0 0 1100 844" role="img" aria-label="مخطط الحل — مكتب السياحة والسفر">
+<rect width="1100" height="844" fill="#fff"/>
+<style>text{font-family:Arial,Tahoma,sans-serif;fill:#163b36}.edge{stroke:#436c65;stroke-width:3;fill:none}.count{font-size:25px;font-weight:bold;paint-order:stroke;stroke:white;stroke-width:8px}.row{font-size:22px}.title{font-size:28px;font-weight:bold}.pk{text-decoration:underline}.flag{font-size:16px;fill:#22615c}</style>
+<text class="title" x="550.0" y="40" text-anchor="middle" direction="rtl">مخطط الحل — مكتب السياحة والسفر</text>
+<path class="edge" d="M250.0,289 V397.0 H483.33333333333337 V505"/>
+<text class="count" x="268.0" y="313" text-anchor="middle">1</text><text class="count" x="501.33333333333337" y="493" text-anchor="middle">∞</text>
+<path class="edge" d="M850.0,331 V418.0 H616.6666666666667 V505"/>
+<text class="count" x="868.0" y="355" text-anchor="middle">1</text><text class="count" x="634.6666666666667" y="493" text-anchor="middle">∞</text>
+<rect x="50" y="95" width="400" height="194" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M59,95 H441 Q450,95 450,104 V149 H50 V104 Q50,95 59,95" fill="#deeee9"/>
+<text x="250.0" y="130" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">المسافر</text>
+<text class="row pk" x="432" y="179" text-anchor="start" direction="rtl">رقم المسافر</text>
+<text class="flag" x="64" y="179" direction="ltr">PK</text>
+<text class="row " x="432" y="221" text-anchor="start" direction="rtl">اسم المسافر</text>
+<text class="row " x="432" y="263" text-anchor="start" direction="rtl">رقم الهاتف</text>
+<rect x="650" y="95" width="400" height="236" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M659,95 H1041 Q1050,95 1050,104 V149 H650 V104 Q650,95 659,95" fill="#deeee9"/>
+<text x="850.0" y="130" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">الرحلة</text>
+<text class="row pk" x="1032" y="179" text-anchor="start" direction="rtl">رقم الرحلة</text>
+<text class="flag" x="664" y="179" direction="ltr">PK</text>
+<text class="row " x="1032" y="221" text-anchor="start" direction="rtl">اسم الرحلة</text>
+<text class="row " x="1032" y="263" text-anchor="start" direction="rtl">تاريخ الرحلة</text>
+<text class="row " x="1032" y="305" text-anchor="start" direction="rtl">تكلفة الرحلة</text>
+<rect x="350" y="505" width="400" height="194" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M359,505 H741 Q750,505 750,514 V559 H350 V514 Q350,505 359,505" fill="#deeee9"/>
+<text x="550.0" y="540" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">مسافر ـ رحلة</text>
+<text class="row pk" x="732" y="589" text-anchor="start" direction="rtl">رقم متسلسل</text>
+<text class="flag" x="364" y="589" direction="ltr">PK</text>
+<text class="row " x="732" y="631" text-anchor="start" direction="rtl">رقم المسافر</text>
+<text class="flag" x="364" y="631" direction="ltr">FK</text>
+<text class="row " x="732" y="673" text-anchor="start" direction="rtl">رقم الرحلة</text>
+<text class="flag" x="364" y="673" direction="ltr">FK</text>
+<text x="550.0" y="764" text-anchor="middle" font-size="21" direction="rtl">PK: مفتاح أساسي — FK: مفتاح أجنبي — 1: واحد — ∞: متعدد</text>
+<text x="550.0" y="804" text-anchor="middle" font-size="19" direction="rtl">مخطط حل مقترح؛ ليس صورة من الكتاب أو من مفتاح الإجابة.</text>
+</svg>

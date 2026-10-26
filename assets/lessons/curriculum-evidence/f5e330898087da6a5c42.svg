@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="804" viewBox="0 0 1200 804" role="img" aria-label="مخطط حل ممكن — مكتبة الشروق">
+<rect width="1200" height="804" fill="#fff"/>
+<style>text{font-family:Arial,Tahoma,sans-serif;fill:#163b36}.edge{stroke:#436c65;stroke-width:3;fill:none}.count{font-size:25px;font-weight:bold;paint-order:stroke;stroke:white;stroke-width:8px}.row{font-size:22px}.title{font-size:28px;font-weight:bold}.pk{text-decoration:underline}.flag{font-size:16px;fill:#22615c}</style>
+<text class="title" x="600.0" y="40" text-anchor="middle" direction="rtl">مخطط حل ممكن — مكتبة الشروق</text>
+<path class="edge" d="M250.0,247 V343.5 H250.0 V440"/>
+<text class="count" x="268.0" y="271" text-anchor="middle">1</text><text class="count" x="268.0" y="428" text-anchor="middle">∞</text>
+<path class="edge" d="M450,537.0 H600.0 V562.0 H750"/>
+<text class="count" x="468" y="525.0" text-anchor="middle">1</text><text class="count" x="732" y="550.0" text-anchor="middle">∞</text>
+<path class="edge" d="M950.0,247 V356.0 H1016.6666666666667 V465"/>
+<text class="count" x="968.0" y="271" text-anchor="middle">1</text><text class="count" x="1034.6666666666667" y="453" text-anchor="middle">∞</text>
+<rect x="50" y="95" width="400" height="152" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M59,95 H441 Q450,95 450,104 V149 H50 V104 Q50,95 59,95" fill="#deeee9"/>
+<text x="250.0" y="130" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">مؤلف</text>
+<text class="row pk" x="432" y="179" text-anchor="start" direction="rtl">رقم المؤلف</text>
+<text class="flag" x="64" y="179" direction="ltr">PK</text>
+<text class="row " x="432" y="221" text-anchor="start" direction="rtl">اسم المؤلف</text>
+<rect x="50" y="440" width="400" height="194" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M59,440 H441 Q450,440 450,449 V494 H50 V449 Q50,440 59,440" fill="#deeee9"/>
+<text x="250.0" y="475" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">كتاب</text>
+<text class="row pk" x="432" y="524" text-anchor="start" direction="rtl">رقم الكتاب</text>
+<text class="flag" x="64" y="524" direction="ltr">PK</text>
+<text class="row " x="432" y="566" text-anchor="start" direction="rtl">عنوان الكتاب</text>
+<text class="row " x="432" y="608" text-anchor="start" direction="rtl">رقم المؤلف</text>
+<text class="flag" x="64" y="608" direction="ltr">FK</text>
+<rect x="750" y="95" width="400" height="152" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M759,95 H1141 Q1150,95 1150,104 V149 H750 V104 Q750,95 759,95" fill="#deeee9"/>
+<text x="950.0" y="130" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">مشترك</text>
+<text class="row pk" x="1132" y="179" text-anchor="start" direction="rtl">رقم المشترك</text>
+<text class="flag" x="764" y="179" direction="ltr">PK</text>
+<text class="row " x="1132" y="221" text-anchor="start" direction="rtl">اسم المشترك</text>
+<rect x="750" y="465" width="400" height="194" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M759,465 H1141 Q1150,465 1150,474 V519 H750 V474 Q750,465 759,465" fill="#deeee9"/>
+<text x="950.0" y="500" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">إعارة</text>
+<text class="row pk" x="1132" y="549" text-anchor="start" direction="rtl">رقم الإعارة</text>
+<text class="flag" x="764" y="549" direction="ltr">PK</text>
+<text class="row " x="1132" y="591" text-anchor="start" direction="rtl">رقم الكتاب</text>
+<text class="flag" x="764" y="591" direction="ltr">FK</text>
+<text class="row " x="1132" y="633" text-anchor="start" direction="rtl">رقم المشترك</text>
+<text class="flag" x="764" y="633" direction="ltr">FK</text>
+<text x="600.0" y="724" text-anchor="middle" font-size="21" direction="rtl">PK: مفتاح أساسي — FK: مفتاح أجنبي — 1: واحد — ∞: متعدد</text>
+<text x="600.0" y="764" text-anchor="middle" font-size="19" direction="rtl">مخطط حل مقترح؛ ليس صورة من الكتاب أو من مفتاح الإجابة.</text>
+</svg>

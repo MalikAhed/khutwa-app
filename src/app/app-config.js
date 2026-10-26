@@ -1,0 +1,1 @@
+export function readAppConfig(t){const e=t.querySelector('meta[name="learn-account-mode"]')?.getAttribute("content");if(e!=="http"&&e!=="fixture")throw new Error("The app account mode must be http or fixture.");return Object.freeze({accountMode:e,apiBase:e==="http"?new URL("api/auth",t.baseURI).pathname:null})}

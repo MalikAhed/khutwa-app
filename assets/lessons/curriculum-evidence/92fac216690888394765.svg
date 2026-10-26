@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="886" viewBox="0 0 1300 886" role="img" aria-label="مخطط الحل — بنك الأمل">
+<rect width="1300" height="886" fill="#fff"/>
+<style>text{font-family:Arial,Tahoma,sans-serif;fill:#163b36}.edge{stroke:#436c65;stroke-width:3;fill:none}.count{font-size:25px;font-weight:bold;paint-order:stroke;stroke:white;stroke-width:8px}.row{font-size:22px}.title{font-size:28px;font-weight:bold}.pk{text-decoration:underline}.flag{font-size:16px;fill:#22615c}</style>
+<text class="title" x="650.0" y="40" text-anchor="middle" direction="rtl">مخطط الحل — بنك الأمل</text>
+<path class="edge" d="M250.0,289 V397.0 H183.33333333333334 V505"/>
+<text class="count" x="268.0" y="313" text-anchor="middle">1</text><text class="count" x="201.33333333333334" y="493" text-anchor="middle">∞</text>
+<path class="edge" d="M1050.0,289 V397.0 H316.6666666666667 V505"/>
+<text class="count" x="1068.0" y="313" text-anchor="middle">1</text><text class="count" x="334.6666666666667" y="493" text-anchor="middle">∞</text>
+<path class="edge" d="M1050.0,289 V397.0 H1050.0 V505"/>
+<text class="count" x="1068.0" y="313" text-anchor="middle">1</text><text class="count" x="1068.0" y="493" text-anchor="middle">∞</text>
+<rect x="50" y="95" width="400" height="194" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M59,95 H441 Q450,95 450,104 V149 H50 V104 Q50,95 59,95" fill="#deeee9"/>
+<text x="250.0" y="130" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">موظف</text>
+<text class="row pk" x="432" y="179" text-anchor="start" direction="rtl">رقم الموظف</text>
+<text class="flag" x="64" y="179" direction="ltr">PK</text>
+<text class="row " x="432" y="221" text-anchor="start" direction="rtl">اسم الموظف</text>
+<text class="row " x="432" y="263" text-anchor="start" direction="rtl">القسم</text>
+<rect x="850" y="95" width="400" height="194" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M859,95 H1241 Q1250,95 1250,104 V149 H850 V104 Q850,95 859,95" fill="#deeee9"/>
+<text x="1050.0" y="130" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">عميل</text>
+<text class="row pk" x="1232" y="179" text-anchor="start" direction="rtl">رقم العميل</text>
+<text class="flag" x="864" y="179" direction="ltr">PK</text>
+<text class="row " x="1232" y="221" text-anchor="start" direction="rtl">اسم العميل</text>
+<text class="row " x="1232" y="263" text-anchor="start" direction="rtl">العنوان</text>
+<rect x="50" y="505" width="400" height="236" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M59,505 H441 Q450,505 450,514 V559 H50 V514 Q50,505 59,505" fill="#deeee9"/>
+<text x="250.0" y="540" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">معاملة</text>
+<text class="row pk" x="432" y="589" text-anchor="start" direction="rtl">رقم المعاملة</text>
+<text class="flag" x="64" y="589" direction="ltr">PK</text>
+<text class="row " x="432" y="631" text-anchor="start" direction="rtl">رقم الموظف</text>
+<text class="flag" x="64" y="631" direction="ltr">FK</text>
+<text class="row " x="432" y="673" text-anchor="start" direction="rtl">رقم العميل</text>
+<text class="flag" x="64" y="673" direction="ltr">FK</text>
+<text class="row " x="432" y="715" text-anchor="start" direction="rtl">تاريخ المعاملة</text>
+<rect x="850" y="505" width="400" height="194" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M859,505 H1241 Q1250,505 1250,514 V559 H850 V514 Q850,505 859,505" fill="#deeee9"/>
+<text x="1050.0" y="540" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">حساب</text>
+<text class="row pk" x="1232" y="589" text-anchor="start" direction="rtl">رقم الحساب</text>
+<text class="flag" x="864" y="589" direction="ltr">PK</text>
+<text class="row " x="1232" y="631" text-anchor="start" direction="rtl">نوع عملة الحساب</text>
+<text class="row " x="1232" y="673" text-anchor="start" direction="rtl">رقم العميل</text>
+<text class="flag" x="864" y="673" direction="ltr">FK</text>
+<text x="650.0" y="806" text-anchor="middle" font-size="21" direction="rtl">PK: مفتاح أساسي — FK: مفتاح أجنبي — 1: واحد — ∞: متعدد</text>
+<text x="650.0" y="846" text-anchor="middle" font-size="19" direction="rtl">مخطط حل مقترح؛ ليس صورة من الكتاب أو من مفتاح الإجابة.</text>
+</svg>

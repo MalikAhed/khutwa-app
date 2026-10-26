@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="871" viewBox="0 0 1200 871" role="img" aria-label="مخطط الحل — أصناف وسلع وزبائن ومبيعات">
+<rect width="1200" height="871" fill="#fff"/>
+<style>text{font-family:Arial,Tahoma,sans-serif;fill:#163b36}.edge{stroke:#436c65;stroke-width:3;fill:none}.count{font-size:25px;font-weight:bold;paint-order:stroke;stroke:white;stroke-width:8px}.row{font-size:22px}.title{font-size:28px;font-weight:bold}.pk{text-decoration:underline}.flag{font-size:16px;fill:#22615c}</style>
+<text class="title" x="600.0" y="40" text-anchor="middle" direction="rtl">مخطط الحل — أصناف وسلع وزبائن ومبيعات</text>
+<path class="edge" d="M250.0,247 V343.5 H250.0 V440"/>
+<text class="count" x="268.0" y="271" text-anchor="middle">1</text><text class="count" x="268.0" y="428" text-anchor="middle">∞</text>
+<path class="edge" d="M450,558.0 H600.0 V608.0 H750"/>
+<text class="count" x="468" y="546.0" text-anchor="middle">1</text><text class="count" x="732" y="596.0" text-anchor="middle">∞</text>
+<path class="edge" d="M950.0,289 V389.5 H1016.6666666666667 V490"/>
+<text class="count" x="968.0" y="313" text-anchor="middle">1</text><text class="count" x="1034.6666666666667" y="478" text-anchor="middle">∞</text>
+<rect x="50" y="95" width="400" height="152" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M59,95 H441 Q450,95 450,104 V149 H50 V104 Q50,95 59,95" fill="#deeee9"/>
+<text x="250.0" y="130" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">أصناف</text>
+<text class="row pk" x="432" y="179" text-anchor="start" direction="rtl">كود الصنف</text>
+<text class="flag" x="64" y="179" direction="ltr">PK</text>
+<text class="row " x="432" y="221" text-anchor="start" direction="rtl">وصف الصنف</text>
+<rect x="50" y="440" width="400" height="236" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M59,440 H441 Q450,440 450,449 V494 H50 V449 Q50,440 59,440" fill="#deeee9"/>
+<text x="250.0" y="475" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">سلع</text>
+<text class="row pk" x="432" y="524" text-anchor="start" direction="rtl">باركود السلعة</text>
+<text class="flag" x="64" y="524" direction="ltr">PK</text>
+<text class="row " x="432" y="566" text-anchor="start" direction="rtl">اسم السلعة</text>
+<text class="row " x="432" y="608" text-anchor="start" direction="rtl">السعر</text>
+<text class="row " x="432" y="650" text-anchor="start" direction="rtl">كود الصنف</text>
+<text class="flag" x="64" y="650" direction="ltr">FK</text>
+<rect x="750" y="95" width="400" height="194" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M759,95 H1141 Q1150,95 1150,104 V149 H750 V104 Q750,95 759,95" fill="#deeee9"/>
+<text x="950.0" y="130" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">زبون</text>
+<text class="row pk" x="1132" y="179" text-anchor="start" direction="rtl">كود الزبون</text>
+<text class="flag" x="764" y="179" direction="ltr">PK</text>
+<text class="row " x="1132" y="221" text-anchor="start" direction="rtl">اسم الزبون</text>
+<text class="row " x="1132" y="263" text-anchor="start" direction="rtl">الهاتف</text>
+<rect x="750" y="490" width="400" height="236" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M759,490 H1141 Q1150,490 1150,499 V544 H750 V499 Q750,490 759,490" fill="#deeee9"/>
+<text x="950.0" y="525" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">مبيعات</text>
+<text class="row pk" x="1132" y="574" text-anchor="start" direction="rtl">متسلسل</text>
+<text class="flag" x="764" y="574" direction="ltr">PK</text>
+<text class="row " x="1132" y="616" text-anchor="start" direction="rtl">كود الزبون</text>
+<text class="flag" x="764" y="616" direction="ltr">FK</text>
+<text class="row " x="1132" y="658" text-anchor="start" direction="rtl">باركود السلعة</text>
+<text class="flag" x="764" y="658" direction="ltr">FK</text>
+<text class="row " x="1132" y="700" text-anchor="start" direction="rtl">الكمية</text>
+<text x="600.0" y="791" text-anchor="middle" font-size="21" direction="rtl">PK: مفتاح أساسي — FK: مفتاح أجنبي — 1: واحد — ∞: متعدد</text>
+<text x="600.0" y="831" text-anchor="middle" font-size="19" direction="rtl">مخطط حل مقترح؛ ليس صورة من الكتاب أو من مفتاح الإجابة.</text>
+</svg>

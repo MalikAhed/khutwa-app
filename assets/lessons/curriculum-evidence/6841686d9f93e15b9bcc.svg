@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="908" viewBox="0 0 1250 908" role="img" aria-label="مخطط الحل — نظام المستشفى">
+<rect width="1250" height="908" fill="#fff"/>
+<style>text{font-family:Arial,Tahoma,sans-serif;fill:#163b36}.edge{stroke:#436c65;stroke-width:3;fill:none}.count{font-size:25px;font-weight:bold;paint-order:stroke;stroke:white;stroke-width:8px}.row{font-size:22px}.title{font-size:28px;font-weight:bold}.pk{text-decoration:underline}.flag{font-size:16px;fill:#22615c}</style>
+<text class="title" x="625.0" y="40" text-anchor="middle" direction="rtl">مخطط الحل — نظام المستشفى</text>
+<path class="edge" d="M250.0,289 V387.0 H250.0 V485"/>
+<text class="count" x="268.0" y="313" text-anchor="middle">1</text><text class="count" x="268.0" y="473" text-anchor="middle">∞</text>
+<path class="edge" d="M450,624.0 H625.0 V627.0 H800"/>
+<text class="count" x="468" y="612.0" text-anchor="middle">1</text><text class="count" x="782" y="615.0" text-anchor="middle">∞</text>
+<path class="edge" d="M1000.0,331 V430.5 H1066.6666666666667 V530"/>
+<text class="count" x="1018.0" y="355" text-anchor="middle">1</text><text class="count" x="1084.6666666666667" y="518" text-anchor="middle">∞</text>
+<rect x="50" y="95" width="400" height="194" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M59,95 H441 Q450,95 450,104 V149 H50 V104 Q50,95 59,95" fill="#deeee9"/>
+<text x="250.0" y="130" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">غرفة</text>
+<text class="row pk" x="432" y="179" text-anchor="start" direction="rtl">رقم الغرفة</text>
+<text class="flag" x="64" y="179" direction="ltr">PK</text>
+<text class="row " x="432" y="221" text-anchor="start" direction="rtl">رقم التحويلة</text>
+<text class="row " x="432" y="263" text-anchor="start" direction="rtl">عدد الأسرّة</text>
+<rect x="50" y="485" width="400" height="278" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M59,485 H441 Q450,485 450,494 V539 H50 V494 Q50,485 59,485" fill="#deeee9"/>
+<text x="250.0" y="520" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">مريض</text>
+<text class="row pk" x="432" y="569" text-anchor="start" direction="rtl">رقم المريض</text>
+<text class="flag" x="64" y="569" direction="ltr">PK</text>
+<text class="row " x="432" y="611" text-anchor="start" direction="rtl">الاسم</text>
+<text class="row " x="432" y="653" text-anchor="start" direction="rtl">الجنس</text>
+<text class="row " x="432" y="695" text-anchor="start" direction="rtl">تاريخ دخول المستشفى</text>
+<text class="row " x="432" y="737" text-anchor="start" direction="rtl">رقم الغرفة</text>
+<text class="flag" x="64" y="737" direction="ltr">FK</text>
+<rect x="800" y="95" width="400" height="236" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M809,95 H1191 Q1200,95 1200,104 V149 H800 V104 Q800,95 809,95" fill="#deeee9"/>
+<text x="1000.0" y="130" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">دواء</text>
+<text class="row pk" x="1182" y="179" text-anchor="start" direction="rtl">رقم الدواء</text>
+<text class="flag" x="814" y="179" direction="ltr">PK</text>
+<text class="row " x="1182" y="221" text-anchor="start" direction="rtl">اسم الدواء</text>
+<text class="row " x="1182" y="263" text-anchor="start" direction="rtl">تاريخ الإنتاج</text>
+<text class="row " x="1182" y="305" text-anchor="start" direction="rtl">التكلفة</text>
+<rect x="800" y="530" width="400" height="194" rx="9" fill="#f7fbfa" stroke="#436c65" stroke-width="2"/>
+<path d="M809,530 H1191 Q1200,530 1200,539 V584 H800 V539 Q800,530 809,530" fill="#deeee9"/>
+<text x="1000.0" y="565" text-anchor="middle" font-size="25" font-weight="bold" direction="rtl">المريض ـ الدواء</text>
+<text class="row pk" x="1182" y="614" text-anchor="start" direction="rtl">رقم المريض</text>
+<text class="flag" x="814" y="614" direction="ltr">PK · FK</text>
+<text class="row pk" x="1182" y="656" text-anchor="start" direction="rtl">رقم الدواء</text>
+<text class="flag" x="814" y="656" direction="ltr">PK · FK</text>
+<text class="row " x="1182" y="698" text-anchor="start" direction="rtl">الكمية</text>
+<text x="625.0" y="828" text-anchor="middle" font-size="21" direction="rtl">PK: مفتاح أساسي — FK: مفتاح أجنبي — 1: واحد — ∞: متعدد</text>
+<text x="625.0" y="868" text-anchor="middle" font-size="19" direction="rtl">مخطط حل مقترح؛ ليس صورة من الكتاب أو من مفتاح الإجابة.</text>
+</svg>

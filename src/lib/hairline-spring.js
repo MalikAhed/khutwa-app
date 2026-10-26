@@ -1,0 +1,1 @@
+export function spring(n,{k:r=100,c=18,m:o=1,eps:i=.01}={}){return{x:n,v:0,t:n,k:r,c,m:o,eps:i}}export function stepSpring(n,r){const c=Math.max(1,Math.ceil(r*240)),o=r/c;for(let i=0;i<c;i+=1){const p=(-n.k*(n.x-n.t)-n.c*n.v)/n.m;n.v+=p*o,n.x+=n.v*o}return Math.abs(n.x-n.t)<n.eps&&Math.abs(n.v)<n.eps*10?(n.x=n.t,n.v=0,!1):!0}

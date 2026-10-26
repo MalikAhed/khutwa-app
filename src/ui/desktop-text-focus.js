@@ -1,0 +1,1 @@
+export function getDesktopTextField(t,n=t?.ownerDocument?.defaultView){return n?.matchMedia?.("(min-width:761px)")?.matches&&[...t?.querySelectorAll("input, textarea")||[]].find(e=>["text","email","password","tel","number","search","url","textarea"].includes(e.type)&&!e.disabled&&!e.readOnly&&!e.closest("[hidden], [inert]")&&e.getClientRects().length>0)||null}

@@ -1,0 +1,1 @@
+export function readablePageReferences(r){return r.replace(/(^|[\s،؛:(])ص\s*(\d+(?:\s*(?:[–−-]|،|و)\s*\d+)*)/g,(c,s,e)=>{const t=/[–−-]|،|و/.test(e),n=e.replace(/(\d+)\s*[–−-]\s*(\d+)/g,"من $1 إلى $2");return`${s}${t?"الصفحات":"الصفحة"} ${n}`})}
