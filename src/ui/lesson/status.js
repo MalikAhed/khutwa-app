@@ -1,4 +1,4 @@
-import{escapeHtml as n}from"../../lib/dom.js";import{lessonReferenceLabel as r}from"./shared.js";export function renderLessonError(s,e){return s.innerHTML=`
+import{escapeHtml as n}from"../../lib/dom.js?v=7388f68cc0f433fd";import{lessonReferenceLabel as r}from"./shared.js?v=7388f68cc0f433fd";export function renderLessonError(s,e){return s.innerHTML=`
     <section class="lesson-error" role="status" dir="rtl">
       <img class="lesson-error__mascot" src="assets/mascot/rocky-sad.svg" alt="" width="228" height="220" />
       <p>تعذّر تحميل محتوى الدرس.</p>

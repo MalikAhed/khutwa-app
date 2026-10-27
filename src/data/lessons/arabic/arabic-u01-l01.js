@@ -1,4 +1,4 @@
-import{createArabicLesson as e}from"./shared.js";export const source=`:::mcq
+import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: arabic-p006-mcq-q01
 title: اشتدي أزمة تنفرجي، السؤال 1، ص 5، 2019
 kicker: صياغة تعليمية معدّلة

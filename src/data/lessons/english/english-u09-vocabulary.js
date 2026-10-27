@@ -1,4 +1,4 @@
-import{createEnglishLesson as e}from"./shared.js";export const source=`:::exam-question
+import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: eng-2023-p100-qvocabulary-1-1
 title: Unit 9 · PDF 100 · vocabulary-1-1
 question: It’s a good idea to have a **second choice** plan in case the first one doesn’t work.

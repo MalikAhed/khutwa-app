@@ -1,4 +1,4 @@
-import{getLevelProgress as x}from"../domain/progression.js";import{spring as k,stepSpring as w}from"../lib/hairline-spring.js";export function renderLevelUp(r){const e=Math.max(0,Math.floor(r.xpGain||0)),l=Math.max(e,Math.floor(r.levelTotalXp??r.totalXp??e)),p=x(l-e).level;return x(l).level<=p?"":`<div class="completion-level-up" data-level-up hidden>
+import{getLevelProgress as x}from"../domain/progression.js?v=7388f68cc0f433fd";import{spring as k,stepSpring as w}from"../lib/hairline-spring.js?v=7388f68cc0f433fd";export function renderLevelUp(r){const e=Math.max(0,Math.floor(r.xpGain||0)),l=Math.max(e,Math.floor(r.levelTotalXp??r.totalXp??e)),p=x(l-e).level;return x(l).level<=p?"":`<div class="completion-level-up" data-level-up hidden>
     <div class="completion-level-up-art" aria-hidden="true">
       <span class="completion-level-up-ring"></span>
       ${Array.from({length:10},()=>'<img class="completion-level-up-spark" src="assets/icons/dashboard-levels.svg" alt="">').join("")}

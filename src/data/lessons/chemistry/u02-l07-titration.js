@@ -1,4 +1,4 @@
-import{createChemistryLesson as m}from"./shared.js";export const source=`:::exam-question
+import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: chemistry-gaza-p047-q02-s5
 title: الوحدة ٢ · الدرس ٧ · ص ٤٥ · س ٢ · ٥ · أسئلة الوحدة — الرزمة التعليمية ٢٠٢٤؛ وزاري ٢٠٢٤؛ وزاري ٢٠٢٢ دورة أولى
 question: ما المقصود بكل من المصطلحات الآتية: المعايرة

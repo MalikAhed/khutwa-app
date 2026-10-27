@@ -1,4 +1,4 @@
-import{defineMarkdownLesson as s}from"../../../markdown/lesson-model.js";export const ALL_LESSON_MARKDOWN=`<!-- step-id: database-management-mission -->
+import{defineMarkdownLesson as s}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const ALL_LESSON_MARKDOWN=`<!-- step-id: database-management-mission -->
 <!-- presentation: video-intro -->
 # الدرس الأول: الجداول والمفاتيح والعلاقات
 https://www.youtube.com/watch?v=tfiw7kPiOgc

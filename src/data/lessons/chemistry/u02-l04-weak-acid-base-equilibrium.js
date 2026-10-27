@@ -1,4 +1,4 @@
-import{createChemistryLesson as m}from"./shared.js";export const source=`:::exam-question
+import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: chemistry-gaza-p047-q05-s1
 title: الوحدة ٢ · الدرس ٤ · ص ٤٥ · س ٥ · ١ · أسئلة الوحدة — الرزمة التعليمية ٢٠٢٤
 question: اعتمادًا على الجدول المجاور الذي يبين قيم ثابت التأين لمجموعة من الحموض الافتراضية الضعيفة المتساوية في التركيز.

@@ -1,4 +1,4 @@
-import{ISLAMIC_BOOK_LESSONS as n,ISLAMIC_UNITS as c}from"./book-lessons.js";import{ISLAMIC_2022_MCQS as a}from"./islamic-2022-bank.js";import{ISLAMIC_2025_QUESTIONS as u}from"./islamic-2025-bank.js";import{defineMarkdownLesson as p}from"../../../markdown/lesson-model.js";const d="https://moe.edu.ps/m/4064",S="islamic-required-mcq-405.zip";function O(e){if(e.type==="exam-question")return`:::exam-question
+import{ISLAMIC_BOOK_LESSONS as n,ISLAMIC_UNITS as c}from"./book-lessons.js?v=7388f68cc0f433fd";import{ISLAMIC_2022_MCQS as a}from"./islamic-2022-bank.js?v=7388f68cc0f433fd";import{ISLAMIC_2025_QUESTIONS as u}from"./islamic-2025-bank.js?v=7388f68cc0f433fd";import{defineMarkdownLesson as p}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";const d="https://moe.edu.ps/m/4064",S="islamic-required-mcq-405.zip";function O(e){if(e.type==="exam-question")return`:::exam-question
 id: ${e.id}
 title: ${e.title}
 question: ${e.question}

@@ -1,4 +1,4 @@
-import{createEnglishLesson as e}from"./shared.js";export const source=`:::mcq
+import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: eng-2023-p111-qv8-7
 title: Unit 10 · PDF 111 · V8-7
 reference: PDF p. 111 · printed p. 110

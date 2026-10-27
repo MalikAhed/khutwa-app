@@ -1,4 +1,4 @@
-import{createEnglishLesson as e}from"./shared.js";export const source=`:::exam-question
+import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: eng-2023-p040-qg1-1
 title: Unit 3 · PDF 40 · g1-1
 question: When I ………… (enter) the shop I realized I ………… (forget) the money at home.

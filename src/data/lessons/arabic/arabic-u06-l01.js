@@ -1,4 +1,4 @@
-import{createArabicLesson as e}from"./shared.js";export const source=`:::mcq
+import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: arabic-p157-mcq01
 title: البومة في غرفة بعيدة | صفحة 156 | اختيار من متعدد 1
 kicker: 2019

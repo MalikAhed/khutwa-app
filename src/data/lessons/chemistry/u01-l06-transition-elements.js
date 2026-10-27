@@ -1,4 +1,4 @@
-import{createChemistryLesson as m}from"./shared.js";export const source=`:::exam-question
+import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: chemistry-gaza-p024-q03-a
 title: الوحدة ١ · الدرس ٦ · ص ٢٢ · س السؤال الثالث · a · أسئلة الفصل — الرزمة التعليمية ٢٠٢٤
 question: لديك العناصر الافتراضية الآتية: A، B، C، D، E، F، G، H متتالية في أعدادها الذرية من A إلى H، إذا علمت أن العنصر E يقع في الدورة الثالثة وله أعلى طاقة تأين أول. أجب عن الأسئلة الآتية:

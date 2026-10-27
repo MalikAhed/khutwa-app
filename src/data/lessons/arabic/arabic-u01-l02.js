@@ -1,4 +1,4 @@
-import{createArabicLesson as e}from"./shared.js";export const source=`:::mcq
+import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: arabic-p010-m01
 title: الممنوع من الصرف (1)، اختيار من متعدد، السؤال 1، ص 9، 2019
 kicker: امتحانات الثانوية العامة، 2019

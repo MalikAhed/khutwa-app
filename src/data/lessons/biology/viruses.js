@@ -1,4 +1,4 @@
-import{createBiologyLesson as e}from"./shared.js";export const source=`:::exam-question
+import{createBiologyLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: bio-b-p068-q2-b-3
 title: الرزمة التعليمية، صفحة 68، السؤال 2-b-3
 question: وضح المقصود بما يلي: كابسيد.

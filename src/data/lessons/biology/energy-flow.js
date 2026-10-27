@@ -1,4 +1,4 @@
-import{createBiologyLesson as m}from"./shared.js";export const source=`:::mcq
+import{createBiologyLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: bio-b-p021-q1-1
 title: الرزمة التعليمية، صفحة 21، السؤال 1-1
 question: ما فائدة استخدام الهيدروجين في التفاعلات الضوئية؟

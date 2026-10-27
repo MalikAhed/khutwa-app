@@ -1,4 +1,4 @@
-import{createArabicLesson as e}from"./shared.js";export const source=`:::mcq
+import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: arabic-p015-m01
 title: البحر الوافر، اختيار من متعدد، السؤال 1، ص 14، 2020
 kicker: امتحانات الثانوية العامة، 2020

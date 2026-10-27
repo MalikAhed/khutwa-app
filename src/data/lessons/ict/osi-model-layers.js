@@ -1,4 +1,4 @@
-import{defineMarkdownLesson as s}from"../../../markdown/lesson-model.js";export const LESSON_MARKDOWN=`<!-- step-id: upper-layers-mission -->
+import{defineMarkdownLesson as s}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const LESSON_MARKDOWN=`<!-- step-id: upper-layers-mission -->
 <!-- presentation: video-intro -->
 # طبقات OSI العليا وطبقة الجلسة
 

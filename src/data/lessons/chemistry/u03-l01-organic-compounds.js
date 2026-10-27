@@ -1,4 +1,4 @@
-import{createChemistryLesson as m}from"./shared.js";export const source=`:::mcq
+import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: chemistry-gaza-p062-q01-a8
 title: الوحدة ٣ · الدرس ١ · ص ٦٠ · س ٠١ · a٨
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤

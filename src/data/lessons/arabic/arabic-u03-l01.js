@@ -1,4 +1,4 @@
-import{createArabicLesson as e}from"./shared.js";export const source=`:::mcq
+import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: arabic-p060-mcq-q01
 title: القدس بوصلة ومجد - صفحة 59 - اختيار من متعدد 1 - 2019؛ مكرر 2021
 kicker: 2019؛ مكرر 2021

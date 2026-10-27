@@ -1,4 +1,4 @@
-import{createChemistryLesson as m}from"./shared.js";export const source=`:::exam-question
+import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: chemistry-gaza-p015-q02-a4
 title: الوحدة ١ · الدرس ٣ · ص ١٣ · س ٢ · a٤ · أسئلة الفصل — الرزمة التعليمية ٢٠٢٤
 question: وضح المقصود بكل من المصطلحات الآتية: العدد الذري.

@@ -1,4 +1,4 @@
-import{createEnglishLesson as e}from"./shared.js";export const source=`:::exam-question
+import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: eng-2023-p093-qtext1-a-1
 title: Unit 9 · PDF 93 · text1-a-1
 question: What do angry people often forget according to the writer? a. .............. b. ..............

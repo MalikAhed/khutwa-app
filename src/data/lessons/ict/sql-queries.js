@@ -1,4 +1,4 @@
-import{defineMarkdownLesson as s}from"../../../markdown/lesson-model.js";export const LESSON_MARKDOWN=`<!-- step-id: sql-introduction-mission -->
+import{defineMarkdownLesson as s}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const LESSON_MARKDOWN=`<!-- step-id: sql-introduction-mission -->
 <!-- presentation: video-intro -->
 # لغة SQL وأنواع الاستعلامات
 https://www.youtube.com/watch?v=GROuHEfqsak

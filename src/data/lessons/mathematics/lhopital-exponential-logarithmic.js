@@ -1,4 +1,4 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js";export const lessonSource=`:::exam-question
+import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
 id: math-book-p017-ex1
 title: الكتاب، ص ١٥ · مثال ١ · سهل
 question: قاعدة لوبيتال، ومشتقة الاقتران الأسي واللوغاريتمي

@@ -1,4 +1,4 @@
-import{escapeHtml as d}from"../../lib/dom.js";import{renderMarkdownDocument as u}from"../../markdown/renderer.js";export function renderRockyDialogue(r,{titleId:c,locale:e="en"}){return`<article class="level-lesson-copy ready-lesson-copy markdown-authored-content rocky-dialogue-presentation">
+import{escapeHtml as d}from"../../lib/dom.js?v=7388f68cc0f433fd";import{renderMarkdownDocument as u}from"../../markdown/renderer.js?v=7388f68cc0f433fd";export function renderRockyDialogue(r,{titleId:c,locale:e="en"}){return`<article class="level-lesson-copy ready-lesson-copy markdown-authored-content rocky-dialogue-presentation">
     <h1 class="visually-hidden" id="${d(c)}">${d(r.title)}</h1>
     <div class="rocky-dialogue" data-rocky-dialogue><div class="rocky-dialogue-content">${u(r.dialogue.source,{locale:e})}</div></div>
     <figure class="rocky-dialogue-illustration">${u(r.dialogue.image,{locale:e})}</figure>

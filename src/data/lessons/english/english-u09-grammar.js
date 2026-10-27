@@ -1,4 +1,4 @@
-import{createEnglishLesson as e}from"./shared.js";export const source=`:::exam-question
+import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: eng-2023-p101-qlanguage-1-1
 title: Unit 9 · PDF 101 · language-1-1
 question: I was lazy when I was younger. (I wish)

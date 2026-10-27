@@ -1,4 +1,4 @@
-import{createChemistryLesson as m}from"./shared.js";export const source=`:::mcq
+import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: chemistry-oj-p096-q14
 title: الوحدة ٢ · الدرس ١ · ص ٩٦ · س ١٤
 kicker: صياغة تعليمية معدّلة

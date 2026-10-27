@@ -1,4 +1,4 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js";export const lessonSource=`
+import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`
 :::mcq
 id: physics-book-2024-p009-review-1-2
 title: أسئلة الفصل — س1/2 — الكتاب، صفحة PDF 9

@@ -1,4 +1,4 @@
-import{defineMarkdownLesson as t}from"../../../markdown/lesson-model.js";export const LESSON_MARKDOWN=`<!-- step-id: meet-rocky -->
+import{defineMarkdownLesson as t}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const LESSON_MARKDOWN=`<!-- step-id: meet-rocky -->
 <!-- presentation: rocky-dialogue -->
 # قبل أن نبدأ
 

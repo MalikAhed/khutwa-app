@@ -1,4 +1,4 @@
-import{createBiologyLesson as e}from"./shared.js";export const source=`:::mcq
+import{createBiologyLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: bio-q-p154-q2
 title: تصنيف الأسئلة، ص154، سؤال 2
 reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · صفحة PDF 154

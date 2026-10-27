@@ -1,4 +1,4 @@
-import{createArabicLesson as e}from"./shared.js";export const source=`:::mcq
+import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: arabic-p144-mcq01
 title: من المعاني النحوية لـ (لا) و(اللام) | صفحة 143 | اختيار من متعدد 1
 kicker: 2019

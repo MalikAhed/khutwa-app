@@ -1,4 +1,4 @@
-import{createEnglishLesson as e}from"./shared.js";export const source=`:::exam-question
+import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: eng-2023-p026-qvocab-1-1
 title: Unit 2 · PDF 26 · Vocabulary / 1 / 1
 question: If you are finding a job difficult, it is important that you **don’t give up**. …

@@ -1,4 +1,4 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js";export const lessonSource=`
+import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`
 :::mcq
 id: physics-book-2024-p042-review-1-1
 title: أسئلة الفصل — س1/1 — الكتاب، صفحة PDF 42

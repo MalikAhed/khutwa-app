@@ -1,4 +1,4 @@
-import{createChemistryLesson as e}from"./shared.js";export const source=`:::mcq
+import{createChemistryLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: chemistry-gaza-p014-q01-a6
 title: الوحدة ١ · الدرس ٢ · ص ١٢ · س السؤال الأول · a٦
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤

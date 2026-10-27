@@ -1,4 +1,4 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js";export const lessonSource=`:::exam-question
+import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
 id: math-book-p084-activity1-table
 title: الكتاب، ص ٨٢ · نشاط أو تمرين
 question: التكامل غير المحدود

@@ -1,4 +1,4 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js";export const lessonSource=`:::exam-question
+import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
 id: math-book-p120-ex1
 title: الكتاب، ص ١١٨ · مثال محلول
 question: تطبيقات التكامل المحدود: المساحة

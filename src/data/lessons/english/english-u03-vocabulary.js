@@ -1,4 +1,4 @@
-import{createEnglishLesson as e}from"./shared.js";export const source=`:::exam-question
+import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: eng-2023-p036-qv1-1
 title: Unit 3 · PDF 36 · v1-1
 question: She has a lot of **things that she knows** about this subject because she has studied it for years.

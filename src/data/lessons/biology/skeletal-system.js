@@ -1,4 +1,4 @@
-import{createBiologyLesson as e}from"./shared.js";export const source=`:::mcq
+import{createBiologyLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
 id: bio-b-p068-q1-1
 title: الرزمة التعليمية، صفحة 68، السؤال 1-1
 question: كم عدد الفقرات المتمفصلة المتحركة؟

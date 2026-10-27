@@ -1,4 +1,4 @@
-import{createChemistryLesson as m}from"./shared.js";export const source=`:::exam-question
+import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
 id: chemistry-gaza-p047-q02-s3
 title: الوحدة ٢ · الدرس ٦ · ص ٤٥ · س ٢ · ٣ · أسئلة الوحدة — الرزمة التعليمية ٢٠٢٤؛ وزاري ٢٠٢٢؛ وزاري ٢٠٢١؛ وزاري ٢٠١٧
 question: ما المقصود بكل من المصطلحات الآتية: المحلول المنظم
