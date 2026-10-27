@@ -60,7 +60,14 @@ export function createAuthClient({
   return Object.freeze({
     request,
     /** @param {RequestOptions} [options] */
-    restoreSession:({ signal } = {}) => request("/session", { signal }),
+    async restoreSession({ signal } = {}) {
+      const options = { signal, cache:/** @type {RequestCache} */ ("no-store") };
+      const result = await request("/session", options);
+      // A resumed phone can briefly have no connection. Retry this read once;
+      // never retry sign-in writes or treat a rejected session as authenticated.
+      return !result.aborted && (result.status === 0 || result.status >= 500)
+        ? request("/session", options) : result;
+    },
     /** @param {{field:string, value:string}} values @param {RequestOptions} [options] */
     checkAvailability(values, { signal } = {}) {
       return request("/availability", { method:"POST", body:JSON.stringify(values), signal });

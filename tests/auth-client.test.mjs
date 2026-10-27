@@ -34,6 +34,37 @@ test("auth client distinguishes caller cancellation from an unavailable server",
   assert.deepEqual(await pending, { ok:false, status:0, aborted:true, body:{ status:"aborted" } });
 });
 
+test("session restoration retries a transient failure without caching or repeating writes", async () => {
+  let calls = 0;
+  const client = createAuthClient({ baseUrl:"/api/auth", fetchImpl:async (_url, options) => {
+    calls++;
+    assert.equal(options.cache, "no-store");
+    if (calls === 1) throw new TypeError("Network is reconnecting");
+    return { ok:true, status:200, json:async () => ({ account:{ id:"returning" } }) };
+  } });
+  assert.equal((await client.restoreSession()).body.account.id, "returning");
+  assert.equal(calls, 2);
+});
+
+test("session retries are bounded and do not retry rejected or anonymous sessions", async () => {
+  for (const [status, expected] of [[503, 2], [401, 1], [200, 1]]) {
+    let calls = 0;
+    const client = createAuthClient({ baseUrl:"/api/auth", fetchImpl:async () => {
+      calls++;
+      return { ok:status === 200, status, json:async () => ({ account:null }) };
+    } });
+    assert.equal((await client.restoreSession()).status, status);
+    assert.equal(calls, expected);
+  }
+  let writes = 0;
+  const client = createAuthClient({ baseUrl:"/api/auth", fetchImpl:async () => {
+    writes++;
+    return { ok:false, status:503, json:async () => ({}) };
+  } });
+  await client.signIn({ identifier:"learner", password:"test" });
+  assert.equal(writes, 1);
+});
+
 for (const rejectsBody of [false, true]) {
   test(`cancellation while reading the response body stays aborted (${rejectsBody ? "rejected" : "resolved"} body)`, async () => {
     let finishBody;

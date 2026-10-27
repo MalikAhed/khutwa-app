@@ -76,7 +76,8 @@ function formatOperators(math) {
     open.replaceWith(fence(determinant ? "|" : "["));
     close.replaceWith(fence(determinant ? "|" : "]"));
   });
-  // Use the math font's display-size integral, mirrored by native RTL MathML.
+  // iOS 17 does not mirror large operators reliably. The tiny integral font
+  // maps these codepoints to XITS's existing RTL glyphs, without CSS transforms.
   math.querySelectorAll("mo").forEach(operator => {
     if (!/^[∫∬∭∮]$/.test(operator.textContent)) return;
     operator.setAttribute("largeop", "true");
@@ -86,6 +87,10 @@ function formatOperators(math) {
     operator.setAttribute("symmetric", "true");
     const displayStyle = document.createElementNS(math.namespaceURI, "mstyle");
     displayStyle.setAttribute("displaystyle", "true");
+    if (math.getAttribute("dir") === "rtl") {
+      displayStyle.setAttribute("dir", "ltr");
+      operator.setAttribute("class", "lesson-math-integral-rtl");
+    }
     operator.replaceWith(displayStyle);
     displayStyle.append(operator);
     const script = displayStyle.parentElement;

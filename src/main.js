@@ -62,7 +62,10 @@ const productService = createLearnerSession({
   storage: learnerStorage,
   apiBase: appConfig.apiBase,
 });
-await productService.restoreSession();
+const restoredSession = await productService.restoreSession();
+// A failed session check is not a sign-out. Keep the existing startup retry
+// screen until the server can confirm either the account or an expired session.
+if (restoredSession.status === "unavailable") throw new Error("Could not restore the account session. Retry when connected.");
 await progressStore.ready(productService.getLearnerProgressOwner());
 let progressOwner = productService.getLearnerProgressOwner();
 productService.subscribe(() => {
@@ -345,7 +348,7 @@ function applyCurrentRoute({ restorePath = false } = {}) {
   const mapExplanation = typeof pendingMapReturn === "object" ? pendingMapReturn : null;
   pendingMapReturn = false;
   const route = readRoute(window.location.search);
-  if (appConfig.accountMode === "fixture" && route.flow === "entry" && productService.getAccountType() !== "guest") {
+  if (route.flow === "entry" && productService.getAccountType() !== "guest") {
     selectPage(getPageTarget("learn"), { historyMode:"replace" });
     return;
   }
