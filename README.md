@@ -14,7 +14,7 @@ Public lesson content downloads in the background and is kept in browser cache w
 
 ## Hosting
 
-Pushes to `main` publish this verified runtime to the existing `khutwaa` Cloudflare Pages project through `.github/workflows/cloudflare-pages.yml`. The workflow uses repository secrets for its deployment credential. Keep this workflow when replacing the runtime with a newer package. Student progress stays in the browser's separate storage on the same site address.
+Pushes to `main` publish this verified runtime to the existing `khutwaa` Cloudflare Pages project through `.github/workflows/cloudflare-pages.yml`. The Cloudflare package uses HTTP accounts and forwards `/api/*` to the project's existing `BACKEND` service binding: `khutwa-app` in production and `khutwa-app-staging` in previews. This preserves the real accounts, admin access, sessions, and server-saved progress. A preview must pass account-routing and library checks before production is changed. Keep the workflow and `.github/cloudflare/` files when replacing the browser runtime. Deployment credentials stay in repository secrets.
 
 GitHub Pages serves `main` directly from the repository root. `.nojekyll` ensures every runtime file, including browser dependencies, is published. No npm installation or build step is needed. Runtime URLs are versioned per release; an installed app checks for updates and refreshes between study sessions after progress has saved.
 
