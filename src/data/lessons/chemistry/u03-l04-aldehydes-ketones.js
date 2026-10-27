@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js";
+
+export const source = `:::mcq
 id: chemistry-gaza-p062-q01-a1
 title: الوحدة ٣ · الدرس ٤ · ص ٦٠ · س ٠١ · a١
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤
@@ -948,4 +950,6 @@ solution:
 **المصدر:** صفحة 56 من الكتاب.
 
 :::
-`;export default m("u03-l04-aldehydes-ketones",source);
+`;
+
+export default createChemistryLesson("u03-l04-aldehydes-ketones", source);

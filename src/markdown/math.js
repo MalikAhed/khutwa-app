@@ -1,1 +1,157 @@
-import d from"../../node_modules/dompurify/dist/purify.es.mjs?v=7388f68cc0f433fd";import h from"../../assets/vendor/katex/katex.mjs?v=7388f68cc0f433fd";const u=["math","mrow","mi","mn","mo","mtext","mspace","ms","mfrac","msqrt","mroot","msub","msup","msubsup","munder","mover","munderover","mmultiscripts","mprescripts","none","mtable","mtr","mtd","mstyle","mpadded","mphantom","menclose","semantics","annotation"],f=["xmlns","dir","display","aria-label","mathvariant","stretchy","largeop","movablelimits","fence","separator","accent","accentunder","linethickness","lspace","rspace","width","height","depth","rowspacing","columnspacing","columnalign","rowalign","notation","encoding","displaystyle","scriptlevel"];function p(n){[...n.children].forEach(p);const c={"(":")","[":"]","{":"}","|":"|","∣":"∣"},s=[];for(const e of[...n.children]){const r=["msup","msub","msubsup"].includes(e.localName),o=r?e.firstElementChild:e;if(o?.localName!=="mo")continue;const l=o.textContent,t=s.at(-1);if(t&&(c[t.textContent]===l||t.textContent==="["&&l===")"||t.textContent==="("&&l==="]")){s.pop();for(const i of[t,o])i.setAttribute("fence","true"),i.setAttribute("stretchy","true"),i.setAttribute("symmetric","true");if(!r&&t===n.firstElementChild&&e===n.lastElementChild&&n.localName==="mrow")continue;const a=n.ownerDocument.createElementNS(n.namespaceURI,"mrow");for(n.insertBefore(a,t);a.nextElementSibling!==e;)a.append(a.nextElementSibling);a.append(o),r&&e.prepend(a)}else!r&&Object.hasOwn(c,l)&&s.push(o)}}function A(n){const c=n.ownerDocument,s=e=>{const r=c.createElementNS(n.namespaceURI,"mo");return r.textContent=e,r.setAttribute("fence","true"),r.setAttribute("stretchy","true"),r.setAttribute("symmetric","true"),r};n.querySelectorAll("mi, mtext").forEach(e=>{if(!/^(det|محدد)$/.test(e.textContent))return;const r=e.nextElementSibling?.textContent==="⁡"?e.nextElementSibling:null,o=(r||e).nextElementSibling;if(!o)return;const l=o.firstElementChild,t=o.lastElementChild;if(o.localName==="mrow"&&l?.localName==="mo"&&t?.localName==="mo"&&["()","[]"].includes(l.textContent+t.textContent))l.replaceWith(s("|")),t.replaceWith(s("|"));else{const a=c.createElementNS(n.namespaceURI,"mrow");o.replaceWith(a),a.append(s("|"),o,s("|"))}r?.remove(),e.remove()}),n.querySelectorAll("mtable").forEach(e=>{const r=e.previousElementSibling,o=e.nextElementSibling;if(r?.localName!=="mo"||o?.localName!=="mo")return;const l=r.textContent+o.textContent;if(!["()","[]","||","∣∣"].includes(l))return;const t=l==="||"||l==="∣∣";r.replaceWith(s(t?"|":"[")),o.replaceWith(s(t?"|":"]"))}),n.querySelectorAll("mo").forEach(e=>{if(!/^[∫∬∭∮]$/.test(e.textContent))return;e.setAttribute("largeop","true"),e.setAttribute("stretchy","false"),e.setAttribute("symmetric","true");const r=c.createElementNS(n.namespaceURI,"mstyle");r.setAttribute("displaystyle","true"),e.replaceWith(r),r.append(e);const o=r.parentElement;n.getAttribute("dir")==="rtl"&&["msub","msubsup"].includes(o?.localName)&&o.firstElementChild===r&&o.children[1].setAttribute("class","lesson-math-integral-lower")})}export function renderLatex(n,{display:c=!1}={}){try{const s=h.renderToString(n,{output:"mathml",displayMode:c,throwOnError:!0,trust:!1,strict:"error",maxExpand:1e3,maxSize:20}),e=/<math\b[\s\S]*?<\/math>/.exec(s)?.[0];if(!e)throw new Error("Missing MathML output");const r=e.replace(/<annotation\b[\s\S]*?<\/annotation>/g,"").replace(/<\/?semantics>/g,"");return renderMathML(r.replace("<math",'<math dir="ltr"'),{display:c})}catch{return'<span class="lesson-math-error" role="alert">صيغة LaTeX غير صالحة</span>'}}export function renderMathML(n,{display:c=!1}={}){const s='<span class="lesson-math-error" role="alert">صيغة رياضية غير صالحة</span>';if(/<!/i.test(n))return s;const e=new DOMParser,r=e.parseFromString(n.trim(),"application/xml");if(r.querySelector("parsererror")||r.documentElement.localName!=="math"||[...r.querySelectorAll("*")].some(i=>!u.includes(i.localName))||[...r.querySelectorAll("menclose")].some(i=>i.getAttribute("notation")!=="box"))return s;const o=d.sanitize(n,{ALLOWED_TAGS:u,ALLOWED_ATTR:f,ALLOW_DATA_ATTR:!1,FORBID_ATTR:["style"]}).replaceAll("&nbsp;"," "),l=e.parseFromString(o,"application/xml"),t=l.documentElement;if(l.querySelector("parsererror")||t.localName!=="math")return s;t.setAttribute("xmlns","http://www.w3.org/1998/Math/MathML"),t.setAttribute("class","lesson-math"),t.setAttribute("dir",t.getAttribute("dir")==="ltr"?"ltr":"rtl"),t.setAttribute("display",c?"block":"inline"),t.querySelectorAll('menclose[notation="box"]').forEach(i=>{const m=l.createElementNS(t.namespaceURI,"mrow");m.setAttribute("class","lesson-math-box"),m.append(...i.childNodes),i.replaceWith(m)});const a=l.createElementNS(t.namespaceURI,"mrow");return a.append(...t.childNodes),t.append(a),t.querySelectorAll("mn").forEach(i=>i.setAttribute("dir","ltr")),t.querySelectorAll("mi").forEach(i=>{/\p{Script=Arabic}/u.test(i.textContent)&&!i.hasAttribute("mathvariant")&&i.setAttribute("mathvariant","normal")}),p(t),A(t),t.outerHTML}
+import DOMPurify from "../../node_modules/dompurify/dist/purify.es.mjs";
+import katex from "../../assets/vendor/katex/katex.mjs";
+
+const MATH_TAGS = ["math", "mrow", "mi", "mn", "mo", "mtext", "mspace", "ms", "mfrac", "msqrt", "mroot", "msub", "msup", "msubsup", "munder", "mover", "munderover", "mmultiscripts", "mprescripts", "none", "mtable", "mtr", "mtd", "mstyle", "mpadded", "mphantom", "menclose", "semantics", "annotation"];
+const MATH_ATTRIBUTES = ["xmlns", "dir", "display", "aria-label", "mathvariant", "stretchy", "largeop", "movablelimits", "fence", "separator", "accent", "accentunder", "linethickness", "lspace", "rspace", "width", "height", "depth", "rowspacing", "columnspacing", "columnalign", "rowalign", "notation", "encoding", "displaystyle", "scriptlevel"];
+
+function groupFences(parent) {
+  [...parent.children].forEach(groupFences);
+  const pairs = { "(":")", "[":"]", "{":"}", "|":"|", "∣":"∣" };
+  const stack = [];
+  for (const child of [...parent.children]) {
+    const scripted = ["msup", "msub", "msubsup"].includes(child.localName);
+    const operator = scripted ? child.firstElementChild : child;
+    if (operator?.localName !== "mo") continue;
+    const value = operator.textContent;
+    const opening = stack.at(-1);
+    if (opening && (pairs[opening.textContent] === value
+      || (opening.textContent === "[" && value === ")") || (opening.textContent === "(" && value === "]"))) {
+      stack.pop();
+      for (const fence of [opening, operator]) {
+        fence.setAttribute("fence", "true");
+        fence.setAttribute("stretchy", "true");
+        fence.setAttribute("symmetric", "true");
+      }
+      // A closing bracket's scripts apply to the enclosed expression. Grouping
+      // it also lets native MathML stretch both fences around the same content.
+      if (!scripted && opening === parent.firstElementChild && child === parent.lastElementChild
+        && parent.localName === "mrow") continue;
+      const group = parent.ownerDocument.createElementNS(parent.namespaceURI, "mrow");
+      parent.insertBefore(group, opening);
+      while (group.nextElementSibling !== child) group.append(group.nextElementSibling);
+      group.append(operator);
+      if (scripted) {
+        child.prepend(group);
+      }
+    } else if (!scripted && Object.hasOwn(pairs, value)) stack.push(operator);
+  }
+}
+
+function formatOperators(math) {
+  const document = math.ownerDocument;
+  const fence = (text) => {
+    const node = document.createElementNS(math.namespaceURI, "mo");
+    node.textContent = text;
+    node.setAttribute("fence", "true");
+    node.setAttribute("stretchy", "true");
+    node.setAttribute("symmetric", "true");
+    return node;
+  };
+  // Determinants use bars, including older solutions authored as det(matrix).
+  math.querySelectorAll("mi, mtext").forEach(label => {
+    if (!/^(det|محدد)$/.test(label.textContent)) return;
+    const application = label.nextElementSibling?.textContent === "\u2061" ? label.nextElementSibling : null;
+    const operand = (application || label).nextElementSibling;
+    if (!operand) return;
+    const first = operand.firstElementChild, last = operand.lastElementChild;
+    if (operand.localName === "mrow" && first?.localName === "mo" && last?.localName === "mo"
+      && ["()", "[]"].includes(first.textContent + last.textContent)) {
+      first.replaceWith(fence("|"));
+      last.replaceWith(fence("|"));
+    } else {
+      const group = document.createElementNS(math.namespaceURI, "mrow");
+      operand.replaceWith(group);
+      group.append(fence("|"), operand, fence("|"));
+    }
+    application?.remove();
+    label.remove();
+  });
+  // Only paired fences immediately around a table identify a matrix/determinant.
+  math.querySelectorAll("mtable").forEach(table => {
+    const open = table.previousElementSibling, close = table.nextElementSibling;
+    if (open?.localName !== "mo" || close?.localName !== "mo") return;
+    const pair = open.textContent + close.textContent;
+    if (!["()", "[]", "||", "∣∣"].includes(pair)) return;
+    const determinant = pair === "||" || pair === "∣∣";
+    open.replaceWith(fence(determinant ? "|" : "["));
+    close.replaceWith(fence(determinant ? "|" : "]"));
+  });
+  // Use the math font's display-size integral, mirrored by native RTL MathML.
+  math.querySelectorAll("mo").forEach(operator => {
+    if (!/^[∫∬∭∮]$/.test(operator.textContent)) return;
+    operator.setAttribute("largeop", "true");
+    // The display glyph is already tall. Stretching it makes Firefox select an
+    // empty RTL glyph assembly instead of drawing the integral.
+    operator.setAttribute("stretchy", "false");
+    operator.setAttribute("symmetric", "true");
+    const displayStyle = document.createElementNS(math.namespaceURI, "mstyle");
+    displayStyle.setAttribute("displaystyle", "true");
+    operator.replaceWith(displayStyle);
+    displayStyle.append(operator);
+    const script = displayStyle.parentElement;
+    if (math.getAttribute("dir") === "rtl" && ["msub", "msubsup"].includes(script?.localName)
+      && script.firstElementChild === displayStyle) {
+      script.children[1].setAttribute("class", "lesson-math-integral-lower");
+    }
+  });
+}
+
+// LaTeX compiles to the same sanitized native MathML used by every question view.
+export function renderLatex(source, { display = false } = {}) {
+  try {
+    const markup = katex.renderToString(source, {
+      output:"mathml", displayMode:display, throwOnError:true, trust:false,
+      strict:"error", maxExpand:1000, maxSize:20,
+    });
+    const math = /<math\b[\s\S]*?<\/math>/.exec(markup)?.[0];
+    if (!math) throw new Error("Missing MathML output");
+    // The outer Markdown sanitizer strips semantics/annotation elements. Remove
+    // the TeX annotation first so its source cannot become visible formula text.
+    const formula = math.replace(/<annotation\b[\s\S]*?<\/annotation>/g, "")
+      .replace(/<\/?semantics>/g, "");
+    return renderMathML(formula.replace("<math", '<math dir="ltr"'), { display });
+  } catch {
+    return '<span class="lesson-math-error" role="alert">صيغة LaTeX غير صالحة</span>';
+  }
+}
+
+// One MathML path for lesson blocks, inline copy, answer choices and explanations.
+export function renderMathML(source, { display = false } = {}) {
+  const invalid = '<span class="lesson-math-error" role="alert">صيغة رياضية غير صالحة</span>';
+  if (/<!/i.test(source)) return invalid;
+  const parser = new DOMParser();
+  const original = parser.parseFromString(source.trim(), "application/xml");
+  if (original.querySelector("parsererror") || original.documentElement.localName !== "math") return invalid;
+  if ([...original.querySelectorAll("*")].some(node => !MATH_TAGS.includes(node.localName))) return invalid;
+  if ([...original.querySelectorAll("menclose")].some(node => node.getAttribute("notation") !== "box")) return invalid;
+  // DOMPurify serializes nonbreaking spaces as HTML entities, rather than XML.
+  const clean = DOMPurify.sanitize(source, {
+    ALLOWED_TAGS:MATH_TAGS, ALLOWED_ATTR:MATH_ATTRIBUTES,
+    ALLOW_DATA_ATTR:false, FORBID_ATTR:["style"],
+  }).replaceAll("&nbsp;", "\u00a0");
+  const document = parser.parseFromString(clean, "application/xml");
+  const math = document.documentElement;
+  if (document.querySelector("parsererror") || math.localName !== "math") return invalid;
+  math.setAttribute("xmlns", "http://www.w3.org/1998/Math/MathML");
+  math.setAttribute("class", "lesson-math");
+  math.setAttribute("dir", math.getAttribute("dir") === "ltr" ? "ltr" : "rtl");
+  math.setAttribute("display", display ? "block" : "inline");
+  // Chromium lacks menclose layout. Keep orbital boxes in the native math row.
+  math.querySelectorAll('menclose[notation="box"]').forEach(node => {
+    const box = document.createElementNS(math.namespaceURI, "mrow");
+    box.setAttribute("class", "lesson-math-box");
+    box.append(...node.childNodes);
+    node.replaceWith(box);
+  });
+  // An explicit row lets Firefox stretch operators against sibling fractions/tables.
+  const row = document.createElementNS(math.namespaceURI, "mrow");
+  row.append(...math.childNodes);
+  math.append(row);
+  math.querySelectorAll("mn").forEach(node => node.setAttribute("dir", "ltr"));
+  math.querySelectorAll("mi").forEach(node => {
+    if (/\p{Script=Arabic}/u.test(node.textContent) && !node.hasAttribute("mathvariant")) node.setAttribute("mathvariant", "normal");
+  });
+  groupFences(math);
+  formatOperators(math);
+  return math.outerHTML;
+}

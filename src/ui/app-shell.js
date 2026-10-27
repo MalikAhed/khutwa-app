@@ -1,1 +1,45 @@
-import{isUnlockedPage as u}from"../app/route.js?v=7388f68cc0f433fd";import{getRequiredElement as t}from"../lib/dom.js?v=7388f68cc0f433fd";export function getShellViewportBounds(){const n=window.visualViewport,i=n?.offsetLeft||0,s=n?.offsetTop||0,a=n?.width||window.innerWidth,l=n?.height||window.innerHeight,o={left:i,top:s,right:i+a,bottom:s+l};return document.querySelectorAll("[data-shell-obstruction]").forEach(r=>{if(getComputedStyle(r).position!=="fixed")return;const e=r.getBoundingClientRect();!e.width||!e.height||e.bottom<=s||e.top>=s+l||(e.height>=l*.75&&e.width<a*.5?e.left>i+a/2?o.right=Math.min(o.right,e.left):o.left=Math.max(o.left,e.right):e.top>s+l/2?o.bottom=Math.min(o.bottom,e.top):o.top=Math.max(o.top,e.bottom))}),{left:o.left+12,top:o.top+12,right:o.right-12,bottom:o.bottom-12}}export function mountAppShell(){const n=t("#app-header-template");return n.replaceWith(n.content),document.querySelectorAll(".nav-item").forEach(i=>{u(i.dataset.page)||i.setAttribute("aria-disabled","true")}),{comingSoon:t(".coming-soon"),comingSoonToast:t("#coming-soon-toast"),courseUnits:t(".course-units"),lessonBackButton:t(".lesson-back"),lessonCard:t(".lesson-card"),lessonContent:t("#lesson-content"),lessonShell:t(".lesson-shell"),lessonStatus:t(".lesson-status"),lessonTitle:t(".current-view-title"),lessonView:t(".lesson-view"),main:t("main"),navigationItems:[...document.querySelectorAll(".nav-item")],authGuest:t(".topbar-auth-guest"),authMember:t(".topbar-auth-member"),accountLabel:t("[data-account-label]"),authFlowButtons:[...document.querySelectorAll("[data-auth-flow]")],authSignOut:t("[data-auth-sign-out]"),visitorFlowRoot:t("#visitor-flow-root")}}
+import { isUnlockedPage } from "../app/route.js";
+import { getRequiredElement } from "../lib/dom.js";
+
+/** Viewport coordinates left available by the visible fixed shell, including safe areas. */
+export function getShellViewportBounds() {
+  const viewport = window.visualViewport;
+  const left = viewport?.offsetLeft || 0;
+  const top = viewport?.offsetTop || 0;
+  const width = viewport?.width || window.innerWidth;
+  const height = viewport?.height || window.innerHeight;
+  const bounds = { left, top, right:left + width, bottom:top + height };
+  document.querySelectorAll("[data-shell-obstruction]").forEach((element) => {
+    if (getComputedStyle(element).position !== "fixed") return;
+    const rect = element.getBoundingClientRect();
+    if (!rect.width || !rect.height || rect.bottom <= top || rect.top >= top + height) return;
+    if (rect.height >= height * .75 && rect.width < width * .5) {
+      if (rect.left > left + width / 2) bounds.right = Math.min(bounds.right, rect.left);
+      else bounds.left = Math.max(bounds.left, rect.right);
+    } else if (rect.top > top + height / 2) bounds.bottom = Math.min(bounds.bottom, rect.top);
+    else bounds.top = Math.max(bounds.top, rect.bottom);
+  });
+  return { left:bounds.left + 12, top:bounds.top + 12, right:bounds.right - 12, bottom:bounds.bottom - 12 };
+}
+
+/** Mount account-sensitive navigation only when its initial state is known. */
+export function mountAppShell() {
+  const template = getRequiredElement("#app-header-template");
+  template.replaceWith(template.content);
+  document.querySelectorAll(".nav-item").forEach((item) => {
+    if (!isUnlockedPage(item.dataset.page)) item.setAttribute("aria-disabled", "true");
+  });
+  return {
+    comingSoon:getRequiredElement(".coming-soon"), comingSoonToast:getRequiredElement("#coming-soon-toast"),
+    courseUnits:getRequiredElement(".course-units"), lessonBackButton:getRequiredElement(".lesson-back"),
+    lessonCard:getRequiredElement(".lesson-card"), lessonContent:getRequiredElement("#lesson-content"),
+    lessonShell:getRequiredElement(".lesson-shell"), lessonStatus:getRequiredElement(".lesson-status"),
+    lessonTitle:getRequiredElement(".current-view-title"), lessonView:getRequiredElement(".lesson-view"),
+    main:getRequiredElement("main"),
+    navigationItems:[...document.querySelectorAll(".nav-item")],
+    authGuest:getRequiredElement(".topbar-auth-guest"), authMember:getRequiredElement(".topbar-auth-member"),
+    accountLabel:getRequiredElement("[data-account-label]"), authFlowButtons:[...document.querySelectorAll("[data-auth-flow]")],
+    authSignOut:getRequiredElement("[data-auth-sign-out]"),
+    visitorFlowRoot:getRequiredElement("#visitor-flow-root"),
+  };
+}

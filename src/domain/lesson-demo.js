@@ -1,1 +1,47 @@
-const u=d=>String(d||"").replace(/<[^>]*>|[*_`#]/g,"").replace(/\s+/g," ").trim();function r(d){const i=d.content,s=d.type==="mcq"?i.prompt:`${i.body} ${i.solution}`;return u(s).length+(i.answers||[]).reduce((p,o)=>p+u(o.text).length,0)+(s.match(/!\[|<math|\\frac|\\int|\\sum/g)||[]).length*300+(i.example?400:0)}export function selectLessonDemo(d,{firstMcq:i=!1}={}){const s=d.filter(e=>["mcq","exam-question"].includes(e.type));if(!s.length)throw new Error("The lesson has no questions for a demo.");const p=e=>s.filter(n=>n.type===e).sort((n,m)=>r(n)-r(m))[0];let o=i?s.find(e=>e.type==="mcq"):p("mcq"),c=p("exam-question");const a=new Map;if(o)a.set(o.id,{stepId:o.id,type:"mcq",save:!0});else{const e=c,n=e.content.solution,m=[...new Set(s.filter(t=>t.id!==e.id).sort((t,l)=>r(t)-r(l)).map(t=>t.content.solution))].filter(t=>u(t)!==u(n)).slice(0,3);o={id:`demo-mcq-${e.id}`,type:"mcq",content:{prompt:e.content.body,title:e.content.title,reference:e.content.reference,answers:[n,...m].map((t,l)=>({id:`demo-option-${l}`,text:t,correct:l===0})),correctFeedback:"أحسنت!",wrongFeedback:"قارن إجابتك بالحل الصحيح."}},a.set(o.id,{stepId:e.id,type:"exam-question",save:!0}),c=s.filter(t=>t.type==="exam-question"&&t.id!==e.id).sort((t,l)=>r(t)-r(l))[0]||e}if(c)a.set(c.id,{stepId:c.id,type:"exam-question",save:!0});else{const e=s.filter(n=>n.id!==o.id).sort((n,m)=>r(n)-r(m))[0]||o;c={id:`demo-card-${e.id}`,type:"exam-question",content:{title:e.content.title,body:e.content.prompt,solution:e.content.answers.find(n=>n.correct).text,reference:e.content.reference}},a.set(c.id,{stepId:e.id,type:"mcq",save:!1})}return{steps:[o,c],sources:a}}
+// Presentation-only selection: never sort or replace the published lesson's steps.
+const plain = value => String(value || "").replace(/<[^>]*>|[*_`#]/g, "").replace(/\s+/g, " ").trim();
+function complexity(step) {
+  const content = step.content;
+  const text = step.type === "mcq" ? content.prompt : `${content.body} ${content.solution}`;
+  return plain(text).length + (content.answers || []).reduce((sum, answer) => sum + plain(answer.text).length, 0)
+    + (text.match(/!\[|<math|\\frac|\\int|\\sum/g) || []).length * 300
+    + (content.example ? 400 : 0);
+}
+
+export function selectLessonDemo(authoredSteps, { firstMcq = false } = {}) {
+  const questions = authoredSteps.filter(step => ["mcq", "exam-question"].includes(step.type));
+  if (!questions.length) throw new Error("The lesson has no questions for a demo.");
+  const choose = type => questions.filter(step => step.type === type).sort((a, b) => complexity(a) - complexity(b))[0];
+  let mcq = firstMcq ? questions.find(step => step.type === "mcq") : choose("mcq");
+  let card = choose("exam-question");
+  const sources = new Map();
+  if (mcq) sources.set(mcq.id, { stepId:mcq.id, type:"mcq", save:true });
+  else {
+    const source = card;
+    const correct = source.content.solution;
+    const alternatives = [...new Set(questions.filter(step => step.id !== source.id)
+      .sort((a, b) => complexity(a) - complexity(b)).map(step => step.content.solution))]
+      .filter(answer => plain(answer) !== plain(correct)).slice(0, 3);
+    mcq = { id:`demo-mcq-${source.id}`, type:"mcq", content:{
+      prompt:source.content.body, title:source.content.title, reference:source.content.reference,
+      answers:[correct, ...alternatives].map((text, index) => ({ id:`demo-option-${index}`, text, correct:index === 0 })),
+      correctFeedback:"أحسنت!", wrongFeedback:"قارن إجابتك بالحل الصحيح.",
+    } };
+    sources.set(mcq.id, { stepId:source.id, type:"exam-question", save:true });
+    // A second real card keeps the practice varied when the first was used as an MCQ.
+    card = questions.filter(step => step.type === "exam-question" && step.id !== source.id)
+      .sort((a, b) => complexity(a) - complexity(b))[0] || source;
+  }
+  if (card) sources.set(card.id, { stepId:card.id, type:"exam-question", save:true });
+  else {
+    const source = questions.filter(step => step.id !== mcq.id).sort((a, b) => complexity(a) - complexity(b))[0] || mcq;
+    card = { id:`demo-card-${source.id}`, type:"exam-question", content:{
+      title:source.content.title, body:source.content.prompt,
+      solution:source.content.answers.find(answer => answer.correct).text,
+      reference:source.content.reference,
+    } };
+    // Reading an MCQ as a flashcard must not mark its original MCQ correctly solved.
+    sources.set(card.id, { stepId:source.id, type:"mcq", save:false });
+  }
+  return { steps:[mcq, card], sources };
+}

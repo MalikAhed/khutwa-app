@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const lessonSource = `:::exam-question
 id: math-book-p107-ex1
 title: الكتاب، ص ١٠٥ · مثال محلول
 question: التكامل المحدود
@@ -3894,4 +3896,16 @@ solution:
 \`\`\`
 
 
-:::`;export default m({status:"published",language:"ar",title:"التكامل المحدود",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة التكامل المحدود من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"16 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "التكامل المحدود",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة التكامل المحدود من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "16 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

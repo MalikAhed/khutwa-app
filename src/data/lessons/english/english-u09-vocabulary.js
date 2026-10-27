@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js";
+
+export const source = `:::exam-question
 id: eng-2023-p100-qvocabulary-1-1
 title: Unit 9 · PDF 100 · vocabulary-1-1
 question: It’s a good idea to have a **second choice** plan in case the first one doesn’t work.
@@ -1335,4 +1337,6 @@ Last year تحدد الماضي، فنستعمل overrated. أما underrated ف
 **المصدر:** صفحة 58 من الكتاب.
 
 hint: Read the complete sentence or passage, then compare the original choices.
-:::`;export default e("english-u09-vocabulary",source);
+:::`;
+
+export default createEnglishLesson("english-u09-vocabulary", source);

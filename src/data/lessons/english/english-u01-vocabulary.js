@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js";
+
+export const source = `:::exam-question
 id: eng-2023-p011-qvocab-1-1
 title: Unit 1 · PDF 11 · Vocabulary / 1 / 1
 question: … part of reason
@@ -1648,4 +1650,6 @@ Suzan feels confident that she can pass the exam.
 **المصدر:** صفحة 5 من الكتاب.
 
 hint: Read the complete sentence or passage, then compare the original choices.
-:::`;export default e("english-u01-vocabulary",source);
+:::`;
+
+export default createEnglishLesson("english-u01-vocabulary", source);

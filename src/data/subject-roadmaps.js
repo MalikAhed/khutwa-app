@@ -1,1 +1,302 @@
-import{getIctPartQuestionIds as r}from"./lessons/ict/question-index.js?v=7388f68cc0f433fd";import{CHEMISTRY_UNITS as m,CHEMISTRY_LESSONS as j}from"./lessons/chemistry/chemistry-course.js?v=7388f68cc0f433fd";import{ENGLISH_UNITS as z,ENGLISH_LESSONS as I}from"./lessons/english/english-course.js?v=7388f68cc0f433fd";import{ARABIC_UNITS as S,ARABIC_LESSONS as q}from"./lessons/arabic/arabic-course.js?v=7388f68cc0f433fd";import{MATHEMATICS_LESSONS as g}from"./lessons/mathematics/math-course.js?v=7388f68cc0f433fd";import{PHYSICS_LESSONS as y}from"./lessons/physics/physics-course.js?v=7388f68cc0f433fd";import{BIOLOGY_UNITS as A,BIOLOGY_LESSONS as x}from"./lessons/biology/biology-course.js?v=7388f68cc0f433fd";import{ISLAMIC_LESSONS as L,ISLAMIC_LEGACY_LESSONS as M}from"./subject-catalog.js?v=7388f68cc0f433fd";const c=Object.freeze({subjectId:"ict",units:Object.freeze([Object.freeze({id:"unit-1",label:"الوحدة الأولى: قواعد البيانات",lessons:Object.freeze([Object.freeze({id:"course-introduction",hidden:!0,label:"مقدمة المادة",summary:"طريقة الدراسة وحدود الرزمة التعليمية المعتمدة.",optional:!0,parts:Object.freeze([Object.freeze({id:"getting-started",label:"مقدمة للمادة",pages:"تمهيد",number:"-",startStepId:"meet-rocky"})]),xp:0}),Object.freeze({id:"database-management",pages:"3–11",label:"الدرس الأول: برنامج إدارة قواعد البيانات",summary:"التعرّف إلى إدارة قواعد البيانات وبناء الجداول والعلاقات باستخدام Microsoft Access.",parts:Object.freeze([Object.freeze({id:"access-basics",label:"برامج إدارة البيانات وبيئة Access",pages:"3–5",startStepId:"database-management-mission",questionIds:Object.freeze([...r("access-basics")]),questionAliases:Object.freeze({"exam-p61-q6-a2":"exam-p09-q1-1"})}),Object.freeze({id:"tables-and-types",label:"التعامل مع Access وإنشاء جدول",pages:"4–7",startStepId:"tables-fields-records"}),Object.freeze({id:"keys-and-relations",label:"المفاتيح والعلاقات بين الجداول",pages:"6–11",startStepId:"keys-identity"}),Object.freeze({id:"build-and-integrity",label:"التكامل المرجعي وبناء القاعدة",pages:"7–8",startStepId:"referential-integrity"}),Object.freeze({id:"education-center",label:"تطبيق: قاعدة بيانات مركز تعليمي",pages:"8–10",startStepId:"education-center-model"}),Object.freeze({id:"engineering-office",label:"تطبيق: المكتب الهندسي",pages:"10",startStepId:"engineering-office-intro"}),Object.freeze({id:"practice-and-review",label:"تدريب من الكتاب: المستشفى ومراجعة الوحدة",pages:"11، 34",startStepId:"hospital-transfer"})]),xp:10}),Object.freeze({id:"sql-queries",pages:"12–34",label:"الدرس الثاني: الاستعلامات ولغة SQL",summary:"التعرّف إلى الاستعلامات وأساسيات لغة SQL للتعامل مع البيانات.",parts:Object.freeze([Object.freeze({id:"sql-introduction",label:"لغة SQL وأنواع الاستعلامات",pages:"12–15",startStepId:"sql-introduction-mission",questionIds:Object.freeze([...r("sql-introduction")]),questionAliases:Object.freeze({"exam-p76-q5-a1":"exam-p13-q4-b2","exam-p82-q1-c1":"exam-p13-q4-b2"})}),Object.freeze({id:"select-order",label:"اختيار البيانات وترتيبها",pages:"16–20",startStepId:"sql-select-order-mission"}),Object.freeze({id:"where-conditions",label:"الشروط والمعاملات",pages:"14–15، 18–21، 25",startStepId:"sql-where-conditions-mission"}),Object.freeze({id:"order-practice",label:"فرز النتائج بـ ORDER BY",pages:"16، 18–19",startStepId:"sql-order-practice-mission"}),Object.freeze({id:"related-tables",label:"الاستعلام من جداول مترابطة",pages:"21–23",startStepId:"sql-related-tables-mission"}),Object.freeze({id:"count-parameters",label:"تدريب من الكتاب: COUNT والمعاملات",pages:"23–25",startStepId:"sql-count-parameters-mission"}),Object.freeze({id:"update-queries",label:"استعلامات التحديث",pages:"25–27، 34",startStepId:"sql-update-queries-mission"}),Object.freeze({id:"insert-queries",label:"الإدخال والإلحاق",pages:"27–29",startStepId:"sql-insert-queries-mission"}),Object.freeze({id:"delete-review",label:"استعلامات الحذف ومراجعة الدرس",pages:"30–33",startStepId:"sql-delete-review-mission"}),Object.freeze({id:"sql-questions",label:"أسئلة مراجعة الاستعلامات",pages:"12–33",startStepId:"sql-questions-video-mission"}),Object.freeze({id:"sql-practical",label:"تدريب عملي على أوامر SQL",pages:"12–33",startStepId:"sql-practical-video-mission"})]),xp:10})])}),Object.freeze({id:"unit-2",label:"الوحدة الثانية: تطبيقات الهاتف الذكي",lessons:Object.freeze([Object.freeze({id:"smartphone-operating-systems",pages:"36–42",label:"الدرس الأول: أنظمة تشغيل الهاتف الذكي",summary:"التعرّف إلى أنظمة تشغيل الهواتف الذكية وخصائصها والمقارنة بينها.",parts:Object.freeze([Object.freeze({id:"android-features",aliases:Object.freeze(["files-sensors","augmented-reality"]),label:"أندرويد ونقل الملفات والمجسات وVR وAR",pages:"36–40",startStepId:"android-features-mission",questionIds:Object.freeze([...r("android-features")])}),Object.freeze({id:"ios-files",aliases:Object.freeze(["app-types-review"]),label:"iOS ونقل الملفات وأنواع التطبيقات",pages:"40–42، 53",startStepId:"ios-files-mission",questionIds:Object.freeze([...r("ios-files")]),questionAliases:Object.freeze({"exam-p09-q1-7":"ict-unit2-p069-mobile-q46"})})]),xp:10}),Object.freeze({id:"my-mobile-app",pages:"43–53",label:"الدرس الثاني: تطبيقي الخاص على هاتفي",summary:"تطوير تطبيق هاتف ذكي وتحويل فكرته إلى تطبيق يعمل على الهاتف.",parts:Object.freeze([Object.freeze({id:"app-inventor-tools",label:"أدوات App Inventor وخصائص الواجهة",pages:"43–44، 47–49",startStepId:"app-inventor-tools-mission"}),Object.freeze({id:"app-inventor-blocks",label:"اللبنات والأحداث والمتغيرات",pages:"44–46، 49–51",startStepId:"app-inventor-blocks-mission",questionIds:Object.freeze([...r("app-inventor-blocks")])}),Object.freeze({id:"bmi-interface",aliases:Object.freeze(["bmi-blocks"]),label:"تطبيق معامل السمنة: الواجهة والبرمجة",pages:"43–46، 52",startStepId:"bmi-interface-mission"}),Object.freeze({id:"calculator-interface",label:"تطبيق العمليات الحسابية البسيطة",pages:"47–51",startStepId:"calculator-interface-mission"}),Object.freeze({id:"calculator-events",label:"تطوير الحاسبة: الأرقام والدوال الإضافية",pages:"52",startStepId:"calculator-events-mission",questionIds:Object.freeze([...r("calculator-events")]),questionAliases:Object.freeze({"classified-u2-p72-mcq-3":"ict-unit2-p072-app-mcq-q03"})}),Object.freeze({id:"app-practice",label:"مراجعة تطبيقات الهاتف وتتبع اللبنات",pages:"43–53",startStepId:"app-practice-mission"})]),xp:10})])}),Object.freeze({id:"unit-4",label:"الوحدة الثالثة: شبكات الاتصال",lessons:Object.freeze([Object.freeze({id:"osi-model-layers",pages:"55–60",label:"الدرس الأول: طبقات نموذج OSI",summary:"التعرّف إلى الطبقات العليا في نموذج OSI ووظيفة كل طبقة.",parts:Object.freeze([Object.freeze({id:"upper-layers",aliases:Object.freeze(["session-services"]),label:"طبقات OSI العليا وطبقة الجلسة",pages:"55–57",startStepId:"upper-layers-mission",questionIds:Object.freeze([...r("upper-layers")]),questionAliases:Object.freeze({"ict-unit4-osi-exam-8":"classified-p126-q2-19"})}),Object.freeze({id:"presentation-layer",aliases:Object.freeze(["application-layer","osi-review"]),label:"طبقتا التقديم والتطبيقات والبروتوكولات",pages:"58–60",startStepId:"presentation-layer-mission"})]),xp:10})])})])});function l(t,e){return Object.freeze({subjectId:t,questionsOnly:!0,units:Object.freeze(e.map(({unit:a,label:i})=>Object.freeze({id:`math-unit-${a}`,label:i,lessons:Object.freeze(g.filter(s=>s.subjectId===t&&s.unit===a).map(s=>Object.freeze({id:s.id,label:s.label,pages:s.pages,summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",xp:10,parts:Object.freeze([Object.freeze({id:`${s.id}-practice`,label:s.label,pages:s.pages,startStepId:s.questionIds[0],questionIds:[...s.questionIds],..."questionAliases"in s?{questionAliases:s.questionAliases}:{}})])})))})))})}const b=l("mathematics",[{unit:1,label:"الوحدة الأولى: التفاضل"},{unit:2,label:"الوحدة الثانية: تطبيقات التفاضل"}]),p=l("mathematics-2",[{unit:3,label:"الوحدة الأولى: التكامل"},{unit:2,label:"الوحدة الثانية: المصفوفات"}]),n=Object.freeze({subjectId:"physics",questionsOnly:!0,units:Object.freeze([{unit:1,label:"الوحدة الأولى: الميكانيكا"},{unit:2,label:"الوحدة الثانية: الكهرباء المتحركة"},{unit:3,label:"الوحدة الثالثة: الكهرومغناطيسية"}].map(({unit:t,label:e})=>Object.freeze({id:`physics-unit-${t}`,label:e,lessons:Object.freeze([...y.filter(a=>a.unit===t).map(a=>Object.freeze({id:a.id,label:a.label,pages:a.pages,summary:"أسئلة من التصنيف ضمن دروس الرزمة التعليمية المعتمدة.",xp:10,parts:Object.freeze([Object.freeze({id:`${a.id}-practice`,label:a.label,pages:a.pages,startStepId:a.questionIds[0],questionIds:a.questionIds,..."questionAliases"in a?{questionAliases:a.questionAliases}:{}})])}))])})))}),d=Object.freeze({subjectId:"chemistry",questionsOnly:!0,units:Object.freeze(m.map(({number:t,label:e})=>Object.freeze({id:`chemistry-unit-${t}`,label:e,lessons:Object.freeze(j.filter(a=>a.unit===t).map(a=>Object.freeze({id:a.id,label:a.title,pages:a.pages,summary:a.summary,xp:10,parts:Object.freeze([Object.freeze({id:`${a.id}-practice`,label:a.title,pages:a.pages,startStepId:a.questionIds[0],questionIds:a.questionIds})])})))})))}),f=Object.freeze({subjectId:"islamic-education",questionsOnly:!0,units:Object.freeze([1,2,3,4,5].map(t=>{const e=L.filter(a=>a.unit===t);return Object.freeze({id:`islamic-unit-${t}`,label:e[0]?.unitKey==="quran"?"الوحدة الأولى: القرآن الكريم":e[0]?.unitKey==="aqidah"?"الوحدة الثانية: العقيدة الإسلامية":e[0]?.unitKey==="hadith"?"الوحدة الثالثة: الحديث الشريف":e[0]?.unitKey==="sirah"?"الوحدة الرابعة: السير والتراجم":"الوحدة الخامسة: الفقه الإسلامي",lessons:Object.freeze(e.map(a=>Object.freeze({id:a.id,label:a.label,pages:a.pages,summary:"أسئلة المراجعة المطابقة لموضوع الدرس في الرزمة التعليمية الرسمية.",xp:10,parts:Object.freeze(a.parts.map(i=>Object.freeze({...i,questionIds:[...i.questionIds]})))})))})}))}),u=Object.freeze({subjectId:"biology",questionsOnly:!0,units:Object.freeze(A.map(t=>Object.freeze({id:t.id,label:t.label,lessons:Object.freeze(x.filter(e=>e.unit===t.number).map(e=>Object.freeze({id:e.id,label:e.label,pages:e.pages,summary:e.summary,xp:10,parts:Object.freeze(e.parts)})))})))}),O=Object.freeze({subjectId:"english",questionsOnly:!0,units:Object.freeze(z.map(t=>Object.freeze({id:t.id,label:t.label,lessons:Object.freeze(I.filter(e=>e.unit===t.number).map(e=>Object.freeze({id:e.id,label:e.label,pages:e.pages,summary:e.summary,xp:10,parts:Object.freeze(e.parts)})))})))}),o=Object.freeze({subjectId:"arabic",questionsOnly:!0,units:Object.freeze(S.map(t=>Object.freeze({id:t.id,label:t.label,lessons:Object.freeze(q.filter(e=>e.unit===t.number&&e.questionCount>0).map(e=>Object.freeze({id:e.id,label:e.label,pages:e.pages,summary:e.summary,xp:10,parts:Object.freeze(e.parts)})))})))});export function getSubjectRoadmap(t){return t===o.subjectId?o:t===O.subjectId?O:t===c.subjectId?c:t===b.subjectId?b:t===p.subjectId?p:t===n.subjectId?n:t===d.subjectId?d:t===f.subjectId?f:t===u.subjectId?u:null}export function getSubjectRoadmapLesson(t,e){const i=getSubjectRoadmap(t)?.units.flatMap(({lessons:s})=>s).find(({id:s})=>s===e);return i||t==="islamic-education"&&M.find(s=>s.id===e)||null}
+import { getIctPartQuestionIds } from "./lessons/ict/question-index.js";
+import { CHEMISTRY_UNITS, CHEMISTRY_LESSONS } from "./lessons/chemistry/chemistry-course.js";
+import { ENGLISH_UNITS, ENGLISH_LESSONS } from "./lessons/english/english-course.js";
+import { ARABIC_UNITS, ARABIC_LESSONS } from "./lessons/arabic/arabic-course.js";
+import { MATHEMATICS_LESSONS } from "./lessons/mathematics/math-course.js";
+import { PHYSICS_LESSONS } from "./lessons/physics/physics-course.js";
+import { BIOLOGY_UNITS, BIOLOGY_LESSONS } from "./lessons/biology/biology-course.js";
+import { ISLAMIC_LESSONS, ISLAMIC_LEGACY_LESSONS } from "./subject-catalog.js";
+
+const ICT_ROADMAP = Object.freeze({
+  subjectId:"ict",
+  units:Object.freeze([
+    Object.freeze({
+      id:"unit-1",
+      label:"الوحدة الأولى: قواعد البيانات",
+      lessons:Object.freeze([
+        Object.freeze({
+          id:"course-introduction",
+          hidden:true,
+          label:"مقدمة المادة",
+          summary:"طريقة الدراسة وحدود الرزمة التعليمية المعتمدة.",
+          optional:true,
+          parts:Object.freeze([
+            Object.freeze({ id:"getting-started", label:"مقدمة للمادة", pages:"تمهيد", number:"-", startStepId:"meet-rocky" }),
+          ]),
+          xp:0,
+        }),
+        Object.freeze({
+          id:"database-management",
+          pages:"3–11",
+          label:"الدرس الأول: برنامج إدارة قواعد البيانات",
+          summary:"التعرّف إلى إدارة قواعد البيانات وبناء الجداول والعلاقات باستخدام Microsoft Access.",
+          parts:Object.freeze([
+            Object.freeze({
+              id:"access-basics", label:"برامج إدارة البيانات وبيئة Access", pages:"3–5", startStepId:"database-management-mission",
+              questionIds:Object.freeze([...getIctPartQuestionIds("access-basics")]),
+              questionAliases:Object.freeze({"exam-p61-q6-a2":"exam-p09-q1-1"}),
+            }),
+            Object.freeze({ id:"tables-and-types", label:"التعامل مع Access وإنشاء جدول", pages:"4–7", startStepId:"tables-fields-records" }),
+            Object.freeze({ id:"keys-and-relations", label:"المفاتيح والعلاقات بين الجداول", pages:"6–11", startStepId:"keys-identity" }),
+            Object.freeze({ id:"build-and-integrity", label:"التكامل المرجعي وبناء القاعدة", pages:"7–8", startStepId:"referential-integrity" }),
+            Object.freeze({ id:"education-center", label:"تطبيق: قاعدة بيانات مركز تعليمي", pages:"8–10", startStepId:"education-center-model" }),
+            Object.freeze({ id:"engineering-office", label:"تطبيق: المكتب الهندسي", pages:"10", startStepId:"engineering-office-intro" }),
+            Object.freeze({ id:"practice-and-review", label:"تدريب من الكتاب: المستشفى ومراجعة الوحدة", pages:"11، 34", startStepId:"hospital-transfer" }),
+          ]),
+          xp:10,
+        }),
+        Object.freeze({
+          id:"sql-queries",
+          pages:"12–34",
+          label:"الدرس الثاني: الاستعلامات ولغة SQL",
+          summary:"التعرّف إلى الاستعلامات وأساسيات لغة SQL للتعامل مع البيانات.",
+          parts:Object.freeze([
+            Object.freeze({
+              id:"sql-introduction", label:"لغة SQL وأنواع الاستعلامات", pages:"12–15", startStepId:"sql-introduction-mission",
+              questionIds:Object.freeze([...getIctPartQuestionIds("sql-introduction")]),
+              questionAliases:Object.freeze({"exam-p76-q5-a1":"exam-p13-q4-b2","exam-p82-q1-c1":"exam-p13-q4-b2"}),
+            }),
+            Object.freeze({ id:"select-order", label:"اختيار البيانات وترتيبها", pages:"16–20", startStepId:"sql-select-order-mission" }),
+            Object.freeze({ id:"where-conditions", label:"الشروط والمعاملات", pages:"14–15، 18–21، 25", startStepId:"sql-where-conditions-mission" }),
+            Object.freeze({ id:"order-practice", label:"فرز النتائج بـ ORDER BY", pages:"16، 18–19", startStepId:"sql-order-practice-mission" }),
+            Object.freeze({ id:"related-tables", label:"الاستعلام من جداول مترابطة", pages:"21–23", startStepId:"sql-related-tables-mission" }),
+            Object.freeze({ id:"count-parameters", label:"تدريب من الكتاب: COUNT والمعاملات", pages:"23–25", startStepId:"sql-count-parameters-mission" }),
+            Object.freeze({ id:"update-queries", label:"استعلامات التحديث", pages:"25–27، 34", startStepId:"sql-update-queries-mission" }),
+            Object.freeze({ id:"insert-queries", label:"الإدخال والإلحاق", pages:"27–29", startStepId:"sql-insert-queries-mission" }),
+            Object.freeze({ id:"delete-review", label:"استعلامات الحذف ومراجعة الدرس", pages:"30–33", startStepId:"sql-delete-review-mission" }),
+            Object.freeze({ id:"sql-questions", label:"أسئلة مراجعة الاستعلامات", pages:"12–33", startStepId:"sql-questions-video-mission" }),
+            Object.freeze({ id:"sql-practical", label:"تدريب عملي على أوامر SQL", pages:"12–33", startStepId:"sql-practical-video-mission" }),
+          ]),
+          xp:10,
+        }),
+      ]),
+    }),
+    Object.freeze({
+      id:"unit-2",
+      label:"الوحدة الثانية: تطبيقات الهاتف الذكي",
+      lessons:Object.freeze([
+        Object.freeze({
+          id:"smartphone-operating-systems",
+          pages:"36–42",
+          label:"الدرس الأول: أنظمة تشغيل الهاتف الذكي",
+          summary:"التعرّف إلى أنظمة تشغيل الهواتف الذكية وخصائصها والمقارنة بينها.",
+          parts:Object.freeze([
+            Object.freeze({
+              id:"android-features", aliases:Object.freeze(["files-sensors", "augmented-reality"]), label:"أندرويد ونقل الملفات والمجسات وVR وAR", pages:"36–40", startStepId:"android-features-mission",
+              questionIds:Object.freeze([...getIctPartQuestionIds("android-features")]),
+            }),
+            Object.freeze({
+              id:"ios-files", aliases:Object.freeze(["app-types-review"]), label:"iOS ونقل الملفات وأنواع التطبيقات", pages:"40–42، 53", startStepId:"ios-files-mission",
+              questionIds:Object.freeze([...getIctPartQuestionIds("ios-files")]),
+              questionAliases:Object.freeze({"exam-p09-q1-7":"ict-unit2-p069-mobile-q46"}),
+            }),
+          ]),
+          xp:10,
+        }),
+        Object.freeze({
+          id:"my-mobile-app",
+          pages:"43–53",
+          label:"الدرس الثاني: تطبيقي الخاص على هاتفي",
+          summary:"تطوير تطبيق هاتف ذكي وتحويل فكرته إلى تطبيق يعمل على الهاتف.",
+          parts:Object.freeze([
+            Object.freeze({ id:"app-inventor-tools", label:"أدوات App Inventor وخصائص الواجهة", pages:"43–44، 47–49", startStepId:"app-inventor-tools-mission" }),
+            Object.freeze({
+              id:"app-inventor-blocks", label:"اللبنات والأحداث والمتغيرات", pages:"44–46، 49–51", startStepId:"app-inventor-blocks-mission",
+              questionIds:Object.freeze([...getIctPartQuestionIds("app-inventor-blocks")]),
+            }),
+            Object.freeze({ id:"bmi-interface", aliases:Object.freeze(["bmi-blocks"]), label:"تطبيق معامل السمنة: الواجهة والبرمجة", pages:"43–46، 52", startStepId:"bmi-interface-mission" }),
+            Object.freeze({ id:"calculator-interface", label:"تطبيق العمليات الحسابية البسيطة", pages:"47–51", startStepId:"calculator-interface-mission" }),
+            Object.freeze({
+              id:"calculator-events", label:"تطوير الحاسبة: الأرقام والدوال الإضافية", pages:"52", startStepId:"calculator-events-mission",
+              questionIds:Object.freeze([...getIctPartQuestionIds("calculator-events")]),
+              questionAliases:Object.freeze({"classified-u2-p72-mcq-3":"ict-unit2-p072-app-mcq-q03"}),
+            }),
+            Object.freeze({ id:"app-practice", label:"مراجعة تطبيقات الهاتف وتتبع اللبنات", pages:"43–53", startStepId:"app-practice-mission" }),
+          ]),
+          xp:10,
+        }),
+      ]),
+    }),
+    Object.freeze({
+      id:"unit-4",
+      label:"الوحدة الثالثة: شبكات الاتصال",
+      lessons:Object.freeze([
+        Object.freeze({
+          id:"osi-model-layers",
+          pages:"55–60",
+          label:"الدرس الأول: طبقات نموذج OSI",
+          summary:"التعرّف إلى الطبقات العليا في نموذج OSI ووظيفة كل طبقة.",
+          parts:Object.freeze([
+            Object.freeze({
+              id:"upper-layers", aliases:Object.freeze(["session-services"]), label:"طبقات OSI العليا وطبقة الجلسة", pages:"55–57", startStepId:"upper-layers-mission",
+              questionIds:Object.freeze([...getIctPartQuestionIds("upper-layers")]),
+              questionAliases:Object.freeze({"ict-unit4-osi-exam-8":"classified-p126-q2-19"}),
+            }),
+            Object.freeze({ id:"presentation-layer", aliases:Object.freeze(["application-layer", "osi-review"]), label:"طبقتا التقديم والتطبيقات والبروتوكولات", pages:"58–60", startStepId:"presentation-layer-mission" }),
+          ]),
+          xp:10,
+        }),
+      ]),
+    }),
+  ]),
+});
+
+function mathematicsRoadmap(subjectId, units) {
+  return Object.freeze({
+    subjectId,
+    questionsOnly:true,
+    units:Object.freeze(units.map(({ unit, label }) => Object.freeze({
+      id:`math-unit-${unit}`,
+      label,
+      lessons:Object.freeze(MATHEMATICS_LESSONS.filter(lesson => lesson.subjectId === subjectId && lesson.unit === unit).map(lesson => Object.freeze({
+        id:lesson.id, label:lesson.label, pages:lesson.pages,
+        summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+        xp:10,
+        parts:Object.freeze([Object.freeze({
+          id:`${lesson.id}-practice`, label:lesson.label, pages:lesson.pages,
+          startStepId:lesson.questionIds[0], questionIds:[...lesson.questionIds],
+          ...("questionAliases" in lesson ? { questionAliases:lesson.questionAliases } : {}),
+        })]),
+      }))),
+    }))),
+  });
+}
+
+const MATHEMATICS_ROADMAP = mathematicsRoadmap("mathematics", [
+  { unit:1, label:"الوحدة الأولى: التفاضل" },
+  { unit:2, label:"الوحدة الثانية: تطبيقات التفاضل" },
+]);
+const MATHEMATICS_2_ROADMAP = mathematicsRoadmap("mathematics-2", [
+  { unit:3, label:"الوحدة الأولى: التكامل" },
+  { unit:2, label:"الوحدة الثانية: المصفوفات" },
+]);
+
+const PHYSICS_ROADMAP = Object.freeze({
+  subjectId:"physics",
+  questionsOnly:true,
+  units:Object.freeze([
+    { unit:1, label:"الوحدة الأولى: الميكانيكا" },
+    { unit:2, label:"الوحدة الثانية: الكهرباء المتحركة" },
+    { unit:3, label:"الوحدة الثالثة: الكهرومغناطيسية" },
+  ].map(({ unit, label }) => Object.freeze({
+    id:`physics-unit-${unit}`, label,
+    lessons:Object.freeze([
+      ...PHYSICS_LESSONS.filter(lesson => lesson.unit === unit).map(lesson => Object.freeze({
+        id:lesson.id, label:lesson.label, pages:lesson.pages,
+        summary:"أسئلة من التصنيف ضمن دروس الرزمة التعليمية المعتمدة.",
+        xp:10,
+        parts:Object.freeze([Object.freeze({
+          id:`${lesson.id}-practice`, label:lesson.label, pages:lesson.pages,
+          startStepId:lesson.questionIds[0], questionIds:lesson.questionIds,
+          ...("questionAliases" in lesson ? { questionAliases:lesson.questionAliases } : {}),
+        })]),
+      })),
+    ]),
+  }))),
+});
+
+const CHEMISTRY_ROADMAP = Object.freeze({
+  subjectId: "chemistry",
+  questionsOnly: true,
+  units: Object.freeze(CHEMISTRY_UNITS.map(({ number:unit, label }) => Object.freeze({
+    id: `chemistry-unit-${unit}`,
+    label,
+    lessons: Object.freeze(CHEMISTRY_LESSONS.filter(lesson => lesson.unit === unit).map(lesson => Object.freeze({
+      id: lesson.id,
+      label: lesson.title,
+      pages: lesson.pages,
+      summary: lesson.summary,
+      xp: 10,
+      parts: Object.freeze([Object.freeze({
+        id: `${lesson.id}-practice`,
+        label: lesson.title,
+        pages: lesson.pages,
+        startStepId: lesson.questionIds[0],
+        questionIds: lesson.questionIds,
+      })]),
+    }))),
+  }))),
+});
+
+const ISLAMIC_ROADMAP = Object.freeze({
+  subjectId:"islamic-education",
+  questionsOnly:true,
+  units:Object.freeze([1, 2, 3, 4, 5].map(unit => {
+    const lessons = ISLAMIC_LESSONS.filter(lesson => lesson.unit === unit);
+    return Object.freeze({
+      id:`islamic-unit-${unit}`,
+      label:lessons[0]?.unitKey === "quran" ? "الوحدة الأولى: القرآن الكريم"
+        : lessons[0]?.unitKey === "aqidah" ? "الوحدة الثانية: العقيدة الإسلامية"
+          : lessons[0]?.unitKey === "hadith" ? "الوحدة الثالثة: الحديث الشريف"
+            : lessons[0]?.unitKey === "sirah" ? "الوحدة الرابعة: السير والتراجم"
+              : "الوحدة الخامسة: الفقه الإسلامي",
+      lessons:Object.freeze(lessons.map(lesson => Object.freeze({
+        id:lesson.id, label:lesson.label, pages:lesson.pages,
+        summary:"أسئلة المراجعة المطابقة لموضوع الدرس في الرزمة التعليمية الرسمية.",
+        xp:10,
+        parts:Object.freeze(lesson.parts.map(part => Object.freeze({
+          ...part, questionIds:[...part.questionIds],
+        }))),
+      }))),
+    });
+  })),
+});
+
+const BIOLOGY_ROADMAP = Object.freeze({
+  subjectId:"biology",
+  questionsOnly:true,
+  units:Object.freeze(BIOLOGY_UNITS.map(unit => Object.freeze({
+    id:unit.id,
+    label:unit.label,
+    lessons:Object.freeze(BIOLOGY_LESSONS.filter(lesson => lesson.unit === unit.number).map(lesson => Object.freeze({
+      id:lesson.id, label:lesson.label, pages:lesson.pages, summary:lesson.summary, xp:10,
+      parts:Object.freeze(lesson.parts),
+    }))),
+  }))),
+});
+
+const ENGLISH_ROADMAP = Object.freeze({
+  subjectId:"english",
+  questionsOnly:true,
+  units:Object.freeze(ENGLISH_UNITS.map(unit => Object.freeze({
+    id:unit.id, label:unit.label,
+    lessons:Object.freeze(ENGLISH_LESSONS.filter(lesson => lesson.unit === unit.number).map(lesson => Object.freeze({
+      id:lesson.id, label:lesson.label, pages:lesson.pages, summary:lesson.summary, xp:10,
+      parts:Object.freeze(lesson.parts),
+    }))),
+  }))),
+});
+
+const ARABIC_ROADMAP = Object.freeze({
+  subjectId:"arabic",
+  questionsOnly:true,
+  units:Object.freeze(ARABIC_UNITS.map(unit => Object.freeze({
+    id:unit.id, label:unit.label,
+    lessons:Object.freeze(ARABIC_LESSONS.filter(lesson => lesson.unit === unit.number && lesson.questionCount > 0).map(lesson => Object.freeze({
+      id:lesson.id, label:lesson.label, pages:lesson.pages, summary:lesson.summary, xp:10,
+      parts:Object.freeze(lesson.parts),
+    }))),
+  }))),
+});
+
+export function getSubjectRoadmap(subjectId) {
+  if (subjectId === ARABIC_ROADMAP.subjectId) return ARABIC_ROADMAP;
+  if (subjectId === ENGLISH_ROADMAP.subjectId) return ENGLISH_ROADMAP;
+  if (subjectId === ICT_ROADMAP.subjectId) return ICT_ROADMAP;
+  if (subjectId === MATHEMATICS_ROADMAP.subjectId) return MATHEMATICS_ROADMAP;
+  if (subjectId === MATHEMATICS_2_ROADMAP.subjectId) return MATHEMATICS_2_ROADMAP;
+  if (subjectId === PHYSICS_ROADMAP.subjectId) return PHYSICS_ROADMAP;
+  if (subjectId === CHEMISTRY_ROADMAP.subjectId) return CHEMISTRY_ROADMAP;
+  if (subjectId === ISLAMIC_ROADMAP.subjectId) return ISLAMIC_ROADMAP;
+  if (subjectId === BIOLOGY_ROADMAP.subjectId) return BIOLOGY_ROADMAP;
+  return null;
+}
+
+export function getSubjectRoadmapLesson(subjectId, lessonId) {
+  const roadmap = getSubjectRoadmap(subjectId);
+  const lesson = roadmap?.units.flatMap(({ lessons }) => lessons).find(({ id }) => id === lessonId);
+  if (lesson) return lesson;
+  return subjectId === "islamic-education"
+    ? ISLAMIC_LEGACY_LESSONS.find(lesson => lesson.id === lessonId) || null
+    : null;
+}

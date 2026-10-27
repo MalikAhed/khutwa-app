@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js";
+
+export const source = `:::mcq
 id: chemistry-gaza-p046-q01
 title: الوحدة ٢ · الدرس ٢ · ص ٤٤ · س ١ · ١
 kicker: أسئلة الوحدة — الرزمة التعليمية ٢٠٢٤؛ تجريبي ٢٠٢٥ طولكرم؛ من الكتاب
@@ -1500,4 +1502,6 @@ solution:
 **المصدر:** صفحة 29 من الكتاب.
 
 :::
-`;export default m("u02-l02-acid-base-concepts",source);
+`;
+
+export default createChemistryLesson("u02-l02-acid-base-concepts", source);

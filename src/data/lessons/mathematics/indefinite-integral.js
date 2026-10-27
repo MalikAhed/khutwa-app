@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const lessonSource = `:::exam-question
 id: math-book-p084-activity1-table
 title: الكتاب، ص ٨٢ · نشاط أو تمرين
 question: التكامل غير المحدود
@@ -2737,4 +2739,16 @@ example:
 \`\`\`
 
 
-:::`;export default m({status:"published",language:"ar",title:"التكامل غير المحدود",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة التكامل غير المحدود من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"56 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "التكامل غير المحدود",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة التكامل غير المحدود من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "56 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

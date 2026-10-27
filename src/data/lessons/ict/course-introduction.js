@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as t}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const LESSON_MARKDOWN=`<!-- step-id: meet-rocky -->
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const LESSON_MARKDOWN = `<!-- step-id: meet-rocky -->
 <!-- presentation: rocky-dialogue -->
 # قبل أن نبدأ
 
@@ -32,4 +34,17 @@ https://www.youtube.com/watch?v=d3gaYsONaIc&t=702s&skip=0-702,949-987,1047-1161,
 - [14:22 — استعلامات SQL](https://www.youtube.com/watch?v=d3gaYsONaIc&t=862s)
 - [19:21 — تطبيقات الهاتف](https://www.youtube.com/watch?v=d3gaYsONaIc&t=1161s)
 - [24:33 — طبقات OSI العليا](https://www.youtube.com/watch?v=d3gaYsONaIc&t=1473s)
-`;export default t({status:"published",title:"مقدمة للمادة",summary:"تعرّف إلى طريقة الدراسة وحدود الرزمة التعليمية المعتمدة.",outcome:"التعرّف إلى المادة قبل بدء الدروس.",mode:"شاهد → ابدأ",mission:"الاستعداد لبدء مادة تكنولوجيا المعلومات.",duration:"26 دقيقة للفيديو الكامل",level:"تمهيدي",reward:0,passingScore:80},LESSON_MARKDOWN);
+`;
+
+export default defineMarkdownLesson({
+  status:"published",
+  title:"مقدمة للمادة",
+  summary:"تعرّف إلى طريقة الدراسة وحدود الرزمة التعليمية المعتمدة.",
+  outcome:"التعرّف إلى المادة قبل بدء الدروس.",
+  mode:"شاهد → ابدأ",
+  mission:"الاستعداد لبدء مادة تكنولوجيا المعلومات.",
+  duration:"26 دقيقة للفيديو الكامل",
+  level:"تمهيدي",
+  reward:0,
+  passingScore:80,
+}, LESSON_MARKDOWN);

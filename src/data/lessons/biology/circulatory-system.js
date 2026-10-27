@@ -1,4 +1,6 @@
-import{createBiologyLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createBiologyLesson } from "./shared.js";
+
+export const source = `:::mcq
 id: bio-b-p068-q1-5
 title: الرزمة التعليمية، صفحة 68، السؤال 1-5
 question: ما اسم الصمام الذي يحدد انتقال الدم من الأذين الأيمن إلى البطين الأيمن؟
@@ -2210,4 +2212,6 @@ solution:
 
 
 
-:::`;export default e("circulatory-system",source);
+:::`;
+
+export default createBiologyLesson("circulatory-system", source);

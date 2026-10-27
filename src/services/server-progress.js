@@ -1,1 +1,101 @@
-import{applyProgressUpdate as S,emptyPart as T,partKey as A,restorePartEntries as P}from"../domain/subject-progress.js?v=7388f68cc0f433fd";function j({local:n,baseUrl:g="/api/progress",fetchImpl:m=globalThis.fetch,onError:v=console.warn,onResources:f}){async function u(e,t){const o=new AbortController,s=setTimeout(()=>o.abort(),12e3);try{const a=await m(g,{method:t?"POST":"GET",credentials:"same-origin",signal:o.signal,headers:{"X-Progress-Owner":e,...t?{"Content-Type":"application/json"}:{}},...t?{body:JSON.stringify(t)}:{}}),r=await a.json();if(!a.ok)throw a.status===429&&r.resources&&f?.(e,r.resources),Object.assign(new Error(r.error||"Progress could not be saved."),{status:a.status});if(`account:${r.accountId}`!==e||!Array.isArray(r.records))throw new Error("The progress response does not belong to this account.");r.resources&&f?.(e,r.resources,t&&"id"in t?String(t.id):void 0);const i=P({version:1,records:r.records},d=>{throw d});for(const[d,p]of r.records)i.has(d)&&Number.isSafeInteger(p.revision)&&(i.get(d).revision=p.revision);return i}finally{clearTimeout(s)}}async function w(e){if(await n.importAcknowledged(e))return;const t=await n.read(e);for(const[o,s]of t){const[a,r,i]=JSON.parse(o),d=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(o)),p="legacy-v1:"+Array.from(new Uint8Array(d),c=>c.toString(16).padStart(2,"0")).join("");try{await u(e,{id:p,type:"import",subjectId:a,lessonId:r,partId:i,completedStepIds:s.completedStepIds,isComplete:s.completed,...s.completedDate?{date:s.completedDate}:{},review:s.review})}catch(c){if(c instanceof Error&&"status"in c&&c.status===422)v(c,e);else throw c}}await n.acknowledgeImport(e)}const y=e=>{const{subjectId:t,lessonId:o,partId:s}=e.value;return{id:e.id,type:e.type,subjectId:t,lessonId:o,partId:s,...e.type==="completion"?{completedStepIds:e.value.completedStepIds,isComplete:e.value.isComplete}:{stepId:e.value.stepId,correct:e.value.correct,reviewing:e.value.reviewing===!0,...e.value.rating?{rating:e.value.rating}:{},...e.value.date?{date:e.value.date}:{}}}};async function h(e){await w(e);for(const t of await n.pending(e)){const o=await u(e,y(t));await n.confirm(e,o,t.id)}}async function l(e){const{records:t,pending:o}=await n.snapshot(e);for(const s of o){const a=A(s.value),r=t.get(a)||T(),i=S(r,{...s,id:void 0},t);i.rewardXp=r.rewardXp,i.completedDate=r.completedDate,t.set(a,i)}return t}return{isRemoteOwner:()=>!0,readCached:l,read:l,async sync(e){if(globalThis.navigator?.onLine===!1)return;await h(e);const t=await u(e);await n.confirm(e,t)},async update(e){return await n.enqueue(e),l(e.value.ownerId)},close:()=>n.close()}}export{j as createServerProgressAdapter};
+// @ts-check
+import { applyProgressUpdate, emptyPart, partKey, restorePartEntries } from "../domain/subject-progress.js";
+
+/** @typedef {import('../domain/subject-progress.js').PartRecord} PartRecord */
+/** @typedef {import('../domain/subject-progress.js').ProgressUpdate} ProgressUpdate */
+
+// The server owns confirmed rewards. IndexedDB retains confirmed records and an
+// account-bound outbox so a lost response, reload or account switch can be retried.
+/** @param {{local:import('./indexeddb-progress.js').IndexedProgressAdapter, baseUrl?:string, fetchImpl?:typeof fetch, onError?:(error:unknown,ownerId:string)=>void, onResources?:(owner:string,value:any,id?:string)=>void}} options @returns {import('./subject-progress-store.js').ProgressAdapter} */
+export function createServerProgressAdapter({ local, baseUrl = "/api/progress", fetchImpl = globalThis.fetch, onError = console.warn, onResources }) {
+  /** @param {string} ownerId @param {object} [body] @returns {Promise<Map<string,PartRecord>>} */
+  async function request(ownerId, body) {
+    const controller=new AbortController();
+    const timeout=setTimeout(()=>controller.abort(),12000);
+    try {
+      const response=await fetchImpl(baseUrl,{method:body?'POST':'GET',credentials:'same-origin',signal:controller.signal,
+        headers:{'X-Progress-Owner':ownerId,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})});
+      const result=await response.json();
+      if(!response.ok) {
+        if(response.status === 429 && result.resources) onResources?.(ownerId, result.resources);
+        throw Object.assign(new Error(result.error||'Progress could not be saved.'),{status:response.status});
+      }
+      if(`account:${result.accountId}`!==ownerId||!Array.isArray(result.records))throw new Error('The progress response does not belong to this account.');
+      if(result.resources) onResources?.(ownerId, result.resources, body && "id" in body ? String(body.id) : undefined);
+      // Validate HTTP data at the boundary. Preserve the server's review revision.
+      const records=restorePartEntries({version:1,records:result.records},error=>{throw error;});
+      for(const [key,record] of result.records)if(records.has(key)&&Number.isSafeInteger(record.revision))(/** @type {PartRecord} */ (records.get(key))).revision=record.revision;
+      return records;
+    } finally {clearTimeout(timeout);}
+  }
+  /** @param {string} ownerId */
+  async function importLocal(ownerId) {
+    if(await local.importAcknowledged(ownerId))return;
+    const records=await local.read(ownerId);
+    for(const [key,record] of records) {
+      const [subjectId,lessonId,partId]=JSON.parse(key);
+      const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(key));
+      const id='legacy-v1:'+Array.from(new Uint8Array(digest),n=>n.toString(16).padStart(2,'0')).join('');
+      try {
+      await request(ownerId,{id,type:'import',subjectId,lessonId,partId,completedStepIds:record.completedStepIds,isComplete:record.completed,
+        ...(record.completedDate?{date:record.completedDate}:{}),review:record.review});
+      // Responses contain other server parts too. Keep the entire local import
+      // source until all parts are acknowledged, so a restart can resume it.
+      } catch (error) {
+        // A removed or malformed legacy part must not block valid neighbors.
+        // The original local records remain available for recovery.
+        if (error instanceof Error && 'status' in error && error.status === 422) onError(error, ownerId);
+        else throw error;
+      }
+    }
+    await local.acknowledgeImport(ownerId);
+  }
+  /** @param {ProgressUpdate} update */
+  const payload = (update) => {
+    const {subjectId,lessonId,partId}=update.value;
+    return {id:update.id,type:update.type,subjectId,lessonId,partId,...(update.type==='completion'
+      ?{completedStepIds:update.value.completedStepIds,isComplete:update.value.isComplete}
+      :{stepId:update.value.stepId,correct:update.value.correct,reviewing:update.value.reviewing===true,
+        ...(update.value.rating ? { rating:update.value.rating } : {}),
+        ...(update.value.date ? { date:update.value.date } : {})})};
+  };
+  /** @param {string} ownerId */
+  async function flush(ownerId) {
+    await importLocal(ownerId);
+    for(const update of await local.pending(ownerId)) {
+      const confirmed=await request(ownerId,payload(update));
+      await local.confirm(ownerId,confirmed,update.id);
+    }
+  }
+  /** @param {string} ownerId */
+  async function readCached(ownerId) {
+    const { records, pending }=await local.snapshot(ownerId);
+    for(const update of pending) {
+      const id=partKey(update.value);const previous=records.get(id)||emptyPart();
+      const next=applyProgressUpdate(previous,{ ...update,id:undefined },records);
+      // Unconfirmed completions never become a second authority for rewards.
+      next.rewardXp=previous.rewardXp;
+      next.completedDate=previous.completedDate;
+      records.set(id,next);
+    }
+    return records;
+  }
+  return {
+    isRemoteOwner:() => true,
+    readCached,
+    read:readCached,
+    async sync(ownerId) {
+      if (globalThis.navigator?.onLine === false) return;
+      await flush(ownerId);
+      const records=await request(ownerId);
+      await local.confirm(ownerId,records);
+    },
+    async update(update) {
+      // Commit locally before any network work. Further answers can be stored
+      // even while an earlier request is slow, interrupted or unauthenticated.
+      await local.enqueue(update);
+      return readCached(update.value.ownerId);
+    },
+    close:()=>local.close(),
+  };
+}

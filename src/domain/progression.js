@@ -1,1 +1,88 @@
-import{TOTAL_DAYS as u}from"../data/course.js?v=7388f68cc0f433fd";export const XP_PER_LESSON=100,TOTAL_COURSE_XP=u*XP_PER_LESSON,XP_PER_LEVEL=100,MAX_LEVEL=500,MAX_LEVEL_XP=(MAX_LEVEL-1)*XP_PER_LEVEL;export function getLevelProgress(r=0){const e=Math.max(0,Number.isFinite(r)?Math.floor(r):0),t=Math.min(MAX_LEVEL,Math.floor(e/XP_PER_LEVEL)+1),n=t===MAX_LEVEL?XP_PER_LEVEL:e%XP_PER_LEVEL;return{level:t,xp:n,levelXpGoal:XP_PER_LEVEL,levelProgress:n/XP_PER_LEVEL*100}}const i=["Bronze","Copper","Iron","Silver","Gold","Platinum","Emerald","Sapphire","Ruby","Amethyst","Obsidian","Mythril","Diamond","Master","Grandmaster","Full-Stack Legend"];export const RANKS=Object.freeze(i.map((r,e)=>Object.freeze({number:e+1,name:r,minimumXp:e===0?0:Math.ceil(u*e/(i.length-1))*XP_PER_LESSON})));function d(r,e,t){return Math.min(Math.max(r,e),t)}function p(r){if(typeof r!="string"||!/^\d{4}-\d{2}-\d{2}$/.test(r))return null;const[e,t,n]=r.split("-").map(Number),o=Date.UTC(e,t-1,n),s=new Date(o);return s.getUTCFullYear()!==e||s.getUTCMonth()!==t-1||s.getUTCDate()!==n?null:Math.floor(o/864e5)}export function getRankProgress(r){const e=d(Number.isFinite(r)?Math.floor(r):0,0,TOTAL_COURSE_XP);let t=RANKS.findLastIndex(m=>e>=m.minimumXp);t<0&&(t=0);const n=RANKS[t],o=RANKS[t+1]||null,s=o?e-n.minimumXp:TOTAL_COURSE_XP,a=o?o.minimumXp-n.minimumXp:TOTAL_COURSE_XP;return Object.freeze({earnedXp:e,rank:n,nextRank:o,rankXp:s,rankXpTarget:a,progressPercent:o?s/a*100:100})}export function calculateStreak(r,e){const t=p(e);if(t===null)throw new TypeError("today must be a valid YYYY-MM-DD date");const n=[...new Set(r.map(p).filter(l=>l!==null&&l<=t))].sort((l,f)=>l-f);let o=0,s=0,a=null;for(const l of n)s=a!==null&&l===a+1?s+1:1,o=Math.max(o,s),a=l;const m=n.at(-1);if(m===void 0||t-m>1)return Object.freeze({current:0,longest:o,activeToday:!1});let c=1;for(let l=n.length-2;l>=0&&n[l]===n[l+1]-1;l-=1)c+=1;return Object.freeze({current:c,longest:o,activeToday:m===t})}export function getProgressionSummary({completedLessonDays:r,activityDates:e,today:t}){const n=[...new Set(r)].filter(a=>Number.isInteger(a)&&a>=1&&a<=u),o=n.length*XP_PER_LESSON,s=n.filter(a=>e.some(m=>m.day===a&&m.date===t)).length;return Object.freeze({completedLessonCount:n.length,totalXp:o,todayXp:s*XP_PER_LESSON,...getRankProgress(o),streak:calculateStreak(e.map(({date:a})=>a),t)})}
+import { TOTAL_DAYS } from "../data/course.js";
+
+export const XP_PER_LESSON = 100;
+export const TOTAL_COURSE_XP = TOTAL_DAYS * XP_PER_LESSON;
+export const XP_PER_LEVEL = 100;
+export const MAX_LEVEL = 500;
+export const MAX_LEVEL_XP = (MAX_LEVEL - 1) * XP_PER_LEVEL;
+
+export function getLevelProgress(totalXp = 0) {
+  const earned = Math.max(0, Number.isFinite(totalXp) ? Math.floor(totalXp) : 0);
+  const level = Math.min(MAX_LEVEL, Math.floor(earned / XP_PER_LEVEL) + 1);
+  const xp = level === MAX_LEVEL ? XP_PER_LEVEL : earned % XP_PER_LEVEL;
+  return { level, xp, levelXpGoal:XP_PER_LEVEL, levelProgress:xp / XP_PER_LEVEL * 100 };
+}
+
+const RANK_NAMES = [
+  "Bronze", "Copper", "Iron", "Silver", "Gold", "Platinum", "Emerald", "Sapphire",
+  "Ruby", "Amethyst", "Obsidian", "Mythril", "Diamond", "Master", "Grandmaster", "Full-Stack Legend",
+];
+
+export const RANKS = Object.freeze(RANK_NAMES.map((name, index) => Object.freeze({
+  number:index + 1,
+  name,
+  minimumXp:index === 0 ? 0 : Math.ceil((TOTAL_DAYS * index) / (RANK_NAMES.length - 1)) * XP_PER_LESSON,
+})));
+
+function clamp(value, minimum, maximum) {
+  return Math.min(Math.max(value, minimum), maximum);
+}
+
+function dayNumber(dateKey) {
+  if (typeof dateKey !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(dateKey)) return null;
+  const [year, month, day] = dateKey.split("-").map(Number);
+  const timestamp = Date.UTC(year, month - 1, day);
+  const date = new Date(timestamp);
+  if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return null;
+  return Math.floor(timestamp / 86_400_000);
+}
+
+export function getRankProgress(totalXp) {
+  const earnedXp = clamp(Number.isFinite(totalXp) ? Math.floor(totalXp) : 0, 0, TOTAL_COURSE_XP);
+  let rankIndex = RANKS.findLastIndex((rank) => earnedXp >= rank.minimumXp);
+  if (rankIndex < 0) rankIndex = 0;
+  const rank = RANKS[rankIndex];
+  const nextRank = RANKS[rankIndex + 1] || null;
+  const rankXp = nextRank ? earnedXp - rank.minimumXp : TOTAL_COURSE_XP;
+  const rankXpTarget = nextRank ? nextRank.minimumXp - rank.minimumXp : TOTAL_COURSE_XP;
+  return Object.freeze({
+    earnedXp,
+    rank,
+    nextRank,
+    rankXp,
+    rankXpTarget,
+    progressPercent:nextRank ? (rankXp / rankXpTarget) * 100 : 100,
+  });
+}
+
+export function calculateStreak(activityDates, today) {
+  const todayNumber = dayNumber(today);
+  if (todayNumber === null) throw new TypeError("today must be a valid YYYY-MM-DD date");
+  const days = [...new Set(activityDates.map(dayNumber).filter((day) => day !== null && day <= todayNumber))].sort((a, b) => a - b);
+  let longest = 0;
+  let run = 0;
+  let previous = null;
+  for (const day of days) {
+    run = previous !== null && day === previous + 1 ? run + 1 : 1;
+    longest = Math.max(longest, run);
+    previous = day;
+  }
+  const latest = days.at(-1);
+  if (latest === undefined || todayNumber - latest > 1) return Object.freeze({ current:0, longest, activeToday:false });
+  let current = 1;
+  for (let index = days.length - 2; index >= 0 && days[index] === days[index + 1] - 1; index -= 1) current += 1;
+  return Object.freeze({ current, longest, activeToday:latest === todayNumber });
+}
+
+export function getProgressionSummary({ completedLessonDays, activityDates, today }) {
+  const completedDays = [...new Set(completedLessonDays)].filter((day) => Number.isInteger(day) && day >= 1 && day <= TOTAL_DAYS);
+  const totalXp = completedDays.length * XP_PER_LESSON;
+  const todayLessonCount = completedDays.filter((day) => activityDates.some((activity) => activity.day === day && activity.date === today)).length;
+  return Object.freeze({
+    completedLessonCount:completedDays.length,
+    totalXp,
+    todayXp:todayLessonCount * XP_PER_LESSON,
+    ...getRankProgress(totalXp),
+    streak:calculateStreak(activityDates.map(({ date }) => date), today),
+  });
+}

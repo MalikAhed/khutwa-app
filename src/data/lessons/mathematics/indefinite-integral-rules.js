@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const lessonSource = `:::exam-question
 id: math-book-p088-activity1-table
 title: الكتاب، ص ٨٦ · نشاط أو تمرين
 question: قواعد التكامل غير المحدود
@@ -2770,4 +2772,16 @@ explanation:
 
 **يشترط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`**؛ لأن المكامل الأصلي يحتوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi></mfrac></math>\`.
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات.
-:::`;export default m({status:"published",language:"ar",title:"قواعد التكامل غير المحدود",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة قواعد التكامل غير المحدود من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"65 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "قواعد التكامل غير المحدود",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة قواعد التكامل غير المحدود من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "65 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

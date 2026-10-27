@@ -1,1 +1,27 @@
-export const ALL_LEVELS_UNLOCKED=!0;export function getNextSubjectPart(s,o){return s?.units.flatMap(e=>e.lessons.flatMap(t=>(t.parts||[]).map(p=>({unit:e,lesson:t,part:p})))).find(({lesson:e,part:t})=>!e.optional&&(!t.startStepId||!o?.(e,t)?.completed))||null}export function getSubjectPartAccess(s,{lessonId:o,partId:e,getPartProgress:t,accountRequired:p=!1}={}){const c=s?.units.find(({lessons:n})=>n.some(({id:d})=>d===o)),u=c?.lessons.find(({id:n})=>n===o),r=u?.parts?.find(({id:n})=>n===e);if(!r)return null;const i=t?.(u,r),a=getNextSubjectPart(s,t),l=r.startStepId?p?"account-required":i?.completed?"completed":i?.completedStepIds?.length?"in-progress":"available":"unpublished";return{unit:c,lesson:u,part:r,state:l,previous:a}}
+// One switch restores sequential lesson gates without changing saved progress.
+export const ALL_LEVELS_UNLOCKED = true;
+
+// Publication, account access, and sequence are separate from earned progress.
+export function getNextSubjectPart(roadmap, getPartProgress) {
+  return roadmap?.units.flatMap((unit) => unit.lessons.flatMap((lesson) =>
+    (lesson.parts || []).map((part) => ({ unit, lesson, part }))))
+    .find(({ lesson, part }) => !lesson.optional &&
+      (!part.startStepId || !getPartProgress?.(lesson, part)?.completed)) || null;
+}
+
+export function getSubjectPartAccess(roadmap, {
+  lessonId, partId, getPartProgress, accountRequired = false,
+} = {}) {
+  const unit = roadmap?.units.find(({ lessons }) => lessons.some(({ id }) => id === lessonId));
+  const lesson = unit?.lessons.find(({ id }) => id === lessonId);
+  const part = lesson?.parts?.find(({ id }) => id === partId);
+  if (!part) return null;
+  const progress = getPartProgress?.(lesson, part);
+  const previous = getNextSubjectPart(roadmap, getPartProgress);
+  const state = !part.startStepId ? "unpublished"
+    : accountRequired ? "account-required"
+    : progress?.completed ? "completed"
+    : !ALL_LEVELS_UNLOCKED && !lesson.optional && part !== previous?.part ? "previous-required"
+    : progress?.completedStepIds?.length ? "in-progress" : "available";
+  return { unit, lesson, part, state, previous };
+}

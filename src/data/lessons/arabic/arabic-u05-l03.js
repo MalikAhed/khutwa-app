@@ -1,4 +1,6 @@
-import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createArabicLesson } from "./shared.js";
+
+export const source = `:::mcq
 id: arabic-p144-mcq01
 title: من المعاني النحوية لـ (لا) و(اللام) | صفحة 143 | اختيار من متعدد 1
 kicker: 2019
@@ -359,4 +361,6 @@ solution:
 «لا»: حرف نهي وجزم مبني على السكون لا محل له، يطلب الكف عن القناعة بالدون.
 «تقنعْ»: فعل مضارع مجزوم بلا الناهية، وعلامة جزمه السكون، وفاعله ضمير مستتر وجوباً تقديره أنت.
 الجملة الفعلية «لا تقنع بما دون النجوم» جواب شرط غير جازم، فلا محل لها من الإعراب.
-:::`;export default e("arabic-u05-l03",source);
+:::`;
+
+export default createArabicLesson("arabic-u05-l03", source);

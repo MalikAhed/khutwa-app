@@ -1,1 +1,37 @@
-function m(d,p,u){const o=(d.parts||[]).map(e=>{const t=[...new Set(e.questionIds||u?.(d,e)||[])];return{part:e,ids:t,record:p?.(d,e)}}),h=new Set(o.flatMap(e=>e.ids)),r=new Set,i=new Set;for(const{part:e,ids:t,record:l}of o){const f=s=>{const n=e.questionAliases?.[s];return n&&h.has(n)?n:t.includes(s)?s:null};for(const s of l?.completedStepIds||[]){const n=f(s);n&&r.add(n)}for(const s of l?.review||[]){const n=f(s.stepId);n&&i.add(n)}}for(const e of o)e.completed=e.ids.filter(t=>r.has(t)),e.solved=e.ids.filter(t=>i.has(t)||r.has(t));const c=o.reduce((e,t)=>e+t.ids.length,0),a=o.reduce((e,t)=>e+t.solved.length,0);return{total:c,solved:a,percent:c?a/c*100:0,completed:c>0&&a===c,nextPart:o.find(e=>e.completed.length<e.ids.length)?.part||o[0]?.part}}export{m as getLessonQuestionProgress};
+// Only current questions contribute. Retired teaching and historical completion flags
+// remain stored, but cannot fill a ring for newly added questions.
+export function getLessonQuestionProgress(lesson, getPartProgress, getPartQuestionIds) {
+  const parts = (lesson.parts || []).map(part => {
+    const ids = [...new Set(part.questionIds || getPartQuestionIds?.(lesson, part) || [])];
+    return { part, ids, record:getPartProgress?.(lesson, part) };
+  });
+  const currentIds = new Set(parts.flatMap(part => part.ids));
+  const completed = new Set(), attempted = new Set();
+  for (const { part, ids, record } of parts) {
+    const canonicalId = id => {
+      const alias = part.questionAliases?.[id];
+      return alias && currentIds.has(alias) ? alias : ids.includes(id) ? id : null;
+    };
+    for (const id of record?.completedStepIds || []) {
+      const canonical = canonicalId(id);
+      if (canonical) completed.add(canonical);
+    }
+    for (const item of record?.review || []) {
+      const canonical = canonicalId(item.stepId);
+      if (!canonical) continue;
+      attempted.add(canonical);
+    }
+  }
+  for (const part of parts) {
+    part.completed = part.ids.filter(id => completed.has(id));
+    // Progress counts each answered question once; correctness only controls XP.
+    part.solved = part.ids.filter(id => attempted.has(id) || completed.has(id));
+  }
+  const total = parts.reduce((sum, part) => sum + part.ids.length, 0);
+  const solved = parts.reduce((sum, part) => sum + part.solved.length, 0);
+  return {
+    total, solved, percent:total ? solved / total * 100 : 0,
+    completed:total > 0 && solved === total,
+    nextPart:parts.find(part => part.completed.length < part.ids.length)?.part || parts[0]?.part,
+  };
+}

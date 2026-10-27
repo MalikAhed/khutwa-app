@@ -1,0 +1,481 @@
+{
+  "sourcePdf": "تصنيف أسئلة الثانوية العامة في تكنولوجيا المعلومات توجيهي علمي 2023 + الحلول - المكتبة الفلسطينية الشاملة.pdf",
+  "coordinateUnit": "PDF points, top origin",
+  "figures": [
+    {
+      "file": "classified-p72-q1.webp",
+      "sourcePage": 72,
+      "pdfRect": [
+        83,
+        160,
+        458,
+        257
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "a8f108e04972596b6235563d83eb3b7afe469fdbed4558b1306403915b5cac45"
+    },
+    {
+      "file": "classified-p72-q2.webp",
+      "sourcePage": 72,
+      "pdfRect": [
+        90,
+        257,
+        184,
+        282
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "4272815e04862c9fd04fcce97972d31e84d9cb40ce1f94d28e107614ec481d6b"
+    },
+    {
+      "file": "classified-p72-q7.webp",
+      "sourcePage": 72,
+      "pdfRect": [
+        296,
+        729,
+        415,
+        753
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "cb9bf588687308765bc4b8d65be6cc364f056128570cff4ead2c744039eb64d9"
+    },
+    {
+      "file": "classified-p73-q14.webp",
+      "sourcePage": 73,
+      "pdfRect": [
+        80,
+        630,
+        248,
+        663
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "e601573a7127d892d12e994bf27ee70631f5867fac7dddb5ad5acedb28e69c7e"
+    },
+    {
+      "file": "classified-p74-q21.webp",
+      "sourcePage": 74,
+      "pdfRect": [
+        105,
+        654,
+        244,
+        683
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "b08e03a6ca311bfa7823922b7ccc135c11a07361c327a9ad0e2fefa82d8a1409"
+    },
+    {
+      "file": "classified-p75-q27.webp",
+      "sourcePage": 75,
+      "pdfRect": [
+        240,
+        391,
+        298,
+        414
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "6e167359fb204d1332d529b06ddf66dc5650a95a6891078e78f5e0d4f7e6e078",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 92,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 40.058,
+        "edgeMeanAbsoluteChannelError": 3.144
+      }
+    },
+    {
+      "file": "classified-p75-q28.webp",
+      "sourcePage": 75,
+      "pdfRect": [
+        277,
+        492,
+        410,
+        524
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "5f9584b1c45fb62f88e5cb12a332d7da5d840bbc3dae98813a1d7744141f13b2"
+    },
+    {
+      "file": "classified-p75-q30.webp",
+      "sourcePage": 75,
+      "pdfRect": [
+        320,
+        678,
+        411,
+        705
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "acb59eb47044a5f0812d412f02cf46df3a5b98ac8963b66f71020da2bb29d350",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 92,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 40.927,
+        "edgeMeanAbsoluteChannelError": 2.443
+      }
+    },
+    {
+      "file": "classified-p76-q32.webp",
+      "sourcePage": 76,
+      "pdfRect": [
+        90,
+        170,
+        451,
+        239
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "2f438bd016f546f2a2504727154bb0a126591a23e9748e975860f8c18bbe7313"
+    },
+    {
+      "file": "classified-p77-q3-1.webp",
+      "sourcePage": 77,
+      "pdfRect": [
+        45,
+        273,
+        455,
+        449
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "315983efebae1886e7b981f495a03dbbc89bc44e8695e138b9abad7b8711c537"
+    },
+    {
+      "file": "classified-p77-q3-2.webp",
+      "sourcePage": 77,
+      "pdfRect": [
+        52,
+        578,
+        449,
+        754
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "0bfe796e5ba06d778f9225e59541a29b54b83d5f3ca53ef690752a12654b235c"
+    },
+    {
+      "file": "classified-p78-q3-3.webp",
+      "sourcePage": 78,
+      "pdfRect": [
+        95,
+        114,
+        415,
+        249
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "d93dc9bc3ba25ebd2140ef7876ba3b4972a6307356d20101022e8bb6116bd648"
+    },
+    {
+      "file": "classified-p79-q3-6.webp",
+      "sourcePage": 79,
+      "pdfRect": [
+        57,
+        462,
+        416,
+        610
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "0a6d18bdfee1f98294086ac3420e10c4499b69b2d2c620af519f2545bda3d09d"
+    },
+    {
+      "file": "classified-p80-q3-7.webp",
+      "sourcePage": 80,
+      "pdfRect": [
+        52,
+        64,
+        405,
+        292
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "85eee3d85d763bbbcede6999e26be360b1220f96cfd61fb1c2e6d4d0284d4a0a"
+    },
+    {
+      "file": "classified-p80-q3-8.webp",
+      "sourcePage": 80,
+      "pdfRect": [
+        65,
+        423,
+        435,
+        511
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "2a4eef4bfc7a09626361849f60506fb83a038ea0cdac2292d9c2ef3205660d7f"
+    },
+    {
+      "file": "classified-p80-q3-9.webp",
+      "sourcePage": 80,
+      "pdfRect": [
+        106,
+        647,
+        393,
+        766
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "8ef057c7f3f6ca456235885fb4a5fbee6fe4151f9ac749648f2895a07e8d39dc"
+    },
+    {
+      "file": "classified-p81-q3-10.webp",
+      "sourcePage": 81,
+      "pdfRect": [
+        63,
+        249,
+        443,
+        363
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "af574de551b2b310dddaf014b40ebcb30493506c1d83ca6079302fbaf61f70f2"
+    },
+    {
+      "file": "classified-p81-q3-11.webp",
+      "sourcePage": 81,
+      "pdfRect": [
+        61,
+        476,
+        450,
+        674
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "3b2341bd2aabf6adc909bf78304b259ad983e46f5c50a422601fdd61fb450078",
+      "originalSha256": "2de980d92c0ddca31c27916bd541261a3f907e150004f54bf1f764e5f72f0fca",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 45.956,
+        "edgeMeanAbsoluteChannelError": 1.747
+      }
+    },
+    {
+      "file": "classified-p82-q3-12.webp",
+      "sourcePage": 82,
+      "pdfRect": [
+        48,
+        101,
+        451,
+        309
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "194cde0c91e1a1a9d8ab54233eea2664740e306b86be977326f2eae877873d9b",
+      "originalSha256": "4cd3300439471363e79e6cbb707ea15dd0638968f03c75b24a04198c863ff0f3",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 43.774,
+        "edgeMeanAbsoluteChannelError": 2.302
+      }
+    },
+    {
+      "file": "classified-p82-q3-13.webp",
+      "sourcePage": 82,
+      "pdfRect": [
+        78,
+        443,
+        451,
+        652
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "4edca9a39f7b83e51f3f1ab1122ec854539b484ef9f314811655e0fca825ce74",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 41.895,
+        "edgeMeanAbsoluteChannelError": 2.353
+      }
+    },
+    {
+      "file": "classified-p83-q3-14.webp",
+      "sourcePage": 83,
+      "pdfRect": [
+        62,
+        113,
+        451,
+        227
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "66a94650dbd6327df3e81f224779e2a8d7cbd8ed1a70d2e184f9e35b0897f1ce",
+      "originalSha256": "c970be2af72a6157903747dab356fdfbe46a0ad8f01d3f88054f84b82249ef8d",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 46.498,
+        "edgeMeanAbsoluteChannelError": 1.824
+      }
+    },
+    {
+      "file": "classified-p83-q3-15.webp",
+      "sourcePage": 83,
+      "pdfRect": [
+        52,
+        353,
+        451,
+        584
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "8b940390aef9a82437f138aca2ec16f6aa4a9fca4032f3e094faed3fd1fc6dda",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 41.19,
+        "edgeMeanAbsoluteChannelError": 2.831
+      }
+    },
+    {
+      "file": "classified-p84-q3-16.webp",
+      "sourcePage": 84,
+      "pdfRect": [
+        49,
+        54,
+        451,
+        138
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "0b2ede9814eb358111ca00d800151fb9592d5af66ba1de563f6be04478382337"
+    },
+    {
+      "file": "classified-p84-q3-18.webp",
+      "sourcePage": 84,
+      "pdfRect": [
+        44,
+        549,
+        451,
+        721
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "1af38290fc2a30f25959c7b6ee33770e44517a8f1cd52d9de208995bd82d3677"
+    },
+    {
+      "file": "classified-p85-q3-20.webp",
+      "sourcePage": 85,
+      "pdfRect": [
+        50,
+        283,
+        451,
+        389
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "bd26fe3006393a5635435ec669b676f8ec030c46671fdf1a29c1138d5aef8d77"
+    },
+    {
+      "file": "classified-p85-q3-21.webp",
+      "sourcePage": 85,
+      "pdfRect": [
+        50,
+        477,
+        451,
+        613
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "9306a8881b907789b64112137440481b230e435fcc8bdcb19a0fceed7cc3861b"
+    },
+    {
+      "file": "classified-p85-q3-22.webp",
+      "sourcePage": 85,
+      "pdfRect": [
+        49,
+        676,
+        451,
+        768
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "292790d9466a6aba29b5993dd82a461175a9a63e3d72cef8a067237fdd95a7ef",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 40.607,
+        "edgeMeanAbsoluteChannelError": 3.033
+      }
+    },
+    {
+      "file": "classified-p86-q3-23.webp",
+      "sourcePage": 86,
+      "pdfRect": [
+        40,
+        163,
+        451,
+        311
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "815ec116b4c9ca0a23e2ecf355c81c837a9aca08867d8c5e3daa11c6224070f9",
+      "originalSha256": "e905aea1058df86192cd9d3402a643c67a1e354f384dc80efc2ecaf4a2896a18",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 42.831,
+        "edgeMeanAbsoluteChannelError": 2.378
+      }
+    },
+    {
+      "file": "classified-p86-q3-24.webp",
+      "sourcePage": 86,
+      "pdfRect": [
+        49,
+        413,
+        410,
+        557
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "ca76b070b94a5560730c359a5e3242067d79f98f291c62d7ee3a882e308341fd",
+      "originalSha256": "33d068c7aa96cecc7e667d679147e4c4ffbdb29b2e448ba242e3698a2904dc39",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 44.527,
+        "edgeMeanAbsoluteChannelError": 1.931
+      }
+    },
+    {
+      "file": "classified-p87-q3-25.webp",
+      "sourcePage": 87,
+      "pdfRect": [
+        146,
+        54,
+        451,
+        219
+      ],
+      "renderDpi": 216,
+      "cropScale": 3,
+      "sha256": "d9b0100caa330f0aaebbc097197269812a0ebcc68b3c73e42eac3cfa390228a0"
+    }
+  ]
+}

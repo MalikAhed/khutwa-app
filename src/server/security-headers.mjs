@@ -1,0 +1,25 @@
+const CONTENT_SECURITY_POLICY = [
+  "default-src 'self'",
+  "base-uri 'none'",
+  "object-src 'none'",
+  "form-action 'self'",
+  "frame-ancestors 'none'",
+  "frame-src 'self' https://www.youtube-nocookie.com",
+  "img-src 'self' data:",
+  "font-src 'self'",
+  "style-src 'self' 'unsafe-inline'",
+  "script-src 'self' https://www.youtube.com",
+  "connect-src 'self'",
+].join("; ");
+
+export function applySecurityHeaders(response, { analytics = false } = {}) {
+  response.setHeader("X-Content-Type-Options", "nosniff");
+  response.setHeader("Referrer-Policy", "no-referrer");
+  response.setHeader("X-Frame-Options", "DENY");
+  response.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+  response.setHeader("Cross-Origin-Resource-Policy", "same-origin");
+  response.setHeader("Permissions-Policy", "camera=(), geolocation=(), microphone=()");
+  response.setHeader("Content-Security-Policy", analytics ? CONTENT_SECURITY_POLICY
+    .replace("script-src 'self'", "script-src 'self' https://static.cloudflareinsights.com")
+    .replace("connect-src 'self'", "connect-src 'self' https://cloudflareinsights.com") : CONTENT_SECURITY_POLICY);
+}

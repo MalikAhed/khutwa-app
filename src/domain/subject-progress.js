@@ -1,1 +1,252 @@
-import{calculateStreak as Y,getLevelProgress as _}from"./progression.js?v=7388f68cc0f433fd";import{canonicalQuestionStepId as X,getIncomingQuestionAliases as B,getPartQuestionIds as G,getQuestionXp as N,isSourceQuestionAlias as H,questionRewardKey as x,resolveQuestionLocation as O}from"./question-rewards.js?v=7388f68cc0f433fd";import{getLessonQuestionProgress as V}from"./subject-question-progress.js?v=7388f68cc0f433fd";const q=()=>({completedStepIds:[],completed:!1,review:[],completedDate:null,rewardXp:0,activityDates:[]}),W=e=>e==="mathematics-2"?"mathematics":e,b=({subjectId:e,lessonId:t,partId:s})=>JSON.stringify([W(e),t,s]);function P(e,t){const s=e.get(b(t))||q(),a=new Set(s.completedStepIds),i=new Set,r=new Map,l=(n,c,u=!1)=>{const g=r.get(c);r.set(c,{...g&&!u?g:n,stepId:c,...g?.solved||n.solved?{solved:!0}:{}})};for(const n of B(t)){const c=e.get(b({...t,partId:n.sourcePartId}));if(!(!c||n.sourcePartId===t.partId)){c.completedStepIds.includes(n.alias)&&(a.add(n.stepId),c.completed&&i.add(n.stepId));for(const u of c.review)u.stepId===n.alias&&l(u,n.stepId)}}for(const n of s.completedStepIds){const c=O({...t,stepId:n});if(c&&c.partId!==t.partId)continue;const u=c?.stepId||n;a.add(u),s.completed&&i.add(u)}for(const n of s.review){const c=O({...t,stepId:n.stepId});if(c&&c.partId!==t.partId)continue;const u=c?.stepId||n.stepId;l(n,u,u===n.stepId)}const d=G(t);return{...s,completedStepIds:[...a],review:[...r.values()],completed:s.completed||d.length>0&&d.every(n=>i.has(n))}}function j(e){return Array.isArray(e)?[...new Set(e.filter(t=>typeof t=="string"&&/^\d{4}-\d{2}-\d{2}$/.test(t)&&!Number.isNaN(Date.parse(t))&&new Date(t).toISOString().slice(0,10)===t))].sort():[]}function k(e){return Object.fromEntries(["easy","medium","hard"].flatMap(t=>Array.isArray(e?.[t])?[[t,[...new Set(e[t].filter(s=>typeof s=="string"))]]]:[]))}function E(e){return Array.isArray(e)?e.filter(t=>typeof t?.stepId=="string"&&Number.isSafeInteger(t.misses)&&t.misses>=0&&typeof t.active=="boolean").map(({stepId:t,misses:s,active:a,solved:i})=>({stepId:t,misses:s,active:a,...i===!0?{solved:!0}:{}})):[]}function se(e,t){const s=new Map;if(e===null)return s;if(!e||typeof e!="object"||!("version"in e)||e.version!==1||!("records"in e)||!Array.isArray(e.records))throw new Error("Unsupported progress version; original data has been retained.");for(const a of e.records)try{if(!Array.isArray(a)||a.length!==2)throw new Error("Invalid progress entry.");const[i,r]=a,l=JSON.parse(i);if(!Array.isArray(l)||l.length!==3||!l.every(d=>typeof d=="string"&&d)||!Array.isArray(r?.completedStepIds)||!r.completedStepIds.every(d=>typeof d=="string")||typeof r.completed!="boolean")throw new Error("Invalid progress entry.");s.set(i,{completedStepIds:[...new Set(r.completedStepIds)],completed:r.completed,...r.ratedProgress?{ratedProgress:k(r.ratedProgress)}:{},review:E(r.review),completedDate:/^\d{4}-\d{2}-\d{2}$/.test(r.completedDate)?r.completedDate:null,rewardXp:Number.isSafeInteger(r.rewardXp)&&r.rewardXp>=0?r.rewardXp:0,activityDates:j(r.activityDates??[r.completedDate]),...typeof r.streakCelebration?.id=="string"&&j([r.streakCelebration.date]).length?{streakCelebration:r.streakCelebration}:{}})}catch(i){t(i)}return $(s)}function $(e){const t=new Set;return new Map([...e].sort(([s],[a])=>s.localeCompare(a)).map(([s,a])=>{const[i]=JSON.parse(s);let r=0;for(const l of a.review||[]){const d={subjectId:i,stepId:l.stepId},n=x(d);!l.solved||t.has(n)||(t.add(n),r+=N(d))}return[s,{...a,rewardXp:r}]}))}function re(e,t,s){if(t.type==="answer"){const{stepId:f,correct:o,reviewing:m=!1,date:v=A()}=t.value,h=j([...e.activityDates??[e.completedDate],v]),D=s&&t.id&&![...s.values()].some(y=>(y.activityDates??[y.completedDate]).includes(v))?{date:v,id:t.id}:e.streakCelebration,{rating:p}=t.value,I=p&&typeof o=="boolean"?{...k(e.ratedProgress),[p]:[...new Set([...e.ratedProgress?.[p]||[],X(t.value)])]}:e.ratedProgress,S={activityDates:h,...I?{ratedProgress:I}:{},...D?{streakCelebration:D}:{}};if(o===null)return{...e,...S};const M=E(e.review),Q=b(t.value),C=X(t.value),w=M.find(y=>X({...t.value,stepId:y.stepId})===C)||s&&P(s,t.value).review.find(y=>y.stepId===C)||{stepId:f,misses:0,active:!1},L=$(s||new Map([[Q,e]])),K=x(t.value),U=[...L].some(([y,F])=>{const[R]=JSON.parse(y);return F.review.some(T=>T.solved&&x({subjectId:R,stepId:T.stepId})===K)}),z=(L.get(Q)?.rewardXp||0)+(o&&!U?N(t.value):0);return M.includes(w)||M.push(w),o?(w.solved=!0,m&&(w.active=!1,w.misses=0)):(w.misses+=1,w.active||=w.misses>=2),{...e,review:M,...S,rewardXp:z}}const{stepIds:a,completedStepIds:i,isComplete:r,date:l=A()}=t.value,d=new Set(a),n=[...new Set([...e.completedStepIds,...i.filter(f=>d.has(f)||H({...t.value,stepId:f}))])],c=P(new Map([...s||[],[b(t.value),{...e,completedStepIds:n}]]),t.value),u=r&&d.size>0&&[...d].every(f=>c.completedStepIds.includes(f)),g=!e.completed&&u;return{...e,completedStepIds:n,completed:e.completed||u,completedDate:g?l:e.completedDate,activityDates:e.activityDates??j([e.completedDate])}}function oe(e,t){return e?{...e,completed:e.completed||t.completed,completedStepIds:[...new Set([...e.completedStepIds,...t.completedStepIds])],completedDate:e.completedDate||t.completedDate,rewardXp:Math.max(e.rewardXp,t.rewardXp),activityDates:j([...e.activityDates??[e.completedDate],...t.activityDates??[t.completedDate]]),review:[...e.review.map(s=>({...s,...t.review.some(a=>a.stepId===s.stepId&&a.solved)?{solved:!0}:{}})),...t.review.filter(s=>!e.review.some(a=>a.stepId===s.stepId))]}:t}function J(e,t,s=A()){const a=[...e],i=a.filter(l=>l.completed).length,r=Y(a.flatMap(l=>l.activityDates||(l.completedDate?[l.completedDate]:[])),s);return{totalXp:a.reduce((l,d)=>l+d.rewardXp,0),streak:r.current,activeToday:r.activeToday,completed:i,totalParts:t,progress:t?Math.round(i/t*100):0,questionsSolved:a.reduce((l,d)=>l+d.review.filter(n=>n.solved).length,0),mustReviewCount:a.reduce((l,d)=>l+d.review.filter(n=>n.active).length,0)}}function ne(e,t,s=A(),a){const i=t.flatMap(o=>o.units.flatMap(m=>m.lessons.map(v=>({...v,subjectId:o.subjectId})))),r=i.flatMap(o=>o.parts.map(m=>({...m,subjectId:o.subjectId,lessonId:o.id,partId:m.id}))),l=r.filter(o=>o.startStepId).map(o=>P(e,o)),d=J(l,r.length,s),n=J(e.values(),r.length,s),c=i.filter(o=>!o.hidden&&!o.optional),u=c.filter(o=>o.parts.length&&o.parts.every(m=>m.startStepId&&P(e,{subjectId:o.subjectId,lessonId:o.id,partId:m.id}).completed)).length,g=Object.fromEntries(t.filter(o=>o.questionsOnly||a&&o.subjectId==="ict").map(o=>{const m=o.units.flatMap(p=>p.lessons.filter(I=>!I.hidden&&!I.optional)),v=m.map(p=>V(p,(I,S)=>P(e,{subjectId:o.subjectId,lessonId:p.id,partId:S.id}),a)),h=v.reduce((p,I)=>p+I.total,0),D=v.reduce((p,I)=>p+I.solved,0);return[o.subjectId,{currentQuestionsTotal:h,currentQuestionsSolved:D,progress:h?Math.round(D/h*100):0,hasStarted:m.some(p=>p.parts.some(I=>{const S=e.get(b({subjectId:o.subjectId,lessonId:p.id,partId:I.id}));return S?.completedStepIds.length||S?.review.length})),curriculumLessonsTotal:m.length,requiredLessonsCompleted:v.filter(p=>p.completed).length}]})),f=Object.values(g).reduce((o,m)=>({solved:o.solved+m.currentQuestionsSolved,total:o.total+m.currentQuestionsTotal}),{solved:0,total:0});return{...d,totalXp:n.totalXp,streak:n.streak,activeToday:n.activeToday,publishedPartsTotal:l.length,hasStarted:l.some(o=>o.completedStepIds.length>0||o.review.length>0),..._(n.totalXp),dailyStreak:n.streak,curriculumLessonsTotal:c.length,requiredLessonsCompleted:u,subjects:g,currentQuestionsSolved:f.solved,currentQuestionsTotal:f.total,progress:f?.total?Math.round(f.solved/f.total*100):c.length?Math.round(u/c.length*100):0}}function ae(e,t=()=>q()){const s=e.lessons.flatMap(i=>(i.parts||[]).map(r=>({lesson:i,part:r}))),a=s.filter(({lesson:i,part:r})=>r.startStepId&&t(i,r)?.completed).length;return{completed:a,total:s.length,percent:s.length?Math.round(a/s.length*100):0}}function A(e=new Date){return`${e.getFullYear()}-${String(e.getMonth()+1).padStart(2,"0")}-${String(e.getDate()).padStart(2,"0")}`}export{re as applyProgressUpdate,P as currentPartProgress,q as emptyPart,ae as getUnitPartProgress,ne as homeLearningSummary,A as localDateKey,oe as mergeImportedPart,b as partKey,W as progressSubjectId,$ as recalculateQuestionRewards,se as restorePartEntries,J as summarizeParts,j as validActivityDates,k as validRatedProgress,E as validReview};
+// @ts-check
+import { calculateStreak, getLevelProgress } from "./progression.js";
+import { canonicalQuestionStepId, getIncomingQuestionAliases, getPartQuestionIds, getQuestionXp, isSourceQuestionAlias, questionRewardKey, resolveQuestionLocation } from "./question-rewards.js";
+import { getLessonQuestionProgress } from "./subject-question-progress.js";
+
+/** @typedef {{ownerId:string, subjectId:string, lessonId:string, partId:string}} ProgressKey */
+/** @typedef {{stepId:string, misses:number, active:boolean, solved?:boolean}} ReviewItem */
+/** @typedef {Partial<Record<"easy"|"medium"|"hard",string[]>>} RatedProgress */
+/** @typedef {{ratedProgress?:RatedProgress, completedStepIds:string[], completed:boolean, review:ReviewItem[], completedDate:string|null, rewardXp:number, activityDates?:string[], streakCelebration?:{date:string,id:string}, revision?:number}} PartRecord */
+/** @typedef {ProgressKey & {stepIds:string[], completedStepIds:string[], isComplete:boolean, date?:string}} CompletionUpdate */
+/** @typedef {ProgressKey & {stepId:string, correct:boolean|null, rating?:"easy"|"medium"|"hard", reviewing?:boolean, date?:string}} AnswerUpdate */
+/** @typedef {{type:'completion', value:CompletionUpdate, id?:string} | {type:'answer', value:AnswerUpdate, id?:string}} ProgressUpdate */
+
+/** @returns {PartRecord} */
+export const emptyPart = () => ({ completedStepIds:[], completed:false, review:[], completedDate:null, rewardXp:0, activityDates:[] });
+// Math 2 uses the original persisted subject identity after the catalog split.
+/** @param {string} subjectId */
+export const progressSubjectId = subjectId => subjectId === "mathematics-2" ? "mathematics" : subjectId;
+/** @param {Pick<ProgressKey, 'subjectId'|'lessonId'|'partId'>} key */
+export const partKey = ({ subjectId, lessonId, partId }) => JSON.stringify([progressSubjectId(subjectId), lessonId, partId]);
+
+// Project legacy credit into its current part without migrating or duplicating
+// stored rows. Current canonical review state wins; solved credit is monotonic.
+/** @param {Map<string,PartRecord>} records @param {Pick<ProgressKey,'subjectId'|'lessonId'|'partId'>} key @returns {PartRecord} */
+export function currentPartProgress(records, key) {
+  const original = records.get(partKey(key)) || emptyPart();
+  const completed = new Set(original.completedStepIds);
+  const confirmed = new Set();
+  /** @type {Map<string,ReviewItem>} */
+  const review = new Map();
+  const addReview = (item, stepId, prefer = false) => {
+    const previous = review.get(stepId);
+    review.set(stepId, { ...(previous && !prefer ? previous : item), stepId,
+      ...(previous?.solved || item.solved ? { solved:true } : {}) });
+  };
+  for (const incoming of getIncomingQuestionAliases(key)) {
+    const saved = records.get(partKey({ ...key, partId:incoming.sourcePartId }));
+    if (!saved || incoming.sourcePartId === key.partId) continue;
+    if (saved.completedStepIds.includes(incoming.alias)) {
+      completed.add(incoming.stepId);
+      if (saved.completed) confirmed.add(incoming.stepId);
+    }
+    for (const item of saved.review) if (item.stepId === incoming.alias) addReview(item, incoming.stepId);
+  }
+  for (const stepId of original.completedStepIds) {
+    const location = resolveQuestionLocation({ ...key, stepId });
+    if (location && location.partId !== key.partId) continue;
+    const canonical = location?.stepId || stepId;
+    completed.add(canonical);
+    if (original.completed) confirmed.add(canonical);
+  }
+  for (const item of original.review) {
+    const location = resolveQuestionLocation({ ...key, stepId:item.stepId });
+    if (location && location.partId !== key.partId) continue;
+    const stepId = location?.stepId || item.stepId;
+    addReview(item, stepId, stepId === item.stepId);
+  }
+  const ids = getPartQuestionIds(key);
+  return { ...original, completedStepIds:[...completed], review:[...review.values()],
+    completed:original.completed || ids.length > 0 && ids.every(id => confirmed.has(id)) };
+}
+
+/** @param {unknown} value @returns {string[]} */
+export function validActivityDates(value) {
+  return Array.isArray(value) ? [...new Set(value.filter(date => typeof date === "string"
+    && /^\d{4}-\d{2}-\d{2}$/.test(date) && !Number.isNaN(Date.parse(date))
+    && new Date(date).toISOString().slice(0, 10) === date))].sort() : [];
+}
+
+/** @param {unknown} value @returns {RatedProgress} */
+export function validRatedProgress(value) {
+  return Object.fromEntries(["easy", "medium", "hard"].flatMap(rating =>
+    Array.isArray(value?.[rating]) ? [[rating, [...new Set(value[rating].filter(id => typeof id === "string"))]]] : []));
+}
+
+/** @param {unknown} value @returns {ReviewItem[]} */
+export function validReview(value) {
+  return Array.isArray(value) ? value.filter((item) => typeof item?.stepId === "string" && Number.isSafeInteger(item.misses) && item.misses >= 0 && typeof item.active === "boolean")
+    .map(({ stepId, misses, active, solved }) => ({ stepId, misses, active, ...(solved === true ? { solved:true } : {}) })) : [];
+}
+
+// Each entry is validated independently, including the persisted identity tuple.
+/** @param {unknown} saved @param {(error:unknown)=>void} onError @returns {Map<string,PartRecord>} */
+export function restorePartEntries(saved, onError) {
+  /** @type {Map<string,PartRecord>} */
+  const records = new Map();
+  if (saved === null) return records;
+  if (!saved || typeof saved !== "object" || !("version" in saved) || saved.version !== 1 || !("records" in saved) || !Array.isArray(saved.records)) throw new Error("Unsupported progress version; original data has been retained.");
+  for (const entry of saved.records) {
+    try {
+      if (!Array.isArray(entry) || entry.length !== 2) throw new Error("Invalid progress entry.");
+      const [key, value] = entry;
+      const ids = JSON.parse(key);
+      if (!Array.isArray(ids) || ids.length !== 3 || !ids.every((id) => typeof id === "string" && id)
+        || !Array.isArray(value?.completedStepIds) || !value.completedStepIds.every((id) => typeof id === "string")
+        || typeof value.completed !== "boolean") throw new Error("Invalid progress entry.");
+      records.set(key, { completedStepIds:[...new Set(value.completedStepIds)], completed:value.completed,
+        ...(value.ratedProgress ? { ratedProgress:validRatedProgress(value.ratedProgress) } : {}),
+        review:validReview(value.review), completedDate:/^\d{4}-\d{2}-\d{2}$/.test(value.completedDate) ? value.completedDate : null,
+        rewardXp:Number.isSafeInteger(value.rewardXp) && value.rewardXp >= 0 ? value.rewardXp : 0,
+        activityDates:validActivityDates(value.activityDates ?? [value.completedDate]),
+        ...(typeof value.streakCelebration?.id === "string" && validActivityDates([value.streakCelebration.date]).length
+          ? { streakCelebration:value.streakCelebration } : {}) });
+    } catch (error) { onError(error); }
+  }
+  return recalculateQuestionRewards(records);
+}
+
+// Reprice saved correct answers under the current scale without changing their
+// identities, completion, mistakes or activity. A replay through an alias earns once.
+/** @param {Map<string,PartRecord>} records @returns {Map<string,PartRecord>} */
+export function recalculateQuestionRewards(records) {
+  const awarded = new Set();
+  return new Map([...records].sort(([a], [b]) => a.localeCompare(b)).map(([key, record]) => {
+    const [subjectId] = JSON.parse(key);
+    let rewardXp = 0;
+    for (const item of record.review || []) {
+      const question = { subjectId, stepId:item.stepId };
+      const id = questionRewardKey(question);
+      if (!item.solved || awarded.has(id)) continue;
+      awarded.add(id);
+      rewardXp += getQuestionXp(question);
+    }
+    return [key, { ...record, rewardXp }];
+  }));
+}
+
+/** @param {PartRecord} previous @param {ProgressUpdate} update @param {Map<string,PartRecord>} [ownerRecords] @returns {PartRecord} */
+export function applyProgressUpdate(previous, update, ownerRecords) {
+  if (update.type === "answer") {
+    const { stepId, correct, reviewing = false, date = localDateKey() } = update.value;
+    const activityDates = validActivityDates([...(previous.activityDates ?? [previous.completedDate]), date]);
+    // The durable adapter claims this day inside its transaction across all parts.
+    // Optimistic UI updates do not claim celebrations.
+    const streakCelebration = ownerRecords && update.id && ![...ownerRecords.values()].some(record =>
+      (record.activityDates ?? [record.completedDate]).includes(date))
+      ? { date, id:update.id } : previous.streakCelebration;
+    const { rating } = update.value;
+    const ratedProgress = rating && typeof correct === "boolean"
+      ? { ...validRatedProgress(previous.ratedProgress), [rating]:[...new Set([...(previous.ratedProgress?.[rating] || []), canonicalQuestionStepId(update.value)])] }
+      : previous.ratedProgress;
+    const activity = { activityDates, ...(ratedProgress ? { ratedProgress } : {}), ...(streakCelebration ? { streakCelebration } : {}) };
+    // A reviewed written card is activity, but has no verified correct answer.
+    if (correct === null) return { ...previous, ...activity };
+    const review = validReview(previous.review);
+    const key = partKey(update.value);
+    const canonicalId = canonicalQuestionStepId(update.value);
+    const item = review.find(item => canonicalQuestionStepId({ ...update.value, stepId:item.stepId }) === canonicalId)
+      || (ownerRecords && currentPartProgress(ownerRecords, update.value).review.find(item => item.stepId === canonicalId))
+      || { stepId, misses:0, active:false };
+    const records = recalculateQuestionRewards(ownerRecords || new Map([[key,previous]]));
+    const questionId = questionRewardKey(update.value);
+    const alreadySolved = [...records].some(([recordKey, record]) => {
+      const [subjectId] = JSON.parse(recordKey);
+      return record.review.some(saved => saved.solved
+        && questionRewardKey({ subjectId, stepId:saved.stepId }) === questionId);
+    });
+    const rewardXp = (records.get(key)?.rewardXp || 0)
+      + (correct && !alreadySolved ? getQuestionXp(update.value) : 0);
+    if (!review.includes(item)) review.push(item);
+    if (!correct) { item.misses += 1; item.active ||= item.misses >= 2; }
+    else { item.solved = true; if (reviewing) { item.active = false; item.misses = 0; } }
+    return { ...previous, review, ...activity, rewardXp };
+  }
+  const { stepIds, completedStepIds, isComplete, date = localDateKey() } = update.value;
+  const allowed = new Set(stepIds);
+  // Curriculum revisions may retire a question. Preserve its historical completion
+  // while admitting new IDs only from the current lesson and scoring current steps.
+  const completed = [...new Set([...previous.completedStepIds, ...completedStepIds.filter((id) => allowed.has(id)
+    || isSourceQuestionAlias({ ...update.value, stepId:id }))])];
+  const credit = currentPartProgress(new Map([...(ownerRecords || []), [partKey(update.value), { ...previous, completedStepIds:completed }]]), update.value);
+  const finished = isComplete && allowed.size > 0 && [...allowed].every((id) => credit.completedStepIds.includes(id));
+  const first = !previous.completed && finished;
+  return { ...previous, completedStepIds:completed, completed:previous.completed || finished,
+    completedDate:first ? date : previous.completedDate,
+    activityDates:previous.activityDates ?? validActivityDates([previous.completedDate]) };
+}
+
+// Existing records win mutable review state during import. Completion is monotonic.
+/** @param {PartRecord|undefined} current @param {PartRecord} imported @returns {PartRecord} */
+export function mergeImportedPart(current, imported) {
+  if (!current) return imported;
+  return { ...current, completed:current.completed || imported.completed,
+    completedStepIds:[...new Set([...current.completedStepIds, ...imported.completedStepIds])],
+    completedDate:current.completedDate || imported.completedDate,
+    rewardXp:Math.max(current.rewardXp, imported.rewardXp),
+    activityDates:validActivityDates([...(current.activityDates ?? [current.completedDate]), ...(imported.activityDates ?? [imported.completedDate])]),
+    review:[...current.review.map(item => ({ ...item, ...(imported.review.some(old => old.stepId === item.stepId && old.solved) ? { solved:true } : {}) })),
+      ...imported.review.filter(item => !current.review.some(saved => saved.stepId === item.stepId))] };
+}
+
+/** @param {Iterable<PartRecord>} records @param {number} totalParts */
+export function summarizeParts(records, totalParts, date = localDateKey()) {
+  const values = [...records];
+  const completed = values.filter((record) => record.completed).length;
+  const streak = calculateStreak(values.flatMap(record => record.activityDates
+    // Preserve historical streak days, without counting new lesson completions.
+    || (record.completedDate ? [record.completedDate] : [])), date);
+  return { totalXp:values.reduce((sum, record) => sum + record.rewardXp, 0), streak:streak.current,
+    activeToday:streak.activeToday, completed, totalParts, progress:totalParts ? Math.round(completed / totalParts * 100) : 0,
+    questionsSolved:values.reduce((sum, record) => sum + record.review.filter((item) => item.solved).length, 0),
+    mustReviewCount:values.reduce((sum, record) => sum + record.review.filter((item) => item.active).length, 0) };
+}
+
+/** @typedef {{subjectId:string, questionsOnly?:boolean, units:readonly {lessons:readonly {id:string, hidden?:boolean, optional?:boolean, parts:readonly {id:string, startStepId?:string, questionIds?:string[]}[]}[]}[]}} ProgressRoadmap */
+/** @param {Map<string,PartRecord>} records @param {ProgressRoadmap[]} roadmaps @param {string} [date] @param {(lesson:object,part:object)=>string[]} [getPartQuestionIds] */
+export function homeLearningSummary(records, roadmaps, date = localDateKey(), getPartQuestionIds) {
+  const lessons = roadmaps.flatMap((roadmap) => roadmap.units.flatMap((unit) => unit.lessons.map((lesson) => ({ ...lesson, subjectId:roadmap.subjectId }))));
+  const parts = lessons.flatMap((lesson) => lesson.parts.map((part) => ({ ...part, subjectId:lesson.subjectId, lessonId:lesson.id, partId:part.id })));
+  const values = parts.filter((part) => part.startStepId).map((part) => currentPartProgress(records, part));
+  const summary = summarizeParts(values, parts.length, date);
+  const rewards = summarizeParts(records.values(), parts.length, date);
+  const visibleLessons = lessons.filter(lesson => !lesson.hidden && !lesson.optional);
+  const completedLessons = visibleLessons.filter(lesson => lesson.parts.length && lesson.parts.every(part =>
+    part.startStepId && currentPartProgress(records, { subjectId:lesson.subjectId, lessonId:lesson.id, partId:part.id }).completed)).length;
+  const subjects = Object.fromEntries(roadmaps.filter(roadmap => roadmap.questionsOnly || getPartQuestionIds && roadmap.subjectId === "ict")
+    .map(roadmap => {
+      const subjectLessons = roadmap.units.flatMap(unit => unit.lessons.filter(lesson => !lesson.hidden && !lesson.optional));
+      const progress = subjectLessons.map(lesson => getLessonQuestionProgress(lesson,
+        (_lesson, part) => currentPartProgress(records, { subjectId:roadmap.subjectId, lessonId:lesson.id, partId:part.id }), getPartQuestionIds));
+      const total = progress.reduce((sum, lesson) => sum + lesson.total, 0);
+      const solved = progress.reduce((sum, lesson) => sum + lesson.solved, 0);
+      return [roadmap.subjectId, {
+        currentQuestionsTotal:total, currentQuestionsSolved:solved, progress:total ? Math.round(solved / total * 100) : 0,
+        hasStarted:subjectLessons.some(lesson => lesson.parts.some(part => {
+          const record = records.get(partKey({ subjectId:roadmap.subjectId, lessonId:lesson.id, partId:part.id }));
+          return record?.completedStepIds.length || record?.review.length;
+        })),
+        curriculumLessonsTotal:subjectLessons.length, requiredLessonsCompleted:progress.filter(lesson => lesson.completed).length,
+      }];
+    }));
+  const questionTotals = Object.values(subjects).reduce((total, subject) => ({
+    solved:total.solved + subject.currentQuestionsSolved, total:total.total + subject.currentQuestionsTotal,
+  }), { solved:0, total:0 });
+  return { ...summary, totalXp:rewards.totalXp, streak:rewards.streak, activeToday:rewards.activeToday,
+    publishedPartsTotal:values.length, hasStarted:values.some((record) => record.completedStepIds.length > 0 || record.review.length > 0), ...getLevelProgress(rewards.totalXp),
+    dailyStreak:rewards.streak, curriculumLessonsTotal:visibleLessons.length, requiredLessonsCompleted:completedLessons,
+    subjects, currentQuestionsSolved:questionTotals.solved, currentQuestionsTotal:questionTotals.total,
+    progress:questionTotals?.total ? Math.round(questionTotals.solved / questionTotals.total * 100)
+      : visibleLessons.length ? Math.round(completedLessons / visibleLessons.length * 100) : 0 };
+}
+
+/** @param {{lessons: {parts?:{startStepId?:string}[]}[]}} unit @param {(lesson:object, part:object)=>{completed:boolean}} [getPartProgress] */
+export function getUnitPartProgress(unit, getPartProgress = () => emptyPart()) {
+  const parts = unit.lessons.flatMap((lesson) => (lesson.parts || []).map((part) => ({ lesson, part })));
+  const completed = parts.filter(({ lesson, part }) => part.startStepId && getPartProgress(lesson, part)?.completed).length;
+  return { completed, total:parts.length, percent:parts.length ? Math.round(completed / parts.length * 100) : 0 };
+}
+
+export function localDateKey(date = new Date()) {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+}

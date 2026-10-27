@@ -1,1 +1,124 @@
-export function mountSummaryScans(b,{titleId:v,locale:S="ar",signal:r,exam:o=!1}={}){const E=[...b.querySelectorAll(o?"p > img":'p > img[src^="assets/lessons/ict/summary/"]')];if(!E.length)return;const a=b.ownerDocument,u=S==="ar",p=a.createElement("section");p.className="lesson-summary-scans";const m=a.createElement("h2");m.id=`${v}-scans`,m.textContent=u?"من صفحات الملخص":"From the summary",p.setAttribute("aria-labelledby",m.id),p.append(m),E.forEach((i,C)=>{const d=i.parentElement,h=d.nextElementSibling?.tagName==="BLOCKQUOTE"?d.nextElementSibling:null,l=a.createElement("figure");if(l.className=`lesson-summary-scan${o?" lesson-question-image":""}`,o){const e=a.createElement("div");e.className="lesson-summary-scans",d.before(e),e.append(l)}const y=a.createElement("figcaption"),A=a.createElement("span");A.textContent=i.alt;const t=a.createElement("button");t.type="button",t.className="lesson-summary-scan-toggle",t.dataset.summaryScanZoom="",t.setAttribute("aria-expanded","false");const L=u?"تكبير الصورة":"Enlarge image",N=u?"تصغير الصورة":"Fit image",w=e=>{const s=e?N:L;t.setAttribute("aria-label",s),t.title=s,o?t.innerHTML=`<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${e?'<path d="M4 9h5V4m11 5h-5V4M4 15h5v5m11-5h-5v5"/>':'<path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/>'}</svg>`:t.textContent=s};w(!1),y.append(A,t);const n=a.createElement("div");n.className="lesson-summary-scan-viewport",n.id=`${v}-scan-${C+1}`,n.setAttribute("role","region"),n.setAttribute("aria-label",i.alt),t.setAttribute("aria-controls",n.id);const c=a.createElement("p");if(c.className="lesson-summary-scan-help",c.id=`${n.id}-help`,c.hidden=!0,c.textContent=u?"اسحب داخل الصورة لقراءة بقية المحتوى، أو استخدم مفاتيح الأسهم.":"Scroll inside the image to read the remaining content, or use the arrow keys.",i.draggable=!1,n.append(i),!d.textContent.trim()&&!d.children.length&&d.remove(),o?l.append(t,n):l.append(y,c,n),h&&(h.classList.add("lesson-summary-scan-note"),l.append(h)),o||p.append(l),o){const e=a.createElement("dialog");e.className="lesson-question-image-viewer",e.id=`${n.id}-viewer`,e.setAttribute("aria-label",i.alt||L),t.setAttribute("aria-controls",e.id),t.setAttribute("aria-haspopup","dialog");const s=a.createElement("button");s.type="button",s.className="lesson-summary-scan-toggle lesson-question-image-close",s.setAttribute("aria-label",u?"إغلاق الصورة":"Close image"),s.innerHTML='<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg>';const k=i.cloneNode();k.loading="eager",e.append(k,s),a.body.append(e);const x=()=>{e.open||(t.setAttribute("aria-expanded","false"),!r?.aborted&&t.isConnected&&t.focus({preventScroll:!0}))},f=()=>{e.close(),x()};t.addEventListener("click",()=>{t.setAttribute("aria-expanded","true"),e.showModal(),s.focus({preventScroll:!0})},{signal:r}),s.addEventListener("click",f,{signal:r}),e.addEventListener("cancel",g=>{g.preventDefault(),f()},{signal:r}),e.addEventListener("click",g=>{g.target===e&&f()},{signal:r}),e.addEventListener("close",x,{signal:r}),r?.addEventListener("abort",()=>e.remove(),{once:!0});return}t.addEventListener("click",()=>{const e=t.getAttribute("aria-expanded")!=="true";t.setAttribute("aria-expanded",String(e)),w(e),l.classList.toggle("is-expanded",e),c.hidden=!e,e?(n.tabIndex=0,n.setAttribute("aria-describedby",c.id)):(n.removeAttribute("tabindex"),n.removeAttribute("aria-describedby")),n.scrollTop=0,n.scrollLeft=0,e&&n.focus({preventScroll:!0})},{signal:r})}),o||b.before(p)}
+// Original PDF crops stay in authored Markdown; this owner adds in-place reading controls.
+export function mountSummaryScans(summary, { titleId, locale = "ar", signal, exam = false } = {}) {
+  const images = [...summary.querySelectorAll(exam ? 'p > img' : 'p > img[src^="assets/lessons/ict/summary/"]')];
+  if (!images.length) return;
+  const doc = summary.ownerDocument;
+  const arabic = locale === "ar";
+  const section = doc.createElement("section");
+  section.className = "lesson-summary-scans";
+  const heading = doc.createElement("h2");
+  heading.id = `${titleId}-scans`;
+  heading.textContent = arabic ? "من صفحات الملخص" : "From the summary";
+  section.setAttribute("aria-labelledby", heading.id);
+  section.append(heading);
+
+  images.forEach((img, index) => {
+    const paragraph = img.parentElement;
+    const correction = paragraph.nextElementSibling?.tagName === "BLOCKQUOTE" ? paragraph.nextElementSibling : null;
+    const figure = doc.createElement("figure");
+    figure.className = `lesson-summary-scan${exam ? " lesson-question-image" : ""}`;
+    if (exam) {
+      const wrapper = doc.createElement("div");
+      wrapper.className = "lesson-summary-scans";
+      paragraph.before(wrapper);
+      wrapper.append(figure);
+    }
+    const caption = doc.createElement("figcaption");
+    const label = doc.createElement("span");
+    label.textContent = img.alt;
+    const button = doc.createElement("button");
+    button.type = "button";
+    button.className = "lesson-summary-scan-toggle";
+    button.dataset.summaryScanZoom = "";
+    button.setAttribute("aria-expanded", "false");
+    const fitLabel = arabic ? "تكبير الصورة" : "Enlarge image";
+    const zoomLabel = arabic ? "تصغير الصورة" : "Fit image";
+    const setButtonLabel = expanded => {
+      const text = expanded ? zoomLabel : fitLabel;
+      button.setAttribute("aria-label", text);
+      button.title = text;
+      if (exam) {
+        button.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${expanded
+          ? '<path d="M4 9h5V4m11 5h-5V4M4 15h5v5m11-5h-5v5"/>'
+          : '<path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/>'}</svg>`;
+      } else button.textContent = text;
+    };
+    setButtonLabel(false);
+    caption.append(label, button);
+    const viewport = doc.createElement("div");
+    viewport.className = "lesson-summary-scan-viewport";
+    viewport.id = `${titleId}-scan-${index + 1}`;
+    viewport.setAttribute("role", "region");
+    viewport.setAttribute("aria-label", img.alt);
+    button.setAttribute("aria-controls", viewport.id);
+    const help = doc.createElement("p");
+    help.className = "lesson-summary-scan-help";
+    help.id = `${viewport.id}-help`;
+    help.hidden = true;
+    help.textContent = arabic
+      ? "اسحب داخل الصورة لقراءة بقية المحتوى، أو استخدم مفاتيح الأسهم."
+      : "Scroll inside the image to read the remaining content, or use the arrow keys.";
+    img.draggable = false;
+    viewport.append(img);
+    if (!paragraph.textContent.trim() && !paragraph.children.length) paragraph.remove();
+    if (exam) figure.append(button, viewport);
+    else figure.append(caption, help, viewport);
+    if (correction) {
+      correction.classList.add("lesson-summary-scan-note");
+      figure.append(correction);
+    }
+    if (!exam) section.append(figure);
+    if (exam) {
+      const dialog = doc.createElement("dialog");
+      dialog.className = "lesson-question-image-viewer";
+      dialog.id = `${viewport.id}-viewer`;
+      dialog.setAttribute("aria-label", img.alt || fitLabel);
+      button.setAttribute("aria-controls", dialog.id);
+      button.setAttribute("aria-haspopup", "dialog");
+      const close = doc.createElement("button");
+      close.type = "button";
+      close.className = "lesson-summary-scan-toggle lesson-question-image-close";
+      close.setAttribute("aria-label", arabic ? "إغلاق الصورة" : "Close image");
+      close.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg>';
+      const fullImage = img.cloneNode();
+      fullImage.loading = "eager";
+      dialog.append(fullImage, close);
+      doc.body.append(dialog);
+      const reset = () => {
+        if (dialog.open) return;
+        button.setAttribute("aria-expanded", "false");
+        if (!signal?.aborted && button.isConnected) button.focus({ preventScroll:true });
+      };
+      const closeDialog = () => { dialog.close(); reset(); };
+      button.addEventListener("click", () => {
+        button.setAttribute("aria-expanded", "true");
+        dialog.showModal();
+        close.focus({ preventScroll:true });
+      }, { signal });
+      close.addEventListener("click", closeDialog, { signal });
+      dialog.addEventListener("cancel", event => { event.preventDefault(); closeDialog(); }, { signal });
+      dialog.addEventListener("click", event => { if (event.target === dialog) closeDialog(); }, { signal });
+      dialog.addEventListener("close", reset, { signal });
+      signal?.addEventListener("abort", () => dialog.remove(), { once:true });
+      return;
+    }
+    button.addEventListener("click", () => {
+      const expanded = button.getAttribute("aria-expanded") !== "true";
+      button.setAttribute("aria-expanded", String(expanded));
+      setButtonLabel(expanded);
+      figure.classList.toggle("is-expanded", expanded);
+      help.hidden = !expanded;
+      if (expanded) {
+        viewport.tabIndex = 0;
+        viewport.setAttribute("aria-describedby", help.id);
+      } else {
+        viewport.removeAttribute("tabindex");
+        viewport.removeAttribute("aria-describedby");
+      }
+      viewport.scrollTop = 0;
+      viewport.scrollLeft = 0;
+      if (expanded) viewport.focus({ preventScroll: true });
+    }, { signal });
+  });
+  if (!exam) summary.before(section);
+}

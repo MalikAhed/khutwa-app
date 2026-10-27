@@ -1,1 +1,26 @@
-export function mountProgressFeedback({store:s,service:n}){const e=document.createElement("aside");e.className="progress-feedback system-feedback",e.setAttribute("role","status"),e.setAttribute("aria-live","polite");const r=document.createElement("span"),t=document.createElement("button");t.type="button",t.className="system-action system-action--secondary",t.textContent="إعادة المحاولة",t.addEventListener("click",()=>{s.retry(n.getLearnerProgressOwner())}),e.append(r,t),document.body.append(e);const o=()=>{const d=s.getSaveState(n.getLearnerProgressOwner());e.hidden=d!=="failed",r.textContent="لم نتمكّن من الحفظ على جهازك. أبقِ الصفحة مفتوحة وأعد المحاولة لحفظ إجاباتك."},a=s.subscribe(o),c=n.subscribe(o);return o(),()=>{a(),c(),e.remove()}}
+// One visible saving indicator, shared across navigation and account changes.
+export function mountProgressFeedback({ store, service }) {
+  const host = document.createElement("aside");
+  host.className = "progress-feedback system-feedback";
+  host.setAttribute("role", "status");
+  host.setAttribute("aria-live", "polite");
+  const text = document.createElement("span");
+  const retry = document.createElement("button");
+  retry.type = "button";
+  retry.className = "system-action system-action--secondary";
+  retry.textContent = "إعادة المحاولة";
+  retry.addEventListener("click", () => void store.retry(service.getLearnerProgressOwner()));
+  host.append(text, retry);
+  document.body.append(host);
+  const update = () => {
+    const state = store.getSaveState(service.getLearnerProgressOwner());
+    // Normal saving, offline sync and recovered legacy records stay quiet.
+    // Only a real device-storage failure needs action to avoid losing answers.
+    host.hidden = state !== "failed";
+    text.textContent = "لم نتمكّن من الحفظ على جهازك. أبقِ الصفحة مفتوحة وأعد المحاولة لحفظ إجاباتك.";
+  };
+  const stop = store.subscribe(update);
+  const stopSession = service.subscribe(update);
+  update();
+  return () => { stop(); stopSession(); host.remove(); };
+}

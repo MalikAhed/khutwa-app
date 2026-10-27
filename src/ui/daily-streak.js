@@ -1,1 +1,114 @@
-export function mountDailyStreakSequence(s,{onRewards:b,celebrationSource:E}){const n=s.querySelector(".completion-streak-rocky"),l=n.closest(".completion-streak-mascot"),i=n.parentElement,q=i.querySelector(".completion-streak-rig"),y=new AbortController,A=s.querySelector(".completion-streak-scene"),v=s.querySelector("button"),a=window.matchMedia("(prefers-reduced-motion: reduce)"),d=new Set;let p=()=>{},g=!1;const m=(e,r)=>{const t=setTimeout(()=>{d.delete(t),g||r()},e);d.add(t)},h=()=>{d.forEach(e=>clearTimeout(e)),d.clear()},L=async()=>{try{const e=await fetch("assets/mascot/rocky-wave.svg",{signal:y.signal});if(!e.ok)return;const r=await e.text();if(g||a.matches||["settle","reward"].includes(s.dataset.streakStage))return;const t=new DOMParser().parseFromString(r.replaceAll("rocky-body-clip","streak-body-clip"),"image/svg+xml");if(t.documentElement.localName!=="svg"||t.querySelector("parsererror"))return;t.querySelectorAll("script,foreignObject").forEach(c=>c.remove());const o=document.importNode(t.documentElement,!0);o.classList.add("streak-rocky-svg"),o.querySelectorAll("style").forEach(c=>{c.textContent=c.textContent.replaceAll("[data-part",".streak-rocky-svg [data-part").replaceAll("rocky-wave-","streak-rocky-wave-")}),o.removeAttribute("aria-labelledby"),o.setAttribute("aria-hidden","true"),q.replaceChildren(o),i.classList.add("is-rig-ready")}catch{}},k=e=>{s.dataset.streakStage=e,getComputedStyle(l).transform,getComputedStyle(i).transform},u=()=>{const e=A.getBoundingClientRect(),r=Math.min(360,innerWidth*.78,innerHeight*.34),t=Math.max(r/2+12,e.top-r/2+28);l.style.setProperty("--rocky-final-y",`${t-innerHeight/2}px`),l.style.setProperty("--rocky-final-scale",String(r/l.offsetWidth))},w=()=>{s.dataset.streakReady="true",v.disabled=!1,v.focus({preventScroll:!0})},S=()=>{u(),p(),p=b(),k("reward"),i.classList.remove("is-rig-ready"),a.matches?w():(n.src=E(),m(1800,w),m(3300,()=>{n.src="assets/mascot/rocky-standing-still.svg"}))},f=()=>{a.matches&&(h(),y.abort(),i.classList.remove("is-rig-ready"),s.dataset.streakReduced="true",n.src="assets/mascot/rocky-standing-still-reduced.svg",S())};if(k("fade"),u(),a.matches)f();else{L();const e=[[2100,"peek"],[240,"wave"],[2400,"settle"]],r=t=>{if(t===e.length){m(460,S);return}const[o,c]=e[t];m(o,()=>{k(c),r(t+1)})};r(0)}return window.addEventListener("resize",u),a.addEventListener("change",f),()=>{g=!0,y.abort(),h(),p(),window.removeEventListener("resize",u),a.removeEventListener("change",f)}}
+/** The daily greeting pauses between each gesture; only Continue dismisses it. */
+export function mountDailyStreakSequence(dialog, { onRewards, celebrationSource }) {
+  const rocky = dialog.querySelector('.completion-streak-rocky');
+  const mascot = rocky.closest('.completion-streak-mascot');
+  const body = rocky.parentElement;
+  const rig = body.querySelector('.completion-streak-rig');
+  const media = new AbortController();
+  const fire = dialog.querySelector('.completion-streak-scene');
+  const button = dialog.querySelector('button');
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const timers = new Set();
+  let stopRewards = () => {};
+  let disposed = false;
+  const schedule = (delay, callback) => {
+    const timer = setTimeout(() => {
+      timers.delete(timer);
+      if (!disposed) callback();
+    }, delay);
+    timers.add(timer);
+  };
+  const clearTimers = () => {
+    timers.forEach(timer => clearTimeout(timer));
+    timers.clear();
+  };
+  const loadWaveRig = async () => {
+    try {
+      const response = await fetch('assets/mascot/rocky-wave.svg', { signal:media.signal });
+      if (!response.ok) return;
+      const source = await response.text();
+      if (disposed || motion.matches || ['settle','reward'].includes(dialog.dataset.streakStage)) return;
+      const parsed = new DOMParser().parseFromString(source.replaceAll('rocky-body-clip','streak-body-clip'), 'image/svg+xml');
+      if (parsed.documentElement.localName !== 'svg' || parsed.querySelector('parsererror')) return;
+      // Keep the approved wave paused until the greeting starts.
+      parsed.querySelectorAll('script,foreignObject').forEach(node => node.remove());
+      const svg = document.importNode(parsed.documentElement, true);
+      svg.classList.add('streak-rocky-svg');
+      svg.querySelectorAll('style').forEach(style => {
+        style.textContent = style.textContent.replaceAll('[data-part', '.streak-rocky-svg [data-part')
+          .replaceAll('rocky-wave-', 'streak-rocky-wave-');
+      });
+      svg.removeAttribute('aria-labelledby');
+      svg.setAttribute('aria-hidden', 'true');
+      rig.replaceChildren(svg);
+      body.classList.add('is-rig-ready');
+    } catch { /* The production image remains visible if the rig cannot load. */ }
+  };
+  const setStage = stage => {
+    dialog.dataset.streakStage = stage;
+    // Start travel and stretch together, including on a busy device.
+    getComputedStyle(mascot).transform;
+    getComputedStyle(body).transform;
+  };
+  const placeRocky = () => {
+    const rect = fire.getBoundingClientRect();
+    const size = Math.min(360, innerWidth * .78, innerHeight * .34);
+    const centerY = Math.max(size / 2 + 12, rect.top - size / 2 + 28);
+    mascot.style.setProperty('--rocky-final-y', `${centerY - innerHeight / 2}px`);
+    mascot.style.setProperty('--rocky-final-scale', String(size / mascot.offsetWidth));
+  };
+  const ready = () => {
+    dialog.dataset.streakReady = 'true';
+    button.disabled = false;
+    button.focus({ preventScroll:true });
+  };
+  const rewards = () => {
+    placeRocky();
+    stopRewards();
+    stopRewards = onRewards();
+    setStage('reward');
+    body.classList.remove('is-rig-ready');
+    if (motion.matches) ready();
+    else {
+      rocky.src = celebrationSource();
+      schedule(1800, ready);
+      schedule(3300, () => { rocky.src = 'assets/mascot/rocky-standing-still.svg'; });
+    }
+  };
+  const reduceMotion = () => {
+    if (!motion.matches) return;
+    clearTimers();
+    media.abort();
+    body.classList.remove('is-rig-ready');
+    dialog.dataset.streakReduced = 'true';
+    rocky.src = 'assets/mascot/rocky-standing-still-reduced.svg';
+    rewards();
+  };
+  setStage('fade');
+  placeRocky();
+  if (motion.matches) reduceMotion();
+  else {
+    // Each pause starts when its stage appears, including on a busy device.
+    void loadWaveRig();
+    const stages = [[2100,'peek'],[240,'wave'],[2400,'settle']];
+    const next = index => {
+      if (index === stages.length) { schedule(460, rewards); return; }
+      const [delay, stage] = stages[index];
+      schedule(delay, () => {
+        setStage(stage);
+        next(index + 1);
+      });
+    };
+    next(0);
+  }
+  window.addEventListener('resize', placeRocky);
+  motion.addEventListener('change', reduceMotion);
+  return () => {
+    disposed = true;
+    media.abort();
+    clearTimers();
+    stopRewards();
+    window.removeEventListener('resize', placeRocky);
+    motion.removeEventListener('change', reduceMotion);
+  };
+}

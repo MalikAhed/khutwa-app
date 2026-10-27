@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const lessonSource = `:::exam-question
 id: math-book-p062-ex1-a
 title: الكتاب، ص ٦٠ · مثال١-أ
 question: العمليات على المصفوفات
@@ -3162,4 +3164,16 @@ solution:
 
 
 العمليات الممكنة هي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">د</mi></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ز</mi></math>\`.
-:::`;export default m({status:"published",language:"ar",title:"العمليات على المصفوفات",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة العمليات على المصفوفات من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"41 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "العمليات على المصفوفات",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة العمليات على المصفوفات من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "41 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

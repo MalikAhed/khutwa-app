@@ -1,29 +1,118 @@
-import{ISLAMIC_BOOK_LESSONS as n,ISLAMIC_UNITS as c}from"./book-lessons.js?v=7388f68cc0f433fd";import{ISLAMIC_2022_MCQS as a}from"./islamic-2022-bank.js?v=7388f68cc0f433fd";import{ISLAMIC_2025_QUESTIONS as u}from"./islamic-2025-bank.js?v=7388f68cc0f433fd";import{defineMarkdownLesson as p}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";const d="https://moe.edu.ps/m/4064",S="islamic-required-mcq-405.zip";function O(e){if(e.type==="exam-question")return`:::exam-question
-id: ${e.id}
-title: ${e.title}
-question: ${e.question}
-reference: ${e.reference}
-answer-label: ${e.answerLabel}
+import { ISLAMIC_BOOK_LESSONS as BOOK_LESSONS, ISLAMIC_UNITS } from "./book-lessons.js";
+import { ISLAMIC_2022_MCQS } from "./islamic-2022-bank.js";
+import { ISLAMIC_2025_QUESTIONS } from "./islamic-2025-bank.js";
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+const SOURCE_BOOK = "https://moe.edu.ps/m/4064";
+const SOURCE_QUESTIONS = "islamic-required-mcq-405.zip";
+
+function renderQuestion(item) {
+  if (item.type === "exam-question") {
+    return `:::exam-question
+id: ${item.id}
+title: ${item.title}
+question: ${item.question}
+reference: ${item.reference}
+answer-label: ${item.answerLabel}
 body:
-${e.body}
+${item.body}
 solution:
-${e.solution}${e.guidance?`
+${item.solution}${item.guidance ? `
 guidance:
-${e.guidance}`:""}
-:::`;const t=e.choices.map((r,o)=>`- [${o===e.answer?"x":" "}] ${r[0]} | ${r[1]}`).join(`
-`);return`:::mcq
-id: ${e.id}
-title: ${e.title}
-kicker: ${e.kicker}
-reference: ${e.reference}
-question: ${e.question}
-${t}
+${item.guidance}` : ""}
+:::`;
+  }
+  const choices = item.choices
+    .map((choice, index) => `- [${index === item.answer ? "x" : " "}] ${choice[0]} | ${choice[1]}`)
+    .join("\n");
+  return `:::mcq
+id: ${item.id}
+title: ${item.title}
+kicker: ${item.kicker}
+reference: ${item.reference}
+question: ${item.question}
+${choices}
 explanation:
-${e.explanation}
-hint: ${e.hint}
-:::`}const s=new Map(n.map(e=>[e.sourceLesson,e])),f=Object.freeze([...a.filter(e=>s.has(e.sourceLesson)),...u.filter(e=>s.has(e.sourceLesson))]),i=new Map(n.map(e=>[e.id,[]]));for(const e of f)i.get(s.get(e.sourceLesson).id).push(e);export const ISLAMIC_LESSON_BANK=Object.freeze(Object.fromEntries(n.map(e=>{const t=Object.freeze(i.get(e.id));return[e.id,Object.freeze({...e,title:e.label,summary:t.length?`أسئلة المراجعة المطابقة لموضوع الدرس في الرزمة التعليمية الرسمية، الصفحات ${e.pages}.`:`هذا الدرس موجود في الرزمة التعليمية الرسمية، الصفحات ${e.pages}، ولا يحتوي مصدر الأسئلة المرفق على أسئلة مطابقة له.`,questions:t})]}))),ISLAMIC_UNIT_BANK=Object.freeze(Object.fromEntries(Object.entries(c).map(([e,t])=>[e,Object.freeze({...t,questions:Object.freeze(n.filter(r=>r.unitKey===e).flatMap(r=>ISLAMIC_LESSON_BANK[r.id].questions))})]))),ISLAMIC_LESSONS=Object.freeze(n.map(e=>{const t=ISLAMIC_LESSON_BANK[e.id].questions;return Object.freeze({...e,questionIds:t.map(r=>r.id),parts:[Object.freeze({id:`${e.id}-practice`,label:e.label,pages:e.pages,startStepId:t[0]?.id,questionIds:t.map(r=>r.id)})]})}));function l(e){return`<!-- step-id: ${e.id}-empty -->
-# ${e.label}
+${item.explanation}
+hint: ${item.hint}
+:::`;
+}
 
-لا توجد أسئلة مطابقة لهذا الدرس في ملف الأسئلة المرفق؛ أُبقي الدرس ظاهراً لأنّه جزء من الرزمة التعليمية الرسمية.`}export function createIslamicLesson(e){const t=ISLAMIC_LESSON_BANK[e]||ISLAMIC_UNIT_BANK[e];if(!t)throw new Error(`Unknown Islamic lesson: ${e}`);const r=t.questions.length?t.questions.map(O).join(`
+const BOOK_LESSON_BY_SOURCE = new Map(BOOK_LESSONS.map(lesson => [lesson.sourceLesson, lesson]));
 
-`):l(t);return p({status:"published",language:"ar",subjectId:"islamic-education",id:t.id.startsWith("islamic-")?t.id:`islamic-${t.id}`,title:t.title,summary:t.summary,outcome:"إتقان أسئلة الدرس المطابقة للرزمة التعليمية الرسمية.",mode:"تدريب وزاري",mission:"حل السؤال ثم مراجعة تفسير الإجابة من المصدر.",duration:"مراجعة مركزة",level:"توجيهي",reward:10,passingScore:80},r)}export{d as SOURCE_BOOK,S as SOURCE_QUESTIONS};
+// The reviewed ZIP supplies the first 13 lessons; the existing questions in
+// source lessons 21, 22, 23, 24 and 26 are retained in the two source banks.
+// Check the canonical book scope again before exposing questions in the catalog.
+const ACTIVE_QUESTIONS = Object.freeze([
+  ...ISLAMIC_2022_MCQS.filter(question => BOOK_LESSON_BY_SOURCE.has(question.sourceLesson)),
+  ...ISLAMIC_2025_QUESTIONS.filter(question => BOOK_LESSON_BY_SOURCE.has(question.sourceLesson)),
+]);
+const QUESTIONS_BY_LESSON = new Map(BOOK_LESSONS.map(lesson => [lesson.id, []]));
+for (const question of ACTIVE_QUESTIONS) QUESTIONS_BY_LESSON.get(BOOK_LESSON_BY_SOURCE.get(question.sourceLesson).id).push(question);
+
+export const ISLAMIC_LESSON_BANK = Object.freeze(Object.fromEntries(BOOK_LESSONS.map(lesson => {
+  const questions = Object.freeze(QUESTIONS_BY_LESSON.get(lesson.id));
+  return [lesson.id, Object.freeze({
+    ...lesson,
+    title:lesson.label,
+    summary:questions.length
+      ? `أسئلة المراجعة المطابقة لموضوع الدرس في الرزمة التعليمية الرسمية، الصفحات ${lesson.pages}.`
+      : `هذا الدرس موجود في الرزمة التعليمية الرسمية، الصفحات ${lesson.pages}، ولا يحتوي مصدر الأسئلة المرفق على أسئلة مطابقة له.`,
+    questions,
+  })];
+})));
+
+export const ISLAMIC_UNIT_BANK = Object.freeze(Object.fromEntries(Object.entries(ISLAMIC_UNITS).map(([unitKey, meta]) => [
+  unitKey,
+  Object.freeze({
+    ...meta,
+    questions:Object.freeze(BOOK_LESSONS.filter(lesson => lesson.unitKey === unitKey).flatMap(lesson => ISLAMIC_LESSON_BANK[lesson.id].questions)),
+  }),
+])));
+
+export const ISLAMIC_LESSONS = Object.freeze(BOOK_LESSONS.map(lesson => {
+  const questions = ISLAMIC_LESSON_BANK[lesson.id].questions;
+  return Object.freeze({
+    ...lesson,
+    questionIds:questions.map(question => question.id),
+    parts:[Object.freeze({
+      id:`${lesson.id}-practice`,
+      label:lesson.label,
+      pages:lesson.pages,
+      startStepId:questions[0]?.id,
+      questionIds:questions.map(question => question.id),
+    })],
+  });
+}));
+
+function emptyLessonSource(lesson) {
+  return `<!-- step-id: ${lesson.id}-empty -->
+# ${lesson.label}
+
+لا توجد أسئلة مطابقة لهذا الدرس في ملف الأسئلة المرفق؛ أُبقي الدرس ظاهراً لأنّه جزء من الرزمة التعليمية الرسمية.`;
+}
+
+export function createIslamicLesson(lessonId) {
+  const lesson = ISLAMIC_LESSON_BANK[lessonId] || ISLAMIC_UNIT_BANK[lessonId];
+  if (!lesson) throw new Error(`Unknown Islamic lesson: ${lessonId}`);
+  const source = lesson.questions.length
+    ? lesson.questions.map(renderQuestion).join("\n\n")
+    : emptyLessonSource(lesson);
+  return defineMarkdownLesson({
+    status:"published",
+    language:"ar",
+    subjectId:"islamic-education",
+    id:lesson.id.startsWith("islamic-") ? lesson.id : `islamic-${lesson.id}`,
+    title:lesson.title,
+    summary:lesson.summary,
+    outcome:"إتقان أسئلة الدرس المطابقة للرزمة التعليمية الرسمية.",
+    mode:"تدريب وزاري",
+    mission:"حل السؤال ثم مراجعة تفسير الإجابة من المصدر.",
+    duration:"مراجعة مركزة",
+    level:"توجيهي",
+    reward:10,
+    passingScore:80,
+  }, source);
+}
+
+export { SOURCE_BOOK, SOURCE_QUESTIONS };

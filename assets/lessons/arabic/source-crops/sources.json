@@ -1,0 +1,225 @@
+{
+  "sourceArchive": "arabic-gaza-questions.zip",
+  "crops": [
+    {
+      "file": "assets/lessons/arabic/source-crops/wafer-2019-q1.webp",
+      "source": "arabic-collection(1).pdf",
+      "clips": [
+        {
+          "page": 24,
+          "rect": [
+            101,
+            640,
+            989,
+            236
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "review_status": "visually-verified",
+      "source_raster_scale": "2 pixels per PDF point; source pNNN.png rendered at scale 2",
+      "archiveFile": "assets/wafer-2019-q1.webp",
+      "sha256": "b8dfc600f8af9e2636993641db9f0ab6e817ef33c6f4bc5b456d0c49dd035c9b"
+    },
+    {
+      "file": "assets/lessons/arabic/source-crops/wafer-2020-q2.webp",
+      "source": "arabic-collection(1).pdf",
+      "clips": [
+        {
+          "page": 24,
+          "rect": [
+            106,
+            878,
+            979,
+            236
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "review_status": "visually-verified",
+      "source_raster_scale": "2 pixels per PDF point; source pNNN.png rendered at scale 2",
+      "archiveFile": "assets/wafer-2020-q2.webp",
+      "sha256": "0ad55b75775bd5d6da1baa2c0eda740e7161bae7d9480ca34c6eb8fdb66bf10b"
+    },
+    {
+      "file": "assets/lessons/arabic/source-crops/wafer-2021-q3-a.webp",
+      "source": "arabic-collection(1).pdf",
+      "clips": [
+        {
+          "page": 24,
+          "rect": [
+            101,
+            1117,
+            990,
+            193
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "review_status": "visually-verified",
+      "source_raster_scale": "2 pixels per PDF point; source pNNN.png rendered at scale 2",
+      "archiveFile": "assets/wafer-2021-q3-a.webp",
+      "sha256": "36e3fad10aa44e823bfa89678a2b02f62e5ba15090c6302d194892b32f6a6375"
+    },
+    {
+      "file": "assets/lessons/arabic/source-crops/wafer-2021-q3-b.webp",
+      "source": "arabic-collection(1).pdf",
+      "clips": [
+        {
+          "page": 24,
+          "rect": [
+            101,
+            1309,
+            990,
+            190
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "review_status": "visually-verified",
+      "source_raster_scale": "2 pixels per PDF point; source pNNN.png rendered at scale 2",
+      "archiveFile": "assets/wafer-2021-q3-b.webp",
+      "sha256": "80ffe65ef411adb1f25f7d682b3f015393da44eb1b5ed646408becac2029feb6"
+    },
+    {
+      "file": "assets/lessons/arabic/source-crops/wafer-2021-q3-c.webp",
+      "source": "arabic-collection(1).pdf",
+      "clips": [
+        {
+          "page": 25,
+          "rect": [
+            100,
+            155,
+            990,
+            235
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "review_status": "visually-verified",
+      "source_raster_scale": "2 pixels per PDF point; source pNNN.png rendered at scale 2",
+      "archiveFile": "assets/wafer-2021-q3-c.webp",
+      "sha256": "0c2a43740ddbf4c480b5d6ca33b93fb2f9d0ffc5aff868fdaa8712b11db1aea2"
+    },
+    {
+      "file": "assets/lessons/arabic/source-crops/baseet-2020-q1-a.webp",
+      "source": "arabic-collection(1).pdf",
+      "clips": [
+        {
+          "page": 97,
+          "rect": [
+            96,
+            564,
+            998,
+            352
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "review_status": "visually-verified",
+      "source_raster_scale": "2 pixels per PDF point; source pNNN.png rendered at scale 2",
+      "archiveFile": "assets/baseet-2020-q1-a.webp",
+      "sha256": "8527fb3b59ea1f9e796f9ad72f1192b5db81c75e6002a40157a855ff404f5bfb"
+    },
+    {
+      "file": "assets/lessons/arabic/source-crops/baseet-2020-q1-b.webp",
+      "source": "arabic-collection(1).pdf",
+      "clips": [
+        {
+          "page": 97,
+          "rect": [
+            96,
+            916,
+            998,
+            349
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "review_status": "visually-verified",
+      "source_raster_scale": "2 pixels per PDF point; source pNNN.png rendered at scale 2",
+      "archiveFile": "assets/baseet-2020-q1-b.webp",
+      "sha256": "79b1fa788b11c805a945f5d135374993eed2843c3b36acaf97c3b0e5bab53052"
+    },
+    {
+      "file": "assets/lessons/arabic/source-crops/baseet-2020-q1-c.webp",
+      "source": "arabic-collection(1).pdf",
+      "clips": [
+        {
+          "page": 97,
+          "rect": [
+            96,
+            1263,
+            998,
+            302
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "review_status": "visually-verified",
+      "source_raster_scale": "2 pixels per PDF point; source pNNN.png rendered at scale 2",
+      "archiveFile": "assets/baseet-2020-q1-c.webp",
+      "sha256": "ffd50d6b2da9a7b46c236249551169a022069f686c36ec3c621e997b55f59bbf"
+    },
+    {
+      "file": "assets/lessons/arabic/source-crops/baseet-2021-q2-a.webp",
+      "source": "arabic-collection(1).pdf",
+      "clips": [
+        {
+          "page": 98,
+          "rect": [
+            104,
+            192,
+            982,
+            351
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "review_status": "visually-verified",
+      "source_raster_scale": "2 pixels per PDF point; source pNNN.png rendered at scale 2",
+      "archiveFile": "assets/baseet-2021-q2-a.webp",
+      "sha256": "180735d4486b7e7e638a17bd764d8f29730ecbd259c74d89f35d96a5dd178e5c"
+    },
+    {
+      "file": "assets/lessons/arabic/source-crops/baseet-2021-q2-b.webp",
+      "source": "arabic-collection(1).pdf",
+      "clips": [
+        {
+          "page": 98,
+          "rect": [
+            104,
+            541,
+            982,
+            348
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "review_status": "visually-verified",
+      "source_raster_scale": "2 pixels per PDF point; source pNNN.png rendered at scale 2",
+      "archiveFile": "assets/baseet-2021-q2-b.webp",
+      "sha256": "947364716ef2c1d4974a22d7e6b373aacc8aca72ec11c657ea7f24884315d764"
+    },
+    {
+      "file": "assets/lessons/arabic/source-crops/baseet-2022-q3-a.webp",
+      "source": "arabic-collection(1).pdf",
+      "clips": [
+        {
+          "page": 98,
+          "rect": [
+            96,
+            914,
+            998,
+            406
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "review_status": "visually-verified",
+      "source_raster_scale": "2 pixels per PDF point; source pNNN.png rendered at scale 2",
+      "archiveFile": "assets/baseet-2022-q3-a.webp",
+      "sha256": "a2e58b3eb27184a52a39739a3f7c716b43fb422de5db70c61568177ad3f11e45"
+    }
+  ]
+}

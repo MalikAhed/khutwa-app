@@ -1,4 +1,6 @@
-import{createChemistryLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js";
+
+export const source = `:::mcq
 id: chemistry-gaza-p014-q01-a6
 title: الوحدة ١ · الدرس ٢ · ص ١٢ · س السؤال الأول · a٦
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤
@@ -2728,4 +2730,6 @@ D يليه باثنين، فيكون P وعدده 15 وتوزيعه [Ne]3s²3p³
 **المصدر:** الصفحات 2، 9، 10 من الكتاب.
 
 :::
-`;export default e("u01-l02-electron-configuration",source);
+`;
+
+export default createChemistryLesson("u01-l02-electron-configuration", source);

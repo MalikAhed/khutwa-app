@@ -1,4 +1,6 @@
-import{createBiologyLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createBiologyLesson } from "./shared.js";
+
+export const source = `:::mcq
 id: bio-b-p022-q1-5
 title: الرزمة التعليمية، صفحة 22، السؤال 1-5
 question: أي الأحماض الأمينية الآتية لا تشفر بأكثر من كودون؟
@@ -3372,4 +3374,6 @@ explanation:
 
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
-:::`;export default m("gene-to-protein",source);
+:::`;
+
+export default createBiologyLesson("gene-to-protein", source);

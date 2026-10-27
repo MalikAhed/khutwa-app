@@ -1,1 +1,31 @@
-import{applyProgressUpdate as l,emptyPart as u,partKey as m,recalculateQuestionRewards as i,restorePartEntries as d}from"../domain/subject-progress.js?v=7388f68cc0f433fd";export const LEGACY_PROGRESS_PREFIX="tawjihi:subject-parts:v1:";export function readLegacyProgress(e,r,n){return d(JSON.parse(e?.getItem(LEGACY_PROGRESS_PREFIX+encodeURIComponent(r))||"null"),o=>n(o,r))}export function createSessionProgressAdapter({storage:e=null,onError:r=console.warn}={}){const n=new Map,o=t=>e?readLegacyProgress(e,t,r):i(new Map(n.get(t)||[]));return{read:o,async update(t){const{ownerId:c}=t.value,s=o(c),p=m(t.value);s.set(p,l(s.get(p)||u(),t,s));const a=i(s);return e&&e.setItem(LEGACY_PROGRESS_PREFIX+encodeURIComponent(c),JSON.stringify({version:1,records:[...a]})),n.set(c,a),a},close(){}}}
+// @ts-check
+import { applyProgressUpdate, emptyPart, partKey, recalculateQuestionRewards, restorePartEntries } from "../domain/subject-progress.js";
+
+export const LEGACY_PROGRESS_PREFIX = "tawjihi:subject-parts:v1:";
+/** @param {Pick<Storage,'getItem'>|null} storage @param {string} ownerId @param {(error:unknown, ownerId:string)=>void} onError @returns {Map<string,import('../domain/subject-progress.js').PartRecord>} */
+export function readLegacyProgress(storage, ownerId, onError) {
+  return restorePartEntries(JSON.parse(storage?.getItem(LEGACY_PROGRESS_PREFIX + encodeURIComponent(ownerId)) || "null"), (error) => onError(error, ownerId));
+}
+
+// Guest-only session scope; the member adapter uses IndexedDB transactions.
+/** @param {{storage?:Pick<Storage,'getItem'|'setItem'>|null, onError?:(error:unknown, ownerId:string)=>void}} [options] @returns {import('./subject-progress-store.js').ProgressAdapter} */
+export function createSessionProgressAdapter({ storage = null, onError = console.warn } = {}) {
+  /** @type {Map<string,Map<string,import("../domain/subject-progress.js").PartRecord>>} */
+  const memory = new Map();
+  /** @param {string} ownerId */
+  const read = (ownerId) => storage ? readLegacyProgress(storage, ownerId, onError) : recalculateQuestionRewards(new Map(memory.get(ownerId) || []));
+  return {
+    read,
+    async update(update) {
+      const { ownerId } = update.value;
+      const records = read(ownerId);
+      const id = partKey(update.value);
+      records.set(id, applyProgressUpdate(records.get(id) || emptyPart(), update, records));
+      const confirmed = recalculateQuestionRewards(records);
+      if (storage) storage.setItem(LEGACY_PROGRESS_PREFIX + encodeURIComponent(ownerId), JSON.stringify({ version:1, records:[...confirmed] }));
+      memory.set(ownerId, confirmed);
+      return confirmed;
+    },
+    close() {},
+  };
+}

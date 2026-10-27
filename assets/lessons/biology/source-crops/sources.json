@@ -1,0 +1,3510 @@
+[
+  {
+    "file": "assets/lessons/biology/source-crops/bio-b-p069-q1-8-figure.webp",
+    "source": "العلوم الحياتية ١٢ متمازجة غزة(1).pdf",
+    "clips": [
+      {
+        "page": 69,
+        "rect": [
+          71.5,
+          542.0,
+          102.5,
+          138.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          143,
+          1084,
+          205,
+          276
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "book",
+    "source_id": "book",
+    "sha256": "0f38be96ca9040976464851536207b46bf33be4ab990afb59ef3763c0961bc2a",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.615,
+      "edgeMeanAbsoluteChannelError": 2.927
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-b-p070-q4-figure.webp",
+    "source": "العلوم الحياتية ١٢ متمازجة غزة(1).pdf",
+    "clips": [
+      {
+        "page": 70,
+        "rect": [
+          55.0,
+          267.0,
+          191.0,
+          208.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          110,
+          534,
+          382,
+          416
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "book",
+    "source_id": "book",
+    "sha256": "1758fa63c08169a3cab69540db89385f5b2c197c0935a69fe9113267bed592a4",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 92,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.885,
+      "edgeMeanAbsoluteChannelError": 2.592
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p005-q12-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 5,
+        "rect": [
+          92.0,
+          82.0,
+          337.0,
+          41.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          184,
+          164,
+          674,
+          83
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "7117e1778bf83c039f898fec70341600f3c25685f2c2603df8797fe9f08a77da",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.21,
+      "edgeMeanAbsoluteChannelError": 2.084
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p007-q33-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 7,
+        "rect": [
+          51.0,
+          292.0,
+          138.0,
+          108.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          102,
+          584,
+          276,
+          216
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "95d5c7f9c7be6eaa9e0125f40c1de1a3774e720bd7c15f7b304bf9bfd45a96b3",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.602,
+      "edgeMeanAbsoluteChannelError": 2.418
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p007-q36-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 7,
+        "rect": [
+          51.0,
+          634.0,
+          96.0,
+          83.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          102,
+          1268,
+          192,
+          166
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "1b2aaf385402dc4dead4e722c1881ae10638ed76c65398ca5e33c686841dd438",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.911,
+      "edgeMeanAbsoluteChannelError": 2.058
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p009-q7-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 9,
+        "rect": [
+          60.0,
+          61.0,
+          363.0,
+          157.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          120,
+          122,
+          726,
+          315
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "5f4bc3885f08b8d0c61ee042ca5339d8e46fe355e62ce647bc79abcd99fba697",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.145,
+      "edgeMeanAbsoluteChannelError": 2.276
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p010-q11-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 10,
+        "rect": [
+          64.5,
+          71.5,
+          205.5,
+          163.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          129,
+          143,
+          411,
+          326
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "a921b5e036ce6c77450f0ce2276d64f35ebb97eb0fc58f28403526681d9af8b2",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.044,
+      "edgeMeanAbsoluteChannelError": 2.43
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p010-q12-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 10,
+        "rect": [
+          64.0,
+          290.5,
+          175.5,
+          131.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          128,
+          581,
+          351,
+          263
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "c2b23d93c209155db6c4cacf282124d6e72f9fc367ccfbc26d655f61c88020c8",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.749,
+      "edgeMeanAbsoluteChannelError": 2.757
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p010-q13-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 10,
+        "rect": [
+          73.5,
+          449.0,
+          215.0,
+          127.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          147,
+          898,
+          430,
+          255
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "5014656ae85e1d1b8496d26a16b96241676de728c5d60ecfa686629bf171412c",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.471,
+      "edgeMeanAbsoluteChannelError": 2.407
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p011-q15-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 11,
+        "rect": [
+          68.5,
+          69.5,
+          184.5,
+          121.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          137,
+          139,
+          369,
+          243
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "730cf017c6ee7e14d1294afa3f69669986fb446aa4c8d86ffd72a6c5b6fe4e63",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.669,
+      "edgeMeanAbsoluteChannelError": 2.456
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p011-q17-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 11,
+        "rect": [
+          61.0,
+          385.0,
+          199.0,
+          147.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          122,
+          770,
+          398,
+          294
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "c20400be9f1f66b3e58a622fae8bd41de527221855fdc5f3ddec1c5e7612eebe",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.021,
+      "edgeMeanAbsoluteChannelError": 2.477
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p012-q23-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 12,
+        "rect": [
+          36.0,
+          495.5,
+          207.0,
+          145.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          72,
+          991,
+          414,
+          291
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "8b725fee21fefa837c39f8d0bbe8eacf8cf6a4bf504a75b0dd4e3d4f881a98c3",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.22,
+      "edgeMeanAbsoluteChannelError": 2.369
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p015-q9-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 15,
+        "rect": [
+          102.0,
+          360.0,
+          199.5,
+          165.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          204,
+          720,
+          399,
+          330
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "dc447aa7a3ef605b99bf6ed5b239b040c1917c7885dc109c9754186912bb6dd8",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.283,
+      "edgeMeanAbsoluteChannelError": 2.467
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p015-q10-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 15,
+        "rect": [
+          37.0,
+          616.5,
+          279.5,
+          161.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          74,
+          1233,
+          559,
+          323
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "2d0ca158c9f1d68fe69443079d1f698b20534e32ca52ea2642ed62099f32e0f0",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.772,
+      "edgeMeanAbsoluteChannelError": 2.531
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p016-q12-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 16,
+        "rect": [
+          38.5,
+          252.5,
+          205.5,
+          116.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          77,
+          505,
+          411,
+          232
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "0ae9b440c98f71498d4c891027ce3ebb6cbc9082930294890bd78244d9632252",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.658,
+      "edgeMeanAbsoluteChannelError": 2.261
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p016-q13-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 16,
+        "rect": [
+          33.0,
+          440.0,
+          215.5,
+          193.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          66,
+          880,
+          431,
+          387
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "1462ba92eabd174ad257bc8afb5084fdfa36b3deeb54ee79671fdb180d9db372",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 44.054,
+      "edgeMeanAbsoluteChannelError": 3.053
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p017-q14-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 17,
+        "rect": [
+          158.0,
+          105.5,
+          298.0,
+          155.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          316,
+          211,
+          596,
+          310
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "6aa1bdf455ddc26c79be63f695b058ae5b34908aa0ccaa54d29edc5a6dc2db84",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 92,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.691,
+      "edgeMeanAbsoluteChannelError": 2.161
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p020-q31-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 20,
+        "rect": [
+          51.0,
+          649.0,
+          399.5,
+          71.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          102,
+          1298,
+          799,
+          143
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "5547ffc5ff750c5f10a1878c263f1cb694163fc6114aedf70305b2331e68a402",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.717,
+      "edgeMeanAbsoluteChannelError": 2.419
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p021-q1-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 21,
+        "rect": [
+          39.0,
+          104.5,
+          189.0,
+          116.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          78,
+          209,
+          378,
+          232
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "dea69c57473f7e6ea64f0a08fe4cee62dc5b9b525b9a9a5b064ad8e37bce4561",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.958,
+      "edgeMeanAbsoluteChannelError": 2.166
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p022-q10-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 22,
+        "rect": [
+          51.5,
+          445.5,
+          203.5,
+          108.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          103,
+          891,
+          407,
+          216
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "070de44b648516b4a8cd41feac064e66769b6814091c55e07103f7e1b9eb2d2d",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.459,
+      "edgeMeanAbsoluteChannelError": 2.473
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p023-q13-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 23,
+        "rect": [
+          49.0,
+          205.0,
+          207.5,
+          157.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          98,
+          410,
+          415,
+          314
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "528af7d5cd7561857fcc3ea5ca9e31e2545d963496513171d1745fd16bfb0a9b",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.488,
+      "edgeMeanAbsoluteChannelError": 2.475
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p023-q15-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 23,
+        "rect": [
+          47.5,
+          575.5,
+          212.0,
+          162.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          95,
+          1151,
+          424,
+          324
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "be45784cf5867c0c71f60f43abeda39d3816cb13ae0d2ff2a1b0caaf70c749ae",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.095,
+      "edgeMeanAbsoluteChannelError": 2.415
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p024-q20-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 24,
+        "rect": [
+          47.5,
+          586.5,
+          171.0,
+          135.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          95,
+          1173,
+          342,
+          271
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "a8cbb2554a6aedea7f6d7c6498d5c41a2dda88daa784edd22e8766a93d2711f4",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.354,
+      "edgeMeanAbsoluteChannelError": 2.359
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p025-q25-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 25,
+        "rect": [
+          47.0,
+          516.0,
+          200.5,
+          171.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          94,
+          1032,
+          401,
+          342
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "8eb96527bbf264c7cab89470f955c07613cf8054e749676af87889dd50ed8816",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.737,
+      "edgeMeanAbsoluteChannelError": 2.519
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p026-q29-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 26,
+        "rect": [
+          44.5,
+          475.0,
+          212.0,
+          177.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          89,
+          950,
+          424,
+          354
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "1899b55189e59b40581625e62046cb7d33040542187d4915f9ff9be1a92b7617",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.929,
+      "edgeMeanAbsoluteChannelError": 2.818
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p027-q2-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 27,
+        "rect": [
+          78.5,
+          162.0,
+          155.5,
+          105.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          157,
+          324,
+          311,
+          210
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "744772b82ce5a5d8a4e707945084c8acfe743ea3a9c53ac2dd4a6c07304c3e12",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.107,
+      "edgeMeanAbsoluteChannelError": 2.437
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p028-q4-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 28,
+        "rect": [
+          40.5,
+          379.0,
+          225.0,
+          184.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          81,
+          758,
+          450,
+          368
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "466c0485ec0e9728093ec37c297e82e83e65ed9fb7f39fa684322c8664bee45d",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 44.302,
+      "edgeMeanAbsoluteChannelError": 2.456
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p028-q5-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 28,
+        "rect": [
+          42.0,
+          626.5,
+          195.0,
+          124.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          84,
+          1253,
+          390,
+          248
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "b0f39fd0a63afe141d16ad03d9f6dc5cfe7da8ea1596c0996030f3b53997b45f",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.399,
+      "edgeMeanAbsoluteChannelError": 2.909
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p031-q14-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 31,
+        "rect": [
+          44.5,
+          76.5,
+          236.0,
+          146.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          89,
+          153,
+          472,
+          293
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "5302b7bd7f8c7d98467f8c8adea1e7fd7c60b7beb1de5fdfb0e94e514e4204d0",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.252,
+      "edgeMeanAbsoluteChannelError": 2.565
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p039-q33-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 39,
+        "rect": [
+          187.5,
+          169.0,
+          265.5,
+          155.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          375,
+          338,
+          531,
+          310
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_verified_original_crop",
+    "review_notes": "Opened actual crop at native size after extraction; labels/axes/figure boundaries compared against source page.",
+    "batch": "energy",
+    "source_id": "questions",
+    "sha256": "833a065a462a0a7ed3f1f793d5fec2e15eef4a266fdbd07494fd5940bdcd446d",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 44.367,
+      "edgeMeanAbsoluteChannelError": 2.613
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p040-q7-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 40,
+        "rect": [
+          66.0,
+          555.5,
+          110.5,
+          79.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          132,
+          1111,
+          221,
+          158
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "d56ef270467fe5d973341298abf3eef5e476e94f9bc6e6a14faf9876d631356e",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.949,
+      "edgeMeanAbsoluteChannelError": 2.617
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p041-q12-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 41,
+        "rect": [
+          72.5,
+          218.0,
+          130.5,
+          86.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          145,
+          436,
+          261,
+          173
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "f6b992227c950bd35649eb723fd4a48861e88ddd94c7b018ab1fd1e260a2cdf6",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.903,
+      "edgeMeanAbsoluteChannelError": 2.722
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p043-q1-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 43,
+        "rect": [
+          69.5,
+          249.5,
+          180.5,
+          103.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          139,
+          499,
+          361,
+          206
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "7eb43f81a2b6cf92b526ae574ce968451518dc765a3fb1aa9fb9103911c7c88d",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.703,
+      "edgeMeanAbsoluteChannelError": 2.336
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p043-q2-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 43,
+        "rect": [
+          65.0,
+          392.0,
+          205.0,
+          85.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          130,
+          784,
+          410,
+          171
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "8a0ba44cc374dcde4567d88a0136d91b47ea94f59f3c6805fce5f1ce66126498",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.713,
+      "edgeMeanAbsoluteChannelError": 3.135
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p043-q4-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 43,
+        "rect": [
+          65.0,
+          675.5,
+          170.5,
+          76.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          130,
+          1351,
+          341,
+          152
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "77d4a36ea98f4ba7f5c07e72bfe1906d8818659f4e0d8d815880df8276362d3f",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.712,
+      "edgeMeanAbsoluteChannelError": 2.864
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p044-q5-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 44,
+        "rect": [
+          69.5,
+          82.5,
+          198.0,
+          95.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          139,
+          165,
+          396,
+          191
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "748f22ee7a131e198cf63f0f73628788c26dbd7d8a1a5a77591aaba5ed3f4e38",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.65,
+      "edgeMeanAbsoluteChannelError": 3.119
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p044-q9-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 44,
+        "rect": [
+          62.0,
+          505.5,
+          197.0,
+          90.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          124,
+          1011,
+          394,
+          180
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "1ebff9552d8f98cb2580974145119bebeaa045e67a2ffdde7d2a2a3299838ff2",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.76,
+      "edgeMeanAbsoluteChannelError": 2.956
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p044-q11-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 44,
+        "rect": [
+          63.5,
+          645.0,
+          139.5,
+          109.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          127,
+          1290,
+          279,
+          219
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "088f906282eb97b1e5fe66873ef7bb08a4160599ab831083e70b96f8254a2fa6",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.581,
+      "edgeMeanAbsoluteChannelError": 2.633
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p045-q12-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 45,
+        "rect": [
+          63.0,
+          62.5,
+          225.0,
+          83.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          126,
+          125,
+          450,
+          166
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "28169e748855d414f9e379b31aeec19f08d1050bafb9ef5dd1baf35264b8dc96",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 46.408,
+      "edgeMeanAbsoluteChannelError": 2.058
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p046-q22-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 46,
+        "rect": [
+          78.0,
+          215.0,
+          340.5,
+          89.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          156,
+          430,
+          681,
+          178
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "b7daa4a02a4be4b5691cfa5bf4259451f245e8b1f0bb9f0af7d872af0a6aade7",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 44.68,
+      "edgeMeanAbsoluteChannelError": 2.292
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p047-q1-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 47,
+        "rect": [
+          39.5,
+          31.0,
+          106.0,
+          102.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          79,
+          62,
+          212,
+          205
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "f14076339ca50240a2e469aa197dd3ed2c5953ef2f9808d9c0be27173dbae33c",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.128,
+      "edgeMeanAbsoluteChannelError": 2.211
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p049-q7-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 49,
+        "rect": [
+          72.0,
+          481.0,
+          465.5,
+          154.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          144,
+          962,
+          931,
+          308
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "4d3efb795dea9b268bd72f7df07755701e83b4a09206a062c8f3f38f1cb75d21",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.589,
+      "edgeMeanAbsoluteChannelError": 2.658
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p050-q8-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 50,
+        "rect": [
+          32.0,
+          99.0,
+          256.5,
+          164.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          64,
+          198,
+          513,
+          329
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "bc23776c5324e44f63699aca11753ddbe45ff9c0860ac720cf7b43da69badf53",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.201,
+      "edgeMeanAbsoluteChannelError": 2.797
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p050-q9-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 50,
+        "rect": [
+          75.5,
+          355.5,
+          168.5,
+          92.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          151,
+          711,
+          337,
+          184
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "395c2c7d59a46ce437f3911c19641c89dc383de411b4f643f1453cd1e8d901c6",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 46.057,
+      "edgeMeanAbsoluteChannelError": 2.778
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p051-q11-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 51,
+        "rect": [
+          31.5,
+          85.0,
+          181.5,
+          50.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "outputOffset": [
+          0,
+          0
+        ],
+        "originalRectPixels": [
+          63,
+          170,
+          363,
+          100
+        ],
+        "rasterDpi": 144
+      },
+      {
+        "page": 51,
+        "rect": [
+          31.5,
+          135.0,
+          194.0,
+          149.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "outputOffset": [
+          0,
+          100
+        ],
+        "originalRectPixels": [
+          63,
+          270,
+          388,
+          299
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "notes": "Two aligned source crops exclude only unrelated question punctuation at upper right; figure pixels preserved.",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "7f9eb42c54f1a0f1e0264e7c0d6fca02c48a2e7bf083c700ff20e456973feacf",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.747,
+      "edgeMeanAbsoluteChannelError": 3.091
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p054-q3-b2-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 54,
+        "rect": [
+          88.5,
+          370.0,
+          443.5,
+          153.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          177,
+          740,
+          887,
+          306
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed",
+    "batch": "molecular",
+    "source_id": "questions",
+    "sha256": "6decb5fe7ca53636b2321ba0f1ab5364d3f11411c55d6a8eed74f3645b181fc6",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 45.379,
+      "edgeMeanAbsoluteChannelError": 2.349
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p084-q38-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 84,
+        "rect": [
+          217.5,
+          391.0,
+          204.5,
+          53.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          435,
+          782,
+          409,
+          106
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "genetics_a",
+    "review_status": "visually_reviewed",
+    "source_id": "questions"
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p084-q42-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 84,
+        "rect": [
+          170.0,
+          689.0,
+          205.5,
+          47.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          340,
+          1378,
+          411,
+          95
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "genetics_a",
+    "review_status": "visually_reviewed",
+    "source_id": "questions"
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p085-q50-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 85,
+        "rect": [
+          165.0,
+          562.5,
+          255.5,
+          45.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          330,
+          1125,
+          511,
+          90
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "genetics_a",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "80dbb3353ecf3c0f14d38a5ca3863df2ec5d44d8c4e830d638c4f71172236fae",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.815,
+      "edgeMeanAbsoluteChannelError": 2.139
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p085-q51-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 85,
+        "rect": [
+          140.0,
+          660.5,
+          274.5,
+          43.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          280,
+          1321,
+          549,
+          87
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "genetics_a",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "3540257b1c652c136eb5181d7ca8ca471f266576591ed34bc6d9147836ea42f8",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.554,
+      "edgeMeanAbsoluteChannelError": 2.274
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p096-q45-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 96,
+        "rect": [
+          42.5,
+          367.5,
+          269.0,
+          171.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          85,
+          735,
+          538,
+          343
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "questions",
+    "sha256": "71b3cf8df3aa723db81e20b2afad10a0d6ee056de623c6e87ae70f5401d5a190",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 46.869,
+      "edgeMeanAbsoluteChannelError": 2.005
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p097-q47-map-solution.webp",
+    "source": "حلول تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 46,
+        "rect": [
+          72.5,
+          131.5,
+          349.0,
+          34.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          145,
+          263,
+          698,
+          69
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "answers"
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p097-q52-map-solution.webp",
+    "source": "حلول تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 46,
+        "rect": [
+          60.0,
+          510.0,
+          360.0,
+          35.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          120,
+          1020,
+          720,
+          70
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "answers",
+    "sha256": "79b23d86e469f11aefcb917c20c1675dac0eb65ad8a2a2816c60ebdb1989c1b5",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 45.052,
+      "edgeMeanAbsoluteChannelError": 2.309
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p098-q55-map-solution.webp",
+    "source": "حلول تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 46,
+        "rect": [
+          60.0,
+          710.0,
+          365.5,
+          38.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          120,
+          1420,
+          731,
+          77
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "answers"
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p098-q56-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 98,
+        "rect": [
+          139.0,
+          559.0,
+          232.5,
+          44.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          278,
+          1118,
+          465,
+          89
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "questions",
+    "sha256": "c3ca32574d579ffd33a68350183b755cca0d8298b73f15aceec64b3fef3bc005",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.274,
+      "edgeMeanAbsoluteChannelError": 2.564
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p100-q63-map-solution.webp",
+    "source": "حلول تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 48,
+        "rect": [
+          111.5,
+          223.5,
+          310.0,
+          31.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          223,
+          447,
+          620,
+          63
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "answers"
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p101-q71-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 101,
+        "rect": [
+          116.0,
+          108.0,
+          270.5,
+          135.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          232,
+          216,
+          541,
+          271
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "questions",
+    "sha256": "ee6b82e5e203bd63e46a311cd512d73831932300c24790e591e35e8b1424dde8",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.311,
+      "edgeMeanAbsoluteChannelError": 2.941
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p101-q74-solution.webp",
+    "source": "حلول تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 49,
+        "rect": [
+          122.5,
+          415.0,
+          271.0,
+          270.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          245,
+          830,
+          542,
+          540
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "answers",
+    "sha256": "df8922e6550f5976238d81fc44a6d4acb5b2678dcef9dcda424d3c2bdb1dc427",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 45.29,
+      "edgeMeanAbsoluteChannelError": 2.786
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p101-q79-solution.webp",
+    "source": "حلول تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 50,
+        "rect": [
+          72.5,
+          296.0,
+          362.0,
+          181.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          145,
+          592,
+          724,
+          362
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "answers",
+    "sha256": "58c7e47d431baaff1774abe6e76ed4dcf2135a63a8bc07a93d49d7188b6b3146",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 44.522,
+      "edgeMeanAbsoluteChannelError": 3.468
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p102-q2-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 102,
+        "rect": [
+          40.0,
+          183.0,
+          126.5,
+          88.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          80,
+          366,
+          253,
+          177
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "questions",
+    "sha256": "0262a7b71cc0f3e16fafc478a96a7e7641f7af8f2078ed20c6a379d9ac27060d",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.781,
+      "edgeMeanAbsoluteChannelError": 2.221
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p102-q4-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 102,
+        "rect": [
+          39.0,
+          421.0,
+          199.5,
+          45.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          78,
+          842,
+          399,
+          91
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "questions",
+    "sha256": "d2c055e8758c929390004978e1c12ae2453142997d423d0aea8fe7d5584918d2",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.162,
+      "edgeMeanAbsoluteChannelError": 1.893
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p103-q13-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 103,
+        "rect": [
+          192.0,
+          482.0,
+          50.5,
+          48.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          384,
+          964,
+          101,
+          97
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "questions"
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p104-q2-table.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 104,
+        "rect": [
+          85.5,
+          362.5,
+          402.5,
+          88.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          171,
+          725,
+          805,
+          177
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "questions",
+    "sha256": "9ccc054168f73444521164889435956e900a63f8d5dd38a9bdd1fdf5af6632cf",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 46.856,
+      "edgeMeanAbsoluteChannelError": 1.817
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p105-q5-table.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 105,
+        "rect": [
+          37.5,
+          316.0,
+          205.5,
+          82.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          75,
+          632,
+          411,
+          164
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "questions",
+    "sha256": "c2742fbae4cff593ae69c2e9ec88e888fcb6f76c2a5e039a2cdbf141fcd71e51",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.942,
+      "edgeMeanAbsoluteChannelError": 2.209
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p110-q23-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 110,
+        "rect": [
+          100.0,
+          61.0,
+          130.5,
+          95.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          200,
+          122,
+          261,
+          190
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "questions",
+    "sha256": "ec2866ae67baf6a3e6d7806e3b97d7218369f5672f37aa61ac64472e9d0bcb91",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.944,
+      "edgeMeanAbsoluteChannelError": 2.902
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p110-q24-map-solution.webp",
+    "source": "حلول تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 59,
+        "rect": [
+          286.5,
+          369.0,
+          226.5,
+          33.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          573,
+          738,
+          453,
+          66
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "answers"
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p111-q29-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 111,
+        "rect": [
+          40.0,
+          373.0,
+          259.0,
+          139.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          80,
+          746,
+          518,
+          278
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "questions",
+    "sha256": "729a6489b00352d0526d269cb3bcc7690b640abf822a2c050d3c41979f7a8fbd",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.036,
+      "edgeMeanAbsoluteChannelError": 2.306
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p096-q46-map-solution.webp",
+    "source": "حلول تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 45,
+        "rect": [
+          75.0,
+          707.0,
+          348.5,
+          28.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          150,
+          1414,
+          697,
+          57
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "answers"
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p100-q62-map.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 100,
+        "rect": [
+          165.0,
+          85.5,
+          143.0,
+          47.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          330,
+          171,
+          286,
+          95
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "questions",
+    "sha256": "aa98d46252fb0561842d90d050fc9efe18c7acfc10c87edadcb9124dd6f0e2ca",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.064,
+      "edgeMeanAbsoluteChannelError": 2.095
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p110-q25-map-solution.webp",
+    "source": "حلول تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 59,
+        "rect": [
+          271.0,
+          549.5,
+          265.0,
+          57.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          542,
+          1099,
+          530,
+          114
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_original_crop",
+    "batch": "genetics_b",
+    "source_id": "answers",
+    "sha256": "e1d2686d0e049172c0aa4bb8fb10c73842cfe4721c1b11e387c36e103f628619",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.799,
+      "edgeMeanAbsoluteChannelError": 2.755
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p119-q12-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 119,
+        "rect": [
+          59.0,
+          69.5,
+          134.5,
+          84.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          118,
+          139,
+          269,
+          168
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "3193299c8df7f79a4b389d5088ab22667007887655aaf115e0c3c6be54252e75",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 92,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.631,
+      "edgeMeanAbsoluteChannelError": 1.968
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p119-q13-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 119,
+        "rect": [
+          56.0,
+          180.0,
+          134.5,
+          94.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          112,
+          360,
+          269,
+          189
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "d1d515d5d171e1003652dbe0771febed0f334583077238dec147bbc3936e372d",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.238,
+      "edgeMeanAbsoluteChannelError": 2.174
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p119-q16-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 119,
+        "rect": [
+          60.0,
+          399.0,
+          79.5,
+          63.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          120,
+          798,
+          159,
+          126
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "71885244ae06c60378d7803efd76056a9eea5368039ae2b127a4c6d0fdb9ae00",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.293,
+      "edgeMeanAbsoluteChannelError": 3.04
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p120-q12-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 120,
+        "rect": [
+          55.0,
+          405.5,
+          102.0,
+          150.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          110,
+          811,
+          204,
+          301
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "6e2bff30e0ff46dd401dfb3420d754eca3b63b90adfa7490d24d0be9dfd9409f",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.192,
+      "edgeMeanAbsoluteChannelError": 2.905
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p120-q13-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 120,
+        "rect": [
+          64.0,
+          572.0,
+          102.5,
+          193.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          128,
+          1144,
+          205,
+          386
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "23c26e2680b51f79ff83841e0443ca59d4fe04ac4423da8bbaae7324a68ce04c",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.194,
+      "edgeMeanAbsoluteChannelError": 2.913
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p121-q14-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 121,
+        "rect": [
+          55.0,
+          65.5,
+          127.0,
+          132.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          110,
+          131,
+          254,
+          264
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "c4f5455b4b952a8f5e76a7338f6d6e01ba06cbe7cec31741c31e4e66a28336da",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 92,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.522,
+      "edgeMeanAbsoluteChannelError": 2.134
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p121-q15-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 121,
+        "rect": [
+          56.0,
+          255.0,
+          139.5,
+          129.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          112,
+          510,
+          279,
+          258
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "1b01de979e9f8a5ab3d6a432cbc50fe3222ddcf40cbbf361ad14da73ed8f93d6",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.852,
+      "edgeMeanAbsoluteChannelError": 2.75
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p121-q16-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 121,
+        "rect": [
+          55.5,
+          438.5,
+          117.0,
+          133.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          111,
+          877,
+          234,
+          267
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "cbfeaf1295acc279897b333481327c288e41eb767f5aaae33a405daa57c6d5d0",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.249,
+      "edgeMeanAbsoluteChannelError": 2.924
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p125-q1-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 125,
+        "rect": [
+          37.5,
+          68.5,
+          95.0,
+          124.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          75,
+          137,
+          190,
+          249
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "2006cac3afbc10f55cc779dc33a4c023cca5354b1596d80612536d57795922e2",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.011,
+      "edgeMeanAbsoluteChannelError": 2.301
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p125-q1-essay-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 125,
+        "rect": [
+          40.5,
+          635.0,
+          139.5,
+          137.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          81,
+          1270,
+          279,
+          275
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "07c5830fe371d87ed3c851449bc277933f148b3a5dfde1f24ba76fb545910004",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.647,
+      "edgeMeanAbsoluteChannelError": 3.013
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p126-q4-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 126,
+        "rect": [
+          69.0,
+          190.0,
+          151.5,
+          143.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          138,
+          380,
+          303,
+          287
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "c73a982b4eafc7bdbb2513125c5e9947cb4ff571844330f9ea21a6bbb65ea329",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 92,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.467,
+      "edgeMeanAbsoluteChannelError": 1.906
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p126-q5-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 126,
+        "rect": [
+          38.0,
+          402.0,
+          201.5,
+          127.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          76,
+          804,
+          403,
+          255
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "3691dfd91758c68b5e01394dfc164878f6e0a6ff09752ae1708c8b5a4517b45d",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.131,
+      "edgeMeanAbsoluteChannelError": 2.902
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p126-q6-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 126,
+        "rect": [
+          42.5,
+          612.0,
+          169.0,
+          155.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          85,
+          1224,
+          338,
+          311
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "e41f4908b0780d88a3621249e1671e62f846b5a7902d2a7c7cbbc782fc181a42",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 92,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.594,
+      "edgeMeanAbsoluteChannelError": 2.319
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p127-q7-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 127,
+        "rect": [
+          95.0,
+          116.5,
+          107.0,
+          140.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          190,
+          233,
+          214,
+          280
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "277bc7d3f1ee52fbf957063298914683e542961c5d6e91c1a5ae77851af05d6f",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.679,
+      "edgeMeanAbsoluteChannelError": 2.371
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p132-q7-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 132,
+        "rect": [
+          64.0,
+          495.5,
+          121.0,
+          88.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          128,
+          991,
+          242,
+          177
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "3fc58549dfa15e39a1f86316066d730a3ae5aac43ce3dc5b05ba883dcc5b70b5",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.045,
+      "edgeMeanAbsoluteChannelError": 3.014
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p134-q8-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 134,
+        "rect": [
+          57.0,
+          304.5,
+          113.0,
+          107.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          114,
+          609,
+          226,
+          214
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "332127133ad2b853aa228d309f765ad4b9397528a334053402274e0acb4f31d1",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.132,
+      "edgeMeanAbsoluteChannelError": 2.683
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p135-q19-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 135,
+        "rect": [
+          61.0,
+          68.0,
+          162.0,
+          108.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          122,
+          136,
+          324,
+          217
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "14060fd0f4b86bb9fb3c020e717c7da80a76c54cc4f0d4aa3616a9daa7e3c751",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.338,
+      "edgeMeanAbsoluteChannelError": 2.718
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p135-q20-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 135,
+        "rect": [
+          60.0,
+          256.5,
+          124.5,
+          119.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          120,
+          513,
+          249,
+          238
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "103972a9a3ca561eedef95ce23e1f4fcda0572f08649f7a49c017cf6cd215fad",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.295,
+      "edgeMeanAbsoluteChannelError": 2.883
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p135-q24-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 135,
+        "rect": [
+          55.5,
+          529.5,
+          107.0,
+          86.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          111,
+          1059,
+          214,
+          172
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "de9ecf6dc526e90e508e24aeee1085d492a266e6f9e4f1d3a64040c9446c78ee",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.188,
+      "edgeMeanAbsoluteChannelError": 2.979
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p137-q2-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 137,
+        "rect": [
+          42.5,
+          170.0,
+          158.5,
+          99.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          85,
+          340,
+          317,
+          198
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "0998a8fc5e7778217b75b66234c00d7c50387b43523e351831c3ec6490c23abe",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.272,
+      "edgeMeanAbsoluteChannelError": 2.63
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p139-q9-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 139,
+        "rect": [
+          40.5,
+          455.0,
+          187.0,
+          127.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          81,
+          910,
+          374,
+          254
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "f46be33884bcd197c368658acadd999f10b7dfa13a582c1eaca843b2fddab91e",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.373,
+      "edgeMeanAbsoluteChannelError": 2.361
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p140-q11-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 140,
+        "rect": [
+          43.5,
+          104.0,
+          123.0,
+          113.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          87,
+          208,
+          246,
+          227
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "reviewed": true,
+    "batch": "body",
+    "review_status": "visually_reviewed",
+    "source_id": "questions",
+    "sha256": "8514abd9fff1edbe73f34e01c5d5070646b6f63e5d99475ab7f2b132f6ec1cdf",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.591,
+      "edgeMeanAbsoluteChannelError": 2.681
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p146-q1-written-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 146,
+        "rect": [
+          128.0,
+          581.5,
+          343.5,
+          152.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          256,
+          1163,
+          687,
+          304
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_clean_original_crop",
+    "batch": "immunity_microbes",
+    "source_id": "questions",
+    "sha256": "fb24588ac6007cfe0ed647db1d39f558f3cf644dc204754d7d0dce0876f185b0",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.001,
+      "edgeMeanAbsoluteChannelError": 2.453
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p147-q3-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 147,
+        "rect": [
+          56.0,
+          98.0,
+          166.5,
+          163.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          112,
+          196,
+          333,
+          326
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_clean_original_crop",
+    "batch": "immunity_microbes",
+    "source_id": "questions",
+    "sha256": "5a3992e07a684d3e94c31da9b135b09fe1a22529131b50a94044cf49729e5fd9",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.13,
+      "edgeMeanAbsoluteChannelError": 2.675
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p147-q4-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 147,
+        "rect": [
+          38.0,
+          304.0,
+          293.5,
+          154.0
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          76,
+          608,
+          587,
+          308
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_clean_original_crop",
+    "batch": "immunity_microbes",
+    "source_id": "questions",
+    "sha256": "ef25ef081d4d44bc784a23be8bffdcf3c8c81fc870a46003d7942c153d965448",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 92,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.404,
+      "edgeMeanAbsoluteChannelError": 1.712
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p149-q10-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 149,
+        "rect": [
+          121.0,
+          112.5,
+          312.0,
+          141.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          242,
+          225,
+          624,
+          283
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_clean_original_crop",
+    "batch": "immunity_microbes",
+    "source_id": "questions",
+    "sha256": "03f72c92661520178a3182e18d36f5073cb918909c276a6daad6374cd0700e3d",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 43.034,
+      "edgeMeanAbsoluteChannelError": 2.157
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p156-q15-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 156,
+        "rect": [
+          81.0,
+          67.0,
+          263.0,
+          129.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          162,
+          134,
+          526,
+          259
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_clean_original_crop",
+    "batch": "immunity_microbes",
+    "source_id": "questions",
+    "sha256": "c716255d5bc605f4f95673819fe713a38eb9efa634dbdc4ea01c282dfcb5d801",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 92,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 42.558,
+      "edgeMeanAbsoluteChannelError": 2.033
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p158-q3-virus-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 158,
+        "rect": [
+          70.0,
+          564.0,
+          56.0,
+          36.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          140,
+          1128,
+          112,
+          73
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_clean_original_crop",
+    "batch": "immunity_microbes",
+    "source_id": "questions",
+    "sha256": "865904c198cbd7492e84e559de56c68154a91d95e6222d292c312105086e7354",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 92,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 41.547,
+      "edgeMeanAbsoluteChannelError": 1.802
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p161-q1-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 161,
+        "rect": [
+          116.0,
+          97.5,
+          60.5,
+          62.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          232,
+          195,
+          121,
+          125
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_clean_original_crop",
+    "batch": "immunity_microbes",
+    "source_id": "questions",
+    "sha256": "b19054a699887051c1cb8161407989ca889ca2fa00cf69555a547557480b0e94",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 92,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.904,
+      "edgeMeanAbsoluteChannelError": 1.83
+    }
+  },
+  {
+    "file": "assets/lessons/biology/source-crops/bio-q-p161-q3-written-figure.webp",
+    "source": "تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf",
+    "clips": [
+      {
+        "page": 161,
+        "rect": [
+          46.5,
+          569.0,
+          299.0,
+          182.5
+        ],
+        "coordinateUnits": "pdf-points",
+        "originalRectPixels": [
+          93,
+          1138,
+          598,
+          365
+        ],
+        "rasterDpi": 144
+      }
+    ],
+    "review_status": "visually_reviewed_clean_original_crop",
+    "batch": "immunity_microbes",
+    "source_id": "questions",
+    "sha256": "004d827a07fcc7d11c4198279f329f20e9d476214f518dcb0f7695f41f53e357",
+    "runtimeEncoding": {
+      "format": "WebP",
+      "quality": 85,
+      "originalDimensions": true,
+      "alpha": "unchanged",
+      "psnrDB": 40.656,
+      "edgeMeanAbsoluteChannelError": 2.733
+    }
+  }
+]

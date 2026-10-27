@@ -1,1 +1,20 @@
-@font-face{font-family:Amiri Digits;font-style:normal;font-weight:400;font-display:swap;src:url(../../assets/fonts/math/amiri-regular.woff2) format("woff2");unicode-range:U+0660-0669,U+06F0-06F9}@font-face{font-family:Rounded Digits;font-style:normal;font-weight:400 800;font-display:swap;src:url(../../assets/fonts/rounded-digits/baloo-bhaijaan2-digits-variable.woff2) format("woff2");unicode-range:U+0030-0039}
+/* Amiri numerals across the app and student dashboard.
+   Limit this alias to digits so each surface keeps its existing letter font. */
+@font-face {
+  font-family:"Amiri Digits";
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;
+  src:url("../../assets/fonts/math/amiri-regular.woff2") format("woff2");
+  unicode-range:U+0660-0669,U+06F0-06F9;
+}
+
+/* Keep the existing rounded appearance for English digits only. */
+@font-face {
+  font-family:"Rounded Digits";
+  font-style:normal;
+  font-weight:400 800;
+  font-display:swap;
+  src:url("../../assets/fonts/rounded-digits/baloo-bhaijaan2-digits-variable.woff2") format("woff2");
+  unicode-range:U+0030-0039;
+}
