@@ -15,7 +15,8 @@ assert.match(session.headers.get('content-type'), /application\/json/);
 assert.equal((await session.json()).account, null, 'anonymous requests reach the account API');
 const dashboard = await fetch(new URL('/students', base), { redirect:'manual' });
 assert.equal(dashboard.status, 302, 'the Students page reaches the protected backend route');
-assert.equal(dashboard.headers.get('location'), '/?flow=sign-in', 'anonymous dashboard visitors must sign in');
+assert.equal(new URL(dashboard.headers.get('location'), base).href, new URL('/?flow=sign-in', base).href,
+  'anonymous dashboard visitors must sign in on the same site');
 
 const libraries = path.join(root, 'assets/browser-libraries');
 for (const relative of await readdir(libraries, { recursive:true })) {
