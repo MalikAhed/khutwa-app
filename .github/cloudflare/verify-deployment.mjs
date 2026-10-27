@@ -4,16 +4,24 @@ import path from 'node:path';
 
 const base = process.env.DEPLOYMENT_URL;
 assert.ok(base?.startsWith('https://'), 'a deployment URL is required');
+// Pages can expose the assets before the new Function routes are available.
+async function fetchFunction(url, options) {
+  for (let attempt = 0; ; attempt++) {
+    const response = await fetch(url, options);
+    if (response.status !== 404 || attempt === 14) return response;
+    await new Promise(resolve => setTimeout(resolve, 1000));
+  }
+}
 const root = path.join(process.env.RUNNER_TEMP, 'khutwa-site');
 const html = await fetch(base).then(response => response.text());
 assert.match(html, /name="learn-account-mode" content="http"/, 'production uses the real account service');
 const release = JSON.parse(await readFile(path.join(root, 'release.json'), 'utf8'));
 assert.deepEqual(await fetch(new URL('/release.json', base)).then(response => response.json()), release);
-const session = await fetch(new URL('/api/auth/session', base));
+const session = await fetchFunction(new URL('/api/auth/session', base));
 assert.equal(session.status, 200);
 assert.match(session.headers.get('content-type'), /application\/json/);
 assert.equal((await session.json()).account, null, 'anonymous requests reach the account API');
-const dashboard = await fetch(new URL('/students', base), { redirect:'manual' });
+const dashboard = await fetchFunction(new URL('/students', base), { redirect:'manual' });
 assert.equal(dashboard.status, 302, 'the Students page reaches the protected backend route');
 assert.equal(new URL(dashboard.headers.get('location'), base).href, new URL('/?flow=sign-in', base).href,
   'anonymous dashboard visitors must sign in on the same site');
