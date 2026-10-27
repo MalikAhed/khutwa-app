@@ -265,6 +265,9 @@ try {
           await page.locator("[data-exam-solution] .lesson-flashcard-scroll").focus();
           await page.keyboard.press("Enter");
         }
+        // Viewport and face changes update keyboard access through ResizeObserver.
+        // Let that layout cycle finish before inspecting its accessibility state.
+        await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
         const layout = await page.locator("#lesson-content").evaluate(root => window.questionSurfaceDiagnostics(root));
         if (layout.pageOverflow || layout.overflow.length || layout.invalidMath || layout.missingImages || layout.inaccessibleTables || layout.inaccessibleMath || layout.hiddenSurface) layoutFailures.push({ id:question.id, width, face, ...layout });
         await page.screenshot({ path:`${evidence}/${question.subjectId}-${question.step.id}-${face}-${width}.png` });
