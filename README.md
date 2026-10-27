@@ -10,7 +10,7 @@ Use Node 24 (`nvm use` if installed).
 
 ```sh
 npm ci                   # once, or after package-lock.json changes
-npm run dev              # http://localhost:4173, with live reload
+npm run dev              # http://127.0.0.1:4173, real Cloudflare accounts
 npm run map -- progress  # find the owner and relevant tests
 npm run check            # changed JavaScript syntax + types
 ```
@@ -33,10 +33,12 @@ To inspect the packaged frontend locally:
 
 ```sh
 npm run package:cloudflare
-npm run preview:cloudflare # http://localhost:4174, separate local test accounts
+npm run preview:cloudflare # http://127.0.0.1:4174, real Cloudflare accounts
 ```
 
-Real student accounts and progress live in the existing Cloudflare backend. Local development uses Node/SQLite test accounts; your live password is not expected to work locally. Frontend releases preserve the backend and its data. See [OPERATIONS.md](docs/OPERATIONS.md) for the exact hosting boundary and recovery steps.
+Local development uses your real Cloudflare sign-in, admin permissions and saved progress. `localhost:4173` redirects to `127.0.0.1:4173` to keep old test data separate. Sign in once using your normal account; local study can change live progress.
+
+If internet is unavailable, a previously verified account can continue studying locally. Answers stay in the browser outbox and sync after reconnecting. New sign-in and the admin dashboard require internet. `npm run dev:local` explicitly selects the separate SQLite test database; automated tests use isolated accounts. See [OPERATIONS.md](docs/OPERATIONS.md).
 
 ## Find your way
 

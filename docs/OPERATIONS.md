@@ -20,14 +20,20 @@ The migration baseline is commit `845f57932c58cbb7933b156cddaaa3560ccb1936`, run
 
 Use Node 24, run `npm ci` once, then `npm run dev` at port 4173. Dependencies need reinstalling only when the lockfile changes. `npm run map -- <topic>` identifies the owner and focused tests. `npm run check` covers changed JS syntax and types; `CHECK_BASE=<commit>` compares against another commit, and `npm run check:syntax -- --all` explicitly scans every module.
 
-Local accounts live in ignored `data/accounts.sqlite`. Packaged previews use separate `data/preview.sqlite`:
+`npm run dev` uses the **real Cloudflare account backend** at `http://127.0.0.1:4173`. This is Malik's explicit preference: local study and admin actions can affect live data. Localhost redirects to the numeric loopback address so browser records from the former test database cannot be imported into real accounts. The proxy uses its own HttpOnly cookie name; it forwards only that session to the fixed Cloudflare origin and rejects cross-site requests. Sign in once with your normal Cloudflare credentials.
+
+The frontend stays on disk, so it remains available without internet while the local server is running. The proxy retains only a minimal verified profile keyed by a session-token hash, for up to 30 days, in ignored `data/cloudflare-offline-profiles.json`. It never stores passwords, raw session tokens or student lists. During an outage it can resume that account for study, while the browser's existing account-bound IndexedDB outbox retains answers for retry. New sign-in, admin pages and remote account changes require internet. An online expired-session response or explicit sign-out removes the fallback profile.
+
+`npm run dev:local` explicitly uses the preserved SQLite test accounts in `data/accounts.sqlite`. Automated tests must use isolated databases/mocked upstreams, never real accounts. Do not run a test-account server on the real-account preview address in a normal browser profile.
+
+To review the exact packaged frontend with the same real account backend:
 
 ```sh
 npm run package:cloudflare
 npm run preview:cloudflare
 ```
 
-The packaged frontend is served at port 4174 with the same public library URLs. Both local modes use the Node/SQLite API adapter; they never sign into or copy live student accounts. The actual Cloudflare backend is tested by the staging deployment. To run a focused browser test, install Chromium once with `npx playwright install chromium`; do not reinstall browsers or run the full matrix for every task.
+Open `http://127.0.0.1:4174`. These local modes do not deploy or replace the Cloudflare backend. For a focused browser test, install Chromium once with `npx playwright install chromium`; don't reinstall browsers or run the full matrix for every task.
 
 ## After Malik says deploy
 
@@ -46,7 +52,7 @@ Production HTML must contain `learn-account-mode=http`. The Pages Worker forward
 
 Real accounts and progress live in the backend Worker, using the `ACCOUNTS` D1 binding and `AUTH` / `STUDENTS` Durable Objects. Frontend publication does not recreate or migrate those stores. Browser progress/outbox storage is separate from the public lesson cache. Never reset accounts to fix a login or cache issue.
 
-`src/server/` implements local Node/SQLite behavior. The deployed Worker bundle was preserved locally under `.production/backend/` for recovery; its editable original is not yet part of this repo. A backend feature requires locating/reconstructing that source and testing against the staging Worker before an explicit backend deployment. Never run a generic `wrangler deploy` against production from this frontend repo. The duplicate “Workers Builds: khutwa-app” auto-build trigger was disconnected on 2026-10-27; its configuration is saved in `.production/worker-build-trigger.json`. The Worker itself remains deployed. Pages Actions is the sole frontend deployment owner.
+`src/server/cloudflare-development.mjs` connects local development to the live API. The remaining `src/server/` code implements the isolated Node/SQLite test backend. The deployed Worker bundle was preserved locally under `.production/backend/` for recovery; its editable original is not yet part of this repo. A backend feature requires locating/reconstructing that source and testing against the staging Worker before an explicit backend deployment. Never run a generic `wrangler deploy` against production from this frontend repo. The duplicate “Workers Builds: khutwa-app” auto-build trigger was disconnected on 2026-10-27; its configuration is saved in `.production/worker-build-trigger.json`. The Worker itself remains deployed. Pages Actions is the sole frontend deployment owner.
 
 ## Access is already set up
 

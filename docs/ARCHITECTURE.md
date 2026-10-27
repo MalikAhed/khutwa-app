@@ -46,6 +46,7 @@ The command reads this table and current source, without an index or cache. Uniq
 | Database schema/backups | `src/server/account-schema.mjs`, `src/server/account-store.mjs`, `scripts/database-maintenance.mjs` | `node --test tests/database-recovery.test.mjs` |
 | Owner/student records and reset | `src/server/student-directory.mjs`, `src/server/student-dashboard.mjs`, `src/ui/student-dashboard.js`, `src/services/server-data-reset.js`, `scripts/owner-account.mjs` | `node --test tests/student-dashboard.test.mjs`; `node tests/browser/browser-student-dashboard.mjs` |
 | Serving/packaging | `src/server/static-files.mjs`, `scripts/package-app.mjs`, `scripts/version-preview.mjs`, `scripts/preview-server.mjs` | `node --test tests/static-files.test.mjs tests/package-app.test.mjs`; `npm run test:preview` |
+| Real-account local preview/offline fallback | `src/server/cloudflare-development.mjs`, `src/server/app-server.mjs`, `dev-server.mjs`, `scripts/preview-cloudflare.mjs` | `node --test tests/cloudflare-development.test.mjs tests/dev-server.test.mjs` |
 | Cloudflare deploy | `.github/workflows/cloudflare-pages.yml`, `.github/cloudflare/worker.mjs`, `.github/cloudflare/routes.json`, `.github/cloudflare/verify-deployment.mjs`, `scripts/package-cloudflare.mjs`, `scripts/deploy.mjs` | `npm run test:deployment`; `npm run package:cloudflare` |
 | Test tooling/project map | `tests/browser/browser-session.mjs`, `tests/browser/browser-page.mjs`, `scripts/run-gate.mjs`, `scripts/project-map.mjs`, `scripts/validate-app.mjs` | `node --test tests/browser-session.test.mjs tests/project-map.test.mjs`; `npm run build` |
 
@@ -57,7 +58,7 @@ HTTP progress uses `server-progress.js` with an account-bound IndexedDB cache/ou
 
 `background-loading.js` and one cancellable download queue warm onboarding, shared assets, first questions, then lessons in rounds across subjects. Opening a lesson takes priority. The content worker caches only catalogued public content, never API responses, sessions or HTML. Rated-question counts update in place without restarting entrance animations.
 
-The browser runtime is built from this repository. Cloudflare Pages forwards `/api/*` and `/students` through the existing `BACKEND` binding. Production is `khutwa-app`; staging is `khutwa-app-staging`. Those Workers use D1 and Durable Objects. `src/server/` is the local Node/SQLite API implementation, **not** the source deployed to that Worker. See [OPERATIONS.md](OPERATIONS.md) before changing server behavior; frontend deployment must not replace the live account backend.
+The browser runtime is built from this repository. Cloudflare Pages forwards `/api/*` and `/students` through the existing `BACKEND` binding. Production is `khutwa-app`; staging is `khutwa-app-staging`. Those Workers use D1 and Durable Objects. `src/server/cloudflare-development.mjs` proxies the default local preview to that real backend, with offline profile fallback. The other `src/server/` modules provide the isolated Node/SQLite test backend, **not** the source deployed to the Worker. See [OPERATIONS.md](OPERATIONS.md) before changing server behavior; frontend deployment must not replace the live account backend.
 
 ## Adding features
 

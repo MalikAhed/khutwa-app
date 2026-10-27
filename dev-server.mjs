@@ -4,6 +4,7 @@ import { spawn } from "node:child_process";
 import { createAppServer } from "./src/server/app-server.mjs";
 import { readRuntimeConfig } from "./src/server/runtime-config.mjs";
 import { Worker } from "node:worker_threads";
+import { createCloudflareDevelopmentBackend } from './src/server/cloudflare-development.mjs';
 
 const root=path.dirname(fileURLToPath(import.meta.url));
 // Browser reloads alone leave Node's imported lesson catalog cached. Native
@@ -31,9 +32,13 @@ if (process.env.LIVE_RELOAD !== "0" && process.env.LEARN_PREVIEW_WATCH_CHILD !==
     catalogWorker.on("message", receiveCatalog);
     catalogWorker.once("error", error => { console.warn("Content preload catalog unavailable:", error.message); resolve(null); });
   });
-  const app=await createAppServer({root,config:readRuntimeConfig(process.env,{root}),contentManifest});
+  const remoteBackend = process.env.LEARN_BACKEND === 'cloudflare'
+    ? await createCloudflareDevelopmentBackend({ cachePath:path.join(root,'data/cloudflare-offline-profiles.json') }) : null;
+  const environment = remoteBackend ? { ...process.env, ACCOUNTS_DATABASE_PATH:':memory:', DEV_AUTO_LOGIN:'0' } : process.env;
+  const app=await createAppServer({root,config:readRuntimeConfig(environment,{root}),contentManifest,remoteBackend});
   const port=await app.listen();
-  console.log(`Live preview: http://localhost:${port}/`);
+  console.log(`Live preview: http://${remoteBackend ? '127.0.0.1' : 'localhost'}:${port}/`);
+  if(remoteBackend)console.log('Real Cloudflare accounts; offline study uses the last verified account.');
   if(process.env.LIVE_RELOAD!=='0')console.log('Watching source files and preserving scroll position on reload.');
   const shutdown=()=>{ void catalogWorker?.terminate(); void app.close(); };
   process.on('SIGINT',shutdown);

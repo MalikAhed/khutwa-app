@@ -4,7 +4,7 @@
 
 - Main repo: `https://github.com/MalikAhed/khutwa-app`; live site: `https://khutwaa.pages.dev`.
 - Canonical checkout on this machine: `/home/malikabuallatta/experiment-app/khutwa-app`. The sibling `learn/` is a preserved legacy checkout, not the deployment source. Never reset or delete its unpublished work.
-- Before reusing `localhost:4173`, confirm its server runs from this checkout. Keep one active development server and its `data/accounts.sqlite`; separate localhost ports share session cookies and must not silently switch account databases.
+- `npm run dev` serves this checkout at `127.0.0.1:4173` using real Cloudflare accounts, as explicitly requested by Malik. `localhost:4173` redirects there to isolate old test progress. Do not switch back to fake/local accounts unless requested. Use `dev:local` or isolated databases for automated tests; never use live student accounts in test suites.
 - Read only the relevant row in `docs/ARCHITECTURE.md`: `npm run --silent map -- <topic>`. Read product/authoring docs only when the task needs them. Do not inventory all lessons, archives or generated files.
 - English chat; preserve Arabic/RTL in the app. Do not use or create skills unless requested. Keep updates brief and act without repeated permission questions for already authorized work.
 
@@ -28,7 +28,7 @@
 
 - `main` → `.github/workflows/cloudflare-pages.yml` → Cloudflare Pages project **khutwaa**. This is GitHub Actions Direct Upload, not a native Pages Git build. Never replace it with the old GitHub Pages fixture workflow.
 - Production is **HTTP account mode**. `.github/cloudflare/worker.mjs` forwards **both `/api/*` and `/students`** to `BACKEND`. Production binding: `khutwa-app`; staging: `khutwa-app-staging`. Preserve cookies and access decisions.
-- Live backend Workers use D1/Durable Objects. `src/server/` is the local Node/SQLite adapter, not a deployed Worker source. Do not pretend a frontend push ships server changes. Consult `docs/OPERATIONS.md` when a feature needs a backend change.
+- Live backend Workers use D1/Durable Objects. Local development forwards account/API/Students requests through `src/server/cloudflare-development.mjs`; public frontend files stay local. Offline fallback resumes only a previously verified account and relies on the existing browser outbox; admin access/new sign-in stay online. Other `src/server/` adapters are for isolated tests, not the deployed Worker source.
 - Build `_site/` with `npm run package:cloudflare`. It relocates browser libraries while preserving `/node_modules/` URLs. Never commit `_site`, `node_modules`, credentials, real student data, browser profiles or `.production` recovery snapshots.
 - Cloudflare MCP is already configured as `cloudflare`; discover/use its tools first. Routine deployment uses existing GitHub secrets and needs no MCP login. Reauthenticate only on an actual expired/revoked-access error; never print secrets.
 - Preserve storage keys, account IDs, published content IDs, old URLs, and the existing backend bindings/database. Refreshing content must not erase progress.

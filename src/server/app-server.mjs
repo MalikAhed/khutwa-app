@@ -10,7 +10,7 @@ import { readJsonBody, sendJson } from "./http.mjs";
 import { createRequestPolicy } from "./runtime-config.mjs";
 import { createStudentDashboardHandler, STUDENT_DASHBOARD_PATH } from "./student-dashboard.mjs";
 
-export async function createAppServer({root,config,contentManifest=null,logger=record=>console.log(JSON.stringify(record))}) {
+export async function createAppServer({root,config,contentManifest=null,remoteBackend=null,logger=record=>console.log(JSON.stringify(record))}) {
   const accountStore=createAccountStore({databasePath:config.databasePath});
   const policy=createRequestPolicy(config);
   const handleAuth=createAuthApi({accountStore,readJsonBody,originPolicy:policy.rejectOrigin,clientAddress:policy.clientAddress,secureCookies:config.secureCookies});
@@ -29,6 +29,7 @@ export async function createAppServer({root,config,contentManifest=null,logger=r
       try { new URL(request.url || "/", "http://localhost"); }
       catch { throw Object.assign(new Error("Invalid request URL."), {status:400}); }
       policy.clientAddress(request);
+      if(remoteBackend && await remoteBackend(request,response))return;
       if(pathname==='/healthz'||pathname==='/readyz') {sendJson(response,closing?503:200,{status:closing?'closing':'ready'});return;}
       if(pathname==='/content-manifest.json' && contentManifest && request.method==='GET') {
         const catalog = await (typeof contentManifest === "function" ? contentManifest() : contentManifest);
@@ -39,7 +40,7 @@ export async function createAppServer({root,config,contentManifest=null,logger=r
         sendJson(response,200,{resetId:accountStore.getDataResetId()});return;
       }
       if(pathname==='/__codex_dev_ready' && config.devAutoLogin) {response.writeHead(204).end();return;}
-      if(config.devAutoLogin && !accountStore.getDataResetId() && pathname==='/' && !getSessionToken(request)) {
+      if(!remoteBackend && config.devAutoLogin && !accountStore.getDataResetId() && pathname==='/' && !getSessionToken(request)) {
         const account = await accountStore.ensureDeveloperAccount();
         const session = accountStore.createSession(account.id);
         response.writeHead(302, {
@@ -72,7 +73,7 @@ export async function createAppServer({root,config,contentManifest=null,logger=r
       server.once('error',onError);
       // Let Node accept both localhost families (and fall back on IPv4-only hosts).
       // Binding only 0.0.0.0 refuses clients that resolve localhost to ::1.
-      server.listen(config.port,()=>{
+      server.listen(config.port,...(remoteBackend ? ['127.0.0.1'] : []),()=>{
         server.removeListener('error',onError);
         resolve(server.address().port);
       });
