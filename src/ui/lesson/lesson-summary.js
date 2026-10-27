@@ -1,5 +1,5 @@
-import { mountSummaryScans } from "./summary-scans.js?v=acff67f262f3c107";
-import { readablePageReferences } from "../../lib/page-labels.js?v=acff67f262f3c107";
+import { mountSummaryScans } from "./summary-scans.js";
+import { readablePageReferences } from "../../lib/page-labels.js";
 
 const SECTION_STYLES = [
   { kind:"memory", pattern:/احفظ|تحفظ|حفظه|memor/i },

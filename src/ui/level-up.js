@@ -1,5 +1,5 @@
-import { getLevelProgress } from "../domain/progression.js?v=acff67f262f3c107";
-import { spring, stepSpring } from "../lib/hairline-spring.js?v=acff67f262f3c107";
+import { getLevelProgress } from "../domain/progression.js";
+import { spring, stepSpring } from "../lib/hairline-spring.js";
 
 export function renderLevelUp(outcome) {
   const gain = Math.max(0, Math.floor(outcome.xpGain || 0));

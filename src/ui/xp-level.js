@@ -1,6 +1,6 @@
-import { getLevelProgress, MAX_LEVEL } from "../domain/progression.js?v=acff67f262f3c107";
-import { prefersReducedMotion } from "../lib/dom.js?v=acff67f262f3c107";
-import { mountLevelUp } from "./level-up.js?v=acff67f262f3c107";
+import { getLevelProgress, MAX_LEVEL } from "../domain/progression.js";
+import { prefersReducedMotion } from "../lib/dom.js";
+import { mountLevelUp } from "./level-up.js";
 
 export function renderCompletionLevel(outcome) {
   const gain = Math.max(0, Math.floor(outcome.xpGain || 0));

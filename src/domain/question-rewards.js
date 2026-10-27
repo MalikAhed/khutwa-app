@@ -1,7 +1,7 @@
-import { COURSE_SUBJECTS } from "../data/course.js?v=acff67f262f3c107";
-import { getSubjectRoadmap } from "../data/subject-roadmaps.js?v=acff67f262f3c107";
-import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js?v=acff67f262f3c107";
-import { MAX_LEVEL_XP } from "./progression.js?v=acff67f262f3c107";
+import { COURSE_SUBJECTS } from "../data/course.js";
+import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js";
+import { MAX_LEVEL_XP } from "./progression.js";
 
 const persistedSubject = subjectId => subjectId === "mathematics-2" ? "mathematics" : subjectId;
 const locationKey = ({ subjectId, lessonId, partId }) => JSON.stringify([persistedSubject(subjectId), lessonId, partId]);

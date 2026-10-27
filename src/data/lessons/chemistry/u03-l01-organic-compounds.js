@@ -1,4 +1,4 @@
-import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+import { createChemistryLesson } from "./shared.js";
 
 export const source = `:::mcq
 id: chemistry-gaza-p062-q01-a8

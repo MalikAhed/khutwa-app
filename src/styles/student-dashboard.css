@@ -1,4 +1,4 @@
-@import url("./amiri-digits.css?v=acff67f262f3c107");
+@import url("./amiri-digits.css");
 
 @font-face { font-family:"Noto Sans Arabic"; font-style:normal; font-weight:100 900; font-display:swap; src:url("../../assets/fonts/noto-sans-arabic/noto-sans-arabic-arabic-variable.woff2") format("woff2"); }
 * { box-sizing:border-box; }

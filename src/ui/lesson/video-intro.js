@@ -1,7 +1,7 @@
-import { escapeHtml } from "../../lib/dom.js?v=acff67f262f3c107";
-import { parseYouTubeUrl, renderMarkdownDocument } from "../../markdown/renderer.js?v=acff67f262f3c107";
-import { renderLessonReferencesInline } from "./lesson-summary.js?v=acff67f262f3c107";
-import { readablePageReferences } from "../../lib/page-labels.js?v=acff67f262f3c107";
+import { escapeHtml } from "../../lib/dom.js";
+import { parseYouTubeUrl, renderMarkdownDocument } from "../../markdown/renderer.js";
+import { renderLessonReferencesInline } from "./lesson-summary.js";
+import { readablePageReferences } from "../../lib/page-labels.js";
 
 let youtubeApiPromise;
 

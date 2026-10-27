@@ -1,6 +1,6 @@
-import { renderTemplateFooter, renderTemplateShell } from "../template-shell.js?v=acff67f262f3c107";
-import { revealWhenReady } from "../media-ready.js?v=acff67f262f3c107";
-import { animateView } from "../view-motion.js?v=acff67f262f3c107";
+import { renderTemplateFooter, renderTemplateShell } from "../template-shell.js";
+import { revealWhenReady } from "../media-ready.js";
+import { animateView } from "../view-motion.js";
 
 export function renderMistakeReviewIntro(container, { locale, onContinue }) {
   const controller = new AbortController();

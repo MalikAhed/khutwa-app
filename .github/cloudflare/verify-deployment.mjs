@@ -12,7 +12,7 @@ async function fetchFunction(url, options) {
     await new Promise(resolve => setTimeout(resolve, 1000));
   }
 }
-const root = path.join(process.env.RUNNER_TEMP, 'khutwa-site');
+const root = path.resolve(process.env.SITE_DIR || '_site');
 const html = await fetch(base).then(response => response.text());
 assert.match(html, /name="learn-account-mode" content="http"/, 'production uses the real account service');
 const release = JSON.parse(await readFile(path.join(root, 'release.json'), 'utf8'));

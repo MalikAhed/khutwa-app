@@ -1,5 +1,5 @@
-import { prefersReducedMotion } from "../lib/dom.js?v=acff67f262f3c107";
-import { mountRockyCoach } from "./rocky-coach.js?v=acff67f262f3c107";
+import { prefersReducedMotion } from "../lib/dom.js";
+import { mountRockyCoach } from "./rocky-coach.js";
 
 const SVG = "http://www.w3.org/2000/svg";
 const clamp = (value,min,max) => Math.max(min,Math.min(value,max));

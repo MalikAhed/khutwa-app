@@ -1,5 +1,5 @@
-import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
-import { CHEMISTRY_LESSONS } from "./chemistry-course.js?v=acff67f262f3c107";
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+import { CHEMISTRY_LESSONS } from "./chemistry-course.js";
 
 export function createChemistryLesson(id, source) {
   const meta = CHEMISTRY_LESSONS.find(lesson => lesson.id === id);

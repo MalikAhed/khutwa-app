@@ -1,5 +1,5 @@
-import { escapeHtml } from "../../lib/dom.js?v=acff67f262f3c107";
-import { lessonReferenceLabel } from "./shared.js?v=acff67f262f3c107";
+import { escapeHtml } from "../../lib/dom.js";
+import { lessonReferenceLabel } from "./shared.js";
 
 export function renderLessonError(container, day) {
   container.innerHTML = `

@@ -1,4 +1,4 @@
-import { normalizeQuestionRewardKey } from "./question-rewards.js?v=acff67f262f3c107";
+import { normalizeQuestionRewardKey } from "./question-rewards.js";
 
 export const MAX_HEARTS = 10;
 export const STARTER_GEMS = 200;

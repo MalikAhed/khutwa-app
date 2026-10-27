@@ -1,4 +1,4 @@
-import { prefersReducedMotion } from "../lib/dom.js?v=acff67f262f3c107";
+import { prefersReducedMotion } from "../lib/dom.js";
 
 const PARTICLE_COLORS = Object.freeze(["#ff3b69", "#1cb0f6", "#ffd84d", "#62bd3d", "#a95bf1", "#ff8a24"]);
 

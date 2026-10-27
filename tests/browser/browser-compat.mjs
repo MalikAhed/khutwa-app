@@ -1,0 +1,310 @@
+import assert from "node:assert/strict";
+import { getSubjectRoadmap } from "../../src/data/subject-roadmaps.js";
+import { getIctPartQuestions } from "../../src/data/lessons/ict/exam-lessons.js";
+
+const lessonActionLimit = getSubjectRoadmap("ict").units.flatMap(unit=>unit.lessons)
+  .find(lesson=>lesson.id === "database-management").parts
+  .reduce((count, part)=>count + getIctPartQuestions(part.id).length, 0) * 3 + 10;
+import { spawn } from "node:child_process";
+import { writeFile } from "node:fs/promises";
+import { createFailureDirectory } from "./browser-diagnostics.mjs";
+import { platform, release } from "node:os";
+import path from "node:path";
+import { firefox, webkit } from "playwright";
+import { getAvailablePort, waitForServer, terminateProcess } from "./browser-session.mjs";
+import { startPreviewServer } from "../../scripts/preview-server.mjs";
+import { verifyMcqMathOverflow } from "./browser-mcq-math-overflow.mjs";
+
+const port = await getAvailablePort();
+const server = spawn(process.execPath, ["dev-server.mjs"], { env:{...process.env,PORT:String(port),LIVE_RELOAD:"0",ACCOUNTS_DATABASE_PATH:':memory:'},stdio:'ignore' });
+let preview;
+try {
+  await waitForServer(port);
+  preview = await startPreviewServer();
+  const engines=process.env.BROWSER_WEBKIT_ONLY === "1" ? {webkit} : {firefox,webkit};
+  for (const [engine, browserType] of Object.entries(engines)) {
+    let browser;
+    try { browser = await browserType.launch({ headless:true }); }
+    catch (error) { throw new Error(`Cannot start ${engine}. Install prerequisites with: npx playwright install --with-deps firefox webkit`, {cause:error}); }
+    try {
+      console.log(`Compatibility: ${engine} ${browser.version()} on ${platform()} ${release()}; WebKit engine coverage, not a physical iPhone test.`);
+      await verifyMcqMathOverflow(browser, engine, `http://127.0.0.1:${port}/`);
+      for (const [mode, base] of [["http",`http://127.0.0.1:${port}/`],["fixture",preview.base]]) {
+        const context = await browser.newContext({ viewport:{width:390,height:844}, reducedMotion:'reduce' });
+        await context.route(/fonts\.(googleapis|gstatic)\.com/, route => route.abort());
+        const page = await context.newPage();
+        // Keep Playwright's normal 30s bound. On this Celeron, 15s expired
+        // during concurrent checks even though the failure capture showed a ready Home.
+        page.setDefaultTimeout(30000);
+        const errors = [];
+        const navigatingPages = new Set();
+        let stoppedCacheDiagnostics = 0;
+        const navigate = async (target, action) => {
+          navigatingPages.add(target);
+          try { return await action(); }
+          finally { navigatingPages.delete(target); }
+        };
+        const recordPageError = (target, error) => {
+          // DOMCacheEngine::convertToExceptionAndLog emits a native console
+          // diagnostic even for caught Cache API cancellation on page teardown.
+          // Playwright maps that JS-source console message to pageerror. Keep
+          // real exceptions (including TypeError with this text) blocking.
+          if (engine === 'webkit' && navigatingPages.has(target)
+            && error.name === 'Cache API operation failed'
+            && error.message === 'Context is stopped' && !error.stack) {
+            stoppedCacheDiagnostics++;
+            return;
+          }
+          errors.push(error.message);
+        };
+        const authResponses = [];
+        page.on('response', async response => {
+          if (!/\/(?:availability|register)$/.test(new URL(response.url()).pathname)) return;
+          const body = await response.json().catch(() => ({}));
+          authResponses.push({path:new URL(response.url()).pathname,status:response.status(),result:body.status,error:body.error,fieldErrors:body.fieldErrors});
+        });
+        await page.addInitScript(() => {
+          window.registrationEvents = [];
+          for (const type of ['submit','invalid']) document.addEventListener(type, event => {
+            if (event.target.closest('[data-register-form]')) window.registrationEvents.push({type,field:event.target.name || null});
+          }, true);
+        });
+        const pendingRequests = new Map();
+        let inspectedPage = page;
+        let releaseHeldRequest = () => {};
+        let loadingContext;
+        context.on('request', request => pendingRequests.set(request, Date.now()));
+        context.on('requestfinished', request => pendingRequests.delete(request));
+        context.on('requestfailed', request => {
+          pendingRequests.delete(request);
+          const errorText=request.failure()?.errorText || 'Unknown request failure';
+          // WebKit uses this exact message when navigation or closing a page
+          // cancels a load; Firefox reports the equivalent as ABORTED.
+          const cancelledDownload=engine==='webkit' && request.headers()['x-learn-download']==='1'
+            && errorText.endsWith('due to access control checks.');
+          // WebKit also reports navigated-away speculative fetches this way.
+          // Full cache/offline coverage separately verifies these downloads succeed.
+          const cancelled=errorText.includes('ABORTED') || cancelledDownload || (engine==='webkit' && errorText==='Load request cancelled');
+          if (request.url().startsWith(base) && !cancelled) errors.push(errorText + ': ' + new URL(request.url()).pathname);
+        });
+        page.on('response', response => { if(response.url().startsWith(base) && response.status()>=400)errors.push(`${response.status()}: ${new URL(response.url()).pathname}`); });
+        page.on('pageerror', error => recordPageError(page, error));
+        let journey = 'required account entry';
+        const ready = async () => { await page.waitForFunction(() => !document.querySelector('.media-pending,[aria-busy=true],.app-loading')); };
+        const waitForOnboardingStep = async step => {
+          await page.locator(`[data-onboarding-step="${step}"]:not([hidden])`).waitFor({state:'attached'});
+          await ready();
+          // showStep defers focus until its media is ready and the next frame.
+          await page.waitForFunction(step => document.activeElement?.closest('[data-onboarding-step]')?.dataset.onboardingStep === step, step);
+        };
+        const visit = async (route) => { await navigate(page, () => page.goto(base+route,{waitUntil:'domcontentloaded'})); await page.locator('.visitor-shell,.course-units').first().waitFor({state:'attached'}); await ready(); };
+        const openIntro = async () => {
+          // Exercise the retained direct route without exposing the optional
+          // roadmap item or reloading the fixture's temporary account.
+          await page.evaluate(url => {
+            history.pushState(null,'',url);
+            dispatchEvent(new PopStateEvent('popstate'));
+          },base+'?subject=ict&lesson=database-management&part=access-basics');
+          await page.locator('[data-live-authored-step]').waitFor();
+          await ready();
+        };
+        const finishIntro = async () => {
+          for (let index=0;index<lessonActionLimit;index++) {
+            await ready();
+            const streak=page.locator('.lesson-daily-streak[open]');
+            if (await streak.count()) {
+              await streak.locator('button').click();
+              await streak.waitFor({state:'hidden'});
+              continue;
+            }
+            const depletion=page.locator('.heart-depletion[open]');
+            if (await depletion.count()) {
+              await depletion.locator('[data-heart-activate]').click();
+              await page.locator('.heart-depletion[data-state=super]').waitFor();
+              await depletion.locator('[data-heart-resume]').click();
+              await depletion.waitFor({state:'hidden'});
+              continue;
+            }
+            if (await page.locator('[data-authored-restart]').count()) return;
+            const answer = page.locator('[data-ui-lab-answer][data-correct=true]');
+            if (await answer.count() && await answer.getAttribute('aria-pressed') !== 'true') { await answer.focus(); await page.keyboard.press('Enter'); }
+            if (await page.locator('[data-exam-card]').count() && await page.locator('[data-exam-solution]').evaluate(element=>element.inert)) await page.locator('[data-exam-card]').click();
+            const selfCheck = page.locator('[data-exam-correct=true]:not(:disabled)');
+            if (await selfCheck.count()) await selfCheck.click();
+            await page.locator('[data-template-primary]').focus();
+            await page.keyboard.press('Enter');
+          }
+          throw new Error('Introduction did not complete.');
+        };
+        const signIn = async (identifier,password) => {
+          await visit('?flow=sign-in');
+          await page.locator('[name=identifier]').fill(identifier);
+          await page.locator('[name=password]').fill(password);
+          await page.locator('[data-sign-in-form] [type=submit]').click();
+          await page.locator('[data-learner-dashboard]').waitFor();
+          await ready();
+        };
+        try {
+          await visit('');
+          await page.locator('[data-flow=register]').click();
+          await page.locator('[data-register-form]').waitFor();
+          assert.equal(await page.locator('[data-guest-start]').count(),0);
+          await visit('?subject=ict&lesson=database-management&part=access-basics');
+          await page.locator('.visitor-landing').waitFor();
+          assert.equal(await page.locator('[data-live-authored-step]').count(),0);
+          console.log(`${engine}/${mode}: ${journey} passed`);
+
+          journey='account registration and sign-in';
+          await visit('?flow=register');
+          await page.locator('[data-onboarding-step=intro] [data-step-next]').click();
+          await waitForOnboardingStep('0');
+          const name=`compat-${engine}`;
+          await page.locator('[name=username]').fill(name);
+          assert.equal(await page.locator('[name=username]').inputValue(),name);
+          await page.locator('[data-onboarding-step="0"] [data-step-next]').click();
+          await waitForOnboardingStep('1');
+          await page.locator('[name=curriculum][value=gaza]').press('Space');
+          assert.equal(await page.locator('[name=curriculum][value=gaza]').isChecked(),true);
+          await page.locator('[data-onboarding-step="1"] [data-step-next]').click();
+          await waitForOnboardingStep('2');
+          await page.locator('[name=path][value=scientific]').press('Space');
+          assert.equal(await page.locator('[name=path][value=scientific]').isChecked(),true);
+          await page.locator('[data-onboarding-step="2"] [data-step-next]').click();
+          await waitForOnboardingStep('3');
+          await page.locator('[name=phone]').fill(engine === 'firefox' ? '0591234567' : '0561234567');
+          await page.locator('[data-onboarding-step="3"] [data-step-next]').click();
+          await waitForOnboardingStep('4');
+          await page.locator('[name=password]').fill('Learn123');
+          assert.equal(await page.locator('[name=password]').inputValue(),'Learn123');
+          assert.equal(await page.locator('[name=email]').count(),0);
+          await page.locator('[data-onboarding-step="4"] [type=submit]').click();
+          await page.locator('[data-registration-continue]').click();
+          await page.locator('[data-learner-dashboard]').waitFor();
+          await ready();
+          // Background lesson downloads intentionally continue after Home is ready.
+          await page.evaluate(() => document.fonts.ready.then(() => undefined));
+          const footers = await page.locator('.subject-card').evaluateAll(cards => cards.map(card => {
+            const body = card.getBoundingClientRect(), footer = card.querySelector('.subject-card__details').getBoundingClientRect();
+            return {gap:body.bottom-footer.bottom-borderWidth(card),height:footer.height};
+            function borderWidth(element) { return parseFloat(getComputedStyle(element).borderBottomWidth); }
+          }));
+          assert.ok(footers.every(footer => Math.abs(footer.gap) <= 1 && footer.height >= 68), 'white subject footers fill the bottom of every card');
+          // The account action is visible in the desktop rail. Use its complete
+          // sign-out flow so both the cookie and the active browser owner clear.
+          await page.setViewportSize({width:900,height:844});
+          await page.locator('[data-auth-sign-out]').click();
+          await page.locator('.visitor-landing').waitFor();
+          await page.setViewportSize({width:390,height:844});
+          const identifier=mode==='http'?name:'free';
+          await signIn(identifier,'Learn123');
+          console.log(`${engine}/${mode}: ${journey} passed`);
+
+          journey='lesson completion and Home consistency';
+          await openIntro();
+          await finishIntro();
+          await page.locator('[data-authored-restart]').click();
+          await page.locator('.subject-roadmap').waitFor();
+          assert.ok(Number(await page.locator('.roadmap-question-ring').first().getAttribute('aria-valuenow')) > 0);
+          await page.locator('.lesson-back').click();
+          await ready();
+          await page.waitForFunction(()=>!document.querySelector('[data-subject=ict] [data-subject-count]').textContent.startsWith('0 /'));
+          await page.waitForFunction(()=>document.querySelector('.progress-feedback')?.hidden);
+          console.log(`${engine}/${mode}: ${journey} passed`);
+
+          journey='reload and progress isolation';
+          await navigate(page, () => page.reload());
+          await page.locator('[data-learner-dashboard]').waitFor();
+          assert.ok(!await page.locator('[data-subject=ict] [data-subject-count]').textContent().then(text=>text.startsWith('0 /')));
+          const isolated=await browser.newContext({viewport:{width:320,height:760},reducedMotion:'reduce'});
+          await isolated.route(/fonts\.(googleapis|gstatic)\.com/, route => route.abort());
+          const other=await isolated.newPage();
+          inspectedPage=other;
+          await other.goto(base+'?page=learn',{waitUntil:'domcontentloaded'});
+          await other.locator('.visitor-landing [data-flow=sign-in]').waitFor();
+          assert.equal(await other.locator('[data-learner-dashboard]').count(),0);
+          await isolated.close();
+          inspectedPage=page;
+          await page.bringToFront();
+          console.log(`${engine}/${mode}: ${journey} passed`);
+
+          journey='keyboard dialog and back navigation';
+          await page.locator('[data-subject=ict]').click();
+          await page.locator('.subject-roadmap').waitFor();
+          await ready();
+          const part=page.locator('[data-roadmap-part=access-basics]');
+          await part.focus();
+          assert.equal(await part.evaluate(element=>element===document.activeElement),true);
+          await page.keyboard.press('Enter');
+          await page.locator('[data-roadmap-bubble]').waitFor();
+          await page.keyboard.press('Tab');
+          await page.keyboard.press('Shift+Tab');
+          await page.keyboard.press('Escape');
+          assert.equal(await page.locator('[data-roadmap-bubble]').isVisible(),false);
+          await page.locator('.lesson-back').focus();
+          await page.keyboard.press('Enter');
+          await page.waitForFunction(()=>!document.querySelector('main').classList.contains('lesson-mode'));
+          console.log(`${engine}/${mode}: ${journey} passed`);
+
+          journey='loading cancellation and reduced motion';
+          // Only this network-stall scenario bypasses service workers so the
+          // intercepted import cannot be answered from the installed content cache.
+          loadingContext=await browser.newContext({storageState:await context.storageState(),viewport:{width:390,height:844},reducedMotion:'reduce',serviceWorkers:'block'});
+          const loading=await loadingContext.newPage();
+          inspectedPage=loading;
+          loading.on('pageerror', error => recordPageError(loading, error));
+          loading.on('response', response => { if(response.status()>=400) errors.push(`${response.status()}: ${new URL(response.url()).pathname}`); });
+          await loading.emulateMedia({reducedMotion:'reduce'});
+          const held=new Promise(resolve=>{releaseHeldRequest=resolve;});
+          await loading.route('**/src/ui/lesson-view.js*',async route=>{
+            if(route.request().resourceType()==='script') await held;
+            await route.continue().catch(()=>{});
+          });
+          await navigate(loading, () => loading.goto(base+'?subject=ict',{waitUntil:'domcontentloaded'}));
+          await loading.locator('.subject-roadmap').waitFor();
+          await loading.waitForFunction(()=>!document.querySelector('.media-pending,[aria-busy=true]'));
+          assert.equal(await loading.locator('[data-live-authored-step]').count(),0);
+          const lessonRequest=loading.waitForRequest(request=>request.resourceType()==='script' && new URL(request.url()).pathname.endsWith('/src/ui/lesson-view.js'));
+          await loading.locator('[data-roadmap-part=access-basics]').click();
+          await loading.locator('[data-bubble-start]').click();
+          const importRequest=await lessonRequest;
+          assert.equal(await loading.locator('.subject-roadmap').isVisible(),true);
+          await loading.locator('.lesson-back').click();
+          releaseHeldRequest();
+          await loading.locator('.subject-roadmap').waitFor();
+          const importResponse=await importRequest.response();
+          assert.ok(importResponse?.ok(), 'the delayed lesson module finishes after cancellation');
+          await importResponse.finished();
+          await loading.evaluate(async url => { await import(url); }, importRequest.url());
+          assert.equal(await loading.locator('[data-live-authored-step]').count(),0);
+          assert.equal(await loading.evaluate(()=>document.querySelector('.lesson-view').getAnimations().length),0);
+          assert.equal(await loading.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+          console.log(`${engine}/${mode}: ${journey} passed`);
+          let unexpectedErrors=errors;
+          if(engine==='webkit' && errors.length) {
+            const response=await fetch(base+'content-manifest.json');
+            assert.equal(response.status,200);
+            const catalog=await response.json();
+            const downloads=[...catalog.onboarding,...catalog.helpers,...catalog.lessons.flatMap(lesson=>lesson.files)]
+              .map(file=>new URL(file,base).href.replace(/^https?:\/\//,''));
+            // WebKit reports cancelled same-origin preloads during document
+            // replacement as page errors: microsoft/playwright#43120.
+            // Keep other errors blocking; browser-content-loading independently
+            // requires every catalogued download and offline read to succeed.
+            unexpectedErrors=errors.filter(message=>!(message.endsWith('due to access control checks.')
+              && downloads.some(url=>message.includes(url))));
+            if(unexpectedErrors.length!==errors.length) console.log(`WebKit navigation cancellation diagnostics: ${errors.length-unexpectedErrors.length} (playwright#43120).`);
+          }
+          if(stoppedCacheDiagnostics) console.log(`WebKit native cache teardown diagnostics: ${stoppedCacheDiagnostics}.`);
+          assert.deepEqual(unexpectedErrors,[]);
+        } catch(error) {
+          const directory=await createFailureDirectory(`compat-${engine}-${mode}`);
+          await inspectedPage.screenshot({path:path.join(directory,'failure.png')}).catch(()=>{});
+          const actual=await inspectedPage.evaluate(()=>({route:location.pathname+location.search,mode:document.querySelector('meta[name=learn-account-mode]')?.content,focus:document.activeElement?.tagName,pending:[...document.querySelectorAll('.media-pending,[aria-busy=true]')].map(el=>el.className),onboardingStep:document.querySelector('[data-onboarding-step]:not([hidden])')?.dataset.onboardingStep,registrationEvents:window.registrationEvents,registration:[...document.querySelectorAll('[data-register-form] input')].map(input=>({name:input.name,value:input.type==='password'?`length:${input.value.length}`:input.value,checked:input.checked,disabled:input.disabled,valid:input.validity.valid,message:input.validationMessage})),authErrors:[...document.querySelectorAll('[data-auth-error]:not([hidden]),[data-field-error]:not([hidden])')].map(node=>node.textContent),submit:document.querySelector('[data-register-form] [type=submit]')?.outerHTML})).catch(()=>null);
+          console.error('Compatibility failure state:', JSON.stringify({engine,mode,journey,actual,authResponses}));
+          await writeFile(path.join(directory,'failure.json'),JSON.stringify({engine,mode,journey,actual,authResponses,viewport:page.viewportSize(),expected:error.message,failures:errors.slice(-20),pending:[...pendingRequests].map(([request,start])=>({path:new URL(request.url()).pathname,ms:Date.now()-start})).slice(-20)},null,2));
+          throw new Error(`${engine}/${mode}/${journey}: ${error.message}; evidence: ${directory}`,{cause:error});
+        } finally { releaseHeldRequest(); await loadingContext?.close(); await context.close(); }
+      }
+    } finally { await browser.close(); }
+  }
+} finally { await preview?.close();await terminateProcess(server); }

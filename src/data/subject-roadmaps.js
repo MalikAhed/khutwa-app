@@ -1,11 +1,11 @@
-import { getIctPartQuestionIds } from "./lessons/ict/question-index.js?v=acff67f262f3c107";
-import { CHEMISTRY_UNITS, CHEMISTRY_LESSONS } from "./lessons/chemistry/chemistry-course.js?v=acff67f262f3c107";
-import { ENGLISH_UNITS, ENGLISH_LESSONS } from "./lessons/english/english-course.js?v=acff67f262f3c107";
-import { ARABIC_UNITS, ARABIC_LESSONS } from "./lessons/arabic/arabic-course.js?v=acff67f262f3c107";
-import { MATHEMATICS_LESSONS } from "./lessons/mathematics/math-course.js?v=acff67f262f3c107";
-import { PHYSICS_LESSONS } from "./lessons/physics/physics-course.js?v=acff67f262f3c107";
-import { BIOLOGY_UNITS, BIOLOGY_LESSONS } from "./lessons/biology/biology-course.js?v=acff67f262f3c107";
-import { ISLAMIC_LESSONS, ISLAMIC_LEGACY_LESSONS } from "./subject-catalog.js?v=acff67f262f3c107";
+import { getIctPartQuestionIds } from "./lessons/ict/question-index.js";
+import { CHEMISTRY_UNITS, CHEMISTRY_LESSONS } from "./lessons/chemistry/chemistry-course.js";
+import { ENGLISH_UNITS, ENGLISH_LESSONS } from "./lessons/english/english-course.js";
+import { ARABIC_UNITS, ARABIC_LESSONS } from "./lessons/arabic/arabic-course.js";
+import { MATHEMATICS_LESSONS } from "./lessons/mathematics/math-course.js";
+import { PHYSICS_LESSONS } from "./lessons/physics/physics-course.js";
+import { BIOLOGY_UNITS, BIOLOGY_LESSONS } from "./lessons/biology/biology-course.js";
+import { ISLAMIC_LESSONS, ISLAMIC_LEGACY_LESSONS } from "./subject-catalog.js";
 
 const ICT_ROADMAP = Object.freeze({
   subjectId:"ict",

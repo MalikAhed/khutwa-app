@@ -1,5 +1,5 @@
-import { getSubjectRoadmap } from "../data/subject-roadmaps.js?v=acff67f262f3c107";
-import { getPartQuestionIds, questionRewardKey } from "./question-rewards.js?v=acff67f262f3c107";
+import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { getPartQuestionIds, questionRewardKey } from "./question-rewards.js";
 
 // Legacy answers may predate rating saves. Mistake history defaults to Hard.
 export const defaultAnswerRating = item => item?.misses > 0 ? "hard" : item?.solved ? "easy" : null;

@@ -1,9 +1,9 @@
-import { prefersReducedMotion } from "../lib/dom.js?v=acff67f262f3c107";
-import { preloadImages } from "./media-ready.js?v=acff67f262f3c107";
-import { formatArabicCount } from "./learner-format.js?v=acff67f262f3c107";
-import { renderCompletionLevel, animateCompletionLevel } from "./xp-level.js?v=acff67f262f3c107";
-import { renderLevelUp } from "./level-up.js?v=acff67f262f3c107";
-import { mountDailyStreakSequence } from "./daily-streak.js?v=acff67f262f3c107";
+import { prefersReducedMotion } from "../lib/dom.js";
+import { preloadImages } from "./media-ready.js";
+import { formatArabicCount } from "./learner-format.js";
+import { renderCompletionLevel, animateCompletionLevel } from "./xp-level.js";
+import { renderLevelUp } from "./level-up.js";
+import { mountDailyStreakSequence } from "./daily-streak.js";
 
 let celebrationPlayback = 0;
 

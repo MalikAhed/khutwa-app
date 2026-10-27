@@ -1,5 +1,5 @@
-import { PHYSICS_LESSONS } from "./physics-course.js?v=acff67f262f3c107";
-import { loadSubjectLessonPart } from "../subject-lesson-registry.js?v=acff67f262f3c107";
+import { PHYSICS_LESSONS } from "./physics-course.js";
+import { loadSubjectLessonPart } from "../subject-lesson-registry.js";
 
 /**
  * Return the learner-facing wording for a parsed Physics question.

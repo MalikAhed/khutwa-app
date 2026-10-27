@@ -1,5 +1,5 @@
-import { questionRewardKey } from "../domain/question-rewards.js?v=acff67f262f3c107";
-import { createAuthClient } from "./auth-client.js?v=acff67f262f3c107";
+import { questionRewardKey } from "../domain/question-rewards.js";
+import { createAuthClient } from "./auth-client.js";
 
 const keyFor = key => JSON.stringify([key.subjectId,key.lessonId,key.partId,key.stepId]);
 export function createQuestionFeedback({ service, progressStore, apiBase = null, storage = null, fetchImpl = globalThis.fetch }) {

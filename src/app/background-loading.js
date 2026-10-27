@@ -1,5 +1,5 @@
-import { createDownloadQueue } from "../services/download-queue.js?v=acff67f262f3c107";
-import { useManagedImagePreloading } from "../ui/media-ready.js?v=acff67f262f3c107";
+import { createDownloadQueue } from "../services/download-queue.js";
+import { useManagedImagePreloading } from "../ui/media-ready.js";
 
 let initialization, queue, manifest, cache, selected, started = false;
 const base = () => new URL("./", document.baseURI);

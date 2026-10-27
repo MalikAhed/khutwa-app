@@ -1,7 +1,7 @@
-@import url("./lesson/question-navigation.css?v=acff67f262f3c107");
-@import url("./lesson/math.css?v=acff67f262f3c107");
-@import url("./lesson/markdown.css?v=acff67f262f3c107");
-@import url("./lesson/question-feedback.css?v=acff67f262f3c107");
+@import url("./lesson/question-navigation.css");
+@import url("./lesson/math.css");
+@import url("./lesson/markdown.css");
+@import url("./lesson/question-feedback.css");
 
 .coming-soon { display:none; min-height:0; place-items:center; text-align:center; }
 .coming-soon.is-visible { display:grid; }

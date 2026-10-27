@@ -1,5 +1,5 @@
-import { isUnlockedPage } from "../app/route.js?v=acff67f262f3c107";
-import { getRequiredElement } from "../lib/dom.js?v=acff67f262f3c107";
+import { isUnlockedPage } from "../app/route.js";
+import { getRequiredElement } from "../lib/dom.js";
 
 /** Viewport coordinates left available by the visible fixed shell, including safe areas. */
 export function getShellViewportBounds() {

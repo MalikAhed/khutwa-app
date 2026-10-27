@@ -1,5 +1,5 @@
-import { animateView } from "./view-motion.js?v=acff67f262f3c107";
-import { getDesktopTextField } from "./desktop-text-focus.js?v=acff67f262f3c107";
+import { animateView } from "./view-motion.js";
+import { getDesktopTextField } from "./desktop-text-focus.js";
 
 export function createSplashScreen() {
   const surface = document.querySelector("#app-splash");

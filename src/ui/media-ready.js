@@ -1,4 +1,4 @@
-import { animateView } from "./view-motion.js?v=acff67f262f3c107";
+import { animateView } from "./view-motion.js";
 
 // A bounded, low-priority warm cache. Only the next screen's images belong here.
 const preloads = new Map();

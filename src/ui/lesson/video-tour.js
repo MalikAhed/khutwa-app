@@ -1,4 +1,4 @@
-import { animateView } from "../view-motion.js?v=acff67f262f3c107";
+import { animateView } from "../view-motion.js";
 
 /** A short orientation on the real player, topics and reading below it. */
 export function mountVideoTour(host, { signal, locale = "ar", finishLabel, onFinish = () => {} } = {}) {

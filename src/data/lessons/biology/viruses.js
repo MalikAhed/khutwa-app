@@ -1,4 +1,4 @@
-import { createBiologyLesson } from "./shared.js?v=acff67f262f3c107";
+import { createBiologyLesson } from "./shared.js";
 
 export const source = `:::exam-question
 id: bio-b-p068-q2-b-3

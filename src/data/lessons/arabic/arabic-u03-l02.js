@@ -1,4 +1,4 @@
-import { createArabicLesson } from "./shared.js?v=acff67f262f3c107";
+import { createArabicLesson } from "./shared.js";
 
 export const source = `:::mcq
 id: arabic-p102-mcq-q01

@@ -1,15 +1,15 @@
-import { filterRatedRoadmap, getRatedSubjectQuestions } from "../domain/question-ratings.js?v=acff67f262f3c107";
-import { mountRatedQuestionToggle } from "./rated-questions.js?v=acff67f262f3c107";
-import { getCourseSubject } from "../data/course.js?v=acff67f262f3c107";
-import { getSubjectRoadmap } from "../data/subject-roadmaps.js?v=acff67f262f3c107";
-import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js?v=acff67f262f3c107";
-import { getSubjectPartAccess } from "../domain/subject-access.js?v=acff67f262f3c107";
-import { escapeHtml, prefersReducedMotion } from "../lib/dom.js?v=acff67f262f3c107";
-import { renderLessonError } from "./lesson/status.js?v=acff67f262f3c107";
-import { mountSubjectRoadmap } from "./subject-roadmap.js?v=acff67f262f3c107";
-import { getShellViewportBounds } from "./app-shell.js?v=acff67f262f3c107";
-import { mountHeartDepletion } from "./heart-depletion.js?v=acff67f262f3c107";
-import { prioritizeLesson } from "../app/background-loading.js?v=acff67f262f3c107";
+import { filterRatedRoadmap, getRatedSubjectQuestions } from "../domain/question-ratings.js";
+import { mountRatedQuestionToggle } from "./rated-questions.js";
+import { getCourseSubject } from "../data/course.js";
+import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js";
+import { getSubjectPartAccess } from "../domain/subject-access.js";
+import { escapeHtml, prefersReducedMotion } from "../lib/dom.js";
+import { renderLessonError } from "./lesson/status.js";
+import { mountSubjectRoadmap } from "./subject-roadmap.js";
+import { getShellViewportBounds } from "./app-shell.js";
+import { mountHeartDepletion } from "./heart-depletion.js";
+import { prioritizeLesson } from "../app/background-loading.js";
 
 
 export function createSubjectLearningController({
@@ -208,7 +208,7 @@ export function createSubjectLearningController({
 
     const load = async () => {
       try {
-        const { loadSubjectLesson, loadSubjectLessonPart } = await import("../data/lessons/subject-lesson-registry.js?v=acff67f262f3c107");
+        const { loadSubjectLesson, loadSubjectLessonPart } = await import("../data/lessons/subject-lesson-registry.js");
         await Promise.all([store.ready(ownerId), questionFeedback?.ready?.({ signal:operation.signal })]);
         if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
         if (reviewStepId && questionFeedback?.isHidden({ subjectId:nextSubjectId,stepId:reviewStepId })) {
@@ -228,7 +228,7 @@ export function createSubjectLearningController({
         }
         const [lesson, { renderLesson }] = await Promise.all([
           loadSubjectLesson(nextSubjectId, nextLessonId),
-          import("./lesson-view.js?v=acff67f262f3c107"),
+          import("./lesson-view.js"),
         ]);
         if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
         // Old review URLs still open their part after source exercises replace
@@ -256,7 +256,7 @@ export function createSubjectLearningController({
         };
         const mathFilterCatalog = async (scope) => {
           if (!isFilterSubject) return [];
-          const { compileLessonMarkdown } = await import("../markdown/lesson-model.js?v=acff67f262f3c107");
+          const { compileLessonMarkdown } = await import("../markdown/lesson-model.js");
           const scopeLessons = mathFilterLessons(scope);
           const loadedLessons = await Promise.all(scopeLessons.map(async item => ({
             item,

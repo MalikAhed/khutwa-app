@@ -1,6 +1,6 @@
 // @ts-check
-import { applyProgressUpdate, emptyPart, mergeImportedPart, partKey, recalculateQuestionRewards } from "../domain/subject-progress.js?v=acff67f262f3c107";
-import { readLegacyProgress } from "./session-progress.js?v=acff67f262f3c107";
+import { applyProgressUpdate, emptyPart, mergeImportedPart, partKey, recalculateQuestionRewards } from "../domain/subject-progress.js";
+import { readLegacyProgress } from "./session-progress.js";
 
 /** @typedef {import('../domain/subject-progress.js').ProgressKey} ProgressKey */
 /** @typedef {import('../domain/subject-progress.js').PartRecord} PartRecord */

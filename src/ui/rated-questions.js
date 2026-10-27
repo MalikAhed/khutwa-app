@@ -1,5 +1,5 @@
-import { QUESTION_RATINGS } from "../domain/question-ratings.js?v=acff67f262f3c107";
-import { renderRatingFace } from "./question-rating.js?v=acff67f262f3c107";
+import { QUESTION_RATINGS } from "../domain/question-ratings.js";
+import { renderRatingFace } from "./question-rating.js";
 
 export function mountRatedQuestionToggle(container, { questions, rating, signal, onChange }) {
   const toggle = document.createElement("div");

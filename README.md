@@ -1,23 +1,49 @@
 # Khutwa · خطوة
 
-[Open the app](https://khutwaa.pages.dev/) · [GitHub Pages mirror](https://malikahed.github.io/khutwa-app/)
+Arabic Tawjihi study app. **Live:** [khutwaa.pages.dev](https://khutwaa.pages.dev/) · **Main repo:** [MalikAhed/khutwa-app](https://github.com/MalikAhed/khutwa-app)
 
-A compact, ready-to-serve copy of the local Tawjihi learning app: nine subject paths, 124 lesson entries and 7,229 questions with their worked explanations and required figures.
+This repository contains the editable app and its deployment workflow. Generated website files stay in ignored `_site/`; dependencies, private accounts and scratch files stay out of Git.
 
-This repository contains only the browser runtime. Original PDFs, source archives, audit ledgers, development dependencies, tests, build tools and private account databases are excluded. Third-party licenses are retained. Files under `src/` and the small `node_modules/` directory are required browser modules, not a development installation.
+## Daily work
 
-## Using the GitHub Pages edition
+Use Node 24 (`nvm use` if installed).
 
-Use the demo sign-in **free** / **Learn123**, or **subscribed** / **Learn123** to try Super. Progress is stored only in this browser. The current local profile stays signed in across reloads and app launches until you sign out. Registration remains a local preview: after signing out of a newly registered profile, recreating it with the same username reconnects to its saved progress. This site does not run the local Node/SQLite account server or synchronize learners between devices.
+```sh
+npm ci                   # once, or after package-lock.json changes
+npm run dev              # http://localhost:4173, with live reload
+npm run map -- progress  # find the owner and relevant tests
+npm run check            # changed JavaScript syntax + types
+```
 
-Public lesson content downloads in the background and is kept in browser cache when storage is available. Onboarding and shared screens come first, then first questions and complete lessons in rounds across subjects. Opening a lesson gives its full download priority. Content updates do not clear the separate saved-progress storage.
+Develop locally, run the focused test for the change, and show the result to Malik. **Publish only when he says “deploy”.** A small visual change needs a local desktop/mobile check, not every course/browser audit. Documentation edits do not need a build. Full suites remain available on demand.
 
-## Hosting
+## Deploy after approval
 
-Pushes to `main` publish this verified runtime to the existing `khutwaa` Cloudflare Pages project through `.github/workflows/cloudflare-pages.yml`. The Cloudflare package uses HTTP accounts and forwards `/api/*` to the project's existing `BACKEND` service binding: `khutwa-app` in production and `khutwa-app-staging` in previews. This preserves the real accounts, admin access, sessions, and server-saved progress. A preview must pass account-routing and library checks before production is changed. Keep the workflow and `.github/cloudflare/` files when replacing the browser runtime. Deployment credentials stay in repository secrets.
+Commit only the approved changes, then:
 
-GitHub Pages serves `main` directly from the repository root. `.nojekyll` ensures every runtime file, including browser dependencies, is published. No npm installation or build step is needed. Runtime URLs are versioned per release; an installed app checks for updates and refreshes between study sessions after progress has saved.
+```sh
+npm run deploy -- --check # optional read-only preflight
+npm run deploy           # push to main, follow Cloudflare, report the result
+npm run deploy:status    # inspect the latest runs without rebuilding
+```
 
-To serve a downloaded copy, run `python3 -m http.server 8080` in this directory and open `http://localhost:8080/`. Use an HTTP server; opening `index.html` as a local file cannot load the JavaScript modules.
+GitHub Actions installs locked dependencies, runs fast checks, builds once, checks a staging deployment, and publishes that same build. It verifies the live account API, Students route, release and browser libraries. Documentation/test-only pushes skip deployment. Deployment credentials already live in GitHub secrets; ordinary releases do not require a new Cloudflare login.
 
-The editable local project remains the source of truth. This is a publication artifact; update it from a newly verified package rather than editing minified files.
+To inspect the packaged frontend locally:
+
+```sh
+npm run package:cloudflare
+npm run preview:cloudflare # http://localhost:4174, separate local test accounts
+```
+
+Real student accounts and progress live in the existing Cloudflare backend. Local development uses Node/SQLite test accounts; your live password is not expected to work locally. Frontend releases preserve the backend and its data. See [OPERATIONS.md](docs/OPERATIONS.md) for the exact hosting boundary and recovery steps.
+
+## Find your way
+
+- [AGENTS.md](AGENTS.md): short instructions for every coding session.
+- [ARCHITECTURE.md](docs/ARCHITECTURE.md): feature owners and focused checks.
+- [OPERATIONS.md](docs/OPERATIONS.md): deploy, access, accounts and recovery.
+- [LESSON_AUTHORING.md](docs/LESSON_AUTHORING.md): curriculum work and stable content IDs.
+- [PRODUCT.md](docs/PRODUCT.md): product scope; subject evidence remains beside its content.
+
+`src/` owns application code, `assets/` runtime media, `scripts/` development/packaging, `tests/` behavior tests, and `.github/` the Cloudflare workflow. Original books, archives and production databases are not public deployment files. Third-party notices remain with their libraries/assets.

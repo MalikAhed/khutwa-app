@@ -1,8 +1,8 @@
-import { escapeHtml } from "../../lib/dom.js?v=acff67f262f3c107";
-import { renderLessonInline, renderMarkdownDocument } from "../../markdown/renderer.js?v=acff67f262f3c107";
-import { getLessonUiCopy, lessonChoiceMarker } from "../lesson-ui-copy.js?v=acff67f262f3c107";
-import { renderTemplateFooter, renderTemplateShell } from "../template-shell.js?v=acff67f262f3c107";
-import { renderQuestionSourceTag } from "./shared.js?v=acff67f262f3c107";
+import { escapeHtml } from "../../lib/dom.js";
+import { renderLessonInline, renderMarkdownDocument } from "../../markdown/renderer.js";
+import { getLessonUiCopy, lessonChoiceMarker } from "../lesson-ui-copy.js";
+import { renderTemplateFooter, renderTemplateShell } from "../template-shell.js";
+import { renderQuestionSourceTag } from "./shared.js";
 
 export function renderQuestionContent(config, { titleId = "ui-lab-content-title", locale = "en" } = {}) {
   const copy = getLessonUiCopy(locale);

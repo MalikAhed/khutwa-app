@@ -1,11 +1,11 @@
-import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
-import { ICT_EXAM_QUESTIONS } from "./exam-bank.js?v=acff67f262f3c107";
-import { ICT_BOOK_PRACTICE } from "./book-practice.js?v=acff67f262f3c107";
-import { ICT_PAST_PAPER_QUESTIONS } from "./past-paper-bank.js?v=acff67f262f3c107";
-import { ICT_CLASSIFIED_UNIT1_QUESTIONS } from "./classified-unit1-bank.js?v=acff67f262f3c107";
-import { ICT_CLASSIFIED_UNIT2_QUESTIONS } from "./classified-unit2-bank.js?v=acff67f262f3c107";
-import { ICT_CLASSIFIED_OSI_QUESTIONS } from "./classified-osi-bank.js?v=acff67f262f3c107";
-import { ICT_VISUAL_TRANSCRIPTION_QUESTIONS } from "./visual-transcription-bank.js?v=acff67f262f3c107";
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+import { ICT_EXAM_QUESTIONS } from "./exam-bank.js";
+import { ICT_BOOK_PRACTICE } from "./book-practice.js";
+import { ICT_PAST_PAPER_QUESTIONS } from "./past-paper-bank.js";
+import { ICT_CLASSIFIED_UNIT1_QUESTIONS } from "./classified-unit1-bank.js";
+import { ICT_CLASSIFIED_UNIT2_QUESTIONS } from "./classified-unit2-bank.js";
+import { ICT_CLASSIFIED_OSI_QUESTIONS } from "./classified-osi-bank.js";
+import { ICT_VISUAL_TRANSCRIPTION_QUESTIONS } from "./visual-transcription-bank.js";
 
 const QUESTIONS = [
   ...ICT_EXAM_QUESTIONS, ...ICT_BOOK_PRACTICE, ...ICT_PAST_PAPER_QUESTIONS,

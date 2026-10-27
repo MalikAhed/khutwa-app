@@ -1,18 +1,18 @@
-import { bindVisitorMascots } from "./visitor-mascot.js?v=acff67f262f3c107";
-import { alignOnboardingActions } from "./onboarding-layout.js?v=acff67f262f3c107";
-import { getDesktopTextField } from "./desktop-text-focus.js?v=acff67f262f3c107";
-import { warmLearningExperience } from "../app/background-loading.js?v=acff67f262f3c107";
-import { revealWhenReady, preloadImages } from "./media-ready.js?v=acff67f262f3c107";
+import { bindVisitorMascots } from "./visitor-mascot.js";
+import { alignOnboardingActions } from "./onboarding-layout.js";
+import { getDesktopTextField } from "./desktop-text-focus.js";
+import { warmLearningExperience } from "../app/background-loading.js";
+import { revealWhenReady, preloadImages } from "./media-ready.js";
 import {
   ACCOUNT_FIELD_ORDER,
   validateAccountField,
-} from "../domain/account.js?v=acff67f262f3c107";
+} from "../domain/account.js";
 import {
   accountCompleteMarkup,
   entryMarkup,
   registerMarkup,
   signInMarkup,
-} from "./visitor-flow-markup.js?v=acff67f262f3c107";
+} from "./visitor-flow-markup.js";
 
 const FLOW_IDS = new Set(["entry", "register", "sign-in"]);
 const UNAVAILABLE_ONBOARDING_CHOICES = new Set(["curriculum:full-palestinian", "path:literary"]);

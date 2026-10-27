@@ -1,8 +1,8 @@
-import { escapeHtml } from "../lib/dom.js?v=acff67f262f3c107";
-import { updateSubjectCards } from "./course-map.js?v=acff67f262f3c107";
-import { formatArabicCount } from "./learner-format.js?v=acff67f262f3c107";
-import { getLevelProgress, MAX_LEVEL } from "../domain/progression.js?v=acff67f262f3c107";
-import { mountSuperTrialCountdown } from "./super-trial-countdown.js?v=acff67f262f3c107";
+import { escapeHtml } from "../lib/dom.js";
+import { updateSubjectCards } from "./course-map.js";
+import { formatArabicCount } from "./learner-format.js";
+import { getLevelProgress, MAX_LEVEL } from "../domain/progression.js";
+import { mountSuperTrialCountdown } from "./super-trial-countdown.js";
 
 const icons = Object.freeze({
   streak:'<img src="assets/icons/dashboard-streak-outlined.svg" alt="" aria-hidden="true" />',

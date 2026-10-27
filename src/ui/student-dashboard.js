@@ -1,5 +1,5 @@
-import { escapeHtml as esc } from "../lib/dom.js?v=acff67f262f3c107";
-import { getSubjectRoadmapLesson } from "../data/subject-roadmaps.js?v=acff67f262f3c107";
+import { escapeHtml as esc } from "../lib/dom.js";
+import { getSubjectRoadmapLesson } from "../data/subject-roadmaps.js";
 
 const list=document.querySelector("#students"), status=document.querySelector("#status");
 const previous=document.querySelector("#previous"), next=document.querySelector("#next");

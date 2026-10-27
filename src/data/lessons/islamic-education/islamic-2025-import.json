@@ -1,0 +1,3398 @@
+{
+  "source": "../source-archives/islamic-education-2025/questions.md",
+  "policy": "Keep the active Gaza-book lessons, preserve all existing question IDs, omit equivalent prompts even when choices or wording differ. Written cards compare their full body so generic headings do not merge distinct subquestions.",
+  "corrections": [
+    {
+      "id": "islamic-tasneef-2025-p003-mcq-q16",
+      "evidence": "Rendered source.pdf page 3, original highlighted choice B",
+      "change": "Restore the distinct printed choice texts and explanation."
+    }
+  ],
+  "summary": {
+    "sourceItems": 651,
+    "added": 350,
+    "duplicates": 124,
+    "outsideActiveSyllabus": 177
+  },
+  "items": [
+    {
+      "id": "islamic-tasneef-2025-p002-mcq-q1",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p007-q14"
+    },
+    {
+      "id": "islamic-tasneef-2025-p002-mcq-q2",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p009-q36"
+    },
+    {
+      "id": "islamic-tasneef-2025-p002-mcq-q3",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p007-q11"
+    },
+    {
+      "id": "islamic-tasneef-2025-p002-mcq-q4",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p008-q24"
+    },
+    {
+      "id": "islamic-tasneef-2025-p002-mcq-q5",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p006-q1"
+    },
+    {
+      "id": "islamic-tasneef-2025-p002-mcq-q6",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p006-q7"
+    },
+    {
+      "id": "islamic-tasneef-2025-p002-mcq-q7",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p007-q17"
+    },
+    {
+      "id": "islamic-tasneef-2025-p002-mcq-q8",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p007-q19"
+    },
+    {
+      "id": "islamic-tasneef-2025-p002-mcq-q9",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p003-mcq-q10",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p008-q27"
+    },
+    {
+      "id": "islamic-tasneef-2025-p003-mcq-q11",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p008-q25"
+    },
+    {
+      "id": "islamic-tasneef-2025-p003-mcq-q12",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p009-q34"
+    },
+    {
+      "id": "islamic-tasneef-2025-p003-mcq-q13",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p007-q20"
+    },
+    {
+      "id": "islamic-tasneef-2025-p003-mcq-q14",
+      "sourceLesson": 1,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p008-q22"
+    },
+    {
+      "id": "islamic-tasneef-2025-p003-mcq-q15",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p003-mcq-q16",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p003-written-q1",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p003-written-q2",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p003-written-q3",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p003-written-q4",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p004-written-q1",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p004-written-q2",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p004-written-q3",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p004-written-q4",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p004-written-q5",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p004-written-q6",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p004-written-q7",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p004-written-q8",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p004-written-q9",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p004-written-q10",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p005-written-q1",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p005-written-q2",
+      "sourceLesson": 1,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p006-mcq-q1",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p006-mcq-q2",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p006-mcq-q3",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p006-mcq-q4",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p006-mcq-q5",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p006-mcq-q6",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p006-mcq-q7",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p006-mcq-q8",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p006-mcq-q9",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p006-mcq-q10",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p006-mcq-q11",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p007-mcq-q12",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p007-written-q1",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p007-written-q2",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p007-written-q3",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p007-written-q4",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p007-written-q5",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p007-written-q6",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p007-written-q7",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p007-written-q8",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p007-written-q9",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p007-written-q10",
+      "sourceLesson": 2,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p008-mcq-q1",
+      "sourceLesson": 3,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p014-q7"
+    },
+    {
+      "id": "islamic-tasneef-2025-p008-mcq-q2",
+      "sourceLesson": 3,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p015-q16"
+    },
+    {
+      "id": "islamic-tasneef-2025-p008-mcq-q3",
+      "sourceLesson": 3,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p015-q14"
+    },
+    {
+      "id": "islamic-tasneef-2025-p008-mcq-q4",
+      "sourceLesson": 3,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p015-q10"
+    },
+    {
+      "id": "islamic-tasneef-2025-p008-mcq-q5",
+      "sourceLesson": 3,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p017-q29"
+    },
+    {
+      "id": "islamic-tasneef-2025-p008-mcq-q6",
+      "sourceLesson": 3,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p015-q13"
+    },
+    {
+      "id": "islamic-tasneef-2025-p008-mcq-q7",
+      "sourceLesson": 3,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p015-q19"
+    },
+    {
+      "id": "islamic-tasneef-2025-p008-mcq-q8",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p008-mcq-q9",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p009-mcq-q10",
+      "sourceLesson": 3,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p016-q27"
+    },
+    {
+      "id": "islamic-tasneef-2025-p009-mcq-q11",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p009-written-q1",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p009-written-q2",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p009-written-q3",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p009-written-q4",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p009-written-q5",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p009-written-q6",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p009-written-q7",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p009-written-q8",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p009-written-q9",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p010-written-q1",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p010-written-q2",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p010-written-q3",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p010-written-q4",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p010-written-q5",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p010-written-q6",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p010-written-q7",
+      "sourceLesson": 3,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p011-mcq-q1",
+      "sourceLesson": 4,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p021-q28"
+    },
+    {
+      "id": "islamic-tasneef-2025-p011-mcq-q2",
+      "sourceLesson": 4,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p019-q10"
+    },
+    {
+      "id": "islamic-tasneef-2025-p011-mcq-q3",
+      "sourceLesson": 4,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p019-q11"
+    },
+    {
+      "id": "islamic-tasneef-2025-p011-mcq-q4",
+      "sourceLesson": 4,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p020-q19"
+    },
+    {
+      "id": "islamic-tasneef-2025-p011-mcq-q5",
+      "sourceLesson": 4,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p020-q23"
+    },
+    {
+      "id": "islamic-tasneef-2025-p011-mcq-q6",
+      "sourceLesson": 4,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p021-q27"
+    },
+    {
+      "id": "islamic-tasneef-2025-p011-mcq-q7",
+      "sourceLesson": 4,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p018-q6"
+    },
+    {
+      "id": "islamic-tasneef-2025-p011-mcq-q8",
+      "sourceLesson": 4,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p020-q22"
+    },
+    {
+      "id": "islamic-tasneef-2025-p011-mcq-q9",
+      "sourceLesson": 4,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p020-q20"
+    },
+    {
+      "id": "islamic-tasneef-2025-p011-written-q1",
+      "sourceLesson": 4,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p012-written-q2",
+      "sourceLesson": 4,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p012-written-q3",
+      "sourceLesson": 4,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p012-written-q4",
+      "sourceLesson": 4,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p012-written-q5",
+      "sourceLesson": 4,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p013-mcq-q1",
+      "sourceLesson": 5,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p023-q16"
+    },
+    {
+      "id": "islamic-tasneef-2025-p013-mcq-q2",
+      "sourceLesson": 5,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p024-q24"
+    },
+    {
+      "id": "islamic-tasneef-2025-p013-mcq-q3",
+      "sourceLesson": 5,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p022-q4"
+    },
+    {
+      "id": "islamic-tasneef-2025-p013-mcq-q4",
+      "sourceLesson": 5,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p024-q21"
+    },
+    {
+      "id": "islamic-tasneef-2025-p013-mcq-q5",
+      "sourceLesson": 5,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p023-q12"
+    },
+    {
+      "id": "islamic-tasneef-2025-p013-mcq-q6",
+      "sourceLesson": 5,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p024-q19"
+    },
+    {
+      "id": "islamic-tasneef-2025-p013-mcq-q7",
+      "sourceLesson": 5,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p023-q16"
+    },
+    {
+      "id": "islamic-tasneef-2025-p013-mcq-q8",
+      "sourceLesson": 5,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p023-q13"
+    },
+    {
+      "id": "islamic-tasneef-2025-p013-mcq-q9",
+      "sourceLesson": 5,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p022-q3"
+    },
+    {
+      "id": "islamic-tasneef-2025-p013-mcq-q10",
+      "sourceLesson": 5,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p022-q7"
+    },
+    {
+      "id": "islamic-tasneef-2025-p014-written-q1",
+      "sourceLesson": 5,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p014-written-q2",
+      "sourceLesson": 5,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p014-written-q3",
+      "sourceLesson": 5,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p014-written-q4",
+      "sourceLesson": 5,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p014-written-q5",
+      "sourceLesson": 5,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p014-written-q6",
+      "sourceLesson": 5,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p015-written-q5",
+      "sourceLesson": 5,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p015-written-q6",
+      "sourceLesson": 5,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p017-written-q1",
+      "sourceLesson": 6,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p017-written-q2",
+      "sourceLesson": 6,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p017-written-q3",
+      "sourceLesson": 6,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p018-written-q4",
+      "sourceLesson": 6,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p018-written-q5",
+      "sourceLesson": 6,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p018-written-q6",
+      "sourceLesson": 6,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p018-written-q7",
+      "sourceLesson": 6,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p018-written-q8",
+      "sourceLesson": 6,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p018-written-q9",
+      "sourceLesson": 6,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p019-mcq-q1",
+      "sourceLesson": 7,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p030-q12"
+    },
+    {
+      "id": "islamic-tasneef-2025-p019-mcq-q2",
+      "sourceLesson": 7,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p031-q21"
+    },
+    {
+      "id": "islamic-tasneef-2025-p019-mcq-q3",
+      "sourceLesson": 7,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p033-q43"
+    },
+    {
+      "id": "islamic-tasneef-2025-p020-mcq-q4",
+      "sourceLesson": 7,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p029-q6"
+    },
+    {
+      "id": "islamic-tasneef-2025-p020-mcq-q5",
+      "sourceLesson": 7,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p032-q37"
+    },
+    {
+      "id": "islamic-tasneef-2025-p020-mcq-q6",
+      "sourceLesson": 7,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p032-q30"
+    },
+    {
+      "id": "islamic-tasneef-2025-p020-mcq-q7",
+      "sourceLesson": 7,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p031-q23"
+    },
+    {
+      "id": "islamic-tasneef-2025-p020-mcq-q8",
+      "sourceLesson": 7,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p033-q39"
+    },
+    {
+      "id": "islamic-tasneef-2025-p020-mcq-q9",
+      "sourceLesson": 7,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p031-q26"
+    },
+    {
+      "id": "islamic-tasneef-2025-p020-mcq-q10",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p020-mcq-q11",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p020-mcq-q12",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p020-mcq-q13",
+      "sourceLesson": 7,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p030-q13"
+    },
+    {
+      "id": "islamic-tasneef-2025-p020-mcq-q14",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p021-mcq-q15",
+      "sourceLesson": 7,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p032-q36"
+    },
+    {
+      "id": "islamic-tasneef-2025-p021-written-q1",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p021-written-q2",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p021-written-q3",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p021-written-q4",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p021-written-q5",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p021-written-q6",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p022-written-q1",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p022-written-q2",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p022-written-q3",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p022-written-q4a",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p022-written-q4b",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p022-written-q5",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p022-written-q6",
+      "sourceLesson": 7,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p023-written-q1",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p023-written-q2",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p023-written-q3",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p023-written-q4",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p023-written-q5",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p023-written-q6",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p023-written-q7",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p023-written-q8",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p023-written-q9",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p023-written-q10",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p023-written-q11",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p024-written-q12",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p024-written-q13",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p024-written-q14",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p024-written-q15",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p024-written-q16",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p024-written-q17",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p024-written-q18",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p024-written-q19",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p024-written-q20",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p024-written-q21",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p024-written-q22",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p025-written-q23",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p025-written-q24",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p025-written-q25",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p025-written-q26",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p025-written-q27",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p025-written-q28",
+      "sourceLesson": 8,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p026-written-q1",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p026-written-q2",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p026-written-q3",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p026-written-q4",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p026-written-q5",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p026-written-q6",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p027-written-q1",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p027-written-q2",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p027-written-q3",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p027-written-q13",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p027-written-q14",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p027-written-q15",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p027-written-q16",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p027-written-q17",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p027-written-q18",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p027-written-q19",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p028-written-q1",
+      "sourceLesson": 9,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p029-written-q10",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p029-written-q11",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p029-written-q12",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p029-written-q13",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p029-written-q14",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p029-written-q15",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p029-written-q16",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p029-written-q17",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p030-mcq-q9",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p030-written-q1",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p030-written-q2",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p030-written-q3",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p030-written-q4",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p031-written-q1",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p031-written-q2",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p031-written-q3",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p031-mcq-q3",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p031-written-q4",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p032-written-q1",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p032-mcq-q3",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p032-written-q4",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p032-written-q5",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p032-mcq-q1",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p033-written-q1",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p033-written-q2",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p033-mcq-q4",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p033-written-q5",
+      "sourceLesson": 10,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p034-mcq-q1",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p034-mcq-q2",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p034-mcq-q3",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p034-mcq-q4",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p034-mcq-q5",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p034-mcq-q6",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p034-mcq-q7",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p034-mcq-q8",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p034-mcq-q9",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p034-mcq-q10",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p035-mcq-q11",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p035-mcq-q12",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p035-mcq-q13",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p035-mcq-q14",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p035-mcq-q15",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p035-mcq-q16",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p035-written-q1",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p035-written-q2",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p036-written-q1",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p036-written-q2",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p036-written-q3",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p036-written-q4",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p036-written-q5",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p036-written-q6",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p036-written-q7",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p036-written-q8",
+      "sourceLesson": 11,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q1",
+      "sourceLesson": 12,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p047-q10"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q2",
+      "sourceLesson": 12,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p047-q11"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q3",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q4",
+      "sourceLesson": 12,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p046-q3"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q5",
+      "sourceLesson": 12,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p046-q1"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q6",
+      "sourceLesson": 12,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p046-q5"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q7",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q8",
+      "sourceLesson": 12,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p048-q22"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q9",
+      "sourceLesson": 12,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p047-q12"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q10",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q11",
+      "sourceLesson": 12,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p047-q13"
+    },
+    {
+      "id": "islamic-tasneef-2025-p037-mcq-q12",
+      "sourceLesson": 12,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p048-q27"
+    },
+    {
+      "id": "islamic-tasneef-2025-p038-written-q1",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p038-written-q2",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p038-written-q3",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p038-written-q4",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p038-written-q5",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p038-written-q6",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p038-written-q7",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p039-written-q1",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p039-written-q2",
+      "sourceLesson": 12,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-tasneef-2025-p009-written-q4"
+    },
+    {
+      "id": "islamic-tasneef-2025-p039-written-q3",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p039-written-q4",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p039-written-q5",
+      "sourceLesson": 12,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q1",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p052-q36"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q2",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p052-q33"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q3",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p051-q29"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q4",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p049-q3"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q5",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q6",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q7",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p049-q6"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q8",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p052-q34"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q9",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p049-q4"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q10",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p052-q39"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q11",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p052-q40"
+    },
+    {
+      "id": "islamic-tasneef-2025-p040-mcq-q12",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p049-q4"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-mcq-q13",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p051-q23"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-mcq-q14",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p050-q11"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-mcq-q15",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p052-q31"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-mcq-q16",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-mcq-q17",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-mcq-q18",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p050-q10"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-mcq-q19",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-mcq-q20",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p050-q10"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-mcq-q21",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p050-q19"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-mcq-q22",
+      "sourceLesson": 13,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p052-q37"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-written-q1",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p041-written-q2",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p042-written-q1",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p042-written-q2",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p042-written-q3",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p042-written-q4",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p042-written-q5",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p042-written-q6",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p042-written-q7",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p042-written-q8",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p042-written-q9",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p042-written-q10",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p043-written-q1",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p043-written-q2",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p043-written-q3",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p043-written-q4",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p043-written-q5",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p044-written-q1",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p044-written-q2",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p044-written-q3",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p044-written-q4",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p044-written-q5",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p044-written-q6",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p044-written-q7",
+      "sourceLesson": 13,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p046-mcq-q1",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p046-mcq-q2",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p046-mcq-q3",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p046-mcq-q4",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p046-mcq-q5",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p046-mcq-q6",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p046-mcq-q7",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p046-mcq-q8",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p046-mcq-q9",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p046-mcq-q10",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q11",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q12",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q13",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q14",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q15",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q16",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q17",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q18",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q19",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q20",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q21",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q22",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q23",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q24",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q25",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q26",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p047-mcq-q27",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p048-written-q1",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p048-written-q2",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p048-written-q3-a",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p048-written-q4",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p049-written-q2",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p049-written-q4",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p049-written-q5",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p049-written-q6",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p049-written-q7",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p049-written-q8",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p050-written-q9",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p050-written-q10",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p050-written-q11",
+      "sourceLesson": 14,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p051-mcq-q1",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p051-mcq-q2",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p051-mcq-q3",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p051-mcq-q4",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p051-mcq-q5",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p051-mcq-q6-a",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p051-mcq-q6-b",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p051-mcq-q7-a",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p051-mcq-q7-b",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p052-mcq-q8",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p052-mcq-q9",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p052-written-q1",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p052-written-q2",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p052-written-q3",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p052-written-q4",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p052-written-q5",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p052-written-q6",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p053-written-q7",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p053-written-q8",
+      "sourceLesson": 15,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p054-mcq-q1",
+      "sourceLesson": 16,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p062-q15"
+    },
+    {
+      "id": "islamic-tasneef-2025-p054-mcq-q2",
+      "sourceLesson": 16,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p061-q2"
+    },
+    {
+      "id": "islamic-tasneef-2025-p054-mcq-q3",
+      "sourceLesson": 16,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p062-q16"
+    },
+    {
+      "id": "islamic-tasneef-2025-p054-mcq-q4",
+      "sourceLesson": 16,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p061-q5"
+    },
+    {
+      "id": "islamic-tasneef-2025-p054-mcq-q5",
+      "sourceLesson": 16,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p061-q6"
+    },
+    {
+      "id": "islamic-tasneef-2025-p054-mcq-q6",
+      "sourceLesson": 16,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p062-q18"
+    },
+    {
+      "id": "islamic-tasneef-2025-p054-mcq-q7",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p054-mcq-q8",
+      "sourceLesson": 16,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p062-q19"
+    },
+    {
+      "id": "islamic-tasneef-2025-p054-mcq-q9",
+      "sourceLesson": 16,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p063-q22"
+    },
+    {
+      "id": "islamic-tasneef-2025-p054-mcq-q10",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p054-mcq-q11",
+      "sourceLesson": 16,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p063-q26"
+    },
+    {
+      "id": "islamic-tasneef-2025-p055-mcq-q12",
+      "sourceLesson": 16,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p066-q29"
+    },
+    {
+      "id": "islamic-tasneef-2025-p055-written-q1",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p055-written-q2",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p055-written-q3",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p055-written-q4",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p055-written-q5",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p056-written-q6",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p056-written-q7",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p056-written-q8",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p056-written-q9",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p056-written-q10",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p056-written-q11",
+      "sourceLesson": 16,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p057-mcq-q1",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p064-q8"
+    },
+    {
+      "id": "islamic-tasneef-2025-p057-mcq-q2",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p065-q17"
+    },
+    {
+      "id": "islamic-tasneef-2025-p057-mcq-q3",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p066-q26"
+    },
+    {
+      "id": "islamic-tasneef-2025-p057-mcq-q4",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p064-q7"
+    },
+    {
+      "id": "islamic-tasneef-2025-p057-mcq-q5",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p066-q21"
+    },
+    {
+      "id": "islamic-tasneef-2025-p057-mcq-q6",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p065-q14"
+    },
+    {
+      "id": "islamic-tasneef-2025-p057-mcq-q7",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p065-q10"
+    },
+    {
+      "id": "islamic-tasneef-2025-p057-mcq-q8",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p066-q27"
+    },
+    {
+      "id": "islamic-tasneef-2025-p057-mcq-q9",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p065-q18"
+    },
+    {
+      "id": "islamic-tasneef-2025-p057-mcq-q10",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p064-q5"
+    },
+    {
+      "id": "islamic-tasneef-2025-p057-mcq-q11",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p066-q23"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-mcq-q12",
+      "sourceLesson": 17,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p066-q29"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q1",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q2",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q3",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q4",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q5",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q6",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q7",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q8",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q9",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q10",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q11",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q12",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q13",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q14",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q15",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q16",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q17",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q18",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q19",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p058-written-q20",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p061-written-q1",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p061-written-q2",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p061-written-q3",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p061-written-q4",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p061-written-q5",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p061-written-q6",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p061-written-q7",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p061-written-q8",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p062-written-q9",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p062-written-q10",
+      "sourceLesson": 17,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q1",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q2",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q3",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q4",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q5",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q6",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q7",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q8",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q9",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q10",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q11",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q12",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p063-mcq-q13",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p064-mcq-q15",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p064-written-q1-a",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p064-written-q1-b",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p064-written-q2-b",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p064-written-q2-c",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p064-written-q2-d",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p064-written-q2-e",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p064-written-q2-f",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p064-written-q3-a",
+      "sourceLesson": 18,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-mcq-q1",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-mcq-q2",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-mcq-q3",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-mcq-q4",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-mcq-q5",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-mcq-q6",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-mcq-q7",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-mcq-q8",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-written-example-q1",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-written-example-q2",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-written-example-q3",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p065-written-example-q4",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p066-mcq-q9",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p066-mcq-q10",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p066-mcq-q11",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p066-written-q1",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p066-written-q2",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p066-written-q3",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p066-written-q4",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p066-written-q5",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p066-written-q6",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p066-written-q7",
+      "sourceLesson": 19,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q1",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p074-q20"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q2",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p074-q18"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q3",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p073-q6"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q4",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p073-q8"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q5",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p073-q1"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q6",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p075-q29"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q7",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p074-q12"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q8",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p073-q4"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q9",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p073-q5"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q10",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p075-q26"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q11",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p075-q28"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q12",
+      "sourceLesson": 20,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-2022-p076-q32"
+    },
+    {
+      "id": "islamic-tasneef-2025-p067-mcq-q13",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p068-written-q1",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p068-written-q2",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p068-written-q3",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p068-written-q4",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p068-written-q5",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p068-written-example-q1",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p068-written-example-q2",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p068-written-example-q3",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p069-written-q3",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p069-written-q4",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p069-written-q5",
+      "sourceLesson": 20,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p069-mcq-q1",
+      "sourceLesson": 21,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-book-p068-q1"
+    },
+    {
+      "id": "islamic-tasneef-2025-p069-mcq-q2",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p069-mcq-q3",
+      "sourceLesson": 21,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-book-p068-q3"
+    },
+    {
+      "id": "islamic-tasneef-2025-p069-mcq-q4",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p069-mcq-q5",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-mcq-q6",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-mcq-q7",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-mcq-q8",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-mcq-q9",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-mcq-q10",
+      "sourceLesson": 21,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-book-p068-q3"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-mcq-q11",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-mcq-q12",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-mcq-q13",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-mcq-q14",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-mcq-q15",
+      "sourceLesson": 21,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-book-p068-q1"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-written-q1",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-written-q2",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p070-written-q3",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p071-written-q4a",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p071-written-q4b",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p071-written-q4c",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p071-written-q5",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p071-written-q6",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p071-written-q7",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p071-written-q8",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p071-written-q9",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p071-written-q10",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p072-written-q11-a",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p072-written-q11-b",
+      "sourceLesson": 21,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p073-mcq-q1",
+      "sourceLesson": 22,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-book-p074-q2"
+    },
+    {
+      "id": "islamic-tasneef-2025-p073-mcq-q2",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p073-mcq-q3",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p073-mcq-q4",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p073-mcq-q5",
+      "sourceLesson": 22,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-book-p074-q3"
+    },
+    {
+      "id": "islamic-tasneef-2025-p073-mcq-q6",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p073-mcq-q7",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p073-mcq-q8",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p073-mcq-q9",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p073-mcq-q10",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p073-written-q1",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p074-written-q2a",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p074-written-q2b",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p074-written-q2c",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p074-written-q3",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p074-written-q6",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p074-written-q7a",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p074-written-q7b",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p074-written-q8a",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p074-written-q8b",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p074-written-q8c",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p075-written-q9",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p075-written-q10",
+      "sourceLesson": 22,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p075-mcq-q1",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p075-mcq-q2",
+      "sourceLesson": 23,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-book-p079-q2"
+    },
+    {
+      "id": "islamic-tasneef-2025-p075-mcq-q3",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p075-mcq-q4",
+      "sourceLesson": 23,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-book-p079-q3"
+    },
+    {
+      "id": "islamic-tasneef-2025-p075-mcq-q5",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p075-mcq-q6",
+      "sourceLesson": 23,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-tasneef-2025-p075-mcq-q1"
+    },
+    {
+      "id": "islamic-tasneef-2025-p075-mcq-q7",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p075-mcq-q8",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p075-mcq-q9",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p076-mcq-q10",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p076-mcq-q11",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p076-mcq-q12",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p076-mcq-q13",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p076-mcq-q14",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p076-mcq-q15",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p076-mcq-q16",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p076-written-q1",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p076-written-q2",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p076-written-q3",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p077-written-q4",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p077-written-q5",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-written-q5a",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-written-q5b",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-written-q5c",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-written-q5d",
+      "sourceLesson": 23,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-mcq-q1",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-mcq-q2",
+      "sourceLesson": 24,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-book-p083-q2"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-mcq-q3",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-mcq-q4",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-mcq-q5",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-mcq-q6",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-mcq-q7",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-mcq-q8",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p078-mcq-q9",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p079-mcq-q10",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p079-written-q1",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p079-written-q2",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p079-written-q4",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p079-written-q5",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p080-written-q5",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p080-written-q7",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p080-written-q8",
+      "sourceLesson": 24,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p080-mcq-q1",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p080-mcq-q2",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p080-mcq-q3",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p080-mcq-q4",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p080-mcq-q5",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p080-mcq-q6",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p080-mcq-q7",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p081-mcq-q8",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p081-mcq-q9",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p081-written-q1",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p081-written-q2a",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p081-written-q2b",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p081-written-q2c",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p082-written-q3",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p082-written-q4",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p082-written-q5",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p082-written-q6",
+      "sourceLesson": 25,
+      "disposition": "outside-active-syllabus"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q1",
+      "sourceLesson": 26,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-book-p087-q3"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q2",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q3",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q4",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q5",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q6",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q7",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q8",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q9",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q10",
+      "sourceLesson": 26,
+      "disposition": "duplicate",
+      "canonicalId": "islamic-book-p087-q1"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q11",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p083-mcq-q12",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p084-written-q1",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p084-written-q2a",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p084-written-q2b",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p084-written-q2c",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p084-written-q3a",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p084-written-q3b",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p084-written-q3c",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p084-written-q3d",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p085-written-q3e",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p085-written-q3f",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p085-written-q3g",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p085-written-q3h",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p085-written-q4",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p085-written-q6",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p085-written-q7",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p085-written-q8",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p085-written-q9",
+      "sourceLesson": 26,
+      "disposition": "added"
+    },
+    {
+      "id": "islamic-tasneef-2025-p086-written-q10",
+      "sourceLesson": 26,
+      "disposition": "added"
+    }
+  ]
+}

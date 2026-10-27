@@ -1,5 +1,5 @@
-import DOMPurify from "../../node_modules/dompurify/dist/purify.es.mjs?v=acff67f262f3c107";
-import katex from "../../assets/vendor/katex/katex.mjs?v=acff67f262f3c107";
+import DOMPurify from "../../node_modules/dompurify/dist/purify.es.mjs";
+import katex from "../../assets/vendor/katex/katex.mjs";
 
 const MATH_TAGS = ["math", "mrow", "mi", "mn", "mo", "mtext", "mspace", "ms", "mfrac", "msqrt", "mroot", "msub", "msup", "msubsup", "munder", "mover", "munderover", "mmultiscripts", "mprescripts", "none", "mtable", "mtr", "mtd", "mstyle", "mpadded", "mphantom", "menclose", "semantics", "annotation"];
 const MATH_ATTRIBUTES = ["xmlns", "dir", "display", "aria-label", "mathvariant", "stretchy", "largeop", "movablelimits", "fence", "separator", "accent", "accentunder", "linethickness", "lspace", "rspace", "width", "height", "depth", "rowspacing", "columnspacing", "columnalign", "rowalign", "notation", "encoding", "displaystyle", "scriptlevel"];

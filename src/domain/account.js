@@ -1,4 +1,4 @@
-import { parsePhoneNumber } from "../../node_modules/awesome-phonenumber/index-esm.mjs?v=acff67f262f3c107";
+import { parsePhoneNumber } from "../../node_modules/awesome-phonenumber/index-esm.mjs";
 
 export const ACCOUNT_FIELD_ORDER = Object.freeze([
   "username", "curriculum", "path", "phone", "password",

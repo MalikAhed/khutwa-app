@@ -1,7 +1,7 @@
 // @ts-check
-import { calculateStreak, getLevelProgress } from "./progression.js?v=acff67f262f3c107";
-import { canonicalQuestionStepId, getIncomingQuestionAliases, getPartQuestionIds, getQuestionXp, isSourceQuestionAlias, questionRewardKey, resolveQuestionLocation } from "./question-rewards.js?v=acff67f262f3c107";
-import { getLessonQuestionProgress } from "./subject-question-progress.js?v=acff67f262f3c107";
+import { calculateStreak, getLevelProgress } from "./progression.js";
+import { canonicalQuestionStepId, getIncomingQuestionAliases, getPartQuestionIds, getQuestionXp, isSourceQuestionAlias, questionRewardKey, resolveQuestionLocation } from "./question-rewards.js";
+import { getLessonQuestionProgress } from "./subject-question-progress.js";
 
 /** @typedef {{ownerId:string, subjectId:string, lessonId:string, partId:string}} ProgressKey */
 /** @typedef {{stepId:string, misses:number, active:boolean, solved?:boolean}} ReviewItem */

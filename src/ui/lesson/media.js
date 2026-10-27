@@ -1,5 +1,5 @@
-import { canPrefetchAssets, preloadImages } from "../media-ready.js?v=acff67f262f3c107";
-import { renderMarkdownDocument } from "../../markdown/renderer.js?v=acff67f262f3c107";
+import { canPrefetchAssets, preloadImages } from "../media-ready.js";
+import { renderMarkdownDocument } from "../../markdown/renderer.js";
 
 export function preloadNextStep(step) {
   if (!canPrefetchAssets() || step?.type !== "markdown") return;

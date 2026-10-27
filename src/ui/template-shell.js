@@ -1,5 +1,5 @@
-import { escapeHtml } from "../lib/dom.js?v=acff67f262f3c107";
-import { getLessonUiCopy } from "./lesson-ui-copy.js?v=acff67f262f3c107";
+import { escapeHtml } from "../lib/dom.js";
+import { getLessonUiCopy } from "./lesson-ui-copy.js";
 
 const ATTRIBUTE_NAME = /^[A-Za-z_:][A-Za-z0-9:._-]*$/;
 

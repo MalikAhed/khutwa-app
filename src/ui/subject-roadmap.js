@@ -1,10 +1,10 @@
-import { renderUnitReviewPanel, mountUnitReview } from "./subject-review.js?v=acff67f262f3c107";
-import { animateView } from "./view-motion.js?v=acff67f262f3c107";
-import { escapeHtml } from "../lib/dom.js?v=acff67f262f3c107";
-import { getLessonQuestionProgress } from "../domain/subject-question-progress.js?v=acff67f262f3c107";
-import { getSubjectPartAccess } from "../domain/subject-access.js?v=acff67f262f3c107";
-import { getShellViewportBounds } from "./app-shell.js?v=acff67f262f3c107";
-import { readablePageReferences } from "../lib/page-labels.js?v=acff67f262f3c107";
+import { renderUnitReviewPanel, mountUnitReview } from "./subject-review.js";
+import { animateView } from "./view-motion.js";
+import { escapeHtml } from "../lib/dom.js";
+import { getLessonQuestionProgress } from "../domain/subject-question-progress.js";
+import { getSubjectPartAccess } from "../domain/subject-access.js";
+import { getShellViewportBounds } from "./app-shell.js";
+import { readablePageReferences } from "../lib/page-labels.js";
 
 const UNIT_GUIDE_ENABLED = false;
 

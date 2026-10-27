@@ -1,11 +1,11 @@
 // @ts-check
-import { applyProgressUpdate, currentPartProgress, emptyPart, homeLearningSummary, localDateKey, partKey, progressSubjectId, recalculateQuestionRewards, summarizeParts } from "../domain/subject-progress.js?v=acff67f262f3c107";
-import { getSubjectRoadmap } from "../data/subject-roadmaps.js?v=acff67f262f3c107";
-import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js?v=acff67f262f3c107";
-import { getPartQuestionIds, resolveQuestionLocation } from "../domain/question-rewards.js?v=acff67f262f3c107";
-import { defaultAnswerRating } from "../domain/question-ratings.js?v=acff67f262f3c107";
-import { createSessionProgressAdapter } from "./session-progress.js?v=acff67f262f3c107";
-export { getUnitPartProgress, localDateKey } from "../domain/subject-progress.js?v=acff67f262f3c107";
+import { applyProgressUpdate, currentPartProgress, emptyPart, homeLearningSummary, localDateKey, partKey, progressSubjectId, recalculateQuestionRewards, summarizeParts } from "../domain/subject-progress.js";
+import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js";
+import { getPartQuestionIds, resolveQuestionLocation } from "../domain/question-rewards.js";
+import { defaultAnswerRating } from "../domain/question-ratings.js";
+import { createSessionProgressAdapter } from "./session-progress.js";
+export { getUnitPartProgress, localDateKey } from "../domain/subject-progress.js";
 
 /** @typedef {import('../domain/subject-progress.js').ProgressKey} ProgressKey */
 /** @typedef {import('../domain/subject-progress.js').PartRecord} PartRecord */

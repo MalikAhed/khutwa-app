@@ -1,5 +1,5 @@
 // @ts-check
-import { applyProgressUpdate, emptyPart, partKey, restorePartEntries } from "../domain/subject-progress.js?v=acff67f262f3c107";
+import { applyProgressUpdate, emptyPart, partKey, restorePartEntries } from "../domain/subject-progress.js";
 
 /** @typedef {import('../domain/subject-progress.js').PartRecord} PartRecord */
 /** @typedef {import('../domain/subject-progress.js').ProgressUpdate} ProgressUpdate */

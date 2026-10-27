@@ -1,2 +1,2 @@
-import { ISLAMIC_LESSONS } from "./islamic-bank.js?v=acff67f262f3c107";
+import { ISLAMIC_LESSONS } from "./islamic-bank.js";
 export { ISLAMIC_LESSONS };

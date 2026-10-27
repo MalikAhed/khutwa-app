@@ -1,38 +1,38 @@
-import { mountQuestionNavigation } from "./question-navigation.js?v=acff67f262f3c107";
-import { animateView } from "../view-motion.js?v=acff67f262f3c107";
+import { mountQuestionNavigation } from "./question-navigation.js";
+import { animateView } from "../view-motion.js";
 import {
   showDailyStreak,
   renderSubjectCompletion,
   animateSubjectCompletion,
   preloadCompletionMedia,
-} from "../subject-completion.js?v=acff67f262f3c107";
-import { escapeHtml } from "../../lib/dom.js?v=acff67f262f3c107";
+} from "../subject-completion.js";
+import { escapeHtml } from "../../lib/dom.js";
 import {
   mountMarkdownFeatures,
   renderMarkdownDocument,
-} from "../../markdown/renderer.js?v=acff67f262f3c107";
-import { getLessonUiCopy } from "../lesson-ui-copy.js?v=acff67f262f3c107";
+} from "../../markdown/renderer.js";
+import { getLessonUiCopy } from "../lesson-ui-copy.js";
 import {
   mountTemplateEnterShortcut,
   mountTemplateContentZoom,
   mountTemplateScrollIndicator,
   renderTemplateFooter,
   renderTemplateShell,
-} from "../template-shell.js?v=acff67f262f3c107";
-import { renderQuestion } from "./question.js?v=acff67f262f3c107";
-import { lessonLocale, lessonReferenceLabel } from "./shared.js?v=acff67f262f3c107";
-import { renderRockyDialogue, mountRockyDialogues, playRockyDialogue } from "./rocky-dialogue.js?v=acff67f262f3c107";
-import { renderVideoIntro, mountVideoIntro } from "./video-intro.js?v=acff67f262f3c107";
-import { mountVideoTour } from "./video-tour.js?v=acff67f262f3c107";
-import { enhanceLessonSummary } from "./lesson-summary.js?v=acff67f262f3c107";
-import { revealWhenReady, preloadImages } from "../media-ready.js?v=acff67f262f3c107";
-import { preloadNextStep } from "./media.js?v=acff67f262f3c107";
-import { renderMistakeReviewIntro } from "./mistake-review.js?v=acff67f262f3c107";
-import { renderExamQuestion } from "./exam-question.js?v=acff67f262f3c107";
-import { mountMathQuestionFilter } from "./math-question-filter.js?v=acff67f262f3c107";
-import { selectLessonDemo } from "../../domain/lesson-demo.js?v=acff67f262f3c107";
-import { mountQuestionFeedback } from "../question-feedback.js?v=acff67f262f3c107";
-import { mountQuestionExplanation } from "./question-explanation.js?v=acff67f262f3c107";
+} from "../template-shell.js";
+import { renderQuestion } from "./question.js";
+import { lessonLocale, lessonReferenceLabel } from "./shared.js";
+import { renderRockyDialogue, mountRockyDialogues, playRockyDialogue } from "./rocky-dialogue.js";
+import { renderVideoIntro, mountVideoIntro } from "./video-intro.js";
+import { mountVideoTour } from "./video-tour.js";
+import { enhanceLessonSummary } from "./lesson-summary.js";
+import { revealWhenReady, preloadImages } from "../media-ready.js";
+import { preloadNextStep } from "./media.js";
+import { renderMistakeReviewIntro } from "./mistake-review.js";
+import { renderExamQuestion } from "./exam-question.js";
+import { mountMathQuestionFilter } from "./math-question-filter.js";
+import { selectLessonDemo } from "../../domain/lesson-demo.js";
+import { mountQuestionFeedback } from "../question-feedback.js";
+import { mountQuestionExplanation } from "./question-explanation.js";
 
 /** @param {import("../lesson-view.js").LessonOptions} [options] @returns {import("../../app/view-lifecycle.js").Cleanup} */
 export function renderAuthoredInteractiveLesson(

@@ -1,10 +1,10 @@
-import DOMPurify from "../../node_modules/dompurify/dist/purify.es.mjs?v=acff67f262f3c107";
-import hljs from "../../node_modules/@highlightjs/cdn-assets/es/highlight.min.js?v=acff67f262f3c107";
-import { Marked } from "../../node_modules/marked/lib/marked.esm.js?v=acff67f262f3c107";
-import { escapeHtml } from "../lib/dom.js?v=acff67f262f3c107";
-import { getLessonUiCopy } from "../ui/lesson-ui-copy.js?v=acff67f262f3c107";
-import { LESSON_CONTENT_DIRECTIVES } from "./lesson-authoring.js?v=acff67f262f3c107";
-import { renderMathML, renderLatex } from "./math.js?v=acff67f262f3c107";
+import DOMPurify from "../../node_modules/dompurify/dist/purify.es.mjs";
+import hljs from "../../node_modules/@highlightjs/cdn-assets/es/highlight.min.js";
+import { Marked } from "../../node_modules/marked/lib/marked.esm.js";
+import { escapeHtml } from "../lib/dom.js";
+import { getLessonUiCopy } from "../ui/lesson-ui-copy.js";
+import { LESSON_CONTENT_DIRECTIVES } from "./lesson-authoring.js";
+import { renderMathML, renderLatex } from "./math.js";
 
 const GLOSSARY = new Map([
   ["api", "A defined way for software systems to request data or actions from each other."],

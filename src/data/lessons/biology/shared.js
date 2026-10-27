@@ -1,5 +1,5 @@
-import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
-import { BIOLOGY_LESSONS } from "./biology-course.js?v=acff67f262f3c107";
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+import { BIOLOGY_LESSONS } from "./biology-course.js";
 
 export function createBiologyLesson(id, source) {
   const lesson = BIOLOGY_LESSONS.find(lesson => lesson.id === id);

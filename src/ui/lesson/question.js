@@ -1,13 +1,13 @@
-import { replaceQuestionShell } from "./question-shell.js?v=acff67f262f3c107";
-import { escapeHtml } from "../../lib/dom.js?v=acff67f262f3c107";
-import { launchCelebration } from "../celebration.js?v=acff67f262f3c107";
-import { getLessonUiCopy } from "../lesson-ui-copy.js?v=acff67f262f3c107";
-import { renderQuestionLayout } from "./question-layout.js?v=acff67f262f3c107";
-import { mountQuestionRating, renderQuestionRatingControls } from "../question-rating.js?v=acff67f262f3c107";
-import { highlightEnglishText } from "./english-text.js?v=acff67f262f3c107";
-import { mountSummaryScans } from "./summary-scans.js?v=acff67f262f3c107";
-import { mountTemplateScrollIndicator } from "../template-shell.js?v=acff67f262f3c107";
-import { mountMarkdownFeatures } from "../../markdown/renderer.js?v=acff67f262f3c107";
+import { replaceQuestionShell } from "./question-shell.js";
+import { escapeHtml } from "../../lib/dom.js";
+import { launchCelebration } from "../celebration.js";
+import { getLessonUiCopy } from "../lesson-ui-copy.js";
+import { renderQuestionLayout } from "./question-layout.js";
+import { mountQuestionRating, renderQuestionRatingControls } from "../question-rating.js";
+import { highlightEnglishText } from "./english-text.js";
+import { mountSummaryScans } from "./summary-scans.js";
+import { mountTemplateScrollIndicator } from "../template-shell.js";
+import { mountMarkdownFeatures } from "../../markdown/renderer.js";
 
 const CHECK_ACTION = Object.freeze({ CHECK:"check", RETRY:"retry", CONTINUE:"continue" });
 const QUESTION_RESULT_LABELS_ENABLED = false;

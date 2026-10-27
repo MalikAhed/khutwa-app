@@ -1,4 +1,4 @@
-import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
 
 export const lessonSource = `:::exam-question
 id: math-book-p088-activity1-table

@@ -1,4 +1,4 @@
-import { TOTAL_DAYS } from "../data/course.js?v=acff67f262f3c107";
+import { TOTAL_DAYS } from "../data/course.js";
 
 export const XP_PER_LESSON = 100;
 export const TOTAL_COURSE_XP = TOTAL_DAYS * XP_PER_LESSON;

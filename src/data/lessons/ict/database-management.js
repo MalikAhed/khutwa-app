@@ -1,4 +1,4 @@
-import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
 
 export const ALL_LESSON_MARKDOWN = `<!-- step-id: database-management-mission -->
 <!-- presentation: video-intro -->

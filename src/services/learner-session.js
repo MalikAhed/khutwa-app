@@ -1,8 +1,8 @@
 // @ts-check
-import { getSubjectRoadmap } from "../data/subject-roadmaps.js?v=acff67f262f3c107";
-import { duplicateAccountFieldMessage, identifierAliases, isAccountIdentifierField, isValidVisitorSelection, validateAccountField } from "../domain/account.js?v=acff67f262f3c107";
-import { createAuthClient } from "./auth-client.js?v=acff67f262f3c107";
-import { createLearnerStorage, defaultErrorReporter, GUEST_TRIAL_STORAGE_KEY, TEMPORARY_ACCOUNT_STORAGE_KEY, VISITOR_SELECTION_STORAGE_KEY } from "./learner-storage.js?v=acff67f262f3c107";
+import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { duplicateAccountFieldMessage, identifierAliases, isAccountIdentifierField, isValidVisitorSelection, validateAccountField } from "../domain/account.js";
+import { createAuthClient } from "./auth-client.js";
+import { createLearnerStorage, defaultErrorReporter, GUEST_TRIAL_STORAGE_KEY, TEMPORARY_ACCOUNT_STORAGE_KEY, VISITOR_SELECTION_STORAGE_KEY } from "./learner-storage.js";
 
 /** @typedef {'free'|'subscribed'|'banned'} AccountType */
 /** @typedef {{curriculum:string, path:string}} VisitorSelection */
@@ -105,7 +105,7 @@ export function createLearnerSession({
         ? { status:"available", field } : accountFailure(body);
     }
     if (!isAccountIdentifierField(field)) return { status:"invalid" };
-    const { FIXTURE_ACCOUNTS } = await import("../data/fixture-accounts.js?v=acff67f262f3c107");
+    const { FIXTURE_ACCOUNTS } = await import("../data/fixture-accounts.js");
     const aliases = new Set(identifierAliases(value));
     const duplicate = FIXTURE_ACCOUNTS.some(({ identifier, email, phone }) => [identifier, email, phone]
       .flatMap((candidate) => identifierAliases(candidate))
@@ -190,7 +190,7 @@ export function createLearnerSession({
         return { status:"signed-in", accountType:availableAccountType(payload.account.accountType) };
       }
       const normalized = String(identifier || "").trim().toLowerCase();
-      const { FIXTURE_ACCOUNTS } = await import("../data/fixture-accounts.js?v=acff67f262f3c107");
+      const { FIXTURE_ACCOUNTS } = await import("../data/fixture-accounts.js");
       const demo = FIXTURE_ACCOUNTS.find(({ identifier:username, email, phone }) => [username, email, phone].includes(normalized));
       if (!demo || String(password) !== demo.password) return { status:"invalid" };
       activeAccount = { progressOwner:`demo:${demo.identifier}`, type:availableAccountType(demo.type), displayName:demo.displayName, homeScenarioId:demo.homeScenarioId };

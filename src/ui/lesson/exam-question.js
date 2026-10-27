@@ -1,11 +1,11 @@
-import { replaceQuestionShell } from "./question-shell.js?v=acff67f262f3c107";
-import { escapeHtml, prefersReducedMotion } from "../../lib/dom.js?v=acff67f262f3c107";
-import { renderMarkdownDocument, renderLessonInline, mountMarkdownFeatures } from "../../markdown/renderer.js?v=acff67f262f3c107";
-import { renderTemplateShell, renderTemplateFooter, renderTemplateScrollIndicators, mountTemplateScrollIndicator } from "../template-shell.js?v=acff67f262f3c107";
-import { mountQuestionRating, renderQuestionRatingControls } from "../question-rating.js?v=acff67f262f3c107";
-import { highlightEnglishText } from "./english-text.js?v=acff67f262f3c107";
-import { mountSummaryScans } from "./summary-scans.js?v=acff67f262f3c107";
-import { renderQuestionSourceTag, spaceWorkedEquations } from "./shared.js?v=acff67f262f3c107";
+import { replaceQuestionShell } from "./question-shell.js";
+import { escapeHtml, prefersReducedMotion } from "../../lib/dom.js";
+import { renderMarkdownDocument, renderLessonInline, mountMarkdownFeatures } from "../../markdown/renderer.js";
+import { renderTemplateShell, renderTemplateFooter, renderTemplateScrollIndicators, mountTemplateScrollIndicator } from "../template-shell.js";
+import { mountQuestionRating, renderQuestionRatingControls } from "../question-rating.js";
+import { highlightEnglishText } from "./english-text.js";
+import { mountSummaryScans } from "./summary-scans.js";
+import { renderQuestionSourceTag, spaceWorkedEquations } from "./shared.js";
 
 function layoutWrittenPrompt(source) {
   let text = source.trim();

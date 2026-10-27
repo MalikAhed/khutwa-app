@@ -1,0 +1,30 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+coverage/
+data/
+!/src/data/
+*.log
+artifacts/
+codex screen shots/
+exports/
+tmp/
+user screenshots /
+design-system-clone/
+design-system-clone.zip
+
+_site/
+_server/
+
+source-archives/
+inspect.mjs
+tmp-*.mjs
+
+# Local recovery evidence and Cloudflare emulator state; never publish these.
+.production/
+.wrangler/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

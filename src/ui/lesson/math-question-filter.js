@@ -1,4 +1,4 @@
-import { escapeHtml } from "../../lib/dom.js?v=acff67f262f3c107";
+import { escapeHtml } from "../../lib/dom.js";
 
 const FILTER_SUBJECTS = new Set(["mathematics", "mathematics-2", "physics"]);
 const QUESTION_FILTER_ENABLED = false;

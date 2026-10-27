@@ -1,5 +1,5 @@
-import { loadSubjectLessonPart } from "../data/lessons/subject-lesson-registry.js?v=acff67f262f3c107";
-import { compileLessonMarkdown } from "../markdown/lesson-model.js?v=acff67f262f3c107";
+import { loadSubjectLessonPart } from "../data/lessons/subject-lesson-registry.js";
+import { compileLessonMarkdown } from "../markdown/lesson-model.js";
 
 // Use the original question definitions and map temporary sequence IDs back to
 // their published source keys for answers, explanations, ratings and progress.

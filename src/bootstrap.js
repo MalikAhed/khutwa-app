@@ -1,7 +1,7 @@
-import { createSplashScreen } from "./ui/splash-screen.js?v=acff67f262f3c107";
-import { waitForImage } from "./ui/media-ready.js?v=acff67f262f3c107";
-import { readRoute } from "./app/route.js?v=acff67f262f3c107";
-import { warmLearningExperience } from "./app/background-loading.js?v=acff67f262f3c107";
+import { createSplashScreen } from "./ui/splash-screen.js";
+import { waitForImage } from "./ui/media-ready.js";
+import { readRoute } from "./app/route.js";
+import { warmLearningExperience } from "./app/background-loading.js";
 
 const splash = createSplashScreen();
 const controller = new AbortController();
@@ -106,7 +106,7 @@ async function start() {
       }),
       track("app", async () => {
         await css;
-        application ||= import("./main.js?v=acff67f262f3c107");
+        application ||= import("./main.js");
         await application;
       }),
     ]);

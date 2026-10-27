@@ -1,7 +1,7 @@
-import { ISLAMIC_BOOK_LESSONS as BOOK_LESSONS, ISLAMIC_UNITS } from "./book-lessons.js?v=acff67f262f3c107";
-import { ISLAMIC_2022_MCQS } from "./islamic-2022-bank.js?v=acff67f262f3c107";
-import { ISLAMIC_2025_QUESTIONS } from "./islamic-2025-bank.js?v=acff67f262f3c107";
-import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+import { ISLAMIC_BOOK_LESSONS as BOOK_LESSONS, ISLAMIC_UNITS } from "./book-lessons.js";
+import { ISLAMIC_2022_MCQS } from "./islamic-2022-bank.js";
+import { ISLAMIC_2025_QUESTIONS } from "./islamic-2025-bank.js";
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
 
 const SOURCE_BOOK = "https://moe.edu.ps/m/4064";
 const SOURCE_QUESTIONS = "islamic-required-mcq-405.zip";

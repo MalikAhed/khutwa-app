@@ -1,6 +1,6 @@
-import { refillResources, resourceSnapshot, spendHeart, SUPER_TRIAL_MS } from "../domain/learner-resources.js?v=acff67f262f3c107";
-import { EXPLANATION_GEM_COST, questionExplanation } from "../domain/question-explanations.js?v=acff67f262f3c107";
-import { questionRewardKey } from "../domain/question-rewards.js?v=acff67f262f3c107";
+import { refillResources, resourceSnapshot, spendHeart, SUPER_TRIAL_MS } from "../domain/learner-resources.js";
+import { EXPLANATION_GEM_COST, questionExplanation } from "../domain/question-explanations.js";
+import { questionRewardKey } from "../domain/question-rewards.js";
 
 // HTTP balances are confirmed by the progress API; fixture balances stay local.
 export function createLearnerResources({ storage, getAccountType, apiBase = null, fetchImpl = globalThis.fetch, now = Date.now, onError = console.warn }) {

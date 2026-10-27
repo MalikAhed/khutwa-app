@@ -3,6 +3,23 @@ name: Publish Cloudflare Pages
 on:
   push:
     branches: [main]
+    paths:
+      - 'src/**'
+      - '!src/server/**'
+      - 'src/server/static-files.mjs'
+      - 'assets/**'
+      - 'index.html'
+      - 'content-worker.js'
+      - 'package*.json'
+      - 'jsconfig.json'
+      - 'scripts/package*.mjs'
+      - 'scripts/content-manifest.mjs'
+      - 'scripts/version-preview.mjs'
+      - '.github/cloudflare/**'
+      - '.github/workflows/cloudflare-pages.yml'
+  pull_request:
+    branches: [main]
+    paths-ignore: ['docs/**', '**/*.md']
   workflow_dispatch:
 
 permissions:
@@ -10,35 +27,31 @@ permissions:
   deployments: write
 
 concurrency:
-  group: cloudflare-pages-production
+  group: cloudflare-pages-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
+    env:
+      SITE_DIR: _site
+      CHECK_BASE: ${{ github.event.pull_request.base.sha || github.event.before || 'HEAD' }}
     steps:
-      - name: Check out the published runtime
+      - name: Check out the approved source
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
-      - name: Prepare the website files
-        shell: bash
-        run: |
-          mkdir -p "$RUNNER_TEMP/khutwa-site"
-          git archive HEAD | tar -x --exclude=.github --exclude=README.md -C "$RUNNER_TEMP/khutwa-site"
-          # Pages skips node_modules; retain its public URLs through a rewrite.
-          mv "$RUNNER_TEMP/khutwa-site/node_modules" "$RUNNER_TEMP/khutwa-site/assets/browser-libraries"
-          {
-            printf '/node_modules/* /assets/browser-libraries/:splat 200\n'
-            if [ -f "$RUNNER_TEMP/khutwa-site/_redirects" ]; then
-              cat "$RUNNER_TEMP/khutwa-site/_redirects"
-            fi
-          } > "$RUNNER_TEMP/khutwa-redirects"
-          mv "$RUNNER_TEMP/khutwa-redirects" "$RUNNER_TEMP/khutwa-site/_redirects"
-          sed -i 's/name="learn-account-mode" content="fixture"/name="learn-account-mode" content="http"/' "$RUNNER_TEMP/khutwa-site/index.html"
-          grep -q 'name="learn-account-mode" content="http"' "$RUNNER_TEMP/khutwa-site/index.html"
-          cp .github/cloudflare/worker.mjs "$RUNNER_TEMP/khutwa-site/_worker.js"
-          cp .github/cloudflare/routes.json "$RUNNER_TEMP/khutwa-site/_routes.json"
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Fast checks and one build
+        run: npm run release
       - name: Test the release against the existing staging account service
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         id: preview
         uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4
         with:
@@ -46,12 +59,14 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           wranglerVersion: '4.154.0'
-          command: pages deploy ${{ runner.temp }}/khutwa-site --project-name=khutwaa --branch=account-service-check --commit-dirty=false
+          command: pages deploy _site --project-name=khutwaa --branch=account-service-check --commit-dirty=false
       - name: Verify the candidate before changing production
+        if: steps.preview.outcome == 'success'
         env:
           DEPLOYMENT_URL: ${{ steps.preview.outputs.deployment-url }}
         run: node .github/cloudflare/verify-deployment.mjs
-      - name: Publish to the existing production account service
+      - name: Publish the same build to production
+        if: steps.preview.outcome == 'success'
         id: publish
         uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4
         with:
@@ -59,8 +74,9 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           wranglerVersion: '4.154.0'
-          command: pages deploy ${{ runner.temp }}/khutwa-site --project-name=khutwaa --branch=main --commit-dirty=false
-      - name: Verify production account routing
+          command: pages deploy _site --project-name=khutwaa --branch=main --commit-dirty=false
+      - name: Verify production
+        if: steps.publish.outcome == 'success'
         env:
-          DEPLOYMENT_URL: ${{ steps.publish.outputs.deployment-url }}
+          DEPLOYMENT_URL: https://khutwaa.pages.dev
         run: node .github/cloudflare/verify-deployment.mjs

@@ -1,5 +1,5 @@
-import { defineLesson } from "../domain/lesson.js?v=acff67f262f3c107";
-import { parseLessonMarkdown } from "./lesson-authoring.js?v=acff67f262f3c107";
+import { defineLesson } from "../domain/lesson.js";
+import { parseLessonMarkdown } from "./lesson-authoring.js";
 
 function explanationBody(source) {
   const lines = String(source).replace(/^<!--\s*(?:step-id|presentation):.*?-->\s*$/gim, "").split("\n");

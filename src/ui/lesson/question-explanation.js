@@ -1,7 +1,7 @@
-import { escapeHtml, prefersReducedMotion } from "../../lib/dom.js?v=acff67f262f3c107";
-import { EXPLANATION_GEM_COST } from "../../domain/question-explanations.js?v=acff67f262f3c107";
-import { renderMarkdownDocument, mountMarkdownFeatures } from "../../markdown/renderer.js?v=acff67f262f3c107";
-import { spaceWorkedEquations } from "./shared.js?v=acff67f262f3c107";
+import { escapeHtml, prefersReducedMotion } from "../../lib/dom.js";
+import { EXPLANATION_GEM_COST } from "../../domain/question-explanations.js";
+import { renderMarkdownDocument, mountMarkdownFeatures } from "../../markdown/renderer.js";
+import { spaceWorkedEquations } from "./shared.js";
 
 /** A purchase opens reading only; it never answers or completes the question. */
 export function mountQuestionExplanation({ host, explanation, locale = "ar", signal }) {

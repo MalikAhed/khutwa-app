@@ -1,6 +1,6 @@
-import { createFirstRunTourState } from "../services/first-run-tour.js?v=acff67f262f3c107";
-import { createRockyTourSpotlight } from "./rocky-tour-spotlight.js?v=acff67f262f3c107";
-import { prefersReducedMotion } from "../lib/dom.js?v=acff67f262f3c107";
+import { createFirstRunTourState } from "../services/first-run-tour.js";
+import { createRockyTourSpotlight } from "./rocky-tour-spotlight.js";
+import { prefersReducedMotion } from "../lib/dom.js";
 
 const DEMO_STAGES = new Set(["first-lesson","start-lesson","answer","check","rating","flashcard","flashcard-answer"]);
 const HOME_STAGES = new Set(["level","streak","navigation"]);

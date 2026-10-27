@@ -1,4 +1,4 @@
-import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+import { createEnglishLesson } from "./shared.js";
 
 export const source = `:::exam-question
 id: eng-2023-p074-qlanguage-1-1

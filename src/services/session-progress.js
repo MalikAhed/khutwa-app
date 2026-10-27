@@ -1,5 +1,5 @@
 // @ts-check
-import { applyProgressUpdate, emptyPart, partKey, recalculateQuestionRewards, restorePartEntries } from "../domain/subject-progress.js?v=acff67f262f3c107";
+import { applyProgressUpdate, emptyPart, partKey, recalculateQuestionRewards, restorePartEntries } from "../domain/subject-progress.js";
 
 export const LEGACY_PROGRESS_PREFIX = "tawjihi:subject-parts:v1:";
 /** @param {Pick<Storage,'getItem'>|null} storage @param {string} ownerId @param {(error:unknown, ownerId:string)=>void} onError @returns {Map<string,import('../domain/subject-progress.js').PartRecord>} */

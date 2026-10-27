@@ -1,10 +1,10 @@
-import { QUESTION_RATINGS, getRatedSubjectQuestions } from "../domain/question-ratings.js?v=acff67f262f3c107";
-import { renderRatingFace } from "./question-rating.js?v=acff67f262f3c107";
-import { COURSE_SUBJECTS } from "../data/course.js?v=acff67f262f3c107";
-import { getSubjectRoadmap } from "../data/subject-roadmaps.js?v=acff67f262f3c107";
-import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js?v=acff67f262f3c107";
-import { escapeHtml } from "../lib/dom.js?v=acff67f262f3c107";
-import { isProgressLabelCovered } from "./learner-format.js?v=acff67f262f3c107";
+import { QUESTION_RATINGS, getRatedSubjectQuestions } from "../domain/question-ratings.js";
+import { renderRatingFace } from "./question-rating.js";
+import { COURSE_SUBJECTS } from "../data/course.js";
+import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js";
+import { escapeHtml } from "../lib/dom.js";
+import { isProgressLabelCovered } from "./learner-format.js";
 
 const LOCK_ICON = '<span class="subject-card__lock" aria-hidden="true"><img src="assets/icons/subject-lock.svg" alt="" /></span>';
 const ICT_QUESTION_TOTAL = getSubjectRoadmap("ict")?.units.flatMap(unit => unit.lessons)

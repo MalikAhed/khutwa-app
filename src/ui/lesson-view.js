@@ -1,9 +1,9 @@
 // @ts-check
-import { lessonReferenceLabel } from "./lesson/shared.js?v=acff67f262f3c107";
-import { renderComingSoon } from "./lesson/status.js?v=acff67f262f3c107";
-import { compileLessonMarkdown } from "../markdown/lesson-model.js?v=acff67f262f3c107";
-import { renderAuthoredInteractiveLesson } from "./lesson/authored.js?v=acff67f262f3c107";
-export { renderLessonError } from "./lesson/status.js?v=acff67f262f3c107";
+import { lessonReferenceLabel } from "./lesson/shared.js";
+import { renderComingSoon } from "./lesson/status.js";
+import { compileLessonMarkdown } from "../markdown/lesson-model.js";
+import { renderAuthoredInteractiveLesson } from "./lesson/authored.js";
+export { renderLessonError } from "./lesson/status.js";
 
 /** @typedef {{completedStepIds:string[], isComplete:boolean}} LessonProgressUpdate */
 /** @typedef {{completedStepIds:string[], attemptedStepIds?:string[], completedAt?:string|null, mistakeStepIds?:string[]}} LessonProgress */

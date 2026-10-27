@@ -1,7 +1,7 @@
 // @ts-check
-import { getCourseSubject } from "../data/course.js?v=acff67f262f3c107";
-import { getSubjectRoadmap, getSubjectRoadmapLesson } from "../data/subject-roadmaps.js?v=acff67f262f3c107";
-import { resolveQuestionLocation } from "../domain/question-rewards.js?v=acff67f262f3c107";
+import { getCourseSubject } from "../data/course.js";
+import { getSubjectRoadmap, getSubjectRoadmapLesson } from "../data/subject-roadmaps.js";
+import { resolveQuestionLocation } from "../domain/question-rewards.js";
 
 /** @typedef {{page:string, subject:string|null, lesson:string|null, part:string|null, flow:string|null, question?:string, rating?:string}} Route */
 /** @typedef {{page?:string, subject?:string|null, lesson?:string|null, part?:string|null, flow?:string|null, question?:string|null, rating?:string|null}} RouteTarget */

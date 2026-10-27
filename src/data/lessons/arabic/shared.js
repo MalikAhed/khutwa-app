@@ -1,5 +1,5 @@
-import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
-import { ARABIC_LESSONS } from "./arabic-course.js?v=acff67f262f3c107";
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+import { ARABIC_LESSONS } from "./arabic-course.js";
 
 export function createArabicLesson(id, source) {
   const lesson = ARABIC_LESSONS.find(lesson => lesson.id === id && lesson.questionCount > 0);

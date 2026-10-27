@@ -1,5 +1,5 @@
-import { waitForImage } from "./media-ready.js?v=acff67f262f3c107";
-import { animateView } from "./view-motion.js?v=acff67f262f3c107";
+import { waitForImage } from "./media-ready.js";
+import { animateView } from "./view-motion.js";
 
 // Repose the production drawing and reuse its glasses and the navbar heart.
 // All paths, colors and the breathing motion come from the existing assets.
