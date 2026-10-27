@@ -1,1 +1,112 @@
-import{refillResources as x,resourceSnapshot as w,spendHeart as I,SUPER_TRIAL_MS as N}from"../domain/learner-resources.js?v=7388f68cc0f433fd";import{EXPLANATION_GEM_COST as U,questionExplanation as j}from"../domain/question-explanations.js?v=7388f68cc0f433fd";import{questionRewardKey as O}from"../domain/question-rewards.js?v=7388f68cc0f433fd";export function createLearnerResources({storage:g,getAccountType:y,apiBase:f=null,fetchImpl:A=globalThis.fetch,now:r=Date.now,onError:k=console.warn}){const h=new Map,m=new Set,b=t=>`tawjihi:resources:v1:${encodeURIComponent(t)}`,p=()=>m.forEach(t=>t()),l=t=>{if(!h.has(t)){let n;try{n=JSON.parse(g?.getItem(b(t))||"null")}catch(e){k(e)}h.set(t,{value:x(n,r()),pending:new Set})}return h.get(t)},v=(t,n)=>{try{g?.setItem(b(t),JSON.stringify(n.value))}catch(e){k(e)}},i=t=>w(l(t).value,y()==="subscribed",r()),E=(t,n,e)=>{const s=l(t);s.pending.delete(e);const u=new Set(n.explanationUnlocks||[]),S=(s.value.explanationUnlocks||[]).filter(d=>!u.has(d));if(s.value=x({...n,gems:Math.min(n.gems,s.value.gems),explanationUnlocks:[...u,...S],trialEndsAt:n.trialEndsAt||s.value.trialEndsAt},r()),!i(t).unlimited)for(const d of s.pending)s.value=I(s.value,r())||s.value;v(t,s),p()};return Object.freeze({get:i,hasExplanation:(t,n)=>(i(t).explanationUnlocks||[]).includes(O(n)),async unlockExplanation(t,n,{signal:e,step:s}={}){if(t==="guest")throw Object.assign(new Error("Sign in first."),{code:"sign-in"});if(e?.throwIfAborted(),f&&t.startsWith("account:")){const a=await A(f,{method:"POST",credentials:"same-origin",signal:e?AbortSignal.any([e,AbortSignal.timeout(12e3)]):AbortSignal.timeout(12e3),headers:{"Content-Type":"application/json","X-Progress-Owner":t},body:JSON.stringify({type:"explanation-unlock",...n})}),o=await a.json();if(e?.throwIfAborted(),(a.ok||a.status===402)&&`account:${o.accountId}`!==t)throw new Error("The active account changed.");if(a.ok||a.status===402){if(!o.resources||!Number.isInteger(o.resources.gems))throw new Error("Invalid explanation receipt.");E(t,o.resources)}if(!a.ok)throw Object.assign(new Error("Explanation could not be unlocked."),{code:a.status===402?"insufficient-gems":a.status===422?"unavailable":"request-failed"});if(typeof o.explanation?.markdown!="string"||!o.explanation.markdown.trim())throw new Error("Invalid explanation.");return o.explanation}const u=j(s);if(e?.throwIfAborted(),!u)throw Object.assign(new Error("Explanation unavailable."),{code:"unavailable"});const S=l(t),d=O(n),c=i(t);if(!(c.explanationUnlocks||[]).includes(d)){const a=c.unlimited?0:U;if(c.gems<a)throw Object.assign(new Error("Not enough gems."),{code:"insufficient-gems"});const o={...c,gems:c.gems-a,explanationUnlocks:[...c.explanationUnlocks||[],d]};g?.setItem(b(t),JSON.stringify(o)),S.value=o,p()}return u},spend(t,n){const e=l(t);if(!e.pending.has(n)){if(!i(t).unlimited){const s=I(e.value,r());if(!s)throw new Error("No hearts available.");e.value=s}t.startsWith("account:")&&e.pending.add(n),v(t,e),p()}},confirm:E,async startTrial(t,{signal:n}={}){if(y()!=="free"||t==="guest")throw new Error("Sign in with a free account.");if(n?.throwIfAborted(),f&&t.startsWith("account:")){const e=await A(f,{method:"POST",credentials:"same-origin",signal:n?AbortSignal.any([n,AbortSignal.timeout(12e3)]):AbortSignal.timeout(12e3),headers:{"Content-Type":"application/json","X-Progress-Owner":t},body:JSON.stringify({type:"super-trial"})}),s=await e.json();if(n?.throwIfAborted(),!e.ok||`account:${s.accountId}`!==t||!Number.isSafeInteger(s.resources?.trialEndsAt))throw new Error("The trial could not be activated.");E(t,s.resources)}else{const e=l(t);e.value.trialEndsAt||(e.value={...x(e.value,r()),trialEndsAt:r()+N}),v(t,e),p()}return i(t)},subscribe(t){return m.add(t),()=>m.delete(t)}})}
+import { refillResources, resourceSnapshot, spendHeart, SUPER_TRIAL_MS } from "../domain/learner-resources.js?v=acff67f262f3c107";
+import { EXPLANATION_GEM_COST, questionExplanation } from "../domain/question-explanations.js?v=acff67f262f3c107";
+import { questionRewardKey } from "../domain/question-rewards.js?v=acff67f262f3c107";
+
+// HTTP balances are confirmed by the progress API; fixture balances stay local.
+export function createLearnerResources({ storage, getAccountType, apiBase = null, fetchImpl = globalThis.fetch, now = Date.now, onError = console.warn }) {
+  const owners = new Map();
+  const subscribers = new Set();
+  const keyFor = owner => `tawjihi:resources:v1:${encodeURIComponent(owner)}`;
+  const notify = () => subscribers.forEach(callback => callback());
+  const stateFor = owner => {
+    if (!owners.has(owner)) {
+      let saved;
+      try { saved = JSON.parse(storage?.getItem(keyFor(owner)) || "null"); } catch (error) { onError(error); }
+      owners.set(owner, { value:refillResources(saved, now()), pending:new Set() });
+    }
+    return owners.get(owner);
+  };
+  const persist = (owner, state) => {
+    try { storage?.setItem(keyFor(owner), JSON.stringify(state.value)); } catch (error) { onError(error); }
+  };
+  const get = owner => resourceSnapshot(stateFor(owner).value, getAccountType() === "subscribed", now());
+  const confirm = (owner, value, updateId) => {
+    const state = stateFor(owner);
+    state.pending.delete(updateId);
+    // A response already in flight when the trial began cannot erase it.
+    const receivedUnlocks = new Set(value.explanationUnlocks || []);
+    const missingUnlocks = (state.value.explanationUnlocks || []).filter(key => !receivedUnlocks.has(key));
+    // Gems are only spent; older progress receipts cannot refund a purchase.
+    state.value = refillResources({ ...value, gems:Math.min(value.gems,state.value.gems),
+      explanationUnlocks:[...receivedUnlocks,...missingUnlocks], trialEndsAt:value.trialEndsAt || state.value.trialEndsAt }, now());
+    if (!get(owner).unlimited) {
+      for (const id of state.pending) state.value = spendHeart(state.value, now()) || state.value;
+    }
+    persist(owner, state);
+    notify();
+  };
+  return Object.freeze({
+    get,
+    hasExplanation:(owner,key) => (get(owner).explanationUnlocks || []).includes(questionRewardKey(key)),
+    async unlockExplanation(owner, key, { signal, step } = {}) {
+      if (owner === "guest") throw Object.assign(new Error("Sign in first."),{code:"sign-in"});
+      signal?.throwIfAborted();
+      if (apiBase && owner.startsWith("account:")) {
+        const response = await fetchImpl(apiBase,{method:"POST",credentials:"same-origin",
+          signal:signal ? AbortSignal.any([signal,AbortSignal.timeout(12000)]) : AbortSignal.timeout(12000),
+          headers:{"Content-Type":"application/json","X-Progress-Owner":owner},
+          body:JSON.stringify({type:"explanation-unlock",...key})});
+        const result = await response.json();
+        signal?.throwIfAborted();
+        if ((response.ok || response.status === 402) && `account:${result.accountId}` !== owner) throw new Error("The active account changed.");
+        if (response.ok || response.status === 402) {
+          if (!result.resources || !Number.isInteger(result.resources.gems)) throw new Error("Invalid explanation receipt.");
+          confirm(owner,result.resources);
+        }
+        if (!response.ok) throw Object.assign(new Error("Explanation could not be unlocked."),
+          {code:response.status === 402 ? "insufficient-gems" : response.status === 422 ? "unavailable" : "request-failed"});
+        if (typeof result.explanation?.markdown !== "string" || !result.explanation.markdown.trim()) throw new Error("Invalid explanation.");
+        return result.explanation;
+      }
+      const explanation = questionExplanation(step);
+      signal?.throwIfAborted();
+      if (!explanation) throw Object.assign(new Error("Explanation unavailable."),{code:"unavailable"});
+      const state = stateFor(owner);
+      const questionKey = questionRewardKey(key);
+      const balance = get(owner);
+      if (!(balance.explanationUnlocks || []).includes(questionKey)) {
+        const price = balance.unlimited ? 0 : EXPLANATION_GEM_COST;
+        if (balance.gems < price) throw Object.assign(new Error("Not enough gems."),{code:"insufficient-gems"});
+        const value = {...balance,gems:balance.gems - price,explanationUnlocks:[...(balance.explanationUnlocks || []),questionKey]};
+        // Balance and entitlement share one durable write in fixture mode too.
+        storage?.setItem(keyFor(owner),JSON.stringify(value));
+        state.value = value;
+        notify();
+      }
+      return explanation;
+    },
+    spend(owner, id) {
+      const state = stateFor(owner);
+      if (state.pending.has(id)) return;
+      if (!get(owner).unlimited) {
+        const value = spendHeart(state.value, now());
+        if (!value) throw new Error("No hearts available.");
+        state.value = value;
+      }
+      if (owner.startsWith("account:")) state.pending.add(id);
+      persist(owner, state);
+      notify();
+    },
+    confirm,
+    async startTrial(owner, { signal } = {}) {
+      if (getAccountType() !== "free" || owner === "guest") throw new Error("Sign in with a free account.");
+      signal?.throwIfAborted();
+      if (apiBase && owner.startsWith("account:")) {
+        const response = await fetchImpl(apiBase, { method:"POST", credentials:"same-origin",
+          signal:signal ? AbortSignal.any([signal, AbortSignal.timeout(12000)]) : AbortSignal.timeout(12000),
+          headers:{ "Content-Type":"application/json", "X-Progress-Owner":owner }, body:JSON.stringify({ type:"super-trial" }) });
+        const result = await response.json();
+        signal?.throwIfAborted();
+        if (!response.ok || `account:${result.accountId}` !== owner || !Number.isSafeInteger(result.resources?.trialEndsAt)) throw new Error("The trial could not be activated.");
+        confirm(owner, result.resources);
+      } else {
+        const state = stateFor(owner);
+        if (!state.value.trialEndsAt) state.value = { ...refillResources(state.value, now()), trialEndsAt:now() + SUPER_TRIAL_MS };
+        persist(owner, state);
+        notify();
+      }
+      return get(owner);
+    },
+    subscribe(callback) { subscribers.add(callback); return () => subscribers.delete(callback); },
+  });
+}

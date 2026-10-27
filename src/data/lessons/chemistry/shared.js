@@ -1,1 +1,19 @@
-import{defineMarkdownLesson as o}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";import{CHEMISTRY_LESSONS as s}from"./chemistry-course.js?v=7388f68cc0f433fd";export function createChemistryLesson(r,t){const e=s.find(n=>n.id===r);if(!e)throw new Error(`Unknown chemistry lesson: ${r}`);return o({id:r,title:e.title,summary:e.summary,pages:e.pages,status:"published",language:"ar",mode:"أسئلة وبطاقات",level:"الثاني عشر · الفرع العلمي · غزة",reward:10,duration:`${e.questionCount} سؤالًا وبطاقة`},t)}
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+import { CHEMISTRY_LESSONS } from "./chemistry-course.js?v=acff67f262f3c107";
+
+export function createChemistryLesson(id, source) {
+  const meta = CHEMISTRY_LESSONS.find(lesson => lesson.id === id);
+  if (!meta) throw new Error(`Unknown chemistry lesson: ${id}`);
+  return defineMarkdownLesson({
+    id,
+    title:meta.title,
+    summary:meta.summary,
+    pages:meta.pages,
+    status:"published",
+    language:"ar",
+    mode:"أسئلة وبطاقات",
+    level:"الثاني عشر · الفرع العلمي · غزة",
+    reward:10,
+    duration:`${meta.questionCount} سؤالًا وبطاقة`,
+  }, source);
+}

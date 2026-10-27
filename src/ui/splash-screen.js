@@ -1,1 +1,83 @@
-import{animateView as y}from"./view-motion.js?v=7388f68cc0f433fd";import{getDesktopTextField as b}from"./desktop-text-focus.js?v=7388f68cc0f433fd";export function createSplashScreen(){const t=document.querySelector("#app-splash"),l=t.querySelector('[role="progressbar"]'),p=t.querySelector(".app-splash__percentage"),s=t.querySelector(".app-splash__recovery"),i=matchMedia("(prefers-reduced-motion: reduce)"),a=new Map,d=()=>{for(const e of document.body.children)e===t||["SCRIPT","TEMPLATE"].includes(e.tagName)||a.has(e)||(a.set(e,e.inert),e.inert=!0)},u=new MutationObserver(d);u.observe(document.body,{childList:!0}),d();let c;const f=()=>{i.matches&&c?.cancel()};return i.addEventListener("change",f),{revealBrand(){t.dataset.brandReady="true"},progress(e){const o=Math.round(e);l.setAttribute("aria-valuenow",String(o)),l.style.setProperty("--splash-progress",`${o}%`),p.textContent=`${o}%`},error(e){s.hidden=!1,s.querySelector("button").onclick=()=>{s.hidden=!0,e()},s.querySelector("button").focus()},async finish(){this.progress(100),t.querySelector('[role="status"]').textContent="كل شيء جاهز",await Promise.all(t.getAnimations({subtree:!0}).filter(r=>r.animationName==="splash-arrive").map(r=>r.finished.catch(()=>{}))),delete document.body.dataset.startup;const e=()=>document.querySelector("#visitor-flow-root:not([hidden])")||document.querySelector(".lesson-view.is-visible, .coming-soon.is-visible")||document.querySelector(".course-units");y(e()),i.matches||(c=t.animate([{opacity:1,transform:"scale(1)",offset:0},{opacity:1,transform:"scale(1)",offset:.35},{opacity:0,transform:"scale(1.025)",offset:1}],{duration:520,easing:"cubic-bezier(.4,0,.2,1)",fill:"forwards"}),await c.finished.catch(()=>{})),u.disconnect(),i.removeEventListener("change",f);for(const[r,h]of a)r.inert=h;t.remove(),await new Promise(r=>requestAnimationFrame(r));const o=e(),m=b(o);if(m){m.focus({preventScroll:!0});return}const n=o?.querySelector("h1:not([hidden]), [tabindex='-1']");n&&!n.closest("[hidden]")&&(n.hasAttribute("tabindex")||(n.tabIndex=-1),n.focus({preventScroll:!0}))}}}
+import { animateView } from "./view-motion.js?v=acff67f262f3c107";
+import { getDesktopTextField } from "./desktop-text-focus.js?v=acff67f262f3c107";
+
+export function createSplashScreen() {
+  const surface = document.querySelector("#app-splash");
+  const bar = surface.querySelector('[role="progressbar"]');
+  const percentage = surface.querySelector(".app-splash__percentage");
+  const recovery = surface.querySelector(".app-splash__recovery");
+  const motion = matchMedia("(prefers-reduced-motion: reduce)");
+  const locked = new Map();
+  const lock = () => {
+    for (const child of document.body.children) {
+      if (child === surface || ["SCRIPT", "TEMPLATE"].includes(child.tagName) || locked.has(child)) continue;
+      locked.set(child, child.inert);
+      child.inert = true;
+    }
+  };
+  const observer = new MutationObserver(lock);
+  observer.observe(document.body, { childList:true });
+  lock();
+  let leaving;
+  const stopMotion = () => {
+    if (motion.matches) leaving?.cancel();
+  };
+  motion.addEventListener("change", stopMotion);
+  return {
+    revealBrand() { surface.dataset.brandReady = "true"; },
+    progress(value) {
+      const next = Math.round(value);
+      bar.setAttribute("aria-valuenow", String(next));
+      bar.style.setProperty("--splash-progress", `${next}%`);
+      percentage.textContent = `${next}%`;
+    },
+    error(retry) {
+      recovery.hidden = false;
+      recovery.querySelector("button").onclick = () => {
+        recovery.hidden = true;
+        retry();
+      };
+      recovery.querySelector("button").focus();
+    },
+    async finish() {
+      this.progress(100);
+      surface.querySelector('[role="status"]').textContent = "كل شيء جاهز";
+      // On a warm connection, finish the actual brand entrance before its exit.
+      // Reduced-motion changes cancel these CSS animations and settle the wait.
+      await Promise.all(surface.getAnimations({ subtree:true })
+        .filter((animation) => animation.animationName === "splash-arrive")
+        .map((animation) => animation.finished.catch(() => {})));
+      delete document.body.dataset.startup;
+      const destinationFor = () => document.querySelector("#visitor-flow-root:not([hidden])") || document.querySelector(".lesson-view.is-visible, .coming-soon.is-visible") || document.querySelector(".course-units");
+      animateView(destinationFor());
+      if (!motion.matches) {
+        // The brief completion beat lets the fill catch up, then the mark
+        // recedes as one composition. No minimum splash dwell time.
+        leaving = surface.animate([
+          { opacity:1, transform:"scale(1)", offset:0 },
+          { opacity:1, transform:"scale(1)", offset:.35 },
+          { opacity:0, transform:"scale(1.025)", offset:1 },
+        ], { duration:520, easing:"cubic-bezier(.4,0,.2,1)", fill:"forwards" });
+        await leaving.finished.catch(() => {});
+      }
+      observer.disconnect();
+      motion.removeEventListener("change", stopMotion);
+      for (const [element, inert] of locked) element.inert = inert;
+      surface.remove();
+      // Let the browser apply the inert/style changes before handing off focus,
+      // including the immediate (reduced-motion) completion path.
+      await new Promise((resolve) => requestAnimationFrame(resolve));
+      const destination = destinationFor();
+      const textField = getDesktopTextField(destination);
+      if (textField) {
+        textField.focus({ preventScroll:true });
+        return;
+      }
+      const heading = destination?.querySelector("h1:not([hidden]), [tabindex='-1']");
+      if (heading && !heading.closest("[hidden]")) {
+        if (!heading.hasAttribute("tabindex")) heading.tabIndex = -1;
+        heading.focus({ preventScroll:true });
+      }
+    },
+  };
+}

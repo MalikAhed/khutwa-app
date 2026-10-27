@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as s}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const LESSON_MARKDOWN=`<!-- step-id: app-inventor-tools-mission -->
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+
+export const LESSON_MARKDOWN = `<!-- step-id: app-inventor-tools-mission -->
 <!-- presentation: video-intro -->
 # أدوات App Inventor وخصائص الواجهة
 
@@ -381,4 +383,17 @@ https://www.youtube.com/watch?v=0jvFwR5EesE
 <!-- lesson-step -->
 
 <!-- lesson-step -->
-`;export default s({status:"published",title:"تطبيقي الخاص على هاتفي",summary:"قراءة واجهات App Inventor ولبناته وتطبيق الحساب والشروط على نشاطي الكتاب.",outcome:"قراءة واجهات App Inventor ولبناته وتطبيق الحساب والشروط على نشاطي الكتاب.",mode:"شاهد ← راجع ← أجب",mission:"قراءة واجهات App Inventor ولبناته وتطبيق الحساب والشروط على نشاطي الكتاب.",duration:"حسب الفيديو والتدريب",level:"الثاني عشر",reward:10,passingScore:80},LESSON_MARKDOWN);
+`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "title": "تطبيقي الخاص على هاتفي",
+  "summary": "قراءة واجهات App Inventor ولبناته وتطبيق الحساب والشروط على نشاطي الكتاب.",
+  "outcome": "قراءة واجهات App Inventor ولبناته وتطبيق الحساب والشروط على نشاطي الكتاب.",
+  "mode": "شاهد ← راجع ← أجب",
+  "mission": "قراءة واجهات App Inventor ولبناته وتطبيق الحساب والشروط على نشاطي الكتاب.",
+  "duration": "حسب الفيديو والتدريب",
+  "level": "الثاني عشر",
+  "reward": 10,
+  "passingScore": 80
+}, LESSON_MARKDOWN);

@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+
+export const lessonSource = `:::exam-question
 id: math-book-p017-ex1
 title: الكتاب، ص ١٥ · مثال ١ · سهل
 question: قاعدة لوبيتال، ومشتقة الاقتران الأسي واللوغاريتمي
@@ -2614,4 +2616,16 @@ hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخي
 :::
 
 
-`;export default m({status:"published",language:"ar",title:"قاعدة لوبيتال، ومشتقة الاقتران الأسي واللوغاريتمي",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة قاعدة لوبيتال، ومشتقة الاقتران الأسي واللوغاريتمي من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"62 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "قاعدة لوبيتال، ومشتقة الاقتران الأسي واللوغاريتمي",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة قاعدة لوبيتال، ومشتقة الاقتران الأسي واللوغاريتمي من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "62 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

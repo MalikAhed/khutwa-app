@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: chemistry-oj-p096-q14
 title: الوحدة ٢ · الدرس ١ · ص ٩٦ · س ١٤
 kicker: صياغة تعليمية معدّلة
@@ -113,4 +115,6 @@ solution:
 **المصدر:** صفحة 32 من الكتاب.
 
 :::
-`;export default m("u02-l01-general-properties",source);
+`;
+
+export default createChemistryLesson("u02-l01-general-properties", source);

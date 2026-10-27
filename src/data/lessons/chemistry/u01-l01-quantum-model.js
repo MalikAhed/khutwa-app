@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: chemistry-gaza-p014-q01-a1
 title: الوحدة ١ · الدرس ١ · ص ١٢ · س السؤال الأول · a١
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤
@@ -4589,4 +4591,6 @@ E يزيد 3 على B، فيكون Z=21، أي Sc، وتوزيعه [Ar]4s²3d¹.
 **المصدر:** الصفحات 4، 6، 9، 16 من الكتاب.
 
 :::
-`;export default m("u01-l01-quantum-model",source);
+`;
+
+export default createChemistryLesson("u01-l01-quantum-model", source);

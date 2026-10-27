@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: eng-2023-p101-qlanguage-1-1
 title: Unit 9 · PDF 101 · language-1-1
 question: I was lazy when I was younger. (I wish)
@@ -808,4 +810,6 @@ Why did you borrow the money from the bank? You should have asked me for that.
 
 **القاعدة:** [الكتاب الرسمي الكامل2025 — Grammar reference، ص97 المطبوعة، PDF97](https://moe.edu.ps/storage/app/class12/Puplis%20Book12%202025%20Tawjihi.pdf#page=97): \`should/shouldn’t have + التصريف الثالث\`.
 
-:::`;export default e("english-u09-grammar",source);
+:::`;
+
+export default createEnglishLesson("english-u09-grammar", source);

@@ -1,1 +1,474 @@
-import{filterRatedRoadmap as Te,getRatedSubjectQuestions as me}from"../domain/question-ratings.js?v=7388f68cc0f433fd";import{mountRatedQuestionToggle as Qe}from"./rated-questions.js?v=7388f68cc0f433fd";import{getCourseSubject as je}from"../data/course.js?v=7388f68cc0f433fd";import{getSubjectRoadmap as ne}from"../data/subject-roadmaps.js?v=7388f68cc0f433fd";import{getIctPartQuestionIds as He}from"../data/lessons/ict/question-index.js?v=7388f68cc0f433fd";import{getSubjectPartAccess as he}from"../domain/subject-access.js?v=7388f68cc0f433fd";import{escapeHtml as we,prefersReducedMotion as Ee}from"../lib/dom.js?v=7388f68cc0f433fd";import{renderLessonError as $e}from"./lesson/status.js?v=7388f68cc0f433fd";import{mountSubjectRoadmap as ke}from"./subject-roadmap.js?v=7388f68cc0f433fd";import{getShellViewportBounds as Be}from"./app-shell.js?v=7388f68cc0f433fd";import{mountHeartDepletion as Ke}from"./heart-depletion.js?v=7388f68cc0f433fd";function We({elements:o,productService:m,progressStore:Ce,resourceStore:T,onboardingTour:Z,questionFeedback:h,appTitle:re,viewLifecycle:oe,setViewMode:V,showContentView:z,writeRoute:ae,onRequireAccount:S,onComingSoon:ye,onReturnToRoadmap:ie}){const le=()=>({ownerId:m.getLearnerProgressOwner(),store:Ce});let B=null,ue=0,v=null,E=null,x=null,de=0,K=null,r=null;const D=new Map,ee=(s,a,O)=>JSON.stringify([s,a,O]),Y=()=>m.getAccountType()==="guest";function be(){r=null,D.clear(),K=null,B=null,v=null,E=null,x=null}function Pe(){return Object.freeze({subjectId:v,lessonId:E,partId:B,opener:x,pathScrollPosition:de,rating:r})}async function $(s,a=null,{historyMode:O="push",focusContent:P=!1,restoreMap:w=!1,lessonId:k=null,partId:A=null,reviewStepId:j=null,explainPart:c=null,rating:i=null}={}){if(Y())return S("register");const n=je(s);if(!n)return;if(k==="course-introduction"&&s==="ict"&&(k="database-management",A="access-basics",O="replace"),r=i,k&&A)return ce({subjectId:n.id,lessonId:k,partId:A,reviewStepId:j,historyMode:O});const C=oe.begin();a&&(x=a,de=window.scrollY),v!==n.id&&(K=null),v=n.id,E=null,ae({subject:n.id,...r?{page:"rated-questions",rating:r}:{}},O),V("subject"),o.lessonShell.dataset.subject=n.id,o.lessonTitle.textContent=n.name,o.lessonStatus.textContent=r?"أسئلتي المقيّمة":"مسار المادة",o.lessonContent.removeAttribute("aria-busy");const Q=ne(n.id),{ownerId:b,store:M}=le();if(M.getSaveState(b)==="loading"&&(o.lessonContent.innerHTML="",z(),await M.ready(b),!C.isCurrent()||b!==m.getLearnerProgressOwner())||(await h?.ready?.({signal:C.signal}),!C.isCurrent()||b!==m.getLearnerProgressOwner()))return;const _=r?me(n.id,h):[],R=r&&Q?Te(Q,_,r):Q;let H=null;if(Q){const p=n.id==="ict"?(d,u)=>He(u.id):Q.questionsOnly?(d,u)=>u.questionIds||[]:void 0;if(!C.isCurrent()||b!==m.getLearnerProgressOwner())return;H=ke({container:o.lessonContent,roadmap:R,onComingSoon:ye,getPartQuestionIds:p,initialReviewUnit:K,onReviewTabChange:d=>{K=d},getPartProgress:(d,u)=>{const f={ownerId:b,subjectId:n.id,lessonId:d.id,partId:u.id};return r?M.getRatedProgress(f,r):{...M.get(f),review:M.getReview(f)}},getPartReview:(d,u)=>M.getReview({ownerId:b,subjectId:n.id,lessonId:d.id,partId:u.id}).filter(f=>(!p||p(d,u).includes(f.stepId))&&!h?.isHidden({subjectId:n.id,stepId:f.stepId})),isLessonLocked:Y,onRequireAccount:S,onStartLesson({lessonId:d,lessonLabel:u,partId:f,reviewStepId:q}){ue=window.scrollY,B=f,ce({subjectId:n.id,lessonId:d,lessonLabel:u,partId:f,reviewStepId:q})}}),C.add(H.destroy)}else o.lessonContent.innerHTML=`<section class="subject-status-view" data-subject="${we(n.id)}" aria-labelledby="subject-status-title"><p>${we(n.name)}</p><h1 id="subject-status-title">قيد الإعداد</h1><p class="subject-status-message">نعمل حاليًا على إعداد محتوى هذه المادة.</p></section>`;if(r&&Qe(o.lessonContent,{questions:_,rating:r,signal:C.signal,onChange:p=>void $(n.id,null,{rating:p,focusContent:!0})}),document.title=`${n.name} · ${re}`,z(),window.scrollTo({top:w?ue:0,behavior:w||Ee()?"auto":"smooth"}),w){const p=K?o.lessonContent.querySelector(".roadmap-review-panel:not([hidden])"):[...o.lessonContent.querySelectorAll("[data-roadmap-part]")].find(u=>u.dataset.roadmapPart===B);(p||o.lessonContent).focus({preventScroll:!0});const d=requestAnimationFrame(()=>{if(!C.isCurrent()||!p||document.activeElement!==p)return;const u=Be(),f=p.getBoundingClientRect();(f.top<u.top||f.bottom>u.bottom||f.left<u.left||f.right>u.right)&&p.scrollIntoView({block:"center",behavior:"instant"})});C.add(()=>cancelAnimationFrame(d))}else(a||P)&&o.lessonContent.focus({preventScroll:!0});if(c&&H){const p=requestAnimationFrame(()=>{C.isCurrent()&&H.openPart(c)});C.add(()=>cancelAnimationFrame(p))}return H}function Me(s,a,O){$(s,a,O)}async function ce({subjectId:s,lessonId:a,lessonLabel:O,partId:P,reviewStepId:w,historyMode:k="push"}){if(Y())return S("register");const A=ne(s),j=he(A,{lessonId:a,partId:P});if(!j)return $(s,null,{historyMode:"replace",focusContent:!0});const c=oe.begin(),{ownerId:i,store:n}=le(),C=O||j.part.label;v=s,E=a,B=P,ae({subject:s,lesson:a,part:P,...w?{question:w}:{},...r?{page:"rated-questions",rating:r}:{}},k);const Q=async()=>{try{const{loadSubjectLesson:b,loadSubjectLessonPart:M}=await import("../data/lessons/subject-lesson-registry.js?v=7388f68cc0f433fd");if(await Promise.all([n.ready(i),h?.ready?.({signal:c.signal})]),!c.isCurrent()||i!==m.getLearnerProgressOwner())return;if(w&&h?.isHidden({subjectId:s,stepId:w})){F();return}const _=he(A,{lessonId:a,partId:P,getPartProgress:(e,t)=>n.get({ownerId:i,subjectId:s,lessonId:e.id,partId:t.id}),accountRequired:Y()});if(!["available","in-progress","completed"].includes(_.state)){if(ie?.({subjectId:s,lessonId:a,partId:P,explainAccess:!0}))return;const e=await $(s,null,{historyMode:"replace",focusContent:!0,restoreMap:!0});v===s&&E===null&&e?.openPart({lessonId:a,partId:P});return}const[R,{renderLesson:H}]=await Promise.all([b(s,a),import("./lesson-view.js?v=7388f68cc0f433fd")]);if(!c.isCurrent()||i!==m.getLearnerProgressOwner())return;w&&!R?.steps.some(e=>e.id===w)&&(w=null);const p={ownerId:i,subjectId:s,lessonId:a,partId:P},d=!!Z?.isDemo(),u=await Promise.all(j.lesson.parts.map(async e=>({part:e,sourceLessonId:a,lesson:await M(s,a,e.id)})));if(!c.isCurrent()||i!==m.getLearnerProgressOwner())return;const f=s==="mathematics"||s==="mathematics-2"||s==="physics",q=e=>e==="lesson"?[j.lesson]:e==="unit"?A.units.find(t=>t.lessons.some(l=>l.id===a))?.lessons.filter(t=>!t.hidden)||[j.lesson]:A.units.flatMap(t=>t.lessons).filter(t=>!t.hidden),Le=async e=>{if(!f)return[];const{compileLessonMarkdown:t}=await import("../markdown/lesson-model.js?v=7388f68cc0f433fd"),l=q(e);return(await Promise.all(l.map(async g=>({item:g,lesson:g.id===a?R:await b(s,g.id)})))).flatMap(({item:g,lesson:I})=>{const W=new Map((g.parts||[]).flatMap(y=>(y.questionIds||[]).map(X=>[X,y])));return t(I.authoringSource).parsed.steps.filter(y=>y.type!=="markdown"&&!h?.isHidden({subjectId:s,stepId:y.id})).map(y=>{const X=W.get(y.id);return{step:y,stepId:y.id,subjectId:s,lessonId:g.id,partId:X?.id||g.parts?.[0]?.id||P,lessonLabel:g.label}})})},Re=new Map(u.flatMap(({part:e,lesson:t})=>t.steps.map(l=>[l.id,{subjectId:s,lessonId:a,partId:e.id,stepId:l.id}]))),J=e=>Re.get(e)||{subjectId:s,lessonId:a,partId:P,stepId:e},N=u.map(({part:e,sourceLessonId:t})=>{const l={...p,lessonId:t,partId:e.id};return{...n.get(l),review:n.getReview(l)}}),pe=r?u.map(({part:e,sourceLessonId:t})=>n.getRatedProgress({...p,lessonId:t,partId:e.id},r)):[],fe={completedStepIds:N.flatMap(e=>e.completedStepIds),completed:R.steps.every(e=>N.some(t=>t.completedStepIds.includes(e.id)))},Ie=ne(s).units.flatMap(e=>e.lessons).flatMap(e=>e.parts||[]).length,ve={...p,totalParts:Ie},ge=()=>{const e=n.getOutcome(ve),t=n.getHomeLearning(i,[A]);return{...e,levelTotalXp:t.totalXp,progress:t.progress,completed:t.requiredLessonsCompleted,totalParts:t.curriculumLessonsTotal,completedQuestions:t.currentQuestionsSolved,totalQuestions:t.currentQuestionsTotal,lessonShare:t.currentQuestionsTotal?Math.round(R.steps.length/t.currentQuestionsTotal*100):void 0}},te=ge();let se;const Oe=()=>{const e=ge();return{...e,xpGain:e.totalXp-te.totalXp,progressGain:e.progress-te.progress,streakGain:Math.max(0,e.streak-te.streak),alreadyCompleted:fe.completed}};V(),o.lessonContent.setAttribute("aria-busy","false"),o.lessonShell.dataset.subject=s,o.lessonTitle.textContent=R?.title||C,o.lessonStatus.textContent=R?"درس منشور":"قيد التقدم",o.lessonStatus.hidden=!0;const Ae=H(o.lessonContent,C,R,{isLessonPart:!0,demoMode:d,questionFilterIds:r?me(s,h).filter(e=>e.lessonId===a&&e.rating===r).map(e=>e.stepId):void 0,onLessonEvent:d?e=>Z.lessonEvent(e):void 0,getQuestionExplanation:T?e=>{const t=J(e.id);return{isUnlocked:()=>T.hasExplanation(i,t),isIncluded:()=>T.get(i).unlimited,subscribe:T.subscribe,unlock:async({signal:l})=>{if(!c.isCurrent()||i!==m.getLearnerProgressOwner())throw new Error("The active learner changed.");const L=await T.unlockExplanation(i,t,{signal:l,step:e});if(!c.isCurrent()||i!==m.getLearnerProgressOwner())throw new Error("The active learner changed.");return L}}}:void 0,getQuestionFeedback:e=>{const t=J(e);return{subscribe:h?.subscribe,isHidden:()=>h?.isHidden(t)||!1,hide:l=>h?.hide(t,l),getRating:()=>h?.getRating(t),saveRating:(l,L)=>h?.saveRating(t,l,L),report:(l,L,g)=>h?.report(t,l,L,g)}},getCompletionOutcome:Oe,onExitLesson:F,onFinishLesson:()=>{d&&Z?.finishLesson()||F()},reviewStepId:w,onReviewComplete:F,beforeAnswer:()=>{if(!c.isCurrent()||i!==m.getLearnerProgressOwner())return"انتهت جلسة التعلّم.";const e=T?.get(i);return!e||e.unlimited||e.hearts>0?void 0:(se?.show(),`نفدت القلوب. ستحصل على قلب خلال ${Math.max(1,Math.ceil((e.nextHeartAt-Date.now())/6e4))} دقيقة. تتجدد القلوب بمعدل قلب كل 12 دقيقة.`)},onAnswer:async({stepId:e,correct:t,reviewing:l=!1})=>(typeof t=="boolean"&&!d&&h?.saveRating(J(e),t?"easy":"hard",{automatic:!0}).catch(()=>{}),n.recordAnswer({ownerId:i,...J(e),correct:t,...r?{rating:r}:{},reviewing:l||!!r||e===w})),getMathFilterCatalog:!r&&f?Le:void 0,mathFilterState:D.get(ee(i,s,a)),onMathFilterApply:({scope:e,result:t,enabled:l})=>{if(!(!c.isCurrent()||i!==m.getLearnerProgressOwner())){for(const L of q(e)){const g=ee(i,s,L.id);l?D.set(g,{scope:e,stepIds:t.questions.filter(I=>I.lessonId===L.id).map(I=>I.stepId)}):D.delete(g)}return D.get(ee(i,s,a))?.stepIds}},progress:{completedStepIds:d?[]:r?pe.flatMap(e=>e.completedStepIds):fe.completedStepIds,attemptedStepIds:d?[]:(r?pe:N).flatMap(e=>e.review.map(t=>t.stepId)),mistakeStepIds:d||r?[]:N.flatMap(e=>e.review.filter(t=>t.misses>0).map(t=>t.stepId)),completedAt:null},async onProgress({completedStepIds:e}){if(w||!c.isCurrent()||i!==m.getLearnerProgressOwner())return;const t=new Set(e);for(const{part:l,sourceLessonId:L,lesson:g}of u){const I=g.steps.map(U=>U.id),W={...p,lessonId:L,partId:l.id},y=n.get(W),X=r?new Set([...y.completedStepIds,...t]):t,G=I.filter(U=>X.has(U));if(!(!G.length||G.every(U=>y.completedStepIds.includes(U))&&(y.completed||G.length<I.length))){if(!c.isCurrent()||i!==m.getLearnerProgressOwner())return;await n.record({...W,stepIds:I,completedStepIds:G,isComplete:G.length===I.length})}}}});c.add(Ae.destroy),T&&(se=Ke({resourceStore:T,ownerId:i,signal:c.signal,returnFocus:o.lessonContent}),c.add(se.destroy)),z({animate:!1}),window.scrollTo({top:0,behavior:"auto"}),document.title=`${R?.title||"الدرس غير متاح"} · ${re}`,o.lessonContent.focus({preventScroll:!0})}catch(b){if(!c.isCurrent())return;console.error("The subject lesson could not be loaded.",b),V(),o.lessonContent.setAttribute("aria-busy","false"),o.lessonTitle.textContent="",o.lessonStatus.hidden=!0;const M=$e(o.lessonContent,C,Q);c.add(M.destroy),z({animate:!1}),window.scrollTo({top:0,behavior:"auto"}),document.title=M.title,o.lessonContent.focus({preventScroll:!0})}};await Q()}function F(){return!v||!E?!1:(ie?.({subjectId:v})||$(v,null,{historyMode:"replace",focusContent:!0,restoreMap:!0,rating:r}),!0)}return Object.freeze({getState:Pe,openFromCard:Me,openSubject:$,reset:be,returnToRoadmap:F})}export{We as createSubjectLearningController};
+import { filterRatedRoadmap, getRatedSubjectQuestions } from "../domain/question-ratings.js?v=acff67f262f3c107";
+import { mountRatedQuestionToggle } from "./rated-questions.js?v=acff67f262f3c107";
+import { getCourseSubject } from "../data/course.js?v=acff67f262f3c107";
+import { getSubjectRoadmap } from "../data/subject-roadmaps.js?v=acff67f262f3c107";
+import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js?v=acff67f262f3c107";
+import { getSubjectPartAccess } from "../domain/subject-access.js?v=acff67f262f3c107";
+import { escapeHtml, prefersReducedMotion } from "../lib/dom.js?v=acff67f262f3c107";
+import { renderLessonError } from "./lesson/status.js?v=acff67f262f3c107";
+import { mountSubjectRoadmap } from "./subject-roadmap.js?v=acff67f262f3c107";
+import { getShellViewportBounds } from "./app-shell.js?v=acff67f262f3c107";
+import { mountHeartDepletion } from "./heart-depletion.js?v=acff67f262f3c107";
+import { prioritizeLesson } from "../app/background-loading.js?v=acff67f262f3c107";
+
+
+export function createSubjectLearningController({
+  elements,
+  productService,
+  progressStore,
+  resourceStore,
+  onboardingTour,
+  questionFeedback,
+  appTitle,
+  viewLifecycle,
+  setViewMode,
+  showContentView,
+  writeRoute,
+  onRequireAccount,
+  onComingSoon,
+  onReturnToRoadmap,
+}) {
+  const progressContext = () => ({ ownerId:productService.getLearnerProgressOwner(), store:progressStore });
+  let selectedPartId = null;
+  let mapScrollPosition = 0;
+  let subjectId = null;
+  let lessonId = null;
+  let opener = null;
+  let pathScrollPosition = 0;
+  let reviewUnitId = null;
+  let rating = null;
+  // Display preferences stay separate from canonical question/progress records.
+  const mathFilters = new Map();
+  const mathFilterKey = (owner, subject, lesson) => JSON.stringify([owner, subject, lesson]);
+  const requiresAccount = () => productService.getAccountType() === "guest";
+
+  function reset() {
+    rating = null;
+    mathFilters.clear();
+    reviewUnitId = null;
+    selectedPartId = null;
+    subjectId = null;
+    lessonId = null;
+    opener = null;
+  }
+
+  function getState() {
+    return Object.freeze({ subjectId, lessonId, partId:selectedPartId, opener, pathScrollPosition, rating });
+  }
+
+  async function openSubject(
+    nextSubjectId,
+    nextOpener = null,
+    { historyMode = "push", focusContent = false, restoreMap = false, lessonId:targetLessonId = null, partId:targetPartId = null, reviewStepId = null, explainPart = null, rating:targetRating = null } = {},
+  ) {
+    if (requiresAccount()) return onRequireAccount("register");
+    const subject = getCourseSubject(nextSubjectId);
+    if (!subject) return;
+    if (targetLessonId === "course-introduction" && nextSubjectId === "ict") {
+      targetLessonId = "database-management";
+      targetPartId = "access-basics";
+      historyMode = "replace";
+    }
+    rating = targetRating;
+    if (targetLessonId && targetPartId) {
+      return openLesson({ subjectId:subject.id, lessonId:targetLessonId, partId:targetPartId, reviewStepId, historyMode });
+    }
+    const operation = viewLifecycle.begin();
+    if (nextOpener) {
+      opener = nextOpener;
+      pathScrollPosition = window.scrollY;
+    }
+    if (subjectId !== subject.id) reviewUnitId = null;
+    subjectId = subject.id;
+    lessonId = null;
+    writeRoute({ subject:subject.id,...(rating ? {page:"rated-questions",rating} : {}) }, historyMode);
+    setViewMode("subject");
+    elements.lessonShell.dataset.subject = subject.id;
+    elements.lessonTitle.textContent = subject.name;
+    elements.lessonStatus.textContent = rating ? "أسئلتي المقيّمة" : "مسار المادة";
+    elements.lessonContent.removeAttribute("aria-busy");
+    const roadmap = getSubjectRoadmap(subject.id);
+    const { ownerId, store } = progressContext();
+    if (store.getSaveState(ownerId) === "loading") {
+      elements.lessonContent.innerHTML = "";
+      showContentView();
+      await store.ready(ownerId);
+      if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
+    }
+    await questionFeedback?.ready?.({ signal:operation.signal });
+    if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
+    const ratedQuestions = rating ? getRatedSubjectQuestions(subject.id,questionFeedback) : [];
+    const displayedRoadmap = rating && roadmap ? filterRatedRoadmap(roadmap,ratedQuestions,rating) : roadmap;
+    let mountedRoadmap = null;
+    if (roadmap) {
+      const getPartQuestionIds = subject.id === "ict"
+        ? (_lesson, part) => getIctPartQuestionIds(part.id)
+        : roadmap.questionsOnly ? (_lesson, part) => part.questionIds || [] : undefined;
+      if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
+      mountedRoadmap = mountSubjectRoadmap({
+          container: elements.lessonContent,
+          roadmap:displayedRoadmap,
+          onComingSoon,
+          getPartQuestionIds,
+          initialReviewUnit:reviewUnitId,
+          onReviewTabChange:(unitId) => { reviewUnitId = unitId; },
+          getPartProgress: (lesson, part) => {
+            const key = { ownerId, subjectId:subject.id, lessonId:lesson.id, partId:part.id };
+            return rating ? store.getRatedProgress(key, rating) : { ...store.get(key), review:store.getReview(key) };
+          },
+          getPartReview: (lesson, part) =>
+            store.getReview({
+              ownerId,
+              subjectId: subject.id,
+              lessonId: lesson.id,
+              partId: part.id,
+            }).filter(item => (!getPartQuestionIds || getPartQuestionIds(lesson, part).includes(item.stepId))
+              && !questionFeedback?.isHidden({ subjectId:subject.id,stepId:item.stepId })),
+          isLessonLocked: requiresAccount,
+          onRequireAccount,
+          onStartLesson({
+            lessonId: nextLessonId,
+            lessonLabel,
+            partId,
+            reviewStepId,
+          }) {
+            mapScrollPosition = window.scrollY;
+            selectedPartId = partId;
+            void openLesson({
+              subjectId: subject.id,
+              lessonId: nextLessonId,
+              lessonLabel,
+              partId,
+              reviewStepId,
+            });
+          },
+        });
+      operation.add(mountedRoadmap.destroy);
+    } else
+      elements.lessonContent.innerHTML = `<section class="subject-status-view" data-subject="${escapeHtml(subject.id)}" aria-labelledby="subject-status-title"><p>${escapeHtml(subject.name)}</p><h1 id="subject-status-title">قيد الإعداد</h1><p class="subject-status-message">نعمل حاليًا على إعداد محتوى هذه المادة.</p></section>`;
+    if (rating) mountRatedQuestionToggle(elements.lessonContent, {
+      questions:ratedQuestions,rating,signal:operation.signal,
+      onChange:nextRating => void openSubject(subject.id,null,{rating:nextRating,focusContent:true}),
+    });
+    document.title = `${subject.name} · ${appTitle}`;
+    showContentView();
+    window.scrollTo({
+      top: restoreMap ? mapScrollPosition : 0,
+      behavior: restoreMap || prefersReducedMotion() ? "auto" : "smooth",
+    });
+    if (restoreMap) {
+      const selected = reviewUnitId ? elements.lessonContent.querySelector('.roadmap-review-panel:not([hidden])') : [
+        ...elements.lessonContent.querySelectorAll("[data-roadmap-part]"),
+      ].find((button) => button.dataset.roadmapPart === selectedPartId);
+      (selected || elements.lessonContent).focus({ preventScroll: true });
+      const frame = requestAnimationFrame(() => {
+        if (!operation.isCurrent() || !selected || document.activeElement !== selected) return;
+        const bounds = getShellViewportBounds();
+        const rect = selected.getBoundingClientRect();
+        if (rect.top < bounds.top || rect.bottom > bounds.bottom || rect.left < bounds.left || rect.right > bounds.right)
+          selected.scrollIntoView({ block:"center", behavior:"instant" });
+      });
+      operation.add(() => cancelAnimationFrame(frame));
+    } else if (nextOpener || focusContent)
+      elements.lessonContent.focus({ preventScroll: true });
+    if (explainPart && mountedRoadmap) {
+      const frame = requestAnimationFrame(() => {
+        if (operation.isCurrent()) mountedRoadmap.openPart(explainPart);
+      });
+      operation.add(() => cancelAnimationFrame(frame));
+    }
+    return mountedRoadmap;
+  }
+
+  function openFromCard(nextSubjectId, nextOpener, options) {
+    openSubject(nextSubjectId, nextOpener, options);
+  }
+
+
+  async function openLesson({
+    subjectId: nextSubjectId,
+    lessonId: nextLessonId,
+    lessonLabel,
+    partId,
+    reviewStepId,
+    historyMode = "push",
+  }) {
+    if (requiresAccount()) return onRequireAccount("register");
+    const roadmap = getSubjectRoadmap(nextSubjectId);
+    const target = getSubjectPartAccess(roadmap, { lessonId:nextLessonId, partId });
+    if (!target) return openSubject(nextSubjectId, null, { historyMode:"replace", focusContent:true });
+    const operation = viewLifecycle.begin();
+    const { ownerId, store } = progressContext();
+    const reference = lessonLabel || target.part.label;
+    prioritizeLesson(nextSubjectId, nextLessonId, { signal:operation.signal });
+    subjectId = nextSubjectId;
+    lessonId = nextLessonId;
+    selectedPartId = partId;
+    writeRoute({ subject:nextSubjectId, lesson:nextLessonId, part:partId, ...(reviewStepId ? { question:reviewStepId } : {}),...(rating ? {page:"rated-questions",rating} : {}) }, historyMode);
+
+    const load = async () => {
+      try {
+        const { loadSubjectLesson, loadSubjectLessonPart } = await import("../data/lessons/subject-lesson-registry.js?v=acff67f262f3c107");
+        await Promise.all([store.ready(ownerId), questionFeedback?.ready?.({ signal:operation.signal })]);
+        if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
+        if (reviewStepId && questionFeedback?.isHidden({ subjectId:nextSubjectId,stepId:reviewStepId })) {
+          returnToRoadmap();
+          return;
+        }
+        const access = getSubjectPartAccess(roadmap, {
+          lessonId:nextLessonId, partId,
+          getPartProgress:(lesson, part) => store.get({ ownerId, subjectId:nextSubjectId, lessonId:lesson.id, partId:part.id }),
+          accountRequired:requiresAccount(),
+        });
+        if (!["available", "in-progress", "completed"].includes(access.state)) {
+          if (onReturnToRoadmap?.({ subjectId:nextSubjectId, lessonId:nextLessonId, partId, explainAccess:true })) return;
+          const map = await openSubject(nextSubjectId, null, { historyMode:"replace", focusContent:true, restoreMap:true });
+          if (subjectId === nextSubjectId && lessonId === null) map?.openPart({ lessonId:nextLessonId, partId });
+          return;
+        }
+        const [lesson, { renderLesson }] = await Promise.all([
+          loadSubjectLesson(nextSubjectId, nextLessonId),
+          import("./lesson-view.js?v=acff67f262f3c107"),
+        ]);
+        if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
+        // Old review URLs still open their part after source exercises replace
+        // retired practice. Historical answers stay stored, not silently relabelled.
+        if (reviewStepId && !lesson?.steps.some(step => step.id === reviewStepId)) reviewStepId = null;
+        const recordKey = {
+          ownerId,
+          subjectId: nextSubjectId,
+          lessonId: nextLessonId,
+          partId,
+        };
+        const demoMode = Boolean(onboardingTour?.isDemo());
+        // Keep each question in its published part record while displaying one full lesson.
+        const partLessons = await Promise.all(target.lesson.parts.map(async part => ({
+          part, sourceLessonId:nextLessonId, lesson:await loadSubjectLessonPart(nextSubjectId, nextLessonId, part.id),
+        })));
+        if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
+        const isFilterSubject = nextSubjectId === "mathematics" || nextSubjectId === "mathematics-2" || nextSubjectId === "physics";
+        const mathFilterLessons = (scope) => {
+          if (scope === "lesson") return [target.lesson];
+          if (scope === "unit") {
+            return roadmap.units.find(unit => unit.lessons.some(item => item.id === nextLessonId))?.lessons.filter(item => !item.hidden) || [target.lesson];
+          }
+          return roadmap.units.flatMap(unit => unit.lessons).filter(item => !item.hidden);
+        };
+        const mathFilterCatalog = async (scope) => {
+          if (!isFilterSubject) return [];
+          const { compileLessonMarkdown } = await import("../markdown/lesson-model.js?v=acff67f262f3c107");
+          const scopeLessons = mathFilterLessons(scope);
+          const loadedLessons = await Promise.all(scopeLessons.map(async item => ({
+            item,
+            lesson:item.id === nextLessonId ? lesson : await loadSubjectLesson(nextSubjectId, item.id),
+          })));
+          return loadedLessons.flatMap(({ item, lesson:loadedLesson }) => {
+            const partByQuestion = new Map((item.parts || []).flatMap(part => (part.questionIds || []).map(id => [id, part])));
+            return compileLessonMarkdown(loadedLesson.authoringSource).parsed.steps
+              .filter(step => step.type !== "markdown" && !questionFeedback?.isHidden({ subjectId:nextSubjectId,stepId:step.id }))
+              .map(step => {
+                const part = partByQuestion.get(step.id);
+                return {
+                  step,
+                  stepId:step.id,
+                  subjectId:nextSubjectId,
+                  lessonId:item.id,
+                  partId:part?.id || item.parts?.[0]?.id || partId,
+                  lessonLabel:item.label,
+                };
+              });
+          });
+        };
+        const questionKeys = new Map(partLessons.flatMap(({ part, lesson }) => lesson.steps.map(step => [step.id, { subjectId:nextSubjectId, lessonId:nextLessonId, partId:part.id, stepId:step.id }])));
+        const sourceKey = stepId => questionKeys.get(stepId) || { subjectId:nextSubjectId, lessonId:nextLessonId, partId, stepId };
+        const records = partLessons.map(({ part, sourceLessonId }) => {
+          const key = { ...recordKey, lessonId:sourceLessonId, partId:part.id };
+          return { ...store.get(key), review:store.getReview(key) };
+        });
+        const ratedRecords = rating ? partLessons.map(({ part, sourceLessonId }) =>
+          store.getRatedProgress({ ...recordKey, lessonId:sourceLessonId, partId:part.id }, rating)) : [];
+        const saved = {
+          completedStepIds:records.flatMap(record => record.completedStepIds),
+          completed:lesson.steps.every(step => records.some(record => record.completedStepIds.includes(step.id))),
+        };
+        const totalParts = getSubjectRoadmap(nextSubjectId)
+          .units.flatMap((unit) => unit.lessons)
+          .flatMap((lesson) => lesson.parts || []).length;
+        const outcomeKey = { ...recordKey, totalParts };
+        const currentOutcome = () => {
+          const outcome = store.getOutcome(outcomeKey);
+          const home = store.getHomeLearning(ownerId, [roadmap]);
+          return { ...outcome, levelTotalXp:home.totalXp, progress:home.progress, completed:home.requiredLessonsCompleted, totalParts:home.curriculumLessonsTotal,
+            completedQuestions:home.currentQuestionsSolved, totalQuestions:home.currentQuestionsTotal,
+            lessonShare:home.currentQuestionsTotal ? Math.round(lesson.steps.length / home.currentQuestionsTotal * 100) : undefined };
+        };
+        const before = currentOutcome();
+        let heartDepletion;
+        const outcome = () => {
+          const after = currentOutcome();
+          const result = {
+            ...after,
+            xpGain: after.totalXp - before.totalXp,
+            progressGain: after.progress - before.progress,
+            streakGain: Math.max(0, after.streak - before.streak),
+            alreadyCompleted:saved.completed,
+          };
+          return result;
+        };
+        // Keep the roadmap visible until every lesson dependency is ready. The
+        // chrome and first question then replace it in the same browser frame.
+        setViewMode();
+        elements.lessonContent.setAttribute("aria-busy", "false");
+        elements.lessonShell.dataset.subject = nextSubjectId;
+        elements.lessonTitle.textContent = lesson?.title || reference;
+        elements.lessonStatus.textContent = lesson ? "درس منشور" : "قيد التقدم";
+        elements.lessonStatus.hidden = true;
+        const rendered = renderLesson(
+          elements.lessonContent,
+          reference,
+          lesson,
+          {
+            isLessonPart: true,
+            demoMode,
+            questionFilterIds:rating ? getRatedSubjectQuestions(nextSubjectId,questionFeedback).filter(question => question.lessonId === nextLessonId && question.rating === rating).map(question => question.stepId) : undefined,
+            onLessonEvent:demoMode ? event => onboardingTour.lessonEvent(event) : undefined,
+            getQuestionExplanation:resourceStore ? step => {
+              const key = sourceKey(step.id);
+              return {
+                isUnlocked:() => resourceStore.hasExplanation(ownerId,key),
+                isIncluded:() => resourceStore.get(ownerId).unlimited,
+                subscribe:resourceStore.subscribe,
+                unlock:async ({signal}) => {
+                  if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) throw new Error("The active learner changed.");
+                  const result = await resourceStore.unlockExplanation(ownerId,key,{signal,step});
+                  if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) throw new Error("The active learner changed.");
+                  return result;
+                },
+              };
+            } : undefined,
+            getQuestionFeedback:(stepId) => {
+              const key = sourceKey(stepId);
+              return {
+                subscribe:questionFeedback?.subscribe,
+                isHidden:() => questionFeedback?.isHidden(key) || false,
+                hide:(options) => questionFeedback?.hide(key,options),
+                getRating:() => questionFeedback?.getRating(key),
+                saveRating:(rating,options) => questionFeedback?.saveRating(key,rating,options),
+                report:(reason,details,options) => questionFeedback?.report(key,reason,details,options),
+              };
+            },
+            getCompletionOutcome: outcome,
+            onExitLesson: returnToRoadmap,
+            onFinishLesson: () => {
+              if (demoMode && onboardingTour?.finishLesson()) return;
+              returnToRoadmap();
+            },
+            reviewStepId,
+            onReviewComplete: returnToRoadmap,
+            beforeAnswer:() => {
+              if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return "انتهت جلسة التعلّم.";
+              const balance = resourceStore?.get(ownerId);
+              if (!balance || balance.unlimited || balance.hearts > 0) return;
+              heartDepletion?.show();
+              const minutes = Math.max(1, Math.ceil((balance.nextHeartAt - Date.now()) / 60000));
+              return `نفدت القلوب. ستحصل على قلب خلال ${minutes} دقيقة. تتجدد القلوب بمعدل قلب كل 12 دقيقة.`;
+            },
+            onAnswer: async ({ stepId, correct, reviewing = false }) => {
+              if (typeof correct === "boolean" && !demoMode) {
+                void questionFeedback?.saveRating(sourceKey(stepId), correct ? "easy" : "hard", { automatic:true }).catch(() => {});
+              }
+              return store.recordAnswer({
+                ownerId,
+                ...sourceKey(stepId),
+                correct,
+                ...(rating ? { rating } : {}),
+                reviewing: reviewing || Boolean(rating) || stepId === reviewStepId,
+              });
+            },
+            getMathFilterCatalog:!rating && isFilterSubject ? mathFilterCatalog : undefined,
+            mathFilterState:mathFilters.get(mathFilterKey(ownerId, nextSubjectId, nextLessonId)),
+            onMathFilterApply: ({ scope, result, enabled }) => {
+              if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
+              for (const item of mathFilterLessons(scope)) {
+                const key = mathFilterKey(ownerId, nextSubjectId, item.id);
+                if (enabled) {
+                  mathFilters.set(key, { scope, stepIds:result.questions.filter(entry => entry.lessonId === item.id).map(entry => entry.stepId) });
+                } else mathFilters.delete(key);
+              }
+              return mathFilters.get(mathFilterKey(ownerId, nextSubjectId, nextLessonId))?.stepIds;
+            },
+            progress: {
+              completedStepIds: demoMode ? [] : rating ? ratedRecords.flatMap(record => record.completedStepIds) : saved.completedStepIds,
+              attemptedStepIds: demoMode ? [] : (rating ? ratedRecords : records).flatMap(record => record.review.map(item => item.stepId)),
+              mistakeStepIds: demoMode || rating ? [] : records.flatMap(record => record.review.filter(item => item.misses > 0).map(item => item.stepId)),
+              completedAt: null,
+            },
+            async onProgress({ completedStepIds }) {
+              if (reviewStepId) return;
+              if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
+              const completedIds = new Set(completedStepIds);
+              for (const { part, sourceLessonId, lesson:partLesson } of partLessons) {
+                const stepIds = partLesson.steps.map(step => step.id);
+                const key = { ...recordKey, lessonId:sourceLessonId, partId:part.id };
+                const previous = store.get(key);
+                const completed = rating ? new Set([...previous.completedStepIds,...completedIds]) : completedIds;
+                const done = stepIds.filter(id => completed.has(id));
+                if (!done.length || done.every(id => previous.completedStepIds.includes(id)) && (previous.completed || done.length < stepIds.length)) continue;
+                if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
+                await store.record({ ...key, stepIds,
+                  completedStepIds:done, isComplete:done.length === stepIds.length });
+              }
+            },
+          },
+        );
+        operation.add(rendered.destroy);
+        if (resourceStore) {
+          heartDepletion = mountHeartDepletion({ resourceStore, ownerId, signal:operation.signal, returnFocus:elements.lessonContent });
+          operation.add(heartDepletion.destroy);
+        }
+        showContentView({ animate:false });
+        window.scrollTo({ top:0, behavior:"auto" });
+        document.title = `${lesson?.title || "الدرس غير متاح"} · ${appTitle}`;
+        elements.lessonContent.focus({ preventScroll: true });
+      } catch (error) {
+        if (!operation.isCurrent()) return;
+        console.error("The subject lesson could not be loaded.", error);
+        setViewMode();
+        elements.lessonContent.setAttribute("aria-busy", "false");
+        elements.lessonTitle.textContent = "";
+        elements.lessonStatus.hidden = true;
+        const rendered = renderLessonError(
+          elements.lessonContent,
+          reference,
+          load,
+        );
+        operation.add(rendered.destroy);
+        showContentView({ animate:false });
+        window.scrollTo({ top:0, behavior:"auto" });
+        document.title = rendered.title;
+        elements.lessonContent.focus({ preventScroll: true });
+      }
+    };
+    await load();
+  }
+
+  function returnToRoadmap() {
+    if (!subjectId || !lessonId) return false;
+    if (onReturnToRoadmap?.({ subjectId })) return true;
+    openSubject(subjectId, null, {
+      historyMode: "replace",
+      focusContent: true,
+      restoreMap: true,
+      rating,
+    });
+    return true;
+  }
+
+  return Object.freeze({
+    getState,
+    openFromCard,
+    openSubject,
+    reset,
+    returnToRoadmap,
+  });
+}

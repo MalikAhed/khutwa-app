@@ -1,4 +1,6 @@
-import{createBiologyLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createBiologyLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: bio-b-p068-q2-b-3
 title: الرزمة التعليمية، صفحة 68، السؤال 2-b-3
 question: وضح المقصود بما يلي: كابسيد.
@@ -756,4 +758,6 @@ solution:
 
 **مرجع الدرس:** العلوم الحياتية، تكاثر الفيروسات، ص67 المطبوعة، PDF67.
 
-:::`;export default e("viruses",source);
+:::`;
+
+export default createBiologyLesson("viruses", source);

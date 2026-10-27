@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+
+export const lessonSource = `:::exam-question
 id: math-book-p102-ex1-a
 title: الكتاب، ص ١٠٠ · مثال محلول
 question: التجزئة ومجموع ريمان
@@ -3527,4 +3529,16 @@ solution:
 
 
 
-:::`;export default m({status:"published",language:"ar",title:"التجزئة ومجموع ريمان",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة التجزئة ومجموع ريمان من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"34 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "التجزئة ومجموع ريمان",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة التجزئة ومجموع ريمان من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "34 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

@@ -1,21 +1,229 @@
-import{prefersReducedMotion as y}from"../lib/dom.js?v=7388f68cc0f433fd";import{preloadImages as A}from"./media-ready.js?v=7388f68cc0f433fd";import{formatArabicCount as F}from"./learner-format.js?v=7388f68cc0f433fd";import{renderCompletionLevel as N,animateCompletionLevel as C}from"./xp-level.js?v=7388f68cc0f433fd";import{renderLevelUp as X}from"./level-up.js?v=7388f68cc0f433fd";import{mountDailyStreakSequence as P}from"./daily-streak.js?v=7388f68cc0f433fd";let j=0;export function preloadCompletionMedia(){const i=y();A(i?["assets/mascot/rocky-standing-still-reduced.svg","assets/icons/streak-fire-burning-reduced.svg","assets/icons/dashboard-levels.svg","assets/icons/dashboard-challenges.svg","assets/icons/dashboard-quest-time.svg"]:[`assets/mascot/rocky-happy-jump.svg?play=${j+1}`,`assets/mascot/rocky-happy-jump.svg?play=${j+2}`,"assets/mascot/rocky-standing-still.svg","assets/icons/streak-fire-burning.svg","assets/icons/dashboard-levels.svg","assets/icons/dashboard-challenges.svg","assets/icons/dashboard-quest-time.svg"])}function L(){return y()?"assets/mascot/rocky-standing-still-reduced.svg":`assets/mascot/rocky-happy-jump.svg?play=${++j}`}export function renderSubjectCompletion(i,e){const{xpGain:a=0,progress:s=0,totalParts:n=0,elapsedSeconds:r=null}=e,c=a,d=e.lessonShare??(n>0?Math.round(100/n):null),o=!e.demoMode&&(e.sessionEnded||e.accuracy!==void 0),l=o?e.accuracy:d,u=Number.isFinite(r)?`${Math.floor(r/60)}:${String(Math.floor(r%60)).padStart(2,"0")}`:"—",b=L(),m=(g,k,f="number",t=g)=>`<span data-gain-count="${g}" data-gain-from="0" data-gain-delay="${k}" data-gain-format="${f}">${t}</span>`,p=(g,k,f,t)=>`<div class="subject-gain subject-gain--${g}"><span>${k}</span><strong>${f}${t}</strong></div>`;return`<div class="level-lesson-copy ready-lesson-result subject-completion subject-completion--result" dir="rtl">
+import { prefersReducedMotion } from "../lib/dom.js?v=acff67f262f3c107";
+import { preloadImages } from "./media-ready.js?v=acff67f262f3c107";
+import { formatArabicCount } from "./learner-format.js?v=acff67f262f3c107";
+import { renderCompletionLevel, animateCompletionLevel } from "./xp-level.js?v=acff67f262f3c107";
+import { renderLevelUp } from "./level-up.js?v=acff67f262f3c107";
+import { mountDailyStreakSequence } from "./daily-streak.js?v=acff67f262f3c107";
+
+let celebrationPlayback = 0;
+
+export function preloadCompletionMedia() {
+  const still = prefersReducedMotion();
+  preloadImages(
+    still
+      ? ["assets/mascot/rocky-standing-still-reduced.svg", "assets/icons/streak-fire-burning-reduced.svg", "assets/icons/dashboard-levels.svg", "assets/icons/dashboard-challenges.svg", "assets/icons/dashboard-quest-time.svg"]
+      : [
+          `assets/mascot/rocky-happy-jump.svg?play=${celebrationPlayback + 1}`,
+          `assets/mascot/rocky-happy-jump.svg?play=${celebrationPlayback + 2}`,
+          "assets/mascot/rocky-standing-still.svg",
+          "assets/icons/streak-fire-burning.svg",
+          "assets/icons/dashboard-levels.svg",
+          "assets/icons/dashboard-challenges.svg",
+          "assets/icons/dashboard-quest-time.svg",
+        ],
+  );
+}
+
+function celebrationMascotSource() {
+  return prefersReducedMotion()
+    ? "assets/mascot/rocky-standing-still-reduced.svg"
+    : `assets/mascot/rocky-happy-jump.svg?play=${++celebrationPlayback}`;
+}
+
+export function renderSubjectCompletion(title, outcome) {
+  const { xpGain = 0, progress = 0, totalParts = 0, elapsedSeconds = null } = outcome;
+  const displayedXp = xpGain;
+  const lessonShare = outcome.lessonShare ?? (totalParts > 0 ? Math.round(100 / totalParts) : null);
+  const showAccuracy = !outcome.demoMode && (outcome.sessionEnded || outcome.accuracy !== undefined);
+  const score = showAccuracy ? outcome.accuracy : lessonShare;
+  const duration = Number.isFinite(elapsedSeconds) ? `${Math.floor(elapsedSeconds / 60)}:${String(Math.floor(elapsedSeconds % 60)).padStart(2, "0")}` : "—";
+  const mascotSource = celebrationMascotSource();
+  const count = (value, delay, format = "number", display = value) =>
+    `<span data-gain-count="${value}" data-gain-from="0" data-gain-delay="${delay}" data-gain-format="${format}">${display}</span>`;
+  const stat = (kind, label, icon, value) =>
+    `<div class="subject-gain subject-gain--${kind}"><span>${label}</span><strong>${icon}${value}</strong></div>`;
+  return `<div class="level-lesson-copy ready-lesson-result subject-completion subject-completion--result" dir="rtl">
     <div class="subject-completion-hero">
-      <div class="subject-completion-scene"><img class="subject-completion-rocky" src="${b}" alt="روكي سعيد بإنجازك">${X(e)}</div>
-      <h1 id="authored-lesson-complete-title">${e.demoMode?"أحسنت! أنهيت تجربتك الأولى":e.sessionEnded?"أحسنت! أنهيت جلستك":"أكملت الدرس!"}</h1>
+      <div class="subject-completion-scene"><img class="subject-completion-rocky" src="${mascotSource}" alt="روكي سعيد بإنجازك">${renderLevelUp(outcome)}</div>
+      <h1 id="authored-lesson-complete-title">${outcome.demoMode ? "أحسنت! أنهيت تجربتك الأولى" : outcome.sessionEnded ? "أحسنت! أنهيت جلستك" : "أكملت الدرس!"}</h1>
     </div>
     <div class="subject-gains">
-      ${p("xp","مجموع XP",'<img class="subject-gain-icon subject-gain-icon--xp" src="assets/icons/dashboard-levels.svg" alt="" aria-hidden="true">',`<bdi class="ui-number" dir="ltr">${m(c,760)}</bdi>`)}
-      ${p("accuracy",o?"دقّة الإجابات":e.demoMode?"نسبة التجربة":"نسبة الدرس",'<img class="subject-gain-icon subject-gain-icon--accuracy" src="assets/icons/dashboard-challenges.svg" alt="" aria-hidden="true">',`<bdi class="ui-number" dir="ltr">${l==null?"—":`${m(l,220)}%`}</bdi>`)}
-      ${p("quick","وقت التعلّم",'<img class="subject-gain-icon subject-gain-icon--quick" src="assets/icons/dashboard-quest-time.svg" alt="" aria-hidden="true">',`<bdi class="ui-number" dir="ltr">${Number.isFinite(r)?m(r,320,"duration",u):u}</bdi>`)}
+      ${stat("xp", "مجموع XP", '<img class="subject-gain-icon subject-gain-icon--xp" src="assets/icons/dashboard-levels.svg" alt="" aria-hidden="true">', `<bdi class="ui-number" dir="ltr">${count(displayedXp, 760)}</bdi>`)}
+      ${stat("accuracy", showAccuracy ? "دقّة الإجابات" : outcome.demoMode ? "نسبة التجربة" : "نسبة الدرس", '<img class="subject-gain-icon subject-gain-icon--accuracy" src="assets/icons/dashboard-challenges.svg" alt="" aria-hidden="true">', `<bdi class="ui-number" dir="ltr">${score == null ? "—" : `${count(score, 220)}%`}</bdi>`)}
+      ${stat("quick", "وقت التعلّم", '<img class="subject-gain-icon subject-gain-icon--quick" src="assets/icons/dashboard-quest-time.svg" alt="" aria-hidden="true">', `<bdi class="ui-number" dir="ltr">${Number.isFinite(elapsedSeconds) ? count(elapsedSeconds, 320, "duration", duration) : duration}</bdi>`)}
     </div>
-    ${N(e)}
-    <span class="visually-hidden">تقدّم المادة ${s}%</span>
-  </div>`}function B({streak:i=0,activeToday:e=!1,date:a=new Date}){const s=new Date(a),n=["أحد","إثنين","ثلاثاء","أربعاء","خميس","جمعة","سبت"];return Array.from({length:7},(r,c)=>{const d=new Date(s);d.setDate(s.getDate()-6+c);const o=6-c,l=e?o<i:o>0&&o<=i,u=n[d.getDay()];return`<li class="${l?"is-complete":""}${o===0?" is-today":""}" aria-label="${u}، ${l?"مكتمل":"لم يُسجّل إنجاز"}"${o===0?' aria-current="date"':""}><span aria-hidden="true">${u}</span><i aria-hidden="true">${l?'<svg viewBox="0 0 24 24" fill="none"><path d="m6 12 4 4 8-8" pathLength="1" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>':""}${o===0&&l?'<svg class="completion-day-particles" viewBox="-40 -40 80 80" fill="#ffb300"><circle cx="0" cy="-28" r="3"/><circle cx="24" cy="-14" r="2.5"/><circle cx="24" cy="14" r="3"/><circle cx="0" cy="28" r="2.5"/><circle cx="-24" cy="14" r="3"/><circle cx="-24" cy="-14" r="2.5"/></svg>':""}</i></li>`}).join("")}export function renderSubjectStreak(i={},e="authored-lesson-complete-title"){const a=Math.max(0,Number(i.streak)||0);return`<div class="level-lesson-copy ready-lesson-result subject-completion subject-completion--streak" dir="rtl">
+    ${renderCompletionLevel(outcome)}
+    <span class="visually-hidden">تقدّم المادة ${progress}%</span>
+  </div>`;
+}
+
+function streakDays({ streak = 0, activeToday = false, date = new Date() }) {
+  const today = new Date(date);
+  const labels = ["أحد", "إثنين", "ثلاثاء", "أربعاء", "خميس", "جمعة", "سبت"];
+  return Array.from({ length:7 }, (_, index) => {
+    const day = new Date(today);
+    day.setDate(today.getDate() - 6 + index);
+    const ago = 6 - index;
+    const complete = activeToday ? ago < streak : ago > 0 && ago <= streak;
+    const label = labels[day.getDay()];
+    const check = '<svg viewBox="0 0 24 24" fill="none"><path d="m6 12 4 4 8-8" pathLength="1" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    const particles = ago === 0 && complete ? '<svg class="completion-day-particles" viewBox="-40 -40 80 80" fill="#ffb300"><circle cx="0" cy="-28" r="3"/><circle cx="24" cy="-14" r="2.5"/><circle cx="24" cy="14" r="3"/><circle cx="0" cy="28" r="2.5"/><circle cx="-24" cy="14" r="3"/><circle cx="-24" cy="-14" r="2.5"/></svg>' : "";
+    return `<li class="${complete ? "is-complete" : ""}${ago === 0 ? " is-today" : ""}" aria-label="${label}، ${complete ? "مكتمل" : "لم يُسجّل إنجاز"}"${ago === 0 ? ' aria-current="date"' : ""}><span aria-hidden="true">${label}</span><i aria-hidden="true">${complete ? check : ""}${particles}</i></li>`;
+  }).join("");
+}
+
+export function renderSubjectStreak(outcome = {}, titleId = "authored-lesson-complete-title") {
+  const streak = Math.max(0, Number(outcome.streak) || 0);
+  return `<div class="level-lesson-copy ready-lesson-result subject-completion subject-completion--streak" dir="rtl">
     <div class="completion-streak-celebration">
-      <div class="completion-streak-stage"><div class="completion-streak-mascot"><p class="completion-streak-greeting">أهلًا بعودتك!</p><div class="completion-streak-body" role="img" aria-label="روكي يحتفل بسلسلتك"><span class="completion-streak-rig" aria-hidden="true"></span><img class="completion-streak-rocky" src="assets/mascot/rocky-standing-still${y()?"-reduced":""}.svg" alt="" aria-hidden="true"></div></div></div>
-      <div class="completion-streak-scene"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/icons/streak-fire-burning-reduced.svg"><img class="completion-streak-fire" src="assets/icons/streak-fire-burning${y()?"-reduced":""}.svg" alt="" aria-hidden="true"></picture></div>
+      <div class="completion-streak-stage"><div class="completion-streak-mascot"><p class="completion-streak-greeting">أهلًا بعودتك!</p><div class="completion-streak-body" role="img" aria-label="روكي يحتفل بسلسلتك"><span class="completion-streak-rig" aria-hidden="true"></span><img class="completion-streak-rocky" src="assets/mascot/rocky-standing-still${prefersReducedMotion() ? "-reduced" : ""}.svg" alt="" aria-hidden="true"></div></div></div>
+      <div class="completion-streak-scene"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/icons/streak-fire-burning-reduced.svg"><img class="completion-streak-fire" src="assets/icons/streak-fire-burning${prefersReducedMotion() ? "-reduced" : ""}.svg" alt="" aria-hidden="true"></picture></div>
     </div>
-    <h1 id="${e}" class="completion-streak-count"><strong class="ui-number" data-gain-count="${a}" data-gain-from="${Math.max(0,a-1)}" data-gain-delay="450">${a}</strong><span>سلسلة التعلّم</span></h1>
-    <p class="completion-streak-caption">${F(a,"day")} من التعلّم المتواصل</p>
-    <ol class="completion-week" aria-label="آخر سبعة أيام من سلسلة التعلّم">${B(i)}</ol>
-  </div>`}export function showDailyStreak(i,e,a){if(a.aborted)return;const s=document.createElement("dialog");s.className="lesson-daily-streak",s.setAttribute("aria-labelledby","daily-streak-title"),s.innerHTML=`<div class="daily-streak-layout">${renderSubjectStreak(e,"daily-streak-title")}<button type="button" class="system-action system-action--primary" disabled>متابعة التعلّم</button></div>`;const n=document.activeElement;i.append(s),s.showModal();const r=P(s,{onRewards:()=>animateSubjectCompletion(s),celebrationSource:L});let c;const d=()=>{s.classList.contains("is-leaving")||(s.classList.add("is-leaving"),c=setTimeout(()=>s.close(),y()?0:220))},o=()=>{clearTimeout(c),r(),a.removeEventListener("abort",o),s.open&&s.close(),s.remove(),!a.aborted&&n?.isConnected&&n.focus({preventScroll:!0})};s.addEventListener("close",o,{once:!0}),s.querySelector("button").addEventListener("click",d,{once:!0}),a.addEventListener("abort",o,{once:!0})}function S(i,e){const a=Math.max(0,Math.round(i));return e==="duration"?`${Math.floor(a/60)}:${String(a%60).padStart(2,"0")}`:String(a)}export function animateSubjectCompletion(i){const e=i.querySelector(".subject-completion");if(!e)return()=>{};const a=e.querySelector(".subject-gain--xp > span"),s=()=>{a&&(a.textContent="تمّت الإضافة")};if(y()){const t=e.querySelector(".subject-gain--xp [data-gain-count]");return t&&(t.textContent="0"),s(),e.dataset.animationState="complete",C(e,()=>{},()=>{})}const n=e.querySelector(".subject-completion-rocky"),r=window.matchMedia("(prefers-reduced-motion: reduce)");let c,d=!1,o=()=>{},l=!1,u=[];const b=()=>{clearTimeout(c),!(r.matches||d)&&(c=setTimeout(()=>{!d&&!r.matches&&e.isConnected&&n&&(n.src="assets/mascot/rocky-standing-still.svg")},3300))},m=()=>{r.matches&&(clearTimeout(c),n?.removeEventListener("load",b),n&&(n.src="assets/mascot/rocky-standing-still-reduced.svg"),u.forEach(({element:t,to:h,format:$,isXp:v})=>{t.textContent=S(v?0:h,$)}),o(),s(),l=!0)};n?.complete&&n.naturalWidth?b():n?.addEventListener("load",b,{once:!0}),r.addEventListener("change",m),u=[...e.querySelectorAll("[data-gain-count]")].map(t=>({element:t,from:Number(t.dataset.gainFrom),to:Number(t.dataset.gainCount),delay:Number(t.dataset.gainDelay),format:t.dataset.gainFormat||"number",isXp:!!t.closest(".subject-gain--xp")})),u.forEach(({element:t,from:h,to:$,format:v,isXp:x})=>{t.style.minWidth=`${t.textContent.length}ch`,t.textContent=S(x?$:h,v)});const p=u.find(({isXp:t})=>t);o=C(e,t=>{d||r.matches||!p||(a&&(a.textContent="نقل XP"),p.element.textContent=S(p.to-t,p.format))},()=>{l=!0,s()}),e.dataset.animationState="running";let g;const k=performance.now(),f=t=>{if(r.matches){m(),e.dataset.animationState="complete";return}const h=t-k,$=(v,x=750)=>1-Math.pow(1-Math.min(1,Math.max(0,(h-v)/x)),2);u.forEach(v=>{const{element:x,from:M,to:E,delay:q,format:w,isXp:T}=v;if(T)return;const D=Math.round(M+(E-M)*$(q,750));x.textContent=S(D,w)}),h<2200||!l?g=requestAnimationFrame(f):e.dataset.animationState="complete"};return g=requestAnimationFrame(f),()=>{d=!0,cancelAnimationFrame(g),clearTimeout(c),o(),l=!0,n?.removeEventListener("load",b),r.removeEventListener("change",m)}}
+    <h1 id="${titleId}" class="completion-streak-count"><strong class="ui-number" data-gain-count="${streak}" data-gain-from="${Math.max(0, streak - 1)}" data-gain-delay="450">${streak}</strong><span>سلسلة التعلّم</span></h1>
+    <p class="completion-streak-caption">${formatArabicCount(streak, "day")} من التعلّم المتواصل</p>
+    <ol class="completion-week" aria-label="آخر سبعة أيام من سلسلة التعلّم">${streakDays(outcome)}</ol>
+  </div>`;
+}
+
+// Overlay the saved answer without replacing its controls or feedback.
+export function showDailyStreak(container, outcome, signal) {
+  if (signal.aborted) return;
+  const dialog = document.createElement("dialog");
+  dialog.className = "lesson-daily-streak";
+  dialog.setAttribute("aria-labelledby", "daily-streak-title");
+  dialog.innerHTML = `<div class="daily-streak-layout">${renderSubjectStreak(outcome, "daily-streak-title")}<button type="button" class="system-action system-action--primary" disabled>متابعة التعلّم</button></div>`;
+  const previousFocus = document.activeElement;
+  container.append(dialog);
+  dialog.showModal();
+  const stopSequence = mountDailyStreakSequence(dialog, {
+    onRewards:() => animateSubjectCompletion(dialog),
+    celebrationSource:celebrationMascotSource,
+  });
+  let exitTimer;
+  const dismiss = () => {
+    if (dialog.classList.contains("is-leaving")) return;
+    dialog.classList.add("is-leaving");
+    exitTimer = setTimeout(() => dialog.close(), prefersReducedMotion() ? 0 : 220);
+  };
+  const cleanup = () => {
+    clearTimeout(exitTimer);
+    stopSequence();
+    signal.removeEventListener("abort", cleanup);
+    if (dialog.open) dialog.close();
+    dialog.remove();
+    if (!signal.aborted && previousFocus?.isConnected) previousFocus.focus({ preventScroll:true });
+  };
+  dialog.addEventListener("close", cleanup, { once:true });
+  dialog.querySelector("button").addEventListener("click", dismiss, { once:true });
+  signal.addEventListener("abort", cleanup, { once:true });
+}
+
+function formatAnimatedGain(value, format) {
+  const rounded = Math.max(0, Math.round(value));
+  if (format === "duration")
+    return `${Math.floor(rounded / 60)}:${String(rounded % 60).padStart(2, "0")}`;
+  return String(rounded);
+}
+
+// All values are visual interpolation of an already computed outcome; no rewards are written here.
+export function animateSubjectCompletion(container) {
+  const root = container.querySelector(".subject-completion");
+  if (!root) return () => {};
+  const xpLabel = root.querySelector(".subject-gain--xp > span");
+  const finishTransfer = () => {
+    if (xpLabel) xpLabel.textContent = "تمّت الإضافة";
+  };
+  if (prefersReducedMotion()) {
+    const xp = root.querySelector(".subject-gain--xp [data-gain-count]");
+    if (xp) xp.textContent = "0";
+    finishTransfer();
+    root.dataset.animationState = "complete";
+    return animateCompletionLevel(root, () => {}, () => {});
+  }
+  const rocky = root.querySelector(".subject-completion-rocky");
+  const motionPreference = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  );
+  let idleTimer;
+  let disposed = false;
+  let stopXp = () => {};
+  let xpComplete = false;
+  let counters = [];
+  // The Studio happy-jump clip settles at 3300 ms, then the existing idle loops.
+  const startIdleTimer = () => {
+    clearTimeout(idleTimer);
+    if (motionPreference.matches || disposed) return;
+    idleTimer = setTimeout(() => {
+      if (!disposed && !motionPreference.matches && root.isConnected && rocky)
+        rocky.src = "assets/mascot/rocky-standing-still.svg";
+    }, 3300);
+  };
+  const stopMascotMotion = () => {
+    if (!motionPreference.matches) return;
+    clearTimeout(idleTimer);
+    rocky?.removeEventListener("load", startIdleTimer);
+    if (rocky) rocky.src = "assets/mascot/rocky-standing-still-reduced.svg";
+    counters.forEach(({ element, to, format, isXp }) => {
+      element.textContent = formatAnimatedGain(isXp ? 0 : to, format);
+    });
+    stopXp();
+    finishTransfer();
+    xpComplete = true;
+  };
+  if (rocky?.complete && rocky.naturalWidth) startIdleTimer();
+  else rocky?.addEventListener("load", startIdleTimer, { once: true });
+  motionPreference.addEventListener("change", stopMascotMotion);
+  counters = [...root.querySelectorAll("[data-gain-count]")].map(
+    (element) => ({
+      element,
+      from: Number(element.dataset.gainFrom),
+      to: Number(element.dataset.gainCount),
+      delay: Number(element.dataset.gainDelay),
+      format: element.dataset.gainFormat || "number",
+      isXp: Boolean(element.closest(".subject-gain--xp")),
+    }),
+  );
+  counters.forEach(({ element, from, to, format, isXp }) => {
+    element.style.minWidth = `${element.textContent.length}ch`;
+    element.textContent = formatAnimatedGain(isXp ? to : from, format);
+  });
+  const xpCounter = counters.find(({ isXp }) => isXp);
+  stopXp = animateCompletionLevel(root, (value) => {
+    if (disposed || motionPreference.matches || !xpCounter) return;
+    if (xpLabel) xpLabel.textContent = "نقل XP";
+    xpCounter.element.textContent = formatAnimatedGain(xpCounter.to - value, xpCounter.format);
+  }, () => { xpComplete = true; finishTransfer(); });
+  root.dataset.animationState = "running";
+  let frame;
+  const started = performance.now();
+  const tick = (now) => {
+    if (motionPreference.matches) {
+      stopMascotMotion();
+      root.dataset.animationState = "complete";
+      return;
+    }
+    const elapsed = now - started;
+    const ease = (delay, duration = 750) =>
+      1 - Math.pow(1 - Math.min(1, Math.max(0, (elapsed - delay) / duration)), 2);
+    counters.forEach((counter) => {
+      const { element, from, to, delay, format, isXp } = counter;
+      if (isXp) return;
+      const value = Math.round(from + (to - from) * ease(delay, 750));
+      element.textContent = formatAnimatedGain(value, format);
+    });
+    if (elapsed < 2200 || !xpComplete) frame = requestAnimationFrame(tick);
+    else {
+      root.dataset.animationState = "complete";
+    }
+  };
+  frame = requestAnimationFrame(tick);
+  return () => {
+    disposed = true;
+    cancelAnimationFrame(frame);
+    clearTimeout(idleTimer);
+    stopXp();
+    xpComplete = true;
+    rocky?.removeEventListener("load", startIdleTimer);
+    motionPreference.removeEventListener("change", stopMascotMotion);
+  };
+}

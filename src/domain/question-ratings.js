@@ -1,1 +1,34 @@
-import{getSubjectRoadmap as p}from"../data/subject-roadmaps.js?v=7388f68cc0f433fd";import{getPartQuestionIds as u,questionRewardKey as f}from"./question-rewards.js?v=7388f68cc0f433fd";const m=s=>s?.misses>0?"hard":s?.solved?"easy":null,I=Object.freeze([{value:"easy",label:"سهل"},{value:"medium",label:"متوسط"},{value:"hard",label:"صعب"}]);function h(s,i){const d=new Set;return(p(s)?.units||[]).flatMap(l=>l.lessons.filter(t=>!t.hidden&&!t.optional).flatMap(t=>t.parts.flatMap(e=>u({subjectId:s,lessonId:t.id,partId:e.id}).flatMap(r=>{const a={subjectId:s,lessonId:t.id,partId:e.id,stepId:r},n=i?.getRating(a),o=f(a);return!n||i?.isHidden(a)||d.has(o)?[]:(d.add(o),[{...a,rating:n}])}))))}function R(s,i,d){const l=i.filter(t=>t.rating===d);return{...s,units:s.units.map(t=>({...t,lessons:t.lessons.filter(e=>!e.hidden).map(e=>({...e,parts:e.parts.map(r=>{const a=l.filter(n=>n.lessonId===e.id&&n.partId===r.id).map(n=>n.stepId);return{...r,questionIds:a,startStepId:a[0]}}).filter(r=>r.questionIds.length)})).filter(e=>e.parts.length)})).filter(t=>t.lessons.length)}}export{I as QUESTION_RATINGS,m as defaultAnswerRating,R as filterRatedRoadmap,h as getRatedSubjectQuestions};
+import { getSubjectRoadmap } from "../data/subject-roadmaps.js?v=acff67f262f3c107";
+import { getPartQuestionIds, questionRewardKey } from "./question-rewards.js?v=acff67f262f3c107";
+
+// Legacy answers may predate rating saves. Mistake history defaults to Hard.
+export const defaultAnswerRating = item => item?.misses > 0 ? "hard" : item?.solved ? "easy" : null;
+
+export const QUESTION_RATINGS = Object.freeze([
+  { value:"easy", label:"سهل" }, { value:"medium", label:"متوسط" }, { value:"hard", label:"صعب" },
+]);
+
+export function getRatedSubjectQuestions(subjectId, feedback) {
+  const seen = new Set();
+  return (getSubjectRoadmap(subjectId)?.units || []).flatMap(unit => unit.lessons
+    .filter(lesson => !lesson.hidden && !lesson.optional)
+    .flatMap(lesson => lesson.parts.flatMap(part => getPartQuestionIds({ subjectId,lessonId:lesson.id,partId:part.id })
+      .flatMap(stepId => {
+        const key = { subjectId,lessonId:lesson.id,partId:part.id,stepId };
+        const rating = feedback?.getRating(key);
+        const identity = questionRewardKey(key);
+        if (!rating || feedback?.isHidden(key) || seen.has(identity)) return [];
+        seen.add(identity);
+        return [{ ...key,rating }];
+      }))));
+}
+
+export function filterRatedRoadmap(roadmap, questions, rating) {
+  const selected = questions.filter(question => question.rating === rating);
+  return { ...roadmap,units:roadmap.units.map(unit => ({ ...unit,lessons:unit.lessons
+    .filter(lesson => !lesson.hidden).map(lesson => ({ ...lesson,parts:lesson.parts.map(part => {
+      const questionIds = selected.filter(question => question.lessonId === lesson.id && question.partId === part.id).map(question => question.stepId);
+      return { ...part,questionIds,startStepId:questionIds[0] };
+    }).filter(part => part.questionIds.length) })).filter(lesson => lesson.parts.length),
+  })).filter(unit => unit.lessons.length) };
+}

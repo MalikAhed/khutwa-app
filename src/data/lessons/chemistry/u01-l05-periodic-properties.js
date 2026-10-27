@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: chemistry-gaza-p024-q01-a
 title: الوحدة ١ · الدرس ٥ · ص ٢٢ · س السؤال الأول، الفقرة ١ · a
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤
@@ -2020,4 +2022,6 @@ solution:
 **المصدر:** الصفحات 11، 16، 18 من الكتاب.
 
 :::
-`;export default m("u01-l05-periodic-properties",source);
+`;
+
+export default createChemistryLesson("u01-l05-periodic-properties", source);

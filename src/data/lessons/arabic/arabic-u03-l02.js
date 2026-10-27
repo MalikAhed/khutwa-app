@@ -1,4 +1,6 @@
-import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createArabicLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: arabic-p102-mcq-q01
 title: أنا وليلى - صفحة 101 - اختيار من متعدد 1 - 2019
 kicker: 2019
@@ -862,4 +864,6 @@ solution:
 
 
 
-:::`;export default e("arabic-u03-l02",source);
+:::`;
+
+export default createArabicLesson("arabic-u03-l02", source);

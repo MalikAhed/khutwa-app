@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: eng-2023-p071-qvocabulary-1-1
 title: Unit 7 · PDF 71 · vocabulary-1-1
 question: causing argument ..............
@@ -1525,4 +1527,6 @@ expert in تعني «خبيرًا في»، وجمع expert هو experts.
 **المصدر:** صفحة 35 من الكتاب.
 
 hint: Read the complete sentence or passage, then compare the original choices.
-:::`;export default e("english-u07-vocabulary",source);
+:::`;
+
+export default createEnglishLesson("english-u07-vocabulary", source);

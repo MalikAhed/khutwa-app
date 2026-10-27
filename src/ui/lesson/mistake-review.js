@@ -1,1 +1,33 @@
-import{renderTemplateFooter as c,renderTemplateShell as d}from"../template-shell.js?v=7388f68cc0f433fd";import{revealWhenReady as m}from"../media-ready.js?v=7388f68cc0f433fd";import{animateView as u}from"../view-motion.js?v=7388f68cc0f433fd";export function renderMistakeReviewIntro(e,{locale:t,onContinue:n}){const i=new AbortController,{signal:r}=i,a=t==="ar";e.innerHTML=`<article class="lesson-flow ready-lesson-flow"><section class="ready-lesson-stage" data-live-authored-step data-mistake-review-intro tabindex="-1">${d({locale:t,titleId:"mistake-review-title",showScrollIndicator:!1,content:`<div class="lesson-review-whoosh"><div class="lesson-review-bubble"><h1 id="mistake-review-title">${a?"لنراجع أخطاءنا معًا!":"Let’s review our mistakes!"}</h1><p>${a?"جولة قصيرة لتثبيت ما تعلّمته.":"A quick round to strengthen what you’ve learned."}</p></div><img src="assets/mascot/rocky-standing-still-reduced.svg" alt="" width="320" height="304"></div>`,footer:c({locale:t,backAttributes:{hidden:!0},primaryLabel:a?"ابدأ المراجعة":"Start review"})})}</section></article>`,u(e);let s;const o=matchMedia("(prefers-reduced-motion: reduce)");o.addEventListener("change",()=>{o.matches&&s?.cancel()},{signal:r});const l=m(e,{signal:r,onReady(){o.matches||(s=e.querySelector(".lesson-review-whoosh").animate([{transform:"translateY(65vh)",opacity:0,offset:0,easing:"cubic-bezier(.08,.82,.2,1)"},{transform:"translateY(-12px)",opacity:1,offset:.72,easing:"ease-in-out"},{transform:"translateY(3px)",opacity:1,offset:.9,easing:"ease-out"},{transform:"translateY(0)",opacity:1}],{duration:540})),e.querySelector("[data-live-authored-step]").focus({preventScroll:!0})}});return e.querySelector("[data-template-primary]").addEventListener("click",n,{signal:r,once:!0}),()=>{i.abort(),l(),s?.cancel()}}
+import { renderTemplateFooter, renderTemplateShell } from "../template-shell.js?v=acff67f262f3c107";
+import { revealWhenReady } from "../media-ready.js?v=acff67f262f3c107";
+import { animateView } from "../view-motion.js?v=acff67f262f3c107";
+
+export function renderMistakeReviewIntro(container, { locale, onContinue }) {
+  const controller = new AbortController();
+  const { signal } = controller;
+  const arabic = locale === "ar";
+  container.innerHTML = `<article class="lesson-flow ready-lesson-flow"><section class="ready-lesson-stage" data-live-authored-step data-mistake-review-intro tabindex="-1">${renderTemplateShell({
+    locale,
+    titleId: "mistake-review-title",
+    showScrollIndicator: false,
+    content: `<div class="lesson-review-whoosh"><div class="lesson-review-bubble"><h1 id="mistake-review-title">${arabic ? "لنراجع أخطاءنا معًا!" : "Let’s review our mistakes!"}</h1><p>${arabic ? "جولة قصيرة لتثبيت ما تعلّمته." : "A quick round to strengthen what you’ve learned."}</p></div><img src="assets/mascot/rocky-standing-still-reduced.svg" alt="" width="320" height="304"></div>`,
+    footer: renderTemplateFooter({ locale, backAttributes: { hidden: true }, primaryLabel: arabic ? "ابدأ المراجعة" : "Start review" }),
+  })}</section></article>`;
+  animateView(container);
+  let animation;
+  const motion = matchMedia("(prefers-reduced-motion: reduce)");
+  motion.addEventListener("change", () => { if (motion.matches) animation?.cancel(); }, { signal });
+  const stopReadiness = revealWhenReady(container, { signal, onReady() {
+    if (!motion.matches) {
+      animation = container.querySelector(".lesson-review-whoosh").animate([
+        { transform: "translateY(65vh)", opacity: 0, offset: 0, easing: "cubic-bezier(.08,.82,.2,1)" },
+        { transform: "translateY(-12px)", opacity: 1, offset: .72, easing: "ease-in-out" },
+        { transform: "translateY(3px)", opacity: 1, offset: .9, easing: "ease-out" },
+        { transform: "translateY(0)", opacity: 1 },
+      ], { duration: 540 });
+    }
+    container.querySelector("[data-live-authored-step]").focus({ preventScroll: true });
+  } });
+  container.querySelector("[data-template-primary]").addEventListener("click", onContinue, { signal, once: true });
+  return () => { controller.abort(); stopReadiness(); animation?.cancel(); };
+}

@@ -1,1 +1,426 @@
-import{createLearnerResources as K}from"./services/learner-resources.js?v=7388f68cc0f433fd";import{mountHeartDepletion as $}from"./ui/heart-depletion.js?v=7388f68cc0f433fd";import{createServerProgressAdapter as z}from"./services/server-progress.js?v=7388f68cc0f433fd";import{applyServerDataReset as J}from"./services/server-data-reset.js?v=7388f68cc0f433fd";import{readAppConfig as X}from"./app/app-config.js?v=7388f68cc0f433fd";import{createViewLifecycle as Z}from"./app/view-lifecycle.js?v=7388f68cc0f433fd";import{animateView as T}from"./ui/view-motion.js?v=7388f68cc0f433fd";import{revealWhenReady as ee}from"./ui/media-ready.js?v=7388f68cc0f433fd";import{mountComingSoonToast as te}from"./ui/coming-soon.js?v=7388f68cc0f433fd";import{createRouteUrl as H,isUnlockedPage as oe,readRoute as w}from"./app/route.js?v=7388f68cc0f433fd";import{prefersReducedMotion as x}from"./lib/dom.js?v=7388f68cc0f433fd";import{createLearnerSession as re}from"./services/learner-session.js?v=7388f68cc0f433fd";import{getBrowserLearnerStorage as se}from"./services/learner-storage.js?v=7388f68cc0f433fd";import{renderCourseMap as A}from"./ui/course-map.js?v=7388f68cc0f433fd";import{createAuthHeader as ne}from"./ui/auth-header.js?v=7388f68cc0f433fd";import{mountLearnerDashboard as ae}from"./ui/learner-dashboard.js?v=7388f68cc0f433fd";import{createSubjectLearningController as ie}from"./ui/subject-learning.js?v=7388f68cc0f433fd";import{createVisitorFlow as ce}from"./ui/visitor-flow.js?v=7388f68cc0f433fd";import{createSubjectProgressStore as ue}from"./services/subject-progress-store.js?v=7388f68cc0f433fd";import{createSessionProgressAdapter as le}from"./services/session-progress.js?v=7388f68cc0f433fd";import{createIndexedDbProgressAdapter as de}from"./services/indexeddb-progress.js?v=7388f68cc0f433fd";import{mountProgressFeedback as ge}from"./ui/progress-feedback.js?v=7388f68cc0f433fd";import{mountAppShell as me}from"./ui/app-shell.js?v=7388f68cc0f433fd";import{createRockyTour as pe}from"./ui/rocky-tour.js?v=7388f68cc0f433fd";import{createQuestionFeedback as fe}from"./services/question-feedback.js?v=7388f68cc0f433fd";import{getSubjectRoadmap as we}from"./data/subject-roadmaps.js?v=7388f68cc0f433fd";import{watchPreviewUpdates as he}from"./services/preview-updates.js?v=7388f68cc0f433fd";const R="مساحة التعلّم",be=!1,u=X(document);u.accountMode==="http"&&await J();const ve=se(void 0,{persistent:u.accountMode==="fixture"}),Se=()=>({getItem:e=>window.localStorage.getItem(e)}),f=K({storage:{getItem:e=>window.localStorage.getItem(e),setItem:(e,t)=>window.localStorage.setItem(e,t)},getAccountType:()=>s.getAccountType(),apiBase:u.accountMode==="http"?"/api/progress":null}),M=(e,t)=>a.reportRecoveryWarning(t,e),Le=le({storage:{getItem:e=>window.sessionStorage.getItem(e),setItem:(e,t)=>window.sessionStorage.setItem(e,t)},onError:M}),E=de({legacyStorage:Se(),onError:M}),B=u.accountMode==="http"?z({local:E,onError:M,onResources:f.confirm}):null,h=e=>e==="guest"?Le:e.startsWith("account:")&&B?B:E,a=ue({resourceStore:f,adapter:{isRemoteOwner:e=>e.startsWith("account:")&&!!B,read:e=>h(e).read(e),readCached:e=>h(e).readCached?.(e)||h(e).read(e),sync:async e=>{await h(e).sync?.(e)},update:e=>h(e.value.ownerId).update(e),close:()=>E.close()}}),s=re({progressStore:a,storage:ve,apiBase:u.apiBase});await s.restoreSession(),await a.ready(s.getLearnerProgressOwner());let Q=s.getLearnerProgressOwner();s.subscribe(()=>{const e=s.getLearnerProgressOwner();e!==Q&&(Q=e,a.ready(e))});const b=()=>{document.hidden||a.retry(s.getLearnerProgressOwner())};document.addEventListener("visibilitychange",b),window.addEventListener("online",b),window.addEventListener("pageshow",b),window.addEventListener("focus",b),setInterval(b,3e4);const o=me();u.accountMode==="fixture"&&he({canReload:()=>!document.body.matches(".ui-lab-open,.product-flow-active")&&!o.main.matches(".lesson-mode,.coming-mode")&&a.getSaveState(s.getLearnerProgressOwner())==="saved"});const D=te(o.comingSoonToast);ge({store:a,service:s});const v=Z();let O=0,S=!1,l=null;A(o.courseUnits),ae({container:o.courseUnits,service:s,progressStore:a,resourceStore:f,onSuperTrial:()=>{const e=v.begin(),t=$({resourceStore:f,ownerId:s.getLearnerProgressOwner(),signal:e.signal,autoShowEmpty:!1,returnFocus:o.navigationItems[0]});e.add(t.destroy),t.showOffer()}});const W=ne({resourceStore:f,guest:o.authGuest,member:o.authMember,label:o.accountLabel,flowButtons:o.authFlowButtons,signOutButton:o.authSignOut,courseContainer:o.courseUnits,service:s,progressStore:a,onFlow:e=>d(e)});function j(e,t){if(t==="none")return!1;const r=H(window.location.href,e);if(r.href===window.location.href)return!1;const n={...window.history.state||{},fullStackQuest:!0},c=w(window.location.search);return delete n.subjectMapBehind,t!=="replace"&&e.lesson&&c.subject===e.subject&&!c.lesson&&(n.subjectMapBehind=e.subject),window.history[t==="replace"?"replaceState":"pushState"](n,"",r),!0}const L=fe({service:s,progressStore:a,apiBase:u.apiBase?.replace(/\/auth$/,""),storage:{getItem:e=>window.localStorage.getItem(e),setItem:(e,t)=>window.localStorage.setItem(e,t)}}),P=be?pe({service:s,storage:{getItem:e=>window.localStorage.getItem(e),setItem:(e,t)=>window.localStorage.setItem(e,t)},onHome:()=>F({historyMode:"replace",startTour:!0}),onStartLesson:()=>{const e=we("ict")?.units.flatMap(t=>t.lessons).find(t=>!t.hidden&&!t.optional&&t.parts?.length);e&&i.openSubject("ict",null,{lessonId:e.id,partId:e.parts[0].id,historyMode:"replace"})},onSkip:()=>{l?F({historyMode:"replace"}):w(window.location.search).lesson&&I()},onComplete:()=>{l=null}}):null,U=ce({container:o.visitorFlowRoot,service:s,onNavigate(e,t){d(e,t)},onHome(e){F(e)},onAccountCreated:P?e=>P.start(e):void 0});function F({historyMode:e="push",startTour:t=!1}={}){if(l&&!t&&s.getAccountType()!=="guest"){const n=l;l=null,j(n,"replace"),I();return}W.update();const r=o.navigationItems.find(n=>n.dataset.page==="learn");m(r,{historyMode:e})}function d(e,{historyMode:t="push",focus:r=!0}={}){v.begin(),i.reset(),o.lessonContent.replaceChildren(),o.lessonContent.removeAttribute("aria-busy"),y(null),o.main.classList.remove("coming-mode","lesson-mode"),o.comingSoon.classList.remove("is-visible"),o.lessonView.classList.remove("is-visible"),j({flow:e},t),U.show(e,{focus:r}),window.scrollTo({top:0,behavior:x()?"auto":"smooth"})}function ye({animate:e=!0}={}){o.courseUnits.dataset.page="learn",U.hide(),o.main.classList.remove("coming-mode"),o.main.classList.add("lesson-mode"),o.comingSoon.classList.remove("is-visible"),o.lessonView.classList.add("is-visible"),T(o.lessonView,{animate:e})}function k(e=null){const t=e==="subject";o.lessonShell.classList.toggle("lesson-shell--subject",t),t||delete o.lessonShell.dataset.subject}const i=ie({resourceStore:f,elements:o,productService:s,progressStore:a,appTitle:R,onboardingTour:P,questionFeedback:L,viewLifecycle:v,setViewMode:k,showContentView:ye,writeRoute:j,onRequireAccount:e=>d(e),onComingSoon:()=>D.show(),onExitRatedQuestions:()=>m(g("rated-questions"),{historyMode:"replace"}),onReturnToRoadmap({subjectId:e,lessonId:t,partId:r,explainAccess:n}){return S?!0:window.history.state?.subjectMapBehind!==e?!1:(S=n?{subjectId:e,lessonId:t,partId:r}:!0,window.history.back(),!0)}});function y(e){o.navigationItems.forEach(t=>{const r=t===e;t.classList.toggle("active",r),r?t.setAttribute("aria-current","page"):t.removeAttribute("aria-current")})}function g(e){return o.navigationItems.find(t=>t.dataset.page===e)||{dataset:{page:e}}}function m(e,{historyMode:t="push",restorePath:r=!1}={}){if(s.getAccountType()==="guest"){d("entry",{historyMode:"replace"});return}const n=e.dataset.page;if(!oe(n)&&t!=="none"){D.show();return}W.update(),U.hide();const c=v.begin();o.lessonContent.replaceChildren(),o.lessonContent.removeAttribute("aria-busy");const C=n==="learn",p=C||n==="rated-questions";if(o.courseUnits.dataset.page=n,p&&(n==="rated-questions"||o.courseUnits.querySelector(".subject-map")?.dataset.catalog!==n)&&A(o.courseUnits,{ratedQuestions:n==="rated-questions",snapshot:s.getLearnerHomeSnapshot(),questionFeedback:L}),n==="rated-questions"){const G=s.getLearnerProgressOwner(),q=()=>{c.isCurrent()&&G===s.getLearnerProgressOwner()&&A(o.courseUnits,{ratedQuestions:!0,questionFeedback:L})},V=()=>{L.ready({signal:c.signal}).then(q)};c.add(L.subscribe(q)),c.add(a.subscribe(V)),V()}const _=!o.main.classList.contains("lesson-mode")&&!o.main.classList.contains("coming-mode");t==="push"&&!C&&_&&(O=window.scrollY),i.reset(),document.title=R;const Y=j({page:n},t);y(e),o.main.classList.toggle("coming-mode",!p),o.main.classList.remove("lesson-mode"),o.comingSoon.classList.toggle("is-visible",!p),o.lessonView.classList.remove("is-visible"),k(),T(p?o.courseUnits:o.comingSoon),p&&c.add(ee(o.courseUnits,{signal:c.signal})),p&&(r||t==="push"&&Y)&&window.requestAnimationFrame(()=>window.scrollTo({top:C?O:0,behavior:"auto"}))}function Ie(){const e=i.getState();if(i.returnToRoadmap())return;v.begin(),o.main.classList.remove("lesson-mode"),o.lessonView.classList.remove("is-visible"),k(),o.lessonContent.replaceChildren(),o.lessonContent.removeAttribute("aria-busy"),i.reset(),document.title=R,m(g(e.rating?"rated-questions":"learn"),{historyMode:"replace"}),T(o.courseUnits);const t=e.subjectId?e.pathScrollPosition:O;window.scrollTo({top:t,behavior:x()?"auto":"smooth"});const r=e.opener||o.navigationItems[0];window.requestAnimationFrame(()=>r?.focus({preventScroll:!0}))}function I({restorePath:e=!1}={}){const t=typeof S=="object"?S:null;S=!1;const r=w(window.location.search);if(u.accountMode==="fixture"&&r.flow==="entry"&&s.getAccountType()!=="guest"){m(g("learn"),{historyMode:"replace"});return}if(r.flow){d(r.flow,{historyMode:"none",focus:!0});return}if(s.getAccountType()==="guest"){l=r,d("entry",{historyMode:"none",focus:!0});return}if(r.page!=="learn"&&!r.subject){m(g(r.page),{historyMode:"none",restorePath:e});return}if(r.subject){y(g(r.page)),i.openSubject(r.subject,null,{historyMode:"none",focusContent:!0,lessonId:r.lesson,partId:r.part,reviewStepId:r.question,rating:r.rating||null,restoreMap:e&&!r.lesson&&i.getState().subjectId===r.subject,explainPart:t?.subjectId===r.subject?t:null});return}m(o.navigationItems[0],{historyMode:"none",restorePath:e})}o.lessonBackButton.addEventListener("click",Ie),o.navigationItems.forEach(e=>e.addEventListener("click",()=>m(e))),o.courseUnits.addEventListener("click",e=>{if(!(e.target instanceof Element))return;const t=e.target.closest("[data-rated-subject]");if(t instanceof HTMLButtonElement){y(g("rated-questions")),i.openFromCard(t.dataset.ratedSubject,t,{rating:t.dataset.rating||"easy"});return}const r=e.target.closest("[data-subject]");r instanceof HTMLButtonElement&&!r.disabled&&(y(g("learn")),i.openFromCard(r.dataset.subject,r))}),window.addEventListener("popstate",()=>I({restorePath:!0}));let N=s.getLearnerProgressOwner();s.subscribe(()=>{const e=s.getLearnerProgressOwner();if(e!==N){if(N=e,s.getAccountType()==="guest"){l=null,d("entry",{historyMode:"replace"});return}w(window.location.search).subject&&I()}}),window.history.replaceState({...window.history.state||{},fullStackQuest:!0},"",H(window.location.href,w(window.location.search))),I(),P?.resume();
+import { createLearnerResources } from "./services/learner-resources.js?v=acff67f262f3c107";
+import { mountHeartDepletion } from "./ui/heart-depletion.js?v=acff67f262f3c107";
+import { createServerProgressAdapter } from "./services/server-progress.js?v=acff67f262f3c107";
+import { applyServerDataReset } from "./services/server-data-reset.js?v=acff67f262f3c107";
+import { readAppConfig } from "./app/app-config.js?v=acff67f262f3c107";
+import { createViewLifecycle } from "./app/view-lifecycle.js?v=acff67f262f3c107";
+import { animateView } from "./ui/view-motion.js?v=acff67f262f3c107";
+import { revealWhenReady } from "./ui/media-ready.js?v=acff67f262f3c107";
+import { mountComingSoonToast } from "./ui/coming-soon.js?v=acff67f262f3c107";
+import { createRouteUrl, isUnlockedPage, readRoute } from "./app/route.js?v=acff67f262f3c107";
+import { prefersReducedMotion } from "./lib/dom.js?v=acff67f262f3c107";
+import { createLearnerSession } from "./services/learner-session.js?v=acff67f262f3c107";
+import { getBrowserLearnerStorage } from "./services/learner-storage.js?v=acff67f262f3c107";
+import { renderCourseMap, updateRatedSubjectCards } from "./ui/course-map.js?v=acff67f262f3c107";
+import { createAuthHeader } from "./ui/auth-header.js?v=acff67f262f3c107";
+import { mountLearnerDashboard } from "./ui/learner-dashboard.js?v=acff67f262f3c107";
+import { createSubjectLearningController } from "./ui/subject-learning.js?v=acff67f262f3c107";
+import { createVisitorFlow } from "./ui/visitor-flow.js?v=acff67f262f3c107";
+import { createSubjectProgressStore } from "./services/subject-progress-store.js?v=acff67f262f3c107";
+import { createSessionProgressAdapter } from "./services/session-progress.js?v=acff67f262f3c107";
+import { createIndexedDbProgressAdapter } from "./services/indexeddb-progress.js?v=acff67f262f3c107";
+import { mountProgressFeedback } from "./ui/progress-feedback.js?v=acff67f262f3c107";
+import { mountAppShell } from "./ui/app-shell.js?v=acff67f262f3c107";
+import { createRockyTour } from "./ui/rocky-tour.js?v=acff67f262f3c107";
+import { createQuestionFeedback } from "./services/question-feedback.js?v=acff67f262f3c107";
+import { getSubjectRoadmap } from "./data/subject-roadmaps.js?v=acff67f262f3c107";
+import { watchPreviewUpdates } from "./services/preview-updates.js?v=acff67f262f3c107";
+
+const APP_TITLE = "مساحة التعلّم";
+const ROCKY_TOUR_ENABLED = false;
+const appConfig = readAppConfig(document);
+if (appConfig.accountMode === "http") await applyServerDataReset();
+const learnerStorage = getBrowserLearnerStorage(undefined, { persistent:appConfig.accountMode === "fixture" });
+const browserLocalStorage = () => ({ getItem:(key) => window.localStorage.getItem(key) });
+const resourceStore = createLearnerResources({
+  storage:{ getItem:key => window.localStorage.getItem(key), setItem:(key,value) => window.localStorage.setItem(key,value) },
+  getAccountType:() => productService.getAccountType(),
+  apiBase:appConfig.accountMode === "http" ? "/api/progress" : null,
+});
+const reportProgressRecovery = (error, ownerId) => progressStore.reportRecoveryWarning(ownerId, error);
+const guestProgress = createSessionProgressAdapter({
+  // Read lazily so a denied storage getter reaches the shared save feedback.
+  storage:{
+    getItem:(key) => window.sessionStorage.getItem(key),
+    setItem:(key, value) => window.sessionStorage.setItem(key, value),
+  },
+  onError:reportProgressRecovery,
+});
+const memberProgress = createIndexedDbProgressAdapter({ legacyStorage:browserLocalStorage(), onError:reportProgressRecovery });
+const serverProgress = appConfig.accountMode === "http" ? createServerProgressAdapter({local:memberProgress, onError:reportProgressRecovery, onResources:resourceStore.confirm}) : null;
+const progressAdapterFor = (owner) => owner === "guest" ? guestProgress : owner.startsWith("account:") && serverProgress ? serverProgress : memberProgress;
+const progressStore = createSubjectProgressStore({ resourceStore, adapter:{
+  isRemoteOwner:(owner) => owner.startsWith("account:") && Boolean(serverProgress),
+  read:(owner) => progressAdapterFor(owner).read(owner),
+  readCached:(owner) => progressAdapterFor(owner).readCached?.(owner) || progressAdapterFor(owner).read(owner),
+  sync:async (owner) => { await progressAdapterFor(owner).sync?.(owner); },
+  update:(update) => progressAdapterFor(update.value.ownerId).update(update),
+  close:() => memberProgress.close(),
+} });
+const productService = createLearnerSession({
+  progressStore,
+  storage: learnerStorage,
+  apiBase: appConfig.apiBase,
+});
+await productService.restoreSession();
+await progressStore.ready(productService.getLearnerProgressOwner());
+let progressOwner = productService.getLearnerProgressOwner();
+productService.subscribe(() => {
+  const owner = productService.getLearnerProgressOwner();
+  if (owner !== progressOwner) { progressOwner = owner; void progressStore.ready(owner); }
+});
+const refreshProgress = () => {
+  if (!document.hidden) void progressStore.retry(productService.getLearnerProgressOwner());
+};
+document.addEventListener("visibilitychange", refreshProgress);
+window.addEventListener("online", refreshProgress);
+window.addEventListener("pageshow", refreshProgress);
+window.addEventListener("focus", refreshProgress);
+setInterval(refreshProgress, 30000);
+const elements = mountAppShell();
+if (appConfig.accountMode === "fixture") watchPreviewUpdates({
+  canReload:() => !document.body.matches(".ui-lab-open,.product-flow-active")
+    && !elements.main.matches(".lesson-mode,.coming-mode")
+    && progressStore.getSaveState(productService.getLearnerProgressOwner()) === "saved",
+});
+const comingSoonToast = mountComingSoonToast(elements.comingSoonToast);
+mountProgressFeedback({ store:progressStore, service:productService });
+const viewLifecycle = createViewLifecycle();
+let pathScrollPosition = 0;
+let pendingMapReturn = false;
+let pendingAccountRoute = null;
+renderCourseMap(elements.courseUnits);
+mountLearnerDashboard({
+  container: elements.courseUnits,
+  service: productService,
+  progressStore,
+  resourceStore,
+  onSuperTrial:() => {
+    const operation = viewLifecycle.begin();
+    const offer = mountHeartDepletion({ resourceStore, ownerId:productService.getLearnerProgressOwner(),
+      signal:operation.signal, autoShowEmpty:false, returnFocus:elements.navigationItems[0] });
+    operation.add(offer.destroy);
+    offer.showOffer();
+  },
+});
+const authHeader = createAuthHeader({
+  resourceStore,
+  guest: elements.authGuest,
+  member: elements.authMember,
+  label: elements.accountLabel,
+  flowButtons: elements.authFlowButtons,
+  signOutButton: elements.authSignOut,
+  courseContainer: elements.courseUnits,
+  service: productService,
+  progressStore,
+  onFlow: (flow) => openVisitorFlow(flow),
+});
+
+function writeRoute(route, historyMode) {
+  if (historyMode === "none") return false;
+  const nextUrl = createRouteUrl(window.location.href, route);
+  if (nextUrl.href === window.location.href) return false;
+  const state = { ...(window.history.state || {}), fullStackQuest: true };
+  const previous = readRoute(window.location.search);
+  delete state.subjectMapBehind;
+  if (historyMode !== "replace" && route.lesson && previous.subject === route.subject && !previous.lesson)
+    state.subjectMapBehind = route.subject;
+  window.history[historyMode === "replace" ? "replaceState" : "pushState"](
+    state,
+    "",
+    nextUrl,
+  );
+  return true;
+}
+
+const questionFeedback = createQuestionFeedback({ service:productService, progressStore,
+  apiBase:appConfig.apiBase?.replace(/\/auth$/, ""),
+  storage:{ getItem:key => window.localStorage.getItem(key),setItem:(key,value) => window.localStorage.setItem(key,value) },
+});
+const rockyTour = ROCKY_TOUR_ENABLED ? createRockyTour({ service:productService,
+  storage:{ getItem:key => window.localStorage.getItem(key),setItem:(key,value) => window.localStorage.setItem(key,value) },
+  onHome:() => openLearnHome({ historyMode:"replace", startTour:true }),
+  onStartLesson:() => {
+    const first = getSubjectRoadmap("ict")?.units.flatMap(unit => unit.lessons).find(lesson => !lesson.hidden && !lesson.optional && lesson.parts?.length);
+    if (first) subjectLearning.openSubject("ict",null,{ lessonId:first.id,partId:first.parts[0].id,historyMode:"replace" });
+  },
+  onSkip:() => {
+    if (pendingAccountRoute) openLearnHome({ historyMode:"replace" });
+    else if (readRoute(window.location.search).lesson) applyCurrentRoute();
+  },
+  onComplete:() => { pendingAccountRoute = null; },
+}) : null;
+const visitorFlowController = createVisitorFlow({
+  container: elements.visitorFlowRoot,
+  service: productService,
+  onNavigate(flow, options) {
+    openVisitorFlow(flow, options);
+  },
+  onHome(options) {
+    openLearnHome(options);
+  },
+  onAccountCreated:rockyTour ? mascot => rockyTour.start(mascot) : undefined,
+});
+
+function openLearnHome({ historyMode = "push", startTour = false } = {}) {
+  if (pendingAccountRoute && !startTour && productService.getAccountType() !== "guest") {
+    const route = pendingAccountRoute;
+    pendingAccountRoute = null;
+    writeRoute(route, "replace");
+    applyCurrentRoute();
+    return;
+  }
+  authHeader.update();
+  const learnItem = elements.navigationItems.find(
+    (item) => item.dataset.page === "learn",
+  );
+  selectPage(learnItem, { historyMode });
+}
+
+function openVisitorFlow(flow, { historyMode = "push", focus = true } = {}) {
+  viewLifecycle.begin();
+  subjectLearning.reset();
+  elements.lessonContent.replaceChildren();
+  elements.lessonContent.removeAttribute("aria-busy");
+  updateNavigation(null);
+  elements.main.classList.remove("coming-mode", "lesson-mode");
+  elements.comingSoon.classList.remove("is-visible");
+  elements.lessonView.classList.remove("is-visible");
+  writeRoute({ flow }, historyMode);
+  visitorFlowController.show(flow, { focus });
+  window.scrollTo({
+    top: 0,
+    behavior: prefersReducedMotion() ? "auto" : "smooth",
+  });
+}
+
+function showContentView({ animate = true } = {}) {
+  elements.courseUnits.dataset.page = "learn";
+  visitorFlowController.hide();
+  elements.main.classList.remove("coming-mode");
+  elements.main.classList.add("lesson-mode");
+  elements.comingSoon.classList.remove("is-visible");
+  elements.lessonView.classList.add("is-visible");
+  animateView(elements.lessonView, { animate });
+}
+
+function setViewMode(view = null) {
+  const isSubject = view === "subject";
+  elements.lessonShell.classList.toggle("lesson-shell--subject", isSubject);
+  if (!isSubject) delete elements.lessonShell.dataset.subject;
+}
+
+const subjectLearning = createSubjectLearningController({
+  resourceStore,
+  elements,
+  productService,
+  progressStore,
+  appTitle: APP_TITLE,
+  onboardingTour:rockyTour,
+  questionFeedback,
+  viewLifecycle,
+  setViewMode,
+  showContentView,
+  writeRoute,
+  onRequireAccount: (flow) => openVisitorFlow(flow),
+  onComingSoon: () => comingSoonToast.show(),
+  onExitRatedQuestions:() => selectPage(getPageTarget("rated-questions"), { historyMode:"replace" }),
+  onReturnToRoadmap({ subjectId, lessonId, partId, explainAccess }) {
+    if (pendingMapReturn) return true;
+    if (window.history.state?.subjectMapBehind !== subjectId) return false;
+    pendingMapReturn = explainAccess ? { subjectId, lessonId, partId } : true;
+    window.history.back();
+    return true;
+  },
+});
+
+function updateNavigation(selectedItem) {
+  elements.navigationItems.forEach((item) => {
+    const isActive = item === selectedItem;
+    item.classList.toggle("active", isActive);
+    if (isActive) item.setAttribute("aria-current", "page");
+    else item.removeAttribute("aria-current");
+  });
+}
+
+function getPageTarget(page) {
+  return (
+    elements.navigationItems.find((item) => item.dataset.page === page) || {
+      dataset: { page },
+    }
+  );
+}
+
+function selectPage(
+  selectedItem,
+  { historyMode = "push", restorePath = false } = {},
+) {
+  if (productService.getAccountType() === "guest") {
+    openVisitorFlow("entry", { historyMode:"replace" });
+    return;
+  }
+  const page = selectedItem.dataset.page;
+  // Preserve existing More bookmarks while unfinished navigation shows feedback.
+  if (!isUnlockedPage(page) && historyMode !== "none") {
+    comingSoonToast.show();
+    return;
+  }
+  authHeader.update();
+  visitorFlowController.hide();
+  const operation = viewLifecycle.begin();
+  elements.lessonContent.replaceChildren();
+  elements.lessonContent.removeAttribute("aria-busy");
+  const isLearnPage = page === "learn";
+  const isSubjectsPage = isLearnPage || page === "rated-questions";
+  elements.courseUnits.dataset.page = page;
+  if (isSubjectsPage && (page === "rated-questions" || elements.courseUnits.querySelector(".subject-map")?.dataset.catalog !== page)) {
+    renderCourseMap(elements.courseUnits, {
+      ratedQuestions:page === "rated-questions",
+      snapshot:productService.getLearnerHomeSnapshot(),
+      questionFeedback,
+    });
+  }
+  if (page === "rated-questions") {
+    const owner = productService.getLearnerProgressOwner();
+    const updateRatings = () => {
+      if (operation.isCurrent() && owner === productService.getLearnerProgressOwner())
+        updateRatedSubjectCards(elements.courseUnits,questionFeedback);
+    };
+    const refreshRatings = () => { void questionFeedback.ready({signal:operation.signal}).then(updateRatings); };
+    operation.add(questionFeedback.subscribe(updateRatings));
+    refreshRatings();
+  }
+  const isCourseVisible = !elements.main.classList.contains("lesson-mode") &&
+    !elements.main.classList.contains("coming-mode");
+  if (historyMode === "push" && !isLearnPage && isCourseVisible)
+    pathScrollPosition = window.scrollY;
+  subjectLearning.reset();
+  document.title = APP_TITLE;
+  const routeChanged = writeRoute({ page }, historyMode);
+  updateNavigation(selectedItem);
+  elements.main.classList.toggle("coming-mode", !isSubjectsPage);
+  elements.main.classList.remove("lesson-mode");
+  elements.comingSoon.classList.toggle("is-visible", !isSubjectsPage);
+  elements.lessonView.classList.remove("is-visible");
+  setViewMode();
+  animateView(isSubjectsPage ? elements.courseUnits : elements.comingSoon);
+  if (isSubjectsPage) operation.add(revealWhenReady(elements.courseUnits, { signal:operation.signal }));
+  if (
+    isSubjectsPage &&
+    (restorePath || (historyMode === "push" && routeChanged))
+  ) {
+    window.requestAnimationFrame(() =>
+      window.scrollTo({ top: isLearnPage ? pathScrollPosition : 0, behavior: "auto" }),
+    );
+  }
+}
+
+function closeLesson() {
+  const subjectState = subjectLearning.getState();
+  if (subjectLearning.returnToRoadmap()) return;
+  viewLifecycle.begin();
+  elements.main.classList.remove("lesson-mode");
+  elements.lessonView.classList.remove("is-visible");
+  setViewMode();
+  elements.lessonContent.replaceChildren();
+  elements.lessonContent.removeAttribute("aria-busy");
+  subjectLearning.reset();
+  document.title = APP_TITLE;
+  selectPage(getPageTarget(subjectState.rating ? "rated-questions" : "learn"), { historyMode:"replace" });
+  animateView(elements.courseUnits);
+  const returnScrollPosition = subjectState.subjectId
+    ? subjectState.pathScrollPosition
+    : pathScrollPosition;
+  window.scrollTo({
+    top: returnScrollPosition,
+    behavior: prefersReducedMotion() ? "auto" : "smooth",
+  });
+  const returnTarget =
+    subjectState.opener || elements.navigationItems[0];
+  window.requestAnimationFrame(() =>
+    returnTarget?.focus({ preventScroll: true }),
+  );
+}
+function applyCurrentRoute({ restorePath = false } = {}) {
+  const mapExplanation = typeof pendingMapReturn === "object" ? pendingMapReturn : null;
+  pendingMapReturn = false;
+  const route = readRoute(window.location.search);
+  if (appConfig.accountMode === "fixture" && route.flow === "entry" && productService.getAccountType() !== "guest") {
+    selectPage(getPageTarget("learn"), { historyMode:"replace" });
+    return;
+  }
+  if (route.flow) {
+    openVisitorFlow(route.flow, { historyMode: "none", focus: true });
+    return;
+  }
+  if (productService.getAccountType() === "guest") {
+    pendingAccountRoute = route;
+    openVisitorFlow("entry", { historyMode:"none", focus:true });
+    return;
+  }
+  if (route.page !== "learn" && !route.subject) {
+    selectPage(getPageTarget(route.page), { historyMode: "none", restorePath });
+    return;
+  }
+  if (route.subject) {
+    updateNavigation(getPageTarget(route.page));
+    subjectLearning.openSubject(route.subject, null, {
+      historyMode: "none",
+      focusContent: true,
+      lessonId:route.lesson,
+      partId:route.part,
+      reviewStepId:route.question,
+      rating:route.rating || null,
+      restoreMap:restorePath && !route.lesson && subjectLearning.getState().subjectId === route.subject,
+      explainPart:mapExplanation?.subjectId === route.subject ? mapExplanation : null,
+    });
+    return;
+  }
+  selectPage(elements.navigationItems[0], { historyMode: "none", restorePath });
+}
+
+elements.lessonBackButton.addEventListener("click", closeLesson);
+elements.navigationItems.forEach((item) =>
+  item.addEventListener("click", () => selectPage(item)),
+);
+elements.courseUnits.addEventListener("click", (event) => {
+  if (!(event.target instanceof Element)) return;
+  const ratedTrigger = event.target.closest("[data-rated-subject]");
+  if (ratedTrigger instanceof HTMLButtonElement) {
+    updateNavigation(getPageTarget("rated-questions"));
+    subjectLearning.openFromCard(ratedTrigger.dataset.ratedSubject,ratedTrigger,{rating:ratedTrigger.dataset.rating || "easy"});
+    return;
+  }
+  const subjectTrigger = event.target.closest("[data-subject]");
+  if (subjectTrigger instanceof HTMLButtonElement && !subjectTrigger.disabled) {
+    updateNavigation(getPageTarget("learn"));
+    subjectLearning.openFromCard(
+      subjectTrigger.dataset.subject,
+      subjectTrigger,
+    );
+  }
+});
+
+window.addEventListener("popstate", () =>
+  applyCurrentRoute({ restorePath: true }),
+);
+let subjectOwner = productService.getLearnerProgressOwner();
+productService.subscribe(() => {
+  const owner = productService.getLearnerProgressOwner();
+  if (owner === subjectOwner) return;
+  subjectOwner = owner;
+  if (productService.getAccountType() === "guest") {
+    pendingAccountRoute = null;
+    openVisitorFlow("entry", { historyMode:"replace" });
+    return;
+  }
+  // A part link always restores the current account's own progress and gates.
+  if (readRoute(window.location.search).subject) applyCurrentRoute();
+});
+window.history.replaceState(
+  { ...(window.history.state || {}), fullStackQuest: true },
+  "",
+  createRouteUrl(window.location.href, readRoute(window.location.search)),
+);
+applyCurrentRoute();
+rockyTour?.resume();

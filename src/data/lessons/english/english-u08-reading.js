@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: eng-2023-p080-qtext1-a-1
 title: Unit 8 · PDF 80 · text1-a-1
 question: Why did people encourage Mustafa to study English at university?
@@ -1520,4 +1522,6 @@ c. .............. You need a support system while you are starting a business an
 d. .............. Save up if you have to. approach potential investors and lenders. Figure your financial fall back plan. Don’t expect to start a business and then walk into a bank and get the amount you need.
 
 > Related unseen practice for a retained topic; not a prescribed textbook passage.
-:::`;export default e("english-u08-reading",source);
+:::`;
+
+export default createEnglishLesson("english-u08-reading", source);

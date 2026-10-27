@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: chemistry-gaza-p069-q01-a
 title: الوحدة ٣ · الدرس ٧ · ص ٦٧ · س ٠١-a
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤
@@ -1173,4 +1175,6 @@ Ag⁺ يكتسب الإلكترونات ويختزل؛ لذلك هو العام�
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
-`;export default m("u03-l07-standard-electrode-potential",source);
+`;
+
+export default createChemistryLesson("u03-l07-standard-electrode-potential", source);

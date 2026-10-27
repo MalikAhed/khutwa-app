@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: eng-2023-p121-ql1-1
 title: Unit 11 · PDF 121 · L1-1
 kicker: 12-2019
@@ -861,4 +863,6 @@ I must have been asleep.
 
 **المصدر:** الصفحات 87–88، 98 من الكتاب.
 
-:::`;export default e("english-u11-grammar",source);
+:::`;
+
+export default createEnglishLesson("english-u11-grammar", source);

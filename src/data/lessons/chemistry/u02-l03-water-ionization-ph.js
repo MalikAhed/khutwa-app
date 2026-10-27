@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: chemistry-gaza-p046-q07
 title: الوحدة ٢ · الدرس ٣ · ص ٤٤ · س ١ · ٧
 kicker: أسئلة الوحدة — الرزمة التعليمية ٢٠٢٤
@@ -1136,4 +1138,6 @@ solution:
 
 الإجابتان: pH(A)=1، و pH(D)=7.
 :::
-`;export default m("u02-l03-water-ionization-ph",source);
+`;
+
+export default createChemistryLesson("u02-l03-water-ionization-ph", source);

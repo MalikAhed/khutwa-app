@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: chemistry-gaza-p046-q04
 title: الوحدة ٢ · الدرس ٥ · ص ٤٤ · س ١ · ٤
 kicker: أسئلة الوحدة — الرزمة التعليمية ٢٠٢٤
@@ -1078,4 +1080,6 @@ solution:
 
 هذا هو الترتيب التصاعدي المطلوب.
 :::
-`;export default m("u02-l05-salt-solutions",source);
+`;
+
+export default createChemistryLesson("u02-l05-salt-solutions", source);

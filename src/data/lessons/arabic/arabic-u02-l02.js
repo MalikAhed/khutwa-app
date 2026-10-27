@@ -1,4 +1,6 @@
-import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createArabicLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: arabic-p031-mcq-q01
 title: رسالة إلى صديق قديم، السؤال 1، ص 30، 2019
 kicker: امتحانات الثانوية العامة، 2019
@@ -874,4 +876,6 @@ solution:
 
 **المصدر:** الصفحات 17، 18 من الكتاب.
 
-:::`;export default e("arabic-u02-l02",source);
+:::`;
+
+export default createArabicLesson("arabic-u02-l02", source);

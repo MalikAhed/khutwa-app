@@ -1,32 +1,201 @@
-import{replaceQuestionShell as z}from"./question-shell.js?v=7388f68cc0f433fd";import{escapeHtml as v,prefersReducedMotion as B}from"../../lib/dom.js?v=7388f68cc0f433fd";import{renderMarkdownDocument as P,renderLessonInline as W,mountMarkdownFeatures as j}from"../../markdown/renderer.js?v=7388f68cc0f433fd";import{renderTemplateShell as D,renderTemplateFooter as N,renderTemplateScrollIndicators as Q,mountTemplateScrollIndicator as O}from"../template-shell.js?v=7388f68cc0f433fd";import{mountQuestionRating as U,renderQuestionRatingControls as V}from"../question-rating.js?v=7388f68cc0f433fd";import{highlightEnglishText as R}from"./english-text.js?v=7388f68cc0f433fd";import{mountSummaryScans as G}from"./summary-scans.js?v=7388f68cc0f433fd";import{renderQuestionSourceTag as J,spaceWorkedEquations as Z}from"./shared.js?v=7388f68cc0f433fd";function _(s){let a=s.trim();if(/(?:^|\s)1[.)]\s+/.test(a)&&/(?:^|\s)2[.)]\s+/.test(a)){a=a.replace(/:\s+(?=1[.)]\s+)/,`:
+import { replaceQuestionShell } from "./question-shell.js?v=acff67f262f3c107";
+import { escapeHtml, prefersReducedMotion } from "../../lib/dom.js?v=acff67f262f3c107";
+import { renderMarkdownDocument, renderLessonInline, mountMarkdownFeatures } from "../../markdown/renderer.js?v=acff67f262f3c107";
+import { renderTemplateShell, renderTemplateFooter, renderTemplateScrollIndicators, mountTemplateScrollIndicator } from "../template-shell.js?v=acff67f262f3c107";
+import { mountQuestionRating, renderQuestionRatingControls } from "../question-rating.js?v=acff67f262f3c107";
+import { highlightEnglishText } from "./english-text.js?v=acff67f262f3c107";
+import { mountSummaryScans } from "./summary-scans.js?v=acff67f262f3c107";
+import { renderQuestionSourceTag, spaceWorkedEquations } from "./shared.js?v=acff67f262f3c107";
 
-`),a=a.replace(/([^\n])\n(?=1[.)]\s+)/,`$1
+function layoutWrittenPrompt(source) {
+  let text = source.trim();
+  if (/(?:^|\s)1[.)]\s+/.test(text) && /(?:^|\s)2[.)]\s+/.test(text)) {
+    text = text.replace(/:\s+(?=1[.)]\s+)/, ":\n\n");
+    text = text.replace(/([^\n])\n(?=1[.)]\s+)/, "$1\n\n");
+    for (let number = 2; number <= 20; number += 1) {
+      text = text.replace(new RegExp(`[ \\t]+(?=${number}[.)][ \\t]+)`, "g"), "\n");
+    }
+  }
+  const firstLine = text.indexOf("\n");
+  return firstLine < 0 ? [text, ""] : [text.slice(0, firstLine), text.slice(firstLine).trim()];
+}
 
-`);for(let h=2;h<=20;h+=1)a=a.replace(new RegExp(`[ \\t]+(?=${h}[.)][ \\t]+)`,"g"),`
-`)}const o=a.indexOf(`
-`);return o<0?[a,""]:[a.slice(0,o),a.slice(o).trim()]}export function renderExamQuestion(s,a,{locale:o="ar",onBack:h,onContinue:F,onReveal:Y,onAnswer:H,beforeAnswer:K,selfCheck:c=!0}={}){const L=new AbortController,{signal:l}=L,{content:k}=a,y=`exam-title-${a.id}`,$=`exam-solution-${a.id}`,n=o==="ar",[X,A]=_(k.body);s.dataset.lessonPresentation="flashcard",z(s,D({titleId:y,locale:o,showScrollIndicator:!1,content:`<article class="level-lesson-copy lesson-exam-question" data-exam-card aria-label="${n?"بطاقة مراجعة":"Review flashcard"}">
+/** Written answers are self-checked after revealing their solution. */
+export function renderExamQuestion(container, step, { locale = "ar", onBack, onContinue, onReveal, onAnswer, beforeAnswer, selfCheck = true } = {}) {
+  const controller = new AbortController();
+  const { signal } = controller;
+  const { content } = step;
+  const titleId = `exam-title-${step.id}`;
+  const solutionId = `exam-solution-${step.id}`;
+  const ar = locale === "ar";
+  const [question, body] = layoutWrittenPrompt(content.body);
+  container.dataset.lessonPresentation = "flashcard";
+  replaceQuestionShell(container,renderTemplateShell({
+    titleId, locale, showScrollIndicator:false,
+    content:`<article class="level-lesson-copy lesson-exam-question" data-exam-card aria-label="${ar ? "بطاقة مراجعة" : "Review flashcard"}">
       <div class="lesson-flashcard-rotor">
         <section class="lesson-flashcard-face" data-exam-front aria-hidden="false">
-          <div id="${v(y)}-scroll" class="lesson-flashcard-scroll" tabindex="0" role="region" aria-label="${n?"السؤال":"Question"}" aria-keyshortcuts="Enter Space" aria-description="${n?"اضغط Enter أو مسافة لقلب البطاقة":"Press Enter or Space to flip the card"}">
+          <div id="${escapeHtml(titleId)}-scroll" class="lesson-flashcard-scroll" tabindex="0" role="region" aria-label="${ar ? "السؤال" : "Question"}" aria-keyshortcuts="Enter Space" aria-description="${ar ? "اضغط Enter أو مسافة لقلب البطاقة" : "Press Enter or Space to flip the card"}">
             <div class="lesson-flashcard-copy">
-              ${J(k)}
-              <h1 id="${v(y)}">${W(X,{locale:o})}</h1>
-              ${A?`<div class="markdown-rendered lesson-exam-body">${P(A,{locale:o})}</div>`:""}
+              ${renderQuestionSourceTag(content)}
+              <h1 id="${escapeHtml(titleId)}">${renderLessonInline(question, { locale })}</h1>
+              ${body ? `<div class="markdown-rendered lesson-exam-body">${renderMarkdownDocument(body, { locale })}</div>` : ""}
             </div>
           </div>
-          ${Q({scrollId:`${y}-scroll`,locale:o,horizontal:!0})}
+          ${renderTemplateScrollIndicators({ scrollId:`${titleId}-scroll`, locale, horizontal:true })}
         </section>
-        <section id="${v($)}" class="lesson-flashcard-face lesson-flashcard-back" data-exam-solution hidden inert aria-hidden="true">
-          <div id="${v($)}-scroll" class="lesson-flashcard-scroll" tabindex="0" role="region" aria-label="${n?"الإجابة":"Answer"}" aria-keyshortcuts="Enter Space" aria-description="${n?"اضغط Enter أو مسافة لقلب البطاقة":"Press Enter or Space to flip the card"}">
+        <section id="${escapeHtml(solutionId)}" class="lesson-flashcard-face lesson-flashcard-back" data-exam-solution hidden inert aria-hidden="true">
+          <div id="${escapeHtml(solutionId)}-scroll" class="lesson-flashcard-scroll" tabindex="0" role="region" aria-label="${ar ? "الإجابة" : "Answer"}" aria-keyshortcuts="Enter Space" aria-description="${ar ? "اضغط Enter أو مسافة لقلب البطاقة" : "Press Enter or Space to flip the card"}">
             <div class="lesson-flashcard-copy">
-              <div class="markdown-rendered">${P(k.solution,{locale:o})}</div>
-              ${c?`<fieldset class="lesson-self-check" data-exam-self-check><legend>${n?"كيف كانت إجابتك؟":"How did you do?"}</legend><div>
-                <button class="system-action system-action--primary" type="button" data-exam-correct="true" aria-pressed="false">${n?"أجبتُ بشكل صحيح":"I got it right"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m8 14 4 4 8-8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-                <button class="system-action system-action--primary" type="button" data-exam-correct="false" aria-pressed="false">${n?"أجبتُ بشكل خاطئ":"I got it wrong"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m10 10 8 8m0-8-8 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button>
-              </div><p class="lesson-self-check-error" data-exam-choice-error role="alert" hidden></p></fieldset>`:""}
+              <div class="markdown-rendered">${renderMarkdownDocument(content.solution, { locale })}</div>
+              ${selfCheck ? `<fieldset class="lesson-self-check" data-exam-self-check><legend>${ar ? "كيف كانت إجابتك؟" : "How did you do?"}</legend><div>
+                <button class="system-action system-action--primary" type="button" data-exam-correct="true" aria-pressed="false">${ar ? "أجبتُ بشكل صحيح" : "I got it right"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m8 14 4 4 8-8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <button class="system-action system-action--primary" type="button" data-exam-correct="false" aria-pressed="false">${ar ? "أجبتُ بشكل خاطئ" : "I got it wrong"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m10 10 8 8m0-8-8 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button>
+              </div><p class="lesson-self-check-error" data-exam-choice-error role="alert" hidden></p></fieldset>` : ""}
             </div>
           </div>
-          ${Q({scrollId:`${$}-scroll`,locale:o,horizontal:!0})}
+          ${renderTemplateScrollIndicators({ scrollId:`${solutionId}-scroll`, locale, horizontal:true })}
         </section>
       </div>
-    </article>`,footer:N({locale:o,primaryLabel:n?"متابعة":"CONTINUE",primaryAttributes:{disabled:!c}})}));const i=s.querySelector("[data-exam-card]");n&&(R(i.querySelector("[data-exam-front] .lesson-flashcard-copy")),R(i.querySelector("[data-exam-solution] .lesson-flashcard-copy")));const x=i.querySelector(".lesson-flashcard-rotor"),g=i.querySelector("[data-exam-front]"),d=i.querySelector("[data-exam-solution]");Z(d);const u=s.querySelector("[data-template-primary]"),b=u.closest(".level-layout-actions");b.classList.add("lesson-exam-actions"),b.querySelector(".level-feedback").insertAdjacentHTML("afterend",V(o));const T=b.querySelector(".level-question-rating-panel");T.inert=!0,U(b,l);let r=!1,C=!1,E=null,q=!1,f=null,m=null,S=!1;i.querySelectorAll(".lesson-flashcard-scroll").forEach((e,t)=>{G(e,{titleId:`${y}-face-${t}`,locale:o,signal:l,exam:!0}),j(e,{locale:o,signal:l,scrollSurface:e}),O(e.parentElement,{signal:l,surface:e})});const M=()=>{g.hidden=r,d.hidden=!r},w=e=>{if(e===r||l.aborted)return;const t=getComputedStyle(x).transform;if(f?.cancel(),f=null,g.hidden=!1,d.hidden=!1,r=e,T.inert=!r,x.classList.toggle("is-flipped",r),g.inert=r,d.inert=!r,g.setAttribute("aria-hidden",String(r)),d.setAttribute("aria-hidden",String(!r)),r&&!c&&(u.disabled=!1),r&&!C&&(C=!0,Y?.()),(r?d:g).querySelector(".lesson-flashcard-scroll").focus({preventScroll:!0}),B()||!x.animate){M();return}const p=x.animate([{transform:t},{transform:r?"rotateY(180deg)":"rotateY(0deg)"}],{duration:420,easing:"cubic-bezier(.2,.7,.2,1)"});f=p,p.finished.then(()=>{l.aborted||f!==p||(f=null,M())}).catch(()=>{})};return s.querySelectorAll("[data-exam-correct]").forEach(e=>{e.addEventListener("click",()=>{!r||q||(s.querySelector("[data-heart-message]")?.remove(),s.querySelector("[data-exam-choice-error]").hidden=!0,E=e.dataset.examCorrect==="true",s.querySelectorAll("[data-exam-correct]").forEach(t=>{t.setAttribute("aria-pressed",String(t===e))}),u.disabled=!1)},{signal:l})}),i.addEventListener("keydown",e=>{e.defaultPrevented||e.repeat||e.isComposing||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||!["Enter"," "].includes(e.key)||!e.target.matches(".lesson-flashcard-scroll")||(e.preventDefault(),w(!r))},{signal:l}),i.addEventListener("pointerdown",e=>{m={x:e.clientX,y:e.clientY},S=!1},{signal:l,passive:!0}),i.addEventListener("pointermove",e=>{m&&Math.hypot(e.clientX-m.x,e.clientY-m.y)>8&&(S=!0)},{signal:l,passive:!0}),i.addEventListener("pointercancel",()=>{S=!0,m=null},{signal:l}),i.addEventListener("click",e=>{if(m=null,S||window.getSelection()?.toString()||e.target.closest("button,a,summary,input,textarea,select,pre,.lesson-summary-scan.is-expanded"))return;const t=e.target.closest(".lesson-flashcard-scroll");if(t){const I=t.getBoundingClientRect(),p=I.left+t.clientLeft;if(e.clientX<p||e.clientX>p+t.clientWidth||e.clientY>I.top+t.clientTop+t.clientHeight)return}w(!r)},{signal:l}),u.addEventListener("click",()=>{if(!(u.disabled||q)){if(c&&E===null){r||w(!0);const e=s.querySelector("[data-exam-choice-error]");e.textContent=n?"اختر أولًا: أجبتُ بشكل صحيح أو أجبتُ بشكل خاطئ.":"Choose I got it right or I got it wrong first.",e.hidden=!1,e.scrollIntoView({block:"nearest"}),s.querySelector("[data-exam-correct]").focus({preventScroll:!0});return}if(c){const e=K?.();if(e){let t=s.querySelector("[data-heart-message]");t||(t=document.createElement("p"),t.dataset.heartMessage="",t.setAttribute("role","status"),s.querySelector("[data-exam-self-check]").append(t)),t.textContent=e;return}}q=!0,u.disabled=!0,c&&H?.({correct:E}),F?.()}},{signal:l}),s.querySelector("[data-template-back]").addEventListener("click",()=>h?.(),{signal:l}),()=>{L.abort(),f?.cancel(),delete s.dataset.lessonPresentation}}
+    </article>`,
+    footer:renderTemplateFooter({ locale, primaryLabel:ar ? "متابعة" : "CONTINUE", primaryAttributes:{ disabled:!selfCheck } }),
+  }));
+  const card = container.querySelector("[data-exam-card]");
+  if (ar) {
+    highlightEnglishText(card.querySelector("[data-exam-front] .lesson-flashcard-copy"));
+    highlightEnglishText(card.querySelector("[data-exam-solution] .lesson-flashcard-copy"));
+  }
+  const rotor = card.querySelector(".lesson-flashcard-rotor");
+  const front = card.querySelector("[data-exam-front]");
+  const solution = card.querySelector("[data-exam-solution]");
+  spaceWorkedEquations(solution);
+  const next = container.querySelector("[data-template-primary]");
+  const footer = next.closest(".level-layout-actions");
+  footer.classList.add("lesson-exam-actions");
+  footer.querySelector('.level-feedback').insertAdjacentHTML("afterend", renderQuestionRatingControls(locale));
+  const rating = footer.querySelector(".level-question-rating-panel");
+  rating.inert = true;
+  mountQuestionRating(footer, signal);
+  let flipped = false;
+  let revealed = false;
+  let assessment = null;
+  let submitted = false;
+  let animation = null;
+  let pointerStart = null;
+  let dragged = false;
+
+  card.querySelectorAll(".lesson-flashcard-scroll").forEach((scroll, index) => {
+    mountSummaryScans(scroll, { titleId:`${titleId}-face-${index}`, locale, signal, exam:true });
+    mountMarkdownFeatures(scroll, { locale, signal, scrollSurface:scroll });
+    mountTemplateScrollIndicator(scroll.parentElement, { signal, surface:scroll });
+  });
+  const hideInactiveFace = () => {
+    front.hidden = flipped;
+    solution.hidden = !flipped;
+  };
+  const flip = showAnswer => {
+    if (showAnswer === flipped || signal.aborted) return;
+    const from = getComputedStyle(rotor).transform;
+    animation?.cancel();
+    animation = null;
+    front.hidden = false;
+    solution.hidden = false;
+    flipped = showAnswer;
+    rating.inert = !flipped;
+    rotor.classList.toggle("is-flipped", flipped);
+    front.inert = flipped;
+    solution.inert = !flipped;
+    front.setAttribute("aria-hidden", String(flipped));
+    solution.setAttribute("aria-hidden", String(!flipped));
+    if (flipped && !selfCheck) next.disabled = false;
+    if (flipped && !revealed) { revealed = true; onReveal?.(); }
+    const visibleFace = flipped ? solution : front;
+    visibleFace.querySelector(".lesson-flashcard-scroll").focus({ preventScroll:true });
+    if (prefersReducedMotion() || !rotor.animate) {
+      hideInactiveFace();
+      return;
+    }
+    const turn = rotor.animate([
+      { transform:from }, { transform:flipped ? "rotateY(180deg)" : "rotateY(0deg)" },
+    ], { duration:420, easing:"cubic-bezier(.2,.7,.2,1)" });
+    animation = turn;
+    void turn.finished.then(() => {
+      if (signal.aborted || animation !== turn) return;
+      animation = null;
+      hideInactiveFace();
+    }).catch(() => {});
+  };
+  container.querySelectorAll("[data-exam-correct]").forEach(button => {
+    button.addEventListener("click", () => {
+      if (!flipped || submitted) return;
+      container.querySelector("[data-heart-message]")?.remove();
+      container.querySelector("[data-exam-choice-error]").hidden = true;
+      assessment = button.dataset.examCorrect === "true";
+      container.querySelectorAll("[data-exam-correct]").forEach(control => {
+        control.setAttribute("aria-pressed", String(control === button));
+      });
+      next.disabled = false;
+    }, { signal });
+  });
+  card.addEventListener("keydown", event => {
+    if (event.defaultPrevented || event.repeat || event.isComposing || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+    if (!["Enter", " "].includes(event.key) || !event.target.matches(".lesson-flashcard-scroll")) return;
+    event.preventDefault();
+    flip(!flipped);
+  }, { signal });
+  card.addEventListener("pointerdown", event => {
+    pointerStart = { x:event.clientX, y:event.clientY };
+    dragged = false;
+  }, { signal, passive:true });
+  card.addEventListener("pointermove", event => {
+    if (pointerStart && Math.hypot(event.clientX - pointerStart.x, event.clientY - pointerStart.y) > 8) dragged = true;
+  }, { signal, passive:true });
+  card.addEventListener("pointercancel", () => { dragged = true; pointerStart = null; }, { signal });
+  card.addEventListener("click", event => {
+    pointerStart = null;
+    if (dragged || window.getSelection()?.toString() || event.target.closest("button,a,summary,input,textarea,select,pre,.lesson-summary-scan.is-expanded")) return;
+    const scroll = event.target.closest(".lesson-flashcard-scroll");
+    if (scroll) {
+      const bounds = scroll.getBoundingClientRect();
+      const left = bounds.left + scroll.clientLeft;
+      if (event.clientX < left || event.clientX > left + scroll.clientWidth || event.clientY > bounds.top + scroll.clientTop + scroll.clientHeight) return;
+    }
+    flip(!flipped);
+  }, { signal });
+  next.addEventListener("click", () => {
+    if (next.disabled || submitted) return;
+    if (selfCheck && assessment === null) {
+      if (!flipped) flip(true);
+      const message = container.querySelector("[data-exam-choice-error]");
+      message.textContent = ar ? "اختر أولًا: أجبتُ بشكل صحيح أو أجبتُ بشكل خاطئ." : "Choose I got it right or I got it wrong first.";
+      message.hidden = false;
+      message.scrollIntoView({ block:"nearest" });
+      container.querySelector("[data-exam-correct]").focus({ preventScroll:true });
+      return;
+    }
+    if (selfCheck) {
+      const blocked = beforeAnswer?.();
+      if (blocked) {
+        let message = container.querySelector("[data-heart-message]");
+        if (!message) {
+          message = document.createElement("p");
+          message.dataset.heartMessage = "";
+          message.setAttribute("role", "status");
+          container.querySelector("[data-exam-self-check]").append(message);
+        }
+        message.textContent = blocked;
+        return;
+      }
+    }
+    submitted = true;
+    next.disabled = true;
+    if (selfCheck) onAnswer?.({ correct:assessment });
+    onContinue?.();
+  }, { signal });
+  container.querySelector("[data-template-back]").addEventListener("click", () => onBack?.(), { signal });
+  return () => {
+    controller.abort();
+    animation?.cancel();
+    delete container.dataset.lessonPresentation;
+  };
+}

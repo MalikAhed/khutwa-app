@@ -1,1 +1,24 @@
-export function mountSuperTrialCountdown({container:s,resourceStore:a,getOwnerId:i}){if(!a)return{update(){},destroy(){}};const e=document.createElement("div");e.className="super-trial-countdown",e.dataset.superTrialCountdown="",e.hidden=!0,e.innerHTML='<span dir="rtl" data-super-trial-days></span>';let t;const n=()=>{const r=s.querySelector(".learner-dashboard__header");r&&e.parentElement!==r&&r.append(e);const d=Math.max(0,Math.ceil(((a.get(i()).trialEndsAt||0)-Date.now())/1e3));if(e.hidden=d===0,!d){clearInterval(t),t=null;return}const u=Math.ceil(d/86400);e.querySelector("[data-super-trial-days]").textContent=`${u} يوم`,t||(t=setInterval(n,6e4))},l=a.subscribe(n),o=()=>{clearInterval(t),l(),e.remove()};return n(),Object.freeze({update:n,destroy:o})}
+/** Home shares the account's real trial expiry with the offers. */
+export function mountSuperTrialCountdown({ container, resourceStore, getOwnerId }) {
+  if (!resourceStore) return { update() {}, destroy() {} };
+  const badge = document.createElement("div");
+  badge.className = "super-trial-countdown";
+  badge.dataset.superTrialCountdown = "";
+  badge.hidden = true;
+  badge.innerHTML = '<span dir="rtl" data-super-trial-days></span>';
+  let timer;
+  const update = () => {
+    const header = container.querySelector(".learner-dashboard__header");
+    if (header && badge.parentElement !== header) header.append(badge);
+    const remaining = Math.max(0,Math.ceil(((resourceStore.get(getOwnerId()).trialEndsAt || 0)-Date.now())/1000));
+    badge.hidden = remaining === 0;
+    if (!remaining) { clearInterval(timer); timer = null; return; }
+    const days = Math.ceil(remaining / 86400);
+    badge.querySelector("[data-super-trial-days]").textContent = `${days} يوم`;
+    if (!timer) timer = setInterval(update, 60000);
+  };
+  const unsubscribe = resourceStore.subscribe(update);
+  const destroy = () => { clearInterval(timer); unsubscribe(); badge.remove(); };
+  update();
+  return Object.freeze({ update, destroy });
+}

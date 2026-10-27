@@ -1,18 +1,20 @@
 # Khutwa · خطوة
 
-[Open the app](https://malikahed.github.io/khutwa-app/)
+[Open the app](https://khutwaa.pages.dev/) · [GitHub Pages mirror](https://malikahed.github.io/khutwa-app/)
 
 A compact, ready-to-serve copy of the local Tawjihi learning app: nine subject paths, 124 lesson entries and 7,229 questions with their worked explanations and required figures.
 
-This repository contains only the browser runtime. JavaScript and CSS are minified; unused question images, original PDFs, source archives, audit ledgers, development dependencies, tests, build tools and private account databases are excluded. Third-party licenses are retained. Files under `src/` and the small `node_modules/` directory are required browser modules, not a development installation.
+This repository contains only the browser runtime. Original PDFs, source archives, audit ledgers, development dependencies, tests, build tools and private account databases are excluded. Third-party licenses are retained. Files under `src/` and the small `node_modules/` directory are required browser modules, not a development installation.
 
 ## Using the GitHub Pages edition
 
 Use the demo sign-in **free** / **Learn123**, or **subscribed** / **Learn123** to try Super. Progress is stored only in this browser. The current local profile stays signed in across reloads and app launches until you sign out. Registration remains a local preview: after signing out of a newly registered profile, recreating it with the same username reconnects to its saved progress. This site does not run the local Node/SQLite account server or synchronize learners between devices.
 
+Public lesson content downloads in the background and is kept in browser cache when storage is available. Onboarding and shared screens come first, then first questions and complete lessons in rounds across subjects. Opening a lesson gives its full download priority. Content updates do not clear the separate saved-progress storage.
+
 ## Hosting
 
-GitHub Pages serves `main` directly from the repository root. `.nojekyll` ensures every runtime file, including browser dependencies, is published. No npm installation or build step is needed. Runtime URLs are versioned per release; an installed app checks for updates and refreshes between study sessions after progress has saved. Runtime URLs are versioned per release; an installed app checks for updates and refreshes between study sessions after progress has saved. Runtime URLs are versioned per release; an installed app checks for updates and refreshes between study sessions after progress has saved. Runtime URLs are versioned per release; an installed app checks for updates and refreshes between study sessions after progress has saved.
+GitHub Pages serves `main` directly from the repository root. `.nojekyll` ensures every runtime file, including browser dependencies, is published. No npm installation or build step is needed. Runtime URLs are versioned per release; an installed app checks for updates and refreshes between study sessions after progress has saved.
 
 To serve a downloaded copy, run `python3 -m http.server 8080` in this directory and open `http://localhost:8080/`. Use an HTTP server; opening `index.html` as a local file cannot load the JavaScript modules.
 

@@ -1,1 +1,99 @@
-import{getCourseSubject as p}from"../data/course.js?v=7388f68cc0f433fd";import{getSubjectRoadmap as g,getSubjectRoadmapLesson as m}from"../data/subject-roadmaps.js?v=7388f68cc0f433fd";import{resolveQuestionLocation as P}from"../domain/question-rewards.js?v=7388f68cc0f433fd";const w=new Set(["learn","rated-questions","more"]);export const VISITOR_FLOWS=new Set(["entry","register","sign-in"]);export function isUnlockedPage(n){return n==="learn"||n==="rated-questions"}function f(n,s){return n==="mathematics"&&m("mathematics-2",s)?"mathematics-2":n}function h(n,s,o,i=null){const t=m(n,s);let a=t?.parts.find(r=>r.id===o||"aliases"in r&&r.aliases.includes(o));const l=i&&a?P({subjectId:n,lessonId:t.id,partId:a.id,stepId:i}):null;if(l&&(i=l.stepId,a=t.parts.find(r=>r.id===l.partId)),a&&t&&"hidden"in t&&t.hidden){if(n==="islamic-education"&&t.id.startsWith("islamic-"))return{lesson:t.id,part:a.id};for(const r of g(n)?.units||[]){const u=r.lessons.find(e=>!("hidden"in e&&e.hidden));if(u)return{lesson:u.id,part:u.parts[0]?.id||null}}return{lesson:null,part:null}}return a&&t?{lesson:t.id,part:a.id,...l?{question:l.stepId}:{}}:{lesson:null,part:null}}export function readRoute(n=""){const s=new URLSearchParams(n),o=s.get("flow"),i=VISITOR_FLOWS.has(o||"")?o:null;if(i)return{page:"learn",subject:null,lesson:null,part:null,flow:i};if(!s.has("page")&&!s.has("subject")&&!s.has("view"))return{page:"learn",subject:null,lesson:null,part:null,flow:"entry"};const t=s.get("page");if(t&&!w.has(t))return{page:"learn",subject:null,lesson:null,part:null,flow:null};const a=t||"learn";if(a==="more")return{page:a,subject:null,lesson:null,part:null,flow:null};const l=p(s.get("subject")),r=f(l?.status==="available"?l.id:null,s.get("lesson")),u=a==="rated-questions"&&["easy","medium","hard"].includes(s.get("rating")||"")&&s.get("rating")||"easy";return{page:a,...a==="rated-questions"&&r?{rating:u}:{},subject:r,...h(r,s.get("lesson"),s.get("part"),s.get("question")),flow:null}}export function createRouteUrl(n,s={}){const{page:o="learn",subject:i=null,lesson:t=null,part:a=null,flow:l=null,question:r=null,rating:u=null}=s,e=new URL(n);e.searchParams.delete("page"),e.searchParams.delete("day"),e.searchParams.delete("subject"),e.searchParams.delete("lesson"),e.searchParams.delete("part"),e.searchParams.delete("view"),e.searchParams.delete("flow"),e.searchParams.delete("more-tab");for(const d of["prototype","week","review","batch","question","filter","rating"])e.searchParams.delete(d);if(VISITOR_FLOWS.has(l||""))l!=="entry"&&e.searchParams.set("flow",l||"");else if(o==="more"||o==="rated-questions"&&!i)e.searchParams.set("page",o);else if(p(i)?.status==="available"){o==="rated-questions"&&(e.searchParams.set("page",o),e.searchParams.set("rating",["easy","medium","hard"].includes(u||"")&&u||"easy"));const d=f(i,t);e.searchParams.set("subject",d||"");const c=h(d,t,a,r);c.lesson&&c.part&&(e.searchParams.set("lesson",c.lesson),e.searchParams.set("part",c.part),c.question&&e.searchParams.set("question",c.question))}else s.page==="learn"&&e.searchParams.set("page","learn");return e}
+// @ts-check
+import { getCourseSubject } from "../data/course.js?v=acff67f262f3c107";
+import { getSubjectRoadmap, getSubjectRoadmapLesson } from "../data/subject-roadmaps.js?v=acff67f262f3c107";
+import { resolveQuestionLocation } from "../domain/question-rewards.js?v=acff67f262f3c107";
+
+/** @typedef {{page:string, subject:string|null, lesson:string|null, part:string|null, flow:string|null, question?:string, rating?:string}} Route */
+/** @typedef {{page?:string, subject?:string|null, lesson?:string|null, part?:string|null, flow?:string|null, question?:string|null, rating?:string|null}} RouteTarget */
+
+const APP_PAGES = new Set(["learn", "rated-questions", "more"]);
+export const VISITOR_FLOWS = new Set(["entry", "register", "sign-in"]);
+
+export function isUnlockedPage(page) {
+  return page === "learn" || page === "rated-questions";
+}
+
+function lessonSubject(subject, lesson) {
+  return subject === "mathematics" && getSubjectRoadmapLesson("mathematics-2", lesson)
+    ? "mathematics-2" : subject;
+}
+
+/** @param {string|null} [question] */
+function lessonDestination(subject, lesson, part, question = null) {
+  const target = getSubjectRoadmapLesson(subject, lesson);
+  // Formerly unpublished topic links now resolve to the video covering that topic.
+  let selected = target?.parts.find(candidate => candidate.id === part || ("aliases" in candidate && candidate.aliases.includes(part)));
+  const location = question && selected ? resolveQuestionLocation({ subjectId:subject, lessonId:target.id, partId:selected.id, stepId:question }) : null;
+  if (location) { question = location.stepId; selected = target.parts.find(part => part.id === location.partId); }
+  if (selected && target && "hidden" in target && target.hidden) {
+    if (subject === "islamic-education" && target.id.startsWith("islamic-"))
+      return { lesson:target.id, part:selected.id };
+    for (const unit of getSubjectRoadmap(subject)?.units || []) {
+      const first = unit.lessons.find(lesson => !("hidden" in lesson && lesson.hidden));
+      if (first) return { lesson:first.id, part:first.parts[0]?.id || null };
+    }
+    return { lesson:null, part:null };
+  }
+  return selected && target
+    ? { lesson:target.id, part:selected.id,
+      ...(location ? { question:location.stepId } : {}),
+    } : { lesson:null, part:null };
+}
+
+/** @param {string} [search] @returns {Route} */
+export function readRoute(search = "") {
+  const params = new URLSearchParams(search);
+  const requestedFlow = params.get("flow");
+  const flow = VISITOR_FLOWS.has(requestedFlow || "") ? requestedFlow : null;
+  if (flow) return { page:"learn", subject:null, lesson:null, part:null, flow };
+  if (!params.has("page") && !params.has("subject") && !params.has("view")) {
+    return { page:"learn", subject:null, lesson:null, part:null, flow:"entry" };
+  }
+  const requestedPage = params.get("page");
+  if (requestedPage && !APP_PAGES.has(requestedPage))
+    return { page:"learn", subject:null, lesson:null, part:null, flow:null };
+  const page = requestedPage || "learn";
+  if (page === "more") return { page, subject:null, lesson:null, part:null, flow:null };
+
+  const requestedSubject = getCourseSubject(params.get("subject"));
+  const subject = lessonSubject(requestedSubject?.status === "available" ? requestedSubject.id : null, params.get("lesson"));
+  const rating = page === "rated-questions" && ["easy","medium","hard"].includes(params.get("rating") || "") ? params.get("rating") || "easy" : "easy";
+  return { page, ...(page === "rated-questions" && subject ? { rating } : {}), subject, ...lessonDestination(subject, params.get("lesson"), params.get("part"), params.get("question")), flow:null };
+}
+
+/** @param {string} currentHref @param {RouteTarget} [route] */
+export function createRouteUrl(currentHref, route = {}) {
+  const { page = "learn", subject = null, lesson = null, part = null, flow = null, question = null, rating = null } = route;
+  const url = new URL(currentHref);
+  url.searchParams.delete("page");
+  url.searchParams.delete("day");
+  url.searchParams.delete("subject");
+  url.searchParams.delete("lesson");
+  url.searchParams.delete("part");
+  url.searchParams.delete("view");
+  url.searchParams.delete("flow");
+  url.searchParams.delete("more-tab");
+  for (const key of ["prototype", "week", "review", "batch", "question", "filter", "rating"]) url.searchParams.delete(key);
+
+  if (VISITOR_FLOWS.has(flow || "")) {
+    if (flow !== "entry") url.searchParams.set("flow", flow || "");
+  } else if (page === "more" || page === "rated-questions" && !subject) {
+    url.searchParams.set("page", page);
+  } else if (getCourseSubject(subject)?.status === "available") {
+    if (page === "rated-questions") {
+      url.searchParams.set("page",page);
+      url.searchParams.set("rating",["easy","medium","hard"].includes(rating || "") ? rating || "easy" : "easy");
+    }
+    const destinationSubject = lessonSubject(subject, lesson);
+    url.searchParams.set("subject", destinationSubject || "");
+    const destination = lessonDestination(destinationSubject, lesson, part, question);
+    if (destination.lesson && destination.part) {
+      url.searchParams.set("lesson", destination.lesson);
+      url.searchParams.set("part", destination.part);
+      if (destination.question) url.searchParams.set("question", destination.question);
+    }
+  } else if (route.page === "learn") {
+    url.searchParams.set("page", "learn");
+  }
+  return url;
+}

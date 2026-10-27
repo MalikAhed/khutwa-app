@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: chemistry-gaza-p063-q02-a3
 title: الوحدة ٣ · الدرس ٢ · ص ٦١ · س ٠٢ · a٣ · أسئلة الفصل — الرزمة التعليمية ٢٠٢٤؛ وزاري ٢٠٢٥ دورة ثالثة
 question: عبّر بالمعادلات الكيميائية عن كلّ من التفاعلات الآتية، وسمّ المركبات العضوية الناتجة:
@@ -734,4 +736,6 @@ solution:
 **المصدر:** صفحة 51 من الكتاب.
 
 :::
-`;export default m("u03-l02-alkyl-halides",source);
+`;
+
+export default createChemistryLesson("u03-l02-alkyl-halides", source);

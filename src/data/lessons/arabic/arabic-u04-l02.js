@@ -1,4 +1,6 @@
-import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createArabicLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: arabic-p125-m01
 title: من المعاني النحوية لـ (ما) و(من)، اختيار من متعدد، السؤال 1، ص 124، 2019
 kicker: امتحانات الثانوية العامة، 2019
@@ -371,4 +373,6 @@ solution:
 السياق يسأل عن القارعة تهويلاً لشأنها؛ و«القارعةُ» بعدها خبر مرفوع بالضمة. جملة «ما القارعة» في محل رفع خبر للمبتدأ الأول «القارعةُ».
 
 هذا وجه الإعراب الذي يعتمده مفتاح السؤال. ويجوز أيضًا تحليل «ما» خبرًا مقدمًا و«القارعة» مبتدأ مؤخرًا؛ لذلك لا يُعد الوجه المعروض الإعراب الوحيد الممكن.
-:::`;export default e("arabic-u04-l02",source);
+:::`;
+
+export default createArabicLesson("arabic-u04-l02", source);

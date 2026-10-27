@@ -1,4 +1,6 @@
-import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createArabicLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: arabic-p139-mcq01
 title: وصية لاجئ | صفحة 138 | اختيار من متعدد 1
 kicker: 2019
@@ -746,4 +748,6 @@ solution:
 
 شبّه حيفا بإنسان مريض يتألم ويئن.
 «تئن» و«أنين» هما دليل التشخيص؛ فالمدينة لا تئن حقيقة، وإنما جسّم ألم أهلها ومعاناة الوطن في صورة جسد موجوع، وهي استعارة مكنية.
-:::`;export default e("arabic-u05-l02",source);
+:::`;
+
+export default createArabicLesson("arabic-u05-l02", source);

@@ -1,4 +1,6 @@
-import{createBiologyLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createBiologyLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: bio-b-p068-q1-6
 title: الرزمة التعليمية، صفحة 68، السؤال 1-6
 question: أي من الآتية تتمايز في الغدة الزعترية؟
@@ -1779,4 +1781,6 @@ solution:
 
 
 
-:::`;export default e("immune-system",source);
+:::`;
+
+export default createBiologyLesson("immune-system", source);

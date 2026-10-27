@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: eng-2023-p007-qtext1-2-1
 title: Unit 1 · PDF 7 · Text 1 / 2 / 1
 question: Where is Mahmoud now?
@@ -1887,4 +1889,6 @@ solution:
 
 **المصدر:** صفحة 9 من الكتاب.
 
-:::`;export default e("english-u01-reading",source);
+:::`;
+
+export default createEnglishLesson("english-u01-reading", source);

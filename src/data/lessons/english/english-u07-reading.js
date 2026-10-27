@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: eng-2023-p068-qtext1-a-1
 title: Unit 7 · PDF 68 · text1-a-1
 question: Paragraph 1: ..............
@@ -1586,4 +1588,6 @@ They تعود على arts subjects.
 
 **المصدر:** صفحة 32 من الكتاب.
 
-:::`;export default e("english-u07-reading",source);
+:::`;
+
+export default createEnglishLesson("english-u07-reading", source);

@@ -1,1 +1,686 @@
-import{mountQuestionNavigation as Ge}from"./question-navigation.js?v=7388f68cc0f433fd";import{animateView as Ke}from"../view-motion.js?v=7388f68cc0f433fd";import{showDailyStreak as Ze,renderSubjectCompletion as Je,animateSubjectCompletion as Xe,preloadCompletionMedia as _e}from"../subject-completion.js?v=7388f68cc0f433fd";import{escapeHtml as J}from"../../lib/dom.js?v=7388f68cc0f433fd";import{mountMarkdownFeatures as et,renderMarkdownDocument as tt}from"../../markdown/renderer.js?v=7388f68cc0f433fd";import{getLessonUiCopy as nt}from"../lesson-ui-copy.js?v=7388f68cc0f433fd";import{mountTemplateEnterShortcut as st,mountTemplateContentZoom as ot,mountTemplateScrollIndicator as rt,renderTemplateFooter as Me,renderTemplateShell as Te}from"../template-shell.js?v=7388f68cc0f433fd";import{renderQuestion as it}from"./question.js?v=7388f68cc0f433fd";import{lessonLocale as lt,lessonReferenceLabel as at}from"./shared.js?v=7388f68cc0f433fd";import{renderRockyDialogue as dt,mountRockyDialogues as ct,playRockyDialogue as ut}from"./rocky-dialogue.js?v=7388f68cc0f433fd";import{renderVideoIntro as mt,mountVideoIntro as pt}from"./video-intro.js?v=7388f68cc0f433fd";import{mountVideoTour as ft}from"./video-tour.js?v=7388f68cc0f433fd";import{enhanceLessonSummary as He}from"./lesson-summary.js?v=7388f68cc0f433fd";import{revealWhenReady as X,preloadImages as gt}from"../media-ready.js?v=7388f68cc0f433fd";import{preloadNextStep as yt}from"./media.js?v=7388f68cc0f433fd";import{renderMistakeReviewIntro as bt}from"./mistake-review.js?v=7388f68cc0f433fd";import{renderExamQuestion as vt}from"./exam-question.js?v=7388f68cc0f433fd";import{mountMathQuestionFilter as ht}from"./math-question-filter.js?v=7388f68cc0f433fd";import{selectLessonDemo as kt}from"../../domain/lesson-demo.js?v=7388f68cc0f433fd";import{mountQuestionFeedback as $e}from"../question-feedback.js?v=7388f68cc0f433fd";import{mountQuestionExplanation as Qe}from"./question-explanation.js?v=7388f68cc0f433fd";export function renderAuthoredInteractiveLesson(l,Fe,Q,r,Oe={}){const{progress:F,onProgress:Pe,isLessonPart:y=!1,onAnswer:Be,beforeAnswer:ye,reviewStepId:T,onReviewComplete:be,getCompletionOutcome:Ne,onExitLesson:A,onFinishLesson:O,getMathFilterCatalog:Ve,mathFilterState:ve,onMathFilterApply:je,demoMode:m=!1,onLessonEvent:P,getQuestionFeedback:De,getQuestionExplanation:he,questionFilterIds:Ue}=Oe,p=l.closest(".lesson-shell")||l,H=m?kt(r,{firstMcq:p.dataset.subject==="ict"}):null;H&&(r=H.steps);const B=e=>De?.(H?.sources.get(e)?.stepId||e),ke=new AbortController,{signal:f}=ke,_=at(Fe),o=lt(Q),ee=nt(o),L=p.querySelector(".lesson-back"),u=p.querySelector(".lesson-top-title"),te=p.querySelector(".lesson-status"),S={backMarkup:L?.innerHTML,backLabel:L?.getAttribute("aria-label"),statusHidden:te?.hidden,progressHidden:u?.hidden,progressRole:u?.getAttribute("role"),progressLabel:u?.getAttribute("aria-label")},we=new Set(r.map(e=>e.id)),Le=r;let Se;const ne=e=>e.type!=="markdown"&&B(e.id)?.isHidden?.(),se=()=>Le.some(ne),oe=e=>{Se=e;const t=e?new Set(e):null;r=Le.filter(d=>!ne(d)&&(d.type==="markdown"||!t||t.has(d.id)))};oe(m?void 0:Ue||ve?.stepIds);let h=r.filter(e=>e.type!=="markdown");const re=e=>r[e]?.presentation==="video-intro"&&r[e+1]?.presentation==="lesson-summary"?r[e+1]:null,z=e=>re(e-1)?e-1:e,C=new Set((F?.completedStepIds||[]).filter(e=>we.has(e))),Ie=new Set([...F?.attemptedStepIds||[],...F?.completedStepIds||[]]);let s=Math.max(0,r.findIndex(e=>!C.has(e.id)));const N=T?r.findIndex(e=>e.id===T):-1;let V=-1;if(N>=0){s=N;for(let e=N-1;e>=0;e-=1)if(r[e].type==="markdown"){V=z(e),s=V;break}}let a=!!F?.completedAt&&r.every(e=>C.has(e.id));const W=T?-1:r.findIndex(e=>e.id==="database-management-mission"),j=W>=0?{index:z(s),resultVisible:a}:null;j&&(s=W,a=!1);let g=()=>{},xe=()=>{},Ae=!1,qe=!1,$=document.hidden?null:performance.now(),Ce=0;const Re=()=>{$!==null&&(Ce+=performance.now()-$),$=null};document.addEventListener("visibilitychange",()=>{document.hidden?Re():!a&&$===null&&($=performance.now())},{signal:f});let R=0,ie=0,le=0,ae=0,Y=null,de=!1;const ce=[],G=new Set((F?.mistakeStepIds||[]).filter(e=>we.has(e))),ue=new Set;let w=[],c=-1;document.body.classList.add("ui-lab-open","ui-lab-template-open","ready-lesson-open"),p.classList.add("lesson-shell--ui-lab","lesson-shell--ready-lesson"),l.classList.add("lesson-card--ui-lab","lesson-card--ready-lesson"),L.textContent="×",L.setAttribute("aria-label",y&&!m?o==="ar"?"إنهاء الجلسة":"End session":ee.closeLesson),te.hidden=!0,u.setAttribute("role","progressbar"),u.setAttribute("aria-label",o==="ar"?`تقدّم درس ${Q.title}`:`${Q.title} progress`),u.setAttribute("aria-valuemin","0"),u.setAttribute("aria-valuemax",String(h.length));const me=(e=!1)=>{const t=H?[...new Set([...C].flatMap(d=>{const n=H.sources.get(d);return n?.save?[n.stepId]:[]}))]:[...C];return Pe?.({completedStepIds:t,isComplete:e})},pe=async e=>{typeof e.correct=="boolean"&&(Ie.add(e.stepId),D()),c<0&&typeof e.correct=="boolean"&&!ue.has(e.stepId)&&(ue.add(e.stepId),R+=1,e.correct&&(ie+=1),le=e.correct?le+1:0,ae=Math.max(ae,le));const t=H?.sources.get(e.stepId);if(t&&!t.save)return;const d=t?{...e,stepId:t.stepId,correct:t.type==="exam-question"?null:e.correct}:e,n=Be?.(d);n?.then&&ce.push(n);const v=await n,k=I=>{!f.aborted&&!a&&!m&&I?.dailyStreak&&Ze(p,I.dailyStreak,f)};k(v),v?.whenSynced&&v.whenSynced.then(k)},K=()=>window.requestAnimationFrame(()=>{if(f.aborted)return;const e=l.querySelector("[data-live-authored-step]");e?.contains(document.activeElement)||e?.focus({preventScroll:!0})}),D=()=>{p.classList.toggle("lesson-shell--completion",y&&a);const e=r[s],t=h.indexOf(e),d=!a&&t>=0;p.classList.toggle("lesson-shell--pre-quiz",!a&&!d),u.hidden=a||!d;const n=c>=0,v=h.length,k=h.filter(I=>Ie.has(I.id)).length;u.setAttribute("aria-valuemax",String(v)),u.setAttribute("aria-label",n?o==="ar"?"مراجعة الأخطاء":"Mistake review":o==="ar"?`تقدّم درس ${Q.title}`:`${Q.title} progress`),u.setAttribute("aria-valuenow",String(k)),p.style.setProperty("--lesson-progress",`${v?k/v*100:0}%`),document.body.classList.toggle("ui-lab-mcq-open",!a&&r[s]?.type==="mcq")},E=async({sessionEnded:e=!1}={})=>{if(e&&R===0){(A||O)?.();return}de=!0,l.classList.remove("lesson-card--instant-entry"),Y===null&&!a&&(Re(),Y=Math.floor(Ce/1e3)),a=!0;{const n=me(!e);if((n?.then||ce.length)&&(g(),g=()=>{},l.innerHTML='<p class="app-loading" role="status">جارٍ حفظ تقدّمك…</p>',await Promise.all([...ce,n]),f.aborted))return}const t={...Ne?.(),demoMode:m,sessionEnded:e,accuracy:R?Math.round(ie/R*100):null,perfect:R>0&&ie===R,answerCount:R,bestAnswerRun:ae,elapsedSeconds:Y};de=!1,m&&(t.lessonShare=t.progressGain),g(),g=()=>{},(()=>{g();const n=y&&t?Je(_,t):null,v=m?"شاهد تقدّمك":"العودة لخريطة الدروس",k=y&&t?n:`<div class="level-lesson-copy ready-lesson-result"><p class="level-layout-kicker">${o==="ar"?"اكتمل الدرس":"LESSON COMPLETE"}</p><h1 id="authored-lesson-complete-title">${o==="ar"?`أكملت ${J(_)}`:`You completed ${J(_)}`}</h1><p>${o==="ar"?"أنهيت هذا الدرس وخطواته التفاعلية.":"You completed this lesson and its interactive steps."}</p></div>`;l.innerHTML=`<article class="lesson-flow ready-lesson-flow"><section class="ready-lesson-stage" data-live-authored-step tabindex="-1" data-completion-step="0">${Te({titleId:"authored-lesson-complete-title",content:k,footer:Me({locale:o,showShortcut:!y,backLabel:y?e?"متابعة التعلّم":"رجوع":o==="ar"?"مراجعة الدرس":"REVIEW LESSON",backAttributes:{"data-authored-review":!0,hidden:!1},primaryLabel:y?v:o==="ar"?"إعادة الدرس":"RESTART",primaryAttributes:{"data-authored-restart":!0}}),showScrollIndicator:!1,locale:o})}</section></article>`;const I=l.querySelector("[data-authored-review]");I.before(l.querySelector("[data-authored-restart]")),I.addEventListener("click",()=>{if(!y){a=!1,c=-1,s=0,b();return}a=!1,Y=null,document.hidden||($=performance.now()),b()},{signal:f}),l.querySelector("[data-authored-restart]").addEventListener("click",()=>{if(!y){C.clear(),G.clear(),ue.clear(),w=[],c=-1,a=!1,s=0,me(!1),b();return}(O||A)?.()},{signal:f});let U=()=>{};const i=X(l,{signal:f,onReady(){m&&P?.({type:"complete"}),U=y&&t?Xe(l):()=>{},K()}});g=()=>{i(),U()},D()})()},fe=()=>{c>=0||s!==0&&(s=s===N&&V>=0?V:z(s-1),b())},ze=()=>{y&&!m?E({sessionEnded:!0}):A?A():L?.click()};L.addEventListener("click",e=>{if(!(!y||m||a&&!de)){if(e.stopImmediatePropagation(),!h.length&&se()){(A||O)?.();return}a||E({sessionEnded:!0})}},{capture:!0,signal:f});const We=()=>{if(m){E();return}if(w=r.filter(e=>e.type==="mcq"&&G.has(e.id)),!w.length||T){E();return}g(),u.hidden=!0,document.body.classList.remove("ui-lab-mcq-open"),g=bt(l,{locale:o,onContinue(){c=0,s=r.indexOf(w[0]),b()}})},ge=()=>{if(c>=0){if(c+1===w.length){E();return}c+=1,s=r.indexOf(w[c]),b();return}if(T===r[s].id){be?.();return}C.add(r[s].id);const e=re(s);e&&C.add(e.id);const t=s===V?N:s+(e?2:1);if(t>=r.length){We();return}me(!1),s=t,b()},Ee=e=>{const t=r.slice(s+1).map(n=>n.id);if(oe(Se),h=r.filter(n=>n.type!=="markdown"),a=!1,G.delete(e.id),w=w.filter(n=>!ne(n)),!h.length){c=-1,b();return}if(T===e.id){(be||A)?.();return}const d=c>=0?w[c]:r.find(n=>t.includes(n.id));if(!d){(A||O)?.();return}s=r.indexOf(d),b()},b=()=>{g(),g=()=>{};const e=!Ae&&y;if(Ae=!0,l.classList.toggle("lesson-card--instant-entry",e),!h.length&&se()){a=!1,D(),u.hidden=!0,l.innerHTML=`<section class="question-hidden-empty" dir="${o==="ar"?"rtl":"ltr"}"><p role="status">${o==="ar"?"لا توجد أسئلة ظاهرة في هذا الدرس.":"There are no visible questions in this lesson."}</p><button type="button" class="system-action system-action--primary" data-hidden-exit>${o==="ar"?"العودة لمسار المادة":"Return to the subject"}</button></section>`;const i=l.querySelector("[data-hidden-exit]");i.addEventListener("click",()=>(A||O)?.(),{signal:f}),i.focus({preventScroll:!0});return}s=z(s);const t=r[s];if(!t){D(),u.hidden=!1,l.innerHTML='<p class="math-question-filter-empty">لا توجد أسئلة إضافية في هذا الدرس بعد التصفية. يمكنك إيقاف التصفية من زر القمع.</p>';return}const d=re(s);s>=r.length-2&&_e();let n=l.querySelector("[data-live-authored-step]");const v=t.type!=="markdown"&&!!n?.querySelector(".level-layout-preview")&&!!n?.dataset.lessonStep;if(v||(l.innerHTML='<article class="lesson-flow ready-lesson-flow"><section class="ready-lesson-stage" data-live-authored-step tabindex="-1"></section></article>',n=l.querySelector("[data-live-authored-step]")),delete n.dataset.mistakeReview,delete n.dataset.lessonPresentation,n.dataset.lessonStep=t.id,c>=0&&(n.dataset.mistakeReview=""),t.presentation&&(n.dataset.lessonPresentation=t.presentation),n.lang=o,n.dir=o==="ar"?"rtl":"ltr",!e&&!v&&Ke(l),D(),t.type==="markdown"){const i=new AbortController,x=`authored-lesson-title-${t.id}`,M=s===0&&["video-intro","rocky-dialogue"].includes(t.presentation);n.innerHTML=Te({titleId:x,showScrollIndicator:t.presentation!=="video-intro",content:t.presentation==="rocky-dialogue"?dt(t,{titleId:x,locale:o}):t.presentation==="video-intro"?mt(t,{titleId:x,locale:o,summaryStep:d}):`<article class="level-lesson-copy ready-lesson-copy markdown-authored-content">${t.presentation==="lesson-summary"?"":`<p class="level-layout-kicker">${o==="ar"?"تعلّم":"LEARN"}</p>`}<div class="markdown-rendered">${tt(t.source,{locale:o})}</div></article>`,footer:Me({locale:o,showShortcut:t.presentation!=="video-intro",backLabel:t.presentation==="video-intro"||M?o==="ar"?"رجوع":"BACK":void 0,backAttributes:{disabled:s===0&&!M,hidden:s===0&&!M},primaryLabel:t.presentation==="video-intro"?d?o==="ar"?"ابدأ الأسئلة":"START QUESTIONS":ee.continue:r[s+1]?.type!=="markdown"?o==="ar"?"ابدأ الأسئلة":"START QUESTIONS":ee.continue}),locale:o});const Z=t.presentation!=="video-intro"&&n.querySelector(".markdown-authored-content h1");if(Z?Z.id=x:t.presentation!=="video-intro"&&n.querySelector(".markdown-authored-content")?.insertAdjacentHTML("afterbegin",`<h1 class="visually-hidden" id="${J(x)}">${J(t.title)}</h1>`),t.presentation==="lesson-summary"&&He(n,{titleId:x,locale:o,signal:i.signal}),d){const q=n.querySelector("[data-inline-summary-step]");He(q,{titleId:`${x}-summary`,locale:o,signal:i.signal})}t.presentation==="video-intro"&&pt(n,{signal:i.signal,locale:o}),et(n,{locale:o,signal:i.signal,scrollSurface:n.querySelector(".level-layout-task")}),rt(n,{signal:i.signal}),ct(l,i.signal),X(n,{signal:i.signal,animate:!e,onReady(){ut(l,n,i.signal),yt(r[s+(d?2:1)]),gt(["assets/mascot/rocky-standing-still.svg"]),K(),s===W&&!qe&&(qe=!0,Promise.allSettled(n.getAnimations().map(q=>q.finished)).then(()=>{if(i.signal.aborted)return;const q=j.index!==W||j.resultVisible;ft(n,{signal:i.signal,locale:o,finishLabel:q?o==="ar"?"متابعة الدرس":"Resume lesson":void 0,onFinish(){q&&(s=j.index,a=j.resultVisible,a?E():b())}})}))}}),n.querySelector("[data-template-back]").addEventListener("click",M?ze:fe,{signal:i.signal}),n.querySelector("[data-template-primary]").addEventListener("click",ge,{signal:i.signal}),g=()=>i.abort();return}if(t.type==="exam-question"){const i=new AbortController,x=vt(n,t,{locale:o,onBack:fe,selfCheck:!m,beforeAnswer:ye,onAnswer:({correct:q})=>{pe({stepId:t.id,correct:q,reviewing:c>=0})},onContinue(){m&&pe({stepId:t.id,correct:null}),ge()},onReveal:()=>P?.({type:"reveal",step:t})});$e({host:n,shell:p,feedback:B(t.id),signal:i.signal,locale:o,onHidden:()=>Ee(t)}),Qe({host:n,explanation:m?null:he?.(t),locale:o,signal:i.signal});const M=n.querySelector("[data-template-back]");M.disabled=s===0,M.hidden=s===0;const Z=X(n,{signal:i.signal,animate:!e&&!v,onReady:K});g=()=>{i.abort(),Z(),x()},P?.({type:"question",step:t});return}const k=new AbortController,I=it(n,{definition:t,beforeAnswer:ye,onBack:fe,onContinue:ge,onAnswer:i=>{c<0&&!i.correct&&G.add(t.id),pe({...i,stepId:t.id,reviewing:c>=0}),P?.({type:"answer",step:t,correct:i.correct})},locale:o});$e({host:n,shell:p,feedback:B(t.id),signal:k.signal,locale:o,onHidden:()=>Ee(t)}),Qe({host:n,explanation:m?null:he?.(t),locale:o,signal:k.signal}),X(n.querySelector(".level-layout-task"),{signal:k.signal,animate:!e}),g=()=>{k.abort(),I()};const U=n.querySelector("[data-template-back]");U.disabled=s===0||c>=0,U.hidden=s===0||c>=0,K(),P?.({type:"question",step:t})};xe=ht({shell:p,locale:o,signal:f,getCatalog:m?void 0:Ve,initialState:ve,onApply(e){const t=r[s]?.id,d=je?.(e);f.aborted||(oe(d),h=r.filter(n=>n.type!=="markdown"),a=!1,c=-1,w=[],s=Math.max(0,r.findIndex(n=>n.id===t)),b())}});const Ye=m?()=>{}:Ge({shell:p,signal:f,locale:o,getQuestions:()=>h,getCurrentId:()=>a?null:r[s]?.id,getRating:e=>B(e)?.getRating(),subscribe:e=>B(h[0]?.id)?.subscribe?.(e),onSelect(e){const t=r.findIndex(d=>d.id===e);t<0||(a=!1,c=-1,w=[],s=t,b())}});return st(l,{signal:f}),ot(l,{signal:f}),a&&(h.length||!se())?E():b(),()=>{p.classList.remove("lesson-shell--completion"),p.classList.remove("lesson-shell--pre-quiz"),Ye(),xe(),g(),ke.abort(),document.body.classList.remove("ui-lab-open","ui-lab-template-open","ui-lab-mcq-open","ready-lesson-open"),p.classList.remove("lesson-shell--ui-lab","lesson-shell--ready-lesson"),p.style.removeProperty("--lesson-progress"),l.classList.remove("lesson-card--ui-lab","lesson-card--ready-lesson","lesson-card--instant-entry"),L.innerHTML=S.backMarkup,S.backLabel===null?L.removeAttribute("aria-label"):L.setAttribute("aria-label",S.backLabel),te.hidden=S.statusHidden,u.hidden=S.progressHidden,["aria-valuemin","aria-valuemax","aria-valuenow"].forEach(e=>u.removeAttribute(e)),S.progressRole===null?u.removeAttribute("role"):u.setAttribute("role",S.progressRole),S.progressLabel===null?u.removeAttribute("aria-label"):u.setAttribute("aria-label",S.progressLabel)}}
+import { mountQuestionNavigation } from "./question-navigation.js?v=acff67f262f3c107";
+import { animateView } from "../view-motion.js?v=acff67f262f3c107";
+import {
+  showDailyStreak,
+  renderSubjectCompletion,
+  animateSubjectCompletion,
+  preloadCompletionMedia,
+} from "../subject-completion.js?v=acff67f262f3c107";
+import { escapeHtml } from "../../lib/dom.js?v=acff67f262f3c107";
+import {
+  mountMarkdownFeatures,
+  renderMarkdownDocument,
+} from "../../markdown/renderer.js?v=acff67f262f3c107";
+import { getLessonUiCopy } from "../lesson-ui-copy.js?v=acff67f262f3c107";
+import {
+  mountTemplateEnterShortcut,
+  mountTemplateContentZoom,
+  mountTemplateScrollIndicator,
+  renderTemplateFooter,
+  renderTemplateShell,
+} from "../template-shell.js?v=acff67f262f3c107";
+import { renderQuestion } from "./question.js?v=acff67f262f3c107";
+import { lessonLocale, lessonReferenceLabel } from "./shared.js?v=acff67f262f3c107";
+import { renderRockyDialogue, mountRockyDialogues, playRockyDialogue } from "./rocky-dialogue.js?v=acff67f262f3c107";
+import { renderVideoIntro, mountVideoIntro } from "./video-intro.js?v=acff67f262f3c107";
+import { mountVideoTour } from "./video-tour.js?v=acff67f262f3c107";
+import { enhanceLessonSummary } from "./lesson-summary.js?v=acff67f262f3c107";
+import { revealWhenReady, preloadImages } from "../media-ready.js?v=acff67f262f3c107";
+import { preloadNextStep } from "./media.js?v=acff67f262f3c107";
+import { renderMistakeReviewIntro } from "./mistake-review.js?v=acff67f262f3c107";
+import { renderExamQuestion } from "./exam-question.js?v=acff67f262f3c107";
+import { mountMathQuestionFilter } from "./math-question-filter.js?v=acff67f262f3c107";
+import { selectLessonDemo } from "../../domain/lesson-demo.js?v=acff67f262f3c107";
+import { mountQuestionFeedback } from "../question-feedback.js?v=acff67f262f3c107";
+import { mountQuestionExplanation } from "./question-explanation.js?v=acff67f262f3c107";
+
+/** @param {import("../lesson-view.js").LessonOptions} [options] @returns {import("../../app/view-lifecycle.js").Cleanup} */
+export function renderAuthoredInteractiveLesson(
+  container,
+  day,
+  lesson,
+  authoredSteps,
+  options = {},
+) {
+  const {
+    progress,
+    onProgress,
+    isLessonPart = false,
+    onAnswer,
+    beforeAnswer,
+    reviewStepId,
+    onReviewComplete,
+    getCompletionOutcome,
+    onExitLesson,
+    onFinishLesson,
+    getMathFilterCatalog,
+    mathFilterState,
+    onMathFilterApply,
+    demoMode = false,
+    onLessonEvent,
+    getQuestionFeedback,
+    getQuestionExplanation,
+    questionFilterIds,
+  } = options;
+  const shell = container.closest(".lesson-shell") || container;
+  const demo = demoMode ? selectLessonDemo(authoredSteps, { firstMcq:shell.dataset.subject === "ict" }) : null;
+  if (demo) authoredSteps = demo.steps;
+  const questionFeedbackFor = id => getQuestionFeedback?.(demo?.sources.get(id)?.stepId || id);
+  const controller = new AbortController();
+  const { signal } = controller;
+  const reference = lessonReferenceLabel(day);
+  const locale = lessonLocale(lesson);
+  const copy = getLessonUiCopy(locale);
+  const backButton = shell.querySelector(".lesson-back");
+  const topProgress = shell.querySelector(".lesson-top-title");
+  const lessonStatus = shell.querySelector(".lesson-status");
+  const previousChrome = {
+    backMarkup: backButton?.innerHTML,
+    backLabel: backButton?.getAttribute("aria-label"),
+    statusHidden: lessonStatus?.hidden,
+    progressHidden: topProgress?.hidden,
+    progressRole: topProgress?.getAttribute("role"),
+    progressLabel: topProgress?.getAttribute("aria-label"),
+  };
+  const stepIds = new Set(authoredSteps.map((step) => step.id));
+  const unfilteredSteps = authoredSteps;
+  let activeFilterIds;
+  const isHidden = step => step.type !== "markdown" && questionFeedbackFor(step.id)?.isHidden?.();
+  const hasHiddenQuestions = () => unfilteredSteps.some(isHidden);
+  const applyStepFilter = (ids) => {
+    activeFilterIds = ids;
+    const allowed = ids ? new Set(ids) : null;
+    authoredSteps = unfilteredSteps.filter(step => !isHidden(step)
+      && (step.type === "markdown" || !allowed || allowed.has(step.id)));
+  };
+  applyStepFilter(demoMode ? undefined : questionFilterIds || mathFilterState?.stepIds);
+  let questionSteps = authoredSteps.filter((step) => step.type !== "markdown");
+  // Keep published IDs and source indexes stable while presenting adjacent teaching
+  // steps on one screen, including old resumes saved between the two steps.
+  const inlineSummaryAt = (index) => authoredSteps[index]?.presentation === "video-intro"
+    && authoredSteps[index + 1]?.presentation === "lesson-summary"
+    ? authoredSteps[index + 1] : null;
+  const visibleIndex = (index) => inlineSummaryAt(index - 1) ? index - 1 : index;
+  const completed = new Set(
+    (progress?.completedStepIds || []).filter((id) => stepIds.has(id)),
+  );
+  const attempted = new Set([...(progress?.attemptedStepIds || []),...(progress?.completedStepIds || [])]);
+  let currentIndex = Math.max(
+    0,
+    authoredSteps.findIndex((step) => !completed.has(step.id)),
+  );
+  const reviewTargetIndex = reviewStepId ? authoredSteps.findIndex((step) => step.id === reviewStepId) : -1;
+  let reviewOpeningIndex = -1;
+  if (reviewTargetIndex >= 0) {
+    currentIndex = reviewTargetIndex;
+    for (let index = reviewTargetIndex - 1; index >= 0; index -= 1) {
+      if (authoredSteps[index].type === "markdown") {
+        reviewOpeningIndex = visibleIndex(index);
+        currentIndex = reviewOpeningIndex;
+        break;
+      }
+    }
+  }
+  let resultVisible =
+    Boolean(progress?.completedAt) &&
+    authoredSteps.every((step) => completed.has(step.id));
+  const videoTourIndex = reviewStepId ? -1
+    : authoredSteps.findIndex(step => step.id === "database-management-mission");
+  // Show the guide independently of lesson progress, then restore the saved place.
+  const tourResume = videoTourIndex >= 0 ? { index:visibleIndex(currentIndex), resultVisible } : null;
+  if (tourResume) {
+    currentIndex = videoTourIndex;
+    resultVisible = false;
+  }
+  let destroyStep = () => {};
+  let destroyMathQuestionFilter = () => {};
+  let renderedStep = false;
+  let videoTourShown = false;
+  let activeStarted = document.hidden ? null : performance.now();
+  let activeElapsedMs = 0;
+  const pauseLessonClock = () => {
+    if (activeStarted !== null) activeElapsedMs += performance.now() - activeStarted;
+    activeStarted = null;
+  };
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) pauseLessonClock();
+    else if (!resultVisible && activeStarted === null) activeStarted = performance.now();
+  }, { signal });
+  let answerCount = 0;
+  let correctCount = 0;
+  let answerRun = 0;
+  let bestAnswerRun = 0;
+  let sessionElapsed = null;
+  let resultPending = false;
+  const pendingAnswers = [];
+  const mistakes = new Set((progress?.mistakeStepIds || []).filter((id) => stepIds.has(id)));
+  const scoredQuestions = new Set();
+  let reviewQueue = [];
+  let reviewIndex = -1;
+
+  document.body.classList.add(
+    "ui-lab-open",
+    "ui-lab-template-open",
+    "ready-lesson-open",
+  );
+  shell.classList.add("lesson-shell--ui-lab", "lesson-shell--ready-lesson");
+  container.classList.add("lesson-card--ui-lab", "lesson-card--ready-lesson");
+  backButton.textContent = "×";
+  backButton.setAttribute("aria-label", isLessonPart && !demoMode ? (locale === "ar" ? "إنهاء الجلسة" : "End session") : copy.closeLesson);
+  lessonStatus.hidden = true;
+  topProgress.setAttribute("role", "progressbar");
+  topProgress.setAttribute(
+    "aria-label",
+    locale === "ar" ? `تقدّم درس ${lesson.title}` : `${lesson.title} progress`,
+  );
+  topProgress.setAttribute("aria-valuemin", "0");
+  topProgress.setAttribute("aria-valuemax", String(questionSteps.length));
+
+  const announce = (isComplete = false) => {
+    const ids = demo ? [...new Set([...completed].flatMap(id => {
+      const source = demo.sources.get(id);
+      return source?.save ? [source.stepId] : [];
+    }))] : [...completed];
+    return onProgress?.({ completedStepIds:ids, isComplete });
+  };
+  const saveAnswer = async (answer) => {
+    if (typeof answer.correct === "boolean") { attempted.add(answer.stepId);updateProgress(); }
+    if (reviewIndex < 0 && typeof answer.correct === "boolean" && !scoredQuestions.has(answer.stepId)) {
+      scoredQuestions.add(answer.stepId);
+      answerCount += 1;
+      if (answer.correct) correctCount += 1;
+      answerRun = answer.correct ? answerRun + 1 : 0;
+      bestAnswerRun = Math.max(bestAnswerRun, answerRun);
+    }
+    const source = demo?.sources.get(answer.stepId);
+    if (source && !source.save) return;
+    const value = source ? { ...answer,stepId:source.stepId,correct:source.type === "exam-question" ? null : answer.correct } : answer;
+    const saving = onAnswer?.(value);
+    if (saving?.then) pendingAnswers.push(saving);
+    const saved = await saving;
+    const celebrate = result => {
+      if (!signal.aborted && !resultVisible && !demoMode && result?.dailyStreak) showDailyStreak(shell, result.dailyStreak, signal);
+    };
+    celebrate(saved);
+    if (saved?.whenSynced) void saved.whenSynced.then(celebrate);
+  };
+  const focusHost = () =>
+    window.requestAnimationFrame(() => {
+      if (signal.aborted) return;
+      const host = container.querySelector("[data-live-authored-step]");
+      if (host?.contains(document.activeElement)) return;
+      host?.focus({ preventScroll: true });
+    });
+  const updateProgress = () => {
+    shell.classList.toggle(
+      "lesson-shell--completion",
+      isLessonPart && resultVisible,
+    );
+    const currentStep = authoredSteps[currentIndex];
+    const questionIndex = questionSteps.indexOf(currentStep);
+    const showingQuestion = !resultVisible && questionIndex >= 0;
+    shell.classList.toggle("lesson-shell--pre-quiz", !resultVisible && !showingQuestion);
+    topProgress.hidden = resultVisible || !showingQuestion;
+    const reviewing = reviewIndex >= 0;
+    const total = questionSteps.length;
+    const value = questionSteps.filter(step => attempted.has(step.id)).length;
+    topProgress.setAttribute("aria-valuemax", String(total));
+    topProgress.setAttribute("aria-label", reviewing ? (locale === "ar" ? "مراجعة الأخطاء" : "Mistake review") : (locale === "ar" ? `تقدّم درس ${lesson.title}` : `${lesson.title} progress`));
+    topProgress.setAttribute("aria-valuenow", String(value));
+    shell.style.setProperty(
+      "--lesson-progress",
+      `${total ? (value / total) * 100 : 0}%`,
+    );
+    document.body.classList.toggle(
+      "ui-lab-mcq-open",
+      !resultVisible && authoredSteps[currentIndex]?.type === "mcq",
+    );
+  };
+  const renderResult = async ({ sessionEnded = false } = {}) => {
+    if (sessionEnded && answerCount === 0) {
+      (onExitLesson || onFinishLesson)?.();
+      return;
+    }
+    resultPending = true;
+    container.classList.remove("lesson-card--instant-entry");
+    if (sessionElapsed === null && !resultVisible) {
+      pauseLessonClock();
+      sessionElapsed = Math.floor(activeElapsedMs / 1000);
+    }
+    resultVisible = true;
+    {
+      // Only visited questions are completed; a display filter never solves hidden questions.
+      const saving = announce(!sessionEnded);
+      if (saving?.then || pendingAnswers.length) {
+        destroyStep(); destroyStep=()=>{};
+        container.innerHTML='<p class="app-loading" role="status">جارٍ حفظ تقدّمك…</p>';
+        await Promise.all([...pendingAnswers, saving]);
+        if(signal.aborted) return;
+      }
+    }
+    const outcome = { ...getCompletionOutcome?.(), demoMode, sessionEnded, accuracy: answerCount ? Math.round(correctCount / answerCount * 100) : null, perfect:answerCount > 0 && correctCount === answerCount, answerCount, bestAnswerRun, elapsedSeconds: sessionElapsed };
+    resultPending = false;
+    if (demoMode) outcome.lessonShare = outcome.progressGain;
+    destroyStep();
+    destroyStep = () => {};
+    const renderCompletionStep = () => {
+      destroyStep();
+      const subjectContent =
+        isLessonPart && outcome
+          ? renderSubjectCompletion(reference, outcome)
+          : null;
+      const primaryLabel = demoMode ? "شاهد تقدّمك" : "العودة لخريطة الدروس";
+      const content =
+        isLessonPart && outcome
+          ? subjectContent
+          : `<div class="level-lesson-copy ready-lesson-result"><p class="level-layout-kicker">${locale === "ar" ? "اكتمل الدرس" : "LESSON COMPLETE"}</p><h1 id="authored-lesson-complete-title">${locale === "ar" ? `أكملت ${escapeHtml(reference)}` : `You completed ${escapeHtml(reference)}`}</h1><p>${locale === "ar" ? "أنهيت هذا الدرس وخطواته التفاعلية." : "You completed this lesson and its interactive steps."}</p></div>`;
+      container.innerHTML = `<article class="lesson-flow ready-lesson-flow"><section class="ready-lesson-stage" data-live-authored-step tabindex="-1" data-completion-step="0">${renderTemplateShell(
+        {
+          titleId: "authored-lesson-complete-title",
+          content,
+          footer: renderTemplateFooter({
+            locale,
+            showShortcut: !isLessonPart,
+            backLabel: isLessonPart
+              ? sessionEnded ? "متابعة التعلّم" : "رجوع"
+              : locale === "ar"
+                  ? "مراجعة الدرس"
+                  : "REVIEW LESSON",
+            backAttributes: {
+              "data-authored-review": true,
+              hidden: false,
+            },
+            primaryLabel: isLessonPart
+              ? primaryLabel
+              : locale === "ar"
+                ? "إعادة الدرس"
+                : "RESTART",
+            primaryAttributes: { "data-authored-restart": true },
+          }),
+          showScrollIndicator: false,
+          locale,
+        },
+      )}</section></article>`;
+      const secondary = container.querySelector("[data-authored-review]");
+      secondary.before(container.querySelector("[data-authored-restart]"));
+      secondary.addEventListener(
+        "click",
+        () => {
+          if (!isLessonPart) {
+            resultVisible = false;
+            reviewIndex = -1;
+            currentIndex = 0;
+            renderCurrent();
+            return;
+          }
+          resultVisible = false;
+          sessionElapsed = null;
+          if (!document.hidden) activeStarted = performance.now();
+          renderCurrent();
+        },
+        { signal },
+      );
+      container.querySelector("[data-authored-restart]").addEventListener(
+        "click",
+        () => {
+          if (!isLessonPart) {
+            completed.clear();
+            mistakes.clear();
+            scoredQuestions.clear();
+            reviewQueue = [];
+            reviewIndex = -1;
+            resultVisible = false;
+            currentIndex = 0;
+            announce(false);
+            renderCurrent();
+            return;
+          }
+          (onFinishLesson || onExitLesson)?.();
+        },
+        { signal },
+      );
+      let stopAnimation = () => {};
+      const stopReadiness = revealWhenReady(container, {
+        signal,
+        onReady() {
+          if (demoMode) onLessonEvent?.({ type:"complete" });
+          stopAnimation =
+            isLessonPart && outcome
+              ? animateSubjectCompletion(container)
+              : () => {};
+          focusHost();
+        },
+      });
+      destroyStep = () => {
+        stopReadiness();
+        stopAnimation();
+      };
+      updateProgress();
+    };
+    renderCompletionStep();
+  };
+  const goBack = () => {
+    if (reviewIndex >= 0) return;
+    if (currentIndex === 0) return;
+    currentIndex = currentIndex === reviewTargetIndex && reviewOpeningIndex >= 0
+      ? reviewOpeningIndex : visibleIndex(currentIndex - 1);
+    renderCurrent();
+  };
+  const exitFromOpening = () => {
+    if (isLessonPart && !demoMode) void renderResult({ sessionEnded:true });
+    else if (onExitLesson) onExitLesson();
+    else backButton?.click();
+  };
+  backButton.addEventListener("click", (event) => {
+    if (!isLessonPart || demoMode || resultVisible && !resultPending) return;
+    event.stopImmediatePropagation();
+    if (!questionSteps.length && hasHiddenQuestions()) { (onExitLesson || onFinishLesson)?.(); return; }
+    if (!resultVisible) void renderResult({ sessionEnded:true });
+  }, { capture:true, signal });
+  const finishQuestions = () => {
+    if (demoMode) { void renderResult(); return; }
+    reviewQueue = authoredSteps.filter((step) => step.type === "mcq" && mistakes.has(step.id));
+    if (!reviewQueue.length || reviewStepId) { void renderResult(); return; }
+    destroyStep();
+    topProgress.hidden = true;
+    document.body.classList.remove("ui-lab-mcq-open");
+    destroyStep = renderMistakeReviewIntro(container, { locale, onContinue() {
+      reviewIndex = 0;
+      currentIndex = authoredSteps.indexOf(reviewQueue[0]);
+      renderCurrent();
+    } });
+  };
+  const goNext = () => {
+    if (reviewIndex >= 0) {
+      if (reviewIndex + 1 === reviewQueue.length) { void renderResult(); return; }
+      reviewIndex += 1;
+      currentIndex = authoredSteps.indexOf(reviewQueue[reviewIndex]);
+      renderCurrent();
+      return;
+    }
+    if (reviewStepId === authoredSteps[currentIndex].id) {
+      onReviewComplete?.();
+      return;
+    }
+    completed.add(authoredSteps[currentIndex].id);
+    const inlineSummary = inlineSummaryAt(currentIndex);
+    if (inlineSummary) completed.add(inlineSummary.id);
+    const nextIndex = currentIndex === reviewOpeningIndex
+      ? reviewTargetIndex : currentIndex + (inlineSummary ? 2 : 1);
+    if (nextIndex >= authoredSteps.length) {
+      finishQuestions();
+      return;
+    }
+    announce(false);
+    currentIndex = nextIndex;
+    renderCurrent();
+  };
+  const hideCurrent = (step) => {
+    const nextIds = authoredSteps.slice(currentIndex + 1).map(item => item.id);
+    applyStepFilter(activeFilterIds);
+    questionSteps = authoredSteps.filter(item => item.type !== "markdown");
+    resultVisible = false;
+    mistakes.delete(step.id);
+    reviewQueue = reviewQueue.filter(item => !isHidden(item));
+    if (!questionSteps.length) { reviewIndex = -1; renderCurrent(); return; }
+    if (reviewStepId === step.id) { (onReviewComplete || onExitLesson)?.(); return; }
+    const next = reviewIndex >= 0 ? reviewQueue[reviewIndex]
+      : authoredSteps.find(item => nextIds.includes(item.id));
+    if (!next) { (onExitLesson || onFinishLesson)?.(); return; }
+    currentIndex = authoredSteps.indexOf(next);
+    renderCurrent();
+  };
+  const renderCurrent = () => {
+    destroyStep();
+    destroyStep = () => {};
+    const instantEntry = !renderedStep && isLessonPart;
+    renderedStep = true;
+    container.classList.toggle("lesson-card--instant-entry", instantEntry);
+    if (!questionSteps.length && hasHiddenQuestions()) {
+      resultVisible = false;
+      updateProgress();
+      topProgress.hidden = true;
+      container.innerHTML = `<section class="question-hidden-empty" dir="${locale === "ar" ? "rtl" : "ltr"}"><p role="status">${locale === "ar" ? "لا توجد أسئلة ظاهرة في هذا الدرس." : "There are no visible questions in this lesson."}</p><button type="button" class="system-action system-action--primary" data-hidden-exit>${locale === "ar" ? "العودة لمسار المادة" : "Return to the subject"}</button></section>`;
+      const exit = container.querySelector("[data-hidden-exit]");
+      exit.addEventListener("click", () => (onExitLesson || onFinishLesson)?.(), { signal });
+      exit.focus({ preventScroll:true });
+      return;
+    }
+    currentIndex = visibleIndex(currentIndex);
+    const step = authoredSteps[currentIndex];
+    if (!step) {
+      updateProgress();
+      topProgress.hidden = false;
+      container.innerHTML = '<p class="math-question-filter-empty">لا توجد أسئلة إضافية في هذا الدرس بعد التصفية. يمكنك إيقاف التصفية من زر القمع.</p>';
+      return;
+    }
+    const inlineSummary = inlineSummaryAt(currentIndex);
+    if (currentIndex >= authoredSteps.length - 2) preloadCompletionMedia();
+    let host = container.querySelector("[data-live-authored-step]");
+    const keepQuestionShell = step.type !== "markdown" && Boolean(host?.querySelector(".level-layout-preview")) && Boolean(host?.dataset.lessonStep);
+    if (!keepQuestionShell) {
+      container.innerHTML = '<article class="lesson-flow ready-lesson-flow"><section class="ready-lesson-stage" data-live-authored-step tabindex="-1"></section></article>';
+      host = container.querySelector("[data-live-authored-step]");
+    }
+    delete host.dataset.mistakeReview;
+    delete host.dataset.lessonPresentation;
+    host.dataset.lessonStep = step.id;
+    if (reviewIndex >= 0) host.dataset.mistakeReview = "";
+    if (step.presentation) host.dataset.lessonPresentation = step.presentation;
+    host.lang = locale;
+    host.dir = locale === "ar" ? "rtl" : "ltr";
+    if (!instantEntry && !keepQuestionShell) animateView(container);
+    updateProgress();
+    if (step.type === "markdown") {
+      const stepController = new AbortController();
+      const titleId = `authored-lesson-title-${step.id}`;
+      const canExitOpening = currentIndex === 0 && ["video-intro", "rocky-dialogue"].includes(step.presentation);
+      host.innerHTML = renderTemplateShell({
+        titleId,
+        showScrollIndicator: step.presentation !== "video-intro",
+        content: step.presentation === "rocky-dialogue"
+          ? renderRockyDialogue(step, { titleId, locale })
+          : step.presentation === "video-intro"
+            ? renderVideoIntro(step, { titleId, locale, summaryStep: inlineSummary })
+            : `<article class="level-lesson-copy ready-lesson-copy markdown-authored-content">${step.presentation === "lesson-summary" ? "" : `<p class="level-layout-kicker">${locale === "ar" ? "تعلّم" : "LEARN"}</p>`}<div class="markdown-rendered">${renderMarkdownDocument(step.source, { locale })}</div></article>`,
+        footer: renderTemplateFooter({
+          locale,
+          showShortcut: step.presentation !== "video-intro",
+          backLabel: step.presentation === "video-intro" || canExitOpening
+            ? (locale === "ar" ? "رجوع" : "BACK")
+            : undefined,
+          backAttributes: {
+            disabled: currentIndex === 0 && !canExitOpening,
+            hidden: currentIndex === 0 && !canExitOpening,
+          },
+          primaryLabel: step.presentation === "video-intro"
+            ? inlineSummary
+              ? (locale === "ar" ? "ابدأ الأسئلة" : "START QUESTIONS")
+              : copy.continue
+            : authoredSteps[currentIndex + 1]?.type !== "markdown"
+              ? (locale === "ar" ? "ابدأ الأسئلة" : "START QUESTIONS")
+              : copy.continue,
+        }),
+        locale,
+      });
+      const renderedHeading = step.presentation !== "video-intro" && host.querySelector(".markdown-authored-content h1");
+      if (renderedHeading) renderedHeading.id = titleId;
+      else if (step.presentation !== "video-intro")
+        host
+          .querySelector(".markdown-authored-content")
+          ?.insertAdjacentHTML(
+            "afterbegin",
+            `<h1 class="visually-hidden" id="${escapeHtml(titleId)}">${escapeHtml(step.title)}</h1>`,
+          );
+      if (step.presentation === "lesson-summary") {
+        enhanceLessonSummary(host, { titleId, locale, signal: stepController.signal });
+      }
+      if (inlineSummary) {
+        const summaryHost = host.querySelector("[data-inline-summary-step]");
+        enhanceLessonSummary(summaryHost, { titleId: `${titleId}-summary`, locale, signal: stepController.signal });
+      }
+      if (step.presentation === "video-intro") {
+        mountVideoIntro(host, { signal: stepController.signal, locale });
+      }
+      mountMarkdownFeatures(host, {
+        locale,
+        signal: stepController.signal,
+        scrollSurface: host.querySelector(".level-layout-task"),
+      });
+      mountTemplateScrollIndicator(host, { signal:stepController.signal });
+      mountRockyDialogues(container, stepController.signal);
+      revealWhenReady(host, {
+        signal: stepController.signal,
+        animate:!instantEntry,
+        onReady() {
+          playRockyDialogue(container, host, stepController.signal);
+          preloadNextStep(authoredSteps[currentIndex + (inlineSummary ? 2 : 1)]);
+          preloadImages(["assets/mascot/rocky-standing-still.svg"]);
+          focusHost();
+          if (currentIndex === videoTourIndex && !videoTourShown) {
+            videoTourShown = true;
+            void Promise.allSettled(host.getAnimations().map(animation => animation.finished)).then(() => {
+              if (stepController.signal.aborted) return;
+              const shouldResume = tourResume.index !== videoTourIndex || tourResume.resultVisible;
+              mountVideoTour(host, {
+                signal:stepController.signal, locale,
+                finishLabel:shouldResume ? (locale === "ar" ? "متابعة الدرس" : "Resume lesson") : undefined,
+                onFinish() {
+                  if (!shouldResume) return;
+                  currentIndex = tourResume.index;
+                  resultVisible = tourResume.resultVisible;
+                  if (resultVisible) void renderResult();
+                  else renderCurrent();
+                },
+              });
+            });
+          }
+        },
+      });
+      host
+        .querySelector("[data-template-back]")
+        .addEventListener("click", canExitOpening ? exitFromOpening : goBack, { signal: stepController.signal });
+      host
+        .querySelector("[data-template-primary]")
+        .addEventListener("click", goNext, { signal: stepController.signal });
+      destroyStep = () => stepController.abort();
+      return;
+    }
+    if (step.type === "exam-question") {
+      const examController = new AbortController();
+      const destroyExam = renderExamQuestion(host, step, { locale, onBack:goBack, selfCheck:!demoMode, beforeAnswer,
+        onAnswer:({ correct }) => {
+          void saveAnswer({ stepId:step.id, correct, reviewing:reviewIndex >= 0 });
+        }, onContinue() {
+          if (demoMode) void saveAnswer({ stepId:step.id, correct:null });
+          goNext();
+        }, onReveal:() => onLessonEvent?.({ type:"reveal",step }) });
+      mountQuestionFeedback({ host,shell,feedback:questionFeedbackFor(step.id),signal:examController.signal,locale,onHidden:() => hideCurrent(step) });
+      mountQuestionExplanation({host,explanation:demoMode ? null : getQuestionExplanation?.(step),locale,signal:examController.signal});
+      const back = host.querySelector("[data-template-back]");
+      back.disabled = currentIndex === 0;
+      back.hidden = currentIndex === 0;
+      const stopReadiness = revealWhenReady(host, { signal:examController.signal, animate:!instantEntry && !keepQuestionShell, onReady:focusHost });
+      destroyStep = () => { examController.abort(); stopReadiness(); destroyExam(); };
+      onLessonEvent?.({ type:"question",step });
+      return;
+    }
+    const questionController = new AbortController();
+    const destroyQuestion = renderQuestion(host, {
+      definition: step,
+      beforeAnswer,
+      onBack: goBack,
+      onContinue: goNext,
+      onAnswer: (result) => {
+        if (reviewIndex < 0 && !result.correct) mistakes.add(step.id);
+        void saveAnswer({ ...result, stepId: step.id, reviewing: reviewIndex >= 0 });
+        onLessonEvent?.({ type:"answer",step,correct:result.correct });
+      },
+      locale,
+    });
+    mountQuestionFeedback({ host,shell,feedback:questionFeedbackFor(step.id),signal:questionController.signal,locale,onHidden:() => hideCurrent(step) });
+    mountQuestionExplanation({host,explanation:demoMode ? null : getQuestionExplanation?.(step),locale,signal:questionController.signal});
+    revealWhenReady(host.querySelector(".level-layout-task"), { signal:questionController.signal, animate:!instantEntry });
+    destroyStep = () => { questionController.abort(); destroyQuestion(); };
+    const stepBackButton = host.querySelector("[data-template-back]");
+    stepBackButton.disabled = currentIndex === 0 || reviewIndex >= 0;
+    stepBackButton.hidden = currentIndex === 0 || reviewIndex >= 0;
+    focusHost();
+    onLessonEvent?.({ type:"question",step });
+  };
+
+  destroyMathQuestionFilter = mountMathQuestionFilter({
+    shell,
+    locale,
+    signal,
+    getCatalog:demoMode ? undefined : getMathFilterCatalog,
+    initialState:mathFilterState,
+    onApply(selection) {
+      const currentId = authoredSteps[currentIndex]?.id;
+      const ids = onMathFilterApply?.(selection);
+      if (signal.aborted) return;
+      applyStepFilter(ids);
+      questionSteps = authoredSteps.filter(step => step.type !== "markdown");
+      resultVisible = false;
+      reviewIndex = -1;
+      reviewQueue = [];
+      currentIndex = Math.max(0, authoredSteps.findIndex(step => step.id === currentId));
+      renderCurrent();
+    },
+  });
+  const destroyQuestionNavigation = demoMode ? () => {} : mountQuestionNavigation({
+    shell,signal,locale,getQuestions:() => questionSteps,
+    getCurrentId:() => resultVisible ? null : authoredSteps[currentIndex]?.id,
+    getRating:id => questionFeedbackFor(id)?.getRating(),
+    subscribe:listener => questionFeedbackFor(questionSteps[0]?.id)?.subscribe?.(listener),
+    onSelect(id) {
+      const index = authoredSteps.findIndex(step => step.id === id);
+      if (index < 0) return;
+      resultVisible = false;reviewIndex = -1;reviewQueue = [];currentIndex = index;
+      renderCurrent();
+    },
+  });
+  mountTemplateEnterShortcut(container, { signal });
+  mountTemplateContentZoom(container, { signal });
+  if (resultVisible && (questionSteps.length || !hasHiddenQuestions())) renderResult();
+  else renderCurrent();
+  return () => {
+    shell.classList.remove("lesson-shell--completion");
+    shell.classList.remove("lesson-shell--pre-quiz");
+    destroyQuestionNavigation();
+    destroyMathQuestionFilter();
+    destroyStep();
+    controller.abort();
+    document.body.classList.remove(
+      "ui-lab-open",
+      "ui-lab-template-open",
+      "ui-lab-mcq-open",
+      "ready-lesson-open",
+    );
+    shell.classList.remove(
+      "lesson-shell--ui-lab",
+      "lesson-shell--ready-lesson",
+    );
+    shell.style.removeProperty("--lesson-progress");
+    container.classList.remove(
+      "lesson-card--ui-lab",
+      "lesson-card--ready-lesson",
+      "lesson-card--instant-entry",
+    );
+    backButton.innerHTML = previousChrome.backMarkup;
+    if (previousChrome.backLabel === null)
+      backButton.removeAttribute("aria-label");
+    else backButton.setAttribute("aria-label", previousChrome.backLabel);
+    lessonStatus.hidden = previousChrome.statusHidden;
+    topProgress.hidden = previousChrome.progressHidden;
+    ["aria-valuemin", "aria-valuemax", "aria-valuenow"].forEach((name) =>
+      topProgress.removeAttribute(name),
+    );
+    if (previousChrome.progressRole === null)
+      topProgress.removeAttribute("role");
+    else topProgress.setAttribute("role", previousChrome.progressRole);
+    if (previousChrome.progressLabel === null)
+      topProgress.removeAttribute("aria-label");
+    else topProgress.setAttribute("aria-label", previousChrome.progressLabel);
+  };
+}

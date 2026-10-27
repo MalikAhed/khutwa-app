@@ -1,351 +1,1554 @@
-export const ICT_CLASSIFIED_UNIT2_QUESTIONS=[{id:"classified-u2-p63-mcq-5",lessonId:"smartphone-operating-systems",partId:"android-features",sourceFile:"ict-classified-2023",sourcePage:63,originalSourcePage:63,answerPage:89,originalNumber:"السؤال الأول / 5",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[39],format:"mcq",question:"ما تقنية التصوير المذكورة في الدرس لتغطية المشهد بشكل كروي كامل؟",choices:["التصوير المزدوج","الفلاتر المرفقة","تصوير 360","المجسات"],correctChoiceIndex:2,answerProvenance:"curriculum-corrected-2026-10-24",explanation:`**الإجابة:** تصوير 360
-
-**الشاهد من الكتاب:**
-
-> تعمل المجسات الثلاثة السابقة معاً؛ لتحقيق واقع يحاكي البيئة الحقيقية، التي تحتاج إلى تقنية تصوير 360°، أي التصوير باستخدام مجموعة كاميرات على حامل يتم تشغيلها، وإيقافها في وقت واحد، أو كاميرا مزودة بعدة عدسات، كل واحدة تغطي زاوية محددة؛ بحيث يتم تغطية المشهد بشكل كروي كامل.
-
-**المصدر:** صفحة 39 من الكتاب.
-
-
-
-**توضيح:** المقصود هنا تقنية التصوير التي تغطي المشهد الكروي: تصوير 360°. وتتكامل معها المجسات المذكورة في الفقرة لتتبع حركة الجهاز واتجاهه.`,reference:"[السؤال ص 63](assets/lessons/ict/exams/source-pages/classified-p063.webp) · [الإجابة ص 89](assets/lessons/ict/exams/source-pages/classified-p089.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 63 · السؤال الأول / 5",partOrder:5,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 63 · السؤال الأول / 5",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p64-mcq-8",lessonId:"smartphone-operating-systems",partId:"ios-files",sourceFile:"ict-classified-2023",sourcePage:64,originalSourcePage:64,answerPage:89,originalNumber:"السؤال الأول / 8",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[42,53],format:"mcq",question:"ما امتداد الملف التنفيذي في نظام أندرويد؟",choices:[".aia",".apk",".ipa",".xap"],correctChoiceIndex:1,answerProvenance:"curriculum-corrected-2026-10-24",explanation:"**الإجابة:** `.apk`\n\n**اللغات والامتدادات كما يوردها جدول الكتاب:**\n\n| نظام التشغيل | لغات التطبيقات الأصيلة | امتداد الملف التنفيذي |\n| --- | --- | --- |\n| أندرويد | `Java` و`C++` | `.apk` |\n| `iOS` | `Objective-C` و`Swift` | `.ipa` |\n| ويندوز فون | `VB.NET` و`C#.NET` | `.xap` |\n\n**المصدر:** صفحة 41 من الكتاب.\n\n[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/59a1b837459960ed53fb.webp)",reference:"[السؤال ص 64](assets/lessons/ict/exams/source-pages/classified-p064.webp) · [الإجابة ص 89](assets/lessons/ict/exams/source-pages/classified-p089.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 8",partOrder:6,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 8",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p64-mcq-14",lessonId:"smartphone-operating-systems",partId:"android-features",sourceFile:"ict-classified-2023",sourcePage:64,originalSourcePage:64,answerPage:89,originalNumber:"السؤال الأول / 14",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[38],format:"mcq",question:"ما طريقة التصوير التي تعمل على تشغيل الكاميرا الأمامية والخلفية معًا؟",choices:["الفردي","الخلفي","الأمامي","المزدوج"],correctChoiceIndex:3,answerProvenance:"curriculum-corrected-2026-10-24",explanation:`**الإجابة:** المزدوج
-
-**الشاهد من الكتاب:**
-
-> التصوير المزدوج: تشغيل الكاميرا الأمامية والخلفية معاً؛ بحيث تظهر صورة صغيرة من الكاميرا الأمامية داخل صورة الكاميرا الخلفية.
-
-**المصدر:** صفحة 37 من الكتاب.`,reference:"[السؤال ص 64](assets/lessons/ict/exams/source-pages/classified-p064.webp) · [الإجابة ص 89](assets/lessons/ict/exams/source-pages/classified-p089.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 14",partOrder:6,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 14",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p64-mcq-16",lessonId:"smartphone-operating-systems",partId:"ios-files",sourceFile:"ict-classified-2023",sourcePage:64,originalSourcePage:64,answerPage:89,originalNumber:"السؤال الأول / 16",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[40],format:"mcq",question:"ما الشركة المنتجة لنظام التشغيل IOS؟",choices:["Apple","Microsoft","Google","Samsung"],correctChoiceIndex:0,answerProvenance:"curriculum-corrected-2026-10-24",explanation:`**الإجابة:** \`Apple\`
-
-**الشاهد من الكتاب:**
-
-> نظام التشغيل من إنتاج شركة أبل، وخاص بأجهزتها، وغير مفتوح المصدر
-
-**المصدر:** صفحة 40 من الكتاب.`,reference:"[السؤال ص 64](assets/lessons/ict/exams/source-pages/classified-p064.webp) · [الإجابة ص 89](assets/lessons/ict/exams/source-pages/classified-p089.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 16",partOrder:7,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 16",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p66-mcq-29",lessonId:"smartphone-operating-systems",partId:"android-features",sourceFile:"ict-classified-2023",sourcePage:66,originalSourcePage:66,answerPage:90,originalNumber:"السؤال الأول / 29",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[39],format:"mcq",question:"ما التقنية الرقمية التي تحاكي بيئة حقيقية أو متعددة الأبعاد، وتعمل على نقل الوعي الإنساني لتلك البيئة؟",choices:["الواقع الافتراضي","الواقع المعزز","التصوير المزدوج","أورازما"],correctChoiceIndex:0,answerProvenance:"curriculum-corrected-2026-10-24",explanation:`**الإجابة:** الواقع الافتراضي
-
-**الشاهد من الكتاب:**
-
-> الواقع الافتراضي: تقنية رقمية تحاكي بيئة حقيقية، أو متعددة الأبعاد، تعمل على نقل الوعي الإنساني إلى تلك البيئة، والتفاعل معها.
-
-**المصدر:** صفحة 38 من الكتاب.`,reference:"[السؤال ص 66](assets/lessons/ict/exams/source-pages/classified-p066.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 66 · السؤال الأول / 29",partOrder:7,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 66 · السؤال الأول / 29",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p66-mcq-30",lessonId:"smartphone-operating-systems",partId:"ios-files",sourceFile:"ict-classified-2023",sourcePage:66,originalSourcePage:66,answerPage:90,originalNumber:"السؤال الأول / 30",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[41],format:"mcq",question:"ما ميزة iOS التي تعدّل ألوان الشاشة بحسب الإضاءة المحيطة؟",choices:["Itunes","True Tone","مجس الدوران","مجس التسارع"],correctChoiceIndex:1,answerProvenance:"curriculum-corrected-2026-10-24",explanation:`**الإجابة:** \`True Tone\`
-
-**الشاهد من الكتاب:**
-
-> ميزة True Tone: شاشة تتحسس الطقس، وتعدل ألوان الشاشة حسب إضاءة الجو المحيط.
-
-**المصدر:** صفحة 40 من الكتاب.
-
-
-
-**توضيح:**
-شاهد الكتاب يكرر تعبير «تتحسس الطقس»، لكنه يوضح أن المقصود تعديل الألوان بحسب إضاءة الجو المحيط، لا قياس حالة الطقس.`,reference:"[السؤال ص 66](assets/lessons/ict/exams/source-pages/classified-p066.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 66 · السؤال الأول / 30",partOrder:8,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 66 · السؤال الأول / 30",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p67-mcq-32",lessonId:"smartphone-operating-systems",partId:"ios-files",sourceFile:"ict-classified-2023",sourcePage:67,originalSourcePage:67,answerPage:90,originalNumber:"السؤال الأول / 32",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[44],format:"mcq",question:"ما امتداد الملف في برنامج App Inventor والذي يستخدم للتعديل على ملف التطبيق؟",choices:["APK","XAP","APP","AIA"],correctChoiceIndex:3,answerProvenance:"curriculum-corrected-2026-10-24",explanation:`**الإجابة:** \`AIA\`
-
-**الشاهد من الكتاب:**
-
-> وتستطيع الحصول على أي تطبيق للتعديل عليه من شبكة الإنترنت شرط أن يكون امتداده aia، وعند الحصول عليه تستطيع إضافته إلى حسابك عن طريق الأمر Import project (.aia) from my computer من قائمة Projects.
-
-**المصدر:** صفحة 50 من الكتاب.`,reference:"[السؤال ص 67](assets/lessons/ict/exams/source-pages/classified-p067.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 67 · السؤال الأول / 32",partOrder:9,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 67 · السؤال الأول / 32",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p67-mcq-43",lessonId:"smartphone-operating-systems",partId:"android-features",sourceFile:"ict-classified-2023",sourcePage:67,originalSourcePage:67,answerPage:90,originalNumber:"السؤال الأول / 43",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[40],format:"mcq",question:"ما المجس الذي يقيس ميل جهاز الهاتف الذكي وزوايا التحرك من خلال موقعه عبر المحاور الثلاثة؟",choices:["التسارع","المغناطيسية","الدوران","الإطار المتعدد"],correctChoiceIndex:2,answerProvenance:"curriculum-corrected-2026-10-24",explanation:`**الإجابة:** الدوران
-
-**الشاهد من الكتاب:**
-
-> الدوران (Gyroscope): يقيس ميل الجهاز وزوايا التحرك من خلال تحديد موقعه حول المحاور الثلاثة.
-
-**المصدر:** صفحة 39 من الكتاب.`,reference:"[السؤال ص 67](assets/lessons/ict/exams/source-pages/classified-p067.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 67 · السؤال الأول / 43",partOrder:8,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 67 · السؤال الأول / 43",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p70-written-5",lessonId:"smartphone-operating-systems",partId:"android-features",sourceFile:"ict-classified-2023",sourcePage:70,originalSourcePage:70,answerPage:92,originalNumber:"السؤال الثالث / 5",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[39],format:"written",question:"علل: تستخدم عدة عدسات في تقنية تصوير 360.",answer:`كل عدسة تغطي زاوية محددة من المشهد.
-
-عند استخدام عدة عدسات نجمع الزوايا المختلفة، فتكتمل تغطية المشهد بشكل كروي بزاوية 360°.
-
-**المصدر:** صفحة 39 من الكتاب.`,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 92](assets/lessons/ict/exams/source-pages/classified-p092.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 5",partOrder:26,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p70-written-1",lessonId:"smartphone-operating-systems",partId:"ios-files",sourceFile:"ict-classified-2023",sourcePage:70,originalSourcePage:70,answerPage:92,originalNumber:"السؤال الثالث / 1",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[41,42,53],format:"written",question:"قارن بين نظام IOS ونظام ويندوز فون من حيث: 1. لغات البرمجة الأصيلة. 2. الملفات التنفيذية.",answer:"**المقارنة:**\n\n| نظام التشغيل | لغات البرمجة الأصيلة | امتداد الملف التنفيذي |\n| --- | --- | --- |\n| `iOS` | `Objective-C` و`Swift` | `.ipa` |\n| `Windows Phone` | `C#.NET` و`VB.NET` | `.xap` |\n\n**اللغات والامتدادات كما يوردها جدول الكتاب:**\n\n| نظام التشغيل | لغات التطبيقات الأصيلة | امتداد الملف التنفيذي |\n| --- | --- | --- |\n| أندرويد | `Java` و`C++` | `.apk` |\n| `iOS` | `Objective-C` و`Swift` | `.ipa` |\n| ويندوز فون | `VB.NET` و`C#.NET` | `.xap` |\n\n**المصدر:** صفحة 41 من الكتاب.\n\n[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/59a1b837459960ed53fb.webp)",answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 92](assets/lessons/ict/exams/source-pages/classified-p092.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 1",partOrder:16,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p70-written-7",lessonId:"smartphone-operating-systems",partId:"android-features",sourceFile:"ict-classified-2023",sourcePage:70,originalSourcePage:70,answerPage:94,originalNumber:"السؤال الثالث / 7",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[40],format:"written",question:"كيف تعمل تقنية الواقع المعزز في نظام أندرويد؟",answer:`**تعمل تقنية الواقع المعزز وفق التسلسل الآتي:**
-
-1. تفتح كاميرا الهاتف لترى الواقع الحقيقي.
-2. يحلل التطبيق الصورة ليتعرف إلى المعلم المطلوب.
-3. يعرض العنصر الافتراضي المرتبط به سابقًا، مثل فيديو أو صورة توضيحية.
-
-يبقى الواقع الحقيقي ظاهرًا وتضاف إليه المعلومة الرقمية.
-
-**مرجع الكتاب:** الدرس الأول: أنظمة تشغيل الهاتف الذكي، ص 40 مطبوعة (ص 42 في PDF).`,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 94](assets/lessons/ict/exams/source-pages/classified-p094.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 7",partOrder:27,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p70-written-10",lessonId:"smartphone-operating-systems",partId:"android-features",sourceFile:"ict-classified-2023",sourcePage:70,originalSourcePage:70,answerPage:93,originalNumber:"السؤال الثالث / 10",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[39],format:"written",question:"اذكر طرق التصوير بتقنية 360 درجة.",answer:`**الإجابة:** مجموعة كاميرات متزامنة على حامل؛ أو كاميرا متعددة العدسات.
-
-**الشاهد من الكتاب:**
-
-> تعمل المجسات الثلاثة السابقة معاً؛ لتحقيق واقع يحاكي البيئة الحقيقية، التي تحتاج إلى تقنية تصوير 360°، أي التصوير باستخدام مجموعة كاميرات على حامل يتم تشغيلها، وإيقافها في وقت واحد، أو كاميرا مزودة بعدة عدسات، كل واحدة تغطي زاوية محددة؛ بحيث يتم تغطية المشهد بشكل كروي كامل.
-
-**المصدر:** صفحة 39 من الكتاب.`,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 93](assets/lessons/ict/exams/source-pages/classified-p093.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 10",partOrder:28,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p70-written-12",lessonId:"smartphone-operating-systems",partId:"ios-files",sourceFile:"ict-classified-2023",sourcePage:70,originalSourcePage:70,answerPage:93,originalNumber:"السؤال الثالث / 12",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[41],format:"written",question:"اذكر أربعًا من طرق نقل البيانات في نظام IOS.",answer:`**طرق نقل البيانات الأربع:**
-
-1. التخزين السحابي \`iCloud\`.
-2. برنامج \`iTunes\` مع كابل \`USB\`.
-3. مواقع التواصل الاجتماعي.
-4. البريد الإلكتروني.
-
-**الشاهد من الكتاب 1:**
-
-> استخدام التخزين السحابي Icloud في نقل البيانات بين جهازي IOS، وبين الحاسوب وأجهزة IOS.
-
-
-
-**الشاهد من الكتاب 2:**
-
-> استخدام برنامج Itunes: في نقل البيانات من الحاسوب إلى أجهزة IOS، مع استخدام كابل USB
-
-
-
-**الشاهد من الكتاب 3:**
-
-> استخدام مواقع التواصل الاجتماعي والبريد الإلكتروني في نقل البيانات بين أجهزة IOS وأجهزة الحواسيب.
-
-**المصدر:** صفحة 41 من الكتاب.`,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 93](assets/lessons/ict/exams/source-pages/classified-p093.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 12",partOrder:17,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p70-written-13",lessonId:"smartphone-operating-systems",partId:"android-features",sourceFile:"ict-classified-2023",sourcePage:70,originalSourcePage:70,answerPage:94,originalNumber:"السؤال الثالث / 13",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[40],format:"written",question:"ما المجسات الثلاثة التي يعرضها درس الواقع الافتراضي في الهواتف الذكية، وما وظيفة كل منها؟",answer:`**المجسات ووظيفة كل منها:**
-
-| المجس | وظيفته |
-| --- | --- |
-| التسارع (\`Accelerometer\`) | يستشعر التسارع الخطي على المحاور الثلاثة؛ وتُستخدم قراءاته في تتبّع حركة الجهاز. |
-| الدوران (\`Gyroscope\`) | يستشعر الدوران حول محاور الجهاز؛ وتُستخدم قراءاته في تتبّع تغيّر الميل والاتجاه. |
-| المجال المغناطيسي (\`Magnetometer\`) | يقيس المجال المغناطيسي المحيط بالجهاز؛ ويمكن استخدامه مرجعًا لاتجاه الجهاز مع قراءات المجسات الأخرى. |
-
-**تنبيه:** وظيفة مجس المجال المغناطيسي لا تعني أنه يكشف كل معدن لمجرد كونه معدنًا.
-
-تجمع تطبيقات التتبّع بين هذه القراءات؛ فهي لا تقيس الشيء نفسه. والسؤال يطلب المجسات التي يعرضها الدرس، ولا يقرر أنها متطلبات إلزامية لكل جهاز واقع افتراضي.
-
-**المصدر:** صفحة 39 من الكتاب.
-
-[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/4c940f51c826bd49ff84.webp)
-
-[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/a9cccb3601fc9d6de525.webp)
-
-[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/734b8d9d8aab278144af.webp)`,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 94](assets/lessons/ict/exams/source-pages/classified-p094.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 13",partOrder:29,prompt:"سؤال من ورقة امتحان",body:"ما المجسات الثلاثة التي يذكرها درس الواقع الافتراضي لتتبّع حركة الهاتف واتجاهه؟ اذكر وظيفة كل مجس."},{id:"classified-u2-p72-mcq-1",lessonId:"my-mobile-app",partId:"app-inventor-blocks",sourceFile:"ict-classified-2023",sourcePage:72,originalSourcePage:72,answerPage:90,originalNumber:"السؤال الأول / 1",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46],format:"mcq",question:"لبنة برمجية تستخدم للمقارنة والتحكم وفق شرط معين:",choices:["اللبنة أ","اللبنة ب","اللبنة ج","اللبنة د"],correctChoiceIndex:3,answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p72-q1.webp",figureNeeded:!0,figureAlt:"خيارات اللبنات الأربع الأصلية: د هي لبنة if then",explanation:`![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p72-q1.webp)
-
-لبنة **\`if\`** تختبر شرطاً، ثم تنفذ الأوامر داخل \`then\` إذا تحقق.
-
-الرمز **د** هو \`if\`؛ لذلك هو لبنة التحكم وفق الشرط المطلوبة.
-
-أما أ فهي مقارنة وحدها، وج حدث نقر، وب تكرار على عناصر قائمة.
-
-**المصدر:** صفحة 45 من الكتاب.`,example:"![خيارات اللبنات الأربع الأصلية: د هي لبنة if then ](assets/lessons/ict/exams/classified-p72-q1.webp)",reference:"[السؤال ص 72](assets/lessons/ict/exams/source-pages/classified-p072.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 1",partOrder:6,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 1",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p72-mcq-2",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:72,originalSourcePage:72,answerPage:90,originalNumber:"السؤال الأول / 2",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[51,52],format:"mcq",question:"في برنامج App Inventor ما وظيفة اللبنة؟",choices:["إيجاد ناتج القسمة","إيجاد الجذر التربيعي","التخلص من الكسر","إيجاد باقي القسمة"],correctChoiceIndex:1,answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p72-q2.webp",figureNeeded:!0,figureAlt:"لبنة square root الأصلية من السؤال 2",explanation:`**الإجابة:** إيجاد الجذر التربيعي
-
-**الشاهد من الكتاب:**
-
-> إضافة العمليات الحسابية الآتية إلى التصميم وبرمجتها: square root، min، floor
-
-**المصدر:** صفحة 52 من الكتاب.
-
-
-
-**توضيح:** الشاهد يعرض اسم العملية بالإنجليزية؛ \`square root\` تعني الجذر التربيعي. هذه ترجمة الاسم الظاهر، لا اقتباس عربي غير موجود في الصفحة.`,example:"![لبنة square root الأصلية من السؤال 2 ](assets/lessons/ict/exams/classified-p72-q2.webp)",reference:"[السؤال ص 72](assets/lessons/ict/exams/source-pages/classified-p072.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 2",partOrder:4,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 2",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p72-mcq-7",lessonId:"my-mobile-app",partId:"app-inventor-blocks",sourceFile:"ict-classified-2023",sourcePage:72,originalSourcePage:72,answerPage:90,originalNumber:"السؤال الأول / 7",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46],format:"mcq",question:"في برنامج App Inventor يتم إضافة اللبنة من مجموعة:",choices:["Layout","Variables","User Interface","Control"],correctChoiceIndex:1,answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p72-q7.webp",figureNeeded:!0,figureAlt:"لبنة initialize global angle to 0 الأصلية",explanation:`![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p72-q7.webp)
-
-كلمة **\`Variables\`** تعني مجموعة المتغيرات.
-
-اللبنة \`initialize global angle to\` تعرف متغيراً عاماً اسمه \`angle\` وتحدد قيمته الابتدائية عند توصيلها.
-
-لذلك تنتمي إلى **\`Variables\`**؛ فهي ليست أداة لترتيب الواجهة أو لبنة تحكم.
-
-يعرض الكتاب هذه الصيغة تحت «تعريف متغير»، ويذكر مجموعة المتغيرات عند استرجاع قيمته.
-
-**المصدر:** الصفحات 44، 45 من الكتاب.`,example:"![لبنة initialize global angle to 0 الأصلية ](assets/lessons/ict/exams/classified-p72-q7.webp)",reference:"[السؤال ص 72](assets/lessons/ict/exams/source-pages/classified-p072.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 7",partOrder:7,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 7",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p73-mcq-10",lessonId:"my-mobile-app",partId:"app-inventor-tools",sourceFile:"ict-classified-2023",sourcePage:73,originalSourcePage:73,answerPage:91,originalNumber:"السؤال الأول / 10",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[44],format:"mcq",question:"بحسب نشاط الكتاب في App Inventor، أي خاصية تُضبط لمحاذاة محتوى الشاشة إلى اليمين؟",choices:["خاصية Text","خاصية Label","خاصية Alignment","خاصية Screen"],correctChoiceIndex:2,answerProvenance:"curriculum-corrected-2026-10-24",explanation:`**الإجابة:** خاصية \`Alignment\`
-
-**الشاهد من الكتاب:**
-
-> خاصية المحاذاة Alignment: لجعل اتجاه الشاشة screen إلى اليمين بتحديد القيمة right.
-
-**المصدر:** صفحة 44 من الكتاب.
-
-
-
-**توضيح:**
-المقصود المنهجي محاذاة محتوى الشاشة، لا اتجاه تدوير الشاشة.`,reference:"[السؤال ص 73](assets/lessons/ict/exams/source-pages/classified-p073.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 10",partOrder:7,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 10",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p73-mcq-14",lessonId:"my-mobile-app",partId:"app-inventor-blocks",sourceFile:"ict-classified-2023",sourcePage:73,originalSourcePage:73,answerPage:91,originalNumber:"السؤال الأول / 14",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46],format:"mcq",question:"في برنامج App Inventor ما وظيفة اللبنة المبينة؟",choices:["إحضار قيمة المتغير","إسناد قيمة للمتغير","الإعلان عن المتغير","قراءة المتغير"],correctChoiceIndex:2,answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p73-q14.webp",figureNeeded:!0,figureAlt:"لبنة initialize global result to الأصلية",explanation:"![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p73-q14.webp)\n\nلبنة **`initialize global`** تعرف متغيراً عاماً، أي تنشئ اسمه وتعين قيمته الابتدائية.\n\nفي الصورة اسم المتغير `result`.\n\nإذن الجواب **الإعلان عن المتغير**، بخلاف `get` لقراءة القيمة و`set` لتغييرها.\n\n**المصدر:** صفحة 50 من الكتاب.",example:"![لبنة initialize global result to الأصلية ](assets/lessons/ict/exams/classified-p73-q14.webp)",reference:"[السؤال ص 73](assets/lessons/ict/exams/source-pages/classified-p073.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 14",partOrder:8,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 14",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p73-mcq-15",lessonId:"my-mobile-app",partId:"app-inventor-tools",sourceFile:"ict-classified-2023",sourcePage:73,originalSourcePage:73,answerPage:91,originalNumber:"السؤال الأول / 15",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[43,44],format:"mcq",question:"في برنامج App Inventor ما المجموعة التي نضيف منها الأداة Label؟",choices:["User Interface","Layout","Drawing and Animation","Media"],correctChoiceIndex:0,answerProvenance:"curriculum-corrected-2026-10-24",explanation:`**الإجابة:** \`User Interface\`
-
-**الشاهد من الكتاب:**
-
-> أداة Label (مربع التسمية): من مجموعة User Interface العدد (6) لعنونة مربعات النصوص ولتوضيح المطلوب إدخاله، ولإخراج النتائج وعنونتها.
-
-**المصدر:** صفحة 44 من الكتاب.`,reference:"[السؤال ص 73](assets/lessons/ict/exams/source-pages/classified-p073.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 15",partOrder:8,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 15",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p74-mcq-21",lessonId:"my-mobile-app",partId:"app-inventor-blocks",sourceFile:"ict-classified-2023",sourcePage:74,originalSourcePage:74,answerPage:91,originalNumber:"السؤال الأول / 21",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46],format:"mcq",question:"في برنامج App Inventor ما القيمة الابتدائية للمتغير؟",choices:["Global","Pal2","Pal","2"],correctChoiceIndex:3,answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p74-q21.webp",figureNeeded:!0,figureAlt:"لبنة initialize global Pal to 2 الأصلية",explanation:"![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p74-q21.webp)\n\nفي صيغة `initialize global ... to` يأتي اسم المتغير بعد `global`، وتأتي القيمة الابتدائية بعد `to`.\n\nفي الصورة الاسم **`Pal`**، والعدد الموصول بعد `to` هو **2**.\n\nإذن القيمة الابتدائية **2**.\n\n**المصدر:** صفحة 50 من الكتاب.",example:"![لبنة initialize global Pal to 2 الأصلية ](assets/lessons/ict/exams/classified-p74-q21.webp)",reference:"[السؤال ص 74](assets/lessons/ict/exams/source-pages/classified-p074.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 74 · السؤال الأول / 21",partOrder:9,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 74 · السؤال الأول / 21",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p75-mcq-25",lessonId:"my-mobile-app",partId:"app-inventor-tools",sourceFile:"ict-classified-2023",sourcePage:75,originalSourcePage:75,answerPage:91,originalNumber:"السؤال الأول / 25",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[44,47],format:"mcq",question:"ما وظيفة الأداة Horizontal Arrangement في برنامج App Inventor؟",choices:["الترتيب العمودي","الترتيب الأفقي","محاذاة عمودية","محاذاة أفقية"],correctChoiceIndex:1,answerProvenance:"curriculum-corrected-2026-10-24",explanation:`**الإجابة:** الترتيب الأفقي
-
-**الشاهد من الكتاب:**
-
-> أداة Horizontal Arrangement (الترتيب الأفقي): من مجموعة Layout العدد (3).
-
-**المصدر:** صفحة 44 من الكتاب.`,reference:"[السؤال ص 75](assets/lessons/ict/exams/source-pages/classified-p075.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 25",partOrder:9,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 25",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p75-mcq-27",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:75,originalSourcePage:75,answerPage:91,originalNumber:"السؤال الأول / 27",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[52],format:"mcq",question:"يتم إدراج اللبنة من مجموعة:",choices:["Control","Math","Logic","List"],correctChoiceIndex:1,answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p75-q27.webp",figureNeeded:!0,figureAlt:"لبنة floor الأصلية",explanation:"![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p75-q27.webp)\n\nلبنة **`floor`** عملية حسابية تعيد أكبر عدد صحيح لا يتجاوز المدخل؛ مثل `floor(3.7) = 3`.\n\nلذلك تصنف ضمن مجموعة **`Math`**، أي الرياضيات، بين الخيارات المعروضة.\n\nيعرض الكتاب `floor` ضمن العمليات الحسابية المطلوب إضافتها، ويسمي `Math` مجموعة اللبنات الرياضية.\n\n**المصدر:** الصفحات 45، 52 من الكتاب.",example:"![لبنة floor الأصلية ](assets/lessons/ict/exams/classified-p75-q27.webp)",reference:"[السؤال ص 75](assets/lessons/ict/exams/source-pages/classified-p075.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 27",partOrder:6,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 27",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p75-mcq-28",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:75,originalSourcePage:75,answerPage:91,originalNumber:"السؤال الأول / 28",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[52],format:"mcq",question:"في برنامج App Inventor ما ناتج تنفيذ اللبنة المقابلة؟",choices:["13","13.5","13.75","14"],correctChoiceIndex:0,answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p75-q28.webp",figureNeeded:!0,figureAlt:"لبنة floor للقيمة 55 ÷ 4 الأصلية",explanation:`![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p75-q28.webp)
-
-\`floor\` تعيد أكبر عدد صحيح لا يتجاوز القيمة.
-
-نحسب المدخل أولًا:
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>55</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>13.75</mn></mrow></math>
-\`\`\`
-
-13 لا يتجاوز 13.75، بينما 14 يتجاوزه.
-
-**إذن الناتج 13.**
-
-**مرجع الكتاب:** تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).`,example:"![لبنة floor للقيمة 55 ÷ 4 الأصلية ](assets/lessons/ict/exams/classified-p75-q28.webp)",reference:"[السؤال ص 75](assets/lessons/ict/exams/source-pages/classified-p075.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",originalSourceConflict:"مفتاح PDF ص91 اختار ج (13.75)، وهي قيمة القسمة قبل تطبيق floor. الصحيح أ (13).",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 28",partOrder:7,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 28",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p75-mcq-30",lessonId:"my-mobile-app",partId:"app-inventor-blocks",sourceFile:"ict-classified-2023",sourcePage:75,originalSourcePage:75,answerPage:91,originalNumber:"السؤال الأول / 30",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46],format:"mcq",question:"في App Inventor، أي علاقة تختبرها اللبنة المصورة التي تحمل الرمز (=)؟",choices:["تعريف متغيرين","المساواة","اتخاذ القرار","أكبر من"],correctChoiceIndex:1,answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p75-q30.webp",figureNeeded:!0,figureAlt:"لبنة المساواة الزرقاء الأصلية",explanation:`![لبنة المساواة الأصلية](assets/lessons/ict/exams/classified-p75-q30.webp)
-
-الإجابة: المساواة.
-
-المقارنة اسم عام لاختبار العلاقة بين قيمتين. الرمز = يحدد المقارنة المطلوبة هنا: هل القيمتان متساويتان؟
-
-تعيد اللبنة \`true\` عند تساويهما، و\`false\` عند اختلافهما.
-
-الكتاب: لبنة المقارنة والشرط؛ ص 45 المطبوعة، ص 47 في ملف PDF`,example:"![لبنة المساواة الزرقاء الأصلية ](assets/lessons/ict/exams/classified-p75-q30.webp)",reference:"[السؤال ص 75](assets/lessons/ict/exams/source-pages/classified-p075.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp) · صياغة تعليمية معدّلة",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 30",partOrder:10,kicker:"صياغة تعليمية معدّلة",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p76-mcq-32",lessonId:"my-mobile-app",partId:"app-inventor-blocks",sourceFile:"ict-classified-2023",sourcePage:76,originalSourcePage:76,answerPage:91,originalNumber:"السؤال الأول / 32",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46],format:"mcq",question:"ما اللبنة البرمجية التي تستخدم لإسناد قيمة المتغير؟",choices:["اللبنة أ","اللبنة ب","اللبنة ج","اللبنة د"],correctChoiceIndex:0,answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p76-q32.webp",figureNeeded:!0,figureAlt:"خيارات اللبنات الأربع الأصلية: أ هي لبنة set ... to",explanation:`![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p76-q32.webp)
-
-الإسناد يعني وضع قيمة في متغير؛ تمثله لبنة \`set ... to\`.
-
-هذه هي اللبنة **أ** في الصورة، بينما ب تسترجع القيمة بـ\`get\` وج تختبر المساواة.
-
-إذن الجواب **اللبنة أ**.
-
-**المصدر:** صفحة 51 من الكتاب.`,example:"![خيارات اللبنات الأربع الأصلية: أ هي لبنة set ... to ](assets/lessons/ict/exams/classified-p76-q32.webp)",reference:"[السؤال ص 76](assets/lessons/ict/exams/source-pages/classified-p076.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",originalSourceConflict:"مفتاح PDF ص91 اختار د، لكن الشكل د لبنة زرقاء فارغة؛ أ هي لبنة set ... to لإسناد القيمة.",type:"mcq",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 76 · السؤال الأول / 32",partOrder:11,kicker:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 76 · السؤال الأول / 32",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"classified-u2-p77-written-1",lessonId:"my-mobile-app",partId:"app-practice",sourceFile:"ict-classified-2023",sourcePage:77,originalSourcePage:77,answerPage:96,originalNumber:"السؤال الثالث / (1)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`تأمل اللبنات. افترض أن الخاصيتين TextBox1.Text وTextBox2.Text مضبوطتان مسبقاً على النصين الرقميين5 و8 في المصمم قبل فتح الشاشة، وأنهما تُقرآن كقيمتين عدديتين. أجب عن الأسئلة التالية:
-1. متى يتم تنفيذ المقطع البرمجي؟
-2. أذكر أسماء أداتين من الأدوات الواردة في المقطع البرمجي.
-3. ما ناتج تنفيذ المقطع البرمجي إذا كانت قيمتا الصندوقين عند تهيئة الشاشة5 و8 على التوالي؟
-
-![لبنات حساب مساحة المثلث وفرع المقارنة الأصلية ](assets/lessons/ict/exams/classified-p77-q3-1.webp)`,answer:'![لبنات حساب مساحة المثلث الأصلية](assets/lessons/ict/exams/classified-p77-q3-1.webp)\n\n**1. الحدث:** `Screen1.Initialize`؛ يبدأ عند تهيئة الشاشة.\n\n**2. الأدوات:** `TextBox1` و`TextBox2`، وتعرض `Label1` الرسالة.\n\n**3. التتبع:** نقرأ 5 إلى `height` و 8 إلى `base`؛ فالقيم موجودة قبل حدوث `Initialize` بحسب المعطيات.\n\nمساحة المثلث تساوي نصف حاصل ضرب القاعدة في الارتفاع.\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>h</mi></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mo>=</mo><mn>0.5</mn><mo>×</mo><mn>8</mn><mo>×</mo><mn>5</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mo>=</mo><mn>20</mn></mrow></math>\n```\n\nاللبنة تختبر `area > 20`. عند مساواة المساحة 20 يكون الشرط غير محقق، لأن المطلوب أكبر من 20 لا مساوياً لها.\n\nإذن ينفذ فرع `else`، وتظهر **`you can use this triangle`** في `Label1.Text`.\n\nالكتاب: الأدوات وحدث زر الأمر؛ ص 44 المطبوعة، ص 46 في ملف PDF\n\nالكتاب: لبنة المقارنة والشرط؛ ص 45 المطبوعة، ص 47 في ملف PDF\n\nالكتاب: تسمية الأدوات وتهيئة الشاشة؛ ص 49 المطبوعة، ص 51 في ملف PDF',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p77-q3-1.webp",figureNeeded:!0,figureAlt:"لبنات حساب مساحة المثلث وفرع المقارنة الأصلية",reference:"[السؤال ص 77](assets/lessons/ict/exams/source-pages/classified-p077.webp) · [الإجابة ص 96](assets/lessons/ict/exams/source-pages/classified-p096.webp) · صياغة تعليمية معدّلة",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalSourceConflict:"المفتاح PDF ص96 يطبع عبارة الفرع الآخر، لكنه يتجاهل علامة ≥ في الشرط؛ 20 ≥ 20 صحيح.",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 77 · السؤال الثالث / (1)",partOrder:1,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p77-written-2",lessonId:"my-mobile-app",partId:"bmi-interface",sourceFile:"ict-classified-2023",sourcePage:77,originalSourcePage:77,answerPage:96,originalNumber:"السؤال الثالث / (2)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[43,44,45,46],format:"written",question:`تأمل اللبنات وأجب عن الأسئلة التالية:
-1. حدد المتغير المستخدم، وما قيمته الابتدائية؟
-2. ما الخاصية المستخدمة؟ وما وظيفتها؟
-
-![لبنات معامل السمنة الأصلية ](assets/lessons/ict/exams/classified-p77-q3-2.webp)`,answer:"![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p77-q3-2.webp)\n\nلبنة `initialize global` تعرف المتغير وتضع قيمته الابتدائية بعد `to`.\n\nفي الشكل المتغير **`factor`** وقيمته الابتدائية **0**.\n\nخاصية **`Text`** تمثل نص الأداة؛ لذلك يقرأ البرنامج المدخلين من `TextBox1.Text` و`TextBox2.Text`.\n\nثم يضع الرسالة المناسبة في `Label1.Text` لعرضها للمستخدم.\n\n**المصدر:** الصفحات 44، 46 من الكتاب.",answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p77-q3-2.webp",figureNeeded:!0,figureAlt:"لبنات معامل السمنة الأصلية",reference:"[السؤال ص 77](assets/lessons/ict/exams/source-pages/classified-p077.webp) · [الإجابة ص 96](assets/lessons/ict/exams/source-pages/classified-p096.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 77 · السؤال الثالث / (2)",partOrder:1,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p78-written-3",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:78,originalSourcePage:78,answerPage:97,originalNumber:"السؤال الثالث / (3)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`تأمل اللبنات وأجب عن الأسئلة التالية:
-1. ما عدد الأدوات الواردة في المقطع البرمجي؟
-2. ما وظيفة اللبنات البرمجية الآتية: get global M وsquare root؟
-3. ما ناتج تنفيذ البرنامج إذا كانت القيمة المدخلة من قبل المستخدم هي 100؟
-
-![لبنات جذر المتغير M الأصلية ](assets/lessons/ict/exams/classified-p78-q3-3.webp)`,answer:"![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p78-q3-3.webp)\n\n`get` يقرأ قيمة المتغير، و`set` يسند قيمة جديدة.\n\n`square root` تحسب الجذر غير السالب؛ نطبقها لأن اللبنة موضوعة على المدخل في الشكل.\n\n1. نعد أسماء الأدوات المختلفة: `Button1`، و`TextBox1`، و`Label1`؛ أي **ثلاث أدوات**. المتغير `M` ليس أداة واجهة.\n2. `get global M` يجلب قيمة المتغير، و`square root` يحسب جذرها التربيعي.\n3. عند `Button1.Click` تُقرأ 100 إلى `M`، ثم تصبح `M = √100 = 10`.\n4. تسند لبنة العرض قيمة `M` إلى `Label1.Text`؛ فتظهر **10**.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p78-q3-3.webp",figureNeeded:!0,figureAlt:"لبنات جذر المتغير M الأصلية",reference:"[السؤال ص 78](assets/lessons/ict/exams/source-pages/classified-p078.webp) · [الإجابة ص 97](assets/lessons/ict/exams/source-pages/classified-p097.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 78 · السؤال الثالث / (3)",partOrder:8,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p79-written-6",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:79,originalSourcePage:79,answerPage:97,originalNumber:"السؤال الثالث / (6)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[52],format:"written",question:`تأمل المقطع البرمجي، ثم أجب عن الأسئلة الآتية:
-1. ما وظيفة لبنة floor؟ ومن أي مجموعة يتم إدراجها؟
-2. ما ناتج تنفيذ المقطع البرمجي في حال كانت القيمة المدخلة من المستخدم هي 75؟
-
-![لبنات floor للقيمة المدخلة مقسومة على 20 ](assets/lessons/ict/exams/classified-p79-q3-6.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p79-q3-6.webp)\n\n**`floor`** من مجموعة `Math`؛ تعيد أكبر عدد صحيح لا يتجاوز القيمة.\n\nعند `Button1.Click` تُقرأ 75 من `TextBox1.Text` إلى `A`.\n\nتُحسب القسمة داخل `floor` أولًا:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>75</mn><mi mathvariant="normal">/</mi><mn>20</mn><mo>=</mo><mn>3.75</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">floor</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>3.75</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>\n```\n\nتسند `set` الناتج 3 إلى `A`، ثم تقرأه `get` وتعرضه في `Label1.Text`.\n\n**الناتج المعروض: 3.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p79-q3-6.webp",figureNeeded:!0,figureAlt:"لبنات floor للقيمة المدخلة مقسومة على 20",reference:"[السؤال ص 79](assets/lessons/ict/exams/source-pages/classified-p079.webp) · [الإجابة ص 97](assets/lessons/ict/exams/source-pages/classified-p097.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 79 · السؤال الثالث / (6)",partOrder:9,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p80-written-7",lessonId:"my-mobile-app",partId:"app-inventor-blocks",sourceFile:"ict-classified-2023",sourcePage:80,originalSourcePage:80,answerPage:98,originalNumber:"السؤال الثالث / (7)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[44,45,46],format:"written",question:`تأمل اللبنات وأجب عن الأسئلة التالية:
-1. اذكر اسم حدث والأداة التي ينفذ عليها.
-2. حدد اسم المجموعة التي يضاف منها لبنة Label1.
-3. وضح بالخطوات ناتج تنفيذ المقطع البرمجي.
-
-![لبنات Screen1.Initialize مع المتغير X وفرع المقارنة ](assets/lessons/ict/exams/classified-p80-q3-7.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p80-q3-7.webp)\n\n**الحدث والأدوات:** `Initialize` للشاشة `Screen1`؛ وأداة `Label` من `User Interface`.\n\n`Initialize` ينفذ عند تهيئة الشاشة.\n\nالقوة تعني تكرار الضرب، لذلك نحسب قيمة `X` المبدئية 5 كما يأتي:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mn>5</mn><mn>2</mn></msup><mo>=</mo><mn>5</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>25</mn></mrow></math>\n```\n\nتُعرض 25 مؤقتًا في `Label1.Text`.\n\n`min` تعيد أصغر القيم؛ أصغر 13 و 23 و 33 هو 13، فتضعه في `Label2.Text`.\n\nنفحص شرط `if`:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>25</mn><mo>≥</mo><mn>13</mn></mrow></math>\n```\n\nالشرط صحيح، لذلك ينفذ `then` فقط ويستبدل نص `Label1` بكلمة `Hello`.\n\n**الناتج النهائي:** `Label1` تعرض `Hello`، و`Label2` تعرض 13؛ فرع `else` لا ينفذ.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 49 مطبوعة (ص 51 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p80-q3-7.webp",figureNeeded:!0,figureAlt:"لبنات Screen1.Initialize مع المتغير X وفرع المقارنة",reference:"[السؤال ص 80](assets/lessons/ict/exams/source-pages/classified-p080.webp) · [الإجابة ص 98](assets/lessons/ict/exams/source-pages/classified-p098.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalSourceConflict:"المفتاح PDF ص98 يسرد `Good bye` أيضًا، لكن هذه العبارة داخل else ولا تنفذ عندما يكون الشرط 25 ≥ 13 صحيحًا.",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 80 · السؤال الثالث / (7)",partOrder:12,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p80-written-8",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:80,originalSourcePage:80,answerPage:98,originalNumber:"السؤال الثالث / (8)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[44,45,52],format:"written",question:`من خلال دراستك لبرنامج App Inventor، أجب عن الأسئلة بالاعتماد على الصورة:
-1. متى سيتم تنفيذ اللبنات؟ وما نوع الحدث؟
-2. حدد الأدوات المستخدمة في اللبنات والمجموعة التي تدرج منها.
-3. ما وظيفة اللبنة (أ) المشار إليها بالسهم؟ ومن أي مجموعة يتم إدراجها؟
-4. ما نتيجة تنفيذ اللبنات إذا كانت قيمة المتغير angle = 522؟
-
-![لبنات زر back وحساب floor للزاوية الأصلية ](assets/lessons/ict/exams/classified-p80-q3-8.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p80-q3-8.webp)\n\n**الحدث:** `Click` للزر `back`؛ يبدأ المقطع عند النقر عليه.\n\n`back` من نوع `Button` و`lbl_angle` من نوع `Label`، وكلاهما من `User Interface`.\n\nاللبنة أ هي `floor` من `Math`؛ تعيد أكبر عدد صحيح لا يتجاوز ناتج القسمة.\n\nعند `angle = 522`:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>522</mn><mi mathvariant="normal">/</mi><mn>10</mn><mo>=</mo><mn>52.2</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">floor</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>52.2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>52</mn></mrow></math>\n```\n\nتسند `set` القيمة 52 إلى `angle`، ثم تعرضها `lbl_angle.Text`.\n\n**الناتج: 52.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p80-q3-8.webp",figureNeeded:!0,figureAlt:"لبنات زر back وحساب floor للزاوية الأصلية",reference:"[السؤال ص 80](assets/lessons/ict/exams/source-pages/classified-p080.webp) · [الإجابة ص 98](assets/lessons/ict/exams/source-pages/classified-p098.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 80 · السؤال الثالث / (8)",partOrder:10,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p80-written-9",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:80,originalSourcePage:80,answerPage:98,originalNumber:"السؤال الثالث / (9)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`من خلال دراستك لبرنامج App Inventor، أجب عن الأسئلة بالاعتماد على الصورة:
-1. ما المتغير الذي يرتبط به تنفيذ اللبنات البرمجية؟ وأين تظهر قيمته؟
-2. ما المجموعة التي ندرج منها لبنة if ولبنة المقارنة؟
-3. ما ناتج تنفيذ اللبنات البرمجية عند إدخال القيمة 64 في TextBox1؟
-4. ما وظيفة لبنة initialize global root to 0؟
-5. ما الفرق بين get global root وset global root to؟
-
-![لبنات الجذر التربيعي بشرط عدم سلبية المدخل الأصلية ](assets/lessons/ict/exams/classified-p80-q3-9.webp)`,answer:"![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p80-q3-9.webp)\n\nللجذر التربيعي الحقيقي يلزم مدخل غير سالب؛ لذلك يختبر المقطع القيمة قبل تطبيق `square root`.\n\nفي `if` ينفذ `then` عند صحة الشرط، و`else` عند خطئه.\n\n1. المتغير الذي يحفظ الناتج هو **`root`**، وتظهر قيمته في **`Label1`**.\n2. لبنة `if` من **`Control`**، ولبنة المقارنة العددية `≥` من **`Math`**.\n3. عند إدخال 64 في `TextBox1` يتحقق `64 ≥ 0`؛ فتحسب `square root` الجذر **8**، ثم يُحفظ في `root` ويُعرض في `Label1`.\n4. `initialize global root to 0` تعلن متغيرًا عامًا اسمه `root` وتبدأه بالصفر.\n5. `get global root` تسترجع قيمته الحالية؛ أما `set global root to` فتسند إليه قيمة جديدة.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p80-q3-9.webp",figureNeeded:!0,figureAlt:"لبنات الجذر التربيعي بشرط عدم سلبية المدخل الأصلية",reference:"[السؤال ص 80](assets/lessons/ict/exams/source-pages/classified-p080.webp) · [الإجابة ص 98](assets/lessons/ict/exams/source-pages/classified-p098.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 80 · السؤال الثالث / (9)",partOrder:11,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p81-written-10",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:81,originalSourcePage:81,answerPage:98,originalNumber:"السؤال الثالث / (10)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`من خلال دراستك لبرنامج App Inventor، أجب عن الأسئلة بالاعتماد على الصورة:
-1. اذكر اسم أداة الإدخال وأداة إخراج الناتج.
-2. ما نتيجة Y إذا كانت القيمة المدخلة 8؟
-3. ما أسماء المتغيرات في البرنامج؟
-
-![لبنات حساب المتغير Y من TextBox1 الأصلية ](assets/lessons/ict/exams/classified-p81-q3-10.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p81-q3-10.webp)\n\n**الإدخال:** `TextBox1`؛ **الإخراج:** `lb1_number` كما يظهر اسمه في الصورة.\n\nالمتغيران `X` و`Y`، ويبدآن بالصفر. عند `Button1.Click` تُقرأ قيمة الإدخال 8 إلى `X`.\n\nنتبع تداخل اللبنات؛ نحسب القوة قبل الطرح، ثم نقسم الناتج:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mn>8</mn><mn>2</mn></msup><mo>=</mo><mn>8</mn><mo>×</mo><mn>8</mn><mo>=</mo><mn>64</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>64</mn><mo>−</mo><mn>4</mn><mo>=</mo><mn>60</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>60</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>30</mn></mrow></math>\n```\n\nتسند 30 إلى `Y` ثم تقرأها `get` وتعرضها في `lb1_number.Text`.\n\n**الناتج: 30.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p81-q3-10.webp",figureNeeded:!0,figureAlt:"لبنات حساب المتغير Y من TextBox1 الأصلية",reference:"[السؤال ص 81](assets/lessons/ict/exams/source-pages/classified-p081.webp) · [الإجابة ص 98](assets/lessons/ict/exams/source-pages/classified-p098.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalSourceConflict:"مفتاح المصدر PDF ص98 يعطي Y=6، بينما اللبنات المصورة تحسب ((X^2)−4)÷2؛ عند X=8 الناتج 30.",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 81 · السؤال الثالث / (10)",partOrder:12,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p81-written-11",lessonId:"my-mobile-app",partId:"app-inventor-blocks",sourceFile:"ict-classified-2023",sourcePage:81,originalSourcePage:81,answerPage:99,originalNumber:"السؤال الثالث / (11)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[44,45,46],format:"written",question:`من خلال دراستك لبرنامج App Inventor، لديك اللبنات الآتية، أجب عن الأسئلة التي تليها:
-1. ما أسماء المتغيرات؟ وما القيمة المبدئية لكل متغير؟
-2. اسم الحدث؟ وما الأداة التي ينفذ عليها؟
-3. ناتج تنفيذ اللبنات السابقة؟
-
-![لبنات مقارنة A وB وإخفاء Image1 الأصلية ](assets/lessons/ict/exams/classified-p81-q3-11.webp)`,answer:"![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p81-q3-11.webp)\n\n`if` تختبر الشرط؛ تنفذ `then` عند صحته و`else` عند خطئه.\n\n`Visible = false` يخفي الصورة.\n\n1. المتغيران **`A`** وقيمته الابتدائية **2**، و**`B`** وقيمته الابتدائية **3**.\n2. الحدث **`Click`** على **`Button1`**.\n3. نختبر `A ≥ B`، أي `2 ≥ 3`؛ الشرط خاطئ، فننتقل إلى `else`.\n4. تعرض `Label1` النص **`B is the largest`**، وتُضبط `Image1.Visible` إلى **`false`** فتختفي الصورة.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 49 مطبوعة (ص 51 في PDF).",answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p81-q3-11.webp",figureNeeded:!0,figureAlt:"لبنات مقارنة A وB وإخفاء Image1 الأصلية",reference:"[السؤال ص 81](assets/lessons/ict/exams/source-pages/classified-p081.webp) · [الإجابة ص 99](assets/lessons/ict/exams/source-pages/classified-p099.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 81 · السؤال الثالث / (11)",partOrder:13,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p82-written-12",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:82,originalSourcePage:82,answerPage:100,originalNumber:"السؤال الثالث / (12)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`من خلال دراستك لبرنامج App Inventor، لديك اللبنات الآتية، أجب عن الأسئلة التي تليها:
-1. ما الحدث واسم ونوع الأداة التي نفذ عليها؟
-2. ما صناديق الإدخال والإخراج؟
-3. ما ناتج تنفيذ الحدث في حال first=3 وsecond=4؟
-
-![لبنات فيثاغورس ومقارنة first وsecond الأصلية ](assets/lessons/ict/exams/classified-p82-q3-12.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p82-q3-12.webp)\n\n**الحدث:** `start.Click` للزر `start` من نوع `Button`.\n\n`first.Text` و`second.Text` مدخلان، و`result1.Text` و`result2.Text` مخرجان.\n\nاللبنة تحسب جذر مجموع المربعين؛ لذلك نحسب من الداخل للمدخلين 3 و 4:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>9</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mn>16</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>9</mn><mo>+</mo><mn>16</mn><mo>=</mo><mn>25</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msqrt><mn>25</mn></msqrt><mo>=</mo><mn>5</mn></mrow></math>\n```\n\nتسند القيمة 5 إلى `third` وتعرضها `result1`.\n\nالمقارنة تختبر تساوي المدخلين؛ 3 و 4 مختلفان، فتختار `else`.\n\n**الناتج:** 5 في `result1`، و«زوايا مختلفة» في `result2`؛ هذه هي الرسالة التي برمجها المقطع.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p82-q3-12.webp",figureNeeded:!0,figureAlt:"لبنات فيثاغورس ومقارنة first وsecond الأصلية",reference:"[السؤال ص 82](assets/lessons/ict/exams/source-pages/classified-p082.webp) · [الإجابة ص 100](assets/lessons/ict/exams/source-pages/classified-p100.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 82 · السؤال الثالث / (12)",partOrder:13,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p82-written-13",lessonId:"my-mobile-app",partId:"app-inventor-blocks",sourceFile:"ict-classified-2023",sourcePage:82,originalSourcePage:82,answerPage:100,originalNumber:"السؤال الثالث / (13)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[44,45,46],format:"written",question:`لديك مشروع App Inventor بالأدوات Button1 وTextBox1 وImage2 وresult1، ومتغير عام pic مهيأ بالنص الفارغ. عند نقر Button1 تُنفذ اللبنات بهذا الترتيب:
-- تُجعل Image2.Visible مساوية لـfalse.
-- تُسند TextBox1.Text إلى المتغير pic.
-- إذا كان pic يساوي النص «فلسطين»، تُسند «حرة عربية» إلى result1.Text وتُجعل Image2.Visible مساوية لـtrue.
-- وإلا تُسند «فلسطين حرة عربية» إلى result1.Text.
-
-أجب:
-1. ما اسم الحدث، وعلى أي أداة ينفذ؟
-2. اذكر المتغير وصندوق الإدخال.
-3. ما أثر إسناد false ثمtrue إلى الخاصية Visible؟
-4. إذا كتب المستخدم «فلسطين» ثم نقر الزر، فما النص الظاهر، وهل تظهر الصورة؟`,answer:"الحدث يحدد متى يبدأ تنفيذ اللبنات، والإسناد يضع قيمة في متغير أو خاصية.\n\n**1.** الحدث `Button1.Click`؛ يبدأ عند نقر الزر `Button1`.\n\n**2.** المتغير هو `pic`، وصندوق الإدخال `TextBox1`. نقرأ خاصية `Text` لنحصل على النص المكتوب.\n\n**3.** الخاصية `Visible` تتحكم في الظهور: `false` تخفي `Image2`، و`true` تظهرها.\n\n**4.** نبدأ بإخفاء `Image2`.\n\nثم نقرأ النص «فلسطين» من `TextBox1` ونخزنه في `pic`.\n\nالمقارنة «فلسطين» = «فلسطين» صحيحة، فننفذ فرع الشرط الأول.\n\nتظهر العبارة **حرة عربية** في `result1`، وتصبح `Image2.Visible` مساوية لـ`true`؛ فتظهر الصورة.\n\nالكتاب: الأدوات وحدث زر الأمر؛ ص 44 المطبوعة، ص 46 في ملف PDF\n\nالكتاب: لبنة المقارنة والشرط؛ ص 45 المطبوعة، ص 47 في ملف PDF\n\nالكتاب: تسمية الأدوات وتهيئة الشاشة؛ ص 49 المطبوعة، ص 51 في ملف PDF",answerProvenance:"curriculum-corrected-2026-10-24",figureNeeded:!1,figureAlt:"لبنات فحص النص فلسطين وإظهار الصورة الأصلية",reference:"[السؤال ص 82](assets/lessons/ict/exams/source-pages/classified-p082.webp) · [الإجابة ص 100](assets/lessons/ict/exams/source-pages/classified-p100.webp) · صياغة تعليمية معدّلة",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalFigure:"assets/lessons/ict/exams/classified-p82-q3-13.webp",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 82 · السؤال الثالث / (13)",partOrder:14,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p83-written-14",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:83,originalSourcePage:83,answerPage:100,originalNumber:"السؤال الثالث / (14)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`من خلال دراستك لبرنامج App Inventor، لديك اللبنات الآتية، أجب عن الأسئلة التي تليها:
-1. اذكر اسم متغير.
-2. اذكر اسم حدث، والأداة التي ينفذ عليها.
-3. ما ناتج التنفيذ بعد النقرة الأولى على Button1، بدءاً من القيمة الابتدائية؟ وأين يظهر الناتج؟
-
-![لبنات A زائد حاصل ضرب 2 في 5 الأصلية ](assets/lessons/ict/exams/classified-p83-q3-14.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p83-q3-14.webp)\n\nالمتغير `A` يبدأ بالقيمة 1.\n\nالحدث `Button1.Click` ينفذ عند نقر الزر.\n\nنحسب لبنة الضرب الداخلية أولًا:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>2</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>10</mn></mrow></math>\n```\n\nنضيف الناتج إلى قيمة `A` الحالية:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>1</mn><mo>+</mo><mn>10</mn><mo>=</mo><mn>11</mn></mrow></math>\n```\n\n`set` تسند 11 إلى `A`، ثم `get` تقرأها للعرض في `Label1.Text`.\n\n**الناتج بعد النقرة الأولى: 11.**\n\nكل نقرة جديدة تستعمل قيمة `A` الجديدة؛ لا تعيدها إلى 1 تلقائيًا.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p83-q3-14.webp",figureNeeded:!0,figureAlt:"لبنات A زائد حاصل ضرب 2 في 5 الأصلية",reference:"[السؤال ص 83](assets/lessons/ict/exams/source-pages/classified-p083.webp) · [الإجابة ص 100](assets/lessons/ict/exams/source-pages/classified-p100.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 83 · السؤال الثالث / (14)",partOrder:14,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p83-written-15",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:83,originalSourcePage:83,answerPage:100,originalNumber:"السؤال الثالث / (15)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`من خلال دراستك لبرنامج App Inventor، لديك اللبنات الآتية، أجب عن الأسئلة التي تليها:
-1. اذكر اسم متغير.
-2. اذكر اسم حدث، وما الأداة التي ينفذ عليها.
-3. ما ناتج التنفيذ بعد النقرة الأولى على Button1، بدءاً من القيمة الابتدائية؟ وأين يظهر الناتج؟
-
-![لبنات القوة 2 أس 5 ومقارنة الناتج ب50 الأصلية ](assets/lessons/curriculum-evidence/0d8efaacbf708c2e34e4.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/0d8efaacbf708c2e34e4.webp)\n\nالمتغير `X` يبدأ بالقيمة 10؛ والحدث `Button1.Click`.\n\nالقوة `2^5` تعني ضرب 2 في نفسها خمس مرات:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>32</mn></mrow></math>\n```\n\nنضيفها إلى قيمة `X` الحالية:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>10</mn><mo>+</mo><mn>32</mn><mo>=</mo><mn>42</mn></mrow></math>\n```\n\nتسند 42 إلى `X`، وتظهر في `Label1.Text`.\n\nنفحص الشرط: 42 أكبر من 50؟ لا؛ إذن تنفذ `else`.\n\n**تظهر `The number is Double` في `Label2.Text` بعد النقرة الأولى.**\n\nالرسالة نص برمجي؛ المقارنة بالعدد 50 لا تختبر نوع البيانات، فلا نعتمد الرسالة تصنيفًا صحيحًا للعدد.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/curriculum-evidence/0d8efaacbf708c2e34e4.webp",figureNeeded:!0,figureAlt:"لبنات القوة 2 أس 5 ومقارنة الناتج ب50 الأصلية",reference:"[السؤال ص 83](assets/lessons/ict/exams/source-pages/classified-p083.webp) · [الإجابة ص 100](assets/lessons/ict/exams/source-pages/classified-p100.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalSourceConflict:"النص المبرمج `The number is Double` يظهر للعدد 42 لأن شرط >50 غير متحقق؛ لا ينبغي تفسيره على أنه تصنيف رياضي صحيح.",originalFigure:"assets/lessons/ict/exams/classified-p83-q3-15.webp",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 83 · السؤال الثالث / (15)",partOrder:15,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p84-written-16",lessonId:"my-mobile-app",partId:"calculator-interface",sourceFile:"ict-classified-2023",sourcePage:84,originalSourcePage:84,answerPage:101,originalNumber:"السؤال الثالث / (16)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[47,48,49,50],format:"written",question:`تأمل اللبنات البرمجية الآتية ثم أجب عن الأسئلة التي تليه:
-1. ما عمل المقطع البرمجي؟
-2. ما اسم الحدث الخاص بزر الأمر Button1؟
-3. ما وظيفة أداة TextBox2 وTextBox1؟
-4. ما وظيفة الأداة TextBox3.Text؟
-
-![لبنات جمع قيمتي TextBox1 وTextBox2 الأصلية ](assets/lessons/ict/exams/classified-p84-q3-16.webp)`,answer:"![اللبنات البرمجية محل السؤال](assets/lessons/ict/exams/classified-p84-q3-16.webp)\n\n1. **عمل المقطع:** يقرأ عددين، يجمعهما، ثم يعرض المجموع في الصندوق الثالث.\n2. **الحدث:** `Click` للزر `Button1`.\n3. **الإدخال:** `TextBox1` و`TextBox2`؛ تُقرأ قيمتاهما من الخاصية `Text`.\n4. **الإخراج:** تسند لبنة `set` المجموع إلى `TextBox3.Text`، فتظهر النتيجة في الصندوق `TextBox3`.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).",answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p84-q3-16.webp",figureNeeded:!0,figureAlt:"لبنات جمع قيمتي TextBox1 وTextBox2 الأصلية",reference:"[السؤال ص 84](assets/lessons/ict/exams/source-pages/classified-p084.webp) · [الإجابة ص 101](assets/lessons/ict/exams/source-pages/classified-p101.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 84 · السؤال الثالث / (16)",partOrder:3,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p84-written-18",lessonId:"my-mobile-app",partId:"app-practice",sourceFile:"ict-classified-2023",sourcePage:84,originalSourcePage:84,answerPage:101,originalNumber:"السؤال الثالث / (18)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`تأمل اللبنات البرمجية ثم أجب:
-1. أذكر أسماء اللبنات البرمجية الخاصة بالإدخال والإخراج.
-2. ما نتائج التطبيق في حالة أن mark1=50 وmark2=70؟
-3. اذكر الحدث الخاص ببدء تنفيذ اللبنات في التطبيق.
-
-![لبنات متوسط علامتين ورسالة النجاح الأصلية ](assets/lessons/ict/exams/classified-p84-q3-18.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p84-q3-18.webp)\n\n**الإدخال:** `TextBox1.Text` و`TextBox2.Text`؛ ثم تحفظ القيمتان في `mark1` و`mark2`.\n\n**الإخراج:** `set result1.Text` و`set result2.Text`.\n\nالحدث `start.Click` يبدأ القراءة والحساب.\n\nالمتوسط هو المجموع مقسومًا على عدد العلامات، وهنا علامتان:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>50</mn><mo>+</mo><mn>70</mn><mo>=</mo><mn>120</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>120</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>60</mn></mrow></math>\n```\n\nتظهر 60 في `result1`.\n\nالشرط `60 ≥ 50` صحيح، فتظهر «ناجح» في `result2`.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p84-q3-18.webp",figureNeeded:!0,figureAlt:"لبنات متوسط علامتين ورسالة النجاح الأصلية",reference:"[السؤال ص 84](assets/lessons/ict/exams/source-pages/classified-p084.webp) · [الإجابة ص 101](assets/lessons/ict/exams/source-pages/classified-p101.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 84 · السؤال الثالث / (18)",partOrder:2,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p85-written-20",lessonId:"my-mobile-app",partId:"app-practice",sourceFile:"ict-classified-2023",sourcePage:85,originalSourcePage:85,answerPage:102,originalNumber:"السؤال الثالث / (20)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`من خلال دراستك لبرنامج App Inventor، تأمل اللبنات البرمجية الآتية ثم أجب:
-1. ما وظيفة الأدوات TextBox1 وTextBox2 وTextBox3 وLabel1؟
-2. ما وظيفة اللبنة المشار إليها بالسهم رقم 1؟
-3. ما عمل اللبنات البرمجية؟ وما الناتج إذا علمت أن القيم المدخلة (20، 30، 40)؟
-
-![لبنات حساب متوسط ثلاث قيم الأصلية ](assets/lessons/ict/exams/classified-p85-q3-20.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p85-q3-20.webp)\n\n`TextBox1` و`TextBox2` و`TextBox3` لإدخال القيم؛ `Label1` لعرض الناتج.\n\nاللبنة 1 تعلن المتغير `av` وتجعله صفرًا في البداية.\n\nعند `Button1.Click` نحسب المتوسط؛ وهو مجموع القيم مقسومًا على عددها.\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>20</mn><mo>+</mo><mn>30</mn><mo>=</mo><mn>50</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>50</mn><mo>+</mo><mn>40</mn><mo>=</mo><mn>90</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>90</mn><mi mathvariant="normal">/</mi><mn>3</mn><mo>=</mo><mn>30</mn></mrow></math>\n```\n\nتسند 30 إلى `av` ثم تعرض في `Label1.Text`.\n\n**الناتج: 30.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p85-q3-20.webp",figureNeeded:!0,figureAlt:"لبنات حساب متوسط ثلاث قيم الأصلية",reference:"[السؤال ص 85](assets/lessons/ict/exams/source-pages/classified-p085.webp) · [الإجابة ص 102](assets/lessons/ict/exams/source-pages/classified-p102.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 85 · السؤال الثالث / (20)",partOrder:3,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p85-written-21",lessonId:"my-mobile-app",partId:"app-practice",sourceFile:"ict-classified-2023",sourcePage:85,originalSourcePage:85,answerPage:102,originalNumber:"السؤال الثالث / (21)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`من خلال دراستك لبرنامج App Inventor، تأمل اللبنات البرمجية الآتية ثم أجب:
-1. ما وظيفة الأدوات Label2 وTextBox1؟
-2. ما الحدث المستخدم؟
-3. ما عمل اللبنات البرمجية؟ وما الناتج إذا علمت أن القيمة المدخلة هي 10؟
-
-![لبنات تحويل الدرجة المئوية إلى فهرنهايت الأصلية ](assets/lessons/ict/exams/classified-p85-q3-21.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p85-q3-21.webp)\n\n`TextBox1` يدخل درجة الحرارة المئوية؛ `Label2` يعرض درجة الفهرنهايت.\n\nالحدث `draja_button.Click` يبدأ القراءة والتحويل.\n\nنتبع ترتيب اللبنات: نضرب الدرجة المئوية في `9/5`، ثم نضيف **32** للحصول على الدرجة بالفهرنهايت.\n\nللمدخل 10:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>9</mn><mi mathvariant="normal">/</mi><mn>5</mn><mo>=</mo><mn>1.8</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>1.8</mn><mo>×</mo><mn>10</mn><mo>=</mo><mn>18</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>18</mn><mo>+</mo><mn>32</mn><mo>=</mo><mn>50</mn></mrow></math>\n```\n\n**تظهر 50 في `Label2.Text`، وهي الدرجة بالفهرنهايت.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p85-q3-21.webp",figureNeeded:!0,figureAlt:"لبنات تحويل الدرجة المئوية إلى فهرنهايت الأصلية",reference:"[السؤال ص 85](assets/lessons/ict/exams/source-pages/classified-p085.webp) · [الإجابة ص 102](assets/lessons/ict/exams/source-pages/classified-p102.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 85 · السؤال الثالث / (21)",partOrder:4,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p85-written-22",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:85,originalSourcePage:85,answerPage:102,originalNumber:"السؤال الثالث / (22)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,51,52],format:"written",question:`تأمل اللبنات البرمجية ثم أجب:
-1. ما وظيفة الأدوات Label1 وTextBox1؟
-2. اذكر اسم متغير واسم حدث.
-3. ما ناتج تنفيذ اللبنات عند إدخال 5 في TextBox1 ثم نقر الزر؟
-
-![لبنات القوة 2 أس N الأصلية ](assets/lessons/curriculum-evidence/5fb7ff9e789d539de9ec.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/5fb7ff9e789d539de9ec.webp)\n\n`TextBox1` لإدخال العدد، و`Label1` لعرض الناتج؛ المتغير `N` والحدث `Button1.Click`.\n\nعند النقر يقرأ المقطع الصندوق إلى `N`. إذا كانت القيمة 5، تطلب لبنة القوة `2^N` ضرب 2 في نفسها خمس مرات:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>32</mn></mrow></math>\n```\n\n**تظهر 32 في `Label1.Text`.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/curriculum-evidence/5fb7ff9e789d539de9ec.webp",figureNeeded:!0,figureAlt:"لبنات القوة 2 أس N الأصلية",reference:"[السؤال ص 85](assets/lessons/ict/exams/source-pages/classified-p085.webp) · [الإجابة ص 102](assets/lessons/ict/exams/source-pages/classified-p102.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalFigure:"assets/lessons/ict/exams/classified-p85-q3-22.webp",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 85 · السؤال الثالث / (22)",partOrder:16,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p86-written-23",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:86,originalSourcePage:86,answerPage:103,originalNumber:"السؤال الثالث / (23)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`تأمل اللبنات البرمجية ثم أجب:
-1. كم عدد المتغيرات؟
-2. ما وظيفة الخاصية Text للأداة Label1؟
-3. ما عمل اللبنات البرمجية؟
-
-![لبنات min لثلاث قيم مدخلة الأصلية ](assets/lessons/ict/exams/classified-p86-q3-23.webp)`,answer:"![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p86-q3-23.webp)\n\n`min` تختار أصغر القيم الموصولة بها.\n\nالقيم تأتي من صناديق الإدخال إلى المتغيرات `A` و`B` و`C`، ثم تقارنها اللبنة قبل العرض.\n\n1. نعد المتغيرات المعرفة: **`A`** و**`B`** و**`C`**؛ أي **ثلاثة متغيرات**.\n2. خاصية **`Label1.Text`** تحمل النص أو الناتج الذي يظهر للمستخدم.\n3. عند `Button1.Click` تُقرأ القيم من `TextBox1` و`TextBox2` و`TextBox3` إلى المتغيرات الثلاثة.\n4. تختار لبنة **`min`** أصغر هذه القيم، وتسندها إلى `Label1.Text` لعرضها.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p86-q3-23.webp",figureNeeded:!0,figureAlt:"لبنات min لثلاث قيم مدخلة الأصلية",reference:"[السؤال ص 86](assets/lessons/ict/exams/source-pages/classified-p086.webp) · [الإجابة ص 103](assets/lessons/ict/exams/source-pages/classified-p103.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 86 · السؤال الثالث / (23)",partOrder:17,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p86-written-24",lessonId:"my-mobile-app",partId:"app-practice",sourceFile:"ict-classified-2023",sourcePage:86,originalSourcePage:86,answerPage:103,originalNumber:"السؤال الثالث / (24)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`تأمل اللبنات البرمجية ثم أجب:
-1. ما وظيفة اللبنة البرمجية (أ)؟
-2. ما العملية الحسابية التي تحدث أولًا عند تنفيذ المقطع البرمجي (ب)؟
-3. ما الشرط الذي يتم فحصه في المقطع البرمجي (ج)؟
-4. ما ناتج تنفيذ اللبنات البرمجية عند إدخال القيمة 50؟
-
-![لبنات تحويل الحرارة وفرع درجة Low أو High الأصلية ](assets/lessons/ict/exams/classified-p86-q3-24.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p86-q3-24.webp)\n\n**أ:** `initialize global degree to 0` تعلن المتغير وتبدأه بالصفر.\n\n**ب:** الطرح داخل لبنة القسمة؛ لذلك يُنفذ طرح 32 من المدخل قبل القسمة على 1.8.\n\n**ج:** يفحص الشرط هل `degree ≤ 20`.\n\nللمدخل 50:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>50</mn><mo>−</mo><mn>32</mn><mo>=</mo><mn>18</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>18</mn><mi mathvariant="normal">/</mi><mn>1.8</mn><mo>=</mo><mn>10</mn></mrow></math>\n```\n\nالشرط `10 ≤ 20` صحيح؛ تنفذ `then`.\n\n**تظهر `Low` في `Label1.Text`.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).',answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p86-q3-24.webp",figureNeeded:!0,figureAlt:"لبنات تحويل الحرارة وفرع درجة Low أو High الأصلية",reference:"[السؤال ص 86](assets/lessons/ict/exams/source-pages/classified-p086.webp) · [الإجابة ص 103](assets/lessons/ict/exams/source-pages/classified-p103.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 86 · السؤال الثالث / (24)",partOrder:5,prompt:"سؤال من ورقة امتحان"},{id:"classified-u2-p87-written-25",lessonId:"my-mobile-app",partId:"calculator-events",sourceFile:"ict-classified-2023",sourcePage:87,originalSourcePage:87,answerPage:103,originalNumber:"السؤال الثالث / (25)",paperLabel:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",bookPages:[45,46,52],format:"written",question:`من خلال دراستك لتطبيقات الهاتف الذكي تأمل المقطع البرمجي ثم أجب:
-1. ما القيمة التي ستظهر على Label1 بعد تنفيذ اللبنات إذا تم إدخال 36 في TextBox1؟
-2. كم لبنة برمجية في الصورة؟
-3. ما الحدث في اللبنات البرمجية؟ وما الأداة الخاصة به؟
-4. متى يتم تنفيذ اللبنة البرمجية؟
-
-![لبنات الجذر التربيعي المشروط بقيمة غير سالبة الأصلية ](assets/lessons/ict/exams/classified-p87-q3-25.webp)
-
-الشكل الخاص بالفرع4:
-
-![لبنة الفرع الرابع الأصلية](assets/lessons/curriculum-evidence/4599d476e9321b56c3f1.webp)`,answer:`![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p87-q3-25.webp)
-
-\`square root\` تعيد الجذر غير السالب؛ لذلك يفحص البرنامج عدم سلبية المدخل.
-
-**1. الناتج للمدخل 36:**
-
-عند \`Button1.Click\` ينجح الشرط \`36 ≥ 0\`.
-
-يحفظ البرنامج \`num = 36\`.
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msqrt><mn>36</mn></msqrt><mo>=</mo><mn>6</mn></mrow></math>
-\`\`\`
-
-تسند 6 إلى \`n\` ثم تعرض في \`Label1.Text\`.
-
-**2. في المقطع الرئيسي 18 لبنة.** نعد كل لبنة مستقلة، بما فيها لبنات القيم.
-
-| الجزء | العدد |
-| --- | --- |
-| تعريف المتغيرين وقيمتاهما | 4 |
-| الحدث و\`if\` ولبنات الشرط | 5 |
-| \`then\` واللبنات المتداخلة | 7 |
-| أمر \`else\` ونصه | 2 |
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>4</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>18</mn></mrow></math>
-\`\`\`
-
-تحت الفرع 4 أُعيدت لبنة إظهار رسالة الخطأ مع قيمة النص؛ هاتان لبنتان إضافيتان في صورة السؤال الأصلية.
-
-إذن عدد المعروض كله **20 لبنة**، منها **18** في المقطع الرئيسي و**2** في الشكل المكرر.
-
-**3. الحدث:** \`Click\` على \`Button1\`؛ يبدأ المقطع كله عند النقر.
-
-**4. اللبنة المعادة تحت هذا الفرع:**
-
-![لبنة الفرع الرابع الأصلية](assets/lessons/curriculum-evidence/4599d476e9321b56c3f1.webp)
-
-رسالة «لا يمكن حساب الجذر التربيعي» تنفذ في \`else\` عند مدخل سالب؛ لأن شرط المدخل غير السالب يفشل.
-
-**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).`,answerProvenance:"curriculum-corrected-2026-10-24",figure:"assets/lessons/ict/exams/classified-p87-q3-25.webp",figureNeeded:!0,figureAlt:"لبنات الجذر التربيعي المشروط بقيمة غير سالبة الأصلية",reference:"[السؤال ص 87](assets/lessons/ict/exams/source-pages/classified-p087.webp) · [الإجابة ص 103](assets/lessons/ict/exams/source-pages/classified-p103.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 87 · السؤال الثالث / (25)",partOrder:18,prompt:"سؤال من ورقة امتحان"}];
+// Canonical question records; partOrder preserves the published sequence.
+export const ICT_CLASSIFIED_UNIT2_QUESTIONS = [
+  {
+    "id": "classified-u2-p63-mcq-5",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 63,
+    "originalSourcePage": 63,
+    "answerPage": 89,
+    "originalNumber": "السؤال الأول / 5",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      39
+    ],
+    "format": "mcq",
+    "question": "ما تقنية التصوير المذكورة في الدرس لتغطية المشهد بشكل كروي كامل؟",
+    "choices": [
+      "التصوير المزدوج",
+      "الفلاتر المرفقة",
+      "تصوير 360",
+      "المجسات"
+    ],
+    "correctChoiceIndex": 2,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "explanation": "**الإجابة:** تصوير 360\n\n**الشاهد من الكتاب:**\n\n> تعمل المجسات الثلاثة السابقة معاً؛ لتحقيق واقع يحاكي البيئة الحقيقية، التي تحتاج إلى تقنية تصوير 360°، أي التصوير باستخدام مجموعة كاميرات على حامل يتم تشغيلها، وإيقافها في وقت واحد، أو كاميرا مزودة بعدة عدسات، كل واحدة تغطي زاوية محددة؛ بحيث يتم تغطية المشهد بشكل كروي كامل.\n\n**المصدر:** صفحة 39 من الكتاب.\n\n\n\n**توضيح:** المقصود هنا تقنية التصوير التي تغطي المشهد الكروي: تصوير 360°. وتتكامل معها المجسات المذكورة في الفقرة لتتبع حركة الجهاز واتجاهه.",
+    "reference": "[السؤال ص 63](assets/lessons/ict/exams/source-pages/classified-p063.webp) · [الإجابة ص 89](assets/lessons/ict/exams/source-pages/classified-p089.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 63 · السؤال الأول / 5",
+    "partOrder": 5,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 63 · السؤال الأول / 5",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p64-mcq-8",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 64,
+    "originalSourcePage": 64,
+    "answerPage": 89,
+    "originalNumber": "السؤال الأول / 8",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      42,
+      53
+    ],
+    "format": "mcq",
+    "question": "ما امتداد الملف التنفيذي في نظام أندرويد؟",
+    "choices": [
+      ".aia",
+      ".apk",
+      ".ipa",
+      ".xap"
+    ],
+    "correctChoiceIndex": 1,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "explanation": "**الإجابة:** `.apk`\n\n**اللغات والامتدادات كما يوردها جدول الكتاب:**\n\n| نظام التشغيل | لغات التطبيقات الأصيلة | امتداد الملف التنفيذي |\n| --- | --- | --- |\n| أندرويد | `Java` و`C++` | `.apk` |\n| `iOS` | `Objective-C` و`Swift` | `.ipa` |\n| ويندوز فون | `VB.NET` و`C#.NET` | `.xap` |\n\n**المصدر:** صفحة 41 من الكتاب.\n\n[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/59a1b837459960ed53fb.webp)",
+    "reference": "[السؤال ص 64](assets/lessons/ict/exams/source-pages/classified-p064.webp) · [الإجابة ص 89](assets/lessons/ict/exams/source-pages/classified-p089.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 8",
+    "partOrder": 6,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 8",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p64-mcq-14",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 64,
+    "originalSourcePage": 64,
+    "answerPage": 89,
+    "originalNumber": "السؤال الأول / 14",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      38
+    ],
+    "format": "mcq",
+    "question": "ما طريقة التصوير التي تعمل على تشغيل الكاميرا الأمامية والخلفية معًا؟",
+    "choices": [
+      "الفردي",
+      "الخلفي",
+      "الأمامي",
+      "المزدوج"
+    ],
+    "correctChoiceIndex": 3,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "explanation": "**الإجابة:** المزدوج\n\n**الشاهد من الكتاب:**\n\n> التصوير المزدوج: تشغيل الكاميرا الأمامية والخلفية معاً؛ بحيث تظهر صورة صغيرة من الكاميرا الأمامية داخل صورة الكاميرا الخلفية.\n\n**المصدر:** صفحة 37 من الكتاب.",
+    "reference": "[السؤال ص 64](assets/lessons/ict/exams/source-pages/classified-p064.webp) · [الإجابة ص 89](assets/lessons/ict/exams/source-pages/classified-p089.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 14",
+    "partOrder": 6,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 14",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p64-mcq-16",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 64,
+    "originalSourcePage": 64,
+    "answerPage": 89,
+    "originalNumber": "السؤال الأول / 16",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      40
+    ],
+    "format": "mcq",
+    "question": "ما الشركة المنتجة لنظام التشغيل IOS؟",
+    "choices": [
+      "Apple",
+      "Microsoft",
+      "Google",
+      "Samsung"
+    ],
+    "correctChoiceIndex": 0,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "explanation": "**الإجابة:** `Apple`\n\n**الشاهد من الكتاب:**\n\n> نظام التشغيل من إنتاج شركة أبل، وخاص بأجهزتها، وغير مفتوح المصدر\n\n**المصدر:** صفحة 40 من الكتاب.",
+    "reference": "[السؤال ص 64](assets/lessons/ict/exams/source-pages/classified-p064.webp) · [الإجابة ص 89](assets/lessons/ict/exams/source-pages/classified-p089.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 16",
+    "partOrder": 7,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 64 · السؤال الأول / 16",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p66-mcq-29",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 66,
+    "originalSourcePage": 66,
+    "answerPage": 90,
+    "originalNumber": "السؤال الأول / 29",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      39
+    ],
+    "format": "mcq",
+    "question": "ما التقنية الرقمية التي تحاكي بيئة حقيقية أو متعددة الأبعاد، وتعمل على نقل الوعي الإنساني لتلك البيئة؟",
+    "choices": [
+      "الواقع الافتراضي",
+      "الواقع المعزز",
+      "التصوير المزدوج",
+      "أورازما"
+    ],
+    "correctChoiceIndex": 0,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "explanation": "**الإجابة:** الواقع الافتراضي\n\n**الشاهد من الكتاب:**\n\n> الواقع الافتراضي: تقنية رقمية تحاكي بيئة حقيقية، أو متعددة الأبعاد، تعمل على نقل الوعي الإنساني إلى تلك البيئة، والتفاعل معها.\n\n**المصدر:** صفحة 38 من الكتاب.",
+    "reference": "[السؤال ص 66](assets/lessons/ict/exams/source-pages/classified-p066.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 66 · السؤال الأول / 29",
+    "partOrder": 7,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 66 · السؤال الأول / 29",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p66-mcq-30",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 66,
+    "originalSourcePage": 66,
+    "answerPage": 90,
+    "originalNumber": "السؤال الأول / 30",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      41
+    ],
+    "format": "mcq",
+    "question": "ما ميزة iOS التي تعدّل ألوان الشاشة بحسب الإضاءة المحيطة؟",
+    "choices": [
+      "Itunes",
+      "True Tone",
+      "مجس الدوران",
+      "مجس التسارع"
+    ],
+    "correctChoiceIndex": 1,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "explanation": "**الإجابة:** `True Tone`\n\n**الشاهد من الكتاب:**\n\n> ميزة True Tone: شاشة تتحسس الطقس، وتعدل ألوان الشاشة حسب إضاءة الجو المحيط.\n\n**المصدر:** صفحة 40 من الكتاب.\n\n\n\n**توضيح:**\nشاهد الكتاب يكرر تعبير «تتحسس الطقس»، لكنه يوضح أن المقصود تعديل الألوان بحسب إضاءة الجو المحيط، لا قياس حالة الطقس.",
+    "reference": "[السؤال ص 66](assets/lessons/ict/exams/source-pages/classified-p066.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 66 · السؤال الأول / 30",
+    "partOrder": 8,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 66 · السؤال الأول / 30",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p67-mcq-32",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 67,
+    "originalSourcePage": 67,
+    "answerPage": 90,
+    "originalNumber": "السؤال الأول / 32",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      44
+    ],
+    "format": "mcq",
+    "question": "ما امتداد الملف في برنامج App Inventor والذي يستخدم للتعديل على ملف التطبيق؟",
+    "choices": [
+      "APK",
+      "XAP",
+      "APP",
+      "AIA"
+    ],
+    "correctChoiceIndex": 3,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "explanation": "**الإجابة:** `AIA`\n\n**الشاهد من الكتاب:**\n\n> وتستطيع الحصول على أي تطبيق للتعديل عليه من شبكة الإنترنت شرط أن يكون امتداده aia، وعند الحصول عليه تستطيع إضافته إلى حسابك عن طريق الأمر Import project (.aia) from my computer من قائمة Projects.\n\n**المصدر:** صفحة 50 من الكتاب.",
+    "reference": "[السؤال ص 67](assets/lessons/ict/exams/source-pages/classified-p067.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 67 · السؤال الأول / 32",
+    "partOrder": 9,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 67 · السؤال الأول / 32",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p67-mcq-43",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 67,
+    "originalSourcePage": 67,
+    "answerPage": 90,
+    "originalNumber": "السؤال الأول / 43",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      40
+    ],
+    "format": "mcq",
+    "question": "ما المجس الذي يقيس ميل جهاز الهاتف الذكي وزوايا التحرك من خلال موقعه عبر المحاور الثلاثة؟",
+    "choices": [
+      "التسارع",
+      "المغناطيسية",
+      "الدوران",
+      "الإطار المتعدد"
+    ],
+    "correctChoiceIndex": 2,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "explanation": "**الإجابة:** الدوران\n\n**الشاهد من الكتاب:**\n\n> الدوران (Gyroscope): يقيس ميل الجهاز وزوايا التحرك من خلال تحديد موقعه حول المحاور الثلاثة.\n\n**المصدر:** صفحة 39 من الكتاب.",
+    "reference": "[السؤال ص 67](assets/lessons/ict/exams/source-pages/classified-p067.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 67 · السؤال الأول / 43",
+    "partOrder": 8,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 67 · السؤال الأول / 43",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p70-written-5",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 70,
+    "originalSourcePage": 70,
+    "answerPage": 92,
+    "originalNumber": "السؤال الثالث / 5",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      39
+    ],
+    "format": "written",
+    "question": "علل: تستخدم عدة عدسات في تقنية تصوير 360.",
+    "answer": "كل عدسة تغطي زاوية محددة من المشهد.\n\nعند استخدام عدة عدسات نجمع الزوايا المختلفة، فتكتمل تغطية المشهد بشكل كروي بزاوية 360°.\n\n**المصدر:** صفحة 39 من الكتاب.",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 92](assets/lessons/ict/exams/source-pages/classified-p092.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 5",
+    "partOrder": 26,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p70-written-1",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 70,
+    "originalSourcePage": 70,
+    "answerPage": 92,
+    "originalNumber": "السؤال الثالث / 1",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      41,
+      42,
+      53
+    ],
+    "format": "written",
+    "question": "قارن بين نظام IOS ونظام ويندوز فون من حيث: 1. لغات البرمجة الأصيلة. 2. الملفات التنفيذية.",
+    "answer": "**المقارنة:**\n\n| نظام التشغيل | لغات البرمجة الأصيلة | امتداد الملف التنفيذي |\n| --- | --- | --- |\n| `iOS` | `Objective-C` و`Swift` | `.ipa` |\n| `Windows Phone` | `C#.NET` و`VB.NET` | `.xap` |\n\n**اللغات والامتدادات كما يوردها جدول الكتاب:**\n\n| نظام التشغيل | لغات التطبيقات الأصيلة | امتداد الملف التنفيذي |\n| --- | --- | --- |\n| أندرويد | `Java` و`C++` | `.apk` |\n| `iOS` | `Objective-C` و`Swift` | `.ipa` |\n| ويندوز فون | `VB.NET` و`C#.NET` | `.xap` |\n\n**المصدر:** صفحة 41 من الكتاب.\n\n[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/59a1b837459960ed53fb.webp)",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 92](assets/lessons/ict/exams/source-pages/classified-p092.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 1",
+    "partOrder": 16,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p70-written-7",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 70,
+    "originalSourcePage": 70,
+    "answerPage": 94,
+    "originalNumber": "السؤال الثالث / 7",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      40
+    ],
+    "format": "written",
+    "question": "كيف تعمل تقنية الواقع المعزز في نظام أندرويد؟",
+    "answer": "**تعمل تقنية الواقع المعزز وفق التسلسل الآتي:**\n\n1. تفتح كاميرا الهاتف لترى الواقع الحقيقي.\n2. يحلل التطبيق الصورة ليتعرف إلى المعلم المطلوب.\n3. يعرض العنصر الافتراضي المرتبط به سابقًا، مثل فيديو أو صورة توضيحية.\n\nيبقى الواقع الحقيقي ظاهرًا وتضاف إليه المعلومة الرقمية.\n\n**مرجع الكتاب:** الدرس الأول: أنظمة تشغيل الهاتف الذكي، ص 40 مطبوعة (ص 42 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 94](assets/lessons/ict/exams/source-pages/classified-p094.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 7",
+    "partOrder": 27,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p70-written-10",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 70,
+    "originalSourcePage": 70,
+    "answerPage": 93,
+    "originalNumber": "السؤال الثالث / 10",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      39
+    ],
+    "format": "written",
+    "question": "اذكر طرق التصوير بتقنية 360 درجة.",
+    "answer": "**الإجابة:** مجموعة كاميرات متزامنة على حامل؛ أو كاميرا متعددة العدسات.\n\n**الشاهد من الكتاب:**\n\n> تعمل المجسات الثلاثة السابقة معاً؛ لتحقيق واقع يحاكي البيئة الحقيقية، التي تحتاج إلى تقنية تصوير 360°، أي التصوير باستخدام مجموعة كاميرات على حامل يتم تشغيلها، وإيقافها في وقت واحد، أو كاميرا مزودة بعدة عدسات، كل واحدة تغطي زاوية محددة؛ بحيث يتم تغطية المشهد بشكل كروي كامل.\n\n**المصدر:** صفحة 39 من الكتاب.",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 93](assets/lessons/ict/exams/source-pages/classified-p093.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 10",
+    "partOrder": 28,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p70-written-12",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 70,
+    "originalSourcePage": 70,
+    "answerPage": 93,
+    "originalNumber": "السؤال الثالث / 12",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      41
+    ],
+    "format": "written",
+    "question": "اذكر أربعًا من طرق نقل البيانات في نظام IOS.",
+    "answer": "**طرق نقل البيانات الأربع:**\n\n1. التخزين السحابي `iCloud`.\n2. برنامج `iTunes` مع كابل `USB`.\n3. مواقع التواصل الاجتماعي.\n4. البريد الإلكتروني.\n\n**الشاهد من الكتاب 1:**\n\n> استخدام التخزين السحابي Icloud في نقل البيانات بين جهازي IOS، وبين الحاسوب وأجهزة IOS.\n\n\n\n**الشاهد من الكتاب 2:**\n\n> استخدام برنامج Itunes: في نقل البيانات من الحاسوب إلى أجهزة IOS، مع استخدام كابل USB\n\n\n\n**الشاهد من الكتاب 3:**\n\n> استخدام مواقع التواصل الاجتماعي والبريد الإلكتروني في نقل البيانات بين أجهزة IOS وأجهزة الحواسيب.\n\n**المصدر:** صفحة 41 من الكتاب.",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 93](assets/lessons/ict/exams/source-pages/classified-p093.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 12",
+    "partOrder": 17,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p70-written-13",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 70,
+    "originalSourcePage": 70,
+    "answerPage": 94,
+    "originalNumber": "السؤال الثالث / 13",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      40
+    ],
+    "format": "written",
+    "question": "ما المجسات الثلاثة التي يعرضها درس الواقع الافتراضي في الهواتف الذكية، وما وظيفة كل منها؟",
+    "answer": "**المجسات ووظيفة كل منها:**\n\n| المجس | وظيفته |\n| --- | --- |\n| التسارع (`Accelerometer`) | يستشعر التسارع الخطي على المحاور الثلاثة؛ وتُستخدم قراءاته في تتبّع حركة الجهاز. |\n| الدوران (`Gyroscope`) | يستشعر الدوران حول محاور الجهاز؛ وتُستخدم قراءاته في تتبّع تغيّر الميل والاتجاه. |\n| المجال المغناطيسي (`Magnetometer`) | يقيس المجال المغناطيسي المحيط بالجهاز؛ ويمكن استخدامه مرجعًا لاتجاه الجهاز مع قراءات المجسات الأخرى. |\n\n**تنبيه:** وظيفة مجس المجال المغناطيسي لا تعني أنه يكشف كل معدن لمجرد كونه معدنًا.\n\nتجمع تطبيقات التتبّع بين هذه القراءات؛ فهي لا تقيس الشيء نفسه. والسؤال يطلب المجسات التي يعرضها الدرس، ولا يقرر أنها متطلبات إلزامية لكل جهاز واقع افتراضي.\n\n**المصدر:** صفحة 39 من الكتاب.\n\n[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/4c940f51c826bd49ff84.webp)\n\n[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/a9cccb3601fc9d6de525.webp)\n\n[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/734b8d9d8aab278144af.webp)",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 70](assets/lessons/ict/exams/source-pages/classified-p070.webp) · [الإجابة ص 94](assets/lessons/ict/exams/source-pages/classified-p094.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 70 · السؤال الثالث / 13",
+    "partOrder": 29,
+    "prompt": "سؤال من ورقة امتحان",
+    "body": "ما المجسات الثلاثة التي يذكرها درس الواقع الافتراضي لتتبّع حركة الهاتف واتجاهه؟ اذكر وظيفة كل مجس."
+  },
+  {
+    "id": "classified-u2-p72-mcq-1",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-blocks",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 72,
+    "originalSourcePage": 72,
+    "answerPage": 90,
+    "originalNumber": "السؤال الأول / 1",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46
+    ],
+    "format": "mcq",
+    "question": "لبنة برمجية تستخدم للمقارنة والتحكم وفق شرط معين:",
+    "choices": [
+      "اللبنة أ",
+      "اللبنة ب",
+      "اللبنة ج",
+      "اللبنة د"
+    ],
+    "correctChoiceIndex": 3,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p72-q1.webp",
+    "figureNeeded": true,
+    "figureAlt": "خيارات اللبنات الأربع الأصلية: د هي لبنة if then",
+    "explanation": "![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p72-q1.webp)\n\nلبنة **`if`** تختبر شرطاً، ثم تنفذ الأوامر داخل `then` إذا تحقق.\n\nالرمز **د** هو `if`؛ لذلك هو لبنة التحكم وفق الشرط المطلوبة.\n\nأما أ فهي مقارنة وحدها، وج حدث نقر، وب تكرار على عناصر قائمة.\n\n**المصدر:** صفحة 45 من الكتاب.",
+    "example": "![خيارات اللبنات الأربع الأصلية: د هي لبنة if then ](assets/lessons/ict/exams/classified-p72-q1.webp)",
+    "reference": "[السؤال ص 72](assets/lessons/ict/exams/source-pages/classified-p072.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 1",
+    "partOrder": 6,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 1",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p72-mcq-2",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 72,
+    "originalSourcePage": 72,
+    "answerPage": 90,
+    "originalNumber": "السؤال الأول / 2",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      51,
+      52
+    ],
+    "format": "mcq",
+    "question": "في برنامج App Inventor ما وظيفة اللبنة؟",
+    "choices": [
+      "إيجاد ناتج القسمة",
+      "إيجاد الجذر التربيعي",
+      "التخلص من الكسر",
+      "إيجاد باقي القسمة"
+    ],
+    "correctChoiceIndex": 1,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p72-q2.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنة square root الأصلية من السؤال 2",
+    "explanation": "**الإجابة:** إيجاد الجذر التربيعي\n\n**الشاهد من الكتاب:**\n\n> إضافة العمليات الحسابية الآتية إلى التصميم وبرمجتها: square root، min، floor\n\n**المصدر:** صفحة 52 من الكتاب.\n\n\n\n**توضيح:** الشاهد يعرض اسم العملية بالإنجليزية؛ `square root` تعني الجذر التربيعي. هذه ترجمة الاسم الظاهر، لا اقتباس عربي غير موجود في الصفحة.",
+    "example": "![لبنة square root الأصلية من السؤال 2 ](assets/lessons/ict/exams/classified-p72-q2.webp)",
+    "reference": "[السؤال ص 72](assets/lessons/ict/exams/source-pages/classified-p072.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 2",
+    "partOrder": 4,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 2",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p72-mcq-7",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-blocks",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 72,
+    "originalSourcePage": 72,
+    "answerPage": 90,
+    "originalNumber": "السؤال الأول / 7",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46
+    ],
+    "format": "mcq",
+    "question": "في برنامج App Inventor يتم إضافة اللبنة من مجموعة:",
+    "choices": [
+      "Layout",
+      "Variables",
+      "User Interface",
+      "Control"
+    ],
+    "correctChoiceIndex": 1,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p72-q7.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنة initialize global angle to 0 الأصلية",
+    "explanation": "![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p72-q7.webp)\n\nكلمة **`Variables`** تعني مجموعة المتغيرات.\n\nاللبنة `initialize global angle to` تعرف متغيراً عاماً اسمه `angle` وتحدد قيمته الابتدائية عند توصيلها.\n\nلذلك تنتمي إلى **`Variables`**؛ فهي ليست أداة لترتيب الواجهة أو لبنة تحكم.\n\nيعرض الكتاب هذه الصيغة تحت «تعريف متغير»، ويذكر مجموعة المتغيرات عند استرجاع قيمته.\n\n**المصدر:** الصفحات 44، 45 من الكتاب.",
+    "example": "![لبنة initialize global angle to 0 الأصلية ](assets/lessons/ict/exams/classified-p72-q7.webp)",
+    "reference": "[السؤال ص 72](assets/lessons/ict/exams/source-pages/classified-p072.webp) · [الإجابة ص 90](assets/lessons/ict/exams/source-pages/classified-p090.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 7",
+    "partOrder": 7,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 72 · السؤال الأول / 7",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p73-mcq-10",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 73,
+    "originalSourcePage": 73,
+    "answerPage": 91,
+    "originalNumber": "السؤال الأول / 10",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      44
+    ],
+    "format": "mcq",
+    "question": "بحسب نشاط الكتاب في App Inventor، أي خاصية تُضبط لمحاذاة محتوى الشاشة إلى اليمين؟",
+    "choices": [
+      "خاصية Text",
+      "خاصية Label",
+      "خاصية Alignment",
+      "خاصية Screen"
+    ],
+    "correctChoiceIndex": 2,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "explanation": "**الإجابة:** خاصية `Alignment`\n\n**الشاهد من الكتاب:**\n\n> خاصية المحاذاة Alignment: لجعل اتجاه الشاشة screen إلى اليمين بتحديد القيمة right.\n\n**المصدر:** صفحة 44 من الكتاب.\n\n\n\n**توضيح:**\nالمقصود المنهجي محاذاة محتوى الشاشة، لا اتجاه تدوير الشاشة.",
+    "reference": "[السؤال ص 73](assets/lessons/ict/exams/source-pages/classified-p073.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 10",
+    "partOrder": 7,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 10",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p73-mcq-14",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-blocks",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 73,
+    "originalSourcePage": 73,
+    "answerPage": 91,
+    "originalNumber": "السؤال الأول / 14",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46
+    ],
+    "format": "mcq",
+    "question": "في برنامج App Inventor ما وظيفة اللبنة المبينة؟",
+    "choices": [
+      "إحضار قيمة المتغير",
+      "إسناد قيمة للمتغير",
+      "الإعلان عن المتغير",
+      "قراءة المتغير"
+    ],
+    "correctChoiceIndex": 2,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p73-q14.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنة initialize global result to الأصلية",
+    "explanation": "![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p73-q14.webp)\n\nلبنة **`initialize global`** تعرف متغيراً عاماً، أي تنشئ اسمه وتعين قيمته الابتدائية.\n\nفي الصورة اسم المتغير `result`.\n\nإذن الجواب **الإعلان عن المتغير**، بخلاف `get` لقراءة القيمة و`set` لتغييرها.\n\n**المصدر:** صفحة 50 من الكتاب.",
+    "example": "![لبنة initialize global result to الأصلية ](assets/lessons/ict/exams/classified-p73-q14.webp)",
+    "reference": "[السؤال ص 73](assets/lessons/ict/exams/source-pages/classified-p073.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 14",
+    "partOrder": 8,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 14",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p73-mcq-15",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 73,
+    "originalSourcePage": 73,
+    "answerPage": 91,
+    "originalNumber": "السؤال الأول / 15",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      43,
+      44
+    ],
+    "format": "mcq",
+    "question": "في برنامج App Inventor ما المجموعة التي نضيف منها الأداة Label؟",
+    "choices": [
+      "User Interface",
+      "Layout",
+      "Drawing and Animation",
+      "Media"
+    ],
+    "correctChoiceIndex": 0,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "explanation": "**الإجابة:** `User Interface`\n\n**الشاهد من الكتاب:**\n\n> أداة Label (مربع التسمية): من مجموعة User Interface العدد (6) لعنونة مربعات النصوص ولتوضيح المطلوب إدخاله، ولإخراج النتائج وعنونتها.\n\n**المصدر:** صفحة 44 من الكتاب.",
+    "reference": "[السؤال ص 73](assets/lessons/ict/exams/source-pages/classified-p073.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 15",
+    "partOrder": 8,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 73 · السؤال الأول / 15",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p74-mcq-21",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-blocks",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 74,
+    "originalSourcePage": 74,
+    "answerPage": 91,
+    "originalNumber": "السؤال الأول / 21",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46
+    ],
+    "format": "mcq",
+    "question": "في برنامج App Inventor ما القيمة الابتدائية للمتغير؟",
+    "choices": [
+      "Global",
+      "Pal2",
+      "Pal",
+      "2"
+    ],
+    "correctChoiceIndex": 3,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p74-q21.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنة initialize global Pal to 2 الأصلية",
+    "explanation": "![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p74-q21.webp)\n\nفي صيغة `initialize global ... to` يأتي اسم المتغير بعد `global`، وتأتي القيمة الابتدائية بعد `to`.\n\nفي الصورة الاسم **`Pal`**، والعدد الموصول بعد `to` هو **2**.\n\nإذن القيمة الابتدائية **2**.\n\n**المصدر:** صفحة 50 من الكتاب.",
+    "example": "![لبنة initialize global Pal to 2 الأصلية ](assets/lessons/ict/exams/classified-p74-q21.webp)",
+    "reference": "[السؤال ص 74](assets/lessons/ict/exams/source-pages/classified-p074.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 74 · السؤال الأول / 21",
+    "partOrder": 9,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 74 · السؤال الأول / 21",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p75-mcq-25",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 75,
+    "originalSourcePage": 75,
+    "answerPage": 91,
+    "originalNumber": "السؤال الأول / 25",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      44,
+      47
+    ],
+    "format": "mcq",
+    "question": "ما وظيفة الأداة Horizontal Arrangement في برنامج App Inventor؟",
+    "choices": [
+      "الترتيب العمودي",
+      "الترتيب الأفقي",
+      "محاذاة عمودية",
+      "محاذاة أفقية"
+    ],
+    "correctChoiceIndex": 1,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "explanation": "**الإجابة:** الترتيب الأفقي\n\n**الشاهد من الكتاب:**\n\n> أداة Horizontal Arrangement (الترتيب الأفقي): من مجموعة Layout العدد (3).\n\n**المصدر:** صفحة 44 من الكتاب.",
+    "reference": "[السؤال ص 75](assets/lessons/ict/exams/source-pages/classified-p075.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 25",
+    "partOrder": 9,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 25",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p75-mcq-27",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 75,
+    "originalSourcePage": 75,
+    "answerPage": 91,
+    "originalNumber": "السؤال الأول / 27",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      52
+    ],
+    "format": "mcq",
+    "question": "يتم إدراج اللبنة من مجموعة:",
+    "choices": [
+      "Control",
+      "Math",
+      "Logic",
+      "List"
+    ],
+    "correctChoiceIndex": 1,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p75-q27.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنة floor الأصلية",
+    "explanation": "![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p75-q27.webp)\n\nلبنة **`floor`** عملية حسابية تعيد أكبر عدد صحيح لا يتجاوز المدخل؛ مثل `floor(3.7) = 3`.\n\nلذلك تصنف ضمن مجموعة **`Math`**، أي الرياضيات، بين الخيارات المعروضة.\n\nيعرض الكتاب `floor` ضمن العمليات الحسابية المطلوب إضافتها، ويسمي `Math` مجموعة اللبنات الرياضية.\n\n**المصدر:** الصفحات 45، 52 من الكتاب.",
+    "example": "![لبنة floor الأصلية ](assets/lessons/ict/exams/classified-p75-q27.webp)",
+    "reference": "[السؤال ص 75](assets/lessons/ict/exams/source-pages/classified-p075.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 27",
+    "partOrder": 6,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 27",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p75-mcq-28",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 75,
+    "originalSourcePage": 75,
+    "answerPage": 91,
+    "originalNumber": "السؤال الأول / 28",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      52
+    ],
+    "format": "mcq",
+    "question": "في برنامج App Inventor ما ناتج تنفيذ اللبنة المقابلة؟",
+    "choices": [
+      "13",
+      "13.5",
+      "13.75",
+      "14"
+    ],
+    "correctChoiceIndex": 0,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p75-q28.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنة floor للقيمة 55 ÷ 4 الأصلية",
+    "explanation": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p75-q28.webp)\n\n`floor` تعيد أكبر عدد صحيح لا يتجاوز القيمة.\n\nنحسب المدخل أولًا:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>55</mn><mi mathvariant=\"normal\">/</mi><mn>4</mn><mo>=</mo><mn>13.75</mn></mrow></math>\n```\n\n13 لا يتجاوز 13.75، بينما 14 يتجاوزه.\n\n**إذن الناتج 13.**\n\n**مرجع الكتاب:** تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "example": "![لبنة floor للقيمة 55 ÷ 4 الأصلية ](assets/lessons/ict/exams/classified-p75-q28.webp)",
+    "reference": "[السؤال ص 75](assets/lessons/ict/exams/source-pages/classified-p075.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",
+    "originalSourceConflict": "مفتاح PDF ص91 اختار ج (13.75)، وهي قيمة القسمة قبل تطبيق floor. الصحيح أ (13).",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 28",
+    "partOrder": 7,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 28",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p75-mcq-30",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-blocks",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 75,
+    "originalSourcePage": 75,
+    "answerPage": 91,
+    "originalNumber": "السؤال الأول / 30",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46
+    ],
+    "format": "mcq",
+    "question": "في App Inventor، أي علاقة تختبرها اللبنة المصورة التي تحمل الرمز (=)؟",
+    "choices": [
+      "تعريف متغيرين",
+      "المساواة",
+      "اتخاذ القرار",
+      "أكبر من"
+    ],
+    "correctChoiceIndex": 1,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p75-q30.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنة المساواة الزرقاء الأصلية",
+    "explanation": "![لبنة المساواة الأصلية](assets/lessons/ict/exams/classified-p75-q30.webp)\n\nالإجابة: المساواة.\n\nالمقارنة اسم عام لاختبار العلاقة بين قيمتين. الرمز = يحدد المقارنة المطلوبة هنا: هل القيمتان متساويتان؟\n\nتعيد اللبنة `true` عند تساويهما، و`false` عند اختلافهما.\n\nالكتاب: لبنة المقارنة والشرط؛ ص 45 المطبوعة، ص 47 في ملف PDF",
+    "example": "![لبنة المساواة الزرقاء الأصلية ](assets/lessons/ict/exams/classified-p75-q30.webp)",
+    "reference": "[السؤال ص 75](assets/lessons/ict/exams/source-pages/classified-p075.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp) · صياغة تعليمية معدّلة",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 75 · السؤال الأول / 30",
+    "partOrder": 10,
+    "kicker": "صياغة تعليمية معدّلة",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p76-mcq-32",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-blocks",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 76,
+    "originalSourcePage": 76,
+    "answerPage": 91,
+    "originalNumber": "السؤال الأول / 32",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46
+    ],
+    "format": "mcq",
+    "question": "ما اللبنة البرمجية التي تستخدم لإسناد قيمة المتغير؟",
+    "choices": [
+      "اللبنة أ",
+      "اللبنة ب",
+      "اللبنة ج",
+      "اللبنة د"
+    ],
+    "correctChoiceIndex": 0,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p76-q32.webp",
+    "figureNeeded": true,
+    "figureAlt": "خيارات اللبنات الأربع الأصلية: أ هي لبنة set ... to",
+    "explanation": "![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p76-q32.webp)\n\nالإسناد يعني وضع قيمة في متغير؛ تمثله لبنة `set ... to`.\n\nهذه هي اللبنة **أ** في الصورة، بينما ب تسترجع القيمة بـ`get` وج تختبر المساواة.\n\nإذن الجواب **اللبنة أ**.\n\n**المصدر:** صفحة 51 من الكتاب.",
+    "example": "![خيارات اللبنات الأربع الأصلية: أ هي لبنة set ... to ](assets/lessons/ict/exams/classified-p76-q32.webp)",
+    "reference": "[السؤال ص 76](assets/lessons/ict/exams/source-pages/classified-p076.webp) · [الإجابة ص 91](assets/lessons/ict/exams/source-pages/classified-p091.webp)",
+    "originalSourceConflict": "مفتاح PDF ص91 اختار د، لكن الشكل د لبنة زرقاء فارغة؛ أ هي لبنة set ... to لإسناد القيمة.",
+    "type": "mcq",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 76 · السؤال الأول / 32",
+    "partOrder": 11,
+    "kicker": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 76 · السؤال الأول / 32",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "classified-u2-p77-written-1",
+    "lessonId": "my-mobile-app",
+    "partId": "app-practice",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 77,
+    "originalSourcePage": 77,
+    "answerPage": 96,
+    "originalNumber": "السؤال الثالث / (1)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "تأمل اللبنات. افترض أن الخاصيتين TextBox1.Text وTextBox2.Text مضبوطتان مسبقاً على النصين الرقميين5 و8 في المصمم قبل فتح الشاشة، وأنهما تُقرآن كقيمتين عدديتين. أجب عن الأسئلة التالية:\n1. متى يتم تنفيذ المقطع البرمجي؟\n2. أذكر أسماء أداتين من الأدوات الواردة في المقطع البرمجي.\n3. ما ناتج تنفيذ المقطع البرمجي إذا كانت قيمتا الصندوقين عند تهيئة الشاشة5 و8 على التوالي؟\n\n![لبنات حساب مساحة المثلث وفرع المقارنة الأصلية ](assets/lessons/ict/exams/classified-p77-q3-1.webp)",
+    "answer": "![لبنات حساب مساحة المثلث الأصلية](assets/lessons/ict/exams/classified-p77-q3-1.webp)\n\n**1. الحدث:** `Screen1.Initialize`؛ يبدأ عند تهيئة الشاشة.\n\n**2. الأدوات:** `TextBox1` و`TextBox2`، وتعرض `Label1` الرسالة.\n\n**3. التتبع:** نقرأ 5 إلى `height` و 8 إلى `base`؛ فالقيم موجودة قبل حدوث `Initialize` بحسب المعطيات.\n\nمساحة المثلث تساوي نصف حاصل ضرب القاعدة في الارتفاع.\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>h</mi></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>A</mi><mo>=</mo><mn>0.5</mn><mo>×</mo><mn>8</mn><mo>×</mo><mn>5</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>A</mi><mo>=</mo><mn>20</mn></mrow></math>\n```\n\nاللبنة تختبر `area > 20`. عند مساواة المساحة 20 يكون الشرط غير محقق، لأن المطلوب أكبر من 20 لا مساوياً لها.\n\nإذن ينفذ فرع `else`، وتظهر **`you can use this triangle`** في `Label1.Text`.\n\nالكتاب: الأدوات وحدث زر الأمر؛ ص 44 المطبوعة، ص 46 في ملف PDF\n\nالكتاب: لبنة المقارنة والشرط؛ ص 45 المطبوعة، ص 47 في ملف PDF\n\nالكتاب: تسمية الأدوات وتهيئة الشاشة؛ ص 49 المطبوعة، ص 51 في ملف PDF",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p77-q3-1.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات حساب مساحة المثلث وفرع المقارنة الأصلية",
+    "reference": "[السؤال ص 77](assets/lessons/ict/exams/source-pages/classified-p077.webp) · [الإجابة ص 96](assets/lessons/ict/exams/source-pages/classified-p096.webp) · صياغة تعليمية معدّلة",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalSourceConflict": "المفتاح PDF ص96 يطبع عبارة الفرع الآخر، لكنه يتجاهل علامة ≥ في الشرط؛ 20 ≥ 20 صحيح.",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 77 · السؤال الثالث / (1)",
+    "partOrder": 1,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p77-written-2",
+    "lessonId": "my-mobile-app",
+    "partId": "bmi-interface",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 77,
+    "originalSourcePage": 77,
+    "answerPage": 96,
+    "originalNumber": "السؤال الثالث / (2)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      43,
+      44,
+      45,
+      46
+    ],
+    "format": "written",
+    "question": "تأمل اللبنات وأجب عن الأسئلة التالية:\n1. حدد المتغير المستخدم، وما قيمته الابتدائية؟\n2. ما الخاصية المستخدمة؟ وما وظيفتها؟\n\n![لبنات معامل السمنة الأصلية ](assets/lessons/ict/exams/classified-p77-q3-2.webp)",
+    "answer": "![الشكل الأصلي للسؤال](assets/lessons/ict/exams/classified-p77-q3-2.webp)\n\nلبنة `initialize global` تعرف المتغير وتضع قيمته الابتدائية بعد `to`.\n\nفي الشكل المتغير **`factor`** وقيمته الابتدائية **0**.\n\nخاصية **`Text`** تمثل نص الأداة؛ لذلك يقرأ البرنامج المدخلين من `TextBox1.Text` و`TextBox2.Text`.\n\nثم يضع الرسالة المناسبة في `Label1.Text` لعرضها للمستخدم.\n\n**المصدر:** الصفحات 44، 46 من الكتاب.",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p77-q3-2.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات معامل السمنة الأصلية",
+    "reference": "[السؤال ص 77](assets/lessons/ict/exams/source-pages/classified-p077.webp) · [الإجابة ص 96](assets/lessons/ict/exams/source-pages/classified-p096.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 77 · السؤال الثالث / (2)",
+    "partOrder": 1,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p78-written-3",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 78,
+    "originalSourcePage": 78,
+    "answerPage": 97,
+    "originalNumber": "السؤال الثالث / (3)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "تأمل اللبنات وأجب عن الأسئلة التالية:\n1. ما عدد الأدوات الواردة في المقطع البرمجي؟\n2. ما وظيفة اللبنات البرمجية الآتية: get global M وsquare root؟\n3. ما ناتج تنفيذ البرنامج إذا كانت القيمة المدخلة من قبل المستخدم هي 100؟\n\n![لبنات جذر المتغير M الأصلية ](assets/lessons/ict/exams/classified-p78-q3-3.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p78-q3-3.webp)\n\n`get` يقرأ قيمة المتغير، و`set` يسند قيمة جديدة.\n\n`square root` تحسب الجذر غير السالب؛ نطبقها لأن اللبنة موضوعة على المدخل في الشكل.\n\n1. نعد أسماء الأدوات المختلفة: `Button1`، و`TextBox1`، و`Label1`؛ أي **ثلاث أدوات**. المتغير `M` ليس أداة واجهة.\n2. `get global M` يجلب قيمة المتغير، و`square root` يحسب جذرها التربيعي.\n3. عند `Button1.Click` تُقرأ 100 إلى `M`، ثم تصبح `M = √100 = 10`.\n4. تسند لبنة العرض قيمة `M` إلى `Label1.Text`؛ فتظهر **10**.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p78-q3-3.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات جذر المتغير M الأصلية",
+    "reference": "[السؤال ص 78](assets/lessons/ict/exams/source-pages/classified-p078.webp) · [الإجابة ص 97](assets/lessons/ict/exams/source-pages/classified-p097.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 78 · السؤال الثالث / (3)",
+    "partOrder": 8,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p79-written-6",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 79,
+    "originalSourcePage": 79,
+    "answerPage": 97,
+    "originalNumber": "السؤال الثالث / (6)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      52
+    ],
+    "format": "written",
+    "question": "تأمل المقطع البرمجي، ثم أجب عن الأسئلة الآتية:\n1. ما وظيفة لبنة floor؟ ومن أي مجموعة يتم إدراجها؟\n2. ما ناتج تنفيذ المقطع البرمجي في حال كانت القيمة المدخلة من المستخدم هي 75؟\n\n![لبنات floor للقيمة المدخلة مقسومة على 20 ](assets/lessons/ict/exams/classified-p79-q3-6.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p79-q3-6.webp)\n\n**`floor`** من مجموعة `Math`؛ تعيد أكبر عدد صحيح لا يتجاوز القيمة.\n\nعند `Button1.Click` تُقرأ 75 من `TextBox1.Text` إلى `A`.\n\nتُحسب القسمة داخل `floor` أولًا:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>75</mn><mi mathvariant=\"normal\">/</mi><mn>20</mn><mo>=</mo><mn>3.75</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi mathvariant=\"normal\">floor</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>3.75</mn><mo stretchy=\"false\">)</mo><mo>=</mo><mn>3</mn></mrow></math>\n```\n\nتسند `set` الناتج 3 إلى `A`، ثم تقرأه `get` وتعرضه في `Label1.Text`.\n\n**الناتج المعروض: 3.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p79-q3-6.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات floor للقيمة المدخلة مقسومة على 20",
+    "reference": "[السؤال ص 79](assets/lessons/ict/exams/source-pages/classified-p079.webp) · [الإجابة ص 97](assets/lessons/ict/exams/source-pages/classified-p097.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 79 · السؤال الثالث / (6)",
+    "partOrder": 9,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p80-written-7",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-blocks",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 80,
+    "originalSourcePage": 80,
+    "answerPage": 98,
+    "originalNumber": "السؤال الثالث / (7)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      44,
+      45,
+      46
+    ],
+    "format": "written",
+    "question": "تأمل اللبنات وأجب عن الأسئلة التالية:\n1. اذكر اسم حدث والأداة التي ينفذ عليها.\n2. حدد اسم المجموعة التي يضاف منها لبنة Label1.\n3. وضح بالخطوات ناتج تنفيذ المقطع البرمجي.\n\n![لبنات Screen1.Initialize مع المتغير X وفرع المقارنة ](assets/lessons/ict/exams/classified-p80-q3-7.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p80-q3-7.webp)\n\n**الحدث والأدوات:** `Initialize` للشاشة `Screen1`؛ وأداة `Label` من `User Interface`.\n\n`Initialize` ينفذ عند تهيئة الشاشة.\n\nالقوة تعني تكرار الضرب، لذلك نحسب قيمة `X` المبدئية 5 كما يأتي:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msup><mn>5</mn><mn>2</mn></msup><mo>=</mo><mn>5</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>25</mn></mrow></math>\n```\n\nتُعرض 25 مؤقتًا في `Label1.Text`.\n\n`min` تعيد أصغر القيم؛ أصغر 13 و 23 و 33 هو 13، فتضعه في `Label2.Text`.\n\nنفحص شرط `if`:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>25</mn><mo>≥</mo><mn>13</mn></mrow></math>\n```\n\nالشرط صحيح، لذلك ينفذ `then` فقط ويستبدل نص `Label1` بكلمة `Hello`.\n\n**الناتج النهائي:** `Label1` تعرض `Hello`، و`Label2` تعرض 13؛ فرع `else` لا ينفذ.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 49 مطبوعة (ص 51 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p80-q3-7.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات Screen1.Initialize مع المتغير X وفرع المقارنة",
+    "reference": "[السؤال ص 80](assets/lessons/ict/exams/source-pages/classified-p080.webp) · [الإجابة ص 98](assets/lessons/ict/exams/source-pages/classified-p098.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalSourceConflict": "المفتاح PDF ص98 يسرد `Good bye` أيضًا، لكن هذه العبارة داخل else ولا تنفذ عندما يكون الشرط 25 ≥ 13 صحيحًا.",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 80 · السؤال الثالث / (7)",
+    "partOrder": 12,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p80-written-8",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 80,
+    "originalSourcePage": 80,
+    "answerPage": 98,
+    "originalNumber": "السؤال الثالث / (8)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      44,
+      45,
+      52
+    ],
+    "format": "written",
+    "question": "من خلال دراستك لبرنامج App Inventor، أجب عن الأسئلة بالاعتماد على الصورة:\n1. متى سيتم تنفيذ اللبنات؟ وما نوع الحدث؟\n2. حدد الأدوات المستخدمة في اللبنات والمجموعة التي تدرج منها.\n3. ما وظيفة اللبنة (أ) المشار إليها بالسهم؟ ومن أي مجموعة يتم إدراجها؟\n4. ما نتيجة تنفيذ اللبنات إذا كانت قيمة المتغير angle = 522؟\n\n![لبنات زر back وحساب floor للزاوية الأصلية ](assets/lessons/ict/exams/classified-p80-q3-8.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p80-q3-8.webp)\n\n**الحدث:** `Click` للزر `back`؛ يبدأ المقطع عند النقر عليه.\n\n`back` من نوع `Button` و`lbl_angle` من نوع `Label`، وكلاهما من `User Interface`.\n\nاللبنة أ هي `floor` من `Math`؛ تعيد أكبر عدد صحيح لا يتجاوز ناتج القسمة.\n\nعند `angle = 522`:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>522</mn><mi mathvariant=\"normal\">/</mi><mn>10</mn><mo>=</mo><mn>52.2</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi mathvariant=\"normal\">floor</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>52.2</mn><mo stretchy=\"false\">)</mo><mo>=</mo><mn>52</mn></mrow></math>\n```\n\nتسند `set` القيمة 52 إلى `angle`، ثم تعرضها `lbl_angle.Text`.\n\n**الناتج: 52.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p80-q3-8.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات زر back وحساب floor للزاوية الأصلية",
+    "reference": "[السؤال ص 80](assets/lessons/ict/exams/source-pages/classified-p080.webp) · [الإجابة ص 98](assets/lessons/ict/exams/source-pages/classified-p098.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 80 · السؤال الثالث / (8)",
+    "partOrder": 10,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p80-written-9",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 80,
+    "originalSourcePage": 80,
+    "answerPage": 98,
+    "originalNumber": "السؤال الثالث / (9)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "من خلال دراستك لبرنامج App Inventor، أجب عن الأسئلة بالاعتماد على الصورة:\n1. ما المتغير الذي يرتبط به تنفيذ اللبنات البرمجية؟ وأين تظهر قيمته؟\n2. ما المجموعة التي ندرج منها لبنة if ولبنة المقارنة؟\n3. ما ناتج تنفيذ اللبنات البرمجية عند إدخال القيمة 64 في TextBox1؟\n4. ما وظيفة لبنة initialize global root to 0؟\n5. ما الفرق بين get global root وset global root to؟\n\n![لبنات الجذر التربيعي بشرط عدم سلبية المدخل الأصلية ](assets/lessons/ict/exams/classified-p80-q3-9.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p80-q3-9.webp)\n\nللجذر التربيعي الحقيقي يلزم مدخل غير سالب؛ لذلك يختبر المقطع القيمة قبل تطبيق `square root`.\n\nفي `if` ينفذ `then` عند صحة الشرط، و`else` عند خطئه.\n\n1. المتغير الذي يحفظ الناتج هو **`root`**، وتظهر قيمته في **`Label1`**.\n2. لبنة `if` من **`Control`**، ولبنة المقارنة العددية `≥` من **`Math`**.\n3. عند إدخال 64 في `TextBox1` يتحقق `64 ≥ 0`؛ فتحسب `square root` الجذر **8**، ثم يُحفظ في `root` ويُعرض في `Label1`.\n4. `initialize global root to 0` تعلن متغيرًا عامًا اسمه `root` وتبدأه بالصفر.\n5. `get global root` تسترجع قيمته الحالية؛ أما `set global root to` فتسند إليه قيمة جديدة.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p80-q3-9.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات الجذر التربيعي بشرط عدم سلبية المدخل الأصلية",
+    "reference": "[السؤال ص 80](assets/lessons/ict/exams/source-pages/classified-p080.webp) · [الإجابة ص 98](assets/lessons/ict/exams/source-pages/classified-p098.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 80 · السؤال الثالث / (9)",
+    "partOrder": 11,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p81-written-10",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 81,
+    "originalSourcePage": 81,
+    "answerPage": 98,
+    "originalNumber": "السؤال الثالث / (10)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "من خلال دراستك لبرنامج App Inventor، أجب عن الأسئلة بالاعتماد على الصورة:\n1. اذكر اسم أداة الإدخال وأداة إخراج الناتج.\n2. ما نتيجة Y إذا كانت القيمة المدخلة 8؟\n3. ما أسماء المتغيرات في البرنامج؟\n\n![لبنات حساب المتغير Y من TextBox1 الأصلية ](assets/lessons/ict/exams/classified-p81-q3-10.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p81-q3-10.webp)\n\n**الإدخال:** `TextBox1`؛ **الإخراج:** `lb1_number` كما يظهر اسمه في الصورة.\n\nالمتغيران `X` و`Y`، ويبدآن بالصفر. عند `Button1.Click` تُقرأ قيمة الإدخال 8 إلى `X`.\n\nنتبع تداخل اللبنات؛ نحسب القوة قبل الطرح، ثم نقسم الناتج:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msup><mn>8</mn><mn>2</mn></msup><mo>=</mo><mn>8</mn><mo>×</mo><mn>8</mn><mo>=</mo><mn>64</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>64</mn><mo>−</mo><mn>4</mn><mo>=</mo><mn>60</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>60</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn><mo>=</mo><mn>30</mn></mrow></math>\n```\n\nتسند 30 إلى `Y` ثم تقرأها `get` وتعرضها في `lb1_number.Text`.\n\n**الناتج: 30.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p81-q3-10.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات حساب المتغير Y من TextBox1 الأصلية",
+    "reference": "[السؤال ص 81](assets/lessons/ict/exams/source-pages/classified-p081.webp) · [الإجابة ص 98](assets/lessons/ict/exams/source-pages/classified-p098.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalSourceConflict": "مفتاح المصدر PDF ص98 يعطي Y=6، بينما اللبنات المصورة تحسب ((X^2)−4)÷2؛ عند X=8 الناتج 30.",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 81 · السؤال الثالث / (10)",
+    "partOrder": 12,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p81-written-11",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-blocks",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 81,
+    "originalSourcePage": 81,
+    "answerPage": 99,
+    "originalNumber": "السؤال الثالث / (11)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      44,
+      45,
+      46
+    ],
+    "format": "written",
+    "question": "من خلال دراستك لبرنامج App Inventor، لديك اللبنات الآتية، أجب عن الأسئلة التي تليها:\n1. ما أسماء المتغيرات؟ وما القيمة المبدئية لكل متغير؟\n2. اسم الحدث؟ وما الأداة التي ينفذ عليها؟\n3. ناتج تنفيذ اللبنات السابقة؟\n\n![لبنات مقارنة A وB وإخفاء Image1 الأصلية ](assets/lessons/ict/exams/classified-p81-q3-11.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p81-q3-11.webp)\n\n`if` تختبر الشرط؛ تنفذ `then` عند صحته و`else` عند خطئه.\n\n`Visible = false` يخفي الصورة.\n\n1. المتغيران **`A`** وقيمته الابتدائية **2**، و**`B`** وقيمته الابتدائية **3**.\n2. الحدث **`Click`** على **`Button1`**.\n3. نختبر `A ≥ B`، أي `2 ≥ 3`؛ الشرط خاطئ، فننتقل إلى `else`.\n4. تعرض `Label1` النص **`B is the largest`**، وتُضبط `Image1.Visible` إلى **`false`** فتختفي الصورة.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 49 مطبوعة (ص 51 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p81-q3-11.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات مقارنة A وB وإخفاء Image1 الأصلية",
+    "reference": "[السؤال ص 81](assets/lessons/ict/exams/source-pages/classified-p081.webp) · [الإجابة ص 99](assets/lessons/ict/exams/source-pages/classified-p099.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 81 · السؤال الثالث / (11)",
+    "partOrder": 13,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p82-written-12",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 82,
+    "originalSourcePage": 82,
+    "answerPage": 100,
+    "originalNumber": "السؤال الثالث / (12)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "من خلال دراستك لبرنامج App Inventor، لديك اللبنات الآتية، أجب عن الأسئلة التي تليها:\n1. ما الحدث واسم ونوع الأداة التي نفذ عليها؟\n2. ما صناديق الإدخال والإخراج؟\n3. ما ناتج تنفيذ الحدث في حال first=3 وsecond=4؟\n\n![لبنات فيثاغورس ومقارنة first وsecond الأصلية ](assets/lessons/ict/exams/classified-p82-q3-12.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p82-q3-12.webp)\n\n**الحدث:** `start.Click` للزر `start` من نوع `Button`.\n\n`first.Text` و`second.Text` مدخلان، و`result1.Text` و`result2.Text` مخرجان.\n\nاللبنة تحسب جذر مجموع المربعين؛ لذلك نحسب من الداخل للمدخلين 3 و 4:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>9</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mn>16</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>9</mn><mo>+</mo><mn>16</mn><mo>=</mo><mn>25</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msqrt><mn>25</mn></msqrt><mo>=</mo><mn>5</mn></mrow></math>\n```\n\nتسند القيمة 5 إلى `third` وتعرضها `result1`.\n\nالمقارنة تختبر تساوي المدخلين؛ 3 و 4 مختلفان، فتختار `else`.\n\n**الناتج:** 5 في `result1`، و«زوايا مختلفة» في `result2`؛ هذه هي الرسالة التي برمجها المقطع.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p82-q3-12.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات فيثاغورس ومقارنة first وsecond الأصلية",
+    "reference": "[السؤال ص 82](assets/lessons/ict/exams/source-pages/classified-p082.webp) · [الإجابة ص 100](assets/lessons/ict/exams/source-pages/classified-p100.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 82 · السؤال الثالث / (12)",
+    "partOrder": 13,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p82-written-13",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-blocks",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 82,
+    "originalSourcePage": 82,
+    "answerPage": 100,
+    "originalNumber": "السؤال الثالث / (13)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      44,
+      45,
+      46
+    ],
+    "format": "written",
+    "question": "لديك مشروع App Inventor بالأدوات Button1 وTextBox1 وImage2 وresult1، ومتغير عام pic مهيأ بالنص الفارغ. عند نقر Button1 تُنفذ اللبنات بهذا الترتيب:\n- تُجعل Image2.Visible مساوية لـfalse.\n- تُسند TextBox1.Text إلى المتغير pic.\n- إذا كان pic يساوي النص «فلسطين»، تُسند «حرة عربية» إلى result1.Text وتُجعل Image2.Visible مساوية لـtrue.\n- وإلا تُسند «فلسطين حرة عربية» إلى result1.Text.\n\nأجب:\n1. ما اسم الحدث، وعلى أي أداة ينفذ؟\n2. اذكر المتغير وصندوق الإدخال.\n3. ما أثر إسناد false ثمtrue إلى الخاصية Visible؟\n4. إذا كتب المستخدم «فلسطين» ثم نقر الزر، فما النص الظاهر، وهل تظهر الصورة؟",
+    "answer": "الحدث يحدد متى يبدأ تنفيذ اللبنات، والإسناد يضع قيمة في متغير أو خاصية.\n\n**1.** الحدث `Button1.Click`؛ يبدأ عند نقر الزر `Button1`.\n\n**2.** المتغير هو `pic`، وصندوق الإدخال `TextBox1`. نقرأ خاصية `Text` لنحصل على النص المكتوب.\n\n**3.** الخاصية `Visible` تتحكم في الظهور: `false` تخفي `Image2`، و`true` تظهرها.\n\n**4.** نبدأ بإخفاء `Image2`.\n\nثم نقرأ النص «فلسطين» من `TextBox1` ونخزنه في `pic`.\n\nالمقارنة «فلسطين» = «فلسطين» صحيحة، فننفذ فرع الشرط الأول.\n\nتظهر العبارة **حرة عربية** في `result1`، وتصبح `Image2.Visible` مساوية لـ`true`؛ فتظهر الصورة.\n\nالكتاب: الأدوات وحدث زر الأمر؛ ص 44 المطبوعة، ص 46 في ملف PDF\n\nالكتاب: لبنة المقارنة والشرط؛ ص 45 المطبوعة، ص 47 في ملف PDF\n\nالكتاب: تسمية الأدوات وتهيئة الشاشة؛ ص 49 المطبوعة، ص 51 في ملف PDF",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figureNeeded": false,
+    "figureAlt": "لبنات فحص النص فلسطين وإظهار الصورة الأصلية",
+    "reference": "[السؤال ص 82](assets/lessons/ict/exams/source-pages/classified-p082.webp) · [الإجابة ص 100](assets/lessons/ict/exams/source-pages/classified-p100.webp) · صياغة تعليمية معدّلة",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalFigure": "assets/lessons/ict/exams/classified-p82-q3-13.webp",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 82 · السؤال الثالث / (13)",
+    "partOrder": 14,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p83-written-14",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 83,
+    "originalSourcePage": 83,
+    "answerPage": 100,
+    "originalNumber": "السؤال الثالث / (14)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "من خلال دراستك لبرنامج App Inventor، لديك اللبنات الآتية، أجب عن الأسئلة التي تليها:\n1. اذكر اسم متغير.\n2. اذكر اسم حدث، والأداة التي ينفذ عليها.\n3. ما ناتج التنفيذ بعد النقرة الأولى على Button1، بدءاً من القيمة الابتدائية؟ وأين يظهر الناتج؟\n\n![لبنات A زائد حاصل ضرب 2 في 5 الأصلية ](assets/lessons/ict/exams/classified-p83-q3-14.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p83-q3-14.webp)\n\nالمتغير `A` يبدأ بالقيمة 1.\n\nالحدث `Button1.Click` ينفذ عند نقر الزر.\n\nنحسب لبنة الضرب الداخلية أولًا:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>2</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>10</mn></mrow></math>\n```\n\nنضيف الناتج إلى قيمة `A` الحالية:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>1</mn><mo>+</mo><mn>10</mn><mo>=</mo><mn>11</mn></mrow></math>\n```\n\n`set` تسند 11 إلى `A`، ثم `get` تقرأها للعرض في `Label1.Text`.\n\n**الناتج بعد النقرة الأولى: 11.**\n\nكل نقرة جديدة تستعمل قيمة `A` الجديدة؛ لا تعيدها إلى 1 تلقائيًا.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p83-q3-14.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات A زائد حاصل ضرب 2 في 5 الأصلية",
+    "reference": "[السؤال ص 83](assets/lessons/ict/exams/source-pages/classified-p083.webp) · [الإجابة ص 100](assets/lessons/ict/exams/source-pages/classified-p100.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 83 · السؤال الثالث / (14)",
+    "partOrder": 14,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p83-written-15",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 83,
+    "originalSourcePage": 83,
+    "answerPage": 100,
+    "originalNumber": "السؤال الثالث / (15)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "من خلال دراستك لبرنامج App Inventor، لديك اللبنات الآتية، أجب عن الأسئلة التي تليها:\n1. اذكر اسم متغير.\n2. اذكر اسم حدث، وما الأداة التي ينفذ عليها.\n3. ما ناتج التنفيذ بعد النقرة الأولى على Button1، بدءاً من القيمة الابتدائية؟ وأين يظهر الناتج؟\n\n![لبنات القوة 2 أس 5 ومقارنة الناتج ب50 الأصلية ](assets/lessons/curriculum-evidence/0d8efaacbf708c2e34e4.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/0d8efaacbf708c2e34e4.webp)\n\nالمتغير `X` يبدأ بالقيمة 10؛ والحدث `Button1.Click`.\n\nالقوة `2^5` تعني ضرب 2 في نفسها خمس مرات:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>32</mn></mrow></math>\n```\n\nنضيفها إلى قيمة `X` الحالية:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>10</mn><mo>+</mo><mn>32</mn><mo>=</mo><mn>42</mn></mrow></math>\n```\n\nتسند 42 إلى `X`، وتظهر في `Label1.Text`.\n\nنفحص الشرط: 42 أكبر من 50؟ لا؛ إذن تنفذ `else`.\n\n**تظهر `The number is Double` في `Label2.Text` بعد النقرة الأولى.**\n\nالرسالة نص برمجي؛ المقارنة بالعدد 50 لا تختبر نوع البيانات، فلا نعتمد الرسالة تصنيفًا صحيحًا للعدد.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/curriculum-evidence/0d8efaacbf708c2e34e4.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات القوة 2 أس 5 ومقارنة الناتج ب50 الأصلية",
+    "reference": "[السؤال ص 83](assets/lessons/ict/exams/source-pages/classified-p083.webp) · [الإجابة ص 100](assets/lessons/ict/exams/source-pages/classified-p100.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalSourceConflict": "النص المبرمج `The number is Double` يظهر للعدد 42 لأن شرط >50 غير متحقق؛ لا ينبغي تفسيره على أنه تصنيف رياضي صحيح.",
+    "originalFigure": "assets/lessons/ict/exams/classified-p83-q3-15.webp",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 83 · السؤال الثالث / (15)",
+    "partOrder": 15,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p84-written-16",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-interface",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 84,
+    "originalSourcePage": 84,
+    "answerPage": 101,
+    "originalNumber": "السؤال الثالث / (16)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      47,
+      48,
+      49,
+      50
+    ],
+    "format": "written",
+    "question": "تأمل اللبنات البرمجية الآتية ثم أجب عن الأسئلة التي تليه:\n1. ما عمل المقطع البرمجي؟\n2. ما اسم الحدث الخاص بزر الأمر Button1؟\n3. ما وظيفة أداة TextBox2 وTextBox1؟\n4. ما وظيفة الأداة TextBox3.Text؟\n\n![لبنات جمع قيمتي TextBox1 وTextBox2 الأصلية ](assets/lessons/ict/exams/classified-p84-q3-16.webp)",
+    "answer": "![اللبنات البرمجية محل السؤال](assets/lessons/ict/exams/classified-p84-q3-16.webp)\n\n1. **عمل المقطع:** يقرأ عددين، يجمعهما، ثم يعرض المجموع في الصندوق الثالث.\n2. **الحدث:** `Click` للزر `Button1`.\n3. **الإدخال:** `TextBox1` و`TextBox2`؛ تُقرأ قيمتاهما من الخاصية `Text`.\n4. **الإخراج:** تسند لبنة `set` المجموع إلى `TextBox3.Text`، فتظهر النتيجة في الصندوق `TextBox3`.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p84-q3-16.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات جمع قيمتي TextBox1 وTextBox2 الأصلية",
+    "reference": "[السؤال ص 84](assets/lessons/ict/exams/source-pages/classified-p084.webp) · [الإجابة ص 101](assets/lessons/ict/exams/source-pages/classified-p101.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 84 · السؤال الثالث / (16)",
+    "partOrder": 3,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p84-written-18",
+    "lessonId": "my-mobile-app",
+    "partId": "app-practice",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 84,
+    "originalSourcePage": 84,
+    "answerPage": 101,
+    "originalNumber": "السؤال الثالث / (18)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "تأمل اللبنات البرمجية ثم أجب:\n1. أذكر أسماء اللبنات البرمجية الخاصة بالإدخال والإخراج.\n2. ما نتائج التطبيق في حالة أن mark1=50 وmark2=70؟\n3. اذكر الحدث الخاص ببدء تنفيذ اللبنات في التطبيق.\n\n![لبنات متوسط علامتين ورسالة النجاح الأصلية ](assets/lessons/ict/exams/classified-p84-q3-18.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p84-q3-18.webp)\n\n**الإدخال:** `TextBox1.Text` و`TextBox2.Text`؛ ثم تحفظ القيمتان في `mark1` و`mark2`.\n\n**الإخراج:** `set result1.Text` و`set result2.Text`.\n\nالحدث `start.Click` يبدأ القراءة والحساب.\n\nالمتوسط هو المجموع مقسومًا على عدد العلامات، وهنا علامتان:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>50</mn><mo>+</mo><mn>70</mn><mo>=</mo><mn>120</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>120</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn><mo>=</mo><mn>60</mn></mrow></math>\n```\n\nتظهر 60 في `result1`.\n\nالشرط `60 ≥ 50` صحيح، فتظهر «ناجح» في `result2`.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p84-q3-18.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات متوسط علامتين ورسالة النجاح الأصلية",
+    "reference": "[السؤال ص 84](assets/lessons/ict/exams/source-pages/classified-p084.webp) · [الإجابة ص 101](assets/lessons/ict/exams/source-pages/classified-p101.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 84 · السؤال الثالث / (18)",
+    "partOrder": 2,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p85-written-20",
+    "lessonId": "my-mobile-app",
+    "partId": "app-practice",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 85,
+    "originalSourcePage": 85,
+    "answerPage": 102,
+    "originalNumber": "السؤال الثالث / (20)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "من خلال دراستك لبرنامج App Inventor، تأمل اللبنات البرمجية الآتية ثم أجب:\n1. ما وظيفة الأدوات TextBox1 وTextBox2 وTextBox3 وLabel1؟\n2. ما وظيفة اللبنة المشار إليها بالسهم رقم 1؟\n3. ما عمل اللبنات البرمجية؟ وما الناتج إذا علمت أن القيم المدخلة (20، 30، 40)؟\n\n![لبنات حساب متوسط ثلاث قيم الأصلية ](assets/lessons/ict/exams/classified-p85-q3-20.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p85-q3-20.webp)\n\n`TextBox1` و`TextBox2` و`TextBox3` لإدخال القيم؛ `Label1` لعرض الناتج.\n\nاللبنة 1 تعلن المتغير `av` وتجعله صفرًا في البداية.\n\nعند `Button1.Click` نحسب المتوسط؛ وهو مجموع القيم مقسومًا على عددها.\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>20</mn><mo>+</mo><mn>30</mn><mo>=</mo><mn>50</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>50</mn><mo>+</mo><mn>40</mn><mo>=</mo><mn>90</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>90</mn><mi mathvariant=\"normal\">/</mi><mn>3</mn><mo>=</mo><mn>30</mn></mrow></math>\n```\n\nتسند 30 إلى `av` ثم تعرض في `Label1.Text`.\n\n**الناتج: 30.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p85-q3-20.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات حساب متوسط ثلاث قيم الأصلية",
+    "reference": "[السؤال ص 85](assets/lessons/ict/exams/source-pages/classified-p085.webp) · [الإجابة ص 102](assets/lessons/ict/exams/source-pages/classified-p102.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 85 · السؤال الثالث / (20)",
+    "partOrder": 3,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p85-written-21",
+    "lessonId": "my-mobile-app",
+    "partId": "app-practice",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 85,
+    "originalSourcePage": 85,
+    "answerPage": 102,
+    "originalNumber": "السؤال الثالث / (21)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "من خلال دراستك لبرنامج App Inventor، تأمل اللبنات البرمجية الآتية ثم أجب:\n1. ما وظيفة الأدوات Label2 وTextBox1؟\n2. ما الحدث المستخدم؟\n3. ما عمل اللبنات البرمجية؟ وما الناتج إذا علمت أن القيمة المدخلة هي 10؟\n\n![لبنات تحويل الدرجة المئوية إلى فهرنهايت الأصلية ](assets/lessons/ict/exams/classified-p85-q3-21.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p85-q3-21.webp)\n\n`TextBox1` يدخل درجة الحرارة المئوية؛ `Label2` يعرض درجة الفهرنهايت.\n\nالحدث `draja_button.Click` يبدأ القراءة والتحويل.\n\nنتبع ترتيب اللبنات: نضرب الدرجة المئوية في `9/5`، ثم نضيف **32** للحصول على الدرجة بالفهرنهايت.\n\nللمدخل 10:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>9</mn><mi mathvariant=\"normal\">/</mi><mn>5</mn><mo>=</mo><mn>1.8</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>1.8</mn><mo>×</mo><mn>10</mn><mo>=</mo><mn>18</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>18</mn><mo>+</mo><mn>32</mn><mo>=</mo><mn>50</mn></mrow></math>\n```\n\n**تظهر 50 في `Label2.Text`، وهي الدرجة بالفهرنهايت.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p85-q3-21.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات تحويل الدرجة المئوية إلى فهرنهايت الأصلية",
+    "reference": "[السؤال ص 85](assets/lessons/ict/exams/source-pages/classified-p085.webp) · [الإجابة ص 102](assets/lessons/ict/exams/source-pages/classified-p102.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 85 · السؤال الثالث / (21)",
+    "partOrder": 4,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p85-written-22",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 85,
+    "originalSourcePage": 85,
+    "answerPage": 102,
+    "originalNumber": "السؤال الثالث / (22)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      51,
+      52
+    ],
+    "format": "written",
+    "question": "تأمل اللبنات البرمجية ثم أجب:\n1. ما وظيفة الأدوات Label1 وTextBox1؟\n2. اذكر اسم متغير واسم حدث.\n3. ما ناتج تنفيذ اللبنات عند إدخال 5 في TextBox1 ثم نقر الزر؟\n\n![لبنات القوة 2 أس N الأصلية ](assets/lessons/curriculum-evidence/5fb7ff9e789d539de9ec.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/5fb7ff9e789d539de9ec.webp)\n\n`TextBox1` لإدخال العدد، و`Label1` لعرض الناتج؛ المتغير `N` والحدث `Button1.Click`.\n\nعند النقر يقرأ المقطع الصندوق إلى `N`. إذا كانت القيمة 5، تطلب لبنة القوة `2^N` ضرب 2 في نفسها خمس مرات:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>32</mn></mrow></math>\n```\n\n**تظهر 32 في `Label1.Text`.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/curriculum-evidence/5fb7ff9e789d539de9ec.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات القوة 2 أس N الأصلية",
+    "reference": "[السؤال ص 85](assets/lessons/ict/exams/source-pages/classified-p085.webp) · [الإجابة ص 102](assets/lessons/ict/exams/source-pages/classified-p102.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalFigure": "assets/lessons/ict/exams/classified-p85-q3-22.webp",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 85 · السؤال الثالث / (22)",
+    "partOrder": 16,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p86-written-23",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 86,
+    "originalSourcePage": 86,
+    "answerPage": 103,
+    "originalNumber": "السؤال الثالث / (23)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "تأمل اللبنات البرمجية ثم أجب:\n1. كم عدد المتغيرات؟\n2. ما وظيفة الخاصية Text للأداة Label1؟\n3. ما عمل اللبنات البرمجية؟\n\n![لبنات min لثلاث قيم مدخلة الأصلية ](assets/lessons/ict/exams/classified-p86-q3-23.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p86-q3-23.webp)\n\n`min` تختار أصغر القيم الموصولة بها.\n\nالقيم تأتي من صناديق الإدخال إلى المتغيرات `A` و`B` و`C`، ثم تقارنها اللبنة قبل العرض.\n\n1. نعد المتغيرات المعرفة: **`A`** و**`B`** و**`C`**؛ أي **ثلاثة متغيرات**.\n2. خاصية **`Label1.Text`** تحمل النص أو الناتج الذي يظهر للمستخدم.\n3. عند `Button1.Click` تُقرأ القيم من `TextBox1` و`TextBox2` و`TextBox3` إلى المتغيرات الثلاثة.\n4. تختار لبنة **`min`** أصغر هذه القيم، وتسندها إلى `Label1.Text` لعرضها.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p86-q3-23.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات min لثلاث قيم مدخلة الأصلية",
+    "reference": "[السؤال ص 86](assets/lessons/ict/exams/source-pages/classified-p086.webp) · [الإجابة ص 103](assets/lessons/ict/exams/source-pages/classified-p103.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 86 · السؤال الثالث / (23)",
+    "partOrder": 17,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p86-written-24",
+    "lessonId": "my-mobile-app",
+    "partId": "app-practice",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 86,
+    "originalSourcePage": 86,
+    "answerPage": 103,
+    "originalNumber": "السؤال الثالث / (24)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "تأمل اللبنات البرمجية ثم أجب:\n1. ما وظيفة اللبنة البرمجية (أ)؟\n2. ما العملية الحسابية التي تحدث أولًا عند تنفيذ المقطع البرمجي (ب)؟\n3. ما الشرط الذي يتم فحصه في المقطع البرمجي (ج)؟\n4. ما ناتج تنفيذ اللبنات البرمجية عند إدخال القيمة 50؟\n\n![لبنات تحويل الحرارة وفرع درجة Low أو High الأصلية ](assets/lessons/ict/exams/classified-p86-q3-24.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p86-q3-24.webp)\n\n**أ:** `initialize global degree to 0` تعلن المتغير وتبدأه بالصفر.\n\n**ب:** الطرح داخل لبنة القسمة؛ لذلك يُنفذ طرح 32 من المدخل قبل القسمة على 1.8.\n\n**ج:** يفحص الشرط هل `degree ≤ 20`.\n\nللمدخل 50:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>50</mn><mo>−</mo><mn>32</mn><mo>=</mo><mn>18</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>18</mn><mi mathvariant=\"normal\">/</mi><mn>1.8</mn><mo>=</mo><mn>10</mn></mrow></math>\n```\n\nالشرط `10 ≤ 20` صحيح؛ تنفذ `then`.\n\n**تظهر `Low` في `Label1.Text`.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p86-q3-24.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات تحويل الحرارة وفرع درجة Low أو High الأصلية",
+    "reference": "[السؤال ص 86](assets/lessons/ict/exams/source-pages/classified-p086.webp) · [الإجابة ص 103](assets/lessons/ict/exams/source-pages/classified-p103.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 86 · السؤال الثالث / (24)",
+    "partOrder": 5,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "classified-u2-p87-written-25",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "sourceFile": "ict-classified-2023",
+    "sourcePage": 87,
+    "originalSourcePage": 87,
+    "answerPage": 103,
+    "originalNumber": "السؤال الثالث / (25)",
+    "paperLabel": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية",
+    "bookPages": [
+      45,
+      46,
+      52
+    ],
+    "format": "written",
+    "question": "من خلال دراستك لتطبيقات الهاتف الذكي تأمل المقطع البرمجي ثم أجب:\n1. ما القيمة التي ستظهر على Label1 بعد تنفيذ اللبنات إذا تم إدخال 36 في TextBox1؟\n2. كم لبنة برمجية في الصورة؟\n3. ما الحدث في اللبنات البرمجية؟ وما الأداة الخاصة به؟\n4. متى يتم تنفيذ اللبنة البرمجية؟\n\n![لبنات الجذر التربيعي المشروط بقيمة غير سالبة الأصلية ](assets/lessons/ict/exams/classified-p87-q3-25.webp)\n\nالشكل الخاص بالفرع4:\n\n![لبنة الفرع الرابع الأصلية](assets/lessons/curriculum-evidence/4599d476e9321b56c3f1.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/classified-p87-q3-25.webp)\n\n`square root` تعيد الجذر غير السالب؛ لذلك يفحص البرنامج عدم سلبية المدخل.\n\n**1. الناتج للمدخل 36:**\n\nعند `Button1.Click` ينجح الشرط `36 ≥ 0`.\n\nيحفظ البرنامج `num = 36`.\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msqrt><mn>36</mn></msqrt><mo>=</mo><mn>6</mn></mrow></math>\n```\n\nتسند 6 إلى `n` ثم تعرض في `Label1.Text`.\n\n**2. في المقطع الرئيسي 18 لبنة.** نعد كل لبنة مستقلة، بما فيها لبنات القيم.\n\n| الجزء | العدد |\n| --- | --- |\n| تعريف المتغيرين وقيمتاهما | 4 |\n| الحدث و`if` ولبنات الشرط | 5 |\n| `then` واللبنات المتداخلة | 7 |\n| أمر `else` ونصه | 2 |\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>4</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>18</mn></mrow></math>\n```\n\nتحت الفرع 4 أُعيدت لبنة إظهار رسالة الخطأ مع قيمة النص؛ هاتان لبنتان إضافيتان في صورة السؤال الأصلية.\n\nإذن عدد المعروض كله **20 لبنة**، منها **18** في المقطع الرئيسي و**2** في الشكل المكرر.\n\n**3. الحدث:** `Click` على `Button1`؛ يبدأ المقطع كله عند النقر.\n\n**4. اللبنة المعادة تحت هذا الفرع:**\n\n![لبنة الفرع الرابع الأصلية](assets/lessons/curriculum-evidence/4599d476e9321b56c3f1.webp)\n\nرسالة «لا يمكن حساب الجذر التربيعي» تنفذ في `else` عند مدخل سالب؛ لأن شرط المدخل غير السالب يفشل.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figure": "assets/lessons/ict/exams/classified-p87-q3-25.webp",
+    "figureNeeded": true,
+    "figureAlt": "لبنات الجذر التربيعي المشروط بقيمة غير سالبة الأصلية",
+    "reference": "[السؤال ص 87](assets/lessons/ict/exams/source-pages/classified-p087.webp) · [الإجابة ص 103](assets/lessons/ict/exams/source-pages/classified-p103.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "مجموعة تصنيف أسئلة الثانوية العامة — الوحدة الثانية، PDF ص 87 · السؤال الثالث / (25)",
+    "partOrder": 18,
+    "prompt": "سؤال من ورقة امتحان"
+  }
+];

@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: chemistry-gaza-p047-q05-s1
 title: الوحدة ٢ · الدرس ٤ · ص ٤٥ · س ٥ · ١ · أسئلة الوحدة — الرزمة التعليمية ٢٠٢٤
 question: اعتمادًا على الجدول المجاور الذي يبين قيم ثابت التأين لمجموعة من الحموض الافتراضية الضعيفة المتساوية في التركيز.
@@ -3641,4 +3643,6 @@ Z⁻ أقوى من Y⁻ حسب المعطى، فيكون حمضها HZ أضعف 
 **المصدر:** صفحة 36 من الكتاب.
 
 :::
-`;export default m("u02-l04-weak-acid-base-equilibrium",source);
+`;
+
+export default createChemistryLesson("u02-l04-weak-acid-base-equilibrium", source);

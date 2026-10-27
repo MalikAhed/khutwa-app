@@ -1,4 +1,6 @@
-import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createArabicLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: arabic-p060-mcq-q01
 title: القدس بوصلة ومجد - صفحة 59 - اختيار من متعدد 1 - 2019؛ مكرر 2021
 kicker: 2019؛ مكرر 2021
@@ -734,4 +736,6 @@ solution:
 
 **المصدر:** صفحة 28 من الكتاب.
 
-:::`;export default e("arabic-u03-l01",source);
+:::`;
+
+export default createArabicLesson("arabic-u03-l01", source);

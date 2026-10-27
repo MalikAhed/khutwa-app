@@ -1,1 +1,28 @@
-import{escapeHtml as a}from"../../lib/dom.js?v=7388f68cc0f433fd";import{renderLessonInline as u,renderMarkdownDocument as $}from"../../markdown/renderer.js?v=7388f68cc0f433fd";import{getLessonUiCopy as h,lessonChoiceMarker as y}from"../lesson-ui-copy.js?v=7388f68cc0f433fd";import{renderTemplateFooter as k,renderTemplateShell as v}from"../template-shell.js?v=7388f68cc0f433fd";import{renderQuestionSourceTag as w}from"./shared.js?v=7388f68cc0f433fd";export function renderQuestionContent(e,{titleId:t="ui-lab-content-title",locale:s="en"}={}){const d=h(s),o=`${t}-copy`,c="data-ui-lab-answer",i=e.example?`<div class="lesson-question-example markdown-rendered">${$(e.example,{locale:s})}</div>`:"",m=e.prompt.length<=105&&e.answers.every(r=>r.text.length<=48);return`<div class="level-lesson-copy ui-lab-mcq lesson-question${i?" lesson-question--with-example":""}${m?" lesson-question--compact-options":""}">${w(e)}<h1 id="${a(t)}" aria-labelledby="${a(o)}"><span id="${a(o)}">${u(e.prompt,{locale:s})}</span></h1>${i}<div class="level-answer-list lesson-answer-list" data-answer-count="${e.answers.length}" role="group" aria-label="${a(d.answerChoices)}">${e.answers.map((r,n)=>{const b=s==="ar"&&r.id==="true"&&r.text==="True"?"صح":s==="ar"&&r.id==="false"&&r.text==="False"?"خطأ":r.text,p=`${t}-choice-${n}-marker`,l=`${t}-choice-${n}-copy`;return`<button class="lesson-answer" type="button" ${c}="${a(r.id)}" data-correct="${r.correct===!0}" aria-pressed="false" aria-labelledby="${a(`${p} ${l}`)}"><span id="${a(p)}">${y(n,s)}</span><b id="${a(l)}">${u(b,{locale:s})}</b></button>`}).join("")}</div></div>`}export function renderQuestionLayout(e,{locale:t="en"}={}){return v({horizontal:!0,content:renderQuestionContent(e.content,{locale:t}),footer:k({locale:t,feedback:"",feedbackAttributes:{"data-ui-lab-feedback":!0,"aria-live":"polite"},primaryLabel:t==="ar"?"تحقّق":"CHECK",primaryAttributes:{"data-ui-lab-check":!0,disabled:!0},primaryLabelAttributes:{"data-ui-lab-check-label":!0},showShortcut:!1}),locale:t})}
+import { escapeHtml } from "../../lib/dom.js?v=acff67f262f3c107";
+import { renderLessonInline, renderMarkdownDocument } from "../../markdown/renderer.js?v=acff67f262f3c107";
+import { getLessonUiCopy, lessonChoiceMarker } from "../lesson-ui-copy.js?v=acff67f262f3c107";
+import { renderTemplateFooter, renderTemplateShell } from "../template-shell.js?v=acff67f262f3c107";
+import { renderQuestionSourceTag } from "./shared.js?v=acff67f262f3c107";
+
+export function renderQuestionContent(config, { titleId = "ui-lab-content-title", locale = "en" } = {}) {
+  const copy = getLessonUiCopy(locale);
+  const headingCopyId = `${titleId}-copy`;
+  const answerAttribute = "data-ui-lab-answer";
+  const example = config.example ? `<div class="lesson-question-example markdown-rendered">${renderMarkdownDocument(config.example, { locale })}</div>` : "";
+  const compactOptions = config.prompt.length <= 105 && config.answers.every(answer => answer.text.length <= 48);
+  return `<div class="level-lesson-copy ui-lab-mcq lesson-question${example ? " lesson-question--with-example" : ""}${compactOptions ? " lesson-question--compact-options" : ""}">${renderQuestionSourceTag(config)}<h1 id="${escapeHtml(titleId)}" aria-labelledby="${escapeHtml(headingCopyId)}"><span id="${escapeHtml(headingCopyId)}">${renderLessonInline(config.prompt, { locale })}</span></h1>${example}<div class="level-answer-list lesson-answer-list" data-answer-count="${config.answers.length}" role="group" aria-label="${escapeHtml(copy.answerChoices)}">${config.answers.map((answer, index) => {
+    const answerText = locale === "ar" && answer.id === "true" && answer.text === "True" ? "صح" : locale === "ar" && answer.id === "false" && answer.text === "False" ? "خطأ" : answer.text;
+    const markerId = `${titleId}-choice-${index}-marker`;
+    const answerId = `${titleId}-choice-${index}-copy`;
+    return `<button class="lesson-answer" type="button" ${answerAttribute}="${escapeHtml(answer.id)}" data-correct="${answer.correct === true}" aria-pressed="false" aria-labelledby="${escapeHtml(`${markerId} ${answerId}`)}"><span id="${escapeHtml(markerId)}">${lessonChoiceMarker(index, locale)}</span><b id="${escapeHtml(answerId)}">${renderLessonInline(answerText, { locale })}</b></button>`;
+  }).join("")}</div></div>`;
+}
+
+export function renderQuestionLayout(definition, { locale = "en" } = {}) {
+  return renderTemplateShell({
+    horizontal:true,
+    content:renderQuestionContent(definition.content, { locale }),
+    footer:renderTemplateFooter({ locale, feedback:"", feedbackAttributes:{ "data-ui-lab-feedback":true, "aria-live":"polite" }, primaryLabel:locale === "ar" ? "تحقّق" : "CHECK", primaryAttributes:{ "data-ui-lab-check":true, disabled:true }, primaryLabelAttributes:{ "data-ui-lab-check-label":true }, showShortcut:false }),
+    locale,
+  });
+}

@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+
+export const lessonSource = `:::exam-question
 id: math-book-p030-ex1-a
 title: الكتاب، ص ٢٨ · مثال ١، الفرع ١ · متوسط
 question: الاشتقاق الضمني
@@ -3909,4 +3911,16 @@ solution:
 
 
 إذن تسارع الجسم عند السكون اللحظي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mn dir="ltr">٢</mn></mfrac></math>\` في وحدات السؤال.
-:::`;export default m({status:"published",language:"ar",title:"الاشتقاق الضمني",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة الاشتقاق الضمني من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"22 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "الاشتقاق الضمني",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة الاشتقاق الضمني من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "22 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

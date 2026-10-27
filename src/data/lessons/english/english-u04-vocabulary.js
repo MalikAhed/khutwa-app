@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: eng-2023-p051-qv1-1
 title: Unit 4 · PDF 51 · v1-1
 question: Your comments are rather **distant** from the subject we are discussing.
@@ -436,4 +438,6 @@ motivate تعني «يحفز».
 
 **المصدر:** صفحة 41 من الكتاب.
 
-:::`;export default e("english-u04-vocabulary",source);
+:::`;
+
+export default createEnglishLesson("english-u04-vocabulary", source);

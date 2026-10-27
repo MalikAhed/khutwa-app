@@ -1,4 +1,6 @@
-import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createArabicLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: arabic-p135-mcq01
 title: مرافعات أمام ضمير غائب | صفحة 134 | اختيار من متعدد 1
 kicker: 2019
@@ -541,4 +543,6 @@ solution:
 الطباق المعنوي: «الفرحة / غصّة»؛ تقابل السرور والألم يبرز انقلاب الشعور بعد إلغاء الإفراج.
 لا الناهية: «لا تحزنْ»؛ تطلب الكف عن الحزن، وتجزم المضارع بالسكون.
 اسم الفاعل: «آتٍ»، من «أتى يأتي»، يدل على المجيء. الاسم المنقوص اسم معرب آخره ياء لازمة مكسور ما قبلها؛ تُحذف ياؤه إذا كان نكرة مرفوعًا أو مجرورًا. لذلك كُتبت «آتٍ» بلا ياء هنا، لأنه خبر مرفوع.
-:::`;export default e("arabic-u05-l01",source);
+:::`;
+
+export default createArabicLesson("arabic-u05-l01", source);

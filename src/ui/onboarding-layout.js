@@ -1,1 +1,50 @@
-export function alignOnboardingActions(a,d,b=a){let t=a;const s=t.ownerDocument.defaultView,e=b.cloneNode(!0);e.classList.add("onboarding-layout-reference"),e.setAttribute("aria-hidden","true"),e.inert=!0,e.querySelectorAll(".onboarding-step:not(.onboarding-step--hello), [data-auth-error]").forEach(o=>o.remove()),e.querySelectorAll("*").forEach(o=>{[...o.attributes].forEach(r=>{(r.name==="id"||r.name.startsWith("data-"))&&o.removeAttribute(r.name)})});const c=()=>{e.style.width=`${t.clientWidth}px`;const o=e.getBoundingClientRect(),r=e.querySelector(".onboarding-actions").getBoundingClientRect().top-o.top+parseFloat(s.getComputedStyle(t).getPropertyValue("--space-4")),u=e.querySelector(".onboarding-nav").getBoundingClientRect().bottom-o.top;t.style.setProperty("--onboarding-action-top",`${r}px`),t.style.setProperty("--onboarding-nav-bottom",`${u}px`),t.style.setProperty("--onboarding-page-height",`${o.height}px`);const i=t.querySelector(".auth-card");if(i){const g=i.querySelector('[type="submit"]').offsetTop+i.clientTop;t.style.setProperty("--auth-card-top",`${Math.max(u+16,r-g)}px`)}},n=new s.ResizeObserver(c);n.observe(e),n.observe(e.querySelector(".onboarding-step--hello"));const l=a.querySelector(".auth-card");l&&n.observe(l),s.addEventListener("resize",c,{signal:d}),d.addEventListener("abort",()=>{n.disconnect(),e.remove()},{once:!0});const p=o=>{t=o,t.parentElement.append(e),t.classList.add("has-aligned-onboarding-actions"),c()};return p(t),p}
+// Keep every action at the welcome screen's natural position, including after resize.
+export function alignOnboardingActions(initialPage, signal, referencePage = initialPage) {
+  let page = initialPage;
+  const view = page.ownerDocument.defaultView;
+  const reference = referencePage.cloneNode(true);
+  reference.classList.add("onboarding-layout-reference");
+  reference.setAttribute("aria-hidden", "true");
+  reference.inert = true;
+  reference.querySelectorAll(".onboarding-step:not(.onboarding-step--hello), [data-auth-error]").forEach(node => node.remove());
+  reference.querySelectorAll("*").forEach(node => {
+    [...node.attributes].forEach(attribute => {
+      if (attribute.name === "id" || attribute.name.startsWith("data-"))
+        node.removeAttribute(attribute.name);
+    });
+  });
+  const update = () => {
+    reference.style.width = `${page.clientWidth}px`;
+    const bounds = reference.getBoundingClientRect();
+    const actionTop = reference.querySelector(".onboarding-actions").getBoundingClientRect().top - bounds.top
+      + parseFloat(view.getComputedStyle(page).getPropertyValue("--space-4"));
+    const navBottom = reference.querySelector(".onboarding-nav").getBoundingClientRect().bottom - bounds.top;
+    page.style.setProperty("--onboarding-action-top", `${actionTop}px`);
+    page.style.setProperty("--onboarding-nav-bottom", `${navBottom}px`);
+    page.style.setProperty("--onboarding-page-height", `${bounds.height}px`);
+    const card = page.querySelector(".auth-card");
+    if (card) {
+      const button = card.querySelector('[type="submit"]');
+      const offset = button.offsetTop + card.clientTop;
+      page.style.setProperty("--auth-card-top", `${Math.max(navBottom + 16, actionTop - offset)}px`);
+    }
+  };
+  const observer = new view.ResizeObserver(update);
+  observer.observe(reference);
+  observer.observe(reference.querySelector(".onboarding-step--hello"));
+  const card = initialPage.querySelector(".auth-card");
+  if (card) observer.observe(card);
+  view.addEventListener("resize", update, { signal });
+  signal.addEventListener("abort", () => {
+    observer.disconnect();
+    reference.remove();
+  }, { once:true });
+  const attach = target => {
+    page = target;
+    page.parentElement.append(reference);
+    page.classList.add("has-aligned-onboarding-actions");
+    update();
+  };
+  attach(page);
+  return attach;
+}

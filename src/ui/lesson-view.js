@@ -1,1 +1,34 @@
-import{lessonReferenceLabel as s}from"./lesson/shared.js?v=7388f68cc0f433fd";import{renderComingSoon as m}from"./lesson/status.js?v=7388f68cc0f433fd";import{compileLessonMarkdown as u}from"../markdown/lesson-model.js?v=7388f68cc0f433fd";import{renderAuthoredInteractiveLesson as p}from"./lesson/authored.js?v=7388f68cc0f433fd";export{renderLessonError}from"./lesson/status.js?v=7388f68cc0f433fd";export function renderLesson(o,e,r,n={}){const t=s(e);if(!r)return m(o,e),{title:`${t}: Coming Soon · توجيهي`,destroy:()=>{}};if(!r.authoringSource)throw new TypeError("A published lesson requires authored question content.");const i=p(o,e,r,u(r.authoringSource).parsed.steps,n);return{title:`${t}: ${r.title} · توجيهي`,destroy:i}}
+// @ts-check
+import { lessonReferenceLabel } from "./lesson/shared.js?v=acff67f262f3c107";
+import { renderComingSoon } from "./lesson/status.js?v=acff67f262f3c107";
+import { compileLessonMarkdown } from "../markdown/lesson-model.js?v=acff67f262f3c107";
+import { renderAuthoredInteractiveLesson } from "./lesson/authored.js?v=acff67f262f3c107";
+export { renderLessonError } from "./lesson/status.js?v=acff67f262f3c107";
+
+/** @typedef {{completedStepIds:string[], isComplete:boolean}} LessonProgressUpdate */
+/** @typedef {{completedStepIds:string[], attemptedStepIds?:string[], completedAt?:string|null, mistakeStepIds?:string[]}} LessonProgress */
+/** @typedef {ReturnType<typeof import('../domain/subject-progress.js').summarizeParts> & {xpGain:number, progressGain:number, streakGain:number, alreadyCompleted?:boolean}} CompletionOutcome */
+/** @typedef {{isLessonPart?:boolean, progress?:LessonProgress,
+ * onProgress?:(value:LessonProgressUpdate)=>void|Promise<void|import("../services/subject-progress-store.js").SaveResult>, onAnswer?:(value:{stepId:string,correct:boolean|null,reviewing?:boolean})=>void|Promise<void|import("../services/subject-progress-store.js").SaveResult>,
+ * beforeAnswer?:()=>string|undefined,
+ * reviewStepId?:string|null, onReviewComplete?:()=>void, getCompletionOutcome?:()=>CompletionOutcome, onExitLesson?:()=>void, onFinishLesson?:()=>void,
+ * getMathFilterCatalog?:(scope:string)=>Promise<Array<object>>, mathFilterState?:{scope:string,stepIds:string[]},
+ * questionFilterIds?:string[],
+ * demoMode?:boolean, onLessonEvent?:(event:any)=>void, getQuestionFeedback?:(stepId:string)=>any, getQuestionExplanation?:(step:any)=>any,
+ * onMathFilterApply?:(value:any)=>string[]|undefined}} LessonOptions */
+/** @param {HTMLElement} container @param {string|number} day @param {{title:string,authoringSource?:string}|null} lesson @param {LessonOptions} [options]
+ * @returns {{title:string, destroy:import('../app/view-lifecycle.js').Cleanup}} */
+export function renderLesson(container, day, lesson, options = {}) {
+  const reference = lessonReferenceLabel(day);
+  if (!lesson) {
+    renderComingSoon(container, day);
+    return {
+      title: `${reference}: Coming Soon · توجيهي`,
+      destroy: () => {},
+    };
+  }
+  if (!lesson.authoringSource) throw new TypeError("A published lesson requires authored question content.");
+  const destroy = renderAuthoredInteractiveLesson(container, day, lesson,
+    compileLessonMarkdown(lesson.authoringSource).parsed.steps, options);
+  return { title: `${reference}: ${lesson.title} · توجيهي`, destroy };
+}

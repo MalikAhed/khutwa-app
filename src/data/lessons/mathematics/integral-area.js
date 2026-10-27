@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+
+export const lessonSource = `:::exam-question
 id: math-book-p120-ex1
 title: الكتاب، ص ١١٨ · مثال محلول
 question: تطبيقات التكامل المحدود: المساحة
@@ -4779,4 +4781,16 @@ solution:
 
 
 القيمتان تحققان السؤال. لا يوجد شرط يستبعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mrow></math>\`.
-:::`;export default m({status:"published",language:"ar",title:"تطبيقات التكامل المحدود: المساحة",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة تطبيقات التكامل المحدود: المساحة من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"18 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "تطبيقات التكامل المحدود: المساحة",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة تطبيقات التكامل المحدود: المساحة من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "18 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

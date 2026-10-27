@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: chemistry-gaza-p024-q01-b
 title: الوحدة ١ · الدرس ٤ · ص ٢٢ · س السؤال الأول، الفقرة ٢ · b
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤
@@ -2200,4 +2202,6 @@ solution:
 **المصدر:** الصفحات 2، 11، 16 من الكتاب.
 
 :::
-`;export default m("u01-l04-periodic-table",source);
+`;
+
+export default createChemistryLesson("u01-l04-periodic-table", source);

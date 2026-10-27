@@ -1,1 +1,108 @@
-import{questionRewardKey as u}from"../domain/question-rewards.js?v=7388f68cc0f433fd";import{createAuthClient as S}from"./auth-client.js?v=7388f68cc0f433fd";const j=i=>JSON.stringify([i.subjectId,i.lessonId,i.partId,i.stepId]);function J({service:i,progressStore:P,apiBase:A=null,storage:y=null,fetchImpl:q=globalThis.fetch}){const g=A?S({baseUrl:A,fetchImpl:q}):null,b=new Map;let f=0;const h=new Map,l=new Set,c=new Map,m=()=>l.forEach(t=>t());P?.subscribe(()=>{c.clear(),m()});const a=t=>{if(!b.has(t)){let e={};try{e=JSON.parse(y?.getItem(`tawjihi:question-feedback:${t}`)||"{}")}catch{}b.set(t,e&&typeof e=="object"&&!Array.isArray(e)?e:{})}return b.get(t)};function O(t,e){if(!c.has(t)){const r=new Map((P?.getAnswerRatings(t)||[]).map(n=>[u(n),{rating:n.rating,automatic:!0}]));for(const[n,d]of Object.entries(a(t)))if(d?.rating)try{const s=JSON.parse(n);s.length===4&&r.set(u({subjectId:s[0],stepId:s[3]}),d)}catch{}c.set(t,r)}return c.get(t).get(u(e))||null}async function L(t,e,r,{signal:n}={}){if(t==="guest"||t!==i.getLearnerProgressOwner())return{status:"aborted"};if(r.type==="rating"&&r.automatic&&O(t,e)&&!O(t,e).automatic)return{status:"saved"};(r.type==="rating"||r.type==="hide")&&(n=void 0);let d;if(g){const p=await g.request("/question-feedback",{method:"POST",body:JSON.stringify({...e,...r.type==="hide"?{type:"hide"}:r}),headers:{"X-Progress-Owner":t},signal:n,keepalive:r.type==="rating"||r.type==="hide"});if(n?.aborted||t!==i.getLearnerProgressOwner())return{status:"aborted"};if(!p.ok)return{status:"unavailable"};d=p.body?.rating}if(n?.aborted||t!==i.getLearnerProgressOwner())return{status:"aborted"};const s=r.type==="hide"?u(e):j(e),o=a(t)[s];delete a(t)[s],a(t)[s]={...o,...r,...r.type==="rating"?{updatedAt:new Date().toISOString()}:{},...d||{}};try{y?.setItem(`tawjihi:question-feedback:${t}`,JSON.stringify(a(t)))}catch{if(!g)return o?a(t)[s]=o:delete a(t)[s],{status:"unavailable"}}return f+=1,c.delete(t),m(),{status:"saved"}}function I(t,e,r){const n=i.getLearnerProgressOwner();f+=1;const d=(h.get(n)||Promise.resolve()).then(()=>L(n,t,e,r));return h.set(n,d.catch(()=>{})),d}return Object.freeze({async ready({signal:t}={}){const e=i.getLearnerProgressOwner();if(e==="guest"||(await h.get(e),!g||t?.aborted||e!==i.getLearnerProgressOwner()))return;const r=++f,n=await g.request("/question-feedback",{headers:{"X-Progress-Owner":e},signal:t});if(!n.ok||t?.aborted||e!==i.getLearnerProgressOwner()||r!==f)return;const d=n.body?.ratings;if(Array.isArray(d)){for(const s of d)if(["easy","medium","hard"].includes(s?.rating)&&["subjectId","lessonId","partId","stepId"].every(o=>typeof s[o]=="string")){const o=j(s),p=a(e)[o];delete a(e)[o],a(e)[o]={...p,rating:s.rating,automatic:s.automatic===!0,updatedAt:s.updatedAt||""}}if(Array.isArray(n.body?.hiddenQuestions))for(const s of n.body.hiddenQuestions)typeof s?.subjectId=="string"&&typeof s?.stepId=="string"&&(a(e)[u(s)]={...a(e)[u(s)],hidden:!0});try{y?.setItem(`tawjihi:question-feedback:${e}`,JSON.stringify(a(e)))}catch{}c.delete(e),m()}},isHidden:t=>a(i.getLearnerProgressOwner())[u(t)]?.hidden===!0,hide:(t,e)=>I(t,{type:"hide",hidden:!0},e),subscribe:t=>(l.add(t),()=>l.delete(t)),getRating:t=>O(i.getLearnerProgressOwner(),t)?.rating||null,saveRating:(t,e,r)=>I(t,{type:"rating",rating:e,automatic:r?.automatic===!0},r),report:(t,e,r,n)=>I(t,{type:"report",reason:e,details:r},n)})}export{J as createQuestionFeedback};
+import { questionRewardKey } from "../domain/question-rewards.js?v=acff67f262f3c107";
+import { createAuthClient } from "./auth-client.js?v=acff67f262f3c107";
+
+const keyFor = key => JSON.stringify([key.subjectId,key.lessonId,key.partId,key.stepId]);
+export function createQuestionFeedback({ service, progressStore, apiBase = null, storage = null, fetchImpl = globalThis.fetch }) {
+  const client = apiBase ? createAuthClient({ baseUrl:apiBase,fetchImpl }) : null;
+  const cache = new Map();
+  let revision = 0;
+  const queues = new Map();
+  const listeners = new Set();
+  const ratingIndexes = new Map();
+  const notify = () => listeners.forEach(listener => listener());
+  progressStore?.subscribe(() => { ratingIndexes.clear(); notify(); });
+  const owned = owner => {
+    if (!cache.has(owner)) {
+      let saved = {};
+      try { saved = JSON.parse(storage?.getItem(`tawjihi:question-feedback:${owner}`) || "{}"); } catch { /* Fresh local cache. */ }
+      cache.set(owner,saved && typeof saved === "object" && !Array.isArray(saved) ? saved : {});
+    }
+    return cache.get(owner);
+  };
+  function ratingRecord(owner, key) {
+    if (!ratingIndexes.has(owner)) {
+      const index = new Map((progressStore?.getAnswerRatings(owner) || [])
+        .map(item => [questionRewardKey(item), { rating:item.rating, automatic:true }]));
+      for (const [id,record] of Object.entries(owned(owner))) {
+        if (!record?.rating) continue;
+        try {
+          const ids = JSON.parse(id);
+          if (ids.length === 4) index.set(questionRewardKey({subjectId:ids[0],stepId:ids[3]}),record);
+        } catch { /* Ignore malformed legacy entries. */ }
+      }
+      ratingIndexes.set(owner,index);
+    }
+    return ratingIndexes.get(owner).get(questionRewardKey(key)) || null;
+  }
+  async function write(owner, key, value, { signal } = {}) {
+    if (owner === "guest" || owner !== service.getLearnerProgressOwner()) return { status:"aborted" };
+    if (value.type === "rating" && value.automatic && ratingRecord(owner,key) && !ratingRecord(owner,key).automatic) return { status:"saved" };
+    // Confirmed personal choices survive navigation, while remaining bound to this learner.
+    if (value.type === "rating" || value.type === "hide") signal = undefined;
+    let confirmedRating;
+    if (client) {
+      const result = await client.request("/question-feedback", { method:"POST", body:JSON.stringify({ ...key,...(value.type === "hide" ? {type:"hide"} : value) }),
+        headers:{ "X-Progress-Owner":owner }, signal,keepalive:value.type === "rating" || value.type === "hide" });
+      if (signal?.aborted || owner !== service.getLearnerProgressOwner()) return { status:"aborted" };
+      if (!result.ok) return { status:"unavailable" };
+      confirmedRating = result.body?.rating;
+    }
+    if (signal?.aborted || owner !== service.getLearnerProgressOwner()) return { status:"aborted" };
+    const id = value.type === "hide" ? questionRewardKey(key) : keyFor(key);
+    const previous = owned(owner)[id];
+    delete owned(owner)[id];
+    owned(owner)[id] = { ...previous,...value,...(value.type === "rating" ? {updatedAt:new Date().toISOString()} : {}),...(confirmedRating || {}) };
+    try { storage?.setItem(`tawjihi:question-feedback:${owner}`,JSON.stringify(owned(owner))); }
+    catch { if (!client) {
+      if (previous) owned(owner)[id] = previous;
+      else delete owned(owner)[id];
+      return { status:"unavailable" };
+    } }
+    revision += 1;
+    ratingIndexes.delete(owner);
+    notify();
+    return { status:"saved" };
+  }
+  function save(key,value,options) {
+    const owner = service.getLearnerProgressOwner();
+    revision += 1;
+    const result = (queues.get(owner) || Promise.resolve()).then(() => write(owner,key,value,options));
+    queues.set(owner,result.catch(() => {}));
+    return result;
+  }
+  return Object.freeze({
+    async ready({ signal } = {}) {
+      const owner = service.getLearnerProgressOwner();
+      if (owner === "guest") return;
+      await queues.get(owner);
+      if (!client || signal?.aborted || owner !== service.getLearnerProgressOwner()) return;
+      const readRevision = ++revision;
+      const result = await client.request("/question-feedback",{ headers:{ "X-Progress-Owner":owner },signal });
+      if (!result.ok || signal?.aborted || owner !== service.getLearnerProgressOwner() || readRevision !== revision) return;
+      const ratings = result.body?.ratings;
+      if (!Array.isArray(ratings)) return;
+      for (const item of ratings) {
+        if (["easy","medium","hard"].includes(item?.rating)
+          && ["subjectId","lessonId","partId","stepId"].every(key => typeof item[key] === "string"))
+          {
+            const id = keyFor(item), previous = owned(owner)[id];
+            delete owned(owner)[id];
+            owned(owner)[id] = { ...previous,rating:item.rating,automatic:item.automatic === true,updatedAt:item.updatedAt || "" };
+          }
+      }
+      if (Array.isArray(result.body?.hiddenQuestions)) for (const item of result.body.hiddenQuestions) {
+        if (typeof item?.subjectId === "string" && typeof item?.stepId === "string")
+          owned(owner)[questionRewardKey(item)] = { ...owned(owner)[questionRewardKey(item)],hidden:true };
+      }
+      try { storage?.setItem(`tawjihi:question-feedback:${owner}`,JSON.stringify(owned(owner))); } catch { /* Server preferences remain durable. */ }
+      ratingIndexes.delete(owner);
+      notify();
+    },
+    isHidden:key => owned(service.getLearnerProgressOwner())[questionRewardKey(key)]?.hidden === true,
+    hide:(key,options) => save(key,{ type:"hide",hidden:true },options),
+    subscribe:listener => { listeners.add(listener); return () => listeners.delete(listener); },
+    getRating:key => ratingRecord(service.getLearnerProgressOwner(),key)?.rating || null,
+    saveRating:(key,rating,options) => save(key,{ type:"rating",rating,automatic:options?.automatic === true },options),
+    report:(key,reason,details,options) => save(key,{ type:"report",reason,details },options),
+  });
+}

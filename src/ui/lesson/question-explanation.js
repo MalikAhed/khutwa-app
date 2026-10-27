@@ -1,1 +1,104 @@
-import{escapeHtml as k,prefersReducedMotion as L}from"../../lib/dom.js?v=7388f68cc0f433fd";import{EXPLANATION_GEM_COST as f}from"../../domain/question-explanations.js?v=7388f68cc0f433fd";import{renderMarkdownDocument as $,mountMarkdownFeatures as S}from"../../markdown/renderer.js?v=7388f68cc0f433fd";import{spaceWorkedEquations as q}from"./shared.js?v=7388f68cc0f433fd";export function mountQuestionExplanation({host:x,explanation:r,locale:d="ar",signal:l}){if(!r)return;const t=d==="ar",g=x.querySelector(".level-layout-actions"),v=g?.querySelector("[data-template-primary]");if(!v)return;const n=document.createElement("button");n.type="button",n.className="level-action level-action--explain",n.dataset.questionExplain="",n.setAttribute("aria-haspopup","dialog");const c=()=>{const b=r.isUnlocked(),o=r.isIncluded?.();n.dataset.explanationIncluded=String(!!o),n.innerHTML=`<span>${t?"اشرح":"Explain"}</span>${o?'<span class="explanation-included ui-number" aria-hidden="true">∞</span>':b?"":`<span class="explanation-price"><bdi class="ui-number">${f}</bdi><img src="assets/icons/nav-gem.svg" width="22" height="22" alt="${t?"جوهرة":"gems"}"></span>`}`,n.setAttribute("aria-label",o?t?"اشرح، مشمول مع سوبر":"Explain, included with Super":b?t?"عرض الشرح المفتوح":"View unlocked explanation":t?`اشرح، فتح دائم مقابل ${f} جوهرة`:`Explain, unlock for ${f} gems`)};c();const E=r.subscribe?.(c);l.addEventListener("abort",()=>E?.(),{once:!0}),v.before(n),g.classList.add("level-layout-actions--explanations");let a,u,p;const m=()=>{u?.abort(),p?.cancel(),p=null,a?.remove(),a=null};n.addEventListener("click",async()=>{if(a?.open||l.aborted)return;a&&m();const b=n.dataset.explanationIncluded==="true";if(c(),b&&!r.isIncluded?.()&&!r.isUnlocked())return;u=new AbortController;const o=AbortSignal.any([l,u.signal]);a=document.createElement("dialog");const e=a;e.className="question-explanation-dialog",e.dir=t?"rtl":"ltr",e.lang=d,e.setAttribute("aria-labelledby","question-explanation-title"),e.innerHTML=`<header><h2 id="question-explanation-title">${t?"الشرح المفصّل":"Detailed explanation"}</h2><button type="button" data-explanation-close aria-label="${t?"إغلاق الشرح":"Close explanation"}">×</button></header><div data-explanation-body aria-busy="true"><p role="status">${t?"جارٍ فتح الشرح…":"Opening explanation…"}</p></div>`;let y=!1;const h=()=>{if(y||!e.open)return;if(y=!0,u.abort(),L()||!e.animate){e.close();return}const i=getComputedStyle(e).transform;e.getAnimations().forEach(w=>w.cancel()),p=e.animate([{transform:i},{transform:"translateY(100%)"}],{duration:220,easing:"cubic-bezier(.4,0,1,1)",fill:"forwards"}),p.finished.then(()=>{!l.aborted&&a===e&&e.close()}).catch(()=>{})};e.querySelector("[data-explanation-close]").addEventListener("click",h,{signal:o}),e.addEventListener("cancel",i=>{i.preventDefault(),h()},{signal:o}),e.addEventListener("close",()=>{if(a!==e){e.remove();return}m(),!l.aborted&&n.isConnected&&n.focus({preventScroll:!0})},{once:!0}),document.body.append(e),e.showModal();const s=e.querySelector("[data-explanation-body]");try{const i=await r.unlock({signal:o});if(o.aborted||a!==e)return;c(),s.innerHTML=`${i.note?`<p class="question-explanation-note">${k(i.note)}</p>`:""}<div class="markdown-rendered">${$(i.markdown,{locale:d})}</div>`,q(s),S(s,{locale:d,signal:o,scrollSurface:s})}catch(i){if(o.aborted||a!==e)return;s.innerHTML=`<p role="status">${i.code==="insufficient-gems"?t?"تحتاج إلى 50 جوهرة لفتح هذا الشرح. رصيدك غير كافٍ.":"You need 50 gems to unlock this explanation. Your balance is too low.":i.code==="unavailable"?t?"الشرح المفصّل لهذا السؤال غير متاح حاليًا. لم تُخصم أي جواهر.":"This explanation is not available yet. No gems were charged.":t?"تعذّر فتح الشرح. أغلق النافذة وحاول مجددًا؛ لن تُخصم الجواهر مرتين.":"Could not open the explanation. Close and retry; you will not be charged twice."}</p>`,c()}finally{a===e&&s.setAttribute("aria-busy","false")}},{signal:l}),l.addEventListener("abort",m,{once:!0})}
+import { escapeHtml, prefersReducedMotion } from "../../lib/dom.js?v=acff67f262f3c107";
+import { EXPLANATION_GEM_COST } from "../../domain/question-explanations.js?v=acff67f262f3c107";
+import { renderMarkdownDocument, mountMarkdownFeatures } from "../../markdown/renderer.js?v=acff67f262f3c107";
+import { spaceWorkedEquations } from "./shared.js?v=acff67f262f3c107";
+
+/** A purchase opens reading only; it never answers or completes the question. */
+export function mountQuestionExplanation({ host, explanation, locale = "ar", signal }) {
+  if (!explanation) return;
+  const ar = locale === "ar";
+  const footer = host.querySelector(".level-layout-actions");
+  const primary = footer?.querySelector("[data-template-primary]");
+  if (!primary) return;
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "level-action level-action--explain";
+  button.dataset.questionExplain = "";
+  button.setAttribute("aria-haspopup","dialog");
+  const updateLabel = () => {
+    const unlocked = explanation.isUnlocked();
+    const included = explanation.isIncluded?.();
+    button.dataset.explanationIncluded = String(Boolean(included));
+    button.innerHTML = `<span>${ar ? "اشرح" : "Explain"}</span>${included
+      ? '<span class="explanation-included ui-number" aria-hidden="true">∞</span>'
+      : unlocked ? "" : `<span class="explanation-price"><bdi class="ui-number">${EXPLANATION_GEM_COST}</bdi><img src="assets/icons/nav-gem.svg" width="22" height="22" alt="${ar ? "جوهرة" : "gems"}"></span>`}`;
+    button.setAttribute("aria-label",included ? (ar ? "اشرح، مشمول مع سوبر" : "Explain, included with Super")
+      : unlocked ? (ar ? "عرض الشرح المفتوح" : "View unlocked explanation")
+        : (ar ? `اشرح، فتح دائم مقابل ${EXPLANATION_GEM_COST} جوهرة` : `Explain, unlock for ${EXPLANATION_GEM_COST} gems`));
+  };
+  updateLabel();
+  const unsubscribe = explanation.subscribe?.(updateLabel);
+  signal.addEventListener("abort",() => unsubscribe?.(),{once:true});
+  primary.before(button);
+  footer.classList.add("level-layout-actions--explanations");
+  let dialog;
+  let opening;
+  let closingAnimation;
+  const removeDialog = () => {
+    opening?.abort();
+    closingAnimation?.cancel();
+    closingAnimation = null;
+    dialog?.remove();
+    dialog = null;
+  };
+  button.addEventListener("click",async () => {
+    if (dialog?.open || signal.aborted) return;
+    // A native close event is queued; retire its dialog before a quick reopen.
+    if (dialog) removeDialog();
+    const wasIncluded = button.dataset.explanationIncluded === "true";
+    updateLabel();
+    if (wasIncluded && !explanation.isIncluded?.() && !explanation.isUnlocked()) return;
+    opening = new AbortController();
+    const requestSignal = AbortSignal.any([signal,opening.signal]);
+    dialog = document.createElement("dialog");
+    const activeDialog = dialog;
+    activeDialog.className = "question-explanation-dialog";
+    activeDialog.dir = ar ? "rtl" : "ltr";
+    activeDialog.lang = locale;
+    activeDialog.setAttribute("aria-labelledby","question-explanation-title");
+    activeDialog.innerHTML = `<header><h2 id="question-explanation-title">${ar ? "الشرح المفصّل" : "Detailed explanation"}</h2><button type="button" data-explanation-close aria-label="${ar ? "إغلاق الشرح" : "Close explanation"}">×</button></header><div data-explanation-body aria-busy="true"><p role="status">${ar ? "جارٍ فتح الشرح…" : "Opening explanation…"}</p></div>`;
+    let closing = false;
+    const dismiss = () => {
+      if (closing || !activeDialog.open) return;
+      closing = true;
+      opening.abort();
+      if (prefersReducedMotion() || !activeDialog.animate) { activeDialog.close(); return; }
+      const from = getComputedStyle(activeDialog).transform;
+      activeDialog.getAnimations().forEach(animation => animation.cancel());
+      closingAnimation = activeDialog.animate([{transform:from},{transform:"translateY(100%)"}],
+        {duration:220,easing:"cubic-bezier(.4,0,1,1)",fill:"forwards"});
+      void closingAnimation.finished.then(() => {
+        if (!signal.aborted && dialog === activeDialog) activeDialog.close();
+      }).catch(() => {});
+    };
+    activeDialog.querySelector("[data-explanation-close]").addEventListener("click",dismiss,{signal:requestSignal});
+    activeDialog.addEventListener("cancel",event => { event.preventDefault(); dismiss(); },{signal:requestSignal});
+    activeDialog.addEventListener("close",() => {
+      if (dialog !== activeDialog) { activeDialog.remove(); return; }
+      removeDialog();
+      if (!signal.aborted && button.isConnected) button.focus({preventScroll:true});
+    },{once:true});
+    document.body.append(activeDialog);
+    activeDialog.showModal();
+    const body = activeDialog.querySelector("[data-explanation-body]");
+    try {
+      const result = await explanation.unlock({signal:requestSignal});
+      if (requestSignal.aborted || dialog !== activeDialog) return;
+      updateLabel();
+      body.innerHTML = `${result.note ? `<p class="question-explanation-note">${escapeHtml(result.note)}</p>` : ""}<div class="markdown-rendered">${renderMarkdownDocument(result.markdown,{locale})}</div>`;
+      spaceWorkedEquations(body);
+      mountMarkdownFeatures(body,{locale,signal:requestSignal,scrollSurface:body});
+    } catch (error) {
+      if (requestSignal.aborted || dialog !== activeDialog) return;
+      body.innerHTML = `<p role="status">${error.code === "insufficient-gems"
+        ? (ar ? "تحتاج إلى 50 جوهرة لفتح هذا الشرح. رصيدك غير كافٍ." : "You need 50 gems to unlock this explanation. Your balance is too low.")
+        : error.code === "unavailable"
+          ? (ar ? "الشرح المفصّل لهذا السؤال غير متاح حاليًا. لم تُخصم أي جواهر." : "This explanation is not available yet. No gems were charged.")
+          : (ar ? "تعذّر فتح الشرح. أغلق النافذة وحاول مجددًا؛ لن تُخصم الجواهر مرتين." : "Could not open the explanation. Close and retry; you will not be charged twice.")}</p>`;
+      updateLabel();
+    } finally {
+      if (dialog === activeDialog) body.setAttribute("aria-busy","false");
+    }
+  },{signal});
+  signal.addEventListener("abort",removeDialog,{once:true});
+}

@@ -1,22 +1,352 @@
-const g=new Set(["mcq","true-false","exam-question"]),k=new Set(["tip","note","remember","warning","mistake","security","accessibility","reveal"]),q=/^[a-z0-9]+(?:-[a-z0-9]+)*$/,y=["id","title","question","prompt","kicker","explanation","hint"],T=new Map([["mcq",new Set([...y,"example","reference"])],["true-false",new Set([...y,"answer","example"])],["exam-question",new Set(["id","title","question","reference","body","solution","guidance","answer-label"])]]);function L(n,e){return String(n).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,48)||e}function u(n,e,s=""){return new RegExp(`^${e}:[ \\t]*(.+)$`,"im").exec(n)?.[1]?.trim()||s}function z(n){return String(n).replace(/^\s*(?:[([«]?\s*)[أاابجد](?:\s*[)\]».:：]|\s*[-–—ـ])\s*/u,"").trim()}function m(n,e,s=null){const t=n.split(`
-`),i=t.findIndex(l=>new RegExp(`^${e}:[ \\t]*$`,"i").test(l));if(i<0)return[];const a=[];let o=!1;for(let l=i+1;l<t.length;l+=1){const d=t[l];/^```/.test(d.trim())&&(o=!o);const c=/^([a-z][a-z0-9-]*):[ \t]*(?:.*)$/i.exec(d)?.[1]?.toLowerCase();if(!o&&c&&!["http","https"].includes(c)&&(!s||s.includes(c)))break;a.push(d)}return a}function I(n,{preserveChoiceMarkers:e=!1}={}){return n=n.split(/^explanation:/m)[0],n.split(`
-`).map(s=>{const t=/^\s*-\s+\[([ xX])\]\s+(.+)$/.exec(s);if(!t)return null;const i=t[2].trim(),a=/^([a-z0-9]+(?:-[a-z0-9]+)*)\s*\|\s*(.+)$/i.exec(i),o=a?.[2]?.trim()||i;return{checked:t[1].toLowerCase()==="x",id:a?.[1]||"",text:e?o:z(o)}}).filter(Boolean)}function R(n,e,s,t){const i=T.get(e);e==="exam-question"&&(n=n.split(/^body:[ \t]*$/m)[0]);let a=!1,o=!1;n.split(`
-`).forEach(l=>{if(/^explanation:[ \t]*$/.test(l)?o=!0:/^(?:hint|example):/.test(l)&&(o=!1),o)return;if(/^```/.test(l.trim())){a=!a;return}if(a)return;const c=/^([a-z][a-z0-9-]*):(?:[ \t].*)?$/i.exec(l.trim())?.[1]?.toLowerCase();c&&!i.has(c)&&c!=="http"&&c!=="https"&&t.push(`Step ${s+1} (${e}) uses unsupported field “${c}”.`)})}function _(n,e,s,t){C(n)&&t.push(`Step ${s+1} (${e}) must not contain raw HTML outside a fenced lesson example.`);let i=!1;n.split(`
-`).forEach(a=>{if(/^```/.test(a.trim())){i=!i;return}!i&&/^:::[a-z][a-z0-9-]*/i.test(a.trim())&&t.push(`Step ${s+1} (${e}) must not contain a nested lesson directive.`)})}function D(n,e){let s="",t=!1;n.split(`
-`).forEach(i=>{if(/^```/.test(i.trim())){t=!t;return}if(t)return;if(/^:::\s*$/.test(i.trim())){s="";return}const o=/^:::([a-z][a-z0-9-]*)(?:[ \t]+.*)?$/i.exec(i.trim())?.[1]?.toLowerCase();!o||!k.has(o)||(s?e.push(`Content directive :::${o} must not be nested inside :::${s}.`):s=o)}),s&&e.push(`The :::${s} block is missing its closing :::.`)}function C(n){let e=!1;return n.split(`
-`).some(s=>{if(/^```/.test(s.trim()))return e=!e,!1;if(e)return!1;const t=s.replace(/`[^`\n]*`/g,"");return/<\/?[A-Za-z][A-Za-z0-9-]*(?=\s|\/?>)/.test(t)})}function O(n,e,s){const t=u(n,"title",e==="mcq"?"Knowledge check":"Practice step");return{kicker:u(n,"kicker",e==="mcq"?"KNOWLEDGE CHECK · CHOOSE ONE":"PRACTICE"),title:t,prompt:u(n,"question",u(n,"prompt",t)),mascot:u(n,"mascot","Take it one step at a time."),correctFeedback:m(n,"explanation",["hint","example"]).join(`
-`).trim()||u(n,"explanation","Correct."),wrongFeedback:u(n,"hint","Review the lesson and try again."),authoringId:`authored-${e}-${s+1}`}}function P(n,e,s,t){const i=O(n,"mcq",s),a=u(n,"reference");a&&(i.reference=a);const o=m(n,"example").join(`
-`).trim();o&&(i.example=o),i.phase="practice",i.critical=!1;let l=I(n,{preserveChoiceMarkers:!!a});if(e==="true-false"){l.length>0&&t.push(`Step ${s+1} (true-false) must use answer: true or answer: false instead of checkbox choices.`);const p=u(n,"answer").toLowerCase();["true","false"].includes(p)||t.push(`Step ${s+1} (true-false) answer must be true or false.`),l=["true","false"].map(r=>({checked:r===p,id:r,text:r==="true"?"True":"False"}))}l.length<2&&t.push(`Step ${s+1} (${e}) needs at least two answer choices.`),e==="mcq"&&l.filter(p=>p.checked).length!==1&&t.push(`Step ${s+1} (${e}) must mark exactly one answer with [x].`);const d=l.map(p=>p.id).filter(Boolean);new Set(d).size!==d.length&&t.push(`Step ${s+1} (${e}) answer ids must be unique.`);const c=new Set;return i.answers=l.map((p,r)=>{let f=p.id||L(p.text,`choice-${r+1}`);for(;c.has(f);)f=`${f}-${r+1}`;c.add(f);const h=/^https?:\/\/[^\s]+$/i.test(p.text)?`\`${p.text}\``:p.text;return{id:f,text:h,correct:p.checked}}),i.idleFeedback="Select the best answer, then check your choice.",i.selectedFeedback="Answer selected. Check it when you are ready.",{type:"mcq",content:i}}function j(n,e,s,t){if(R(e,n,s,t),_(e,n,s,t),n==="mcq"||n==="true-false")return P(e,n,s,t);if(n==="exam-question"){const i={title:u(e,"title"),prompt:u(e,"question"),reference:u(e,"reference"),answerLabel:u(e,"answer-label"),body:m(e,"body",["solution","guidance"]).join(`
-`).trim(),solution:m(e,"solution",["guidance"]).join(`
-`).trim(),guidance:m(e,"guidance",[]).join(`
-`).trim()};for(const a of["reference","answerLabel","body","solution"])i[a]||t.push(`Step ${s+1} (exam-question) needs ${a}.`);return{type:"exam-question",content:i}}return null}function M(n){try{const e=new URL(n);if(!["http:","https:"].includes(e.protocol))return!1;const s=e.hostname.toLowerCase().replace(/^(?:www\.|m\.)/,""),t=e.pathname.split("/").filter(Boolean),i=s==="youtu.be"?t[0]:s==="youtube.com"&&e.pathname==="/watch"?e.searchParams.get("v"):s==="youtube.com"&&["embed","shorts","live"].includes(t[0])?t[1]:"";return/^[A-Za-z0-9_-]{11}$/.test(i||"")}catch{return!1}}function N(n,e,s){const t=n.split(`
-`);if(!/^#\s+[^\n]+$/.test(t.shift()||""))return s.push(`Explanation step ${e+1} (video-intro) needs exactly one level-one lesson title.`),!1;for(;t[0]?.trim()==="";)t.shift();if(/^https?:\/\/\S+$/i.test(t[0]||"")&&!M(t.shift()))return s.push(`Explanation step ${e+1} (video-intro) needs a supported YouTube URL immediately after its title.`),!1;const i=t.some(a=>{const o=a.trim();return o?!!(/^https?:\/\/\S+$/i.test(o)||/^(?:#{1,6}\s|:::|```|~~~|>\s|!\[|\d+[.)]\s|[-*_]{3,}$|\|)/.test(o)||/^(?:[-*+]\s+)?!\[/.test(o)):!1});return i&&s.push(`Explanation step ${e+1} (video-intro) may include only paragraphs and bullet links after one YouTube URL; no extra video or heading.`),!i}function A(n,e,s){const t=/^#{1,3}\s+(.+)$/m.exec(n)?.[1]?.replace(/[*_`]/g,"").trim(),i=/^<!--\s*step-id:\s*([a-z0-9]+(?:-[a-z0-9]+)*)\s*-->$/im.exec(n)?.[1],a=[...n.matchAll(/^<!--\s*presentation:\s*(.*?)\s*-->$/gim)],o=a[0]?.[1],l={type:"markdown",id:i||`authored-content-${e+1}`,title:t||`Lesson content ${e+1}`,source:n.trim()};if(a.length>1&&s.push(`Explanation step ${e+1} can select only one presentation.`),o!==void 0&&!new Set(["rocky-dialogue","video-intro","lesson-summary"]).has(o)&&s.push(`Explanation step ${e+1} uses unsupported presentation “${o}”.`),o==="rocky-dialogue"){const c=n.replace(/^<!--\s*(?:step-id|presentation):.*?-->\s*$/gim,"").trim(),p=/^#\s+[^\n]+\n\s*(!\[[^\]\n]+\]\([^\n]+\))\s*\n\s*:::note(?:[ \t]+[^\n]+)?\n([\s\S]+?)\n:::\s*$/.exec(c);p?(l.presentation=o,l.dialogue={image:p[1],source:p[2].trim()}):s.push(`Explanation step ${e+1} (rocky-dialogue) needs one heading, one image with alt text, and one non-empty :::note dialogue.`)}if(o==="video-intro"){const c=n.replace(/^<!--\s*(?:step-id|presentation):.*?-->\s*$/gim,"").trim();N(c,e,s)&&(l.presentation=o)}return o==="lesson-summary"&&(l.presentation=o),l}function F(n,e){const s=new Set(["mcq","true-false"]);n.forEach((t,i)=>{if(t.kind==="markdown"){/^<!--\s*step-id:\s*[a-z0-9]+(?:-[a-z0-9]+)*\s*-->$/im.test(t.source)||e.push(`Published explanation step ${i+1} needs <!-- step-id: stable-kebab-id -->.`);return}const a=["id","title","question-or-prompt"];s.has(t.type)&&a.push("explanation","hint"),a.forEach(o=>{if(!(o==="question-or-prompt"?!!(u(t.source,"question")||u(t.source,"prompt")):!!(u(t.source,o)||o==="explanation"&&m(t.source,o,["hint","example"]).join(`
-`).trim()))){const d=o==="question-or-prompt"?"question or prompt":o;e.push(`Published step ${i+1} (${t.type}) needs a non-empty ${d} field.`)}})})}export function parseLessonMarkdown(n,{published:e=!1}={}){const s=String(n).replace(/\r\n?/g,`
-`).split(`
-`),t=[],i=[];let a=[],o=!1;const l=()=>{const r=a.join(`
-`).trim();r&&(C(r)&&i.push("Lesson Markdown must not contain raw HTML; use supported Markdown or a lesson directive instead."),D(r,i),t.push({kind:"markdown",source:r})),a=[]};for(let r=0;r<s.length;r+=1){const f=s[r];if(/^```/.test(f.trim())&&(o=!o),!o&&/^<!--\s*lesson-step\s*-->$/i.test(f.trim())){l();continue}const h=o?null:/^:::([a-z][a-z0-9-]*)(?:[ \t]+.*)?$/i.exec(f.trim()),$=h?.[1]?.toLowerCase(),w=o?null:/^:::(\S+)\s*$/.exec(f.trim());if(h&&!g.has($)&&!k.has($)?i.push(`Unsupported lesson directive :::${$}.`):h&&g.has($)&&!w&&i.push(`Interactive directive :::${$} must open on a line by itself.`),!w||!g.has(w[1].toLowerCase())){a.push(f);continue}l();const E=w[1].toLowerCase(),S=[];let v=!1,x=!1;for(r+=1;r<s.length;r+=1){const b=s[r];if(/^```/.test(b.trim())&&(x=!x),!x&&/^:::\s*$/.test(b.trim())){v=!0;break}S.push(b)}v||i.push(`The :::${E} block is missing its closing :::.`),t.push({kind:"directive",type:E,source:S.join(`
-`)})}l(),e&&F(t,i);const d=t.map((r,f)=>r.kind==="markdown"?A(r.source,f,i):{...j(r.type,r.source,f,i),id:u(r.source,"id",`authored-${r.type}-${f+1}`)}).filter(Boolean),c=d.map(r=>r.id);new Set(c).size!==c.length&&i.push("Every authored lesson step needs a unique id."),c.some(r=>!q.test(r))&&i.push("Every authored lesson step id must use lowercase kebab-case.");const p=t.filter(r=>r.kind==="markdown").map(r=>r.source).join(`
+const DIRECTIVE_TYPES = new Set(["mcq", "true-false", "exam-question"]);
+const CONTENT_DIRECTIVE_TYPES = new Set(["tip", "note", "remember", "warning", "mistake", "security", "accessibility", "reveal"]);
+const STEP_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const SHARED_QUESTION_FIELDS = ["id", "title", "question", "prompt", "kicker", "explanation", "hint"];
+const DIRECTIVE_FIELDS = new Map([
+  ["mcq", new Set([...SHARED_QUESTION_FIELDS, "example", "reference"])],
+  ["true-false", new Set([...SHARED_QUESTION_FIELDS, "answer", "example"])],
+  ["exam-question", new Set(["id", "title", "question", "reference", "body", "solution", "guidance", "answer-label"])],
+]);
 
----
+function slug(value, fallback) {
+  const result = String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 48);
+  return result || fallback;
+}
 
-`);return d.length===0&&i.push("Add Markdown content or an interactive directive to create a lesson."),{steps:d,issues:i,documentSource:p}}export const LESSON_AUTHORING_DIRECTIVES=Object.freeze([...g]),LESSON_CONTENT_DIRECTIVES=Object.freeze([...k]);
+function field(source, name, fallback = "") {
+  const match = new RegExp(`^${name}:[ \\t]*(.+)$`, "im").exec(source);
+  return match?.[1]?.trim() || fallback;
+}
+
+function stripChoiceMarker(text) {
+  return String(text).replace(/^\s*(?:[([«]?\s*)[أاابجد](?:\s*[)\]».:：]|\s*[-–—ـ])\s*/u, "").trim();
+}
+
+function section(source, name, boundaries = null) {
+  const lines = source.split("\n");
+  const start = lines.findIndex((line) => new RegExp(`^${name}:[ \\t]*$`, "i").test(line));
+  if (start < 0) return [];
+  const result = [];
+  let fenced = false;
+  for (let index = start + 1; index < lines.length; index += 1) {
+    const line = lines[index];
+    if (/^```/.test(line.trim())) fenced = !fenced;
+    const boundary = /^([a-z][a-z0-9-]*):[ \t]*(?:.*)$/i.exec(line)?.[1]?.toLowerCase();
+    if (!fenced && boundary && !["http", "https"].includes(boundary) && (!boundaries || boundaries.includes(boundary))) break;
+    result.push(line);
+  }
+  return result;
+}
+
+function checkboxItems(source, { preserveChoiceMarkers = false } = {}) {
+  source = source.split(/^explanation:/m)[0];
+  return source.split("\n").map((line) => {
+    const match = /^\s*-\s+\[([ xX])\]\s+(.+)$/.exec(line);
+    if (!match) return null;
+    const text = match[2].trim();
+    const explicitId = /^([a-z0-9]+(?:-[a-z0-9]+)*)\s*\|\s*(.+)$/i.exec(text);
+    const answerText = explicitId?.[2]?.trim() || text;
+    return { checked:match[1].toLowerCase() === "x", id:explicitId?.[1] || "", text:preserveChoiceMarkers ? answerText : stripChoiceMarker(answerText) };
+  }).filter(Boolean);
+}
+
+function validateDirectiveFields(source, type, index, issues) {
+  const allowed = DIRECTIVE_FIELDS.get(type);
+  // Exam body/solution are literal multiline Markdown, including labels like
+  // "Patients:" from the paper, not additional authoring metadata.
+  if (type === "exam-question") source = source.split(/^body:[ \t]*$/m)[0];
+  let fenced = false;
+  let explanation = false;
+  source.split("\n").forEach((line) => {
+    if (/^explanation:[ \t]*$/.test(line)) explanation = true;
+    else if (/^(?:hint|example):/.test(line)) explanation = false;
+    if (explanation) return;
+    if (/^```/.test(line.trim())) {
+      fenced = !fenced;
+      return;
+    }
+    if (fenced) return;
+    const match = /^([a-z][a-z0-9-]*):(?:[ \t].*)?$/i.exec(line.trim());
+    const name = match?.[1]?.toLowerCase();
+    if (name && !allowed.has(name) && name !== "http" && name !== "https") {
+      issues.push(`Step ${index + 1} (${type}) uses unsupported field “${name}”.`);
+    }
+  });
+}
+
+function validateDirectiveBody(source, type, index, issues) {
+  if (containsRawHtml(source)) {
+    issues.push(`Step ${index + 1} (${type}) must not contain raw HTML outside a fenced lesson example.`);
+  }
+  let fenced = false;
+  source.split("\n").forEach((line) => {
+    if (/^```/.test(line.trim())) {
+      fenced = !fenced;
+      return;
+    }
+    if (!fenced && /^:::[a-z][a-z0-9-]*/i.test(line.trim())) {
+      issues.push(`Step ${index + 1} (${type}) must not contain a nested lesson directive.`);
+    }
+  });
+}
+
+function validateContentDirectiveBlocks(source, issues) {
+  let active = "";
+  let fenced = false;
+  source.split("\n").forEach((line) => {
+    if (/^```/.test(line.trim())) {
+      fenced = !fenced;
+      return;
+    }
+    if (fenced) return;
+    if (/^:::\s*$/.test(line.trim())) {
+      active = "";
+      return;
+    }
+    const opening = /^:::([a-z][a-z0-9-]*)(?:[ \t]+.*)?$/i.exec(line.trim());
+    const type = opening?.[1]?.toLowerCase();
+    if (!type || !CONTENT_DIRECTIVE_TYPES.has(type)) return;
+    if (active) issues.push(`Content directive :::${type} must not be nested inside :::${active}.`);
+    else active = type;
+  });
+  if (active) issues.push(`The :::${active} block is missing its closing :::.`);
+}
+
+function containsRawHtml(source) {
+  let fenced = false;
+  return source.split("\n").some((line) => {
+    if (/^```/.test(line.trim())) {
+      fenced = !fenced;
+      return false;
+    }
+    if (fenced) return false;
+    const withoutInlineCode = line.replace(/`[^`\n]*`/g, "");
+    return /<\/?[A-Za-z][A-Za-z0-9-]*(?=\s|\/?>)/.test(withoutInlineCode);
+  });
+}
+
+function commonConfig(source, type, index) {
+  const title = field(source, "title", type === "mcq" ? "Knowledge check" : "Practice step");
+  return {
+    kicker:field(source, "kicker", type === "mcq" ? "KNOWLEDGE CHECK · CHOOSE ONE" : "PRACTICE"),
+    title,
+    prompt:field(source, "question", field(source, "prompt", title)),
+    mascot:field(source, "mascot", "Take it one step at a time."),
+    correctFeedback:section(source, "explanation", ["hint", "example"]).join("\n").trim() || field(source, "explanation", "Correct."),
+    wrongFeedback:field(source, "hint", "Review the lesson and try again."),
+    authoringId:`authored-${type}-${index + 1}`,
+  };
+}
+
+function parseMcq(source, type, index, issues) {
+  const config = commonConfig(source, "mcq", index);
+  const reference = field(source, "reference");
+  if (reference) config.reference = reference;
+  const example = section(source, "example").join("\n").trim();
+  if (example) config.example = example;
+  config.phase = "practice";
+  config.critical = false;
+  let choices = checkboxItems(source, { preserveChoiceMarkers:Boolean(reference) });
+  if (type === "true-false") {
+    if (choices.length > 0) issues.push(`Step ${index + 1} (true-false) must use answer: true or answer: false instead of checkbox choices.`);
+    const answer = field(source, "answer").toLowerCase();
+    if (!["true", "false"].includes(answer)) issues.push(`Step ${index + 1} (true-false) answer must be true or false.`);
+    choices = ["true", "false"].map((value) => ({ checked:value === answer, id:value, text:value === "true" ? "True" : "False" }));
+  }
+  if (choices.length < 2) issues.push(`Step ${index + 1} (${type}) needs at least two answer choices.`);
+  if (type === "mcq" && choices.filter((choice) => choice.checked).length !== 1) issues.push(`Step ${index + 1} (${type}) must mark exactly one answer with [x].`);
+  const explicitIds = choices.map((choice) => choice.id).filter(Boolean);
+  if (new Set(explicitIds).size !== explicitIds.length) issues.push(`Step ${index + 1} (${type}) answer ids must be unique.`);
+  const used = new Set();
+  config.answers = choices.map((choice, choiceIndex) => {
+    let id = choice.id || slug(choice.text, `choice-${choiceIndex + 1}`);
+    while (used.has(id)) id = `${id}-${choiceIndex + 1}`;
+    used.add(id);
+    const text = /^https?:\/\/[^\s]+$/i.test(choice.text) ? `\`${choice.text}\`` : choice.text;
+    return { id, text, correct:choice.checked };
+  });
+  config.idleFeedback = "Select the best answer, then check your choice.";
+  config.selectedFeedback = "Answer selected. Check it when you are ready.";
+  return { type:"mcq", content:config };
+}
+
+function parseDirective(type, source, index, issues) {
+  validateDirectiveFields(source, type, index, issues);
+  validateDirectiveBody(source, type, index, issues);
+  if (type === "mcq" || type === "true-false") return parseMcq(source, type, index, issues);
+  if (type === "exam-question") {
+    const content = {
+      title:field(source, "title"), prompt:field(source, "question"),
+      reference:field(source, "reference"), answerLabel:field(source, "answer-label"),
+      body:section(source, "body", ["solution", "guidance"]).join("\n").trim(),
+      solution:section(source, "solution", ["guidance"]).join("\n").trim(),
+      guidance:section(source, "guidance", []).join("\n").trim(),
+    };
+    for (const key of ["reference", "answerLabel", "body", "solution"]) {
+      if (!content[key]) issues.push(`Step ${index + 1} (exam-question) needs ${key}.`);
+    }
+    return { type:"exam-question", content };
+  }
+  return null;
+}
+
+function isLessonVideoUrl(value) {
+  try {
+    const url = new URL(value);
+    if (!['http:', 'https:'].includes(url.protocol)) return false;
+    const host = url.hostname.toLowerCase().replace(/^(?:www\.|m\.)/, '');
+    const path = url.pathname.split('/').filter(Boolean);
+    const id = host === 'youtu.be' ? path[0]
+      : host === 'youtube.com' && url.pathname === '/watch' ? url.searchParams.get('v')
+        : host === 'youtube.com' && ['embed', 'shorts', 'live'].includes(path[0]) ? path[1] : '';
+    return /^[A-Za-z0-9_-]{11}$/.test(id || '');
+  } catch {
+    return false;
+  }
+}
+
+function validateVideoIntro(body, index, issues) {
+  const lines = body.split('\n');
+  if (!/^#\s+[^\n]+$/.test(lines.shift() || '')) {
+    issues.push(`Explanation step ${index + 1} (video-intro) needs exactly one level-one lesson title.`);
+    return false;
+  }
+  while (lines[0]?.trim() === '') lines.shift();
+  if (/^https?:\/\/\S+$/i.test(lines[0] || '')) {
+    if (!isLessonVideoUrl(lines.shift())) {
+      issues.push(`Explanation step ${index + 1} (video-intro) needs a supported YouTube URL immediately after its title.`);
+      return false;
+    }
+  }
+  const invalid = lines.some((line) => {
+    const trimmed = line.trim();
+    if (!trimmed) return false;
+    if (/^https?:\/\/\S+$/i.test(trimmed)) return true;
+    if (/^(?:#{1,6}\s|:::|```|~~~|>\s|!\[|\d+[.)]\s|[-*_]{3,}$|\|)/.test(trimmed)) return true;
+    if (/^(?:[-*+]\s+)?!\[/.test(trimmed)) return true;
+    return false;
+  });
+  if (invalid) {
+    issues.push(`Explanation step ${index + 1} (video-intro) may include only paragraphs and bullet links after one YouTube URL; no extra video or heading.`);
+  }
+  return !invalid;
+}
+
+function markdownStep(source, index, issues) {
+  const heading = /^#{1,3}\s+(.+)$/m.exec(source)?.[1]?.replace(/[*_`]/g, "").trim();
+  const explicitId = /^<!--\s*step-id:\s*([a-z0-9]+(?:-[a-z0-9]+)*)\s*-->$/im.exec(source)?.[1];
+  const markers = [...source.matchAll(/^<!--\s*presentation:\s*(.*?)\s*-->$/gim)];
+  const presentation = markers[0]?.[1];
+  const step = { type:"markdown", id:explicitId || `authored-content-${index + 1}`, title:heading || `Lesson content ${index + 1}`, source:source.trim() };
+  if (markers.length > 1) issues.push(`Explanation step ${index + 1} can select only one presentation.`);
+  const supportedPresentations = new Set(["rocky-dialogue", "video-intro", "lesson-summary"]);
+  if (presentation !== undefined && !supportedPresentations.has(presentation)) {
+    issues.push(`Explanation step ${index + 1} uses unsupported presentation “${presentation}”.`);
+  }
+  if (presentation === "rocky-dialogue") {
+    // A dialogue is content: one heading, illustration and note. The renderer owns its structure.
+    const body = source.replace(/^<!--\s*(?:step-id|presentation):.*?-->\s*$/gim, "").trim();
+    const match = /^#\s+[^\n]+\n\s*(!\[[^\]\n]+\]\([^\n]+\))\s*\n\s*:::note(?:[ \t]+[^\n]+)?\n([\s\S]+?)\n:::\s*$/.exec(body);
+    if (!match) issues.push(`Explanation step ${index + 1} (rocky-dialogue) needs one heading, one image with alt text, and one non-empty :::note dialogue.`);
+    else {
+      step.presentation = presentation;
+      step.dialogue = { image: match[1], source: match[2].trim() };
+    }
+  }
+  if (presentation === "video-intro") {
+    const body = source.replace(/^<!--\s*(?:step-id|presentation):.*?-->\s*$/gim, "").trim();
+    if (validateVideoIntro(body, index, issues)) step.presentation = presentation;
+  }
+  if (presentation === "lesson-summary") step.presentation = presentation;
+  return step;
+}
+
+function validatePublishedFields(chunks, issues) {
+  const feedbackTypes = new Set(["mcq", "true-false"]);
+  chunks.forEach((chunk, index) => {
+    if (chunk.kind === "markdown") {
+      if (!/^<!--\s*step-id:\s*[a-z0-9]+(?:-[a-z0-9]+)*\s*-->$/im.test(chunk.source)) {
+        issues.push(`Published explanation step ${index + 1} needs <!-- step-id: stable-kebab-id -->.`);
+      }
+      return;
+    }
+    const required = ["id", "title", "question-or-prompt"];
+    if (feedbackTypes.has(chunk.type)) required.push("explanation", "hint");
+    required.forEach((name) => {
+      const present = name === "question-or-prompt"
+        ? Boolean(field(chunk.source, "question") || field(chunk.source, "prompt"))
+        : Boolean(field(chunk.source, name) || (name === "explanation" && section(chunk.source, name, ["hint", "example"]).join("\n").trim()));
+      if (!present) {
+        const label = name === "question-or-prompt" ? "question or prompt" : name;
+        issues.push(`Published step ${index + 1} (${chunk.type}) needs a non-empty ${label} field.`);
+      }
+    });
+  });
+}
+
+export function parseLessonMarkdown(source, { published = false } = {}) {
+  const lines = String(source).replace(/\r\n?/g, "\n").split("\n");
+  const chunks = [];
+  const issues = [];
+  let markdown = [];
+  let fenced = false;
+
+  const flushMarkdown = () => {
+    const value = markdown.join("\n").trim();
+    if (value) {
+      if (containsRawHtml(value)) issues.push("Lesson Markdown must not contain raw HTML; use supported Markdown or a lesson directive instead.");
+      validateContentDirectiveBlocks(value, issues);
+      chunks.push({ kind:"markdown", source:value });
+    }
+    markdown = [];
+  };
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
+    if (/^```/.test(line.trim())) fenced = !fenced;
+    if (!fenced && /^<!--\s*lesson-step\s*-->$/i.test(line.trim())) {
+      flushMarkdown();
+      continue;
+    }
+    const anyOpening = !fenced ? /^:::([a-z][a-z0-9-]*)(?:[ \t]+.*)?$/i.exec(line.trim()) : null;
+    const openingType = anyOpening?.[1]?.toLowerCase();
+    const opening = !fenced ? /^:::(\S+)\s*$/.exec(line.trim()) : null;
+    if (anyOpening && !DIRECTIVE_TYPES.has(openingType) && !CONTENT_DIRECTIVE_TYPES.has(openingType)) {
+      issues.push(`Unsupported lesson directive :::${openingType}.`);
+    } else if (anyOpening && DIRECTIVE_TYPES.has(openingType) && !opening) {
+      issues.push(`Interactive directive :::${openingType} must open on a line by itself.`);
+    }
+    if (!opening || !DIRECTIVE_TYPES.has(opening[1].toLowerCase())) {
+      markdown.push(line);
+      continue;
+    }
+    flushMarkdown();
+    const type = opening[1].toLowerCase();
+    const body = [];
+    let closed = false;
+    let directiveFence = false;
+    for (index += 1; index < lines.length; index += 1) {
+      const directiveLine = lines[index];
+      if (/^```/.test(directiveLine.trim())) directiveFence = !directiveFence;
+      if (!directiveFence && /^:::\s*$/.test(directiveLine.trim())) { closed = true; break; }
+      body.push(directiveLine);
+    }
+    if (!closed) issues.push(`The :::${type} block is missing its closing :::.`);
+    chunks.push({ kind:"directive", type, source:body.join("\n") });
+  }
+  flushMarkdown();
+  if (published) validatePublishedFields(chunks, issues);
+
+  const steps = chunks.map((chunk, index) => chunk.kind === "markdown"
+    ? markdownStep(chunk.source, index, issues)
+    : { ...parseDirective(chunk.type, chunk.source, index, issues), id:field(chunk.source, "id", `authored-${chunk.type}-${index + 1}`) }).filter(Boolean);
+  const stepIds = steps.map((step) => step.id);
+  if (new Set(stepIds).size !== stepIds.length) issues.push("Every authored lesson step needs a unique id.");
+  if (stepIds.some((id) => !STEP_ID_PATTERN.test(id))) issues.push("Every authored lesson step id must use lowercase kebab-case.");
+  const documentSource = chunks.filter((chunk) => chunk.kind === "markdown").map((chunk) => chunk.source).join("\n\n---\n\n");
+  if (steps.length === 0) issues.push("Add Markdown content or an interactive directive to create a lesson.");
+  return { steps, issues, documentSource };
+}
+
+export const LESSON_AUTHORING_DIRECTIVES = Object.freeze([...DIRECTIVE_TYPES]);
+export const LESSON_CONTENT_DIRECTIVES = Object.freeze([...CONTENT_DIRECTIVE_TYPES]);

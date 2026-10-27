@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: chemistry-gaza-p069-q01-b
 title: الوحدة ٣ · الدرس ٦ · ص ٦٧ · س ٠١-b
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤؛ وزاري ٢٠٢٤ دورة ٢؛ ٢٠٢٥ رزم غزة
@@ -853,4 +855,6 @@ explanation:
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
-`;export default m("u03-l06-galvanic-cells",source);
+`;
+
+export default createChemistryLesson("u03-l06-galvanic-cells", source);

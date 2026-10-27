@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: eng-2023-p083-qvocabulary-1-1
 title: Unit 8 · PDF 83 · vocabulary-1-1
 question: a more expensive luxury item ..............
@@ -2006,4 +2008,6 @@ in writing تعني كتابياً. والمقصود هنا طلب بخطاب و
 **المصدر:** صفحة 47 من الكتاب.
 
 hint: Read the complete sentence or passage, then compare the original choices.
-:::`;export default e("english-u08-vocabulary",source);
+:::`;
+
+export default createEnglishLesson("english-u08-vocabulary", source);

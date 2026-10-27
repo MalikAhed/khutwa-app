@@ -1,1 +1,114 @@
-import{mountSummaryScans as E}from"./summary-scans.js?v=7388f68cc0f433fd";import{readablePageReferences as h}from"../../lib/page-labels.js?v=7388f68cc0f433fd";const S=[{kind:"memory",pattern:/احفظ|تحفظ|حفظه|memor/i},{kind:"concept",pattern:/الفكرة|ببساطة|concept|overview/i},{kind:"understand",pattern:/افهم|تفهم|understand/i}];function x(r){return S.find(({pattern:c})=>c.test(r))||{kind:"apply"}}export function renderLessonReferencesInline(r){r.querySelectorAll('a[href^="assets/books/"]:not([download]), a[href^="https://"], a[href^="http://"]').forEach(i=>{const n=r.ownerDocument.createElement("span");n.className="lesson-reference",n.append(...i.childNodes),i.replaceWith(n)});const c=r.ownerDocument.createTreeWalker(r,NodeFilter.SHOW_TEXT);let l;for(;l=c.nextNode();)l.parentElement?.closest("pre, code")||(l.textContent=h(l.textContent))}export function enhanceLessonSummary(r,{titleId:c="lesson-summary",locale:l="en",signal:i}={}){const n=r.querySelector(".markdown-rendered");if(!n||n.classList.contains("lesson-summary-content"))return;renderLessonReferencesInline(n),E(n,{titleId:c,locale:l,signal:i}),n.classList.add("lesson-summary-content");let m=null,f=0;[...n.children].forEach(e=>{if(e.tagName==="H2"){f+=1;const{kind:s}=x(e.textContent.trim()),t=window.document.createElement("section"),a=`${c}-focus-${f}`;if(t.className="lesson-summary-focus",t.dataset.summaryKind=s,t.setAttribute("aria-labelledby",a),e.id=a,e.before(t),s==="memory"||s==="concept"){const o=window.document.createElement("img");o.src=s==="memory"?"assets/icons/brain-svgrepo-com.svg":"assets/icons/lesson-lightbulb.webp",o.alt="",o.width=34,o.height=34,e.prepend(o)}t.append(e),m=t;return}if(e.classList.contains("markdown-callout")){e.classList.add("lesson-summary-callout"),m=null;return}m&&m.append(e)}),n.querySelectorAll("table").forEach(e=>{const s=[...e.querySelectorAll("thead th")].map(t=>t.textContent.trim());e.classList.add("lesson-summary-table"),s.length>2&&e.classList.add("lesson-summary-table--records"),e.querySelectorAll("tbody tr").forEach(t=>{[...t.cells].forEach((a,o)=>{a.dataset.columnLabel=s[o]||""})})}),n.querySelectorAll(".lesson-summary-focus > p").forEach(e=>{const s=e.textContent.trim(),t=s.split(/\s*[←→]\s*/);t.length<2||!t.every(a=>/^.+\s*\((1|متعدد)\)$/.test(a))||(e.classList.add("lesson-relation-map"),e.setAttribute("role","img"),e.setAttribute("aria-label",s),e.replaceChildren(),t.forEach((a,o)=>{const[,b,p]=a.match(/^(.+?)\s*\((1|متعدد)\)$/),d=window.document.createElement("span");d.className="lesson-relation-node",d.setAttribute("aria-hidden","true");const y=window.document.createElement("strong");y.textContent=b;const w=window.document.createElement("small");if(w.textContent=p==="1"?"واحد":p,d.append(y,w),o>0){const u=window.document.createElement("span");u.className="lesson-relation-link",u.setAttribute("aria-hidden","true"),e.append(u)}e.append(d)}))})}
+import { mountSummaryScans } from "./summary-scans.js?v=acff67f262f3c107";
+import { readablePageReferences } from "../../lib/page-labels.js?v=acff67f262f3c107";
+
+const SECTION_STYLES = [
+  { kind:"memory", pattern:/احفظ|تحفظ|حفظه|memor/i },
+  { kind:"concept", pattern:/الفكرة|ببساطة|concept|overview/i },
+  { kind:"understand", pattern:/افهم|تفهم|understand/i },
+];
+
+function sectionStyle(heading) {
+  return SECTION_STYLES.find(({ pattern }) => pattern.test(heading)) || {
+    kind:"apply",
+  };
+}
+
+/** Source URLs remain in authored Markdown; learners read their labels in place. */
+export function renderLessonReferencesInline(container) {
+  container.querySelectorAll('a[href^="assets/books/"]:not([download]), a[href^="https://"], a[href^="http://"]').forEach(link => {
+    const reference = container.ownerDocument.createElement("span");
+    reference.className = "lesson-reference";
+    reference.append(...link.childNodes);
+    link.replaceWith(reference);
+  });
+  const text = container.ownerDocument.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+  let node;
+  while ((node = text.nextNode())) {
+    if (!node.parentElement?.closest("pre, code")) node.textContent = readablePageReferences(node.textContent);
+  }
+}
+
+/** Turn a summary Markdown document into a sequence of focused learning cards. */
+export function enhanceLessonSummary(container, { titleId = "lesson-summary", locale = "en", signal } = {}) {
+  const summary = container.querySelector(".markdown-rendered");
+  if (!summary || summary.classList.contains("lesson-summary-content")) return;
+
+  renderLessonReferencesInline(summary);
+  mountSummaryScans(summary, { titleId, locale, signal });
+
+  summary.classList.add("lesson-summary-content");
+  let activeSection = null;
+  let sectionIndex = 0;
+
+  [...summary.children].forEach((child) => {
+    if (child.tagName === "H2") {
+      sectionIndex += 1;
+      const { kind } = sectionStyle(child.textContent.trim());
+      const section = window.document.createElement("section");
+      const headingId = `${titleId}-focus-${sectionIndex}`;
+      section.className = "lesson-summary-focus";
+      section.dataset.summaryKind = kind;
+      section.setAttribute("aria-labelledby", headingId);
+      child.id = headingId;
+      child.before(section);
+      if (kind === "memory" || kind === "concept") {
+        const icon = window.document.createElement("img");
+        icon.src = kind === "memory" ? "assets/icons/brain-svgrepo-com.svg" : "assets/icons/lesson-lightbulb.webp";
+        icon.alt = "";
+        icon.width = 34;
+        icon.height = 34;
+        child.prepend(icon);
+      }
+      section.append(child);
+      activeSection = section;
+      return;
+    }
+
+    if (child.classList.contains("markdown-callout")) {
+      child.classList.add("lesson-summary-callout");
+      activeSection = null;
+      return;
+    }
+
+    if (activeSection) activeSection.append(child);
+  });
+
+  summary.querySelectorAll("table").forEach(table => {
+    const headers = [...table.querySelectorAll("thead th")].map(cell => cell.textContent.trim());
+    table.classList.add("lesson-summary-table");
+    if (headers.length > 2) table.classList.add("lesson-summary-table--records");
+    table.querySelectorAll("tbody tr").forEach(row => {
+      [...row.cells].forEach((cell, index) => { cell.dataset.columnLabel = headers[index] || ""; });
+    });
+  });
+
+  // The authored relationship sentence remains the accessible description.
+  // Its nodes become a responsive diagram, using the same labels and multiplicities.
+  summary.querySelectorAll(".lesson-summary-focus > p").forEach(paragraph => {
+    const text = paragraph.textContent.trim();
+    const nodes = text.split(/\s*[←→]\s*/);
+    if (nodes.length < 2 || !nodes.every(node => /^.+\s*\((1|متعدد)\)$/.test(node))) return;
+    paragraph.classList.add("lesson-relation-map");
+    paragraph.setAttribute("role", "img");
+    paragraph.setAttribute("aria-label", text);
+    paragraph.replaceChildren();
+    nodes.forEach((node, index) => {
+      const [, label, count] = node.match(/^(.+?)\s*\((1|متعدد)\)$/);
+      const card = window.document.createElement("span");
+      card.className = "lesson-relation-node";
+      card.setAttribute("aria-hidden", "true");
+      const name = window.document.createElement("strong");
+      name.textContent = label;
+      const cardinality = window.document.createElement("small");
+      cardinality.textContent = count === "1" ? "واحد" : count;
+      card.append(name, cardinality);
+      if (index > 0) {
+        const link = window.document.createElement("span");
+        link.className = "lesson-relation-link";
+        link.setAttribute("aria-hidden", "true");
+        paragraph.append(link);
+      }
+      paragraph.append(card);
+    });
+  });
+}

@@ -1,8 +1,91 @@
-import{getLevelProgress as x}from"../domain/progression.js?v=7388f68cc0f433fd";import{spring as k,stepSpring as w}from"../lib/hairline-spring.js?v=7388f68cc0f433fd";export function renderLevelUp(r){const e=Math.max(0,Math.floor(r.xpGain||0)),l=Math.max(e,Math.floor(r.levelTotalXp??r.totalXp??e)),p=x(l-e).level;return x(l).level<=p?"":`<div class="completion-level-up" data-level-up hidden>
+import { getLevelProgress } from "../domain/progression.js?v=acff67f262f3c107";
+import { spring, stepSpring } from "../lib/hairline-spring.js?v=acff67f262f3c107";
+
+export function renderLevelUp(outcome) {
+  const gain = Math.max(0, Math.floor(outcome.xpGain || 0));
+  const total = Math.max(gain, Math.floor(outcome.levelTotalXp ?? outcome.totalXp ?? gain));
+  const from = getLevelProgress(total - gain).level;
+  if (getLevelProgress(total).level <= from) return "";
+  return `<div class="completion-level-up" data-level-up hidden>
     <div class="completion-level-up-art" aria-hidden="true">
       <span class="completion-level-up-ring"></span>
-      ${Array.from({length:10},()=>'<img class="completion-level-up-spark" src="assets/icons/dashboard-levels.svg" alt="">').join("")}
-      <div class="completion-level-up-badge"><img src="assets/icons/dashboard-levels.svg" alt=""><bdi class="ui-number" data-level-up-number>${p}</bdi></div>
+      ${Array.from({ length:10 }, () => '<img class="completion-level-up-spark" src="assets/icons/dashboard-levels.svg" alt="">').join("")}
+      <div class="completion-level-up-badge"><img src="assets/icons/dashboard-levels.svg" alt=""><bdi class="ui-number" data-level-up-number>${from}</bdi></div>
       <strong>مستوى جديد!</strong>
     </div>
-  </div><span class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" data-level-up-announcement></span>`}export function mountLevelUp(r){const e=r.querySelector("[data-level-up]");if(!e)return null;const l=e.querySelector(".completion-level-up-art"),p=e.querySelector("[data-level-up-number]"),S=r.querySelector("[data-level-up-announcement]"),M=e.querySelector(".completion-level-up-ring"),f=[...e.querySelectorAll(".completion-level-up-spark")],n=k(0,{k:220,c:20,eps:.001});n.t=1;let i,u,v=!1;const o=new Set,m=()=>{l.style.opacity=String(Math.min(1,Math.max(0,n.x*2))),l.style.transform=`translateY(${(1-n.x)*48}px) scale(${.55+n.x*.45})`},g=()=>{const t=performance.now(),c=w(n,Math.min(.05,(t-u)/1e3));u=t,m(),i=c?requestAnimationFrame(g):void 0},h=(t,c,d)=>{const a=t.animate(c,d);o.add(a),a.addEventListener("finish",()=>o.delete(a),{once:!0})},y=()=>{cancelAnimationFrame(i),i=void 0,o.forEach(t=>t.cancel()),o.clear(),n.x=n.t,n.v=0,m()};return{show(t,c=!0){if(v)return;const d=e.hidden;if(e.hidden=!1,e.dataset.level=String(t),p.textContent=String(t),S.textContent=`مستوى جديد! وصلت إلى المستوى ${t}`,!c){y();return}d||(n.v+=3.2),i===void 0&&(u=performance.now(),i=requestAnimationFrame(g)),m(),o.forEach(a=>a.cancel()),o.clear(),h(M,[{opacity:.8,transform:"scale(.55)"},{opacity:0,transform:"scale(1.65)"}],{duration:700,easing:"cubic-bezier(.32,.72,0,1)"}),f.forEach((a,s)=>{const b=s/f.length*Math.PI*2,$=Math.cos(b)*(76+s%3*9),q=Math.sin(b)*(68+s%2*12);h(a,[{opacity:0,transform:`translate(0,0) rotate(${s*31}deg) scale(.3)`},{opacity:1,offset:.15},{opacity:0,transform:`translate(${$}px,${q}px) rotate(${s*31+28}deg) scale(.65)`}],{duration:660,delay:s*22,easing:"cubic-bezier(.32,.72,0,1)",fill:"backwards"})})},dispose(){y(),v=!0}}}
+  </div><span class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" data-level-up-announcement></span>`;
+}
+
+// A finite spring on the existing artwork; no line-art renderer or perpetual loop.
+export function mountLevelUp(root) {
+  const element = root.querySelector("[data-level-up]");
+  if (!element) return null;
+  const art = element.querySelector(".completion-level-up-art");
+  const number = element.querySelector("[data-level-up-number]");
+  const announcement = root.querySelector("[data-level-up-announcement]");
+  const ring = element.querySelector(".completion-level-up-ring");
+  const sparks = [...element.querySelectorAll(".completion-level-up-spark")];
+  const lift = spring(0, { k:220, c:20, eps:.001 });
+  lift.t = 1;
+  let frame;
+  let previous;
+  let disposed = false;
+  const animations = new Set();
+  const paint = () => {
+    art.style.opacity = String(Math.min(1, Math.max(0, lift.x * 2)));
+    art.style.transform = `translateY(${(1 - lift.x) * 48}px) scale(${.55 + lift.x * .45})`;
+  };
+  const tick = () => {
+    const now = performance.now();
+    const moving = stepSpring(lift, Math.min(.05, (now - previous) / 1000));
+    previous = now;
+    paint();
+    frame = moving ? requestAnimationFrame(tick) : undefined;
+  };
+  const animate = (node, frames, options) => {
+    const animation = node.animate(frames, options);
+    animations.add(animation);
+    animation.addEventListener("finish", () => animations.delete(animation), { once:true });
+  };
+  const stop = () => {
+    cancelAnimationFrame(frame);
+    frame = undefined;
+    animations.forEach(animation => animation.cancel());
+    animations.clear();
+    lift.x = lift.t;
+    lift.v = 0;
+    paint();
+  };
+  return {
+    show(level, motion = true) {
+      if (disposed) return;
+      const first = element.hidden;
+      element.hidden = false;
+      element.dataset.level = String(level);
+      number.textContent = String(level);
+      announcement.textContent = `مستوى جديد! وصلت إلى المستوى ${level}`;
+      if (!motion) { stop(); return; }
+      // A second crossing adds energy without resetting position or velocity.
+      if (!first) lift.v += 3.2;
+      if (frame === undefined) {
+        previous = performance.now();
+        frame = requestAnimationFrame(tick);
+      }
+      paint();
+      animations.forEach(animation => animation.cancel());
+      animations.clear();
+      animate(ring, [{ opacity:.8, transform:"scale(.55)" }, { opacity:0, transform:"scale(1.65)" }], { duration:700, easing:"cubic-bezier(.32,.72,0,1)" });
+      sparks.forEach((spark, index) => {
+        const angle = index / sparks.length * Math.PI * 2;
+        const x = Math.cos(angle) * (76 + index % 3 * 9);
+        const y = Math.sin(angle) * (68 + index % 2 * 12);
+        animate(spark, [
+          { opacity:0, transform:`translate(0,0) rotate(${index * 31}deg) scale(.3)` },
+          { opacity:1, offset:.15 },
+          { opacity:0, transform:`translate(${x}px,${y}px) rotate(${index * 31 + 28}deg) scale(.65)` },
+        ], { duration:660, delay:index * 22, easing:"cubic-bezier(.32,.72,0,1)", fill:"backwards" });
+      });
+    },
+    dispose() { stop(); disposed = true; },
+  };
+}

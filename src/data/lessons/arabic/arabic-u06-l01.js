@@ -1,4 +1,6 @@
-import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createArabicLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: arabic-p157-mcq01
 title: البومة في غرفة بعيدة | صفحة 156 | اختيار من متعدد 1
 kicker: 2019
@@ -411,4 +413,6 @@ solution:
 
 الظرف: «فوقَ» في «فوق حاراتها»، ظرف مكان منصوب وهو مضاف؛ ويصح أيضاً «الآنَ» ظرف زمان منصوب.
 الحال: «أشباحاً» في «أذكرها الآن أشباحاً»، حال منصوب بالفتحة يبين صورة الدور في ذاكرته. ويورد المفتاح «كتفاً» من «كتفاً إلى كتف» أيضاً، أي متلاصقة متساندة.
-:::`;export default e("arabic-u06-l01",source);
+:::`;
+
+export default createArabicLesson("arabic-u06-l01", source);

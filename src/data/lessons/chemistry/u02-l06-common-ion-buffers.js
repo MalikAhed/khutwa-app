@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: chemistry-gaza-p047-q02-s3
 title: الوحدة ٢ · الدرس ٦ · ص ٤٥ · س ٢ · ٣ · أسئلة الوحدة — الرزمة التعليمية ٢٠٢٤؛ وزاري ٢٠٢٢؛ وزاري ٢٠٢١؛ وزاري ٢٠١٧
 question: ما المقصود بكل من المصطلحات الآتية: المحلول المنظم
@@ -656,4 +658,6 @@ solution:
 **المصدر:** صفحة 42 من الكتاب.
 
 :::
-`;export default m("u02-l06-common-ion-buffers",source);
+`;
+
+export default createChemistryLesson("u02-l06-common-ion-buffers", source);

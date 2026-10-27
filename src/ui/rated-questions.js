@@ -1,1 +1,22 @@
-import{QUESTION_RATINGS as l}from"../domain/question-ratings.js?v=7388f68cc0f433fd";import{renderRatingFace as m}from"./question-rating.js?v=7388f68cc0f433fd";export function mountRatedQuestionToggle(o,{questions:n,rating:a,signal:i,onChange:s}){const e=document.createElement("div");if(e.className="rated-question-toggle",e.setAttribute("role","group"),e.setAttribute("aria-label","تصفية الأسئلة حسب تقييمك"),e.innerHTML=l.map(({value:t,label:r})=>`<button type="button" data-rated-filter="${t}" data-rating="${t}" aria-pressed="${a===t}">${m(t)}<span>${r}</span><bdi class="ui-number">${n.filter(d=>d.rating===t).length}</bdi></button>`).join(""),o.prepend(e),e.addEventListener("click",t=>{const r=t.target.closest("[data-rated-filter]");r&&r.dataset.ratedFilter!==a&&s(r.dataset.ratedFilter)},{signal:i}),!n.some(t=>t.rating===a)){const t=document.createElement("p");t.className="rated-questions-empty",t.setAttribute("role","status"),t.textContent="لا توجد أسئلة بهذا التقييم بعد. ستظهر هنا عندما تقيّمها أو تجيب عنها.",e.after(t)}}
+import { QUESTION_RATINGS } from "../domain/question-ratings.js?v=acff67f262f3c107";
+import { renderRatingFace } from "./question-rating.js?v=acff67f262f3c107";
+
+export function mountRatedQuestionToggle(container, { questions, rating, signal, onChange }) {
+  const toggle = document.createElement("div");
+  toggle.className = "rated-question-toggle";
+  toggle.setAttribute("role","group");
+  toggle.setAttribute("aria-label","تصفية الأسئلة حسب تقييمك");
+  toggle.innerHTML = QUESTION_RATINGS.map(({value,label}) => `<button type="button" data-rated-filter="${value}" data-rating="${value}" aria-pressed="${rating === value}">${renderRatingFace(value)}<span>${label}</span><bdi class="ui-number">${questions.filter(question => question.rating === value).length}</bdi></button>`).join("");
+  container.prepend(toggle);
+  toggle.addEventListener("click",event => {
+    const button = event.target.closest("[data-rated-filter]");
+    if (button && button.dataset.ratedFilter !== rating) onChange(button.dataset.ratedFilter);
+  }, { signal });
+  if (!questions.some(question => question.rating === rating)) {
+    const empty = document.createElement("p");
+    empty.className = "rated-questions-empty";
+    empty.setAttribute("role","status");
+    empty.textContent = "لا توجد أسئلة بهذا التقييم بعد. ستظهر هنا عندما تقيّمها أو تجيب عنها.";
+    toggle.after(empty);
+  }
+}

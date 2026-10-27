@@ -1,3 +1,66 @@
-import{defineLesson as r}from"../domain/lesson.js?v=7388f68cc0f433fd";import{parseLessonMarkdown as c}from"./lesson-authoring.js?v=7388f68cc0f433fd";function s(t){const e=String(t).replace(/^<!--\s*(?:step-id|presentation):.*?-->\s*$/gim,"").split(`
-`);for(;e[0]?.trim()==="";)e.shift();for(/^<!--\s*step-id:/i.test(e[0]?.trim()||"")&&e.shift();e[0]?.trim()==="";)e.shift();for(/^#\s+/.test(e[0]||"")&&e.shift();e[0]?.trim()==="";)e.shift();return e.join(`
-`).trim()}function a(t){if(t.type==="markdown")return{id:t.id,type:"explanation",tag:"LEARN",title:t.title,...t.presentation?{presentation:t.presentation,dialogue:t.dialogue}:{},blocks:[{type:"markdown",source:s(t.source)||t.title}]};if(t.type==="mcq"){const e=t.content.answers.find(n=>n.correct);return{id:t.id,type:"question",tag:t.content.phase==="checkpoint"?"FINAL CHECKPOINT":"CHECK",title:t.content.title,question:{phase:t.content.phase,critical:t.content.critical,prompt:t.content.prompt,...t.content.example?{example:t.content.example}:{},correctChoiceId:e?.id||"",choices:t.content.answers.map(n=>({id:n.id,label:n.text,feedback:n.correct?t.content.correctFeedback:t.content.wrongFeedback}))}}}return{id:t.id,type:"activity",tag:"PRACTICE",title:t.content?.title||"Interactive practice",blocks:[{type:"paragraph",text:`Interactive ${t.type} step authored in Markdown.`}]}}export function compileLessonMarkdown(t,e){const n=c(t,e),i=[...n.issues];return{steps:n.steps.map(o=>a(o)).filter(Boolean),issues:i,parsed:n}}export function defineMarkdownLesson(t,e,n){const i=compileLessonMarkdown(e,{published:(t?.status??"published")==="published"});if(i.issues.length)throw new TypeError(`Invalid lesson Markdown: ${i.issues.join("; ")}`);return r({...t,authoringSource:String(e),steps:i.steps},n)}
+import { defineLesson } from "../domain/lesson.js?v=acff67f262f3c107";
+import { parseLessonMarkdown } from "./lesson-authoring.js?v=acff67f262f3c107";
+
+function explanationBody(source) {
+  const lines = String(source).replace(/^<!--\s*(?:step-id|presentation):.*?-->\s*$/gim, "").split("\n");
+  while (lines[0]?.trim() === "") lines.shift();
+  if (/^<!--\s*step-id:/i.test(lines[0]?.trim() || "")) lines.shift();
+  while (lines[0]?.trim() === "") lines.shift();
+  if (/^#\s+/.test(lines[0] || "")) lines.shift();
+  while (lines[0]?.trim() === "") lines.shift();
+  return lines.join("\n").trim();
+}
+
+function compileMarkdownStep(step) {
+  if (step.type === "markdown") {
+    return {
+      id:step.id,
+      type:"explanation",
+      tag:"LEARN",
+      title:step.title,
+      ...(step.presentation ? { presentation:step.presentation, dialogue:step.dialogue } : {}),
+      blocks:[{ type:"markdown", source:explanationBody(step.source) || step.title }],
+    };
+  }
+  if (step.type === "mcq") {
+    const correct = step.content.answers.find((answer) => answer.correct);
+    return {
+      id:step.id,
+      type:"question",
+      tag:step.content.phase === "checkpoint" ? "FINAL CHECKPOINT" : "CHECK",
+      title:step.content.title,
+      question:{
+        phase:step.content.phase,
+        critical:step.content.critical,
+        prompt:step.content.prompt,
+        ...(step.content.example ? { example:step.content.example } : {}),
+        correctChoiceId:correct?.id || "",
+        choices:step.content.answers.map((answer) => ({
+          id:answer.id,
+          label:answer.text,
+          feedback:answer.correct ? step.content.correctFeedback : step.content.wrongFeedback,
+        })),
+      },
+    };
+  }
+  return {
+    id:step.id,
+    type:"activity",
+    tag:"PRACTICE",
+    title:step.content?.title || "Interactive practice",
+    blocks:[{ type:"paragraph", text:`Interactive ${step.type} step authored in Markdown.` }],
+  };
+}
+
+export function compileLessonMarkdown(source, options) {
+  const parsed = parseLessonMarkdown(source, options);
+  const issues = [...parsed.issues];
+  const steps = parsed.steps.map((step) => compileMarkdownStep(step)).filter(Boolean);
+  return { steps, issues, parsed };
+}
+
+export function defineMarkdownLesson(candidate, source, options) {
+  const compiled = compileLessonMarkdown(source, { published:(candidate?.status ?? "published") === "published" });
+  if (compiled.issues.length) throw new TypeError(`Invalid lesson Markdown: ${compiled.issues.join("; ")}`);
+  return defineLesson({ ...candidate, authoringSource:String(source), steps:compiled.steps }, options);
+}

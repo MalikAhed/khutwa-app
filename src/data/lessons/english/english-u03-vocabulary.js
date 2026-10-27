@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: eng-2023-p036-qv1-1
 title: Unit 3 · PDF 36 · v1-1
 question: She has a lot of **things that she knows** about this subject because she has studied it for years.
@@ -2282,4 +2284,6 @@ co- تفيد المشاركة؛ و co-writer هو كاتب شارك غيره ف�
 **المصدر:** صفحة 23 من الكتاب.
 
 hint: Read the complete sentence or passage, then compare the original choices.
-:::`;export default e("english-u03-vocabulary",source);
+:::`;
+
+export default createEnglishLesson("english-u03-vocabulary", source);

@@ -1,1 +1,186 @@
-import{animateView as w}from"./view-motion.js?v=7388f68cc0f433fd";const b=new Map;export function waitForImage(t,{signal:n}={}){return new Promise((f,l)=>{let s=!1;const o=a=>{s||(s=!0,clearTimeout(m),t.removeEventListener("load",u),t.removeEventListener("error",e),n?.removeEventListener("abort",c),a?l(a):f(t))},e=()=>o(new Error("Image could not load: "+(t.currentSrc||t.src))),c=()=>o(n.reason||new DOMException("Aborted","AbortError")),u=async()=>{try{if(!t.naturalWidth){e();return}await t.decode?.(),o()}catch(a){o(a)}},m=setTimeout(()=>o(new Error("Image loading timed out")),15e3);t.addEventListener("load",u,{once:!0}),t.addEventListener("error",e,{once:!0}),n?.addEventListener("abort",c,{once:!0}),n?.aborted?c():t.complete&&u()})}export function canPrefetchAssets(t=globalThis.navigator?.connection){return!!(t&&(t.effectiveType==="4g"||t.downlink>=1))&&!t?.saveData&&!["slow-2g","2g"].includes(t?.effectiveType)&&!(t?.downlink>0&&t.downlink<1)&&!(t?.rtt>=500)}export function preloadImages(t){if(canPrefetchAssets())for(const n of new Set(t)){if(!n||b.has(n))continue;const f=fetch(n,{priority:"low",signal:AbortSignal.timeout(15e3)}).then(l=>{if(!l.ok)throw new Error("Prefetch failed");return l.arrayBuffer()}).then(()=>{}).catch(()=>b.delete(n));b.set(n,f),b.size>24&&b.delete(b.keys().next().value)}}export function revealWhenReady(t,{signal:n,onReady:f=()=>{},animate:l=!0}={}){const s=new AbortController,o=()=>s.abort();n?.addEventListener("abort",o,{once:!0});let e;const c=[...t.children].map(r=>[r,r.inert]),u=t.getAttribute("aria-busy"),m=()=>{e?.remove(),t.classList.remove("media-pending"),delete t.dataset.mediaState,u===null?t.removeAttribute("aria-busy"):t.setAttribute("aria-busy",u),c.forEach(([r,p])=>{r.inert=p}),n?.removeEventListener("abort",o)};if(s.signal.addEventListener("abort",m,{once:!0}),n?.aborted)return o(),o;const a=[...t.querySelectorAll("img")].filter(r=>!r.closest("[hidden]")&&!r.hasAttribute("data-decorative-image")&&(r.loading!=="lazy"||r.hasAttribute("data-onboarding-image")));a.forEach(r=>{r.hasAttribute("data-onboarding-image")&&(r.loading="eager")});const v=()=>{s.signal.aborted||!t.isConnected||(m(),t.dataset.mediaState="ready",l&&w(t),f())};if(!a.length)return v(),o;t.classList.add("media-pending"),t.dataset.mediaState="loading",t.setAttribute("aria-busy","true"),c.forEach(([r])=>{r.inert=!0}),e=document.createElement("div"),e.dataset.mediaStatus="",e.setAttribute("role","status"),e.className="media-status",e.innerHTML="<p>جارٍ تجهيز الصور…</p>",t.append(e);const h=async()=>{const r=await Promise.allSettled(a.map(i=>waitForImage(i,{signal:s.signal})));if(s.signal.aborted||!t.isConnected)return;const p=a.filter((i,d)=>r[d].status==="rejected");if(!p.length){v();return}t.dataset.mediaState="error",e.setAttribute("role","alert"),e.innerHTML='<p>تعذّر تحميل بعض الصور.</p><button type="button">إعادة المحاولة</button><button type="button">متابعة بدون الصور</button>';const[y,E]=e.querySelectorAll("button");y.onclick=()=>{t.dataset.mediaState="loading",e.setAttribute("role","status"),e.innerHTML="<p>جارٍ تجهيز الصور…</p>",p.forEach(i=>{const d=i.src;i.removeAttribute("src"),i.src=d}),h()},E.onclick=()=>{p.forEach(i=>{const d=document.createElement("span");d.className="media-fallback",d.textContent=i.alt||"الصورة غير متاحة",i.replaceWith(d)}),v()}};return h(),o}
+import { animateView } from "./view-motion.js?v=acff67f262f3c107";
+
+// A bounded, low-priority warm cache. Only the next screen's images belong here.
+const preloads = new Map();
+const preloadControllers = new Set();
+let managedPreloading = false;
+
+export function useManagedImagePreloading() {
+  managedPreloading = true;
+  for (const controller of preloadControllers) controller.abort();
+  preloadControllers.clear();
+}
+
+export function waitForImage(image, { signal } = {}) {
+  return new Promise((resolve, reject) => {
+    let finished = false;
+    const finish = (error) => {
+      if (finished) return;
+      finished = true;
+      clearTimeout(timer);
+      image.removeEventListener("load", loaded);
+      image.removeEventListener("error", failed);
+      signal?.removeEventListener("abort", aborted);
+      if (error) reject(error);
+      else resolve(image);
+    };
+    const failed = () =>
+      finish(
+        new Error("Image could not load: " + (image.currentSrc || image.src)),
+      );
+    const aborted = () =>
+      finish(signal.reason || new DOMException("Aborted", "AbortError"));
+    const loaded = async () => {
+      try {
+        if (!image.naturalWidth) {
+          failed();
+          return;
+        }
+        await image.decode?.();
+        finish();
+      } catch (error) {
+        finish(error);
+      }
+    };
+    const timer = setTimeout(
+      () => finish(new Error("Image loading timed out")),
+      15000,
+    );
+    image.addEventListener("load", loaded, { once: true });
+    image.addEventListener("error", failed, { once: true });
+    signal?.addEventListener("abort", aborted, { once: true });
+    if (signal?.aborted) aborted();
+    else if (image.complete) void loaded();
+  });
+}
+
+// Optional requests must not compete with the current screen on constrained links.
+export function canPrefetchAssets(connection = globalThis.navigator?.connection) {
+  return (!connection || connection.effectiveType === "4g" || connection.downlink >= 1)
+    && !connection?.saveData && !["slow-2g", "2g"].includes(connection?.effectiveType)
+    && !(connection?.downlink > 0 && connection.downlink < 1)
+    && !(connection?.rtt >= 500);
+}
+
+export function preloadImages(sources) {
+  if (managedPreloading || !canPrefetchAssets()) return;
+  for (const source of new Set(sources)) {
+    if (!source || preloads.has(source)) continue;
+    // Fetch bytes without starting an animated SVG's playback off screen.
+    const controller = new AbortController();
+    preloadControllers.add(controller);
+    const timer = setTimeout(() => controller.abort(), 15000);
+    const pending = fetch(source, {
+      priority: "low",
+      signal: controller.signal,
+    })
+      .then((response) => {
+        if (!response.ok) throw new Error("Prefetch failed");
+        return response.arrayBuffer();
+      })
+      .then(() => undefined)
+      .catch(() => preloads.delete(source))
+      .finally(() => { clearTimeout(timer); preloadControllers.delete(controller); });
+    preloads.set(source, pending);
+    if (preloads.size > 24) preloads.delete(preloads.keys().next().value);
+  }
+}
+
+// Keeps the real layout while a named content surface waits for decoded media.
+// The loading/error surface remains accessible; stale views cannot reveal later.
+export function revealWhenReady(surface, { signal, onReady = () => {}, animate = true } = {}) {
+  const controller = new AbortController();
+  const abort = () => controller.abort();
+  signal?.addEventListener("abort", abort, { once: true });
+  let status;
+  const children = [...surface.children].map((element) => [
+    element,
+    element.inert,
+  ]);
+  const previousBusy = surface.getAttribute("aria-busy");
+  const cleanup = () => {
+    status?.remove();
+    surface.classList.remove("media-pending");
+    delete surface.dataset.mediaState;
+    if (previousBusy === null) surface.removeAttribute("aria-busy");
+    else surface.setAttribute("aria-busy", previousBusy);
+    children.forEach(([element, inert]) => {
+      element.inert = inert;
+    });
+    signal?.removeEventListener("abort", abort);
+  };
+  controller.signal.addEventListener("abort", cleanup, { once: true });
+  if (signal?.aborted) {
+    abort();
+    return abort;
+  }
+  const images = [...surface.querySelectorAll("img")].filter(
+    (image) => !image.closest("[hidden]") && !image.hasAttribute("data-decorative-image")
+      && (image.loading !== "lazy" || image.hasAttribute("data-onboarding-image")),
+  );
+  // Registration keeps future illustrations lazy; the active step owns their readiness.
+  images.forEach(image => { if (image.hasAttribute("data-onboarding-image")) image.loading = "eager"; });
+  const ready = () => {
+    if (controller.signal.aborted || !surface.isConnected) return;
+    cleanup();
+    surface.dataset.mediaState = "ready";
+    if (animate) animateView(surface);
+    onReady();
+  };
+  if (!images.length) {
+    ready();
+    return abort;
+  }
+  surface.classList.add("media-pending");
+  surface.dataset.mediaState = "loading";
+  surface.setAttribute("aria-busy", "true");
+  children.forEach(([element]) => {
+    element.inert = true;
+  });
+  status = document.createElement("div");
+  status.dataset.mediaStatus = "";
+  status.setAttribute("role", "status");
+  status.className = "media-status";
+  status.innerHTML = "<p>جارٍ تجهيز الصور…</p>";
+  surface.append(status);
+  const load = async () => {
+    const results = await Promise.allSettled(
+      images.map((image) => waitForImage(image, { signal: controller.signal })),
+    );
+    if (controller.signal.aborted || !surface.isConnected) return;
+    const failed = images.filter(
+      (_, index) => results[index].status === "rejected",
+    );
+    if (!failed.length) {
+      ready();
+      return;
+    }
+    surface.dataset.mediaState = "error";
+    status.setAttribute("role", "alert");
+    status.innerHTML =
+      '<p>تعذّر تحميل بعض الصور.</p><button type="button">إعادة المحاولة</button><button type="button">متابعة بدون الصور</button>';
+    const [retry, skip] = status.querySelectorAll("button");
+    retry.onclick = () => {
+      surface.dataset.mediaState = "loading";
+      status.setAttribute("role", "status");
+      status.innerHTML = "<p>جارٍ تجهيز الصور…</p>";
+      failed.forEach((image) => {
+        const source = image.src;
+        image.removeAttribute("src");
+        image.src = source;
+      });
+      void load();
+    };
+    skip.onclick = () => {
+      failed.forEach((image) => {
+        const fallback = document.createElement("span");
+        fallback.className = "media-fallback";
+        fallback.textContent = image.alt || "الصورة غير متاحة";
+        image.replaceWith(fallback);
+      });
+      ready();
+    };
+  };
+  void load();
+  return abort;
+}

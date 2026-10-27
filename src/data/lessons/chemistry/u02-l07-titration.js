@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: chemistry-gaza-p047-q02-s5
 title: الوحدة ٢ · الدرس ٧ · ص ٤٥ · س ٢ · ٥ · أسئلة الوحدة — الرزمة التعليمية ٢٠٢٤؛ وزاري ٢٠٢٤؛ وزاري ٢٠٢٢ دورة أولى
 question: ما المقصود بكل من المصطلحات الآتية: المعايرة
@@ -394,4 +396,6 @@ solution:
 **المصدر:** صفحة 43 من الكتاب.
 
 :::
-`;export default m("u02-l07-titration",source);
+`;
+
+export default createChemistryLesson("u02-l07-titration", source);

@@ -1,4 +1,6 @@
-import{createBiologyLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createBiologyLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: bio-b-p040-q1-1
 title: الرزمة التعليمية، صفحة 40، السؤال 1-1
 question: كم عدد أنواع الغاميتات التي تنتج عن الطراز الجيني AAMmBbrr؟
@@ -3397,4 +3399,6 @@ explanation:
 
 إذن أربعة طرز جينية. ويمكن التأكد من عددها: موضع A يعطي نوعين، و R نوعاً واحداً، و T نوعين؛ حاصلها 4.
 hint: راجع معطيات السؤال وقارن البدائل الأصلية.
-:::`;export default m("mendelian-inheritance",source);
+:::`;
+
+export default createBiologyLesson("mendelian-inheritance", source);

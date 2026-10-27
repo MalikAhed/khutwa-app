@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: eng-2023-p093-qtext1-a-1
 title: Unit 9 · PDF 93 · text1-a-1
 question: What do angry people often forget according to the writer? a. .............. b. ..............
@@ -2529,4 +2531,6 @@ solution:
 > 1-They’re not saving lives, **they**’re not bettering the world
 
 **المرجع:** قطعة Why are footballers paid so much? المرفقة، مرجع الملزمة PDF99/ص98؛ ليست صفحة من الكتاب.
-:::`;export default e("english-u09-reading",source);
+:::`;
+
+export default createEnglishLesson("english-u09-reading", source);

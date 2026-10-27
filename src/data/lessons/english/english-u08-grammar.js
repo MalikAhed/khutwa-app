@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::exam-question
 id: eng-2023-p087-qlanguage-1-1
 title: Unit 8 · PDF 87 · language-1-1
 question: You should do a lot of market research before starting. (Everyone told me that)
@@ -1006,4 +1008,6 @@ solution:
 **Answer:**
 You need to have your watch repaired. It's stopped working.
 
-:::`;export default e("english-u08-grammar",source);
+:::`;
+
+export default createEnglishLesson("english-u08-grammar", source);

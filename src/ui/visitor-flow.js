@@ -1,1 +1,500 @@
-import{bindVisitorMascots as te}from"./visitor-mascot.js?v=7388f68cc0f433fd";import{alignOnboardingActions as G}from"./onboarding-layout.js?v=7388f68cc0f433fd";import{getDesktopTextField as J}from"./desktop-text-focus.js?v=7388f68cc0f433fd";import{warmLearningExperience as re}from"../app/background-loading.js?v=7388f68cc0f433fd";import{revealWhenReady as B,preloadImages as ne}from"./media-ready.js?v=7388f68cc0f433fd";import{ACCOUNT_FIELD_ORDER as K,validateAccountField as se}from"../domain/account.js?v=7388f68cc0f433fd";import{accountCompleteMarkup as ie,entryMarkup as ae,registerMarkup as Q,signInMarkup as oe}from"./visitor-flow-markup.js?v=7388f68cc0f433fd";const le=new Set(["entry","register","sign-in"]),de=new Set(["curriculum:full-palestinian","path:literary"]);function X(r,m){return de.has(`${r}:${m}`)?"عذرًا، غير متاح حاليًا.":""}const ce={entry:"الرئيسية",register:"إنشاء حساب","sign-in":"تسجيل الدخول"};function x(r,m,C){const b=r.querySelector('[type="submit"]');r.setAttribute("aria-busy",String(m)),[...r.elements].forEach(I=>{I.disabled=m}),b.dataset.label||(b.dataset.label=b.textContent),b.textContent=m?C:b.dataset.label}export function createVisitorFlow({container:r,service:m,onNavigate:C,onHome:b,onAccountCreated:I,documentObject:S=document}){if(!r||!m||!C||!b)throw new TypeError("visitor flow dependencies are required");let T=null,L=new AbortController,F=!1;const D=()=>S.defaultView?.matchMedia?.("(prefers-reduced-motion: reduce)").matches,$=(t,e,l=500)=>{const{signal:a}=L,g=S.defaultView?.matchMedia?.("(prefers-reduced-motion: reduce)");let u=!1;const q=()=>{clearTimeout(w),t.removeEventListener("animationend",p),t.removeEventListener("animationcancel",p),g?.removeEventListener("change",o),a.removeEventListener("abort",q)},p=h=>{u||h&&h.target!==t||(u=!0,q(),a.aborted||e())},o=h=>{h.matches&&p()},w=setTimeout(p,l);a.addEventListener("abort",q,{once:!0}),g?.addEventListener("change",o),t.addEventListener("animationend",p),t.addEventListener("animationcancel",p)},R=(t,e="is-leaving")=>{if(F)return;const l=r.querySelector(".visitor-shell");if(!l||D()){t();return}F=!0,l.classList.add(e),$(l,()=>{F=!1,t()})},Y=()=>{r.querySelectorAll("[data-flow]").forEach(t=>t.addEventListener("click",()=>{R(()=>C(t.dataset.flow,{historyMode:"push"}))},{signal:L.signal}))},v=(t,e,l="")=>{const a=t.querySelector(`[data-field-error="${e}"]`);if(!a)return;a.textContent=l,a.hidden=!l,t.querySelectorAll(`[name="${e}"]`).forEach(u=>{l?u.setAttribute("aria-invalid","true"):u.removeAttribute("aria-invalid")})},E=(t,e="")=>{const l=t.querySelector("[data-auth-error]");l.textContent=e,l.hidden=!e},Z=()=>{const{signal:t}=L;r.innerHTML=Q();const e=r.querySelector("[data-register-form]"),l=new Set,a=[...e.querySelectorAll("[data-onboarding-step]")],g=r.querySelector("[data-onboarding-progress]"),u=r.querySelector("[data-onboarding-back]"),q=u.querySelector("[data-back-label]"),p=G(r.querySelector(".onboarding-page"),t);let o=0,w=!1,h=!1,O=()=>{};const V={username:1,curriculum:2,path:3,phone:4,password:5},_=()=>Object.fromEntries(new FormData(e)),P=(n,y=_())=>{if(n===0)return!0;const f=K[n-1],s=X(f,y[f])||se(f,y[f]),i=!s;v(e,f,s);const c=e.elements[f],d=typeof c?.focus=="function"?c:c?.[0];return i||d?.focus(),i},A=(n,{focus:y=!0,animate:f=!0}={})=>{const s=o,i=Math.max(0,Math.min(a.length-1,n)),c=a[s],d=a[i],M=i>=s?"forward":"backward";o=i,g.hidden=o===0,g.setAttribute("aria-valuenow",String(Math.max(1,o))),g.querySelectorAll("span").forEach((k,H)=>k.classList.toggle("is-complete",H<o));const W=o===0;q.textContent=W?"الرئيسية":"السابق",u.setAttribute("aria-label",W?"العودة إلى الصفحة الرئيسية":"العودة إلى الخطوة السابقة"),E(e),d.querySelector(".onboarding-step-fields").append(e.querySelector("[data-auth-error]"));const z=()=>{O(),a.forEach((k,H)=>{k.hidden=H!==i}),w=!0,O=B(d,{signal:t,animate:!1,onReady(){l.has(d)||(l.add(d),te(d,t,S)),f&&!D()&&s!==i&&d.classList.add(`is-entering-${M}`),y&&requestAnimationFrame(()=>{!t.aborted&&i===o&&!d.contains(S.activeElement)&&(J(d,S.defaultView)||d.querySelector("input:checked, input, h1"))?.focus({preventScroll:!0})}),d.classList.contains(`is-entering-${M}`)&&$(d.querySelector(".onboarding-step-content"),()=>d.classList.remove(`is-entering-${M}`)),ne([...a[i+1]?.querySelectorAll("img")||[]].map(k=>k.currentSrc||k.src)),w=!1}})};if(!f||D()||s===i||c.hidden){z();return}w=!0,c.classList.add(`is-leaving-${M}`),$(c.querySelector(".onboarding-step-content"),()=>{c.classList.remove(`is-leaving-${M}`),z()})},U=async()=>{if(w||h||!P(o))return;if(o===0){A(1);return}const n=K[o-1];if(!["username","phone"].includes(n)){A(o+1);return}const y=o,f=_()[n],s=a[y];h=!0,s.setAttribute("aria-busy","true"),s.querySelectorAll("input,button").forEach(d=>{d.disabled=!0}),u.disabled=!0,E(e);const i=await m.checkAccountAvailability({field:n,value:f},{signal:t});if(t.aborted||y!==o)return;if(h=!1,s.setAttribute("aria-busy","false"),s.querySelectorAll("input,button").forEach(d=>{d.disabled=!1}),u.disabled=!1,i.status==="available"){A(o+1);return}const c=i.fieldErrors?.[n]||i.error;if(c&&["duplicate","invalid"].includes(i.status)){v(e,n,c),e.elements[n].focus();return}E(e,c||"تعذّر التحقق من البيانات. حاول مرة أخرى."),e.elements[n].focus()};e.querySelectorAll("[data-step-next]").forEach(n=>n.addEventListener("click",()=>{U()},{signal:t})),e.addEventListener("keydown",n=>{n.key!=="Enter"||w||h||o===a.length-1||n.target.matches('input[type="radio"]')||(n.preventDefault(),U())},{signal:t}),u.addEventListener("click",()=>{w||h||(o===0?R(()=>C("entry",{historyMode:"push"})):A(o-1))},{signal:t}),e.addEventListener("input",n=>{n.target?.name&&v(e,n.target.name),E(e)},{signal:t}),e.addEventListener("change",n=>{n.target?.name&&v(e,n.target.name,X(n.target.name,n.target.value))},{signal:t}),e.addEventListener("submit",async n=>{n.preventDefault(),E(e);const y=_(),f=a.findIndex((i,c)=>c>0&&!P(c,y));if(f>=0){f!==o&&A(f);return}x(e,!0,"جارٍ إنشاء الحساب…"),u.disabled=!0;const s=await m.createAccount(y,{signal:t});if(!(t.aborted||s.status==="aborted")){if(s.status==="created"){r.innerHTML=ie(),p(r.querySelector(".onboarding-page"));const i=r.querySelector(".onboarding-mascot");B(i,{signal:t}),r.querySelector("h1").focus({preventScroll:!0}),r.querySelector("[data-registration-continue]").addEventListener("click",()=>I?I(i):R(()=>b({historyMode:"push"})),{signal:t,once:!0});return}if(u.disabled=!1,x(e,!1,""),s.fieldErrors){const i=Object.entries(s.fieldErrors);i.forEach(([d,M])=>v(e,d,M));const c=i[0]?.[0];c&&c in V&&A(V[c])}else s.field&&e.elements[s.field]?(v(e,s.field,s.error),A(V[s.field])):E(e,s.error||"تعذّر إنشاء الحساب. حاول مجددًا.")}},{signal:t}),A(0,{focus:!1,animate:!1})},j=()=>{const{signal:t}=L;r.innerHTML=oe();const e=r.querySelector("[data-sign-in-form]"),l=r.ownerDocument.createElement("template");l.innerHTML=Q(),G(r.querySelector(".auth-page--sign-in"),t,l.content.querySelector(".onboarding-page")),e.addEventListener("input",a=>{a.target?.name&&v(e,a.target.name),E(e)},{signal:t}),e.addEventListener("submit",async a=>{a.preventDefault(),E(e);const g=Object.fromEntries(new FormData(e)),u=!String(g.identifier||"").trim(),q=!g.password;if(v(e,"identifier",u?"أدخل اسمك أو رقم هاتفك.":""),v(e,"password",q?"أدخل كلمة المرور.":""),u||q){(u?e.elements.identifier:e.elements.password).focus();return}x(e,!0,"جارٍ تسجيل الدخول…");const p=await m.signIn(g,{signal:t});if(!(t.aborted||p.status==="aborted")){if(p.status==="signed-in"){b({historyMode:"push"});return}x(e,!1,""),E(e,p.error||"الاسم أو كلمة المرور غير صحيحة."),e.elements.identifier.focus()}},{signal:t})};function ee(t,{focus:e=!0}={}){le.has(t)||(t="entry"),T=t,F=!1,L.abort(),L=new AbortController,r.hidden=!1,S.body.classList.add("product-flow-active"),t==="entry"?r.innerHTML=ae():t==="register"?(Z(),re()):j(),Y(),S.title=ce[t];const{signal:l}=L;t!=="register"&&B(r,{signal:l,onReady(){e&&(J(r,S.defaultView)||r.querySelector("h1"))?.focus({preventScroll:!0})}})}function N(){T=null,F=!1,L.abort(),r.hidden=!0,r.replaceChildren(),S.body.classList.remove("product-flow-active")}return Object.freeze({show:ee,hide:N,getCurrentFlow:()=>T,destroy:N})}
+import { bindVisitorMascots } from "./visitor-mascot.js?v=acff67f262f3c107";
+import { alignOnboardingActions } from "./onboarding-layout.js?v=acff67f262f3c107";
+import { getDesktopTextField } from "./desktop-text-focus.js?v=acff67f262f3c107";
+import { warmLearningExperience } from "../app/background-loading.js?v=acff67f262f3c107";
+import { revealWhenReady, preloadImages } from "./media-ready.js?v=acff67f262f3c107";
+import {
+  ACCOUNT_FIELD_ORDER,
+  validateAccountField,
+} from "../domain/account.js?v=acff67f262f3c107";
+import {
+  accountCompleteMarkup,
+  entryMarkup,
+  registerMarkup,
+  signInMarkup,
+} from "./visitor-flow-markup.js?v=acff67f262f3c107";
+
+const FLOW_IDS = new Set(["entry", "register", "sign-in"]);
+const UNAVAILABLE_ONBOARDING_CHOICES = new Set(["curriculum:full-palestinian", "path:literary"]);
+function onboardingChoiceError(name, value) {
+  return UNAVAILABLE_ONBOARDING_CHOICES.has(`${name}:${value}`)
+    ? "عذرًا، غير متاح حاليًا."
+    : "";
+}
+const TITLES = {
+  entry: "الرئيسية",
+  register: "إنشاء حساب",
+  "sign-in": "تسجيل الدخول",
+};
+function setSubmitting(form, submitting, label) {
+  const button = form.querySelector('[type="submit"]');
+  form.setAttribute("aria-busy", String(submitting));
+  [...form.elements].forEach((element) => {
+    element.disabled = submitting;
+  });
+  if (!button.dataset.label) button.dataset.label = button.textContent;
+  button.textContent = submitting ? label : button.dataset.label;
+}
+
+export function createVisitorFlow({
+  container,
+  service,
+  onNavigate,
+  onHome,
+  onAccountCreated,
+  documentObject = document,
+}) {
+  if (!container || !service || !onNavigate || !onHome)
+    throw new TypeError("visitor flow dependencies are required");
+  let currentFlow = null;
+  let viewController = new AbortController();
+  let navigationPending = false;
+
+  const reduceMotion = () =>
+    documentObject.defaultView?.matchMedia?.("(prefers-reduced-motion: reduce)")
+      .matches;
+  const afterAnimation = (element, callback, timeout = 500) => {
+    const { signal } = viewController;
+    const motion = documentObject.defaultView?.matchMedia?.(
+      "(prefers-reduced-motion: reduce)",
+    );
+    let finished = false;
+    const cleanup = () => {
+      clearTimeout(timer);
+      element.removeEventListener("animationend", complete);
+      element.removeEventListener("animationcancel", complete);
+      motion?.removeEventListener("change", preferenceChanged);
+      signal.removeEventListener("abort", cleanup);
+    };
+    const complete = (event) => {
+      if (finished || (event && event.target !== element)) return;
+      finished = true;
+      cleanup();
+      if (!signal.aborted) callback();
+    };
+    const preferenceChanged = (event) => {
+      if (event.matches) complete();
+    };
+    const timer = setTimeout(complete, timeout);
+    signal.addEventListener("abort", cleanup, { once: true });
+    motion?.addEventListener("change", preferenceChanged);
+    element.addEventListener("animationend", complete);
+    element.addEventListener("animationcancel", complete);
+  };
+  const leaveCurrentFlow = (callback, className = "is-leaving") => {
+    if (navigationPending) return;
+    const activeShell = container.querySelector(".visitor-shell");
+    if (!activeShell || reduceMotion()) {
+      callback();
+      return;
+    }
+    navigationPending = true;
+    activeShell.classList.add(className);
+    afterAnimation(activeShell, () => {
+      navigationPending = false;
+      callback();
+    });
+  };
+
+  const bindCommon = () => {
+    container.querySelectorAll("[data-flow]").forEach((button) =>
+      button.addEventListener(
+        "click",
+        () => {
+          leaveCurrentFlow(() =>
+            onNavigate(button.dataset.flow, { historyMode: "push" }),
+          );
+        },
+        { signal: viewController.signal },
+      ),
+    );
+  };
+  const setFieldError = (form, name, message = "") => {
+    const node = form.querySelector(`[data-field-error="${name}"]`);
+    if (!node) return;
+    node.textContent = message;
+    node.hidden = !message;
+    const targets = form.querySelectorAll(`[name="${name}"]`);
+    targets.forEach((input) => {
+      if (message) input.setAttribute("aria-invalid", "true");
+      else input.removeAttribute("aria-invalid");
+    });
+  };
+  const setFormError = (form, message = "") => {
+    const node = form.querySelector("[data-auth-error]");
+    node.textContent = message;
+    node.hidden = !message;
+  };
+
+  const renderRegister = () => {
+    const { signal } = viewController;
+    container.innerHTML = registerMarkup();
+    const form = container.querySelector("[data-register-form]");
+    const boundMascotSteps = new Set();
+    const steps = [...form.querySelectorAll("[data-onboarding-step]")];
+    const progress = container.querySelector("[data-onboarding-progress]");
+    const backButton = container.querySelector("[data-onboarding-back]");
+    const backLabel = backButton.querySelector("[data-back-label]");
+    const alignActions = alignOnboardingActions(container.querySelector(".onboarding-page"), signal);
+    let stepIndex = 0;
+    let stepTransitioning = false;
+    let stepRequestPending = false;
+    let stopStepMedia = () => {};
+    const stepForField = {
+      username: 1,
+      curriculum: 2,
+      path: 3,
+      phone: 4,
+      password: 5,
+    };
+    const readData = () => Object.fromEntries(new FormData(form));
+    const validateStep = (index, data = readData()) => {
+      if (index === 0) return true;
+      const name = ACCOUNT_FIELD_ORDER[index - 1];
+      const message = onboardingChoiceError(name, data[name]) || validateAccountField(name, data[name]);
+      const valid = !message;
+      setFieldError(form, name, message);
+      const control = form.elements[name];
+      const target =
+        typeof control?.focus === "function" ? control : control?.[0];
+      if (!valid) target?.focus();
+      return valid;
+    };
+    const showStep = (nextIndex, { focus = true, animate = true } = {}) => {
+      const previousIndex = stepIndex;
+      const targetIndex = Math.max(0, Math.min(steps.length - 1, nextIndex));
+      const previousStep = steps[previousIndex];
+      const targetStep = steps[targetIndex];
+      const direction = targetIndex >= previousIndex ? "forward" : "backward";
+      stepIndex = targetIndex;
+      progress.hidden = stepIndex === 0;
+      progress.setAttribute("aria-valuenow", String(Math.max(1, stepIndex)));
+      progress
+        .querySelectorAll("span")
+        .forEach((segment, index) =>
+          segment.classList.toggle("is-complete", index < stepIndex),
+        );
+      const isFirstStep = stepIndex === 0;
+      backLabel.textContent = isFirstStep ? "الرئيسية" : "السابق";
+      backButton.setAttribute(
+        "aria-label",
+        isFirstStep
+          ? "العودة إلى الصفحة الرئيسية"
+          : "العودة إلى الخطوة السابقة",
+      );
+      setFormError(form);
+      targetStep.querySelector(".onboarding-step-fields").append(form.querySelector("[data-auth-error]"));
+      const revealTarget = () => {
+        stopStepMedia();
+        steps.forEach((step, index) => {
+          step.hidden = index !== targetIndex;
+        });
+        stepTransitioning = true;
+        stopStepMedia = revealWhenReady(targetStep, {
+          signal,
+          animate:false,
+          onReady() {
+            if (!boundMascotSteps.has(targetStep)) {
+              boundMascotSteps.add(targetStep);
+              bindVisitorMascots(targetStep, signal, documentObject);
+            }
+            if (animate && !reduceMotion() && previousIndex !== targetIndex)
+              targetStep.classList.add(`is-entering-${direction}`);
+            if (focus)
+              requestAnimationFrame(() => {
+                if (!signal.aborted && targetIndex === stepIndex
+                  && !targetStep.contains(documentObject.activeElement)) {
+                  const target = getDesktopTextField(targetStep, documentObject.defaultView)
+                    || targetStep.querySelector("input:checked, input, h1");
+                  target?.focus({ preventScroll:true });
+                }
+              });
+            if (targetStep.classList.contains(`is-entering-${direction}`))
+              afterAnimation(targetStep.querySelector(".onboarding-step-content"), () =>
+                targetStep.classList.remove(`is-entering-${direction}`),
+              );
+            preloadImages(
+              [...(steps[targetIndex + 1]?.querySelectorAll("img") || [])].map(
+                (image) => image.currentSrc || image.src,
+              ),
+            );
+            stepTransitioning = false;
+          },
+        });
+      };
+      if (
+        !animate ||
+        reduceMotion() ||
+        previousIndex === targetIndex ||
+        previousStep.hidden
+      ) {
+        revealTarget();
+        return;
+      }
+      stepTransitioning = true;
+      previousStep.classList.add(`is-leaving-${direction}`);
+      afterAnimation(previousStep.querySelector(".onboarding-step-content"), () => {
+        previousStep.classList.remove(`is-leaving-${direction}`);
+        revealTarget();
+      });
+    };
+    const continueFromCurrentStep = async () => {
+      if (stepTransitioning || stepRequestPending || !validateStep(stepIndex))
+        return;
+      if (stepIndex === 0) {
+        showStep(1);
+        return;
+      }
+      const fieldName = ACCOUNT_FIELD_ORDER[stepIndex - 1];
+      if (!["username", "phone"].includes(fieldName)) {
+        showStep(stepIndex + 1);
+        return;
+      }
+      const requestStep = stepIndex;
+      const requestValue = readData()[fieldName];
+      const activeStep = steps[requestStep];
+      stepRequestPending = true;
+      activeStep.setAttribute("aria-busy", "true");
+      activeStep.querySelectorAll("input,button").forEach((control) => {
+        control.disabled = true;
+      });
+      backButton.disabled = true;
+      setFormError(form);
+      const result = await service.checkAccountAvailability(
+        { field: fieldName, value: requestValue },
+        { signal: signal },
+      );
+      if (signal.aborted || requestStep !== stepIndex) return;
+      stepRequestPending = false;
+      activeStep.setAttribute("aria-busy", "false");
+      activeStep.querySelectorAll("input,button").forEach((control) => {
+        control.disabled = false;
+      });
+      backButton.disabled = false;
+      if (result.status === "available") {
+        showStep(stepIndex + 1);
+        return;
+      }
+      const message = result.fieldErrors?.[fieldName] || result.error;
+      if (message && ["duplicate", "invalid"].includes(result.status)) {
+        setFieldError(form, fieldName, message);
+        form.elements[fieldName].focus();
+        return;
+      }
+      setFormError(form, message || "تعذّر التحقق من البيانات. حاول مرة أخرى.");
+      form.elements[fieldName].focus();
+    };
+    form.querySelectorAll("[data-step-next]").forEach((button) =>
+      button.addEventListener(
+        "click",
+        () => {
+          void continueFromCurrentStep();
+        },
+        { signal: signal },
+      ),
+    );
+    form.addEventListener(
+      "keydown",
+      (event) => {
+        if (
+          event.key !== "Enter" ||
+          stepTransitioning ||
+          stepRequestPending ||
+          stepIndex === steps.length - 1 ||
+          event.target.matches('input[type="radio"]')
+        )
+          return;
+        event.preventDefault();
+        void continueFromCurrentStep();
+      },
+      { signal: signal },
+    );
+    backButton.addEventListener(
+      "click",
+      () => {
+        if (stepTransitioning || stepRequestPending) return;
+        if (stepIndex === 0)
+          leaveCurrentFlow(() => onNavigate("entry", { historyMode: "push" }));
+        else showStep(stepIndex - 1);
+      },
+      { signal: signal },
+    );
+    form.addEventListener(
+      "input",
+      (event) => {
+        if (event.target?.name) setFieldError(form, event.target.name);
+        setFormError(form);
+      },
+      { signal: signal },
+    );
+    form.addEventListener(
+      "change",
+      (event) => {
+        if (event.target?.name)
+          setFieldError(form, event.target.name, onboardingChoiceError(event.target.name, event.target.value));
+      },
+      { signal: signal },
+    );
+    form.addEventListener(
+      "submit",
+      async (event) => {
+        event.preventDefault();
+        setFormError(form);
+        const data = readData();
+        const invalidIndex = steps.findIndex(
+          (_step, index) => index > 0 && !validateStep(index, data),
+        );
+        if (invalidIndex >= 0) {
+          if (invalidIndex !== stepIndex) showStep(invalidIndex);
+          return;
+        }
+        setSubmitting(form, true, "جارٍ إنشاء الحساب…");
+        backButton.disabled = true;
+        const result = await service.createAccount(data, { signal: signal });
+        if (signal.aborted || result.status === "aborted") return;
+        if (result.status === "created") {
+          container.innerHTML = accountCompleteMarkup();
+          alignActions(container.querySelector(".onboarding-page"));
+          // The learner can continue immediately, even while the celebration loads.
+          // Only the illustration waits on its own media; Continue owns navigation.
+          const mascot = container.querySelector(".onboarding-mascot");
+          revealWhenReady(mascot, { signal });
+          container.querySelector("h1").focus({ preventScroll: true });
+          container.querySelector("[data-registration-continue]").addEventListener(
+            "click",
+            () => onAccountCreated
+              ? onAccountCreated(mascot)
+              : leaveCurrentFlow(() => onHome({ historyMode: "push" })),
+            { signal, once: true },
+          );
+          return;
+        }
+        backButton.disabled = false;
+        setSubmitting(form, false, "");
+        if (result.fieldErrors) {
+          const serverErrors = Object.entries(result.fieldErrors);
+          serverErrors.forEach(([name, message]) =>
+            setFieldError(form, name, message),
+          );
+          const firstField = serverErrors[0]?.[0];
+          if (firstField && firstField in stepForField)
+            showStep(stepForField[firstField]);
+        } else if (result.field && form.elements[result.field]) {
+          setFieldError(form, result.field, result.error);
+          showStep(stepForField[result.field]);
+        } else
+          setFormError(
+            form,
+            result.error || "تعذّر إنشاء الحساب. حاول مجددًا.",
+          );
+      },
+      { signal: signal },
+    );
+    showStep(0, { focus: false, animate: false });
+  };
+  const renderSignIn = () => {
+    const { signal } = viewController;
+    container.innerHTML = signInMarkup();
+    const form = container.querySelector("[data-sign-in-form]");
+    const reference = container.ownerDocument.createElement("template");
+    reference.innerHTML = registerMarkup();
+    alignOnboardingActions(
+      container.querySelector(".auth-page--sign-in"),
+      signal,
+      reference.content.querySelector(".onboarding-page"),
+    );
+    form.addEventListener(
+      "input",
+      (event) => {
+        if (event.target?.name) setFieldError(form, event.target.name);
+        setFormError(form);
+      },
+      { signal: signal },
+    );
+    form.addEventListener(
+      "submit",
+      async (event) => {
+        event.preventDefault();
+        setFormError(form);
+        const data = Object.fromEntries(new FormData(form));
+        const identifierMissing = !String(data.identifier || "").trim();
+        const passwordMissing = !data.password;
+        setFieldError(
+          form,
+          "identifier",
+          identifierMissing
+            ? "أدخل اسمك أو رقم هاتفك."
+            : "",
+        );
+        setFieldError(
+          form,
+          "password",
+          passwordMissing ? "أدخل كلمة المرور." : "",
+        );
+        if (identifierMissing || passwordMissing) {
+          (identifierMissing
+            ? form.elements.identifier
+            : form.elements.password
+          ).focus();
+          return;
+        }
+        setSubmitting(form, true, "جارٍ تسجيل الدخول…");
+        const result = await service.signIn(data, { signal: signal });
+        if (signal.aborted || result.status === "aborted") return;
+        if (result.status === "signed-in") {
+          onHome({ historyMode: "push" });
+          return;
+        }
+        setSubmitting(form, false, "");
+        setFormError(
+          form,
+          result.error || "الاسم أو كلمة المرور غير صحيحة.",
+        );
+        form.elements.identifier.focus();
+      },
+      { signal: signal },
+    );
+  };
+  function show(flow, { focus = true } = {}) {
+    if (!FLOW_IDS.has(flow)) flow = "entry";
+    currentFlow = flow;
+    navigationPending = false;
+    viewController.abort();
+    viewController = new AbortController();
+    container.hidden = false;
+    documentObject.body.classList.add("product-flow-active");
+    if (flow === "entry") container.innerHTML = entryMarkup();
+    else if (flow === "register") {
+      renderRegister();
+      warmLearningExperience();
+    }
+    else renderSignIn();
+    bindCommon();
+    documentObject.title = TITLES[flow];
+    const { signal } = viewController;
+    if (flow !== "register")
+      revealWhenReady(container, {
+        signal,
+        onReady() {
+          if (focus) {
+            const desktopInput = getDesktopTextField(container, documentObject.defaultView);
+            (desktopInput || container.querySelector("h1"))?.focus({ preventScroll:true });
+          }
+        },
+      });
+  }
+  function hide() {
+    currentFlow = null;
+    navigationPending = false;
+    viewController.abort();
+    container.hidden = true;
+    container.replaceChildren();
+    documentObject.body.classList.remove("product-flow-active");
+  }
+  return Object.freeze({
+    show,
+    hide,
+    getCurrentFlow: () => currentFlow,
+    destroy: hide,
+  });
+}

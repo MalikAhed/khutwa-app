@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+
+export const lessonSource = `
 :::mcq
 id: physics-book-2024-p071-review-1-1
 title: أسئلة الفصل — س1/1 — الكتاب، صفحة PDF 71
@@ -4496,4 +4498,16 @@ solution:
 
 
 :::
-`;export default m({status:"published",language:"ar",title:"الحث الكهرومغناطيسي",summary:"أسئلة الكتاب بترتيب المصدر، تليها أسئلة إضافية مع الاحتفاظ باختلاف المعطيات.",outcome:"مراجعة الحث الكهرومغناطيسي من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"85 سؤالًا",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "الحث الكهرومغناطيسي",
+  "summary": "أسئلة الكتاب بترتيب المصدر، تليها أسئلة إضافية مع الاحتفاظ باختلاف المعطيات.",
+  "outcome": "مراجعة الحث الكهرومغناطيسي من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "85 سؤالًا",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

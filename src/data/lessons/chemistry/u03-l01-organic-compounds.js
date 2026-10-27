@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: chemistry-gaza-p062-q01-a8
 title: الوحدة ٣ · الدرس ١ · ص ٦٠ · س ٠١ · a٨
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤
@@ -196,4 +198,6 @@ solution:
 **المصدر:** الصفحات 49، 56 من الكتاب.
 
 :::
-`;export default m("u03-l01-organic-compounds",source);
+`;
+
+export default createChemistryLesson("u03-l01-organic-compounds", source);

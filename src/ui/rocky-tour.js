@@ -1,1 +1,121 @@
-import{createFirstRunTourState as D}from"../services/first-run-tour.js?v=7388f68cc0f433fd";import{createRockyTourSpotlight as G}from"./rocky-tour-spotlight.js?v=7388f68cc0f433fd";import{prefersReducedMotion as U}from"../lib/dom.js?v=7388f68cc0f433fd";const y=new Set(["first-lesson","start-lesson","answer","check","rating","flashcard","flashcard-answer"]),X=new Set(["level","streak","navigation"]),O={"first-lesson":{title:"لنبدأ من هنا",message:"افتح الدرس الأول لنجرّب سؤالين معًا.",selectors:["[data-rocky-tour-first]"]},"start-lesson":{title:"جاهز للتجربة؟",message:"اضغط «ابدأ الأسئلة». أنا معك.",selectors:["[data-roadmap-bubble]:not([hidden]) [data-bubble-start]"]},answer:{mode:"lesson",title:"لنجرّب سؤالًا معًا",message:"اختر إجابتك. لا بأس إن أخطأت، أنا معك!",selectors:["[data-live-authored-step] .ui-lab-mcq"]},check:{mode:"lesson",placement:"footer",title:"لنتحقّق معًا",message:"اضغط «تحقّق» لتعرف النتيجة.",selectors:["[data-live-authored-step] [data-ui-lab-check]"]},rating:{mode:"lesson",placement:"footer",title:"أحسنت!",message:"قيّم الصعوبة لتراجع ما تحتاجه. التقييم اختياري.",selectors:[".level-question-ratings"],mood:"celebrate"},flashcard:{mode:"lesson",placement:"footer",title:"والآن… جرّب أن تتذكّر",message:"أجب في ذهنك، ثم المس البطاقة لترى الحل.",selectors:["[data-exam-card]"]},"flashcard-answer":{mode:"lesson",side:"left",title:"قارن إجابتك بالحل",message:"وجدت خطأ في سؤال؟ أبلغ عنه بالعلم أعلى اليسار، ثم تابع.",selectors:["[data-question-report]","[data-exam-card]"]},level:{title:"كل إجابة تُقرّبك",message:"الإجابة الصحيحة الجديدة تمنحك 10 XP. كل 100 XP ترفع مستواك.",selectors:[".dashboard-stat--level"],next:"streak",nextLabel:"متابعة"},streak:{title:"خطوة صغيرة كل يوم",message:"تعلّم يوميًا لتحافظ على سلسلتك. تبدأ بـ200 جوهرة و10 قلوب. كل إجابة تستهلك قلبًا، ويتجدد قلب كل 12 دقيقة. مع سوبر تحصل على قلوب وجواهر غير محدودة.",selectors:[".app-stat--streak",".app-stat--gems",".app-stat--hearts"],next:"navigation",nextLabel:"متابعة"},navigation:{title:"أنت جاهز!",message:"اختر مادة لتتابع التعلّم. بقية أقسام التطبيق ستتوفر قريبًا.",selectors:[".nav-links [data-page=learn]",".nav-links [data-page=shop]"],next:"done",nextLabel:"لنواصل التعلّم",mood:"celebrate"}};export function createRockyTour({service:r,storage:P,onHome:p,onStartLesson:T,onSkip:A,onComplete:M}){const t=D({service:r,storage:P});let u=r.getLearnerProgressOwner(),a=null,f=null,l=0,i=null,d=!1,h=0,c=null,k=!0;const L=matchMedia("(prefers-reduced-motion: reduce)"),S=e=>{e.matches&&c?.finish()};L.addEventListener("change",S);const m=()=>{h+=1,d=!1,c?.cancel(),c=null,f?.disconnect(),f=null,cancelAnimationFrame(l),l=0,a?.destroy(),a=null,i=null},x=()=>{t.finish(),m(),M?.()},R=()=>{t.finish(),m(),A?.()},n=e=>{t.advance(e),i=null,b()},j=()=>{const e=O[t.read()?.stage]?.next;e==="done"?x():e&&n(e)},q=()=>{n("answer"),a.hide(),T()};function F(){if(l=0,!t.active()||d)return;if(document.querySelector("#app-splash")||document.body.classList.contains("product-flow-active")){a.hide();return}let e=t.read().stage;const g=new URLSearchParams(location.search),w=!!document.querySelector(".lesson-view.is-visible .subject-roadmap");if(!g.has("subject")&&y.has(e)){q();return}if(w&&y.has(e)&&e!=="start-lesson"&&(t.advance("first-lesson"),e="first-lesson"),e==="first-lesson"){const s=document.querySelector(".subject-roadmap [data-roadmap-part]:not(:disabled)");s&&(s.dataset.rockyTourFirst=""),document.querySelector("[data-roadmap-bubble]:not([hidden]) [data-bubble-start]")&&(t.advance("start-lesson"),e="start-lesson")}if(X.has(e)&&g.has("subject")){x();return}if(i===e&&a.targets.every(s=>s.isConnected)){a.reposition();return}let o=O[e];if(!o){a.hide(),i=e;return}e==="rating"&&!k&&(o={...o,title:"لا بأس، هكذا نتعلّم",mood:"reassure"}),a.show({...o,id:e})&&(i=e)}function b(){l||(l=requestAnimationFrame(F))}const v=()=>{a||(a=G({onNext:j,onSkip:R}),f=new MutationObserver(b),f.observe(document.body,{subtree:!0,childList:!0,attributes:!0,attributeFilter:["class","hidden","aria-busy"]}),b())},E=e=>{t.active()&&t.read().stage==="answer"&&e.target.closest("[data-ui-lab-answer]")&&n("check")};document.addEventListener("click",E);const C=r.subscribe(()=>{const e=r.getLearnerProgressOwner();e!==u&&(u=e,m(),t.active()&&v())});return Object.freeze({active:t.active,isDemo:()=>t.active()&&y.has(t.read()?.stage),resume(){t.active()&&(t.read().stage==="celebration"?(t.advance("level"),p()):new URLSearchParams(location.search).has("flow")&&p(),v())},async start(e){if(d||r.getAccountType()==="guest")return;u=r.getLearnerProgressOwner();const g=u,w=++h;t.start(),v(),d=!0,a.carry(e);const o=e?.closest(".onboarding-page");if(o?.animate&&!U()){const s=o.animate([{opacity:1},{opacity:0}],{duration:400,easing:"ease-out",fill:"forwards"});c=s,await s.finished.catch(()=>{}),c===s&&(c=null)}w!==h||!t.active()||g!==r.getLearnerProgressOwner()||(d=!1,q())},lessonEvent(e){t.active()&&(e.type==="question"&&n(e.step.type==="mcq"?"answer":"flashcard"),e.type==="answer"&&(k=e.correct,n("rating")),e.type==="reveal"&&n("flashcard-answer"),e.type==="complete"&&(t.advance("celebration"),a.hide(),i=null))},finishLesson(){return!t.active()||t.read().stage!=="celebration"?!1:(n("level"),p(),!0)},destroy(){m(),C(),L.removeEventListener("change",S),document.removeEventListener("click",E)}})}
+import { createFirstRunTourState } from "../services/first-run-tour.js?v=acff67f262f3c107";
+import { createRockyTourSpotlight } from "./rocky-tour-spotlight.js?v=acff67f262f3c107";
+import { prefersReducedMotion } from "../lib/dom.js?v=acff67f262f3c107";
+
+const DEMO_STAGES = new Set(["first-lesson","start-lesson","answer","check","rating","flashcard","flashcard-answer"]);
+const HOME_STAGES = new Set(["level","streak","navigation"]);
+const descriptions = {
+  "first-lesson":{ title:"لنبدأ من هنا",message:"افتح الدرس الأول لنجرّب سؤالين معًا.",selectors:["[data-rocky-tour-first]"] },
+  "start-lesson":{ title:"جاهز للتجربة؟",message:"اضغط «ابدأ الأسئلة». أنا معك.",selectors:["[data-roadmap-bubble]:not([hidden]) [data-bubble-start]"] },
+  answer:{ mode:"lesson",title:"لنجرّب سؤالًا معًا",message:"اختر إجابتك. لا بأس إن أخطأت، أنا معك!",selectors:["[data-live-authored-step] .ui-lab-mcq"] },
+  check:{ mode:"lesson",placement:"footer",title:"لنتحقّق معًا",message:"اضغط «تحقّق» لتعرف النتيجة.",selectors:["[data-live-authored-step] [data-ui-lab-check]"] },
+  rating:{ mode:"lesson",placement:"footer",title:"أحسنت!",message:"قيّم الصعوبة لتراجع ما تحتاجه. التقييم اختياري.",selectors:[".level-question-ratings"],mood:"celebrate" },
+  flashcard:{ mode:"lesson",placement:"footer",title:"والآن… جرّب أن تتذكّر",message:"أجب في ذهنك، ثم المس البطاقة لترى الحل.",selectors:["[data-exam-card]"] },
+  "flashcard-answer":{ mode:"lesson",side:"left",title:"قارن إجابتك بالحل",message:"وجدت خطأ في سؤال؟ أبلغ عنه بالعلم أعلى اليسار، ثم تابع.",selectors:["[data-question-report]","[data-exam-card]"] },
+  level:{ title:"كل إجابة تُقرّبك",message:"الإجابة الصحيحة الجديدة تمنحك 10 XP. كل 100 XP ترفع مستواك.",selectors:[".dashboard-stat--level"],next:"streak",nextLabel:"متابعة" },
+  streak:{ title:"خطوة صغيرة كل يوم",message:"تعلّم يوميًا لتحافظ على سلسلتك. تبدأ بـ200 جوهرة و10 قلوب. كل إجابة تستهلك قلبًا، ويتجدد قلب كل 12 دقيقة. مع سوبر تحصل على قلوب وجواهر غير محدودة.",selectors:[".app-stat--streak",".app-stat--gems",".app-stat--hearts"],next:"navigation",nextLabel:"متابعة" },
+  navigation:{ title:"أنت جاهز!",message:"اختر مادة لتتابع التعلّم. بقية أقسام التطبيق ستتوفر قريبًا.",selectors:[".nav-links [data-page=learn]",".nav-links [data-page=shop]"],next:"done",nextLabel:"لنواصل التعلّم",mood:"celebrate" },
+};
+
+export function createRockyTour({ service,storage,onHome,onStartLesson,onSkip,onComplete }) {
+  const state = createFirstRunTourState({ service,storage });
+  let owner = service.getLearnerProgressOwner(), spotlight = null, observer = null, frame = 0;
+  let renderedStage = null, transitioning = false, generation = 0, entranceAnimation = null, lastCorrect = true;
+  const motion = matchMedia("(prefers-reduced-motion: reduce)");
+  const finishEntrance = event => { if (event.matches) entranceAnimation?.finish(); };
+  motion.addEventListener("change",finishEntrance);
+  const clear = () => {
+    generation += 1; transitioning = false;
+    entranceAnimation?.cancel(); entranceAnimation = null;
+    observer?.disconnect(); observer = null;
+    cancelAnimationFrame(frame); frame = 0;
+    spotlight?.destroy(); spotlight = null; renderedStage = null;
+  };
+  const finish = () => { state.finish(); clear(); onComplete?.(); };
+  const skip = () => { state.finish(); clear(); onSkip?.(); };
+  const go = stage => { state.advance(stage); renderedStage = null; schedule(); };
+  const next = () => {
+    const target = descriptions[state.read()?.stage]?.next;
+    if (target === "done") finish();
+    else if (target) go(target);
+  };
+  const beginLesson = () => {
+    go("answer"); spotlight.hide(); onStartLesson();
+  };
+  function update() {
+    frame = 0;
+    if (!state.active() || transitioning) return;
+    if (document.querySelector("#app-splash") || document.body.classList.contains("product-flow-active")) { spotlight.hide(); return; }
+    let stage = state.read().stage;
+    const route = new URLSearchParams(location.search);
+    const atMap = Boolean(document.querySelector(".lesson-view.is-visible .subject-roadmap"));
+    if (!route.has("subject") && DEMO_STAGES.has(stage)) { beginLesson(); return; }
+    if (atMap && DEMO_STAGES.has(stage) && stage !== "start-lesson") { state.advance("first-lesson"); stage = "first-lesson"; }
+    if (stage === "first-lesson") {
+      const first = document.querySelector(".subject-roadmap [data-roadmap-part]:not(:disabled)");
+      if (first) first.dataset.rockyTourFirst = "";
+      if (document.querySelector("[data-roadmap-bubble]:not([hidden]) [data-bubble-start]")) { state.advance("start-lesson"); stage = "start-lesson"; }
+    }
+    if (HOME_STAGES.has(stage) && route.has("subject")) { finish(); return; }
+    if (renderedStage === stage && spotlight.targets.every(target => target.isConnected)) { spotlight.reposition(); return; }
+    let description = descriptions[stage];
+    if (!description) { spotlight.hide(); renderedStage = stage; return; }
+    if (stage === "rating" && !lastCorrect) description = { ...description,title:"لا بأس، هكذا نتعلّم",mood:"reassure" };
+    if (spotlight.show({ ...description,id:stage })) renderedStage = stage;
+  }
+  function schedule() { if (!frame) frame = requestAnimationFrame(update); }
+  const mount = () => {
+    if (spotlight) return;
+    spotlight = createRockyTourSpotlight({ onNext:next,onSkip:skip });
+    observer = new MutationObserver(schedule);
+    observer.observe(document.body,{ subtree:true,childList:true,attributes:true,attributeFilter:["class","hidden","aria-busy"] });
+    schedule();
+  };
+  const onSelection = event => {
+    if (state.active() && state.read().stage === "answer" && event.target.closest("[data-ui-lab-answer]")) go("check");
+  };
+  document.addEventListener("click",onSelection);
+  const unsubscribe = service.subscribe(() => {
+    const nextOwner = service.getLearnerProgressOwner();
+    if (nextOwner === owner) return;
+    owner = nextOwner; clear();
+    if (state.active()) mount();
+  });
+  return Object.freeze({
+    active:state.active,
+    isDemo:() => state.active() && DEMO_STAGES.has(state.read()?.stage),
+    resume() {
+      if (!state.active()) return;
+      if (state.read().stage === "celebration") { state.advance("level"); onHome(); }
+      else if (new URLSearchParams(location.search).has("flow")) onHome();
+      mount();
+    },
+    async start(source) {
+      if (transitioning || service.getAccountType() === "guest") return;
+      owner = service.getLearnerProgressOwner();
+      const startedOwner = owner, run = ++generation;
+      state.start(); mount(); transitioning = true; spotlight.carry(source);
+      const page = source?.closest(".onboarding-page");
+      if (page?.animate && !prefersReducedMotion()) {
+        const animation = page.animate([{ opacity:1 },{ opacity:0 }],{ duration:400,easing:"ease-out",fill:"forwards" });
+        entranceAnimation = animation;
+        await animation.finished.catch(() => {});
+        if (entranceAnimation === animation) entranceAnimation = null;
+      }
+      if (run !== generation || !state.active() || startedOwner !== service.getLearnerProgressOwner()) return;
+      transitioning = false; beginLesson();
+    },
+    lessonEvent(event) {
+      if (!state.active()) return;
+      if (event.type === "question") go(event.step.type === "mcq" ? "answer" : "flashcard");
+      if (event.type === "answer") { lastCorrect = event.correct; go("rating"); }
+      if (event.type === "reveal") go("flashcard-answer");
+      if (event.type === "complete") { state.advance("celebration"); spotlight.hide(); renderedStage = null; }
+    },
+    finishLesson() {
+      if (!state.active() || state.read().stage !== "celebration") return false;
+      go("level"); onHome(); return true;
+    },
+    destroy() { clear(); unsubscribe(); motion.removeEventListener("change",finishEntrance); document.removeEventListener("click",onSelection); },
+  });
+}

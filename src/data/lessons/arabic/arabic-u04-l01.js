@@ -1,4 +1,6 @@
-import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createArabicLesson } from "./shared.js?v=acff67f262f3c107";
+
+export const source = `:::mcq
 id: arabic-p119-mcq-q01
 title: أمرني خليلي - صفحة 118 - اختيار من متعدد 1 - 2019
 kicker: 2019
@@ -668,4 +670,6 @@ body:
 solution:
 «ما» في «الدنيا وما عليها» اسم موصول بمعنى «الذي». الواو حرف عطف، و«ما» اسم موصول مبني على السكون في محل جر، معطوف على «الدنيا» المجرورة بـ«من». وشبه الجملة «عليها» صلة الموصول لا محل له.
 «الرَّوحةُ»: مبتدأ مرفوع وعلامة رفعه الضمة الظاهرة؛ بدأ بها حكم جديد خبره «خيرٌ».
-:::`;export default e("arabic-u04-l01",source);
+:::`;
+
+export default createArabicLesson("arabic-u04-l01", source);

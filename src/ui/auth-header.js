@@ -1,1 +1,61 @@
-export function createAuthHeader({guest:u,member:i,label:d,flowButtons:E,signOutButton:b,courseContainer:h,service:r,progressStore:w,resourceStore:o,onFlow:f}){if(!u||!i||!d||!b||!h||!r||!f)throw new TypeError("auth header dependencies are required");const m=new AbortController,{signal:g}=m,p=i.ownerDocument.querySelector("[data-learner-streak-freeze]"),c=document.querySelector?.("[data-header-streak-count]"),y=document.querySelector?.("[data-owner-dashboard]"),l=()=>{if(!o)return;const e=o.get(r.getLearnerProgressOwner());for(const n of["hearts","gems"])document.querySelectorAll(`[data-resource-${n}]`).forEach(t=>{t.textContent=e.unlimited?"∞":String(e[n]);const s=n==="hearts"?"قلوب":"جواهر";t.parentElement.setAttribute("aria-label",e.unlimited?`${s} غير محدودة`:`${e[n]} ${s}`),t.parentElement.title=n==="hearts"&&!e.unlimited?e.nextHeartAt?`قلب جديد خلال ${Math.max(1,Math.ceil((e.nextHeartAt-Date.now())/6e4))} دقيقة`:"10 قلوب، يتجدد قلب كل 12 دقيقة":e.unlimited?`${s} غير محدودة مع سوبر`:""})},k=o?.subscribe(l),A=o?setInterval(l,1e3):null,a=()=>{l();const e=r.getAccountType(),n=e==="guest";if(u.hidden=!n,i.hidden=n,y&&(y.hidden=!r.isOwner?.()),d.textContent={free:"حساب مجاني",subscribed:"حساب مشترك"}[e]||"",d.lang="ar",p&&(p.hidden=n),c){const t=Math.max(0,Math.floor(Number(r.getLearnerHomeSnapshot()?.learning?.dailyStreak)||0));c.textContent=String(t),c.parentElement.dataset.streakActive=String(t>0),c.parentElement.setAttribute("aria-label",`السلسلة اليومية: ${t}`)}document.body.dataset.accountType=e,h.querySelectorAll("[data-subject]").forEach(t=>{const s=t instanceof HTMLButtonElement&&t.disabled;t.setAttribute("aria-disabled",String(s))})},x=r.subscribe(a),S=w?.subscribe(a);return E.forEach(e=>e.addEventListener("click",()=>f(e.dataset.authFlow),{signal:g})),b.addEventListener("click",async()=>{await r.signOut(),a()},{signal:g}),a(),Object.freeze({update:a,destroy(){m.abort(),x(),S?.(),k?.(),A&&clearInterval(A)}})}
+export function createAuthHeader({ guest, member, label, flowButtons, signOutButton, courseContainer, service, progressStore, resourceStore, onFlow }) {
+  if (!guest || !member || !label || !signOutButton || !courseContainer || !service || !onFlow) throw new TypeError("auth header dependencies are required");
+  const controller = new AbortController();
+  const { signal } = controller;
+  const streakFreeze = member.ownerDocument.querySelector("[data-learner-streak-freeze]");
+  const streakCount = document.querySelector?.("[data-header-streak-count]");
+  const ownerLink = document.querySelector?.("[data-owner-dashboard]");
+  const updateResources = () => {
+    if (!resourceStore) return;
+    const balance = resourceStore.get(service.getLearnerProgressOwner());
+    for (const resource of ["hearts", "gems"]) {
+      document.querySelectorAll(`[data-resource-${resource}]`).forEach(count => {
+        count.textContent = balance.unlimited ? "∞" : String(balance[resource]);
+        const name = resource === "hearts" ? "قلوب" : "جواهر";
+        count.parentElement.setAttribute("aria-label", balance.unlimited ? `${name} غير محدودة` : `${balance[resource]} ${name}`);
+        count.parentElement.title = resource === "hearts" && !balance.unlimited
+          ? balance.nextHeartAt ? `قلب جديد خلال ${Math.max(1, Math.ceil((balance.nextHeartAt - Date.now()) / 60000))} دقيقة` : "10 قلوب، يتجدد قلب كل 12 دقيقة"
+          : balance.unlimited ? `${name} غير محدودة مع سوبر` : "";
+      });
+    }
+  };
+  const unsubscribeResources = resourceStore?.subscribe(updateResources);
+  const resourceTimer = resourceStore ? setInterval(updateResources, 1000) : null;
+  const update = () => {
+    updateResources();
+    const type = service.getAccountType();
+    const isGuest = type === "guest";
+    guest.hidden = !isGuest;
+    member.hidden = isGuest;
+    if (ownerLink) ownerLink.hidden = !service.isOwner?.();
+    label.textContent = { free:"حساب مجاني", subscribed:"حساب مشترك" }[type] || "";
+    label.lang = "ar";
+    if (streakFreeze) streakFreeze.hidden = isGuest;
+    if (streakCount) {
+      const count = Math.max(0, Math.floor(Number(service.getLearnerHomeSnapshot()?.learning?.dailyStreak) || 0));
+      streakCount.textContent = String(count);
+      streakCount.parentElement.dataset.streakActive = String(count > 0);
+      streakCount.parentElement.setAttribute("aria-label", `السلسلة اليومية: ${count}`);
+    }
+    document.body.dataset.accountType = type;
+    courseContainer.querySelectorAll("[data-subject]").forEach((button) => {
+      const unavailable = button instanceof HTMLButtonElement && button.disabled;
+      button.setAttribute("aria-disabled", String(unavailable));
+    });
+  };
+  const unsubscribe = service.subscribe(update);
+  const unsubscribeProgress = progressStore?.subscribe(update);
+  flowButtons.forEach((button) => button.addEventListener("click", () => onFlow(button.dataset.authFlow), { signal }));
+  signOutButton.addEventListener("click", async () => { await service.signOut(); update(); }, { signal });
+  update();
+  return Object.freeze({
+    update,
+    destroy() {
+      controller.abort();
+      unsubscribe();
+      unsubscribeProgress?.();
+      unsubscribeResources?.();
+      if (resourceTimer) clearInterval(resourceTimer);
+    },
+  });
+}

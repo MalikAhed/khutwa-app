@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+
+export const lessonSource = `:::exam-question
 id: math-book-p094-activity1-q1
 title: الكتاب، ص ٩٢ · نشاط أو تمرين
 question: طرق التكامل
@@ -15240,4 +15242,16 @@ solution:
 \`\`\`
 
 
-:::`;export default m({status:"published",language:"ar",title:"طرق التكامل: التعويض، الأجزاء، الكسور الجزئية",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة طرق التكامل: التعويض، الأجزاء، الكسور الجزئية من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"80 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "طرق التكامل: التعويض، الأجزاء، الكسور الجزئية",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة طرق التكامل: التعويض، الأجزاء، الكسور الجزئية من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "80 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

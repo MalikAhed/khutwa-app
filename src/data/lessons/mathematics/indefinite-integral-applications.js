@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+
+export const lessonSource = `:::exam-question
 id: math-book-p091-activity1-q1
 title: الكتاب، ص ٨٩ · نشاط أو تمرين
 question: تطبيقات التكامل غير المحدود
@@ -1129,4 +1131,16 @@ solution:
 
 
 السرعة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mn dir="ltr">٢٠</mn><mi mathvariant="normal">م</mi></mrow><mi mathvariant="normal">ث</mi></mfrac></math>\` إلى أسفل.
-:::`;export default m({status:"published",language:"ar",title:"تطبيقات التكامل غير المحدود",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة تطبيقات التكامل غير المحدود من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"60 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "تطبيقات التكامل غير المحدود",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة تطبيقات التكامل غير المحدود من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "60 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

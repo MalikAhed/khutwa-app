@@ -1,5 +1,67 @@
-import{escapeHtml as d}from"../../lib/dom.js?v=7388f68cc0f433fd";import{renderMarkdownDocument as u}from"../../markdown/renderer.js?v=7388f68cc0f433fd";export function renderRockyDialogue(r,{titleId:c,locale:e="en"}){return`<article class="level-lesson-copy ready-lesson-copy markdown-authored-content rocky-dialogue-presentation">
-    <h1 class="visually-hidden" id="${d(c)}">${d(r.title)}</h1>
-    <div class="rocky-dialogue" data-rocky-dialogue><div class="rocky-dialogue-content">${u(r.dialogue.source,{locale:e})}</div></div>
-    <figure class="rocky-dialogue-illustration">${u(r.dialogue.image,{locale:e})}</figure>
-  </article>`}export function mountRockyDialogues(r,c){r.querySelectorAll('[data-lesson-presentation="rocky-dialogue"] [data-rocky-dialogue]').forEach(e=>{const n=e.querySelector(".rocky-dialogue-content");if(!n||c.aborted)return;const t=n.textContent.trim(),o=document.createElement("span"),a=document.createElement("span"),i=document.createElement("span");e.dataset.rockyDialogue=t,i.className="visually-hidden",i.textContent=t,o.className="rocky-dialogue-measure",o.textContent=t,o.setAttribute("aria-hidden","true"),a.className="rocky-dialogue-text",a.setAttribute("aria-hidden","true"),e.replaceChildren(i,o,a)})}export function playRockyDialogue(r,c,e){r.querySelectorAll("[data-rocky-dialogue]").forEach(s=>{s.querySelector(".rocky-dialogue-text")?.classList.remove("is-revealing")});const n=c?.querySelector("[data-rocky-dialogue]");if(!n||e.aborted)return;const t=n.querySelector(".rocky-dialogue-text"),o=n.dataset.rockyDialogue,a=window.matchMedia("(prefers-reduced-motion: reduce)"),i=()=>{!a.matches||e.aborted||(t.classList.remove("is-revealing"),t.textContent=o)};if(a.addEventListener("change",i,{signal:e}),a.matches){t.textContent=o;return}t.replaceChildren(...o.split(/\s+/u).filter(Boolean).map((s,y)=>{const l=document.createElement("span");return l.className="rocky-dialogue-word",l.style.setProperty("--word-delay",`${y*200}ms`),l.textContent=s+" ",l})),t.classList.add("is-revealing")}
+import { escapeHtml } from "../../lib/dom.js?v=acff67f262f3c107";
+import { renderMarkdownDocument } from "../../markdown/renderer.js?v=acff67f262f3c107";
+
+export function renderRockyDialogue(step, { titleId, locale = "en" }) {
+  return `<article class="level-lesson-copy ready-lesson-copy markdown-authored-content rocky-dialogue-presentation">
+    <h1 class="visually-hidden" id="${escapeHtml(titleId)}">${escapeHtml(step.title)}</h1>
+    <div class="rocky-dialogue" data-rocky-dialogue><div class="rocky-dialogue-content">${renderMarkdownDocument(step.dialogue.source, { locale })}</div></div>
+    <figure class="rocky-dialogue-illustration">${renderMarkdownDocument(step.dialogue.image, { locale })}</figure>
+  </article>`;
+}
+
+export function mountRockyDialogues(container, signal) {
+  container.querySelectorAll('[data-lesson-presentation="rocky-dialogue"] [data-rocky-dialogue]').forEach((bubble) => {
+    const content = bubble.querySelector(".rocky-dialogue-content");
+    if (!content || signal.aborted) return;
+    const dialogue = content.textContent.trim();
+    const measuredText = document.createElement("span");
+    const visibleText = document.createElement("span");
+    const accessibleText = document.createElement("span");
+    bubble.dataset.rockyDialogue = dialogue;
+    accessibleText.className = "visually-hidden";
+    accessibleText.textContent = dialogue;
+    measuredText.className = "rocky-dialogue-measure";
+    measuredText.textContent = dialogue;
+    measuredText.setAttribute("aria-hidden", "true");
+    visibleText.className = "rocky-dialogue-text";
+    visibleText.setAttribute("aria-hidden", "true");
+    // Both copies share one grid cell and font metrics; the full copy reserves the final height.
+    bubble.replaceChildren(accessibleText, measuredText, visibleText);
+  });
+}
+
+export function playRockyDialogue(container, stage, signal) {
+  container.querySelectorAll("[data-rocky-dialogue]").forEach((bubble) => {
+    bubble
+      .querySelector(".rocky-dialogue-text")
+      ?.classList.remove("is-revealing");
+  });
+  const bubble = stage?.querySelector("[data-rocky-dialogue]");
+  if (!bubble || signal.aborted) return;
+  const text = bubble.querySelector(".rocky-dialogue-text");
+  const dialogue = bubble.dataset.rockyDialogue;
+  const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const finish = () => {
+    if (!preference.matches || signal.aborted) return;
+    text.classList.remove("is-revealing");
+    text.textContent = dialogue;
+  };
+  preference.addEventListener("change", finish, { signal });
+  if (preference.matches) {
+    text.textContent = dialogue;
+    return;
+  }
+  text.replaceChildren(
+    ...dialogue
+      .split(/\s+/u)
+      .filter(Boolean)
+      .map((word, index) => {
+        const span = document.createElement("span");
+        span.className = "rocky-dialogue-word";
+        span.style.setProperty("--word-delay", `${index * 200}ms`);
+        span.textContent = word + " ";
+        return span;
+      }),
+  );
+  text.classList.add("is-revealing");
+}

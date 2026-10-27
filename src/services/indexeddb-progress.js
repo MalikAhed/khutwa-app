@@ -1,1 +1,152 @@
-import{applyProgressUpdate as k,emptyPart as O,mergeImportedPart as N,partKey as l,recalculateQuestionRewards as x}from"../domain/subject-progress.js?v=7388f68cc0f433fd";import{readLegacyProgress as E}from"./session-progress.js?v=7388f68cc0f433fd";const S=d=>[d.ownerId,d.subjectId,d.lessonId,d.partId];export function createIndexedDbProgressAdapter({indexedDB:d=globalThis.indexedDB,legacyStorage:q=null,name:h="tawjihi-subject-progress",onError:P=console.warn}={}){let i=null;const v=()=>i||=new Promise((e,r)=>{if(!d){r(new Error("Progress storage is unavailable."));return}const s=d.open(h,2);let o=!1;s.onupgradeneeded=()=>{const t=s.result;if(t.objectStoreNames.contains("parts")||t.createObjectStore("parts",{keyPath:["ownerId","subjectId","lessonId","partId"]}).createIndex("owner","ownerId"),t.objectStoreNames.contains("imports")||t.createObjectStore("imports"),!t.objectStoreNames.contains("outbox")){const n=t.createObjectStore("outbox",{keyPath:"sequence",autoIncrement:!0});n.createIndex("id","id",{unique:!0}),n.createIndex("owner","ownerId")}},s.onsuccess=()=>{const t=s.result;if(o){t.close();return}t.onversionchange=()=>{t.close(),i=null},e(t)},s.onerror=()=>{i=null,r(s.error)},s.onblocked=()=>{o=!0,i=null,r(new Error("Close other app tabs to finish updating progress storage."))}}),u=async(e,r,s)=>{const o=await v();return new Promise((t,n)=>{const c=o.transaction(e,r);let a;c.oncomplete=()=>t(a),c.onabort=()=>n(c.error||new Error("Progress transaction was interrupted."));try{s(c,p=>{a=p})}catch(p){c.abort(),n(p)}})},A=async e=>{if(await u(["imports"],"readonly",(o,t)=>{const n=o.objectStore("imports").get(e);n.onsuccess=()=>t(n.result)}))return;const s=E(q,e,P);await u(["parts","imports"],"readwrite",o=>{const t=o.objectStore("imports"),n=t.get(e);n.onsuccess=()=>{if(n.result)return;const c=o.objectStore("parts");for(const[a,p]of s){const[g,b,w]=JSON.parse(a),y={ownerId:e,subjectId:g,lessonId:b,partId:w},j=c.get(S(y));j.onsuccess=()=>c.put({...y,record:N(j.result?.record,p)})}t.put(!0,e)}})},I=new Set,m=async e=>{I.has(e)||(await A(e),I.add(e))},f=async e=>(await m(e),u(["parts"],"readonly",(r,s)=>{const o=r.objectStore("parts").index("owner").getAll(e);o.onsuccess=()=>s(x(new Map(o.result.map(t=>[l(t),t.record]))))}));return{read:f,async snapshot(e){return await m(e),u(["parts","outbox"],"readonly",(r,s)=>{const o=r.objectStore("parts").index("owner").getAll(e),t=r.objectStore("outbox").index("owner").getAll(e);t.onsuccess=()=>s({records:x(new Map(o.result.map(n=>[l(n),n.record]))),pending:t.result.map(n=>n.update)})})},async update(e){const r=e.value;return await m(r.ownerId),await u(["parts"],"readwrite",s=>{const o=s.objectStore("parts"),t=o.index("owner").getAll(r.ownerId);t.onsuccess=()=>{const n=t.result,c=n.find(a=>l(a)===l(r))?.record||O();o.put({ownerId:r.ownerId,subjectId:r.subjectId,lessonId:r.lessonId,partId:r.partId,record:k(c,e,new Map(n.map(a=>[l(a),a.record])))})}}),f(r.ownerId)},async enqueue(e){if(!e.id)throw new TypeError("A pending progress update requires an id.");await u(["outbox"],"readwrite",r=>{const s=r.objectStore("outbox"),o=s.index("id").get(e.id);o.onsuccess=()=>{o.result||s.add({id:e.id,ownerId:e.value.ownerId,update:e})}})},pending(e){return u(["outbox"],"readonly",(r,s)=>{const o=r.objectStore("outbox").index("owner").getAll(e);o.onsuccess=()=>s(o.result.map(t=>t.update))})},importAcknowledged(e){return u(["imports"],"readonly",(r,s)=>{const o=r.objectStore("imports").get(`server:${e}`);o.onsuccess=()=>s(!!o.result)})},acknowledgeImport(e){return u(["imports"],"readwrite",r=>r.objectStore("imports").put(!0,`server:${e}`))},confirm(e,r,s=null){return u(["parts","outbox"],"readwrite",o=>{const t=o.objectStore("parts");for(const[n,c]of r){const[a,p,g]=JSON.parse(n),b={ownerId:e,subjectId:a,lessonId:p,partId:g},w=t.get(S(b));w.onsuccess=()=>{(w.result?.record.revision||0)<=(c.revision||0)&&t.put({...b,record:c})}}if(s){const n=o.objectStore("outbox"),c=n.index("id").getKey(s);c.onsuccess=()=>{c.result!==void 0&&n.delete(c.result)}}})},async close(){i&&(await i).close(),i=null}}}
+// @ts-check
+import { applyProgressUpdate, emptyPart, mergeImportedPart, partKey, recalculateQuestionRewards } from "../domain/subject-progress.js?v=acff67f262f3c107";
+import { readLegacyProgress } from "./session-progress.js?v=acff67f262f3c107";
+
+/** @typedef {import('../domain/subject-progress.js').ProgressKey} ProgressKey */
+/** @typedef {import('../domain/subject-progress.js').PartRecord} PartRecord */
+/** @typedef {import('../domain/subject-progress.js').ProgressUpdate} ProgressUpdate */
+/** @typedef {import('./subject-progress-store.js').ProgressAdapter & {
+ * enqueue:(update:ProgressUpdate)=>Promise<void>, pending:(ownerId:string)=>Promise<ProgressUpdate[]>,
+ * snapshot:(ownerId:string)=>Promise<{records:Map<string,PartRecord>, pending:ProgressUpdate[]}>,
+ * importAcknowledged:(ownerId:string)=>Promise<boolean>, acknowledgeImport:(ownerId:string)=>Promise<void>,
+ * confirm:(ownerId:string, records:Map<string,PartRecord>, updateId?:string|null)=>Promise<void>
+ * }} IndexedProgressAdapter */
+
+/** @param {ProgressKey} key */
+const identity = (key) => [key.ownerId, key.subjectId, key.lessonId, key.partId];
+/** @param {{indexedDB?:IDBFactory, legacyStorage?:Pick<Storage,'getItem'>|null, name?:string, onError?:(error:unknown, ownerId:string)=>void}} [options] @returns {IndexedProgressAdapter} */
+export function createIndexedDbProgressAdapter({ indexedDB = globalThis.indexedDB, legacyStorage = null, name = "tawjihi-subject-progress", onError = console.warn } = {}) {
+  /** @type {Promise<IDBDatabase>|null} */
+  let connection = null;
+  const open = () => connection ||= new Promise((resolve, reject) => {
+    if (!indexedDB) { reject(new Error("Progress storage is unavailable.")); return; }
+    const request = indexedDB.open(name, 2);
+    let abandoned = false;
+    request.onupgradeneeded = () => {
+      const db = request.result;
+      if (!db.objectStoreNames.contains("parts")) db.createObjectStore("parts", { keyPath:["ownerId", "subjectId", "lessonId", "partId"] }).createIndex("owner", "ownerId");
+      if (!db.objectStoreNames.contains("imports")) db.createObjectStore("imports");
+      if (!db.objectStoreNames.contains("outbox")) {
+        const outbox = db.createObjectStore("outbox", {keyPath:"sequence",autoIncrement:true});
+        outbox.createIndex("id","id",{unique:true}); outbox.createIndex("owner","ownerId");
+      }
+    };
+    request.onsuccess = () => {
+      const db = request.result;
+      if (abandoned) { db.close(); return; }
+      db.onversionchange = () => { db.close(); connection = null; };
+      resolve(db);
+    };
+    request.onerror = () => { connection = null; reject(request.error); };
+    request.onblocked = () => { abandoned = true; connection = null; reject(new Error("Close other app tabs to finish updating progress storage.")); };
+  });
+  /** @template [Result=void] @param {string[]} stores @param {IDBTransactionMode} mode @param {(tx:IDBTransaction, done:(value:Result)=>void)=>void} run @returns {Promise<Result>} */
+  const transaction = async (stores, mode, run) => {
+    const db = await open();
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction(stores, mode);
+      /** @type {Result} */
+      let result;
+      tx.oncomplete = () => resolve(result);
+      tx.onabort = () => reject(tx.error || new Error("Progress transaction was interrupted."));
+      try { run(tx, (value) => { result = value; }); }
+      catch (error) { tx.abort(); reject(error); }
+    });
+  };
+  /** @param {string} ownerId */
+  const importOwner = async (ownerId) => {
+    /** @type {boolean|undefined} */
+    const alreadyImported = await transaction(["imports"], "readonly", (tx, done) => {
+      const request=tx.objectStore("imports").get(ownerId); request.onsuccess=()=>done(request.result);
+    });
+    if (alreadyImported) return;
+    // Reading the source can fail; never mark such an import complete.
+    const records = readLegacyProgress(legacyStorage, ownerId, onError);
+    await transaction(["parts", "imports"], "readwrite", (tx) => {
+      const markers = tx.objectStore("imports");
+      const request = markers.get(ownerId);
+      request.onsuccess = () => {
+        if (request.result) return;
+        const parts = tx.objectStore("parts");
+        for (const [key, record] of records) {
+          const [subjectId, lessonId, partId] = JSON.parse(key);
+          const ids = { ownerId, subjectId, lessonId, partId };
+          const current = parts.get(identity(ids));
+          current.onsuccess = () => parts.put({ ...ids, record:mergeImportedPart(current.result?.record, record) });
+        }
+        markers.put(true, ownerId);
+      };
+    });
+  };
+  /** @type {Set<string>} */
+  const imported = new Set();
+  /** @param {string} ownerId */
+  const ensureImport = async (ownerId) => { if (!imported.has(ownerId)) { await importOwner(ownerId); imported.add(ownerId); } };
+  /** @param {string} ownerId @returns {Promise<Map<string,PartRecord>>} */
+  const read = async (ownerId) => {
+    await ensureImport(ownerId);
+    return transaction(["parts"], "readonly", (tx, done) => {
+      const request = tx.objectStore("parts").index("owner").getAll(ownerId);
+      request.onsuccess = () => done(recalculateQuestionRewards(new Map(request.result.map((row) => [partKey(row), row.record]))));
+    });
+  };
+  return {
+    read,
+    async snapshot(ownerId) {
+      await ensureImport(ownerId);
+      // Confirmation replaces parts and removes outbox entries atomically.
+      // Read both together so a concurrent acknowledgement cannot hide an answer.
+      return transaction(["parts", "outbox"], "readonly", (tx, done) => {
+        const parts = tx.objectStore("parts").index("owner").getAll(ownerId);
+        const outbox = tx.objectStore("outbox").index("owner").getAll(ownerId);
+        outbox.onsuccess = () => done({
+          records:recalculateQuestionRewards(new Map(parts.result.map(row => [partKey(row), row.record]))),
+          pending:outbox.result.map(row => row.update),
+        });
+      });
+    },
+    async update(update) {
+      const key = update.value;
+      await ensureImport(key.ownerId);
+      await transaction(["parts"], "readwrite", (tx) => {
+        const parts = tx.objectStore("parts");
+        const request = parts.index("owner").getAll(key.ownerId);
+        request.onsuccess = () => {
+          const rows = request.result;
+          const previous = rows.find(row => partKey(row) === partKey(key))?.record || emptyPart();
+          parts.put({ ownerId:key.ownerId, subjectId:key.subjectId, lessonId:key.lessonId, partId:key.partId,
+            record:applyProgressUpdate(previous, update, new Map(rows.map(row => [partKey(row), row.record]))) });
+        };
+      });
+      return read(key.ownerId);
+    },
+    async enqueue(update) {
+      if (!update.id) throw new TypeError("A pending progress update requires an id.");
+      await transaction(["outbox"],"readwrite",tx=>{
+        const outbox=tx.objectStore("outbox");const request=outbox.index("id").get(/** @type {string} */ (update.id));
+        request.onsuccess=()=>{if(!request.result)outbox.add({id:update.id,ownerId:update.value.ownerId,update});};
+      });
+    },
+    pending(ownerId) {
+      return transaction(["outbox"],"readonly",(tx,done)=>{
+        const request=tx.objectStore("outbox").index("owner").getAll(ownerId);request.onsuccess=()=>done(request.result.map(row=>row.update));
+      });
+    },
+    importAcknowledged(ownerId) {
+      return transaction(["imports"],"readonly",(tx,done)=>{const request=tx.objectStore("imports").get(`server:${ownerId}`);request.onsuccess=()=>done(Boolean(request.result));});
+    },
+    acknowledgeImport(ownerId) { return transaction(["imports"],"readwrite",tx=>tx.objectStore("imports").put(true,`server:${ownerId}`)); },
+    confirm(ownerId, records, updateId = null) {
+      return transaction(["parts","outbox"],"readwrite",tx=>{
+        const parts=tx.objectStore("parts");
+        for(const [key,record] of records) {
+          const [subjectId,lessonId,partId]=JSON.parse(key);const ids={ownerId,subjectId,lessonId,partId};
+          const current=parts.get(identity(ids));
+          current.onsuccess=()=>{if((current.result?.record.revision||0)<=(record.revision||0))parts.put({...ids,record});};
+        }
+        if(updateId) {const outbox=tx.objectStore("outbox");const request=outbox.index("id").getKey(updateId);request.onsuccess=()=>{if(request.result!==undefined)outbox.delete(request.result);};}
+      });
+    },
+    async close() { if (connection) (await connection).close(); connection = null; },
+  };
+}

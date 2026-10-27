@@ -1,1 +1,137 @@
-import{replaceQuestionShell as O}from"./question-shell.js?v=7388f68cc0f433fd";import{escapeHtml as H}from"../../lib/dom.js?v=7388f68cc0f433fd";import{launchCelebration as I}from"../celebration.js?v=7388f68cc0f433fd";import{getLessonUiCopy as U}from"../lesson-ui-copy.js?v=7388f68cc0f433fd";import{renderQuestionLayout as W}from"./question-layout.js?v=7388f68cc0f433fd";import{mountQuestionRating as Q,renderQuestionRatingControls as B}from"../question-rating.js?v=7388f68cc0f433fd";import{highlightEnglishText as M}from"./english-text.js?v=7388f68cc0f433fd";import{mountSummaryScans as _}from"./summary-scans.js?v=7388f68cc0f433fd";import{mountTemplateScrollIndicator as $}from"../template-shell.js?v=7388f68cc0f433fd";import{mountMarkdownFeatures as j}from"../../markdown/renderer.js?v=7388f68cc0f433fd";const h=Object.freeze({CHECK:"check",RETRY:"retry",CONTINUE:"continue"}),N=!1;function z(t){I({className:"ui-lab-pinata",signal:t})}function C(t,s,u,d,m=t.disabled){t.dataset.actionState=u,t.disabled=m,s.textContent=d}function D(t,s){const u=s?"m10.5 20.8 6.2 6.2 13-14":"m12.5 12.5 15 15m0-15-15 15",d=s?"correct":"wrong",m=s?t.excellent:t.wrongAnswer;return`<span class="level-result-icon level-result-icon--${d}"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="${u}"/></svg></span><span class="level-result-copy"><strong>${H(m)}</strong></span>`}export function renderQuestion(t,{definition:s,onBack:u,onContinue:d,onAnswer:m,beforeAnswer:T,locale:a="en"}={}){if(s?.type!=="mcq"||!s.content)throw new TypeError("A published multiple-choice question is required.");const E=new AbortController,{signal:l}=E,b=U(a),w=s.content;t.classList.add("ui-lab-template-open","ui-lab-mcq-open"),O(t,W({...s,content:w},{locale:a})),a==="ar"&&M(t.querySelector(".ui-lab-mcq")),_(t.querySelector(".ui-lab-mcq"),{titleId:s.id||"mcq",locale:a,signal:l,exam:!0}),j(t.querySelector(".ui-lab-mcq"),{locale:a,signal:l,scrollSurface:t.querySelector(".level-layout-task")});const x=()=>d?.();t.querySelector("[data-template-back]").addEventListener("click",()=>u?.(),{signal:l}),$(t,{signal:l});const R=()=>{E.abort(),document.querySelector(".ui-lab-pinata")?.remove(),t.classList.remove("ui-lab-template-open","ui-lab-mcq-open")},f=[...t.querySelectorAll("[data-ui-lab-answer]")],k=r=>[...r.querySelectorAll(".lesson-inline-scroll")].filter(e=>e.scrollWidth>e.clientWidth+1),S=()=>f.forEach(r=>{k(r).length?(r.setAttribute("aria-keyshortcuts","ArrowLeft ArrowRight"),r.setAttribute("aria-description",a==="ar"?"استخدم السهمين الأيمن والأيسر لقراءة بقية الإجابة.":"Use the Left and Right arrow keys to read the rest of the answer.")):(r.removeAttribute("aria-keyshortcuts"),r.removeAttribute("aria-description"))}),y=new ResizeObserver(S);f.forEach(r=>{y.observe(r),r.querySelectorAll(".lesson-inline-scroll, .lesson-inline-scroll > :is(math,img)").forEach(e=>y.observe(e)),r.addEventListener("keydown",e=>{if(e.defaultPrevented||e.isComposing||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||!["ArrowLeft","ArrowRight"].includes(e.key))return;const c=e.key==="ArrowLeft",v=k(r),L=(c?v.reverse():v).find(i=>{const q=getComputedStyle(i).direction==="rtl";return c?(q?i.scrollWidth-i.clientWidth+i.scrollLeft:i.scrollLeft)>1:(q?-i.scrollLeft:i.scrollWidth-i.clientWidth-i.scrollLeft)>1});L&&(e.preventDefault(),L.scrollBy({left:(c?-1:1)*Math.max(60,L.clientWidth*.6),behavior:"instant"}))},{signal:l})}),S(),l.addEventListener("abort",()=>y.disconnect(),{once:!0});const n=t.querySelector("[data-ui-lab-check]"),o=t.querySelector("[data-ui-lab-feedback]"),K=o.closest(".level-layout-actions"),g=n.querySelector("[data-ui-lab-check-label]");let p=null;const A=a==="ar"?"تحقّق":"CHECK";return C(n,g,h.CHECK,A,!0),o.insertAdjacentHTML("afterend",B(a)),Q(K,l),f.forEach(r=>r.addEventListener("click",()=>{n.dataset.actionState!==h.CONTINUE&&(p=r,f.forEach(e=>{e.classList.toggle("is-selected",e===r),e.classList.remove("is-correct","is-wrong"),e.setAttribute("aria-pressed",String(e===r))}),o.className="level-feedback",o.textContent="",C(n,g,h.CHECK,A,!1))},{signal:l})),n.addEventListener("click",()=>{if(n.dataset.actionState===h.CONTINUE){x();return}if(!p)return;const r=T?.();if(r){o.className="level-feedback is-blocked",o.textContent=r,o.setAttribute("role","status");return}const e=p.dataset.correct==="true";m?.({correct:e}),f.forEach(c=>{c.setAttribute("aria-disabled","true"),c.classList.toggle("is-correct",c.dataset.correct==="true"),c.classList.toggle("is-wrong",c===p&&!e)}),o.className=`level-feedback ${e?"is-correct":"is-wrong"}`,o.classList.toggle("level-feedback--quiet",!N),N?o.innerHTML=D(b,e):o.textContent=e?b.excellent:b.wrongAnswer,C(n,g,h.CONTINUE,b.continue),e&&z(l)},{signal:l}),R}
+import { replaceQuestionShell } from "./question-shell.js?v=acff67f262f3c107";
+import { escapeHtml } from "../../lib/dom.js?v=acff67f262f3c107";
+import { launchCelebration } from "../celebration.js?v=acff67f262f3c107";
+import { getLessonUiCopy } from "../lesson-ui-copy.js?v=acff67f262f3c107";
+import { renderQuestionLayout } from "./question-layout.js?v=acff67f262f3c107";
+import { mountQuestionRating, renderQuestionRatingControls } from "../question-rating.js?v=acff67f262f3c107";
+import { highlightEnglishText } from "./english-text.js?v=acff67f262f3c107";
+import { mountSummaryScans } from "./summary-scans.js?v=acff67f262f3c107";
+import { mountTemplateScrollIndicator } from "../template-shell.js?v=acff67f262f3c107";
+import { mountMarkdownFeatures } from "../../markdown/renderer.js?v=acff67f262f3c107";
+
+const CHECK_ACTION = Object.freeze({ CHECK:"check", RETRY:"retry", CONTINUE:"continue" });
+const QUESTION_RESULT_LABELS_ENABLED = false;
+
+function triggerPinata(signal) {
+  launchCelebration({ className:"ui-lab-pinata", signal });
+}
+
+function setCheckAction(button, label, state, text, disabled = button.disabled) {
+  button.dataset.actionState = state;
+  button.disabled = disabled;
+  label.textContent = text;
+}
+
+function compactResult(copy, correct) {
+  const path = correct ? "m10.5 20.8 6.2 6.2 13-14" : "m12.5 12.5 15 15m0-15-15 15";
+  const modifier = correct ? "correct" : "wrong";
+  const label = correct ? copy.excellent : copy.wrongAnswer;
+  return `<span class="level-result-icon level-result-icon--${modifier}"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="${path}"/></svg></span><span class="level-result-copy"><strong>${escapeHtml(label)}</strong></span>`;
+}
+
+/** Mount the published multiple-choice card inside the lesson journey. */
+export function renderQuestion(container, { definition, onBack, onContinue, onAnswer, beforeAnswer, locale = "en" } = {}) {
+  if (definition?.type !== "mcq" || !definition.content) throw new TypeError("A published multiple-choice question is required.");
+  const controller = new AbortController();
+  const { signal } = controller;
+  const copy = getLessonUiCopy(locale);
+  const config = definition.content;
+  container.classList.add("ui-lab-template-open", "ui-lab-mcq-open");
+  replaceQuestionShell(container,renderQuestionLayout({ ...definition, content:config }, { locale }));
+  if (locale === "ar") highlightEnglishText(container.querySelector(".ui-lab-mcq"));
+  mountSummaryScans(container.querySelector(".ui-lab-mcq"), { titleId:definition.id || "mcq", locale, signal, exam:true });
+  mountMarkdownFeatures(container.querySelector(".ui-lab-mcq"), { locale, signal, scrollSurface:container.querySelector(".level-layout-task") });
+  const closeTemplate = () => onContinue?.();
+  container.querySelector("[data-template-back]").addEventListener("click", () => onBack?.(), { signal });
+  mountTemplateScrollIndicator(container, { signal });
+  const destroy = () => {
+    controller.abort();
+    document.querySelector(".ui-lab-pinata")?.remove();
+    container.classList.remove("ui-lab-template-open", "ui-lab-mcq-open");
+  };
+
+  const answers = [...container.querySelectorAll("[data-ui-lab-answer]")];
+  const overflowingContent = answer => [...answer.querySelectorAll(".lesson-inline-scroll")]
+    .filter(scroll => scroll.scrollWidth > scroll.clientWidth + 1);
+  const updateReadingShortcuts = () => answers.forEach(answer => {
+    if (overflowingContent(answer).length) {
+      answer.setAttribute("aria-keyshortcuts", "ArrowLeft ArrowRight");
+      answer.setAttribute("aria-description", locale === "ar"
+        ? "استخدم السهمين الأيمن والأيسر لقراءة بقية الإجابة."
+        : "Use the Left and Right arrow keys to read the rest of the answer.");
+    } else {
+      answer.removeAttribute("aria-keyshortcuts");
+      answer.removeAttribute("aria-description");
+    }
+  });
+  const readingObserver = new ResizeObserver(updateReadingShortcuts);
+  answers.forEach(answer => {
+    readingObserver.observe(answer);
+    answer.querySelectorAll(".lesson-inline-scroll, .lesson-inline-scroll > :is(math,img)").forEach(node => readingObserver.observe(node));
+    answer.addEventListener("keydown", event => {
+      if (event.defaultPrevented || event.isComposing || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || !["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+      const left = event.key === "ArrowLeft";
+      const regions = overflowingContent(answer);
+      const scroll = (left ? regions.reverse() : regions).find(region => {
+        const rtl = getComputedStyle(region).direction === "rtl";
+        return left ? (rtl ? region.scrollWidth - region.clientWidth + region.scrollLeft : region.scrollLeft) > 1
+          : (rtl ? -region.scrollLeft : region.scrollWidth - region.clientWidth - region.scrollLeft) > 1;
+      });
+      if (!scroll) return;
+      event.preventDefault();
+      scroll.scrollBy({ left:(left ? -1 : 1) * Math.max(60, scroll.clientWidth * .6), behavior:"instant" });
+    }, { signal });
+  });
+  updateReadingShortcuts();
+  signal.addEventListener("abort", () => readingObserver.disconnect(), { once:true });
+  const checkButton = container.querySelector("[data-ui-lab-check]");
+  const feedback = container.querySelector("[data-ui-lab-feedback]");
+  const footer = feedback.closest(".level-layout-actions");
+  const checkLabel = checkButton.querySelector("[data-ui-lab-check-label]");
+  let selectedAnswer = null;
+  const checkText = locale === "ar" ? "تحقّق" : "CHECK";
+  setCheckAction(checkButton, checkLabel, CHECK_ACTION.CHECK, checkText, true);
+
+  feedback.insertAdjacentHTML("afterend",renderQuestionRatingControls(locale));
+  mountQuestionRating(footer, signal);
+
+  answers.forEach((answer) => answer.addEventListener("click", () => {
+    if (checkButton.dataset.actionState === CHECK_ACTION.CONTINUE) return;
+    selectedAnswer = answer;
+    answers.forEach((option) => {
+      option.classList.toggle("is-selected", option === answer);
+      option.classList.remove("is-correct", "is-wrong");
+      option.setAttribute("aria-pressed", String(option === answer));
+    });
+    feedback.className = "level-feedback";
+    feedback.textContent = "";
+    setCheckAction(checkButton, checkLabel, CHECK_ACTION.CHECK, checkText, false);
+  }, { signal }));
+
+  checkButton.addEventListener("click", () => {
+    if (checkButton.dataset.actionState === CHECK_ACTION.CONTINUE) { closeTemplate(); return; }
+    if (!selectedAnswer) return;
+    const blocked = beforeAnswer?.();
+    if (blocked) {
+      feedback.className = "level-feedback is-blocked";
+      feedback.textContent = blocked;
+      feedback.setAttribute("role", "status");
+      return;
+    }
+    const isCorrect = selectedAnswer.dataset.correct === "true";
+    onAnswer?.({ correct:isCorrect });
+    answers.forEach((answer) => {
+      answer.setAttribute("aria-disabled", "true");
+      answer.classList.toggle("is-correct", answer.dataset.correct === "true");
+      answer.classList.toggle("is-wrong", answer === selectedAnswer && !isCorrect);
+    });
+    feedback.className = `level-feedback ${isCorrect ? "is-correct" : "is-wrong"}`;
+    feedback.classList.toggle("level-feedback--quiet",!QUESTION_RESULT_LABELS_ENABLED);
+    if (QUESTION_RESULT_LABELS_ENABLED) feedback.innerHTML = compactResult(copy, isCorrect);
+    else feedback.textContent = isCorrect ? copy.excellent : copy.wrongAnswer;
+    setCheckAction(checkButton, checkLabel, CHECK_ACTION.CONTINUE, copy.continue);
+    if (isCorrect) triggerPinata(signal);
+  }, { signal });
+
+  return destroy;
+}

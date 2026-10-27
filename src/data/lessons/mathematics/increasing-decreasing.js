@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+
+export const lessonSource = `:::exam-question
 id: math-book-p037-ex1
 title: الكتاب، ص ٣٥ · مثال ١
 question: الاقترانات المتزايدة والمتناقصة
@@ -1533,4 +1535,16 @@ solution:
 لـ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>&lt;</mo><mi mathvariant="normal">س</mi></mrow><mo>&lt;</mo><mn dir="ltr">١</mn></mrow></math>\` يكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mo>&lt;</mo><mn dir="ltr">١</mn></mrow></math>\`؛ فالبسط موجب، والمقام مربع موجب.
 
 **إذن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\` متزايدة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">١</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`، ولا توجد فترة تناقص ضمن المجال.**
-:::`;export default m({status:"published",language:"ar",title:"الاقترانات المتزايدة والمتناقصة",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة الاقترانات المتزايدة والمتناقصة من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"29 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "الاقترانات المتزايدة والمتناقصة",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة الاقترانات المتزايدة والمتناقصة من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "29 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

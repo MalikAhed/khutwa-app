@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js?v=acff67f262f3c107";
+
+export const lessonSource = `
 :::mcq
 id: physics-book-2024-p028-review-1-1
 title: أسئلة الفصل — س1/1 — الكتاب، صفحة PDF 28
@@ -5614,4 +5616,16 @@ solution:
 \`\`\`
 
 :::
-`;export default m({status:"published",language:"ar",title:"التيار الكهربائي والمقاومة",summary:"أسئلة الكتاب بترتيب المصدر، تليها أسئلة إضافية مع الاحتفاظ باختلاف المعطيات.",outcome:"مراجعة التيار الكهربائي والمقاومة من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"102 سؤالًا",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "التيار الكهربائي والمقاومة",
+  "summary": "أسئلة الكتاب بترتيب المصدر، تليها أسئلة إضافية مع الاحتفاظ باختلاف المعطيات.",
+  "outcome": "مراجعة التيار الكهربائي والمقاومة من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "102 سؤالًا",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);
