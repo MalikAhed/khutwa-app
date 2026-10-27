@@ -14,6 +14,8 @@ Public lesson content downloads in the background and is kept in browser cache w
 
 ## Hosting
 
+Pushes to `main` publish this verified runtime to the existing `khutwaa` Cloudflare Pages project through `.github/workflows/cloudflare-pages.yml`. The workflow uses repository secrets for its deployment credential. Keep this workflow when replacing the runtime with a newer package. Student progress stays in the browser's separate storage on the same site address.
+
 GitHub Pages serves `main` directly from the repository root. `.nojekyll` ensures every runtime file, including browser dependencies, is published. No npm installation or build step is needed. Runtime URLs are versioned per release; an installed app checks for updates and refreshes between study sessions after progress has saved.
 
 To serve a downloaded copy, run `python3 -m http.server 8080` in this directory and open `http://localhost:8080/`. Use an HTTP server; opening `index.html` as a local file cannot load the JavaScript modules.

@@ -1,0 +1,35 @@
+name: Publish Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+concurrency:
+  group: cloudflare-pages-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the published runtime
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Prepare the website files
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/khutwa-site"
+          git archive HEAD | tar -x --exclude=.github --exclude=README.md -C "$RUNNER_TEMP/khutwa-site"
+      - name: Publish to the existing Cloudflare site
+        uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          wranglerVersion: '4.154.0'
+          command: pages deploy ${{ runner.temp }}/khutwa-site --project-name=khutwaa --branch=main --commit-dirty=false
