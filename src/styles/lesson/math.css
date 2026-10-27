@@ -44,7 +44,9 @@
 .lesson-math .lesson-math-box { border:1px solid currentColor; padding:0.1em 0.15em; }
 /* RTL integral glyphs lean right at the bottom; attach the lower limit there. */
 .lesson-math .lesson-math-integral-lower { transform:translateX(1.15em); }
-/* Amiri supplies text and numbers; the math font supplies stretching glyphs. */
+/* Safari requires the radical in the root container's primary font. The math
+   font owns roots/stretching glyphs; tokens keep their Arabic text/digit fonts. */
+.lesson-math :is(msqrt, mroot),
 .lesson-math mo:is([stretchy="true"], [largeop="true"]) {
   font-family:"Lesson Math", "Amiri", serif;
 }
