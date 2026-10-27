@@ -281,7 +281,7 @@ await withBrowserPage(async ({ base, send, evaluate:runEvaluation, waitFor }) =>
         motion:getComputedStyle(face.querySelector('[data-content-scroll-left] svg')).animationName};
     })()`);
     assert.ok(Math.abs(leftFade.height-leftFade.formulaHeight)<1,"side fade spans the full formula card height, including padding");
-    assert.ok(Math.abs(leftFade.top-leftFade.formulaTop)<1 && Math.abs(leftFade.left-leftFade.formulaLeft)<1,"side fade follows the outer formula card edge");
+    assert.ok(Math.abs(leftFade.top-leftFade.formulaTop)<1 && Math.abs(leftFade.left-leftFade.formulaLeft)<1,`side fade follows the outer formula card edge: ${JSON.stringify(leftFade)}`);
     assert.equal(leftFade.motion,"none","reduced motion keeps the side arrow still");
     const rightFade=await evaluate(`(() => {
       const card=document.querySelectorAll('[data-exam-solution] .lesson-math-sample')[1];

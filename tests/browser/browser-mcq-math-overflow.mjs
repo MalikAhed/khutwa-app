@@ -103,7 +103,8 @@ export async function verifyMcqMathOverflow(browser, engine, base) {
       for (let press = 0; press < 24; press += 1) {
         const position = await region.evaluate(node => ({ left:node.scrollLeft, max:node.scrollWidth - node.clientWidth }));
         reading.positions.push(position);
-        assert.equal(await answer.evaluate(node => node === document.activeElement), true, `${engine}/${name}: answer retains keyboard focus`);
+        const focused = await answer.evaluate(node => node === document.activeElement);
+        assert.equal(focused, true, `${engine}/${name}: answer retains keyboard focus${focused ? "" : ": " + await page.evaluate(() => document.activeElement?.outerHTML.slice(0, 1200))}`);
         if (Math.abs(position.left) >= position.max - 1) break;
         await page.keyboard.press(rtl ? "ArrowLeft" : "ArrowRight");
         await page.waitForFunction(({ answerIndex, regionIndex, previous }) => {
