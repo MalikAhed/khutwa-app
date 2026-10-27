@@ -13,30 +13,41 @@ const runtimeExtensions = new Set([".js", ".mjs", ".css", ".html", ".json", ".pn
 const compressBrotli = promisify(brotliCompress);
 const compressGzip = promisify(gzip);
 
-async function includeRuntimeFile(source) {
+async function includeRuntimeFile(source, lessonImages) {
   if (source === path.join(root, "src/server")) return false;
   if ((await stat(source)).isDirectory()) return true;
   const name = path.basename(source);
+  if (source.startsWith(path.join(root, "assets/lessons") + path.sep)
+    && /\.(?:svg|webp|png|jpe?g)$/.test(name) && !lessonImages.has(name)) return false;
   // Coverage ledgers and crop provenance are authoring evidence, not runtime data.
   if (path.extname(source) === ".json" && source !== path.join(root, "assets/app/manifest.json")) return false;
-  if ([".nojekyll", "OFL.txt", "SOURCES.md"].includes(name)) return true;
+  if ([".nojekyll", "SOURCES.md"].includes(name) || /(?:^|-)OFL\.txt$/.test(name)) return true;
   return runtimeExtensions.has(path.extname(name)) && !name.endsWith(".scene.json");
 }
 
 export async function packageApp({ server = false } = {}) {
+  const contentManifest = await createContentManifest(root);
+  const lessonImages = new Set([...contentManifest.onboarding, ...contentManifest.helpers,
+    ...contentManifest.lessons.flatMap(lesson => [...lesson.first, ...lesson.files])].map(file => path.basename(file)));
+  // Retain source references too: hidden/legacy lessons may be outside the download catalog.
+  const sourceFiles = ["index.html", ...(await readdir(path.join(root, "src"), { recursive:true }))
+    .filter(file => /\.(?:js|mjs|css|html)$/.test(file)).map(file => `src/${file}`)];
+  for (const file of sourceFiles) {
+    const source = await readFile(path.join(root, file), "utf8");
+    for (const [name] of source.matchAll(/[a-zA-Z0-9_-]+\.(?:svg|webp|png|jpe?g)\b/g)) lessonImages.add(name);
+  }
   const outputDirectory = server ? path.join(root, "_server") : previewDirectory;
   await rm(outputDirectory, { recursive:true, force:true });
   await mkdir(outputDirectory, { recursive:true });
   for (const entry of ["src", "assets", ".nojekyll"]) {
     await cp(path.join(root, entry), path.join(outputDirectory, entry), {
-      recursive:true, filter:includeRuntimeFile,
+      recursive:true, filter:source => includeRuntimeFile(source, lessonImages),
     });
   }
   const mode = server ? "http" : "fixture";
   let html = (await readFile(path.join(root, "index.html"), "utf8"))
     .replace('<meta name="learn-account-mode" content="http" />', `<meta name="learn-account-mode" content="${mode}" />`);
   if (!html.includes(`name="learn-account-mode" content="${mode}"`)) throw new Error(`Package requires explicit ${mode} account mode.`);
-  const contentManifest = await createContentManifest(root);
   html = await versionPreview(outputDirectory, html, contentManifest.version);
   const { version } = JSON.parse(await readFile(path.join(outputDirectory, "release.json"), "utf8"));
   await writeFile(path.join(outputDirectory, "content-manifest.json"), JSON.stringify(versionContentManifest(contentManifest, version)));

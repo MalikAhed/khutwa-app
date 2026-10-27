@@ -1,71 +1,64 @@
 # Development and deployment
 
-## One active project
+## Sources of truth
 
 | Item | Value |
 | --- | --- |
-| Main source repo | `MalikAhed/khutwa-app`, branch `main` |
+| Source | `MalikAhed/khutwa-app`, branch `main` |
 | Local checkout | `/home/malikabuallatta/experiment-app/khutwa-app` |
-| Production URL | `https://khutwaa.pages.dev` |
+| Production | `https://khutwaa.pages.dev` |
 | Pages project / account | `khutwaa` / `f6200f8f16ec1abc5f7fb7768f2ffd7f` |
-| Deploy owner | `.github/workflows/cloudflare-pages.yml` |
-| Real backend | `khutwa-app` Worker, through the Pages `BACKEND` service binding |
-| Preview backend | `khutwa-app-staging`, through preview `BACKEND` |
+| Deployment owner | `.github/workflows/cloudflare-pages.yml`, explicitly dispatched |
+| Account backend | `khutwa-app` Worker; preview uses `khutwa-app-staging` |
 
-The old `tawjihi-learning-app` GitHub repository and sibling `learn/` checkout are history/reference, not deployment targets. Prefer archiving the old repo after all needed history/work is retained; do not delete it or its local data as routine cleanup.
+The sibling `learn/` contains unpublished legacy work and local data. Preserve it; do not reset, delete or deploy it. Recovery snapshots under ignored `.production/` and the local `production-baseline-2026-10-27` tag are historical, not current release targets.
 
-The migration baseline is commit `845f57932c58cbb7933b156cddaaa3560ccb1936`, runtime release `acff67f262f3c107`, Cloudflare deployment `07642155-26ff-4fa5-9b05-461a627adcec`. The local tag `production-baseline-2026-10-27` retains the published artifact. `.production/` holds ignored recovery evidence. Baseline values are historical, not hardcoded targets for future deployments.
+## Local development
 
-## Daily development
+Use Node 24. Run `npm ci` only initially or after the lockfile changes, then `npm run dev` at `http://127.0.0.1:4173`. Use `npm run map -- <topic>` to find owners and focused tests. `npm run check` parses changed JS and checks existing types; `CHECK_BASE=<commit>` changes the comparison baseline. `npm run check:syntax -- --all` parses every module without executing it.
 
-Use Node 24, run `npm ci` once, then `npm run dev` at port 4173. Dependencies need reinstalling only when the lockfile changes. `npm run map -- <topic>` identifies the owner and focused tests. `npm run check` covers changed JS syntax and types; `CHECK_BASE=<commit>` compares against another commit, and `npm run check:syntax -- --all` explicitly scans every module.
+Default local development proxies real account/API/Students requests to Cloudflare while serving frontend files from disk. Local study/admin actions can affect live data. Localhost redirects to the numeric loopback address to isolate former test-account storage. The proxy uses its own HttpOnly cookie and rejects cross-site requests.
 
-`npm run dev` uses the **real Cloudflare account backend** at `http://127.0.0.1:4173`. This is Malik's explicit preference: local study and admin actions can affect live data. Localhost redirects to the numeric loopback address so browser records from the former test database cannot be imported into real accounts. The proxy uses its own HttpOnly cookie name; it forwards only that session to the fixed Cloudflare origin and rejects cross-site requests. Sign in once with your normal Cloudflare credentials.
+During an outage, an account verified within 30 days can resume study. The ignored `data/cloudflare-offline-profiles.json` stores minimal profiles keyed by session-token hashes, not passwords/raw tokens/student lists. The browser's account-bound outbox retains answers for retry. New sign-in and admin access require internet; sign-out or an online expired-session response removes fallback access.
 
-The frontend stays on disk, so it remains available without internet while the local server is running. The proxy retains only a minimal verified profile keyed by a session-token hash, for up to 30 days, in ignored `data/cloudflare-offline-profiles.json`. It never stores passwords, raw session tokens or student lists. During an outage it can resume that account for study, while the browser's existing account-bound IndexedDB outbox retains answers for retry. New sign-in, admin pages and remote account changes require internet. An online expired-session response or explicit sign-out removes the fallback profile.
+`npm run dev:local` selects the preserved SQLite test database. Automated tests use isolated databases/mocked upstreams, never real accounts. Do not run a fixture server on the real-account preview address in a normal browser profile. Install Chromium only when a relevant browser check needs it.
 
-`npm run dev:local` explicitly uses the preserved SQLite test accounts in `data/accounts.sqlite`. Automated tests must use isolated databases/mocked upstreams, never real accounts. Do not run a test-account server on the real-account preview address in a normal browser profile.
+To inspect the packaged frontend, run `npm run package:cloudflare` then `npm run preview:cloudflare` at port 4174. Ordinary local edits do not need packaging.
 
-To review the exact packaged frontend with the same real account backend:
+## Approval → push; deploy → publish
 
-```sh
-npm run package:cloudflare
-npm run preview:cloudflare
-```
+1. Review the scoped diff and run relevant local checks. Stage explicit approved paths and commit. **Approved/push** authorizes `git push origin main`; it does not publish.
+2. **Deploy/publish** authorizes `npm run deploy`. It requires the correct repo, `main`, and a clean tree, fetches remote main, refuses to overwrite newer work, pushes, explicitly dispatches the full approved commit SHA, and follows that run. `-- --check` performs preflight without pushing or dispatching. Use an isolated checkout when unrelated edits prevent a clean release.
+3. GitHub checks out that commit, parses syntax, checks types and deployment behavior, then builds `_site/` once. It verifies the staging account connection before publishing the same build. Final checks verify production's release, lesson catalog, runtime samples, browser libraries, anonymous account API and protected Students route.
+4. Report the commit and successful run only after live checks pass. Use `npm run deploy:status` or `gh run view <id> --log-failed`; fix the failed step without restarting unrelated suites.
 
-Open `http://127.0.0.1:4174`. These local modes do not deploy or replace the Cloudflare backend. For a focused browser test, install Chromium once with `npx playwright install chromium`; don't reinstall browsers or run the full matrix for every task.
+Pushes never trigger a release, including docs/tests-only pushes. PRs run fast checks. Full Node/content/browser/compatibility suites remain opt-in through `check:full`, `verify:full`, `release:full`. The deployment parses all JS once so earlier approved commits cannot escape syntax checking; it does not download test browsers.
 
-## After Malik says deploy
+Git pushes changed objects. Pages uploads a complete file manifest and [reuses assets already stored by Cloudflare](https://developers.cloudflare.com/api/resources/pages/subresources/assets/methods/check_missing/). Keep coherent module versioning: a frontend change may rewrite import URLs in several modules so browsers cannot mix releases. Do not replace this with partial directory uploads. Docs, skills, tests, tooling, authoring ledgers and private account data are excluded from the package; required licenses remain.
 
-1. Review only the approved changes; preserve unrelated work. Stage explicit files and commit on `main`.
-2. Run `npm run deploy`. It checks the repo, branch and clean tree, fetches remote main, refuses to overwrite newer remote work, pushes, then follows the exact commit's workflow. `npm run deploy -- --check` performs preflight without pushing.
-3. The workflow runs quick checks and builds `_site/` once. It verifies a staging deployment before publishing the same files to production. Final checks use the production URL.
-4. Report success only after the workflow finishes and live checks pass. Use `npm run deploy:status` for status; use `gh run view <id> --log-failed` for a failed step. Do not rerun unrelated suites.
+The old GitHub Pages address already serves the redirect in `docs/index.html` from `main:/docs`. Keep that URL working. Routine Cloudflare deployment does not touch its configuration.
 
-Documentation/test-only pushes skip deployment. Full suites remain optional through `check:full`, `verify:full`, `release:full`. No browser download, cross-browser matrix or repository-size audit runs in the normal release pipeline. Source and developer docs are pushed to GitHub; only packaged runtime assets go to Cloudflare. Git sends changed Git objects; asset versioning remains intact so updated files cannot mix with stale cached modules.
+Lesson images are packaged when referenced by the generated content catalog or application source, including hidden/legacy lessons. Unreferenced source crops remain local authoring evidence. Use literal image filenames in authored content; when changing media/loading or packaging, run the focused static-artifact test in `tests/package-app.test.mjs` to check catalog completeness.
 
-GitHub Pages was a fixture-only mirror. On the first approved deployment, `npm run deploy` sets that repository's Pages source to `main:/docs`; `docs/index.html` redirects the old mirror URL to Cloudflare. Do not serve the editable root as a fixture app or remove the old URL. This is a one-time setting, separate from production deployment.
+## Confirm local and live versions
 
-## Accounts and hosting boundary
+Fetch `origin/main`, inspect `git status --short` and `git rev-parse HEAD origin/main`. A clean checkout may be fast-forwarded with `git pull --ff-only`; never reset unpublished work. Approved GitHub commits may intentionally be ahead of production.
 
-Production HTML must contain `learn-account-mode=http`. The Pages Worker forwards `/api/*` **and `/students`** to the existing `BACKEND`, preserving the request/cookies. Assets come from Pages. `_redirects` maps `/node_modules/*` to `/assets/browser-libraries/:splat` because Wrangler omits node_modules directories.
+When exact production alignment matters, read the Pages project's `canonical_deployment.deployment_trigger.metadata.commit_hash` through the connected Cloudflare tools and compare it with local HEAD. Use an isolated checkout of that SHA if local work must be preserved. For byte-level release checking, package that commit with `npm run package:cloudflare`, then run `npm run verify:live`; it compares the local release/catalog and representative runtime bytes to production. Do not do this rebuild on every small edit.
 
-Real accounts and progress live in the backend Worker, using the `ACCOUNTS` D1 binding and `AUTH` / `STUDENTS` Durable Objects. Frontend publication does not recreate or migrate those stores. Browser progress/outbox storage is separate from the public lesson cache. Never reset accounts to fix a login or cache issue.
+## Backend and access boundaries
 
-`src/server/cloudflare-development.mjs` connects local development to the live API. The remaining `src/server/` code implements the isolated Node/SQLite test backend. The deployed Worker bundle was preserved locally under `.production/backend/` for recovery; its editable original is not yet part of this repo. A backend feature requires locating/reconstructing that source and testing against the staging Worker before an explicit backend deployment. Never run a generic `wrangler deploy` against production from this frontend repo. The duplicate “Workers Builds: khutwa-app” auto-build trigger was disconnected on 2026-10-27; its configuration is saved in `.production/worker-build-trigger.json`. The Worker itself remains deployed. Pages Actions is the sole frontend deployment owner.
+Production HTML uses `learn-account-mode=http`. `.github/cloudflare/worker.mjs` forwards both `/api/*` and `/students` to `BACKEND`, preserving requests and access decisions. `_redirects` preserves `/node_modules/*` URLs through `/assets/browser-libraries/*`. Accounts/progress live in the existing Worker with D1 (`ACCOUNTS`) and Durable Objects (`AUTH`, `STUDENTS`); frontend publication never recreates them.
 
-## Access is already set up
+`src/server/cloudflare-development.mjs` connects local work to the live API. Other `src/server/` modules implement the isolated Node/SQLite backend, **not the deployed Worker source**. The Worker bundle is preserved under ignored `.production/backend/`; its editable original is not yet in this repo. Backend changes require recovering that source, staging verification and an explicit backend deployment. Never run generic `wrangler deploy` against production from this frontend repo. The obsolete duplicate Workers Builds trigger is disconnected; Pages Actions owns frontend publication.
 
-- Normal deployment uses `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` in GitHub Actions secrets. No token files or manual dashboard login are needed per release.
-- Cloudflare MCP is configured globally as `cloudflare` and was verified connected. Discover its `execute`, `search`, `docs`, `whoami` tools when account inspection is needed. New sessions should reuse it. Only an actual expired/revoked login needs `codex mcp login cloudflare`.
-- GitHub CLI is authenticated. Use `gh auth status` for a read-only check; never dump credentials.
-- Saved access can expire or be revoked. A permanent, unrevocable connection is neither available nor required for this workflow.
+GitHub CLI and Cloudflare MCP are configured. Routine deployment uses existing GitHub secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. Do not request new access or print credentials unless an actual authentication failure requires action.
 
 ## Recovery
 
-Preview failures stop before production. If a production deployment is broken, inspect the failed checks and use Cloudflare Pages rollback to the last known-good production deployment through the already-connected MCP. Preserve `BACKEND` and the D1/Durable Object bindings. Record the rollback commit and then fix forward; do not force-push or clear student storage.
+Staging failures stop before production. If production is broken, inspect the failed checks and roll Pages back to the last known-good production deployment through Cloudflare MCP, then fix forward. Preserve backend bindings, databases and browser progress; do not force-push or clear student storage.
 
-Local SQLite maintenance commands below apply only to a local Node database, not Cloudflare D1:
+These commands apply only to local SQLite, never Cloudflare D1:
 
 ```sh
 npm run database:backup -- /absolute/accounts.sqlite /absolute/backups/new-copy.sqlite
@@ -74,4 +67,4 @@ npm run database:migrate-check -- /absolute/accounts.sqlite
 npm run owner -- grant USERNAME /absolute/accounts.sqlite
 ```
 
-`owner -- create USERNAME /absolute/accounts.sqlite` reads a password from stdin. `database:reset -- /absolute/disposable.sqlite --confirm` is destructive and only for a specifically authorized disposable test database. Never repurpose it for live accounts. Back up before any real schema/data change; keep the original database/WAL together.
+`owner -- create USERNAME /absolute/accounts.sqlite` reads the password from stdin. `database:reset -- /absolute/disposable.sqlite --confirm` requires explicit authorization for that disposable database. Back up before real schema/data changes and preserve the database/WAL together.

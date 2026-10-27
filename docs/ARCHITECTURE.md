@@ -71,6 +71,6 @@ The browser runtime is built from this repository. Cloudflare Pages forwards `/a
 
 `npm run check` checks changed JavaScript syntax and the existing type-checked modules. Run the relevant behavior test or local browser journey for the feature. Documentation-only changes need link/command review, not an app build.
 
-`npm run release` adds the small Cloudflare routing regression tests and builds `_site/`; it does not deploy. `npm run deploy` pushes already approved commits and follows the Cloudflare workflow. Production checks cover HTTP account mode, the account API, protected Students routing, the release version and required browser libraries.
+`npm run release` parses all JS, checks types and deployment behavior, then builds `_site/`; it does not deploy. Approval authorizes committing and pushing; pushes alone never publish. `npm run deploy` pushes and explicitly dispatches the approved commit to the Cloudflare workflow. Production checks cover HTTP account mode, the account API, protected Students routing, the release version and required browser libraries.
 
 Full Node, browser, accessibility, compatibility and content audits remain available through `check:full`, `verify:full` and `release:full`. Use them for broad changes or a specific unresolved concern, not routine releases. See [AGENTS.md](../AGENTS.md) for the default workflow.

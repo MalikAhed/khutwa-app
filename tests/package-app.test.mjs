@@ -27,6 +27,18 @@ test('static artifact is self-contained, fixture-only and excludes private/sourc
   const files = await readdir(output, { recursive:true });
   assert.ok(files.every(file => !/\.(?:map|scene\.json|prompt\.txt)$/.test(file)));
   await access(path.join(output, 'assets/fonts/noto-sans-arabic/OFL.txt'));
+  await access(path.join(output, 'assets/fonts/math/Amiri-OFL.txt'));
+  await access(path.join(output, 'assets/fonts/math/XITS-OFL.txt'));
+  const contentManifest = JSON.parse(await readFile(path.join(output, 'content-manifest.json'), 'utf8'));
+  const catalogFiles = new Set([...contentManifest.onboarding, ...contentManifest.helpers,
+    ...contentManifest.lessons.flatMap(lesson => [...lesson.first, ...lesson.files])]);
+  for (const file of catalogFiles) await access(path.join(output, file.split('?')[0]));
+  const referenceOnly = 'assets/lessons/islamic-education/source-crops/islamic-tasnif-2025-p019-madd-rules.webp';
+  await access(referenceOnly);
+  await assert.rejects(access(path.join(output, referenceOnly)), { code:'ENOENT' });
+  const retainedTeaching = 'assets/lessons/ict/summary/access-p003-relational.webp';
+  assert.equal(catalogFiles.has(retainedTeaching), false, 'historical teaching is outside the active download catalog');
+  await access(path.join(output, retainedTeaching));
   assert.ok(files.every(file => !file.endsWith('.pdf')), 'source PDFs are archived outside the website');
   await access(path.join(output, 'assets/lessons/ict/exams/source-pages/classified-p006.webp'));
   await access(path.join(output, 'node_modules/dompurify/LICENSE'));

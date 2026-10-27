@@ -1,26 +1,16 @@
 name: Publish Cloudflare Pages
+run-name: ${{ github.event_name == 'workflow_dispatch' && format('Deploy {0}', inputs.commit) || format('Check PR #{0}', github.event.pull_request.number) }}
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'src/**'
-      - '!src/server/**'
-      - 'src/server/static-files.mjs'
-      - 'assets/**'
-      - 'index.html'
-      - 'content-worker.js'
-      - 'package*.json'
-      - 'jsconfig.json'
-      - 'scripts/package*.mjs'
-      - 'scripts/content-manifest.mjs'
-      - 'scripts/version-preview.mjs'
-      - '.github/cloudflare/**'
-      - '.github/workflows/cloudflare-pages.yml'
   pull_request:
     branches: [main]
     paths-ignore: ['docs/**', '**/*.md']
   workflow_dispatch:
+    inputs:
+      commit:
+        description: Approved full commit SHA on main
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -36,22 +26,37 @@ jobs:
     timeout-minutes: 10
     env:
       SITE_DIR: _site
-      CHECK_BASE: ${{ github.event.pull_request.base.sha || github.event.before || 'HEAD' }}
+      CHECK_BASE: ${{ github.event.pull_request.base.sha || 'HEAD' }}
     steps:
+      - name: Require an approved commit
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          APPROVED_COMMIT: ${{ inputs.commit }}
+        run: |
+          [[ "$GITHUB_REF" == refs/heads/main ]]
+          [[ "$APPROVED_COMMIT" =~ ^[a-f0-9]{40}$ ]]
       - name: Check out the approved source
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           fetch-depth: 0
+          ref: ${{ inputs.commit || github.sha }}
+      - name: Require the approved commit to be on main
+        if: github.event_name == 'workflow_dispatch'
+        run: git merge-base --is-ancestor HEAD origin/main
       - uses: actions/setup-node@v6
         with:
           node-version: 24
           cache: npm
       - name: Install locked dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Check the pull request without publishing
+        if: github.event_name == 'pull_request'
+        run: npm run check && npm run test:deployment
       - name: Fast checks and one build
+        if: github.event_name == 'workflow_dispatch'
         run: npm run release
       - name: Test the release against the existing staging account service
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        if: github.event_name == 'workflow_dispatch'
         id: preview
         uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4
         with:
@@ -59,7 +64,7 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           wranglerVersion: '4.154.0'
-          command: pages deploy _site --project-name=khutwaa --branch=account-service-check --commit-dirty=false
+          command: pages deploy _site --project-name=khutwaa --branch=account-service-check --commit-hash=${{ inputs.commit }} --commit-dirty=false
       - name: Verify the candidate before changing production
         if: steps.preview.outcome == 'success'
         env:
@@ -74,7 +79,7 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           wranglerVersion: '4.154.0'
-          command: pages deploy _site --project-name=khutwaa --branch=main --commit-dirty=false
+          command: pages deploy _site --project-name=khutwaa --branch=main --commit-hash=${{ inputs.commit }} --commit-dirty=false
       - name: Verify production
         if: steps.publish.outcome == 'success'
         env:

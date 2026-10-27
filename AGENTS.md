@@ -10,23 +10,23 @@
 
 ## Default loop
 
-1. Check scoped Git status/diffs. Preserve other sessions' edits and local account data.
+1. Check scoped Git status/diffs and fetch `origin/main`. Preserve other sessions' edits and local account data. Fast-forward a clean checkout if needed; never reset local work to match production. GitHub may contain approved changes not yet deployed.
 2. Make the smallest useful change in its existing owner. Run locally with `npm run dev` (Node 24).
 3. For code, run `npm run check` and the relevant focused behavior test. For a small visual change, check the affected view at desktop/mobile widths. For docs only, review links/commands; no build or browser suite.
-4. Let Malik review locally. Do not push or deploy a feature until he says **deploy/publish**. That instruction authorizes committing the approved files, pushing and completing the deployment; do not ask again at each step.
-5. Stage explicit paths only, review the staged diff, and commit. Run `npm run deploy`; follow the existing GitHub workflow through its live checks. Report the commit/run and any real failure. Do not claim the site is live from a push alone.
+4. **Approved / push:** stage explicit approved paths, review the staged diff, commit and `git push origin main`. This saves the work to GitHub without publishing. **Deploy / publish:** also run `npm run deploy`, which pushes and explicitly publishes the committed version. Existing authorization covers the whole action; do not ask again at each step.
+5. Follow the exact deployment run through its live checks. Report the commit/run and any real failure. A push alone is not a deployment. If unrelated work prevents a clean release, use an isolated checkout of the approved commit instead of stashing or committing someone else's files.
 
 ## Keep verification proportional
 
 - `npm run check`: changed JS syntax + existing type checks. `npm run map` lists relevant test choices, not a mandatory checklist.
-- `npm run release`: fast checks, the small deployment regression test, one Cloudflare package. It does not publish. The workflow runs this once; don't rebuild/retest the same unchanged result repeatedly locally.
+- `npm run release`: syntax parsing of all JS (so earlier approved commits are covered), types, deployment regression tests, one Cloudflare package. It does not publish. The workflow runs this once; don't repeat the same build locally unless packaging is the change being checked.
 - Auth/progress/schema changes need their matching persistence and access tests. Deploy routing changes need `npm run test:deployment`; pipeline previews verify the real backend connection.
 - Full Node/browser/content/compatibility audits are opt-in: `check:full`, `verify:full`, `release:full`. Use them only for broad changes or a concrete unresolved risk. Keep useful tests; don't delete assertions or hide failures to make a run green.
 - Stop after relevant checks pass. If a deployment fails, inspect the exact failed step; don't start every test suite or guess new access setup.
 
 ## Hosting facts — preserve these
 
-- `main` → `.github/workflows/cloudflare-pages.yml` → Cloudflare Pages project **khutwaa**. This is GitHub Actions Direct Upload, not a native Pages Git build. Never replace it with the old GitHub Pages fixture workflow.
+- Explicit `npm run deploy` → `.github/workflows/cloudflare-pages.yml` → Cloudflare Pages project **khutwaa**. Pushes do not deploy. The workflow checks out the approved full commit SHA, builds once, tests staging, then publishes that build. This is GitHub Actions Direct Upload, not a native Pages Git build.
 - Production is **HTTP account mode**. `.github/cloudflare/worker.mjs` forwards **both `/api/*` and `/students`** to `BACKEND`. Production binding: `khutwa-app`; staging: `khutwa-app-staging`. Preserve cookies and access decisions.
 - Live backend Workers use D1/Durable Objects. Local development forwards account/API/Students requests through `src/server/cloudflare-development.mjs`; public frontend files stay local. Offline fallback resumes only a previously verified account and relies on the existing browser outbox; admin access/new sign-in stay online. Other `src/server/` adapters are for isolated tests, not the deployed Worker source.
 - Build `_site/` with `npm run package:cloudflare`. It relocates browser libraries while preserving `/node_modules/` URLs. Never commit `_site`, `node_modules`, credentials, real student data, browser profiles or `.production` recovery snapshots.
@@ -38,3 +38,5 @@
 `data/` is curriculum, `domain/` pure rules, `services/` browser IO/state, `ui/` rendering, `server/` local HTTP/SQLite. Share root session/progress stores. Cancel stale work via `app/view-lifecycle.js`. Reuse media/motion owners, focus and reduced-motion behavior. Edit CSS in its owning stylesheet, not appended overrides.
 
 Use the rod-free `assets/mascot/rocky-wave.svg` identity. Keep hidden features behind one flag without deleting their data. Check imports and runtime references before removing files. Avoid speculative frameworks, duplicate helpers, new handoff documents and task-history clutter; update these existing guides.
+
+Keep test fixtures/helpers in `tests/`, scratch work in ignored `tmp/` or `/tmp`, and developer commands in `scripts/`. Remove temporary logs, globals, diagnostic UI, bypasses and unused imports before committing. Do not add production branches just to satisfy a test. Keep behavior tests that protect real failures; remove obsolete tests only when their behavior has actually been retired. Record task evidence in commits/PRs, not new reports or duplicated guides. Docs, skills, tests and private data never belong in `_site/`.

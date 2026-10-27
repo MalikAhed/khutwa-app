@@ -1,4 +1,5 @@
 // @ts-check
+import { COURSE_SUBJECTS } from "../data/course.js";
 import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
 import { duplicateAccountFieldMessage, identifierAliases, isAccountIdentifierField, isValidVisitorSelection, validateAccountField } from "../domain/account.js";
 import { createAuthClient } from "./auth-client.js";
@@ -132,7 +133,7 @@ export function createLearnerSession({
     getLearnerHomeSnapshot:() => {
       if (!activeAccount) return null;
       const learning = progressStore ? progressStore.getHomeLearning(activeAccount.progressOwner,
-        [getSubjectRoadmap("ict"), getSubjectRoadmap("mathematics"), getSubjectRoadmap("mathematics-2"), getSubjectRoadmap("physics"), getSubjectRoadmap("biology")].filter(roadmap => roadmap !== null)) : {
+        COURSE_SUBJECTS.filter(subject => subject.status !== "unpublished").map(subject => getSubjectRoadmap(subject.id)).filter(roadmap => roadmap !== null)) : {
         activity:"none", completion:"not-started", progress:0, mastery:"no-evidence",
         requiredLessonsCompleted:0, requiredLessonsTotal:0, mustReviewCount:0, xp:0, level:1,
         levelXpGoal:200, rank:null, rankTotal:16, questionsSolved:0, dailyStreak:0, curriculumLessonsTotal:72,
