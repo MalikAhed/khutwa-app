@@ -4,6 +4,7 @@
 
 - Main repo: `https://github.com/MalikAhed/khutwa-app`; live site: `https://khutwaa.pages.dev`.
 - Canonical checkout on this machine: `/home/malikabuallatta/experiment-app/khutwa-app`. The sibling `learn/` is a preserved legacy checkout, not the deployment source. Never reset or delete its unpublished work.
+- Before reusing `localhost:4173`, confirm its server runs from this checkout. Keep one active development server and its `data/accounts.sqlite`; separate localhost ports share session cookies and must not silently switch account databases.
 - Read only the relevant row in `docs/ARCHITECTURE.md`: `npm run --silent map -- <topic>`. Read product/authoring docs only when the task needs them. Do not inventory all lessons, archives or generated files.
 - English chat; preserve Arabic/RTL in the app. Do not use or create skills unless requested. Keep updates brief and act without repeated permission questions for already authorized work.
 

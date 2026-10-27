@@ -11,7 +11,11 @@ async function initialize() {
   initialization = (async () => {
     const response = await fetch(new URL("content-manifest.json", base()), { cache:"no-cache" });
     if (!response.ok) throw new Error("Content catalog unavailable");
-    manifest = await response.json();
+    const catalog = await response.json();
+    if (!["onboarding", "helpers", "lessons"].every(key => Array.isArray(catalog?.[key]))) {
+      throw new Error("Invalid content catalog");
+    }
+    manifest = catalog;
     const release = document.querySelector('meta[name="learn-release"]')?.content;
     // Never mix a running release with a manifest from a newer deployment.
     if (release && manifest.version !== release) throw new Error("Content catalog changed");

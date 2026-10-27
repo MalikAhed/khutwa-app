@@ -21,7 +21,14 @@ if (process.env.LIVE_RELOAD !== "0" && process.env.LEARN_PREVIEW_WATCH_CHILD !==
   let catalogWorker, catalog;
   const contentManifest = () => catalog ||= new Promise(resolve => {
     catalogWorker = new Worker(new URL("./scripts/content-manifest.mjs", import.meta.url), { workerData:{root} });
-    catalogWorker.once("message", resolve);
+    const receiveCatalog = message => {
+      // Node watch mode also sends internal `watch:import` messages through
+      // worker ports. Only the generated catalog may answer this HTTP request.
+      if (!message?.version || !Array.isArray(message.onboarding) || !Array.isArray(message.lessons)) return;
+      catalogWorker.off("message", receiveCatalog);
+      resolve(message);
+    };
+    catalogWorker.on("message", receiveCatalog);
     catalogWorker.once("error", error => { console.warn("Content preload catalog unavailable:", error.message); resolve(null); });
   });
   const app=await createAppServer({root,config:readRuntimeConfig(process.env,{root}),contentManifest});

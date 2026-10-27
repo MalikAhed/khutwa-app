@@ -28,6 +28,13 @@ test('preview reloads API lesson validation after content edits and preserves du
   await cp(path.join(root, 'index.html'), path.join(directory, 'index.html'));
   await writeFile(path.join(directory, 'package.json'), JSON.stringify({type:'module'}));
   await mkdir(path.join(directory, 'assets'));
+  await mkdir(path.join(directory, 'scripts'));
+  const catalog = { version:'test-catalog', onboarding:['src/main.js'], helpers:[], lessons:[] };
+  await writeFile(path.join(directory, 'scripts/content-manifest.mjs'), `
+    import { parentPort } from 'node:worker_threads';
+    parentPort.postMessage({ 'watch:import':['internal-watch-message'] });
+    setTimeout(() => parentPort.postMessage(${JSON.stringify(catalog)}), 10);
+  `);
   await symlink(path.join(root, 'node_modules'), path.join(directory, 'node_modules'), 'dir');
   const databasePath = path.join(directory, 'accounts.sqlite');
   const store = createAccountStore({databasePath});
@@ -62,6 +69,8 @@ test('preview reloads API lesson validation after content edits and preserves du
     assert.fail(`Preview did not become ready:\n${output}`);
   };
   await waitFor(() => starts === 1);
+  assert.deepEqual(await fetch(`${base}/content-manifest.json`).then(response => response.json()), catalog,
+    'watch notifications must not replace the browser content catalog');
   const lesson = getSubjectRoadmap('physics').units.flatMap(unit => unit.lessons).find(lesson => lesson.id === 'momentum-impulse');
   const part = lesson.parts[0];
   const key = {subjectId:'physics', lessonId:lesson.id, partId:part.id};

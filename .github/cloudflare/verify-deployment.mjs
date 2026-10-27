@@ -17,6 +17,15 @@ const html = await fetch(base).then(response => response.text());
 assert.match(html, /name="learn-account-mode" content="http"/, 'production uses the real account service');
 const release = JSON.parse(await readFile(path.join(root, 'release.json'), 'utf8'));
 assert.deepEqual(await fetch(new URL('/release.json', base)).then(response => response.json()), release);
+const catalog = await fetch(new URL('/content-manifest.json', base)).then(response => response.json());
+assert.deepEqual(catalog, JSON.parse(await readFile(path.join(root, 'content-manifest.json'), 'utf8')),
+  'the deployed lesson catalog must match the tested build');
+for (const file of ['src/app/background-loading.js', 'src/styles/learner-dashboard.css']) {
+  const response = await fetch(new URL(`/${file}?v=${release.version}`, base));
+  assert.equal(response.status, 200, file);
+  assert.deepEqual(Buffer.from(await response.arrayBuffer()), await readFile(path.join(root, file)),
+    `${file} must match the tested build`);
+}
 const session = await fetchFunction(new URL('/api/auth/session', base));
 assert.equal(session.status, 200);
 assert.match(session.headers.get('content-type'), /application\/json/);
@@ -34,4 +43,4 @@ for (const relative of await readdir(libraries, { recursive:true })) {
   assert.match(response.headers.get('content-type'), /(?:javascript|ecmascript)/, relative);
   assert.deepEqual(Buffer.from(await response.arrayBuffer()), await readFile(path.join(libraries, relative)), relative);
 }
-console.log('Real account API, protected Students route, HTTP account mode, release version, and browser libraries verified.');
+console.log('Accounts, Students route, lesson catalog, release version, loading code, dashboard styles and browser libraries verified against the build.');
