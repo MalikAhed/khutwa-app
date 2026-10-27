@@ -13,6 +13,9 @@ const session = await fetch(new URL('/api/auth/session', base));
 assert.equal(session.status, 200);
 assert.match(session.headers.get('content-type'), /application\/json/);
 assert.equal((await session.json()).account, null, 'anonymous requests reach the account API');
+const dashboard = await fetch(new URL('/students', base), { redirect:'manual' });
+assert.equal(dashboard.status, 302, 'the Students page reaches the protected backend route');
+assert.equal(dashboard.headers.get('location'), '/?flow=sign-in', 'anonymous dashboard visitors must sign in');
 
 const libraries = path.join(root, 'assets/browser-libraries');
 for (const relative of await readdir(libraries, { recursive:true })) {
@@ -22,4 +25,4 @@ for (const relative of await readdir(libraries, { recursive:true })) {
   assert.match(response.headers.get('content-type'), /(?:javascript|ecmascript)/, relative);
   assert.deepEqual(Buffer.from(await response.arrayBuffer()), await readFile(path.join(libraries, relative)), relative);
 }
-console.log('Real account API, HTTP account mode, release version, and browser libraries verified.');
+console.log('Real account API, protected Students route, HTTP account mode, release version, and browser libraries verified.');
