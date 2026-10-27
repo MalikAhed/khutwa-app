@@ -18,7 +18,7 @@ The command reads this table and current source, without an index or cache. Uniq
 
 | Task | Start here | Focused check |
 | --- | --- | --- |
-| Cloud hosting/admin | `cloudflare.config.ts`, `src/server/cloudflare/worker.mjs`, `src/server/cloudflare/objects.mjs`, `src/server/cloudflare/accounts.mjs`, `src/server/cloudflare/students.mjs`, `src/domain/subscriptions.js`, `src/ui/student-dashboard.js` | `npm run build:cloud`; `npm run test:cloud`; `npm run test:admin` |
+| Cloud hosting/admin | `cloudflare.config.ts`, `pages.config.json`, `scripts/build-pages.mjs`, `src/server/cloudflare/pages.mjs`, `src/server/cloudflare/worker.mjs`, `src/server/cloudflare/objects.mjs`, `src/server/cloudflare/accounts.mjs`, `src/server/cloudflare/students.mjs`, `src/domain/subscriptions.js`, `src/ui/student-dashboard.js` | `npm run build:pages`; `npm run test:cloud`; `npm run test:pages`; `npm run test:admin` |
 | Streamed loading/cache | `scripts/build-web.mjs`, `src/services/download-queue.js`, `src/services/lesson-content.js`, `src/ui/lesson/authored.js` | `node --test tests/download-queue.test.mjs`; `npm run test:streamed` (after `npm run build:cloud`) |
 | Startup/splash | `index.html`, `src/bootstrap.js`, `src/ui/splash-screen.js`, `src/services/preview-updates.js` | `npm run test:splash` |
 | Routes/navigation | `src/main.js`, `src/app/route.js`, `src/app/view-lifecycle.js` | `node --test tests/route.test.mjs tests/view-lifecycle.test.mjs`; `npm run test:ui-fixes` |

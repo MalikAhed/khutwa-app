@@ -9,11 +9,12 @@ import {createCloudAccounts} from '../../src/server/cloudflare/accounts.mjs';
 // Exercises the built Worker with real D1 and SQLite Durable Object simulations.
 // Run after build:cloud, separately from source-only npm test.
 test('cloud accounts, owner controls and durable progress survive a runtime replacement',async t=>{
+  const pages=process.env.KHUTWA_PAGES==='1';
   const persistTo=await mkdtemp(path.join(tmpdir(),'khutwa-cloud-test-'));
-  let app=await startCloudflareLocal({persistTo});
+  let app=await startCloudflareLocal({persistTo,pages});
   t.after(async()=>{await app.close();await rm(persistTo,{recursive:true,force:true});});
   const request=async(route,{cookie='',owner,body,headers={}}={})=>{
-    const response=await fetch(new URL(route,app.base),{method:body?'POST':'GET',redirect:'manual',headers:{Cookie:cookie,...(owner?{'X-Progress-Owner':`account:${owner}`} : {}),...(body?{'Content-Type':'application/json'}:{}),...headers},...(body?{body:JSON.stringify(body)}:{})});
+    const response=await fetch(new URL(route,app.base),{method:body?'POST':'GET',redirect:'manual',headers:{Cookie:cookie,...(owner?{'X-Progress-Owner':`account:${owner}`} : {}),...(body?{'Content-Type':'application/json',Origin:new URL(app.base).origin}:{}),...headers},...(body?{body:JSON.stringify(body)}:{})});
     const text=await response.text();
     return {status:response.status,cookie:response.headers.get('set-cookie')?.split(';')[0],body:response.headers.get('content-type')?.includes('json')?JSON.parse(text):text};
   };
@@ -27,11 +28,17 @@ test('cloud accounts, owner controls and durable progress survive a runtime repl
   const ownerCookie=`tawjihi_session=${(await store.createSession(owner.id)).token}`;
   const endpoint=`/api/owner/students/${student.id}`;
   assert.equal((await request('/')).status,200);
+  assert.equal((await request('/content/missing-question.json')).status,404);
+  assert.equal((await request('/admin.html')).status,302);
   assert.equal((await request(endpoint)).status,401);
   assert.equal((await request(endpoint,{cookie:studentCookie})).status,403);
   assert.equal((await request('/admin.html',{cookie:studentCookie})).status,403);
   assert.equal((await request('/admin',{cookie:studentCookie})).status,403);
   assert.equal((await request('/students',{cookie:ownerCookie})).status,200);
+  for (const alias of ['/admin','/admin/','/admin.html','/admin/index.html']) {
+    assert.equal((await request(alias,{cookie:studentCookie})).status,403,alias);
+    assert.equal((await request(alias,{cookie:ownerCookie})).status,200,alias);
+  }
   assert.equal((await request(endpoint,{cookie:ownerCookie,body:{action:'grant',version:0,duration:'week'},headers:{Origin:'https://attacker.example'}})).status,403);
   let detail=(await request(endpoint,{cookie:ownerCookie})).body;
   const change=async(action,extra={})=>request(endpoint,{cookie:ownerCookie,body:{action,version:detail.version,...extra}});
@@ -51,7 +58,7 @@ test('cloud accounts, owner controls and durable progress survive a runtime repl
   const duplicate=await request('/api/progress',{cookie:studentCookie,owner:student.id,body:answer});
   assert.deepEqual(duplicate.body.records,saved.body.records,'retries do not duplicate progress or XP');
   await app.close();
-  app=await startCloudflareLocal({persistTo});
+  app=await startCloudflareLocal({persistTo,pages});
   const restored=await request('/api/progress',{cookie:studentCookie,owner:student.id});
   assert.deepEqual(restored.body.records,saved.body.records,'progress survives a new Worker runtime');
   assert.equal((await request('/api/app-state')).body.resetId,null);

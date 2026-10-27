@@ -47,12 +47,15 @@
     "build:web": "node scripts/build-web.mjs",
     "build:cloud": "node scripts/build-cloudflare.mjs",
     "build:production": "node scripts/build-cloudflare.mjs --production",
+    "build:pages": "node scripts/build-pages.mjs",
+    "build:pages:production": "node scripts/build-pages.mjs --production",
     "dev:cloud": "node scripts/cloudflare-local.mjs",
     "test:cloud": "node --test tests/integration/cloudflare.test.mjs",
     "test:admin": "node tests/browser/browser-student-dashboard.mjs",
-    "deploy:staging": "npm run build:cloud && cf d1 migrations apply fb38d157-5217-4fec-8a35-8e7ddcec8059 --dir migrations && cf deploy --prebuilt --mode staging --provision=false",
-    "deploy:production": "npm run build:production && cf d1 migrations apply 5de0d401-a288-484f-868a-cd5333e7df06 --dir migrations && cf deploy --prebuilt --mode production --provision=false",
+    "deploy:staging": "npm run build:pages && cf d1 migrations apply fb38d157-5217-4fec-8a35-8e7ddcec8059 --dir migrations && cf deploy --prebuilt --mode staging --provision=false && npx --yes wrangler@4.153.0 pages deploy _pages --project-name khutwaa --branch staging",
+    "deploy:production": "npm run build:pages:production && cf d1 migrations apply 5de0d401-a288-484f-868a-cd5333e7df06 --dir migrations && cf deploy --prebuilt --mode production --provision=false && npx --yes wrangler@4.153.0 pages deploy _pages --project-name khutwaa --branch main",
     "test:streamed": "node tests/integration/browser-streamed.mjs",
+    "test:pages": "KHUTWA_PAGES=1 node --test tests/integration/cloudflare.test.mjs && KHUTWA_PAGES=1 node tests/integration/browser-streamed.mjs",
     "owner:cloud": "node scripts/cloudflare-owner.mjs"
   },
   "engines": {

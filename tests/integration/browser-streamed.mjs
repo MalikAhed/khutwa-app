@@ -6,7 +6,7 @@ import {chromium} from 'playwright';
 import {startCloudflareLocal} from '../../scripts/cloudflare-local.mjs';
 import {createCloudAccounts} from '../../src/server/cloudflare/accounts.mjs';
 
-const app=await startCloudflareLocal();
+const app=await startCloudflareLocal({pages:process.env.KHUTWA_PAGES==='1'});
 const browser=await chromium.launch({executablePath:process.env.CHROME_BIN||'/usr/bin/google-chrome',headless:true});
 try {
   const accounts=createCloudAccounts(app.database);

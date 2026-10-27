@@ -16,6 +16,7 @@ design-system-clone/
 design-system-clone.zip
 
 _site/
+_pages/
 _server/
 .cloudflare/
 .dev.vars

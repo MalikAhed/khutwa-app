@@ -1,0 +1,16 @@
+{
+  "name": "khutwaa",
+  "production_branch": "main",
+  "deployment_configs": {
+    "production": {
+      "compatibility_date": "2026-10-27",
+      "fail_open": false,
+      "services": { "BACKEND": { "service": "khutwa-app", "environment": "production" } }
+    },
+    "preview": {
+      "compatibility_date": "2026-10-27",
+      "fail_open": false,
+      "services": { "BACKEND": { "service": "khutwa-app-staging", "environment": "production" } }
+    }
+  }
+}

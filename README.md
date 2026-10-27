@@ -12,7 +12,7 @@ Khutwa turns the official study scope into a focused, RTL study experience with 
 - Guest study, account-backed progress, IndexedDB caching and a Node/SQLite server adapter.
 - Native MathML and local KaTeX rendering for Arabic mathematics, plus installable web-app metadata.
 - Plain JavaScript, native MathML and build-time lesson compilation; no framework or AI service required for learning.
-- Cloudflare Workers static assets, D1 accounts and SQLite Durable Objects for student progress, with a local IndexedDB outbox for interrupted saves.
+- Cloudflare Pages at `https://khutwaa.pages.dev`, a private Worker backend, D1 accounts and SQLite Durable Objects for student progress, with a local IndexedDB outbox for interrupted saves.
 - An owner-only Arabic student dashboard at `/students`, with full-app subscriptions, optional expiry, suspension and confirmed deletion.
 
 Arabic follows the six Gaza units with 414 supplied questions across 16 lessons. The product boundary and source decisions are recorded in [PRODUCT.md](docs/PRODUCT.md).
@@ -66,7 +66,7 @@ The static package contains browser code, runtime media and dependency licenses 
 
 The Cloudflare build precompiles lessons into individually hashed question files. The current question loads first; one idle download queue warms the selected lesson and then lessons across subjects. Slow connections, cellular connections reported by the browser, Save Data, hidden tabs and limited storage pause speculative downloads. This is caching for faster use, not a guarantee of offline operation.
 
-`npm run deploy:staging` and `npm run deploy:production` build fresh artifacts, apply pending additive D1 migrations and deploy to their existing resources. Production includes Cloudflare Web Analytics after startup; staging and admin pages do not. See [OPERATIONS.md](docs/OPERATIONS.md) for resource identities, credentials, recovery and release safeguards. Never commit student data, secrets, exports or generated screenshots.
+`npm run build:pages && npm run test:pages` checks the Pages frontend through its backend service binding. `npm run deploy:staging` and `npm run deploy:production` build fresh artifacts, apply pending additive D1 migrations, deploy the existing backend and then upload Pages. Production includes Cloudflare Web Analytics after startup; staging and admin pages do not. GitHub owns source/history and runs verification; publishing is an explicit release command. See [OPERATIONS.md](docs/OPERATIONS.md) for resource identities, credentials, recovery and release safeguards. Never commit student data, secrets, exports or generated screenshots.
 
 ## Third-party notices
 

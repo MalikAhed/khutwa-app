@@ -31,9 +31,9 @@ jobs:
           node -e "require('node:fs').appendFileSync(process.env.GITHUB_ENV, 'CHROME_BIN=' + require('playwright').chromium.executablePath() + '\n')"
       - run: npm run verify
       - run: npm run test:admin
-      - run: npm run build:cloud
+      - run: npm run build:pages
       - run: npm run test:cloud
-      - run: npm run test:streamed
+      - run: npm run test:pages
       - name: Save browser failure evidence
         if: failure()
         uses: actions/upload-artifact@v7

@@ -9,6 +9,8 @@ export default defineConfig(({ mode }) => {
       entrypoint:"src/server/cloudflare/worker.mjs",
       compatibilityDate:"2026-10-27",
       compatibilityFlags:["nodejs_compat"],
+      workersDev:false,
+      previewUrls:false,
       assets:{ htmlHandling:"auto-trailing-slash",notFoundHandling:"none",runWorkerFirst:["/api/*","/students*","/admin*"] },
       triggers:[{type:"scheduled",schedule:"17 * * * *"}],
       observability:{ enabled:true,headSamplingRate:0.1,traces:{ enabled:true,headSamplingRate:0.1 } },
