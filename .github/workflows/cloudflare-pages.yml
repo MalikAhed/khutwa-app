@@ -25,7 +25,17 @@ jobs:
         run: |
           mkdir -p "$RUNNER_TEMP/khutwa-site"
           git archive HEAD | tar -x --exclude=.github --exclude=README.md -C "$RUNNER_TEMP/khutwa-site"
+          # Pages skips node_modules; retain its public URLs through a rewrite.
+          mv "$RUNNER_TEMP/khutwa-site/node_modules" "$RUNNER_TEMP/khutwa-site/assets/browser-libraries"
+          {
+            printf '/node_modules/* /assets/browser-libraries/:splat 200\n'
+            if [ -f "$RUNNER_TEMP/khutwa-site/_redirects" ]; then
+              cat "$RUNNER_TEMP/khutwa-site/_redirects"
+            fi
+          } > "$RUNNER_TEMP/khutwa-redirects"
+          mv "$RUNNER_TEMP/khutwa-redirects" "$RUNNER_TEMP/khutwa-site/_redirects"
       - name: Publish to the existing Cloudflare site
+        id: publish
         uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -33,3 +43,14 @@ jobs:
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           wranglerVersion: '4.154.0'
           command: pages deploy ${{ runner.temp }}/khutwa-site --project-name=khutwaa --branch=main --commit-dirty=false
+      - name: Verify every browser library is served unchanged
+        shell: bash
+        env:
+          DEPLOYMENT_URL: ${{ steps.publish.outputs.deployment-url }}
+        run: |
+          library_root="$RUNNER_TEMP/khutwa-site/assets/browser-libraries"
+          while IFS= read -r -d '' library; do
+            relative="${library#"$library_root/"}"
+            curl --fail --silent --show-error --compressed "${DEPLOYMENT_URL%/}/node_modules/$relative" -o "$RUNNER_TEMP/cloudflare-library"
+            cmp "$library" "$RUNNER_TEMP/cloudflare-library"
+          done < <(find "$library_root" -type f -print0)
