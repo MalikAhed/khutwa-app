@@ -1,5 +1,6 @@
 name: Publish Cloudflare Pages
-run-name: ${{ github.event_name == 'workflow_dispatch' && format('Deploy {0}', inputs.commit) || format('Check PR #{0}', github.event.pull_request.number) }}
+run-name: >-
+  ${{ github.event_name == 'workflow_dispatch' && format('Deploy {0}', inputs.commit) || format('Check PR #{0}', github.event.pull_request.number) }}
 
 on:
   pull_request:
