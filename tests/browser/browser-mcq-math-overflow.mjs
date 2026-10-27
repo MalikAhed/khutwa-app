@@ -65,6 +65,9 @@ export async function verifyMcqMathOverflow(browser, engine, base) {
         return image.decode();
       })));
       await page.waitForFunction(() => !document.querySelector(".media-pending"));
+      // Finish the reveal's inert/style update and scheduled initial focus
+      // before exercising keyboard interaction with the visible answers.
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
       const geometry = await page.evaluate(() => [...document.querySelectorAll(".ui-lab-mcq .lesson-inline-scroll")].map(region => {
         const box = region.getBoundingClientRect();
         const media = region.querySelector("math,img");
