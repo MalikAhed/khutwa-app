@@ -1,1 +1,387 @@
-const P={"arm-left":[182,422],"arm-right":[606,422]};function R(i,t,s){const o=s.rotation*Math.PI/180,e=Math.cos(o),r=Math.sin(o),n=i[0]-t.x,f=(i[1]-t.y)*s.scaleY;return{x:s.x+e*n-r*f-(i[0]-t.x),y:s.y+r*n+e*f-(i[1]-t.y)}}function $(i,t){const s=new Map;i.querySelectorAll("[id]").forEach(o=>{const e=o.id,r=`${t}-${e}`;s.set(e,r),o.id=r}),[i,...i.querySelectorAll("*")].forEach(o=>{for(const e of[...o.attributes]){let r=e.value;for(const[n,f]of s)r===`#${n}`&&(r=`#${f}`),r=r.replaceAll(`url(#${n})`,`url(#${f})`);(e.name==="aria-labelledby"||e.name==="aria-describedby")&&(r=r.split(/\s+/).map(n=>s.get(n)??n).join(" ")),r!==e.value&&o.setAttributeNS(e.namespaceURI,e.name,r)}})}function q(i,t){i.classList.add(t),i.querySelectorAll("style").forEach(s=>{s.textContent=s.textContent.replaceAll("[data-part",`.${t} [data-part`)})}async function Y(i,t,s){const o=[...i.querySelectorAll("[data-rocky-pointer-track]")],e=s.defaultView;if(!o.length||!e||e.matchMedia?.("(prefers-reduced-motion: reduce)").matches)return;try{const u=await e.fetch("assets/mascot/rocky-standing-still.svg",{signal:t});if(!u.ok)return;const c=await u.text();if(t.aborted)return;for(const[m,a]of o.entries()){const l=new e.DOMParser().parseFromString(c,"image/svg+xml"),b=l.documentElement;b.localName!=="svg"||l.querySelector("parsererror")||(b.querySelectorAll("script,foreignObject").forEach(y=>y.remove()),$(b,`rocky-pointer-${i.dataset.onboardingStep||"page"}-${m+1}`),b.setAttribute("role","img"),b.setAttribute("aria-label",a.dataset.rockyLabel||"روكي"),q(b,"rocky-pointer-svg"),a.querySelector("picture")?.setAttribute("hidden",""),a.append(s.importNode(b,!0)))}}catch(u){u?.name!=="AbortError"&&console.warn("Rocky pointer tracking could not load.",u);return}const r=e.matchMedia("(prefers-reduced-motion: reduce)");let n=0,f=0,x=0,d=0,M=0,g=0,p=0;const h=()=>{!p&&!t.aborted&&!r.matches&&!s.hidden&&(p=e.requestAnimationFrame(A))},S=u=>{const c=o.find(a=>!a.closest("[data-onboarding-step]")?.hidden);if(!c)return;const m=c.getBoundingClientRect();n=Math.max(-1,Math.min(1,(u.clientX-(m.left+m.width/2))/Math.max(1,e.innerWidth*.35))),f=Math.max(-1,Math.min(1,(u.clientY-(m.top+m.height/2))/Math.max(1,e.innerHeight*.4))),h()},A=()=>{if(p=0,t.aborted||r.matches||s.hidden)return;x+=(n-x)*.13,d+=(f-d)*.13,M+=(n-M)*.1,g+=(f-g)*.1;const u=Math.max(0,1-Math.hypot(x,d)/.72),c={x:x*15,y:d<0?d*20:d*12,rotation:x*(6+Math.abs(d)*2.5),scaleY:1-d*.05};for(const m of o){if(m.closest("[data-onboarding-step]")?.hidden)continue;const a=m.querySelector(".rocky-pointer-svg"),l=a?.querySelector('[data-part="body"]');let b={x:400,y:545};if(l){const y=l.getBBox();b={x:y.x+y.width/2,y:y.y+y.height*.88},l.style.translate=`${c.x}px ${c.y}px`,l.style.rotate=`${c.rotation}deg`,l.style.scale=`1 ${c.scaleY}`,l.style.transformOrigin="50% 88%",l.style.transformBox="fill-box"}for(const[y,E]of[["arm-left",-1],["arm-right",1]]){const v=`[data-part="${y}"]`,w=a?.querySelector(v);if(!w)continue;const k=P[y],L=R(k,b,c),F=(M-x)*10,I=(g-d)*10;w.style.translate=`${L.x+F}px ${L.y+I}px`,w.style.rotate=`${c.rotation+M*10+g*E*10}deg`,w.style.scale=`1 ${c.scaleY*(1-g*.04)}`,w.style.transformOrigin=`${k[0]}px ${k[1]}px`,w.style.transformBox="view-box"}for(const[y,E]of[['[data-part="pupil-left"]',1],['[data-part="pupil-right"]',-1]]){const v=a?.querySelector(y);v&&(v.style.translate=`${x*12+u*5*E}px ${d*8}px`)}}Math.max(Math.abs(n-x),Math.abs(f-d),Math.abs(n-M),Math.abs(f-g))>.001&&h()};r.addEventListener("change",()=>{if(e.cancelAnimationFrame(p),p=0,r.matches){n=f=x=d=M=g=0;for(const u of o)u.querySelectorAll("[data-part]").forEach(c=>{c.style.removeProperty("translate"),c.style.removeProperty("rotate"),c.style.removeProperty("scale")})}else h()},{signal:t}),e.addEventListener("pointermove",S,{passive:!0,signal:t}),s.documentElement.addEventListener("pointerleave",()=>{n=0,f=0,h()},{signal:t}),s.addEventListener("visibilitychange",()=>{s.hidden?(e.cancelAnimationFrame(p),p=0):h()},{signal:t}),t.addEventListener("abort",()=>e.cancelAnimationFrame(p),{once:!0}),h()}async function N(i,t,s){const o=i.querySelector("[data-rocky-password] .onboarding-mascot"),e=i.querySelector('input[name="password"]'),r=s.defaultView;if(!o||!e||!r)return;let n=()=>{};const f=()=>{o.classList.add("is-password-active"),n()},x=()=>{o.classList.remove("is-password-active"),n()};e.addEventListener("input",f,{signal:t}),e.addEventListener("blur",x,{signal:t});try{const d=await r.fetch("assets/mascot/rocky-password-peek.svg",{signal:t});if(!d.ok)return;const M=await d.text();if(t.aborted)return;const g=new r.DOMParser().parseFromString(M,"image/svg+xml"),p=g.documentElement;if(p.localName!=="svg"||g.querySelector("parsererror"))return;p.querySelectorAll("script,foreignObject").forEach(v=>v.remove()),$(p,"password"),q(p,"rocky-password-svg"),p.setAttribute("role","img"),p.setAttribute("aria-label","روكي يغطي عينيه ويختلس نظرة مرحة");const h=s.importNode(p,!0);o.append(h),o.classList.add("is-password-ready");const S=Number(h.dataset.motionLoopStart),A=Number(h.dataset.motionLoopEnd),u=Number(h.dataset.motionDuration);if(!(S>0&&A>S&&u>A))return;const c=r.matchMedia("(prefers-reduced-motion: reduce)");let m=h.getAnimations({subtree:!0}),a=0,l=0,b=0;const y=()=>m.forEach(v=>{v.currentTime=a}),E=v=>{if(l=0,t.aborted||c.matches)return;if(o.closest("[data-onboarding-step]")?.hidden){a=0,o.classList.remove("is-password-active"),m=[];return}const w=Math.min(64,v-b);b=v;const k=o.classList.contains("is-password-active"),L=a;k?(a+=w,L<A&&a>=A?a=S+(a-A):a>=u&&(a=0)):a<S?a=Math.max(0,a-w*1.4):a=Math.min(u,a+w*2),y(),(k||a>0&&a<u)&&(l=r.requestAnimationFrame(E))};n=()=>{l||t.aborted||c.matches||(m=h.getAnimations({subtree:!0}),b=r.performance.now(),l=r.requestAnimationFrame(E))},c.addEventListener("change",()=>{if(r.cancelAnimationFrame(l),l=0,a=0,c.matches){m.forEach(v=>v.cancel()),m=[];return}m=h.getAnimations({subtree:!0}),y(),o.classList.contains("is-password-active")&&n()},{signal:t}),t.addEventListener("abort",()=>r.cancelAnimationFrame(l),{once:!0}),y(),o.classList.contains("is-password-active")&&n()}catch(d){d?.name!=="AbortError"&&console.warn("Rocky password animation could not load.",d)}}export function bindVisitorMascots(i,t,s){Y(i,t,s),N(i,t,s);const o=i.querySelector("[data-rocky-repeat]"),e=s.defaultView?.matchMedia?.("(prefers-reduced-motion: reduce)");if(!o)return;const r=setInterval(()=>{if(e?.matches||o.closest("[data-onboarding-step]")?.hidden)return;const n=o.querySelector("picture");n?.replaceWith(n.cloneNode(!0))},Number(o.dataset.rockyRepeat));t.addEventListener("abort",()=>clearInterval(r),{once:!0})}
+// Registration mascot behavior; the visitor controller owns its lifetime through AbortSignal.
+const ROCKY_SHOULDERS = {
+  "arm-left": [182, 422],
+  "arm-right": [606, 422],
+};
+
+function bodyFollowDelta(anchor, origin, pose) {
+  const radians = (pose.rotation * Math.PI) / 180;
+  const cosine = Math.cos(radians);
+  const sine = Math.sin(radians);
+  const localX = anchor[0] - origin.x;
+  const localY = (anchor[1] - origin.y) * pose.scaleY;
+  return {
+    x: pose.x + cosine * localX - sine * localY - (anchor[0] - origin.x),
+    y: pose.y + sine * localX + cosine * localY - (anchor[1] - origin.y),
+  };
+}
+
+function scopeSvgIds(svg, prefix) {
+  const idMap = new Map();
+  svg.querySelectorAll("[id]").forEach((element) => {
+    const originalId = element.id;
+    const scopedId = `${prefix}-${originalId}`;
+    idMap.set(originalId, scopedId);
+    element.id = scopedId;
+  });
+  [svg, ...svg.querySelectorAll("*")].forEach((element) => {
+    for (const attribute of [...element.attributes]) {
+      let value = attribute.value;
+      for (const [originalId, scopedId] of idMap) {
+        if (value === `#${originalId}`) value = `#${scopedId}`;
+        value = value.replaceAll(`url(#${originalId})`, `url(#${scopedId})`);
+      }
+      if (
+        attribute.name === "aria-labelledby" ||
+        attribute.name === "aria-describedby"
+      ) {
+        value = value
+          .split(/\s+/)
+          .map((id) => idMap.get(id) ?? id)
+          .join(" ");
+      }
+      if (value !== attribute.value)
+        element.setAttributeNS(attribute.namespaceURI, attribute.name, value);
+    }
+  });
+}
+
+function scopeSvgStyles(svg, className) {
+  svg.classList.add(className);
+  svg.querySelectorAll("style").forEach((style) => {
+    style.textContent = style.textContent.replaceAll(
+      "[data-part",
+      `.${className} [data-part`,
+    );
+  });
+}
+
+async function bindRockyPointerTracking(root, signal, documentObject) {
+  const mascots = [...root.querySelectorAll("[data-rocky-pointer-track]")];
+  const view = documentObject.defaultView;
+  if (
+    !mascots.length ||
+    !view ||
+    view.matchMedia?.("(prefers-reduced-motion: reduce)").matches
+  )
+    return;
+  try {
+    const response = await view.fetch(
+      "assets/mascot/rocky-standing-still.svg",
+      { signal },
+    );
+    if (!response.ok) return;
+    const source = await response.text();
+    if (signal.aborted) return;
+    for (const [index, mascot] of mascots.entries()) {
+      const parsed = new view.DOMParser().parseFromString(
+        source,
+        "image/svg+xml",
+      );
+      const svg = parsed.documentElement;
+      if (svg.localName !== "svg" || parsed.querySelector("parsererror"))
+        continue;
+      svg
+        .querySelectorAll("script,foreignObject")
+        .forEach((node) => node.remove());
+      scopeSvgIds(svg, `rocky-pointer-${root.dataset.onboardingStep || "page"}-${index + 1}`);
+      svg.setAttribute("role", "img");
+      svg.setAttribute("aria-label", mascot.dataset.rockyLabel || "روكي");
+      scopeSvgStyles(svg, "rocky-pointer-svg");
+      mascot.querySelector("picture")?.setAttribute("hidden", "");
+      mascot.append(documentObject.importNode(svg, true));
+    }
+  } catch (error) {
+    if (error?.name !== "AbortError")
+      console.warn("Rocky pointer tracking could not load.", error);
+    return;
+  }
+
+  const reducedMotion = view.matchMedia("(prefers-reduced-motion: reduce)");
+  let targetX = 0;
+  let targetY = 0;
+  let x = 0;
+  let y = 0;
+  let armX = 0;
+  let armY = 0;
+  let frame = 0;
+  const wake = () => {
+    if (
+      !frame &&
+      !signal.aborted &&
+      !reducedMotion.matches &&
+      !documentObject.hidden
+    )
+      frame = view.requestAnimationFrame(render);
+  };
+  const pointAt = (event) => {
+    const active = mascots.find(
+      (mascot) => !mascot.closest("[data-onboarding-step]")?.hidden,
+    );
+    if (!active) return;
+    const bounds = active.getBoundingClientRect();
+    targetX = Math.max(
+      -1,
+      Math.min(
+        1,
+        (event.clientX - (bounds.left + bounds.width / 2)) /
+          Math.max(1, view.innerWidth * 0.35),
+      ),
+    );
+    targetY = Math.max(
+      -1,
+      Math.min(
+        1,
+        (event.clientY - (bounds.top + bounds.height / 2)) /
+          Math.max(1, view.innerHeight * 0.4),
+      ),
+    );
+    wake();
+  };
+  const render = () => {
+    frame = 0;
+    if (signal.aborted || reducedMotion.matches || documentObject.hidden)
+      return;
+    x += (targetX - x) * 0.13;
+    y += (targetY - y) * 0.13;
+    armX += (targetX - armX) * 0.1;
+    armY += (targetY - armY) * 0.1;
+    const proximity = Math.max(0, 1 - Math.hypot(x, y) / 0.72);
+    const bodyPose = {
+      x: x * 15,
+      y: y < 0 ? y * 20 : y * 12,
+      rotation: x * (6 + Math.abs(y) * 2.5),
+      scaleY: 1 - y * 0.05,
+    };
+    for (const mascot of mascots) {
+      if (mascot.closest("[data-onboarding-step]")?.hidden) continue;
+      const svg = mascot.querySelector(".rocky-pointer-svg");
+      const body = svg?.querySelector('[data-part="body"]');
+      let bodyOrigin = { x: 400, y: 545 };
+      if (body) {
+        const bounds = body.getBBox();
+        bodyOrigin = {
+          x: bounds.x + bounds.width / 2,
+          y: bounds.y + bounds.height * 0.88,
+        };
+        body.style.translate = `${bodyPose.x}px ${bodyPose.y}px`;
+        body.style.rotate = `${bodyPose.rotation}deg`;
+        body.style.scale = `1 ${bodyPose.scaleY}`;
+        body.style.transformOrigin = "50% 88%";
+        body.style.transformBox = "fill-box";
+      }
+      for (const [partId, side] of [
+        ["arm-left", -1],
+        ["arm-right", 1],
+      ]) {
+        const selector = `[data-part="${partId}"]`;
+        const arm = svg?.querySelector(selector);
+        if (!arm) continue;
+        const shoulder = ROCKY_SHOULDERS[partId];
+        const inherited = bodyFollowDelta(shoulder, bodyOrigin, bodyPose);
+        const followThroughX = (armX - x) * 10;
+        const followThroughY = (armY - y) * 10;
+        arm.style.translate = `${inherited.x + followThroughX}px ${inherited.y + followThroughY}px`;
+        arm.style.rotate = `${bodyPose.rotation + armX * 10 + armY * side * 10}deg`;
+        arm.style.scale = `1 ${bodyPose.scaleY * (1 - armY * 0.04)}`;
+        arm.style.transformOrigin = `${shoulder[0]}px ${shoulder[1]}px`;
+        arm.style.transformBox = "view-box";
+      }
+      for (const [selector, inwardDirection] of [
+        ['[data-part="pupil-left"]', 1],
+        ['[data-part="pupil-right"]', -1],
+      ]) {
+        const pupil = svg?.querySelector(selector);
+        if (pupil)
+          pupil.style.translate = `${x * 12 + proximity * 5 * inwardDirection}px ${y * 8}px`;
+      }
+    }
+    if (
+      Math.max(
+        Math.abs(targetX - x),
+        Math.abs(targetY - y),
+        Math.abs(targetX - armX),
+        Math.abs(targetY - armY),
+      ) > 0.001
+    )
+      wake();
+  };
+  reducedMotion.addEventListener(
+    "change",
+    () => {
+      view.cancelAnimationFrame(frame);
+      frame = 0;
+      if (reducedMotion.matches) {
+        targetX = targetY = x = y = armX = armY = 0;
+        for (const mascot of mascots)
+          mascot.querySelectorAll("[data-part]").forEach((part) => {
+            part.style.removeProperty("translate");
+            part.style.removeProperty("rotate");
+            part.style.removeProperty("scale");
+          });
+      } else wake();
+    },
+    { signal },
+  );
+  view.addEventListener("pointermove", pointAt, { passive: true, signal });
+  documentObject.documentElement.addEventListener(
+    "pointerleave",
+    () => {
+      targetX = 0;
+      targetY = 0;
+      wake();
+    },
+    { signal },
+  );
+  documentObject.addEventListener(
+    "visibilitychange",
+    () => {
+      if (documentObject.hidden) {
+        view.cancelAnimationFrame(frame);
+        frame = 0;
+      } else wake();
+    },
+    { signal },
+  );
+  signal.addEventListener("abort", () => view.cancelAnimationFrame(frame), {
+    once: true,
+  });
+  wake();
+}
+
+async function bindRockyPassword(root, signal, documentObject) {
+  const mascot = root.querySelector("[data-rocky-password] .onboarding-mascot");
+  const input = root.querySelector('input[name="password"]');
+  const view = documentObject.defaultView;
+  if (!mascot || !input || !view) return;
+  // Typing starts the performance; focusing the field alone leaves Rocky resting.
+  let wake = () => {};
+  const start = () => {
+    mascot.classList.add("is-password-active");
+    wake();
+  };
+  const pause = () => {
+    mascot.classList.remove("is-password-active");
+    wake();
+  };
+  input.addEventListener("input", start, { signal });
+  input.addEventListener("blur", pause, { signal });
+  try {
+    const response = await view.fetch("assets/mascot/rocky-password-peek.svg", {
+      signal,
+    });
+    if (!response.ok) return;
+    const source = await response.text();
+    if (signal.aborted) return;
+    const parsed = new view.DOMParser().parseFromString(
+      source,
+      "image/svg+xml",
+    );
+    const svg = parsed.documentElement;
+    if (svg.localName !== "svg" || parsed.querySelector("parsererror")) return;
+    svg
+      .querySelectorAll("script,foreignObject")
+      .forEach((node) => node.remove());
+    scopeSvgIds(svg, "password");
+    // Inline SVG styles participate in the page cascade and must stay instance-specific.
+    scopeSvgStyles(svg, "rocky-password-svg");
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", "روكي يغطي عينيه ويختلس نظرة مرحة");
+    const rendered = documentObject.importNode(svg, true);
+    mascot.append(rendered);
+    mascot.classList.add("is-password-ready");
+    const loopStart = Number(rendered.dataset.motionLoopStart);
+    const loopEnd = Number(rendered.dataset.motionLoopEnd);
+    const duration = Number(rendered.dataset.motionDuration);
+    if (!(loopStart > 0 && loopEnd > loopStart && duration > loopEnd)) return;
+    const reducedMotion = view.matchMedia("(prefers-reduced-motion: reduce)");
+    let animations = rendered.getAnimations({ subtree: true });
+    let position = 0;
+    let frame = 0;
+    let previousTime = 0;
+    const paint = () =>
+      animations.forEach((animation) => {
+        animation.currentTime = position;
+      });
+    const tick = (now) => {
+      frame = 0;
+      if (signal.aborted || reducedMotion.matches) return;
+      if (mascot.closest("[data-onboarding-step]")?.hidden) {
+        position = 0;
+        mascot.classList.remove("is-password-active");
+        animations = [];
+        return;
+      }
+      const elapsed = Math.min(64, now - previousTime);
+      previousTime = now;
+      const active = mascot.classList.contains("is-password-active");
+      const priorPosition = position;
+      if (active) {
+        position += elapsed;
+        // Repeat only the covered-eye/peek section, leaving the arm lowering for blur.
+        if (priorPosition < loopEnd && position >= loopEnd)
+          position = loopStart + (position - loopEnd);
+        else if (position >= duration) position = 0;
+      } else if (position < loopStart) {
+        // Leaving during the lift gently reverses it, without starting a peek.
+        position = Math.max(0, position - elapsed * 1.4);
+      } else {
+        position = Math.min(duration, position + elapsed * 2);
+      }
+      paint();
+      if (active || (position > 0 && position < duration))
+        frame = view.requestAnimationFrame(tick);
+    };
+    wake = () => {
+      if (frame || signal.aborted || reducedMotion.matches) return;
+      animations = rendered.getAnimations({ subtree: true });
+      previousTime = view.performance.now();
+      frame = view.requestAnimationFrame(tick);
+    };
+    reducedMotion.addEventListener(
+      "change",
+      () => {
+        view.cancelAnimationFrame(frame);
+        frame = 0;
+        position = 0;
+        if (reducedMotion.matches) {
+          animations.forEach((animation) => animation.cancel());
+          animations = [];
+          return;
+        }
+        animations = rendered.getAnimations({ subtree: true });
+        paint();
+        if (mascot.classList.contains("is-password-active")) wake();
+      },
+      { signal },
+    );
+    signal.addEventListener("abort", () => view.cancelAnimationFrame(frame), {
+      once: true,
+    });
+    paint();
+    if (mascot.classList.contains("is-password-active")) wake();
+  } catch (error) {
+    if (error?.name !== "AbortError")
+      console.warn("Rocky password animation could not load.", error);
+  }
+}
+
+export function bindVisitorMascots(root, signal, documentObject) {
+  void bindRockyPointerTracking(root, signal, documentObject);
+  void bindRockyPassword(root, signal, documentObject);
+  const repeatingRocky = root.querySelector("[data-rocky-repeat]");
+  const motion = documentObject.defaultView?.matchMedia?.(
+    "(prefers-reduced-motion: reduce)",
+  );
+  if (!repeatingRocky) return;
+  const timer = setInterval(() => {
+    if (
+      motion?.matches ||
+      repeatingRocky.closest("[data-onboarding-step]")?.hidden
+    )
+      return;
+    const picture = repeatingRocky.querySelector("picture");
+    picture?.replaceWith(picture.cloneNode(true));
+  }, Number(repeatingRocky.dataset.rockyRepeat));
+  signal.addEventListener("abort", () => clearInterval(timer), { once: true });
+}

@@ -1,1 +1,96 @@
-import{QUESTION_RATINGS as _,getRatedSubjectQuestions as S}from"../domain/question-ratings.js?v=7388f68cc0f433fd";import{renderRatingFace as T}from"./question-rating.js?v=7388f68cc0f433fd";import{COURSE_SUBJECTS as l}from"../data/course.js?v=7388f68cc0f433fd";import{getSubjectRoadmap as d}from"../data/subject-roadmaps.js?v=7388f68cc0f433fd";import{getIctPartQuestionIds as M}from"../data/lessons/ict/question-index.js?v=7388f68cc0f433fd";import{escapeHtml as u}from"../lib/dom.js?v=7388f68cc0f433fd";import{isProgressLabelCovered as g}from"./learner-format.js?v=7388f68cc0f433fd";const q='<span class="subject-card__lock" aria-hidden="true"><img src="assets/icons/subject-lock.svg" alt="" /></span>',y=d("ict")?.units.flatMap(t=>t.lessons).filter(t=>!t.hidden&&!t.optional).reduce((t,a)=>t+a.parts.reduce((r,e)=>r+M(e.id).length,0),0)||0;function h(t){return t==="ict"?y:d(t)?.units.flatMap(a=>a.lessons).filter(a=>!a.hidden&&!a.optional).reduce((a,r)=>a+r.parts.reduce((e,s)=>e+(s.questionIds?.length||0),0),0)||0}function L(t){return d(t)?.units.reduce((a,r)=>a+r.lessons.filter(e=>!e.hidden&&!e.optional).length,0)||0}function N(t,a){const r=a.unpublished,e=r?' aria-disabled="true" disabled':"";return`<button class="subject-card${r?" subject-card--locked":""}" type="button" data-subject="${u(t.id)}" data-status="${a.state}" aria-label="${u(a.label)}"${e}><span class="subject-card__hero"><span class="subject-card__title"><h2>${u(t.name)}</h2></span></span><span class="subject-card__details"><span class="subject-card__progress-track" data-subject-progress data-label-covered="${g(a.progress,100)}"><span aria-hidden="true"></span><bdi class="subject-card__progress-count ui-number" data-subject-count>${a.completedCount} / ${a.totalCount}</bdi></span></span>${r?q:""}</button>`}function $(t,a){const r=t.id==="ict"||d(t.id)?.questionsOnly,e=a?.learning?.subjects?.[t.id]||(t.id==="ict"||!r?a?.learning:void 0),s=t.status==="unpublished",n=r?Math.max(0,t.id==="mathematics"&&h(t.id)||Number(e?.currentQuestionsTotal)||h(t.id)):0,o=Math.min(n,Math.max(0,Number(e?.currentQuestionsSolved)||0)),c=r&&Number(e?.currentQuestionsTotal)>0,i=s?0:c?o/n*100:Math.max(0,Math.min(100,Number(e?.progress)||0)),j=!!(e?.hasStarted||i||e?.requiredLessonsCompleted||e?.questionsSolved),C=c?o===n:i>=100||e?.publishedPartsTotal>0&&e.requiredLessonsCompleted>=e.publishedPartsTotal,p=s?"unpublished":C?"completed":j?"in-progress":"available",b={unpublished:"قيد الإعداد",completed:"راجع خريطة الدروس","in-progress":"تابع من خريطة الدروس",available:"ابدأ من خريطة الدروس"}[p],m=s?0:Math.max(0,Number(e?.requiredLessonsCompleted)||0),f=s?0:Math.max(0,Number(e?.curriculumLessonsTotal)||Number(e?.publishedPartsTotal)||L(t.id));return{state:p,action:b,progress:i,unpublished:s,completedLessons:m,totalLessons:f,completedCount:r&&!s?o:m,totalCount:r&&!s?n:f,label:`${t.name}، ${b}${r&&!s?`، ${o} من ${n} سؤالًا`:""}${e&&!s?`، ${Math.round(i)}% مكتمل`:""}`}}function x({ratedQuestions:t=!1,questionFeedback:a}={}){return t?`<section class="subject-map" data-catalog="rated-questions" aria-label="المواد الدراسية">${l.map(s=>{const n=S(s.id,a);return`<article class="subject-card subject-card--rated" data-subject="${u(s.id)}" aria-label="${u(s.name)}"><button type="button" class="subject-card__hero rated-subject-open" data-rated-subject="${u(s.id)}"><span class="subject-card__title"><h2>${u(s.name)}</h2></span></button><div class="subject-card__details rated-subject-difficulties" aria-label="مستويات الصعوبة">${_.map(({value:o,label:c})=>`<button type="button" class="rated-subject-difficulty rated-subject-difficulty--${o}" data-rated-subject="${u(s.id)}" data-rating="${o}" aria-label="${c}، ${n.filter(i=>i.rating===o).length} سؤالًا">${T(o)}<span>${c}</span><bdi class="ui-number" data-rating-count>${n.filter(i=>i.rating===o).length}</bdi></button>`).join("")}</div></article>`}).join("")}</section>`:`<section class="subject-map" data-catalog="learn" aria-label="المواد الدراسية">${l.map(e=>N(e,$(e))).join("")}</section>`}function k(t,a){t.querySelectorAll(".subject-card:not(.subject-card--rated)").forEach(r=>{const e=l.find(({id:c})=>c===r.dataset.subject);if(!e)return;const s=$(e,a),n=r.querySelector("[data-subject-progress]");n&&(n.style.setProperty("--subject-progress",s.progress),n.dataset.labelCovered=String(g(s.progress,100)));const o=r.querySelector("[data-subject-count]");o&&(o.textContent=`${s.completedCount} / ${s.totalCount}`),r.dataset.status=s.state,r.setAttribute("aria-label",s.label)})}function U(t,{ratedQuestions:a=!1,snapshot:r=void 0,questionFeedback:e}={}){const s=x({ratedQuestions:a,questionFeedback:e}),n=t.querySelector(".subject-map");n?n.outerHTML=s:t.innerHTML=s,!a&&r&&k(t,r)}export{$ as getSubjectCardPresentation,U as renderCourseMap,x as renderCourseMapMarkup,k as updateSubjectCards};
+import { QUESTION_RATINGS, getRatedSubjectQuestions } from "../domain/question-ratings.js";
+import { renderRatingFace } from "./question-rating.js";
+import { COURSE_SUBJECTS } from "../data/course.js";
+import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js";
+import { escapeHtml } from "../lib/dom.js";
+import { isProgressLabelCovered } from "./learner-format.js";
+
+const LOCK_ICON = '<span class="subject-card__lock" aria-hidden="true"><img src="assets/icons/subject-lock.svg" alt="" /></span>';
+const ICT_QUESTION_TOTAL = getSubjectRoadmap("ict")?.units.flatMap(unit => unit.lessons)
+  .filter(lesson => !lesson.hidden && !lesson.optional)
+  .reduce((total, lesson) => total + lesson.parts.reduce((count, part) => count + getIctPartQuestionIds(part.id).length, 0), 0) || 0;
+
+function roadmapQuestionTotal(subjectId) {
+  if (subjectId === "ict") return ICT_QUESTION_TOTAL;
+  return getSubjectRoadmap(subjectId)?.units.flatMap(unit => unit.lessons)
+    .filter(lesson => !lesson.hidden && !lesson.optional)
+    .reduce((total, lesson) => total + lesson.parts.reduce((count, part) => count + (part.questionIds?.length || 0), 0), 0) || 0;
+}
+
+function roadmapLessonTotal(subjectId) {
+  return getSubjectRoadmap(subjectId)?.units.reduce((total, unit) => total + unit.lessons.filter(lesson => !lesson.hidden && !lesson.optional).length, 0) || 0;
+}
+
+function subjectCardMarkup(subject, view) {
+  const locked = view.unpublished;
+  const disabledMarkup = locked ? ' aria-disabled="true" disabled' : "";
+  return `<button class="subject-card${locked ? " subject-card--locked" : ""}" type="button" data-subject="${escapeHtml(subject.id)}" data-status="${view.state}" aria-label="${escapeHtml(view.label)}"${disabledMarkup}><span class="subject-card__hero"><span class="subject-card__title"><h2>${escapeHtml(subject.name)}</h2></span></span><span class="subject-card__details"><span class="subject-card__progress-track" data-subject-progress data-label-covered="${isProgressLabelCovered(view.progress, 100)}"><span aria-hidden="true"></span><bdi class="subject-card__progress-count ui-number" data-subject-count>${view.completedCount} / ${view.totalCount}</bdi></span></span>${locked ? LOCK_ICON : ""}</button>`;
+}
+
+/** One presentation contract owns the initial card and later learner updates. */
+export function getSubjectCardPresentation(subject, snapshot) {
+  const questionsOnly = subject.id === "ict" || getSubjectRoadmap(subject.id)?.questionsOnly;
+  const learning = snapshot?.learning?.subjects?.[subject.id]
+    || (subject.id === "ict" || !questionsOnly ? snapshot?.learning : undefined);
+  const unpublished = subject.status === "unpublished";
+  const questionTotal = questionsOnly ? Math.max(0,
+    (subject.id === "mathematics" && roadmapQuestionTotal(subject.id)) ||
+    Number(learning?.currentQuestionsTotal) || roadmapQuestionTotal(subject.id)) : 0;
+  const questionSolved = Math.min(questionTotal, Math.max(0, Number(learning?.currentQuestionsSolved) || 0));
+  const hasCurrentQuestions = questionsOnly && Number(learning?.currentQuestionsTotal) > 0;
+  const progress = unpublished ? 0 : hasCurrentQuestions
+    ? questionSolved / questionTotal * 100
+    : Math.max(0, Math.min(100, Number(learning?.progress) || 0));
+  const started = Boolean(learning?.hasStarted || progress || learning?.requiredLessonsCompleted || learning?.questionsSolved);
+  const completed = hasCurrentQuestions ? questionSolved === questionTotal
+    : progress >= 100 || (learning?.publishedPartsTotal > 0 && learning.requiredLessonsCompleted >= learning.publishedPartsTotal);
+  const state = unpublished ? "unpublished" : completed ? "completed" : started ? "in-progress" : "available";
+  const action = { unpublished:"قيد الإعداد", completed:"راجع خريطة الدروس", "in-progress":"تابع من خريطة الدروس", available:"ابدأ من خريطة الدروس" }[state];
+  const completedLessons = unpublished ? 0 : Math.max(0, Number(learning?.requiredLessonsCompleted) || 0);
+  const totalLessons = unpublished ? 0 : Math.max(0, Number(learning?.curriculumLessonsTotal) || Number(learning?.publishedPartsTotal) || roadmapLessonTotal(subject.id));
+  return {
+    state, action, progress, unpublished,
+    completedLessons, totalLessons,
+    completedCount:questionsOnly && !unpublished ? questionSolved : completedLessons,
+    totalCount:questionsOnly && !unpublished ? questionTotal : totalLessons,
+    label:`${subject.name}، ${action}${questionsOnly && !unpublished ? `، ${questionSolved} من ${questionTotal} سؤالًا` : ""}${learning && !unpublished ? `، ${Math.round(progress)}% مكتمل` : ""}`,
+  };
+}
+
+export function renderCourseMapMarkup({ ratedQuestions = false, questionFeedback } = {}) {
+  if (ratedQuestions) {
+    const subjects = COURSE_SUBJECTS.map(subject => {
+      const questions = getRatedSubjectQuestions(subject.id,questionFeedback);
+      return `<article class="subject-card subject-card--rated" data-subject="${escapeHtml(subject.id)}" aria-label="${escapeHtml(subject.name)}"><button type="button" class="subject-card__hero rated-subject-open" data-rated-subject="${escapeHtml(subject.id)}"><span class="subject-card__title"><h2>${escapeHtml(subject.name)}</h2></span></button><div class="subject-card__details rated-subject-difficulties" aria-label="مستويات الصعوبة">${QUESTION_RATINGS.map(({value,label}) => `<button type="button" class="rated-subject-difficulty rated-subject-difficulty--${value}" data-rated-subject="${escapeHtml(subject.id)}" data-rating="${value}" aria-label="${label}، ${questions.filter(question => question.rating === value).length} سؤالًا">${renderRatingFace(value)}<span>${label}</span><bdi class="ui-number" data-rating-count>${questions.filter(question => question.rating === value).length}</bdi></button>`).join("")}</div></article>`;
+    }).join("");
+    return `<section class="subject-map" data-catalog="rated-questions" aria-label="المواد الدراسية">${subjects}</section>`;
+  }
+  const subjects = COURSE_SUBJECTS.map((subject) => subjectCardMarkup(subject, getSubjectCardPresentation(subject))).join("");
+  return `<section class="subject-map" data-catalog="learn" aria-label="المواد الدراسية">${subjects}</section>`;
+}
+
+export function updateSubjectCards(container, snapshot) {
+  container.querySelectorAll(".subject-card:not(.subject-card--rated)").forEach((card) => {
+    const subject = COURSE_SUBJECTS.find(({ id }) => id === card.dataset.subject);
+    if (!subject) return;
+    const view = getSubjectCardPresentation(subject, snapshot);
+    const progress = card.querySelector("[data-subject-progress]");
+    if (progress) {
+      progress.style.setProperty("--subject-progress", view.progress);
+      progress.dataset.labelCovered = String(isProgressLabelCovered(view.progress, 100));
+    }
+    const count = card.querySelector("[data-subject-count]");
+    if (count) count.textContent = `${view.completedCount} / ${view.totalCount}`;
+    card.dataset.status = view.state;
+    card.setAttribute("aria-label", view.label);
+  });
+}
+
+export function renderCourseMap(container, { ratedQuestions = false, snapshot = undefined, questionFeedback } = {}) {
+  const markup = renderCourseMapMarkup({ ratedQuestions,questionFeedback });
+  const current = container.querySelector(".subject-map");
+  if (current) current.outerHTML = markup;
+  else container.innerHTML = markup;
+  if (!ratedQuestions && snapshot) updateSubjectCards(container, snapshot);
+}

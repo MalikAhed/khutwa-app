@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js";
+
+export const source = `:::exam-question
 id: eng-2023-p033-qr1-a-1
 title: Unit 3 · PDF 33 · r1-a-1
 question: Coincidences …………
@@ -1760,4 +1762,6 @@ solution:
 
 **المصدر:** صفحة 21 من الكتاب.
 
-:::`;export default e("english-u03-reading",source);
+:::`;
+
+export default createEnglishLesson("english-u03-reading", source);

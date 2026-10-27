@@ -1,0 +1,96 @@
+{
+  "source": "assets/books/ict-past-papers-selected.pdf",
+  "sourceSha256": "fef4e1ff58dc15258839f178e7f8469d6cc4f14a63d29e584b420e50818e3b58",
+  "pageCount": 17,
+  "collectionUrl": "https://www.sh-pal.com/2022/12/2023.html",
+  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Syc0NfZBXpku5tSr5VrAOm6nLtX8SfeL",
+  "reviewedOn": "2026-09-25",
+  "description": "Ministry-supervised classified collection of scientific-branch national exams (2019–2022) and explicitly labelled 2022 mocks. Hosting mirror title: 2023; not a 2023 national exam.",
+  "figures": [
+    {
+      "file": "assets/lessons/ict/exams/past-p73-set.webp",
+      "sourcePage": 8,
+      "renderSize": [
+        1061,
+        1500
+      ],
+      "rectPixels": [
+        472,
+        349,
+        739,
+        395
+      ],
+      "sha256": "0406dcad3bf0d9e504e1f2c1d75beea0f2f3a972a3ef8003f9d85e94415acbd4",
+      "originalSourcePage": 73
+    },
+    {
+      "file": "assets/lessons/ict/exams/past-p125-duplex.webp",
+      "sourcePage": 13,
+      "renderSize": [
+        1061,
+        1500
+      ],
+      "rectPixels": [
+        464,
+        751,
+        731,
+        860
+      ],
+      "sha256": "9004facb400a9dc1b9cc94d5e15e3d8e072eb4df1407f05925fa7da4263b56b2",
+      "originalSourcePage": 125,
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 92,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 43.117,
+        "edgeMeanAbsoluteChannelError": 1.58
+      }
+    },
+    {
+      "file": "assets/lessons/ict/exams/past-p136-duplex-answer.webp",
+      "sourcePage": 16,
+      "renderSize": [
+        1061,
+        1500
+      ],
+      "rectPixels": [
+        138,
+        236,
+        826,
+        384
+      ],
+      "sha256": "ba7408a1912ee4bfae96caad6862f3331eb4079369a787e2ef399e8db0ee198f",
+      "originalSourcePage": 136,
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 92,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 42.511,
+        "edgeMeanAbsoluteChannelError": 1.759
+      }
+    }
+  ],
+  "originalSha256": "f98a49d719f0f7b5d26524ee7f6116b59d0c4bd3761163045abd635af2ce7685",
+  "originalPageCount": 142,
+  "originalPages": [
+    1,
+    2,
+    6,
+    17,
+    36,
+    37,
+    63,
+    73,
+    74,
+    89,
+    91,
+    124,
+    125,
+    126,
+    135,
+    136,
+    137
+  ]
+}

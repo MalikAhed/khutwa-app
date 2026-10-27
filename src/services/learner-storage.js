@@ -1,1 +1,65 @@
-const u="tawjihi:visitor-selection",l="tawjihi:temporary-account",w="tawjihi:codex-live-reload",E="tawjihi:guest-trial",S=e=>console.warn(e);function d(e=S,{persistent:n=!1}={}){try{const s=n?window.localStorage:window.sessionStorage;if(n)for(const r of[u,l]){const c=window.sessionStorage.getItem(r);c!==null&&(s.setItem(r,c),window.sessionStorage.removeItem(r))}return s}catch(s){return e(new Error("Session storage is unavailable; state will last only for this page view.",{cause:s})),null}}function f(e,n=S,{persistent:s=!1}={}){const r=(t,{json:o=!0}={})=>{if(!e)return null;try{const a=e.getItem(t);return o?JSON.parse(a||"null"):a}catch(a){return n(new Error("Saved session state could not be read.",{cause:a})),null}},c=(t,o)=>{if(e)try{e.setItem(t,o)}catch(a){n(new Error("Session state could not be saved.",{cause:a}))}},i=t=>{if(e)try{e.removeItem(t)}catch(o){n(new Error("Session state could not be cleared.",{cause:o}))}};return Object.freeze({save:c,remove:i,restore(){const t=s||r(w,{json:!1})==="1",o={selection:r(u),account:t?r(l):null};return i(w),t||i(l),o}})}export{E as GUEST_TRIAL_STORAGE_KEY,w as LIVE_RELOAD_STORAGE_KEY,l as TEMPORARY_ACCOUNT_STORAGE_KEY,u as VISITOR_SELECTION_STORAGE_KEY,f as createLearnerStorage,S as defaultErrorReporter,d as getBrowserLearnerStorage};
+// Persistence mechanics only; learner-session validates and owns product state.
+export const VISITOR_SELECTION_STORAGE_KEY = "tawjihi:visitor-selection";
+export const TEMPORARY_ACCOUNT_STORAGE_KEY = "tawjihi:temporary-account";
+export const LIVE_RELOAD_STORAGE_KEY = "tawjihi:codex-live-reload";
+export const GUEST_TRIAL_STORAGE_KEY = "tawjihi:guest-trial";
+export const defaultErrorReporter = (error) => console.warn(error);
+
+export function getBrowserLearnerStorage(onError = defaultErrorReporter, { persistent = false } = {}) {
+  try {
+    const storage = persistent ? window.localStorage : window.sessionStorage;
+    if (persistent) {
+      // Move the current preview profile, never progress or credentials. Remove
+      // its old session copy so an explicit sign-out cannot restore it later.
+      for (const key of [VISITOR_SELECTION_STORAGE_KEY, TEMPORARY_ACCOUNT_STORAGE_KEY]) {
+        const value = window.sessionStorage.getItem(key);
+        if (value !== null) {
+          storage.setItem(key, value);
+          window.sessionStorage.removeItem(key);
+        }
+      }
+    }
+    return storage;
+  }
+  catch (cause) {
+    onError(new Error("Session storage is unavailable; state will last only for this page view.", { cause }));
+    return null;
+  }
+}
+
+export function createLearnerStorage(storage, onError = defaultErrorReporter, { persistent = false } = {}) {
+  const read = (key, { json = true } = {}) => {
+    if (!storage) return null;
+    try {
+      const value = storage.getItem(key);
+      return json ? JSON.parse(value || "null") : value;
+    } catch (cause) {
+      onError(new Error("Saved session state could not be read.", { cause }));
+      return null;
+    }
+  };
+  const save = (key, value) => {
+    if (!storage) return;
+    try { storage.setItem(key, value); }
+    catch (cause) { onError(new Error("Session state could not be saved.", { cause })); }
+  };
+  const remove = (key) => {
+    if (!storage) return;
+    try { storage.removeItem(key); }
+    catch (cause) { onError(new Error("Session state could not be cleared.", { cause })); }
+  };
+  return Object.freeze({
+    save,
+    remove,
+    restore() {
+      const preserveAccount = persistent || read(LIVE_RELOAD_STORAGE_KEY, { json:false }) === "1";
+      const saved = {
+        selection:read(VISITOR_SELECTION_STORAGE_KEY),
+        account:preserveAccount ? read(TEMPORARY_ACCOUNT_STORAGE_KEY) : null,
+      };
+      remove(LIVE_RELOAD_STORAGE_KEY);
+      if (!preserveAccount) remove(TEMPORARY_ACCOUNT_STORAGE_KEY);
+      return saved;
+    },
+  });
+}

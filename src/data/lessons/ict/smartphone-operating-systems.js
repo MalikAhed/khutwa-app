@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as s}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const LESSON_MARKDOWN=`<!-- step-id: android-features-mission -->
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const LESSON_MARKDOWN = `<!-- step-id: android-features-mission -->
 <!-- presentation: video-intro -->
 # أندرويد ونقل الملفات والواقع الافتراضي
 
@@ -155,4 +157,17 @@ https://www.youtube.com/watch?v=t63ANNixm5s
 
 <!-- lesson-step -->
 
-`;export default s({status:"published",title:"أنظمة تشغيل الهاتف الذكي",summary:"تمييز أنظمة الهاتف والواقع الافتراضي والمعزز وأنواع التطبيقات وفق الكتاب.",outcome:"تمييز أنظمة الهاتف والواقع الافتراضي والمعزز وأنواع التطبيقات وفق الكتاب.",mode:"شاهد ← راجع ← أجب",mission:"تمييز أنظمة الهاتف والواقع الافتراضي والمعزز وأنواع التطبيقات وفق الكتاب.",duration:"حسب الفيديو والتدريب",level:"الثاني عشر",reward:10,passingScore:80},LESSON_MARKDOWN);
+`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "title": "أنظمة تشغيل الهاتف الذكي",
+  "summary": "تمييز أنظمة الهاتف والواقع الافتراضي والمعزز وأنواع التطبيقات وفق الكتاب.",
+  "outcome": "تمييز أنظمة الهاتف والواقع الافتراضي والمعزز وأنواع التطبيقات وفق الكتاب.",
+  "mode": "شاهد ← راجع ← أجب",
+  "mission": "تمييز أنظمة الهاتف والواقع الافتراضي والمعزز وأنواع التطبيقات وفق الكتاب.",
+  "duration": "حسب الفيديو والتدريب",
+  "level": "الثاني عشر",
+  "reward": 10,
+  "passingScore": 80
+}, LESSON_MARKDOWN);

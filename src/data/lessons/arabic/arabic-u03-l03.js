@@ -1,4 +1,6 @@
-import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createArabicLesson } from "./shared.js";
+
+export const source = `:::mcq
 id: arabic-p107-m01
 title: من المعاني النحوية لـ (الواو) و(الفاء)، اختيار من متعدد، السؤال 1، ص 106، 2019
 kicker: امتحانات الثانوية العامة، 2019
@@ -408,4 +410,6 @@ body:
 solution:
 الواو واو المعيّة، أي: مشيتُ بمحاذاة البحر ومعه.
 يدل نصب «البحرَ» على أنه مفعول معه منصوب بالفتحة. البحر مصاحب للمشي ولا يشارك المتكلم في فعل المشي، ولهذا لا يكون معطوفاً على تاء الفاعل.
-:::`;export default e("arabic-u03-l03",source);
+:::`;
+
+export default createArabicLesson("arabic-u03-l03", source);

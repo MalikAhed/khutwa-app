@@ -1,1244 +1,4037 @@
-export const ICT_EXAM_QUESTIONS=[{id:"exam-p03-q1-c",topic:"android-features",lessonId:"smartphone-operating-systems",partId:"android-features",question:"اذكر ثلاثًا من طرق نقل الملفات في نظام الأندرويد.",answer:`**ثلاث طرق لنقل الملفات في أندرويد:**
-
-1. كابل \`USB\`.
-2. البلوتوث \`Bluetooth\`.
-3. الواي فاي \`Wi-Fi\`.
-
-**الشاهد من الكتاب:**
-
-> نقل الملفات في أندرويد: يتم نقل الملفات بعدة طرق منها: كابل USB. البلوتوث Bluetooth. الواي فاي Wi-Fi. التخزين السحابي Cloud Storage ومواقع التواصل الاجتماعي، والبريد الإلكتروني.
-
-**المصدر:** صفحة 38 من الكتاب.`,sourcePage:3,answerPage:3,paperLabel:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",originalNumber:"السؤال الأول / ج",marks:3,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[38],figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 3](assets/lessons/ict/exams/source-crops/exam-p03-q1-c-question.webp) · [الإجابة ص 3](assets/lessons/ict/exams/source-crops/exam-p03-q1-c-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 3 · السؤال الأول / ج · 3 علامة",partOrder:19,prompt:"سؤال من ورقة امتحان"},{id:"exam-p03-q2-b-normalization",topic:"practice-and-review",lessonId:"database-management",partId:"practice-and-review",question:"وضح المقصود بالمصطلحات الآتية: التسوية.",answer:`**التسوية:** تنظيم بيانات قاعدة البيانات في جداول مترابطة لتقليل تكرار المعلومات ومشكلات تعديلها، والمحافظة على تناسق البيانات.
-
-**الشاهد من الكتاب:**
-
-> المشكلة الأساسية هي تكرار المعلومات (Data Redundancy) مما يتسبب في استهلاك مساحة تخزينية لا داعي لها
-
-> للتغلب على المشاكل السابقة في التصميم، يتم فصل الجدول في الشكل السابق إلى جدولين
-
-[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/856392a539ed93809d10.webp)
-
-[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/d34ec1e299701b3ec0b8.webp)`,sourcePage:3,answerPage:3,paperLabel:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",originalNumber:"السؤال الثاني / ب — التسوية",marks:null,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[34],figureNeeded:!1,parentMarks:6,sourceNote:"مقتطف حرفي من فرع متعدد المصطلحات؛ استبعد «مستوى التجميع» لأنه خارج الكتاب.",answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 3](assets/lessons/ict/exams/source-crops/exam-p03-q2-b-normalization-question.webp) · [الإجابة ص 3](assets/lessons/ict/exams/source-crops/exam-p03-q2-b-normalization-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 3 · السؤال الثاني / ب — التسوية",partOrder:1,prompt:"سؤال من ورقة امتحان"},{id:"exam-p05-q3-d",topic:"sql-introduction",lessonId:"sql-queries",partId:"sql-introduction",question:"قارن بين لغة التحكم بالبيانات (DCL) و لغة معالجة البيانات (DML).",answer:`**المقارنة من حيث الوظيفة:**
-
-| القسم | الوظيفة |
-| --- | --- |
-| لغة التحكم بالبيانات \`DCL\` | تحديد صلاحيات مستخدمي قاعدة البيانات. |
-| لغة معالجة البيانات \`DML\` | استرجاع السجلات وإدخالها وتحديثها وحذفها وفق معايير. |
-
-**الشاهد من الكتاب 1:**
-
-> لغة التحكم بالبيانات (DCL-Data Control Language)
-> مجموعة من الأوامر لتحديد صلاحيات مستخدمي قاعدة البيانات من حيث الوصول إلى مكوناتها واستخدامها.
-
-
-
-**الشاهد من الكتاب 2:**
-
-> لغة معالجة البيانات (DML-Data Manipulation Language)
-> مجموعة من الأوامر لإجراء عمليات على الجداول (إدخال وتحديث وحذف واسترجاع سجلات) بناء على معايير (شروط) محددة
-
-**المصدر:** صفحة 12 من الكتاب.`,sourcePage:5,answerPage:5,paperLabel:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",originalNumber:"السؤال الثالث / د",marks:2,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[12,13],figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 5](assets/lessons/ict/exams/source-crops/exam-p05-q3-d-question.webp) · [الإجابة ص 5](assets/lessons/ict/exams/source-crops/exam-p05-q3-d-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalSourceConflict:"عنوان الإجابة المصورة يكتب DDL أمام Data Control Language؛ الصحيح DCL كما في السؤال والكتاب.",type:"exam-question",title:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 5 · السؤال الثالث / د · 2 علامة",partOrder:6,prompt:"سؤال من ورقة امتحان"},{id:"exam-p07-q5-c",topic:"ios-files",lessonId:"smartphone-operating-systems",partId:"ios-files",question:"قارن بين: التطبيقات الأصلية NATIVE والتطبيقات الهجينة HYBRID من حيث نظام التشغيل الذي تعمل فيه، المتجر المستخدم لتنزيل التطبيق، واللغات البرمجية.",answer:`**الإجابة:** 
-
-| البند | التطبيقات الأصيلة \`Native\` | التطبيقات الهجينة \`Hybrid\` |
-|---|---|---|
-| بيئة التشغيل | نظام تشغيل واحد | أكثر من بيئة نظام تشغيل |
-| متجر التنزيل في وصف الكتاب | المتجر الخاص بالنظام | متاجر عديدة |
-| البرمجة | أندرويد: \`Java\` و\`C++\`؛ \`iOS\`: \`Objective-C\` و\`Swift\`؛ ويندوز فون: \`VB.NET\` و\`C#.NET\` | \`HTML5\` و\`JavaScript\` و\`CSS\` |
-
-**الشاهد من الكتاب 1:**
-
-> التطبيقات الأصيلة (Native): هي التطبيقات التي تم تصميمها وبرمجتها بلغات برمجية، لتعمل في بيئة نظام تشغيل واحد، ومتواجدة في المتجر الخاص بالنظام، ولا تعمل في بيئة أي نظام تشغيل آخر.
-
-**المصدر:** صفحة 41 من الكتاب.
-
-
-
-**الشاهد من الكتاب 2:**
-
-> نظام أندرويد: JAVA, C++، .apk
-> نظام IOS: Objective C, Swift، .ipa
-> نظام ويندوز فون: VB.NET, C#.NET، .xap
-
-
-
-**الشاهد من الكتاب 3:**
-
-> التطبيقات الهجينة (Hybrid): التطبيقات التي تم تصميمها وبرمجتها، لتعمل في أكثر من بيئة نظام تشغيل، ومتواجدة في متاجر عديدة، وتستخدم مهارات تطوير الويب (html5، java script، css) في بنائها وبرمجتها.
-
-**المصدر:** صفحة 42 من الكتاب.`,sourcePage:7,answerPage:7,paperLabel:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",originalNumber:"السؤال الخامس / ج",marks:3,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[41,42],figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-c-question.webp) · [الإجابة ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-c-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 7 · السؤال الخامس / ج · 3 علامة",partOrder:12,prompt:"سؤال من ورقة امتحان"},{id:"exam-p07-q5-d1",topic:"insert-queries",lessonId:"sql-queries",partId:"insert-queries",question:`تأمل الجدول التالي ثم اكتب أوامر SQL لتنفيذ الاستعلامات التالية:
-
-| Proj_num | Proj_name | Proj_cost |
-| --- | --- | --- |
-| 10 | B | 2500 |
-| 20 | A | 1500 |
-| 30 | D | 3000 |
-| 40 | C | 1000 |
-
-اسم الجدول: project.
-
-إضافة سجل إلى كيان المشروع (project) بالبيانات التالية: (50 ، R ، 1700).`,answer:`لإضافة سجل نستخدم \`INSERT INTO\`، ثم نرتّب القيم مثل الحقول: الرقم، فالاسم، فالتكلفة. نضع الاسم بين اقتباسين لأنه نص.
-
-\`\`\`sql
-INSERT INTO project (Proj_num, Proj_name, Proj_cost)
-VALUES (50, "R", 1700);
-\`\`\`
-
-الرقم 50 غير موجود في الجدول المعطى، فلا يكرر أحد أرقامه.
-
-**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 27 مطبوعة (ص 29 في PDF).`,sourcePage:7,answerPage:7,paperLabel:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",originalNumber:"السؤال الخامس / د / 1",marks:2,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[27,28],figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d1-question.webp) · [الإجابة ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d1-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 7 · السؤال الخامس / د / 1 · 2 علامة",partOrder:3,prompt:"سؤال من ورقة امتحان"},{id:"exam-p07-q5-d2",topic:"update-queries",lessonId:"sql-queries",partId:"update-queries",question:`تأمل الجدول التالي ثم اكتب أوامر SQL لتنفيذ الاستعلامات التالية:
-
-| Proj_num | Proj_name | Proj_cost |
-| --- | --- | --- |
-| 10 | B | 2500 |
-| 20 | A | 1500 |
-| 30 | D | 3000 |
-| 40 | C | 1000 |
-
-اسم الجدول: project.
-
-تحديث تكلفة المشروع (proj_cost) بزيادة 10% للمشاريع التي تقل تكلفتها عن 1500.`,answer:"زيادة 10% تعني الاحتفاظ بالتكلفة وإضافة عُشرها؛ لذلك نضربها في `1.10`. نضع شرط «أقل من» في `WHERE`.\n\n```sql\nUPDATE project\nSET Proj_cost = Proj_cost * 1.10\nWHERE Proj_cost < 1500;\n```\n\nالمشروع `C` وحده يطابق الشرط: `1000 × 1.10 = 1100`. تبقى تكلفة `A`، وهي 1500، كما هي.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).",sourcePage:7,answerPage:7,paperLabel:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",originalNumber:"السؤال الخامس / د / 2",marks:3,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[25,26,27],figureNeeded:!1,sourceAnswer:"UPDATE project_tbl SET Proj_cost = 1.1*[proj_cost] WHERE ((proj_cost) <= 1500);",answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d2-question.webp) · [الإجابة ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d2-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalSourceConflict:"المفتاح يبدل اسم الجدول إلى project_tbl ويستخدم <=، بينما السؤال يسميه project ويطلب «تقل عن» أي <.",type:"exam-question",title:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 7 · السؤال الخامس / د / 2 · 3 علامة",partOrder:1,prompt:"سؤال من ورقة امتحان"},{id:"exam-p07-q5-d3",topic:"where-conditions",lessonId:"sql-queries",partId:"where-conditions",question:`تأمل الجدول التالي ثم اكتب أوامر SQL لتنفيذ الاستعلامات التالية:
-
-| Proj_num | Proj_name | Proj_cost |
-| --- | --- | --- |
-| 10 | B | 2500 |
-| 20 | A | 1500 |
-| 30 | D | 3000 |
-| 40 | C | 1000 |
-
-اسم الجدول: project.
-
-استرجع أسماء المشاريع (proj_name) التي تزيد تكلفتها (proj_cost) عن 1500.`,answer:"نريد **الأسماء**، فنضع `Proj_name` بعد `SELECT`. نفحص **التكلفة** في `WHERE`، و«تزيد عن» تعني `>`.\n\n```sql\nSELECT Proj_name\nFROM project\nWHERE Proj_cost > 1500;\n```\n\nالنتيجة: **`B` و`D`**. لا يدخل `A` لأن تكلفته تساوي 1500.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 19 مطبوعة (ص 21 في PDF).",sourcePage:7,answerPage:7,paperLabel:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",originalNumber:"السؤال الخامس / د / 3",marks:2,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[16,19,20],figureNeeded:!1,sourceAnswer:"Select proj_no from project where proj_cost >= 1500",answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d3-question.webp) · [الإجابة ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d3-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalSourceConflict:"المفتاح يختار proj_no ويستخدم >=؛ المطلوب في السؤال أسماء المشاريع وشرط «عن 1500» الصارم.",type:"exam-question",title:"شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 7 · السؤال الخامس / د / 3 · 2 علامة",partOrder:6,prompt:"سؤال من ورقة امتحان"},{id:"exam-p09-q1-1",topic:"access-basics",lessonId:"database-management",partId:"access-basics",question:"أيّ برنامج أورده الكتاب مثالًا على برامج قواعد البيانات المتاحة للاستخدام دون دفع رسوم ترخيص؟",explanation:"**الإجابة المنهجية وفق مثال الكتاب:** `MySQL`\n\n**الشاهد من الكتاب:**\n\n> ومعظم برامج قواعد البيانات تتطلب ترخيصاً لاستعمالها، وبعضها لا يتطلب ترخيصاً مثل MySql.\n\n**المصدر:** صفحة 3 من الكتاب.\n\n\n\n**توضيح:** `MySQL` هو المثال المنهجي المقصود؛ `MySQL` `Community` مرخّص بـ`GPL` ومتاح مجاناً، وتوجد أيضاً إصدارات مجانية من `Oracle` و`SQL` `Server`، فلا تتفرد `MySQL` تقنياً بالمجانية.",sourcePage:9,answerPage:9,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الأول / 1",marks:2,format:"mcq",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[3],figureNeeded:!1,choices:["Oracle","SQL Server","Access","MySQL"],correctChoiceIndex:3,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-1-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-1-question.webp)",originalSourceConflict:"يقصد الكتاب عدم الحاجة إلى ترخيص مدفوع. MySQL Community مجاني ومتاح برخصة GPL؛ لا يعني ذلك انعدام الترخيص.",type:"mcq",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 1 · 2 علامة",partOrder:0,kicker:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 1 · 2 علامة",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p09-q1-2",topic:"build-and-integrity",lessonId:"database-management",partId:"build-and-integrity",question:"في برنامج MS Access أي من علامات التبويب نستخدمها لإنشاء علاقة بين جدولين؟",explanation:`**الإجابة:** أدوات قاعدة البيانات
-
-**الشاهد من الكتاب:**
-
-> اختيار علاقات (Relationships) من علامة التبويب أدوات قاعدة البيانات (Database Tools) في شريط (القوائم)
-
-**المصدر:** صفحة 7 من الكتاب.`,sourcePage:9,answerPage:9,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الأول / 2",marks:2,format:"mcq",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[7],figureNeeded:!1,choices:["الصفحة الرئيسية","علاقات","أدوات قاعدة البيانات","إدراج"],correctChoiceIndex:2,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-2-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-2-question.webp)",type:"mcq",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 2 · 2 علامة",partOrder:0,kicker:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 2 · 2 علامة",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p09-q1-3",topic:"delete-review",lessonId:"sql-queries",partId:"delete-review",question:"ما جملة Sql المناسبة لحذف سجل المشروع الذي يحمل رقم (Pro_No) 55 من جدول المشروع (Project) إذا كانت تكلفته (Cost) أكبر من 1500؟",explanation:"نحدد جدول الحذف بعد `DELETE FROM`. يجب أن يتحقق الرقم والتكلفة في السجل نفسه، لذلك نربطهما بـ `AND`.\n\n```sql\nDELETE FROM Project\nWHERE Pro_No = 55 AND Cost > 1500;\n```\n\nهذه صيغة **الخيار الأول**؛ استخدام `OR` قد يحذف سجلات لا تحقق الشرطين معًا.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 15 مطبوعة (ص 17 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 30 مطبوعة (ص 32 في PDF).",sourcePage:9,answerPage:9,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الأول / 3",marks:2,format:"mcq",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[30,31],figureNeeded:!1,choices:["Delete From Project WHERE Pro_No=55 and Cost>1500;","Delete All From Project WHERE Pro_No=55 and Cost>1500;","Delete Project WHERE Pro_No=55 or Cost>1500;","Delete Pro_No=55 and Cost>1500 From Project"],correctChoiceIndex:0,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-3-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-3-question.webp)",type:"mcq",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 3 · 2 علامة",partOrder:0,kicker:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 3 · 2 علامة",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p09-q1-4",topic:"where-conditions",lessonId:"sql-queries",partId:"where-conditions",question:'في ترميز أمثلة SQL في الكتاب، ما نوع القيمة المكتوبة بين علامتي اقتباس مثل "107" في الشرط st_no = "107"؟',explanation:`علامتا الاقتباس تحيطان بالقيمة النصية في ترميز هذا التمرين. وقد يتكون النص من رموز رقمية، مثل "107"، دون أن نقصد إجراء حساب عليها.
-
-إذن الإجابة: نص. المطلوب هنا تفسير طريقة كتابة القيمة؛ أما نوع الحقل الفعلي في قاعدة بيانات قائمة فيُعرف من تصميم الجدول، لا من هذا الشرط وحده.
-
-**المصدر:** الصفحات 6، 19 من الكتاب.`,sourcePage:9,answerPage:9,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الأول / 4",marks:2,format:"mcq",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[14,25],figureNeeded:!1,choices:["مذكرة","نص","رقم كسري","رقم صحيح"],correctChoiceIndex:1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-4-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-4-question.webp)",originalSourceConflict:"الاستعلام المطبوع لا يحدد حقول SELECT. أبقينا السؤال كما ورد؛ السؤال عن نوع القيمة المقتبسة لا عن صحة جملة SELECT.",type:"mcq",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 4 · 2 علامة",partOrder:0,kicker:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 4 · 2 علامة",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p09-q1-8",topic:"ios-files",lessonId:"smartphone-operating-systems",partId:"ios-files",question:"ما الميزة التي تسمح بإخفاء التطبيقات أو منع تنزيل تطبيقات في iOS؟",explanation:`**الإجابة:** القيود
-
-**الشاهد من الكتاب:**
-
-> القيود: إخفاء تطبيقات معينة بكلمة مرور، إخفاء App Store؛ بحيث لا يستطيع أحد العبث في التطبيق، أو تنزيل برامج.
-
-**المصدر:** صفحة 40 من الكتاب.`,sourcePage:9,answerPage:9,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الأول / 8",marks:2,format:"mcq",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[40],figureNeeded:!1,choices:["الأمان","القيود","الرفع للتنبيه","السرية"],correctChoiceIndex:1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-8-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-8-question.webp)",type:"mcq",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 8 · 2 علامة",partOrder:1,kicker:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 8 · 2 علامة",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p09-q1-9",topic:"android-features",lessonId:"smartphone-operating-systems",partId:"android-features",question:"ما الميزة التي تتيح تشغيل أكثر من تطبيق على شاشة الهاتف معاً؟",explanation:`**الإجابة:** الإطار المتعدد
-
-**الشاهد من الكتاب:**
-
-> الإطار المتعدد: تشغيل أكثر من تطبيق على شاشة الهاتف معاً.
-
-**المصدر:** صفحة 37 من الكتاب.`,sourcePage:9,answerPage:9,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الأول / 9",marks:2,format:"mcq",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[37],figureNeeded:!1,choices:["التمرير الذكي","الإطار المتعدد","التصوير المزدوج","الواقع المعزز"],correctChoiceIndex:1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-9-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-9-question.webp)",type:"mcq",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 9 · 2 علامة",partOrder:0,kicker:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 9 · 2 علامة",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p10-q2-b1",topic:"android-features",lessonId:"smartphone-operating-systems",partId:"android-features",question:"اذكر مجسين في نظام الأندرويد تدعم تقنية الواقع الافتراضي مع توضيح دور كل منهما.",answer:`**المجسان ودور كل منهما:**
-
-| المجس | الدور |
-| --- | --- |
-| التسارع \`Accelerometer\` | يستشعر تغير السرعة الخطية للجهاز. |
-| الدوران \`Gyroscope\` | يقيس ميل الجهاز وزوايا دورانه. |
-
-**الشاهد من الكتاب 1:**
-
-> التسارع (Accelerometer): مجس يستشعر التغير في سرعة حركة الجهاز باتجاه المحاور الثلاثة x, y, z، كما يقيس التسارع الخطي في حركته.
-
-
-
-**الشاهد من الكتاب 2:**
-
-> الدوران (Gyroscope): يقيس ميل الجهاز وزوايا التحرك من خلال تحديد موقعه حول المحاور الثلاثة.
-
-**المصدر:** صفحة 39 من الكتاب.`,sourcePage:10,answerPage:10,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الثاني / ب / 1",marks:4,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[39,40],figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 10](assets/lessons/ict/exams/source-crops/exam-p10-q2-b1-question.webp) · [الإجابة ص 10](assets/lessons/ict/exams/source-crops/exam-p10-q2-b1-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 10 · السؤال الثاني / ب / 1 · 4 علامة",partOrder:20,prompt:"سؤال من ورقة امتحان"},{id:"exam-p10-q2-b2",topic:"where-conditions",lessonId:"sql-queries",partId:"where-conditions",question:"ما الفرق بين الرابطة المنطقية OR والرابطة المنطقية AND في الاستعلام من حيث الوظيفة؟",answer:`**المقارنة من حيث الوظيفة:**
-
-| الرابطة | متى يتحقق المعيار؟ |
-| --- | --- |
-| \`AND\` | عند تحقق **جميع الشروط معًا**. |
-| \`OR\` | عند تحقق **شرط واحد على الأقل**. |
-
-**الشاهد من الكتاب:**
-
-> أو (OR) والتي تستخدم كجزء إضافي للمعيار لإضافة أكثر من شرط على أن يتحقق أحدها على الأقل، وتستخدم الرابطة المنطقية (AND) لتحقيق مجموعة من الشروط معاً.
-
-**المصدر:** صفحة 15 من الكتاب.`,sourcePage:10,answerPage:10,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الثاني / ب / 2",marks:2,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[14,15,25],figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 10](assets/lessons/ict/exams/source-crops/exam-p10-q2-b2-question.webp) · [الإجابة ص 10](assets/lessons/ict/exams/source-crops/exam-p10-q2-b2-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 10 · السؤال الثاني / ب / 2 · 2 علامة",partOrder:7,prompt:"سؤال من ورقة امتحان"},{id:"exam-p11-q3-a1-components",topic:"access-basics",lessonId:"database-management",partId:"access-basics",question:"قارن بين كل مما يأتي: الاختلاف بين النموذج والتقرير من حيث الوظيفة.",answer:`**المقارنة من حيث الوظيفة:**
-
-| المكوّن | الوظيفة |
-| --- | --- |
-| النموذج | واجهة لإدخال البيانات وتعديلها وحذفها. |
-| التقرير | عرض البيانات وطباعتها. |
-
-**الشاهد من الكتاب 1:**
-
-> النماذج (Forms): واجهات يتم من خلالها إضافة وتعديل وحذف بيانات من الجداول.
-
-
-
-**الشاهد من الكتاب 2:**
-
-> التقارير (Reports): وسيلة لعرض البيانات وطباعتها، بأشكال وتنسيقات متنوعة.
-
-**المصدر:** صفحة 4 من الكتاب.`,sourcePage:11,answerPage:11,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الثالث / أ / 1 — النموذج والتقرير",marks:null,format:"written",scopeReason:"تعريف ووظيفة النماذج والتقارير في ص4 فقط؛ لا يتناول إنشاءها أو تخطيطها.",bookPages:[4],figureNeeded:!1,parentMarks:4,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 11](assets/lessons/ict/exams/source-crops/exam-p11-q3-a1-components-question.webp) · [الإجابة ص 11](assets/lessons/ict/exams/source-crops/exam-p11-q3-a1-components-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 11 · السؤال الثالث / أ / 1 — النموذج والتقرير",partOrder:11,prompt:"سؤال من ورقة امتحان"},{id:"exam-p12-q3-b1",topic:"delete-review",lessonId:"sql-queries",partId:"delete-review",question:"باستخدام لغة الاستعلامات البنيوية (SQL): اكتب جملة SQL المناسبة لحذف سجلات الذين تزيد أعمارهم (age) عن 60 من جدول (Employee).",answer:"نحذف السجلات من `Employee`. «تزيد أعمارهم عن 60» تعني `age > 60`، فلا تشمل من عمره 60.\n\n```sql\nDELETE FROM Employee\nWHERE age > 60;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 30 مطبوعة (ص 32 في PDF).",sourcePage:12,answerPage:12,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الثالث / ب / 1",marks:null,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[30,31],figureNeeded:!1,parentMarks:4,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 12](assets/lessons/ict/exams/source-crops/exam-p12-q3-b1-question.webp) · [الإجابة ص 12](assets/lessons/ict/exams/source-crops/exam-p12-q3-b1-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 12 · السؤال الثالث / ب / 1",partOrder:3,prompt:"سؤال من ورقة امتحان"},{id:"exam-p12-q3-b2",topic:"update-queries",lessonId:"sql-queries",partId:"update-queries",question:"اكتب جملة SQL المناسبة لتعديل راتب الموظف (Salary) في جدول الموظفين (Employee) بزيادة مبلغ 450 إذا كانت عدد سنوات الخدمة (employment_years) تزيد عن 10 سنوات.",answer:"نضيف مبلغًا ثابتًا إلى الراتب القديم، فنكتب `Salary + 450`. شرط الاختيار على سنوات الخدمة، لذلك نضعه وحده في `WHERE`.\n\n```sql\nUPDATE Employee\nSET Salary = Salary + 450\nWHERE employment_years > 10;\n```\n\nمن أمضى 10 سنوات بالضبط لا يطابق الشرط.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 25 مطبوعة (ص 27 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).",sourcePage:12,answerPage:12,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الثالث / ب / 2",marks:null,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[25,26],figureNeeded:!1,parentMarks:4,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 12](assets/lessons/ict/exams/source-crops/exam-p12-q3-b2-question.webp) · [الإجابة ص 12](assets/lessons/ict/exams/source-crops/exam-p12-q3-b2-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 12 · السؤال الثالث / ب / 2",partOrder:2,prompt:"سؤال من ورقة امتحان"},{id:"exam-p13-q4-a5",topic:"count-parameters",lessonId:"sql-queries",partId:"count-parameters",question:`الجدول الأصلي اسمه السيارة وحقوله: رقم السيارة، نوع السيارة، سنة التصنيع. أرقام السيارات: 1111، 2222، 3333، 4444.
-
-اكتب جملة SQL لاسترجاع عدد السيارات في جدول السيارة.`,answer:"نريد عدد السيارات، فنعد قيم رقم السيارة بـ `COUNT` بدل جمعها. `AS` تسمي عمود الناتج.\n\n```sql\nSELECT COUNT([رقم السيارة]) AS [عدد السيارات]\nFROM [السيارة];\n```\n\nالأرقام الأربعة غير فارغة؛ لذا النتيجة **4**.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 24 مطبوعة (ص 26 في PDF).",sourcePage:13,answerPage:13,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الرابع / أ / 5",marks:null,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[23,24],figureNeeded:!1,sourceSelection:"أعيد سياق الجدول من الفرع الأصلي ليبقى المطلوب قابلاً للحل عند عرضه منفرداً.",answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 13](assets/lessons/ict/exams/source-crops/exam-p13-q4-a5-question.webp) · [الإجابة ص 13](assets/lessons/ict/exams/source-crops/exam-p13-q4-a5-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 13 · السؤال الرابع / أ / 5",partOrder:2,prompt:"سؤال من ورقة امتحان"},{id:"exam-p13-q4-b2",topic:"sql-introduction",lessonId:"sql-queries",partId:"sql-introduction",question:"وضح أقسام لغة SQL.",answer:`**أقسام لغة \`SQL\`:**
-
-| القسم | الوظيفة |
-| --- | --- |
-| لغة تعريف البيانات \`DDL\` | إنشاء قاعدة البيانات والجداول وتعديلها وحذفها. |
-| لغة التحكم بالبيانات \`DCL\` | تحديد صلاحيات الوصول إلى مكونات القاعدة واستخدامها. |
-| لغة معالجة البيانات \`DML\` | إدخال السجلات وتحديثها وحذفها واسترجاعها وفق معايير. |
-
-**الشاهد من الكتاب 1:**
-
-> لغة تعريف البيانات (DDL-Data Definition Language)
-> مجموعة من الأوامر لإنشاء قاعدة بيانات وحذفها وإنشاء الجداول وتعديلها وحذفها.
-
-
-
-**الشاهد من الكتاب 2:**
-
-> لغة التحكم بالبيانات (DCL-Data Control Language)
-> مجموعة من الأوامر لتحديد صلاحيات مستخدمي قاعدة البيانات من حيث الوصول إلى مكوناتها واستخدامها.
-
-
-
-**الشاهد من الكتاب 3:**
-
-> لغة معالجة البيانات (DML-Data Manipulation Language)
-> مجموعة من الأوامر لإجراء عمليات على الجداول (إدخال وتحديث وحذف واسترجاع سجلات) بناء على معايير (شروط) محددة
-
-**المصدر:** صفحة 12 من الكتاب.`,sourcePage:13,answerPage:13,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الرابع / ب / 2",marks:3,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[12,13],figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 13](assets/lessons/ict/exams/source-crops/exam-p13-q4-b2-question.webp) · [الإجابة ص 13](assets/lessons/ict/exams/source-crops/exam-p13-q4-b2-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 13 · السؤال الرابع / ب / 2 · 3 علامة",partOrder:7,prompt:"سؤال من ورقة امتحان"},{id:"exam-p14-q5-b1",topic:"tables-and-types",lessonId:"database-management",partId:"tables-and-types",question:"قارن بين ما يلي حسب المطلوب: نوع البيانات عدد صحيح وعدد كسري مفرد من حيث الحجم التخزيني.",answer:`**المقارنة من حيث الحجم التخزيني:**
-
-| نوع البيانات | الاسم في أكسس | الحجم التخزيني |
-| --- | --- | --- |
-| عدد صحيح | \`Integer\` | **2 بايت** |
-| عدد كسري مفرد | \`Single\` | **4 بايت** |
-
-إذن العدد الكسري المفرد يشغل ضعف مساحة العدد الصحيح في هذه المقارنة.
-
-**الشاهد من الكتاب:**
-
-> رقم (Number): للقيم الرقمية، ويقبل تخزين سعات مختلفة حسب النوع المحدد، والأنواع الرقمية هي: بايت، عدد صحيح Integer (2 بايت)، عدد صحيح مطول Integer Long (4 بايت)، عدد كسري مفرد Single (4 بايت)، وعدد كسري مزدوج Double (8 بايت).
-
-**المصدر:** صفحة 6 من الكتاب.`,sourcePage:14,answerPage:14,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال الخامس / ب / 1",marks:null,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[6],figureNeeded:!1,parentMarks:4,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 14](assets/lessons/ict/exams/source-crops/exam-p14-q5-b1-question.webp) · [الإجابة ص 14](assets/lessons/ict/exams/source-crops/exam-p14-q5-b1-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 14 · السؤال الخامس / ب / 1",partOrder:14,prompt:"سؤال من ورقة امتحان"},{id:"exam-p15-q6-b1",topic:"insert-queries",lessonId:"sql-queries",partId:"insert-queries",question:"متى تفشل عملية الإلحاق في قاعدة البيانات؟",answer:`**أسباب قد تمنع الإدخال أو الإلحاق:**
-
-1. **تكرار المفتاح الأساسي:** الرقم موجود مسبقًا.
-2. **مخالفة التكامل المرجعي:** قيمة المفتاح الأجنبي غير مسموحة عند فرضه.
-3. **اختلاف نوع البيانات:** القيمة لا تتوافق مع نوع الحقل.
-
-**الشاهد من الكتاب:**
-
-> لاحظ أن هذا الأمر قد لا يوفق في الإدخال للأسباب الآتية:
-> تكرار في المفتاح.
-> قيمة المفتاح الأجنبي غير مسموحة.
-> نوعية القيمة تختلف عن نوعية الحقل المسند له كأن تسند قيمة نصية لحقل عددي.
-
-**المصدر:** صفحة 27 من الكتاب.`,sourcePage:15,answerPage:15,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال السادس / ب / 1",marks:3,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[28,29],figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 15](assets/lessons/ict/exams/source-crops/exam-p15-q6-b1-question.webp) · [الإجابة ص 15](assets/lessons/ict/exams/source-crops/exam-p15-q6-b1-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 15 · السؤال السادس / ب / 1 · 3 علامة",partOrder:4,prompt:"سؤال من ورقة امتحان"},{id:"exam-p16-q6-c2",topic:"access-basics",lessonId:"database-management",partId:"access-basics",question:"اذكر ثلاثة من مكونات قاعدة البيانات في أكسس، مع توضيح وظيفة كل منها.",answer:`**ثلاثة من مكونات قاعدة البيانات ووظائفها:**
-
-| المكوّن | الوظيفة |
-| --- | --- |
-| الجداول | تخزين البيانات. |
-| الاستعلامات | استرجاع البيانات ومعالجتها. |
-| النماذج | إدخال البيانات وتعديلها وحذفها. |
-
-**الشاهد من الكتاب 1:**
-
-> الجداول (Tables): وهي مكان تخزين البيانات، وتتكون الجداول من حقول (أعمدة)، وسجلات (صفوف).
-
-
-
-**الشاهد من الكتاب 2:**
-
-> الاستعلامات (Queries): وهي طلب استرجاع بيانات معينة من قاعدة بيانات، تطبق عليها معايير محددة أو أوامر لتنفيذ عمليات على البيانات في الجداول من: حذف وإضافة وتعديل سجلات أو حقول وإنشاء وحذف جداول.
-
-
-
-**الشاهد من الكتاب 3:**
-
-> النماذج (Forms): واجهات يتم من خلالها إضافة وتعديل وحذف بيانات من الجداول.
-
-**المصدر:** صفحة 4 من الكتاب.`,sourcePage:16,answerPage:16,paperLabel:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",originalNumber:"السؤال السادس / ج / 2",marks:3,format:"written",scopeReason:"تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",bookPages:[4],figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",reference:"[السؤال ص 16](assets/lessons/ict/exams/source-crops/exam-p16-q6-c2-question.webp) · [الإجابة ص 16](assets/lessons/ict/exams/source-crops/exam-p16-q6-c2-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 16 · السؤال السادس / ج / 2 · 3 علامة",partOrder:12,prompt:"سؤال من ورقة امتحان"},{id:"exam-p57-q1-a",topic:"مقارنة أنظمة التشغيل",lessonId:"smartphone-operating-systems",partId:"ios-files",bookPages:[40,41,42,53],question:`1. قارن بين أندرويد وiOS في لغات البرمجة الأصيلة وامتداد الملف التنفيذي، وفق جدول الكتاب.
-2. في حالة تشغيل افتراضية، تستعيد البيئة ذاكرة كائنات لم يعد التطبيق يستخدمها. هل تعادل هذه العملية حذف ملفات قديمة من تخزين الهاتف؟ وضّح الفرق.`,answer:`**1. المقارنة وفق الجدول:**
-
-| البند | أندرويد | \`iOS\` |
-|---|---|---|
-| اللغات الأصيلة المذكورة | \`Java\` و\`C++\` | \`Objective-C\` و\`Swift\` |
-| امتداد الملف التنفيذي | \`.apk\` | \`.ipa\` |
-
-**2. المقارنة بين العمليتين:**
-
-استعادة ذاكرة الكائنات تعيد استخدام مساحة من ذاكرة التشغيل. حذف ملف يزيل بيانات محفوظة في التخزين. إذن العمليتان مختلفتان؛ لا تُحذف صور الهاتف أو ملفاته لمجرد استعادة ذاكرة كائن.
-
-الكتاب: التطبيقات الأصيلة ولغاتها؛ ص41 المطبوعة، PDF43
-
-الكتاب: بند إدارة الذاكرة في سؤال المقارنة؛ ص42 المطبوعة، PDF44
-
-[مرجع أصلي تكميلي للتحقق من معطى إدارة الذاكرة](https://developer.android.com/topic/performance/memory-overview)`,sourcePage:57,answerPage:62,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"1-a",marks:4,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-a-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-a-answer.webp) · صياغة تعليمية معدّلة",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalSourceConflict:"مفتاح ص62 يقول إن IOS لا يعيد تدوير الذاكرة، وهو تبسيط لا يجوز تحويله إلى نفي مطلق لإدارة الذاكرة.",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-a · 4 علامة",partOrder:13,prompt:"سؤال من ورقة امتحان"},{id:"exam-p57-q1-b1",topic:"لغات التطبيقات الهجينة",lessonId:"smartphone-operating-systems",partId:"ios-files",bookPages:[42],question:"أي مجموعة تمثل تقنيات الويب المذكورة في الكتاب لبناء التطبيقات الهجينة؟",explanation:"**الإجابة المنهجية وفق تصنيف الكتاب:** `Html5`, `Css`, `Java Script`\n\n**الشاهد من الكتاب:**\n\n> التطبيقات الهجينة (Hybrid): التطبيقات التي تم تصميمها وبرمجتها، لتعمل في أكثر من بيئة نظام تشغيل، ومتواجدة في متاجر عديدة، وتستخدم مهارات تطوير الويب (html5، java script، css) في بنائها وبرمجتها.\n\n**المصدر:** صفحة 42 من الكتاب.\n\n\n\n**توضيح:** المقصود أدوات الويب المذكورة في فقرة التطبيقات الهجينة. يمكن أيضاً استخدام `Java` و`VB` لتطوير تطبيقات ويب؛ لذلك لا تعد القائمة جواباً تقنياً وحيداً لكل معنى لتطوير الويب.",sourcePage:57,answerPage:62,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"1-b1",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["Html5, Css, Java Script","البرمجة بلغة VB","البحث في الويب","البرمجة بلغة جافا"],correctChoiceIndex:0,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-b1-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-b1-answer.webp)",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b1",partOrder:2,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b1",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p57-q1-b2",topic:"مكونات قاعدة البيانات",lessonId:"database-management",partId:"access-basics",bookPages:[4],question:"ما المكوّن الذي يوفر واجهة مبسطة لإدخال البيانات وتعديلها؟",explanation:`**الإجابة:** النماذج
-
-**الشاهد من الكتاب:**
-
-> النماذج (Forms): واجهات يتم من خلالها إضافة وتعديل وحذف بيانات من الجداول.
-
-**المصدر:** صفحة 4 من الكتاب.`,sourcePage:57,answerPage:62,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"1-b2",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["الجداول","النماذج","التقارير","الاستعلامات"],correctChoiceIndex:1,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-b2-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-b2-answer.webp)",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b2",partOrder:1,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b2",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p57-q1-b3",topic:"تتبع floor",lessonId:"my-mobile-app",partId:"calculator-events",bookPages:[52],question:"في برنامج App Inventor ما ناتج تنفيذ اللبنة؟",explanation:`![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/f41d3900be1d7f7df0f9.webp)
-
-\`floor\` تعيد أكبر عدد صحيح لا يزيد على المدخل.
-
-نحسب مدخلها أولًا:
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>8</mn><mi mathvariant="normal">/</mi><mn>3</mn><mo>=</mo><mn>2.666</mn><mo>…</mo></mrow></math>
-\`\`\`
-
-العدد الصحيح 2 لا يتجاوز الناتج، بينما 3 يتجاوزه.
-
-**إذن الناتج: 2.**
-
-**مرجع الكتاب:** تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).`,sourcePage:57,answerPage:62,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"1-b3",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!0,answerProvenance:"curriculum-corrected-2026-10-24",choices:["0.2","2","0.3","2.6"],correctChoiceIndex:1,figurePage:57,cropRect:[198,369.33,300.67,393.33],cropUnit:"pdf-points",figureAlt:"لبنة floor للقيمة 8 ÷ 3",figureUnanswered:!0,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",figure:"assets/lessons/curriculum-evidence/f41d3900be1d7f7df0f9.webp",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",example:"![لبنة floor للقيمة 8 ÷ 3 ](assets/lessons/curriculum-evidence/f41d3900be1d7f7df0f9.webp)",reference:"[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-b3-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-b3-answer.webp)",originalFigure:"assets/lessons/ict/exams/exam-p57-q1-b3.webp",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b3",partOrder:0,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b3",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p57-q1-b4",topic:"أنواع الحقول",lessonId:"database-management",partId:"tables-and-types",bookPages:[6],question:"ما نوع البيانات الأنسب لتخزين حقل (البريد الإلكتروني) في جدول الطالب:",explanation:"البريد الإلكتروني يضم حروفًا ورموزًا مثل `@`، فنختار له **نص `Text`**.\n\nوجود أرقام داخل العنوان لا يجعله حقلًا عدديًا؛ نحفظ العنوان كاملًا كنص.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء جدول وتعيين المفاتيح، ص 6 مطبوعة (ص 8 في PDF).",sourcePage:57,answerPage:62,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"1-b4",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["نص Text","رقم Number","مذكرة Memo","إيميل E-Mail"],correctChoiceIndex:0,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-b4-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-b4-answer.webp)",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b4",partOrder:0,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b4",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p57-q1-c1",topic:"دور حقول الاستعلام",lessonId:"sql-queries",partId:"select-order",bookPages:[13,14,16,18],question:"اذكر اثنين من أسباب تحديد الحقل في استعلام الاختيار؟",answer:`**يكفي ذكر أي سببين مما يأتي:**
-
-- عرض الحقل ضمن نتائج الاستعلام.
-- ترتيب النتائج بحسب الحقل.
-- وضع معيار أو شرط على الحقل.
-
-**الشاهد من الكتاب 1:**
-
-> وتحديد الحقل يكون لسبب أو أكثر من الأسباب الآتية:
-> عرض (Show) الحقل ضمن الاستعلام
-
-
-
-**الشاهد من الكتاب 2:**
-
-> الترتيب (Sort) بناء على الحقل
-
-
-
-**الشاهد من الكتاب 3:**
-
-> وضع معيار (شرط) على الحقل: وذلك في خانة معايير (Criteria) مثل: المعايير أكبر من وأصغر وأكثر
-
-**المصدر:** صفحة 14 من الكتاب.`,sourcePage:57,answerPage:62,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"1-c1",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-c1-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-c1-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-c1",partOrder:2,prompt:"سؤال من ورقة امتحان"},{id:"exam-p57-q1-d1",topic:"التقارير",lessonId:"database-management",partId:"access-basics",bookPages:[4],question:"علل: للتقارير أهمية كبيرة في قواعد البيانات.",answer:`**الإجابة:** التقارير تعرض البيانات وتطبعها بأشكال وتنسيقات متنوعة.
-
-**الشاهد من الكتاب:**
-
-> التقارير (Reports): وسيلة لعرض البيانات وطباعتها، بأشكال وتنسيقات متنوعة.
-
-**المصدر:** صفحة 4 من الكتاب.`,sourcePage:57,answerPage:62,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"1-d1",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-d1-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-d1-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-d1",partOrder:13,prompt:"سؤال من ورقة امتحان"},{id:"exam-p57-q2-a-forms",topic:"تعريف النماذج",lessonId:"database-management",partId:"access-basics",bookPages:[4],question:"عرف كلا من: النماذج.",answer:`**الإجابة:** واجهات لإضافة بيانات الجداول وتعديلها وحذفها.
-
-**الشاهد من الكتاب:**
-
-> النماذج (Forms): واجهات يتم من خلالها إضافة وتعديل وحذف بيانات من الجداول.
-
-**المصدر:** صفحة 4 من الكتاب.`,sourcePage:57,answerPage:63,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"2-a-forms",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q2-a-forms-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p57-q2-a-forms-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 2-a-forms",partOrder:14,prompt:"سؤال من ورقة امتحان"},{id:"exam-p57-q2-a-ar",topic:"تعريف الواقع المعزز",lessonId:"smartphone-operating-systems",partId:"android-features",bookPages:[39,40],question:"عرف كلا من: الواقع المعزز.",answer:`**الإجابة:** الواقع المعزز: إضافة عناصر افتراضية مرتبطة بمعالم المشهد الحقيقي.
-
-**الشاهد من الكتاب:**
-
-> تعتمد تقنية الواقع المعزز على تعرف النظام إلى ربط معالم من الواقع الحقيقي بالعنصر الافتراضي المناسب لها، والمخزن مسبقاً في ذاكرته
-
-**المصدر:** صفحة 40 من الكتاب.`,sourcePage:57,answerPage:63,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"2-a-ar",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q2-a-ar-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p57-q2-a-ar-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 2-a-ar",partOrder:21,prompt:"سؤال من ورقة امتحان"},{id:"exam-p57-q2-b",topic:"رسم ERD لمكتبة",lessonId:"database-management",partId:"practice-and-review",bookPages:[8,9,10,11],question:`وصف نظام مكتبة الشروق على النحو الآتي:
-- يوجد في المكتبة العديد من الكتب.
-- الكتاب يعار لعدة مشتركين والمشترك قد يستعير عدة كتب.
-- للكتاب مؤلف واحد فقط.
-بعد تحليلك لقاعدة البيانات قم برسم نموذج ERD.`,answer:`نحدد أولًا الكيانات، ثم نقرأ عدد السجلات الممكن ربطها في الاتجاهين.
-
-المفتاح الأساسي يميز السجل، والأجنبي يشير إلى أصله في كيان آخر.
-
-الكتاب قد يعار لعدة مشتركين، والمشترك يستعير عدة كتب؛ إذن نضيف **إعارة** لفك علاقة متعدد إلى متعدد. ولأن للكتاب مؤلفًا واحدًا، نربطه بكيان **مؤلف**.
-
-لم يحدد السؤال أسماء الحقول؛ نستخدم هذا التصميم الممكن، حيث **الأساسي** يميز السجل و**الأجنبي** يربطه بكيان آخر:
-
-| الكيان في الرسم | الصفات المقترحة |
-| --- | --- |
-| المؤلف \`Author\` | رقم المؤلف **أساسي**، اسم المؤلف |
-| الكتاب \`Book\` | رقم الكتاب **أساسي**، عنوان الكتاب، رقم المؤلف **أجنبي** |
-| المشترك \`Member\` | رقم المشترك **أساسي**، اسم المشترك |
-| الإعارة \`Loan\` | رقم الإعارة **أساسي**، رقم الكتاب **أجنبي**، رقم المشترك **أجنبي** |
-
-نضع جهة الواحد عند صاحب المفتاح الأساسي؛ كل إعارة تخص كتابًا واحدًا ومشتركًا واحدًا. في الرسم \`M\` تعني متعددًا:
-
-![مخطط الحل العلاقي الكامل بالصفات والمفاتيح](assets/lessons/curriculum-evidence/f5e330898087da6a5c42.svg)
-
-**الرسم الأصلي المحفوظ في المصدر:**
-
-[عرض الشاهد الأصلي في الكتاب](assets/lessons/ict/exams/source-crops/exam-p57-q2-b-answer.webp)
-
-يوضح المخطط ارتباط المؤلف بالكتاب، وربط الكتاب بالمشترك عبر الإعارة. الجدول أعلاه يقترح أسماء حقول واضحة للتصميم نفسه.
-
-رقم الإعارة يميّز كل عملية، فيسمح للمشترك نفسه باستعارة الكتاب نفسه مرة أخرى.
-
-**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 10 مطبوعة (ص 12 في PDF).`,sourcePage:57,answerPage:63,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"2-b",marks:4,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q2-b-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p57-q2-b-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 2-b · 4 علامة",partOrder:2,prompt:"سؤال من ورقة امتحان"},{id:"exam-p58-q2-c",topic:"قراءة حدث الآلة الحاسبة",lessonId:"my-mobile-app",partId:"calculator-interface",bookPages:[47,48,49,50,51],question:`من اللبنات المجاورة، استخرج ما يلي:
-1. اسم أداة.
-2. اسم حدث.
-3. متغير نصي وقيمته.
-
-![لبنات mult.Click: نقل new إلى old، تصفير new، operation = ×، Label1.Text = × ](assets/lessons/curriculum-evidence/b3041fb9e9612e1fc7f2.webp)`,answer:"![الشكل الأصلي للسؤال](assets/lessons/curriculum-evidence/b3041fb9e9612e1fc7f2.webp)\n\nنقرأ رأس اللبنة لمعرفة الأداة والحدث: `when mult.Click` تعني التنفيذ عند نقر الزر **`mult`**.\n\n- اسم أداة: **`mult`**، ويظهر أيضاً **`Label1`** كأداة عرض.\n- اسم الحدث: **`Click`**.\n- المتغير النصي: **`operation`**؛ تسند إليه لبنة `set global operation to` القيمة **«×»** المحاطة بعلامتي اقتباس.\n\n**المصدر:** الصفحات 44، 51 من الكتاب.",sourcePage:58,answerPage:63,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"2-c",marks:4,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!0,answerProvenance:"curriculum-corrected-2026-10-24",figurePage:58,cropRect:[68,100.67,330.67,209.33],cropUnit:"pdf-points",figureAlt:"لبنات mult.Click: نقل new إلى old، تصفير new، operation = ×، Label1.Text = ×",figureUnanswered:!0,scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",figure:"assets/lessons/curriculum-evidence/b3041fb9e9612e1fc7f2.webp",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q2-c-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p58-q2-c-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalFigure:"assets/lessons/ict/exams/exam-p58-q2-c.webp",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-c · 4 علامة",partOrder:1,prompt:"سؤال من ورقة امتحان"},{id:"exam-p58-q2-d2",topic:"ترتيب الأدوات",lessonId:"my-mobile-app",partId:"app-inventor-tools",bookPages:[43,47,48],question:"أداة تستخدم لترتيب كل صورتين في برنامج App Inventor في صف واحد بشكل أفقي:",explanation:`**الإجابة:** \`Horizontal arrangement\`
-
-**الشاهد من الكتاب:**
-
-> أداة Horizontal Arrangement (الترتيب الأفقي): من مجموعة Layout العدد (3).
-
-**المصدر:** صفحة 44 من الكتاب.`,sourcePage:58,answerPage:63,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"2-d2",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["Vertical arrangement","Horizontal arrangement","Height","Layout"],correctChoiceIndex:1,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q2-d2-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p58-q2-d2-answer.webp)",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d2",partOrder:0,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d2",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p58-q2-d3",topic:"الشرط OR",lessonId:"sql-queries",partId:"where-conditions",bookPages:[14,15,25],question:"الرابطة التي تستخدم لإضافة أكثر من شرط على المعيار على أن يتحقق أحدهما على الأقل؟",explanation:`**الإجابة:** \`Or\`
-
-**الشاهد من الكتاب:**
-
-> أو (OR) والتي تستخدم كجزء إضافي للمعيار لإضافة أكثر من شرط على أن يتحقق أحدها على الأقل، وتستخدم الرابطة المنطقية (AND) لتحقيق مجموعة من الشروط معاً.
-
-**المصدر:** صفحة 15 من الكتاب.`,sourcePage:58,answerPage:63,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"2-d3",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["And","Or","Not And","Not"],correctChoiceIndex:1,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q2-d3-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p58-q2-d3-answer.webp)",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d3",partOrder:1,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d3",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p58-q2-d4",topic:"التكامل المرجعي",lessonId:"database-management",partId:"build-and-integrity",bookPages:[7,8,11],question:"ما العملية التي تمنع تسجيل استعارة لكتاب غير موجود في جدول الكتب؟",explanation:`**الإجابة: إنشاء العلاقات مع فرض التكامل المرجعي.**
-
-نربط جدول الاستعارة بجدول الكتب. يتحقق قيد التكامل المرجعي من وجود رقم الكتاب المشار إليه في جدول الكتب، فيمنع تسجيل استعارة لكتاب غير موجود.
-
-**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص8 المطبوعة (PDF10).`,sourcePage:58,answerPage:63,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"2-d4",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["إنشاء النماذج","إنشاء الاستعلامات","إنشاء العلاقات مع فرض التكامل المرجعي","إنشاء التقارير"],correctChoiceIndex:2,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q2-d4-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p58-q2-d4-answer.webp)",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d4",partOrder:1,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d4",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p58-q3-a1",topic:"علاقات المشفى",lessonId:"database-management",partId:"keys-and-relations",bookPages:[8,9,10,11],question:`الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:
-
-Patients
-
-| patient_id | patient_name | date_of_birth |
-|---|---|---|
-| 1 | خالد | 15/11/2000 |
-| 2 | خليل | 18/8/1999 |
-| 3 | جمال | 1/1/1982 |
-| 4 | صلاح | 12/7/2010 |
-
-Prescriptions
-
-| doctor_id | patient_id | medication_name |
-|---|---|---|
-| 1 | 1 | Aspirin |
-| 1 | 2 | Acetaminophen |
-| 3 | 1 | Acamol |
-| 4 | 3 | Metamizole |
-
-Doctors
-
-| doctor_id | doctor_name | specialization | address |
-|---|---|---|---|
-| 1 | أنس | باطني | حيفا |
-| 2 | جمال | قلب | حيفا |
-| 3 | سليم | باطني | نابلس |
-| 4 | سامر | غدد صماء | الخليل |
-
-ما نوع الرابطة بين كل من جدول الأطباء (Doctors) وجدول الوصفة الطبية (Prescriptions)؟`,answer:"علاقة واحد إلى متعدد تعني أن سجلًا واحدًا من الجدول الأول قد تقابله عدة سجلات في الثاني، بينما يشير كل سجل في الثاني إلى أصل واحد.\n\nنتتبع `doctor_id`: الطبيب رقم 1 يظهر في وصفتين، لكن كل سجل وصفة يحمل رقم طبيب واحد.\n\nإذن العلاقة من **`Doctors` إلى `Prescriptions`: واحد إلى متعدد**.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF).",sourcePage:58,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-a1",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:58,scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-a1-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-a1-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-a1",partOrder:11,prompt:"سؤال من ورقة امتحان"},{id:"exam-p58-q3-a2",topic:"جدول الوصلة",lessonId:"database-management",partId:"education-center",bookPages:[8,9,10,11],question:`الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:
-
-Patients
-
-| patient_id | patient_name | date_of_birth |
-|---|---|---|
-| 1 | خالد | 15/11/2000 |
-| 2 | خليل | 18/8/1999 |
-| 3 | جمال | 1/1/1982 |
-| 4 | صلاح | 12/7/2010 |
-
-Prescriptions
-
-| doctor_id | patient_id | medication_name |
-|---|---|---|
-| 1 | 1 | Aspirin |
-| 1 | 2 | Acetaminophen |
-| 3 | 1 | Acamol |
-| 4 | 3 | Metamizole |
-
-Doctors
-
-| doctor_id | doctor_name | specialization | address |
-|---|---|---|---|
-| 1 | أنس | باطني | حيفا |
-| 2 | جمال | قلب | حيفا |
-| 3 | سليم | باطني | نابلس |
-| 4 | سامر | غدد صماء | الخليل |
-
-ماذا يسمى جدول الوصفة الطبية، وما الهدف منه؟`,answer:`جدول الوصلة يمثل ارتباطًا بين كيانين؛ كل سجل فيه يشير إلى أصل واحد من كل جهة.
-
-نجمع في الوصفة رقم الطبيب ورقم المريض، فتصل كل وصفة بين سجل من الجدولين. لهذا تسمى **جدول وصلة أو جدولًا وسيطًا**.
-
-الطبيب له عدة وصفات، والمريض له عدة وصفات؛ فتصبح علاقتا **الطبيب بالوصفة** و**المريض بالوصفة** من **واحد إلى متعدد**، لتمثيل متعدد إلى متعدد بين الطبيب والمريض.
-
-**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 10 مطبوعة (ص 12 في PDF).`,sourcePage:58,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-a2",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:58,scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-a2-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-a2-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-a2",partOrder:0,prompt:"سؤال من ورقة امتحان"},{id:"exam-p58-q3-a3",topic:"أنواع الحقول المرتبطة",lessonId:"database-management",partId:"tables-and-types",bookPages:[6,8,11],question:`الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:
-
-Patients
-
-| patient_id | patient_name | date_of_birth |
-|---|---|---|
-| 1 | خالد | 15/11/2000 |
-| 2 | خليل | 18/8/1999 |
-| 3 | جمال | 1/1/1982 |
-| 4 | صلاح | 12/7/2010 |
-
-Prescriptions
-
-| doctor_id | patient_id | medication_name |
-|---|---|---|
-| 1 | 1 | Aspirin |
-| 1 | 2 | Acetaminophen |
-| 3 | 1 | Acamol |
-| 4 | 3 | Metamizole |
-
-Doctors
-
-| doctor_id | doctor_name | specialization | address |
-|---|---|---|---|
-| 1 | أنس | باطني | حيفا |
-| 2 | جمال | قلب | حيفا |
-| 3 | سليم | باطني | نابلس |
-| 4 | سامر | غدد صماء | الخليل |
-
-حدد نوع البيانات المناسب لكل من:
-- كل حقل من حقول جدول المرضى (Patients).
-- حقل patient_id في جدول Prescriptions.`,answer:"نختار النوع بحسب محتوى الحقل:\n\n| جدول `Patients` | النوع المناسب | السبب |\n| --- | --- | --- |\n| `patient_id` | **رقم**، أو **ترقيم تلقائي** عند توليده آليًا | معرّف المريض عددي. |\n| `patient_name` | **نص** | يحفظ اسم المريض. |\n| `date_of_birth` | **تاريخ/وقت** | يحفظ تاريخ الميلاد. |\n\nأما `patient_id` في **`Prescriptions`** فهو **رقم** يشير إلى مريض موجود، ويجب أن يتوافق مع نوع مفتاحه في `Patients`. إذا كان الأصل ترقيمًا تلقائيًا، نستخدم **رقمًا بحجم عدد صحيح مطول** في الوصفات.\n\nلا نولّد رقمًا تلقائيًا جديدًا في الوصفة؛ نكتب رقم المريض الذي تخصه الوصفة.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء جدول وتعيين المفاتيح، ص 6 مطبوعة (ص 8 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF).",sourcePage:58,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-a3",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:58,scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-a3-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-a3-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-a3",partOrder:15,prompt:"سؤال من ورقة امتحان"},{id:"exam-p58-q3-b1",topic:"SELECT بشروط وترتيب",lessonId:"sql-queries",partId:"sql-practical",bookPages:[16,18,19,20,21],question:`الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:
-
-Patients
-
-| patient_id | patient_name | date_of_birth |
-|---|---|---|
-| 1 | خالد | 15/11/2000 |
-| 2 | خليل | 18/8/1999 |
-| 3 | جمال | 1/1/1982 |
-| 4 | صلاح | 12/7/2010 |
-
-Prescriptions
-
-| doctor_id | patient_id | medication_name |
-|---|---|---|
-| 1 | 1 | Aspirin |
-| 1 | 2 | Acetaminophen |
-| 3 | 1 | Acamol |
-| 4 | 3 | Metamizole |
-
-Doctors
-
-| doctor_id | doctor_name | specialization | address |
-|---|---|---|---|
-| 1 | أنس | باطني | حيفا |
-| 2 | جمال | قلب | حيفا |
-| 3 | سليم | باطني | نابلس |
-| 4 | سامر | غدد صماء | الخليل |
-
-بلغة SQL اكتب: استعلام تظهر من خلاله بيانات الأطباء الذين تخصصهم باطني وعناوينهم حيفا مرتبة تنازلياً حسب المفتاح الأساسي؟`,answer:'النجمة تعرض جميع الحقول. نربط التخصص والعنوان بـ `AND` لأنهما مطلوبان معًا، ثم نرتب رقم الطبيب تنازليًا بـ `DESC`.\n\n```sql\nSELECT * FROM Doctors\nWHERE specialization = "باطني" AND address = "حيفا"\nORDER BY doctor_id DESC;\n```\n\nفي الجدول المعطى يطابق الشرط **أنس، رقمه 1** فقط.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 15 مطبوعة (ص 17 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 19 مطبوعة (ص 21 في PDF).',sourcePage:58,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-b1",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:58,marksNote:"تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-b1-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-b1-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-b1",partOrder:0,prompt:"سؤال من ورقة امتحان"},{id:"exam-p58-q3-b2",topic:"UPDATE سجل محدد",lessonId:"sql-queries",partId:"update-queries",bookPages:[25,26,27],question:`الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:
-
-Patients
-
-| patient_id | patient_name | date_of_birth |
-|---|---|---|
-| 1 | خالد | 15/11/2000 |
-| 2 | خليل | 18/8/1999 |
-| 3 | جمال | 1/1/1982 |
-| 4 | صلاح | 12/7/2010 |
-
-Prescriptions
-
-| doctor_id | patient_id | medication_name |
-|---|---|---|
-| 1 | 1 | Aspirin |
-| 1 | 2 | Acetaminophen |
-| 3 | 1 | Acamol |
-| 4 | 3 | Metamizole |
-
-Doctors
-
-| doctor_id | doctor_name | specialization | address |
-|---|---|---|---|
-| 1 | أنس | باطني | حيفا |
-| 2 | جمال | قلب | حيفا |
-| 3 | سليم | باطني | نابلس |
-| 4 | سامر | غدد صماء | الخليل |
-
-بلغة SQL اكتب: استعلام تحديث الدواء للمريض خليل إلى Panadol؟`,answer:'نبحث عن خليل في `Patients` فنجد رقمه **2**. اسم الدواء موجود في `Prescriptions`؛ نعدّله هناك ونستخدم الرقم لتحديد وصفاته.\n\n```sql\nUPDATE Prescriptions\nSET medication_name = "Panadol"\nWHERE patient_id = 2;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 25 مطبوعة (ص 27 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).',sourcePage:58,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-b2",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:58,marksNote:"تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-b2-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-b2-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-b2",partOrder:3,prompt:"سؤال من ورقة امتحان"},{id:"exam-p58-q3-b3",topic:"الإلحاق من جدول",lessonId:"sql-queries",partId:"insert-queries",bookPages:[28,29],question:`الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:
-
-Patients
-
-| patient_id | patient_name | date_of_birth |
-|---|---|---|
-| 1 | خالد | 15/11/2000 |
-| 2 | خليل | 18/8/1999 |
-| 3 | جمال | 1/1/1982 |
-| 4 | صلاح | 12/7/2010 |
-
-Prescriptions
-
-| doctor_id | patient_id | medication_name |
-|---|---|---|
-| 1 | 1 | Aspirin |
-| 1 | 2 | Acetaminophen |
-| 3 | 1 | Acamol |
-| 4 | 3 | Metamizole |
-
-Doctors
-
-| doctor_id | doctor_name | specialization | address |
-|---|---|---|---|
-| 1 | أنس | باطني | حيفا |
-| 2 | جمال | قلب | حيفا |
-| 3 | سليم | باطني | نابلس |
-| 4 | سامر | غدد صماء | الخليل |
-
-بلغة SQL اكتب: استعلام تضيف من خلاله جميع سجلات جدول باسم Source إلى جدول Patients (علماً أن الجدولين لهما نفس أسماء الحقول)؟`,answer:"جدول الوجهة يأتي بعد `INSERT INTO`، والمصدر بعد `FROM`. نختار حقول المصدر بالترتيب نفسه الذي ستدخل به في `Patients`.\n\n```sql\nINSERT INTO Patients (patient_id, patient_name, date_of_birth)\nSELECT patient_id, patient_name, date_of_birth\nFROM Source;\n```\n\nتنجح الإضافة إذا وافقت أنواع القيم حقول الوجهة ولم تخالف قيود المفاتيح.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 28 مطبوعة (ص 30 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 29 مطبوعة (ص 31 في PDF).",sourcePage:58,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-b3",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:58,marksNote:"تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-b3-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-b3-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-b3",partOrder:5,prompt:"سؤال من ورقة امتحان"},{id:"exam-p58-q3-b4",topic:"DELETE بمعامل",lessonId:"sql-queries",partId:"delete-review",bookPages:[30,31,32,33],question:`الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:
-
-Patients
-
-| patient_id | patient_name | date_of_birth |
-|---|---|---|
-| 1 | خالد | 15/11/2000 |
-| 2 | خليل | 18/8/1999 |
-| 3 | جمال | 1/1/1982 |
-| 4 | صلاح | 12/7/2010 |
-
-Prescriptions
-
-| doctor_id | patient_id | medication_name |
-|---|---|---|
-| 1 | 1 | Aspirin |
-| 1 | 2 | Acetaminophen |
-| 3 | 1 | Acamol |
-| 4 | 3 | Metamizole |
-
-Doctors
-
-| doctor_id | doctor_name | specialization | address |
-|---|---|---|---|
-| 1 | أنس | باطني | حيفا |
-| 2 | جمال | قلب | حيفا |
-| 3 | سليم | باطني | نابلس |
-| 4 | سامر | غدد صماء | الخليل |
-
-بلغة SQL اكتب: استعلام تحذف من خلاله سجل معين من جدول المريض حيث يحدد المستخدم رقم المريض المراد حذفه؟`,answer:"نكتب طلب إدخال بين أقواس مربعة، فيسأل `Access` المستخدم عن الرقم عند التنفيذ. تقصر `WHERE` الحذف على هذا المريض.\n\n```sql\nDELETE FROM Patients\nWHERE patient_id = [أدخل رقم المريض];\n```\n\nقد يُرفض الحذف عند فرض التكامل المرجعي وبقاء وصفات مرتبطة بالمريض، ما لم يكن الحذف المتتالي مفعّلًا.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 30 مطبوعة (ص 32 في PDF).",sourcePage:58,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-b4",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:58,marksNote:"تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-b4-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-b4-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-b4",partOrder:4,prompt:"سؤال من ورقة امتحان"},{id:"exam-p59-q3-c1",topic:"ناتج COUNT",lessonId:"sql-queries",partId:"count-parameters",bookPages:[23,24],question:`الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:
-
-Patients
-
-| patient_id | patient_name | date_of_birth |
-|---|---|---|
-| 1 | خالد | 15/11/2000 |
-| 2 | خليل | 18/8/1999 |
-| 3 | جمال | 1/1/1982 |
-| 4 | صلاح | 12/7/2010 |
-
-Prescriptions
-
-| doctor_id | patient_id | medication_name |
-|---|---|---|
-| 1 | 1 | Aspirin |
-| 1 | 2 | Acetaminophen |
-| 3 | 1 | Acamol |
-| 4 | 3 | Metamizole |
-
-Doctors
-
-| doctor_id | doctor_name | specialization | address |
-|---|---|---|---|
-| 1 | أنس | باطني | حيفا |
-| 2 | جمال | قلب | حيفا |
-| 3 | سليم | باطني | نابلس |
-| 4 | سامر | غدد صماء | الخليل |
-
-اعتماداً على الجداول أعلاه، ما ناتج تنفيذ الاستعلام التالي؟
-\`\`\`sql
-SELECT COUNT(Doctors.doctor_id) AS Count_doctor_id
-FROM Doctors;
-\`\`\``,answer:`\`COUNT(doctor_id)\` تعد القيم غير الفارغة في حقل رقم الطبيب. في الجدول أربعة أطباء، ولكل منهم رقم.
-
-\`AS\` تسمي عمود النتيجة؛ الناتج صف واحد:
-
-| \`Count_doctor_id\` |
-| --- |
-| 4 |
-
-**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 24 مطبوعة (ص 26 في PDF).`,sourcePage:59,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-c1",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:58,marksNote:"تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q3-c1-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p59-q3-c1-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-c1",partOrder:3,prompt:"سؤال من ورقة امتحان"},{id:"exam-p59-q3-c2",topic:"فشل INSERT",lessonId:"sql-queries",partId:"insert-queries",bookPages:[27],question:`الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:
-
-Patients
-
-| patient_id | patient_name | date_of_birth |
-|---|---|---|
-| 1 | خالد | 15/11/2000 |
-| 2 | خليل | 18/8/1999 |
-| 3 | جمال | 1/1/1982 |
-| 4 | صلاح | 12/7/2010 |
-
-Prescriptions
-
-| doctor_id | patient_id | medication_name |
-|---|---|---|
-| 1 | 1 | Aspirin |
-| 1 | 2 | Acetaminophen |
-| 3 | 1 | Acamol |
-| 4 | 3 | Metamizole |
-
-Doctors
-
-| doctor_id | doctor_name | specialization | address |
-|---|---|---|---|
-| 1 | أنس | باطني | حيفا |
-| 2 | جمال | قلب | حيفا |
-| 3 | سليم | باطني | نابلس |
-| 4 | سامر | غدد صماء | الخليل |
-
-بافتراض أن \`doctor_id\` هو المفتاح الأساسي لجدول \`Doctors\`، ما ناتج تنفيذ الاستعلام التالي؟
-\`\`\`sql
-INSERT INTO Doctors (doctor_id,doctor_name,specialization,address)
-VALUES (4,"صابر","غدد لمفاوية","نابلس")
-\`\`\``,answer:`نفحص المفتاح الأساسي قبل الإضافة: الرقم **4** موجود للطبيب سامر.
-
-المفتاح الأساسي لا يتكرر؛ لذلك **تُرفض إضافة صابر** بهذا الرقم، حتى لو اختلفت بقية بياناته.
-
-**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 27 مطبوعة (ص 29 في PDF).`,sourcePage:59,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-c2",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:58,marksNote:"تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q3-c2-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p59-q3-c2-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-c2",partOrder:6,prompt:"سؤال من ورقة امتحان"},{id:"exam-p59-q3-c3",topic:"ناتج DELETE دون شرط",lessonId:"sql-queries",partId:"delete-review",bookPages:[30,31,32,33],question:`الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:
-
-Patients
-
-| patient_id | patient_name | date_of_birth |
-|---|---|---|
-| 1 | خالد | 15/11/2000 |
-| 2 | خليل | 18/8/1999 |
-| 3 | جمال | 1/1/1982 |
-| 4 | صلاح | 12/7/2010 |
-
-Prescriptions
-
-| doctor_id | patient_id | medication_name |
-|---|---|---|
-| 1 | 1 | Aspirin |
-| 1 | 2 | Acetaminophen |
-| 3 | 1 | Acamol |
-| 4 | 3 | Metamizole |
-
-Doctors
-
-| doctor_id | doctor_name | specialization | address |
-|---|---|---|---|
-| 1 | أنس | باطني | حيفا |
-| 2 | جمال | قلب | حيفا |
-| 3 | سليم | باطني | نابلس |
-| 4 | سامر | غدد صماء | الخليل |
-
-اعتماداً على الجداول أعلاه، ما ناتج تنفيذ الاستعلام التالي؟
-\`\`\`sql
-DELETE FROM Prescriptions;
-\`\`\``,answer:"`DELETE FROM Prescriptions` يحذف السجلات من جدول الوصفات. لا توجد `WHERE` لتحديد بعضها، فيشمل الحذف **جميع السجلات**.\n\nتبقى **بنية الجدول وحقوله**؛ الذي يُحذف هو بياناته.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 30 مطبوعة (ص 32 في PDF).",sourcePage:59,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-c3",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:58,marksNote:"تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q3-c3-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p59-q3-c3-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-c3",partOrder:5,prompt:"سؤال من ورقة امتحان"},{id:"exam-p59-q3-d1",topic:"نقل ملفات iOS",lessonId:"smartphone-operating-systems",partId:"ios-files",bookPages:[41],question:"برنامج يستخدم في نقل البيانات من الحاسوب إلى أجهزة IOS مع استخدام كابل USB:",explanation:`**الإجابة:** \`iTunes\`
-
-**الشاهد من الكتاب:**
-
-> استخدام برنامج Itunes: في نقل البيانات من الحاسوب إلى أجهزة IOS، مع استخدام كابل USB
-
-**المصدر:** صفحة 41 من الكتاب.`,sourcePage:59,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-d1",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["Icloud","Bluetooth","Cloud Storage","iTunes"],correctChoiceIndex:3,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q3-d1-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p59-q3-d1-answer.webp)",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-d1",partOrder:3,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-d1",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p59-q3-d2",topic:"تعيين المفتاح الأساسي",lessonId:"database-management",partId:"tables-and-types",bookPages:[6],question:"في برنامج MS-Access التبويب الذي يتم من خلاله تعيين مفتاح أساسي للجدول هو:",explanation:`**الإجابة:** تصميم
-
-**الشاهد من الكتاب:**
-
-> أو من أيقونة (المفتاح)، من علامة التبويب (تصميم)، ويمكن عمل مفتاح مركب من حقلين
-
-**المصدر:** صفحة 6 من الكتاب.`,sourcePage:59,answerPage:64,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"3-d2",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["ملف","تصميم","أدوات قاعدة البيانات","الصفحة الرئيسية"],correctChoiceIndex:1,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q3-d2-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p59-q3-d2-answer.webp)",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-d2",partOrder:1,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-d2",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p59-q4-a-scroll",topic:"التمرير الذكي",lessonId:"smartphone-operating-systems",partId:"android-features",bookPages:[37],question:"عرف ما يلي: التمرير الذكي.",answer:`**الإجابة:** التمرير الذكي: تمرير محتوى الشاشة بحركة الرأس أو إمالة الهاتف.
-
-**الشاهد من الكتاب:**
-
-> التمرير الذكي: عند ضبط هذه الخاصية يتم استعراض وتمرير محتوى الشاشة بحركات الرأس إلى أعلى وأسفل، أو بإمالة الهاتف بهذه الاتجاهات.
-
-**المصدر:** صفحة 37 من الكتاب.`,sourcePage:59,answerPage:65,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"4-a-scroll",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q4-a-scroll-question.webp) · [الإجابة ص 65](assets/lessons/ict/exams/source-crops/exam-p59-q4-a-scroll-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-a-scroll",partOrder:22,prompt:"سؤال من ورقة امتحان"},{id:"exam-p59-q4-b2",topic:"مخرجات قاعدة البيانات",lessonId:"database-management",partId:"access-basics",bookPages:[4],question:"أي مكوّن في قاعدة البيانات يُستخدم لعرض البيانات وطباعتها بأشكال وتنسيقات متنوعة؟",explanation:`**الإجابة:** التقارير
-
-**الشاهد من الكتاب:**
-
-> التقارير (Reports): وسيلة لعرض البيانات وطباعتها، بأشكال وتنسيقات متنوعة.
-
-**المصدر:** صفحة 4 من الكتاب.`,sourcePage:59,answerPage:65,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"4-b2",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["الاستعلامات","النماذج","الجداول","التقارير"],correctChoiceIndex:3,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q4-b2-question.webp) · [الإجابة ص 65](assets/lessons/ict/exams/source-crops/exam-p59-q4-b2-answer.webp)",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-b2",partOrder:2,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-b2",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p59-q4-c1",topic:"ميزات iOS",lessonId:"smartphone-operating-systems",partId:"ios-files",bookPages:[40,41],question:"وضح ميزات نظام IOS.",answer:`**الإجابة:** 
-
-- **الأمان:** فحص التطبيقات والتحكم في المتجر في وصف الدرس.
-- **القيود:** إخفاء تطبيقات أو منع تنزيلها.
-- **الرفع للتنبيه:** إضاءة الشاشة عند رفع الجهاز.
-- **\`True Tone\`:** تعديل ألوان الشاشة وفق إضاءة المحيط.
-
-**الشاهد من الكتاب 1:**
-
-> الأمان: يتم تنزيل التطبيقات من متجر أبل فقط، حيث تقوم الشركة بإنتاجها وفحصها.
-
-
-
-**الشاهد من الكتاب 2:**
-
-> القيود: إخفاء تطبيقات معينة بكلمة مرور، إخفاء App Store؛ بحيث لا يستطيع أحد العبث في التطبيق، أو تنزيل برامج.
-
-
-
-**الشاهد من الكتاب 3:**
-
-> الرفع للتنبيه (Raise To Wake): عند رفع الجهاز يتم تشغيل الشاشة وإضاءتها.
-
-
-
-**الشاهد من الكتاب 4:**
-
-> ميزة True Tone: شاشة تتحسس الطقس، وتعدل ألوان الشاشة حسب إضاءة الجو المحيط.
-
-**المصدر:** صفحة 40 من الكتاب.
-
-
-
-**توضيح:** المقصود في \`True Tone\` تحسس الإضاءة المحيطة. وذكر إنتاج التطبيقات في نص الكتاب لا يعني أن أبل تطور كل تطبيق في متجرها؛ فحص التطبيقات يقلل المخاطر ولا يثبت حصانة مطلقة.`,sourcePage:59,answerPage:65,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"4-c1",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q4-c1-question.webp) · [الإجابة ص 65](assets/lessons/ict/exams/source-crops/exam-p59-q4-c1-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-c1",partOrder:14,prompt:"سؤال من ورقة امتحان"},{id:"exam-p59-q4-c2",topic:"امتداد الملفات التنفيذية",lessonId:"smartphone-operating-systems",partId:"ios-files",bookPages:[42,53],question:"ما امتداد الملف التنفيذي في كل من: ويندوز فون، IOS؟",answer:`**امتداد الملف التنفيذي:**
-
-| نظام التشغيل | الامتداد |
-| --- | --- |
-| ويندوز فون \`Windows Phone\` | \`.xap\` |
-| \`iOS\` | \`.ipa\` |
-
-**الشاهد من الكتاب:**
-
-> نظام أندرويد: JAVA, C++، .apk
-> نظام IOS: Objective C, Swift، .ipa
-> نظام ويندوز فون: VB.NET, C#.NET، .xap
-
-**المصدر:** صفحة 41 من الكتاب.`,sourcePage:59,answerPage:65,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"4-c2",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q4-c2-question.webp) · [الإجابة ص 65](assets/lessons/ict/exams/source-crops/exam-p59-q4-c2-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-c2",partOrder:15,prompt:"سؤال من ورقة امتحان"},{id:"exam-p59-q4-d",topic:"قراءة واجهة App Inventor",lessonId:"my-mobile-app",partId:"app-inventor-tools",bookPages:[43,44,47,48],question:`تأمل الشكل المجاور الذي تم اقتطاعه من أحد التطبيقات التي تم تصميمها باستخدام برنامج App Inventor، ثم أجب عما يلي:
-1. ماذا تسمى الواجهة التي أظهرت هذا الجزء في برنامج App Inventor؟
-2. ما اسم الشاشة التي يتم تصميمها في الشكل؟
-3. اذكر أربعاً من الأدوات المضافة على الشاشة؟
-4. ما الأمر المستخدم لتغيير اسم الأداة البرمجي إلى Btn_Start؟
-5. اذكر الخاصية لإظهار/إخفاء الأداة؟
-
-![شجرة Components وفيها Screen2 وImage1 وHorizontalArrangement1 وLabel1 وTextBox1 وBtn_Start ](assets/lessons/ict/exams/exam-p59-q4-d.webp)`,answer:"![شجرة المكونات الأصلية](assets/lessons/ict/exams/exam-p59-q4-d.webp)\n\nواجهة **`Designer`** تجمع أدوات التطبيق وترتبها، بينما **`Blocks`** تبرمج ما تفعله.\n\n1. هذه شجرة المكونات في واجهة التصميم **`Designer`**.\n\n2. نقرأ اسم الجذر أعلى الشجرة: الشاشة **`Screen2`**.\n\n3. أربعة مكونات ظاهرة: **`Image1`، `HorizontalArrangement1`، `Label1`، `TextBox1`**. ويظهر أيضاً الزر `Btn_Start`.\n\n4. أمر **`Rename`** يغير اسم المكون البرمجي إلى `Btn_Start`؛ أما `Text` فيغير النص الظاهر للمستخدم.\n\n5. خاصية **`Visible`** تتحكم في الظهور؛ `true` للإظهار و`false` للإخفاء.\n\n**مرجع الوظائف:** أدوات الواجهة — ص44 المطبوعة، PDF46، Rename وVisible — ص49 المطبوعة، PDF51.\n\n**الشاهد على اسم الواجهة:**\n\n> يحتوي برنامج App inventor على واجهتين ستحتاج استعمالهما أثناء عملك عليه لتطوير تطبيقاتك: الواجهة الأولى وتعرف باسم واجهة التصميم Designer وتستعمل لبناء الشكل العام لبرنامجك بحيث يتيح لك استعمال خاصية السحب والإفلات لبناء الشكل العام لتطبيقك. أما الواجهة الثانية فهي واجهة اللبنات Blocks والتي ستستعملها لبرمجة تطبيقك من خلال تجميع اللبنات الخاصة ببرنامجك، وربطها مع بعضها حسب المنطق الخاص بتطبيقك.\n\n**المصدر:** صفحة 41 من الكتاب.",sourcePage:59,answerPage:65,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"4-d",marks:6,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!0,answerProvenance:"curriculum-corrected-2026-10-24",figurePage:59,cropRect:[96,548,247.33,714.67],cropUnit:"pdf-points",figureAlt:"شجرة Components وفيها Screen2 وImage1 وHorizontalArrangement1 وLabel1 وTextBox1 وBtn_Start",figureUnanswered:!0,scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",figure:"assets/lessons/ict/exams/exam-p59-q4-d.webp",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q4-d-question.webp) · [الإجابة ص 65](assets/lessons/ict/exams/source-crops/exam-p59-q4-d-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-d · 6 علامة",partOrder:17,prompt:"سؤال من ورقة امتحان"},{id:"exam-p60-q5-c",topic:"تتبع تعبير رياضي",lessonId:"my-mobile-app",partId:"calculator-events",bookPages:[50,51,52],question:`اعتماداً على اللبنات أدناه، أجب عما يلي:
-1. من أي مجموعة تم إدراج اللبنات الآتية: A (square root)، B (when Button1.Click)؟
-2. ما الهدف من التطبيق؟
-3. ما ناتج التطبيق في حال كانت القيم المدخلة هي: 3، 4 على التوالي؟
-
-![Button1.Click يعين Label1.Text إلى الجذر التربيعي لمجموع TextBox1.Text تربيع وTextBox2.Text تربيع ](assets/lessons/ict/exams/exam-p60-q5-c.webp)`,answer:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/exam-p60-q5-c.webp)\n\n**1. مجموعتا اللبنات:** `square root` من `Math`؛ والحدث `Button1.Click` من لبنات `Button1`.\n\n**2. وظيفة التطبيق:** عند النقر يقرأ العددين ثم يحسب الجذر التربيعي لمجموع مربعيهما؛ تصلح هذه العلاقة لوتر مثلث قائم إذا كان المدخلان طولي ضلعيه القائمين.\n\nالقوة 2 تعني ضرب العدد في نفسه. للمدخلين 3 و4:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>9</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mn>4</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>16</mn></mrow></math>\n```\n\nنجمع المربعين:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>9</mn><mo>+</mo><mn>16</mn><mo>=</mo><mn>25</mn></mrow></math>\n```\n\n`square root` تعيد العدد غير السالب الذي مربعه 25:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msqrt><mn>25</mn></msqrt><mo>=</mo><mn>5</mn></mrow></math>\n```\n\n**تظهر 5 في `Label1.Text`.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).',sourcePage:60,answerPage:66,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"5-c",marks:4,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!0,answerProvenance:"curriculum-corrected-2026-10-24",figurePage:60,cropRect:[58,425.33,512.67,497.33],cropUnit:"pdf-points",figureAlt:"Button1.Click يعين Label1.Text إلى الجذر التربيعي لمجموع TextBox1.Text تربيع وTextBox2.Text تربيع",figureUnanswered:!0,scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",figure:"assets/lessons/ict/exams/exam-p60-q5-c.webp",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 60](assets/lessons/ict/exams/source-crops/exam-p60-q5-c-question.webp) · [الإجابة ص 66](assets/lessons/ict/exams/source-crops/exam-p60-q5-c-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 60 · السؤال 5-c · 4 علامة",partOrder:1,prompt:"سؤال من ورقة امتحان"},{id:"exam-p60-q5-d3",topic:"DCL",lessonId:"sql-queries",partId:"sql-introduction",bookPages:[12,33],question:"مجموعة من الأوامر لتحديد صلاحيات مستخدمي قواعد البيانات من حيث الوصول إلى مكوناتها واستخدامها:",explanation:`**الإجابة:** لغة التحكم في البيانات
-
-**الشاهد من الكتاب:**
-
-> لغة التحكم بالبيانات (DCL-Data Control Language)
-> مجموعة من الأوامر لتحديد صلاحيات مستخدمي قاعدة البيانات من حيث الوصول إلى مكوناتها واستخدامها.
-
-**المصدر:** صفحة 12 من الكتاب.`,sourcePage:60,answerPage:66,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"5-d3",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["لغة تعريف البيانات","لغة التحكم في البيانات","لغة معالجة البيانات","لغة إخراج البيانات"],correctChoiceIndex:1,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 60](assets/lessons/ict/exams/source-crops/exam-p60-q5-d3-question.webp) · [الإجابة ص 66](assets/lessons/ict/exams/source-crops/exam-p60-q5-d3-answer.webp)",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 60 · السؤال 5-d3",partOrder:0,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 60 · السؤال 5-d3",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p61-q6-a3",topic:"باقي القسمة",lessonId:"my-mobile-app",partId:"calculator-events",bookPages:[52],question:"عند تنفيذ اللبنات البرمجية المجاورة فإن قيمة Label1 هي:",explanation:`![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/9a9871bee96f47526192.webp)
-
-\`modulo\` تعيد باقي القسمة.
-
-نجد أكبر مضاعف لـ5 لا يتجاوز 18:
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>5</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>15</mn></mrow></math>
-\`\`\`
-
-نطرح هذا المضاعف من 18:
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>18</mn><mo>−</mo><mn>15</mn><mo>=</mo><mn>3</mn></mrow></math>
-\`\`\`
-
-**الباقي 3؛ فتظهر 3 في \`Label1.Text\`.**
-
-**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 49 مطبوعة (ص 51 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).`,sourcePage:61,answerPage:67,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"6-a3",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!0,answerProvenance:"curriculum-corrected-2026-10-24",choices:["0","3","6","9"],correctChoiceIndex:1,figurePage:61,cropRect:[54.67,204.67,262.67,230],cropUnit:"pdf-points",figureAlt:"set Label1.Text to modulo of 18 ÷ 5",figureUnanswered:!0,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",figure:"assets/lessons/curriculum-evidence/9a9871bee96f47526192.webp",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",example:"![set Label1.Text to modulo of 18 ÷ 5 ](assets/lessons/curriculum-evidence/9a9871bee96f47526192.webp)",reference:"[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-a3-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-a3-answer.webp)",originalFigure:"assets/lessons/ict/exams/exam-p61-q6-a3.webp",type:"mcq",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-a3",partOrder:2,kicker:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-a3",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p61-q6-b",topic:"خصائص Access",lessonId:"database-management",partId:"access-basics",bookPages:[3],question:"اذكر أربعًا من خصائص Microsoft Access.",answer:`**أربع خصائص لأكسس:**
-
-1. **علائقي:** يحفظ البيانات في جداول تربط بينها علاقات.
-2. **ملف واحد:** يجمع مكونات القاعدة في ملف واحد.
-3. **الاستيراد والتصدير:** ينقل البيانات من قواعد وبرامج أخرى وإليها.
-4. **المشاركة عبر الشبكة:** يتيح وصول عدة مستخدمين إلى القاعدة.
-
-**الشاهد من الكتاب 1:**
-
-> قاعدة بيانات علائقية: البيانات تأخذ شكل جداول ترتبط فيما بينها بعلاقات منطقية.
-
-
-
-**الشاهد من الكتاب 2:**
-
-> تجمع أكسس مكونات قاعدة البيانات في ملف واحد، ويأخذ الامتداد accdb، حيث أن الحد الأقصى لحجم هذا الملف 2GB
-
-
-
-**الشاهد من الكتاب 3:**
-
-> تمكن من استيراد وتصدير أنواع مختلفة من البيانات إلى قواعد بيانات وبرامج جداول إلكترونية أخرى.
-
-
-
-**الشاهد من الكتاب 4:**
-
-> إمكانية وضع قاعدة البيانات على شبكة حاسوب، مما يمكن عدة مستخدمين من الوصول إليها في آن واحد.
-
-**المصدر:** صفحة 3 من الكتاب.`,sourcePage:61,answerPage:67,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"6-b",marks:4,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-b-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-b-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-b · 4 علامة",partOrder:15,prompt:"سؤال من ورقة امتحان"},{id:"exam-p61-q6-c2",topic:"الصورة في App Inventor",lessonId:"my-mobile-app",partId:"app-inventor-tools",bookPages:[43,44],question:"في برنامج AppInventor، حدد: خاصية تستخدم لتحميل صورة إلى أداة image؟",answer:`**الإجابة:** \`Picture\`
-
-**الشاهد من الكتاب:**
-
-> خاصية Picture: لأداة Image1 بالضغط على الخاصية والضغط على الزر upload file ثم اختيار الملف كما في الشكل المجاور.
-
-**المصدر:** صفحة 44 من الكتاب.`,sourcePage:61,answerPage:67,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"6-c2",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-c2-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-c2-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-c2",partOrder:18,prompt:"سؤال من ورقة امتحان"},{id:"exam-p61-q6-c3",topic:"مجموعة الترتيب",lessonId:"my-mobile-app",partId:"app-inventor-tools",bookPages:[47,48],question:"في تطبيق الحاسبة ببرنامج App Inventor، ما اسم الأداة التي يستخدمها مثال الكتاب لترتيب أزرار العمليات في صفين وثلاثة أعمدة؟",answer:`الإجابة: **\`Table Arrangement\`، أداة الترتيب الجدولي**.
-
-**الشاهد:** يسمي الكتاب الأداة \`Table Arrangement\` في بناء واجهة الحاسبة، ثم يوضح ترتيب الأزرار في صفين وثلاثة أعمدة من خلال خصائص الجدول.
-
-**الشاهد من الكتاب:**
-
-> أداة ترتيب الجدول (Table Arrangement)
-
-> ترتيب الأزرار أعلاه في صفين وثلاثة أعمدة، ويمكن عمل ذلك من خلال خصائص الجدول.
-
-الكتاب: أداة الترتيب الجدولي؛ ص48 المطبوعة، PDF50
-
-الكتاب: ترتيب أزرار الحاسبة في صفوف وأعمدة؛ ص49 المطبوعة، PDF51`,sourcePage:61,answerPage:67,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"6-c3",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-c3-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-c3-answer.webp) · صياغة تعليمية معدّلة",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-c3",partOrder:19,prompt:"سؤال من ورقة امتحان"},{id:"exam-p61-q6-c4",topic:"تهيئة الشاشة",lessonId:"my-mobile-app",partId:"calculator-interface",bookPages:[49,50,51],question:"في برنامج AppInventor، حدد: وظيفة الحدث (Screen1.Initialize)؟",answer:`**الإجابة:** تنفيذ أوامر التهيئة عند فتح \`Screen1\`.
-
-**الشاهد من الكتاب:**
-
-> إخفاء صناديق الترتيب الأفقي الخاصة باستقبال المتغيرات
-> when Screen1.Initialize
-> set one_variable_box.Visible to false
-
-**المصدر:** صفحة 49 من الكتاب.`,sourcePage:61,answerPage:67,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"6-c4",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-c4-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-c4-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-c4",partOrder:2,prompt:"سؤال من ورقة امتحان"},{id:"exam-p61-q6-d3",topic:"المجسات والواقع الافتراضي",lessonId:"smartphone-operating-systems",partId:"android-features",bookPages:[38,39],question:"علل: المجسات الثلاثة تعمل معاً في الواقع الافتراضي.",answer:`المحاكاة تحتاج إلى معرفة حركة الهاتف وميله واتجاهه؛ لذلك لا تؤدي المجسات الوظيفة نفسها.
-
-- التسارع يتتبع تغير الحركة الخطية.
-- الدوران يتتبع الميل وزوايا الحركة.
-- المغناطيسية يقيس المجال المغناطيسي ويساعد في تحديد الاتجاه.
-
-باجتماع هذه المعلومات يمكن تحديث المشهد مع حركة المستخدم، فتقترب المشاهدة من البيئة الحقيقية.
-
-**المصدر:** صفحة 39 من الكتاب.`,sourcePage:61,answerPage:67,paperLabel:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",originalNumber:"6-d3",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-d3-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-d3-answer.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-d3",partOrder:23,prompt:"سؤال من ورقة امتحان"},{id:"exam-p68-q1-c",topic:"تحليل نظام مبيعات",lessonId:"database-management",partId:"engineering-office",bookPages:[8,9,10,11],question:`لدى شركة الأمل للإنتاج الغذائي الجداول والصفات الآتية:
-كيان أصناف (كود الصنف، وصف الصنف)، كيان سلع (باركود السلعة، اسم السلعة، السعر، كود الصنف).
-كيان زبون (كود الزبون، اسم الزبون، الهاتف)، كيان مبيعات (متسلسل، كود الزبون، باركود السلعة، الكمية).
-ملاحظة: إن الصنف الواحد العديد من السلع، يمكن للزبائن شراء السلع من خلال عمليات البيع.
-المطلوب: 1. حدد المفاتيح الأجنبية. 2. ارسم مخطط ERD للنظام السابق.`,answer:`المفتاح الأساسي يميز السجل؛ والمفتاح الأجنبي يشير إلى سجل في جدول آخر.
-
-نقرأ كل علاقة من كيان الأصل إلى السجلات التي تشير إليه.
-
-نبحث عن الحقول التي تشير إلى كيانات أخرى؛ فهي المفاتيح الأجنبية:
-
-| الكيان في الرسم | جميع صفاته |
-| --- | --- |
-| أصناف \`Category\` | كود الصنف **أساسي**، وصف الصنف |
-| سلع \`Item\` | باركود السلعة **أساسي**، اسم السلعة، السعر، كود الصنف **أجنبي** |
-| زبون \`Customer\` | كود الزبون **أساسي**، اسم الزبون، الهاتف |
-| مبيعات \`Sale\` | متسلسل **أساسي**، كود الزبون **أجنبي**، باركود السلعة **أجنبي**، الكمية |
-
-الصنف يضم عدة سلع، والسلعة ترد في عدة عمليات بيع، والزبون له عدة عمليات بيع. نرسمها هكذا، و\`M\` تعني متعددًا:
-
-![مخطط الحل العلاقي الكامل بالصفات والمفاتيح](assets/lessons/curriculum-evidence/62160918fcb59fab3e0e.svg)
-
-المبيعات هي الوصلة بين الزبون والسلعة، و**الكمية** تخص عملية البيع؛ لذلك تبقى في جدول المبيعات.
-
-**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 10 مطبوعة (ص 12 في PDF).`,sourcePage:68,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"1-c",marks:6,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 68](assets/lessons/ict/exams/source-crops/exam-p68-q1-c-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 68 · السؤال 1-c · 6 علامة",partOrder:0,prompt:"سؤال من ورقة امتحان"},{id:"exam-p69-q2-b",topic:"فائدة ومخاطرة الملف الواحد",lessonId:"database-management",partId:"access-basics",bookPages:[3],question:"من خصائص أكسس أنها تقوم بتجميع مكونات قاعدة البيانات في ملف واحد، اذكر إيجابية وسلبية لهذه الخاصية؟",answer:`**الإيجابية:** التعامل مع مكونات القاعدة ونقلها أسهل لأنها مجموعة في ملف واحد.
-
-**السلبية:** تلف هذا الملف قد يؤدي إلى فقدان مكونات القاعدة جميعها إذا لم تتوفر نسخة احتياطية سليمة.
-
-**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / خصائص أكسس، ص 3 مطبوعة (ص 5 في PDF).`,sourcePage:69,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"2-b",marks:4,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q2-b-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 2-b · 4 علامة",partOrder:16,prompt:"سؤال من ورقة امتحان"},{id:"exam-p69-q3-a2",topic:"مجس التسارع",lessonId:"smartphone-operating-systems",partId:"android-features",bookPages:[38],question:"المجس المستشعر لتغير سرعة حركة الجهاز باتجاه المحاور الثلاث x,y,z؟",explanation:`**الإجابة:** التسارع
-
-**الشاهد من الكتاب:**
-
-> التسارع (Accelerometer): مجس يستشعر التغير في سرعة حركة الجهاز باتجاه المحاور الثلاثة x, y, z، كما يقيس التسارع الخطي في حركته.
-
-**المصدر:** صفحة 39 من الكتاب.`,sourcePage:69,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"3-a2",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["التسارع","الدوران","Magnetometer","Gyroscope"],correctChoiceIndex:0,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q3-a2-question.webp)",type:"mcq",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-a2",partOrder:1,kicker:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-a2",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p69-q3-d1",topic:"ORDER BY DESC",lessonId:"sql-queries",partId:"order-practice",bookPages:[16,18,19,20],question:"اكتب جملة SQL: عرض جميع حقول جدول Teacher تنازلياً حسب حقل BDate.",answer:"النجمة تعرض جميع حقول `Teacher`. نضع حقل الترتيب بعد `ORDER BY` ثم `DESC` لأن المطلوب تنازلي.\n\n```sql\nSELECT * FROM Teacher\nORDER BY BDate DESC;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF).",sourcePage:69,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"3-d1",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q3-d1-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-d1",partOrder:1,prompt:"سؤال من ورقة امتحان"},{id:"exam-p69-q3-d2",topic:"DELETE بشروط متعددة",lessonId:"sql-queries",partId:"delete-review",bookPages:[14,15,25,30,31,32,33],question:"اكتب جملة SQL: احذف من جدول Car السيارات التي صنعت Pdate قبل 1/1/2000 وسعرها Price أقل من 15000.",answer:"يجب تحقق شرط التاريخ وشرط السعر معًا، فنستخدم `AND`. نكتب تاريخ `Access` بين علامتي `#`، و«قبل» و«أقل من» لا تشملان المساواة.\n\n```sql\nDELETE FROM Car\nWHERE Pdate < #2000-01-01# AND Price < 15000;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 15 مطبوعة (ص 17 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 30 مطبوعة (ص 32 في PDF).",sourcePage:69,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"3-d2",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q3-d2-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-d2",partOrder:6,prompt:"سؤال من ورقة امتحان"},{id:"exam-p69-q3-d3",topic:"INSERT SELECT",lessonId:"sql-queries",partId:"insert-queries",bookPages:[28,29],question:"اكتب جملة SQL: ألحق من جدول Stud لجدول Stud2 كل من الحقول (id, Name).",answer:"الوجهة هي `Stud2` والمصدر هو `Stud`. نستخدم `SELECT` لجلب الرقم والاسم من المصدر بالترتيب نفسه.\n\n```sql\nINSERT INTO Stud2 (id, [Name])\nSELECT id, [Name] FROM Stud;\n```\n\nالإلحاق ينسخ السجلات؛ لا يحذفها من `Stud`.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 29 مطبوعة (ص 31 في PDF).",sourcePage:69,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"3-d3",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q3-d3-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-d3",partOrder:7,prompt:"سؤال من ورقة امتحان"},{id:"exam-p69-q3-d4",topic:"UPDATE جميع السجلات",lessonId:"sql-queries",partId:"update-queries",bookPages:[25,26,27,34],question:"اكتب جملة SQL: أضف 5 علامات لجميع الطلاب (اسم الجدول Student، حقل العلامات Mark).",answer:"نضيف **5 علامات** إلى العلامة القديمة؛ لذا نستخدم الجمع. المطلوب جميع الطلاب، فلا نضع شرط `WHERE`.\n\n```sql\nUPDATE Student\nSET Mark = Mark + 5;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 25 مطبوعة (ص 27 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).",sourcePage:69,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"3-d4",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q3-d4-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-d4",partOrder:4,prompt:"سؤال من ورقة امتحان"},{id:"exam-p70-q4-b1",topic:"متطلبات الواقع الافتراضي",lessonId:"smartphone-operating-systems",partId:"android-features",bookPages:[38,39],question:"علل: بعض الأجهزة الذكية لا تحقق المشاهدة المطلوبة عند تجربة تقنية الواقع الافتراضي.",answer:`**لعدم توافر المجسات التي يعتمد عليها وصف التجربة في الكتاب، أو عدم دعمها بالشكل المطلوب.**
-
-هذه المجسات هي التسارع والدوران والمغناطيسية، وتعمل معًا لتتبع الحركة والاتجاه.
-
-**مرجع الكتاب:** الدرس الأول: أنظمة تشغيل الهاتف الذكي، ص 38 مطبوعة (ص 40 في PDF)؛ الدرس الأول: أنظمة تشغيل الهاتف الذكي، ص 39 مطبوعة (ص 41 في PDF).`,sourcePage:70,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"4-b1",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 70](assets/lessons/ict/exams/source-crops/exam-p70-q4-b1-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 70 · السؤال 4-b1",partOrder:24,prompt:"سؤال من ورقة امتحان"},{id:"exam-p70-q4-b2",topic:"اختيار Memo",lessonId:"database-management",partId:"tables-and-types",bookPages:[6],question:"علل: قام المبرمج بوضع نوع البيانات لحقل (وصف الحادث) من نوع مذكرة.",answer:"وصف الحادث قد يحتاج جملًا كثيرة، فيتجاوز سعة **نص `Text`** البالغة 255 رمزًا.\n\nلذلك نختار **مذكرة `Memo`** لأنها مخصصة للنصوص الطويلة.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء جدول وتعيين المفاتيح، ص 6 مطبوعة (ص 8 في PDF).",sourcePage:70,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"4-b2",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 70](assets/lessons/ict/exams/source-crops/exam-p70-q4-b2-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 70 · السؤال 4-b2",partOrder:16,prompt:"سؤال من ورقة امتحان"},{id:"exam-p71-q5-a3",topic:"الاسم البرمجي",lessonId:"my-mobile-app",partId:"app-inventor-tools",bookPages:[43,44,47],question:"لإعادة تسمية الأدوات في برنامج أب انفتور:",explanation:`**الإجابة:** \`Rename\`
-
-**الشاهد من الكتاب:**
-
-> كما يمكن إعادة تسمية الأزرار من خلال (Rename) الموجودة في قائمة (Component) بالبرنامج.
-
-**المصدر:** صفحة 49 من الكتاب.`,sourcePage:71,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"5-a3",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["Properties","Retext","Text","Rename"],correctChoiceIndex:3,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-a3-question.webp)",type:"mcq",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-a3",partOrder:1,kicker:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-a3",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p71-q5-b1",topic:"مفاتيح وعلاقات",lessonId:"database-management",partId:"keys-and-relations",bookPages:[6,8,9,10,11],question:`لديك الجداول التالية من برنامج أكسس، أجب عن الأسئلة التي تليها:
-
-Subject
-
-| Sid | SName |
-|---|---|
-| A5 | اللغة العربية |
-| B6 | جغرافيا |
-| C3 | حاسوب |
-
-Book
-
-| BId | BName | Sid |
-|---|---|---|
-| 100 | النحو | A5 |
-| 200 | العروض | A5 |
-| 300 | DB | C3 |
-
-1. حدد مفتاحاً أساسياً ومفتاحاً أجنبياً.
-2. ما العلاقة بين جدول Subject وجدول Book؟
-3. ما نوع البيانات لكل حقل في جدول Subject؟`,answer:"**المفتاح الأساسي** يميز سجلًا واحدًا دون تكرار.\n\n**المفتاح الأجنبي** يشير إلى مفتاح أساسي في جدول آخر.\n\nنحدد الحقل الذي يميز سجل الجدول، ثم الحقل الذي يشير إلى جدول آخر:\n\n| الجدول | المفتاح الأساسي | المفتاح الأجنبي |\n| --- | --- | --- |\n| `Subject` | `Sid` | لا يظهر فيه مفتاح أجنبي. |\n| `Book` | `BId` | `Sid`، ويشير إلى `Subject`. |\n\nيتكرر الرمز `A5` في كتابَي النحو والعروض؛ فالموضوع الواحد له عدة كتب. إذن من **`Subject` إلى `Book`: واحد إلى متعدد**.\n\nنختار **نص `Text`** لكل حقول `Subject`: `Sid` لأنه يحتوي رموزًا مثل `A5`، و`SName` لأنه اسم الموضوع.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء جدول وتعيين المفاتيح، ص 6 مطبوعة (ص 8 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF).",sourcePage:71,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"5-b1",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:71,sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-b1-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-b1",partOrder:12,prompt:"سؤال من ورقة امتحان"},{id:"exam-p71-q5-b4",topic:"استعلام جدولين",lessonId:"sql-queries",partId:"related-tables",bookPages:[21,22,23],question:`لديك الجداول التالية من برنامج أكسس، أجب عن الأسئلة التي تليها:
-
-Subject
-
-| Sid | SName |
-|---|---|
-| A5 | اللغة العربية |
-| B6 | جغرافيا |
-| C3 | حاسوب |
-
-Book
-
-| BId | BName | Sid |
-|---|---|---|
-| 100 | النحو | A5 |
-| 200 | العروض | A5 |
-| 300 | DB | C3 |
-
-اكتب جملة SQL اللازمة لعرض عدد الكتب من موضوع اللغة العربية.`,answer:`\`COUNT\` تعد القيم غير الفارغة في الحقل؛ ورقم الكتاب مفتاح لا يكون فارغًا في هذا النموذج.
-
-نحتاج ربط الكتاب بموضوعه حتى نعد كتب اللغة العربية وحدها.
-
-نربط الكتاب بموضوعه بمساواة \`Sid\`. بعدها نختار موضوع اللغة العربية ونعد أرقام كتبه بـ \`COUNT\`.
-
-\`\`\`sql
-SELECT COUNT(Book.BId) AS [عدد الكتب]
-FROM Book, Subject
-WHERE Book.Sid = Subject.Sid
-  AND Subject.SName = "اللغة العربية";
-\`\`\`
-
-الموضوع \`A5\` له الكتابان 100 و200؛ النتيجة **2**.
-
-**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 23 مطبوعة (ص 25 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 24 مطبوعة (ص 26 في PDF).`,sourcePage:71,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"5-b4",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:71,sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-b4-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-b4",partOrder:0,prompt:"سؤال من ورقة امتحان"},{id:"exam-p71-q5-b5",topic:"UPDATE نص",lessonId:"sql-queries",partId:"update-queries",bookPages:[25,26,27],question:`لديك الجداول التالية من برنامج أكسس، أجب عن الأسئلة التي تليها:
-
-Subject
-
-| Sid | SName |
-|---|---|
-| A5 | اللغة العربية |
-| B6 | جغرافيا |
-| C3 | حاسوب |
-
-Book
-
-| BId | BName | Sid |
-|---|---|---|
-| 100 | النحو | A5 |
-| 200 | العروض | A5 |
-| 300 | DB | C3 |
-
-اكتب جملة SQL لتحديث اسم الكتاب DB ليصبح (قواعد البيانات).`,answer:'نستخدم الاسم القديم في `WHERE` لاختيار الكتاب، والاسم الجديد بعد `SET` لتغييره.\n\n```sql\nUPDATE Book\nSET BName = "قواعد البيانات"\nWHERE BName = "DB";\n```\n\nالسجل المقصود في الجدول رقمه **300**.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 25 مطبوعة (ص 27 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).',sourcePage:71,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"5-b5",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:71,sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-b5-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-b5",partOrder:5,prompt:"سؤال من ورقة امتحان"},{id:"exam-p71-q5-b6",topic:"ناتج SELECT",lessonId:"sql-queries",partId:"select-order",bookPages:[16,17,18],question:`لديك الجداول التالية من برنامج أكسس، أجب عن الأسئلة التي تليها:
-
-Subject
-
-| Sid | SName |
-|---|---|
-| A5 | اللغة العربية |
-| B6 | جغرافيا |
-| C3 | حاسوب |
-
-Book
-
-| BId | BName | Sid |
-|---|---|---|
-| 100 | النحو | A5 |
-| 200 | العروض | A5 |
-| 300 | DB | C3 |
-
-ما ناتج تنفيذ الجملة؟
-\`\`\`sql
-Select BName from Book Where Bid=200;
-\`\`\``,answer:"نبدأ بالشرط `BId=200` فنجد سجل كتاب **العروض**.\n\nبعد `SELECT` حقل `BName` فقط؛ لذلك يظهر اسمه دون بقية الحقول.\n\n| `BName` |\n| --- |\n| العروض |\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 19 مطبوعة (ص 21 في PDF).",sourcePage:71,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"5-b6",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourceTablePage:71,sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",reference:"[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-b6-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-b6",partOrder:3,prompt:"سؤال من ورقة امتحان"},{id:"exam-p71-q5-c",topic:"الفرق بين set وget",lessonId:"my-mobile-app",partId:"app-inventor-blocks",bookPages:[44,45,49,50],question:"ما الفرق بين اللبنة set global x، get global x؟",answer:`**الفرق بين اللبنتين:**
-
-| اللبنة | الوظيفة |
-| --- | --- |
-| \`set global x\` | إسناد قيمة إلى المتغير \`x\` أو تغيير قيمته. |
-| \`get global x\` | قراءة القيمة الحالية للمتغير \`x\`. |
-
-**الشاهد من الكتاب 1:**
-
-> متغير معامل السمنة تم تعريفه سابقاً ويتم إحضاره من مجموعة المتغيرات.
-> get global factor
-
-**المصدر:** صفحة 45 من الكتاب.
-
-
-
-**الشاهد من الكتاب 2:**
-
-> set global Var1 to txt_var1.Text
-> set global Var2 to txt_var2.Text
-> set lbl_Result.Text to get global Var1 + get global Var2
-
-**المصدر:** صفحة 51 من الكتاب.`,sourcePage:71,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"5-c",marks:4,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-c-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-c · 4 علامة",partOrder:4,prompt:"سؤال من ورقة امتحان"},{id:"exam-p71-q6-a1",topic:"أداة الإخراج",lessonId:"my-mobile-app",partId:"app-inventor-tools",bookPages:[43,44],question:"أداة تستخدم للتسمية وإخراج النتائج في برنامج أب انفتور؟",explanation:`**الإجابة:** \`Label\`
-
-**الشاهد من الكتاب:**
-
-> أداة Label (مربع التسمية): من مجموعة User Interface العدد (6) لعنونة مربعات النصوص ولتوضيح المطلوب إدخاله، ولإخراج النتائج وعنونتها.
-
-**المصدر:** صفحة 44 من الكتاب.`,sourcePage:71,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"6-a1",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["TextBox","Button","Image","Label"],correctChoiceIndex:3,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q6-a1-question.webp)",type:"mcq",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 6-a1",partOrder:2,kicker:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 6-a1",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p71-q6-a3",topic:"امتداد Access",lessonId:"database-management",partId:"access-basics",bookPages:[3],question:"امتداد ملفات مايكروسفت أكسس",explanation:`**الإجابة:** \`accdb\`
-
-**الشاهد من الكتاب:**
-
-> تجمع أكسس مكونات قاعدة البيانات في ملف واحد، ويأخذ الامتداد accdb، حيث أن الحد الأقصى لحجم هذا الملف 2GB
-
-**المصدر:** صفحة 3 من الكتاب.`,sourcePage:71,answerPage:null,paperLabel:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",originalNumber:"6-a3",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["db","acdb","accdb","access"],correctChoiceIndex:2,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q6-a3-question.webp)",type:"mcq",title:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 6-a3",partOrder:4,kicker:"جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 6-a3",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p73-q1-4",topic:"Double",lessonId:"database-management",partId:"tables-and-types",bookPages:[6],question:"في برنامج أكسس (MS-Access) ما هو الحجم التخزيني لنوع البيانات عدد كسري مزدوج؟",explanation:`**الإجابة:** 8 بايت
-
-**الشاهد من الكتاب:**
-
-> رقم (Number): للقيم الرقمية، ويقبل تخزين سعات مختلفة حسب النوع المحدد، والأنواع الرقمية هي: بايت، عدد صحيح Integer (2 بايت)، عدد صحيح مطول Integer Long (4 بايت)، عدد كسري مفرد Single (4 بايت)، وعدد كسري مزدوج Double (8 بايت).
-
-**المصدر:** صفحة 6 من الكتاب.`,sourcePage:73,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"1-4",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["بايت","2 بايت","4 بايت","8 بايت"],correctChoiceIndex:3,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 73](assets/lessons/ict/exams/source-crops/exam-p73-q1-4-question.webp)",type:"mcq",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-4",partOrder:2,kicker:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-4",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p73-q1-5",topic:"العلاقة واحد لمتعدد",lessonId:"database-management",partId:"keys-and-relations",bookPages:[8,9,10,11],question:"ما درجة العلاقة التي تصف (كل سجل بالجدول الأول مرتبط بعدة سجلات بالجدول الثاني والعكس غير صحيح)؟",explanation:`العلاقة **واحد إلى متعدد من الجدول الأول إلى الثاني**.
-
-سجل واحد في الأول يقابله عدة سجلات في الثاني.
-
-كل سجل في الثاني يشير إلى سجل واحد في الأول؛ لذلك لا تنعكس العلاقة إلى متعدد من الجهتين.
-
-**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF).`,sourcePage:73,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"1-5",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["واحد واحد","واحد لمتعدد","متعدد واحد","متعدد لمتعدد"],correctChoiceIndex:1,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 73](assets/lessons/ict/exams/source-crops/exam-p73-q1-5-question.webp)",type:"mcq",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-5",partOrder:0,kicker:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-5",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p73-q1-8",topic:"تعدد التطبيقات",lessonId:"smartphone-operating-systems",partId:"android-features",bookPages:[37],question:"ما الميزة التي تمكن المستخدم من تشغيل أكثر من تطبيق على الشاشة؟",explanation:`**الإجابة:** الإطارات المتعددة
-
-**الشاهد من الكتاب:**
-
-> الإطار المتعدد: تشغيل أكثر من تطبيق على شاشة الهاتف معاً.
-
-**المصدر:** صفحة 37 من الكتاب.`,sourcePage:73,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"1-8",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["الإطارات المتعددة","القيود","التمرير الذكي","الأمان"],correctChoiceIndex:0,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 73](assets/lessons/ict/exams/source-crops/exam-p73-q1-8-question.webp)",type:"mcq",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-8",partOrder:2,kicker:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-8",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p74-q2-b",topic:"ERD وعلاقة متعدد لمتعدد",lessonId:"database-management",partId:"education-center",bookPages:[8,9,10,11],question:`من خلال دراستك لقواعد البيانات، تأمل النظام الآتي ثم أجب عن الأسئلة التي تليه:
-في تحليل نظام مكتب سياحة وسفر نتجت الكيانات التالية:
-- المسافر (رقم المسافر، اسم المسافر، رقم الهاتف).
-- الرحلة (رقم الرحلة، اسم الرحلة، تاريخ الرحلة، تكلفة الرحلة).
-- مسافر - رحلة (رقم متسلسل، رقم المسافر، رقم الرحلة).
-علماً أن الرحلة تضم أكثر من مسافر، ويمكن للمسافر الاشتراك بأكثر من رحلة.
-1. ارسم مخطط ERD للنظام موضحاً العلاقات بين الكيانات؟
-2. اذكر المفاتيح الأجنبية إن وجدت مع ذكر اسم الجدول؟`,answer:`المسافر يشترك في عدة رحلات، والرحلة تضم عدة مسافرين؛ لذلك يمثل **مسافر-رحلة** الوصلة بينهما.
-
-| الكيان في الرسم | صفاته |
-| --- | --- |
-| المسافر \`Traveler\` | رقم المسافر **أساسي**، اسم المسافر، رقم الهاتف |
-| الرحلة \`Trip\` | رقم الرحلة **أساسي**، اسم الرحلة، تاريخ الرحلة، تكلفة الرحلة |
-| مسافر-رحلة \`Booking\` | رقم متسلسل **أساسي**، رقم المسافر **أجنبي**، رقم الرحلة **أجنبي** |
-
-نربط كل أصل بالوصلة بعلاقة واحد إلى متعدد، و\`M\` تعني متعددًا:
-
-![مخطط الحل العلاقي الكامل بالصفات والمفاتيح](assets/lessons/curriculum-evidence/412299b74cd96c338e60.svg)
-
-إذن المفتاحان الأجنبيان هما **رقم المسافر ورقم الرحلة في جدول مسافر-رحلة**؛ وكل منهما يشير إلى المفتاح الأساسي الموافق له. الرقم المتسلسل يبقى مفتاح الوصلة المعطى.
-
-**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء جدول وتعيين المفاتيح، ص 6 مطبوعة (ص 8 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF).`,sourcePage:74,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"2-b",marks:9,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q2-b-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 2-b · 9 علامة",partOrder:1,prompt:"سؤال من ورقة امتحان"},{id:"exam-p74-q2-d1",topic:"أهمية DBMS",lessonId:"database-management",partId:"access-basics",bookPages:[3],question:"علل: تعد برامج إدارة قواعد البيانات من أكثر برامج الحاسوب انتشاراً؟",answer:`**الإجابة:** لأنها تخزن البيانات وتعالجها بالإدخال والحذف والتحديث والاسترجاع وإصدار التقارير.
-
-**الشاهد من الكتاب:**
-
-> تعد برامج إدارة قواعد البيانات من أكثر برامج الحاسوب انتشاراً، حيث تقوم بتخزين البيانات ومعالجتها من إدخال، وحذف، وتحديث، واسترجاع وإصدار التقارير.
-
-**المصدر:** صفحة 3 من الكتاب.`,sourcePage:74,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"2-d1",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q2-d1-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 2-d1",partOrder:17,prompt:"سؤال من ورقة امتحان"},{id:"exam-p74-q2-d2",topic:"أندرويد مفتوح المصدر",lessonId:"smartphone-operating-systems",partId:"android-features",bookPages:[36],question:"علل: يعد نظام التشغيل أندرويد نظام مفتوح المصدر؟",answer:`**الإجابة:** لأنه يتيح للمطورين كتابة الشيفرة المصدرية وتعديلها.
-
-**الشاهد من الكتاب:**
-
-> نظام أندرويد مفتوح المصدر يسمح للمطورين بكتابة وتعديل الشيفرة المصدرية لنظام التشغيل بلغة جافا، والتي تمكن من التحكم بأداء الهاتف، وإضافة ميزات جديدة على النظام
-
-**المصدر:** صفحة 36 من الكتاب.`,sourcePage:74,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"2-d2",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q2-d2-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 2-d2",partOrder:25,prompt:"سؤال من ورقة امتحان"},{id:"exam-p74-q3-b1",topic:"INSERT VALUES",lessonId:"sql-queries",partId:"insert-queries",bookPages:[27],question:`تأمل الجداول الآتية جيداً، ثم اكتب أوامر SQL لتنفيذ الاستعلامات التي تليها:
-doctor (dr_id, dr_name, salary, dep_no)
-department (dep_no, dep_name)
-إضافة سجل للجدول (doctor) بالبيانات الآتية: (dr_id=22, dr_name=ahmad, salary=4500, dep_no=3).`,answer:`![الرسم الأصلي للعلاقة بين الطبيب والقسم](assets/lessons/curriculum-evidence/86cf99c558bb05d7b4d1.webp)
-
-نرتب القيم مثل الحقول: رقم الطبيب، اسمه، راتبه، ثم رقم القسم. الاسم نص فنضعه بين اقتباسين.
-
-\`\`\`sql
-INSERT INTO doctor (dr_id, dr_name, salary, dep_no)
-VALUES (22, "ahmad", 4500, 3);
-\`\`\`
-
-عند فرض التكامل المرجعي، يجب أن يكون القسم 3 موجودًا.
-
-**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 27 مطبوعة (ص 29 في PDF).`,sourcePage:74,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"3-b1",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",marksNote:"تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q3-b1-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 3-b1",partOrder:8,prompt:"سؤال من ورقة امتحان"},{id:"exam-p74-q3-b2",topic:"حذف بمعامل",lessonId:"sql-queries",partId:"delete-review",bookPages:[30,31,32,33],question:`doctor (dr_id, dr_name, salary, dep_no)
-department (dep_no, dep_name)
-اكتب أمر SQL: حذف الطبيب الذي يتم إدخال رقمه (dr_id) من قبل المستخدم.`,answer:`![الرسم الأصلي للعلاقة بين الطبيب والقسم](assets/lessons/curriculum-evidence/86cf99c558bb05d7b4d1.webp)
-
-الرقم غير ثابت؛ يحدده المستخدم. نضع طلب إدخاله في شرط رقم الطبيب بين أقواس مربعة.
-
-\`\`\`sql
-DELETE FROM doctor
-WHERE dr_id = [أدخل رقم الطبيب];
-\`\`\`
-
-**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 32 مطبوعة (ص 34 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 33 مطبوعة (ص 35 في PDF).`,sourcePage:74,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"3-b2",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",marksNote:"تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q3-b2-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 3-b2",partOrder:7,prompt:"سؤال من ورقة امتحان"},{id:"exam-p74-q3-b3",topic:"ربط جدولين",lessonId:"sql-queries",partId:"related-tables",bookPages:[21,22,23],question:`doctor (dr_id, dr_name, salary, dep_no)
-department (dep_no, dep_name)
-اكتب أمر SQL: عرض اسم القسم (dep_name) مع أسماء الأطباء (dr_name) الذين يعملون فيه.`,answer:`![الرسم الأصلي للعلاقة بين الطبيب والقسم](assets/lessons/curriculum-evidence/86cf99c558bb05d7b4d1.webp)
-
-اسم القسم في جدول واسم الطبيب في آخر، لذلك نستخدم الجدولين. مساواة \`dep_no\` تربط كل طبيب بقسمه الصحيح.
-
-\`\`\`sql
-SELECT department.dep_name, doctor.dr_name
-FROM department, doctor
-WHERE department.dep_no = doctor.dep_no;
-\`\`\`
-
-كتابة اسم الجدول قبل الحقل تميز حقلي \`dep_no\` المتشابهين.
-
-**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 23 مطبوعة (ص 25 في PDF).`,sourcePage:74,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"3-b3",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",marksNote:"تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q3-b3-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 3-b3",partOrder:1,prompt:"سؤال من ورقة امتحان"},{id:"exam-p75-q4-b",topic:"تتبع تطبيق BMI",lessonId:"my-mobile-app",partId:"bmi-interface",bookPages:[43,44,45,46,52],question:`من خلال دراستك لبرنامج App Inventor، تأمل اللبنات البرمجية الآتية ثم أجب عن الأسئلة:
-1. ما اسم الحدث واسم الأداة التي وقع عليها الحدث؟
-2. اسم أداة إدخال واسم أداة إخراج؟
-3. إذا كانت قيمة factor هي 35 ماذا يظهر في label5؟
-
-![برنامج عامل الوزن: حساب factor ثم شروط ≤20 و≤25 و≤30 وفرع else ](assets/lessons/curriculum-evidence/509e21f8457280979473.webp)`,answer:"![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/509e21f8457280979473.webp)\n\n`if` و`else if` تُفحص بالترتيب؛ عند نجاح شرط يتوقف اختيار الفروع اللاحقة.\n\nنتبع عوامل المقارنة الفعلية في صورة هذا السؤال؛ وهي ≤، وتختلف عن عوامل `<` في نشاط الكتاب.\n\n1. رأس المقطع هو `Button1.Click`؛ إذن الحدث **`Click`** على الزر **`Button1`**.\n2. تُقرأ القيم من `TextBox1` و`TextBox2`؛ فكلاهما أداة إدخال. وتعرض `Label5` رسالة النتيجة.\n3. **عند `factor = 35`:** نختبر الشروط بالترتيب:\n\n   | الشرط | النتيجة |\n   | --- | --- |\n   | `35 <= 20` | خطأ. |\n   | `35 <= 25` | خطأ. |\n   | `35 <= 30` | خطأ. |\n\n   لا يتحقق أي شرط؛ فنصل إلى `else`، وتظهر العبارة **«زيادة مفرطة»** في `Label5.Text`.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 46 مطبوعة (ص 48 في PDF).",sourcePage:75,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"4-b",marks:5,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!0,answerProvenance:"curriculum-corrected-2026-10-24",figurePage:75,cropRect:[57.33,337.33,457.33,528],cropUnit:"pdf-points",figureAlt:"برنامج عامل الوزن: حساب factor ثم شروط <20 و<25 و<30 وفرع else",figureUnanswered:!0,sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",figure:"assets/lessons/curriculum-evidence/509e21f8457280979473.webp",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 75](assets/lessons/ict/exams/source-crops/exam-p75-q4-b-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",originalFigure:"assets/lessons/ict/exams/exam-p75-q4-b.webp",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 75 · السؤال 4-b · 5 علامة",partOrder:0,prompt:"سؤال من ورقة امتحان"},{id:"exam-p76-q5-b1",topic:"أسباب فشل الإدخال",lessonId:"sql-queries",partId:"insert-queries",bookPages:[27],question:"اذكر ثلاثة أسباب قد تمنع من تنفيذ استعلام الإدخال؟",answer:`**أسباب قد تمنع الإدخال أو الإلحاق:**
-
-1. **تكرار المفتاح الأساسي:** الرقم موجود مسبقًا.
-2. **مخالفة التكامل المرجعي:** قيمة المفتاح الأجنبي غير مسموحة عند فرضه.
-3. **اختلاف نوع البيانات:** القيمة لا تتوافق مع نوع الحقل.
-
-**الشاهد من الكتاب:**
-
-> لاحظ أن هذا الأمر قد لا يوفق في الإدخال للأسباب الآتية:
-> تكرار في المفتاح.
-> قيمة المفتاح الأجنبي غير مسموحة.
-> نوعية القيمة تختلف عن نوعية الحقل المسند له كأن تسند قيمة نصية لحقل عددي.
-
-**المصدر:** صفحة 27 من الكتاب.`,sourcePage:76,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"5-b1",marks:3,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 76](assets/lessons/ict/exams/source-crops/exam-p76-q5-b1-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 76 · السؤال 5-b1 · 3 علامة",partOrder:9,prompt:"سؤال من ورقة امتحان"},{id:"exam-p76-q5-b2a",topic:"SELECT بتاريخ وترتيب",lessonId:"sql-queries",partId:"where-conditions",bookPages:[18,19,20,21,25],question:"اكتب أوامر SQL اللازمة لتنفيذ الاستعلامات المطلوبة: عرض جميع بيانات المهندسين من جدول المهندس (Engineer) والذين تم تعيينهم قبل تاريخ 20/8/2023 مرتبة تصاعدياً حسب اسم المهندس إذا علمت أن حقل تاريخ التعيين (Hdate) واسم المهندس (Eng_Name).",answer:"`SELECT` يسترجع الحقول المطلوبة، و`WHERE` يختار السجلات، و`ORDER BY` يرتب الناتج بعد اختيارها.\n\nنختار جميع الحقول بالنجمة، ثم نرشح تاريخ التعيين قبل 20 آب 2023. يأتي الفرز بعد الشرط، و`ASC` تعني تصاعديًا.\n\n```sql\nSELECT * FROM Engineer\nWHERE Hdate < #2023-08-20#\nORDER BY Eng_Name ASC;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 19 مطبوعة (ص 21 في PDF).",sourcePage:76,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"5-b2a",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 76](assets/lessons/ict/exams/source-crops/exam-p76-q5-b2a-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 76 · السؤال 5-b2a",partOrder:8,prompt:"سؤال من ورقة امتحان"},{id:"exam-p76-q5-b2b",topic:"COUNT مع عنوان عمود",lessonId:"sql-queries",partId:"count-parameters",bookPages:[23,24],question:"اكتب أوامر SQL اللازمة لتنفيذ الاستعلامات المطلوبة: إيجاد عدد الطلاب في المدرسة من جدول (Student) وعرض النتيجة في عمود جديد باسم عدد الطلاب إذا علمت أن حقل رقم الطالب (Stno).",answer:"نعد أرقام الطلاب باستخدام `COUNT`. نضع الاسم المطلوب للنتيجة بعد `AS`؛ الأقواس تجمع كلمات اسم العمود.\n\n```sql\nSELECT COUNT(Stno) AS [عدد الطلاب]\nFROM Student;\n```\n\nالنتيجة عدد الطلاب ذوي الرقم غير الفارغ، وليست مجموع أرقامهم.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 24 مطبوعة (ص 26 في PDF).",sourcePage:76,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"5-b2b",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 76](assets/lessons/ict/exams/source-crops/exam-p76-q5-b2b-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 76 · السؤال 5-b2b",partOrder:4,prompt:"سؤال من ورقة امتحان"},{id:"exam-p77-q6-b1a",topic:"تفسير SELECT",lessonId:"sql-queries",partId:"sql-questions",bookPages:[16,19,20,25],question:"ما وظيفة الاستعلام التالي؟\n```sql\nSelect [Name], Date_Hiring\nFrom Teacher\nwhere Date_Hiring<>#1/2/2002#\n```",answer:"`SELECT` يحدد حقلي **الاسم وتاريخ التعيين**، و`FROM` يحدد جدول `Teacher`.\n\nالعامل `<>` يعني **لا يساوي**؛ فتظهر السجلات التي لا يساوي تاريخ تعيينها التاريخ المكتوب `#1/2/2002#`.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 19 مطبوعة (ص 21 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 20 مطبوعة (ص 22 في PDF).",sourcePage:77,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"6-b1a",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 77](assets/lessons/ict/exams/source-crops/exam-p77-q6-b1a-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 77 · السؤال 6-b1a",partOrder:2,prompt:"سؤال من ورقة امتحان"},{id:"exam-p77-q6-b1b",topic:"تفسير الإلحاق",lessonId:"sql-queries",partId:"sql-questions",bookPages:[28,29],question:'ما وظيفة الاستعلام التالي؟\n```sql\nInsert Into Student2(St_Num,St_Name)\nSelect Student.St_Num,Student.St_Name\nFrom Student\nWhere Student.St_Name="قاسم"\n```',answer:'نقرأ الوجهة أولًا: `Student2`. ثم يختار `SELECT` رقم الطالب واسمه من `Student`.\n\nشرط الاسم `"قاسم"` يرشح المصدر؛ **تُلحق جميع السجلات المطابقة**، وليس سجلًا واحدًا بالضرورة.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 29 مطبوعة (ص 31 في PDF).',sourcePage:77,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"6-b1b",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 77](assets/lessons/ict/exams/source-crops/exam-p77-q6-b1b-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 77 · السؤال 6-b1b",partOrder:3,prompt:"سؤال من ورقة امتحان"},{id:"exam-p77-q6-c2a",topic:"خاصية Text",lessonId:"my-mobile-app",partId:"app-inventor-tools",bookPages:[43,44,47,48],question:"لماذا يستخدم: خاصية Text في برنامج App Inventor؟",answer:`**الإجابة:** \`Text\` تحدد النص الموجود في الأداة وتتيح قراءته أو تغييره.
-
-**الشاهد من الكتاب:**
-
-> خاصية Text: لتغيير النص الظاهر على مربعات التسمية label1، label3، label5.
-> خاصية text: لتغيير النص الظاهر على زر الأمر button1.
-
-**المصدر:** صفحة 44 من الكتاب.`,sourcePage:77,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"6-c2a",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 77](assets/lessons/ict/exams/source-crops/exam-p77-q6-c2a-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 77 · السؤال 6-c2a",partOrder:20,prompt:"سؤال من ورقة امتحان"},{id:"exam-p77-q6-c2b",topic:"أداة Label",lessonId:"my-mobile-app",partId:"app-inventor-tools",bookPages:[43,44],question:"لماذا يستخدم: أداة Label في برنامج App Inventor؟",answer:`**الإجابة:** عرض النصوص والعناوين والنتائج.
-
-**الشاهد من الكتاب:**
-
-> أداة Label (مربع التسمية): من مجموعة User Interface العدد (6) لعنونة مربعات النصوص ولتوضيح المطلوب إدخاله، ولإخراج النتائج وعنونتها.
-
-**المصدر:** صفحة 44 من الكتاب.`,sourcePage:77,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"6-c2b",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 77](assets/lessons/ict/exams/source-crops/exam-p77-q6-c2b-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 77 · السؤال 6-c2b",partOrder:21,prompt:"سؤال من ورقة امتحان"},{id:"exam-p77-q6-c2c",topic:"التكامل المرجعي",lessonId:"database-management",partId:"build-and-integrity",bookPages:[7,8,11],question:"لماذا يستخدم: فرض التكامل المرجعي في برنامج (MS-Access)؟",answer:`**للمحافظة على صحة الروابط واتساق البيانات بين الجداول.**
-
-قيمة المفتاح الأجنبي غير الفارغة يجب أن تشير إلى سجل أصل موجود.
-
-بذلك لا تبقى سجلات تابعة تشير إلى أصل غير موجود عند فرض القيد.
-
-**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF).`,sourcePage:77,answerPage:null,paperLabel:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",originalNumber:"6-c2c",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 77](assets/lessons/ict/exams/source-crops/exam-p77-q6-c2c-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 77 · السؤال 6-c2c",partOrder:3,prompt:"سؤال من ورقة امتحان"},{id:"exam-p78-q1-2",topic:"تعريف الإلحاق",lessonId:"sql-queries",partId:"insert-queries",bookPages:[28,29],question:"اختيار البيانات من جدول وإدخالها كسجلات جديدة في جدول آخر:",explanation:`**الإجابة:** إلحاق
-
-**الشاهد من الكتاب:**
-
-> الإلحاق: هي عملية نسخ حقول جدول أو جزء منه إلى جدول مطابق له في المفتاح الأساسي، وبنفس الترتيب
-
-**المصدر:** صفحة 28 من الكتاب.`,sourcePage:78,answerPage:null,paperLabel:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",originalNumber:"1-2",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["إدخال","إلحاق","اختيار"],correctChoiceIndex:1,sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 78](assets/lessons/ict/exams/source-crops/exam-p78-q1-2-question.webp)",type:"mcq",title:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-2",partOrder:0,kicker:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-2",choiceIds:["option-1","option-2","option-3"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p78-q1-4",topic:"أداة الإدخال",lessonId:"my-mobile-app",partId:"app-inventor-tools",bookPages:[43,44],question:"أداة تسمح للمستخدم بإدراج النص بداخلها بعد تجربة التطبيق:",explanation:`**الإجابة:** \`TextBox\`
-
-**الشاهد من الكتاب:**
-
-> أداة textbox (مربع النص): من مجموعة User Interface العدد (2) لإدخال الوزن والطول.
-
-**المصدر:** صفحة 44 من الكتاب.`,sourcePage:78,answerPage:null,paperLabel:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",originalNumber:"1-4",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["TextBox","Texting","Label"],correctChoiceIndex:0,sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 78](assets/lessons/ict/exams/source-crops/exam-p78-q1-4-question.webp)",type:"mcq",title:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-4",partOrder:3,kicker:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-4",choiceIds:["option-1","option-2","option-3"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p78-q1-5",topic:"أولوية العمليات",lessonId:"my-mobile-app",partId:"app-practice",bookPages:[50,51,52],question:"ناتج العملية؟",explanation:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/5b4b98ba4909b90daa85.webp)\n\nنبدأ من اللبنة الأعمق؛ كل نتيجة تصبح مدخلًا للبنة التي تحتويها.\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>4</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>2</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>3</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>5</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>4</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>20</mn></mrow></math>\n```\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>50</mn><mo>−</mo><mn>20</mn><mo>=</mo><mn>30</mn></mrow></math>\n```\n\n**الناتج: 30.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).',sourcePage:78,answerPage:null,paperLabel:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",originalNumber:"1-5",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!0,answerProvenance:"curriculum-corrected-2026-10-24",choices:["30","20","71"],correctChoiceIndex:0,figurePage:78,cropRect:[86.67,497.33,398,542.67],cropUnit:"pdf-points",figureAlt:"لبنة حسابية 50 ناقص 4 مضروباً في مجموع 3 و4 مقسوماً على 2",figureUnanswered:!0,sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",figure:"assets/lessons/curriculum-evidence/5b4b98ba4909b90daa85.webp",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",example:"![لبنة حسابية 50 ناقص 4 مضروباً في مجموع 3 و4 مقسوماً على 2 ](assets/lessons/curriculum-evidence/5b4b98ba4909b90daa85.webp)",reference:"[السؤال ص 78](assets/lessons/ict/exams/source-crops/exam-p78-q1-5-question.webp)",originalFigure:"assets/lessons/ict/exams/exam-p78-q1-5.webp",type:"mcq",title:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-5",partOrder:0,kicker:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-5",choiceIds:["option-1","option-2","option-3"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p79-q1-8",topic:"Visible",lessonId:"my-mobile-app",partId:"app-inventor-blocks",bookPages:[44,49,50,51],question:"الخاصية المستخدمة لإظهار وإخفاء الأدوات:",explanation:`**الإجابة:** \`Visible\`
-
-**الشاهد من الكتاب:**
-
-> إخفاء صناديق الترتيب الأفقي الخاصة باستقبال المتغيرات
-> when Screen1.Initialize
-> set one_variable_box.Visible to false
-
-**المصدر:** صفحة 49 من الكتاب.`,sourcePage:79,answerPage:null,paperLabel:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",originalNumber:"1-8",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["Hide","Show","Visible"],correctChoiceIndex:2,sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q1-8-question.webp)",type:"mcq",title:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-8",partOrder:0,kicker:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-8",choiceIds:["option-1","option-2","option-3"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p79-q1-9",topic:"TableArrangement Columns",lessonId:"my-mobile-app",partId:"calculator-interface",bookPages:[47,48],question:"الخاصية لزيادة أعمدة الترتيب في الجدول:",explanation:`**الإجابة:** \`Columns\`، أي الأعمدة.
-
-**الشاهد من الكتاب:**
-
-> ترتب الأزرار أعلاه في صفين وثلاثة أعمدة، ويمكن عمل ذلك من خصائص الجدول
-
-**المصدر:** صفحة 49 من الكتاب.
-
-
-
-**توضيح:** يذكر الكتاب ضبط عدد الأعمدة من خصائص الجدول؛ \`Columns\` هي تسمية الأعمدة بالإنجليزية، أما \`Rows\` فتعني الصفوف.`,sourcePage:79,answerPage:null,paperLabel:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",originalNumber:"1-9",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["Rows","Columns","Number"],correctChoiceIndex:1,sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q1-9-question.webp)",type:"mcq",title:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-9",partOrder:0,kicker:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-9",choiceIds:["option-1","option-2","option-3"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p79-q1-10",topic:"Picture",lessonId:"my-mobile-app",partId:"app-inventor-tools",bookPages:[43,44],question:"الخاصية لإدراج صورة على أداة Image:",explanation:`**الإجابة:** \`picture\`
-
-**الشاهد من الكتاب:**
-
-> خاصية Picture: لأداة Image1 بالضغط على الخاصية والضغط على الزر upload file ثم اختيار الملف كما في الشكل المجاور.
-
-**المصدر:** صفحة 44 من الكتاب.`,sourcePage:79,answerPage:null,paperLabel:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",originalNumber:"1-10",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["picture","BackgroundImage","upload file"],correctChoiceIndex:0,sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q1-10-question.webp)",type:"mcq",title:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-10",partOrder:4,kicker:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-10",choiceIds:["option-1","option-2","option-3"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p79-q2-1a",topic:"SELECT بمعامل",lessonId:"sql-queries",partId:"count-parameters",bookPages:[24,25],question:"اكتبي جملة SQL الخاصة بكل من الحالات التالية: استرجاع اسم الطالب (stu_name) وتاريخ ميلاده (birth_date) من جدول الطالب (student) حسب رقم الطالب (stu_no) المدخل من المستخدم.",answer:"نختار الاسم وتاريخ الميلاد فقط. الرقم يدخله المستخدم، فنستخدم طلب إدخال في شرط `stu_no`.\n\n```sql\nSELECT stu_name, birth_date\nFROM student\nWHERE stu_no = [أدخل رقم الطالب];\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 24 مطبوعة (ص 26 في PDF).",sourcePage:79,answerPage:null,paperLabel:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",originalNumber:"2-1a",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q2-1a-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 2-1a",partOrder:5,prompt:"سؤال من ورقة امتحان"},{id:"exam-p79-q2-1b",topic:"استعلام جدولين",lessonId:"sql-queries",partId:"related-tables",bookPages:[21,22,23],question:"اكتبي جملة SQL: استرجاع اسم السلعة (product_name) من جدول السلعة (product) واسم المصنع (fact_name) من جدول المصنع (factory) علماً أنهما مرتبطتان بالمفتاح كود السلعة (bar_code).",answer:"نختار الاسم من كل جدول، ثم نساوي `bar_code` في الجدولين لأنه حقل الربط المحدد في السؤال.\n\n```sql\nSELECT product.product_name, factory.fact_name\nFROM product, factory\nWHERE product.bar_code = factory.bar_code;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 23 مطبوعة (ص 25 في PDF).",sourcePage:79,answerPage:null,paperLabel:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",originalNumber:"2-1b",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q2-1b-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 2-1b",partOrder:2,prompt:"سؤال من ورقة امتحان"},{id:"exam-p79-q2-1c",topic:"UPDATE اسم",lessonId:"sql-queries",partId:"update-queries",bookPages:[25,26,27],question:"اكتبي جملة SQL: تغيير اسم الطالب (stu_name) صاحب رقم الطالب (stu_no)=5 في جدول الطالب (student) إلى إبراهيم.",answer:'نحدد الطالب برقمه **5** في `WHERE`، ثم نسند الاسم الجديد إلى `stu_name` باستخدام `SET`.\n\n```sql\nUPDATE student\nSET stu_name = "إبراهيم"\nWHERE stu_no = 5;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 25 مطبوعة (ص 27 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).',sourcePage:79,answerPage:null,paperLabel:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",originalNumber:"2-1c",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q2-1c-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 2-1c",partOrder:6,prompt:"سؤال من ورقة امتحان"},{id:"exam-p79-q2-1d",topic:"INSERT سجل كامل",lessonId:"sql-queries",partId:"insert-queries",bookPages:[27],question:`> سياق من الفقرة الأولى في السؤال الأصلي: استرجاع اسم الطالب (stu_name) وتاريخ ميلاده (birth_date) من جدول الطالب (student) حسب رقم الطالب (stu_no) المدخل من المستخدم.
-
-إدخال سجل جديد: إدخال السجل (35، سعيد، 2019/10/15) إلى جدول الطالب (student).`,answer:'نأخذ أسماء الحقول من سياق السؤال: الرقم، والاسم، وتاريخ الميلاد. نرتب القيم وفقها، ونحيط النص باقتباسين والتاريخ بعلامتي `#`.\n\n```sql\nINSERT INTO student (stu_no, stu_name, birth_date)\nVALUES (35, "سعيد", #2019-10-15#);\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 27 مطبوعة (ص 29 في PDF).',sourcePage:79,answerPage:null,paperLabel:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",originalNumber:"2-1d",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q2-1d-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 2-1d",partOrder:10,prompt:"سؤال من ورقة امتحان"},{id:"exam-p80-q2-4",topic:"خطوات بناء تطبيق",lessonId:"my-mobile-app",partId:"app-inventor-tools",bookPages:[43,44,47,48,49,50,51],question:"عددي خطوات إنشاء تطبيق للهواتف الذكية على تطبيق App Inventor.",answer:`1. **نصمم الواجهة:** نضيف أدوات الإدخال والعرض والأزرار ونرتبها.
-2. **نضبط الخصائص:** نحدد الأسماء والنصوص والأحجام وما يظهر عند البداية.
-3. **نركب اللبنات في \`Blocks\`:** نحدد الحدث، ثم القراءة والحساب وعرض النتيجة.
-4. **نجرب التطبيق:** ندخل قيمًا ونتحقق من الناتج، ونصحح الخطأ قبل تجهيز التطبيق.
-
-**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 47 مطبوعة (ص 49 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 49 مطبوعة (ص 51 في PDF).`,sourcePage:80,answerPage:null,paperLabel:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",originalNumber:"2-4",marks:null,format:"written",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 80](assets/lessons/ict/exams/source-crops/exam-p80-q2-4-question.webp)",answerLabel:"الإجابة والشرح من المجموعة المصححة",type:"exam-question",title:"قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 80 · السؤال 2-4",partOrder:22,prompt:"سؤال من ورقة امتحان"},{id:"exam-p83-q3-a2",topic:"ملف التطبيق التنفيذي",lessonId:"smartphone-operating-systems",partId:"ios-files",bookPages:[42,53],question:"ما امتداد الملف القابل للتنزيل في تطبيق مصمم ببرنامج App Inventor؟",explanation:`**الإجابة:** \`apk\`
-
-**الشاهد من الكتاب:**
-
-> اختر المكان الذي تريد حفظ البرنامج فيه على حاسوبك واختر اسماً مناسباً له. ستجد الملف في المكان الذي اخترته بصيغة Apk.
-> يمكنك نقله إلى هاتفك المحمول أو هاتف صديقك وتجربة التطبيق.
-
-**المصدر:** صفحة 49 من الكتاب.`,sourcePage:83,answerPage:null,paperLabel:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي",originalNumber:"3-a2",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["app","apk","aia","kpa"],correctChoiceIndex:1,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 83](assets/lessons/ict/exams/source-crops/exam-p83-q3-a2-question.webp)",type:"mcq",title:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 83 · السؤال 3-a2",partOrder:4,kicker:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 83 · السؤال 3-a2",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p84-q4-a2",topic:"OR",lessonId:"sql-queries",partId:"where-conditions",bookPages:[14,15,25],question:"المعيار المنطقي الذي يستخدم لإضافة أكثر من شرط على الحقل بحيث يتحقق أحدها على الأقل؟",explanation:`**الإجابة:** \`OR\`
-
-**الشاهد من الكتاب:**
-
-> أو (OR) والتي تستخدم كجزء إضافي للمعيار لإضافة أكثر من شرط على أن يتحقق أحدها على الأقل، وتستخدم الرابطة المنطقية (AND) لتحقيق مجموعة من الشروط معاً.
-
-**المصدر:** صفحة 15 من الكتاب.`,sourcePage:84,answerPage:null,paperLabel:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي",originalNumber:"4-a2",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["And","OR","Not","And Not"],correctChoiceIndex:1,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 84](assets/lessons/ict/exams/source-crops/exam-p84-q4-a2-question.webp)",type:"mcq",title:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 4-a2",partOrder:2,kicker:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 4-a2",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p84-q5-a1",topic:"سعة الأنواع العددية",lessonId:"database-management",partId:"tables-and-types",bookPages:[6],question:"ما هو أكبر الأرقام الصحيحة من حيث السعة التخزينية؟",explanation:`**الإجابة:** عدد صحيح مطول
-
-**الشاهد من الكتاب:**
-
-> رقم (Number): للقيم الرقمية، ويقبل تخزين سعات مختلفة حسب النوع المحدد، والأنواع الرقمية هي: بايت، عدد صحيح Integer (2 بايت)، عدد صحيح مطول Integer Long (4 بايت)، عدد كسري مفرد Single (4 بايت)، وعدد كسري مزدوج Double (8 بايت).
-
-**المصدر:** صفحة 6 من الكتاب.
-
-
-
-نقارن هنا **الأعداد الصحيحة** فقط: \`Integer\` و\`Long Integer\`؛ أما \`Single\` و\`Double\` فهما نوعان كسريان.`,sourcePage:84,answerPage:null,paperLabel:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي",originalNumber:"5-a1",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["عدد صحيح","عدد صحيح مطول","عدد كسري مزدوج","عدد كسري مفرد"],correctChoiceIndex:1,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 84](assets/lessons/ict/exams/source-crops/exam-p84-q5-a1-question.webp)",type:"mcq",title:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 5-a1",partOrder:3,kicker:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 5-a1",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p84-q5-a3",topic:"floor للأعداد السالبة",lessonId:"my-mobile-app",partId:"calculator-events",bookPages:[52],question:"ما ناتج تنفيذ اللبنة؟",explanation:'![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/a276b9f63810c4a9a837.webp)\n\n`floor` تعيد أكبر عدد صحيح لا يتجاوز القيمة، وتتحرك نحو الأعداد الأصغر حتى لو كانت القيمة سالبة.\n\nنحسب القسمة أولًا:\n\n```mathml\n<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>−</mo><mn>11</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mo>−</mo><mn>5.5</mn></mrow></math>\n```\n\nالعدد `−5` أكبر من `−5.5`، فلا يصلح.\n\nالعدد `−6` لا يتجاوز `−5.5`، وهو أكبر عدد صحيح يحقق ذلك.\n\n**إذن الناتج: `−6`.**\n\n**مرجع الكتاب:** تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).',sourcePage:84,answerPage:null,paperLabel:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي",originalNumber:"5-a3",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!0,answerProvenance:"curriculum-corrected-2026-10-24",choices:["-5.5","-5","-6","-5.0"],correctChoiceIndex:2,figurePage:84,cropRect:[292.67,680,423.33,707.33],cropUnit:"pdf-points",figureAlt:"لبنة floor للقيمة -11 ÷ 2",figureUnanswered:!0,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",figure:"assets/lessons/curriculum-evidence/a276b9f63810c4a9a837.webp",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",example:"![لبنة floor للقيمة -11 ÷ 2 ](assets/lessons/curriculum-evidence/a276b9f63810c4a9a837.webp)",reference:"[السؤال ص 84](assets/lessons/ict/exams/source-crops/exam-p84-q5-a3-question.webp)",originalFigure:"assets/lessons/ict/exams/exam-p84-q5-a3.webp",type:"mcq",title:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 5-a3",partOrder:3,kicker:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 5-a3",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."},{id:"exam-p85-q6-a3",topic:"Single",lessonId:"database-management",partId:"tables-and-types",bookPages:[6],question:"ما السعة التخزينية للعدد الكسري المفرد؟",explanation:`**الإجابة:** 4 بايت
-
-**الشاهد من الكتاب:**
-
-> رقم (Number): للقيم الرقمية، ويقبل تخزين سعات مختلفة حسب النوع المحدد، والأنواع الرقمية هي: بايت، عدد صحيح Integer (2 بايت)، عدد صحيح مطول Integer Long (4 بايت)، عدد كسري مفرد Single (4 بايت)، وعدد كسري مزدوج Double (8 بايت).
-
-**المصدر:** صفحة 6 من الكتاب.`,sourcePage:85,answerPage:null,paperLabel:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي",originalNumber:"6-a3",marks:null,format:"mcq",scopeReason:"يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",figureNeeded:!1,answerProvenance:"curriculum-corrected-2026-10-24",choices:["2 بايت","4 بايت","6 بايت","8 بايت"],correctChoiceIndex:1,marksNote:"الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",sourcePaperCondition:"توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",scopeBasis:"user-supplied-ict-book",questionProvenance:"visually-transcribed-exam",sourceSelection:"فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",reference:"[السؤال ص 85](assets/lessons/ict/exams/source-crops/exam-p85-q6-a3-question.webp)",type:"mcq",title:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 85 · السؤال 6-a3",partOrder:4,kicker:"يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 85 · السؤال 6-a3",choiceIds:["option-1","option-2","option-3","option-4"],hint:"اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."}];
+// Canonical question records; partOrder preserves the published sequence.
+export const ICT_EXAM_QUESTIONS = [
+  {
+    "id": "exam-p03-q1-c",
+    "topic": "android-features",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "question": "اذكر ثلاثًا من طرق نقل الملفات في نظام الأندرويد.",
+    "answer": "**ثلاث طرق لنقل الملفات في أندرويد:**\n\n1. كابل `USB`.\n2. البلوتوث `Bluetooth`.\n3. الواي فاي `Wi-Fi`.\n\n**الشاهد من الكتاب:**\n\n> نقل الملفات في أندرويد: يتم نقل الملفات بعدة طرق منها: كابل USB. البلوتوث Bluetooth. الواي فاي Wi-Fi. التخزين السحابي Cloud Storage ومواقع التواصل الاجتماعي، والبريد الإلكتروني.\n\n**المصدر:** صفحة 38 من الكتاب.",
+    "sourcePage": 3,
+    "answerPage": 3,
+    "paperLabel": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",
+    "originalNumber": "السؤال الأول / ج",
+    "marks": 3,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      38
+    ],
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 3](assets/lessons/ict/exams/source-crops/exam-p03-q1-c-question.webp) · [الإجابة ص 3](assets/lessons/ict/exams/source-crops/exam-p03-q1-c-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 3 · السؤال الأول / ج · 3 علامة",
+    "partOrder": 19,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p03-q2-b-normalization",
+    "topic": "practice-and-review",
+    "lessonId": "database-management",
+    "partId": "practice-and-review",
+    "question": "وضح المقصود بالمصطلحات الآتية: التسوية.",
+    "answer": "**التسوية:** تنظيم بيانات قاعدة البيانات في جداول مترابطة لتقليل تكرار المعلومات ومشكلات تعديلها، والمحافظة على تناسق البيانات.\n\n**الشاهد من الكتاب:**\n\n> المشكلة الأساسية هي تكرار المعلومات (Data Redundancy) مما يتسبب في استهلاك مساحة تخزينية لا داعي لها\n\n> للتغلب على المشاكل السابقة في التصميم، يتم فصل الجدول في الشكل السابق إلى جدولين\n\n[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/856392a539ed93809d10.webp)\n\n[عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/d34ec1e299701b3ec0b8.webp)",
+    "sourcePage": 3,
+    "answerPage": 3,
+    "paperLabel": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",
+    "originalNumber": "السؤال الثاني / ب — التسوية",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      34
+    ],
+    "figureNeeded": false,
+    "parentMarks": 6,
+    "sourceNote": "مقتطف حرفي من فرع متعدد المصطلحات؛ استبعد «مستوى التجميع» لأنه خارج الكتاب.",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 3](assets/lessons/ict/exams/source-crops/exam-p03-q2-b-normalization-question.webp) · [الإجابة ص 3](assets/lessons/ict/exams/source-crops/exam-p03-q2-b-normalization-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 3 · السؤال الثاني / ب — التسوية",
+    "partOrder": 1,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p05-q3-d",
+    "topic": "sql-introduction",
+    "lessonId": "sql-queries",
+    "partId": "sql-introduction",
+    "question": "قارن بين لغة التحكم بالبيانات (DCL) و لغة معالجة البيانات (DML).",
+    "answer": "**المقارنة من حيث الوظيفة:**\n\n| القسم | الوظيفة |\n| --- | --- |\n| لغة التحكم بالبيانات `DCL` | تحديد صلاحيات مستخدمي قاعدة البيانات. |\n| لغة معالجة البيانات `DML` | استرجاع السجلات وإدخالها وتحديثها وحذفها وفق معايير. |\n\n**الشاهد من الكتاب 1:**\n\n> لغة التحكم بالبيانات (DCL-Data Control Language)\n> مجموعة من الأوامر لتحديد صلاحيات مستخدمي قاعدة البيانات من حيث الوصول إلى مكوناتها واستخدامها.\n\n\n\n**الشاهد من الكتاب 2:**\n\n> لغة معالجة البيانات (DML-Data Manipulation Language)\n> مجموعة من الأوامر لإجراء عمليات على الجداول (إدخال وتحديث وحذف واسترجاع سجلات) بناء على معايير (شروط) محددة\n\n**المصدر:** صفحة 12 من الكتاب.",
+    "sourcePage": 5,
+    "answerPage": 5,
+    "paperLabel": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",
+    "originalNumber": "السؤال الثالث / د",
+    "marks": 2,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      12,
+      13
+    ],
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 5](assets/lessons/ict/exams/source-crops/exam-p05-q3-d-question.webp) · [الإجابة ص 5](assets/lessons/ict/exams/source-crops/exam-p05-q3-d-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalSourceConflict": "عنوان الإجابة المصورة يكتب DDL أمام Data Control Language؛ الصحيح DCL كما في السؤال والكتاب.",
+    "type": "exam-question",
+    "title": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 5 · السؤال الثالث / د · 2 علامة",
+    "partOrder": 6,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p07-q5-c",
+    "topic": "ios-files",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "question": "قارن بين: التطبيقات الأصلية NATIVE والتطبيقات الهجينة HYBRID من حيث نظام التشغيل الذي تعمل فيه، المتجر المستخدم لتنزيل التطبيق، واللغات البرمجية.",
+    "answer": "**الإجابة:** \n\n| البند | التطبيقات الأصيلة `Native` | التطبيقات الهجينة `Hybrid` |\n|---|---|---|\n| بيئة التشغيل | نظام تشغيل واحد | أكثر من بيئة نظام تشغيل |\n| متجر التنزيل في وصف الكتاب | المتجر الخاص بالنظام | متاجر عديدة |\n| البرمجة | أندرويد: `Java` و`C++`؛ `iOS`: `Objective-C` و`Swift`؛ ويندوز فون: `VB.NET` و`C#.NET` | `HTML5` و`JavaScript` و`CSS` |\n\n**الشاهد من الكتاب 1:**\n\n> التطبيقات الأصيلة (Native): هي التطبيقات التي تم تصميمها وبرمجتها بلغات برمجية، لتعمل في بيئة نظام تشغيل واحد، ومتواجدة في المتجر الخاص بالنظام، ولا تعمل في بيئة أي نظام تشغيل آخر.\n\n**المصدر:** صفحة 41 من الكتاب.\n\n\n\n**الشاهد من الكتاب 2:**\n\n> نظام أندرويد: JAVA, C++، .apk\n> نظام IOS: Objective C, Swift، .ipa\n> نظام ويندوز فون: VB.NET, C#.NET، .xap\n\n\n\n**الشاهد من الكتاب 3:**\n\n> التطبيقات الهجينة (Hybrid): التطبيقات التي تم تصميمها وبرمجتها، لتعمل في أكثر من بيئة نظام تشغيل، ومتواجدة في متاجر عديدة، وتستخدم مهارات تطوير الويب (html5، java script، css) في بنائها وبرمجتها.\n\n**المصدر:** صفحة 42 من الكتاب.",
+    "sourcePage": 7,
+    "answerPage": 7,
+    "paperLabel": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",
+    "originalNumber": "السؤال الخامس / ج",
+    "marks": 3,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      41,
+      42
+    ],
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-c-question.webp) · [الإجابة ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-c-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 7 · السؤال الخامس / ج · 3 علامة",
+    "partOrder": 12,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p07-q5-d1",
+    "topic": "insert-queries",
+    "lessonId": "sql-queries",
+    "partId": "insert-queries",
+    "question": "تأمل الجدول التالي ثم اكتب أوامر SQL لتنفيذ الاستعلامات التالية:\n\n| Proj_num | Proj_name | Proj_cost |\n| --- | --- | --- |\n| 10 | B | 2500 |\n| 20 | A | 1500 |\n| 30 | D | 3000 |\n| 40 | C | 1000 |\n\nاسم الجدول: project.\n\nإضافة سجل إلى كيان المشروع (project) بالبيانات التالية: (50 ، R ، 1700).",
+    "answer": "لإضافة سجل نستخدم `INSERT INTO`، ثم نرتّب القيم مثل الحقول: الرقم، فالاسم، فالتكلفة. نضع الاسم بين اقتباسين لأنه نص.\n\n```sql\nINSERT INTO project (Proj_num, Proj_name, Proj_cost)\nVALUES (50, \"R\", 1700);\n```\n\nالرقم 50 غير موجود في الجدول المعطى، فلا يكرر أحد أرقامه.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 27 مطبوعة (ص 29 في PDF).",
+    "sourcePage": 7,
+    "answerPage": 7,
+    "paperLabel": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",
+    "originalNumber": "السؤال الخامس / د / 1",
+    "marks": 2,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      27,
+      28
+    ],
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d1-question.webp) · [الإجابة ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d1-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 7 · السؤال الخامس / د / 1 · 2 علامة",
+    "partOrder": 3,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p07-q5-d2",
+    "topic": "update-queries",
+    "lessonId": "sql-queries",
+    "partId": "update-queries",
+    "question": "تأمل الجدول التالي ثم اكتب أوامر SQL لتنفيذ الاستعلامات التالية:\n\n| Proj_num | Proj_name | Proj_cost |\n| --- | --- | --- |\n| 10 | B | 2500 |\n| 20 | A | 1500 |\n| 30 | D | 3000 |\n| 40 | C | 1000 |\n\nاسم الجدول: project.\n\nتحديث تكلفة المشروع (proj_cost) بزيادة 10% للمشاريع التي تقل تكلفتها عن 1500.",
+    "answer": "زيادة 10% تعني الاحتفاظ بالتكلفة وإضافة عُشرها؛ لذلك نضربها في `1.10`. نضع شرط «أقل من» في `WHERE`.\n\n```sql\nUPDATE project\nSET Proj_cost = Proj_cost * 1.10\nWHERE Proj_cost < 1500;\n```\n\nالمشروع `C` وحده يطابق الشرط: `1000 × 1.10 = 1100`. تبقى تكلفة `A`، وهي 1500، كما هي.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).",
+    "sourcePage": 7,
+    "answerPage": 7,
+    "paperLabel": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",
+    "originalNumber": "السؤال الخامس / د / 2",
+    "marks": 3,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      25,
+      26,
+      27
+    ],
+    "figureNeeded": false,
+    "sourceAnswer": "UPDATE project_tbl SET Proj_cost = 1.1*[proj_cost] WHERE ((proj_cost) <= 1500);",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d2-question.webp) · [الإجابة ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d2-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalSourceConflict": "المفتاح يبدل اسم الجدول إلى project_tbl ويستخدم <=، بينما السؤال يسميه project ويطلب «تقل عن» أي <.",
+    "type": "exam-question",
+    "title": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 7 · السؤال الخامس / د / 2 · 3 علامة",
+    "partOrder": 1,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p07-q5-d3",
+    "topic": "where-conditions",
+    "lessonId": "sql-queries",
+    "partId": "where-conditions",
+    "question": "تأمل الجدول التالي ثم اكتب أوامر SQL لتنفيذ الاستعلامات التالية:\n\n| Proj_num | Proj_name | Proj_cost |\n| --- | --- | --- |\n| 10 | B | 2500 |\n| 20 | A | 1500 |\n| 30 | D | 3000 |\n| 40 | C | 1000 |\n\nاسم الجدول: project.\n\nاسترجع أسماء المشاريع (proj_name) التي تزيد تكلفتها (proj_cost) عن 1500.",
+    "answer": "نريد **الأسماء**، فنضع `Proj_name` بعد `SELECT`. نفحص **التكلفة** في `WHERE`، و«تزيد عن» تعني `>`.\n\n```sql\nSELECT Proj_name\nFROM project\nWHERE Proj_cost > 1500;\n```\n\nالنتيجة: **`B` و`D`**. لا يدخل `A` لأن تكلفته تساوي 1500.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 19 مطبوعة (ص 21 في PDF).",
+    "sourcePage": 7,
+    "answerPage": 7,
+    "paperLabel": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24",
+    "originalNumber": "السؤال الخامس / د / 3",
+    "marks": 2,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      16,
+      19,
+      20
+    ],
+    "figureNeeded": false,
+    "sourceAnswer": "Select proj_no from project where proj_cost >= 1500",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d3-question.webp) · [الإجابة ص 7](assets/lessons/ict/exams/source-crops/exam-p07-q5-d3-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalSourceConflict": "المفتاح يختار proj_no ويستخدم >=؛ المطلوب في السؤال أسماء المشاريع وشرط «عن 1500» الصارم.",
+    "type": "exam-question",
+    "title": "شمال الخليل — إجابة الاختبار الموحد لنهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/24، PDF ص 7 · السؤال الخامس / د / 3 · 2 علامة",
+    "partOrder": 6,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p09-q1-1",
+    "topic": "access-basics",
+    "lessonId": "database-management",
+    "partId": "access-basics",
+    "question": "أيّ برنامج أورده الكتاب مثالًا على برامج قواعد البيانات المتاحة للاستخدام دون دفع رسوم ترخيص؟",
+    "explanation": "**الإجابة المنهجية وفق مثال الكتاب:** `MySQL`\n\n**الشاهد من الكتاب:**\n\n> ومعظم برامج قواعد البيانات تتطلب ترخيصاً لاستعمالها، وبعضها لا يتطلب ترخيصاً مثل MySql.\n\n**المصدر:** صفحة 3 من الكتاب.\n\n\n\n**توضيح:** `MySQL` هو المثال المنهجي المقصود؛ `MySQL` `Community` مرخّص بـ`GPL` ومتاح مجاناً، وتوجد أيضاً إصدارات مجانية من `Oracle` و`SQL` `Server`، فلا تتفرد `MySQL` تقنياً بالمجانية.",
+    "sourcePage": 9,
+    "answerPage": 9,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الأول / 1",
+    "marks": 2,
+    "format": "mcq",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      3
+    ],
+    "figureNeeded": false,
+    "choices": [
+      "Oracle",
+      "SQL Server",
+      "Access",
+      "MySQL"
+    ],
+    "correctChoiceIndex": 3,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-1-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-1-question.webp)",
+    "originalSourceConflict": "يقصد الكتاب عدم الحاجة إلى ترخيص مدفوع. MySQL Community مجاني ومتاح برخصة GPL؛ لا يعني ذلك انعدام الترخيص.",
+    "type": "mcq",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 1 · 2 علامة",
+    "partOrder": 0,
+    "kicker": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 1 · 2 علامة",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p09-q1-2",
+    "topic": "build-and-integrity",
+    "lessonId": "database-management",
+    "partId": "build-and-integrity",
+    "question": "في برنامج MS Access أي من علامات التبويب نستخدمها لإنشاء علاقة بين جدولين؟",
+    "explanation": "**الإجابة:** أدوات قاعدة البيانات\n\n**الشاهد من الكتاب:**\n\n> اختيار علاقات (Relationships) من علامة التبويب أدوات قاعدة البيانات (Database Tools) في شريط (القوائم)\n\n**المصدر:** صفحة 7 من الكتاب.",
+    "sourcePage": 9,
+    "answerPage": 9,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الأول / 2",
+    "marks": 2,
+    "format": "mcq",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      7
+    ],
+    "figureNeeded": false,
+    "choices": [
+      "الصفحة الرئيسية",
+      "علاقات",
+      "أدوات قاعدة البيانات",
+      "إدراج"
+    ],
+    "correctChoiceIndex": 2,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-2-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-2-question.webp)",
+    "type": "mcq",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 2 · 2 علامة",
+    "partOrder": 0,
+    "kicker": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 2 · 2 علامة",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p09-q1-3",
+    "topic": "delete-review",
+    "lessonId": "sql-queries",
+    "partId": "delete-review",
+    "question": "ما جملة Sql المناسبة لحذف سجل المشروع الذي يحمل رقم (Pro_No) 55 من جدول المشروع (Project) إذا كانت تكلفته (Cost) أكبر من 1500؟",
+    "explanation": "نحدد جدول الحذف بعد `DELETE FROM`. يجب أن يتحقق الرقم والتكلفة في السجل نفسه، لذلك نربطهما بـ `AND`.\n\n```sql\nDELETE FROM Project\nWHERE Pro_No = 55 AND Cost > 1500;\n```\n\nهذه صيغة **الخيار الأول**؛ استخدام `OR` قد يحذف سجلات لا تحقق الشرطين معًا.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 15 مطبوعة (ص 17 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 30 مطبوعة (ص 32 في PDF).",
+    "sourcePage": 9,
+    "answerPage": 9,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الأول / 3",
+    "marks": 2,
+    "format": "mcq",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      30,
+      31
+    ],
+    "figureNeeded": false,
+    "choices": [
+      "Delete From Project WHERE Pro_No=55 and Cost>1500;",
+      "Delete All From Project WHERE Pro_No=55 and Cost>1500;",
+      "Delete Project WHERE Pro_No=55 or Cost>1500;",
+      "Delete Pro_No=55 and Cost>1500 From Project"
+    ],
+    "correctChoiceIndex": 0,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-3-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-3-question.webp)",
+    "type": "mcq",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 3 · 2 علامة",
+    "partOrder": 0,
+    "kicker": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 3 · 2 علامة",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p09-q1-4",
+    "topic": "where-conditions",
+    "lessonId": "sql-queries",
+    "partId": "where-conditions",
+    "question": "في ترميز أمثلة SQL في الكتاب، ما نوع القيمة المكتوبة بين علامتي اقتباس مثل \"107\" في الشرط st_no = \"107\"؟",
+    "explanation": "علامتا الاقتباس تحيطان بالقيمة النصية في ترميز هذا التمرين. وقد يتكون النص من رموز رقمية، مثل \"107\"، دون أن نقصد إجراء حساب عليها.\n\nإذن الإجابة: نص. المطلوب هنا تفسير طريقة كتابة القيمة؛ أما نوع الحقل الفعلي في قاعدة بيانات قائمة فيُعرف من تصميم الجدول، لا من هذا الشرط وحده.\n\n**المصدر:** الصفحات 6، 19 من الكتاب.",
+    "sourcePage": 9,
+    "answerPage": 9,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الأول / 4",
+    "marks": 2,
+    "format": "mcq",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      14,
+      25
+    ],
+    "figureNeeded": false,
+    "choices": [
+      "مذكرة",
+      "نص",
+      "رقم كسري",
+      "رقم صحيح"
+    ],
+    "correctChoiceIndex": 1,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-4-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-4-question.webp)",
+    "originalSourceConflict": "الاستعلام المطبوع لا يحدد حقول SELECT. أبقينا السؤال كما ورد؛ السؤال عن نوع القيمة المقتبسة لا عن صحة جملة SELECT.",
+    "type": "mcq",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 4 · 2 علامة",
+    "partOrder": 0,
+    "kicker": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 4 · 2 علامة",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p09-q1-8",
+    "topic": "ios-files",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "question": "ما الميزة التي تسمح بإخفاء التطبيقات أو منع تنزيل تطبيقات في iOS؟",
+    "explanation": "**الإجابة:** القيود\n\n**الشاهد من الكتاب:**\n\n> القيود: إخفاء تطبيقات معينة بكلمة مرور، إخفاء App Store؛ بحيث لا يستطيع أحد العبث في التطبيق، أو تنزيل برامج.\n\n**المصدر:** صفحة 40 من الكتاب.",
+    "sourcePage": 9,
+    "answerPage": 9,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الأول / 8",
+    "marks": 2,
+    "format": "mcq",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      40
+    ],
+    "figureNeeded": false,
+    "choices": [
+      "الأمان",
+      "القيود",
+      "الرفع للتنبيه",
+      "السرية"
+    ],
+    "correctChoiceIndex": 1,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-8-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-8-question.webp)",
+    "type": "mcq",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 8 · 2 علامة",
+    "partOrder": 1,
+    "kicker": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 8 · 2 علامة",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p09-q1-9",
+    "topic": "android-features",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "question": "ما الميزة التي تتيح تشغيل أكثر من تطبيق على شاشة الهاتف معاً؟",
+    "explanation": "**الإجابة:** الإطار المتعدد\n\n**الشاهد من الكتاب:**\n\n> الإطار المتعدد: تشغيل أكثر من تطبيق على شاشة الهاتف معاً.\n\n**المصدر:** صفحة 37 من الكتاب.",
+    "sourcePage": 9,
+    "answerPage": 9,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الأول / 9",
+    "marks": 2,
+    "format": "mcq",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      37
+    ],
+    "figureNeeded": false,
+    "choices": [
+      "التمرير الذكي",
+      "الإطار المتعدد",
+      "التصوير المزدوج",
+      "الواقع المعزز"
+    ],
+    "correctChoiceIndex": 1,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-9-question.webp) · [الإجابة ص 9](assets/lessons/ict/exams/source-crops/exam-p09-q1-9-question.webp)",
+    "type": "mcq",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 9 · 2 علامة",
+    "partOrder": 0,
+    "kicker": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 9 · السؤال الأول / 9 · 2 علامة",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p10-q2-b1",
+    "topic": "android-features",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "question": "اذكر مجسين في نظام الأندرويد تدعم تقنية الواقع الافتراضي مع توضيح دور كل منهما.",
+    "answer": "**المجسان ودور كل منهما:**\n\n| المجس | الدور |\n| --- | --- |\n| التسارع `Accelerometer` | يستشعر تغير السرعة الخطية للجهاز. |\n| الدوران `Gyroscope` | يقيس ميل الجهاز وزوايا دورانه. |\n\n**الشاهد من الكتاب 1:**\n\n> التسارع (Accelerometer): مجس يستشعر التغير في سرعة حركة الجهاز باتجاه المحاور الثلاثة x, y, z، كما يقيس التسارع الخطي في حركته.\n\n\n\n**الشاهد من الكتاب 2:**\n\n> الدوران (Gyroscope): يقيس ميل الجهاز وزوايا التحرك من خلال تحديد موقعه حول المحاور الثلاثة.\n\n**المصدر:** صفحة 39 من الكتاب.",
+    "sourcePage": 10,
+    "answerPage": 10,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الثاني / ب / 1",
+    "marks": 4,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      39,
+      40
+    ],
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 10](assets/lessons/ict/exams/source-crops/exam-p10-q2-b1-question.webp) · [الإجابة ص 10](assets/lessons/ict/exams/source-crops/exam-p10-q2-b1-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 10 · السؤال الثاني / ب / 1 · 4 علامة",
+    "partOrder": 20,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p10-q2-b2",
+    "topic": "where-conditions",
+    "lessonId": "sql-queries",
+    "partId": "where-conditions",
+    "question": "ما الفرق بين الرابطة المنطقية OR والرابطة المنطقية AND في الاستعلام من حيث الوظيفة؟",
+    "answer": "**المقارنة من حيث الوظيفة:**\n\n| الرابطة | متى يتحقق المعيار؟ |\n| --- | --- |\n| `AND` | عند تحقق **جميع الشروط معًا**. |\n| `OR` | عند تحقق **شرط واحد على الأقل**. |\n\n**الشاهد من الكتاب:**\n\n> أو (OR) والتي تستخدم كجزء إضافي للمعيار لإضافة أكثر من شرط على أن يتحقق أحدها على الأقل، وتستخدم الرابطة المنطقية (AND) لتحقيق مجموعة من الشروط معاً.\n\n**المصدر:** صفحة 15 من الكتاب.",
+    "sourcePage": 10,
+    "answerPage": 10,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الثاني / ب / 2",
+    "marks": 2,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      14,
+      15,
+      25
+    ],
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 10](assets/lessons/ict/exams/source-crops/exam-p10-q2-b2-question.webp) · [الإجابة ص 10](assets/lessons/ict/exams/source-crops/exam-p10-q2-b2-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 10 · السؤال الثاني / ب / 2 · 2 علامة",
+    "partOrder": 7,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p11-q3-a1-components",
+    "topic": "access-basics",
+    "lessonId": "database-management",
+    "partId": "access-basics",
+    "question": "قارن بين كل مما يأتي: الاختلاف بين النموذج والتقرير من حيث الوظيفة.",
+    "answer": "**المقارنة من حيث الوظيفة:**\n\n| المكوّن | الوظيفة |\n| --- | --- |\n| النموذج | واجهة لإدخال البيانات وتعديلها وحذفها. |\n| التقرير | عرض البيانات وطباعتها. |\n\n**الشاهد من الكتاب 1:**\n\n> النماذج (Forms): واجهات يتم من خلالها إضافة وتعديل وحذف بيانات من الجداول.\n\n\n\n**الشاهد من الكتاب 2:**\n\n> التقارير (Reports): وسيلة لعرض البيانات وطباعتها، بأشكال وتنسيقات متنوعة.\n\n**المصدر:** صفحة 4 من الكتاب.",
+    "sourcePage": 11,
+    "answerPage": 11,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الثالث / أ / 1 — النموذج والتقرير",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "تعريف ووظيفة النماذج والتقارير في ص4 فقط؛ لا يتناول إنشاءها أو تخطيطها.",
+    "bookPages": [
+      4
+    ],
+    "figureNeeded": false,
+    "parentMarks": 4,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 11](assets/lessons/ict/exams/source-crops/exam-p11-q3-a1-components-question.webp) · [الإجابة ص 11](assets/lessons/ict/exams/source-crops/exam-p11-q3-a1-components-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 11 · السؤال الثالث / أ / 1 — النموذج والتقرير",
+    "partOrder": 11,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p12-q3-b1",
+    "topic": "delete-review",
+    "lessonId": "sql-queries",
+    "partId": "delete-review",
+    "question": "باستخدام لغة الاستعلامات البنيوية (SQL): اكتب جملة SQL المناسبة لحذف سجلات الذين تزيد أعمارهم (age) عن 60 من جدول (Employee).",
+    "answer": "نحذف السجلات من `Employee`. «تزيد أعمارهم عن 60» تعني `age > 60`، فلا تشمل من عمره 60.\n\n```sql\nDELETE FROM Employee\nWHERE age > 60;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 30 مطبوعة (ص 32 في PDF).",
+    "sourcePage": 12,
+    "answerPage": 12,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الثالث / ب / 1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      30,
+      31
+    ],
+    "figureNeeded": false,
+    "parentMarks": 4,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 12](assets/lessons/ict/exams/source-crops/exam-p12-q3-b1-question.webp) · [الإجابة ص 12](assets/lessons/ict/exams/source-crops/exam-p12-q3-b1-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 12 · السؤال الثالث / ب / 1",
+    "partOrder": 3,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p12-q3-b2",
+    "topic": "update-queries",
+    "lessonId": "sql-queries",
+    "partId": "update-queries",
+    "question": "اكتب جملة SQL المناسبة لتعديل راتب الموظف (Salary) في جدول الموظفين (Employee) بزيادة مبلغ 450 إذا كانت عدد سنوات الخدمة (employment_years) تزيد عن 10 سنوات.",
+    "answer": "نضيف مبلغًا ثابتًا إلى الراتب القديم، فنكتب `Salary + 450`. شرط الاختيار على سنوات الخدمة، لذلك نضعه وحده في `WHERE`.\n\n```sql\nUPDATE Employee\nSET Salary = Salary + 450\nWHERE employment_years > 10;\n```\n\nمن أمضى 10 سنوات بالضبط لا يطابق الشرط.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 25 مطبوعة (ص 27 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).",
+    "sourcePage": 12,
+    "answerPage": 12,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الثالث / ب / 2",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      25,
+      26
+    ],
+    "figureNeeded": false,
+    "parentMarks": 4,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 12](assets/lessons/ict/exams/source-crops/exam-p12-q3-b2-question.webp) · [الإجابة ص 12](assets/lessons/ict/exams/source-crops/exam-p12-q3-b2-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 12 · السؤال الثالث / ب / 2",
+    "partOrder": 2,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p13-q4-a5",
+    "topic": "count-parameters",
+    "lessonId": "sql-queries",
+    "partId": "count-parameters",
+    "question": "الجدول الأصلي اسمه السيارة وحقوله: رقم السيارة، نوع السيارة، سنة التصنيع. أرقام السيارات: 1111، 2222، 3333، 4444.\n\nاكتب جملة SQL لاسترجاع عدد السيارات في جدول السيارة.",
+    "answer": "نريد عدد السيارات، فنعد قيم رقم السيارة بـ `COUNT` بدل جمعها. `AS` تسمي عمود الناتج.\n\n```sql\nSELECT COUNT([رقم السيارة]) AS [عدد السيارات]\nFROM [السيارة];\n```\n\nالأرقام الأربعة غير فارغة؛ لذا النتيجة **4**.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 24 مطبوعة (ص 26 في PDF).",
+    "sourcePage": 13,
+    "answerPage": 13,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الرابع / أ / 5",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      23,
+      24
+    ],
+    "figureNeeded": false,
+    "sourceSelection": "أعيد سياق الجدول من الفرع الأصلي ليبقى المطلوب قابلاً للحل عند عرضه منفرداً.",
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 13](assets/lessons/ict/exams/source-crops/exam-p13-q4-a5-question.webp) · [الإجابة ص 13](assets/lessons/ict/exams/source-crops/exam-p13-q4-a5-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 13 · السؤال الرابع / أ / 5",
+    "partOrder": 2,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p13-q4-b2",
+    "topic": "sql-introduction",
+    "lessonId": "sql-queries",
+    "partId": "sql-introduction",
+    "question": "وضح أقسام لغة SQL.",
+    "answer": "**أقسام لغة `SQL`:**\n\n| القسم | الوظيفة |\n| --- | --- |\n| لغة تعريف البيانات `DDL` | إنشاء قاعدة البيانات والجداول وتعديلها وحذفها. |\n| لغة التحكم بالبيانات `DCL` | تحديد صلاحيات الوصول إلى مكونات القاعدة واستخدامها. |\n| لغة معالجة البيانات `DML` | إدخال السجلات وتحديثها وحذفها واسترجاعها وفق معايير. |\n\n**الشاهد من الكتاب 1:**\n\n> لغة تعريف البيانات (DDL-Data Definition Language)\n> مجموعة من الأوامر لإنشاء قاعدة بيانات وحذفها وإنشاء الجداول وتعديلها وحذفها.\n\n\n\n**الشاهد من الكتاب 2:**\n\n> لغة التحكم بالبيانات (DCL-Data Control Language)\n> مجموعة من الأوامر لتحديد صلاحيات مستخدمي قاعدة البيانات من حيث الوصول إلى مكوناتها واستخدامها.\n\n\n\n**الشاهد من الكتاب 3:**\n\n> لغة معالجة البيانات (DML-Data Manipulation Language)\n> مجموعة من الأوامر لإجراء عمليات على الجداول (إدخال وتحديث وحذف واسترجاع سجلات) بناء على معايير (شروط) محددة\n\n**المصدر:** صفحة 12 من الكتاب.",
+    "sourcePage": 13,
+    "answerPage": 13,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الرابع / ب / 2",
+    "marks": 3,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      12,
+      13
+    ],
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 13](assets/lessons/ict/exams/source-crops/exam-p13-q4-b2-question.webp) · [الإجابة ص 13](assets/lessons/ict/exams/source-crops/exam-p13-q4-b2-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 13 · السؤال الرابع / ب / 2 · 3 علامة",
+    "partOrder": 7,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p14-q5-b1",
+    "topic": "tables-and-types",
+    "lessonId": "database-management",
+    "partId": "tables-and-types",
+    "question": "قارن بين ما يلي حسب المطلوب: نوع البيانات عدد صحيح وعدد كسري مفرد من حيث الحجم التخزيني.",
+    "answer": "**المقارنة من حيث الحجم التخزيني:**\n\n| نوع البيانات | الاسم في أكسس | الحجم التخزيني |\n| --- | --- | --- |\n| عدد صحيح | `Integer` | **2 بايت** |\n| عدد كسري مفرد | `Single` | **4 بايت** |\n\nإذن العدد الكسري المفرد يشغل ضعف مساحة العدد الصحيح في هذه المقارنة.\n\n**الشاهد من الكتاب:**\n\n> رقم (Number): للقيم الرقمية، ويقبل تخزين سعات مختلفة حسب النوع المحدد، والأنواع الرقمية هي: بايت، عدد صحيح Integer (2 بايت)، عدد صحيح مطول Integer Long (4 بايت)، عدد كسري مفرد Single (4 بايت)، وعدد كسري مزدوج Double (8 بايت).\n\n**المصدر:** صفحة 6 من الكتاب.",
+    "sourcePage": 14,
+    "answerPage": 14,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال الخامس / ب / 1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      6
+    ],
+    "figureNeeded": false,
+    "parentMarks": 4,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 14](assets/lessons/ict/exams/source-crops/exam-p14-q5-b1-question.webp) · [الإجابة ص 14](assets/lessons/ict/exams/source-crops/exam-p14-q5-b1-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 14 · السؤال الخامس / ب / 1",
+    "partOrder": 14,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p15-q6-b1",
+    "topic": "insert-queries",
+    "lessonId": "sql-queries",
+    "partId": "insert-queries",
+    "question": "متى تفشل عملية الإلحاق في قاعدة البيانات؟",
+    "answer": "**أسباب قد تمنع الإدخال أو الإلحاق:**\n\n1. **تكرار المفتاح الأساسي:** الرقم موجود مسبقًا.\n2. **مخالفة التكامل المرجعي:** قيمة المفتاح الأجنبي غير مسموحة عند فرضه.\n3. **اختلاف نوع البيانات:** القيمة لا تتوافق مع نوع الحقل.\n\n**الشاهد من الكتاب:**\n\n> لاحظ أن هذا الأمر قد لا يوفق في الإدخال للأسباب الآتية:\n> تكرار في المفتاح.\n> قيمة المفتاح الأجنبي غير مسموحة.\n> نوعية القيمة تختلف عن نوعية الحقل المسند له كأن تسند قيمة نصية لحقل عددي.\n\n**المصدر:** صفحة 27 من الكتاب.",
+    "sourcePage": 15,
+    "answerPage": 15,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال السادس / ب / 1",
+    "marks": 3,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      28,
+      29
+    ],
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 15](assets/lessons/ict/exams/source-crops/exam-p15-q6-b1-question.webp) · [الإجابة ص 15](assets/lessons/ict/exams/source-crops/exam-p15-q6-b1-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 15 · السؤال السادس / ب / 1 · 3 علامة",
+    "partOrder": 4,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p16-q6-c2",
+    "topic": "access-basics",
+    "lessonId": "database-management",
+    "partId": "access-basics",
+    "question": "اذكر ثلاثة من مكونات قاعدة البيانات في أكسس، مع توضيح وظيفة كل منها.",
+    "answer": "**ثلاثة من مكونات قاعدة البيانات ووظائفها:**\n\n| المكوّن | الوظيفة |\n| --- | --- |\n| الجداول | تخزين البيانات. |\n| الاستعلامات | استرجاع البيانات ومعالجتها. |\n| النماذج | إدخال البيانات وتعديلها وحذفها. |\n\n**الشاهد من الكتاب 1:**\n\n> الجداول (Tables): وهي مكان تخزين البيانات، وتتكون الجداول من حقول (أعمدة)، وسجلات (صفوف).\n\n\n\n**الشاهد من الكتاب 2:**\n\n> الاستعلامات (Queries): وهي طلب استرجاع بيانات معينة من قاعدة بيانات، تطبق عليها معايير محددة أو أوامر لتنفيذ عمليات على البيانات في الجداول من: حذف وإضافة وتعديل سجلات أو حقول وإنشاء وحذف جداول.\n\n\n\n**الشاهد من الكتاب 3:**\n\n> النماذج (Forms): واجهات يتم من خلالها إضافة وتعديل وحذف بيانات من الجداول.\n\n**المصدر:** صفحة 4 من الكتاب.",
+    "sourcePage": 16,
+    "answerPage": 16,
+    "paperLabel": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22",
+    "originalNumber": "السؤال السادس / ج / 2",
+    "marks": 3,
+    "format": "written",
+    "scopeReason": "تطبيق مباشر لمهارة واردة في الكتاب المعتمد؛ سياق السؤال الأصلي محفوظ.",
+    "bookPages": [
+      4
+    ],
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "reference": "[السؤال ص 16](assets/lessons/ict/exams/source-crops/exam-p16-q6-c2-question.webp) · [الإجابة ص 16](assets/lessons/ict/exams/source-crops/exam-p16-q6-c2-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنوب الخليل — اختبار نهاية الفصل الأول 2024–2025 — العلمي والصناعي — 2024/12/22، PDF ص 16 · السؤال السادس / ج / 2 · 3 علامة",
+    "partOrder": 12,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p57-q1-a",
+    "topic": "مقارنة أنظمة التشغيل",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "bookPages": [
+      40,
+      41,
+      42,
+      53
+    ],
+    "question": "1. قارن بين أندرويد وiOS في لغات البرمجة الأصيلة وامتداد الملف التنفيذي، وفق جدول الكتاب.\n2. في حالة تشغيل افتراضية، تستعيد البيئة ذاكرة كائنات لم يعد التطبيق يستخدمها. هل تعادل هذه العملية حذف ملفات قديمة من تخزين الهاتف؟ وضّح الفرق.",
+    "answer": "**1. المقارنة وفق الجدول:**\n\n| البند | أندرويد | `iOS` |\n|---|---|---|\n| اللغات الأصيلة المذكورة | `Java` و`C++` | `Objective-C` و`Swift` |\n| امتداد الملف التنفيذي | `.apk` | `.ipa` |\n\n**2. المقارنة بين العمليتين:**\n\nاستعادة ذاكرة الكائنات تعيد استخدام مساحة من ذاكرة التشغيل. حذف ملف يزيل بيانات محفوظة في التخزين. إذن العمليتان مختلفتان؛ لا تُحذف صور الهاتف أو ملفاته لمجرد استعادة ذاكرة كائن.\n\nالكتاب: التطبيقات الأصيلة ولغاتها؛ ص41 المطبوعة، PDF43\n\nالكتاب: بند إدارة الذاكرة في سؤال المقارنة؛ ص42 المطبوعة، PDF44\n\n[مرجع أصلي تكميلي للتحقق من معطى إدارة الذاكرة](https://developer.android.com/topic/performance/memory-overview)",
+    "sourcePage": 57,
+    "answerPage": 62,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "1-a",
+    "marks": 4,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-a-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-a-answer.webp) · صياغة تعليمية معدّلة",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalSourceConflict": "مفتاح ص62 يقول إن IOS لا يعيد تدوير الذاكرة، وهو تبسيط لا يجوز تحويله إلى نفي مطلق لإدارة الذاكرة.",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-a · 4 علامة",
+    "partOrder": 13,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p57-q1-b1",
+    "topic": "لغات التطبيقات الهجينة",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "bookPages": [
+      42
+    ],
+    "question": "أي مجموعة تمثل تقنيات الويب المذكورة في الكتاب لبناء التطبيقات الهجينة؟",
+    "explanation": "**الإجابة المنهجية وفق تصنيف الكتاب:** `Html5`, `Css`, `Java Script`\n\n**الشاهد من الكتاب:**\n\n> التطبيقات الهجينة (Hybrid): التطبيقات التي تم تصميمها وبرمجتها، لتعمل في أكثر من بيئة نظام تشغيل، ومتواجدة في متاجر عديدة، وتستخدم مهارات تطوير الويب (html5، java script، css) في بنائها وبرمجتها.\n\n**المصدر:** صفحة 42 من الكتاب.\n\n\n\n**توضيح:** المقصود أدوات الويب المذكورة في فقرة التطبيقات الهجينة. يمكن أيضاً استخدام `Java` و`VB` لتطوير تطبيقات ويب؛ لذلك لا تعد القائمة جواباً تقنياً وحيداً لكل معنى لتطوير الويب.",
+    "sourcePage": 57,
+    "answerPage": 62,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "1-b1",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "Html5, Css, Java Script",
+      "البرمجة بلغة VB",
+      "البحث في الويب",
+      "البرمجة بلغة جافا"
+    ],
+    "correctChoiceIndex": 0,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-b1-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-b1-answer.webp)",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b1",
+    "partOrder": 2,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b1",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p57-q1-b2",
+    "topic": "مكونات قاعدة البيانات",
+    "lessonId": "database-management",
+    "partId": "access-basics",
+    "bookPages": [
+      4
+    ],
+    "question": "ما المكوّن الذي يوفر واجهة مبسطة لإدخال البيانات وتعديلها؟",
+    "explanation": "**الإجابة:** النماذج\n\n**الشاهد من الكتاب:**\n\n> النماذج (Forms): واجهات يتم من خلالها إضافة وتعديل وحذف بيانات من الجداول.\n\n**المصدر:** صفحة 4 من الكتاب.",
+    "sourcePage": 57,
+    "answerPage": 62,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "1-b2",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "الجداول",
+      "النماذج",
+      "التقارير",
+      "الاستعلامات"
+    ],
+    "correctChoiceIndex": 1,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-b2-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-b2-answer.webp)",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b2",
+    "partOrder": 1,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b2",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p57-q1-b3",
+    "topic": "تتبع floor",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "bookPages": [
+      52
+    ],
+    "question": "في برنامج App Inventor ما ناتج تنفيذ اللبنة؟",
+    "explanation": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/f41d3900be1d7f7df0f9.webp)\n\n`floor` تعيد أكبر عدد صحيح لا يزيد على المدخل.\n\nنحسب مدخلها أولًا:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>8</mn><mi mathvariant=\"normal\">/</mi><mn>3</mn><mo>=</mo><mn>2.666</mn><mo>…</mo></mrow></math>\n```\n\nالعدد الصحيح 2 لا يتجاوز الناتج، بينما 3 يتجاوزه.\n\n**إذن الناتج: 2.**\n\n**مرجع الكتاب:** تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "sourcePage": 57,
+    "answerPage": 62,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "1-b3",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": true,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "0.2",
+      "2",
+      "0.3",
+      "2.6"
+    ],
+    "correctChoiceIndex": 1,
+    "figurePage": 57,
+    "cropRect": [
+      198,
+      369.33,
+      300.67,
+      393.33
+    ],
+    "cropUnit": "pdf-points",
+    "figureAlt": "لبنة floor للقيمة 8 ÷ 3",
+    "figureUnanswered": true,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "figure": "assets/lessons/curriculum-evidence/f41d3900be1d7f7df0f9.webp",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "example": "![لبنة floor للقيمة 8 ÷ 3 ](assets/lessons/curriculum-evidence/f41d3900be1d7f7df0f9.webp)",
+    "reference": "[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-b3-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-b3-answer.webp)",
+    "originalFigure": "assets/lessons/ict/exams/exam-p57-q1-b3.webp",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b3",
+    "partOrder": 0,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b3",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p57-q1-b4",
+    "topic": "أنواع الحقول",
+    "lessonId": "database-management",
+    "partId": "tables-and-types",
+    "bookPages": [
+      6
+    ],
+    "question": "ما نوع البيانات الأنسب لتخزين حقل (البريد الإلكتروني) في جدول الطالب:",
+    "explanation": "البريد الإلكتروني يضم حروفًا ورموزًا مثل `@`، فنختار له **نص `Text`**.\n\nوجود أرقام داخل العنوان لا يجعله حقلًا عدديًا؛ نحفظ العنوان كاملًا كنص.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء جدول وتعيين المفاتيح، ص 6 مطبوعة (ص 8 في PDF).",
+    "sourcePage": 57,
+    "answerPage": 62,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "1-b4",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "نص Text",
+      "رقم Number",
+      "مذكرة Memo",
+      "إيميل E-Mail"
+    ],
+    "correctChoiceIndex": 0,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-b4-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-b4-answer.webp)",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b4",
+    "partOrder": 0,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-b4",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p57-q1-c1",
+    "topic": "دور حقول الاستعلام",
+    "lessonId": "sql-queries",
+    "partId": "select-order",
+    "bookPages": [
+      13,
+      14,
+      16,
+      18
+    ],
+    "question": "اذكر اثنين من أسباب تحديد الحقل في استعلام الاختيار؟",
+    "answer": "**يكفي ذكر أي سببين مما يأتي:**\n\n- عرض الحقل ضمن نتائج الاستعلام.\n- ترتيب النتائج بحسب الحقل.\n- وضع معيار أو شرط على الحقل.\n\n**الشاهد من الكتاب 1:**\n\n> وتحديد الحقل يكون لسبب أو أكثر من الأسباب الآتية:\n> عرض (Show) الحقل ضمن الاستعلام\n\n\n\n**الشاهد من الكتاب 2:**\n\n> الترتيب (Sort) بناء على الحقل\n\n\n\n**الشاهد من الكتاب 3:**\n\n> وضع معيار (شرط) على الحقل: وذلك في خانة معايير (Criteria) مثل: المعايير أكبر من وأصغر وأكثر\n\n**المصدر:** صفحة 14 من الكتاب.",
+    "sourcePage": 57,
+    "answerPage": 62,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "1-c1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-c1-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-c1-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-c1",
+    "partOrder": 2,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p57-q1-d1",
+    "topic": "التقارير",
+    "lessonId": "database-management",
+    "partId": "access-basics",
+    "bookPages": [
+      4
+    ],
+    "question": "علل: للتقارير أهمية كبيرة في قواعد البيانات.",
+    "answer": "**الإجابة:** التقارير تعرض البيانات وتطبعها بأشكال وتنسيقات متنوعة.\n\n**الشاهد من الكتاب:**\n\n> التقارير (Reports): وسيلة لعرض البيانات وطباعتها، بأشكال وتنسيقات متنوعة.\n\n**المصدر:** صفحة 4 من الكتاب.",
+    "sourcePage": 57,
+    "answerPage": 62,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "1-d1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q1-d1-question.webp) · [الإجابة ص 62](assets/lessons/ict/exams/source-crops/exam-p57-q1-d1-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 1-d1",
+    "partOrder": 13,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p57-q2-a-forms",
+    "topic": "تعريف النماذج",
+    "lessonId": "database-management",
+    "partId": "access-basics",
+    "bookPages": [
+      4
+    ],
+    "question": "عرف كلا من: النماذج.",
+    "answer": "**الإجابة:** واجهات لإضافة بيانات الجداول وتعديلها وحذفها.\n\n**الشاهد من الكتاب:**\n\n> النماذج (Forms): واجهات يتم من خلالها إضافة وتعديل وحذف بيانات من الجداول.\n\n**المصدر:** صفحة 4 من الكتاب.",
+    "sourcePage": 57,
+    "answerPage": 63,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "2-a-forms",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q2-a-forms-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p57-q2-a-forms-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 2-a-forms",
+    "partOrder": 14,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p57-q2-a-ar",
+    "topic": "تعريف الواقع المعزز",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "bookPages": [
+      39,
+      40
+    ],
+    "question": "عرف كلا من: الواقع المعزز.",
+    "answer": "**الإجابة:** الواقع المعزز: إضافة عناصر افتراضية مرتبطة بمعالم المشهد الحقيقي.\n\n**الشاهد من الكتاب:**\n\n> تعتمد تقنية الواقع المعزز على تعرف النظام إلى ربط معالم من الواقع الحقيقي بالعنصر الافتراضي المناسب لها، والمخزن مسبقاً في ذاكرته\n\n**المصدر:** صفحة 40 من الكتاب.",
+    "sourcePage": 57,
+    "answerPage": 63,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "2-a-ar",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q2-a-ar-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p57-q2-a-ar-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 2-a-ar",
+    "partOrder": 21,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p57-q2-b",
+    "topic": "رسم ERD لمكتبة",
+    "lessonId": "database-management",
+    "partId": "practice-and-review",
+    "bookPages": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "question": "وصف نظام مكتبة الشروق على النحو الآتي:\n- يوجد في المكتبة العديد من الكتب.\n- الكتاب يعار لعدة مشتركين والمشترك قد يستعير عدة كتب.\n- للكتاب مؤلف واحد فقط.\nبعد تحليلك لقاعدة البيانات قم برسم نموذج ERD.",
+    "answer": "نحدد أولًا الكيانات، ثم نقرأ عدد السجلات الممكن ربطها في الاتجاهين.\n\nالمفتاح الأساسي يميز السجل، والأجنبي يشير إلى أصله في كيان آخر.\n\nالكتاب قد يعار لعدة مشتركين، والمشترك يستعير عدة كتب؛ إذن نضيف **إعارة** لفك علاقة متعدد إلى متعدد. ولأن للكتاب مؤلفًا واحدًا، نربطه بكيان **مؤلف**.\n\nلم يحدد السؤال أسماء الحقول؛ نستخدم هذا التصميم الممكن، حيث **الأساسي** يميز السجل و**الأجنبي** يربطه بكيان آخر:\n\n| الكيان في الرسم | الصفات المقترحة |\n| --- | --- |\n| المؤلف `Author` | رقم المؤلف **أساسي**، اسم المؤلف |\n| الكتاب `Book` | رقم الكتاب **أساسي**، عنوان الكتاب، رقم المؤلف **أجنبي** |\n| المشترك `Member` | رقم المشترك **أساسي**، اسم المشترك |\n| الإعارة `Loan` | رقم الإعارة **أساسي**، رقم الكتاب **أجنبي**، رقم المشترك **أجنبي** |\n\nنضع جهة الواحد عند صاحب المفتاح الأساسي؛ كل إعارة تخص كتابًا واحدًا ومشتركًا واحدًا. في الرسم `M` تعني متعددًا:\n\n![مخطط الحل العلاقي الكامل بالصفات والمفاتيح](assets/lessons/curriculum-evidence/f5e330898087da6a5c42.svg)\n\n**الرسم الأصلي المحفوظ في المصدر:**\n\n[عرض الشاهد الأصلي في الكتاب](assets/lessons/ict/exams/source-crops/exam-p57-q2-b-answer.webp)\n\nيوضح المخطط ارتباط المؤلف بالكتاب، وربط الكتاب بالمشترك عبر الإعارة. الجدول أعلاه يقترح أسماء حقول واضحة للتصميم نفسه.\n\nرقم الإعارة يميّز كل عملية، فيسمح للمشترك نفسه باستعارة الكتاب نفسه مرة أخرى.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 10 مطبوعة (ص 12 في PDF).",
+    "sourcePage": 57,
+    "answerPage": 63,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "2-b",
+    "marks": 4,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 57](assets/lessons/ict/exams/source-crops/exam-p57-q2-b-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p57-q2-b-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 57 · السؤال 2-b · 4 علامة",
+    "partOrder": 2,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p58-q2-c",
+    "topic": "قراءة حدث الآلة الحاسبة",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-interface",
+    "bookPages": [
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "question": "من اللبنات المجاورة، استخرج ما يلي:\n1. اسم أداة.\n2. اسم حدث.\n3. متغير نصي وقيمته.\n\n![لبنات mult.Click: نقل new إلى old، تصفير new، operation = ×، Label1.Text = × ](assets/lessons/curriculum-evidence/b3041fb9e9612e1fc7f2.webp)",
+    "answer": "![الشكل الأصلي للسؤال](assets/lessons/curriculum-evidence/b3041fb9e9612e1fc7f2.webp)\n\nنقرأ رأس اللبنة لمعرفة الأداة والحدث: `when mult.Click` تعني التنفيذ عند نقر الزر **`mult`**.\n\n- اسم أداة: **`mult`**، ويظهر أيضاً **`Label1`** كأداة عرض.\n- اسم الحدث: **`Click`**.\n- المتغير النصي: **`operation`**؛ تسند إليه لبنة `set global operation to` القيمة **«×»** المحاطة بعلامتي اقتباس.\n\n**المصدر:** الصفحات 44، 51 من الكتاب.",
+    "sourcePage": 58,
+    "answerPage": 63,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "2-c",
+    "marks": 4,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": true,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figurePage": 58,
+    "cropRect": [
+      68,
+      100.67,
+      330.67,
+      209.33
+    ],
+    "cropUnit": "pdf-points",
+    "figureAlt": "لبنات mult.Click: نقل new إلى old، تصفير new، operation = ×، Label1.Text = ×",
+    "figureUnanswered": true,
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "figure": "assets/lessons/curriculum-evidence/b3041fb9e9612e1fc7f2.webp",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q2-c-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p58-q2-c-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalFigure": "assets/lessons/ict/exams/exam-p58-q2-c.webp",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-c · 4 علامة",
+    "partOrder": 1,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p58-q2-d2",
+    "topic": "ترتيب الأدوات",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "bookPages": [
+      43,
+      47,
+      48
+    ],
+    "question": "أداة تستخدم لترتيب كل صورتين في برنامج App Inventor في صف واحد بشكل أفقي:",
+    "explanation": "**الإجابة:** `Horizontal arrangement`\n\n**الشاهد من الكتاب:**\n\n> أداة Horizontal Arrangement (الترتيب الأفقي): من مجموعة Layout العدد (3).\n\n**المصدر:** صفحة 44 من الكتاب.",
+    "sourcePage": 58,
+    "answerPage": 63,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "2-d2",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "Vertical arrangement",
+      "Horizontal arrangement",
+      "Height",
+      "Layout"
+    ],
+    "correctChoiceIndex": 1,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q2-d2-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p58-q2-d2-answer.webp)",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d2",
+    "partOrder": 0,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d2",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p58-q2-d3",
+    "topic": "الشرط OR",
+    "lessonId": "sql-queries",
+    "partId": "where-conditions",
+    "bookPages": [
+      14,
+      15,
+      25
+    ],
+    "question": "الرابطة التي تستخدم لإضافة أكثر من شرط على المعيار على أن يتحقق أحدهما على الأقل؟",
+    "explanation": "**الإجابة:** `Or`\n\n**الشاهد من الكتاب:**\n\n> أو (OR) والتي تستخدم كجزء إضافي للمعيار لإضافة أكثر من شرط على أن يتحقق أحدها على الأقل، وتستخدم الرابطة المنطقية (AND) لتحقيق مجموعة من الشروط معاً.\n\n**المصدر:** صفحة 15 من الكتاب.",
+    "sourcePage": 58,
+    "answerPage": 63,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "2-d3",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "And",
+      "Or",
+      "Not And",
+      "Not"
+    ],
+    "correctChoiceIndex": 1,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q2-d3-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p58-q2-d3-answer.webp)",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d3",
+    "partOrder": 1,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d3",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p58-q2-d4",
+    "topic": "التكامل المرجعي",
+    "lessonId": "database-management",
+    "partId": "build-and-integrity",
+    "bookPages": [
+      7,
+      8,
+      11
+    ],
+    "question": "ما العملية التي تمنع تسجيل استعارة لكتاب غير موجود في جدول الكتب؟",
+    "explanation": "**الإجابة: إنشاء العلاقات مع فرض التكامل المرجعي.**\n\nنربط جدول الاستعارة بجدول الكتب. يتحقق قيد التكامل المرجعي من وجود رقم الكتاب المشار إليه في جدول الكتب، فيمنع تسجيل استعارة لكتاب غير موجود.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص8 المطبوعة (PDF10).",
+    "sourcePage": 58,
+    "answerPage": 63,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "2-d4",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "إنشاء النماذج",
+      "إنشاء الاستعلامات",
+      "إنشاء العلاقات مع فرض التكامل المرجعي",
+      "إنشاء التقارير"
+    ],
+    "correctChoiceIndex": 2,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q2-d4-question.webp) · [الإجابة ص 63](assets/lessons/ict/exams/source-crops/exam-p58-q2-d4-answer.webp)",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d4",
+    "partOrder": 1,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 2-d4",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p58-q3-a1",
+    "topic": "علاقات المشفى",
+    "lessonId": "database-management",
+    "partId": "keys-and-relations",
+    "bookPages": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "question": "الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:\n\nPatients\n\n| patient_id | patient_name | date_of_birth |\n|---|---|---|\n| 1 | خالد | 15/11/2000 |\n| 2 | خليل | 18/8/1999 |\n| 3 | جمال | 1/1/1982 |\n| 4 | صلاح | 12/7/2010 |\n\nPrescriptions\n\n| doctor_id | patient_id | medication_name |\n|---|---|---|\n| 1 | 1 | Aspirin |\n| 1 | 2 | Acetaminophen |\n| 3 | 1 | Acamol |\n| 4 | 3 | Metamizole |\n\nDoctors\n\n| doctor_id | doctor_name | specialization | address |\n|---|---|---|---|\n| 1 | أنس | باطني | حيفا |\n| 2 | جمال | قلب | حيفا |\n| 3 | سليم | باطني | نابلس |\n| 4 | سامر | غدد صماء | الخليل |\n\nما نوع الرابطة بين كل من جدول الأطباء (Doctors) وجدول الوصفة الطبية (Prescriptions)؟",
+    "answer": "علاقة واحد إلى متعدد تعني أن سجلًا واحدًا من الجدول الأول قد تقابله عدة سجلات في الثاني، بينما يشير كل سجل في الثاني إلى أصل واحد.\n\nنتتبع `doctor_id`: الطبيب رقم 1 يظهر في وصفتين، لكن كل سجل وصفة يحمل رقم طبيب واحد.\n\nإذن العلاقة من **`Doctors` إلى `Prescriptions`: واحد إلى متعدد**.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF).",
+    "sourcePage": 58,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-a1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 58,
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-a1-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-a1-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-a1",
+    "partOrder": 11,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p58-q3-a2",
+    "topic": "جدول الوصلة",
+    "lessonId": "database-management",
+    "partId": "education-center",
+    "bookPages": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "question": "الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:\n\nPatients\n\n| patient_id | patient_name | date_of_birth |\n|---|---|---|\n| 1 | خالد | 15/11/2000 |\n| 2 | خليل | 18/8/1999 |\n| 3 | جمال | 1/1/1982 |\n| 4 | صلاح | 12/7/2010 |\n\nPrescriptions\n\n| doctor_id | patient_id | medication_name |\n|---|---|---|\n| 1 | 1 | Aspirin |\n| 1 | 2 | Acetaminophen |\n| 3 | 1 | Acamol |\n| 4 | 3 | Metamizole |\n\nDoctors\n\n| doctor_id | doctor_name | specialization | address |\n|---|---|---|---|\n| 1 | أنس | باطني | حيفا |\n| 2 | جمال | قلب | حيفا |\n| 3 | سليم | باطني | نابلس |\n| 4 | سامر | غدد صماء | الخليل |\n\nماذا يسمى جدول الوصفة الطبية، وما الهدف منه؟",
+    "answer": "جدول الوصلة يمثل ارتباطًا بين كيانين؛ كل سجل فيه يشير إلى أصل واحد من كل جهة.\n\nنجمع في الوصفة رقم الطبيب ورقم المريض، فتصل كل وصفة بين سجل من الجدولين. لهذا تسمى **جدول وصلة أو جدولًا وسيطًا**.\n\nالطبيب له عدة وصفات، والمريض له عدة وصفات؛ فتصبح علاقتا **الطبيب بالوصفة** و**المريض بالوصفة** من **واحد إلى متعدد**، لتمثيل متعدد إلى متعدد بين الطبيب والمريض.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 10 مطبوعة (ص 12 في PDF).",
+    "sourcePage": 58,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-a2",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 58,
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-a2-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-a2-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-a2",
+    "partOrder": 0,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p58-q3-a3",
+    "topic": "أنواع الحقول المرتبطة",
+    "lessonId": "database-management",
+    "partId": "tables-and-types",
+    "bookPages": [
+      6,
+      8,
+      11
+    ],
+    "question": "الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:\n\nPatients\n\n| patient_id | patient_name | date_of_birth |\n|---|---|---|\n| 1 | خالد | 15/11/2000 |\n| 2 | خليل | 18/8/1999 |\n| 3 | جمال | 1/1/1982 |\n| 4 | صلاح | 12/7/2010 |\n\nPrescriptions\n\n| doctor_id | patient_id | medication_name |\n|---|---|---|\n| 1 | 1 | Aspirin |\n| 1 | 2 | Acetaminophen |\n| 3 | 1 | Acamol |\n| 4 | 3 | Metamizole |\n\nDoctors\n\n| doctor_id | doctor_name | specialization | address |\n|---|---|---|---|\n| 1 | أنس | باطني | حيفا |\n| 2 | جمال | قلب | حيفا |\n| 3 | سليم | باطني | نابلس |\n| 4 | سامر | غدد صماء | الخليل |\n\nحدد نوع البيانات المناسب لكل من:\n- كل حقل من حقول جدول المرضى (Patients).\n- حقل patient_id في جدول Prescriptions.",
+    "answer": "نختار النوع بحسب محتوى الحقل:\n\n| جدول `Patients` | النوع المناسب | السبب |\n| --- | --- | --- |\n| `patient_id` | **رقم**، أو **ترقيم تلقائي** عند توليده آليًا | معرّف المريض عددي. |\n| `patient_name` | **نص** | يحفظ اسم المريض. |\n| `date_of_birth` | **تاريخ/وقت** | يحفظ تاريخ الميلاد. |\n\nأما `patient_id` في **`Prescriptions`** فهو **رقم** يشير إلى مريض موجود، ويجب أن يتوافق مع نوع مفتاحه في `Patients`. إذا كان الأصل ترقيمًا تلقائيًا، نستخدم **رقمًا بحجم عدد صحيح مطول** في الوصفات.\n\nلا نولّد رقمًا تلقائيًا جديدًا في الوصفة؛ نكتب رقم المريض الذي تخصه الوصفة.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء جدول وتعيين المفاتيح، ص 6 مطبوعة (ص 8 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF).",
+    "sourcePage": 58,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-a3",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 58,
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-a3-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-a3-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-a3",
+    "partOrder": 15,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p58-q3-b1",
+    "topic": "SELECT بشروط وترتيب",
+    "lessonId": "sql-queries",
+    "partId": "sql-practical",
+    "bookPages": [
+      16,
+      18,
+      19,
+      20,
+      21
+    ],
+    "question": "الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:\n\nPatients\n\n| patient_id | patient_name | date_of_birth |\n|---|---|---|\n| 1 | خالد | 15/11/2000 |\n| 2 | خليل | 18/8/1999 |\n| 3 | جمال | 1/1/1982 |\n| 4 | صلاح | 12/7/2010 |\n\nPrescriptions\n\n| doctor_id | patient_id | medication_name |\n|---|---|---|\n| 1 | 1 | Aspirin |\n| 1 | 2 | Acetaminophen |\n| 3 | 1 | Acamol |\n| 4 | 3 | Metamizole |\n\nDoctors\n\n| doctor_id | doctor_name | specialization | address |\n|---|---|---|---|\n| 1 | أنس | باطني | حيفا |\n| 2 | جمال | قلب | حيفا |\n| 3 | سليم | باطني | نابلس |\n| 4 | سامر | غدد صماء | الخليل |\n\nبلغة SQL اكتب: استعلام تظهر من خلاله بيانات الأطباء الذين تخصصهم باطني وعناوينهم حيفا مرتبة تنازلياً حسب المفتاح الأساسي؟",
+    "answer": "النجمة تعرض جميع الحقول. نربط التخصص والعنوان بـ `AND` لأنهما مطلوبان معًا، ثم نرتب رقم الطبيب تنازليًا بـ `DESC`.\n\n```sql\nSELECT * FROM Doctors\nWHERE specialization = \"باطني\" AND address = \"حيفا\"\nORDER BY doctor_id DESC;\n```\n\nفي الجدول المعطى يطابق الشرط **أنس، رقمه 1** فقط.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 15 مطبوعة (ص 17 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 19 مطبوعة (ص 21 في PDF).",
+    "sourcePage": 58,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-b1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 58,
+    "marksNote": "تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-b1-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-b1-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-b1",
+    "partOrder": 0,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p58-q3-b2",
+    "topic": "UPDATE سجل محدد",
+    "lessonId": "sql-queries",
+    "partId": "update-queries",
+    "bookPages": [
+      25,
+      26,
+      27
+    ],
+    "question": "الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:\n\nPatients\n\n| patient_id | patient_name | date_of_birth |\n|---|---|---|\n| 1 | خالد | 15/11/2000 |\n| 2 | خليل | 18/8/1999 |\n| 3 | جمال | 1/1/1982 |\n| 4 | صلاح | 12/7/2010 |\n\nPrescriptions\n\n| doctor_id | patient_id | medication_name |\n|---|---|---|\n| 1 | 1 | Aspirin |\n| 1 | 2 | Acetaminophen |\n| 3 | 1 | Acamol |\n| 4 | 3 | Metamizole |\n\nDoctors\n\n| doctor_id | doctor_name | specialization | address |\n|---|---|---|---|\n| 1 | أنس | باطني | حيفا |\n| 2 | جمال | قلب | حيفا |\n| 3 | سليم | باطني | نابلس |\n| 4 | سامر | غدد صماء | الخليل |\n\nبلغة SQL اكتب: استعلام تحديث الدواء للمريض خليل إلى Panadol؟",
+    "answer": "نبحث عن خليل في `Patients` فنجد رقمه **2**. اسم الدواء موجود في `Prescriptions`؛ نعدّله هناك ونستخدم الرقم لتحديد وصفاته.\n\n```sql\nUPDATE Prescriptions\nSET medication_name = \"Panadol\"\nWHERE patient_id = 2;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 25 مطبوعة (ص 27 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).",
+    "sourcePage": 58,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-b2",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 58,
+    "marksNote": "تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-b2-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-b2-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-b2",
+    "partOrder": 3,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p58-q3-b3",
+    "topic": "الإلحاق من جدول",
+    "lessonId": "sql-queries",
+    "partId": "insert-queries",
+    "bookPages": [
+      28,
+      29
+    ],
+    "question": "الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:\n\nPatients\n\n| patient_id | patient_name | date_of_birth |\n|---|---|---|\n| 1 | خالد | 15/11/2000 |\n| 2 | خليل | 18/8/1999 |\n| 3 | جمال | 1/1/1982 |\n| 4 | صلاح | 12/7/2010 |\n\nPrescriptions\n\n| doctor_id | patient_id | medication_name |\n|---|---|---|\n| 1 | 1 | Aspirin |\n| 1 | 2 | Acetaminophen |\n| 3 | 1 | Acamol |\n| 4 | 3 | Metamizole |\n\nDoctors\n\n| doctor_id | doctor_name | specialization | address |\n|---|---|---|---|\n| 1 | أنس | باطني | حيفا |\n| 2 | جمال | قلب | حيفا |\n| 3 | سليم | باطني | نابلس |\n| 4 | سامر | غدد صماء | الخليل |\n\nبلغة SQL اكتب: استعلام تضيف من خلاله جميع سجلات جدول باسم Source إلى جدول Patients (علماً أن الجدولين لهما نفس أسماء الحقول)؟",
+    "answer": "جدول الوجهة يأتي بعد `INSERT INTO`، والمصدر بعد `FROM`. نختار حقول المصدر بالترتيب نفسه الذي ستدخل به في `Patients`.\n\n```sql\nINSERT INTO Patients (patient_id, patient_name, date_of_birth)\nSELECT patient_id, patient_name, date_of_birth\nFROM Source;\n```\n\nتنجح الإضافة إذا وافقت أنواع القيم حقول الوجهة ولم تخالف قيود المفاتيح.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 28 مطبوعة (ص 30 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 29 مطبوعة (ص 31 في PDF).",
+    "sourcePage": 58,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-b3",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 58,
+    "marksNote": "تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-b3-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-b3-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-b3",
+    "partOrder": 5,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p58-q3-b4",
+    "topic": "DELETE بمعامل",
+    "lessonId": "sql-queries",
+    "partId": "delete-review",
+    "bookPages": [
+      30,
+      31,
+      32,
+      33
+    ],
+    "question": "الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:\n\nPatients\n\n| patient_id | patient_name | date_of_birth |\n|---|---|---|\n| 1 | خالد | 15/11/2000 |\n| 2 | خليل | 18/8/1999 |\n| 3 | جمال | 1/1/1982 |\n| 4 | صلاح | 12/7/2010 |\n\nPrescriptions\n\n| doctor_id | patient_id | medication_name |\n|---|---|---|\n| 1 | 1 | Aspirin |\n| 1 | 2 | Acetaminophen |\n| 3 | 1 | Acamol |\n| 4 | 3 | Metamizole |\n\nDoctors\n\n| doctor_id | doctor_name | specialization | address |\n|---|---|---|---|\n| 1 | أنس | باطني | حيفا |\n| 2 | جمال | قلب | حيفا |\n| 3 | سليم | باطني | نابلس |\n| 4 | سامر | غدد صماء | الخليل |\n\nبلغة SQL اكتب: استعلام تحذف من خلاله سجل معين من جدول المريض حيث يحدد المستخدم رقم المريض المراد حذفه؟",
+    "answer": "نكتب طلب إدخال بين أقواس مربعة، فيسأل `Access` المستخدم عن الرقم عند التنفيذ. تقصر `WHERE` الحذف على هذا المريض.\n\n```sql\nDELETE FROM Patients\nWHERE patient_id = [أدخل رقم المريض];\n```\n\nقد يُرفض الحذف عند فرض التكامل المرجعي وبقاء وصفات مرتبطة بالمريض، ما لم يكن الحذف المتتالي مفعّلًا.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 30 مطبوعة (ص 32 في PDF).",
+    "sourcePage": 58,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-b4",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 58,
+    "marksNote": "تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 58](assets/lessons/ict/exams/source-crops/exam-p58-q3-b4-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p58-q3-b4-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 58 · السؤال 3-b4",
+    "partOrder": 4,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p59-q3-c1",
+    "topic": "ناتج COUNT",
+    "lessonId": "sql-queries",
+    "partId": "count-parameters",
+    "bookPages": [
+      23,
+      24
+    ],
+    "question": "الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:\n\nPatients\n\n| patient_id | patient_name | date_of_birth |\n|---|---|---|\n| 1 | خالد | 15/11/2000 |\n| 2 | خليل | 18/8/1999 |\n| 3 | جمال | 1/1/1982 |\n| 4 | صلاح | 12/7/2010 |\n\nPrescriptions\n\n| doctor_id | patient_id | medication_name |\n|---|---|---|\n| 1 | 1 | Aspirin |\n| 1 | 2 | Acetaminophen |\n| 3 | 1 | Acamol |\n| 4 | 3 | Metamizole |\n\nDoctors\n\n| doctor_id | doctor_name | specialization | address |\n|---|---|---|---|\n| 1 | أنس | باطني | حيفا |\n| 2 | جمال | قلب | حيفا |\n| 3 | سليم | باطني | نابلس |\n| 4 | سامر | غدد صماء | الخليل |\n\nاعتماداً على الجداول أعلاه، ما ناتج تنفيذ الاستعلام التالي؟\n```sql\nSELECT COUNT(Doctors.doctor_id) AS Count_doctor_id\nFROM Doctors;\n```",
+    "answer": "`COUNT(doctor_id)` تعد القيم غير الفارغة في حقل رقم الطبيب. في الجدول أربعة أطباء، ولكل منهم رقم.\n\n`AS` تسمي عمود النتيجة؛ الناتج صف واحد:\n\n| `Count_doctor_id` |\n| --- |\n| 4 |\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 24 مطبوعة (ص 26 في PDF).",
+    "sourcePage": 59,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-c1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 58,
+    "marksNote": "تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q3-c1-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p59-q3-c1-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-c1",
+    "partOrder": 3,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p59-q3-c2",
+    "topic": "فشل INSERT",
+    "lessonId": "sql-queries",
+    "partId": "insert-queries",
+    "bookPages": [
+      27
+    ],
+    "question": "الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:\n\nPatients\n\n| patient_id | patient_name | date_of_birth |\n|---|---|---|\n| 1 | خالد | 15/11/2000 |\n| 2 | خليل | 18/8/1999 |\n| 3 | جمال | 1/1/1982 |\n| 4 | صلاح | 12/7/2010 |\n\nPrescriptions\n\n| doctor_id | patient_id | medication_name |\n|---|---|---|\n| 1 | 1 | Aspirin |\n| 1 | 2 | Acetaminophen |\n| 3 | 1 | Acamol |\n| 4 | 3 | Metamizole |\n\nDoctors\n\n| doctor_id | doctor_name | specialization | address |\n|---|---|---|---|\n| 1 | أنس | باطني | حيفا |\n| 2 | جمال | قلب | حيفا |\n| 3 | سليم | باطني | نابلس |\n| 4 | سامر | غدد صماء | الخليل |\n\nبافتراض أن `doctor_id` هو المفتاح الأساسي لجدول `Doctors`، ما ناتج تنفيذ الاستعلام التالي؟\n```sql\nINSERT INTO Doctors (doctor_id,doctor_name,specialization,address)\nVALUES (4,\"صابر\",\"غدد لمفاوية\",\"نابلس\")\n```",
+    "answer": "نفحص المفتاح الأساسي قبل الإضافة: الرقم **4** موجود للطبيب سامر.\n\nالمفتاح الأساسي لا يتكرر؛ لذلك **تُرفض إضافة صابر** بهذا الرقم، حتى لو اختلفت بقية بياناته.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 27 مطبوعة (ص 29 في PDF).",
+    "sourcePage": 59,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-c2",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 58,
+    "marksNote": "تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q3-c2-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p59-q3-c2-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-c2",
+    "partOrder": 6,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p59-q3-c3",
+    "topic": "ناتج DELETE دون شرط",
+    "lessonId": "sql-queries",
+    "partId": "delete-review",
+    "bookPages": [
+      30,
+      31,
+      32,
+      33
+    ],
+    "question": "الجداول التالية هي جزء من قاعدة بيانات مشفى، بناءً عليها أجب عما يلي:\n\nPatients\n\n| patient_id | patient_name | date_of_birth |\n|---|---|---|\n| 1 | خالد | 15/11/2000 |\n| 2 | خليل | 18/8/1999 |\n| 3 | جمال | 1/1/1982 |\n| 4 | صلاح | 12/7/2010 |\n\nPrescriptions\n\n| doctor_id | patient_id | medication_name |\n|---|---|---|\n| 1 | 1 | Aspirin |\n| 1 | 2 | Acetaminophen |\n| 3 | 1 | Acamol |\n| 4 | 3 | Metamizole |\n\nDoctors\n\n| doctor_id | doctor_name | specialization | address |\n|---|---|---|---|\n| 1 | أنس | باطني | حيفا |\n| 2 | جمال | قلب | حيفا |\n| 3 | سليم | باطني | نابلس |\n| 4 | سامر | غدد صماء | الخليل |\n\nاعتماداً على الجداول أعلاه، ما ناتج تنفيذ الاستعلام التالي؟\n```sql\nDELETE FROM Prescriptions;\n```",
+    "answer": "`DELETE FROM Prescriptions` يحذف السجلات من جدول الوصفات. لا توجد `WHERE` لتحديد بعضها، فيشمل الحذف **جميع السجلات**.\n\nتبقى **بنية الجدول وحقوله**؛ الذي يُحذف هو بياناته.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 30 مطبوعة (ص 32 في PDF).",
+    "sourcePage": 59,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-c3",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 58,
+    "marksNote": "تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q3-c3-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p59-q3-c3-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-c3",
+    "partOrder": 5,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p59-q3-d1",
+    "topic": "نقل ملفات iOS",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "bookPages": [
+      41
+    ],
+    "question": "برنامج يستخدم في نقل البيانات من الحاسوب إلى أجهزة IOS مع استخدام كابل USB:",
+    "explanation": "**الإجابة:** `iTunes`\n\n**الشاهد من الكتاب:**\n\n> استخدام برنامج Itunes: في نقل البيانات من الحاسوب إلى أجهزة IOS، مع استخدام كابل USB\n\n**المصدر:** صفحة 41 من الكتاب.",
+    "sourcePage": 59,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-d1",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "Icloud",
+      "Bluetooth",
+      "Cloud Storage",
+      "iTunes"
+    ],
+    "correctChoiceIndex": 3,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q3-d1-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p59-q3-d1-answer.webp)",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-d1",
+    "partOrder": 3,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-d1",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p59-q3-d2",
+    "topic": "تعيين المفتاح الأساسي",
+    "lessonId": "database-management",
+    "partId": "tables-and-types",
+    "bookPages": [
+      6
+    ],
+    "question": "في برنامج MS-Access التبويب الذي يتم من خلاله تعيين مفتاح أساسي للجدول هو:",
+    "explanation": "**الإجابة:** تصميم\n\n**الشاهد من الكتاب:**\n\n> أو من أيقونة (المفتاح)، من علامة التبويب (تصميم)، ويمكن عمل مفتاح مركب من حقلين\n\n**المصدر:** صفحة 6 من الكتاب.",
+    "sourcePage": 59,
+    "answerPage": 64,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "3-d2",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "ملف",
+      "تصميم",
+      "أدوات قاعدة البيانات",
+      "الصفحة الرئيسية"
+    ],
+    "correctChoiceIndex": 1,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q3-d2-question.webp) · [الإجابة ص 64](assets/lessons/ict/exams/source-crops/exam-p59-q3-d2-answer.webp)",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-d2",
+    "partOrder": 1,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 3-d2",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p59-q4-a-scroll",
+    "topic": "التمرير الذكي",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "bookPages": [
+      37
+    ],
+    "question": "عرف ما يلي: التمرير الذكي.",
+    "answer": "**الإجابة:** التمرير الذكي: تمرير محتوى الشاشة بحركة الرأس أو إمالة الهاتف.\n\n**الشاهد من الكتاب:**\n\n> التمرير الذكي: عند ضبط هذه الخاصية يتم استعراض وتمرير محتوى الشاشة بحركات الرأس إلى أعلى وأسفل، أو بإمالة الهاتف بهذه الاتجاهات.\n\n**المصدر:** صفحة 37 من الكتاب.",
+    "sourcePage": 59,
+    "answerPage": 65,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "4-a-scroll",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q4-a-scroll-question.webp) · [الإجابة ص 65](assets/lessons/ict/exams/source-crops/exam-p59-q4-a-scroll-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-a-scroll",
+    "partOrder": 22,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p59-q4-b2",
+    "topic": "مخرجات قاعدة البيانات",
+    "lessonId": "database-management",
+    "partId": "access-basics",
+    "bookPages": [
+      4
+    ],
+    "question": "أي مكوّن في قاعدة البيانات يُستخدم لعرض البيانات وطباعتها بأشكال وتنسيقات متنوعة؟",
+    "explanation": "**الإجابة:** التقارير\n\n**الشاهد من الكتاب:**\n\n> التقارير (Reports): وسيلة لعرض البيانات وطباعتها، بأشكال وتنسيقات متنوعة.\n\n**المصدر:** صفحة 4 من الكتاب.",
+    "sourcePage": 59,
+    "answerPage": 65,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "4-b2",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "الاستعلامات",
+      "النماذج",
+      "الجداول",
+      "التقارير"
+    ],
+    "correctChoiceIndex": 3,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q4-b2-question.webp) · [الإجابة ص 65](assets/lessons/ict/exams/source-crops/exam-p59-q4-b2-answer.webp)",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-b2",
+    "partOrder": 2,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-b2",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p59-q4-c1",
+    "topic": "ميزات iOS",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "bookPages": [
+      40,
+      41
+    ],
+    "question": "وضح ميزات نظام IOS.",
+    "answer": "**الإجابة:** \n\n- **الأمان:** فحص التطبيقات والتحكم في المتجر في وصف الدرس.\n- **القيود:** إخفاء تطبيقات أو منع تنزيلها.\n- **الرفع للتنبيه:** إضاءة الشاشة عند رفع الجهاز.\n- **`True Tone`:** تعديل ألوان الشاشة وفق إضاءة المحيط.\n\n**الشاهد من الكتاب 1:**\n\n> الأمان: يتم تنزيل التطبيقات من متجر أبل فقط، حيث تقوم الشركة بإنتاجها وفحصها.\n\n\n\n**الشاهد من الكتاب 2:**\n\n> القيود: إخفاء تطبيقات معينة بكلمة مرور، إخفاء App Store؛ بحيث لا يستطيع أحد العبث في التطبيق، أو تنزيل برامج.\n\n\n\n**الشاهد من الكتاب 3:**\n\n> الرفع للتنبيه (Raise To Wake): عند رفع الجهاز يتم تشغيل الشاشة وإضاءتها.\n\n\n\n**الشاهد من الكتاب 4:**\n\n> ميزة True Tone: شاشة تتحسس الطقس، وتعدل ألوان الشاشة حسب إضاءة الجو المحيط.\n\n**المصدر:** صفحة 40 من الكتاب.\n\n\n\n**توضيح:** المقصود في `True Tone` تحسس الإضاءة المحيطة. وذكر إنتاج التطبيقات في نص الكتاب لا يعني أن أبل تطور كل تطبيق في متجرها؛ فحص التطبيقات يقلل المخاطر ولا يثبت حصانة مطلقة.",
+    "sourcePage": 59,
+    "answerPage": 65,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "4-c1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q4-c1-question.webp) · [الإجابة ص 65](assets/lessons/ict/exams/source-crops/exam-p59-q4-c1-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-c1",
+    "partOrder": 14,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p59-q4-c2",
+    "topic": "امتداد الملفات التنفيذية",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "bookPages": [
+      42,
+      53
+    ],
+    "question": "ما امتداد الملف التنفيذي في كل من: ويندوز فون، IOS؟",
+    "answer": "**امتداد الملف التنفيذي:**\n\n| نظام التشغيل | الامتداد |\n| --- | --- |\n| ويندوز فون `Windows Phone` | `.xap` |\n| `iOS` | `.ipa` |\n\n**الشاهد من الكتاب:**\n\n> نظام أندرويد: JAVA, C++، .apk\n> نظام IOS: Objective C, Swift، .ipa\n> نظام ويندوز فون: VB.NET, C#.NET، .xap\n\n**المصدر:** صفحة 41 من الكتاب.",
+    "sourcePage": 59,
+    "answerPage": 65,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "4-c2",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q4-c2-question.webp) · [الإجابة ص 65](assets/lessons/ict/exams/source-crops/exam-p59-q4-c2-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-c2",
+    "partOrder": 15,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p59-q4-d",
+    "topic": "قراءة واجهة App Inventor",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "bookPages": [
+      43,
+      44,
+      47,
+      48
+    ],
+    "question": "تأمل الشكل المجاور الذي تم اقتطاعه من أحد التطبيقات التي تم تصميمها باستخدام برنامج App Inventor، ثم أجب عما يلي:\n1. ماذا تسمى الواجهة التي أظهرت هذا الجزء في برنامج App Inventor؟\n2. ما اسم الشاشة التي يتم تصميمها في الشكل؟\n3. اذكر أربعاً من الأدوات المضافة على الشاشة؟\n4. ما الأمر المستخدم لتغيير اسم الأداة البرمجي إلى Btn_Start؟\n5. اذكر الخاصية لإظهار/إخفاء الأداة؟\n\n![شجرة Components وفيها Screen2 وImage1 وHorizontalArrangement1 وLabel1 وTextBox1 وBtn_Start ](assets/lessons/ict/exams/exam-p59-q4-d.webp)",
+    "answer": "![شجرة المكونات الأصلية](assets/lessons/ict/exams/exam-p59-q4-d.webp)\n\nواجهة **`Designer`** تجمع أدوات التطبيق وترتبها، بينما **`Blocks`** تبرمج ما تفعله.\n\n1. هذه شجرة المكونات في واجهة التصميم **`Designer`**.\n\n2. نقرأ اسم الجذر أعلى الشجرة: الشاشة **`Screen2`**.\n\n3. أربعة مكونات ظاهرة: **`Image1`، `HorizontalArrangement1`، `Label1`، `TextBox1`**. ويظهر أيضاً الزر `Btn_Start`.\n\n4. أمر **`Rename`** يغير اسم المكون البرمجي إلى `Btn_Start`؛ أما `Text` فيغير النص الظاهر للمستخدم.\n\n5. خاصية **`Visible`** تتحكم في الظهور؛ `true` للإظهار و`false` للإخفاء.\n\n**مرجع الوظائف:** أدوات الواجهة — ص44 المطبوعة، PDF46، Rename وVisible — ص49 المطبوعة، PDF51.\n\n**الشاهد على اسم الواجهة:**\n\n> يحتوي برنامج App inventor على واجهتين ستحتاج استعمالهما أثناء عملك عليه لتطوير تطبيقاتك: الواجهة الأولى وتعرف باسم واجهة التصميم Designer وتستعمل لبناء الشكل العام لبرنامجك بحيث يتيح لك استعمال خاصية السحب والإفلات لبناء الشكل العام لتطبيقك. أما الواجهة الثانية فهي واجهة اللبنات Blocks والتي ستستعملها لبرمجة تطبيقك من خلال تجميع اللبنات الخاصة ببرنامجك، وربطها مع بعضها حسب المنطق الخاص بتطبيقك.\n\n**المصدر:** صفحة 41 من الكتاب.",
+    "sourcePage": 59,
+    "answerPage": 65,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "4-d",
+    "marks": 6,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": true,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figurePage": 59,
+    "cropRect": [
+      96,
+      548,
+      247.33,
+      714.67
+    ],
+    "cropUnit": "pdf-points",
+    "figureAlt": "شجرة Components وفيها Screen2 وImage1 وHorizontalArrangement1 وLabel1 وTextBox1 وBtn_Start",
+    "figureUnanswered": true,
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "figure": "assets/lessons/ict/exams/exam-p59-q4-d.webp",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 59](assets/lessons/ict/exams/source-crops/exam-p59-q4-d-question.webp) · [الإجابة ص 65](assets/lessons/ict/exams/source-crops/exam-p59-q4-d-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 59 · السؤال 4-d · 6 علامة",
+    "partOrder": 17,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p60-q5-c",
+    "topic": "تتبع تعبير رياضي",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "bookPages": [
+      50,
+      51,
+      52
+    ],
+    "question": "اعتماداً على اللبنات أدناه، أجب عما يلي:\n1. من أي مجموعة تم إدراج اللبنات الآتية: A (square root)، B (when Button1.Click)؟\n2. ما الهدف من التطبيق؟\n3. ما ناتج التطبيق في حال كانت القيم المدخلة هي: 3، 4 على التوالي؟\n\n![Button1.Click يعين Label1.Text إلى الجذر التربيعي لمجموع TextBox1.Text تربيع وTextBox2.Text تربيع ](assets/lessons/ict/exams/exam-p60-q5-c.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/exam-p60-q5-c.webp)\n\n**1. مجموعتا اللبنات:** `square root` من `Math`؛ والحدث `Button1.Click` من لبنات `Button1`.\n\n**2. وظيفة التطبيق:** عند النقر يقرأ العددين ثم يحسب الجذر التربيعي لمجموع مربعيهما؛ تصلح هذه العلاقة لوتر مثلث قائم إذا كان المدخلان طولي ضلعيه القائمين.\n\nالقوة 2 تعني ضرب العدد في نفسه. للمدخلين 3 و4:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>9</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mn>4</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>16</mn></mrow></math>\n```\n\nنجمع المربعين:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>9</mn><mo>+</mo><mn>16</mn><mo>=</mo><mn>25</mn></mrow></math>\n```\n\n`square root` تعيد العدد غير السالب الذي مربعه 25:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msqrt><mn>25</mn></msqrt><mo>=</mo><mn>5</mn></mrow></math>\n```\n\n**تظهر 5 في `Label1.Text`.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF)؛ تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "sourcePage": 60,
+    "answerPage": 66,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "5-c",
+    "marks": 4,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": true,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figurePage": 60,
+    "cropRect": [
+      58,
+      425.33,
+      512.67,
+      497.33
+    ],
+    "cropUnit": "pdf-points",
+    "figureAlt": "Button1.Click يعين Label1.Text إلى الجذر التربيعي لمجموع TextBox1.Text تربيع وTextBox2.Text تربيع",
+    "figureUnanswered": true,
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "figure": "assets/lessons/ict/exams/exam-p60-q5-c.webp",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 60](assets/lessons/ict/exams/source-crops/exam-p60-q5-c-question.webp) · [الإجابة ص 66](assets/lessons/ict/exams/source-crops/exam-p60-q5-c-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 60 · السؤال 5-c · 4 علامة",
+    "partOrder": 1,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p60-q5-d3",
+    "topic": "DCL",
+    "lessonId": "sql-queries",
+    "partId": "sql-introduction",
+    "bookPages": [
+      12,
+      33
+    ],
+    "question": "مجموعة من الأوامر لتحديد صلاحيات مستخدمي قواعد البيانات من حيث الوصول إلى مكوناتها واستخدامها:",
+    "explanation": "**الإجابة:** لغة التحكم في البيانات\n\n**الشاهد من الكتاب:**\n\n> لغة التحكم بالبيانات (DCL-Data Control Language)\n> مجموعة من الأوامر لتحديد صلاحيات مستخدمي قاعدة البيانات من حيث الوصول إلى مكوناتها واستخدامها.\n\n**المصدر:** صفحة 12 من الكتاب.",
+    "sourcePage": 60,
+    "answerPage": 66,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "5-d3",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "لغة تعريف البيانات",
+      "لغة التحكم في البيانات",
+      "لغة معالجة البيانات",
+      "لغة إخراج البيانات"
+    ],
+    "correctChoiceIndex": 1,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 60](assets/lessons/ict/exams/source-crops/exam-p60-q5-d3-question.webp) · [الإجابة ص 66](assets/lessons/ict/exams/source-crops/exam-p60-q5-d3-answer.webp)",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 60 · السؤال 5-d3",
+    "partOrder": 0,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 60 · السؤال 5-d3",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p61-q6-a3",
+    "topic": "باقي القسمة",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "bookPages": [
+      52
+    ],
+    "question": "عند تنفيذ اللبنات البرمجية المجاورة فإن قيمة Label1 هي:",
+    "explanation": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/9a9871bee96f47526192.webp)\n\n`modulo` تعيد باقي القسمة.\n\nنجد أكبر مضاعف لـ5 لا يتجاوز 18:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>5</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>15</mn></mrow></math>\n```\n\nنطرح هذا المضاعف من 18:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>18</mn><mo>−</mo><mn>15</mn><mo>=</mo><mn>3</mn></mrow></math>\n```\n\n**الباقي 3؛ فتظهر 3 في `Label1.Text`.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 49 مطبوعة (ص 51 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).",
+    "sourcePage": 61,
+    "answerPage": 67,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "6-a3",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": true,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "0",
+      "3",
+      "6",
+      "9"
+    ],
+    "correctChoiceIndex": 1,
+    "figurePage": 61,
+    "cropRect": [
+      54.67,
+      204.67,
+      262.67,
+      230
+    ],
+    "cropUnit": "pdf-points",
+    "figureAlt": "set Label1.Text to modulo of 18 ÷ 5",
+    "figureUnanswered": true,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "figure": "assets/lessons/curriculum-evidence/9a9871bee96f47526192.webp",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "example": "![set Label1.Text to modulo of 18 ÷ 5 ](assets/lessons/curriculum-evidence/9a9871bee96f47526192.webp)",
+    "reference": "[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-a3-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-a3-answer.webp)",
+    "originalFigure": "assets/lessons/ict/exams/exam-p61-q6-a3.webp",
+    "type": "mcq",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-a3",
+    "partOrder": 2,
+    "kicker": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-a3",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p61-q6-b",
+    "topic": "خصائص Access",
+    "lessonId": "database-management",
+    "partId": "access-basics",
+    "bookPages": [
+      3
+    ],
+    "question": "اذكر أربعًا من خصائص Microsoft Access.",
+    "answer": "**أربع خصائص لأكسس:**\n\n1. **علائقي:** يحفظ البيانات في جداول تربط بينها علاقات.\n2. **ملف واحد:** يجمع مكونات القاعدة في ملف واحد.\n3. **الاستيراد والتصدير:** ينقل البيانات من قواعد وبرامج أخرى وإليها.\n4. **المشاركة عبر الشبكة:** يتيح وصول عدة مستخدمين إلى القاعدة.\n\n**الشاهد من الكتاب 1:**\n\n> قاعدة بيانات علائقية: البيانات تأخذ شكل جداول ترتبط فيما بينها بعلاقات منطقية.\n\n\n\n**الشاهد من الكتاب 2:**\n\n> تجمع أكسس مكونات قاعدة البيانات في ملف واحد، ويأخذ الامتداد accdb، حيث أن الحد الأقصى لحجم هذا الملف 2GB\n\n\n\n**الشاهد من الكتاب 3:**\n\n> تمكن من استيراد وتصدير أنواع مختلفة من البيانات إلى قواعد بيانات وبرامج جداول إلكترونية أخرى.\n\n\n\n**الشاهد من الكتاب 4:**\n\n> إمكانية وضع قاعدة البيانات على شبكة حاسوب، مما يمكن عدة مستخدمين من الوصول إليها في آن واحد.\n\n**المصدر:** صفحة 3 من الكتاب.",
+    "sourcePage": 61,
+    "answerPage": 67,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "6-b",
+    "marks": 4,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-b-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-b-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-b · 4 علامة",
+    "partOrder": 15,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p61-q6-c2",
+    "topic": "الصورة في App Inventor",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "bookPages": [
+      43,
+      44
+    ],
+    "question": "في برنامج AppInventor، حدد: خاصية تستخدم لتحميل صورة إلى أداة image؟",
+    "answer": "**الإجابة:** `Picture`\n\n**الشاهد من الكتاب:**\n\n> خاصية Picture: لأداة Image1 بالضغط على الخاصية والضغط على الزر upload file ثم اختيار الملف كما في الشكل المجاور.\n\n**المصدر:** صفحة 44 من الكتاب.",
+    "sourcePage": 61,
+    "answerPage": 67,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "6-c2",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-c2-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-c2-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-c2",
+    "partOrder": 18,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p61-q6-c3",
+    "topic": "مجموعة الترتيب",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "bookPages": [
+      47,
+      48
+    ],
+    "question": "في تطبيق الحاسبة ببرنامج App Inventor، ما اسم الأداة التي يستخدمها مثال الكتاب لترتيب أزرار العمليات في صفين وثلاثة أعمدة؟",
+    "answer": "الإجابة: **`Table Arrangement`، أداة الترتيب الجدولي**.\n\n**الشاهد:** يسمي الكتاب الأداة `Table Arrangement` في بناء واجهة الحاسبة، ثم يوضح ترتيب الأزرار في صفين وثلاثة أعمدة من خلال خصائص الجدول.\n\n**الشاهد من الكتاب:**\n\n> أداة ترتيب الجدول (Table Arrangement)\n\n> ترتيب الأزرار أعلاه في صفين وثلاثة أعمدة، ويمكن عمل ذلك من خلال خصائص الجدول.\n\nالكتاب: أداة الترتيب الجدولي؛ ص48 المطبوعة، PDF50\n\nالكتاب: ترتيب أزرار الحاسبة في صفوف وأعمدة؛ ص49 المطبوعة، PDF51",
+    "sourcePage": 61,
+    "answerPage": 67,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "6-c3",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-c3-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-c3-answer.webp) · صياغة تعليمية معدّلة",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-c3",
+    "partOrder": 19,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p61-q6-c4",
+    "topic": "تهيئة الشاشة",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-interface",
+    "bookPages": [
+      49,
+      50,
+      51
+    ],
+    "question": "في برنامج AppInventor، حدد: وظيفة الحدث (Screen1.Initialize)؟",
+    "answer": "**الإجابة:** تنفيذ أوامر التهيئة عند فتح `Screen1`.\n\n**الشاهد من الكتاب:**\n\n> إخفاء صناديق الترتيب الأفقي الخاصة باستقبال المتغيرات\n> when Screen1.Initialize\n> set one_variable_box.Visible to false\n\n**المصدر:** صفحة 49 من الكتاب.",
+    "sourcePage": 61,
+    "answerPage": 67,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "6-c4",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-c4-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-c4-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-c4",
+    "partOrder": 2,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p61-q6-d3",
+    "topic": "المجسات والواقع الافتراضي",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "bookPages": [
+      38,
+      39
+    ],
+    "question": "علل: المجسات الثلاثة تعمل معاً في الواقع الافتراضي.",
+    "answer": "المحاكاة تحتاج إلى معرفة حركة الهاتف وميله واتجاهه؛ لذلك لا تؤدي المجسات الوظيفة نفسها.\n\n- التسارع يتتبع تغير الحركة الخطية.\n- الدوران يتتبع الميل وزوايا الحركة.\n- المغناطيسية يقيس المجال المغناطيسي ويساعد في تحديد الاتجاه.\n\nباجتماع هذه المعلومات يمكن تحديث المشهد مع حركة المستخدم، فتقترب المشاهدة من البيئة الحقيقية.\n\n**المصدر:** صفحة 39 من الكتاب.",
+    "sourcePage": 61,
+    "answerPage": 67,
+    "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
+    "originalNumber": "6-d3",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 61](assets/lessons/ict/exams/source-crops/exam-p61-q6-d3-question.webp) · [الإجابة ص 67](assets/lessons/ict/exams/source-crops/exam-p61-q6-d3-answer.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي، PDF ص 61 · السؤال 6-d3",
+    "partOrder": 23,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p68-q1-c",
+    "topic": "تحليل نظام مبيعات",
+    "lessonId": "database-management",
+    "partId": "engineering-office",
+    "bookPages": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "question": "لدى شركة الأمل للإنتاج الغذائي الجداول والصفات الآتية:\nكيان أصناف (كود الصنف، وصف الصنف)، كيان سلع (باركود السلعة، اسم السلعة، السعر، كود الصنف).\nكيان زبون (كود الزبون، اسم الزبون، الهاتف)، كيان مبيعات (متسلسل، كود الزبون، باركود السلعة، الكمية).\nملاحظة: إن الصنف الواحد العديد من السلع، يمكن للزبائن شراء السلع من خلال عمليات البيع.\nالمطلوب: 1. حدد المفاتيح الأجنبية. 2. ارسم مخطط ERD للنظام السابق.",
+    "answer": "المفتاح الأساسي يميز السجل؛ والمفتاح الأجنبي يشير إلى سجل في جدول آخر.\n\nنقرأ كل علاقة من كيان الأصل إلى السجلات التي تشير إليه.\n\nنبحث عن الحقول التي تشير إلى كيانات أخرى؛ فهي المفاتيح الأجنبية:\n\n| الكيان في الرسم | جميع صفاته |\n| --- | --- |\n| أصناف `Category` | كود الصنف **أساسي**، وصف الصنف |\n| سلع `Item` | باركود السلعة **أساسي**، اسم السلعة، السعر، كود الصنف **أجنبي** |\n| زبون `Customer` | كود الزبون **أساسي**، اسم الزبون، الهاتف |\n| مبيعات `Sale` | متسلسل **أساسي**، كود الزبون **أجنبي**، باركود السلعة **أجنبي**، الكمية |\n\nالصنف يضم عدة سلع، والسلعة ترد في عدة عمليات بيع، والزبون له عدة عمليات بيع. نرسمها هكذا، و`M` تعني متعددًا:\n\n![مخطط الحل العلاقي الكامل بالصفات والمفاتيح](assets/lessons/curriculum-evidence/62160918fcb59fab3e0e.svg)\n\nالمبيعات هي الوصلة بين الزبون والسلعة، و**الكمية** تخص عملية البيع؛ لذلك تبقى في جدول المبيعات.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 10 مطبوعة (ص 12 في PDF).",
+    "sourcePage": 68,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "1-c",
+    "marks": 6,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 68](assets/lessons/ict/exams/source-crops/exam-p68-q1-c-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 68 · السؤال 1-c · 6 علامة",
+    "partOrder": 0,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p69-q2-b",
+    "topic": "فائدة ومخاطرة الملف الواحد",
+    "lessonId": "database-management",
+    "partId": "access-basics",
+    "bookPages": [
+      3
+    ],
+    "question": "من خصائص أكسس أنها تقوم بتجميع مكونات قاعدة البيانات في ملف واحد، اذكر إيجابية وسلبية لهذه الخاصية؟",
+    "answer": "**الإيجابية:** التعامل مع مكونات القاعدة ونقلها أسهل لأنها مجموعة في ملف واحد.\n\n**السلبية:** تلف هذا الملف قد يؤدي إلى فقدان مكونات القاعدة جميعها إذا لم تتوفر نسخة احتياطية سليمة.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / خصائص أكسس، ص 3 مطبوعة (ص 5 في PDF).",
+    "sourcePage": 69,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "2-b",
+    "marks": 4,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q2-b-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 2-b · 4 علامة",
+    "partOrder": 16,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p69-q3-a2",
+    "topic": "مجس التسارع",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "bookPages": [
+      38
+    ],
+    "question": "المجس المستشعر لتغير سرعة حركة الجهاز باتجاه المحاور الثلاث x,y,z؟",
+    "explanation": "**الإجابة:** التسارع\n\n**الشاهد من الكتاب:**\n\n> التسارع (Accelerometer): مجس يستشعر التغير في سرعة حركة الجهاز باتجاه المحاور الثلاثة x, y, z، كما يقيس التسارع الخطي في حركته.\n\n**المصدر:** صفحة 39 من الكتاب.",
+    "sourcePage": 69,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "3-a2",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "التسارع",
+      "الدوران",
+      "Magnetometer",
+      "Gyroscope"
+    ],
+    "correctChoiceIndex": 0,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q3-a2-question.webp)",
+    "type": "mcq",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-a2",
+    "partOrder": 1,
+    "kicker": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-a2",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p69-q3-d1",
+    "topic": "ORDER BY DESC",
+    "lessonId": "sql-queries",
+    "partId": "order-practice",
+    "bookPages": [
+      16,
+      18,
+      19,
+      20
+    ],
+    "question": "اكتب جملة SQL: عرض جميع حقول جدول Teacher تنازلياً حسب حقل BDate.",
+    "answer": "النجمة تعرض جميع حقول `Teacher`. نضع حقل الترتيب بعد `ORDER BY` ثم `DESC` لأن المطلوب تنازلي.\n\n```sql\nSELECT * FROM Teacher\nORDER BY BDate DESC;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF).",
+    "sourcePage": 69,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "3-d1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q3-d1-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-d1",
+    "partOrder": 1,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p69-q3-d2",
+    "topic": "DELETE بشروط متعددة",
+    "lessonId": "sql-queries",
+    "partId": "delete-review",
+    "bookPages": [
+      14,
+      15,
+      25,
+      30,
+      31,
+      32,
+      33
+    ],
+    "question": "اكتب جملة SQL: احذف من جدول Car السيارات التي صنعت Pdate قبل 1/1/2000 وسعرها Price أقل من 15000.",
+    "answer": "يجب تحقق شرط التاريخ وشرط السعر معًا، فنستخدم `AND`. نكتب تاريخ `Access` بين علامتي `#`، و«قبل» و«أقل من» لا تشملان المساواة.\n\n```sql\nDELETE FROM Car\nWHERE Pdate < #2000-01-01# AND Price < 15000;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 15 مطبوعة (ص 17 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 30 مطبوعة (ص 32 في PDF).",
+    "sourcePage": 69,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "3-d2",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q3-d2-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-d2",
+    "partOrder": 6,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p69-q3-d3",
+    "topic": "INSERT SELECT",
+    "lessonId": "sql-queries",
+    "partId": "insert-queries",
+    "bookPages": [
+      28,
+      29
+    ],
+    "question": "اكتب جملة SQL: ألحق من جدول Stud لجدول Stud2 كل من الحقول (id, Name).",
+    "answer": "الوجهة هي `Stud2` والمصدر هو `Stud`. نستخدم `SELECT` لجلب الرقم والاسم من المصدر بالترتيب نفسه.\n\n```sql\nINSERT INTO Stud2 (id, [Name])\nSELECT id, [Name] FROM Stud;\n```\n\nالإلحاق ينسخ السجلات؛ لا يحذفها من `Stud`.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 29 مطبوعة (ص 31 في PDF).",
+    "sourcePage": 69,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "3-d3",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q3-d3-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-d3",
+    "partOrder": 7,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p69-q3-d4",
+    "topic": "UPDATE جميع السجلات",
+    "lessonId": "sql-queries",
+    "partId": "update-queries",
+    "bookPages": [
+      25,
+      26,
+      27,
+      34
+    ],
+    "question": "اكتب جملة SQL: أضف 5 علامات لجميع الطلاب (اسم الجدول Student، حقل العلامات Mark).",
+    "answer": "نضيف **5 علامات** إلى العلامة القديمة؛ لذا نستخدم الجمع. المطلوب جميع الطلاب، فلا نضع شرط `WHERE`.\n\n```sql\nUPDATE Student\nSET Mark = Mark + 5;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 25 مطبوعة (ص 27 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).",
+    "sourcePage": 69,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "3-d4",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 69](assets/lessons/ict/exams/source-crops/exam-p69-q3-d4-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 69 · السؤال 3-d4",
+    "partOrder": 4,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p70-q4-b1",
+    "topic": "متطلبات الواقع الافتراضي",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "bookPages": [
+      38,
+      39
+    ],
+    "question": "علل: بعض الأجهزة الذكية لا تحقق المشاهدة المطلوبة عند تجربة تقنية الواقع الافتراضي.",
+    "answer": "**لعدم توافر المجسات التي يعتمد عليها وصف التجربة في الكتاب، أو عدم دعمها بالشكل المطلوب.**\n\nهذه المجسات هي التسارع والدوران والمغناطيسية، وتعمل معًا لتتبع الحركة والاتجاه.\n\n**مرجع الكتاب:** الدرس الأول: أنظمة تشغيل الهاتف الذكي، ص 38 مطبوعة (ص 40 في PDF)؛ الدرس الأول: أنظمة تشغيل الهاتف الذكي، ص 39 مطبوعة (ص 41 في PDF).",
+    "sourcePage": 70,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "4-b1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 70](assets/lessons/ict/exams/source-crops/exam-p70-q4-b1-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 70 · السؤال 4-b1",
+    "partOrder": 24,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p70-q4-b2",
+    "topic": "اختيار Memo",
+    "lessonId": "database-management",
+    "partId": "tables-and-types",
+    "bookPages": [
+      6
+    ],
+    "question": "علل: قام المبرمج بوضع نوع البيانات لحقل (وصف الحادث) من نوع مذكرة.",
+    "answer": "وصف الحادث قد يحتاج جملًا كثيرة، فيتجاوز سعة **نص `Text`** البالغة 255 رمزًا.\n\nلذلك نختار **مذكرة `Memo`** لأنها مخصصة للنصوص الطويلة.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء جدول وتعيين المفاتيح، ص 6 مطبوعة (ص 8 في PDF).",
+    "sourcePage": 70,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "4-b2",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 70](assets/lessons/ict/exams/source-crops/exam-p70-q4-b2-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 70 · السؤال 4-b2",
+    "partOrder": 16,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p71-q5-a3",
+    "topic": "الاسم البرمجي",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "bookPages": [
+      43,
+      44,
+      47
+    ],
+    "question": "لإعادة تسمية الأدوات في برنامج أب انفتور:",
+    "explanation": "**الإجابة:** `Rename`\n\n**الشاهد من الكتاب:**\n\n> كما يمكن إعادة تسمية الأزرار من خلال (Rename) الموجودة في قائمة (Component) بالبرنامج.\n\n**المصدر:** صفحة 49 من الكتاب.",
+    "sourcePage": 71,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "5-a3",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "Properties",
+      "Retext",
+      "Text",
+      "Rename"
+    ],
+    "correctChoiceIndex": 3,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-a3-question.webp)",
+    "type": "mcq",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-a3",
+    "partOrder": 1,
+    "kicker": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-a3",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p71-q5-b1",
+    "topic": "مفاتيح وعلاقات",
+    "lessonId": "database-management",
+    "partId": "keys-and-relations",
+    "bookPages": [
+      6,
+      8,
+      9,
+      10,
+      11
+    ],
+    "question": "لديك الجداول التالية من برنامج أكسس، أجب عن الأسئلة التي تليها:\n\nSubject\n\n| Sid | SName |\n|---|---|\n| A5 | اللغة العربية |\n| B6 | جغرافيا |\n| C3 | حاسوب |\n\nBook\n\n| BId | BName | Sid |\n|---|---|---|\n| 100 | النحو | A5 |\n| 200 | العروض | A5 |\n| 300 | DB | C3 |\n\n1. حدد مفتاحاً أساسياً ومفتاحاً أجنبياً.\n2. ما العلاقة بين جدول Subject وجدول Book؟\n3. ما نوع البيانات لكل حقل في جدول Subject؟",
+    "answer": "**المفتاح الأساسي** يميز سجلًا واحدًا دون تكرار.\n\n**المفتاح الأجنبي** يشير إلى مفتاح أساسي في جدول آخر.\n\nنحدد الحقل الذي يميز سجل الجدول، ثم الحقل الذي يشير إلى جدول آخر:\n\n| الجدول | المفتاح الأساسي | المفتاح الأجنبي |\n| --- | --- | --- |\n| `Subject` | `Sid` | لا يظهر فيه مفتاح أجنبي. |\n| `Book` | `BId` | `Sid`، ويشير إلى `Subject`. |\n\nيتكرر الرمز `A5` في كتابَي النحو والعروض؛ فالموضوع الواحد له عدة كتب. إذن من **`Subject` إلى `Book`: واحد إلى متعدد**.\n\nنختار **نص `Text`** لكل حقول `Subject`: `Sid` لأنه يحتوي رموزًا مثل `A5`، و`SName` لأنه اسم الموضوع.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء جدول وتعيين المفاتيح، ص 6 مطبوعة (ص 8 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF).",
+    "sourcePage": 71,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "5-b1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 71,
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-b1-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-b1",
+    "partOrder": 12,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p71-q5-b4",
+    "topic": "استعلام جدولين",
+    "lessonId": "sql-queries",
+    "partId": "related-tables",
+    "bookPages": [
+      21,
+      22,
+      23
+    ],
+    "question": "لديك الجداول التالية من برنامج أكسس، أجب عن الأسئلة التي تليها:\n\nSubject\n\n| Sid | SName |\n|---|---|\n| A5 | اللغة العربية |\n| B6 | جغرافيا |\n| C3 | حاسوب |\n\nBook\n\n| BId | BName | Sid |\n|---|---|---|\n| 100 | النحو | A5 |\n| 200 | العروض | A5 |\n| 300 | DB | C3 |\n\nاكتب جملة SQL اللازمة لعرض عدد الكتب من موضوع اللغة العربية.",
+    "answer": "`COUNT` تعد القيم غير الفارغة في الحقل؛ ورقم الكتاب مفتاح لا يكون فارغًا في هذا النموذج.\n\nنحتاج ربط الكتاب بموضوعه حتى نعد كتب اللغة العربية وحدها.\n\nنربط الكتاب بموضوعه بمساواة `Sid`. بعدها نختار موضوع اللغة العربية ونعد أرقام كتبه بـ `COUNT`.\n\n```sql\nSELECT COUNT(Book.BId) AS [عدد الكتب]\nFROM Book, Subject\nWHERE Book.Sid = Subject.Sid\n  AND Subject.SName = \"اللغة العربية\";\n```\n\nالموضوع `A5` له الكتابان 100 و200؛ النتيجة **2**.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 23 مطبوعة (ص 25 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 24 مطبوعة (ص 26 في PDF).",
+    "sourcePage": 71,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "5-b4",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 71,
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-b4-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-b4",
+    "partOrder": 0,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p71-q5-b5",
+    "topic": "UPDATE نص",
+    "lessonId": "sql-queries",
+    "partId": "update-queries",
+    "bookPages": [
+      25,
+      26,
+      27
+    ],
+    "question": "لديك الجداول التالية من برنامج أكسس، أجب عن الأسئلة التي تليها:\n\nSubject\n\n| Sid | SName |\n|---|---|\n| A5 | اللغة العربية |\n| B6 | جغرافيا |\n| C3 | حاسوب |\n\nBook\n\n| BId | BName | Sid |\n|---|---|---|\n| 100 | النحو | A5 |\n| 200 | العروض | A5 |\n| 300 | DB | C3 |\n\nاكتب جملة SQL لتحديث اسم الكتاب DB ليصبح (قواعد البيانات).",
+    "answer": "نستخدم الاسم القديم في `WHERE` لاختيار الكتاب، والاسم الجديد بعد `SET` لتغييره.\n\n```sql\nUPDATE Book\nSET BName = \"قواعد البيانات\"\nWHERE BName = \"DB\";\n```\n\nالسجل المقصود في الجدول رقمه **300**.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 25 مطبوعة (ص 27 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).",
+    "sourcePage": 71,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "5-b5",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 71,
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-b5-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-b5",
+    "partOrder": 5,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p71-q5-b6",
+    "topic": "ناتج SELECT",
+    "lessonId": "sql-queries",
+    "partId": "select-order",
+    "bookPages": [
+      16,
+      17,
+      18
+    ],
+    "question": "لديك الجداول التالية من برنامج أكسس، أجب عن الأسئلة التي تليها:\n\nSubject\n\n| Sid | SName |\n|---|---|\n| A5 | اللغة العربية |\n| B6 | جغرافيا |\n| C3 | حاسوب |\n\nBook\n\n| BId | BName | Sid |\n|---|---|---|\n| 100 | النحو | A5 |\n| 200 | العروض | A5 |\n| 300 | DB | C3 |\n\nما ناتج تنفيذ الجملة؟\n```sql\nSelect BName from Book Where Bid=200;\n```",
+    "answer": "نبدأ بالشرط `BId=200` فنجد سجل كتاب **العروض**.\n\nبعد `SELECT` حقل `BName` فقط؛ لذلك يظهر اسمه دون بقية الحقول.\n\n| `BName` |\n| --- |\n| العروض |\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 19 مطبوعة (ص 21 في PDF).",
+    "sourcePage": 71,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "5-b6",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourceTablePage": 71,
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان. عرض الجدول نصياً يحافظ على بيانات الشكل الأصلي.",
+    "reference": "[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-b6-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-b6",
+    "partOrder": 3,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p71-q5-c",
+    "topic": "الفرق بين set وget",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-blocks",
+    "bookPages": [
+      44,
+      45,
+      49,
+      50
+    ],
+    "question": "ما الفرق بين اللبنة set global x، get global x؟",
+    "answer": "**الفرق بين اللبنتين:**\n\n| اللبنة | الوظيفة |\n| --- | --- |\n| `set global x` | إسناد قيمة إلى المتغير `x` أو تغيير قيمته. |\n| `get global x` | قراءة القيمة الحالية للمتغير `x`. |\n\n**الشاهد من الكتاب 1:**\n\n> متغير معامل السمنة تم تعريفه سابقاً ويتم إحضاره من مجموعة المتغيرات.\n> get global factor\n\n**المصدر:** صفحة 45 من الكتاب.\n\n\n\n**الشاهد من الكتاب 2:**\n\n> set global Var1 to txt_var1.Text\n> set global Var2 to txt_var2.Text\n> set lbl_Result.Text to get global Var1 + get global Var2\n\n**المصدر:** صفحة 51 من الكتاب.",
+    "sourcePage": 71,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "5-c",
+    "marks": 4,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q5-c-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 5-c · 4 علامة",
+    "partOrder": 4,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p71-q6-a1",
+    "topic": "أداة الإخراج",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "bookPages": [
+      43,
+      44
+    ],
+    "question": "أداة تستخدم للتسمية وإخراج النتائج في برنامج أب انفتور؟",
+    "explanation": "**الإجابة:** `Label`\n\n**الشاهد من الكتاب:**\n\n> أداة Label (مربع التسمية): من مجموعة User Interface العدد (6) لعنونة مربعات النصوص ولتوضيح المطلوب إدخاله، ولإخراج النتائج وعنونتها.\n\n**المصدر:** صفحة 44 من الكتاب.",
+    "sourcePage": 71,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "6-a1",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "TextBox",
+      "Button",
+      "Image",
+      "Label"
+    ],
+    "correctChoiceIndex": 3,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q6-a1-question.webp)",
+    "type": "mcq",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 6-a1",
+    "partOrder": 2,
+    "kicker": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 6-a1",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p71-q6-a3",
+    "topic": "امتداد Access",
+    "lessonId": "database-management",
+    "partId": "access-basics",
+    "bookPages": [
+      3
+    ],
+    "question": "امتداد ملفات مايكروسفت أكسس",
+    "explanation": "**الإجابة:** `accdb`\n\n**الشاهد من الكتاب:**\n\n> تجمع أكسس مكونات قاعدة البيانات في ملف واحد، ويأخذ الامتداد accdb، حيث أن الحد الأقصى لحجم هذا الملف 2GB\n\n**المصدر:** صفحة 3 من الكتاب.",
+    "sourcePage": 71,
+    "answerPage": null,
+    "paperLabel": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي",
+    "originalNumber": "6-a3",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "db",
+      "acdb",
+      "accdb",
+      "access"
+    ],
+    "correctChoiceIndex": 2,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 71](assets/lessons/ict/exams/source-crops/exam-p71-q6-a3-question.webp)",
+    "type": "mcq",
+    "title": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 6-a3",
+    "partOrder": 4,
+    "kicker": "جنين — الامتحان النهائي للفصل الأول 2024/2025 — 2025/01/14 — العلمي والصناعي، PDF ص 71 · السؤال 6-a3",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p73-q1-4",
+    "topic": "Double",
+    "lessonId": "database-management",
+    "partId": "tables-and-types",
+    "bookPages": [
+      6
+    ],
+    "question": "في برنامج أكسس (MS-Access) ما هو الحجم التخزيني لنوع البيانات عدد كسري مزدوج؟",
+    "explanation": "**الإجابة:** 8 بايت\n\n**الشاهد من الكتاب:**\n\n> رقم (Number): للقيم الرقمية، ويقبل تخزين سعات مختلفة حسب النوع المحدد، والأنواع الرقمية هي: بايت، عدد صحيح Integer (2 بايت)، عدد صحيح مطول Integer Long (4 بايت)، عدد كسري مفرد Single (4 بايت)، وعدد كسري مزدوج Double (8 بايت).\n\n**المصدر:** صفحة 6 من الكتاب.",
+    "sourcePage": 73,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "1-4",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "بايت",
+      "2 بايت",
+      "4 بايت",
+      "8 بايت"
+    ],
+    "correctChoiceIndex": 3,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 73](assets/lessons/ict/exams/source-crops/exam-p73-q1-4-question.webp)",
+    "type": "mcq",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-4",
+    "partOrder": 2,
+    "kicker": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-4",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p73-q1-5",
+    "topic": "العلاقة واحد لمتعدد",
+    "lessonId": "database-management",
+    "partId": "keys-and-relations",
+    "bookPages": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "question": "ما درجة العلاقة التي تصف (كل سجل بالجدول الأول مرتبط بعدة سجلات بالجدول الثاني والعكس غير صحيح)؟",
+    "explanation": "العلاقة **واحد إلى متعدد من الجدول الأول إلى الثاني**.\n\nسجل واحد في الأول يقابله عدة سجلات في الثاني.\n\nكل سجل في الثاني يشير إلى سجل واحد في الأول؛ لذلك لا تنعكس العلاقة إلى متعدد من الجهتين.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF).",
+    "sourcePage": 73,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "1-5",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "واحد واحد",
+      "واحد لمتعدد",
+      "متعدد واحد",
+      "متعدد لمتعدد"
+    ],
+    "correctChoiceIndex": 1,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 73](assets/lessons/ict/exams/source-crops/exam-p73-q1-5-question.webp)",
+    "type": "mcq",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-5",
+    "partOrder": 0,
+    "kicker": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-5",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p73-q1-8",
+    "topic": "تعدد التطبيقات",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "bookPages": [
+      37
+    ],
+    "question": "ما الميزة التي تمكن المستخدم من تشغيل أكثر من تطبيق على الشاشة؟",
+    "explanation": "**الإجابة:** الإطارات المتعددة\n\n**الشاهد من الكتاب:**\n\n> الإطار المتعدد: تشغيل أكثر من تطبيق على شاشة الهاتف معاً.\n\n**المصدر:** صفحة 37 من الكتاب.",
+    "sourcePage": 73,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "1-8",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "الإطارات المتعددة",
+      "القيود",
+      "التمرير الذكي",
+      "الأمان"
+    ],
+    "correctChoiceIndex": 0,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 73](assets/lessons/ict/exams/source-crops/exam-p73-q1-8-question.webp)",
+    "type": "mcq",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-8",
+    "partOrder": 2,
+    "kicker": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 73 · السؤال 1-8",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p74-q2-b",
+    "topic": "ERD وعلاقة متعدد لمتعدد",
+    "lessonId": "database-management",
+    "partId": "education-center",
+    "bookPages": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "question": "من خلال دراستك لقواعد البيانات، تأمل النظام الآتي ثم أجب عن الأسئلة التي تليه:\nفي تحليل نظام مكتب سياحة وسفر نتجت الكيانات التالية:\n- المسافر (رقم المسافر، اسم المسافر، رقم الهاتف).\n- الرحلة (رقم الرحلة، اسم الرحلة، تاريخ الرحلة، تكلفة الرحلة).\n- مسافر - رحلة (رقم متسلسل، رقم المسافر، رقم الرحلة).\nعلماً أن الرحلة تضم أكثر من مسافر، ويمكن للمسافر الاشتراك بأكثر من رحلة.\n1. ارسم مخطط ERD للنظام موضحاً العلاقات بين الكيانات؟\n2. اذكر المفاتيح الأجنبية إن وجدت مع ذكر اسم الجدول؟",
+    "answer": "المسافر يشترك في عدة رحلات، والرحلة تضم عدة مسافرين؛ لذلك يمثل **مسافر-رحلة** الوصلة بينهما.\n\n| الكيان في الرسم | صفاته |\n| --- | --- |\n| المسافر `Traveler` | رقم المسافر **أساسي**، اسم المسافر، رقم الهاتف |\n| الرحلة `Trip` | رقم الرحلة **أساسي**، اسم الرحلة، تاريخ الرحلة، تكلفة الرحلة |\n| مسافر-رحلة `Booking` | رقم متسلسل **أساسي**، رقم المسافر **أجنبي**، رقم الرحلة **أجنبي** |\n\nنربط كل أصل بالوصلة بعلاقة واحد إلى متعدد، و`M` تعني متعددًا:\n\n![مخطط الحل العلاقي الكامل بالصفات والمفاتيح](assets/lessons/curriculum-evidence/412299b74cd96c338e60.svg)\n\nإذن المفتاحان الأجنبيان هما **رقم المسافر ورقم الرحلة في جدول مسافر-رحلة**؛ وكل منهما يشير إلى المفتاح الأساسي الموافق له. الرقم المتسلسل يبقى مفتاح الوصلة المعطى.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء جدول وتعيين المفاتيح، ص 6 مطبوعة (ص 8 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF)؛ الدرس الأول: برنامج إدارة قواعد البيانات / تطبيقات العلاقات والمفاتيح، ص 9 مطبوعة (ص 11 في PDF).",
+    "sourcePage": 74,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "2-b",
+    "marks": 9,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q2-b-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 2-b · 9 علامة",
+    "partOrder": 1,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p74-q2-d1",
+    "topic": "أهمية DBMS",
+    "lessonId": "database-management",
+    "partId": "access-basics",
+    "bookPages": [
+      3
+    ],
+    "question": "علل: تعد برامج إدارة قواعد البيانات من أكثر برامج الحاسوب انتشاراً؟",
+    "answer": "**الإجابة:** لأنها تخزن البيانات وتعالجها بالإدخال والحذف والتحديث والاسترجاع وإصدار التقارير.\n\n**الشاهد من الكتاب:**\n\n> تعد برامج إدارة قواعد البيانات من أكثر برامج الحاسوب انتشاراً، حيث تقوم بتخزين البيانات ومعالجتها من إدخال، وحذف، وتحديث، واسترجاع وإصدار التقارير.\n\n**المصدر:** صفحة 3 من الكتاب.",
+    "sourcePage": 74,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "2-d1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q2-d1-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 2-d1",
+    "partOrder": 17,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p74-q2-d2",
+    "topic": "أندرويد مفتوح المصدر",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "android-features",
+    "bookPages": [
+      36
+    ],
+    "question": "علل: يعد نظام التشغيل أندرويد نظام مفتوح المصدر؟",
+    "answer": "**الإجابة:** لأنه يتيح للمطورين كتابة الشيفرة المصدرية وتعديلها.\n\n**الشاهد من الكتاب:**\n\n> نظام أندرويد مفتوح المصدر يسمح للمطورين بكتابة وتعديل الشيفرة المصدرية لنظام التشغيل بلغة جافا، والتي تمكن من التحكم بأداء الهاتف، وإضافة ميزات جديدة على النظام\n\n**المصدر:** صفحة 36 من الكتاب.",
+    "sourcePage": 74,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "2-d2",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q2-d2-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 2-d2",
+    "partOrder": 25,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p74-q3-b1",
+    "topic": "INSERT VALUES",
+    "lessonId": "sql-queries",
+    "partId": "insert-queries",
+    "bookPages": [
+      27
+    ],
+    "question": "تأمل الجداول الآتية جيداً، ثم اكتب أوامر SQL لتنفيذ الاستعلامات التي تليها:\ndoctor (dr_id, dr_name, salary, dep_no)\ndepartment (dep_no, dep_name)\nإضافة سجل للجدول (doctor) بالبيانات الآتية: (dr_id=22, dr_name=ahmad, salary=4500, dep_no=3).",
+    "answer": "![الرسم الأصلي للعلاقة بين الطبيب والقسم](assets/lessons/curriculum-evidence/86cf99c558bb05d7b4d1.webp)\n\nنرتب القيم مثل الحقول: رقم الطبيب، اسمه، راتبه، ثم رقم القسم. الاسم نص فنضعه بين اقتباسين.\n\n```sql\nINSERT INTO doctor (dr_id, dr_name, salary, dep_no)\nVALUES (22, \"ahmad\", 4500, 3);\n```\n\nعند فرض التكامل المرجعي، يجب أن يكون القسم 3 موجودًا.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 27 مطبوعة (ص 29 في PDF).",
+    "sourcePage": 74,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "3-b1",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "marksNote": "تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q3-b1-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 3-b1",
+    "partOrder": 8,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p74-q3-b2",
+    "topic": "حذف بمعامل",
+    "lessonId": "sql-queries",
+    "partId": "delete-review",
+    "bookPages": [
+      30,
+      31,
+      32,
+      33
+    ],
+    "question": "doctor (dr_id, dr_name, salary, dep_no)\ndepartment (dep_no, dep_name)\nاكتب أمر SQL: حذف الطبيب الذي يتم إدخال رقمه (dr_id) من قبل المستخدم.",
+    "answer": "![الرسم الأصلي للعلاقة بين الطبيب والقسم](assets/lessons/curriculum-evidence/86cf99c558bb05d7b4d1.webp)\n\nالرقم غير ثابت؛ يحدده المستخدم. نضع طلب إدخاله في شرط رقم الطبيب بين أقواس مربعة.\n\n```sql\nDELETE FROM doctor\nWHERE dr_id = [أدخل رقم الطبيب];\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 32 مطبوعة (ص 34 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 33 مطبوعة (ص 35 في PDF).",
+    "sourcePage": 74,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "3-b2",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "marksNote": "تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q3-b2-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 3-b2",
+    "partOrder": 7,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p74-q3-b3",
+    "topic": "ربط جدولين",
+    "lessonId": "sql-queries",
+    "partId": "related-tables",
+    "bookPages": [
+      21,
+      22,
+      23
+    ],
+    "question": "doctor (dr_id, dr_name, salary, dep_no)\ndepartment (dep_no, dep_name)\nاكتب أمر SQL: عرض اسم القسم (dep_name) مع أسماء الأطباء (dr_name) الذين يعملون فيه.",
+    "answer": "![الرسم الأصلي للعلاقة بين الطبيب والقسم](assets/lessons/curriculum-evidence/86cf99c558bb05d7b4d1.webp)\n\nاسم القسم في جدول واسم الطبيب في آخر، لذلك نستخدم الجدولين. مساواة `dep_no` تربط كل طبيب بقسمه الصحيح.\n\n```sql\nSELECT department.dep_name, doctor.dr_name\nFROM department, doctor\nWHERE department.dep_no = doctor.dep_no;\n```\n\nكتابة اسم الجدول قبل الحقل تميز حقلي `dep_no` المتشابهين.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 23 مطبوعة (ص 25 في PDF).",
+    "sourcePage": 74,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "3-b3",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "marksNote": "تندرج ضمن مجموعة أسئلة ذات مجموع مطبوع؛ لم توزع الدرجات اجتهادياً على الفقرات.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 74](assets/lessons/ict/exams/source-crops/exam-p74-q3-b3-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 74 · السؤال 3-b3",
+    "partOrder": 1,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p75-q4-b",
+    "topic": "تتبع تطبيق BMI",
+    "lessonId": "my-mobile-app",
+    "partId": "bmi-interface",
+    "bookPages": [
+      43,
+      44,
+      45,
+      46,
+      52
+    ],
+    "question": "من خلال دراستك لبرنامج App Inventor، تأمل اللبنات البرمجية الآتية ثم أجب عن الأسئلة:\n1. ما اسم الحدث واسم الأداة التي وقع عليها الحدث؟\n2. اسم أداة إدخال واسم أداة إخراج؟\n3. إذا كانت قيمة factor هي 35 ماذا يظهر في label5؟\n\n![برنامج عامل الوزن: حساب factor ثم شروط ≤20 و≤25 و≤30 وفرع else ](assets/lessons/curriculum-evidence/509e21f8457280979473.webp)",
+    "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/509e21f8457280979473.webp)\n\n`if` و`else if` تُفحص بالترتيب؛ عند نجاح شرط يتوقف اختيار الفروع اللاحقة.\n\nنتبع عوامل المقارنة الفعلية في صورة هذا السؤال؛ وهي ≤، وتختلف عن عوامل `<` في نشاط الكتاب.\n\n1. رأس المقطع هو `Button1.Click`؛ إذن الحدث **`Click`** على الزر **`Button1`**.\n2. تُقرأ القيم من `TextBox1` و`TextBox2`؛ فكلاهما أداة إدخال. وتعرض `Label5` رسالة النتيجة.\n3. **عند `factor = 35`:** نختبر الشروط بالترتيب:\n\n   | الشرط | النتيجة |\n   | --- | --- |\n   | `35 <= 20` | خطأ. |\n   | `35 <= 25` | خطأ. |\n   | `35 <= 30` | خطأ. |\n\n   لا يتحقق أي شرط؛ فنصل إلى `else`، وتظهر العبارة **«زيادة مفرطة»** في `Label5.Text`.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 45 مطبوعة (ص 47 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 46 مطبوعة (ص 48 في PDF).",
+    "sourcePage": 75,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "4-b",
+    "marks": 5,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": true,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "figurePage": 75,
+    "cropRect": [
+      57.33,
+      337.33,
+      457.33,
+      528
+    ],
+    "cropUnit": "pdf-points",
+    "figureAlt": "برنامج عامل الوزن: حساب factor ثم شروط <20 و<25 و<30 وفرع else",
+    "figureUnanswered": true,
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "figure": "assets/lessons/curriculum-evidence/509e21f8457280979473.webp",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 75](assets/lessons/ict/exams/source-crops/exam-p75-q4-b-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "originalFigure": "assets/lessons/ict/exams/exam-p75-q4-b.webp",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 75 · السؤال 4-b · 5 علامة",
+    "partOrder": 0,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p76-q5-b1",
+    "topic": "أسباب فشل الإدخال",
+    "lessonId": "sql-queries",
+    "partId": "insert-queries",
+    "bookPages": [
+      27
+    ],
+    "question": "اذكر ثلاثة أسباب قد تمنع من تنفيذ استعلام الإدخال؟",
+    "answer": "**أسباب قد تمنع الإدخال أو الإلحاق:**\n\n1. **تكرار المفتاح الأساسي:** الرقم موجود مسبقًا.\n2. **مخالفة التكامل المرجعي:** قيمة المفتاح الأجنبي غير مسموحة عند فرضه.\n3. **اختلاف نوع البيانات:** القيمة لا تتوافق مع نوع الحقل.\n\n**الشاهد من الكتاب:**\n\n> لاحظ أن هذا الأمر قد لا يوفق في الإدخال للأسباب الآتية:\n> تكرار في المفتاح.\n> قيمة المفتاح الأجنبي غير مسموحة.\n> نوعية القيمة تختلف عن نوعية الحقل المسند له كأن تسند قيمة نصية لحقل عددي.\n\n**المصدر:** صفحة 27 من الكتاب.",
+    "sourcePage": 76,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "5-b1",
+    "marks": 3,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 76](assets/lessons/ict/exams/source-crops/exam-p76-q5-b1-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 76 · السؤال 5-b1 · 3 علامة",
+    "partOrder": 9,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p76-q5-b2a",
+    "topic": "SELECT بتاريخ وترتيب",
+    "lessonId": "sql-queries",
+    "partId": "where-conditions",
+    "bookPages": [
+      18,
+      19,
+      20,
+      21,
+      25
+    ],
+    "question": "اكتب أوامر SQL اللازمة لتنفيذ الاستعلامات المطلوبة: عرض جميع بيانات المهندسين من جدول المهندس (Engineer) والذين تم تعيينهم قبل تاريخ 20/8/2023 مرتبة تصاعدياً حسب اسم المهندس إذا علمت أن حقل تاريخ التعيين (Hdate) واسم المهندس (Eng_Name).",
+    "answer": "`SELECT` يسترجع الحقول المطلوبة، و`WHERE` يختار السجلات، و`ORDER BY` يرتب الناتج بعد اختيارها.\n\nنختار جميع الحقول بالنجمة، ثم نرشح تاريخ التعيين قبل 20 آب 2023. يأتي الفرز بعد الشرط، و`ASC` تعني تصاعديًا.\n\n```sql\nSELECT * FROM Engineer\nWHERE Hdate < #2023-08-20#\nORDER BY Eng_Name ASC;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 19 مطبوعة (ص 21 في PDF).",
+    "sourcePage": 76,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "5-b2a",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 76](assets/lessons/ict/exams/source-crops/exam-p76-q5-b2a-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 76 · السؤال 5-b2a",
+    "partOrder": 8,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p76-q5-b2b",
+    "topic": "COUNT مع عنوان عمود",
+    "lessonId": "sql-queries",
+    "partId": "count-parameters",
+    "bookPages": [
+      23,
+      24
+    ],
+    "question": "اكتب أوامر SQL اللازمة لتنفيذ الاستعلامات المطلوبة: إيجاد عدد الطلاب في المدرسة من جدول (Student) وعرض النتيجة في عمود جديد باسم عدد الطلاب إذا علمت أن حقل رقم الطالب (Stno).",
+    "answer": "نعد أرقام الطلاب باستخدام `COUNT`. نضع الاسم المطلوب للنتيجة بعد `AS`؛ الأقواس تجمع كلمات اسم العمود.\n\n```sql\nSELECT COUNT(Stno) AS [عدد الطلاب]\nFROM Student;\n```\n\nالنتيجة عدد الطلاب ذوي الرقم غير الفارغ، وليست مجموع أرقامهم.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 24 مطبوعة (ص 26 في PDF).",
+    "sourcePage": 76,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "5-b2b",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 76](assets/lessons/ict/exams/source-crops/exam-p76-q5-b2b-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 76 · السؤال 5-b2b",
+    "partOrder": 4,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p77-q6-b1a",
+    "topic": "تفسير SELECT",
+    "lessonId": "sql-queries",
+    "partId": "sql-questions",
+    "bookPages": [
+      16,
+      19,
+      20,
+      25
+    ],
+    "question": "ما وظيفة الاستعلام التالي؟\n```sql\nSelect [Name], Date_Hiring\nFrom Teacher\nwhere Date_Hiring<>#1/2/2002#\n```",
+    "answer": "`SELECT` يحدد حقلي **الاسم وتاريخ التعيين**، و`FROM` يحدد جدول `Teacher`.\n\nالعامل `<>` يعني **لا يساوي**؛ فتظهر السجلات التي لا يساوي تاريخ تعيينها التاريخ المكتوب `#1/2/2002#`.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 19 مطبوعة (ص 21 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 20 مطبوعة (ص 22 في PDF).",
+    "sourcePage": 77,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "6-b1a",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 77](assets/lessons/ict/exams/source-crops/exam-p77-q6-b1a-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 77 · السؤال 6-b1a",
+    "partOrder": 2,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p77-q6-b1b",
+    "topic": "تفسير الإلحاق",
+    "lessonId": "sql-queries",
+    "partId": "sql-questions",
+    "bookPages": [
+      28,
+      29
+    ],
+    "question": "ما وظيفة الاستعلام التالي؟\n```sql\nInsert Into Student2(St_Num,St_Name)\nSelect Student.St_Num,Student.St_Name\nFrom Student\nWhere Student.St_Name=\"قاسم\"\n```",
+    "answer": "نقرأ الوجهة أولًا: `Student2`. ثم يختار `SELECT` رقم الطالب واسمه من `Student`.\n\nشرط الاسم `\"قاسم\"` يرشح المصدر؛ **تُلحق جميع السجلات المطابقة**، وليس سجلًا واحدًا بالضرورة.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 29 مطبوعة (ص 31 في PDF).",
+    "sourcePage": 77,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "6-b1b",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 77](assets/lessons/ict/exams/source-crops/exam-p77-q6-b1b-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 77 · السؤال 6-b1b",
+    "partOrder": 3,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p77-q6-c2a",
+    "topic": "خاصية Text",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "bookPages": [
+      43,
+      44,
+      47,
+      48
+    ],
+    "question": "لماذا يستخدم: خاصية Text في برنامج App Inventor؟",
+    "answer": "**الإجابة:** `Text` تحدد النص الموجود في الأداة وتتيح قراءته أو تغييره.\n\n**الشاهد من الكتاب:**\n\n> خاصية Text: لتغيير النص الظاهر على مربعات التسمية label1، label3، label5.\n> خاصية text: لتغيير النص الظاهر على زر الأمر button1.\n\n**المصدر:** صفحة 44 من الكتاب.",
+    "sourcePage": 77,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "6-c2a",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 77](assets/lessons/ict/exams/source-crops/exam-p77-q6-c2a-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 77 · السؤال 6-c2a",
+    "partOrder": 20,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p77-q6-c2b",
+    "topic": "أداة Label",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "bookPages": [
+      43,
+      44
+    ],
+    "question": "لماذا يستخدم: أداة Label في برنامج App Inventor؟",
+    "answer": "**الإجابة:** عرض النصوص والعناوين والنتائج.\n\n**الشاهد من الكتاب:**\n\n> أداة Label (مربع التسمية): من مجموعة User Interface العدد (6) لعنونة مربعات النصوص ولتوضيح المطلوب إدخاله، ولإخراج النتائج وعنونتها.\n\n**المصدر:** صفحة 44 من الكتاب.",
+    "sourcePage": 77,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "6-c2b",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 77](assets/lessons/ict/exams/source-crops/exam-p77-q6-c2b-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 77 · السؤال 6-c2b",
+    "partOrder": 21,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p77-q6-c2c",
+    "topic": "التكامل المرجعي",
+    "lessonId": "database-management",
+    "partId": "build-and-integrity",
+    "bookPages": [
+      7,
+      8,
+      11
+    ],
+    "question": "لماذا يستخدم: فرض التكامل المرجعي في برنامج (MS-Access)؟",
+    "answer": "**للمحافظة على صحة الروابط واتساق البيانات بين الجداول.**\n\nقيمة المفتاح الأجنبي غير الفارغة يجب أن تشير إلى سجل أصل موجود.\n\nبذلك لا تبقى سجلات تابعة تشير إلى أصل غير موجود عند فرض القيد.\n\n**مرجع الكتاب:** الدرس الأول: برنامج إدارة قواعد البيانات / إنشاء العلاقات، ص 8 مطبوعة (ص 10 في PDF).",
+    "sourcePage": 77,
+    "answerPage": null,
+    "paperLabel": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي",
+    "originalNumber": "6-c2c",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 77](assets/lessons/ict/exams/source-crops/exam-p77-q6-c2c-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "طوباس — امتحان نهاية الفصل الأول 2024/2025 — 2025/01/12 — العلمي والصناعي، PDF ص 77 · السؤال 6-c2c",
+    "partOrder": 3,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p78-q1-2",
+    "topic": "تعريف الإلحاق",
+    "lessonId": "sql-queries",
+    "partId": "insert-queries",
+    "bookPages": [
+      28,
+      29
+    ],
+    "question": "اختيار البيانات من جدول وإدخالها كسجلات جديدة في جدول آخر:",
+    "explanation": "**الإجابة:** إلحاق\n\n**الشاهد من الكتاب:**\n\n> الإلحاق: هي عملية نسخ حقول جدول أو جزء منه إلى جدول مطابق له في المفتاح الأساسي، وبنفس الترتيب\n\n**المصدر:** صفحة 28 من الكتاب.",
+    "sourcePage": 78,
+    "answerPage": null,
+    "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
+    "originalNumber": "1-2",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "إدخال",
+      "إلحاق",
+      "اختيار"
+    ],
+    "correctChoiceIndex": 1,
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 78](assets/lessons/ict/exams/source-crops/exam-p78-q1-2-question.webp)",
+    "type": "mcq",
+    "title": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-2",
+    "partOrder": 0,
+    "kicker": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-2",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p78-q1-4",
+    "topic": "أداة الإدخال",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "bookPages": [
+      43,
+      44
+    ],
+    "question": "أداة تسمح للمستخدم بإدراج النص بداخلها بعد تجربة التطبيق:",
+    "explanation": "**الإجابة:** `TextBox`\n\n**الشاهد من الكتاب:**\n\n> أداة textbox (مربع النص): من مجموعة User Interface العدد (2) لإدخال الوزن والطول.\n\n**المصدر:** صفحة 44 من الكتاب.",
+    "sourcePage": 78,
+    "answerPage": null,
+    "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
+    "originalNumber": "1-4",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "TextBox",
+      "Texting",
+      "Label"
+    ],
+    "correctChoiceIndex": 0,
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 78](assets/lessons/ict/exams/source-crops/exam-p78-q1-4-question.webp)",
+    "type": "mcq",
+    "title": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-4",
+    "partOrder": 3,
+    "kicker": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-4",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p78-q1-5",
+    "topic": "أولوية العمليات",
+    "lessonId": "my-mobile-app",
+    "partId": "app-practice",
+    "bookPages": [
+      50,
+      51,
+      52
+    ],
+    "question": "ناتج العملية؟",
+    "explanation": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/5b4b98ba4909b90daa85.webp)\n\nنبدأ من اللبنة الأعمق؛ كل نتيجة تصبح مدخلًا للبنة التي تحتويها.\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>4</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn><mo>=</mo><mn>2</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>3</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>5</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>4</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>20</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>50</mn><mo>−</mo><mn>20</mn><mo>=</mo><mn>30</mn></mrow></math>\n```\n\n**الناتج: 30.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).",
+    "sourcePage": 78,
+    "answerPage": null,
+    "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
+    "originalNumber": "1-5",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": true,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "30",
+      "20",
+      "71"
+    ],
+    "correctChoiceIndex": 0,
+    "figurePage": 78,
+    "cropRect": [
+      86.67,
+      497.33,
+      398,
+      542.67
+    ],
+    "cropUnit": "pdf-points",
+    "figureAlt": "لبنة حسابية 50 ناقص 4 مضروباً في مجموع 3 و4 مقسوماً على 2",
+    "figureUnanswered": true,
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "figure": "assets/lessons/curriculum-evidence/5b4b98ba4909b90daa85.webp",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "example": "![لبنة حسابية 50 ناقص 4 مضروباً في مجموع 3 و4 مقسوماً على 2 ](assets/lessons/curriculum-evidence/5b4b98ba4909b90daa85.webp)",
+    "reference": "[السؤال ص 78](assets/lessons/ict/exams/source-crops/exam-p78-q1-5-question.webp)",
+    "originalFigure": "assets/lessons/ict/exams/exam-p78-q1-5.webp",
+    "type": "mcq",
+    "title": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-5",
+    "partOrder": 0,
+    "kicker": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 78 · السؤال 1-5",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p79-q1-8",
+    "topic": "Visible",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-blocks",
+    "bookPages": [
+      44,
+      49,
+      50,
+      51
+    ],
+    "question": "الخاصية المستخدمة لإظهار وإخفاء الأدوات:",
+    "explanation": "**الإجابة:** `Visible`\n\n**الشاهد من الكتاب:**\n\n> إخفاء صناديق الترتيب الأفقي الخاصة باستقبال المتغيرات\n> when Screen1.Initialize\n> set one_variable_box.Visible to false\n\n**المصدر:** صفحة 49 من الكتاب.",
+    "sourcePage": 79,
+    "answerPage": null,
+    "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
+    "originalNumber": "1-8",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "Hide",
+      "Show",
+      "Visible"
+    ],
+    "correctChoiceIndex": 2,
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q1-8-question.webp)",
+    "type": "mcq",
+    "title": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-8",
+    "partOrder": 0,
+    "kicker": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-8",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p79-q1-9",
+    "topic": "TableArrangement Columns",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-interface",
+    "bookPages": [
+      47,
+      48
+    ],
+    "question": "الخاصية لزيادة أعمدة الترتيب في الجدول:",
+    "explanation": "**الإجابة:** `Columns`، أي الأعمدة.\n\n**الشاهد من الكتاب:**\n\n> ترتب الأزرار أعلاه في صفين وثلاثة أعمدة، ويمكن عمل ذلك من خصائص الجدول\n\n**المصدر:** صفحة 49 من الكتاب.\n\n\n\n**توضيح:** يذكر الكتاب ضبط عدد الأعمدة من خصائص الجدول؛ `Columns` هي تسمية الأعمدة بالإنجليزية، أما `Rows` فتعني الصفوف.",
+    "sourcePage": 79,
+    "answerPage": null,
+    "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
+    "originalNumber": "1-9",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "Rows",
+      "Columns",
+      "Number"
+    ],
+    "correctChoiceIndex": 1,
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q1-9-question.webp)",
+    "type": "mcq",
+    "title": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-9",
+    "partOrder": 0,
+    "kicker": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-9",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p79-q1-10",
+    "topic": "Picture",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "bookPages": [
+      43,
+      44
+    ],
+    "question": "الخاصية لإدراج صورة على أداة Image:",
+    "explanation": "**الإجابة:** `picture`\n\n**الشاهد من الكتاب:**\n\n> خاصية Picture: لأداة Image1 بالضغط على الخاصية والضغط على الزر upload file ثم اختيار الملف كما في الشكل المجاور.\n\n**المصدر:** صفحة 44 من الكتاب.",
+    "sourcePage": 79,
+    "answerPage": null,
+    "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
+    "originalNumber": "1-10",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "picture",
+      "BackgroundImage",
+      "upload file"
+    ],
+    "correctChoiceIndex": 0,
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q1-10-question.webp)",
+    "type": "mcq",
+    "title": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-10",
+    "partOrder": 4,
+    "kicker": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 1-10",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p79-q2-1a",
+    "topic": "SELECT بمعامل",
+    "lessonId": "sql-queries",
+    "partId": "count-parameters",
+    "bookPages": [
+      24,
+      25
+    ],
+    "question": "اكتبي جملة SQL الخاصة بكل من الحالات التالية: استرجاع اسم الطالب (stu_name) وتاريخ ميلاده (birth_date) من جدول الطالب (student) حسب رقم الطالب (stu_no) المدخل من المستخدم.",
+    "answer": "نختار الاسم وتاريخ الميلاد فقط. الرقم يدخله المستخدم، فنستخدم طلب إدخال في شرط `stu_no`.\n\n```sql\nSELECT stu_name, birth_date\nFROM student\nWHERE stu_no = [أدخل رقم الطالب];\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 24 مطبوعة (ص 26 في PDF).",
+    "sourcePage": 79,
+    "answerPage": null,
+    "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
+    "originalNumber": "2-1a",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q2-1a-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 2-1a",
+    "partOrder": 5,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p79-q2-1b",
+    "topic": "استعلام جدولين",
+    "lessonId": "sql-queries",
+    "partId": "related-tables",
+    "bookPages": [
+      21,
+      22,
+      23
+    ],
+    "question": "اكتبي جملة SQL: استرجاع اسم السلعة (product_name) من جدول السلعة (product) واسم المصنع (fact_name) من جدول المصنع (factory) علماً أنهما مرتبطتان بالمفتاح كود السلعة (bar_code).",
+    "answer": "نختار الاسم من كل جدول، ثم نساوي `bar_code` في الجدولين لأنه حقل الربط المحدد في السؤال.\n\n```sql\nSELECT product.product_name, factory.fact_name\nFROM product, factory\nWHERE product.bar_code = factory.bar_code;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 23 مطبوعة (ص 25 في PDF).",
+    "sourcePage": 79,
+    "answerPage": null,
+    "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
+    "originalNumber": "2-1b",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q2-1b-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 2-1b",
+    "partOrder": 2,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p79-q2-1c",
+    "topic": "UPDATE اسم",
+    "lessonId": "sql-queries",
+    "partId": "update-queries",
+    "bookPages": [
+      25,
+      26,
+      27
+    ],
+    "question": "اكتبي جملة SQL: تغيير اسم الطالب (stu_name) صاحب رقم الطالب (stu_no)=5 في جدول الطالب (student) إلى إبراهيم.",
+    "answer": "نحدد الطالب برقمه **5** في `WHERE`، ثم نسند الاسم الجديد إلى `stu_name` باستخدام `SET`.\n\n```sql\nUPDATE student\nSET stu_name = \"إبراهيم\"\nWHERE stu_no = 5;\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 25 مطبوعة (ص 27 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 26 مطبوعة (ص 28 في PDF).",
+    "sourcePage": 79,
+    "answerPage": null,
+    "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
+    "originalNumber": "2-1c",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q2-1c-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 2-1c",
+    "partOrder": 6,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p79-q2-1d",
+    "topic": "INSERT سجل كامل",
+    "lessonId": "sql-queries",
+    "partId": "insert-queries",
+    "bookPages": [
+      27
+    ],
+    "question": "> سياق من الفقرة الأولى في السؤال الأصلي: استرجاع اسم الطالب (stu_name) وتاريخ ميلاده (birth_date) من جدول الطالب (student) حسب رقم الطالب (stu_no) المدخل من المستخدم.\n\nإدخال سجل جديد: إدخال السجل (35، سعيد، 2019/10/15) إلى جدول الطالب (student).",
+    "answer": "نأخذ أسماء الحقول من سياق السؤال: الرقم، والاسم، وتاريخ الميلاد. نرتب القيم وفقها، ونحيط النص باقتباسين والتاريخ بعلامتي `#`.\n\n```sql\nINSERT INTO student (stu_no, stu_name, birth_date)\nVALUES (35, \"سعيد\", #2019-10-15#);\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 27 مطبوعة (ص 29 في PDF).",
+    "sourcePage": 79,
+    "answerPage": null,
+    "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
+    "originalNumber": "2-1d",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 79](assets/lessons/ict/exams/source-crops/exam-p79-q2-1d-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 79 · السؤال 2-1d",
+    "partOrder": 10,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p80-q2-4",
+    "topic": "خطوات بناء تطبيق",
+    "lessonId": "my-mobile-app",
+    "partId": "app-inventor-tools",
+    "bookPages": [
+      43,
+      44,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "question": "عددي خطوات إنشاء تطبيق للهواتف الذكية على تطبيق App Inventor.",
+    "answer": "1. **نصمم الواجهة:** نضيف أدوات الإدخال والعرض والأزرار ونرتبها.\n2. **نضبط الخصائص:** نحدد الأسماء والنصوص والأحجام وما يظهر عند البداية.\n3. **نركب اللبنات في `Blocks`:** نحدد الحدث، ثم القراءة والحساب وعرض النتيجة.\n4. **نجرب التطبيق:** ندخل قيمًا ونتحقق من الناتج، ونصحح الخطأ قبل تجهيز التطبيق.\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 44 مطبوعة (ص 46 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 47 مطبوعة (ص 49 في PDF)؛ الدرس الثاني: تطبيقي الخاص على هاتفي، ص 49 مطبوعة (ص 51 في PDF).",
+    "sourcePage": 80,
+    "answerPage": null,
+    "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
+    "originalNumber": "2-4",
+    "marks": null,
+    "format": "written",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 80](assets/lessons/ict/exams/source-crops/exam-p80-q2-4-question.webp)",
+    "answerLabel": "الإجابة والشرح من المجموعة المصححة",
+    "type": "exam-question",
+    "title": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي، PDF ص 80 · السؤال 2-4",
+    "partOrder": 22,
+    "prompt": "سؤال من ورقة امتحان"
+  },
+  {
+    "id": "exam-p83-q3-a2",
+    "topic": "ملف التطبيق التنفيذي",
+    "lessonId": "smartphone-operating-systems",
+    "partId": "ios-files",
+    "bookPages": [
+      42,
+      53
+    ],
+    "question": "ما امتداد الملف القابل للتنزيل في تطبيق مصمم ببرنامج App Inventor؟",
+    "explanation": "**الإجابة:** `apk`\n\n**الشاهد من الكتاب:**\n\n> اختر المكان الذي تريد حفظ البرنامج فيه على حاسوبك واختر اسماً مناسباً له. ستجد الملف في المكان الذي اخترته بصيغة Apk.\n> يمكنك نقله إلى هاتفك المحمول أو هاتف صديقك وتجربة التطبيق.\n\n**المصدر:** صفحة 49 من الكتاب.",
+    "sourcePage": 83,
+    "answerPage": null,
+    "paperLabel": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي",
+    "originalNumber": "3-a2",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "app",
+      "apk",
+      "aia",
+      "kpa"
+    ],
+    "correctChoiceIndex": 1,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 83](assets/lessons/ict/exams/source-crops/exam-p83-q3-a2-question.webp)",
+    "type": "mcq",
+    "title": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 83 · السؤال 3-a2",
+    "partOrder": 4,
+    "kicker": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 83 · السؤال 3-a2",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p84-q4-a2",
+    "topic": "OR",
+    "lessonId": "sql-queries",
+    "partId": "where-conditions",
+    "bookPages": [
+      14,
+      15,
+      25
+    ],
+    "question": "المعيار المنطقي الذي يستخدم لإضافة أكثر من شرط على الحقل بحيث يتحقق أحدها على الأقل؟",
+    "explanation": "**الإجابة:** `OR`\n\n**الشاهد من الكتاب:**\n\n> أو (OR) والتي تستخدم كجزء إضافي للمعيار لإضافة أكثر من شرط على أن يتحقق أحدها على الأقل، وتستخدم الرابطة المنطقية (AND) لتحقيق مجموعة من الشروط معاً.\n\n**المصدر:** صفحة 15 من الكتاب.",
+    "sourcePage": 84,
+    "answerPage": null,
+    "paperLabel": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي",
+    "originalNumber": "4-a2",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "And",
+      "OR",
+      "Not",
+      "And Not"
+    ],
+    "correctChoiceIndex": 1,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 84](assets/lessons/ict/exams/source-crops/exam-p84-q4-a2-question.webp)",
+    "type": "mcq",
+    "title": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 4-a2",
+    "partOrder": 2,
+    "kicker": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 4-a2",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p84-q5-a1",
+    "topic": "سعة الأنواع العددية",
+    "lessonId": "database-management",
+    "partId": "tables-and-types",
+    "bookPages": [
+      6
+    ],
+    "question": "ما هو أكبر الأرقام الصحيحة من حيث السعة التخزينية؟",
+    "explanation": "**الإجابة:** عدد صحيح مطول\n\n**الشاهد من الكتاب:**\n\n> رقم (Number): للقيم الرقمية، ويقبل تخزين سعات مختلفة حسب النوع المحدد، والأنواع الرقمية هي: بايت، عدد صحيح Integer (2 بايت)، عدد صحيح مطول Integer Long (4 بايت)، عدد كسري مفرد Single (4 بايت)، وعدد كسري مزدوج Double (8 بايت).\n\n**المصدر:** صفحة 6 من الكتاب.\n\n\n\nنقارن هنا **الأعداد الصحيحة** فقط: `Integer` و`Long Integer`؛ أما `Single` و`Double` فهما نوعان كسريان.",
+    "sourcePage": 84,
+    "answerPage": null,
+    "paperLabel": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي",
+    "originalNumber": "5-a1",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "عدد صحيح",
+      "عدد صحيح مطول",
+      "عدد كسري مزدوج",
+      "عدد كسري مفرد"
+    ],
+    "correctChoiceIndex": 1,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 84](assets/lessons/ict/exams/source-crops/exam-p84-q5-a1-question.webp)",
+    "type": "mcq",
+    "title": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 5-a1",
+    "partOrder": 3,
+    "kicker": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 5-a1",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p84-q5-a3",
+    "topic": "floor للأعداد السالبة",
+    "lessonId": "my-mobile-app",
+    "partId": "calculator-events",
+    "bookPages": [
+      52
+    ],
+    "question": "ما ناتج تنفيذ اللبنة؟",
+    "explanation": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/a276b9f63810c4a9a837.webp)\n\n`floor` تعيد أكبر عدد صحيح لا يتجاوز القيمة، وتتحرك نحو الأعداد الأصغر حتى لو كانت القيمة سالبة.\n\nنحسب القسمة أولًا:\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mo>−</mo><mn>11</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn><mo>=</mo><mo>−</mo><mn>5.5</mn></mrow></math>\n```\n\nالعدد `−5` أكبر من `−5.5`، فلا يصلح.\n\nالعدد `−6` لا يتجاوز `−5.5`، وهو أكبر عدد صحيح يحقق ذلك.\n\n**إذن الناتج: `−6`.**\n\n**مرجع الكتاب:** تطبيقي الخاص على هاتفي / أسئلة الدرس، ص 52 مطبوعة (ص 54 في PDF).",
+    "sourcePage": 84,
+    "answerPage": null,
+    "paperLabel": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي",
+    "originalNumber": "5-a3",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": true,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "-5.5",
+      "-5",
+      "-6",
+      "-5.0"
+    ],
+    "correctChoiceIndex": 2,
+    "figurePage": 84,
+    "cropRect": [
+      292.67,
+      680,
+      423.33,
+      707.33
+    ],
+    "cropUnit": "pdf-points",
+    "figureAlt": "لبنة floor للقيمة -11 ÷ 2",
+    "figureUnanswered": true,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "figure": "assets/lessons/curriculum-evidence/a276b9f63810c4a9a837.webp",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "example": "![لبنة floor للقيمة -11 ÷ 2 ](assets/lessons/curriculum-evidence/a276b9f63810c4a9a837.webp)",
+    "reference": "[السؤال ص 84](assets/lessons/ict/exams/source-crops/exam-p84-q5-a3-question.webp)",
+    "originalFigure": "assets/lessons/ict/exams/exam-p84-q5-a3.webp",
+    "type": "mcq",
+    "title": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 5-a3",
+    "partOrder": 3,
+    "kicker": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 84 · السؤال 5-a3",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  },
+  {
+    "id": "exam-p85-q6-a3",
+    "topic": "Single",
+    "lessonId": "database-management",
+    "partId": "tables-and-types",
+    "bookPages": [
+      6
+    ],
+    "question": "ما السعة التخزينية للعدد الكسري المفرد؟",
+    "explanation": "**الإجابة:** 4 بايت\n\n**الشاهد من الكتاب:**\n\n> رقم (Number): للقيم الرقمية، ويقبل تخزين سعات مختلفة حسب النوع المحدد، والأنواع الرقمية هي: بايت، عدد صحيح Integer (2 بايت)، عدد صحيح مطول Integer Long (4 بايت)، عدد كسري مفرد Single (4 بايت)، وعدد كسري مزدوج Double (8 بايت).\n\n**المصدر:** صفحة 6 من الكتاب.",
+    "sourcePage": 85,
+    "answerPage": null,
+    "paperLabel": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي",
+    "originalNumber": "6-a3",
+    "marks": null,
+    "format": "mcq",
+    "scopeReason": "يقيس مفاهيم واردة في صفحات الكتاب المحددة، مع الاحتفاظ بسياق السؤال الأصلي.",
+    "figureNeeded": false,
+    "answerProvenance": "curriculum-corrected-2026-10-24",
+    "choices": [
+      "2 بايت",
+      "4 بايت",
+      "6 بايت",
+      "8 بايت"
+    ],
+    "correctChoiceIndex": 1,
+    "marksNote": "الدرجات مطبوعة لمجموعة الاختيار المتعدد، ولا تفصل درجة هذه الفقرة وحدها.",
+    "sourcePaperCondition": "توجد كتابات يدوية على بعض صفحات هذه الورقة؛ لم تعتمد كإجابة رسمية، ولم تدخل ضمن قصاصات الأشكال المختارة.",
+    "scopeBasis": "user-supplied-ict-book",
+    "questionProvenance": "visually-transcribed-exam",
+    "sourceSelection": "فقرة أو فرع مختار من السؤال المطبوع؛ الرقم الأصلي ومصدره محفوظان.",
+    "reference": "[السؤال ص 85](assets/lessons/ict/exams/source-crops/exam-p85-q6-a3-question.webp)",
+    "type": "mcq",
+    "title": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 85 · السؤال 6-a3",
+    "partOrder": 4,
+    "kicker": "يطا — تكنولوجيا المعلومات النظري — 2024/12/24 — العلمي والصناعي، PDF ص 85 · السؤال 6-a3",
+    "choiceIds": [
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4"
+    ],
+    "hint": "اقرأ السؤال وحدد المطلوب ثم قارن الخيارات الأصلية مرة أخرى."
+  }
+];

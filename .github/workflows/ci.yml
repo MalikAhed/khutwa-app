@@ -1,0 +1,67 @@
+name: Verify Khutwa
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Install Chromium
+        run: |
+          npx playwright install --with-deps chromium
+          node -e "require('node:fs').appendFileSync(process.env.GITHUB_ENV, 'CHROME_BIN=' + require('playwright').chromium.executablePath() + '\n')"
+      - run: npm run verify
+      - run: npm run test:admin
+      - run: npm run build:pages
+      - run: npm run test:cloud
+      - run: npm run test:pages
+      - name: Save browser failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: browser-failure-evidence
+          path: |
+            /tmp/learn-browser-failures
+            /tmp/learn-question-surfaces
+          if-no-files-found: ignore
+          retention-days: 3
+
+  compatibility:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps firefox webkit
+      - run: npm run package:preview && npm run test:compat
+      - name: Save compatibility failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: compatibility-failure-evidence
+          path: /tmp/learn-browser-failures
+          if-no-files-found: ignore
+          retention-days: 3

@@ -1,0 +1,100 @@
+import assert from "node:assert/strict";
+import { mkdtemp,rm,writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import path from "node:path";
+import { createAppServer } from "../../src/server/app-server.mjs";
+import { readRuntimeConfig } from "../../src/server/runtime-config.mjs";
+import { resetDatabase } from "../../scripts/database-maintenance.mjs";
+import { provisionOwner } from "../../scripts/owner-account.mjs";
+import { withBrowserPage } from "./browser-page.mjs";
+
+const directory=await mkdtemp(path.join(tmpdir(),"learn-owner-browser-"));
+const databasePath=path.join(directory,"accounts.sqlite");
+const root=path.resolve(".");
+const config=readRuntimeConfig({PORT:"0",LIVE_RELOAD:"0",ACCOUNTS_DATABASE_PATH:databasePath},{root});
+const app=await createAppServer({root,config,logger:()=>{}});
+const base=`http://127.0.0.1:${await app.listen()}/`;
+try {
+  await withBrowserPage(async({send,evaluate,waitFor})=>{
+    await send("Network.setBlockedURLs",{urls:["*/src/bootstrap.js"]});
+    await send("Page.navigate",{url:base});
+    await waitFor("document.readyState==='complete'");
+    await evaluate(`(async()=>{
+      localStorage.setItem('unrelated','keep');
+      localStorage.setItem('tawjihi:subject-parts:v1:guest','old');
+      sessionStorage.setItem('tawjihi:visitor-selection','old');
+      const {createIndexedDbProgressAdapter}=await import('/src/services/indexeddb-progress.js');
+      window.oldStore=createIndexedDbProgressAdapter();
+      await oldStore.read('account:1');
+      window.applyReset=(await import('/src/services/server-data-reset.js')).applyServerDataReset;
+    })()`);
+    await resetDatabase(databasePath);
+    await evaluate("applyReset()");
+    assert.deepEqual(await evaluate(`({legacy:localStorage.getItem('tawjihi:subject-parts:v1:guest'),session:sessionStorage.getItem('tawjihi:visitor-selection'),unrelated:localStorage.getItem('unrelated')})`),
+      {legacy:null,session:null,unrelated:"keep"});
+    assert.equal(await evaluate("indexedDB.databases().then(dbs=>dbs.some(db=>db.name==='tawjihi-subject-progress'))"),false);
+    await evaluate("sessionStorage.setItem('tawjihi:visitor-selection','new');applyReset()");
+    assert.equal(await evaluate("sessionStorage.getItem('tawjihi:visitor-selection')"),"new","ordinary reload does not reset new data");
+    await provisionOwner({databasePath,username:"test-owner",password:"Owner1234"});
+    const {account}=await app.accountStore.createAccount({username:"student-test",phone:"0598000041",curriculum:"gaza",path:"scientific",password:"Student123"});
+    app.accountStore.progress.update(account.id,{id:"answer",type:"answer",subjectId:"ict",lessonId:"database-management",partId:"access-basics",stepId:"test-question",correct:true},["test-question"]);
+    const owner=await app.accountStore.authenticate("test-owner","Owner1234");
+    await send("Network.setCookie",{name:"tawjihi_session",value:app.accountStore.createSession(owner.id).token,url:base,httpOnly:true,sameSite:"Strict"});
+    await send("Page.navigate",{url:base+"students"});
+    await waitFor("document.querySelectorAll('.student-table tbody tr').length===1");
+    assert.equal(await evaluate("getComputedStyle(document.body).direction"),"rtl","Arabic admin layout is RTL");
+    assert.equal(await evaluate("getComputedStyle(document.querySelector('.admin-main')).direction"),"rtl","admin content overrides the learning shell's LTR grid");
+    assert.equal(await evaluate("document.querySelector('.student-identity strong').textContent"),"student-test");
+    for(const width of [1440,390]) {
+      await send("Emulation.setDeviceMetricsOverride",{width,height:900,deviceScaleFactor:1,mobile:width<600});
+      // Check a fresh page at each emulated viewport, including its viewport meta.
+      await send("Page.navigate",{url:base+"students"});
+      await waitFor("document.querySelectorAll('.student-table tbody tr').length===1");
+      await evaluate("new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))");
+      if(await evaluate("innerWidth")!==width)console.log(await evaluate("JSON.stringify(['html','body','.admin-main','.admin-header','.admin-panel','.admin-toolbar','.admin-tabs','#student-search','.admin-table-wrap','#student-detail'].map(selector=>{const e=document.querySelector(selector),r=e.getBoundingClientRect(),s=getComputedStyle(e);return {selector,left:r.left,right:r.right,width:r.width,scroll:e.scrollWidth,overflow:s.overflowX,display:s.display};}))"));
+      assert.equal(await evaluate("innerWidth"),width,"the dashboard does not expand the mobile layout viewport");
+      assert.ok(await evaluate("document.documentElement.scrollWidth<=innerWidth"),"dashboard fits viewport");
+      await evaluate("document.querySelector('[data-student-id]').click()");
+      await waitFor("document.querySelector('#detail-content .part')");
+      assert.equal(await evaluate("document.querySelector('#student-detail').contains(document.activeElement)"),true);
+      assert.ok(await evaluate("document.querySelector('#student-detail').scrollWidth<=document.querySelector('#student-detail').clientWidth"));
+      const bounds=await evaluate("(() => { const r=document.querySelector('#student-detail').getBoundingClientRect();return {left:r.left,right:r.right,width:innerWidth}; })()");
+      assert.ok(bounds.left>=0 && bounds.right<=width && bounds.width===width,`dialog stays inside the screen: ${JSON.stringify(bounds)}`);
+      await send("Page.bringToFront");
+      if(width===390)await writeFile("/tmp/student-dashboard-mobile.png",Buffer.from((await send("Page.captureScreenshot",{format:"png"})).data,"base64"));
+      await send("Input.dispatchKeyEvent",{type:"keyDown",key:"Escape",code:"Escape",windowsVirtualKeyCode:27});
+      await send("Input.dispatchKeyEvent",{type:"keyUp",key:"Escape",code:"Escape",windowsVirtualKeyCode:27});
+      await waitFor("!document.querySelector('#student-detail').open");
+    }
+    await evaluate("document.querySelector('[data-student-id]').click()");
+    await waitFor("document.querySelector('#subscription-form')");
+    await evaluate("document.querySelector('[name=duration][value=week]').checked=true;document.querySelector('#subscription-form').requestSubmit()");
+    await waitFor("document.querySelector('#edit-status')?.textContent === 'تم حفظ التغيير.'");
+    assert.ok(await evaluate("document.querySelector('.current-access strong').textContent.includes('وصول كامل')"));
+    await evaluate("document.querySelector('[data-action=revoke]').click()");
+    await waitFor("document.querySelector('.current-access strong')?.textContent === 'الخطة المجانية'");
+    await waitFor("!document.querySelector('#close-detail').disabled");
+    await evaluate("document.querySelector('#close-detail').click()");
+    await waitFor("!document.querySelector('#student-detail').open");
+    await evaluate("document.querySelector('#search').value='nothing';document.querySelector('#student-search').requestSubmit()");
+    await waitFor("document.querySelector('.admin-empty h2')?.textContent === 'لا توجد نتائج'");
+    assert.equal(await evaluate("document.querySelectorAll('.student-table tbody tr').length"),0);
+    await evaluate("document.querySelector('#search').value='';document.querySelector('#student-search').requestSubmit()");
+    await waitFor("document.querySelectorAll('.student-table tbody tr').length===1");
+    await send("Emulation.setDeviceMetricsOverride",{width:1440,height:900,deviceScaleFactor:1,mobile:false});
+    await send("Page.navigate",{url:base+"students"});
+    await waitFor("document.querySelectorAll('.student-table tbody tr').length===1");
+    await evaluate("document.fonts.ready");
+    await send("Page.bringToFront");
+    await writeFile("/tmp/student-dashboard-desktop.png",Buffer.from((await send("Page.captureScreenshot",{format:"png"})).data,"base64"));
+    await send("Network.setBlockedURLs",{urls:[]});
+    await send("Page.navigate",{url:base});
+    await waitFor("document.querySelector('[data-owner-dashboard]:not([hidden])')");
+    assert.equal(await evaluate("document.querySelector('[data-owner-dashboard]').getAttribute('href')"),"/students");
+    await send("Network.setCookie",{name:"tawjihi_session",value:app.accountStore.createSession(account.id).token,url:base,httpOnly:true,sameSite:"Strict"});
+    await send("Page.navigate",{url:base});
+    await waitFor("document.querySelector('[data-owner-dashboard][hidden]')");
+    assert.equal(await evaluate("getComputedStyle(document.querySelector('[data-owner-dashboard]')).display"),"none");
+  },{baseUrl:base});
+  console.log("Student dashboard and browser reset checks passed.");
+} finally {await app.close();await rm(directory,{recursive:true,force:true});}

@@ -1,1 +1,230 @@
-import{getSubjectRoadmap as v}from"../data/subject-roadmaps.js?v=7388f68cc0f433fd";import{duplicateAccountFieldMessage as x,identifierAliases as U,isAccountIdentifierField as J,isValidVisitorSelection as A,validateAccountField as Y}from"../domain/account.js?v=7388f68cc0f433fd";import{createAuthClient as $}from"./auth-client.js?v=7388f68cc0f433fd";import{createLearnerStorage as q,defaultErrorReporter as B,GUEST_TRIAL_STORAGE_KEY as K,TEMPORARY_ACCOUNT_STORAGE_KEY as F,VISITOR_SELECTION_STORAGE_KEY as I}from"./learner-storage.js?v=7388f68cc0f433fd";function L(t){if(t&&typeof t=="object"&&"status"in t&&["invalid","unavailable","aborted","forbidden","rate-limited","duplicate"].includes(String(t.status))){const b=t.status,y="fieldErrors"in t&&t.fieldErrors&&typeof t.fieldErrors=="object"?Object.fromEntries(Object.entries(t.fieldErrors).filter(([,S])=>typeof S=="string")):void 0;return{status:b,..."error"in t&&typeof t.error=="string"?{error:t.error}:{},..."field"in t&&typeof t.field=="string"?{field:t.field}:{},...y?{fieldErrors:y}:{}}}return R()}const G=new Set(["free","subscribed","banned"]),f=t=>t==="subscribed"?"subscribed":"free";function M(t){return!!t&&t!==null&&typeof t=="object"&&!Array.isArray(t)&&"id"in t&&typeof t.id=="string"&&!!t.id.trim()&&"accountType"in t&&G.has(String(t.accountType))&&"username"in t&&typeof t.username=="string"&&!!t.username.trim()&&A(t)}function R(){return{status:"unavailable",error:"تعذّر إكمال الطلب. حاول مجددًا."}}function Q({storage:t=null,progressStore:b=null,onError:y=B,apiBase:S=null,fetchImpl:V=globalThis.fetch}={}){let u=null,n=null;const w=new Set,a=S?$({baseUrl:S,fetchImpl:V,onError:y}):null,C=q(t,y,{persistent:!a}),m=C.restore();A(m.selection)&&(u=Object.freeze({...m.selection})),G.has(m.account?.type)&&typeof m.account?.displayName=="string"&&(n={...m.account,type:f(m.account.type)});const{save:O,remove:k}=C,h=()=>w.forEach(e=>e()),E=()=>k(K),N=()=>n?O(F,JSON.stringify(n)):k(F),d=e=>{n=e?{progressOwner:`account:${e.id}`,type:f(e.accountType),isOwner:e.isOwner===!0,displayName:e.displayName||e.username,homeScenarioId:e.accountType==="subscribed"?"student-paid":"student-free-new"}:null,e&&E(),e&&A(e)&&(u=Object.freeze({curriculum:e.curriculum,path:e.path}),O(I,JSON.stringify(u))),N(),h()},j=(e,{optional:r=!1}={})=>{const l=e.body&&typeof e.body=="object"&&"account"in e.body?e.body.account:void 0;return r&&l===null||M(l)?{valid:!0,account:l}:(y(new Error("The account service returned an invalid success response.")),{valid:!1,account:null})},_=async({field:e,value:r},{signal:l}={})=>{if(a){const s=await a.checkAvailability({field:e,value:r},{signal:l}),i=s.body;return s.ok&&i&&typeof i=="object"&&"status"in i&&i.status==="available"?{status:"available",field:e}:L(i)}if(!J(e))return{status:"invalid"};const{FIXTURE_ACCOUNTS:g}=await import("../data/fixture-accounts.js?v=7388f68cc0f433fd"),T=new Set(U(r));return g.some(({identifier:s,email:i,phone:p})=>[s,i,p].flatMap(o=>U(o)).some(o=>T.has(o)))?{status:"duplicate",field:e,error:x(e)}:{status:"available",field:e}};return Object.freeze({kind:a?"http":"fixture",getVisitorSelection:()=>u?{...u}:null,saveVisitorSelection(e){if(!A(e))throw new TypeError("visitor selection is invalid");return u=Object.freeze({curriculum:e.curriculum,path:e.path}),O(I,JSON.stringify(u)),{...u}},getAccountType:()=>n?.type||"guest",isOwner:()=>!!(a&&n?.isOwner),getLearnerProgressOwner:()=>n?.progressOwner||(n?`legacy:${n.displayName}`:"guest"),getLearnerDisplayName:()=>n?.displayName||"",getLearnerHomeSnapshot:()=>{if(!n)return null;const e=b?b.getHomeLearning(n.progressOwner,[v("ict"),v("mathematics"),v("mathematics-2"),v("physics"),v("biology")].filter(r=>r!==null)):{activity:"none",completion:"not-started",progress:0,mastery:"no-evidence",requiredLessonsCompleted:0,requiredLessonsTotal:0,mustReviewCount:0,xp:0,level:1,levelXpGoal:200,rank:null,rankTotal:16,questionsSolved:0,dailyStreak:0,curriculumLessonsTotal:72};return{actor:"student",account:{type:n.type,displayName:n.displayName},learning:e}},async restoreSession(){if(!a)return{status:"fixture",accountType:n?.type||"guest"};const e=await a.restoreSession();if(!e?.ok)return d(null),{status:"unavailable",accountType:"guest"};const r=j(e,{optional:!0});return r.valid?(d(r.account),{status:r.account?"signed-in":"guest",accountType:r.account?f(r.account.accountType):"guest"}):(d(null),{status:"unavailable",accountType:"guest"})},checkAccountAvailability:_,async createAccount({username:e,phone:r,curriculum:l,path:g,password:T},{signal:c}={}){const s=Y("phone",r);if(s)return{status:"invalid",field:"phone",error:s,fieldErrors:{phone:s}};if(a){const p=await a.register({username:e,phone:r,curriculum:l,path:g,password:T},{signal:c});if(!p.ok)return L(p.body);const o=j(p);return!o.valid||!o.account?R():(d(o.account),{status:"created",accountType:f(o.account.accountType)})}const i={username:e,phone:r};for(const[p,o]of Object.entries(i)){if(!o)continue;const z=await _({field:p,value:o});if(z.status==="duplicate")return z}return n={progressOwner:`prototype:${String(e||"").trim().toLowerCase()}`,type:"free",displayName:String(e||"").trim(),homeScenarioId:"student-free-new"},E(),N(),h(),{status:"created",accountType:"free"}},async signIn({identifier:e,password:r},{signal:l}={}){if(a){const s=await a.signIn({identifier:e,password:r},{signal:l});if(!s.ok)return L(s.body);const i=j(s);return!i.valid||!i.account?R():(d(i.account),{status:"signed-in",accountType:f(i.account.accountType)})}const g=String(e||"").trim().toLowerCase(),{FIXTURE_ACCOUNTS:T}=await import("../data/fixture-accounts.js?v=7388f68cc0f433fd"),c=T.find(({identifier:s,email:i,phone:p})=>[s,i,p].includes(g));return!c||String(r)!==c.password?{status:"invalid"}:(n={progressOwner:`demo:${c.identifier}`,type:f(c.type),displayName:c.displayName,homeScenarioId:c.homeScenarioId},E(),N(),u||=Object.freeze({curriculum:"gaza",path:"scientific"}),O(I,JSON.stringify(u)),h(),{status:"signed-in",accountType:f(c.type)})},signOut(){return a?a.signOut().then(e=>e.ok?(d(null),{status:"signed-out",accountType:"guest"}):{status:"unavailable",accountType:n?.type||"guest"}):(d(null),{accountType:"guest"})},subscribe(e){if(typeof e!="function")throw new TypeError("subscriber must be a function");return w.add(e),()=>w.delete(e)}})}export{Q as createLearnerSession};
+// @ts-check
+import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { duplicateAccountFieldMessage, isAccountIdentifierField, isValidVisitorSelection } from "../domain/account-fields.js";
+import { createAuthClient } from "./auth-client.js";
+import { createLearnerStorage, defaultErrorReporter, GUEST_TRIAL_STORAGE_KEY, TEMPORARY_ACCOUNT_STORAGE_KEY, VISITOR_SELECTION_STORAGE_KEY } from "./learner-storage.js";
+
+/** @typedef {'free'|'subscribed'|'banned'} AccountType */
+/** @typedef {{curriculum:string, path:string}} VisitorSelection */
+/** @typedef {VisitorSelection & {id:string, username:string, accountType:AccountType, displayName?:string, isOwner?:boolean, subscriptionExpiresAt?:string|null}} ApiAccount */
+/** @typedef {{progressOwner:string, type:AccountType, displayName:string, homeScenarioId:string, isOwner?:boolean, subscriptionExpiresAt?:string|null}} LearnerAccount */
+/** @typedef {VisitorSelection & {username:string, password:string, phone:string}} Registration */
+/** @typedef {{status:'invalid'|'unavailable'|'aborted'|'forbidden'|'rate-limited'|'duplicate', error?:string, field?:string, fieldErrors?:Record<string,string>}} AccountFailure */
+/** @typedef {{status:'created'|'signed-in', accountType:AccountType}|AccountFailure} AccountResult */
+/** @typedef {{status:'available', field:string}|AccountFailure} AvailabilityResult */
+/** @typedef {{storage?:Storage|null, progressStore?:ReturnType<typeof import('./subject-progress-store.js').createSubjectProgressStore>|null, onError?:(error:Error)=>void, apiBase?:string|null, fetchImpl?:typeof fetch}} SessionOptions */
+/** @typedef {import('./auth-client.js').RequestOptions} RequestOptions */
+
+/** @param {unknown} body @returns {AccountFailure} */
+function accountFailure(body) {
+  if (body && typeof body === "object" && "status" in body && ["invalid", "unavailable", "aborted", "forbidden", "rate-limited", "duplicate"].includes(String(body.status))) {
+    // Only this transport boundary narrows the untrusted response after validation.
+    const status = /** @type {AccountFailure['status']} */ (body.status);
+    const fieldErrors = "fieldErrors" in body && body.fieldErrors && typeof body.fieldErrors === "object"
+      ? Object.fromEntries(Object.entries(body.fieldErrors).filter(([, value]) => typeof value === "string")) : undefined;
+    return { status, ...( "error" in body && typeof body.error === "string" ? { error:body.error } : {}),
+      ...( "field" in body && typeof body.field === "string" ? { field:body.field } : {}), ...(fieldErrors ? { fieldErrors } : {}) };
+  }
+  return unavailableAccountResponse();
+}
+
+const accountTypes = new Set(["free", "subscribed", "banned"]);
+// Accept legacy account records while all learners retain access.
+const availableAccountType = type => type === "subscribed" ? "subscribed" : "free";
+
+/** @param {unknown} account @returns {account is ApiAccount} */
+function isApiAccount(account) {
+  return Boolean(account) && account !== null && typeof account === "object" && !Array.isArray(account)
+    && "id" in account && typeof account.id === "string" && Boolean(account.id.trim())
+    && "accountType" in account && accountTypes.has(String(account.accountType))
+    && "username" in account && typeof account.username === "string" && Boolean(account.username.trim())
+    && isValidVisitorSelection(account);
+}
+
+/** @returns {AccountFailure} */
+function unavailableAccountResponse() {
+  return { status:"unavailable", error:"تعذّر إكمال الطلب. حاول مجددًا." };
+}
+
+/** @param {SessionOptions} [options] */
+export function createLearnerSession({
+  storage = null,
+  progressStore = null,
+  onError = defaultErrorReporter,
+  apiBase = null,
+  fetchImpl = globalThis.fetch,
+} = {}) {
+  /** @type {VisitorSelection|null} */
+  let visitorSelection = null;
+  /** @type {LearnerAccount|null} */
+  let activeAccount = null;
+  let verifiedSession = false;
+  const subscribers = new Set();
+  const accountApi = apiBase ? createAuthClient({ baseUrl:apiBase, fetchImpl, onError }) : null;
+
+  const persistence = createLearnerStorage(storage, onError, { persistent:!accountApi });
+  const saved = persistence.restore();
+  if (isValidVisitorSelection(saved.selection)) visitorSelection = Object.freeze({ ...saved.selection });
+  if (accountTypes.has(saved.account?.type) && typeof saved.account?.displayName === "string") activeAccount = { ...saved.account, type:availableAccountType(saved.account.type) };
+
+  const { save, remove } = persistence;
+  const notify = () => subscribers.forEach((subscriber) => subscriber());
+  const currentType = () => activeAccount?.type === "subscribed" && activeAccount.subscriptionExpiresAt
+    && Date.parse(activeAccount.subscriptionExpiresAt) <= Date.now() ? "free" : activeAccount?.type || "guest";
+  const clearGuestTrial = () => remove(GUEST_TRIAL_STORAGE_KEY);
+  const saveActiveAccount = () => activeAccount
+    ? save(TEMPORARY_ACCOUNT_STORAGE_KEY, JSON.stringify(activeAccount))
+    : remove(TEMPORARY_ACCOUNT_STORAGE_KEY);
+  /** @param {ApiAccount|null} account */
+  const useApiAccount = (account) => {
+    verifiedSession = Boolean(account);
+    activeAccount = account ? {
+      progressOwner:`account:${account.id}`,
+      type:availableAccountType(account.accountType),
+      isOwner:account.isOwner === true,
+      subscriptionExpiresAt:account.subscriptionExpiresAt || null,
+      displayName:account.displayName || account.username,
+      homeScenarioId:account.accountType === "subscribed" ? "student-paid" : "student-free-new",
+    } : null;
+    if (account) clearGuestTrial();
+    if (account && isValidVisitorSelection(account)) {
+      visitorSelection = Object.freeze({ curriculum:account.curriculum, path:account.path });
+      save(VISITOR_SELECTION_STORAGE_KEY, JSON.stringify(visitorSelection));
+    }
+    saveActiveAccount();
+    notify();
+  };
+  /** @param {import('./auth-client.js').HttpResult} result @param {{optional?:boolean}} [options] @returns {{valid:true, account:ApiAccount|null}|{valid:false, account:null}} */
+  const readApiAccount = (result, { optional = false } = {}) => {
+    const account = result.body && typeof result.body === "object" && "account" in result.body ? result.body.account : undefined;
+    if ((optional && account === null) || isApiAccount(account)) return { valid:true, account };
+    onError(new Error("The account service returned an invalid success response."));
+    return { valid:false, account:null };
+  };
+  /** @param {{field:string, value:string}} values @param {RequestOptions} [options] @returns {Promise<AvailabilityResult>} */
+  const checkAccountAvailability = async ({ field, value }, { signal } = {}) => {
+    if (accountApi) {
+      const result = await accountApi.checkAvailability({ field, value }, { signal });
+      const body = result.body;
+      return result.ok && body && typeof body === "object" && "status" in body && body.status === "available"
+        ? { status:"available", field } : accountFailure(body);
+    }
+    if (!isAccountIdentifierField(field)) return { status:"invalid" };
+    const { FIXTURE_ACCOUNTS } = await import("../data/fixture-accounts.js");
+    const { identifierAliases } = await import("../domain/account.js");
+    const aliases = new Set(identifierAliases(value));
+    const duplicate = FIXTURE_ACCOUNTS.some(({ identifier, email, phone }) => [identifier, email, phone]
+      .flatMap((candidate) => identifierAliases(candidate))
+      .some((alias) => aliases.has(alias)));
+    return duplicate
+      ? { status:"duplicate", field, error:duplicateAccountFieldMessage(field) }
+      : { status:"available", field };
+  };
+
+  return Object.freeze({
+    kind:accountApi ? "http" : "fixture",
+    getVisitorSelection:() => visitorSelection ? { ...visitorSelection } : null,
+    /** @param {VisitorSelection} selection */
+    saveVisitorSelection(selection) {
+      if (!isValidVisitorSelection(selection)) throw new TypeError("visitor selection is invalid");
+      visitorSelection = Object.freeze({ curriculum:selection.curriculum, path:selection.path });
+      save(VISITOR_SELECTION_STORAGE_KEY, JSON.stringify(visitorSelection));
+      return { ...visitorSelection };
+    },
+    getAccountType:currentType,
+    isOwner:() => Boolean(accountApi && activeAccount?.isOwner),
+    getLearnerProgressOwner:() => activeAccount?.progressOwner || (activeAccount ? `legacy:${activeAccount.displayName}` : "guest"),
+    getLearnerDisplayName:() => activeAccount?.displayName || "",
+    getLearnerHomeSnapshot:() => {
+      if (!activeAccount) return null;
+      const learning = progressStore ? progressStore.getHomeLearning(activeAccount.progressOwner,
+        [getSubjectRoadmap("ict"), getSubjectRoadmap("mathematics"), getSubjectRoadmap("mathematics-2"), getSubjectRoadmap("physics"), getSubjectRoadmap("biology")].filter(roadmap => roadmap !== null)) : {
+        activity:"none", completion:"not-started", progress:0, mastery:"no-evidence",
+        requiredLessonsCompleted:0, requiredLessonsTotal:0, mustReviewCount:0, xp:0, level:1,
+        levelXpGoal:200, rank:null, rankTotal:16, questionsSolved:0, dailyStreak:0, curriculumLessonsTotal:72,
+      };
+      return { actor:"student", account:{ type:currentType(), displayName:activeAccount.displayName }, learning };
+    },
+    async restoreSession() {
+      if (!accountApi) return { status:"fixture", accountType:activeAccount?.type || "guest" };
+      const previousAccount = activeAccount;
+      const result = await accountApi.restoreSession();
+      if (activeAccount !== previousAccount) return { status:"unchanged", accountType:currentType() };
+      if (!result?.ok) {
+        if (!verifiedSession) useApiAccount(null);
+        return { status:"unavailable", accountType:currentType() };
+      }
+      const payload = readApiAccount(result, { optional:true });
+      if (!payload.valid) {
+        if (!verifiedSession) useApiAccount(null);
+        return { status:"unavailable", accountType:currentType() };
+      }
+      useApiAccount(payload.account);
+      return { status:payload.account ? "signed-in" : "guest", accountType:payload.account ? availableAccountType(payload.account.accountType) : "guest" };
+    },
+    checkAccountAvailability,
+    /** @param {Registration} values @param {RequestOptions} [options] @returns {Promise<AccountResult>} */
+    async createAccount({ username, phone, curriculum, path, password }, { signal } = {}) {
+      const { validateAccountField } = await import("../domain/account.js");
+      const phoneError = validateAccountField("phone", phone);
+      if (phoneError) return { status:"invalid", field:"phone", error:phoneError, fieldErrors:{ phone:phoneError } };
+      if (accountApi) {
+        const result = await accountApi.register({ username, phone, curriculum, path, password }, { signal });
+        if (!result.ok) return accountFailure(result.body);
+        const payload = readApiAccount(result);
+        if (!payload.valid || !payload.account) return unavailableAccountResponse();
+        useApiAccount(payload.account);
+        return { status:"created", accountType:availableAccountType(payload.account.accountType) };
+      }
+      const identifiers = { username, phone };
+      for (const [field, value] of Object.entries(identifiers)) {
+        if (!value) continue;
+        const availability = await checkAccountAvailability({ field, value });
+        if (availability.status === "duplicate") return availability;
+      }
+      activeAccount = { progressOwner:`prototype:${String(username || "").trim().toLowerCase()}`, type:"free", displayName:String(username || "").trim(), homeScenarioId:"student-free-new" };
+      clearGuestTrial();
+      saveActiveAccount();
+      notify();
+      return { status:"created", accountType:"free" };
+    },
+    /** @param {{identifier:string, password:string}} values @param {RequestOptions} [options] @returns {Promise<AccountResult>} */
+    async signIn({ identifier, password }, { signal } = {}) {
+      if (accountApi) {
+        const result = await accountApi.signIn({ identifier, password }, { signal });
+        if (!result.ok) return accountFailure(result.body);
+        const payload = readApiAccount(result);
+        if (!payload.valid || !payload.account) return unavailableAccountResponse();
+        useApiAccount(payload.account);
+        return { status:"signed-in", accountType:availableAccountType(payload.account.accountType) };
+      }
+      const normalized = String(identifier || "").trim().toLowerCase();
+      const { FIXTURE_ACCOUNTS } = await import("../data/fixture-accounts.js");
+      const demo = FIXTURE_ACCOUNTS.find(({ identifier:username, email, phone }) => [username, email, phone].includes(normalized));
+      if (!demo || String(password) !== demo.password) return { status:"invalid" };
+      activeAccount = { progressOwner:`demo:${demo.identifier}`, type:availableAccountType(demo.type), displayName:demo.displayName, homeScenarioId:demo.homeScenarioId };
+      clearGuestTrial();
+      saveActiveAccount();
+      visitorSelection ||= Object.freeze({ curriculum:"gaza", path:"scientific" });
+      save(VISITOR_SELECTION_STORAGE_KEY, JSON.stringify(visitorSelection));
+      notify();
+      return { status:"signed-in", accountType:availableAccountType(demo.type) };
+    },
+    signOut() {
+      if (accountApi) {
+        return accountApi.signOut().then((result) => {
+          if (!result.ok) return { status:"unavailable", accountType:activeAccount?.type || "guest" };
+          useApiAccount(null);
+          return { status:"signed-out", accountType:"guest" };
+        });
+      }
+      useApiAccount(null);
+      return { accountType:"guest" };
+    },
+    subscribe(subscriber) {
+      if (typeof subscriber !== "function") throw new TypeError("subscriber must be a function");
+      subscribers.add(subscriber);
+      return () => subscribers.delete(subscriber);
+    },
+  });
+}

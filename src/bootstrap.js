@@ -1,1 +1,136 @@
-import{createSplashScreen as w}from"./ui/splash-screen.js?v=7388f68cc0f433fd";import{waitForImage as b}from"./ui/media-ready.js?v=7388f68cc0f433fd";import{readRoute as S}from"./app/route.js?v=7388f68cc0f433fd";const d=w(),h=new AbortController;window.addEventListener("pagehide",()=>h.abort(),{once:!0}),window.addEventListener("pageshow",e=>{e.persisted&&h.signal.aborted&&document.querySelector("#app-splash")&&location.reload()});const{signal:c}=h,l=new Set;let p;const f=[...document.querySelectorAll("[data-app-style]")],E=f.length+3;async function L(e){let a;try{return await Promise.race([e(),new Promise((s,o)=>{a=setTimeout(()=>o(new Error("Startup timed out")),2e4)})])}finally{clearTimeout(a)}}function g(e){return new Promise((a,s)=>{const o=()=>{clearTimeout(u),clearInterval(i),e.removeEventListener("load",t),e.removeEventListener("error",r)},t=()=>{o(),e.media="all",a()},r=()=>{o(),s(new Error(`Stylesheet failed: ${e.href}`))},u=setTimeout(r,15e3);let i=0;e.addEventListener("load",t,{once:!0}),e.addEventListener("error",r,{once:!0});let n=!1;if(e.sheet)try{n=e.sheet.cssRules.length>0}catch{n=!1}if(n)t();else if(e.dataset.startupAttempt){const m=e.href;e.removeAttribute("href"),e.href=m}i=setInterval(()=>{if(e.sheet)try{e.sheet.cssRules.length>0&&t()}catch{r()}},50),e.dataset.startupAttempt="true"})}function A(){return new Promise((e,a)=>{const s=()=>{const u=document.querySelector("#visitor-flow-root:not([hidden])"),i=S(location.search),n=u||document.querySelector(".lesson-view.is-visible, .coming-soon.is-visible")||(i.subject?null:document.querySelector(".course-units"));if(!n)return;const m=[...n.querySelectorAll('[data-media-state="loading"], [aria-busy="true"]')].some(v=>!v.closest("[hidden]"));n.matches('[data-media-state="loading"], [aria-busy="true"]')||m||(r(),e())},o=new MutationObserver(s),t=()=>{r(),a(c.reason)},r=()=>{o.disconnect(),c.removeEventListener("abort",t)};o.observe(document.body,{subtree:!0,childList:!0,attributes:!0,attributeFilter:["class","hidden","aria-busy","data-media-state"]}),c.addEventListener("abort",t,{once:!0}),c.aborted?t():s()})}async function y(){try{const e=async(t,r)=>{l.has(t)||(await L(r),l.add(t),d.progress(l.size/E*95))},a=Promise.all(f.map(t=>e(t.href,()=>g(t)))),s=await Promise.allSettled([a,e("brand",async()=>{await Promise.all([...document.querySelectorAll("#app-splash img")].map(t=>{if(t.complete&&!t.naturalWidth){const r=t.src;t.removeAttribute("src"),t.src=r}return b(t,{signal:c})})),d.revealBrand()}),e("app",async()=>{await a,p||=import("./main.js?v=7388f68cc0f433fd"),await p})]);c.throwIfAborted();const o=s.find(t=>t.status==="rejected");if(o)throw o.reason;await e("destination",A),await d.finish(),document.querySelectorAll("[data-background-style]").forEach(t=>{t.sheet?t.media="all":t.addEventListener("load",()=>{t.media="all"},{once:!0})}),document.dispatchEvent(new Event("app:ready"))}catch(e){if(c.aborted)return;console.warn("Startup could not finish.",e),d.error(()=>{p&&!l.has("app")?location.reload():y()})}}y();
+import { createSplashScreen } from "./ui/splash-screen.js";
+import { waitForImage } from "./ui/media-ready.js";
+import { readRoute } from "./app/route.js";
+import { startAnalytics } from "./services/analytics.js";
+
+const splash = createSplashScreen();
+const controller = new AbortController();
+window.addEventListener("pagehide", () => controller.abort(), { once:true });
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted && controller.signal.aborted && document.querySelector("#app-splash")) location.reload();
+});
+const { signal } = controller;
+const completed = new Set();
+let application;
+const styles = [...document.querySelectorAll("[data-app-style]")];
+const total = styles.length + 3;
+
+async function bounded(task) {
+  let timer;
+  try {
+    return await Promise.race([task(), new Promise((_, reject) => {
+      timer = setTimeout(() => reject(new Error("Startup timed out")), 20000);
+    })]);
+  } finally { clearTimeout(timer); }
+}
+
+function stylesheetReady(link) {
+  return new Promise((resolve, reject) => {
+    const cleanup = () => {
+      clearTimeout(timer);
+      clearInterval(poll);
+      link.removeEventListener("load", ready);
+      link.removeEventListener("error", failed);
+    };
+    const ready = () => { cleanup(); link.media = "all"; resolve(); };
+    const failed = () => { cleanup(); reject(new Error(`Stylesheet failed: ${link.href}`)); };
+    const timer = setTimeout(failed, 15000);
+    let poll = 0;
+    link.addEventListener("load", ready, { once:true });
+    link.addEventListener("error", failed, { once:true });
+    let hasLoadedRules = false;
+    if (link.sheet) {
+      try { hasLoadedRules = link.sheet.cssRules.length > 0; } catch { hasLoadedRules = false; }
+    }
+    if (hasLoadedRules) ready();
+    else if (link.dataset.startupAttempt) {
+      const href = link.href;
+      link.removeAttribute("href");
+      link.href = href;
+    }
+    poll = setInterval(() => {
+      if (!link.sheet) return;
+      try { if (link.sheet.cssRules.length > 0) ready(); } catch { failed(); }
+    }, 50);
+    link.dataset.startupAttempt = "true";
+  });
+}
+
+// Observe the current destination, including popstate during startup. Never
+// release a superseded route or cover an actionable media error indefinitely.
+function destinationReady() {
+  return new Promise((resolve, reject) => {
+    const check = () => {
+      const visitor = document.querySelector("#visitor-flow-root:not([hidden])");
+      const route = readRoute(location.search);
+      const destination = visitor || document.querySelector(".lesson-view.is-visible, .coming-soon.is-visible")
+        || (!route.subject ? document.querySelector(".course-units") : null);
+      if (!destination) return;
+      const pending = [...destination.querySelectorAll('[data-media-state="loading"], [aria-busy="true"]')]
+        .some((node) => !node.closest("[hidden]"));
+      if (destination.matches('[data-media-state="loading"], [aria-busy="true"]') || pending) return;
+      cleanup();
+      resolve();
+    };
+    const observer = new MutationObserver(check);
+    const abort = () => { cleanup(); reject(signal.reason); };
+    const cleanup = () => { observer.disconnect(); signal.removeEventListener("abort", abort); };
+    observer.observe(document.body, { subtree:true, childList:true, attributes:true, attributeFilter:["class", "hidden", "aria-busy", "data-media-state"] });
+    signal.addEventListener("abort", abort, { once:true });
+    if (signal.aborted) abort();
+    else check();
+  });
+}
+
+async function start() {
+  try {
+    const track = async (key, task) => {
+      if (completed.has(key)) return;
+      await bounded(task);
+      completed.add(key);
+      splash.progress(completed.size / total * 95);
+    };
+    const css = Promise.all(styles.map((link) => track(link.href, () => stylesheetReady(link))));
+    const results = await Promise.allSettled([
+      css,
+      track("brand", async () => {
+        await Promise.all([...document.querySelectorAll("#app-splash img")].map((image) => {
+        if (image.complete && !image.naturalWidth) {
+          const source = image.src;
+          image.removeAttribute("src");
+          image.src = source;
+        }
+        return waitForImage(image, { signal });
+        }));
+        splash.revealBrand();
+      }),
+      track("app", async () => {
+        await css;
+        application ||= import("./main.js");
+        await application;
+      }),
+    ]);
+    signal.throwIfAborted();
+    const failed = results.find((result) => result.status === "rejected");
+    if (failed) throw failed.reason;
+    await track("destination", destinationReady);
+    await splash.finish();
+    document.querySelectorAll("[data-background-style]").forEach((link) => {
+      if (link.sheet) link.media = "all";
+      else link.addEventListener("load", () => { link.media = "all"; }, { once:true });
+    });
+    document.dispatchEvent(new Event("app:ready"));
+    startAnalytics();
+    void import("./services/lesson-content.js").then(({ startContentWarming }) => startContentWarming()).catch(() => {});
+  } catch (error) {
+    if (signal.aborted) return;
+    console.warn("Startup could not finish.", error);
+    splash.error(() => {
+      // Module evaluation errors are cached by browsers; a fresh document is
+      // the reliable retry without changing routes or persisted account data.
+      if (application && !completed.has("app")) location.reload();
+      else void start();
+    });
+  }
+}
+void start();

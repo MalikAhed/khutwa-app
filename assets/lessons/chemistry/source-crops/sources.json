@@ -1,0 +1,1545 @@
+{
+  "source_raster_scale": 2,
+  "coordinate_units": "pixels",
+  "note": "Each rectangle is measured in the corresponding rendered PNG, never PDF points. Source PDF and one-based page are recorded separately. Only original scientific figures, tables and structure crops are included.",
+  "crops": [
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p027-q03-option-1.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 27,
+          "rect": [
+            610,
+            504,
+            268,
+            74
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "01d90a7695e314164873e3032b00ba4063bbb3e395a4b8c58eabebe28db8b203",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 43.168,
+        "edgeMeanAbsoluteChannelError": 2.657
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p027-q03-option-2.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 27,
+          "rect": [
+            71,
+            504,
+            382,
+            74
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "c086fd77a819382cba1c44e9aab2b8fb1d9b258994d3bfcd8ad0b3cf538a8522",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 43.536,
+        "edgeMeanAbsoluteChannelError": 2.639
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p027-q03-option-3.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 27,
+          "rect": [
+            605,
+            582,
+            274,
+            93
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "9262adaf9b364db4e594ff42e24ab52b40fc81ae4310fa8668445cb03d2a7687",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 43.42,
+        "edgeMeanAbsoluteChannelError": 2.648
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p027-q03-option-4.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 27,
+          "rect": [
+            71,
+            582,
+            399,
+            93
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "5734b3a51d02287337f3f13c381329aa6db7dee0b9e98bc5ad3d7e67b420322b",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 44.52,
+        "edgeMeanAbsoluteChannelError": 2.707
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p029-q07-option-1.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 29,
+          "rect": [
+            741,
+            856,
+            169,
+            66
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "cd349841ffb7b61a4ea2b99120f9e344cac9af8ec52a03b0bc43522f3697da60",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 41.086,
+        "edgeMeanAbsoluteChannelError": 2.742
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p029-q07-option-2.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 29,
+          "rect": [
+            510,
+            856,
+            178,
+            66
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "769e9f6960ece272079946bbad3ae286da2e474fe670d1ae1ed74b15007b2ef7",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 41.946,
+        "edgeMeanAbsoluteChannelError": 2.856
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p029-q07-option-3.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 29,
+          "rect": [
+            309,
+            856,
+            154,
+            66
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "4d99f557f36477196e9268635acde2ca02b3d106fc8937dd4935fae6d8ac149a",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 40.532,
+        "edgeMeanAbsoluteChannelError": 2.662
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p029-q07-option-4.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 29,
+          "rect": [
+            86,
+            856,
+            178,
+            66
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p030-q09-option-1.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 30,
+          "rect": [
+            750,
+            1081,
+            162,
+            70
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p030-q09-option-2.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 30,
+          "rect": [
+            520,
+            1081,
+            177,
+            70
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p030-q09-option-3.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 30,
+          "rect": [
+            309,
+            1081,
+            151,
+            70
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p030-q09-option-4.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 30,
+          "rect": [
+            82,
+            1081,
+            180,
+            70
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p034-q10-option-1.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 34,
+          "rect": [
+            910,
+            1274,
+            159,
+            45
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p034-q10-option-2.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 34,
+          "rect": [
+            686,
+            1274,
+            143,
+            45
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p034-q10-option-3.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 34,
+          "rect": [
+            475,
+            1274,
+            140,
+            45
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p034-q10-option-4.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 34,
+          "rect": [
+            264,
+            1274,
+            156,
+            45
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p037-q09-option-1.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 37,
+          "rect": [
+            917,
+            1035,
+            149,
+            70
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p037-q09-option-2.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 37,
+          "rect": [
+            709,
+            1035,
+            143,
+            70
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p037-q09-option-3.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 37,
+          "rect": [
+            497,
+            1035,
+            144,
+            70
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p037-q09-option-4.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 37,
+          "rect": [
+            287,
+            1035,
+            141,
+            70
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p041-q01-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 41,
+          "rect": [
+            222,
+            294,
+            194,
+            151
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "5cf3f584a21f4fec8ed53bc68177b533610ede5a13f6fc86420abb85fda2a35d",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 41.655,
+        "edgeMeanAbsoluteChannelError": 2.277
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p015-q08-b-mg.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 26,
+          "rect": [
+            419,
+            802,
+            57,
+            49
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p015-q08-b-br.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 26,
+          "rect": [
+            419,
+            856,
+            240,
+            72
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p015-q08-b-ar.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 26,
+          "rect": [
+            419,
+            934,
+            240,
+            76
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p015-q08-b-as.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 26,
+          "rect": [
+            419,
+            1014,
+            240,
+            76
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p072-q06-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 72,
+          "rect": [
+            60,
+            617,
+            139,
+            91
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "73f9096b04446c572b28721d8d8097dd302a83d173ba6b055c9d4fbfd5e61432",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 41.206,
+        "edgeMeanAbsoluteChannelError": 2.881
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p076-q02-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 76,
+          "rect": [
+            244,
+            698,
+            357,
+            161
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "dd345607384a75fc52c51431212d8ad9e0ef5a22f8ea93b43cc127c5c8b9bc9a",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 41.704,
+        "edgeMeanAbsoluteChannelError": 2.541
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p076-q03-a5-solution.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 10,
+          "rect": [
+            348,
+            1052,
+            394,
+            153
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "77ecd5cb86c449d9cdc39bdcd180a242f9a8ad88f0f4ae777e3f7c9ffa287952",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 92,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 42.298,
+        "edgeMeanAbsoluteChannelError": 2.985
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p077-q01-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 77,
+          "rect": [
+            378,
+            139,
+            592,
+            141
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "2d24da2ae61b7471d06a2ac41cd941bbf15766092587bccc15028c5533360420",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 45.971,
+        "edgeMeanAbsoluteChannelError": 1.844
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p078-q01-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 78,
+          "rect": [
+            283,
+            136,
+            782,
+            243
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "fc26170039e6ddb5c0b97321b1adf15369216bd4b27b0f3bced81429f26152c4",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 46.346,
+        "edgeMeanAbsoluteChannelError": 1.819
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p079-q02-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 79,
+          "rect": [
+            246,
+            524,
+            314,
+            217
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "e6baf3a51e84241fd0a465d757a28a13e04659cf6d3498f00c0c6e28dca4bbd1",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 46.469,
+        "edgeMeanAbsoluteChannelError": 2.673
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p079-q03-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 79,
+          "rect": [
+            239,
+            965,
+            282,
+            206
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p081-q01-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 81,
+          "rect": [
+            275,
+            168,
+            796,
+            191
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "f4da8d3aec10f921f871379b02fd6c66884d9f191adbb7334ae0a44fe063c9fe",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 45.569,
+        "edgeMeanAbsoluteChannelError": 1.675
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p062-q01-a5-option-1.webp",
+      "source": "gaza-chemistry-official.pdf",
+      "clips": [
+        {
+          "page": 62,
+          "rect": [
+            900,
+            819,
+            72,
+            51
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p062-q01-a6-option-2.webp",
+      "source": "gaza-chemistry-official.pdf",
+      "clips": [
+        {
+          "page": 62,
+          "rect": [
+            659,
+            954,
+            75,
+            70
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p062-q01-a6-option-3.webp",
+      "source": "gaza-chemistry-official.pdf",
+      "clips": [
+        {
+          "page": 62,
+          "rect": [
+            438,
+            950,
+            53,
+            74
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a1-reaction.webp",
+      "source": "gaza-chemistry-official.pdf",
+      "clips": [
+        {
+          "page": 63,
+          "rect": [
+            106,
+            439,
+            430,
+            74
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a2-reaction.webp",
+      "source": "gaza-chemistry-official.pdf",
+      "clips": [
+        {
+          "page": 63,
+          "rect": [
+            106,
+            529,
+            458,
+            78
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a3-reaction.webp",
+      "source": "gaza-chemistry-official.pdf",
+      "clips": [
+        {
+          "page": 63,
+          "rect": [
+            107,
+            612,
+            365,
+            75
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a4-reaction.webp",
+      "source": "gaza-chemistry-official.pdf",
+      "clips": [
+        {
+          "page": 63,
+          "rect": [
+            106,
+            705,
+            366,
+            112
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a5-reaction.webp",
+      "source": "gaza-chemistry-official.pdf",
+      "clips": [
+        {
+          "page": 63,
+          "rect": [
+            109,
+            855,
+            402,
+            86
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p191-q01-option-1.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 191,
+          "rect": [
+            818,
+            246,
+            98,
+            53
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p191-q01-option-2.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 191,
+          "rect": [
+            539,
+            236,
+            169,
+            76
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p191-q01-option-3.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 191,
+          "rect": [
+            265,
+            245,
+            211,
+            49
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p191-q01-option-4.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 191,
+          "rect": [
+            100,
+            231,
+            119,
+            80
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p193-q03-option-1.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 193,
+          "rect": [
+            788,
+            321,
+            119,
+            65
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p193-q03-option-2.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 193,
+          "rect": [
+            600,
+            321,
+            58,
+            65
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p193-q03-option-3.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 193,
+          "rect": [
+            363,
+            321,
+            83,
+            65
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p193-q03-option-4.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 193,
+          "rect": [
+            193,
+            332,
+            72,
+            42
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p192-q01-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 192,
+          "rect": [
+            603,
+            82,
+            95,
+            77
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p192-q03-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 192,
+          "rect": [
+            160,
+            309,
+            365,
+            43
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "0727212055eda486b342559d4c7f57c9a08ba874e42addf8fd2573253ae5a3d1",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 41.329,
+        "edgeMeanAbsoluteChannelError": 2.946
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p192-q08-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 192,
+          "rect": [
+            207,
+            793,
+            344,
+            41
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p195-q08-s1-reactant.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 195,
+          "rect": [
+            91,
+            575,
+            164,
+            65
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "render_scale": 2,
+      "page_image_dimensions": [
+        1191,
+        1684
+      ],
+      "review_notes": "قصاصة أصلية ضيقة للصيغة البنائية المتفاعلة وعلاماتها العلمية فقط؛ شوهدت القصاصة بصريًا بعد حفظها، ولا تشمل السؤال كاملًا أو المنتجات أو هامش سنة الورود."
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p195-q08-s3-reactant.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 195,
+          "rect": [
+            107,
+            699,
+            137,
+            76
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "render_scale": 2,
+      "page_image_dimensions": [
+        1191,
+        1684
+      ],
+      "review_notes": "قصاصة أصلية ضيقة للصيغة البنائية المتفاعلة وعلاماتها العلمية فقط؛ شوهدت القصاصة بصريًا بعد حفظها، ولا تشمل السؤال كاملًا أو المنتجات أو هامش سنة الورود."
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p195-q09-s4-reactant.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 195,
+          "rect": [
+            100,
+            960,
+            193,
+            78
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "render_scale": 2,
+      "page_image_dimensions": [
+        1191,
+        1684
+      ],
+      "review_notes": "قصاصة أصلية ضيقة للصيغة البنائية المتفاعلة وعلاماتها العلمية فقط؛ شوهدت القصاصة بصريًا بعد حفظها، ولا تشمل السؤال كاملًا أو المنتجات أو هامش سنة الورود."
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p195-q10-s5-reactant.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 195,
+          "rect": [
+            94,
+            1317,
+            198,
+            107
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "render_scale": 2,
+      "page_image_dimensions": [
+        1191,
+        1684
+      ],
+      "review_notes": "قصاصة أصلية ضيقة للصيغة البنائية المتفاعلة وعلاماتها العلمية فقط؛ شوهدت القصاصة بصريًا بعد حفظها، ولا تشمل السؤال كاملًا أو المنتجات أو هامش سنة الورود."
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p195-q11-reactant.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 195,
+          "rect": [
+            69,
+            1481,
+            187,
+            64
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "render_scale": 2,
+      "page_image_dimensions": [
+        1191,
+        1684
+      ],
+      "review_notes": "قصاصة أصلية ضيقة للصيغة البنائية المتفاعلة وعلاماتها العلمية فقط؛ شوهدت القصاصة بصريًا بعد حفظها، ولا تشمل السؤال كاملًا أو المنتجات أو هامش سنة الورود."
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p196-q01-reactant.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 196,
+          "rect": [
+            68,
+            83,
+            127,
+            74
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "render_scale": 2,
+      "page_image_dimensions": [
+        1191,
+        1684
+      ],
+      "review_notes": "قصاصة أصلية ضيقة للصيغة البنائية المتفاعلة وعلاماتها العلمية فقط؛ شوهدت القصاصة بصريًا بعد حفظها، ولا تشمل السؤال كاملًا أو المنتجات أو هامش سنة الورود."
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p196-q02-reactant.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 196,
+          "rect": [
+            65,
+            174,
+            93,
+            73
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "render_scale": 2,
+      "page_image_dimensions": [
+        1191,
+        1684
+      ],
+      "review_notes": "قصاصة أصلية ضيقة للصيغة البنائية المتفاعلة وعلاماتها العلمية فقط؛ شوهدت القصاصة بصريًا بعد حفظها، ولا تشمل السؤال كاملًا أو المنتجات أو هامش سنة الورود."
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p196-q06-reactant.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 196,
+          "rect": [
+            68,
+            444,
+            162,
+            72
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "render_scale": 2,
+      "page_image_dimensions": [
+        1191,
+        1684
+      ],
+      "review_notes": "قصاصة أصلية ضيقة للصيغة البنائية المتفاعلة وعلاماتها العلمية فقط؛ شوهدت القصاصة بصريًا بعد حفظها، ولا تشمل السؤال كاملًا أو المنتجات أو هامش سنة الورود."
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p197-q01-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 197,
+          "rect": [
+            213,
+            185,
+            579,
+            337
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "ada1eab805692e085c8d69b965f9bbea30554e5a46589942c6850744e4ebb3cc",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 43.661,
+        "edgeMeanAbsoluteChannelError": 2.057
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p197-q02-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 197,
+          "rect": [
+            276,
+            605,
+            453,
+            266
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "893b7b1fc5b1f99ecbfc0b1dd9b37b0fc822c158ae9133e5db8e562684dea357",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 43.9,
+        "edgeMeanAbsoluteChannelError": 2.377
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p197-q03-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 197,
+          "rect": [
+            288,
+            921,
+            427,
+            49
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "92ccd5031e342b0e0df59cb46132ece6a10b8c9f23d216e94e3d28c5e2c41b65",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 40.068,
+        "edgeMeanAbsoluteChannelError": 3.002
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p197-q04-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 197,
+          "rect": [
+            111,
+            1027,
+            782,
+            68
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "3bbe6984016f36e0a08386deea216610086800838f9f94692de96a0c9d56c2b1",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 92,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 41.064,
+        "edgeMeanAbsoluteChannelError": 2.305
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p198-q01-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 198,
+          "rect": [
+            219,
+            184,
+            572,
+            141
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p198-q02-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 198,
+          "rect": [
+            112,
+            635,
+            786,
+            120
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p198-q03-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 198,
+          "rect": [
+            112,
+            1021,
+            786,
+            135
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p199-q01-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 199,
+          "rect": [
+            82,
+            166,
+            846,
+            119
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p199-q02-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 199,
+          "rect": [
+            112,
+            524,
+            786,
+            158
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p199-q03-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 199,
+          "rect": [
+            138,
+            888,
+            735,
+            160
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p200-q01-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 200,
+          "rect": [
+            93,
+            158,
+            819,
+            140
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p200-q06-ketone.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 200,
+          "rect": [
+            704,
+            1090,
+            97,
+            63
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p200-q06-aldehyde.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 200,
+          "rect": [
+            564,
+            1090,
+            106,
+            63
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p200-q07-figure.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 200,
+          "rect": [
+            105,
+            1206,
+            793,
+            218
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-oj-p211-q03-cell.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 211,
+          "rect": [
+            108,
+            663,
+            291,
+            215
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "84c945047436d0401f0e60f6256f99a9a000888d0d2cfebff45fe083fc569f36",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 40.469,
+        "edgeMeanAbsoluteChannelError": 2.774
+      }
+    },
+    {
+      "file": "assets/lessons/chemistry/source-crops/chemistry-gaza-p069-q03-a-solution-cell.webp",
+      "source": "chemistry.pdf",
+      "clips": [
+        {
+          "page": 228,
+          "rect": [
+            185,
+            609,
+            765,
+            422
+          ],
+          "coordinateUnits": "pixels"
+        }
+      ],
+      "reviewed": true,
+      "sha256": "9ffc2371852cb550426452d2536ba8f67574d67187ccf6d0dcfb040a88011b04",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 46.071,
+        "edgeMeanAbsoluteChannelError": 2.406
+      }
+    }
+  ]
+}

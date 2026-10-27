@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const lessonSource = `:::exam-question
 id: math-book-p048-activity-1
 title: الكتاب، ص ٤٦ · نشاط-١
 question: التقعر ونقط الانعطاف
@@ -11850,4 +11852,16 @@ solution:
 
 
 النتيجة: \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` مقعر للأعلى على \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ح</mi></mrow></math>\`.
-:::`;export default m({status:"published",language:"ar",title:"التقعر ونقط الانعطاف",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة التقعر ونقط الانعطاف من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"35 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "التقعر ونقط الانعطاف",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة التقعر ونقط الانعطاف من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "35 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

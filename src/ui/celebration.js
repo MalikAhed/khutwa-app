@@ -1,1 +1,47 @@
-import{prefersReducedMotion as b}from"../lib/dom.js?v=7388f68cc0f433fd";const y=Object.freeze(["#ff3b69","#1cb0f6","#ffd84d","#62bd3d","#a95bf1","#ff8a24"]);export function launchCelebration({className:o,signal:s,replaceExisting:f=!1,particleCount:m=110}){const n=document.querySelector(`.${o}`);if(b())return n?.remove(),null;if(n&&!f)return n;n?.remove();const e=document.createElement("div");e.className=o,e.setAttribute("aria-hidden","true"),e.innerHTML="<strong>✦</strong>";for(let r=0;r<m;r+=1){const t=document.createElement("i"),i=(Math.random()-.5)*126,p=-(12+Math.random()*34),u=i+(Math.random()-.5)*20,h=58+Math.random()*38;t.style.setProperty("--burst-x",`${i}vw`),t.style.setProperty("--burst-y",`${p}vh`),t.style.setProperty("--fall-x",`${u}vw`),t.style.setProperty("--fall-y",`${h}vh`),t.style.setProperty("--delay",`${Math.random()*.24}s`),t.style.setProperty("--duration",`${3.2+Math.random()*1.6}s`);const c=360+Math.random()*900;t.style.setProperty("--burst-spin",`${c*.45}deg`),t.style.setProperty("--spin",`${c}deg`),t.style.setProperty("--color",y[r%y.length]),e.append(t)}document.body.append(e);const a=new Set(e.querySelectorAll("strong, i")),l=r=>{a.delete(r.target),a.size===0&&e.remove()},d=s?{signal:s}:void 0;return e.addEventListener("animationend",l,d),e.addEventListener("animationcancel",l,d),e}
+import { prefersReducedMotion } from "../lib/dom.js";
+
+const PARTICLE_COLORS = Object.freeze(["#ff3b69", "#1cb0f6", "#ffd84d", "#62bd3d", "#a95bf1", "#ff8a24"]);
+
+export function launchCelebration({ className, signal, replaceExisting = false, particleCount = 110 }) {
+  const existing = document.querySelector(`.${className}`);
+  if (prefersReducedMotion()) {
+    existing?.remove();
+    return null;
+  }
+  if (existing && !replaceExisting) return existing;
+  existing?.remove();
+
+  const layer = document.createElement("div");
+  layer.className = className;
+  layer.setAttribute("aria-hidden", "true");
+  layer.innerHTML = "<strong>✦</strong>";
+  for (let index = 0; index < particleCount; index += 1) {
+    const particle = document.createElement("i");
+    const x = (Math.random() - .5) * 126;
+    const y = -(12 + Math.random() * 34);
+    const fallX = x + (Math.random() - .5) * 20;
+    const fallY = 58 + Math.random() * 38;
+    particle.style.setProperty("--burst-x", `${x}vw`);
+    particle.style.setProperty("--burst-y", `${y}vh`);
+    particle.style.setProperty("--fall-x", `${fallX}vw`);
+    particle.style.setProperty("--fall-y", `${fallY}vh`);
+    particle.style.setProperty("--delay", `${Math.random() * .24}s`);
+    particle.style.setProperty("--duration", `${3.2 + Math.random() * 1.6}s`);
+    const spin = 360 + Math.random() * 900;
+    particle.style.setProperty("--burst-spin", `${spin * .45}deg`);
+    particle.style.setProperty("--spin", `${spin}deg`);
+    particle.style.setProperty("--color", PARTICLE_COLORS[index % PARTICLE_COLORS.length]);
+    layer.append(particle);
+  }
+
+  document.body.append(layer);
+  const animatedElements = new Set(layer.querySelectorAll("strong, i"));
+  const settleParticle = (event) => {
+    animatedElements.delete(event.target);
+    if (animatedElements.size === 0) layer.remove();
+  };
+  const options = signal ? { signal } : undefined;
+  layer.addEventListener("animationend", settleParticle, options);
+  layer.addEventListener("animationcancel", settleParticle, options);
+  return layer;
+}

@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as s}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const LESSON_MARKDOWN=`<!-- step-id: upper-layers-mission -->
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const LESSON_MARKDOWN = `<!-- step-id: upper-layers-mission -->
 <!-- presentation: video-intro -->
 # طبقات OSI العليا وطبقة الجلسة
 
@@ -159,4 +161,17 @@ https://www.youtube.com/watch?v=tzTULxoNAAs
 
 <!-- lesson-step -->
 
-`;export default s({status:"published",title:"طبقات نموذج OSI",summary:"تفسير مهام طبقات الجلسة والتقديم والتطبيقات وتمييز خدماتها وبروتوكولاتها.",outcome:"تفسير مهام طبقات الجلسة والتقديم والتطبيقات وتمييز خدماتها وبروتوكولاتها.",mode:"شاهد ← راجع ← أجب",mission:"تفسير مهام طبقات الجلسة والتقديم والتطبيقات وتمييز خدماتها وبروتوكولاتها.",duration:"حسب الفيديو والتدريب",level:"الثاني عشر",reward:10,passingScore:80},LESSON_MARKDOWN);
+`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "title": "طبقات نموذج OSI",
+  "summary": "تفسير مهام طبقات الجلسة والتقديم والتطبيقات وتمييز خدماتها وبروتوكولاتها.",
+  "outcome": "تفسير مهام طبقات الجلسة والتقديم والتطبيقات وتمييز خدماتها وبروتوكولاتها.",
+  "mode": "شاهد ← راجع ← أجب",
+  "mission": "تفسير مهام طبقات الجلسة والتقديم والتطبيقات وتمييز خدماتها وبروتوكولاتها.",
+  "duration": "حسب الفيديو والتدريب",
+  "level": "الثاني عشر",
+  "reward": 10,
+  "passingScore": 80
+}, LESSON_MARKDOWN);

@@ -1,4 +1,6 @@
-import{createArabicLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createArabicLesson } from "./shared.js";
+
+export const source = `:::exam-question
 id: arabic-p016-w04-b
 title: البحر البسيط، مقالي، السؤال 4، الفرع ب، ص 15، 2022
 question: ب. ما الأغنية التي يلحن على وزنها البحر البسيط؟
@@ -407,4 +409,6 @@ solution:
 كل مجموعة صوتية تقابل التفعيلة في الصف نفسه من الجدول؛ و«متفعلن» صورة من مستفعلن بحذف الثاني الساكن، و«فَعِلن» صورة من فاعلن بالحذف نفسه، و«فَعْلن» صورة مقبولة في آخر الشطر. لذلك البحر هو البسيط.
 والجدول الأصلي يوضح مواضع المقاطع التي استُخدمت في التقطيع:
 ![التقطيع العروضي الأصلي](assets/lessons/arabic/source-crops/baseet-2022-q3-a.webp)
-:::`;export default e("arabic-u06-l02",source);
+:::`;
+
+export default createArabicLesson("arabic-u06-l02", source);

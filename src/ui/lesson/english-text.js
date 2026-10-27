@@ -1,1 +1,39 @@
-const h=/[A-Za-z](?:[A-Za-z0-9_+#./-]*[A-Za-z0-9_+#])?(?:[ \t]+[A-Za-z](?:[A-Za-z0-9_+#./-]*[A-Za-z0-9_+#])?)*/g;export function highlightEnglishText(a){if(!a)return;a.querySelectorAll('bdi[dir="ltr"]').forEach(e=>{/[A-Za-z]/.test(e.textContent)&&!e.closest("code, pre, kbd, samp, a, svg, math")&&(e.classList.add("lesson-english-term"),e.lang="en")});const t=a.ownerDocument,i=t.createTreeWalker(a,NodeFilter.SHOW_TEXT),r=[];for(;i.nextNode();){const e=i.currentNode;/[A-Za-z]/.test(e.textContent)&&!e.parentElement?.closest("bdi, code, pre, kbd, samp, a, svg, math, .lesson-english-term")&&r.push(e)}for(const e of r){const o=e.textContent,d=[...o.matchAll(h)];if(!d.length)continue;const c=t.createDocumentFragment();let n=0;for(const s of d){s.index>n&&c.append(t.createTextNode(o.slice(n,s.index)));const l=t.createElement("bdi");l.className="lesson-english-term",l.lang="en",l.textContent=s[0],c.append(l),n=s.index+s[0].length}n<o.length&&c.append(t.createTextNode(o.slice(n))),e.replaceWith(c)}}
+const LATIN_RUN = /[A-Za-z](?:[A-Za-z0-9_+#./-]*[A-Za-z0-9_+#])?(?:[ \t]+[A-Za-z](?:[A-Za-z0-9_+#./-]*[A-Za-z0-9_+#])?)*/g;
+
+/** Give English terms in Arabic questions a consistent reading direction and emphasis. */
+export function highlightEnglishText(root) {
+  if (!root) return;
+  // The Markdown renderer already isolates these phrases; retain question
+  // emphasis without creating another direction wrapper inside them.
+  root.querySelectorAll('bdi[dir="ltr"]').forEach(term => {
+    if (/[A-Za-z]/.test(term.textContent) && !term.closest("code, pre, kbd, samp, a, svg, math")) {
+      term.classList.add("lesson-english-term");
+      term.lang = "en";
+    }
+  });
+  const doc = root.ownerDocument;
+  const walker = doc.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) {
+    const node = walker.currentNode;
+    if (/[A-Za-z]/.test(node.textContent) && !node.parentElement?.closest("bdi, code, pre, kbd, samp, a, svg, math, .lesson-english-term")) nodes.push(node);
+  }
+  for (const node of nodes) {
+    const text = node.textContent;
+    const matches = [...text.matchAll(LATIN_RUN)];
+    if (!matches.length) continue;
+    const fragment = doc.createDocumentFragment();
+    let offset = 0;
+    for (const match of matches) {
+      if (match.index > offset) fragment.append(doc.createTextNode(text.slice(offset, match.index)));
+      const term = doc.createElement("bdi");
+      term.className = "lesson-english-term";
+      term.lang = "en";
+      term.textContent = match[0];
+      fragment.append(term);
+      offset = match.index + match[0].length;
+    }
+    if (offset < text.length) fragment.append(doc.createTextNode(text.slice(offset)));
+    node.replaceWith(fragment);
+  }
+}

@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js";
+
+export const source = `:::exam-question
 id: eng-2023-p120-qv1-1
 title: Unit 11 · PDF 120 · V1-1
 question: He developed an American __________. (way of speaking)
@@ -214,4 +216,6 @@ solution:
 
 expatriates هي الإجابة المقصودة لأنها تصف الإقامة خارج الوطن. وقد تلائم fellow countrymen الجملة أيضاً إذا كان المتكلم فلسطينياً؛ جنسية المتكلم غير مذكورة.
 
-:::`;export default e("english-u11-vocabulary",source);
+:::`;
+
+export default createEnglishLesson("english-u11-vocabulary", source);

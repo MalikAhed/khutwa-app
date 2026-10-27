@@ -1,0 +1,134 @@
+{
+  "sourceFile": "ict-classified-2023",
+  "sourcePdf": "تصنيف أسئلة الثانوية العامة في تكنولوجيا المعلومات توجيهي علمي 2023 + الحلول - المكتبة الفلسطينية الشاملة.pdf",
+  "sourceSha256": "f98a49d719f0f7b5d26524ee7f6116b59d0c4bd3761163045abd635af2ce7685",
+  "renderer": "pdftoppm 260dpi PNG for original source crops; optimized runtime WebP encoding is recorded per crop.",
+  "crops": {
+    "classified-p07-q09-icons": {
+      "sourcePage": 7,
+      "pdfRect": [
+        185,
+        101,
+        442,
+        215
+      ],
+      "pixelSize": [
+        928,
+        411
+      ],
+      "sha256": "ba63afc0806a595d4832268dada11f550c4c4b757c3b57f7d61f531fa980bb00",
+      "description": "Original four icon choices and أ/ب/ج/د labels for database MCQ 9",
+      "originalSha256": "9e240d03099f9522e7deb45174b442884ef95a7375c742cca97a6c54e45996e0",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 47.95,
+        "edgeMeanAbsoluteChannelError": 1.832
+      }
+    },
+    "classified-p11-q3-01-relationship": {
+      "sourcePage": 11,
+      "pdfRect": [
+        43,
+        295,
+        248,
+        448
+      ],
+      "pixelSize": [
+        741,
+        553
+      ],
+      "sha256": "5af2354df0dd01c625aee5e9673bcbade0e38c56063356f25b09c96446174459",
+      "description": "Original Microsoft Access relationships dialog for database analysis Q1"
+    },
+    "classified-p12-q3-04-erd": {
+      "sourcePage": 12,
+      "pdfRect": [
+        61,
+        345,
+        346,
+        447
+      ],
+      "pixelSize": [
+        1030,
+        368
+      ],
+      "sha256": "420ee79efb9c011f6b675e46ab42cddcd263d9a10795914ac81681f71447fea1",
+      "description": "Original workshop and worker ERD for database analysis Q4",
+      "originalSha256": "c42adcd6f1cf371a4922c97f014a7567b8e3bbb088a9a3af1cd5a7d0aa3978ca",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 47.863,
+        "edgeMeanAbsoluteChannelError": 2.504
+      }
+    },
+    "classified-p25-q3-10-table": {
+      "sourcePage": 25,
+      "pdfRect": [
+        108,
+        452,
+        394,
+        621
+      ],
+      "pixelSize": [
+        1033,
+        611
+      ],
+      "sha256": "98ebc5a7ffac3e7ff0938bde06f655295431f4da78c6a50ebb1b9276abf7a961",
+      "description": "Original Book table for SQL case Q10"
+    },
+    "classified-p29-q3-23-tables": {
+      "sourcePage": 29,
+      "pdfRect": [
+        82,
+        472,
+        453,
+        573
+      ],
+      "pixelSize": [
+        1340,
+        364
+      ],
+      "sha256": "4727503c5c9b7f409f4e2d388991289c2d8152db7c1ff4f96b16899f69844873",
+      "description": "Original Publisher_tbl and Book_tbl tables for SQL case Q23",
+      "originalSha256": "2624cc202f0a9b42e7165ddaa921285900a5f7fd6c6983b40cd56a734ac098b5",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 46.544,
+        "edgeMeanAbsoluteChannelError": 1.758
+      }
+    },
+    "classified-p30-q3-25-tables": {
+      "sourcePage": 30,
+      "pdfRect": [
+        62,
+        255,
+        451,
+        333
+      ],
+      "pixelSize": [
+        1405,
+        282
+      ],
+      "sha256": "6d4fd97527d3275194ed66ffbc3e2b6add1ddaafc11bb370facc78320d0c6e66",
+      "description": "Original Delivery_Tbl and Customer_Tbl tables for SQL case Q25",
+      "originalSha256": "447a28ddcdc450ed52622a68a6b47d7e38e2f15f93b5e403a3528637e0962eaf",
+      "runtimeEncoding": {
+        "format": "WebP",
+        "quality": 85,
+        "originalDimensions": true,
+        "alpha": "unchanged",
+        "psnrDB": 44.902,
+        "edgeMeanAbsoluteChannelError": 1.743
+      }
+    }
+  }
+}

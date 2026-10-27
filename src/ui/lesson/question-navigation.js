@@ -1,1 +1,104 @@
-export function mountQuestionNavigation({shell:p,signal:o,locale:b,getQuestions:w,getCurrentId:h,getRating:k,subscribe:I,onSelect:M}){const S=p.querySelector(".lesson-card")||p;let f,d,t,u,L,i=[],g=0;const W=b==="ar"?{easy:"سهل",medium:"متوسط",hard:"صعب",unrated:"غير مقيّم"}:{easy:"Easy",medium:"Medium",hard:"Hard",unrated:"Unrated"},q=()=>i.forEach((r,l)=>{const m=r.dataset.questionJump,c=k(m)||"unrated";r.dataset.rating=c;const n=m===h();r.tabIndex=n?0:-1,n?r.setAttribute("aria-current","step"):r.removeAttribute("aria-current"),r.setAttribute("aria-label",`${b==="ar"?"السؤال":"Question"} ${l+1}، ${W[c]}`)}),E=r=>{r&&(t.scrollLeft=r.offsetLeft-(t.clientWidth-r.offsetWidth)/2)},y=()=>{const r=p.querySelector("[data-lesson-step] .level-layout-actions");if(!r)return;const l=r.querySelector(".level-question-rating-panel");if(!l)return;const m=h();if(r===f&&u?.parentElement===f&&u.contains(l)&&m===L)return;f=r,L=m,u||(u=document.createElement("div"),u.className="question-footer-toolbar"),d||(d=document.createElement("nav"),d.className="question-number-slider",d.dataset.questionSlider="",d.setAttribute("aria-label",b==="ar"?"قائمة الأسئلة":"Questions"),t=document.createElement("div"),t.className="question-number-track",t.dir="ltr",d.append(t));const c=w();if((i.length!==c.length||c.some((e,a)=>i[a]?.dataset.questionJump!==e.id))&&(i=c.map((e,a)=>{const s=document.createElement("button");return s.type="button",s.className="question-number",s.dataset.questionJump=e.id,s.textContent=String(a+1),s}),t.replaceChildren(...i)),u.replaceChildren(d,...l?[l]:[]),f.prepend(u),f.classList.add("level-layout-actions--question-slider"),q(),cancelAnimationFrame(g),g=requestAnimationFrame(()=>{if(o.aborted)return;const e=i.find(a=>a.hasAttribute("aria-current"));e&&(e.offsetLeft<t.scrollLeft||e.offsetLeft+e.offsetWidth>t.scrollLeft+t.clientWidth)&&E(e)}),t.dataset.bound)return;t.dataset.bound="true";let n=null,A=0;t.addEventListener("pointerdown",e=>{e.button!==0||e.pointerType!=="mouse"||(n={id:e.pointerId,x:e.clientX,left:t.scrollLeft,dragged:!1})},{signal:o}),t.addEventListener("pointermove",e=>{if(!n||e.pointerId!==n.id)return;const a=e.clientX-n.x;!n.dragged&&Math.abs(a)>5&&(n.dragged=!0,t.setPointerCapture(e.pointerId),t.classList.add("is-dragging")),n.dragged&&(e.preventDefault(),t.scrollLeft=n.left-a)},{signal:o});const v=e=>{!n||e.pointerId!==n.id||(n.dragged&&(A=performance.now()+180),t.hasPointerCapture(e.pointerId)&&t.releasePointerCapture(e.pointerId),n=null,t.classList.remove("is-dragging"))};t.addEventListener("pointerup",v,{signal:o}),t.addEventListener("pointercancel",v,{signal:o}),t.addEventListener("click",e=>{if(e.detail>0&&performance.now()<A){e.preventDefault();return}const a=e.target.closest("[data-question-jump]");a&&a.dataset.questionJump!==h()&&M(a.dataset.questionJump)},{signal:o}),t.addEventListener("wheel",e=>{t.scrollWidth<=t.clientWidth+2||Math.abs(e.deltaX)>=Math.abs(e.deltaY)||(e.preventDefault(),t.scrollLeft+=e.deltaY)},{signal:o,passive:!1}),t.addEventListener("keydown",e=>{if(!["ArrowLeft","ArrowRight","Home","End"].includes(e.key))return;const a=i.indexOf(e.target);if(a<0)return;e.preventDefault();const s=e.key==="Home"?0:e.key==="End"?i.length-1:Math.max(0,Math.min(i.length-1,a+(e.key==="ArrowRight"?1:-1)));i.forEach((J,N)=>{J.tabIndex=N===s?0:-1}),i[s].focus({preventScroll:!0}),E(i[s])},{signal:o})},x=new MutationObserver(y);x.observe(S,{childList:!0,subtree:!0});const D=I?.(q);return y(),()=>{x.disconnect(),D?.(),cancelAnimationFrame(g),d?.remove()}}
+export function mountQuestionNavigation({ shell, signal, locale, getQuestions, getCurrentId, getRating, subscribe, onSelect }) {
+  const container = shell.querySelector('.lesson-card') || shell;
+  let footer, slider, track, toolbar, lastId, buttons = [], frame = 0;
+  const labels = locale === 'ar' ? {easy:'سهل',medium:'متوسط',hard:'صعب',unrated:'غير مقيّم'} : {easy:'Easy',medium:'Medium',hard:'Hard',unrated:'Unrated'};
+  const refresh = () => buttons.forEach((button,index) => {
+    const id = button.dataset.questionJump;
+    const rating = getRating(id) || 'unrated';
+    button.dataset.rating = rating;
+    const current = id === getCurrentId();
+    button.tabIndex = current ? 0 : -1;
+    if (current) button.setAttribute('aria-current','step');
+    else button.removeAttribute('aria-current');
+    button.setAttribute('aria-label',`${locale === 'ar' ? 'السؤال' : 'Question'} ${index + 1}، ${labels[rating]}`);
+  });
+  const reveal = button => {
+    if (button) track.scrollLeft = button.offsetLeft - (track.clientWidth - button.offsetWidth) / 2;
+  };
+  const mount = () => {
+    const nextFooter = shell.querySelector('[data-lesson-step] .level-layout-actions');
+    if (!nextFooter) return;
+    const rating = nextFooter.querySelector('.level-question-rating-panel');
+    if (!rating) return;
+    const currentId = getCurrentId();
+    if (nextFooter === footer && toolbar?.parentElement === footer && toolbar.contains(rating) && currentId === lastId) return;
+    footer = nextFooter;
+    lastId = currentId;
+    if (!toolbar) {
+      toolbar = document.createElement('div');
+      toolbar.className = 'question-footer-toolbar';
+    }
+    if (!slider) {
+      slider = document.createElement('nav');
+      slider.className = 'question-number-slider';
+      slider.dataset.questionSlider = '';
+      slider.setAttribute('aria-label',locale === 'ar' ? 'قائمة الأسئلة' : 'Questions');
+      track = document.createElement('div');
+      track.className = 'question-number-track';track.dir = 'ltr';
+      slider.append(track);
+    }
+    const questions = getQuestions();
+    if (buttons.length !== questions.length || questions.some((question,index) => buttons[index]?.dataset.questionJump !== question.id)) {
+      buttons = questions.map((question,index) => {
+        const button = document.createElement('button');
+        button.type = 'button';button.className = 'question-number';
+        button.dataset.questionJump = question.id;button.textContent = String(index + 1);
+        return button;
+      });
+      track.replaceChildren(...buttons);
+    }
+    toolbar.replaceChildren(slider,...(rating ? [rating] : []));
+    footer.prepend(toolbar);footer.classList.add('level-layout-actions--question-slider');
+    refresh();
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(() => {
+      if (signal.aborted) return;
+      const button = buttons.find(button => button.hasAttribute('aria-current'));
+      if (button && (button.offsetLeft < track.scrollLeft || button.offsetLeft + button.offsetWidth > track.scrollLeft + track.clientWidth)) reveal(button);
+    });
+    if (track.dataset.bound) return;
+    track.dataset.bound = 'true';
+    let pointer = null, suppressUntil = 0;
+    track.addEventListener('pointerdown',event => {
+      if (event.button !== 0 || event.pointerType !== 'mouse') return;
+      pointer = {id:event.pointerId,x:event.clientX,left:track.scrollLeft,dragged:false};
+    },{signal});
+    track.addEventListener('pointermove',event => {
+      if (!pointer || event.pointerId !== pointer.id) return;
+      const delta = event.clientX - pointer.x;
+      if (!pointer.dragged && Math.abs(delta) > 5) { pointer.dragged = true;track.setPointerCapture(event.pointerId);track.classList.add('is-dragging'); }
+      if (pointer.dragged) { event.preventDefault();track.scrollLeft = pointer.left - delta; }
+    },{signal});
+    const endDrag = event => {
+      if (!pointer || event.pointerId !== pointer.id) return;
+      if (pointer.dragged) suppressUntil = performance.now() + 180;
+      if (track.hasPointerCapture(event.pointerId)) track.releasePointerCapture(event.pointerId);
+      pointer = null;track.classList.remove('is-dragging');
+    };
+    track.addEventListener('pointerup',endDrag,{signal});
+    track.addEventListener('pointercancel',endDrag,{signal});
+    track.addEventListener('click',event => {
+      if (event.detail > 0 && performance.now() < suppressUntil) { event.preventDefault();return; }
+      const button = event.target.closest('[data-question-jump]');
+      if (button && button.dataset.questionJump !== getCurrentId()) onSelect(button.dataset.questionJump);
+    },{signal});
+    track.addEventListener('wheel',event => {
+      if (track.scrollWidth <= track.clientWidth + 2 || Math.abs(event.deltaX) >= Math.abs(event.deltaY)) return;
+      event.preventDefault();track.scrollLeft += event.deltaY;
+    },{signal,passive:false});
+    track.addEventListener('keydown',event => {
+      if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
+      const index = buttons.indexOf(event.target);
+      if (index < 0) return;
+      event.preventDefault();
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? buttons.length - 1 : Math.max(0,Math.min(buttons.length - 1,index + (event.key === 'ArrowRight' ? 1 : -1)));
+      buttons.forEach((button,i) => {button.tabIndex = i === next ? 0 : -1;});
+      buttons[next].focus({preventScroll:true});reveal(buttons[next]);
+    },{signal});
+  };
+  const observer = new MutationObserver(mount);
+  observer.observe(container,{childList:true,subtree:true});
+  const unsubscribe = subscribe?.(refresh);
+  mount();
+  return () => { observer.disconnect();unsubscribe?.();cancelAnimationFrame(frame);slider?.remove(); };
+}

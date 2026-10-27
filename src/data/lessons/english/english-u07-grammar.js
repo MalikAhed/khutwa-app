@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::exam-question
+import { createEnglishLesson } from "./shared.js";
+
+export const source = `:::exam-question
 id: eng-2023-p074-qlanguage-1-1
 title: Unit 7 · PDF 74 · language-1-1
 question: What kind of activities does she practice in her free time? (I asked Mona) ..............
@@ -1953,4 +1955,6 @@ nothing تجعل المعنى منفيًا، فالذيل مثبت. has هنا �
 **Answer:**
 She has nothing to do today, does she?
 
-:::`;export default e("english-u07-grammar",source);
+:::`;
+
+export default createEnglishLesson("english-u07-grammar", source);

@@ -1,10 +1,131 @@
-import{animateView as z}from"../view-motion.js?v=7388f68cc0f433fd";export function mountVideoTour(s,{signal:d,locale:g="ar",finishLabel:L,onFinish:T=()=>{}}={}){const n=s.querySelector(".level-layout-task"),x=s.querySelector(".lesson-video-embed");if(!n||!x||d?.aborted)return;const r=g==="ar",E=matchMedia("(orientation:portrait) and (max-width:1100px)"),A=s.querySelector(".lesson-study-layout")?".lesson-study-layout":".lesson-video-resources",l=[{id:"video",selector:".lesson-video-stage",title:r?"ابدأ بالفيديو":"Start with the video",text:r?"شاهد الفيديو هنا أولًا. تعال أريك ما سيساعدك على المراجعة بعده!":"Watch the video here first. Let me show you what will help you review afterward!"},{id:"topics",selector:".lesson-video-chapters",title:r?"ارجع لأي موضوع بسهولة":"Jump to a topic",text:r?"هذه الأزرار الحمراء تنقلك مباشرة إلى الجزء الذي تريد مراجعته في الفيديو.":"These red buttons take you straight to the topic you want to review in the video."},{id:"notes",selector:A,title:r?"بعد المشاهدة، مرّر للأسفل":"After watching, scroll down",text:r?"اقرأ الملخص بعد كل فيديو لتثبّت فهمك. وقد تجد روابط أو ملفات مفيدة أيضًا. لنبدأ!":"Read the summary after each video to reinforce what you learned. You may also find useful links or files. Let's begin!"},{id:"links",selector:".lesson-source-download",title:r?"روابطك المفيدة هنا":"Useful links are here",text:r?"وقد تجد روابط للكتاب أو ملفات تحتاجها، مثل هذه. لنرجع الآن إلى الفيديو!":"You may also find links to the textbook or helpful files, like these. Let's return to the video!"}].filter(t=>s.querySelector(t.selector)),w=new AbortController,e=document.createElement("dialog");e.className="lesson-video-tour",e.dir=r?"rtl":"ltr",e.lang=g,e.setAttribute("aria-labelledby","video-tour-title"),e.setAttribute("aria-describedby","video-tour-copy"),e.innerHTML=`
+import { animateView } from "../view-motion.js";
+
+/** A short orientation on the real player, topics and reading below it. */
+export function mountVideoTour(host, { signal, locale = "ar", finishLabel, onFinish = () => {} } = {}) {
+  const surface = host.querySelector(".level-layout-task");
+  const player = host.querySelector(".lesson-video-embed");
+  if (!surface || !player || signal?.aborted) return;
+  const arabic = locale === "ar";
+  const portrait = matchMedia("(orientation:portrait) and (max-width:1100px)");
+  const reading = host.querySelector(".lesson-study-layout") ? ".lesson-study-layout" : ".lesson-video-resources";
+  const steps = [
+    { id:"video", selector:".lesson-video-stage", title:arabic ? "ابدأ بالفيديو" : "Start with the video", text:arabic ? "شاهد الفيديو هنا أولًا. تعال أريك ما سيساعدك على المراجعة بعده!" : "Watch the video here first. Let me show you what will help you review afterward!" },
+    { id:"topics", selector:".lesson-video-chapters", title:arabic ? "ارجع لأي موضوع بسهولة" : "Jump to a topic", text:arabic ? "هذه الأزرار الحمراء تنقلك مباشرة إلى الجزء الذي تريد مراجعته في الفيديو." : "These red buttons take you straight to the topic you want to review in the video." },
+    { id:"notes", selector:reading, title:arabic ? "بعد المشاهدة، مرّر للأسفل" : "After watching, scroll down", text:arabic ? "اقرأ الملخص بعد كل فيديو لتثبّت فهمك. وقد تجد روابط أو ملفات مفيدة أيضًا. لنبدأ!" : "Read the summary after each video to reinforce what you learned. You may also find useful links or files. Let's begin!" },
+    { id:"links", selector:".lesson-source-download", title:arabic ? "روابطك المفيدة هنا" : "Useful links are here", text:arabic ? "وقد تجد روابط للكتاب أو ملفات تحتاجها، مثل هذه. لنرجع الآن إلى الفيديو!" : "You may also find links to the textbook or helpful files, like these. Let's return to the video!" },
+  ].filter(step => host.querySelector(step.selector));
+  const controller = new AbortController();
+  const dialog = document.createElement("dialog");
+  dialog.className = "lesson-video-tour";
+  dialog.dir = arabic ? "rtl" : "ltr";
+  dialog.lang = locale;
+  dialog.setAttribute("aria-labelledby", "video-tour-title");
+  dialog.setAttribute("aria-describedby", "video-tour-copy");
+  dialog.innerHTML = `
     <div class="lesson-video-tour-focus" aria-hidden="true"></div>
     <section class="lesson-video-tour-guide" dir="ltr">
-      <div class="lesson-video-tour-bubble" dir="${r?"rtl":"ltr"}">
-        <div class="lesson-video-tour-top"><span data-tour-progress></span><button type="button" data-tour-skip>${r?"تخطي الجولة":"Skip tour"}</button></div>
+      <div class="lesson-video-tour-bubble" dir="${arabic ? "rtl" : "ltr"}">
+        <div class="lesson-video-tour-top"><span data-tour-progress></span><button type="button" data-tour-skip>${arabic ? "تخطي الجولة" : "Skip tour"}</button></div>
         <div class="lesson-video-tour-message" aria-live="polite" aria-atomic="true"><h2 id="video-tour-title"></h2><p id="video-tour-copy"></p></div>
       </div>
-      <img class="lesson-video-tour-rocky" src="assets/mascot/rocky-wave.svg#no-shadow" width="300" height="285" alt="${r?"روكي":"Rocky"}">
-      <div class="lesson-video-tour-actions" dir="${r?"rtl":"ltr"}"><button type="button" data-tour-back>${r?"السابق":"Back"}</button><button type="button" data-tour-next></button></div>
-    </section>`;const a=e.querySelector(".lesson-video-tour-guide"),W=e.querySelector(".lesson-video-tour-focus"),u=e.querySelector("[data-tour-next]"),p=e.querySelector("[data-tour-back]");let i=0,h=0;const k=()=>{const t=[...s.querySelectorAll(l[i].selector)].map(o=>(l[i].id==="links"&&o.closest("p")||o).getBoundingClientRect());return{top:Math.min(...t.map(o=>o.top)),bottom:Math.max(...t.map(o=>o.bottom)),left:Math.min(...t.map(o=>o.left)),right:Math.max(...t.map(o=>o.right))}},S=()=>{if(h=0,!e.open||!s.isConnected)return;const t=k(),o=n.getBoundingClientRect();a.style.top=`${Math.max(12,Math.min(t.bottom+20,innerHeight-a.offsetHeight-18))}px`,a.style.left=`${Math.max(16,Math.min(i%2?t.left:t.right-a.offsetWidth,innerWidth-a.offsetWidth-16))}px`;const v=Math.max(4,o.top,t.top-6),R=Math.min(o.bottom,t.bottom+6,l[i].id==="video"?innerHeight:a.offsetTop-14),C=Math.max(4,t.left-6),B=Math.min(innerWidth-4,t.right+6);W.style.cssText=`top:${v}px;left:${C}px;width:${Math.max(0,B-C)}px;height:${Math.max(0,R-v)}px`},M=()=>{h||(h=requestAnimationFrame(S))},q=()=>{const t=Number(getComputedStyle(n).zoom)||1,o=i===0?0:n.scrollTop+(k().top-n.getBoundingClientRect().top-18)/t;n.scrollTo({top:o,behavior:"instant"}),S()},m=()=>{w.abort(),d?.removeEventListener("abort",m),cancelAnimationFrame(h),y.disconnect(),delete s.dataset.videoTourActive,e.close(),e.remove()},f=()=>{m(),!d?.aborted&&s.isConnected&&(n.scrollTo({top:0,behavior:"instant"}),x.focus({preventScroll:!0}),T())},$=()=>{const t=l[i];e.dataset.tourStep=t.id,a.dataset.side=i%2?"left":"right",e.querySelector("#video-tour-title").textContent=t.title,e.querySelector("#video-tour-copy").textContent=i===0&&E.matches?r?"شاهد الفيديو هنا. لصورة أكبر، أدر جهازك أفقيًا ثم اضغط زر ملء الشاشة ⛶ داخل الفيديو.":"Watch here. For a larger view, rotate your device sideways, then tap the fullscreen button ⛶ in the video.":t.text},b=()=>{$(),e.querySelector("[data-tour-progress]").textContent=r?`${i+1} من ${l.length}`:`${i+1} of ${l.length}`,u.textContent=i===l.length-1?L||(r?"لنشاهد الفيديو":"Watch the video"):r?"متابعة":"Continue",p.disabled=i===0,p.disabled&&document.activeElement===p&&u.focus({preventScroll:!0}),q(),z(a)},c={signal:w.signal};u.addEventListener("click",()=>{i===l.length-1?f():(i+=1,b())},c),p.addEventListener("click",()=>{i-=1,b()},c),e.querySelector("[data-tour-skip]").addEventListener("click",f,c),e.addEventListener("cancel",t=>{t.preventDefault(),f()},c),e.addEventListener("keydown",t=>{if(t.key!=="Tab")return;const o=[...e.querySelectorAll("button:not(:disabled)")],v=t.shiftKey?o[0]:o.at(-1);document.activeElement===v&&(t.preventDefault(),(t.shiftKey?o.at(-1):o[0]).focus({preventScroll:!0}))},c),n.addEventListener("scroll",M,c),window.addEventListener("resize",()=>{$(),q()},c);const y=new ResizeObserver(M);y.observe(a),y.observe(n),d?.addEventListener("abort",m,{once:!0}),s.dataset.videoTourActive="",document.body.append(e),e.showModal(),b(),u.focus({preventScroll:!0})}
+      <img class="lesson-video-tour-rocky" src="assets/mascot/rocky-wave.svg#no-shadow" width="300" height="285" alt="${arabic ? "روكي" : "Rocky"}">
+      <div class="lesson-video-tour-actions" dir="${arabic ? "rtl" : "ltr"}"><button type="button" data-tour-back>${arabic ? "السابق" : "Back"}</button><button type="button" data-tour-next></button></div>
+    </section>`;
+  const guide = dialog.querySelector(".lesson-video-tour-guide");
+  const spotlight = dialog.querySelector(".lesson-video-tour-focus");
+  const next = dialog.querySelector("[data-tour-next]");
+  const back = dialog.querySelector("[data-tour-back]");
+  let index = 0;
+  let frame = 0;
+  const targetBounds = () => {
+    const rectangles = [...host.querySelectorAll(steps[index].selector)].map(node =>
+      (steps[index].id === "links" ? node.closest("p") || node : node).getBoundingClientRect());
+    return {
+      top:Math.min(...rectangles.map(rect => rect.top)), bottom:Math.max(...rectangles.map(rect => rect.bottom)),
+      left:Math.min(...rectangles.map(rect => rect.left)), right:Math.max(...rectangles.map(rect => rect.right)),
+    };
+  };
+  const position = () => {
+    frame = 0;
+    if (!dialog.open || !host.isConnected) return;
+    const target = targetBounds();
+    const panel = surface.getBoundingClientRect();
+    guide.style.top = `${Math.max(12, Math.min(target.bottom + 20, innerHeight - guide.offsetHeight - 18))}px`;
+    guide.style.left = `${Math.max(16, Math.min(index % 2 ? target.left : target.right - guide.offsetWidth, innerWidth - guide.offsetWidth - 16))}px`;
+    const top = Math.max(4, panel.top, target.top - 6);
+    const bottom = Math.min(panel.bottom, target.bottom + 6, steps[index].id === "video" ? innerHeight : guide.offsetTop - 14);
+    const left = Math.max(4, target.left - 6);
+    const right = Math.min(innerWidth - 4, target.right + 6);
+    spotlight.style.cssText = `top:${top}px;left:${left}px;width:${Math.max(0, right - left)}px;height:${Math.max(0, bottom - top)}px`;
+  };
+  const queuePosition = () => { if (!frame) frame = requestAnimationFrame(position); };
+  const scrollToTarget = () => {
+    const zoom = Number(getComputedStyle(surface).zoom) || 1;
+    const top = index === 0 ? 0 : surface.scrollTop + (targetBounds().top - surface.getBoundingClientRect().top - 18) / zoom;
+    surface.scrollTo({ top, behavior:"instant" });
+    position();
+  };
+  const cleanup = () => {
+    controller.abort();
+    signal?.removeEventListener("abort", cleanup);
+    cancelAnimationFrame(frame);
+    observer.disconnect();
+    delete host.dataset.videoTourActive;
+    dialog.close();
+    dialog.remove();
+  };
+  const finish = () => {
+    cleanup();
+    if (!signal?.aborted && host.isConnected) {
+      surface.scrollTo({ top:0, behavior:"instant" });
+      player.focus({ preventScroll:true });
+      onFinish();
+    }
+  };
+  const updateCopy = () => {
+    const step = steps[index];
+    dialog.dataset.tourStep = step.id;
+    guide.dataset.side = index % 2 ? "left" : "right";
+    dialog.querySelector("#video-tour-title").textContent = step.title;
+    dialog.querySelector("#video-tour-copy").textContent = index === 0 && portrait.matches
+      ? (arabic ? "شاهد الفيديو هنا. لصورة أكبر، أدر جهازك أفقيًا ثم اضغط زر ملء الشاشة ⛶ داخل الفيديو." : "Watch here. For a larger view, rotate your device sideways, then tap the fullscreen button ⛶ in the video.")
+      : step.text;
+  };
+  const showStep = () => {
+    updateCopy();
+    dialog.querySelector("[data-tour-progress]").textContent = arabic ? `${index + 1} من ${steps.length}` : `${index + 1} of ${steps.length}`;
+    next.textContent = index === steps.length - 1 ? (finishLabel || (arabic ? "لنشاهد الفيديو" : "Watch the video")) : (arabic ? "متابعة" : "Continue");
+    back.disabled = index === 0;
+    if (back.disabled && document.activeElement === back) next.focus({ preventScroll:true });
+    scrollToTarget();
+    animateView(guide);
+  };
+  const options = { signal:controller.signal };
+  next.addEventListener("click", () => {
+    if (index === steps.length - 1) finish();
+    else { index += 1; showStep(); }
+  }, options);
+  back.addEventListener("click", () => { index -= 1; showStep(); }, options);
+  dialog.querySelector("[data-tour-skip]").addEventListener("click", finish, options);
+  dialog.addEventListener("cancel", event => { event.preventDefault(); finish(); }, options);
+  dialog.addEventListener("keydown", event => {
+    if (event.key !== "Tab") return;
+    const buttons = [...dialog.querySelectorAll("button:not(:disabled)")];
+    const edge = event.shiftKey ? buttons[0] : buttons.at(-1);
+    if (document.activeElement !== edge) return;
+    event.preventDefault();
+    (event.shiftKey ? buttons.at(-1) : buttons[0]).focus({ preventScroll:true });
+  }, options);
+  // Keep the spotlight aligned while scrolling, rotating or resizing the page.
+  surface.addEventListener("scroll", queuePosition, options);
+  window.addEventListener("resize", () => { updateCopy(); scrollToTarget(); }, options);
+  const observer = new ResizeObserver(queuePosition);
+  observer.observe(guide);
+  observer.observe(surface);
+  signal?.addEventListener("abort", cleanup, { once:true });
+  host.dataset.videoTourActive = "";
+  document.body.append(dialog);
+  dialog.showModal();
+  showStep();
+  next.focus({ preventScroll:true });
+}

@@ -1,4 +1,6 @@
-import{createEnglishLesson as e}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createEnglishLesson } from "./shared.js";
+
+export const source = `:::mcq
 id: eng-2023-p053-qg1-3
 title: Unit 4 · PDF 53 · g1-3
 kicker: 12-2020
@@ -1318,4 +1320,6 @@ solution:
 
 **المصدر:** صفحة 42 من الكتاب.
 
-:::`;export default e("english-u04-grammar",source);
+:::`;
+
+export default createEnglishLesson("english-u04-grammar", source);

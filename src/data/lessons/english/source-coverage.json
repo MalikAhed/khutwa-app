@@ -1,0 +1,585 @@
+{
+  "source": "Gaza-main-english.md",
+  "sourceSha256": "bb50524701a1fe80b977ca6e93d302bae427816f787c3203490774e5b7a26760",
+  "scope": "Questions from the supplied Gaza-main-english.md excluding diagram-dependent tasks and recorded answer-key, verification, or ambiguity caveats, as requested. Remaining unit, lesson, part and question IDs are unchanged.",
+  "sourceQuestionCount": 1343,
+  "publishedQuestionCount": 1229,
+  "publishedMcqCount": 339,
+  "publishedFlashcardCount": 890,
+  "sourcePdfAvailable": false,
+  "sourcePdf": "source/english-collection-2023.pdf",
+  "sourceReferences": "PDF and printed page labels are retained as plain text because the referenced PDF was not supplied.",
+  "readingContext": "The complete preceding passage is included on every related question front; repeated source passages keep their question-specific versions.",
+  "excludedQuestions": [
+    {
+      "id": "eng-2023-p006-qtext1-1",
+      "category": "diagram",
+      "reason": "Excluded at user request: this question depends on a diagram."
+    },
+    {
+      "id": "eng-2023-p007-qtext2-2020-a-3",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p008-qtext2-2020-b-3",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p008-qtext2-2020-d-3",
+      "category": "uncertain",
+      "reason": "Derived answer or original model; no corresponding printed key"
+    },
+    {
+      "id": "eng-2023-p008-qtext2-2019-3-2",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p009-qtext2-2018-d-2",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p009-qexternal2018-1",
+      "category": "uncertain",
+      "reason": "The source calls Tip 1 “paragraph one”, although an introductory paragraph precedes it; key follows Tip 1."
+    },
+    {
+      "id": "eng-2023-p010-qexternal2018-3-2",
+      "category": "uncertain",
+      "reason": "The source stem omits the idea of jumping out too quickly: Tip 3 recommends gradual steps, rather than avoiding all change."
+    },
+    {
+      "id": "eng-2023-p010-qexternal2017-b-1",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p011-qvocab-4-2",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p014-qlanguage-a-66",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p015-qlanguage-c-14",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p015-qlanguage-c-15",
+      "category": "uncertain",
+      "reason": "Incomplete printed answer completed"
+    },
+    {
+      "id": "eng-2023-p028-qlanguage-1-19",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p029-qlanguage-3-6",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p029-qlanguage-3-8",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p035-qr3-b-1",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p036-qr4-a",
+      "category": "diagram",
+      "reason": "Excluded at user request: this question depends on a diagram."
+    },
+    {
+      "id": "eng-2023-p036-qr4-c-2",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p036-qr4-d-1",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p037-qv7-2",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p037-qv7-4",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p038-qv8-4",
+      "category": "uncertain",
+      "reason": "Incomplete printed answer completed"
+    },
+    {
+      "id": "eng-2023-p038-qv9-2",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p039-qv16-3",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p039-qv16-4",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p040-qg1-28",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p041-qwriting-1",
+      "category": "uncertain",
+      "reason": "Derived answer or original model; no corresponding printed key"
+    },
+    {
+      "id": "eng-2023-p053-qg1-1",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p053-qg1-2",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p053-qg1-5",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p053-qg1-7",
+      "category": "uncertain",
+      "reason": "The source verb is watch and the printed options concern watching TV; the key mistakenly substitutes visit. **Printed key (transcribed or normalized):** isn’t going to visit"
+    },
+    {
+      "id": "eng-2023-p053-qg1-10",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p053-qg1-12",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p053-qg1-16",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p053-qg1-20",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p054-qg1-27",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p054-qg1-31",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p054-qg1-39",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p054-qg1-40",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p054-qg1-45",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p054-qg1-47",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p054-qg1-54",
+      "category": "uncertain",
+      "reason": "The unselected form can be grammatical with a different emphasis/context. The chosen response is the supplied school key’s intended answer."
+    },
+    {
+      "id": "eng-2023-p055-qg4-1",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p055-qg4-2",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p055-qg4-10",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p055-qg4-12",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p055-qg4-14",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p055-qg4-15",
+      "category": "uncertain",
+      "reason": "Derived answer or original model; no corresponding printed key"
+    },
+    {
+      "id": "eng-2023-p069-qtext1-e-1",
+      "category": "uncertain",
+      "reason": "The source gives the pronoun without line numbers; the key identifies the intended occurrence."
+    },
+    {
+      "id": "eng-2023-p069-qtext1-e-2",
+      "category": "uncertain",
+      "reason": "The source gives the pronoun without line numbers; the key identifies the intended occurrence."
+    },
+    {
+      "id": "eng-2023-p069-qtext1-e-3",
+      "category": "uncertain",
+      "reason": "The source gives the pronoun without line numbers; the key identifies the intended occurrence."
+    },
+    {
+      "id": "eng-2023-p069-qtext1-2016-c-1",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p071-qtext2b-b-3",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p072-qvocabulary-2-3",
+      "category": "uncertain",
+      "reason": "The source underlines “continue” as well. Retain “continue” when inserting the preposition “throughout”; “should throughout” is not grammatical."
+    },
+    {
+      "id": "eng-2023-p072-qvocabulary-5-1",
+      "category": "uncertain",
+      "reason": "Source grammar error: opportunities is plural/countable, so “as many job opportunities” is grammatical; the printed “as much” is retained on the front."
+    },
+    {
+      "id": "eng-2023-p072-qvocabulary-5-3",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p073-qvocabulary-10-4",
+      "category": "uncertain",
+      "reason": "Source omits “more” before “interested” in the comparison; the intended choice is still unambiguous."
+    },
+    {
+      "id": "eng-2023-p073-qvocabulary-10-15",
+      "category": "uncertain",
+      "reason": "Source omits “more” before “interested” in the comparison; the intended choice is still unambiguous."
+    },
+    {
+      "id": "eng-2023-p074-qlanguage-1-5",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p074-qlanguage-2-3",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p075-qlanguage-2-7",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p075-qlanguage-2-7b",
+      "category": "uncertain",
+      "reason": "Derived answer or original model; no corresponding printed key"
+    },
+    {
+      "id": "eng-2023-p075-qlanguage-2-10",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p075-qlanguage-2-13",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p075-qlanguage-2-19",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p081-qtext1-f",
+      "category": "diagram",
+      "reason": "Excluded at user request: this question depends on a diagram."
+    },
+    {
+      "id": "eng-2023-p081-qtext2022-a-2",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p081-qtext2022-a-4",
+      "category": "diagram",
+      "reason": "Excluded at user request: this question depends on a diagram."
+    },
+    {
+      "id": "eng-2023-p082-qtext2022-c-1",
+      "category": "uncertain",
+      "reason": "The source sentence is malformed (“for the success to necessary wavebands”). Its key and “only obstacle” claim remain identifiable: the passage calls the lack of 3G the main problem, not the only one."
+    },
+    {
+      "id": "eng-2023-p082-qtext2022-d-1",
+      "category": "uncertain",
+      "reason": "The passage on PDF81 incorrectly prints 50%, while this question prints 5%. The official textbook confirms 5% (Gaza package PDF40 / printed38)."
+    },
+    {
+      "id": "eng-2023-p082-qtext2-b-1",
+      "category": "uncertain",
+      "reason": "The source uses “his” but the person described is Anita; this is a source pronoun typo."
+    },
+    {
+      "id": "eng-2023-p083-qexternal-c-2",
+      "category": "uncertain",
+      "reason": "The passage identifies experienced guidance as the best support. It says a friend who listens to crises is invaluable, not that a friend who knows crises necessarily offers the best support. **Printed key (transcribed or normalized):** True"
+    },
+    {
+      "id": "eng-2023-p084-qvocabulary-2-5",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p084-qvocabulary-2-6",
+      "category": "uncertain",
+      "reason": "Source has “a ... aid”; aid is uncountable in this sense, so a clean sentence reads “The United Nations is sending humanitarian aid ...”. The target adjective remains correct."
+    },
+    {
+      "id": "eng-2023-p084-qvocabulary-6-4",
+      "category": "uncertain",
+      "reason": "The source prints slept; the intended financial verb is slipped. The target noun phrase market share is unambiguous."
+    },
+    {
+      "id": "eng-2023-p085-qvocabulary-7-2",
+      "category": "uncertain",
+      "reason": "Incomplete printed answer completed"
+    },
+    {
+      "id": "eng-2023-p085-qvocabulary-7-3",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p085-qvocabulary-10-8",
+      "category": "uncertain",
+      "reason": "Source agreement typo: market research is singular, so the completed sentence needs shows."
+    },
+    {
+      "id": "eng-2023-p086-qvocabulary-10-29",
+      "category": "uncertain",
+      "reason": "The source appears to omit “confirmed” and misprints “deposit” as “depart”. The preposition in “on receipt” is still clear."
+    },
+    {
+      "id": "eng-2023-p087-qlanguage-1-2",
+      "category": "uncertain",
+      "reason": "Incomplete printed answer completed"
+    },
+    {
+      "id": "eng-2023-p087-qlanguage-1-8",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p087-qlanguage-1-10",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p087-qlanguage-1-16",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p087-qlanguage-1-17",
+      "category": "uncertain",
+      "reason": "Incomplete printed answer completed"
+    },
+    {
+      "id": "eng-2023-p087-qlanguage-1-21",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p087-qlanguage-1-22",
+      "category": "uncertain",
+      "reason": "Incomplete printed answer completed"
+    },
+    {
+      "id": "eng-2023-p087-qlanguage-1-24",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p088-qlanguage-1-28",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p088-qlanguage-3-1",
+      "category": "uncertain",
+      "reason": "Incomplete printed answer completed"
+    },
+    {
+      "id": "eng-2023-p088-qlanguage-4-4",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p088-qlanguage-4-7",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p088-qlanguage-4-8",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p088-qlanguage-5-1",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p089-qlanguage-6-7",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p089-qlanguage-6-8",
+      "category": "uncertain",
+      "reason": "The present-perfect + once a month wording is retained from the source. A simple-present routine would instead read “We have the grass cut ... once a month”, but no reference period is supplied."
+    },
+    {
+      "id": "eng-2023-p089-qlanguage-7-1",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p089-qlanguage-8-2",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p094-qtext1-c",
+      "category": "diagram",
+      "reason": "Excluded at user request: this question depends on a diagram."
+    },
+    {
+      "id": "eng-2023-p095-qsuggested-b",
+      "category": "diagram",
+      "reason": "Excluded at user request: this question depends on a diagram."
+    },
+    {
+      "id": "eng-2023-p098-qexternal2019-d-themselves",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p098-qexternal2019-f",
+      "category": "diagram",
+      "reason": "Excluded at user request: this question depends on a diagram."
+    },
+    {
+      "id": "eng-2023-p099-qexternal2022-e-2",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p100-qvocabulary-1-5",
+      "category": "uncertain",
+      "reason": "Directly inserting the headword into “say it’s ...” would be ungrammatical; the whole clause needs restructuring around the verb rule out."
+    },
+    {
+      "id": "eng-2023-p100-qvocabulary-4-3",
+      "category": "uncertain",
+      "reason": "The answer key misspells amateur as amature; the correctly spelled bank word is used."
+    },
+    {
+      "id": "eng-2023-p100-qvocabulary-4-5",
+      "category": "uncertain",
+      "reason": "The original sentence omits an article; an is needed before astonishing start."
+    },
+    {
+      "id": "eng-2023-p101-qvocabulary-7-2",
+      "category": "uncertain",
+      "reason": "Incorrect printed answer corrected"
+    },
+    {
+      "id": "eng-2023-p102-qlanguage-3-2",
+      "category": "uncertain",
+      "reason": "The wish + past perfect construction is correct. The printed name Dina is a minor source-key typo for Diana; the learner answer preserves the source name. This is recorded separately from errors in the tested grammar."
+    },
+    {
+      "id": "eng-2023-p103-qlanguage-9-5",
+      "category": "uncertain",
+      "reason": "The printed key misspells serious as serous; the source spelling serious is retained."
+    },
+    {
+      "id": "eng-2023-p103-qlanguage-12-1",
+      "category": "uncertain",
+      "reason": "Acceptable school answer; qualification supplied"
+    },
+    {
+      "id": "eng-2023-p104-qwriting-3",
+      "category": "uncertain",
+      "reason": "Derived answer or original model; no corresponding printed key"
+    },
+    {
+      "id": "eng-2023-p121-ql1-4",
+      "category": "uncertain",
+      "reason": "Printed key truncates been as bee; restored final n. **Printed key (transcribed or normalized):** must have bee"
+    },
+    {
+      "id": "eng-2023-p122-ql2-4",
+      "category": "uncertain",
+      "reason": "Exception to a defective shared instruction: correct key retained; no have is appropriate for the present deduction."
+    },
+    {
+      "id": "eng-2023-p123-qw-1",
+      "category": "uncertain",
+      "reason": "Derived answer or original model; no corresponding printed key"
+    }
+  ]
+}

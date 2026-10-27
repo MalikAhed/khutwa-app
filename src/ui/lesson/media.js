@@ -1,1 +1,13 @@
-import{canPrefetchAssets as o,preloadImages as n}from"../media-ready.js?v=7388f68cc0f433fd";import{renderMarkdownDocument as m}from"../../markdown/renderer.js?v=7388f68cc0f433fd";export function preloadNextStep(e){if(!o()||e?.type!=="markdown")return;const t=document.createElement("template");t.innerHTML=m(e.source),n([...t.content.querySelectorAll("img")].map(r=>r.getAttribute("src")))}
+import { canPrefetchAssets, preloadImages } from "../media-ready.js";
+import { renderMarkdownDocument } from "../../markdown/renderer.js";
+
+export function preloadNextStep(step) {
+  if (!canPrefetchAssets() || step?.type !== "markdown") return;
+  const template = document.createElement("template");
+  template.innerHTML = renderMarkdownDocument(step.source);
+  preloadImages(
+    [...template.content.querySelectorAll("img")].map((image) =>
+      image.getAttribute("src"),
+    ),
+  );
+}

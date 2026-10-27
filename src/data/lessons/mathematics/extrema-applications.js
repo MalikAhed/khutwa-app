@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const lessonSource = `:::exam-question
 id: math-book-p054-ex1
 title: الكتاب، ص ٥٢ · مثال ١
 question: تطبيقات عملية على القيم القصوى
@@ -5255,4 +5257,16 @@ solution:
 
 
 الحد الأول غير موجب، والثاني سالب لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>&gt;</mo><mn dir="ltr">٠</mn></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">هـ</mi><mo>&lt;</mo><mn dir="ltr">٠</mn></mrow></math>\`، والثالث غير موجب لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">هـ</mi><mo>′</mo></msup><mo>≥</mo><mn dir="ltr">٠</mn></mrow></math>\`. إذن المجموع سالب، فتكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` متناقصة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٤</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`.
-:::`;export default m({status:"published",language:"ar",title:"تطبيقات عملية على القيم القصوى",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة تطبيقات عملية على القيم القصوى من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"18 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "تطبيقات عملية على القيم القصوى",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة تطبيقات عملية على القيم القصوى من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "18 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

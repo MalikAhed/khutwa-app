@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as s}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const ALL_LESSON_MARKDOWN=`<!-- step-id: database-management-mission -->
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const ALL_LESSON_MARKDOWN = `<!-- step-id: database-management-mission -->
 <!-- presentation: video-intro -->
 # الدرس الأول: الجداول والمفاتيح والعلاقات
 https://www.youtube.com/watch?v=tfiw7kPiOgc
@@ -708,4 +710,22 @@ https://www.youtube.com/watch?v=k9aZkF-R8G0
 
 <!-- lesson-step -->
 
-<!-- lesson-step -->`,LESSON_MARKDOWN=ALL_LESSON_MARKDOWN;export default s({status:"published",title:"برنامج إدارة قواعد البيانات",summary:"فهم بيئة Access والجداول وأنواع البيانات والمفاتيح والعلاقات والتكامل المرجعي بطريقة مبسطة.",outcome:"تحويل وصف نظام واقعي إلى جداول مترابطة بمفاتيح وأنواع بيانات صحيحة.",mode:"شاهد ← راجع ← أجب",mission:"فهم طريقة تنظيم البيانات وربطها داخل قاعدة بيانات علائقية.",duration:"6 مقاطع فيديو وتطبيقات",level:"الصف الثاني عشر العلمي والصناعي",reward:10,passingScore:80},LESSON_MARKDOWN);
+<!-- lesson-step -->`;
+
+// Historical step/answer IDs stay stable when revising practice. Original Access copy is saved
+// in saved-summaries/access-basics-book-questions.md. One filter reserves unpublished questions.
+// These are saved for future side quests, not yet published as a separate activity.
+export const LESSON_MARKDOWN = ALL_LESSON_MARKDOWN;
+
+export default defineMarkdownLesson({
+  status:"published",
+  title:"برنامج إدارة قواعد البيانات",
+  summary:"فهم بيئة Access والجداول وأنواع البيانات والمفاتيح والعلاقات والتكامل المرجعي بطريقة مبسطة.",
+  outcome:"تحويل وصف نظام واقعي إلى جداول مترابطة بمفاتيح وأنواع بيانات صحيحة.",
+  mode:"شاهد ← راجع ← أجب",
+  mission:"فهم طريقة تنظيم البيانات وربطها داخل قاعدة بيانات علائقية.",
+  duration:"6 مقاطع فيديو وتطبيقات",
+  level:"الصف الثاني عشر العلمي والصناعي",
+  reward:10,
+  passingScore:80,
+}, LESSON_MARKDOWN);

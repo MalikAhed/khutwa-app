@@ -1,4 +1,6 @@
-import{createBiologyLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createBiologyLesson } from "./shared.js";
+
+export const source = `:::mcq
 id: bio-b-p021-q1-1
 title: الرزمة التعليمية، صفحة 21، السؤال 1-1
 question: ما فائدة استخدام الهيدروجين في التفاعلات الضوئية؟
@@ -11054,4 +11056,6 @@ ATP حامل للطاقة. ينتج لكل غلوكوز صافياً2 ATP مبا
 **المصدر:** الصفحات 10، 11، 12 من الكتاب.
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
-:::`;export default m("energy-flow",source);
+:::`;
+
+export default createBiologyLesson("energy-flow", source);

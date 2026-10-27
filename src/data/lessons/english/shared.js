@@ -1,1 +1,17 @@
-import{defineMarkdownLesson as r}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";import{ENGLISH_LESSONS as i,ENGLISH_UNITS as a}from"./english-course.js?v=7388f68cc0f433fd";export function createEnglishLesson(s,t){const n=i.find(e=>e.id===s);if(!n)throw new TypeError(`Unknown English lesson: ${s}`);const o=a.find(e=>e.number===n.unit);return r({title:`${o.title} · ${n.label}`,summary:n.summary,status:"published",mode:"Questions and flashcards",level:"Grade 12 · Scientific branch · Gaza",duration:`${n.questionCount} questions`,reward:10},t)}
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+import { ENGLISH_LESSONS, ENGLISH_UNITS } from "./english-course.js";
+
+export function createEnglishLesson(id, source) {
+  const lesson = ENGLISH_LESSONS.find(lesson => lesson.id === id);
+  if (!lesson) throw new TypeError(`Unknown English lesson: ${id}`);
+  const unit = ENGLISH_UNITS.find(unit => unit.number === lesson.unit);
+  return defineMarkdownLesson({
+    title:`${unit.title} · ${lesson.label}`,
+    summary:lesson.summary,
+    status:"published",
+    mode:"Questions and flashcards",
+    level:"Grade 12 · Scientific branch · Gaza",
+    duration:`${lesson.questionCount} questions`,
+    reward:10,
+  }, source);
+}

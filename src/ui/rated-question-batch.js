@@ -1,1 +1,24 @@
-import{loadSubjectLessonPart as i}from"../data/lessons/subject-lesson-registry.js?v=7388f68cc0f433fd";import{compileLessonMarkdown as u}from"../markdown/lesson-model.js?v=7388f68cc0f433fd";export async function loadRatedQuestionBatch(e){const n=new Map;for(const s of e)n.set(JSON.stringify([s.subjectId,s.lessonId,s.partId]),s);const a=await Promise.all([...n.values()].map(async s=>({part:{id:s.partId},sourceLessonId:s.lessonId,lesson:await i(s.subjectId,s.lessonId,s.partId)}))),p=new Map(a.map(({part:s,sourceLessonId:t,lesson:o})=>[JSON.stringify([t,s.id]),new Map((o?.status==="published"?u(o.authoringSource).parsed.steps:[]).map(d=>[d.id,d]))])),r=new Map;return{authoredSteps:e.flatMap(s=>{const t=p.get(JSON.stringify([s.lessonId,s.partId]))?.get(s.stepId);if(!t||!["mcq","exam-question"].includes(t.type))return[];const o=JSON.stringify([s.subjectId,s.lessonId,s.partId,s.stepId]);return r.set(o,s),[{...t,id:o}]}),questionKeys:r,partLessons:a.filter(s=>s.lesson?.status==="published")}}
+import { loadSubjectLessonPart } from "../data/lessons/subject-lesson-registry.js";
+import { compileLessonMarkdown } from "../markdown/lesson-model.js";
+
+// Use the original question definitions and map temporary sequence IDs back to
+// their published source keys for answers, explanations, ratings and progress.
+export async function loadRatedQuestionBatch(entries) {
+  const groups = new Map();
+  for (const key of entries) groups.set(JSON.stringify([key.subjectId,key.lessonId,key.partId]),key);
+  const partLessons = await Promise.all([...groups.values()].map(async key => ({
+    part:{ id:key.partId }, sourceLessonId:key.lessonId,
+    lesson:await loadSubjectLessonPart(key.subjectId,key.lessonId,key.partId),
+  })));
+  const compiled = new Map(partLessons.map(({ part,sourceLessonId,lesson }) => [JSON.stringify([sourceLessonId,part.id]),
+    new Map((lesson?.status === "published" ? compileLessonMarkdown(lesson.authoringSource).parsed.steps : []).map(step => [step.id,step]))]));
+  const questionKeys = new Map();
+  const authoredSteps = entries.flatMap(key => {
+    const step = compiled.get(JSON.stringify([key.lessonId,key.partId]))?.get(key.stepId);
+    if (!step || !["mcq","exam-question"].includes(step.type)) return [];
+    const id = JSON.stringify([key.subjectId,key.lessonId,key.partId,key.stepId]);
+    questionKeys.set(id,key);
+    return [{ ...step, id }];
+  });
+  return { authoredSteps, questionKeys, partLessons:partLessons.filter(item => item.lesson?.status === "published") };
+}

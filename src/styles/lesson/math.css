@@ -1,1 +1,126 @@
-@font-face{font-family:"Lesson Math";src:url(../../../assets/fonts/math/xits-math.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Amiri;src:url(../../../assets/fonts/math/amiri-regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}.lesson-shell:is([data-subject=mathematics],[data-subject=mathematics-2],[data-subject=physics]) :is(.lesson-flashcard-copy,.ui-lab-mcq>h1,.lesson-question-example){--font-ui:"Rounded Digits", "Amiri", serif;font-family:Rounded Digits,Amiri,"Lesson Math",serif}.lesson-shell:is([data-subject=mathematics],[data-subject=mathematics-2],[data-subject=physics]) :is(.lesson-flashcard-copy button,.lesson-question-example button,.lesson-question-source){--font-ui:"Amiri Digits", "Rounded Digits", "Noto Sans Arabic", Tahoma, Arial, sans-serif;font-family:var(--font-ui)}.lesson-math{--lesson-math-font:"Rounded Digits", "Amiri", "Lesson Math", serif;font-family:var(--lesson-math-font);font-size:1.35em;font-weight:400;font-style:normal;color:inherit;unicode-bidi:isolate}.lesson-math[dir=ltr]{--lesson-math-font:"Lesson Math", "Amiri", serif}.lesson-math :is(mi,mn,mo,mtext){font-family:var(--lesson-math-font)}.lesson-math .lesson-math-box{border:1px solid currentColor;padding:.1em .15em}.lesson-math .lesson-math-integral-lower{transform:translate(1.15em)}.lesson-math mo:is([stretchy=true],[largeop=true]){font-family:"Lesson Math",Amiri,serif}.lesson-math-sample{position:relative;min-width:0;margin:0;padding:16px;border:1px solid var(--stroke, #e2e8ee);border-radius:16px;background:#fff;color:var(--ink, #273746)}.lesson-math-sample>.lesson-scroll-cue--left{border-radius:15px 0 0 15px}.lesson-math-sample>.lesson-scroll-cue--right{border-radius:0 15px 15px 0}.lesson-math-sample figcaption{margin-bottom:12px;font:700 14px/1.6 var(--font-ui)}.lesson-math-scroll{max-width:100%;height:auto;max-height:none;overflow-x:auto;overflow-y:hidden;padding:8px 2px 12px;scrollbar-color:#8a98a4 #e9eef2}.lesson-math-scroll .lesson-math{width:max-content;min-width:100%;font-size:30px}.lesson-math-scroll.lesson-math-scroll--inline{padding-block:4px}.lesson-math-scroll--inline .lesson-math{flex:0 0 auto;width:max-content;min-width:0;font-size:1.35em}:is(.question-explanation-dialog,.lesson-flashcard-back) .markdown-rendered>.lesson-math-sample{margin-block:28px 32px;padding-block:18px}.lesson-math .lesson-equation-steps{border-collapse:separate;border-spacing:0 .65em}.lesson-math-error{color:#a3263d;font:700 14px/1.6 var(--font-ui)}.lesson-shell:is([data-subject=mathematics],[data-subject=mathematics-2],[data-subject=physics]) .math-question-filter-button{flex:0 0 auto;width:44px;min-height:44px;padding:8px;border:1px solid #b9d5e5;border-radius:12px;background:#f4fbff;color:#16658c;font:800 13px/1.4 var(--font-ui);cursor:pointer}.lesson-shell:is([data-subject=mathematics],[data-subject=mathematics-2],[data-subject=physics]) .math-question-filter-button svg{display:block;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round}.lesson-shell:is([data-subject=mathematics],[data-subject=mathematics-2],[data-subject=physics]) .math-question-filter-button:hover{background:#e7f6fd;border-color:#78b6d3}.lesson-shell:is([data-subject=mathematics],[data-subject=mathematics-2],[data-subject=physics]) .math-question-filter-button:focus-visible{outline:3px solid var(--system-focus);outline-offset:3px}.math-question-filter-dialog{width:min(680px,calc(100% - 28px));max-height:min(720px,calc(100dvh - 32px));padding:0;border:1px solid #b9d5e5;border-radius:20px;background:#fff;color:#273746;box-shadow:0 18px 60px #173b4a33;font-family:var(--font-ui)}.math-question-filter-dialog::backdrop{background:#173b4a66}.math-question-filter-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 22px 8px}.math-question-filter-dialog h2{margin:0;color:#24566b;font:900 20px/1.5 var(--font-ui)}.math-question-filter-close{width:44px;height:44px;flex:0 0 auto;border:0;border-radius:12px;background:#f1f7fa;color:#496575;font:400 28px/1 Tahoma,Arial,sans-serif;cursor:pointer}.math-question-filter-close:hover{background:#e4f2f8}.math-question-filter-close:focus-visible{outline:3px solid var(--system-focus);outline-offset:3px}.math-question-filter-empty{margin:0;padding:26px 12px;border:1px dashed #b9d5e5;border-radius:14px;color:#526477;font-size:14px;line-height:1.8;text-align:center}.math-question-filter-levels,.math-question-filter-scopes{display:flex;flex-wrap:wrap;gap:8px;margin:0 22px 14px;padding:0;border:0}.math-question-filter-levels legend,.math-question-filter-scopes legend{width:100%;margin-bottom:2px;color:#526477;font-size:12px;font-weight:900}.math-question-filter-level,.math-question-filter-scopes label{min-height:40px;padding:7px 12px;border:1px solid #c8dce7;border-radius:10px;background:#fff;color:#31566a;font:800 13px/1.4 var(--font-ui);cursor:pointer}.math-question-filter-level.is-active{border-color:#1675a4;background:#e7f6fd;color:#16658c}.math-question-filter-level:disabled{opacity:.5;cursor:not-allowed}.math-question-filter-scopes label{display:inline-flex;align-items:center;gap:7px}.math-question-filter-scopes input{accent-color:#1675a4}.math-question-filter-ready{margin:0 22px 12px;color:#526477;font-size:12px;line-height:1.7}.math-question-filter-counts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 22px 14px}.math-question-filter-counts>div{display:grid;gap:3px;padding:9px 8px;border-radius:10px;background:#f1f8fc;text-align:center}.math-question-filter-counts b{color:#16658c;font:900 22px/1 var(--font-numeric)}.math-question-filter-counts span{color:#526477;font-size:10px;line-height:1.4}.math-question-filter-counts[hidden]{display:none}.math-question-filter-button.is-active{border-color:#1675a4;background:#dff2fb}.math-question-filter-message{margin:0 22px 12px;color:#526477;font-size:13px;line-height:1.8}.math-question-filter-actions{display:flex;flex-wrap:wrap;gap:10px;padding:0 22px 22px}.math-question-filter-actions button{flex:1;min-height:44px;padding:9px 12px;border:1px solid #b9d5e5;border-radius:10px;background:#f4fbff;color:#16658c;font:800 13px/1.5 var(--font-ui);cursor:pointer}.math-question-filter-actions [data-math-filter-apply]{background:#1675a4;color:#fff}.math-question-filter-actions button:disabled{opacity:.5;cursor:default}.math-question-filter-actions button:focus-visible,.math-question-filter-level:focus-visible{outline:3px solid var(--system-focus);outline-offset:3px}@media(max-width:760px){.lesson-math-sample{padding:14px}.lesson-shell--ui-lab .math-question-filter-button{width:42px;min-height:42px}.math-question-filter-dialog-head{padding:16px 16px 8px}.math-question-filter-levels,.math-question-filter-scopes,.math-question-filter-ready,.math-question-filter-counts{margin-inline:16px}}
+@font-face {
+  font-family:"Lesson Math";
+  src:url("../../../assets/fonts/math/xits-math.woff2") format("woff2");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face {
+  font-family:"Amiri";
+  src:url("../../../assets/fonts/math/amiri-regular.woff2") format("woff2");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+.lesson-shell:is([data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="physics"])
+  :is(.lesson-flashcard-copy, .ui-lab-mcq > h1, .lesson-question-example) {
+  --font-ui:"Rounded Digits", "Amiri", serif;
+  font-family:"Rounded Digits", "Amiri", "Lesson Math", serif;
+}
+.lesson-shell:is([data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="physics"])
+  :is(.lesson-flashcard-copy button, .lesson-question-example button, .lesson-question-source) {
+  --font-ui:"Amiri Digits", "Rounded Digits", "Noto Sans Arabic", Tahoma, Arial, sans-serif;
+  font-family:var(--font-ui);
+}
+.lesson-math {
+  --lesson-math-font:"Rounded Digits", "Amiri", "Lesson Math", serif;
+  font-family:var(--lesson-math-font);
+  font-size:1.35em;
+  font-weight:400;
+  font-style:normal;
+  color:inherit;
+  unicode-bidi:isolate;
+}
+/* Latin formulas use the math font for variables, numbers and upright SI units. */
+.lesson-math[dir="ltr"] { --lesson-math-font:"Lesson Math", "Amiri", serif; }
+.lesson-math :is(mi, mn, mo, mtext) { font-family:var(--lesson-math-font); }
+.lesson-math .lesson-math-box { border:1px solid currentColor; padding:0.1em 0.15em; }
+/* RTL integral glyphs lean right at the bottom; attach the lower limit there. */
+.lesson-math .lesson-math-integral-lower { transform:translateX(1.15em); }
+/* Amiri supplies text and numbers; the math font supplies stretching glyphs. */
+.lesson-math mo:is([stretchy="true"], [largeop="true"]) {
+  font-family:"Lesson Math", "Amiri", serif;
+}
+.lesson-math-sample {
+  position:relative;
+  min-width:0;
+  margin:0;
+  padding:16px;
+  border:1px solid var(--stroke, #e2e8ee);
+  border-radius:16px;
+  background:#fff;
+  color:var(--ink, #273746);
+}
+.lesson-math-sample > .lesson-scroll-cue--left { border-radius:15px 0 0 15px; }
+.lesson-math-sample > .lesson-scroll-cue--right { border-radius:0 15px 15px 0; }
+.lesson-math-sample figcaption { margin-bottom:12px; font:700 14px/1.6 var(--font-ui); }
+.lesson-math-scroll { max-width:100%; height:auto; max-height:none; overflow-x:auto; overflow-y:hidden; padding:8px 2px 12px; scrollbar-color:#8a98a4 #e9eef2; }
+.lesson-math-scroll .lesson-math { width:max-content; min-width:100%; font-size:30px; }
+.lesson-math-scroll.lesson-math-scroll--inline { padding-block:4px; }
+.lesson-math-scroll--inline .lesson-math { flex:0 0 auto; width:max-content; min-width:0; font-size:1.35em; }
+/* Separate worked equations from the surrounding steps in every subject. */
+:is(.question-explanation-dialog,.lesson-flashcard-back) .markdown-rendered > .lesson-math-sample {
+  margin-block:28px 32px;
+  padding-block:18px;
+}
+.lesson-math .lesson-equation-steps { border-collapse:separate; border-spacing:0 .65em; }
+.lesson-math-error { color:#a3263d; font:700 14px/1.6 var(--font-ui); }
+.lesson-shell:is([data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="physics"]) .math-question-filter-button {
+  flex:0 0 auto;
+  width:44px;
+  min-height:44px;
+  padding:8px;
+  border:1px solid #b9d5e5;
+  border-radius:12px;
+  background:#f4fbff;
+  color:#16658c;
+  font:800 13px/1.4 var(--font-ui);
+  cursor:pointer;
+}
+.lesson-shell:is([data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="physics"]) .math-question-filter-button svg { display:block; width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linejoin:round; }
+.lesson-shell:is([data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="physics"]) .math-question-filter-button:hover { background:#e7f6fd; border-color:#78b6d3; }
+.lesson-shell:is([data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="physics"]) .math-question-filter-button:focus-visible { outline:3px solid var(--system-focus); outline-offset:3px; }
+.math-question-filter-dialog {
+  width:min(680px,calc(100% - 28px));
+  max-height:min(720px,calc(100dvh - 32px));
+  padding:0;
+  border:1px solid #b9d5e5;
+  border-radius:20px;
+  background:#fff;
+  color:#273746;
+  box-shadow:0 18px 60px #173b4a33;
+  font-family:var(--font-ui);
+}
+.math-question-filter-dialog::backdrop { background:#173b4a66; }
+.math-question-filter-dialog-head { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:20px 22px 8px; }
+.math-question-filter-dialog h2 { margin:0; color:#24566b; font:900 20px/1.5 var(--font-ui); }
+.math-question-filter-close { width:44px; height:44px; flex:0 0 auto; border:0; border-radius:12px; background:#f1f7fa; color:#496575; font:400 28px/1 Tahoma, Arial, sans-serif; cursor:pointer; }
+.math-question-filter-close:hover { background:#e4f2f8; }
+.math-question-filter-close:focus-visible { outline:3px solid var(--system-focus); outline-offset:3px; }
+.math-question-filter-empty { margin:0; padding:26px 12px; border:1px dashed #b9d5e5; border-radius:14px; color:#526477; font-size:14px; line-height:1.8; text-align:center; }
+.math-question-filter-levels,.math-question-filter-scopes { display:flex; flex-wrap:wrap; gap:8px; margin:0 22px 14px; padding:0; border:0; }
+.math-question-filter-levels legend,.math-question-filter-scopes legend { width:100%; margin-bottom:2px; color:#526477; font-size:12px; font-weight:900; }
+.math-question-filter-level,.math-question-filter-scopes label { min-height:40px; padding:7px 12px; border:1px solid #c8dce7; border-radius:10px; background:#fff; color:#31566a; font:800 13px/1.4 var(--font-ui); cursor:pointer; }
+.math-question-filter-level.is-active { border-color:#1675a4; background:#e7f6fd; color:#16658c; }
+.math-question-filter-level:disabled { opacity:.5; cursor:not-allowed; }
+.math-question-filter-scopes label { display:inline-flex; align-items:center; gap:7px; }
+.math-question-filter-scopes input { accent-color:#1675a4; }
+.math-question-filter-ready { margin:0 22px 12px; color:#526477; font-size:12px; line-height:1.7; }
+.math-question-filter-counts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:0 22px 14px; }
+.math-question-filter-counts>div { display:grid; gap:3px; padding:9px 8px; border-radius:10px; background:#f1f8fc; text-align:center; }
+.math-question-filter-counts b { color:#16658c; font:900 22px/1 var(--font-numeric); }
+.math-question-filter-counts span { color:#526477; font-size:10px; line-height:1.4; }
+.math-question-filter-counts[hidden] { display:none; }
+.math-question-filter-button.is-active { border-color:#1675a4; background:#dff2fb; }
+.math-question-filter-message { margin:0 22px 12px; color:#526477; font-size:13px; line-height:1.8; }
+.math-question-filter-actions { display:flex; flex-wrap:wrap; gap:10px; padding:0 22px 22px; }
+.math-question-filter-actions button { flex:1; min-height:44px; padding:9px 12px; border:1px solid #b9d5e5; border-radius:10px; background:#f4fbff; color:#16658c; font:800 13px/1.5 var(--font-ui); cursor:pointer; }
+.math-question-filter-actions [data-math-filter-apply] { background:#1675a4; color:#fff; }
+.math-question-filter-actions button:disabled { opacity:.5; cursor:default; }
+.math-question-filter-actions button:focus-visible,.math-question-filter-level:focus-visible { outline:3px solid var(--system-focus); outline-offset:3px; }
+@media (max-width:760px) {
+  .lesson-math-sample { padding:14px; }
+  .lesson-shell--ui-lab .math-question-filter-button { width:42px; min-height:42px; }
+  .math-question-filter-dialog-head { padding:16px 16px 8px; }
+  .math-question-filter-levels,.math-question-filter-scopes,.math-question-filter-ready,.math-question-filter-counts { margin-inline:16px; }
+}

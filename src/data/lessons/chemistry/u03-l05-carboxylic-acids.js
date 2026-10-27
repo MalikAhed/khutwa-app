@@ -1,4 +1,6 @@
-import{createChemistryLesson as m}from"./shared.js?v=7388f68cc0f433fd";export const source=`:::mcq
+import { createChemistryLesson } from "./shared.js";
+
+export const source = `:::mcq
 id: chemistry-gaza-p062-q01-a6
 title: الوحدة ٣ · الدرس ٥ · ص ٦٠ · س ٠١ · a٦
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤؛ وزاري ٢٠٢١ دورة ثانية (١)
@@ -661,4 +663,6 @@ solution:
 **المصدر:** صفحة 59 من الكتاب.
 
 :::
-`;export default m("u03-l05-carboxylic-acids",source);
+`;
+
+export default createChemistryLesson("u03-l05-carboxylic-acids", source);

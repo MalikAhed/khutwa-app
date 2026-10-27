@@ -1,1 +1,78 @@
-const y=12e3;function c(o){return{ok:!1,status:0,body:{status:"unavailable",error:o}}}export function createAuthClient({baseUrl:o,fetchImpl:l=globalThis.fetch,onError:d=()=>{},timeoutMs:b=12e3}){if(!o||typeof l!="function")throw new TypeError("auth client dependencies are required");async function r(t,e={}){const n=new AbortController,a=e.signal,s=()=>n.abort(a?.reason);a?.aborted?s():a?.addEventListener("abort",s,{once:!0});const g=setTimeout(()=>n.abort(),b);try{n.signal.throwIfAborted();const{signal:u,...f}=e,i=await l(`${o}${t}`,{credentials:"same-origin",...f,signal:n.signal,headers:e.body?{"Content-Type":"application/json",...e.headers||{}}:e.headers}),h=await i.json().catch(()=>({}));return n.signal.throwIfAborted(),{ok:i.ok,status:i.status,body:h}}catch(u){return a?.aborted?{ok:!1,status:0,aborted:!0,body:{status:"aborted"}}:n.signal.aborted?c("تأخر الرد. حاول مجددًا."):(d(new Error("The account service could not be reached.",{cause:u})),c("تحقّق من الإنترنت وحاول مجددًا."))}finally{clearTimeout(g),a?.removeEventListener("abort",s)}}return Object.freeze({request:r,restoreSession:({signal:t}={})=>r("/session",{signal:t}),checkAvailability(t,{signal:e}={}){return r("/availability",{method:"POST",body:JSON.stringify(t),signal:e})},register(t,{signal:e}={}){return r("/register",{method:"POST",body:JSON.stringify(t),signal:e})},signIn(t,{signal:e}={}){return r("/sign-in",{method:"POST",body:JSON.stringify(t),signal:e})},signOut:()=>r("/sign-out",{method:"POST",keepalive:!0})})}
+// @ts-check
+/** @typedef {{signal?:AbortSignal}} RequestOptions */
+/** @typedef {{baseUrl:string, fetchImpl?:typeof fetch, onError?:(error:Error)=>void, timeoutMs?:number}} AuthClientOptions */
+/** @typedef {{ok:boolean, status:number, aborted?:boolean, body:unknown}} HttpResult */
+
+const DEFAULT_REQUEST_TIMEOUT_MS = 12_000;
+
+function unavailable(error) {
+  return { ok:false, status:0, body:{ status:"unavailable", error } };
+}
+
+/**
+ * Small transport boundary for the account API. Keeping fetch, timeouts, and
+ * cancellation here prevents the fixture service from knowing HTTP details.
+ */
+/** @param {AuthClientOptions} options */
+export function createAuthClient({
+  baseUrl,
+  fetchImpl = globalThis.fetch,
+  onError = () => {},
+  timeoutMs = DEFAULT_REQUEST_TIMEOUT_MS,
+}) {
+  if (!baseUrl || typeof fetchImpl !== "function") throw new TypeError("auth client dependencies are required");
+
+  /** @param {string} path @param {RequestInit} [options] @returns {Promise<HttpResult>} */
+  async function request(path, options = {}) {
+    const requestController = new AbortController();
+    const externalSignal = options.signal;
+    const abortFromCaller = () => requestController.abort(externalSignal?.reason);
+    if (externalSignal?.aborted) abortFromCaller();
+    else externalSignal?.addEventListener("abort", abortFromCaller, { once:true });
+    const timeout = setTimeout(() => requestController.abort(), timeoutMs);
+
+    try {
+      requestController.signal.throwIfAborted();
+      const { signal:_externalSignal, ...fetchOptions } = options;
+      const response = await fetchImpl(`${baseUrl}${path}`, {
+        credentials:"same-origin",
+        ...fetchOptions,
+        signal:requestController.signal,
+        headers:options.body ? { "Content-Type":"application/json", ...(options.headers || {}) } : options.headers,
+      });
+      const body = await response.json().catch(() => ({}));
+      // Navigation can cancel after headers arrive, while the body is decoding.
+      requestController.signal.throwIfAborted();
+      return { ok:response.ok, status:response.status, body };
+    } catch (cause) {
+      if (externalSignal?.aborted) return { ok:false, status:0, aborted:true, body:{ status:"aborted" } };
+      if (requestController.signal.aborted) {
+        return unavailable("تأخر الرد. حاول مجددًا.");
+      }
+      onError(new Error("The account service could not be reached.", { cause }));
+      return unavailable("تحقّق من الإنترنت وحاول مجددًا.");
+    } finally {
+      clearTimeout(timeout);
+      externalSignal?.removeEventListener("abort", abortFromCaller);
+    }
+  }
+
+  return Object.freeze({
+    request,
+    /** @param {RequestOptions} [options] */
+    restoreSession:({ signal } = {}) => request("/session", { signal }),
+    /** @param {{field:string, value:string}} values @param {RequestOptions} [options] */
+    checkAvailability(values, { signal } = {}) {
+      return request("/availability", { method:"POST", body:JSON.stringify(values), signal });
+    },
+    /** @param {import("./learner-session.js").Registration} values @param {RequestOptions} [options] */
+    register(values, { signal } = {}) {
+      return request("/register", { method:"POST", body:JSON.stringify(values), signal });
+    },
+    /** @param {{identifier:string, password:string}} values @param {RequestOptions} [options] */
+    signIn(values, { signal } = {}) {
+      return request("/sign-in", { method:"POST", body:JSON.stringify(values), signal });
+    },
+    signOut:() => request("/sign-out", { method:"POST", keepalive:true }),
+  });
+}

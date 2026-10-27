@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as m}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const lessonSource=`:::exam-question
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const lessonSource = `:::exam-question
 id: math-book-p114-ex1-a
 title: الكتاب، ص ١١٢ · مثال ١، الفرع ١ · سهل
 question: خصائص التكامل المحدود
@@ -4614,4 +4616,16 @@ solution:
 \`\`\`mathml
 <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msubsup><mo>∫</mo><mrow><mn dir="ltr">٠</mn></mrow><mrow><mn dir="ltr">١</mn></mrow></msubsup><mn dir="ltr">٣</mn><mtext dir="rtl">هـ</mtext><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><msubsup><mrow><mo stretchy="true">[</mo><mrow><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mo>−</mo><mn dir="ltr">٣</mn><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٦</mn><mi mathvariant="normal">س</mi></mrow></mrow><mo stretchy="true">]</mo></mrow><mrow><mn dir="ltr">٠</mn></mrow><mrow><mn dir="ltr">١</mn></mrow></msubsup><mo>=</mo><mn dir="ltr">١</mn><mo>−</mo><mn dir="ltr">٣</mn><mo>+</mo><mn dir="ltr">٦</mn><mo>=</mo><mn dir="ltr">٤</mn></mrow></mrow></math>
 \`\`\`
-:::`;export default m({status:"published",language:"ar",title:"خصائص التكامل المحدود",summary:"أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",outcome:"مراجعة خصائص التكامل المحدود من الأسئلة الأصلية.",mode:"أسئلة وبطاقات",duration:"38 أسئلة",level:"الثاني عشر · العلمي",reward:10},lessonSource);
+:::`;
+
+export default defineMarkdownLesson({
+  "status": "published",
+  "language": "ar",
+  "title": "خصائص التكامل المحدود",
+  "summary": "أسئلة من الكتاب والكامل بإجابات موثقة من المصادر.",
+  "outcome": "مراجعة خصائص التكامل المحدود من الأسئلة الأصلية.",
+  "mode": "أسئلة وبطاقات",
+  "duration": "38 أسئلة",
+  "level": "الثاني عشر · العلمي",
+  "reward": 10
+}, lessonSource);

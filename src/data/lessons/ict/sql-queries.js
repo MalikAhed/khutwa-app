@@ -1,4 +1,6 @@
-import{defineMarkdownLesson as s}from"../../../markdown/lesson-model.js?v=7388f68cc0f433fd";export const LESSON_MARKDOWN=`<!-- step-id: sql-introduction-mission -->
+import { defineMarkdownLesson } from "../../../markdown/lesson-model.js";
+
+export const LESSON_MARKDOWN = `<!-- step-id: sql-introduction-mission -->
 <!-- presentation: video-intro -->
 # لغة SQL وأنواع الاستعلامات
 https://www.youtube.com/watch?v=GROuHEfqsak
@@ -921,4 +923,17 @@ https://www.youtube.com/watch?v=1PlyQ80dWDw
 
 <!-- lesson-step -->
 
-`;export default s({status:"published",title:"الاستعلامات ولغة SQL",summary:"اختيار البيانات وترتيبها وربطها، ثم تحديث السجلات وإضافتها وحذفها بأوامر Access SQL واضحة.",outcome:"قراءة أوامر SQL وكتابة استعلام يختار البيانات الصحيحة ويعدل السجلات المقصودة.",mode:"شاهد ← راجع ← أجب",mission:"تحويل طلب واضح إلى استعلام صحيح، مع فهم أثر الشروط والعلاقات.",duration:"10 مقاطع فيديو وتطبيقات",level:"الصف الثاني عشر العلمي والصناعي",reward:10,passingScore:80},LESSON_MARKDOWN);
+`;
+
+export default defineMarkdownLesson({
+  status:"published",
+  title:"الاستعلامات ولغة SQL",
+  summary:"اختيار البيانات وترتيبها وربطها، ثم تحديث السجلات وإضافتها وحذفها بأوامر Access SQL واضحة.",
+  outcome:"قراءة أوامر SQL وكتابة استعلام يختار البيانات الصحيحة ويعدل السجلات المقصودة.",
+  mode:"شاهد ← راجع ← أجب",
+  mission:"تحويل طلب واضح إلى استعلام صحيح، مع فهم أثر الشروط والعلاقات.",
+  duration:"10 مقاطع فيديو وتطبيقات",
+  level:"الصف الثاني عشر العلمي والصناعي",
+  reward:10,
+  passingScore:80,
+}, LESSON_MARKDOWN);
