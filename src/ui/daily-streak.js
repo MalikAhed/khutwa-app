@@ -52,8 +52,11 @@ export function mountDailyStreakSequence(dialog, { onRewards, celebrationSource 
   };
   const placeRocky = () => {
     const rect = fire.getBoundingClientRect();
-    const size = Math.min(360, innerWidth * .78, innerHeight * .34);
-    const centerY = Math.max(size / 2 + 12, rect.top - size / 2 + 28);
+    const scene = fire.closest('.completion-streak-celebration').getBoundingClientRect();
+    // The first grid row reserves Rocky's final space above the fire. Use that
+    // same space for the animated landing at every viewport size.
+    const size = rect.top - scene.top;
+    const centerY = rect.top - size / 2;
     mascot.style.setProperty('--rocky-final-y', `${centerY - innerHeight / 2}px`);
     mascot.style.setProperty('--rocky-final-scale', String(size / mascot.offsetWidth));
   };

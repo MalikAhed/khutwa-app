@@ -74,7 +74,7 @@ function streakDays({ streak = 0, activeToday = false, date = new Date() }) {
 
 export function renderSubjectStreak(outcome = {}, titleId = "authored-lesson-complete-title") {
   const streak = Math.max(0, Number(outcome.streak) || 0);
-  return `<div class="level-lesson-copy ready-lesson-result subject-completion subject-completion--streak" dir="rtl">
+  return `<div class="subject-completion subject-completion--streak" dir="rtl">
     <div class="completion-streak-celebration">
       <div class="completion-streak-stage"><div class="completion-streak-mascot"><p class="completion-streak-greeting">أهلًا بعودتك!</p><div class="completion-streak-body" role="img" aria-label="روكي يحتفل بسلسلتك"><span class="completion-streak-rig" aria-hidden="true"></span><img class="completion-streak-rocky" src="assets/mascot/rocky-standing-still${prefersReducedMotion() ? "-reduced" : ""}.svg" alt="" aria-hidden="true"></div></div></div>
       <div class="completion-streak-scene"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/icons/streak-fire-burning-reduced.svg"><img class="completion-streak-fire" src="assets/icons/streak-fire-burning${prefersReducedMotion() ? "-reduced" : ""}.svg" alt="" aria-hidden="true"></picture></div>
