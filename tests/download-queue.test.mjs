@@ -69,3 +69,19 @@ test('offline failures remain retryable and paused downloads resume without skip
   assert.deepEqual(requests,['retry','next','retry']);
   queue.pause();
 });
+
+test('a failed startup file retries ahead of the lesson backlog on refresh', async () => {
+  const calls=[];
+  let failed=false;
+  const queue=createDownloadQueue({defer:setImmediate,download:async file=>{
+    calls.push(file);
+    if(file==='startup'&&!failed){failed=true;throw new Error('temporary outage');}
+    if(file==='lesson-1')queue.pause();
+  }});
+  queue.start(['startup','lesson-1','lesson-2','lesson-3']);
+  await until(()=>calls.length===2);
+  queue.start(['startup','lesson-1','lesson-2','lesson-3']);
+  await until(()=>calls.length>=3);
+  assert.equal(calls[2],'startup','startup cannot wait behind the entire course download');
+  queue.pause();
+});

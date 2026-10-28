@@ -1,5 +1,5 @@
 // One cancellable request at a time. A selected lesson always owns the queue.
-export function createDownloadQueue({ download, defer = callback => setTimeout(callback, 0) }) {
+export function createDownloadQueue({ download, onError = () => {}, defer = callback => setTimeout(callback, 0) }) {
   const completed = new Set();
   const retries = new Map();
   let background = [], foreground = null, active = null, running = false, paused = true;
@@ -23,6 +23,7 @@ export function createDownloadQueue({ download, defer = callback => setTimeout(c
           if (!controller.signal.aborted) { completed.add(file); retries.delete(file); }
         } catch (error) {
           if (!controller.signal.aborted) {
+            onError(error, file);
             retries.set(file, (retries.get(file) || 0) + 1);
             // A failed file must not block all other lessons. Retry on resume.
             background = background.filter(value => value !== file);
@@ -34,7 +35,7 @@ export function createDownloadQueue({ download, defer = callback => setTimeout(c
     } finally { running = false; }
   }
   return Object.freeze({
-    start(files) { background = [...new Set([...background, ...files])]; paused = false; void run(); },
+    start(files) { background = [...new Set([...files, ...background])]; paused = false; void run(); },
     pause() { paused = true; if (!active?.job) interrupt(); },
     resume() {
       for (const [file, attempts] of retries) if (attempts < 3 && !background.includes(file)) background.push(file);

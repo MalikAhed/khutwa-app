@@ -15,8 +15,8 @@ const root=await packageApp();
 const htmlPath=path.join(root,'index.html');
 await writeFile(htmlPath,(await readFile(htmlPath,'utf8')).replace('name="learn-account-mode" content="fixture"','name="learn-account-mode" content="http"'));
 const compressedHtml=gzipSync(await readFile(htmlPath));
-let disconnected=false;
-const app=await createAppServer({root,logger:()=>{},remoteBackend:async(request,response)=>{if(disconnected){request.socket.destroy();return true;}if(request.url.split('?')[0]==='/index.html'){response.writeHead(301,{Location:'/'}).end();return true;}if(request.url.split('?')[0]==='/'){response.writeHead(200,{'Content-Type':'text/html','Content-Encoding':'gzip','Content-Length':compressedHtml.length});response.end(compressedHtml);return true;}return false;},config:readRuntimeConfig({PORT:'0',LIVE_RELOAD:'0',DEV_AUTO_LOGIN:'0',ACCOUNTS_DATABASE_PATH:':memory:'},{root})});
+let disconnected=false, startupFailures=0;
+const app=await createAppServer({root,logger:()=>{},remoteBackend:async(request,response)=>{if(request.url==='/assets/app/manifest.json'&&request.headers['x-learn-download']&&startupFailures<4){startupFailures++;response.writeHead(503).end();return true;}if(disconnected){request.socket.destroy();return true;}if(request.url.split('?')[0]==='/index.html'){response.writeHead(301,{Location:'/'}).end();return true;}if(request.url.split('?')[0]==='/'){response.writeHead(200,{'Content-Type':'text/html','Content-Encoding':'gzip','Content-Length':compressedHtml.length});response.end(compressedHtml);return true;}return false;},config:readRuntimeConfig({PORT:'0',LIVE_RELOAD:'0',DEV_AUTO_LOGIN:'0',ACCOUNTS_DATABASE_PATH:':memory:'},{root})});
 await app.accountStore.createAccount({username:'offline-test',phone:'0591234567',curriculum:'gaza',path:'scientific',password:'Test-only-123'});
 const base=`http://127.0.0.1:${await app.listen()}`;
 const profile=await mkdtemp(path.join(tmpdir(),'khutwa-offline-'));
@@ -31,12 +31,36 @@ try {
  await context.addInitScript(()=>{const nativeNow=Date.now;window.clockOffset=0;Date.now=()=>nativeNow()+window.clockOffset;});
  const login=await context.request.post(`${base}/api/auth/sign-in`,{data:{identifier:'offline-test',password:'Test-only-123'}});assert.equal(login.status(),200);
  const account=(await login.json()).account,owner=`account:${account.id}`;
+ await context.addInitScript(()=>{
+   window.offlineConfirmationDrops=0;
+   const post=ServiceWorker.prototype.postMessage;
+   ServiceWorker.prototype.postMessage=function(message,...rest){
+     if(message?.type==='OFFLINE_READY'&&window.offlineConfirmationDrops++===0)return;
+     return post.call(this,message,...rest);
+   };
+ });
  let page=await context.newPage();
  page.on('pageerror',error=>console.error('browser:',error.message));
  await page.goto(base);await ready(page);
+ const originalDocument=await page.evaluate(()=>performance.timeOrigin);
+ await page.waitForFunction(()=>document.querySelector('[data-offline-download-status] [role=progressbar]')?.getAttribute('aria-valuenow')==='99');
+ await page.screenshot({path:'/tmp/khutwa-preparing-mobile.png'});
  await page.waitForFunction(()=>document.documentElement.dataset.offlineReady==='true',{timeout:120000});
  assert.match(await page.locator('[data-offline-download-status]').innerText(),/جاهز للفتح/);
- console.log('Complete offline shell saved.');
+ assert.equal(startupFailures,4,'repeated startup failures recovered automatically');
+ assert.equal(await page.evaluate(()=>performance.timeOrigin),originalDocument,'completion must not need a reload');
+ assert.ok(await page.evaluate(()=>window.offlineConfirmationDrops)>=2,'lost confirmation is automatically retried');
+ assert.equal(await page.locator('[data-offline-download-status] [role=progressbar]').getAttribute('aria-valuenow'),'100');
+ for(const width of [390,1440]) {
+   await page.setViewportSize({width,height:900});
+   const geometry=await page.locator('[data-offline-download-status]').evaluate(card=>{
+     const a=card.getBoundingClientRect(),b=card.closest('.learner-dashboard__hero').getBoundingClientRect(),c=card.closest('.learner-dashboard__hero').querySelector('header').getBoundingClientRect();
+     return {inside:a.left>=b.left&&a.right<=b.right&&a.top>=b.top&&a.bottom<=b.bottom,overlap:a.left<c.right&&a.right>c.left&&a.top<c.bottom&&a.bottom>c.top,animation:getComputedStyle(card.querySelector('.offline-download-status__ring')).animationName};
+   });
+   assert.ok(geometry.inside);assert.equal(geometry.overlap,false);assert.equal(geometry.animation,'none');
+   await page.screenshot({path:`/tmp/khutwa-offline-ready-${width}.png`});
+ }
+ console.log('Repeated startup failures and a lost confirmation recovered to 100% without reload; responsive card fits.');
  const version=await page.locator('meta[name=learn-release]').getAttribute('content');
  await page.evaluate(async version=>{
   const {prioritizeLesson}=await import(`/src/app/background-loading.js?v=${version}`);
