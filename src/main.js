@@ -7,7 +7,6 @@ import { applyServerDataReset } from "./services/server-data-reset.js";
 import { readAppConfig } from "./app/app-config.js";
 import { createViewLifecycle } from "./app/view-lifecycle.js";
 import { animateView } from "./ui/view-motion.js";
-import { revealWhenReady } from "./ui/media-ready.js";
 import { mountComingSoonToast } from "./ui/coming-soon.js";
 import { createRouteUrl, isUnlockedPage, readRoute } from "./app/route.js";
 import { prefersReducedMotion } from "./lib/dom.js";
@@ -328,8 +327,8 @@ function selectPage(
   elements.comingSoon.classList.toggle("is-visible", !isSubjectsPage);
   elements.lessonView.classList.remove("is-visible");
   setViewMode();
-  animateView(isSubjectsPage ? elements.courseUnits : elements.comingSoon);
-  if (isSubjectsPage) operation.add(revealWhenReady(elements.courseUnits, { signal:operation.signal }));
+  animateView(isSubjectsPage ? elements.courseUnits : elements.comingSoon, { animate:!isSubjectsPage });
+  // Subject artwork loads in place; navigation and controls never wait for images.
   if (
     isSubjectsPage &&
     (restorePath || (historyMode === "push" && routeChanged))

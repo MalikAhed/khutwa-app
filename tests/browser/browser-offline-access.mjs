@@ -12,11 +12,15 @@ import {readRuntimeConfig} from '../../src/server/runtime-config.mjs';
 
 // Packaged, versioned files with disposable HTTP accounts; never production data.
 const root=await packageApp();
+assert.ok((await readFile(path.join(root,'assets/lessons/ict/exams/classified-p127-nic.jpg'))).length,'legacy lesson image URL remains published');
 const htmlPath=path.join(root,'index.html');
 await writeFile(htmlPath,(await readFile(htmlPath,'utf8')).replace('name="learn-account-mode" content="fixture"','name="learn-account-mode" content="http"'));
 const compressedHtml=gzipSync(await readFile(htmlPath));
-let disconnected=false, startupFailures=0;
-const app=await createAppServer({root,logger:()=>{},remoteBackend:async(request,response)=>{if(request.url==='/assets/app/manifest.json'&&request.headers['x-learn-download']&&startupFailures<4){startupFailures++;response.writeHead(503).end();return true;}if(disconnected){request.socket.destroy();return true;}if(request.url.split('?')[0]==='/index.html'){response.writeHead(301,{Location:'/'}).end();return true;}if(request.url.split('?')[0]==='/'){response.writeHead(200,{'Content-Type':'text/html','Content-Encoding':'gzip','Content-Length':compressedHtml.length});response.end(compressedHtml);return true;}return false;},config:readRuntimeConfig({PORT:'0',LIVE_RELOAD:'0',DEV_AUTO_LOGIN:'0',ACCOUNTS_DATABASE_PATH:':memory:'},{root})});
+const catalog=JSON.parse(await readFile(path.join(root,'content-manifest.json'),'utf8'));
+const core=[...new Set([...catalog.onboarding,...catalog.helpers])];
+const heldFiles=new Set(core.slice(Math.ceil(core.length*.86)).map(file=>'/'+file));
+let holdPreparation=true, disconnected=false, startupFailures=0;
+const app=await createAppServer({root,logger:()=>{},remoteBackend:async(request,response)=>{if(holdPreparation&&request.headers['x-learn-download']&&heldFiles.has(request.url)){response.writeHead(503).end();return true;}if(request.url==='/assets/app/icon-maskable-512.png'&&request.headers['x-learn-download']&&startupFailures<4){startupFailures++;response.writeHead(503).end();return true;}if(disconnected){request.socket.destroy();return true;}if(request.url.split('?')[0]==='/index.html'){response.writeHead(301,{Location:'/'}).end();return true;}if(request.url.split('?')[0]==='/'){response.writeHead(200,{'Content-Type':'text/html','Content-Encoding':'gzip','Content-Length':compressedHtml.length});response.end(compressedHtml);return true;}return false;},config:readRuntimeConfig({PORT:'0',LIVE_RELOAD:'0',DEV_AUTO_LOGIN:'0',ACCOUNTS_DATABASE_PATH:':memory:'},{root})});
 await app.accountStore.createAccount({username:'offline-test',phone:'0591234567',curriculum:'gaza',path:'scientific',password:'Test-only-123'});
 const base=`http://127.0.0.1:${await app.listen()}`;
 const profile=await mkdtemp(path.join(tmpdir(),'khutwa-offline-'));
@@ -33,6 +37,14 @@ try {
  const account=(await login.json()).account,owner=`account:${account.id}`;
  await context.addInitScript(()=>{
    window.offlineConfirmationDrops=0;
+   window.downloadRequests=[];
+   const nativeFetch=window.fetch;
+   window.fetch=(url,options)=>{
+     if(options?.headers?.['X-Learn-Download'])window.downloadRequests.push(new URL(url,location.href).href);
+     return nativeFetch(url,options);
+   };
+   // Core preparation must continue with data saver; optional bulk lessons can wait.
+   Object.defineProperty(navigator,'connection',{configurable:true,value:{saveData:true,addEventListener(){}}});
    const post=ServiceWorker.prototype.postMessage;
    ServiceWorker.prototype.postMessage=function(message,...rest){
      if(message?.type==='OFFLINE_READY'&&window.offlineConfirmationDrops++===0)return;
@@ -42,6 +54,34 @@ try {
  let page=await context.newPage();
  page.on('pageerror',error=>console.error('browser:',error.message));
  await page.goto(base);await ready(page);
+ await page.waitForFunction(()=>Number(document.querySelector('[data-offline-download-status] [role=progressbar]')?.getAttribute('aria-valuenow'))>=85);
+ const checkpoint=await page.evaluate(async()=>{
+   const version=document.querySelector('meta[name=learn-release]').content;
+   return (await (await caches.open(`khutwa-content:/:${version}`)).keys()).map(request=>request.url);
+ });
+ // Slow image decoding must never hide the section or disable its controls.
+ const navigation=await page.evaluate(()=>{
+   const decode=HTMLImageElement.prototype.decode;
+   HTMLImageElement.prototype.decode=()=>new Promise(()=>{});
+   const started=performance.now();
+   let interactive=true;
+   for(const section of ['rated-questions','learn','rated-questions','learn']){
+     document.querySelector(`.nav-item[data-page="${section}"]`).click();
+     const surface=document.querySelector('.course-units');
+     interactive&&=surface.dataset.page===section&&!surface.classList.contains('media-pending')
+       &&!surface.querySelector('[inert]')&&Boolean(surface.querySelector('.subject-card'));
+   }
+   HTMLImageElement.prototype.decode=decode;
+   return {interactive,elapsed:performance.now()-started};
+ });
+ assert.ok(navigation.interactive,'navigation remains visible and clickable while images are delayed');
+ assert.ok(navigation.elapsed<1000,`four section changes took ${navigation.elapsed}ms`);
+ await page.reload();await ready(page);
+ await page.waitForFunction(()=>Number(document.querySelector('[data-offline-download-status] [role=progressbar]')?.getAttribute('aria-valuenow'))>=85);
+ const repeated=await page.evaluate(saved=>window.downloadRequests.filter(url=>saved.includes(url)),checkpoint);
+ assert.deepEqual(repeated,[],'reopening must skip every already saved file');
+ holdPreparation=false;
+ await page.evaluate(()=>window.dispatchEvent(new Event('online')));
  const originalDocument=await page.evaluate(()=>performance.timeOrigin);
  await page.waitForFunction(()=>document.querySelector('[data-offline-download-status] [role=progressbar]')?.getAttribute('aria-valuenow')==='99');
  await page.screenshot({path:'/tmp/khutwa-preparing-mobile.png'});
@@ -51,15 +91,17 @@ try {
  assert.equal(await page.evaluate(()=>performance.timeOrigin),originalDocument,'completion must not need a reload');
  assert.ok(await page.evaluate(()=>window.offlineConfirmationDrops)>=2,'lost confirmation is automatically retried');
  assert.equal(await page.locator('[data-offline-download-status] [role=progressbar]').getAttribute('aria-valuenow'),'100');
- for(const width of [390,1440]) {
+ for(const width of [320,390,1440]) {
    await page.setViewportSize({width,height:900});
    const geometry=await page.locator('[data-offline-download-status]').evaluate(card=>{
      const a=card.getBoundingClientRect(),b=card.closest('.learner-dashboard__hero').getBoundingClientRect(),c=card.closest('.learner-dashboard__hero').querySelector('header').getBoundingClientRect();
-     return {inside:a.left>=b.left&&a.right<=b.right&&a.top>=b.top&&a.bottom<=b.bottom,overlap:a.left<c.right&&a.right>c.left&&a.top<c.bottom&&a.bottom>c.top,animation:getComputedStyle(card.querySelector('.offline-download-status__ring')).animationName};
+     const lines=[...card.querySelector('.offline-download-status__copy').children].every(el=>el.getBoundingClientRect().height<=parseFloat(getComputedStyle(el).lineHeight)+1&&el.scrollWidth<=el.clientWidth);
+     return {height:a.height,lines,color:getComputedStyle(card.querySelector('.offline-download-status__ring')).color,headerInside:c.bottom<=b.bottom,inside:a.left>=b.left&&a.right<=b.right&&a.top>=b.top&&a.bottom<=b.bottom,overlap:a.left<c.right&&a.right>c.left&&a.top<c.bottom&&a.bottom>c.top,animation:getComputedStyle(card.querySelector('.offline-download-status__ring')).animationName};
    });
-   assert.ok(geometry.inside);assert.equal(geometry.overlap,false);assert.equal(geometry.animation,'none');
+   assert.ok(geometry.inside);assert.ok(geometry.headerInside);assert.equal(geometry.overlap,false);assert.ok(geometry.lines,'exactly two text rows');assert.equal(geometry.color,'rgb(21, 155, 117)');if(width<700)assert.equal(geometry.height,52);assert.equal(geometry.animation,'none');
    await page.screenshot({path:`/tmp/khutwa-offline-ready-${width}.png`});
  }
+ console.log(`Navigation stayed interactive (${Math.round(navigation.elapsed)}ms for four switches); partial preparation resumed without redownloading saved files.`);
  console.log('Repeated startup failures and a lost confirmation recovered to 100% without reload; responsive card fits.');
  const version=await page.locator('meta[name=learn-release]').getAttribute('content');
  await page.evaluate(async version=>{
@@ -139,4 +181,8 @@ try {
  const cachedUrls=await page.evaluate(async()=>{const urls=[];for(const name of await caches.keys())for(const request of await (await caches.open(name)).keys())urls.push(request.url);return urls;});
  assert.ok(!cachedUrls.some(url=>new URL(url).pathname.startsWith('/api/')||new URL(url).pathname==='/students'));
  console.log('Seven-day expiry survives reload; APIs and student pages never enter the cache.');
+} catch(error) {
+ const current=context?.pages().at(-1);
+ if(current&&!current.isClosed())console.error(await current.evaluate(()=>({status:document.querySelector('[data-offline-download-status]')?.textContent,downloads:window.downloadRequests?.slice(-6)})).catch(()=>null));
+ throw error;
 } finally {await context?.close();await app.close();await rm(profile,{recursive:true,force:true});}

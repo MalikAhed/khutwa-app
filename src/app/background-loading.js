@@ -1,6 +1,6 @@
 import { updateOfflineDownloadStatus } from "../ui/offline-download-status.js";
 import { createDownloadQueue } from "../services/download-queue.js";
-import { useManagedImagePreloading } from "../ui/media-ready.js";
+import { canPrefetchAssets, useManagedImagePreloading } from "../ui/media-ready.js";
 
 let initialization, queue, manifest, cache, selected, started = false;
 let offlineFiles = new Set(), offlineReady = false, savingShell, finishOffline = async () => {};
@@ -12,12 +12,12 @@ const showOfflineStatus = () => updateOfflineDownloadStatus({
 });
 const base = () => new URL("./", document.baseURI);
 const cacheName = version => `khutwa-content:${base().pathname}:${version}`;
-const backgroundAllowed = () => !document.hidden && !navigator.connection?.saveData;
+const backgroundAllowed = () => !document.hidden;
 
 async function initialize() {
   if (initialization) return initialization;
   initialization = (async () => {
-    const response = await fetch(new URL("content-manifest.json", base()), { cache:"no-cache" });
+    const response = await fetch(new URL("content-manifest.json", base()), { cache:"no-cache", signal:AbortSignal.timeout(10000) });
     if (!response.ok) throw new Error("Content catalog unavailable");
     const catalog = await response.json();
     if (!["onboarding", "helpers", "lessons"].every(key => Array.isArray(catalog?.[key]))) {
@@ -47,11 +47,21 @@ async function initialize() {
       if (!await messageWorker(worker, { type:"CONTENT_CONFIG", version:release, files })) throw new Error("Offline worker is not ready");
       return worker;
     }
+    let completedFiles = [];
     if (release && "serviceWorker" in navigator && "caches" in window) {
-      try { cache = await caches.open(cacheName(release)); } catch { /* Retry storage on the next download. */ }
+      try {
+        cache = await caches.open(cacheName(release));
+        // Cache entries are the checkpoint: count them once before starting the queue.
+        const saved = new Set((await cache.keys()).map(request => request.url));
+        completedFiles = files.filter(file => saved.has(new URL(file, base()).href));
+        for (const file of completedFiles) offlineFiles.delete(file);
+      } catch { cache = null; /* Retry storage on the next download. */ }
       // A delayed worker must not discard already downloaded files or disable caching.
       void navigator.serviceWorker.register(new URL("content-worker.js", base()), { scope:base().pathname, updateViaCache:"none" }).catch(() => {});
+      // Serve already saved files immediately, including before preparation reaches 100%.
+      void configureWorker().catch(() => {});
     }
+    showOfflineStatus();
     async function finishOfflineShell() {
       showOfflineStatus();
       if (!cache || offlineReady || offlineFiles.size || savingShell) return;
@@ -82,13 +92,13 @@ async function initialize() {
       await savingShell;
     }
     finishOffline = finishOfflineShell;
-    queue = createDownloadQueue({ onError:() => { offlineIssue = true; showOfflineStatus(); }, download:async (file, { signal, priority }) => {
+    queue = createDownloadQueue({ completedFiles, onError:() => { offlineIssue = true; showOfflineStatus(); }, download:async (file, { signal, priority }) => {
       const url = new URL(file, base());
       if (!cache && release && "caches" in window) cache = await caches.open(cacheName(release));
       if (release && !cache) throw new Error("Offline storage unavailable");
       try { if (cache && await cache.match(url)) { offlineFiles.delete(file); offlineIssue = false; await finishOfflineShell(); return; } } catch (error) { cache = null; throw error; }
       const response = await fetch(url, { signal:AbortSignal.any([signal, AbortSignal.timeout(20000)]), priority,
-        cache:cache ? "reload" : "default", headers:{ "X-Learn-Download":"1" } });
+        cache:/[?&]v=/.test(url.search) ? "default" : "no-cache", headers:{ "X-Learn-Download":"1" } });
       if (!response.ok) throw new Error(`Content download failed: ${response.status}`);
       // An interrupted file cannot be marked installed.
       const bytes = await response.arrayBuffer();
@@ -102,7 +112,7 @@ async function initialize() {
     } });
     useManagedImagePreloading();
     return queue;
-  })().catch(() => { initialization = null; return null; });
+  })().catch(() => { initialization = null; offlineIssue = true; showOfflineStatus(); return null; });
   return initialization;
 }
 
@@ -134,8 +144,10 @@ export function warmLearningExperience() {
     void initialize().then(downloads => {
       if (!downloads) return;
       if (!backgroundAllowed()) { downloads.pause(); return; }
+      // Prepare the app on every connection; optional bulk lessons wait for a good link.
+      const lessons = canPrefetchAssets() ? manifest.lessons : [];
       downloads.start([...manifest.onboarding, ...manifest.helpers,
-        ...manifest.lessons.flatMap(lesson => lesson.first), ...manifest.lessons.flatMap(lesson => lesson.files)]);
+        ...lessons.flatMap(lesson => lesson.first), ...lessons.flatMap(lesson => lesson.files)]);
       applySelected();
       downloads.resume();
       void finishOffline();

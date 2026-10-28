@@ -1,6 +1,6 @@
 // One cancellable request at a time. A selected lesson always owns the queue.
-export function createDownloadQueue({ download, onError = () => {}, defer = callback => setTimeout(callback, 0) }) {
-  const completed = new Set();
+export function createDownloadQueue({ download, onError = () => {}, completedFiles = [], defer = callback => setTimeout(callback, 0) }) {
+  const completed = new Set(completedFiles);
   const retries = new Map();
   let background = [], foreground = null, active = null, running = false, paused = true;
   const nextFile = files => files.find(file => !completed.has(file));
@@ -35,7 +35,7 @@ export function createDownloadQueue({ download, onError = () => {}, defer = call
     } finally { running = false; }
   }
   return Object.freeze({
-    start(files) { background = [...new Set([...files, ...background])]; paused = false; void run(); },
+    start(files) { background = [...new Set(files)]; paused = false; void run(); },
     pause() { paused = true; if (!active?.job) interrupt(); },
     resume() {
       for (const [file, attempts] of retries) if (attempts < 3 && !background.includes(file)) background.push(file);

@@ -29,6 +29,8 @@ export async function packageApp({ server = false } = {}) {
   const contentManifest = await createContentManifest(root);
   const lessonImages = new Set([...contentManifest.onboarding, ...contentManifest.helpers,
     ...contentManifest.lessons.flatMap(lesson => [...lesson.first, ...lesson.files])].map(file => path.basename(file)));
+  // Old open lessons can still request the JPEG after the WebP conversion.
+  lessonImages.add("classified-p127-nic.jpg");
   // Retain source references too: hidden/legacy lessons may be outside the download catalog.
   const sourceFiles = ["index.html", ...(await readdir(path.join(root, "src"), { recursive:true }))
     .filter(file => /\.(?:js|mjs|css|html)$/.test(file)).map(file => `src/${file}`)];

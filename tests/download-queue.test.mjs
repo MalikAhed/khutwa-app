@@ -85,3 +85,14 @@ test('a failed startup file retries ahead of the lesson backlog on refresh', asy
   assert.equal(calls[2],'startup','startup cannot wait behind the entire course download');
   queue.pause();
 });
+
+
+test('saved files are skipped immediately after restoring a queue', async () => {
+  const calls=[];
+  const queue=createDownloadQueue({completedFiles:['saved-startup','saved-lesson'],defer:setImmediate,download:async file=>{calls.push(file);}});
+  queue.start(['saved-startup','missing','saved-lesson']);
+  await until(()=>calls.length===1);
+  await queue.prioritize(['saved-lesson']);
+  assert.deepEqual(calls,['missing']);
+  queue.pause();
+});
