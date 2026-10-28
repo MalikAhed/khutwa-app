@@ -144,7 +144,8 @@ body:is(.product-flow-active,.ui-lab-open,.rocky-lesson-open)>.app-stats-bar { d
 
 @media (min-width:761px) {
   body:not(.product-flow-active) { background:#fff; }
-  body:not(.product-flow-active) .topbar-wrap { inset:0 0 0 auto; width:var(--app-nav-width); border-bottom:0; border-left:2px solid #e5e5e5; box-shadow:none; }
+  body:not(.product-flow-active) .topbar-wrap { inset:0 0 0 auto; width:var(--app-nav-width); border-bottom:0; border-left:3px solid #e5e5e5; box-shadow:none; }
+  .app-stats-bar { width:calc(var(--app-nav-width) - 3px); }
   body:not(.product-flow-active) .topbar { width:100%; height:100%; flex-direction:column; align-items:stretch; gap:0; padding:102px 15px 24px; overflow:clip; }
   body:not(.product-flow-active) .nav-links { flex:0 0 auto; flex-direction:column; align-items:stretch; gap:8px; }
   body:not(.product-flow-active) .nav-item { flex:0 0 auto; display:grid; grid-template-columns:36px minmax(0,1fr); align-items:center; justify-items:start; width:100%; height:55px; gap:17px; padding:11px 14px; direction:rtl; text-align:right; font-family:var(--font-ui); font-size:15px; font-weight:900; }

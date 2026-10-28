@@ -22,10 +22,15 @@ function roadmapLessonTotal(subjectId) {
   return getSubjectRoadmap(subjectId)?.units.reduce((total, unit) => total + unit.lessons.filter(lesson => !lesson.hidden && !lesson.optional).length, 0) || 0;
 }
 
+function subjectArtworkMarkup(subject) {
+  const artwork = escapeHtml(subject.artwork || subject.id);
+  return `<picture class="subject-card__art" aria-hidden="true"><source media="(max-width:600px)" srcset="assets/subjects/${artwork}-small.webp"><img src="assets/subjects/${artwork}.webp" alt="" width="780" height="585" decoding="async" /></picture>`;
+}
+
 function subjectCardMarkup(subject, view) {
   const locked = view.unpublished;
   const disabledMarkup = locked ? ' aria-disabled="true" disabled' : "";
-  return `<button class="subject-card${locked ? " subject-card--locked" : ""}" type="button" data-subject="${escapeHtml(subject.id)}" data-status="${view.state}" aria-label="${escapeHtml(view.label)}"${disabledMarkup}><span class="subject-card__hero"><span class="subject-card__title"><h2>${escapeHtml(subject.name)}</h2></span></span><span class="subject-card__details"><span class="subject-card__progress-track" data-subject-progress data-label-covered="${isProgressLabelCovered(view.progress, 100)}"><span aria-hidden="true"></span><bdi class="subject-card__progress-count ui-number" data-subject-count>${view.completedCount} / ${view.totalCount}</bdi></span></span>${locked ? LOCK_ICON : ""}</button>`;
+  return `<button class="subject-card${locked ? " subject-card--locked" : ""}" type="button" data-subject="${escapeHtml(subject.id)}" data-status="${view.state}" aria-label="${escapeHtml(view.label)}"${disabledMarkup}>${subjectArtworkMarkup(subject)}<span class="subject-card__hero"><span class="subject-card__title"><h2>${escapeHtml(subject.name)}</h2></span></span><span class="subject-card__details"><span class="subject-card__progress-track" data-subject-progress data-label-covered="${isProgressLabelCovered(view.progress, 100)}"><span aria-hidden="true"></span><bdi class="subject-card__progress-count ui-number" data-subject-count>${view.completedCount} / ${view.totalCount}</bdi></span></span>${locked ? LOCK_ICON : ""}</button>`;
 }
 
 /** One presentation contract owns the initial card and later learner updates. */
@@ -62,7 +67,10 @@ export function renderCourseMapMarkup({ ratedQuestions = false, questionFeedback
   if (ratedQuestions) {
     const subjects = COURSE_SUBJECTS.map(subject => {
       const questions = getRatedSubjectQuestions(subject.id,questionFeedback);
-      return `<article class="subject-card subject-card--rated" data-subject="${escapeHtml(subject.id)}" aria-label="${escapeHtml(subject.name)}"><button type="button" class="subject-card__hero rated-subject-open" data-rated-subject="${escapeHtml(subject.id)}"><span class="subject-card__title"><h2>${escapeHtml(subject.name)}</h2></span></button><div class="subject-card__details rated-subject-difficulties" aria-label="مستويات الصعوبة">${QUESTION_RATINGS.map(({value,label}) => `<button type="button" class="rated-subject-difficulty rated-subject-difficulty--${value}" data-rated-subject="${escapeHtml(subject.id)}" data-rating="${value}" aria-label="${label}، ${questions.filter(question => question.rating === value).length} سؤالًا">${renderRatingFace(value)}<span>${label}</span><bdi class="ui-number" data-rating-count>${questions.filter(question => question.rating === value).length}</bdi></button>`).join("")}</div></article>`;
+      return `<article class="subject-card subject-card--rated" data-subject="${escapeHtml(subject.id)}" aria-label="${escapeHtml(subject.name)}">${subjectArtworkMarkup(subject)}<button type="button" class="subject-card__hero rated-subject-open" data-rated-subject="${escapeHtml(subject.id)}"><span class="subject-card__title"><h2>${escapeHtml(subject.name)}</h2></span></button><div class="rated-subject-difficulties" role="group" aria-label="اختر صعوبة الأسئلة للمراجعة">${QUESTION_RATINGS.map(({value,label}) => {
+        const count = String(questions.filter(question => question.rating === value).length);
+        return `<button type="button" class="rated-subject-difficulty rated-subject-difficulty--${value}" data-rated-subject="${escapeHtml(subject.id)}" data-rating="${value}" aria-label="${label}، ${count} سؤالًا">${renderRatingFace(value)}<bdi class="ui-number" style="--rating-count-digits:${count.length}" data-rating-count>${count}</bdi></button>`;
+      }).join("")}</div></article>`;
     }).join("");
     return `<section class="subject-map" data-catalog="rated-questions" aria-label="المواد الدراسية">${subjects}</section>`;
   }
@@ -98,6 +106,7 @@ export function updateRatedSubjectCards(container, questionFeedback) {
       const number = button?.querySelector("[data-rating-count]");
       if (number && number.textContent !== count) {
         number.textContent = count;
+        number.style.setProperty("--rating-count-digits", String(count.length));
         button.setAttribute("aria-label", `${label}، ${count} سؤالًا`);
       }
     }

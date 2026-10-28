@@ -1,15 +1,21 @@
 .learner-dashboard-root[hidden] { display:none; }
 /* Preserve the dashboard geometry while its account-bound progress arrives. */
 .learner-dashboard-root[aria-busy="true"] :is(.dashboard-stat__heading strong,.dashboard-stat__panel>*,.dashboard-materials-heading>span) { visibility:hidden; }
-.course-units[data-page="rated-questions"] :is(.learner-dashboard__header,.dashboard-stats,.dashboard-materials-heading > span) { display:none; }
+.course-units[data-page="rated-questions"] :is(.learner-dashboard__hero,.dashboard-stats,.dashboard-materials-heading > span) { display:none; }
 .learner-dashboard { margin:0; font-family:var(--font-ui); }
-.learner-dashboard__header { display:flex; align-items:center; justify-content:flex-start; min-height:68px; gap:12px; padding:0 0 16px; }
+.learner-dashboard__hero { position:relative; height:254px; margin-bottom:24px; overflow:visible; border-radius:24px; }
+.learner-dashboard__art { position:absolute; inset:0; overflow:hidden; border-radius:24px; background:#4abff5; }
+.learner-dashboard__art::after { content:""; position:absolute; z-index:2; left:6%; bottom:-9px; width:30%; height:40px; border-radius:50% 65% 0 0; background:#f4cb90; }
+.learner-dashboard__coast { position:absolute; z-index:1; right:0; bottom:0; width:100%; height:100%; object-fit:cover; object-position:right center; }
+/* Rocky sits outside the clipped scenery so his dangling feet cross the banner edge. */
+.learner-dashboard__rocky { position:absolute; z-index:3; left:7%; bottom:-44px; width:auto; height:138%; object-fit:contain; }
+.learner-dashboard__header { position:absolute; z-index:4; top:16px; right:16px; display:flex; align-items:center; justify-content:flex-start; max-width:calc(100% - 32px); min-height:68px; gap:12px; padding:10px 16px; border-radius:20px; background:var(--system-white); }
 .learner-dashboard__avatar { flex:0 0 auto; display:grid; place-items:center; width:52px; height:52px; overflow:hidden; border:2px solid #e2e8f0; border-radius:50%; background:#f1f5f9; color:#8296ab; }
 .learner-dashboard__avatar svg { width:40px; height:40px; }
 .learner-dashboard__identity { text-align:start; min-width:0; overflow-wrap:anywhere; }
 .learner-dashboard__identity h2,.learner-dashboard__identity p { margin:0; }
 .learner-dashboard__identity h2 { color:var(--system-ink); font-size:clamp(24px,2.5vw,30px); font-weight:800; line-height:1.5; }
-.learner-dashboard__identity p { margin-top:4px; color:var(--system-muted); font-size:13px; line-height:1.7; }
+.learner-dashboard__identity p { display:none; margin-top:4px; color:var(--system-muted); font-size:13px; line-height:1.7; }
 .super-trial-countdown { flex:none; display:flex; align-items:center; margin-right:auto; padding:7px 9px; border:2px solid var(--system-border); border-radius:var(--radius-control); background:var(--system-white); direction:ltr; }
 .super-trial-countdown[hidden] { display:none; }
 .super-trial-countdown > span { white-space:nowrap; text-align:center; font:700 11px/1.3 var(--font-ui); }
@@ -62,8 +68,18 @@
 .guest-account-actions { display:flex; gap:8px; }
 .guest-dashboard .dashboard-materials-heading>span { padding:6px 10px; border-radius:999px; background:var(--system-blue-soft); color:var(--system-blue-ink); }
 
+@container subjects (max-width:700px) {
+  .learner-dashboard__hero { height:230px; border-radius:22px; }
+  .learner-dashboard__art { border-radius:22px; }
+  .learner-dashboard__art::after { left:3%; bottom:-4px; width:47%; height:28px; }
+  .learner-dashboard__coast { width:100%; height:100%; object-fit:cover; object-position:70% bottom; }
+  .learner-dashboard__rocky { left:0; bottom:-30px; height:100%; }
+  .learner-dashboard__header { top:16px; right:16px; left:16px; min-height:0; gap:10px; padding:0; border-radius:0; background:none; }
+  .learner-dashboard__avatar { display:none; }
+  .learner-dashboard__identity h2 { color:#fff; font-size:24px; }
+  .learner-dashboard__identity p { display:block; color:#f4fbff; font-size:16px; font-weight:800; }
+}
 @media (max-width:600px) {
-  .learner-dashboard__header { min-height:56px; gap:10px; padding:0 0 12px; }
   .learner-dashboard__avatar { width:44px; height:44px; }
   .learner-dashboard__avatar svg { width:34px; height:34px; }
   .dashboard-super-offer { flex-basis:72px; }

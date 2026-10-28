@@ -58,8 +58,9 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor, onEvent }) => {
         assert.ok(rect.top >= result.card.top - 1 && rect.bottom <= result.card.bottom + 1, `${label}: ${item.selector} stays inside the card vertically`);
       }
     }
-    const footer = result.items.find(item => item.selector === '.subject-card__details').rect;
-    assert.ok(Math.abs(result.card.bottom - footer.bottom - 2) <= 1 && footer.height >= 68, `${label}: the white footer fills the card bottom`);
+    const title = result.items.find(item => item.selector === 'h2').rect;
+    const progress = result.items.find(item => item.selector === '.subject-card__progress-track').rect;
+    assert.ok(progress.top >= title.bottom, `${label}: progress stays below the title`);
     assert.ok(result.action.includes("خريطة الدروس"), `${label}: the card exposes its navigation action to assistive technology`);
     assert.ok(result.scrollWidth <= result.viewport + 1, `${label}: no horizontal page overflow: ${JSON.stringify(result.overflow)}`);
     return result;
@@ -70,17 +71,15 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor, onEvent }) => {
       const mapRect=map.getBoundingClientRect();
       return {columns:getComputedStyle(map).gridTemplateColumns.split(' ').length,map:{left:mapRect.left,right:mapRect.right},mainWidth:document.querySelector('main.page').getBoundingClientRect().width,columnWidth:document.querySelector('.column').getBoundingClientRect().width,hasSidebar:Boolean(document.querySelector('.dashboard-side-rail')),locked:cards.filter(card=>card.disabled).map(card=>({subject:card.dataset.subject,count:card.querySelector('[data-subject-count]').textContent,lock:Boolean(card.querySelector('.subject-card__lock'))})),cards:cards.map(card=>({subject:card.dataset.subject,left:card.getBoundingClientRect().left,right:card.getBoundingClientRect().right,top:card.getBoundingClientRect().top}))};
     })()`);
-    assert.equal(result.columns, result.map.right-result.map.left <= 560 ? 1 : 2, `${label}: narrow subject grids use one column and wider grids use two`);
+    assert.equal(result.columns, 1, `${label}: subjects follow the reference full-width rows`);
     assert.deepEqual(result.cards.map(card=>card.subject), ["ict", "mathematics", "mathematics-2", "physics", "biology", "chemistry", "english", "arabic", "islamic-education"], `${label}: every subject is visible`);
     assert.deepEqual(result.locked.map(card => card.subject), [], `${label}: all nine published subjects are available`);
     assert.ok(result.locked.every(card=>card.count === "0 / 0" && card.lock), `${label}: locked subjects show zero progress and a lock`);
     assert.equal(result.hasSidebar, false, `${label}: no experimental sidebar is mounted`);
     assert.ok(Math.abs(result.mainWidth - result.columnWidth) <= 1, `${label}: subjects occupy the full main content width`);
     assert.ok(Math.abs(result.cards[0].left-result.map.left) <= 1 && Math.abs(result.cards[0].right-result.map.right) <= 1, `${label}: ICT spans the full row`);
-    const subjects=result.cards.slice(1);
-    for (let index=0; index<subjects.length; index+=2) {
-      const row=subjects.slice(index,index+2);
-      if (result.columns === 2 && row.length === 2) assert.ok(Math.abs(row[0].top-row[1].top) <= 1, `${label}: each pair shares a row`);
+    for (const card of result.cards) {
+      assert.ok(Math.abs(card.left-result.map.left) <= 1 && Math.abs(card.right-result.map.right) <= 1, `${label}: ${card.subject} spans the full row`);
     }
     return result;
   };
@@ -182,19 +181,19 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor, onEvent }) => {
   evidence.fonts = (await send("CSS.getPlatformFontsForNode", { nodeId })).fonts;
   assert.ok(evidence.fonts.some(font => font.familyName.includes("Noto Sans Arabic")), "The supplied Arabic UI font is actually rendered");
   const expectedFills = {
-    mathematics:"rgb(255, 204, 0)", "mathematics-2":"rgb(255, 204, 0)", physics:"rgb(166, 107, 255)", biology:"rgb(88, 204, 2)", chemistry:"rgb(255, 120, 79)",
-    ict:"rgb(10, 141, 234)", english:"rgb(255, 75, 75)", arabic:"rgb(255, 159, 26)", "islamic-education":"rgb(13, 204, 170)",
+    mathematics:"rgb(255, 205, 38)", "mathematics-2":"rgb(255, 205, 38)", physics:"rgb(255, 134, 170)", biology:"rgb(88, 204, 2)", chemistry:"rgb(173, 130, 233)",
+    ict:"rgb(21, 159, 247)", english:"rgb(255, 75, 75)", arabic:"rgb(255, 159, 26)", "islamic-education":"rgb(13, 204, 170)",
     level:"rgb(255, 202, 40)", streak:"rgb(255, 133, 51)",
   };
   evidence.colors = await evaluate(`(() => {
     return [...document.querySelectorAll('.subject-card'),...document.querySelectorAll('.dashboard-stat')].map(element=>({
       name:element.dataset.subject || (element.classList.contains('dashboard-stat--level')?'level':'streak'),
-      background:getComputedStyle(element.querySelector(".subject-card__hero") || element).backgroundColor,
+      background:getComputedStyle(element).backgroundColor,
       color:getComputedStyle(element.querySelector('h2,.dashboard-stat__heading strong')).color,
     }));
   })()`);
   for (const card of evidence.colors) {
-    assert.equal(card.background, expectedFills[card.name], `${card.name}: the original vibrant fill is preserved`);
+    assert.equal(card.background, expectedFills[card.name], `${card.name}: the subject uses its reference palette`);
     assert.equal(card.color, "rgb(255, 255, 255)", `${card.name}: colored cards retain the requested white text`);
   }
   evidence.contrast = await evaluate(`(() => {

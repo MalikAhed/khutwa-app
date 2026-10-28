@@ -40,7 +40,7 @@
 /* The same glossy XP track serves Home and the session celebration. */
 .dashboard-level-progress { position:relative; height:var(--xp-bar-height,18px); overflow:hidden; border-radius:999px; background:#edf1f3; direction:rtl; }
 .dashboard-level-progress > span { position:absolute; inset:0 0 0 auto; overflow:hidden; height:100%; border-radius:inherit; background:#ffc800; transition:width 180ms ease; }
-.dashboard-level-progress > span::before { content:""; position:absolute; top:3px; right:7px; left:7px; height:3px; border-radius:999px; background:#fff0a3; }
+.dashboard-level-progress > span::before,.subject-card__progress-track > span::before { content:""; position:absolute; top:3px; right:var(--progress-gloss-inset,7px); left:var(--progress-gloss-inset,7px); height:3px; border-radius:999px; background:var(--progress-gloss-color,#fff0a3); }
 @media (prefers-reduced-motion:reduce) { .dashboard-level-progress > span { transition:none; } }
 
 body.ui-lab-open {
@@ -76,29 +76,25 @@ body.ui-lab-open {
 .progress-feedback[hidden], .progress-feedback [hidden] { display: none; }
 body.ready-lesson-open .progress-feedback { display: none; }
 
-/* One physical press response for every native button in the product. */
+/* Default physical press response; subject review controls use brightness only. */
 button {
   --button-press-edge:var(--action-edge,rgba(48,71,90,.18));
   transition:transform 120ms ease,box-shadow 120ms ease,filter 140ms ease,background-color 160ms ease,border-color 160ms ease,color 160ms ease;
 }
 @media (hover:hover) {
-  button:not(.auth-back):not(.auth-links button):not(.nav-item):not(.roadmap-part):not([data-exam-correct]):not(:is(.lesson-shell--ui-lab,.lesson-shell--subject) .lesson-back):not(:disabled):not([aria-disabled="true"]):hover {
+  button:not(.auth-back):not(.auth-links button):not(.subject-card):not(.rated-subject-open):not(.rated-subject-difficulty):not(.nav-item):not(.roadmap-part):not([data-exam-correct]):not(:is(.lesson-shell--ui-lab,.lesson-shell--subject) .lesson-back):not(:disabled):not([aria-disabled="true"]):hover {
     transform:translateY(2px)!important;
     box-shadow:0 2px 0 var(--button-press-edge)!important;
   }
 }
-button:not(.auth-back):not(.auth-links button):not(.nav-item):not(.roadmap-part):not([data-exam-correct]):not(:is(.lesson-shell--ui-lab,.lesson-shell--subject) .lesson-back):not(:disabled):not([aria-disabled="true"]):active {
+button:not(.auth-back):not(.auth-links button):not(.subject-card):not(.rated-subject-open):not(.rated-subject-difficulty):not(.nav-item):not(.roadmap-part):not([data-exam-correct]):not(:is(.lesson-shell--ui-lab,.lesson-shell--subject) .lesson-back):not(:disabled):not([aria-disabled="true"]):active {
   transform:translateY(var(--control-press))!important;
   box-shadow:0 1px 0 var(--button-press-edge)!important;
 }
 button.nav-item:not(:disabled):is(:hover,:active) {
   transform:none!important;
 }
-.subject-card--locked:disabled:hover {
-  transform:translateY(2px)!important;
-  box-shadow:0 2px 0 var(--action-edge)!important;
-  filter:brightness(.98);
-}
+.subject-card--locked:disabled:hover { filter:brightness(.96); }
 @media (prefers-reduced-motion:reduce) {
   button { transition:none; }
   button:not(.nav-item):not(.roadmap-part):not([data-exam-correct]):not(:disabled):not([aria-disabled="true"]):hover,
