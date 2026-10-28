@@ -1,38 +1,27 @@
 // @ts-check
 const RESET_KEY = "tawjihi:data-reset";
 
-/** @param {Storage} storage */
-function clearAppStorage(storage) {
-  for (const key of Object.keys(storage)) {
-    if (key.startsWith("tawjihi:")) storage.removeItem(key);
-  }
-}
-
-// Run before opening progress stores or restoring an account. Only an explicit
-// database reset activates this; normal releases never clear learner data.
+// Keep the existing entry point/storage key for compatibility. This is now a
+// continuity check, never a reset: an unexpected backend must not erase the
+// student's local recovery copy or send their pending work to a replacement.
 export async function applyServerDataReset() {
   const response = await fetch("/api/app-state", { cache:"no-store", signal:AbortSignal.timeout(12000) });
   if (!response.ok) throw new Error("The app's data state could not be checked.");
   const { resetId } = await response.json();
-  if (!resetId) return;
-  if (typeof resetId !== "string") throw new Error("Invalid app data state.");
-  const reset = async () => {
-    if (localStorage.getItem(RESET_KEY) !== resetId) {
-      await new Promise((resolve, reject) => {
-        const request = indexedDB.deleteDatabase("tawjihi-subject-progress");
-        request.onsuccess = () => resolve(undefined);
-        request.onerror = () => reject(request.error);
-        request.onblocked = () => reject(new Error("Close other app tabs and reload to finish the data reset."));
-      });
-      clearAppStorage(localStorage);
-      localStorage.setItem(RESET_KEY, resetId);
+  if (resetId !== null && typeof resetId !== "string") throw new Error("Invalid app data state.");
+  const current = resetId ?? "";
+  const check = () => {
+    const stores = [localStorage, sessionStorage];
+    for (const storage of stores) {
+      const previous = storage.getItem(RESET_KEY);
+      if (previous !== null && previous !== current)
+        throw new Error("The account database changed. Saved work is preserved; restore the expected backend before retrying.");
     }
-    // Session storage is separate in every tab, even after another tab resets.
-    if (sessionStorage.getItem(RESET_KEY) !== resetId) {
-      clearAppStorage(sessionStorage);
-      sessionStorage.setItem(RESET_KEY, resetId);
-    }
+    // First use (including an older client with no marker) records a baseline
+    // without changing any account, progress or outbox data.
+    for (const storage of stores)
+      if (storage.getItem(RESET_KEY) === null) storage.setItem(RESET_KEY, current);
   };
-  if (navigator.locks) await navigator.locks.request(RESET_KEY, reset);
-  else await reset();
+  if (navigator.locks) await navigator.locks.request(RESET_KEY, check);
+  else check();
 }

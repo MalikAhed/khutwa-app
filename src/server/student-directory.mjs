@@ -15,9 +15,11 @@ export function createStudentDirectory(database) {
       lastActivity:days.sort().at(-1) || null };
   };
   return {
-    list({search="",offset=0}={}) {
+    list({search="",offset=0,filter="all"}={}) {
       // LIKE treats % and _ specially; instr preserves literal search input.
-      const where = "staff_role IS NULL AND (?='' OR instr(lower(username),lower(?))>0 OR instr(COALESCE(phone,''),?)>0)";
+      const accountType = {free:"free",subscribed:"subscribed",suspended:"banned"}[filter];
+      const where = "staff_role IS NULL AND (?='' OR instr(lower(username),lower(?))>0 OR instr(COALESCE(phone,''),?)>0)"
+        + (accountType ? ` AND account_type='${accountType}'` : "");
       const total = database.prepare(`SELECT count(*) AS n FROM accounts WHERE ${where}`).get(search,search,search).n;
       const students = database.prepare(`SELECT ${accountFields} FROM accounts WHERE ${where} ORDER BY id DESC LIMIT 50 OFFSET ?`)
         .all(search,search,search,offset).map(account => ({...account,...summary(parts.all(account.id))}));

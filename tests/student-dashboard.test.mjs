@@ -54,6 +54,11 @@ test("owner alone can inspect durable student progress; reset removes data and i
   const report=await (await fetch(base+"/api/owner/students?search=test-student",{headers:ownerHeaders})).json();
   assert.equal(report.total,1);
   assert.equal(report.students[0].totalXp,getQuestionXp({ ...key,stepId }));
+  for(const [filter,total] of [["free",1],["subscribed",0],["suspended",0]]) {
+    const filtered=await (await fetch(base+`/api/owner/students?search=test-student&filter=${filter}`,{headers:ownerHeaders})).json();
+    assert.equal(filtered.total,total);
+  }
+  assert.equal((await fetch(base+"/api/owner/students?filter=unknown",{headers:ownerHeaders})).status,400);
   assert.doesNotMatch(JSON.stringify(report),/password|salt|token/);
   const detail=await (await fetch(base+`/api/owner/students/${account.id}`,{headers:ownerHeaders})).json();
   assert.equal(detail.parts[0].review[0].solved,true);

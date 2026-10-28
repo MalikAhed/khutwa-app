@@ -26,15 +26,23 @@ try {
       const {createIndexedDbProgressAdapter}=await import('/src/services/indexeddb-progress.js');
       window.oldStore=createIndexedDbProgressAdapter();
       await oldStore.read('account:1');
+      window.pendingAnswer={id:'unsynced-answer',type:'answer',value:{ownerId:'account:1',subjectId:'ict',lessonId:'database-management',partId:'access-basics',stepId:'test-question',correct:true}};
+      await oldStore.enqueue(pendingAnswer);
       window.applyReset=(await import('/src/services/server-data-reset.js')).applyServerDataReset;
+      await applyReset();
+      await applyReset();
     })()`);
     await resetDatabase(databasePath);
-    await evaluate("applyReset()");
+    assert.match(await evaluate("applyReset().then(()=>'unexpected success',error=>error.message)"),/Saved work is preserved/);
     assert.deepEqual(await evaluate(`({legacy:localStorage.getItem('tawjihi:subject-parts:v1:guest'),session:sessionStorage.getItem('tawjihi:visitor-selection'),unrelated:localStorage.getItem('unrelated')})`),
-      {legacy:null,session:null,unrelated:"keep"});
-    assert.equal(await evaluate("indexedDB.databases().then(dbs=>dbs.some(db=>db.name==='tawjihi-subject-progress'))"),false);
-    await evaluate("sessionStorage.setItem('tawjihi:visitor-selection','new');applyReset()");
-    assert.equal(await evaluate("sessionStorage.getItem('tawjihi:visitor-selection')"),"new","ordinary reload does not reset new data");
+      {legacy:"old",session:"old",unrelated:"keep"});
+    assert.equal(await evaluate("indexedDB.databases().then(dbs=>dbs.some(db=>db.name==='tawjihi-subject-progress'))"),true);
+    assert.deepEqual(await evaluate("oldStore.pending('account:1')"),[await evaluate("pendingAnswer")],"unsynced answers remain recoverable after a backend mismatch");
+    await evaluate("oldStore.close()");
+  },{baseUrl:base});
+  // A fresh profile is used for the separate owner UI checks against this
+  // disposable reset database; the affected profile above is never cleared.
+  await withBrowserPage(async({send,evaluate,waitFor})=>{
     await provisionOwner({databasePath,username:"test-owner",password:"Owner1234"});
     const {account}=await app.accountStore.createAccount({username:"student-test",phone:"0598000041",curriculum:"gaza",path:"scientific",password:"Student123"});
     app.accountStore.progress.update(account.id,{id:"answer",type:"answer",subjectId:"ict",lessonId:"database-management",partId:"access-basics",stepId:"test-question",correct:true},["test-question"]);
@@ -71,5 +79,5 @@ try {
     await waitFor("document.querySelector('[data-owner-dashboard][hidden]')");
     assert.equal(await evaluate("getComputedStyle(document.querySelector('[data-owner-dashboard]')).display"),"none");
   },{baseUrl:base});
-  console.log("Student dashboard and browser reset checks passed.");
+  console.log("Student dashboard and saved-work preservation checks passed.");
 } finally {await app.close();await rm(directory,{recursive:true,force:true});}

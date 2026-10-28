@@ -20,7 +20,7 @@ assert.deepEqual(await fetch(new URL('/release.json', base)).then(response => re
 const catalog = await fetch(new URL('/content-manifest.json', base)).then(response => response.json());
 assert.deepEqual(catalog, JSON.parse(await readFile(path.join(root, 'content-manifest.json'), 'utf8')),
   'the deployed lesson catalog must match the tested build');
-for (const file of ['src/app/background-loading.js', 'src/styles/learner-dashboard.css']) {
+for (const file of ['src/app/background-loading.js', 'src/styles/learner-dashboard.css', 'src/ui/student-dashboard.js', 'src/styles/student-dashboard.css', 'src/services/server-data-reset.js']) {
   const response = await fetch(new URL(`/${file}?v=${release.version}`, base));
   assert.equal(response.status, 200, file);
   assert.deepEqual(Buffer.from(await response.arrayBuffer()), await readFile(path.join(root, file)),
@@ -34,6 +34,11 @@ const dashboard = await fetchFunction(new URL('/students', base), { redirect:'ma
 assert.equal(dashboard.status, 302, 'the Students page reaches the protected backend route');
 assert.equal(new URL(dashboard.headers.get('location'), base).href, new URL('/?flow=sign-in', base).href,
   'anonymous dashboard visitors must sign in on the same site');
+for (const route of ['/api/owner/students?filter=all&offset=0','/api/owner/students/1']) {
+  const response=await fetchFunction(new URL(route,base));
+  assert.equal(response.status,401,'student records remain protected by the existing account backend');
+  assert.match(response.headers.get('content-type'),/application\/json/);
+}
 
 const libraries = path.join(root, 'assets/browser-libraries');
 for (const relative of await readdir(libraries, { recursive:true })) {

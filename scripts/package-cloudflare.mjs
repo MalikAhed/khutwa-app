@@ -3,6 +3,7 @@ import { cp, readFile, rename, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { packageApp } from './package-app.mjs';
+import { renderStudentDashboard } from '../src/server/student-dashboard.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -15,7 +16,13 @@ export async function prepareCloudflare(directory) {
   // Wrangler omits node_modules; preserve the existing browser import URLs.
   await rename(path.join(directory, 'node_modules'), path.join(directory, 'assets/browser-libraries'));
   await writeFile(path.join(directory, '_redirects'), '/node_modules/* /assets/browser-libraries/:splat 200\n');
-  await cp(path.join(root, '.github/cloudflare/worker.mjs'), path.join(directory, '_worker.js'));
+  const {version}=JSON.parse(await readFile(path.join(directory,'release.json'),'utf8'));
+  const dashboard=renderStudentDashboard({version});
+  const worker=await readFile(path.join(root,'.github/cloudflare/worker.mjs'),'utf8');
+  const entry='export default createPagesWorker();';
+  assert.equal(worker.split(entry).length,2,'Pages worker must have one dashboard entry point');
+  // Embed public layout only; no private student records enter the artifact.
+  await writeFile(path.join(directory,'_worker.js'),worker.replace(entry,`export default createPagesWorker(${JSON.stringify(dashboard)});`));
   await cp(path.join(root, '.github/cloudflare/routes.json'), path.join(directory, '_routes.json'));
 }
 

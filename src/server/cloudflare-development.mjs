@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { readJsonBody, sendJson } from './http.mjs';
+import { renderStudentDashboard } from './student-dashboard.mjs';
 
 const COOKIE = 'khutwa_cloudflare_session';
 const MAX_OFFLINE_AGE = 30 * 24 * 60 * 60 * 1000;
@@ -52,7 +53,7 @@ export async function createCloudflareDevelopmentBackend({ cachePath,
     const target = new URL(origin);
     target.pathname = local.pathname;
     target.search = local.search;
-    const headers = new Headers({ Accept:'application/json', Origin:target.origin });
+    const headers = new Headers({ Accept:local.pathname === '/students' ? 'text/html' : 'application/json', Origin:target.origin });
     if (token) headers.set('Cookie', `tawjihi_session=${token}`);
     if (request.headers['x-progress-owner']) headers.set('X-Progress-Owner', request.headers['x-progress-owner']);
     const body = ['GET', 'HEAD'].includes(request.method) ? undefined : JSON.stringify(await readJsonBody(request));
@@ -78,6 +79,11 @@ export async function createCloudflareDevelopmentBackend({ cachePath,
       return true;
     }
 
+    // The upstream still authorizes the owner page; only its HTML is local.
+    // This keeps local UI edits visible without changing live auth or records.
+    if (local.pathname === '/students' && request.method === 'GET' && upstream.status === 200) {
+      bytes = Buffer.from(renderStudentDashboard());
+    }
     const cookies = upstream.headers.getSetCookie().map(cookie => cookie
       .replace(/^tawjihi_session=/, `${COOKIE}=`).replace(/;\s*Secure\b/ig, '').replace(/;\s*Domain=[^;]+/ig, ''));
     const sessionToken = cookies.map(tokenFrom).find(Boolean) || token;

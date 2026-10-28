@@ -13,11 +13,11 @@ test('real account proxy preserves admin access, isolates old local cookies and 
   const directory = await mkdtemp(path.join(tmpdir(), 'khutwa-cloudflare-proxy-'));
   const cachePath = path.join(directory, 'profiles.json');
   const calls = [];
-  let offline = false, expired = false;
+  let offline = false, expired = false, dashboardStatus = 200;
   const fetchImpl = async (url, options) => {
     calls.push({ url:String(url), options });
     if (offline) throw new TypeError('Network unavailable');
-    if (url.pathname === '/students') return new Response('owner dashboard', { headers:{'Content-Type':'text/html'} });
+    if (url.pathname === '/students') return new Response('upstream dashboard', { status:dashboardStatus, headers:{'Content-Type':'text/html', ...(dashboardStatus === 302 ? {Location:'/?flow=sign-in'} : {})} });
     if (url.pathname === '/api/auth/sign-in') return Response.json({ account }, {
       headers:{'Set-Cookie':'tawjihi_session=verified-token; Path=/; HttpOnly; Secure; SameSite=Strict'} });
     return Response.json({ account:expired ? null : account });
@@ -41,9 +41,21 @@ test('real account proxy preserves admin access, isolates old local cookies and 
   assert.equal((await signedIn.json()).account.isOwner, true);
   assert.match(signedIn.headers.get('set-cookie'), /^khutwa_cloudflare_session=verified-token;/);
   assert.doesNotMatch(signedIn.headers.get('set-cookie'), /; Secure/);
-  assert.equal(await (await request('/students')).text(), 'owner dashboard');
+  const dashboard = await (await request('/students')).text();
+  assert.match(dashboard, /id="student-search"/);
+  assert.match(dashboard, /class="sidebar"/);
+  assert.doesNotMatch(dashboard, /upstream dashboard/);
   assert.equal(calls.at(-1).url, 'https://khutwaa.pages.dev/students');
   assert.equal(calls.at(-1).options.headers.get('cookie'), 'tawjihi_session=verified-token');
+  dashboardStatus = 403;
+  const denied = await request('/students');
+  assert.equal(denied.status, 403);
+  assert.equal(await denied.text(), 'upstream dashboard', 'local HTML never replaces a failed owner access check');
+  dashboardStatus = 302;
+  const signInRedirect = await request('/students', {redirect:'manual'});
+  assert.equal(signInRedirect.status, 302);
+  assert.equal(signInRedirect.headers.get('location'), base + '/?flow=sign-in');
+  dashboardStatus = 200;
   await request('/api/auth/session', { headers:{ Cookie:'tawjihi_session=old-test-token' } });
   assert.equal(calls.at(-1).options.headers.get('cookie'), null);
   const count = calls.length;

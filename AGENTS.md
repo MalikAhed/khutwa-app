@@ -16,6 +16,18 @@
 4. **Approved / push:** stage explicit approved paths, review the staged diff, commit and `git push origin main`. This saves the work to GitHub without publishing. **Deploy / publish:** also run `npm run deploy`, which pushes and explicitly publishes the committed version. Existing authorization covers the whole action; do not ask again at each step.
 5. Follow the exact deployment run through its live checks. Report the commit/run and any real failure. A push alone is not a deployment. If unrelated work prevents a clean release, use an isolated checkout of the approved commit instead of stashing or committing someone else's files.
 
+## Live student data — non-negotiable
+
+This app is in active use by real students. Every feature, cleanup, push, deployment and rollback must preserve their existing accounts, answers, progress, rewards and unsynced work. Speed never overrides this requirement.
+
+- **Deploy means publish code, never reset data.** Never wipe/reseed production, recreate its databases or Durable Object namespaces, point production at staging/an empty backend, or restore an older database as a frontend rollback. Keep the production resource identities in `docs/OPERATIONS.md`.
+- Never clear IndexedDB, local/session progress or pending writes to fix a bug, refresh content, migrate storage or resolve a version mismatch. Preserve the original data and show recovery/retry instead. Do not recommend reinstalling or clearing site data while answers may be unsynced.
+- Keep account ownership, storage keys and published subject/lesson/part/question IDs stable. Never reuse an old ID for different content. Renames/moves require backward-compatible aliases or a tested, lossless migration; hidden/retired content must retain its historical progress.
+- Persist answers before acknowledging a save. Keep each pending update until its server acknowledgement; retries/restarts/account switches must not drop, duplicate or transfer it. Old open tabs and newly deployed clients must both remain compatible with the backend.
+- Changes that migrate/rewrite student storage or alter the live backend require a recoverable snapshot and a restore rehearsal in an isolated environment **before** touching production. Cover D1 and Durable Object progress, not just account rows. Prefer additive migrations; never discard unreadable/unknown-version data or catch an error by creating an empty replacement.
+- Run the fast student-data regressions included in `npm run test:deployment` for releases. For persistence/migration changes, also run the focused restart/offline/reconnect browser checks. Do not remove these protections or assertions to make a release pass. Tests use disposable data only.
+- If preservation cannot be demonstrated, stop the risky change and explain the specific gap. Approval to fix, push or deploy is not permission to delete student data. No production reset is part of this workflow.
+
 ## Keep verification proportional
 
 - `npm run check`: changed JS syntax + existing type checks. `npm run map` lists relevant test choices, not a mandatory checklist.
@@ -27,7 +39,7 @@
 ## Hosting facts — preserve these
 
 - Explicit `npm run deploy` → `.github/workflows/cloudflare-pages.yml` → Cloudflare Pages project **khutwaa**. Pushes do not deploy. The workflow checks out the approved full commit SHA, builds once, tests staging, then publishes that build. This is GitHub Actions Direct Upload, not a native Pages Git build.
-- Production is **HTTP account mode**. `.github/cloudflare/worker.mjs` forwards **both `/api/*` and `/students`** to `BACKEND`. Production binding: `khutwa-app`; staging: `khutwa-app-staging`. Preserve cookies and access decisions.
+- Production is **HTTP account mode**. `.github/cloudflare/worker.mjs` forwards `/api/*` unchanged to `BACKEND`; `/students` uses the same backend access check before returning the packaged dashboard layout. Production binding: `khutwa-app`; staging: `khutwa-app-staging`. Preserve cookies and access decisions.
 - Live backend Workers use D1/Durable Objects. Local development forwards account/API/Students requests through `src/server/cloudflare-development.mjs`; public frontend files stay local. Offline fallback resumes only a previously verified account and relies on the existing browser outbox; admin access/new sign-in stay online. Other `src/server/` adapters are for isolated tests, not the deployed Worker source.
 - Build `_site/` with `npm run package:cloudflare`. It relocates browser libraries while preserving `/node_modules/` URLs. Never commit `_site`, `node_modules`, credentials, real student data, browser profiles or `.production` recovery snapshots.
 - Cloudflare MCP is already configured as `cloudflare`; discover/use its tools first. Routine deployment uses existing GitHub secrets and needs no MCP login. Reauthenticate only on an actual expired/revoked-access error; never print secrets.

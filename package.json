@@ -47,7 +47,7 @@
     "check:full": "npm run check:syntax -- --all && npm run check:types && npm test && npm run build",
     "verify:full": "node scripts/run-gate.mjs verify",
     "release:full": "node scripts/run-gate.mjs release",
-    "test:deployment": "node --test tests/cloudflare-deploy.test.mjs tests/deploy-command.test.mjs",
+    "test:deployment": "node --test tests/cloudflare-deploy.test.mjs tests/deploy-command.test.mjs tests/server-data-reset.test.mjs tests/subject-progress.test.mjs",
     "package:cloudflare": "node scripts/package-cloudflare.mjs",
     "preview:cloudflare": "node scripts/preview-cloudflare.mjs",
     "deploy": "node scripts/deploy.mjs",

@@ -13,11 +13,32 @@
 
 The sibling `learn/` contains unpublished legacy work and local data. Preserve it; do not reset, delete or deploy it. Recovery snapshots under ignored `.production/` and the local `production-baseline-2026-10-27` tag are historical, not current release targets.
 
+## Live student data contract
+
+This is a live app used by real students. The non-negotiable rules in [AGENTS.md](../AGENTS.md#live-student-data--non-negotiable) apply to every feature, cleanup, push, release and rollback. A deployment updates frontend assets and routing; it must never reset/reseed accounts or progress, replace a database/namespace, clear browser storage, or discard unacknowledged answers. A frontend rollback restores code, never an older student-data snapshot.
+
+The following production identities were verified read-only on 2026-10-27. Preserve them; staging is a separate service.
+
+| Binding | Existing production resource |
+| --- | --- |
+| Pages `BACKEND` | `khutwa-app` (preview: `khutwa-app-staging`) |
+| Worker `ACCOUNTS` | D1 `khutwa-app-accounts`, `5de0d401-a288-484f-868a-cd5333e7df06` |
+| Worker `AUTH` | SQLite Durable Object `Authentication`, namespace `66ab926401ff4a3aa86c03a8c7151725` |
+| Worker `STUDENTS` | SQLite Durable Object `StudentProgress`, namespace `e3623f185cdd41b4925dd2a379dc8a90` |
+
+Keep the `tawjihi-subject-progress` IndexedDB database (including `parts`, `imports`, `outbox`), existing `tawjihi:` storage keys, account identities and published content IDs stable. The legacy `applyServerDataReset` entry point now checks continuity only: it records the first baseline without clearing data, and stops startup on a changed marker while preserving the original baseline and saved work. Do not clear that marker to bypass a mismatch; restore/investigate the expected backend first. This detects reset-marker changes, not every possible server-side mutation.
+
+`npm run test:deployment` includes fast preservation checks: unchanged releases keep stored work, reset/rollback/invalid responses never erase it, and historical progress/retry behavior remains intact. Existing release/PR workflows already run this command; no extra browser suite is added to routine publishing. For persistence, storage or identity changes, additionally run `node tests/browser/browser-student-dashboard.mjs` and `node tests/browser/browser-progress-sync.mjs`; for auth changes, run `node tests/browser/browser-session-restore.mjs`. Use disposable accounts/databases. Never test resets against production.
+
+Before any actual backend/schema/data migration: recover the editable Worker source, record the current resource identities, take recoverable snapshots/bookmarks of **both D1 and relevant Durable Objects**, and rehearse restoration and the migration in an isolated staging environment. Verify existing accounts, saved answers/rewards, pending-write retries, old open clients and rollback compatibility. Keep migrations additive and content aliases available; retiring a lesson/question never deletes its historical answer records. A successful frontend build or anonymous API check does not prove a backend migration preserves data.
+
+Cloudflare provides [D1 Time Travel](https://developers.cloudflare.com/d1/reference/time-travel/) (7 days Free / 30 days Paid) and [SQLite Durable Object recovery](https://developers.cloudflare.com/durable-objects/api/sqlite-storage-api/#pitr-point-in-time-recovery-api) (30 days). These are recovery windows, not permission to overwrite current student work. D1 recovery alone does not restore the `STUDENTS` namespace. No production restore or end-to-end Cloudflare recovery rehearsal was performed here; the local SQLite recovery test covers only the local adapter. Verify the live plan/window and an isolated recovery procedure before backend changes. Keep exports private and outside the repo/site; never restore over live students to test a backup.
+
 ## Local development
 
 Use Node 24. Run `npm ci` only initially or after the lockfile changes, then `npm run dev` at `http://127.0.0.1:4173`. Use `npm run map -- <topic>` to find owners and focused tests. `npm run check` parses changed JS and checks existing types; `CHECK_BASE=<commit>` changes the comparison baseline. `npm run check:syntax -- --all` parses every module without executing it.
 
-Default local development proxies real account/API/Students requests to Cloudflare while serving frontend files from disk. Local study/admin actions can affect live data. Localhost redirects to the numeric loopback address to isolate former test-account storage. The proxy uses its own HttpOnly cookie and rejects cross-site requests.
+Default local development proxies real account/API requests and the Students access check to Cloudflare while serving frontend files from disk. After Cloudflare authorizes the owner, `/students` uses the local dashboard HTML, styles and module. The student table loads more records as you scroll, keeping earlier rows visible; filters and search restart the list. Subscription/access changes use the existing backend version checks; student progress loads only when opening a detail view. Local study/admin actions can affect live data. Localhost redirects to the numeric loopback address to isolate former test-account storage. The proxy uses its own HttpOnly cookie and rejects cross-site requests.
 
 During an outage, an account verified within 30 days can resume study. The ignored `data/cloudflare-offline-profiles.json` stores minimal profiles keyed by session-token hashes, not passwords/raw tokens/student lists. The browser's account-bound outbox retains answers for retry. New sign-in and admin access require internet; sign-out or an online expired-session response removes fallback access.
 
@@ -48,7 +69,7 @@ When exact production alignment matters, read the Pages project's `canonical_dep
 
 ## Backend and access boundaries
 
-Production HTML uses `learn-account-mode=http`. `.github/cloudflare/worker.mjs` forwards both `/api/*` and `/students` to `BACKEND`, preserving requests and access decisions. `_redirects` preserves `/node_modules/*` URLs through `/assets/browser-libraries/*`. Accounts/progress live in the existing Worker with D1 (`ACCOUNTS`) and Durable Objects (`AUTH`, `STUDENTS`); frontend publication never recreates them.
+Production HTML uses `learn-account-mode=http`. `.github/cloudflare/worker.mjs` forwards `/api/*` unchanged and asks `BACKEND` to authorize `/students`. Only an authorized HTML response is replaced with the shared dashboard layout embedded during packaging, with release-versioned styles/modules. Redirects, denied access and backend failures pass through unchanged; no student records enter the static artifact. `_redirects` preserves `/node_modules/*` URLs through `/assets/browser-libraries/*`. Accounts/progress live in the existing Worker with D1 (`ACCOUNTS`) and Durable Objects (`AUTH`, `STUDENTS`); frontend publication never recreates them.
 
 `src/server/cloudflare-development.mjs` connects local work to the live API. Other `src/server/` modules implement the isolated Node/SQLite backend, **not the deployed Worker source**. The Worker bundle is preserved under ignored `.production/backend/`; its editable original is not yet in this repo. Backend changes require recovering that source, staging verification and an explicit backend deployment. Never run generic `wrangler deploy` against production from this frontend repo. The obsolete duplicate Workers Builds trigger is disconnected; Pages Actions owns frontend publication.
 
