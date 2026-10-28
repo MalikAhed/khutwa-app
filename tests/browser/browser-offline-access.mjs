@@ -116,6 +116,27 @@ try {
   }
   throw new Error('Lesson not downloaded');
  },version);
+ // Buy one explanation online, then read it with every network connection denied.
+ const explanationKey={subjectId:'ict',lessonId:'database-management',partId:'access-basics',stepId:'exam-p09-q1-1'};
+ const purchased=await context.request.post(`${base}/api/progress`,{headers:{'X-Progress-Owner':owner},data:{type:'explanation-unlock',...explanationKey}});
+ assert.equal(purchased.status(),200);
+ const purchaseReceipt=await purchased.json();
+ const questionUrl=stepId=>`${base}/?${new URLSearchParams({subject:'ict',lesson:'database-management',part:'access-basics',question:stepId})}`;
+ await page.goto(questionUrl(explanationKey.stepId));
+ await page.locator('[data-question-explain]').waitFor();
+ let explanationRequests=0;
+ const trackExplanation=request=>{if(request.method()==='POST'&&request.postData()?.includes('explanation-unlock'))explanationRequests++;};
+ page.on('request',trackExplanation);
+ await disconnect(true);
+ await page.locator('[data-question-explain]').click();
+ await page.locator('.question-explanation-dialog .markdown-rendered').waitFor({timeout:3000});
+ assert.match(await page.locator('.question-explanation-dialog').innerText(),/MySQL/);
+ assert.equal(explanationRequests,0);
+ await page.locator('[data-explanation-close]').click();
+ await disconnect(false);
+ const trial=await context.request.post(`${base}/api/progress`,{headers:{'X-Progress-Owner':owner},data:{type:'super-trial'}});
+ assert.equal(trial.status(),200);
+ await page.goto(`${base}/?page=learn`);await ready(page);
  // Reproduce an existing production cache created through Pages' HTML redirect.
  await page.evaluate(async version=>{const response=await fetch('/index.html');if(!response.redirected)throw new Error('Expected production redirect');await(await caches.open(`khutwa-content:/:${version}`)).put(new URL('/index.html',location.href),response);},version);
  await disconnect(true);
@@ -146,6 +167,20 @@ try {
  },{version,owner});
  assert.equal((await pending()).length,1);
  console.log('Browser closed and reopened offline; identity and pending answer survived.');
+ page.on('request',trackExplanation);
+ // A never-opened explanation in a downloaded lesson is available through active Super.
+ await page.goto(questionUrl('exam-p57-q1-b2'));
+ await page.locator('[data-question-explain]').waitFor();
+ assert.equal(await page.locator('[data-question-explain] .explanation-included').count(),1);
+ await page.locator('[data-question-explain]').click();
+ await page.locator('.question-explanation-dialog .markdown-rendered').waitFor({timeout:3000});
+ assert.match(await page.locator('.question-explanation-dialog').innerText(),/النماذج/);
+ assert.equal(explanationRequests,0,'offline explanations never send purchase requests');
+ await page.screenshot({path:'/tmp/khutwa-explanation-offline.png'});
+ await page.locator('[data-explanation-close]').click();
+ assert.equal((await pending()).length,1,'reading explanations preserves pending answers');
+ await page.goto(`${base}/?page=learn`);await ready(page);
+ console.log('Purchased and first-open Super explanations render offline, including after browser restart.');
  // Ordinary wall-clock rollback must immediately block learning and stay blocked.
  await page.evaluate(()=>{window.clockOffset=-3600000;window.dispatchEvent(new Event('focus'));});
  await page.locator('.offline-access[open]').waitFor();
@@ -170,6 +205,7 @@ try {
  },{version,owner},{timeout:30000});
  const progress=await (await context.request.get(`${base}/api/progress`,{headers:{'X-Progress-Owner':owner}})).json();
  assert.ok(JSON.stringify(progress.records).includes(stepId),'server received the offline answer');
+ assert.equal(progress.resources.gems,purchaseReceipt.resources.gems,'offline reading never charges gems');
  console.log('Clock rollback gate and reconnect preserved and synchronized the answer.');
  // A tab that stays open beyond seven days must also pause.
  await disconnect(true);

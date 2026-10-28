@@ -42,10 +42,19 @@ export function createLearnerResources({ storage, getAccountType, apiBase = null
       if (owner === "guest") throw Object.assign(new Error("Sign in first."),{code:"sign-in"});
       signal?.throwIfAborted();
       if (apiBase && owner.startsWith("account:")) {
+        // Downloaded lessons already contain their authored solutions. Reading an
+        // existing entitlement must not depend on a purchase request or connectivity.
+        const balance = get(owner);
+        const explanation = questionExplanation(step);
+        if (explanation && (balance.unlimited || balance.explanationUnlocks.includes(questionRewardKey(key))))
+          return explanation;
         const response = await fetchImpl(apiBase,{method:"POST",credentials:"same-origin",
           signal:signal ? AbortSignal.any([signal,AbortSignal.timeout(12000)]) : AbortSignal.timeout(12000),
           headers:{"Content-Type":"application/json","X-Progress-Owner":owner},
-          body:JSON.stringify({type:"explanation-unlock",...key})});
+          body:JSON.stringify({type:"explanation-unlock",...key})}).catch(error => {
+            signal?.throwIfAborted();
+            throw Object.assign(new Error("Connect to confirm a new explanation purchase."),{code:"connection-required",cause:error});
+          });
         const result = await response.json();
         signal?.throwIfAborted();
         if ((response.ok || response.status === 402) && `account:${result.accountId}` !== owner) throw new Error("The active account changed.");

@@ -169,3 +169,34 @@ test("fixture explanation purchases persist atomically and reopen without anothe
   assert.equal(broken.get("demo:a").gems,200);
   assert.equal(broken.hasExplanation("demo:a",key),false);
 });
+
+
+test("downloaded HTTP explanations open offline for confirmed purchases and active Super only", async () => {
+  const values = new Map();
+  const storage = {getItem:key=>values.get(key),setItem:(key,value)=>values.set(key,value)};
+  const key = {subjectId:"ict",lessonId:"database-management",partId:"access-basics",stepId:"exam-p09-q1-1"};
+  const step = {type:"mcq",content:{correctFeedback:"شرح محفوظ مع الدرس"}};
+  let time=1_000_000, requests=0, type="free";
+  const create=()=>createLearnerResources({storage,now:()=>time,getAccountType:()=>type,apiBase:"/api/progress",
+    fetchImpl:async()=>{requests++;throw new TypeError("Offline");}});
+  const resources=create();
+  resources.confirm("account:purchased",{hearts:10,gems:150,refillAt:time,explanationUnlocks:[questionRewardKey(key)]});
+  resources.confirm("account:trial",{hearts:10,gems:200,refillAt:time,trialEndsAt:time+SUPER_TRIAL_MS});
+  const saved=new Map(values);
+  const reopened=create();
+  assert.equal((await reopened.unlockExplanation("account:purchased",key,{step})).markdown,step.content.correctFeedback);
+  assert.equal((await reopened.unlockExplanation("account:trial",key,{step})).markdown,step.content.correctFeedback);
+  type="subscribed";
+  assert.equal((await reopened.unlockExplanation("account:subscribed",key,{step})).markdown,step.content.correctFeedback);
+  type="free";
+  assert.equal(requests,0,"reading installed explanations must not contact the server");
+  assert.deepEqual(values,saved,"offline reading neither spends gems nor creates permanent purchases");
+  assert.equal(reopened.hasExplanation("account:trial",key),false);
+  await assert.rejects(reopened.unlockExplanation("account:other",key,{step}),{code:"connection-required"});
+  time+=SUPER_TRIAL_MS;
+  await assert.rejects(reopened.unlockExplanation("account:trial",key,{step}),{code:"connection-required"});
+  assert.equal(reopened.get("account:trial").gems,200);
+  assert.equal((await reopened.unlockExplanation("account:purchased",key,{step})).markdown,step.content.correctFeedback);
+  const aborted=new AbortController();aborted.abort();
+  await assert.rejects(reopened.unlockExplanation("account:purchased",key,{step,signal:aborted.signal}),{name:"AbortError"});
+});

@@ -92,6 +92,8 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
       if (requestSignal.aborted || dialog !== activeDialog) return;
       body.innerHTML = `<p role="status">${error.code === "insufficient-gems"
         ? (ar ? "تحتاج إلى 50 جوهرة لفتح هذا الشرح. رصيدك غير كافٍ." : "You need 50 gems to unlock this explanation. Your balance is too low.")
+        : error.code === "connection-required"
+          ? (ar ? "اتصل بالإنترنت لفتح شرح جديد بالجواهر. الشروح المفتوحة وشروح سوبر المحمّلة متاحة دون إنترنت." : "Connect to unlock a new explanation with gems. Downloaded unlocked and Super explanations are available offline.")
         : error.code === "unavailable"
           ? (ar ? "الشرح المفصّل لهذا السؤال غير متاح حاليًا. لم تُخصم أي جواهر." : "This explanation is not available yet. No gems were charged.")
           : (ar ? "تعذّر فتح الشرح. أغلق النافذة وحاول مجددًا؛ لن تُخصم الجواهر مرتين." : "Could not open the explanation. Close and retry; you will not be charged twice.")}</p>`;
