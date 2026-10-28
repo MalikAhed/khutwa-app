@@ -67,3 +67,19 @@ test('invalid or unavailable data state cannot change the baseline or saved work
   assert.deepEqual([...local], original);
   assert.deepEqual([...session], original);
 });
+
+test('verified offline startup retains the continuity marker and all pending data', async t => {
+  const {local,session,state}=setup(t,{baseline:'known-database'});
+  const original=[...local];
+  state.ok=false;
+  t.mock.method(globalThis,'fetch',async()=>{throw new TypeError('Offline');});
+  assert.equal(await applyServerDataReset({allowOffline:true}),false);
+  assert.deepEqual([...local],original);assert.deepEqual([...session],original);
+  await assert.rejects(applyServerDataReset({allowOffline:false}),/Offline/);
+});
+test('offline permission never bypasses a known backend replacement', async t => {
+  const {local,state}=setup(t,{baseline:'known-database'});const original=[...local];
+  state.resetId='replacement';
+  await assert.rejects(applyServerDataReset({allowOffline:true}),/Saved work is preserved/);
+  assert.deepEqual([...local],original);
+});

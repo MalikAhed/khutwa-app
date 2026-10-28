@@ -51,7 +51,7 @@ export function mountLearnerDashboard({ container, service, progressStore, resou
   const root = document.createElement("div");
   root.className = "learner-dashboard-root";
   container.prepend(root);
-  const trialCountdown = mountSuperTrialCountdown({ container:root, resourceStore, getOwnerId:() => service.getLearnerProgressOwner() });
+  const trialCountdown = mountSuperTrialCountdown({ container:root, resourceStore, getOwnerId:() => service.getLearnerProgressOwner(), now:() => service.getEffectiveNow() });
   const update = () => {
     const snapshot = service.getLearnerHomeSnapshot();
     const loading = progressStore?.getSaveState(service.getLearnerProgressOwner()) === "loading";

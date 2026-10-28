@@ -129,7 +129,7 @@ async function start() {
       // the reliable retry without changing routes or persisted account data.
       if (application && !completed.has("app")) location.reload();
       else void start();
-    });
+    }, error?.code === "offline-reconnect" ? "اتصل بالإنترنت للتحقّق من حسابك وتجديد الوصول دون اتصال. إجاباتك المحفوظة على هذا الجهاز باقية." : undefined);
   }
 }
 void start();

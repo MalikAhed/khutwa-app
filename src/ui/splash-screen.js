@@ -31,7 +31,8 @@ export function createSplashScreen() {
       bar.style.setProperty("--splash-progress", `${next}%`);
       percentage.textContent = `${next}%`;
     },
-    error(retry) {
+    error(retry, message) {
+      if (message) recovery.querySelector("p").textContent = message;
       recovery.hidden = false;
       recovery.querySelector("button").onclick = () => {
         recovery.hidden = true;

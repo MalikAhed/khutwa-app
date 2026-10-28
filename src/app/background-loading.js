@@ -2,6 +2,7 @@ import { createDownloadQueue } from "../services/download-queue.js";
 import { useManagedImagePreloading } from "../ui/media-ready.js";
 
 let initialization, queue, manifest, cache, selected, started = false;
+let offlineFiles = new Set(), offlineReady = false, savingShell;
 const base = () => new URL("./", document.baseURI);
 const cacheName = version => `khutwa-content:${base().pathname}:${version}`;
 const backgroundAllowed = () => !document.hidden && navigator.onLine !== false && !navigator.connection?.saveData;
@@ -16,6 +17,7 @@ async function initialize() {
       throw new Error("Invalid content catalog");
     }
     manifest = catalog;
+    offlineFiles = new Set([...catalog.onboarding, ...catalog.helpers]);
     const release = document.querySelector('meta[name="learn-release"]')?.content;
     // Never mix a running release with a manifest from a newer deployment.
     if (release && manifest.version !== release) throw new Error("Content catalog changed");
@@ -34,9 +36,31 @@ async function initialize() {
         channel.port1.close();
       } catch { cache = null; /* Ordinary HTTP caching remains available. */ }
     }
+    async function finishOfflineShell() {
+      if (!cache || offlineReady || offlineFiles.size || savingShell) return;
+      savingShell = (async () => {
+        const shell = await fetch(new URL("index.html", base()), { cache:"no-cache", signal:AbortSignal.timeout(10000) });
+        if (!shell.ok || !(await shell.clone().text()).includes(`name="learn-release" content="${release}"`)) return;
+        await cache.put(new URL("content-manifest.json", base()), new Response(JSON.stringify(catalog), { headers:{"Content-Type":"application/json"} }));
+        await cache.put(new URL("index.html", base()), shell);
+        const registration = await navigator.serviceWorker.ready;
+        const channel = new MessageChannel();
+        offlineReady = await new Promise(resolve => {
+          const timer = setTimeout(() => resolve(false), 5000);
+          channel.port1.onmessage = event => { clearTimeout(timer); resolve(event.data?.ready === true); };
+          registration.active.postMessage({ type:"OFFLINE_READY" }, [channel.port2]);
+        });
+        channel.port1.close();
+        if (offlineReady) {
+          document.documentElement.dataset.offlineReady = "true";
+          void navigator.storage?.persist?.().catch(() => {});
+        }
+      })().catch(() => {}).finally(() => { savingShell = null; });
+      await savingShell;
+    }
     queue = createDownloadQueue({ download:async (file, { signal, priority }) => {
       const url = new URL(file, base());
-      try { if (cache && await cache.match(url)) return; } catch { cache = null; }
+      try { if (cache && await cache.match(url)) { offlineFiles.delete(file); await finishOfflineShell(); return; } } catch { cache = null; }
       const response = await fetch(url, { signal:AbortSignal.any([signal, AbortSignal.timeout(20000)]), priority,
         cache:cache ? "reload" : "default", headers:{ "X-Learn-Download":"1" } });
       if (!response.ok) throw new Error(`Content download failed: ${response.status}`);
@@ -46,7 +70,7 @@ async function initialize() {
       if (cache) {
         const headers = new Headers(response.headers);
         headers.delete("content-encoding"); headers.delete("content-length");
-        try { await cache.put(url, new Response(bytes, { status:response.status, headers })); }
+        try { await cache.put(url, new Response(bytes, { status:response.status, headers })); offlineFiles.delete(file); await finishOfflineShell(); }
         catch { cache = null; /* A full/denied cache must not block studying. */ }
       }
     } });

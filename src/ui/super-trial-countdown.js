@@ -1,5 +1,5 @@
 /** Home shares the account's real trial expiry with the offers. */
-export function mountSuperTrialCountdown({ container, resourceStore, getOwnerId }) {
+export function mountSuperTrialCountdown({ container, resourceStore, getOwnerId, now = Date.now }) {
   if (!resourceStore) return { update() {}, destroy() {} };
   const badge = document.createElement("div");
   badge.className = "super-trial-countdown";
@@ -10,7 +10,7 @@ export function mountSuperTrialCountdown({ container, resourceStore, getOwnerId 
   const update = () => {
     const header = container.querySelector(".learner-dashboard__header");
     if (header && badge.parentElement !== header) header.append(badge);
-    const remaining = Math.max(0,Math.ceil(((resourceStore.get(getOwnerId()).trialEndsAt || 0)-Date.now())/1000));
+    const remaining = Math.max(0,Math.ceil(((resourceStore.get(getOwnerId()).trialEndsAt || 0)-now())/1000));
     badge.hidden = remaining === 0;
     if (!remaining) { clearInterval(timer); timer = null; return; }
     const days = Math.ceil(remaining / 86400);

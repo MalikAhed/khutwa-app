@@ -123,3 +123,9 @@ button.nav-item:not(:disabled):is(:hover,:active) {
 }
 .coming-soon-toast[hidden],
 body:is(.product-flow-active,.ui-lab-open) .coming-soon-toast { display:none; }
+
+.offline-access { width:min(440px,calc(100% - 32px)); padding:28px; border:2px solid var(--system-border); border-radius:24px; color:var(--system-ink); background:#fff; font-family:var(--font-ui); text-align:start; }
+.offline-access::backdrop { background:rgb(15 23 42 / .6); }
+.offline-access h2 { margin-top:0; }
+.offline-access p { line-height:1.8; }
+.offline-access button { min-height:48px; padding:10px 20px; border:0; border-radius:12px; background:var(--system-blue-action-ink); color:#fff; font:inherit; cursor:pointer; }

@@ -55,7 +55,7 @@ export async function createContentManifest(root) {
   const helperMedia = new Set(media(uiText));
   // These names are composed at runtime by onboarding and celebration controls.
   for (const file of assetFiles) if (/^assets\/mascot\/rocky-[^/]+\.svg$/.test(file)
-    || /^assets\/icons\/streak-fire-burning/.test(file)) helperMedia.add(file);
+    || /^assets\/icons\/streak-fire-burning/.test(file) || /^assets\/(subjects|app)\//.test(file)) helperMedia.add(file);
   const onboarding = [...await graph("src/ui/visitor-flow.js"), ...media(entryMarkup() + registerMarkup() + accountCompleteMarkup())];
   const helpers = [...shell, ...helperMedia];
   const subjects = [];

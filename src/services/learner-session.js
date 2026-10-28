@@ -1,4 +1,5 @@
 // @ts-check
+import { createOfflineAccess } from "./offline-access.js";
 import { COURSE_SUBJECTS } from "../data/course.js";
 import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
 import { duplicateAccountFieldMessage, identifierAliases, isAccountIdentifierField, isValidVisitorSelection, validateAccountField } from "../domain/account.js";
@@ -13,7 +14,7 @@ import { createLearnerStorage, defaultErrorReporter, GUEST_TRIAL_STORAGE_KEY, TE
 /** @typedef {{status:'invalid'|'unavailable'|'aborted'|'forbidden'|'rate-limited'|'duplicate', error?:string, field?:string, fieldErrors?:Record<string,string>}} AccountFailure */
 /** @typedef {{status:'created'|'signed-in', accountType:AccountType}|AccountFailure} AccountResult */
 /** @typedef {{status:'available', field:string}|AccountFailure} AvailabilityResult */
-/** @typedef {{storage?:Storage|null, progressStore?:ReturnType<typeof import('./subject-progress-store.js').createSubjectProgressStore>|null, onError?:(error:Error)=>void, apiBase?:string|null, fetchImpl?:typeof fetch}} SessionOptions */
+/** @typedef {{storage?:Storage|null, progressStore?:ReturnType<typeof import('./subject-progress-store.js').createSubjectProgressStore>|null, onError?:(error:Error)=>void, apiBase?:string|null, fetchImpl?:typeof fetch, offlineStorage?:Storage|null, offlineAccess?:ReturnType<typeof createOfflineAccess>}} SessionOptions */
 /** @typedef {import('./auth-client.js').RequestOptions} RequestOptions */
 
 /** @param {unknown} body @returns {AccountFailure} */
@@ -54,12 +55,17 @@ export function createLearnerSession({
   onError = defaultErrorReporter,
   apiBase = null,
   fetchImpl = globalThis.fetch,
+  offlineStorage = null,
+  offlineAccess = createOfflineAccess({ storage:offlineStorage }),
 } = {}) {
   /** @type {VisitorSelection|null} */
   let visitorSelection = null;
   /** @type {LearnerAccount|null} */
   let activeAccount = null;
   const subscribers = new Set();
+  let offline = false;
+  let restoreInFlight;
+  let authRevision = 0;
   const accountApi = apiBase ? createAuthClient({ baseUrl:apiBase, fetchImpl, onError }) : null;
 
   const persistence = createLearnerStorage(storage, onError, { persistent:!accountApi });
@@ -75,6 +81,7 @@ export function createLearnerSession({
     : remove(TEMPORARY_ACCOUNT_STORAGE_KEY);
   /** @param {ApiAccount|null} account */
   const useApiAccount = (account) => {
+    const previous = JSON.stringify([activeAccount, visitorSelection]);
     activeAccount = account ? {
       progressOwner:`account:${account.id}`,
       type:availableAccountType(account.accountType),
@@ -88,7 +95,7 @@ export function createLearnerSession({
       save(VISITOR_SELECTION_STORAGE_KEY, JSON.stringify(visitorSelection));
     }
     saveActiveAccount();
-    notify();
+    if (previous !== JSON.stringify([activeAccount, visitorSelection])) notify();
   };
   /** @param {import('./auth-client.js').HttpResult} result @param {{optional?:boolean}} [options] @returns {{valid:true, account:ApiAccount|null}|{valid:false, account:null}} */
   const readApiAccount = (result, { optional = false } = {}) => {
@@ -118,6 +125,13 @@ export function createLearnerSession({
 
   return Object.freeze({
     kind:accountApi ? "http" : "fixture",
+    getAccessState:() => {
+      if (!accountApi || !activeAccount) return { allowed:true };
+      const grant = offlineAccess.inspect();
+      return { ...grant, allowed:grant.allowed && `account:${grant.account?.id}` === activeAccount.progressOwner };
+    },
+    getEffectiveNow:() => accountApi ? offlineAccess.inspect().now : Date.now(),
+    isOffline:() => offline,
     getVisitorSelection:() => visitorSelection ? { ...visitorSelection } : null,
     /** @param {VisitorSelection} selection */
     saveVisitorSelection(selection) {
@@ -140,24 +154,43 @@ export function createLearnerSession({
       };
       return { actor:"student", account:{ type:activeAccount.type, displayName:activeAccount.displayName }, learning };
     },
-    async restoreSession() {
-      if (!accountApi) return { status:"fixture", accountType:activeAccount?.type || "guest" };
-      const result = await accountApi.restoreSession();
-      if (!result?.ok) {
-        useApiAccount(null);
-        return { status:"unavailable", accountType:"guest" };
-      }
-      const payload = readApiAccount(result, { optional:true });
-      if (!payload.valid) {
-        useApiAccount(null);
-        return { status:"unavailable", accountType:"guest" };
-      }
-      useApiAccount(payload.account);
-      return { status:payload.account ? "signed-in" : "guest", accountType:payload.account ? availableAccountType(payload.account.accountType) : "guest" };
+    restoreSession() {
+      if (!accountApi) return Promise.resolve({ status:"fixture", accountType:activeAccount?.type || "guest" });
+      if (restoreInFlight) return restoreInFlight;
+      const revision = authRevision;
+      restoreInFlight = (async () => {
+        const result = await accountApi.restoreSession();
+        if (revision !== authRevision) return { status:"superseded", accountType:activeAccount?.type || "guest" };
+        const cachedResponse = result.body && typeof result.body === "object" && "offline" in result.body && result.body.offline === true;
+        if (cachedResponse || (!result.ok && (result.status === 0 || result.status >= 500))) {
+          const grant = offlineAccess.inspect();
+          offline = true;
+          if (grant.allowed && isApiAccount(grant.account)) {
+            useApiAccount({ ...grant.account, isOwner:false });
+            return { status:"offline", accountType:availableAccountType(grant.account.accountType) };
+          }
+          if (!grant.account) useApiAccount(null);
+          return { status:"unavailable", accountType:activeAccount?.type || "guest" };
+        }
+        offline = false;
+        if (!result.ok) {
+          offlineAccess.revoke();
+          useApiAccount(null);
+          return { status:"unavailable", accountType:"guest" };
+        }
+        const payload = readApiAccount(result, { optional:true });
+        if (!payload.valid) return { status:"unavailable", accountType:activeAccount?.type || "guest" };
+        if (payload.account) offlineAccess.verify(payload.account, result.serverTime);
+        else offlineAccess.revoke();
+        useApiAccount(payload.account);
+        return { status:payload.account ? "signed-in" : "guest", accountType:payload.account ? availableAccountType(payload.account.accountType) : "guest" };
+      })().finally(() => { restoreInFlight = null; });
+      return restoreInFlight;
     },
     checkAccountAvailability,
     /** @param {Registration} values @param {RequestOptions} [options] @returns {Promise<AccountResult>} */
     async createAccount({ username, phone, curriculum, path, password }, { signal } = {}) {
+      authRevision++;
       const phoneError = validateAccountField("phone", phone);
       if (phoneError) return { status:"invalid", field:"phone", error:phoneError, fieldErrors:{ phone:phoneError } };
       if (accountApi) {
@@ -165,6 +198,8 @@ export function createLearnerSession({
         if (!result.ok) return accountFailure(result.body);
         const payload = readApiAccount(result);
         if (!payload.valid || !payload.account) return unavailableAccountResponse();
+        offlineAccess.verify(payload.account, result.serverTime);
+        offline = false;
         useApiAccount(payload.account);
         return { status:"created", accountType:availableAccountType(payload.account.accountType) };
       }
@@ -182,11 +217,14 @@ export function createLearnerSession({
     },
     /** @param {{identifier:string, password:string}} values @param {RequestOptions} [options] @returns {Promise<AccountResult>} */
     async signIn({ identifier, password }, { signal } = {}) {
+      authRevision++;
       if (accountApi) {
         const result = await accountApi.signIn({ identifier, password }, { signal });
         if (!result.ok) return accountFailure(result.body);
         const payload = readApiAccount(result);
         if (!payload.valid || !payload.account) return unavailableAccountResponse();
+        offlineAccess.verify(payload.account, result.serverTime);
+        offline = false;
         useApiAccount(payload.account);
         return { status:"signed-in", accountType:availableAccountType(payload.account.accountType) };
       }
@@ -203,9 +241,11 @@ export function createLearnerSession({
       return { status:"signed-in", accountType:availableAccountType(demo.type) };
     },
     signOut() {
+      authRevision++;
       if (accountApi) {
         return accountApi.signOut().then((result) => {
           if (!result.ok) return { status:"unavailable", accountType:activeAccount?.type || "guest" };
+          offlineAccess.revoke();
           useApiAccount(null);
           return { status:"signed-out", accountType:"guest" };
         });

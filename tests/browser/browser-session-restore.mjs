@@ -49,10 +49,11 @@ try {
         status:503, contentType:'application/json', body:'{"status":"unavailable"}',
       }));
       await page.reload();
-      await page.locator('.app-splash__recovery:not([hidden])').waitFor();
+      await page.locator('[data-learner-dashboard]').waitFor();
+      await page.waitForFunction(() => !document.querySelector('#app-splash'));
       assert.equal(await page.locator('.visitor-landing:visible').count(), 0, 'an outage must not become a sign-out screen');
       await page.unroute('**/api/auth/session');
-      await page.locator('.app-splash__recovery button').click();
+      await page.reload();
       await page.locator('[data-learner-dashboard]').waitFor();
       await page.waitForFunction(() => !document.querySelector('#app-splash'));
       assert.equal((await context.request.post(`${base}/api/auth/sign-out`)).status(), 200);
@@ -63,7 +64,7 @@ try {
       await signedOut.locator('.visitor-landing').waitFor();
       await signedOut.waitForFunction(() => !document.querySelector('#app-splash'));
       assert.equal(await signedOut.locator('[data-learner-dashboard]:visible').count(), 0, 'explicit sign-out survives restart');
-      console.log(`${name}: persistent sign-in, transient recovery, outage retry and sign-out passed.`);
+      console.log(`${name}: persistent sign-in, transient recovery, verified offline fallback and sign-out passed.`);
     } finally {
       await context?.close();
       await rm(profile, { recursive:true, force:true });

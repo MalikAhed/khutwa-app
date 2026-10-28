@@ -1,10 +1,11 @@
 // @ts-check
 /** @typedef {{signal?:AbortSignal}} RequestOptions */
 /** @typedef {{baseUrl:string, fetchImpl?:typeof fetch, onError?:(error:Error)=>void, timeoutMs?:number}} AuthClientOptions */
-/** @typedef {{ok:boolean, status:number, aborted?:boolean, body:unknown}} HttpResult */
+/** @typedef {{ok:boolean, status:number, aborted?:boolean, body:unknown, serverTime?:number}} HttpResult */
 
 const DEFAULT_REQUEST_TIMEOUT_MS = 12_000;
 
+/** @returns {HttpResult} */
 function unavailable(error) {
   return { ok:false, status:0, body:{ status:"unavailable", error } };
 }
@@ -29,7 +30,7 @@ export function createAuthClient({
     const abortFromCaller = () => requestController.abort(externalSignal?.reason);
     if (externalSignal?.aborted) abortFromCaller();
     else externalSignal?.addEventListener("abort", abortFromCaller, { once:true });
-    const timeout = setTimeout(() => requestController.abort(), timeoutMs);
+    const timeout = setTimeout(() => requestController.abort(), path === "/session" ? Math.min(timeoutMs, 4000) : timeoutMs);
 
     try {
       requestController.signal.throwIfAborted();
@@ -43,7 +44,7 @@ export function createAuthClient({
       const body = await response.json().catch(() => ({}));
       // Navigation can cancel after headers arrive, while the body is decoding.
       requestController.signal.throwIfAborted();
-      return { ok:response.ok, status:response.status, body };
+      return { ok:response.ok, status:response.status, body, serverTime:Date.parse(response.headers?.get("Date") || "") };
     } catch (cause) {
       if (externalSignal?.aborted) return { ok:false, status:0, aborted:true, body:{ status:"aborted" } };
       if (requestController.signal.aborted) {
@@ -61,6 +62,7 @@ export function createAuthClient({
     request,
     /** @param {RequestOptions} [options] */
     async restoreSession({ signal } = {}) {
+      if (globalThis.navigator?.onLine === false) return unavailable("اتصل بالإنترنت للتحقّق من حسابك.");
       const options = { signal, cache:/** @type {RequestCache} */ ("no-store") };
       const result = await request("/session", options);
       // A resumed phone can briefly have no connection. Retry this read once;

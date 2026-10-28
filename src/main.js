@@ -1,3 +1,5 @@
+import { createOfflineAccess } from "./services/offline-access.js";
+import { mountOfflineAccess } from "./ui/offline-access.js";
 import { createLearnerResources } from "./services/learner-resources.js";
 import { mountHeartDepletion } from "./ui/heart-depletion.js";
 import { createServerProgressAdapter } from "./services/server-progress.js";
@@ -29,12 +31,21 @@ import { watchPreviewUpdates } from "./services/preview-updates.js";
 const APP_TITLE = "مساحة التعلّم";
 const ROCKY_TOUR_ENABLED = false;
 const appConfig = readAppConfig(document);
-if (appConfig.accountMode === "http") await applyServerDataReset();
+const offlineStorage = { getItem:key => window.localStorage.getItem(key), setItem:(key,value) => window.localStorage.setItem(key,value) };
+const offlineAccess = createOfflineAccess({ storage:offlineStorage });
+if (appConfig.accountMode === "http") {
+  try { await applyServerDataReset({ allowOffline:offlineAccess.inspect().allowed }); }
+  catch (error) {
+    if (navigator.onLine === false) throw Object.assign(error, { code:"offline-reconnect" });
+    throw error;
+  }
+}
 const learnerStorage = getBrowserLearnerStorage(undefined, { persistent:appConfig.accountMode === "fixture" });
 const browserLocalStorage = () => ({ getItem:(key) => window.localStorage.getItem(key) });
 const resourceStore = createLearnerResources({
   storage:{ getItem:key => window.localStorage.getItem(key), setItem:(key,value) => window.localStorage.setItem(key,value) },
   getAccountType:() => productService.getAccountType(),
+  now:() => appConfig.accountMode === "http" ? offlineAccess.inspect().now : Date.now(),
   apiBase:appConfig.accountMode === "http" ? "/api/progress" : null,
 });
 const reportProgressRecovery = (error, ownerId) => progressStore.reportRecoveryWarning(ownerId, error);
@@ -59,29 +70,40 @@ const progressStore = createSubjectProgressStore({ resourceStore, adapter:{
 } });
 const productService = createLearnerSession({
   progressStore,
+  offlineAccess,
   storage: learnerStorage,
   apiBase: appConfig.apiBase,
 });
 const restoredSession = await productService.restoreSession();
-// A failed session check is not a sign-out. Keep the existing startup retry
-// screen until the server can confirm either the account or an expired session.
-if (restoredSession.status === "unavailable") throw new Error("Could not restore the account session. Retry when connected.");
+// A verified lease can resume offline. Otherwise show reconnect recovery;
+// never clear answers or mistake an outage for a confirmed sign-out.
+if (restoredSession.status === "unavailable") throw Object.assign(new Error("Reconnect to verify offline access. Saved work is preserved."), { code:"offline-reconnect" });
 await progressStore.ready(productService.getLearnerProgressOwner());
 let progressOwner = productService.getLearnerProgressOwner();
 productService.subscribe(() => {
   const owner = productService.getLearnerProgressOwner();
   if (owner !== progressOwner) { progressOwner = owner; void progressStore.ready(owner); }
 });
-const refreshProgress = () => {
-  if (!document.hidden) void progressStore.retry(productService.getLearnerProgressOwner());
+const refreshProgress = async () => {
+  if (document.hidden || navigator.onLine === false) return;
+  // Check backend continuity and identity before any outbox upload.
+  if (appConfig.accountMode === "http") {
+    try {
+      if (!await applyServerDataReset({ allowOffline:true })) return;
+      const restored = await productService.restoreSession();
+      if (restored.status !== "signed-in") return;
+    } catch { return; }
+  }
+  await progressStore.retry(productService.getLearnerProgressOwner());
 };
 document.addEventListener("visibilitychange", refreshProgress);
 window.addEventListener("online", refreshProgress);
 window.addEventListener("pageshow", refreshProgress);
 window.addEventListener("focus", refreshProgress);
-setInterval(refreshProgress, 30000);
+setInterval(refreshProgress, 60000);
+if (appConfig.accountMode === "http") mountOfflineAccess({ service:productService, reconnect:refreshProgress });
 const elements = mountAppShell();
-if (appConfig.accountMode === "fixture") watchPreviewUpdates({
+watchPreviewUpdates({
   canReload:() => !document.body.matches(".ui-lab-open,.product-flow-active")
     && !elements.main.matches(".lesson-mode,.coming-mode")
     && progressStore.getSaveState(productService.getLearnerProgressOwner()) === "saved",
