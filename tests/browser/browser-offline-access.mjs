@@ -2,7 +2,9 @@ import assert from 'node:assert/strict';
 import {mkdtemp,rm,readFile,writeFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
-import {chromium} from 'playwright';
+import {gzipSync} from 'node:zlib';
+import {chromium,webkit} from 'playwright';
+const engine=process.env.OFFLINE_BROWSER==='webkit'?webkit:chromium;
 import {findChrome} from './browser-session.mjs';
 import {packageApp} from '../../scripts/package-app.mjs';
 import {createAppServer} from '../../src/server/app-server.mjs';
@@ -12,15 +14,20 @@ import {readRuntimeConfig} from '../../src/server/runtime-config.mjs';
 const root=await packageApp();
 const htmlPath=path.join(root,'index.html');
 await writeFile(htmlPath,(await readFile(htmlPath,'utf8')).replace('name="learn-account-mode" content="fixture"','name="learn-account-mode" content="http"'));
-const app=await createAppServer({root,logger:()=>{},config:readRuntimeConfig({PORT:'0',LIVE_RELOAD:'0',DEV_AUTO_LOGIN:'0',ACCOUNTS_DATABASE_PATH:':memory:'},{root})});
+const compressedHtml=gzipSync(await readFile(htmlPath));
+let disconnected=false;
+const app=await createAppServer({root,logger:()=>{},remoteBackend:async(request,response)=>{if(disconnected){request.socket.destroy();return true;}if(request.url.split('?')[0]==='/index.html'){response.writeHead(301,{Location:'/'}).end();return true;}if(request.url.split('?')[0]==='/'){response.writeHead(200,{'Content-Type':'text/html','Content-Encoding':'gzip','Content-Length':compressedHtml.length});response.end(compressedHtml);return true;}return false;},config:readRuntimeConfig({PORT:'0',LIVE_RELOAD:'0',DEV_AUTO_LOGIN:'0',ACCOUNTS_DATABASE_PATH:':memory:'},{root})});
 await app.accountStore.createAccount({username:'offline-test',phone:'0591234567',curriculum:'gaza',path:'scientific',password:'Test-only-123'});
 const base=`http://127.0.0.1:${await app.listen()}`;
 const profile=await mkdtemp(path.join(tmpdir(),'khutwa-offline-'));
-const options={executablePath:await findChrome(),headless:true,args:['--no-sandbox'],viewport:{width:390,height:844},reducedMotion:'reduce'};
+const options={...(engine===chromium?{executablePath:await findChrome(),args:['--no-sandbox']}:{isMobile:true,hasTouch:true}),headless:true,viewport:{width:390,height:844},reducedMotion:'reduce'};
 let context;
+// Playwright 1.63 WebKit kills service-worker responses with setOffline(true).
+// Deny every origin connection instead; no API or asset can reach the server.
+const disconnect=async value=>{disconnected=value;};
 const ready=async page=>{await page.locator('[data-learner-dashboard]').waitFor({timeout:60000});await page.waitForFunction(()=>!document.querySelector('#app-splash'),{timeout:60000});};
 try {
- context=await chromium.launchPersistentContext(profile,options);
+ context=await engine.launchPersistentContext(profile,options);
  await context.addInitScript(()=>{const nativeNow=Date.now;window.clockOffset=0;Date.now=()=>nativeNow()+window.clockOffset;});
  const login=await context.request.post(`${base}/api/auth/sign-in`,{data:{identifier:'offline-test',password:'Test-only-123'}});assert.equal(login.status(),200);
  const account=(await login.json()).account,owner=`account:${account.id}`;
@@ -28,6 +35,7 @@ try {
  page.on('pageerror',error=>console.error('browser:',error.message));
  await page.goto(base);await ready(page);
  await page.waitForFunction(()=>document.documentElement.dataset.offlineReady==='true',{timeout:120000});
+ assert.match(await page.locator('[data-offline-download-status]').innerText(),/جاهز للفتح/);
  console.log('Complete offline shell saved.');
  const version=await page.locator('meta[name=learn-release]').getAttribute('content');
  await page.evaluate(async version=>{
@@ -42,7 +50,9 @@ try {
   }
   throw new Error('Lesson not downloaded');
  },version);
- await context.setOffline(true);
+ // Reproduce an existing production cache created through Pages' HTML redirect.
+ await page.evaluate(async version=>{const response=await fetch('/index.html');if(!response.redirected)throw new Error('Expected production redirect');await(await caches.open(`khutwa-content:/:${version}`)).put(new URL('/index.html',location.href),response);},version);
+ await disconnect(true);
  const stepId=await page.evaluate(async({version,owner})=>{
   const {createIndexedDbProgressAdapter}=await import(`/src/services/indexeddb-progress.js?v=${version}`);
   const {createSubjectProgressStore}=await import(`/src/services/subject-progress-store.js?v=${version}`);
@@ -57,10 +67,10 @@ try {
   if(result.status!=='saved'||(await local.pending(owner)).length!==1)throw new Error('Answer not durable');
   store.close();return stepId;
  },{version,owner});
- await (await context.newCDPSession(page)).send('Network.clearBrowserCache');
+ if(engine===chromium) await (await context.newCDPSession(page)).send('Network.clearBrowserCache');
  await context.close();
- context=await chromium.launchPersistentContext(profile,options);
- await context.addInitScript(()=>{const nativeNow=Date.now;window.clockOffset=0;Date.now=()=>nativeNow()+window.clockOffset;});await context.setOffline(true);
+ context=await engine.launchPersistentContext(profile,options);
+ await context.addInitScript(()=>{const nativeNow=Date.now;window.clockOffset=0;Date.now=()=>nativeNow()+window.clockOffset;});await disconnect(true);
  page=await context.newPage();page.on('pageerror',error=>console.error('browser:',error.message));
  await page.goto(`${base}/?page=learn`);await ready(page);
  assert.equal(await page.locator('.offline-access[open]').count(),0);
@@ -82,8 +92,11 @@ try {
  assert.ok(await page.locator('.offline-access').evaluate(el=>el.getBoundingClientRect().width<=innerWidth));
  await page.screenshot({path:'/tmp/khutwa-offline-desktop.png'});
  await page.locator('.offline-access button').click();
+ await page.waitForFunction(()=>!document.querySelector('.offline-access button').disabled && document.querySelector('.offline-access [role=status]').textContent.includes('لم نتمكّن'));
  assert.equal(await page.locator('.offline-access[open]').count(),1,'retry without connectivity stays locked');
- await context.setOffline(false);
+ await page.evaluate(()=>{Object.defineProperty(navigator,'onLine',{configurable:true,get:()=>false});});
+ await disconnect(false);
+ await page.locator('.offline-access button').click();
  await page.waitForFunction(()=>!document.querySelector('.offline-access[open]'),{timeout:30000});
  await page.waitForFunction(async({version,owner})=>{
   const {createIndexedDbProgressAdapter}=await import(`/src/services/indexeddb-progress.js?v=${version}`);const local=createIndexedDbProgressAdapter();
@@ -93,7 +106,7 @@ try {
  assert.ok(JSON.stringify(progress.records).includes(stepId),'server received the offline answer');
  console.log('Clock rollback gate and reconnect preserved and synchronized the answer.');
  // A tab that stays open beyond seven days must also pause.
- await context.setOffline(true);
+ await disconnect(true);
  await page.evaluate(()=>{window.clockOffset=8*86400000;window.dispatchEvent(new Event('focus'));});
  await page.locator('.offline-access[open]').waitFor();
  await page.reload();

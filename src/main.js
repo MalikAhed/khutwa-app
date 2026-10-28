@@ -85,7 +85,7 @@ productService.subscribe(() => {
   if (owner !== progressOwner) { progressOwner = owner; void progressStore.ready(owner); }
 });
 const refreshProgress = async () => {
-  if (document.hidden || navigator.onLine === false) return;
+  if (document.hidden) return;
   // Check backend continuity and identity before any outbox upload.
   if (appConfig.accountMode === "http") {
     try {

@@ -62,7 +62,6 @@ export function createAuthClient({
     request,
     /** @param {RequestOptions} [options] */
     async restoreSession({ signal } = {}) {
-      if (globalThis.navigator?.onLine === false) return unavailable("اتصل بالإنترنت للتحقّق من حسابك.");
       const options = { signal, cache:/** @type {RequestCache} */ ("no-store") };
       const result = await request("/session", options);
       // A resumed phone can briefly have no connection. Retry this read once;

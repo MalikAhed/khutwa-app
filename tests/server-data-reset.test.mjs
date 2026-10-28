@@ -83,3 +83,10 @@ test('offline permission never bypasses a known backend replacement', async t =>
   await assert.rejects(applyServerDataReset({allowOffline:true}),/Saved work is preserved/);
   assert.deepEqual([...local],original);
 });
+
+test('reconnection verifies the backend even while the online hint is stale',async t=>{
+  const {state}=setup(t,{baseline:'known-database'});
+  Object.defineProperty(globalThis.navigator,'onLine',{value:false});
+  state.resetId='known-database';
+  assert.equal(await applyServerDataReset({allowOffline:true}),true);
+});

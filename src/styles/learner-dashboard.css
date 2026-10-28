@@ -107,3 +107,5 @@
   .dashboard-super-offer,.dashboard-super-offer img,.dashboard-super-offer span::after { animation:none; }
   .dashboard-super-offer span::after { display:none; }
 }
+
+.offline-download-status { margin:0 0 16px; color:var(--system-muted); font:600 13px/1.8 var(--font-ui); text-align:start; }

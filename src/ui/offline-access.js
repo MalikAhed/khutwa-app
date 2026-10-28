@@ -17,12 +17,16 @@ export function mountOfflineAccess({ service, reconnect }) {
     event.preventDefault(); event.stopImmediatePropagation();
   };
   for (const type of ['click','keydown','pointerdown']) document.addEventListener(type, guard, true);
+  let retrying = false;
   const retry = async () => {
+    if (retrying) return;
+    retrying = true;
     const button = dialog.querySelector('button');
     button.disabled = true;
+    dialog.querySelector('[role=status]').textContent = 'جارٍ التحقّق من الاتصال والحساب…';
     try { await reconnect(); } catch { /* Preserve the gate and allow retry. */ }
-    finally { button.disabled = false; }
-    if (!check()) dialog.querySelector('[role=status]').textContent = 'لم نتمكّن من التحقّق. اتصل بالإنترنت ثم حاول مجددًا.';
+    finally { button.disabled = false; retrying = false; }
+    if (!check()) dialog.querySelector('[role=status]').textContent = 'لم نتمكّن من التحقّق. تحقّق من الإنترنت واضبط تاريخ الجهاز ووقته تلقائيًا، ثم حاول مجددًا.';
   };
   dialog.querySelector('button').addEventListener('click', retry);
   window.addEventListener('online', retry);

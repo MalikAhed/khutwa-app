@@ -6,12 +6,11 @@ const RESET_KEY = "tawjihi:data-reset";
 // student's local recovery copy or send their pending work to a replacement.
 export async function applyServerDataReset({ allowOffline = false } = {}) {
   const savedBaseline = () => localStorage.getItem(RESET_KEY) !== null;
-  if (navigator.onLine === false && allowOffline && savedBaseline()) return false;
   let response;
   try { response = await fetch("/api/app-state", { cache:"no-store", signal:AbortSignal.timeout(5000) }); }
   catch (error) {
     if (allowOffline && savedBaseline()) return false;
-    throw error;
+    throw Object.assign(error instanceof Error ? error : new Error("Connection failed", { cause:error }), { code:"offline-reconnect" });
   }
   if (response.status >= 500 && allowOffline && savedBaseline()) return false;
   if (!response.ok) throw new Error("The app's data state could not be checked.");

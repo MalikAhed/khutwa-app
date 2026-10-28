@@ -85,3 +85,15 @@ for (const rejectsBody of [false, true]) {
     assert.deepEqual(await pending, { ok:false, status:0, aborted:true, body:{ status:"aborted" } });
   });
 }
+
+test('a stale offline hint cannot prevent an explicit server session check', async t => {
+  const descriptor=Object.getOwnPropertyDescriptor(globalThis,'navigator');
+  Object.defineProperty(globalThis,'navigator',{configurable:true,value:{onLine:false}});
+  t.after(()=>{if(descriptor)Object.defineProperty(globalThis,'navigator',descriptor);else delete globalThis.navigator;});
+  let calls=0;
+  const client=createAuthClient({baseUrl:'/api/auth',fetchImpl:async()=>{
+    calls++;return {ok:true,status:200,json:async()=>({account:{id:'verified'}})};
+  }});
+  assert.equal((await client.restoreSession()).ok,true);
+  assert.equal(calls,1);
+});

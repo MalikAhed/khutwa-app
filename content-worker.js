@@ -75,7 +75,11 @@ self.addEventListener("fetch", event => {
             configurations.set(event.resultingClientId, config);
             await metadata.put(configUrl(event.resultingClientId), new Response(JSON.stringify(config)));
           }
-          return shell;
+          // Pages canonicalizes index.html. A redirected cached Response cannot
+          // satisfy a navigation with redirect mode manual (notably in Safari).
+          const headers = new Headers(shell.headers);
+          headers.delete("content-encoding"); headers.delete("content-length");
+          return new Response(await shell.arrayBuffer(), { status:200, headers });
         }
       }
       return Response.error();

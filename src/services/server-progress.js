@@ -85,7 +85,6 @@ export function createServerProgressAdapter({ local, baseUrl = "/api/progress", 
     readCached,
     read:readCached,
     async sync(ownerId) {
-      if (globalThis.navigator?.onLine === false) return;
       await flush(ownerId);
       const records=await request(ownerId);
       await local.confirm(ownerId,records);

@@ -2,10 +2,27 @@ import { createDownloadQueue } from "../services/download-queue.js";
 import { useManagedImagePreloading } from "../ui/media-ready.js";
 
 let initialization, queue, manifest, cache, selected, started = false;
-let offlineFiles = new Set(), offlineReady = false, savingShell;
+let offlineFiles = new Set(), offlineReady = false, savingShell, finishOffline = async () => {};
+let offlineTotal = 0;
+function showOfflineStatus() {
+  const host = document.querySelector('.course-units');
+  if (!host) return;
+  let status = host.querySelector('[data-offline-download-status]');
+  if (!status) {
+    status = document.createElement('p');
+    status.dataset.offlineDownloadStatus = '';
+    status.className = 'offline-download-status';
+    status.setAttribute('role', 'status');
+    host.prepend(status);
+  }
+  const text = offlineReady ? 'جاهز للفتح دون إنترنت. تتاح الدروس التي تم تنزيلها.'
+    : !cache ? 'لم يكتمل تجهيز الفتح دون إنترنت. أبقِ التطبيق مفتوحًا أثناء الاتصال.'
+    : `تجهيز الفتح دون إنترنت… ${Math.floor((offlineTotal - offlineFiles.size) / Math.max(1, offlineTotal) * 100)}٪ — أبقِ التطبيق مفتوحًا حتى يكتمل.`;
+  if (status.textContent !== text) status.textContent = text;
+}
 const base = () => new URL("./", document.baseURI);
 const cacheName = version => `khutwa-content:${base().pathname}:${version}`;
-const backgroundAllowed = () => !document.hidden && navigator.onLine !== false && !navigator.connection?.saveData;
+const backgroundAllowed = () => !document.hidden && !navigator.connection?.saveData;
 
 async function initialize() {
   if (initialization) return initialization;
@@ -18,13 +35,16 @@ async function initialize() {
     }
     manifest = catalog;
     offlineFiles = new Set([...catalog.onboarding, ...catalog.helpers]);
+    offlineTotal = offlineFiles.size;
     const release = document.querySelector('meta[name="learn-release"]')?.content;
     // Never mix a running release with a manifest from a newer deployment.
     if (release && manifest.version !== release) throw new Error("Content catalog changed");
     if (release && "serviceWorker" in navigator && "caches" in window) {
       try {
         cache = await caches.open(cacheName(release));
-        await navigator.serviceWorker.register(new URL("content-worker.js", base()), { scope:base().pathname, updateViaCache:"none" });
+        const existing = await navigator.serviceWorker.getRegistration(base().href);
+        try { await navigator.serviceWorker.register(new URL("content-worker.js", base()), { scope:base().pathname, updateViaCache:"none" }); }
+        catch (error) { if (!existing?.active) throw error; }
         const registration = await navigator.serviceWorker.ready;
         const files = [...new Set([...manifest.onboarding, ...manifest.helpers, ...manifest.lessons.flatMap(lesson => lesson.files)])];
         const channel = new MessageChannel();
@@ -37,12 +57,15 @@ async function initialize() {
       } catch { cache = null; /* Ordinary HTTP caching remains available. */ }
     }
     async function finishOfflineShell() {
+      showOfflineStatus();
       if (!cache || offlineReady || offlineFiles.size || savingShell) return;
       savingShell = (async () => {
-        const shell = await fetch(new URL("index.html", base()), { cache:"no-cache", signal:AbortSignal.timeout(10000) });
+        const shell = await cache.match(new URL("index.html", base())) || await fetch(base(), { cache:"no-cache", signal:AbortSignal.timeout(10000) });
         if (!shell.ok || !(await shell.clone().text()).includes(`name="learn-release" content="${release}"`)) return;
         await cache.put(new URL("content-manifest.json", base()), new Response(JSON.stringify(catalog), { headers:{"Content-Type":"application/json"} }));
-        await cache.put(new URL("index.html", base()), shell);
+        const shellHeaders = new Headers(shell.headers);
+        shellHeaders.delete("content-encoding"); shellHeaders.delete("content-length");
+        await cache.put(new URL("index.html", base()), new Response(await shell.arrayBuffer(), { status:200, headers:shellHeaders }));
         const registration = await navigator.serviceWorker.ready;
         const channel = new MessageChannel();
         offlineReady = await new Promise(resolve => {
@@ -53,11 +76,13 @@ async function initialize() {
         channel.port1.close();
         if (offlineReady) {
           document.documentElement.dataset.offlineReady = "true";
+          showOfflineStatus();
           void navigator.storage?.persist?.().catch(() => {});
         }
       })().catch(() => {}).finally(() => { savingShell = null; });
       await savingShell;
     }
+    finishOffline = finishOfflineShell;
     queue = createDownloadQueue({ download:async (file, { signal, priority }) => {
       const url = new URL(file, base());
       try { if (cache && await cache.match(url)) { offlineFiles.delete(file); await finishOfflineShell(); return; } } catch { cache = null; }
@@ -111,6 +136,7 @@ export function warmLearningExperience() {
         ...manifest.lessons.flatMap(lesson => lesson.first), ...manifest.lessons.flatMap(lesson => lesson.files)]);
       applySelected();
       downloads.resume();
+      void finishOffline();
     });
   };
   document.addEventListener("visibilitychange", refresh);

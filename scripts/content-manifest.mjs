@@ -53,6 +53,7 @@ export async function createContentManifest(root) {
   await graph("src/data/lessons/subject-lesson-registry.js", shell);
   const uiText = [...sources.values()].map(source => source.toString()).join("\n") + await read("index.html");
   const helperMedia = new Set(media(uiText));
+  helperMedia.add("assets/app/manifest.json");
   // These names are composed at runtime by onboarding and celebration controls.
   for (const file of assetFiles) if (/^assets\/mascot\/rocky-[^/]+\.svg$/.test(file)
     || /^assets\/icons\/streak-fire-burning/.test(file) || /^assets\/(subjects|app)\//.test(file)) helperMedia.add(file);
