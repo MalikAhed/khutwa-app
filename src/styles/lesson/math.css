@@ -40,14 +40,14 @@
 }
 /* Latin formulas use the math font for variables, numbers and upright SI units. */
 .lesson-math[dir="ltr"] { --lesson-math-font:"Lesson Math", "Amiri", serif; }
-.lesson-math :is(mi, mn, mo, mtext) { font-family:var(--lesson-math-font); }
+.lesson-math :is(mi, mn, mtext) { font-family:var(--lesson-math-font); }
 .lesson-math .lesson-math-box { border:1px solid currentColor; padding:0.1em 0.15em; }
 /* RTL integral glyphs lean right at the bottom; attach the lower limit there. */
 .lesson-math .lesson-math-integral-lower { transform:translateX(1.15em); }
-/* Safari requires the radical in the root container's primary font. The math
-   font owns roots/stretching glyphs; tokens keep their Arabic text/digit fonts. */
-.lesson-math :is(msqrt, mroot),
-.lesson-math mo:is([stretchy="true"], [largeop="true"]) {
+/* Safari can leave operators (including minus) blank when their glyph is only
+   in a fallback font. Roots also require their primary font's MATH table.
+   Give all operators/roots the math font; keep Arabic text/digits above. */
+.lesson-math :is(mo, msqrt, mroot) {
   font-family:"Lesson Math", "Amiri", serif;
 }
 .lesson-math mo.lesson-math-integral-rtl { font-family:"Lesson Integral RTL", "Lesson Math", serif; }
