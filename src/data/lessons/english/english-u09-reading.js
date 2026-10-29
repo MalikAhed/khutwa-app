@@ -24,6 +24,9 @@ PDF p. 93 · printed p. 92
 What do angry people often forget according to the writer?
 a. ..............
 b. ..............
+final-answer:
+- **a. What players have to do to get to the top.**
+- **b. The risks involved.**
 solution:
 **الإجابة:** a. What players have to do to get to the top.
 b. The risks involved.
@@ -60,6 +63,8 @@ PDF p. 93 · printed p. 92
 .............. Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after that, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 Why do some young players generally have short careers?
+final-answer:
+**Because of injuries.**
 solution:
 **الإجابة:** Because of injuries.
 
@@ -95,6 +100,8 @@ PDF p. 93 · printed p. 92
 .............. Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after that, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 How did Giuliano feel the first time he played for Manchester United?
+final-answer:
+**He felt a mixture of excitement and terror.**
 solution:
 **الإجابة:** He felt a mixture of excitement and terror.
 
@@ -130,6 +137,8 @@ PDF p. 93 · printed p. 92
 .............. Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after that, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 What is Giuliano’s current work?
+final-answer:
+**He works for his family’s business in Cambridge, moving furniture.**
 solution:
 **الإجابة:** He works for his family’s business in Cambridge, moving furniture.
 
@@ -308,6 +317,8 @@ PDF p. 93 · printed p. 92
 Titles: A: Regret being a good footballer.; B: Example of football stars’ high salary.; C: Outstanding and tragic story; D: Justification for footballers’ high salaries.
 
 Paragraph 1: ..............
+final-answer:
+**B: Example of football stars’ high salary.**
 solution:
 الفقرة الأولى تذكر راتب بيل الأسبوعي والسنوي وتقارنه بدخل المشجع؛ فكرتها مثال على الرواتب المرتفعة.
 
@@ -341,6 +352,8 @@ PDF p. 93 · printed p. 92
 Titles: A: Regret being a good footballer.; B: Example of football stars’ high salary.; C: Outstanding and tragic story; D: Justification for footballers’ high salaries.
 
 Paragraph 2: ..............
+final-answer:
+**D: Justification for footballers’ high salaries.**
 solution:
 الفقرة الثانية تلفت إلى الجهد والمخاطر وقصر المسيرة؛ وهي أسباب تفسر أو تبرر الرواتب المرتفعة.
 
@@ -374,6 +387,8 @@ PDF p. 93 · printed p. 92
 Titles: A: Regret being a good footballer.; B: Example of football stars’ high salary.; C: Outstanding and tragic story; D: Justification for footballers’ high salaries.
 
 Paragraph 3: ..............
+final-answer:
+**C: Outstanding and tragic story.**
 solution:
 الفقرة الثالثة تقدم قصة مايورا‌نا التي تبرز بين المآسي، من اكتشاف موهبته إلى تجربته مع النادي؛ وهذا عنوانها المقصود.
 
@@ -407,6 +422,8 @@ PDF p. 93 · printed p. 92
 Titles: A: Regret being a good footballer.; B: Example of football stars’ high salary.; C: Outstanding and tragic story; D: Justification for footballers’ high salaries.
 
 Paragraph 4: ..............
+final-answer:
+**A: Regret being a good footballer.**
 solution:
 الفقرة الرابعة تنتهي بتمنيه لو لم يكن جيدًا في كرة القدم، بعد سوء العلاقة والإصابة ونهاية المسيرة؛ لذلك عنوان الندم أنسب.
 
@@ -439,6 +456,8 @@ PDF p. 93 · printed p. 92
 .............. Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after that, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 his ..............
+final-answer:
+**Gareth Bale**
 solution:
 his في الحديث عن الراتب يعود إلى اللاعب المذكور قبله، غاريث بيل، لا إلى المشجع العادي.
 
@@ -471,6 +490,8 @@ PDF p. 93 · printed p. 92
 .............. Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after that, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 it ..............
+final-answer:
+**The offer of a trial for Manchester United.**
 solution:
 It في It wasn't ينفي أن عرض التجربة كان مزحة؛ لذلك يعود إلى عرض فترة التجربة نفسه.
 
@@ -499,6 +520,8 @@ Are today's young sports stars overpaid? It's an opinion you'll often hear repea
 Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after **that**, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 What do people think about young sport stars?
+final-answer:
+**They think young sports stars are overpaid.**
 solution:
 **الإجابة:** They think young sports stars are overpaid.
 
@@ -534,6 +557,8 @@ PDF p. 93 · printed p. 92
 .............. Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after that, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 What does the example of Gareth Bale show?
+final-answer:
+**It shows that young footballers get very high salaries.**
 solution:
 راتب بيل الأسبوعي والسنوي، ومقارنته بدخل المشجع، يقدمان مثالاً على ضخامة دخل بعض نجوم الكرة.
 
@@ -561,6 +586,8 @@ Are today's young sports stars overpaid? It's an opinion you'll often hear repea
 Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after **that**, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 What is the common reason why young players stop playing?
+final-answer:
+**Because of injuries.**
 solution:
 **الإجابة:** Because of injuries.
 
@@ -592,6 +619,8 @@ Are today's young sports stars overpaid? It's an opinion you'll often hear repea
 Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after **that**, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 Before joining Manchester, Giuliano played for ..............
+final-answer:
+**an amateur team in Cambridgeshire**
 solution:
 **الإجابة:** an amateur team in Cambridgeshire
 
@@ -623,6 +652,8 @@ Are today's young sports stars overpaid? It's an opinion you'll often hear repea
 Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after **that**, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 As he was noticed by one of Manchester's scouts, ..............
+final-answer:
+**he was offered a trial at Manchester United.**
 solution:
 **الإجابة:** he was offered a trial at Manchester United.
 
@@ -654,6 +685,8 @@ Are today's young sports stars overpaid? It's an opinion you'll often hear repea
 Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after **that**, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 After a few months, Maiorana played ..............
+final-answer:
+**his first match at Manchester United’s home ground, Old Trafford.**
 solution:
 **الإجابة:** his first match at Manchester United’s home ground, Old Trafford.
 
@@ -685,6 +718,8 @@ Are today's young sports stars overpaid? It's an opinion you'll often hear repea
 Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after **that**, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 As he didn't get on well with the manager, ..............
+final-answer:
+**he was soon playing in the reserve team.**
 solution:
 **الإجابة:** he was soon playing in the reserve team.
 
@@ -716,6 +751,8 @@ Are today's young sports stars overpaid? It's an opinion you'll often hear repea
 Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after **that**, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 It was in a reserve match that ..............
+final-answer:
+**his knee was badly damaged.**
 solution:
 **الإجابة:** his knee was badly damaged.
 
@@ -747,6 +784,8 @@ Are today's young sports stars overpaid? It's an opinion you'll often hear repea
 Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after **that**, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 Maiorana's career finished when ..............
+final-answer:
+**he was 24 years old.**
 solution:
 **الإجابة:** he was 24 years old.
 
@@ -934,6 +973,8 @@ Are today's young sports stars overpaid? It's an opinion you'll often hear repea
 Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after **that**, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 who (line 9) ..............
+final-answer:
+**One of Manchester United’s scouts.**
 solution:
 who تبدأ جملة تصف الشخص الذي كان يبحث عن المواهب؛ هذا الشخص هو الكشاف المذكور قبلها، لا مايورا‌نا.
 
@@ -962,6 +1003,8 @@ Are today's young sports stars overpaid? It's an opinion you'll often hear repea
 Unfortunately, he didn't get on well with his manager and was soon playing in the reserve team. It was in a reserve match two years later that his knee was badly damaged. Soon, at the age of 24 his career was finished. For seven years after **that**, he couldn't even watch football. He now works for his family's business back in Cambridge, moving furniture, and says that he now wishes he hadn't been so good at football when he was young.
 
 that (line 16) ..............
+final-answer:
+**The end of his football career.**
 solution:
 after that تعني بعد ذلك الحدث؛ وأقرب حدث هو انتهاء مسيرته، الذي أعقبه امتناعه عن مشاهدة الكرة سبع سنوات.
 
@@ -996,6 +1039,8 @@ PDF p. 96 · printed p. 95
 Headings: a. Two examples of strange decisions; b. what makes an Olympic sport; c. My own criteria; d. a change of mind
 
 Paragraph 1: ..............
+final-answer:
+**b. What makes an Olympic sport.**
 solution:
 الفقرة الأولى تعرض معايير قبول الرياضة، خصوصًا الشعبية الدولية والتقاليد؛ ولذلك تجيب عما يجعل اللعبة أولمبية.
 
@@ -1030,6 +1075,8 @@ PDF p. 96 · printed p. 95
 Headings: a. Two examples of strange decisions; b. what makes an Olympic sport; c. My own criteria; d. a change of mind
 
 Paragraph 2: ..............
+final-answer:
+**d. A change of mind.**
 solution:
 الفقرة الثانية تناقش إدراج البيسبول ثم استبعاده؛ هذا تغير في قرار اللجنة، فيناسب عنوان تغير الرأي.
 
@@ -1064,6 +1111,8 @@ PDF p. 96 · printed p. 95
 Headings: a. Two examples of strange decisions; b. what makes an Olympic sport; c. My own criteria; d. a change of mind
 
 Paragraph 3: ..............
+final-answer:
+**a. Two examples of strange decisions.**
 solution:
 الفقرة الثالثة تقابل استبعاد الاسكواش بإدراج المشي السريع؛ المثالان يمثلان قرارين يستغربهما الكاتب.
 
@@ -1098,6 +1147,8 @@ PDF p. 96 · printed p. 95
 Headings: a. Two examples of strange decisions; b. what makes an Olympic sport; c. My own criteria; d. a change of mind
 
 Paragraph 4: ..............
+final-answer:
+**c. My own criteria.**
 solution:
 الفقرة الرابعة تستخدم my و my other rule لعرض قاعدتي الكاتب الشخصيتين للحكم على الرياضات؛ لذلك العنوان معاييري الخاصة.
 
@@ -1228,6 +1279,9 @@ PDF p. 96 · printed p. 95
 ..............: More importantly, it breaks one of my two personal rules for judging serious sports because it puts artificial limits on what can be done. My other rule is that the scoring has to be objective and measurable, not a matter of opinion.
 
 The IOC included .............. and .............. for the 2016 Summer games.
+final-answer:
+1. **golf**
+2. **rugby sevens**
 solution:
 **الإجابة:** golf; rugby sevens
 
@@ -1266,6 +1320,8 @@ PDF p. 96 · printed p. 95
 ..............: More importantly, it breaks one of my two personal rules for judging serious sports because it puts artificial limits on what can be done. My other rule is that the scoring has to be objective and measurable, not a matter of opinion.
 
 For the IOC, the most important reason for including sports is ..............
+final-answer:
+**international popularity**
 solution:
 **الإجابة:** international popularity
 
@@ -1301,6 +1357,9 @@ PDF p. 96 · printed p. 95
 ..............: More importantly, it breaks one of my two personal rules for judging serious sports because it puts artificial limits on what can be done. My other rule is that the scoring has to be objective and measurable, not a matter of opinion.
 
 According to some, baseball was left out from the 2012 games for .............. and .............. reasons.
+final-answer:
+1. **geographical**
+2. **political**
 solution:
 **الإجابة:** geographical; political
 
@@ -1339,6 +1398,10 @@ According to the writer, why should squash be considered as a game in the Olympi
 A. ..............
 B. ..............
 C. ..............
+final-answer:
+- **A. It has a long tradition.**
+- **B. It is played all over the world.**
+- **C. It is more obviously a real sport than some included Olympic sports.**
 solution:
 **الإجابة:** A. It has a long tradition.
 B. It is played all over the world.
@@ -1376,6 +1439,8 @@ PDF p. 96 · printed p. 95
 ..............: More importantly, it breaks one of my two personal rules for judging serious sports because it puts artificial limits on what can be done. My other rule is that the scoring has to be objective and measurable, not a matter of opinion.
 
 What are the writer’s criteria for scoring in sports?
+final-answer:
+**Scoring should be objective and measurable, not a matter of opinion.**
 solution:
 **الإجابة:** Scoring should be objective and measurable, not a matter of opinion.
 
@@ -1411,6 +1476,8 @@ PDF p. 96 · printed p. 95
 ..............: More importantly, it breaks one of my two personal rules for judging serious sports because it puts artificial limits on what can be done. My other rule is that the scoring has to be objective and measurable, not a matter of opinion.
 
 they (line 6) ..............
+final-answer:
+**Sports**
 solution:
 they في if they have a tradition يعود إلى Sports؛ الألعاب هي التي لها تقاليد ويمارسها الناس ويشاهدونها.
 
@@ -1443,6 +1510,8 @@ PDF p. 96 · printed p. 95
 ..............: More importantly, it breaks one of my two personal rules for judging serious sports because it puts artificial limits on what can be done. My other rule is that the scoring has to be objective and measurable, not a matter of opinion.
 
 the sport (line 12) ..............
+final-answer:
+**Baseball**
 solution:
 the sport في الحديث عن ضعف اهتمام أوروبا يعود إلى البيسبول، موضوع الفقرة الثانية.
 
@@ -1473,6 +1542,9 @@ It seems that a lot of people have forgotten that young sports stars have a very
 However, many people would argue that sports stars who are paid so much money have a duty to act responsibly because they are an inspiration to thousands of young people around the world. These people pay to watch **them** play, and that's partly why the young sport stars are paid so well.
 
 In business, people who are overpaid have both .............. which ..............
+final-answer:
+1. **skills and talents**
+2. **others don’t have**
 solution:
 **الإجابة:** skills and talents; others don’t have
 
@@ -1505,6 +1577,8 @@ It seems that a lot of people have forgotten that young sports stars have a very
 However, many people would argue that sports stars who are paid so much money have a duty to act responsibly because they are an inspiration to thousands of young people around the world. These people pay to watch **them** play, and that's partly why the young sport stars are paid so well.
 
 Both sports stars and young film stars have something in common which is ..............
+final-answer:
+**being paid very high salaries**
 solution:
 **الإجابة:** being paid very high salaries
 
@@ -1537,6 +1611,8 @@ It seems that a lot of people have forgotten that young sports stars have a very
 However, many people would argue that sports stars who are paid so much money have a duty to act responsibly because they are an inspiration to thousands of young people around the world. These people pay to watch **them** play, and that's partly why the young sport stars are paid so well.
 
 The young stars may have a little chance to continue their education because ..............
+final-answer:
+**their teenage years are spent striving to get to the top of their sport.**
 solution:
 **الإجابة:** their teenage years are spent striving to get to the top of their sport.
 
@@ -1569,6 +1645,8 @@ It seems that a lot of people have forgotten that young sports stars have a very
 However, many people would argue that sports stars who are paid so much money have a duty to act responsibly because they are an inspiration to thousands of young people around the world. These people pay to watch **them** play, and that's partly why the young sport stars are paid so well.
 
 Sports stars have to behave responsibly because ..............
+final-answer:
+**they are an inspiration to thousands of young people around the world.**
 solution:
 **الإجابة:** they are an inspiration to thousands of young people around the world.
 
@@ -1731,6 +1809,8 @@ I am always amazed when I hear people saying that sport creates good will betwee
 Nearly all the sports practiced nowadays are competitive. You play to win, and the game has little meaning unless you do your utmost to win. On the village green where you pick up sides and no feeling of local patriotism is involved, it is possible to play simply for fun and exercise: but as soon as the question of prestige arises, as soon as you feel that you and some larger unit will be disgraced if you lose, the most savage combative instincts are aroused. Any one who has played even in a school football match knows this. At the international level sport is frankly imitative warfare. But the significant thing is not the behavior of the players, but the attitude of the spectators: and behind the spectators, of the nations who work **themselves** into furies over these ridiculous contests, and seriously believe – at any rate for short periods – that running, jumping and kicking a ball are tests of national virtue.
 
 Why is the writer often astonished?
+final-answer:
+**Because he hears people saying that sport creates goodwill between nations.**
 solution:
 **الإجابة:** Because he hears people saying that sport creates goodwill between nations.
 
@@ -1761,6 +1841,8 @@ I am always amazed when I hear people saying that sport creates good will betwee
 Nearly all the sports practiced nowadays are competitive. You play to win, and the game has little meaning unless you do your utmost to win. On the village green where you pick up sides and no feeling of local patriotism is involved, it is possible to play simply for fun and exercise: but as soon as the question of prestige arises, as soon as you feel that you and some larger unit will be disgraced if you lose, the most savage combative instincts are aroused. Any one who has played even in a school football match knows this. At the international level sport is frankly imitative warfare. But the significant thing is not the behavior of the players, but the attitude of the spectators: and behind the spectators, of the nations who work **themselves** into furies over these ridiculous contests, and seriously believe – at any rate for short periods – that running, jumping and kicking a ball are tests of national virtue.
 
 What, according to the writer, do international sporting contests lead to?
+final-answer:
+**Hatred.**
 solution:
 **الإجابة:** Hatred.
 
@@ -1791,6 +1873,8 @@ I am always amazed when I hear people saying that sport creates good will betwee
 Nearly all the sports practiced nowadays are competitive. You play to win, and the game has little meaning unless you do your utmost to win. On the village green where you pick up sides and no feeling of local patriotism is involved, it is possible to play simply for fun and exercise: but as soon as the question of prestige arises, as soon as you feel that you and some larger unit will be disgraced if you lose, the most savage combative instincts are aroused. Any one who has played even in a school football match knows this. At the international level sport is frankly imitative warfare. But the significant thing is not the behavior of the players, but the attitude of the spectators: and behind the spectators, of the nations who work **themselves** into furies over these ridiculous contests, and seriously believe – at any rate for short periods – that running, jumping and kicking a ball are tests of national virtue.
 
 Why are most sports considered competitive nowadays?
+final-answer:
+**Because people play to win.**
 solution:
 **الإجابة:** Because people play to win.
 
@@ -1823,6 +1907,9 @@ Nearly all the sports practiced nowadays are competitive. You play to win, and t
 When are the most savage combative instincts aroused?
 A. ..............
 B. ..............
+final-answer:
+- **A. When the question of prestige arises.**
+- **B. When people feel that they and their larger group will be disgraced if they lose.**
 solution:
 **الإجابة:** A. When the question of prestige arises.
 B. When people feel that they and their larger group will be disgraced if they lose.
@@ -1950,6 +2037,8 @@ I am always amazed when I hear people saying that sport creates good will betwee
 Nearly all the sports practiced nowadays are competitive. You play to win, and the game has little meaning unless you do your utmost to win. On the village green where you pick up sides and no feeling of local patriotism is involved, it is possible to play simply for fun and exercise: but as soon as the question of prestige arises, as soon as you feel that you and some larger unit will be disgraced if you lose, the most savage combative instincts are aroused. Any one who has played even in a school football match knows this. At the international level sport is frankly imitative warfare. But the significant thing is not the behavior of the players, but the attitude of the spectators: and behind the spectators, of the nations who work **themselves** into furies over these ridiculous contests, and seriously believe – at any rate for short periods – that running, jumping and kicking a ball are tests of national virtue.
 
 According to the author, when spectators watch international sporting contests, they believe ..............
+final-answer:
+**that running, jumping and kicking a ball are tests of national virtue.**
 solution:
 **الإجابة:** that running, jumping and kicking a ball are tests of national virtue.
 
@@ -1980,6 +2069,8 @@ I am always amazed when I hear people saying that sport creates good will betwee
 Nearly all the sports practiced nowadays are competitive. You play to win, and the game has little meaning unless you do your utmost to win. On the village green where you pick up sides and no feeling of local patriotism is involved, it is possible to play simply for fun and exercise: but as soon as the question of prestige arises, as soon as you feel that you and some larger unit will be disgraced if you lose, the most savage combative instincts are aroused. Any one who has played even in a school football match knows this. At the international level sport is frankly imitative warfare. But the significant thing is not the behavior of the players, but the attitude of the spectators: and behind the spectators, of the nations who work **themselves** into furies over these ridiculous contests, and seriously believe – at any rate for short periods – that running, jumping and kicking a ball are tests of national virtue.
 
 it ..............
+final-answer:
+**The idea that international sporting contests lead to hatred.**
 solution:
 **الإجابة:** The idea that international sporting contests lead to hatred.
 
@@ -2086,6 +2177,8 @@ PDF p. 99 · printed p. 98
 5-When it comes to being a footballer, a long career is something that even the top players dream of. And when we are talking about “long” we’re talking about a decade at most. The working life of top footballers is pretty short compared to the rest of us. ‘And? So there seems some fairness in paying footballers a lot to entertain us over what is, in reality, a short period of work.
 
 Short career time — Paragraph ..............
+final-answer:
+**Paragraph 5**
 solution:
 **الإجابة:** Paragraph5
 
@@ -2122,6 +2215,8 @@ PDF p. 99 · printed p. 98
 5-When it comes to being a footballer, a long career is something that even the top players dream of. And when we are talking about “long” we’re talking about a decade at most. The working life of top footballers is pretty short compared to the rest of us. ‘And? So there seems some fairness in paying footballers a lot to entertain us over what is, in reality, a short period of work.
 
 The beautiful game — Paragraph ..............
+final-answer:
+**Paragraph 2**
 solution:
 **الإجابة:** Paragraph2
 
@@ -2158,6 +2253,8 @@ PDF p. 99 · printed p. 98
 5-When it comes to being a footballer, a long career is something that even the top players dream of. And when we are talking about “long” we’re talking about a decade at most. The working life of top footballers is pretty short compared to the rest of us. ‘And? So there seems some fairness in paying footballers a lot to entertain us over what is, in reality, a short period of work.
 
 Friends and family — Paragraph ..............
+final-answer:
+**Paragraph 4**
 solution:
 **الإجابة:** Paragraph4
 
@@ -2194,6 +2291,8 @@ PDF p. 99 · printed p. 98
 5-When it comes to being a footballer, a long career is something that even the top players dream of. And when we are talking about “long” we’re talking about a decade at most. The working life of top footballers is pretty short compared to the rest of us. ‘And? So there seems some fairness in paying footballers a lot to entertain us over what is, in reality, a short period of work.
 
 More than just a game — Paragraph ..............
+final-answer:
+**Paragraph 3**
 solution:
 **الإجابة:** Paragraph3
 
@@ -2230,6 +2329,8 @@ PDF p. 99 · printed p. 98
 5-When it comes to being a footballer, a long career is something that even the top players dream of. And when we are talking about “long” we’re talking about a decade at most. The working life of top footballers is pretty short compared to the rest of us. ‘And? So there seems some fairness in paying footballers a lot to entertain us over what is, in reality, a short period of work.
 
 What is the main idea of the passage?
+final-answer:
+**Why footballers receive high salaries and why the writer considers those salaries justified.**
 solution:
 **الإجابة:** Why footballers receive high salaries and why the writer considers those salaries justified.
 
@@ -2266,6 +2367,8 @@ PDF p. 99 · printed p. 98
 5-When it comes to being a footballer, a long career is something that even the top players dream of. And when we are talking about “long” we’re talking about a decade at most. The working life of top footballers is pretty short compared to the rest of us. ‘And? So there seems some fairness in paying footballers a lot to entertain us over what is, in reality, a short period of work.
 
 Why do people criticize the footballers?
+final-answer:
+**They think footballers are overpaid compared with people who save lives and want more fairness between salaries.**
 solution:
 **الإجابة:** They think footballers are overpaid compared with people who save lives and want more fairness between salaries.
 
@@ -2303,6 +2406,10 @@ PDF p. 99 · printed p. 98
 
 What are the three basic requirements of being the best footballer in the world?
 a. .............. b. .............. c. ..............
+final-answer:
+- **a. Dedication.**
+- **b. Hard work.**
+- **c. Sacrifice.**
 solution:
 **الإجابة:** a. Dedication.
 b. Hard work.
@@ -2341,6 +2448,9 @@ PDF p. 99 · printed p. 98
 5-When it comes to being a footballer, a long career is something that even the top players dream of. And when we are talking about “long” we’re talking about a decade at most. The working life of top footballers is pretty short compared to the rest of us. ‘And? So there seems some fairness in paying footballers a lot to entertain us over what is, in reality, a short period of work.
 
 According to paragraph one, many people suggest that there should be .............. between ..............
+final-answer:
+1. **more justice**
+2. **the salaries of footballers and people who save lives**
 solution:
 **الإجابة:** more justice; the salaries of footballers and people who save lives
 
@@ -2377,6 +2487,9 @@ PDF p. 99 · printed p. 98
 5-When it comes to being a footballer, a long career is something that even the top players dream of. And when we are talking about “long” we’re talking about a decade at most. The working life of top footballers is pretty short compared to the rest of us. ‘And? So there seems some fairness in paying footballers a lot to entertain us over what is, in reality, a short period of work.
 
 Once very few people watch football games, the player’s .............. will be affected and become ..............
+final-answer:
+1. **salaries**
+2. **lower**
 solution:
 **الإجابة:** salaries; lower
 
@@ -2413,6 +2526,9 @@ PDF p. 99 · printed p. 98
 5-When it comes to being a footballer, a long career is something that even the top players dream of. And when we are talking about “long” we’re talking about a decade at most. The working life of top footballers is pretty short compared to the rest of us. ‘And? So there seems some fairness in paying footballers a lot to entertain us over what is, in reality, a short period of work.
 
 Christmas for ordinary people is .............. while it is .............. for players.
+final-answer:
+1. **a time of cheer, celebration and football**
+2. **a time of work and focus**
 solution:
 **الإجابة:** a time of cheer, celebration and football; a time of work and focus
 
@@ -2521,6 +2637,8 @@ PDF p. 99 · printed p. 98
 5-When it comes to being a footballer, a long career is something that even the top players dream of. And when we are talking about “long” we’re talking about a decade at most. The working life of top footballers is pretty short compared to the rest of us. ‘And? So there seems some fairness in paying footballers a lot to entertain us over what is, in reality, a short period of work.
 
 they ..............
+final-answer:
+**Footballers**
 solution:
 **الإجابة:** Footballers
 

@@ -8,6 +8,13 @@ reference: الكتاب، ص ٦٠، مثال١-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٧</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ع</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٧</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">ص</mi></mrow></math>\` إن أمكن.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٧</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 المصفوفتان لهما الرتبة نفسها؛ نجمع المدخلات المتناظرة.
 
@@ -29,6 +36,13 @@ reference: الكتاب، ص ٦٠، مثال١-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٧</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ع</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٧</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>+</mo><mi mathvariant="normal">س</mi></mrow></math>\` إن أمكن.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ص</mi><mo>+</mo><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٧</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 الجمع ممكن لأن رتبة كل مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\`. نجمع كل مدخلتين في الصف والعمود نفسيهما؛ وتبديل ترتيب الجمع لا يغير الناتج.
 
@@ -51,6 +65,9 @@ reference: الكتاب، ص ٦٠، مثال١-ج
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٧</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ع</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٧</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>+</mo><mi mathvariant="normal">ع</mi></mrow></math>\` إن أمكن.
+final-answer:
+**ص + ع غير معرّف.**
+
 solution:
 الجمع يحتاج رتبتين متساويتين، وهنا يختلف عدد الأعمدة.
 
@@ -70,6 +87,13 @@ reference: الكتاب، ص ٦٠، مثال٢-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 نضرب كل مدخلة في العدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\`.
 
@@ -96,6 +120,13 @@ reference: الكتاب، ص ٦٠، مثال٢-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mi mathvariant="normal">أ</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mo>−</mo><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 نضرب كل مدخلة في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\`، فتنعكس إشارتها.
 
@@ -113,6 +144,13 @@ reference: الكتاب، ص ٦٠، مثال٢-ج
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mrow><mo stretchy="true" fence="true">(</mo><mrow><mo>−</mo><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true" fence="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mo>(</mo><mo>−</mo><mi mathvariant="normal">أ</mi><mo>)</mo><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 كل مدخلة ومقابلها الجمعي مجموعهما صفر.
 
@@ -139,6 +177,13 @@ reference: الكتاب، ص ٦١، مثال ٣
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٧</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">ب</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٧</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 نضرب كل مدخلة في معامل مصفوفتها.
 
@@ -185,6 +230,13 @@ reference: الكتاب، ص ٦١، مثال ٤
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>−</mo><mi mathvariant="normal">أ</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>−</mo><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 نطرح كل مدخلة في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` من المدخلة المناظرة في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`.
 
@@ -211,6 +263,13 @@ reference: الكتاب، ص ٦٢، مثال٥
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 حل المعادلة المصفوفية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٦</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٦</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 نطرح المصفوفة المضافة من الطرفين.
 
@@ -235,6 +294,13 @@ reference: الكتاب، ص ٦٢، تدريب-١-أ-ي
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>+</mo><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٦</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٧</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 نضاعف مدخلات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، ثم نضيف إليها مدخلات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`.
 
@@ -271,6 +337,13 @@ reference: الكتاب، ص ٦٢، تدريب-١-أ-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi></mrow><mo>−</mo><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">ب</mi></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi><mo>−</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 المصفوفتان من الرتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\`، فيجوز جمعهما وطرحهما. نضرب كل مدخلة في معامل مصفوفتها، ثم نطرح المدخلات في المواقع نفسها.
 نحسب المضاعفين.
@@ -308,6 +381,13 @@ reference: الكتاب، ص ٦٢، تدريب-١-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">د</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فبين أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ج</mi><mo>+</mo><mi mathvariant="normal">د</mi></mrow><mo>=</mo><mrow><mn dir="ltr">٩</mn><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ج</mi><mo>+</mo><mi mathvariant="normal">د</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٩</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٩</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٩</mn><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></math>
+\`\`\`
+
 solution:
 نجمع المدخلات؛ يبقى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٩</mn></math>\` على القطر وصفر خارجه.
 
@@ -335,6 +415,13 @@ reference: الكتاب، ص ٦٢، تدريب-٢
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 حل المعادلة المصفوفية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٢</mn><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mo>−</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٢</mn><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mfrac><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mrow><mn dir="ltr">٥</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mfrac><mrow><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 نكتب المصفوفة المعطاة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` والمجهولة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`. \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></math>\`هي مصفوفة الوحدة ذات الآحاد القطرية والأصفار خارج القطر. لإبقاء المساواة نجمع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi></mrow></math>\` ونطرح \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow></math>\` من الطرفين.
 نجمع حدود المجهول.
@@ -372,6 +459,13 @@ reference: الكتاب، ص ٦٢، تدريب-٣
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi></mrow><mo>+</mo><mi mathvariant="normal">ج</mi></mrow><mo>=</mo></mrow></math>\` و.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mfrac><mrow><mn dir="ltr">٥</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mfrac><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 وهي المصفوفة الصفرية، جميع مدخلاتها أصفار. نطرح \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\` من الطرفين ثم نقسم كل مدخلة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\`.
 نعزل المجهولة.
@@ -401,6 +495,9 @@ reference: الكتاب، ص ٦٣، مثال٦-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لتكن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. هل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">جـ</mi></mrow></math>\` معرفة؟ ولماذا؟
+final-answer:
+**أج غير معرّفة؛ عدد أعمدة أ (٣) لا يساوي عدد صفوف ج (٢).**
+
 solution:
 ضرب المصفوفات يقرن مدخلات صف من الأولى بمدخلات عمود من الثانية، لذلك يجب تساوي عدد أعمدة الأولى وعدد صفوف الثانية.
 نكتب الرتبتين بترتيب الضرب المطلوب.
@@ -423,6 +520,11 @@ reference: الكتاب، ص ٦٣، مثال٦-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لتكن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. هل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\` معرفة؟ ولماذا؟
+final-answer:
+**أب معرّفة؛ عدد أعمدة أ يساوي عدد صفوف ب (٣).**
+
+**رتبة الناتج:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\`.
+
 solution:
 ضرب المصفوفات يقرن مدخلات صف من الأولى بمدخلات عمود من الثانية، لذلك يجب تساوي عدد أعمدة الأولى وعدد صفوف الثانية.
 نكتب الرتبتين بترتيب الضرب المطلوب.
@@ -445,6 +547,11 @@ reference: الكتاب، ص ٦٣، مثال٦-ج
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لتكن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. هل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">جـ</mi></mrow></math>\` معرفة؟ ولماذا؟
+final-answer:
+**بج معرّفة؛ عدد أعمدة ب يساوي عدد صفوف ج (٢).**
+
+**رتبة الناتج:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\`.
+
 solution:
 ضرب المصفوفات يقرن مدخلات صف من الأولى بمدخلات عمود من الثانية، لذلك يجب تساوي عدد أعمدة الأولى وعدد صفوف الثانية.
 نكتب الرتبتين بترتيب الضرب المطلوب.
@@ -467,6 +574,13 @@ reference: الكتاب، ص ٦٣، مثال٧-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd><mtd><mn dir="ltr">٩</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">جـ</mi></mrow></math>\` إن أمكن.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣٧</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤٢</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١٦</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢٦</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥٥</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 عدد أعمدة الأولى يساوي عدد صفوف الثانية، فالضرب ممكن. كل مدخلة ناتجة تساوي مجموع حاصل ضرب المدخلات المتناظرة في صف من الأولى وعمود من الثانية.
 
@@ -505,6 +619,9 @@ reference: الكتاب، ص ٦٣، مثال٧-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd><mtd><mn dir="ltr">٩</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">جـ</mi><mi mathvariant="normal">أ</mi></mrow></math>\` إن أمكن.
+final-answer:
+**جأ غير معرّفة.**
+
 solution:
 ضرب المصفوفات يقرن مدخلات صف من الأولى بمدخلات عمود من الثانية، لذلك يجب تساوي عدد أعمدة الأولى وعدد صفوف الثانية.
 نكتب الرتبتين بترتيب الضرب المطلوب.
@@ -527,6 +644,13 @@ reference: الكتاب، ص ٦٤، نشاط-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٧</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\` إن أمكن.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢٩</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٩</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٦</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 عدد أعمدة الأولى يساوي عدد صفوف الثانية، فالضرب ممكن. كل مدخلة ناتجة تساوي مجموع حاصل ضرب المدخلات المتناظرة في صف من الأولى وعمود من الثانية.
 
@@ -565,6 +689,15 @@ reference: الكتاب، ص ٦٤، نشاط-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٧</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">أ</mi></mrow></math>\` إن أمكن. ماذا تستنتج؟
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣٥</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
+**الاستنتاج:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">أ</mi><mo>≠</mo><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\`؛ **ضرب المصفوفات ليس إبداليًا عمومًا.**
+
 solution:
 عدد أعمدة الأولى يساوي عدد صفوف الثانية، فالضرب ممكن. كل مدخلة ناتجة تساوي مجموع حاصل ضرب المدخلات المتناظرة في صف من الأولى وعمود من الثانية.
 
@@ -614,6 +747,10 @@ reference: الكتاب، ص ٦٤، مثال٨
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لتكن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` مصفوفة من الرتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mi mathvariant="normal">ن</mi></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` مصفوفة من الرتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٥</mn><mo>×</mo><mi mathvariant="normal">ك</mi></mrow></math>\`. فما قيم كل من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ن</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` التي تجعل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">أ</mi></mrow></math>\` معرفتين؟
+final-answer:
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ن</mi><mo>=</mo><mn dir="ltr">٥</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ك</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\`**
+
 solution:
 يجوز الضرب عندما يساوي عدد أعمدة الأولى عدد صفوف الثانية. كل مدخلة ناتجة هي مجموع منتجات مدخلات صف من الأولى في مدخلات عمود من الثانية.
 نكتب الرتبتين بترتيب الضرب، ونطابق العددين الداخليين ورتبة الناتج.
@@ -636,6 +773,15 @@ reference: الكتاب، ص ٦٤، مثال٩
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد ناتج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mrow><mo stretchy="true">(</mo><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`، وما رتبة المصفوفة الناتجة؟
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤٦</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
+**رتبة الناتج:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١</mn><mo>×</mo><mn dir="ltr">١</mn></mrow></math>\`.
+
 solution:
 يجوز الضرب عندما يساوي عدد أعمدة الأولى عدد صفوف الثانية. كل مدخلة ناتجة هي مجموع منتجات مدخلات صف من الأولى في مدخلات عمود من الثانية.
 
@@ -694,6 +840,9 @@ reference: الكتاب، ص ٦٥، تمرين-١-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">جـ</mi></math>\` مصفوفات، بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mo>=</mo><mi mathvariant="normal">جـ</mi></mrow></math>\`، وكانت رتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mn dir="ltr">٢</mn></mrow><mo>×</mo><mn dir="ltr">٥</mn></mrow></math>\`، ورتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">جـ</mi><mn dir="ltr">٢</mn></mrow><mo>×</mo><mn dir="ltr">٤</mn></mrow></math>\`، فما رتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`؟
+final-answer:
+**رتبة ب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٥</mn><mo>×</mo><mn dir="ltr">٤</mn></mrow></math>\`.
+
 solution:
 يجوز الضرب عندما يساوي عدد أعمدة الأولى عدد صفوف الثانية. كل مدخلة ناتجة هي مجموع منتجات مدخلات صف من الأولى في مدخلات عمود من الثانية.
 نكتب الرتبتين بترتيب الضرب، ونطابق العددين الداخليين ورتبة الناتج.
@@ -716,6 +865,9 @@ reference: الكتاب، ص ٦٥، تمرين-١-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">جـ</mi></math>\` مصفوفات، بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mo>=</mo><mi mathvariant="normal">جـ</mi></mrow></math>\`، وكانت رتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mn dir="ltr">٣</mn></mrow><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\`، ورتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">جـ</mi><mn dir="ltr">٣</mn></mrow><mo>×</mo><mn dir="ltr">٥</mn></mrow></math>\`، فما رتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`؟
+final-answer:
+**رتبة ب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٥</mn></mrow></math>\`.
+
 solution:
 يجوز الضرب عندما يساوي عدد أعمدة الأولى عدد صفوف الثانية. كل مدخلة ناتجة هي مجموع منتجات مدخلات صف من الأولى في مدخلات عمود من الثانية.
 نكتب الرتبتين بترتيب الضرب، ونطابق العددين الداخليين ورتبة الناتج.
@@ -738,6 +890,13 @@ reference: الكتاب، ص ٦٥، تمرين-٢-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">٧</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢٧</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 يجوز الضرب عندما يساوي عدد أعمدة الأولى عدد صفوف الثانية. كل مدخلة ناتجة هي مجموع منتجات مدخلات صف من الأولى في مدخلات عمود من الثانية.
 
@@ -776,6 +935,13 @@ reference: الكتاب، ص ٦٥، تمرين-٢-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">٧</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">جـ</mi><mi mathvariant="normal">ب</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ج</mi><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٣٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٨</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢٩</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١٨</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 يجوز الضرب عندما يساوي عدد أعمدة الأولى عدد صفوف الثانية. كل مدخلة ناتجة هي مجموع منتجات مدخلات صف من الأولى في مدخلات عمود من الثانية.
 
@@ -814,6 +980,13 @@ reference: الكتاب، ص ٦٥، تمرين-٢-ج
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">٧</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><msup><mi mathvariant="normal">أ</mi><mn dir="ltr">٢</mn></msup><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١٠</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٩</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 يجوز الضرب عندما يساوي عدد أعمدة الأولى عدد صفوف الثانية. كل مدخلة ناتجة هي مجموع منتجات مدخلات صف من الأولى في مدخلات عمود من الثانية.
 
@@ -852,6 +1025,10 @@ reference: الكتاب، ص ٦٥، تمرين-٣
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد قيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\` بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mi mathvariant="normal">س</mi></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mn dir="ltr">٤</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mi mathvariant="normal">ص</mi></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢٠</mn></mtd><mtd><mn dir="ltr">٦٤</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٣</mn></mrow></math>\`**
+
 solution:
 المطلوب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\` بحيث يتحقق حاصل الضرب المصفوفي.
 كل مدخلة في الناتج هي مجموع منتجات صف من المصفوفة الأولى في عمود من الثانية.
@@ -950,6 +1127,13 @@ reference: الكتاب، ص ٦٥، تمرين-٤
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٧</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فبين أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mn dir="ltr">٥</mn><mi mathvariant="normal">ص</mi></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٥</mn><mi mathvariant="normal">ص</mi></mrow></math>
+\`\`\`
+
 solution:
 
 
@@ -1019,6 +1203,9 @@ reference: الكتاب، ص ٦٥، تمرين-٥
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mi mathvariant="normal">س</mi></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فهل يمكن إيجاد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mo>=</mo><mi mathvariant="normal">ب</mi></mrow></math>\`؟
+final-answer:
+**لا توجد قيمة حقيقية لـ س تحقق المعادلة.**
+
 solution:
 كل مدخلة في حاصل الضرب تُحسب بضرب صف في عمود وجمع المنتجات. تساوي المصفوفتين يفرض تساوي كل المدخلات المتناظرة معًا.
 
@@ -1048,6 +1235,13 @@ reference: الكتاب، ص ٧٧، ورقة عمل-٢
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mroot><mn dir="ltr">٣</mn><mn dir="ltr">٣</mn></mroot></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، جد المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">د</mi></math>\` بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">د</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">د</mi></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">د</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 المطلوب مصفوفة عمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">د</mi></math>\` تحقق \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">د</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">د</mi></mrow></mrow></math>\`.
 بما أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` عمود من مدخلتين، نكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">د</mi></math>\` عمودًا بمدخلتين مجهولتين.
@@ -1139,6 +1333,10 @@ reference: الكتاب، ص ٧٧، ورقة عمل-٣
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد قيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\` الحقيقية التي تحقق \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">س</mi><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mo>+</mo><mi mathvariant="normal">ص</mi><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٩</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٦</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٣</mn></mrow></math>\`**
+
 solution:
 تتساوى مصفوفتان عندما تتساوى رتبتهما وكل مدخلتين تقعان في الصف والعمود نفسيهما؛ لذلك يجب تحقيق المعادلات الناتجة جميعًا.
 
@@ -1253,6 +1451,13 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٥</mn><mi mathvariant="normal">أ</mi><mo>+</mo><mn dir="ltr">٥</mn><mi mathvariant="normal">ب</mi><mo>−</mo><mn dir="ltr">٤</mn><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 نوزع المعامل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></math>\`، ثم نجمع معاملات كل مصفوفة. الجمع يضيف المدخلات المتناظرة.
 نبسط التعبير.
@@ -1282,6 +1487,13 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٨</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">ب</mi></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 الصفر هنا مصفوفة صفرية؛ نطرح \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi></mrow></math>\` من الطرفين ثم نقسم كل مدخلة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\`.
 نعزل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`.
@@ -1311,6 +1523,13 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، حل المعادلة المصفوفية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">ب</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">ج</mi></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
  نطرح \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` من الطرفين ثم نقسم على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\`.
 
@@ -1371,6 +1590,9 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mi mathvariant="normal">أ</mi></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٦</mn></mrow></mtd><mtd><mi mathvariant="normal">ب</mi></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، جد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ب</mi></mrow></math>\`.
+final-answer:
+**\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ب</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\`**
+
 solution:
 كل مدخلة في حاصل الضرب تُحسب بضرب صف في عمود وجمع المنتجات. تساوي المصفوفتين يفرض تساوي كل المدخلات المتناظرة معًا.
 
@@ -1411,6 +1633,13 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mn dir="ltr">٢٠٠</mn></msup></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><msup><mi mathvariant="normal">أ</mi><mn dir="ltr">٢٠٠</mn></msup><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٠٠٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 رفع المصفوفة لقوة صحيحة يعني تكرار ضربها في نفسها. هنا نلاحظ أن كل ضربة تضيف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٥</mn></math>\` إلى المدخلة العلوية اليمنى، ونبرهن استمرار ذلك.
 نبدأ بالمصفوفة نفسها.
@@ -1448,6 +1677,13 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 حل المعادلة المصفوفية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>+</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mfrac><mrow><mo>−</mo><mn dir="ltr">٧</mn></mrow><mrow><mn dir="ltr">٥</mn></mrow></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mrow><mn dir="ltr">٢</mn></mrow><mrow><mn dir="ltr">٥</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mfrac><mrow><mo>−</mo><mn dir="ltr">١٢</mn></mrow><mrow><mn dir="ltr">٥</mn></mrow></mfrac></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 
 
@@ -2472,6 +2708,13 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi><mo>+</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٦</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، حيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` مصفوفتين، جد \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mo>⋅</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 
 
@@ -2551,6 +2794,13 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi></mrow></math>\` مصفوفة مربعة من الرتبة الثانية وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">{</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>≠</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>=</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr></mtable></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، فجد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` بحيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">ب</mi><mo>−</mo><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٦٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢٦</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥٨</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 الشرط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ي</mi><mo>=</mo><mi mathvariant="normal">هـ</mi></mrow></math>\` يحدد القطر الرئيس، فنضع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣</mn></math>\` على القطر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\` خارجه. ومصفوفة الوحدة قطرها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١</mn></math>\` والباقي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٠</mn></math>\`.
 
@@ -2616,6 +2866,9 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد قيمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` بحيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`.
+final-answer:
+**\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٥</mn></mrow></math>\`**
+
 solution:
 يجوز الضرب عندما يساوي عدد أعمدة الأولى عدد صفوف الثانية. كل مدخلة ناتجة هي مجموع منتجات مدخلات صف من الأولى في مدخلات عمود من الثانية.
 نضرب الصف في المصفوفة.
@@ -2653,6 +2906,13 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` حيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">أ</mi><mo>⋅</mo><mi mathvariant="normal">ب</mi><mo>=</mo><msub><mi mathvariant="normal">و</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mfrac><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mrow><mo>−</mo><mn dir="ltr">٧</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">و</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></math>\`، و
 
@@ -2684,6 +2944,10 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، فما قيم كل من \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>،</mo><mi mathvariant="normal">ص</mi></mrow></math>\` بحيث أن: \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">س</mi></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٩</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">ص</mi></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`.
+final-answer:
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٣٦</mn></mrow></math>\`**
+
 solution:
 يجوز الضرب عندما يساوي عدد أعمدة الأولى عدد صفوف الثانية. كل مدخلة ناتجة هي مجموع منتجات مدخلات صف من الأولى في مدخلات عمود من الثانية.
 نربع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` بضربها في نفسها.
@@ -2729,6 +2993,13 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد ناتج \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>−</mo><mn dir="ltr">٣</mn><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٧</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١٢</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 يجوز الضرب عندما يساوي عدد أعمدة الأولى عدد صفوف الثانية. كل مدخلة ناتجة هي مجموع منتجات مدخلات صف من الأولى في مدخلات عمود من الثانية. مصفوفة الوحدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` فيها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١</mn></math>\` على القطر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٠</mn></math>\` خارجه.
 نحسب حاصل الضرب.
@@ -2758,6 +3029,13 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` بحيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">س</mi><mo>=</mo><mi mathvariant="normal">ب</mi><mo>⋅</mo><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 المطلوب مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` تحقق \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">س</mi></mrow></mrow></math>\`.
 بما أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` عمود من مدخلتين، نكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` عمودًا بمجهولين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ن</mi></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\`.
@@ -2849,6 +3127,9 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، بحيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>−</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">٧</mn><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></math>\`، جد قيمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\`؟
+final-answer:
+**\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\`**
+
 solution:
 
 
@@ -2888,6 +3169,13 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi></mrow></math>\` مصفوفة مربعة من الرتبة الثانية، بحيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mrow><mi mathvariant="normal">ب</mi></mrow><mrow><mrow><mi mathvariant="normal">ي</mi></mrow><mrow><mtext dir="rtl">هـ</mtext></mrow></mrow></msub><mo>=</mo><mrow><mo stretchy="true">{</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">ي</mi><mo>+</mo><mtext dir="rtl">هـ</mtext></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&lt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>=</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mrow><mtext dir="rtl">هـ</mtext><mo>−</mo><mi mathvariant="normal">ي</mi></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&gt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr></mtable></mrow></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi></mrow></math>\` حيث: \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ج</mi><mo>=</mo><mi mathvariant="normal">ب</mi><mo>⋅</mo><mi mathvariant="normal">ج</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mfrac><mrow><mn dir="ltr">٤</mn></mrow><mrow><mn dir="ltr">٧</mn></mrow></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mrow><mn dir="ltr">٥</mn></mrow><mrow><mn dir="ltr">٧</mn></mrow></mfrac></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 المطلوب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\` بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ج</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow></mrow></math>\`، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` هو العمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">١</mn><mo>،</mo><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow><mo stretchy="true" fence="true">)</mo></mrow></math>\`.
 نبني \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` من شروط المدخلات: على القطر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\`، وفوقه مجموع رقمي الصف والعمود، وتحته رقم العمود ناقص رقم الصف.
@@ -3000,6 +3288,13 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا علمت أن: \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` التي تحقق \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mn dir="ltr">٢</mn></mrow><mrow><mn dir="ltr">٣</mn></mrow></mfrac><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi><mo>=</mo><msup><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>−</mo><mfrac><mrow><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٣</mn></mrow></mfrac><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١٠</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٨</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mo>−</mo><mi mathvariant="normal">أ</mi></mrow><mn dir="ltr">٢</mn></mfrac><mo>=</mo></mrow></math>\` المصفوفة المعطاة نضرب الطرفين في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\` لإيجاد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`. ثم نجمع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></mfrac></math>\` ونطرح \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi></mrow></math>\` لعزل المجهولة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`.
 نحسب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`.
@@ -3045,6 +3340,10 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٧</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\`، فأوجد: \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mrow><mi mathvariant="normal">ج</mi></mrow><mrow><mrow><mn dir="ltr">٢</mn></mrow><mrow><mn dir="ltr">٣</mn></mrow></mrow></msub></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mrow><mi mathvariant="normal">ج</mi></mrow><mrow><mrow><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mrow></msub></mrow></math>\`.
+final-answer:
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ج</mi><mrow><mn dir="ltr">٢</mn><mn dir="ltr">٣</mn></mrow></msub><mo>=</mo><mn dir="ltr">٧</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ج</mi><mrow><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mrow></msub><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>\`**
+
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">ج</mi><mrow><mn dir="ltr">٢</mn><mn dir="ltr">٣</mn></mrow></msub></math>\` تعني مدخلة الصف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\` والعمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣</mn></math>\`. في حاصل الضرب نضرب صف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` المحدد في عمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` المحدد ونجمع المنتجات.
 
@@ -3065,6 +3364,13 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 حل المعادلة المصفوفية التالية \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">ب</mi><mo>=</mo><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ب</mi></mrow></math>\` حيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mi mathvariant="normal">ج</mi></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mi mathvariant="normal">ب</mi><mo>−</mo><mi mathvariant="normal">أ</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mfrac><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mrow><mn dir="ltr">٧</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mfrac><mrow><mo>−</mo><mn dir="ltr">٩</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 الضرب بعدد حقيقي يضرب كل مدخلة، والجمع والطرح يطبقان على المدخلات المتناظرة.
 
@@ -3105,6 +3411,15 @@ body:
 (و) \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>×</mo><mi mathvariant="normal">ب</mi><mo>+</mo><mi mathvariant="normal">أ</mi></mrow></math>\`
 
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">ز</mi><mo stretchy="true" fence="true">)</mo></mrow><mrow><mrow><mi mathvariant="normal">ج</mi><mo>×</mo><mi mathvariant="normal">ب</mi><mo>+</mo><mi mathvariant="normal">ب</mi></mrow></mrow></mrow></math>\`
+final-answer:
+**العمليات الممكنة:**
+
+- **(ج)** ب × أ + ج؛ رتبة الناتج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\`.
+- **(د)** أ × ج × ب؛ رتبة الناتج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\`.
+- **(ز)** ج × ب + ب؛ رتبة الناتج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\`.
+
+**العمليات غير الممكنة: (أ)، (ب)، (هـ)، (و).**
+
 solution:
 للضرب يلزم تساوي عدد أعمدة الأولى وعدد صفوف الثانية، ويحتفظ الناتج بعدد صفوف الأولى وأعمدة الثانية. للجمع يجب تساوي الرتبتين.
 البند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`: \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ب</mi><mn dir="ltr">٢</mn></mrow><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\` لا تضرب في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ج</mi><mn dir="ltr">٢</mn></mrow><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` لاختلاف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣</mn></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\`.

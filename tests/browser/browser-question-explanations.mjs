@@ -31,11 +31,11 @@ try {
   const errors = [];
   page.on("pageerror",error => errors.push(error.message));
   const open = async key => {
-    await page.goto(base + "?" + new URLSearchParams({subject:key.subjectId,lesson:key.lessonId,part:key.partId,...(key.stepId ? {question:key.stepId} : {})}));
+    await page.goto(base + "?" + new URLSearchParams({subject:key.subjectId,lesson:key.lessonId,part:key.partId,...(key.stepId ? {question:key.stepId} : {})}), {waitUntil:"domcontentloaded"});
     await page.locator("[data-question-explain]").waitFor();
   };
   const key = {subjectId:"ict",lessonId:"database-management",partId:"access-basics",stepId:"exam-p09-q1-1"};
-  await page.goto(base);
+  await page.goto(base, {waitUntil:"domcontentloaded"});
   await page.waitForFunction(() => document.body.dataset.accountType === "free");
   // Continue through the part below; a question URL intentionally opens a one-question review.
   await open({ ...key, stepId:null });
@@ -106,7 +106,7 @@ try {
   await sheet.locator('[data-explanation-body][aria-busy="false"]').waitFor();
   assert.equal((await balance()).gems,150);
   await close(false);
-  await page.reload();
+  await page.reload({waitUntil:"domcontentloaded"});
   await button.waitFor();
   assert.equal(await button.locator(".explanation-price").count(),0,"reopening restores the permanent unlock");
   assert.equal(await button.textContent(),"اشرح","unlocked free explanations show only the action label");
@@ -201,20 +201,24 @@ try {
   await button.click();
   await sheet.locator('[data-explanation-body][aria-busy="false"]').waitFor();
   assert.equal(await sheet.evaluate(node => getComputedStyle(node).animationName),"none");
-  await page.goto(base + '?page=learn');
+  await page.goto(base + '?page=learn', {waitUntil:"domcontentloaded"});
   assert.equal(await sheet.count(),0,"navigation removes the explanation section");
   const countdown = page.locator('.learner-dashboard__header [data-super-trial-countdown]:not([hidden])');
   await countdown.waitFor();
-  const tick = await countdown.textContent();
-  await page.waitForFunction(previous => document.querySelector('[data-super-trial-countdown]')?.textContent !== previous,tick);
+  assert.match(await countdown.textContent(), /^\d+ يوم$/, "Home shows the remaining trial in days");
   for (const width of [1440,390,320]) {
     await page.setViewportSize({width,height:900});
     assert.ok(await countdown.evaluate(node => {
       const badge = node.getBoundingClientRect();
-      const header = node.closest('header').getBoundingClientRect();
-      const welcome = node.closest('header').querySelector('.learner-dashboard__identity').getBoundingClientRect();
-      return Math.abs(badge.left-header.left) < 2 && badge.right <= welcome.left && badge.top < welcome.bottom && badge.bottom > welcome.top && document.documentElement.scrollWidth <= innerWidth;
-    }),"the countdown sits on the left beside the welcome message without overflow");
+      const headerNode = node.closest('header');
+      const header = headerNode.getBoundingClientRect();
+      const welcome = headerNode.querySelector('.learner-dashboard__identity').getBoundingClientRect();
+      const separated = getComputedStyle(headerNode).flexDirection === 'column'
+        ? badge.top >= welcome.bottom - 1
+        : badge.right <= welcome.left + 1 && badge.top < welcome.bottom && badge.bottom > welcome.top;
+      return separated && badge.left >= header.left - 1 && badge.right <= header.right + 1
+        && badge.left >= 0 && badge.right <= innerWidth && document.documentElement.scrollWidth <= innerWidth;
+    }),"the day countdown fits the responsive header without overlapping the welcome message");
     await page.screenshot({path:`${evidence}/home-countdown-${width}.png`});
   }
   // Hold an unlock locally so dismiss/reopen races do not depend on API timing.

@@ -76,6 +76,8 @@ body:
 أكمل المعادلات الآتية بكتابة الناتج العضوي المناسب:
 
 ![المعادلة الأولى المطلوب إكمالها](assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a1-reaction.webp)
+final-answer:
+**أيون الإيثانوات:** \\(\\mathrm{CH_3COO^-}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a1-reaction.webp)
 
@@ -103,6 +105,8 @@ body:
 أكمل المعادلات الآتية بكتابة الناتج العضوي المناسب:
 
 ![المعادلة الثانية المطلوب إكمالها](assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a2-reaction.webp)
+final-answer:
+**أيون البروبانوات:** \\(\\mathrm{CH_3CH_2COO^-}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a2-reaction.webp)
 
@@ -372,6 +376,8 @@ body:
 سؤال: وضح المقصود بكل مما يلي:
 
 محلول فهلنج B.
+final-answer:
+**محلول ملح روشل (ترترات الصوديوم والبوتاسيوم المائية) وهيدروكسيد الصوديوم.**
 solution:
 **الإجابة:** محلول ملح روشل وهيدروكسيد الصوديوم.
 
@@ -393,6 +399,12 @@ body:
 سؤال: وضح المقصود بكل مما يلي:
 
 محلول فهلنج.
+final-answer:
+**مزيج من محلولي فهلنج A وB:**
+
+- **A:** كبريتات النحاس المائية \\(\\mathrm{CuSO_4\\cdot5H_2O}\\).
+- **B:** محلول ملح روشل وهيدروكسيد الصوديوم.
+- **العامل المؤكسد الفعّال:** \\(\\mathrm{Cu^{2+}}\\).
 solution:
 **الإجابة:** مزيج فهلنجA وفهلنجB، وعامله المؤكسدCu²⁺.
 
@@ -417,6 +429,16 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 بيوتانال من 1 - كلورو بيوتان.
+final-answer:
+**تحضير البيوتانال:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>l</mi><mo>+</mo><mi>N</mi><mi>a</mi><mi>O</mi><msub><mi>H</mi><mrow><mo stretchy="false">(</mo><mi>a</mi><mi>q</mi><mo stretchy="false">)</mo></mrow></msub><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><mi>N</mi><mi>a</mi><mi>C</mi><mi>l</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>C</mi><mi>u</mi><mo separator="true">,</mo><msup><mn>300</mn><mo>∘</mo></msup><mi>C</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mi>O</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub></mrow></math>
+\`\`\`
 solution:
 نستبدل Cl بـ OH في وسط مائي للحصول على كحول أولي، ثم ننزع هيدروجينين منه على النحاس الساخن لتكوين الألدهيد.
 
@@ -452,6 +474,20 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 (2 - بيوتانون من 1 - كلورو بيوتان).
+final-answer:
+**تحضير 2-بيوتانون:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>l</mi><mo>+</mo><mi>K</mi><mi>O</mi><mi>H</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>a</mi><mi>l</mi><mi>c</mi><mi>o</mi><mi>h</mi><mi>o</mi><mi>l</mi><mo separator="true">,</mo><mi mathvariant="normal">Δ</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><mi>K</mi><mi>C</mi><mi>l</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><msup><mi>H</mi><mo>+</mo></msup></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mo>+</mo><mo stretchy="false">[</mo><mi>O</mi><mo stretchy="false">]</mo><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><msub><mi>K</mi><mn>2</mn></msub><mi>C</mi><msub><mi>r</mi><mn>2</mn></msub><msub><mi>O</mi><mn>7</mn></msub><mi mathvariant="normal">/</mi><msup><mi>H</mi><mo>+</mo></msup></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mo stretchy="false">(</mo><mo>=</mo><mi>O</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 نحتاج كحولاً ثانوياً قبل أكسدته إلى كيتون. أولاً الحذف بـ KOH الكحولي الساخن يعطي 1-بيوتين.
 
@@ -493,6 +529,12 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 الإيثانال من الإيثانول.
+final-answer:
+**تحضير الإيثانال:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>C</mi><mi>u</mi><mo separator="true">,</mo><msup><mn>300</mn><mo>∘</mo></msup><mi>C</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mi>O</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub></mrow></math>
+\`\`\`
 solution:
 الإيثانول أولي؛ تمرير بخاره على Cu عند 300° س ينزع H من O و H من CH₂OH، فتتكون CHO. الناتج **الإيثانال** مع جزيء H₂.
 
@@ -518,6 +560,16 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 البروبانون من البروبين.
+final-answer:
+**تحضير البروبانون:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><msup><mi>H</mi><mo>+</mo></msup></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mo>+</mo><mo stretchy="false">[</mo><mi>O</mi><mo stretchy="false">]</mo><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><msub><mi>K</mi><mn>2</mn></msub><mi>C</mi><msub><mi>r</mi><mn>2</mn></msub><msub><mi>O</mi><mn>7</mn></msub><mi mathvariant="normal">/</mi><msup><mi>H</mi><mo>+</mo></msup></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mo stretchy="false">(</mo><mo>=</mo><mi>O</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 إماهة البروبين حمضياً تتبع ماركوفنيكوف؛ OH إلى الكربون الأوسط، فيعطي 2-بروبانول الثانوي.
 
@@ -553,6 +605,8 @@ body:
 \\(\\mathrm{CH_3CH_2C(=O)H+2Ag^++3OH^-\\xrightarrow[\\text{\\char"0648\\char"0633\\char"0637 \\char"0642\\char"0627\\char"0639\\char"062F\\char"064A}]{\\Delta}\\underline{\\qquad\\qquad}}\\)
 
 ![الصيغة البنائية للمتفاعل العضوي كما وردت في المصدر](assets/lessons/chemistry/source-crops/chemistry-oj-p195-q08-s3-reactant.webp)
+final-answer:
+**أيون البروبانوات:** \\(\\mathrm{CH_3CH_2COO^-}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p195-q08-s3-reactant.webp)
 
@@ -580,6 +634,15 @@ body:
 سؤال: كيف يمكن التمييز مخبريًا بين الأزواج الآتية مستعينًا بالمعادلات؟
 
 (2- بروبانون والبروبانال).
+final-answer:
+**بإضافة فهلنج والتسخين:**
+
+- **البروبانال:** يعطي راسبًا أحمر بنيًا من \\(\\mathrm{Cu_2O}\\).
+- **البروبانون:** لا يعطي الراسب.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mi>O</mi><mo>+</mo><mn>2</mn><mi>C</mi><msup><mi>u</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>+</mo><mn>5</mn><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mi mathvariant="normal">Δ</mi></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><msup><mi>O</mi><mo>−</mo></msup><mo>+</mo><mi>C</mi><msub><mi>u</mi><mn>2</mn></msub><mi>O</mi><mo>+</mo><mn>3</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 نضيف فهلنج ونسخن كل عينة؛ الألدهيدات تختزل Cu²⁺ إلى Cu⁺ في Cu₂O، والكيتونات تقاوم هذا الاختبار.
 
@@ -607,6 +670,15 @@ body:
 سؤال: كيف يمكن التمييز مخبريًا بين الأزواج الآتية مستعينًا بالمعادلات؟
 
 الهكسان والإيثانال.
+final-answer:
+**بإضافة فهلنج والتسخين:**
+
+- **الإيثانال:** يعطي راسبًا أحمر بنيًا من \\(\\mathrm{Cu_2O}\\).
+- **الهكسان:** لا يعطي الراسب.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mi>O</mi><mo>+</mo><mn>2</mn><mi>C</mi><msup><mi>u</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>+</mo><mn>5</mn><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mi mathvariant="normal">Δ</mi></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><msup><mi>O</mi><mo>−</mo></msup><mo>+</mo><mi>C</mi><msub><mi>u</mi><mn>2</mn></msub><mi>O</mi><mo>+</mo><mn>3</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 نضيف فهلنج إلى العينتين ونسخن. **الإيثانال** يملك CHO فتتأكسد إلى COO⁻ ويختزل Cu²⁺، فيظهر Cu₂O الأحمر البني.
 
@@ -631,6 +703,15 @@ answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 كيف تميز مخبرياً، باستخدام محلول فهلنج ومعادلة كيميائية، بين عينتي بول إحداهما تحتوي على الجلوكوز بتركيز يمكن كشفه بهذا الاختبار والأخرى خالية منه؟
 
+final-answer:
+**بإضافة فهلنج والتسخين:**
+
+- **العينة المحتوية على الجلوكوز:** تعطي راسبًا أحمر بنيًا من \\(\\mathrm{Cu_2O}\\).
+- **العينة الخالية منه:** لا تعطي الراسب.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>C</mi><mn>6</mn></msub><msub><mi>H</mi><mn>12</mn></msub><msub><mi>O</mi><mn>6</mn></msub><mo>+</mo><mn>2</mn><mi>C</mi><msup><mi>u</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>+</mo><mn>5</mn><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mi mathvariant="normal">Δ</mi></mpadded></mover><msub><mi>C</mi><mn>6</mn></msub><msub><mi>H</mi><mn>11</mn></msub><msubsup><mi>O</mi><mn>7</mn><mo>−</mo></msubsup><mo>+</mo><mi>C</mi><msub><mi>u</mi><mn>2</mn></msub><mi>O</mi><mo>+</mo><mn>3</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 في **الاختبار الكيميائي المدرسي للسكر المختزل** نضيف فهلنج ونسخن في وسط قاعدي. الجلوكوز له مجموعة ألدهيد في صورته المفتوحة؛ تتأكسد إلى جلوكونات بينما Cu²⁺ يختزل إلى Cu₂O الأحمر البني.
 
@@ -658,6 +739,15 @@ body:
 بين بالمعادلات كيف تميز مخبرياً بين المركب \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi></mrow></math>\` والبروبانون باستخدام محلول تولن.
 
 ![تحولات 1-بروبانول إلى البروبانال والحمض والألكين وهاليد الألكيل A إلى D](assets/lessons/curriculum-evidence/158294394f0ce9be9cfc.webp)
+final-answer:
+**بإضافة تولنز والتسخين:**
+
+- **A (البروبانال):** يعطي مرآة فضية.
+- **البروبانون:** لا يعطي مرآة فضية.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mi>O</mi><mo>+</mo><mn>2</mn><mi>A</mi><msup><mi>g</mi><mo>+</mo></msup><mo>+</mo><mn>3</mn><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mi mathvariant="normal">Δ</mi></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><msup><mi>O</mi><mo>−</mo></msup><mo>+</mo><mn>2</mn><mi>A</mi><mi>g</mi><mo>+</mo><mn>2</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/curriculum-evidence/158294394f0ce9be9cfc.webp)
 
@@ -687,6 +777,12 @@ body:
 اكتب معادلة تبين نواتج أكسدة المركب \\(F\\) بمحلول فهلنج.
 
 ![جدول صيغ المركبات A إلى F؛ A هو الهكسان وC هو 1-كلورو بروبان](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q01-figure.webp)
+final-answer:
+**معادلة أكسدة F (البروبانال):**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mi>O</mi><mo>+</mo><mn>2</mn><mi>C</mi><msup><mi>u</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>+</mo><mn>5</mn><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mi mathvariant="normal">Δ</mi></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><msup><mi>O</mi><mo>−</mo></msup><mo>+</mo><mi>C</mi><msub><mi>u</mi><mn>2</mn></msub><mi>O</mi><mo>+</mo><mn>3</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q01-figure.webp)
 
@@ -716,6 +812,11 @@ body:
 كيف يمكنك التمييز بين كل من المركبين (د) و(هـ) عملياً في المختبر؟
 
 ![جدول المركبات أ إلى و: بروبان،1-بروبانول،CH3MgBr،بروبانون،بروبانال،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q02-figure.webp)
+final-answer:
+**بإضافة فهلنج والتسخين:**
+
+- **هـ (البروبانال):** يعطي راسبًا أحمر بنيًا من \\(\\mathrm{Cu_2O}\\).
+- **د (البروبانون):** لا يعطي الراسب.
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q02-figure.webp)
 
@@ -745,6 +846,8 @@ body:
 ما رمز المركب الناتج من أكسدة المركب (هـ) بـ \\(\\mathrm{KMnO_4}\\) في وسط حمضي؟
 
 ![جدول المركبات أ إلى و: بروبين،1-بروبانول،حمض البروبانويك،بروبانون،بروبانال،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q03-figure.webp)
+final-answer:
+**ج — حمض البروبانويك.**
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q03-figure.webp)
 
@@ -774,6 +877,15 @@ body:
 بين بمعادلات كيف تميز مخبرياً بين المركبين \\(E\\) و\\(D\\) باستخدام محلول فهلنج.
 
 ![جدول A إلى E:1-برومو بيوتان،2-بيوتانول،حمض الإيثانويك،بيوتانال،2-بيوتانون](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q01-figure.webp)
+final-answer:
+**بإضافة فهلنج والتسخين:**
+
+- **D (البيوتانال):** يعطي راسبًا أحمر بنيًا من \\(\\mathrm{Cu_2O}\\).
+- **E (2-بيوتانون):** لا يعطي الراسب.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mi>O</mi><mo>+</mo><mn>2</mn><mi>C</mi><msup><mi>u</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>+</mo><mn>5</mn><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mi mathvariant="normal">Δ</mi></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><msup><mi>O</mi><mo>−</mo></msup><mo>+</mo><mi>C</mi><msub><mi>u</mi><mn>2</mn></msub><mi>O</mi><mo>+</mo><mn>3</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q01-figure.webp)
 
@@ -803,6 +915,15 @@ body:
 كيف تميز عملياً بين المركبين (ب، ج)، وضح ذلك بالمعادلات؟
 
 ![جدول أ إلى و:بروبين،بروبانون،بروبانال،حمض البروبانويك،1-بروبانول،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q02-figure.webp)
+final-answer:
+**بإضافة تولنز والتسخين:**
+
+- **ج (البروبانال):** يعطي مرآة فضية.
+- **ب (البروبانون):** لا يعطي مرآة فضية.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mi>O</mi><mo>+</mo><mn>2</mn><mi>A</mi><msup><mi>g</mi><mo>+</mo></msup><mo>+</mo><mn>3</mn><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mi mathvariant="normal">Δ</mi></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><msup><mi>O</mi><mo>−</mo></msup><mo>+</mo><mn>2</mn><mi>A</mi><mi>g</mi><mo>+</mo><mn>2</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q02-figure.webp)
 
@@ -832,6 +953,15 @@ body:
 بين بمعادلات كيميائية كيف يمكنك التمييز مخبرياً بين المركبين (5، 3) بواسطة محلول تولن.
 
 ![جدول1 إلى6:إيثانول،كلورو إيثان،بروبانون،بروبين،إيثانال،2-ميثيل-2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q03-figure.webp)
+final-answer:
+**بإضافة تولنز والتسخين:**
+
+- **5 (الإيثانال):** يعطي مرآة فضية.
+- **3 (البروبانون):** لا يعطي مرآة فضية.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mi>O</mi><mo>+</mo><mn>2</mn><mi>A</mi><msup><mi>g</mi><mo>+</mo></msup><mo>+</mo><mn>3</mn><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mi mathvariant="normal">Δ</mi></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><msup><mi>O</mi><mo>−</mo></msup><mo>+</mo><mn>2</mn><mi>A</mi><mi>g</mi><mo>+</mo><mn>2</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q03-figure.webp)
 
@@ -861,6 +991,8 @@ body:
 ما ناتج أكسدة المركب \\(Z\\) بوجود \\(\\mathrm{KMnO_4/H^+}\\)؟
 
 ![جدول معلومات المركبين X وZ؛ X كحول يتأكسد إلى ألدهيد وZ يعطي راسب فهلنج](assets/lessons/chemistry/source-crops/chemistry-oj-p200-q01-figure.webp)
+final-answer:
+**حمض البروبانويك:** \\(\\mathrm{CH_3CH_2COOH}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p200-q01-figure.webp)
 
@@ -888,6 +1020,12 @@ body:
 عبر بالمعادلات الكيميائية عن كل من التفاعلات الآتية، وسمِّ المركبات العضوية الناتجة: (6 علامات)
 
 أكسدة البروبانال \\(\\mathrm{CH_3CH_2CHO}\\) مع \\(\\mathrm{K_2Cr_2O_7}\\) في وسط حمضي.
+final-answer:
+**الناتج العضوي: حمض البروبانويك.**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mi>O</mi><mo>+</mo><mo stretchy="false">[</mo><mi>O</mi><mo stretchy="false">]</mo><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><msub><mi>K</mi><mn>2</mn></msub><mi>C</mi><msub><mi>r</mi><mn>2</mn></msub><msub><mi>O</mi><mn>7</mn></msub><mi mathvariant="normal">/</mi><msup><mi>H</mi><mo>+</mo></msup></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi></mrow></math>
+\`\`\`
 solution:
 الألدهيد يتأكسد بسهولة إلى الحمض الموافق؛ نحول CHO إلى COOH ونبقي الكربونات الثلاث. الناتج **حمض البروبانويك**، و[O] مكافئ الأكسدة من الدايكرومات.
 
@@ -911,6 +1049,9 @@ reference: [الملزمة، ص ٢٠٠](https://chatgpt.com/api/library/files/li
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 قارن بين الإيثانال والبروبانون من حيث القدرة على اختزال كاشف تولن.
+final-answer:
+- **الإيثانال:** يختزل كاشف تولنز ويعطي **مرآة فضية**.
+- **البروبانون:** لا يختزل كاشف تولنز في الشروط المعتادة، ولا يعطي مرآة فضية.
 solution:
 **الإيثانال يختزل تولنز**؛ CHO تتأكسد إلى COO⁻ في الوسط القاعدي، و Ag⁺ يستقبل الإلكترونات ويتحول إلى Ag، فتتكون مرآة فضية. **البروبانون لا يختزل تولنز** في الشروط المعتادة لأنه كيتون يقاوم الأكسدة؛ فلا يعطي المرآة.
 
@@ -938,6 +1079,9 @@ body:
 ![الصيغة العامة للكيتون R–C(=O)–R](assets/lessons/chemistry/source-crops/chemistry-oj-p200-q06-ketone.webp)
 
 ![الصيغة العامة للألدهيد R–C(=O)–H](assets/lessons/chemistry/source-crops/chemistry-oj-p200-q06-aldehyde.webp)
+final-answer:
+- **الألدهيد \\(\\mathrm{R{-}C(=O){-}H}\\):** سهل التأكسد.
+- **الكيتون \\(\\mathrm{R{-}C(=O){-}R}\\):** يقاوم الأكسدة في الشروط المعتادة.
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p200-q06-ketone.webp)
 

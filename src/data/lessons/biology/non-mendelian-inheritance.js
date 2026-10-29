@@ -120,6 +120,9 @@ body:
 تم تلقيح نبتتين أحدهما طويل الساق زهري الأزهار أملس البذور مع نبات آخر مجهول الطراز الشكلي، فكانت النتائج لأفراد الجيل الأول: طويل زهري أملس32؛ قصير زهري مجعد32؛ طويل أحمر أملس18؛ طويل أبيض أملس14؛ قصير أحمر مجعد16؛ قصير أبيض مجعد16. أجب مستخدماً (T،t لطول الساق)، (R،W للون الأزهار)، (B،b لشكل البذور).
 
 1- ما الطراز الجيني لكلا الأبوين؟
+final-answer:
+- **النبات المعروف:** \`TtRWBb\`، مع ارتباط \`TB/tb\`.
+- **النبات المجهول:** \`ttRWbb\`.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` سائد للطول و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصر، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` سائد لملمس البذور الأملس و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للمجعد؛
 أما اللون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RR</mtext></math>\` أحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RW</mtext></math>\` زهري و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>WW</mtext></math>\` أبيض لسيادة غير تامة.
@@ -145,6 +148,8 @@ body:
 تم تلقيح نبتتين أحدهما طويل الساق زهري الأزهار أملس البذور مع نبات آخر مجهول الطراز الشكلي، فكانت النتائج لأفراد الجيل الأول: طويل زهري أملس32؛ قصير زهري مجعد32؛ طويل أحمر أملس18؛ طويل أبيض أملس14؛ قصير أحمر مجعد16؛ قصير أبيض مجعد16. أجب مستخدماً (T،t لطول الساق)، (R،W للون الأزهار)، (B،b لشكل البذور).
 
 2- ما الطراز الشكلي للنبات المجهول؟
+final-answer:
+**قصير الساق، زهري الأزهار، مجعد البذور.**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` سائد للطول و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصر، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` سائد لملمس البذور الأملس و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للمجعد؛
 أما اللون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RR</mtext></math>\` أحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RW</mtext></math>\` زهري و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>WW</mtext></math>\` أبيض لسيادة غير تامة.
@@ -171,6 +176,8 @@ body:
 تم تلقيح نبتتين أحدهما طويل الساق زهري الأزهار أملس البذور مع نبات آخر مجهول الطراز الشكلي، فكانت النتائج لأفراد الجيل الأول: طويل زهري أملس32؛ قصير زهري مجعد32؛ طويل أحمر أملس18؛ طويل أبيض أملس14؛ قصير أحمر مجعد16؛ قصير أبيض مجعد16. أجب مستخدماً (T،t لطول الساق)، (R،W للون الأزهار)، (B،b لشكل البذور).
 
 3- ما نوع وراثة لون الأزهار؟
+final-answer:
+**سيادة غير تامة.**
 solution:
 السيادة غير التامة تعني أن الهجينRW يظهر زهرياً، وهو مظهر وسطي بينRR الأحمر وWW الأبيض.
 
@@ -226,6 +233,8 @@ body:
 تم تلقيح نباتين ثم جمعت البذور الناتجة وزرعت فنتجت نباتات بالصفات والنسب: (1) أحمر طويل؛ (2) زهري طويل؛ (2) زهري قصير؛ (1) أبيض طويل؛ (1) أبيض قصير؛ (1) أحمر قصير.
 
 1- اكتب الطرز الشكلية للآباء.
+final-answer:
+**زهري طويل الساق × زهري قصير الساق.**
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RR</mtext></math>\` للأحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>WW</mtext></math>\` للأبيض و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RW</mtext></math>\` للزهري الوسطي، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير.
 نجمع اللون: أحمر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=1+1=2</mtext></math>\`
@@ -250,6 +259,8 @@ body:
 تم تلقيح نباتين ثم جمعت البذور الناتجة وزرعت فنتجت نباتات بالصفات والنسب: (1) أحمر طويل؛ (2) زهري طويل؛ (2) زهري قصير؛ (1) أبيض طويل؛ (1) أبيض قصير؛ (1) أحمر قصير.
 
 2- اكتب الطرز الجينية للآباء.
+final-answer:
+**\`TtRW × ttRW\`**، حيث \`T\` للطول و\`t\` للقصر، و\`R\` للأحمر و\`W\` للأبيض.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RR</mtext></math>\` للأحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>WW</mtext></math>\` للأبيض و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RW</mtext></math>\` للزهري الوسطي، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير.
 نجمع اللون: أحمر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=1+1=2</mtext></math>\`
@@ -275,6 +286,9 @@ body:
 تم تلقيح نباتين ثم جمعت البذور الناتجة وزرعت فنتجت نباتات بالصفات والنسب: (1) أحمر طويل؛ (2) زهري طويل؛ (2) زهري قصير؛ (1) أبيض طويل؛ (1) أبيض قصير؛ (1) أحمر قصير.
 
 3- اكتب الطرز الجينية لجاميتات الآباء.
+final-answer:
+- **الطويل الزهري:** \`TR\`، \`TW\`، \`tR\`، \`tW\`؛ احتمال كل منها **1/4**.
+- **القصير الزهري:** \`tR\`، \`tW\`؛ احتمال كل منهما **1/2**.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RR</mtext></math>\` للأحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>WW</mtext></math>\` للأبيض و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RW</mtext></math>\` للزهري الوسطي، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير.
 نجمع اللون: أحمر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=1+1=2</mtext></math>\`
@@ -299,6 +313,9 @@ body:
 تم تلقيح نباتين ثم جمعت البذور الناتجة وزرعت فنتجت نباتات بالصفات والنسب: (1) أحمر طويل؛ (2) زهري طويل؛ (2) زهري قصير؛ (1) أبيض طويل؛ (1) أبيض قصير؛ (1) أحمر قصير.
 
 4- ما آلية الوراثة للصفتين؟
+final-answer:
+- **لون الأزهار:** سيادة غير تامة.
+- **طول الساق:** سيادة تامة.
 solution:
 لون الأزهار سيادة غير تامة : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RW</mtext></math>\` زهري وسطي بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RR</mtext></math>\` الأحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>WW</mtext></math>\` الأبيض؛
 وتزاوج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RW × RW</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RR:RW:WW</mtext></math>\` بنسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1:2:1</mtext></math>\` ، المطابقة لمجموع الألوان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2:4:2</mtext></math>\`.
@@ -500,6 +517,8 @@ body:
 
 2- فسر فشل نقل الدم من الزوجة إلى زوجها.
 
+final-answer:
+**تتفاعل الأجسام المضادة Anti-B في بلازما الزوج مع مولد الضد B على كريات دم الزوجة AB، فيحدث التراص.**
 solution:
 الزوج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` يستقبل خلايا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` ، وتوجد في بلازمته \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Anti</mtext></math>\`-\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\`. ونجاح إعطائه الدم للزوجة يجعلها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\` ؛
 ولأن البنت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` تتطلب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮ</mtext></math>\` من الأم فالأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\`.
@@ -521,6 +540,9 @@ body:
 
 3- فسر وجود نمطين من السيادة في فصائل الدم.
 
+final-answer:
+- **سيادة تامة:** يسود كل من \`Iᴬ\` و\`Iᴮ\` على \`i\`.
+- **سيادة مشتركة:** يظهر أثر \`Iᴬ\` و\`Iᴮ\` معاً في فصيلة **AB**.
 solution:
 السيادة تعني كيفية ظهور أثر أليلي الجين عند اجتماعهما. في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ABO</mtext></math>\` تظهر سيادة تامة لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` وحدها و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` وحدها؛
 فأثر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` لا يظهر بوجود أي منهما.
@@ -540,6 +562,8 @@ body:
 تزوج رجل أصلع سليم من مرض نزف الدم وفصيلة دمه B من فتاة ذات شعر طبيعي ومصابة بنزف الدم وفصيلة دمها غير معروفة، فأنجبا أنثى صلعاء فصيلة دمها A وذكراً ذا شعر طبيعي فصيلة دمه B (متماثل الجينات).
 
 3- ما نوع مولد الضد على أغشية خلايا الدم الحمراء للرجل؟
+final-answer:
+**مولد الضد B.**
 solution:
 **الإجابة:** مولد الضدB.
 
@@ -566,6 +590,8 @@ body:
 
 2- اكتب الطراز الشكلي للفتاة لصفة فصيلة الدم.
 
+final-answer:
+**فصيلة دم الزوجة AB.**
 solution:
 المقصود بالفتاة هنا الزوجة. وجود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Anti</mtext></math>\`-\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` فقط لدى الرجل يجعله من الفصيلة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\`.
 نجاح إعطاء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للزوجة يعني أنها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\`. فشل إعطائها الدم إلى الزوج يستبعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` ، فتكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\`.
@@ -586,6 +612,8 @@ body:
 
 1- ما الطراز الشكلي للفتاة لصفة فصيلة الدم؟
 
+final-answer:
+**فصيلة دم الفتاة B.**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮ</mtext></math>\` سائدان على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` ويظهران معاً في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\`. الطفل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` طرازه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ، فيلزم أن يحمل الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` أليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi</mtext></math>\`. والأم لا تتبادل الدم مع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` ، فتكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` لا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` ولا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\` ؛
 وبوجود الطفل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` تصبح \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi</mtext></math>\`.
@@ -605,6 +633,9 @@ body:
 
 2- ما الطرز الجينية لكل من الشاب والفتاة للصفتين معاً؟
 
+final-answer:
+- **الشاب:** \`Iᴬi Gg\`.
+- **الفتاة:** \`Iᴮi gg\`.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮ</mtext></math>\` سائدان على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` ويظهران معاً في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\`. الطفل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` طرازه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ، فيلزم أن يحمل الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` أليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi</mtext></math>\`. والأم لا تتبادل الدم مع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` ، فتكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` لا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` ولا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\` ؛
 وبوجود الطفل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` تصبح \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi</mtext></math>\`.
@@ -625,6 +656,8 @@ body:
 
 3- ما الطراز الجيني للطفل؟
 
+final-answer:
+**\`ii gg\`**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` يظهر فقط عند اجتماع الأليلين المتنحيين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ؛
 والطفل ذو فصيلة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` ، فطرازه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\`.
@@ -649,6 +682,8 @@ body:
 
 4- ما احتمال إنجاب بنت فصيلة دمهاAB بشعر على شكل قمة أرملة؟
 
+final-answer:
+**1/16** من النسل.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮ</mtext></math>\` سائدان على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` ويظهران معاً في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\`. الطفل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` طرازه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ، فيلزم أن يحمل الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` أليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi</mtext></math>\`. والأم لا تتبادل الدم مع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` ، فتكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` لا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` ولا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\` ؛
 وبوجود الطفل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` تصبح \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi</mtext></math>\`.
@@ -670,6 +705,9 @@ body:
 تزوج رجل يستطيع ثني لسانه (غير نقي) فصيلة دمهAB من فتاة لا تستطيع ثني لسانها فصيلة دمهاA وفصيلة دم والدتهاO. جين ثني اللسانR سائد على جين عدم ثني اللسانr.
 
 1- ما الطرز الجينية للرجل والفتاة؟
+final-answer:
+- **الرجل:** \`Rr IᴬIᴮ\`.
+- **الفتاة:** \`rr Iᴬi\`.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` سائد لثني اللسان و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` لعدمه في نموذج السؤال. الرجل غير نقي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Rr</mtext></math>\` ، والفتاة لا تثني \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rr</mtext></math>\`.
 دم الرجل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\` هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴬIᴮ</mtext></math>\`. الفتاة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` أخذت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` من أمها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` ذات الطراز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ، لذا هي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi</mtext></math>\`.
@@ -686,6 +724,8 @@ body:
 تزوج رجل يستطيع ثني لسانه (غير نقي) فصيلة دمهAB من فتاة لا تستطيع ثني لسانها فصيلة دمهاA وفصيلة دم والدتهاO. جين ثني اللسانR سائد على جين عدم ثني اللسانr.
 
 2- ما الطرز الجينية لغاميتات الرجل؟
+final-answer:
+**\`RIᴬ\`، \`RIᴮ\`، \`rIᴬ\`، \`rIᴮ\`**؛ احتمال كل نوع **1/4**.
 solution:
 الرجل غير نقي لثني اللسان؛ فطرازهRr. وفصيلة دمهAB؛ فطرازهIᴬIᴮ، لأن الأليلين يظهران معاً.
 
@@ -717,6 +757,8 @@ body:
 تزوج رجل يستطيع ثني لسانه (غير نقي) فصيلة دمهAB من فتاة لا تستطيع ثني لسانها فصيلة دمهاA وفصيلة دم والدتهاO. جين ثني اللسانR سائد على جين عدم ثني اللسانr.
 
 3- ما احتمال إنجاب طفل ذكر لا يستطيع ثني لسانه وفصيلة دمهA؟
+final-answer:
+**1/8** من جميع الأبناء.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` سائد لثني اللسان و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` لعدمه في نموذج السؤال. الرجل غير نقي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Rr</mtext></math>\` ، والفتاة لا تثني \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rr</mtext></math>\`.
 دم الرجل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\` هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴬIᴮ</mtext></math>\`. الفتاة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` أخذت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` من أمها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` ذات الطراز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ، لذا هي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi</mtext></math>\`.
@@ -737,6 +779,9 @@ body:
 تزوج شاب عسلي العيون فصيلة دمهA من فتاة زرقاء العيون فصيلة دمهاAB، فأنجبا ابناً عيونه زرقاء فصيلة دمهB. جين العيون العسليةE سائد على جين العيون الزرقاءe.
 
 1- ما الطرز الجينية للأبوين؟
+final-answer:
+- **الأب:** \`Ee Iᴬi\`.
+- **الأم:** \`ee IᴬIᴮ\`.
 solution:
 وفق نموذج السؤال \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E</mtext></math>\` سائد للعسلي و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>e</mtext></math>\` متنح للأزرق. الأم الزرقاء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ee</mtext></math>\` ، والابن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ee</mtext></math>\` أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>e</mtext></math>\` من أبيه؛
 لذلك الأب العسلي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Ee</mtext></math>\`.
@@ -755,6 +800,8 @@ body:
 تزوج شاب عسلي العيون فصيلة دمهA من فتاة زرقاء العيون فصيلة دمهاAB، فأنجبا ابناً عيونه زرقاء فصيلة دمهB. جين العيون العسليةE سائد على جين العيون الزرقاءe.
 
 2- ما نوع الأنتيجين (مولد الضد) في دم الأم؟
+final-answer:
+**مولدا الضد A وB** على سطح كريات الدم الحمراء.
 solution:
 **الإجابة:** مولد الضدA ومولد الضدB على سطح خلايا الدم الحمراء؛ فصيلة الأمAB.
 
@@ -781,6 +828,8 @@ body:
 
 3- إلى أي الأبوين يستطيع الابن التبرع بدمه؟
 
+final-answer:
+**الأم فقط**، وفصيلة دمها **AB**.
 solution:
 الابن فصيلته \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` ؛
 فخلاياه تحمل مولد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\`. يستطيع إعطاء خلايا الدم للأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\` لأن بلازمتها لا تحتوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Anti</mtext></math>\`-\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` ولا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Anti</mtext></math>\`-\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` في نموذج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ABO</mtext></math>\`.
@@ -798,6 +847,8 @@ body:
 تزوج شاب عسلي العيون فصيلة دمهA من فتاة زرقاء العيون فصيلة دمهاAB، فأنجبا ابناً عيونه زرقاء فصيلة دمهB. جين العيون العسليةE سائد على جين العيون الزرقاءe.
 
 4- ما احتمال إنجاب فرد فصيلة دمهA عسلي العيون؟
+final-answer:
+**1/4** من النسل.
 solution:
 وفق نموذج السؤال \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E</mtext></math>\` سائد للعسلي و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>e</mtext></math>\` متنح للأزرق. الأم الزرقاء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ee</mtext></math>\` ، والابن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ee</mtext></math>\` أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>e</mtext></math>\` من أبيه؛
 لذلك الأب العسلي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Ee</mtext></math>\`.
@@ -822,6 +873,8 @@ body:
 
 3- ما الطراز الشكلي لصفة فصيلة الدم بالنسبة للأم؟
 
+final-answer:
+**فصيلة دم الأم B.**
 solution:
 الطفلة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` طرازها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ، فالأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` يحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` ويكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi</mtext></math>\` ، والأم تحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` أيضاً.
 عدم نجاح النقل في الاتجاهين بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` والأم يستبعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` للتوافق، ويستبعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` لأنها تعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` ، ويستبعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\` لأنها تأخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\`. تبقى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` فقط.
@@ -917,6 +970,8 @@ body:
 تزوج رجل فصيلة دمه B من فتاة فصيلة دمها A سليمة من مرض عمى الألوان، فأنجبا طفلة فصيلة دمها O مصابة بعمى الألوان. جين الرؤية الطبيعية R سائد على جين عمى الألوان r.
 
 ما الطراز الشكلي للأب بالنسبة لصفة عمى الألوان؟
+final-answer:
+**الأب مصاب بعمى الألوان.**
 solution:
 عمى الألوان متنح مرتبط بـ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 الأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للرؤية الطبيعية و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للمرض، ولا يحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` الأليل المقابل في النموذج.
@@ -933,6 +988,8 @@ body:
 تزوج رجل فصيلة دمه B من فتاة فصيلة دمها A سليمة من مرض عمى الألوان، فأنجبا طفلة فصيلة دمها O مصابة بعمى الألوان. جين الرؤية الطبيعية R سائد على جين عمى الألوان r.
 
 ما نوع وراثة مرض عمى الألوان؟
+final-answer:
+**صفة متنحية مرتبطة بالكروموسوم X.**
 solution:
 **الإجابة:** صفة متنحية مرتبطة بالكروموسومX.
 
@@ -1007,6 +1064,10 @@ body:
 تزوج شاب سليم من مرض نزف الدم الوراثي وأصابعه قصيرة لكن أحد والديه ذو أصابع طويلة، من فتاة أصابعها طويلة وسليمة من مرض نزف الدم الوراثي، فأنجبا طفلاً ذكراً أصابعه طويلة ومصاب بمرض نزف الدم الوراثي. صفة الأصابع القصيرة سائدة على الطويلة. استخدم G لجين الأصابع القصيرة، وH لجين عدم الإصابة بنزف الدم.
 
 1- ما الطرز الجينية لكل من الشاب والفتاة والطفل الذكر للصفتين معاً؟
+final-answer:
+- **الشاب:** \`Gg XᴴY\`.
+- **الفتاة:** \`gg XᴴXʰ\`.
+- **الطفل:** \`gg XʰY\`.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` سائد للأصابع القصيرة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للطويلة؛
 ذو الأصابع الطويلة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gg</mtext></math>\`. الشاب قصير وله والد طويل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gg</mtext></math>\` ، فأخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` منه ويكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Gg</mtext></math>\` ؛
@@ -1027,6 +1088,8 @@ body:
 تزوج شاب سليم من مرض نزف الدم الوراثي وأصابعه قصيرة لكن أحد والديه ذو أصابع طويلة، من فتاة أصابعها طويلة وسليمة من مرض نزف الدم الوراثي، فأنجبا طفلاً ذكراً أصابعه طويلة ومصاب بمرض نزف الدم الوراثي. صفة الأصابع القصيرة سائدة على الطويلة. استخدم G لجين الأصابع القصيرة، وH لجين عدم الإصابة بنزف الدم.
 
 2- ما احتمال إنجاب طفلة أصابعها طويلة ومصابة بمرض نزف الدم من بين النسل؟
+final-answer:
+**0%**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` سائد للأصابع القصيرة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للطويلة؛
 ذو الأصابع الطويلة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gg</mtext></math>\`. الشاب قصير وله والد طويل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gg</mtext></math>\` ، فأخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` منه ويكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Gg</mtext></math>\` ؛
@@ -1046,6 +1109,16 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 في الدجاج صفة الريش المخطط سائدة على صفة الريش غير المخطط، وهذه الصفة مرتبطة بالجنس. حصل تزاوج بين ذكر ريشه مخطط وأنثى غير مخططة الريش فكان الناتج: نصف الذكور مخطط الريش ونصفها غير مخطط، ونصف الإناث مخطط الريش ونصفها غير مخطط. ما الطرز الجينية والشكلية للآباء والأبناء؟
+final-answer:
+**الأبوان:**
+- ذكر مخطط: \`ZᴮZᵇ\`.
+- أنثى غير مخططة: \`ZᵇW\`.
+
+**الأبناء — كل فئة 1/4 من النسل:**
+- \`ZᴮZᵇ\`: ذكر مخطط.
+- \`ZᵇZᵇ\`: ذكر غير مخطط.
+- \`ZᴮW\`: أنثى مخططة.
+- \`ZᵇW\`: أنثى غير مخططة.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للمخطط السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` لغير المخطط؛
 الجين على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Z</mtext></math>\` والذكر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZZ</mtext></math>\` والأنثى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZW</mtext></math>\`. الأم غير مخططة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZᵇW</mtext></math>\`. ووجود نسل غير مخطط يثبت أن الذكر المخطط يحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` أيضاً، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZᴮZᵇ</mtext></math>\`.
@@ -1072,6 +1145,9 @@ body:
 
 1- اكتب الطرز الجينية لكل من الرجل والزوجة للصفتين معاً.
 
+final-answer:
+- **الرجل:** \`Iᴬi XᴴY\`.
+- **الزوجة:** \`Iᴮi XᴴXʰ\`.
 solution:
 في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ABO</mtext></math>\` يسود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮ</mtext></math>\` على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\`. الابن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ، فيحمل كلا الأبوين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\`. الأم تحمل مولد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` ؛
 ولأنها تحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` فهي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi</mtext></math>\` وليست \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\`. في نموذج نقل الكريات، فصيلة A تحمل مولد A ومضاد B، وفصيلة B تحمل مولد B ومضاد A؛ لذلك يفشل النقل بينهما في الاتجاهين.
@@ -1095,6 +1171,8 @@ body:
 
 2- ما احتمال إنجاب طفل ذكر سليم من المرض وفصيلة دمه B من بين النسل؟
 
+final-answer:
+**1/16** من جميع النسل.
 solution:
 في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ABO</mtext></math>\` يسود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮ</mtext></math>\` على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\`. الابن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ، فيحمل كلا الأبوين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\`. الأم تحمل مولد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` ؛
 ولأنها تحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` فهي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi</mtext></math>\` وليست \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\`. في نموذج نقل الكريات، فصيلة A تحمل مولد A ومضاد B، وفصيلة B تحمل مولد B ومضاد A؛ لذلك يفشل النقل بينهما في الاتجاهين.
@@ -1122,6 +1200,11 @@ body:
 
 1- ما الطرز الجينية لكل من الشاب والفتاة؟
 
+final-answer:
+- **الشاب:** \`b⁺b⁺ IᴮIᴮ XᴿY\`.
+- **الفتاة:** \`bb IᴬIᴮ XᴿXʳ\`.
+
+\`b\` للصلع، و\`b⁺\` للشعر الطبيعي؛ \`R\` للسلامة، و\`r\` لعسر النمو العضلي.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع صفة جسمية متأثرة بالجنس؛
@@ -1146,6 +1229,8 @@ body:
 
 2- ما الطرز الجينية لغاميتات الشاب؟
 
+final-answer:
+**\`b⁺IᴮXᴿ\`، \`b⁺IᴮY\`**؛ احتمال كل نوع **1/2**، حيث \`b⁺\` للشعر الطبيعي و\`R\` للسلامة.
 solution:
 المطلوب غاميتات الشاب؛ نحدد أليلاته للصفات الثلاث.
 في نموذج الصلع، يسودb في الذكر؛ لذلك طبيعي الشعر هوb⁺b⁺.
@@ -1179,6 +1264,8 @@ body:
 
 3- ما احتمال إنجاب ولد أصلع فصيلة دمه B وسليم من عسر النمو العضلي التدريجي؟
 
+final-answer:
+**1/8** من جميع النسل.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع صفة جسمية متأثرة بالجنس؛
@@ -1207,6 +1294,12 @@ body:
 
 1- اكتب الطرز الجينية للرجل والمرأة والطفل للصفتين معاً.
 
+final-answer:
+- **الرجل:** \`Iᴮi XᴿY\`.
+- **المرأة:** \`IᴬIᴮ XᴿXʳ\`.
+- **الطفل:** \`Iᴬi XʳY\`.
+
+\`R\` للرؤية الطبيعية، و\`r\` لعمى الألوان.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للرؤية الطبيعية السائدة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` لعمى الألوان المتنحي على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\`. أم الرجل نقية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿXᴿ</mtext></math>\` ، فأعطته \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᴿ</mtext></math>\` ؛
 لذلك هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿY</mtext></math>\`. الابن المصاب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY</mtext></math>\` أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` من أمه السليمة، فهي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿXʳ</mtext></math>\`.
@@ -1227,6 +1320,8 @@ body:
 
 2- اكتب الطرز الجينية لغاميتات المرأة.
 
+final-answer:
+**\`IᴬXᴿ\`، \`IᴬXʳ\`، \`IᴮXᴿ\`، \`IᴮXʳ\`**؛ احتمال كل نوع **1/4**، حيث \`R\` للرؤية الطبيعية و\`r\` لعمى الألوان.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للرؤية الطبيعية السائدة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` لعمى الألوان المتنحي على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\`. أم الرجل نقية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿXᴿ</mtext></math>\` ، فأعطته \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᴿ</mtext></math>\` ؛
 لذلك هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿY</mtext></math>\`. الابن المصاب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY</mtext></math>\` أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` من أمه السليمة، فهي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿXʳ</mtext></math>\`.
@@ -1249,6 +1344,8 @@ body:
 
 3- ما نوع الوراثة لمرض عمى الألوان؟
 
+final-answer:
+**صفة متنحية مرتبطة بالكروموسوم X.**
 solution:
 **الإجابة:** صفة متنحية مرتبطة بالكروموسومX.
 
@@ -1277,6 +1374,8 @@ body:
 
 1- اكتب الطراز الشكلي للرجل لصفة نزف الدم.
 
+final-answer:
+**الرجل مصاب بنزف الدم.**
 solution:
 نزف الدم متنح مرتبط بـ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للسليم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للمصاب. البنت المصابة لا بد أن تكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳXʳ</mtext></math>\` ، إذ لا يصيبها وجود أليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` واحد مع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\`.
@@ -1297,6 +1396,12 @@ body:
 
 3- اكتب الطرز الجينية لكل من الرجل والفتاة والبنت.
 
+final-answer:
+- **الرجل:** \`Iᴮi XʳY\`.
+- **الفتاة:** \`IᴬIᴮ XᴿXʳ\`.
+- **البنت:** \`Iᴬi XʳXʳ\`.
+
+\`R\` للسلامة، و\`r\` للإصابة بنزف الدم.
 solution:
 نزف الدم متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` سليم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` مصاب. البنت المصابة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳXʳ</mtext></math>\` تستلزم أباً \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY</mtext></math>\` وأماً تحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` ؛
@@ -1319,6 +1424,8 @@ body:
 
 4- ما احتمال إنجاب ذكر فصيلة دمهB وسليم من نزف الدم؟
 
+final-answer:
+**1/8** من النسل.
 solution:
 نزف الدم متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` سليم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` مصاب. البنت المصابة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳXʳ</mtext></math>\` تستلزم أباً \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY</mtext></math>\` وأماً تحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` ؛
@@ -1341,6 +1448,12 @@ body:
 تزوج رجل أصلع نقي سليم من نزف الدم وعسر النمو العضلي التدريجي من فتاة شعرها طبيعي وسليمة من نزف الدم وعسر النمو العضلي التدريجي، ووالدتها مصابة بنزف الدم وعسر النمو العضلي التدريجي. أنجبت العائلة طفلاً ذكراً أصلع نقياً ومصاباً بالمرضين. على فرض عدم حدوث عبور، ارمز لجين نزف الدمh ولجين عسر النمو العضلي التدريجيr.
 
 1- اكتب الطرز الجينية لكل من الطفل والرجل والفتاة.
+final-answer:
+- **الطفل:** \`bb X[hr]Y\`.
+- **الرجل:** \`bb X[HR]Y\`.
+- **الفتاة:** \`b⁺b X[HR]X[hr]\`.
+
+\`b\` للصلع، و\`b⁺\` للشعر الطبيعي؛ \`H\` و\`R\` للسلامة من المرضين.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 نزف الدم وعسر النمو العضلي صفتان متنحيتان على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
@@ -1362,6 +1475,11 @@ body:
 تزوج رجل أصلع نقي سليم من نزف الدم وعسر النمو العضلي التدريجي من فتاة شعرها طبيعي وسليمة من نزف الدم وعسر النمو العضلي التدريجي، ووالدتها مصابة بنزف الدم وعسر النمو العضلي التدريجي. أنجبت العائلة طفلاً ذكراً أصلع نقياً ومصاباً بالمرضين. على فرض عدم حدوث عبور، ارمز لجين نزف الدمh ولجين عسر النمو العضلي التدريجيr.
 
 2- اكتب الطرز الجينية لغاميتات الرجل والفتاة.
+final-answer:
+- **الرجل:** \`bX[HR]\`، \`bY\`؛ احتمال كل منهما **1/2**.
+- **الفتاة:** \`b⁺X[HR]\`، \`bX[HR]\`، \`b⁺X[hr]\`، \`bX[hr]\`؛ احتمال كل منها **1/4**.
+
+\`b\` للصلع، و\`b⁺\` للشعر الطبيعي؛ \`H\` و\`R\` للسلامة من المرضين.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 نزف الدم وعسر النمو العضلي صفتان متنحيتان على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
@@ -1386,6 +1504,8 @@ body:
 رجل أصلع غير نقي مصاب بعمى الألوان تزوج امرأة طبيعية الشعر غير مصابة بعمى الألوان، والدها طبيعي الشعر ومصاب بعمى الألوان ووالدتها تظهر صفة الصلع. جين الرؤية الطبيعيةH سائد على جين عمى الألوانh.
 
 3- ما احتمال إنجاب أنثى مصابة بعمى الألوان؟
+final-answer:
+**1/4 من جميع النسل**، أو **1/2 من البنات**.
 solution:
 عمى الألوان متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` سليم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` مصاب. الرجل المصاب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʰY</mtext></math>\`. المرأة سليمة وأبوها مصاب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʰY</mtext></math>\` ، فأخذت منه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʰ</mtext></math>\` ؛
@@ -1410,6 +1530,11 @@ body:
 | أرنب أبيض × أرنبة سوداء |صفر|2|2|صفر|
 
 1- ما الطرز الجينية للأبوين في التزاوج الأول والتزاوج الثاني؟
+final-answer:
+1. **التزاوج الأول:** ذكر أسود \`XᴮY\` × أنثى رمادية \`XᴮXᵂ\`.
+2. **التزاوج الثاني:** ذكر أبيض \`XᵂY\` × أنثى سوداء \`XᴮXᴮ\`.
+
+\`B\` للأسود، و\`W\` للأبيض.
 solution:
 يفسر اللون هنا نموذج سيادة غير تامة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X: XᴮXᴮ</mtext></math>\` أنثى سوداء، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᵂXᵂ</mtext></math>\` بيضاء، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴮXᵂ</mtext></math>\` رمادية. الذكر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XY</mtext></math>\` يظهر لون أليله الوحيد.
 الأول: أسود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴮY ×</mtext></math>\` رمادية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴮXᵂ</mtext></math>\`. غاميتا الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᴮ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` ، والأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᴮ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᵂ</mtext></math>\` ؛
@@ -1433,6 +1558,8 @@ body:
 | أرنب أبيض × أرنبة سوداء |صفر|2|2|صفر|
 
 2- ما نوع الوراثة؟
+final-answer:
+**سيادة غير تامة مرتبطة بالكروموسوم X**، وفق نموذج السؤال.
 solution:
 يفسر اللون هنا نموذج سيادة غير تامة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X: XᴮXᴮ</mtext></math>\` أنثى سوداء، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᵂXᵂ</mtext></math>\` بيضاء، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴮXᵂ</mtext></math>\` رمادية. الذكر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XY</mtext></math>\` يظهر لون أليله الوحيد.
 الأنثى الرمادية تجمع أليلي اللونين فيظهر مظهر وسطي؛
@@ -1452,6 +1579,9 @@ body:
 تزوج رجل من امرأة فأنجبا طفلة مصابة بعمى الألوان وطفلاً سليماً من المرض. جين عدم الإصابة بعمى الألوانR سائد على جين الإصابةr.
 
 1- اكتب الطرز الجينية للأبوين.
+final-answer:
+- **الرجل:** \`XʳY\`.
+- **المرأة:** \`XᴿXʳ\`.
 solution:
 عمى الألوان متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` سليم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` مصاب. البنت المصابة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳXʳ</mtext></math>\` أخذت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` من الأب، فالأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY</mtext></math>\` ، وأخذت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` من الأم. الطفل الذكر السليم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿY</mtext></math>\` أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᴿ</mtext></math>\` من الأم؛
@@ -1469,6 +1599,9 @@ body:
 تزوج رجل من امرأة فأنجبا طفلة مصابة بعمى الألوان وطفلاً سليماً من المرض. جين عدم الإصابة بعمى الألوانR سائد على جين الإصابةr.
 
 2- اكتب الطرز الشكلية للأبوين.
+final-answer:
+- **الأب:** مصاب بعمى الألوان.
+- **الأم:** سليمة حاملة لجين المرض.
 solution:
 عمى الألوان متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` سليم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` مصاب. البنت المصابة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳXʳ</mtext></math>\` أخذت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` من الأب، فالأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY</mtext></math>\` ، وأخذت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` من الأم. الطفل الذكر السليم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿY</mtext></math>\` أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᴿ</mtext></math>\` من الأم؛
@@ -1488,6 +1621,8 @@ body:
 تزوج رجل من امرأة فأنجبا طفلة مصابة بعمى الألوان وطفلاً سليماً من المرض. جين عدم الإصابة بعمى الألوانR سائد على جين الإصابةr.
 
 3- اكتب الطراز الجيني للطفل.
+final-answer:
+**\`XᴿY\`**.
 solution:
 الطفل المقصود ذكر سليم؛
 الذكر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XY</mtext></math>\` ويأخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` من أبيه و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` من أمه. ولأن عمى الألوان متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ، فإن سلامة الذكر تستلزم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᴿ</mtext></math>\`.
@@ -1505,6 +1640,8 @@ body:
 تزوج رجل من امرأة فأنجبا طفلة مصابة بعمى الألوان وطفلاً سليماً من المرض. جين عدم الإصابة بعمى الألوانR سائد على جين الإصابةr.
 
 4- اكتب الطراز الجيني للطفلة.
+final-answer:
+**\`XʳXʳ\`**.
 solution:
 الطفلة أنثى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XX</mtext></math>\` ومصابة بعمى الألوان المتنحي. وجود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` واحد يجعل الأنثى سليمة، لذا لا تصاب إلا إذا حمل كلا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` الأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\`.
 طرازها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳXʳ</mtext></math>\` ، أخذت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` من الأب المصاب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY</mtext></math>\` ومن الأم الحاملة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿXʳ</mtext></math>\`.
@@ -1520,6 +1657,8 @@ body:
 تزوج رجل من امرأة فأنجبا طفلة مصابة بعمى الألوان وطفلاً سليماً من المرض. جين عدم الإصابة بعمى الألوانR سائد على جين الإصابةr.
 
 5- ما احتمال إنجاب بنت سليمة من المرض؟
+final-answer:
+**1/4 (25%)** من جميع النسل.
 solution:
 عمى الألوان متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` سليم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` مصاب. البنت المصابة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳXʳ</mtext></math>\` أخذت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` من الأب، فالأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY</mtext></math>\` ، وأخذت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` من الأم. الطفل الذكر السليم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿY</mtext></math>\` أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᴿ</mtext></math>\` من الأم؛
@@ -1543,6 +1682,17 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 عمى الألوان وخصلة الشعر البيضاء في الإنسان صفتان مرتبطتان بالجنس وجيناتهما تحمل على نفس الكروموسوم. حصل تزاوج بين رجل سليم من عمى الألوان وذي خصلة شعر بيضاء بأنثى غير متماثلة الجينات لكلا الصفتين فكانت النتائج:25% ذكور سليمة من عمى الألوان وبشعر طبيعي؛25% ذكور مصابة بعمى الألوان وبخصلة بيضاء؛25% إناث سليمة من عمى الألوان وبخصلة بيضاء؛25% إناث سليمة من عمى الألوان وبشعر طبيعي. فسر النتائج على أسس وراثية مستخدماًB لسليم من عمى الألوان وb لمصاب، وR لشعر طبيعي وr لخصلة شعر بيضاء.
+final-answer:
+**ارتباط الجينين على X دون عبور ظاهر، وفق نموذج السؤال.**
+
+- **الأب:** \`X[Br]Y\`.
+- **الأم:** \`X[BR]X[br]\`.
+
+**النسل — كل فئة 25%:**
+- \`X[BR]Y\`: ذكر سليم من عمى الألوان، طبيعي الشعر.
+- \`X[br]Y\`: ذكر مصاب بعمى الألوان، ذو خصلة بيضاء.
+- \`X[BR]X[Br]\`: أنثى سليمة، طبيعية الشعر.
+- \`X[Br]X[br]\`: أنثى سليمة، ذات خصلة بيضاء.
 solution:
 نلتزم النموذج المفترض في السؤال: الجينان على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` سليم من عمى الألوان يسود على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` ، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` شعر طبيعي يسود على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للخصلة البيضاء. الارتباط يعني انتقال الأليلين على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` واحد معاً ما لم يقع عبور.
 الرجل سليم ذو خصلة : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X[Br]Y</mtext></math>\`. الأم غير متماثلة؛
@@ -1564,6 +1714,11 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 حدث تزاوج بين طائر ذكر أسود الريش وأنثى بيضاء الريش فكان الناتج:(4) إناث سوداء الريش، و(4) ذكور رمادية الريش. إذا رمزنا لجين اللون الأسودB ولجين اللون الأبيضT، اكتب الطرز الجينية للأبوين والأفراد الناتجة.
+final-answer:
+- **الأب الأسود:** \`ZᴮZᴮ\`.
+- **الأم البيضاء:** \`ZᵀW\`.
+- **الذكور الرمادية:** \`ZᴮZᵀ\`، نصف النسل.
+- **الإناث السوداء:** \`ZᴮW\`، نصف النسل.
 solution:
 الذكر في الطيور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZZ</mtext></math>\` والأنثى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZW</mtext></math>\` ؛
 لون الريش هنا على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Z</mtext></math>\` ، واجتماع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` الأسود و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` الأبيض ينتج الرمادي الوسطي.
@@ -1744,6 +1899,12 @@ body:
 
 1- اكتب الطرز الجينية لكل من الزوج والزوجة والطفلة.
 
+final-answer:
+- **الزوج:** \`b⁺b Iᴬi\`.
+- **الزوجة:** \`b⁺b IᴬIᴮ\`.
+- **الطفلة:** \`bb Iᴮi\`.
+
+\`b\` للصلع، و\`b⁺\` للشعر الطبيعي.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للطبيعي؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` سائد في الذكور ومتنح في الإناث. والد الرجل طبيعي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\` ، لذا الرجل الأصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\`.
@@ -1767,6 +1928,8 @@ body:
 
 3- ما احتمال إنجاب ولد أصلع فصيلة دمه A؟
 
+final-answer:
+**3/16** من النسل.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للطبيعي؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` سائد في الذكور ومتنح في الإناث. والد الرجل طبيعي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\` ، لذا الرجل الأصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\`.
@@ -1789,6 +1952,11 @@ body:
 تزوج رجل أصلع سليم من مرض نزف الدم وفصيلة دمه B من فتاة ذات شعر طبيعي ومصابة بنزف الدم وفصيلة دمها غير معروفة، فأنجبا أنثى صلعاء فصيلة دمها A وذكراً ذا شعر طبيعي فصيلة دمه B (متماثل الجينات).
 
 1- اكتب الطرز الجينية للأبوين للصفات الثلاث معاً.
+final-answer:
+- **الأب:** \`b⁺b XᴴY Iᴮi\`.
+- **الأم:** \`b⁺b XʰXʰ IᴬIᴮ\`.
+
+\`b\` للصلع، و\`b⁺\` للشعر الطبيعي؛ \`H\` للسلامة، و\`h\` لنزف الدم.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود في الذكر ويتنحى في الأنثى.
@@ -1812,6 +1980,10 @@ body:
 تزوج رجل أصلع سليم من مرض نزف الدم وفصيلة دمه B من فتاة ذات شعر طبيعي ومصابة بنزف الدم وفصيلة دمها غير معروفة، فأنجبا أنثى صلعاء فصيلة دمها A وذكراً ذا شعر طبيعي فصيلة دمه B (متماثل الجينات).
 
 2- اكتب الطرز الجينية لغاميتات الأم.
+final-answer:
+**\`b⁺IᴬXʰ\`، \`b⁺IᴮXʰ\`، \`bIᴬXʰ\`، \`bIᴮXʰ\`**؛ احتمال كل نوع **1/4**.
+
+\`b\` للصلع، و\`b⁺\` للشعر الطبيعي، و\`h\` لنزف الدم.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود في الذكر ويتنحى في الأنثى.
@@ -1837,6 +2009,10 @@ body:
 تزوج رجل أصلع ولون عيونه عسلية كان والده ذو شعر طبيعي وأزرق العينين، من فتاة ذات شعر طبيعي ولون عيونها عسلية فأنجبا طفلة تظهر صفة الصلع ذات عيون زرقاء. أجب مستخدماًb وb⁺ لصفة الصلع وA للعيون العسلية وa للزرقاء.
 
 1- اكتب الطرز الجينية للأب والأم والطفلة.
+final-answer:
+- **الأب:** \`b⁺b Aa\`.
+- **الأم:** \`b⁺b Aa\`.
+- **الطفلة:** \`bb aa\`.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 للصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود في الذكور و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` في الإناث. الرجل الأصلع أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` من أبيه الطبيعي، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\` ؛
@@ -1857,6 +2033,8 @@ body:
 تزوج رجل أصلع ولون عيونه عسلية كان والده ذو شعر طبيعي وأزرق العينين، من فتاة ذات شعر طبيعي ولون عيونها عسلية فأنجبا طفلة تظهر صفة الصلع ذات عيون زرقاء. أجب مستخدماًb وb⁺ لصفة الصلع وA للعيون العسلية وa للزرقاء.
 
 2- اكتب الطرز الجينية لجاميتات الزوج والزوجة.
+final-answer:
+غاميتات **كل من الزوج والزوجة:** \`b⁺A\`، \`b⁺a\`، \`bA\`، \`ba\`؛ احتمال كل نوع **1/4**.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 للصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود في الذكور و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` في الإناث. الرجل الأصلع أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` من أبيه الطبيعي، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\` ؛
@@ -1877,6 +2055,11 @@ body:
 تزوج رجل أصلع ومصاب بنزف الدم والده ذو شعر طبيعي من فتاة طبيعية الشعر وغير مصابة بنزف الدم، فأنجبا طفلة عند بلوغها تساقط شعرها ومصابة بنزف الدم. نرمز لجين الإصابة بنزف الدمr.
 
 1- ما الطرز الجينية للصفتين معاً لكل من الرجل والمرأة؟
+final-answer:
+- **الرجل:** \`b⁺b XʳY\`.
+- **المرأة:** \`b⁺b XᴿXʳ\`.
+
+\`b\` للصلع، و\`b⁺\` للشعر الطبيعي؛ \`R\` للسلامة من نزف الدم.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع متأثر بالجنس : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود عند الذكور و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` عند الإناث. الرجل الأصلع أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` من أبيه الطبيعي، فطرازه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\`.
@@ -1896,6 +2079,9 @@ body:
 تزوج رجل أصلع ومصاب بنزف الدم والده ذو شعر طبيعي من فتاة طبيعية الشعر وغير مصابة بنزف الدم، فأنجبا طفلة عند بلوغها تساقط شعرها ومصابة بنزف الدم. نرمز لجين الإصابة بنزف الدمr.
 
 2- ما نمط الوراثة لهذه الصفات؟
+final-answer:
+- **الصلع:** صفة جسمية متأثرة بالجنس.
+- **نزف الدم:** صفة متنحية مرتبطة بالكروموسوم X.
 solution:
 **الإجابة:** الصلع صفة جسمية متأثرة بالجنس. نزف الدم صفة متنحية مرتبطة بالكروموسومX في نموذج المنهج.
 
@@ -1929,6 +2115,8 @@ body:
 تزوج رجل أصلع ومصاب بنزف الدم والده ذو شعر طبيعي من فتاة طبيعية الشعر وغير مصابة بنزف الدم، فأنجبا طفلة عند بلوغها تساقط شعرها ومصابة بنزف الدم. نرمز لجين الإصابة بنزف الدمr.
 
 3- ما احتمالية إنجاب ولد أصلع من بين الذكور؟
+final-answer:
+**3/4 (75%) من الذكور.**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع سائد في الذكور و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي. الأب أصلع وله أب طبيعي، فطرازه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\` ؛
 والأم طبيعية لكنها أنجبت بنتاًصلعاء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb</mtext></math>\` ، فتكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\`.
@@ -1947,6 +2135,8 @@ body:
 تزوج رجل أصلع ومصاب بنزف الدم والده ذو شعر طبيعي من فتاة طبيعية الشعر وغير مصابة بنزف الدم، فأنجبا طفلة عند بلوغها تساقط شعرها ومصابة بنزف الدم. نرمز لجين الإصابة بنزف الدمr.
 
 4- ما احتمالية إنجاب بنت صلعاء مصابة بنزف الدم من بين النسل الناتج؟
+final-answer:
+**1/16** من جميع النسل.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع متأثر بالجنس : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود عند الذكور و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` عند الإناث. الرجل الأصلع أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` من أبيه الطبيعي، فطرازه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\`.
@@ -1970,6 +2160,11 @@ body:
 تزوج رجل أصلع مصاب بنزف الدم والده بشعر طبيعي من فتاة شعرها طبيعي نقية الصفة غير مصابة بنزف الدم ووالدها مصاب بنزف الدم.
 
 1- اكتب الطرز الجينية لكل من الرجل والفتاة للصفتين معاً.
+final-answer:
+- **الرجل:** \`b⁺b XʳY\`.
+- **الفتاة:** \`b⁺b⁺ XᴿXʳ\`.
+
+\`b\` للصلع، و\`b⁺\` للشعر الطبيعي؛ \`R\` للسلامة، و\`r\` لنزف الدم.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع سائد في الذكور و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للطبيعي سائد في الإناث. الأب الأصلع ابن رجل طبيعي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\` ، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\`. الفتاة طبيعية ونقية كما نص السؤال، فتكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\`.
 نزف الدم متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
@@ -1987,6 +2182,9 @@ body:
 تزوج رجل أصلع مصاب بنزف الدم والده بشعر طبيعي من فتاة شعرها طبيعي نقية الصفة غير مصابة بنزف الدم ووالدها مصاب بنزف الدم.
 
 2- اكتب الطرز الجينية لأنواع غاميتات كل من الرجل والفتاة.
+final-answer:
+- **غاميتات الرجل:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺Xʳ</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bXʳ</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺Y</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bY</mtext></math>\`؛ احتمال كل منها **1/4**.
+- **غاميتات الفتاة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺Xᴿ</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺Xʳ</mtext></math>\`؛ احتمال كل منها **1/2**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع سائد في الذكور و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للطبيعي سائد في الإناث. الأب الأصلع ابن رجل طبيعي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\` ، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\`. الفتاة طبيعية ونقية كما نص السؤال، فتكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\`.
 نزف الدم متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
@@ -2006,6 +2204,8 @@ body:
 تزوج رجل أصلع مصاب بنزف الدم والده بشعر طبيعي من فتاة شعرها طبيعي نقية الصفة غير مصابة بنزف الدم ووالدها مصاب بنزف الدم.
 
 3- ما احتمال إنجاب بنت بشعر طبيعي مصابة بنزف الدم؟
+final-answer:
+**1/4 (25%) من جميع المواليد.**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع سائد في الذكور و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للطبيعي سائد في الإناث. الأب الأصلع ابن رجل طبيعي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\` ، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\`. الفتاة طبيعية ونقية كما نص السؤال، فتكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\`.
 نزف الدم متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
@@ -2026,6 +2226,11 @@ body:
 تزوج رجل أصلع والده بشعر طبيعي من فتاة غير صلعاء وغير مصابة بنزف الدم، فأنجبا طفلة تظهر صفة الصلع ومصابة بنزف الدم.
 
 1- اكتب الطرز الجينية لكل من الرجل والفتاة للصفتين معاً.
+final-answer:
+- **الرجل:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b XʳY</mtext></math>\`.
+- **الفتاة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b XᴿXʳ</mtext></math>\`.
+
+\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي؛ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` لسلامة تخثر الدم و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` لنزف الدم.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع يسود في الذكر ويتنحى في الأنثى؛
@@ -2047,6 +2252,9 @@ body:
 تزوج رجل أصلع والده بشعر طبيعي من فتاة غير صلعاء وغير مصابة بنزف الدم، فأنجبا طفلة تظهر صفة الصلع ومصابة بنزف الدم.
 
 2- ما مبدأ الوراثة لكل من الصفتين؟
+final-answer:
+- **الصلع:** صفة جسمية متأثرة بالجنس.
+- **نزف الدم:** صفة متنحية مرتبطة بالكروموسوم **X**.
 solution:
 **الإجابة:** الصلع صفة جسمية متأثرة بالجنس. نزف الدم صفة متنحية مرتبطة بالكروموسومX في نموذج المنهج.
 
@@ -2080,6 +2288,8 @@ body:
 تزوج رجل أصلع والده بشعر طبيعي من فتاة غير صلعاء وغير مصابة بنزف الدم، فأنجبا طفلة تظهر صفة الصلع ومصابة بنزف الدم.
 
 3- ما احتمال إنجاب طفل ذكر أصلع ومصاب بنزف الدم؟
+final-answer:
+**3/16 (18.75%) من جميع المواليد.**
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع يسود في الذكر ويتنحى في الأنثى؛
@@ -2105,6 +2315,10 @@ body:
 تزوج رجل أصلع مصاب بمرض نزف الدم من فتاة غير صلعاء وغير مصابة بنزف الدم فأنجبا طفلة تحمل جيني الصلع ومصابة بنزف الدم. استخدم b⁺ للشعر الطبيعي وb للإصابة بالصلع، وH لعدم الإصابة بنزف الدم وh للإصابة به.
 
 1- اكتب الطرز الجينية المحتملة للأبوين والطفلة.
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb XʰY</mtext></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b XʰY</mtext></math>\`.
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b XᴴXʰ</mtext></math>\`.
+- **الطفلة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb XʰXʰ</mtext></math>\`.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` سائد في الذكور ومتنح في الإناث. عبارة تحمل جيني الصلع تعني الطفلة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb</mtext></math>\` ؛
@@ -2126,6 +2340,8 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 تزوج رجل أصلع متغاير الأليلين للصلع (b⁺b)، مصاب بنزف الدم، من فتاة غير صلعاء وغير مصابة بنزف الدم، فأنجبا طفلة طرازها للصلع bb ومصابة بنزف الدم. استخدم b⁺ للشعر الطبيعي و b للصلع. إذا كان احتمال الذكر والأنثى متساويًا، فما احتمال إنجاب ذكر أصلع في حمل جديد؟
+final-answer:
+**3/8 (37.5%).**
 solution:
 الصلع صفة متأثرة بالجنس: يكون b سائدًا عند الذكور ومتنحيًا عند الإناث. الأم غير صلعاء، لكنها أعطت ابنتها الأليل b؛ لذلك يكون طراز الأم b⁺b. وطراز الأب b⁺b معطى صراحة.
 
@@ -2173,6 +2389,8 @@ body:
 
 1- ما الطراز الشكلي للشاب للصفتين معاً؟
 
+final-answer:
+**أصلع، وفصيلة دمه A.**
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 البنت الصلعاء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb</mtext></math>\` تحتاج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` من الأبوين؛
@@ -2196,6 +2414,12 @@ body:
 
 2- ما الطرز الجينية لكل من الشاب والفتاة والبنت للصفتين معاً؟
 
+final-answer:
+- **الشاب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi b⁺b</mtext></math>\`.
+- **الفتاة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi b⁺b</mtext></math>\`.
+- **البنت:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii bb</mtext></math>\`.
+
+\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 البنت الصلعاء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb</mtext></math>\` تحتاج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` من الأبوين؛
@@ -2223,6 +2447,8 @@ body:
 
 3- ما احتمال إنجاب ولد طبيعي الشعر وفصيلة دمهAB؟
 
+final-answer:
+**1/32 (3.125%) من جميع المواليد.**
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع يسود في الذكر ويتنحى في الأنثى. البنت الصلعاء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb</mtext></math>\` تثبت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` في كلا الأبوين؛
@@ -2245,6 +2471,11 @@ body:
 رجل أصلع غير نقي مصاب بعمى الألوان تزوج امرأة طبيعية الشعر غير مصابة بعمى الألوان، والدها طبيعي الشعر ومصاب بعمى الألوان ووالدتها تظهر صفة الصلع. جين الرؤية الطبيعيةH سائد على جين عمى الألوانh.
 
 1- اكتب الطرز الجينية للأبوين.
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b XʰY</mtext></math>\`.
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b XᴴXʰ</mtext></math>\`.
+
+\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع متأثر بالجنس؛
@@ -2265,6 +2496,11 @@ body:
 رجل أصلع غير نقي مصاب بعمى الألوان تزوج امرأة طبيعية الشعر غير مصابة بعمى الألوان، والدها طبيعي الشعر ومصاب بعمى الألوان ووالدتها تظهر صفة الصلع. جين الرؤية الطبيعيةH سائد على جين عمى الألوانh.
 
 2- اكتب الطرز الجينية لغاميتات الأبوين.
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺Xʰ</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bXʰ</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺Y</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bY</mtext></math>\`.
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺Xᴴ</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bXᴴ</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺Xʰ</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bXʰ</mtext></math>\`.
+
+احتمال كل غاميت **1/4**. \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع متأثر بالجنس؛
@@ -2287,6 +2523,8 @@ body:
 رجل أصلع غير نقي مصاب بعمى الألوان تزوج امرأة طبيعية الشعر غير مصابة بعمى الألوان، والدها طبيعي الشعر ومصاب بعمى الألوان ووالدتها تظهر صفة الصلع. جين الرؤية الطبيعيةH سائد على جين عمى الألوانh.
 
 4- ما احتمال إنجاب ذكر سليم من عمى الألوان طبيعي الشعر؟
+final-answer:
+**1/16 (6.25%) من جميع المواليد.**
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع متأثر بالجنس؛
@@ -2309,6 +2547,8 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 علل: نسبة انتشار صفة الصلع عند الذكور أكثر منها عند الإناث.
+final-answer:
+لأن أليل الصلع **سائد عند الذكور ومتنحٍ عند الإناث**؛ فيظهر لدى الذكر النقي والهجين، ولا يظهر لدى الأنثى إلا إذا كانت نقية لأليل الصلع.
 solution:
 بحسب نموذج المنهج، الصلع صفة جسمية متأثرة بالهرمونات الجنسية؛
 يسود أليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع عند الذكر، فيظهر الصلع في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb</mtext></math>\` وفي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\`.
@@ -2329,6 +2569,11 @@ body:
 
 1- ما الطرز الجينية للأبوين؟
 
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b Iᴬi</mtext></math>\`.
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b Iᴮi</mtext></math>\`.
+
+\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود في الذكر ويتنحى في الأنثى.
@@ -2353,6 +2598,8 @@ body:
 
 2- ما الطرز الجينية للابنة؟
 
+final-answer:
+**الابنة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb ii</mtext></math>\`، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` أليل الصلع.
 solution:
 نرمز بأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للصلع، وبأليل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` للشعر الطبيعي في نموذج هذه المسألة.
 الصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` متنح في الإناث؛
@@ -2373,6 +2620,8 @@ body:
 
 4- ما احتمال إنجاب فرد فصيلة دمهB طبيعي الشعر؟
 
+final-answer:
+**1/8 (12.5%).**
 solution:
 في نموذج الصلع بالمقرر نرمزb للصلع وb⁺ للشعر الطبيعي. يسودb في الذكر، ويتنحى في الأنثى.
 
@@ -2448,6 +2697,8 @@ body:
 في أحد أنواع عصافير الزينة صفة وجود العرف سائدة في الذكور ومتنحية في الإناث، ويختلف الطراز الشكلي في الذكور عنه للإناث عند عدم تماثل الجينات. تزاوج ذكر ريشه مخطط وبدون عرف مع أنثى غير مخططة الريش ولها عرف. النسل: نصف الذكور مخطط وله عرف والنصف الآخر غير مخطط وله عرف؛ نصف الإناث مخطط وبدون عرف والنصف الآخر غير مخطط وبدون عرف. A لجين الريش المخطط السائد على غير المخطط a، وهذه الصفة مرتبطة بالجنس.
 
 ما نوع الوراثة لصفة وجود العرف؟
+final-answer:
+**وراثة متأثرة بالجنس.**
 solution:
 صفة وجود العرف متأثرة بالجنس؛
 فالسؤال ينص أن الطراز غير المتماثل يظهر بعرف في الذكر وبلا عرف في الأنثى.
@@ -2487,6 +2738,9 @@ body:
 في أحد أنواع الحيوانات لون الجسم وطول الذيل صفتان مرتبطتان على نفس الكروموسوم. تزاوج ذكر أسود اللون طويل الذيل مع أنثى بيضاء اللون قصيرة الذيل، فكانت النتائج: 45.5% سوداء طويلة الذيل، 45.5% بيضاء قصيرة الذيل، 4.5% بيضاء طويلة الذيل، 4.5% سوداء قصيرة الذيل. جين الأسود B سائد على الأبيض b، وجين الذيل الطويل T سائد على القصير t.
 
 ما الطرز الجينية لغاميتات الأبوين للصفتين معاً؟
+final-answer:
+- **غاميتات الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BT</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` بنسبة **45.5% لكل منهما**؛ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bT</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Bt</mtext></math>\` بنسبة **4.5% لكل منهما**.
+- **غاميت الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` بنسبة **100%**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` سائد للأسود و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` سائد للطويل و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الأنثى بيضاء قصيرة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\` فلا تعطي إلا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` ؛
 لذلك يكشف كل طراز في النسل غاميت الأب مباشرة.
@@ -2507,6 +2761,8 @@ body:
 في أحد أنواع الحيوانات لون الجسم وطول الذيل صفتان مرتبطتان على نفس الكروموسوم. تزاوج ذكر أسود اللون طويل الذيل مع أنثى بيضاء اللون قصيرة الذيل، فكانت النتائج: 45.5% سوداء طويلة الذيل، 45.5% بيضاء قصيرة الذيل، 4.5% بيضاء طويلة الذيل، 4.5% سوداء قصيرة الذيل. جين الأسود B سائد على الأبيض b، وجين الذيل الطويل T سائد على القصير t.
 
 فسر سبب ظهور هذه النسب.
+final-answer:
+**ارتباط غير تام مع عبور بنسبة 9%**؛ التراكيب الأبوية **91%**، والتراكيب الجديدة الناتجة بالعبور **9%**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` سائد للأسود و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` سائد للطويل و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الأنثى بيضاء قصيرة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\` فلا تعطي إلا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` ؛
 لذلك يكشف كل طراز في النسل غاميت الأب مباشرة.
@@ -2548,6 +2804,8 @@ body:
 في نوع من عصافير الزينة صفتا لون الريش وشكل المنقار مرتبطتان على نفس الكروموسوم. تزاوج ذكر أحمر الريش مدبب المنقار مع أنثى بيضاء الريش عريضة المنقار. النسل:41.5% حمراء مدببة،41.5% بيضاء عريضة،8.5% حمراء عريضة،8.5% بيضاء مدببة. الرمز R للأحمر وr للأبيض، وD للمدبب وd للعريض.
 
 ما تفسير ظهور النسب السابقة؟
+final-answer:
+**ارتباط غير تام مع عبور بنسبة 17%**؛ التراكيب الأبوية **83%**، والتراكيب الجديدة الناتجة بالعبور **17%**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للأحمر السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D</mtext></math>\` للمنقار المدبب السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>d</mtext></math>\` للعريض. الأنثى البيضاء العريضة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rrdd</mtext></math>\` تعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rd</mtext></math>\` فقط؛
 فكل طراز نسلي يكشف غاميت الذكر.
@@ -2569,6 +2827,9 @@ body:
 في نوع من عصافير الزينة صفتا لون الريش وشكل المنقار مرتبطتان على نفس الكروموسوم. تزاوج ذكر أحمر الريش مدبب المنقار مع أنثى بيضاء الريش عريضة المنقار. النسل:41.5% حمراء مدببة،41.5% بيضاء عريضة،8.5% حمراء عريضة،8.5% بيضاء مدببة. الرمز R للأحمر وr للأبيض، وD للمدبب وd للعريض.
 
 اكتب الطرز الجينية لغاميتات الذكر.
+final-answer:
+- **غاميتات أبوية:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RD</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rd</mtext></math>\`، **41.5% لكل منهما**.
+- **غاميتات مؤتلفة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Rd</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rD</mtext></math>\`، **8.5% لكل منهما**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للأحمر السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D</mtext></math>\` للمنقار المدبب السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>d</mtext></math>\` للعريض. الأنثى البيضاء العريضة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rrdd</mtext></math>\` تعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rd</mtext></math>\` فقط؛
 فكل طراز نسلي يكشف غاميت الذكر.
@@ -2588,6 +2849,8 @@ answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 علل: يمكن أن تظهر نسبة شكلية 3:1 بدلًا من 9:3:3:1 عند تزاوج فردين غير نقيين لصفتين، على أن يظهر المظهران السائدان معًا أو المتنحيان معًا.
 
+final-answer:
+بسبب **الارتباط التام في الطور الاقتراني** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB/ab</mtext></math>\` لدى الأبوين، مع **غياب العبور**؛ فتورث الصفتان معًا وتظهران بنسبة **3 سائدتين : 1 متنحيتين**.
 solution:
 نسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>9:3:3:1</mtext></math>\` تتطلب توزيع جينين مستقلين مع سيادة تامة. أما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3:1</mtext></math>\` للصفتين معاً فتظهر إذا كان الجينان مرتبطين تماماً في الطور الاقتراني \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB/ab</mtext></math>\` في كلا الأبوين، دون عبور.
 كل أب يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ab</mtext></math>\` مناصفة.
@@ -2613,6 +2876,8 @@ body:
 أشجار نخيل (العجوة) في بيسان وأريحا من أجود أنواع التمور في العالم، فإذا حصل تلقيح بين شجر نخيل طويل الساق أسود الثمار، مع نبات آخر مجهول الطراز الشكلي، فكانت أفراد النسل الناتج كالآتي: (400) شجرة نخيل طويلة الساق سوداء الثمار؛ (395) شجرة نخيل قصيرة الساق صفراء الثمار. باستخدام الرمز (T) لصفة طول الساق، والرمز (t) صفة قصر الساق، والرمز (r) صفة لون الثمار الأصفر، والرمز (R) لصفة لون الثمار الأسود.
 
 1- ما الطراز الشكلي للنبات المجهول؟
+final-answer:
+**قصير الساق أصفر الثمار**، وفق نموذج التلقيح الاختباري والارتباط التام في المسألة.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل سائد على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` ، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للأسود سائد على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\`. ظهور أشجار قصيرة صفراء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ttrr</mtext></math>\` يثبت أن النبات المعروف الطويل الأسود يحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` ، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>TtRr</mtext></math>\`.
 النسل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>400</mtext></math>\` طويل أسود و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>395</mtext></math>\` قصير أصفر يقارب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1:1</mtext></math>\` ، دون فئتي الطويل الأصفر والقصير الأسود. يوافق ذلك تفسير الارتباط التام \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>TR/tr</mtext></math>\` في المعروف مع تلقيح اختباري \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>tr/tr</mtext></math>\`.
@@ -2632,6 +2897,8 @@ body:
 أشجار نخيل (العجوة) في بيسان وأريحا من أجود أنواع التمور في العالم، فإذا حصل تلقيح بين شجر نخيل طويل الساق أسود الثمار، مع نبات آخر مجهول الطراز الشكلي، فكانت أفراد النسل الناتج كالآتي: (400) شجرة نخيل طويلة الساق سوداء الثمار؛ (395) شجرة نخيل قصيرة الساق صفراء الثمار. باستخدام الرمز (T) لصفة طول الساق، والرمز (t) صفة قصر الساق، والرمز (r) صفة لون الثمار الأصفر، والرمز (R) لصفة لون الثمار الأسود.
 
 2- فسر الحالة الوراثية في النسل الناتج مبيناً نوع الوراثة.
+final-answer:
+**ارتباط تام** بين جيني الصفتين في نموذج المسألة؛ التزاوج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>TR/tr × tr/tr</mtext></math>\` يعطي **طويلًا أسود : قصيرًا أصفر بنسبة 1 : 1**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل سائد على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` ، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للأسود سائد على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\`. ظهور أشجار قصيرة صفراء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ttrr</mtext></math>\` يثبت أن النبات المعروف الطويل الأسود يحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` ، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>TtRr</mtext></math>\`.
 النسل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>400</mtext></math>\` طويل أسود و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>395</mtext></math>\` قصير أصفر يقارب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1:1</mtext></math>\` ، دون فئتي الطويل الأصفر والقصير الأسود. يوافق ذلك تفسير الارتباط التام \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>TR/tr</mtext></math>\` في المعروف مع تلقيح اختباري \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>tr/tr</mtext></math>\`.
@@ -2883,6 +3150,10 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 عند إجراء تلقيح تجريبي لنبات طرازه الجيني RrYy كان النسل يحمل الصفات والنسب:47.5% خضراء مجعدة،2.5% خضراء مستديرة،2.5% صفراء مجعدة،47.5% صفراء مستديرة. إذا علمت أن جينات لون البذرة وشكلها تقع على كروموسوم واحد، فسر هذه النتائج على أسس وراثية.
+final-answer:
+**ارتباط غير تام** في الطور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RY/ry</mtext></math>\`، مع **عبور بنسبة 5%**.
+- التراكيب الأبوية: **47.5% صفراء مستديرة** و**47.5% خضراء مجعدة**.
+- التراكيب الناتجة بالعبور: **2.5% صفراء مجعدة** و**2.5% خضراء مستديرة**.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للمستدير السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للمجعد، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` للأصفر السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>y</mtext></math>\` للأخضر، وفق ترميز البازيلاء المعتاد في المسألة. التلقيح التجريبي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RrYy × rryy</mtext></math>\` يجعل الكاشف يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ry</mtext></math>\` فقط.
 الفئتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>47.5%</mtext></math>\` صفراء مستديرة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>47.5%</mtext></math>\` خضراء مجعدة تكشفان غاميتين أبويتين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RY</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ry</mtext></math>\` ؛
@@ -2903,6 +3174,9 @@ body:
 عند تلقيح ذكر ذبابة فاكهة أسود الجسم ضامر الأجنحة مع أنثى رمادية الجسم طبيعية الأجنحة غير نقية للصفتين، ظهر الأبناء بالأعداد:92 رمادية الجسم طبيعية الأجنحة؛88 سوداء الجسم ضامرة الجناح؛9 سوداء الجسم طبيعية الأجنحة؛11 رمادية الجسم ضامرة الأجنحة. جين اللون الرماديB سائد على الأسودb وجين الأجنحة الطبيعيةG سائد على الضامرةg.
 
 1- اكتب الطرز الجينية للأبوين.
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\`، بترتيب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg/bg</mtext></math>\`.
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BbGg</mtext></math>\`، بترتيب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG/bg</mtext></math>\`.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` سائد للرمادي و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأسود، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` سائد للجناح الطبيعي و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للضامر. الذكر الأسود الضامر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` فقط، فتُظهر فئات النسل غاميتات الأنثى.
 الأكثر عدداً \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>92</mtext></math>\` رمادي طبيعي و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>88</mtext></math>\` أسود ضامر يكشفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` الأبويتين؛
@@ -2921,6 +3195,9 @@ body:
 عند تلقيح ذكر ذبابة فاكهة أسود الجسم ضامر الأجنحة مع أنثى رمادية الجسم طبيعية الأجنحة غير نقية للصفتين، ظهر الأبناء بالأعداد:92 رمادية الجسم طبيعية الأجنحة؛88 سوداء الجسم ضامرة الجناح؛9 سوداء الجسم طبيعية الأجنحة؛11 رمادية الجسم ضامرة الأجنحة. جين اللون الرماديB سائد على الأسودb وجين الأجنحة الطبيعيةG سائد على الضامرةg.
 
 2- اكتب الطرز الجينية لغاميتات الأنثى موضحاً الغاميتات الناتجة بسبب العبور والغاميتات الناتجة بدون العبور.
+final-answer:
+- **دون عبور:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\`.
+- **بسبب العبور:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Bg</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bG</mtext></math>\`.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` سائد للرمادي و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأسود، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` سائد للجناح الطبيعي و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للضامر. الذكر الأسود الضامر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` فقط، فتُظهر فئات النسل غاميتات الأنثى.
 الأكثر عدداً \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>92</mtext></math>\` رمادي طبيعي و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>88</mtext></math>\` أسود ضامر يكشفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` الأبويتين؛
@@ -2949,6 +3226,8 @@ body:
 عند تلقيح ذكر ذبابة فاكهة أسود الجسم ضامر الأجنحة مع أنثى رمادية الجسم طبيعية الأجنحة غير نقية للصفتين، ظهر الأبناء بالأعداد:92 رمادية الجسم طبيعية الأجنحة؛88 سوداء الجسم ضامرة الجناح؛9 سوداء الجسم طبيعية الأجنحة؛11 رمادية الجسم ضامرة الأجنحة. جين اللون الرماديB سائد على الأسودb وجين الأجنحة الطبيعيةG سائد على الضامرةg.
 
 3- ما المسافة بين جين لون الجسم وجين حجم الأجنحة؟
+final-answer:
+**10 سنتيمورغان (وحدات خريطة).**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` سائد للرمادي و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأسود، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` سائد للجناح الطبيعي و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للضامر. الذكر الأسود الضامر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` فقط، فتُظهر فئات النسل غاميتات الأنثى.
 الأكثر عدداً \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>92</mtext></math>\` رمادي طبيعي و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>88</mtext></math>\` أسود ضامر يكشفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` الأبويتين؛
@@ -2973,6 +3252,9 @@ body:
 في أحد أنواع الحيوانات لون الجسم وطول الذيل صفتان مرتبطتان على نفس الكروموسوم. عند تزاوج ذكر أسود اللون طويل الذيل مع أنثى بيضاء اللون قصيرة الذيل كانت النسب:45.5% سوداء طويلة؛45.5% بيضاء قصيرة؛4.5% بيضاء طويلة؛4.5% سوداء قصيرة. جين الأسودB سائد على الأبيضb، والطويلT سائد على القصيرt.
 
 1- ما الطرز الجينية للأبوين للصفتين معاً؟
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BbTt</mtext></math>\`، بترتيب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BT/bt</mtext></math>\`.
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\`، بترتيب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt/bt</mtext></math>\`.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` سائد للأسود و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` سائد للطويل و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الأنثى بيضاء قصيرة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\` أي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt/bt</mtext></math>\` ، فتعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` وحده.
 وجود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\` بين الأبناء يثبت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` عند الذكر الأسود الطويل؛
@@ -2991,6 +3273,8 @@ body:
 في أحد أنواع الحيوانات لون الجسم وطول الذيل صفتان مرتبطتان على نفس الكروموسوم. عند تزاوج ذكر أسود اللون طويل الذيل مع أنثى بيضاء اللون قصيرة الذيل كانت النسب:45.5% سوداء طويلة؛45.5% بيضاء قصيرة؛4.5% بيضاء طويلة؛4.5% سوداء قصيرة. جين الأسودB سائد على الأبيضb، والطويلT سائد على القصيرt.
 
 3- ما المسافة بين جيني الصفتين معاً؟
+final-answer:
+**9 سنتيمورغان (وحدات خريطة).**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأسود السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الأنثى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\` تعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` ؛
 فتُعد الفئتان الكبيرتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>45.5%</mtext></math>\` سوداء طويلة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>45.5%</mtext></math>\` بيضاء قصيرة أبويتين، والصغيرتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4.5%</mtext></math>\` بيضاء طويلة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4.5%</mtext></math>\` سوداء قصيرة جديدتين.
@@ -3011,6 +3295,11 @@ body:
 تزوج رجل شعره مموج وأصابعه قصيرة وعيونه عسلية من فتاة شعرها مستقيم وأصابعها طويلة وعيونها زرقاء، فكان من بين النسل طفل شعره مستقيم وأصابعه طويلة وعيونه زرقاء. جينا الأصابع ولون العيون محمولان على نفس الكروموسوم. استخدمT للأصابع القصيرة وt للطويلة،H للعيون العسلية وh للزرقاء.
 
 1- اكتب الطرز الجينية لكل من الأبوين للصفات معاً.
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CS TtHh</mtext></math>\`.
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>SS tthh</mtext></math>\`.
+
+\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C</mtext></math>\` للشعر المجعد و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>S</mtext></math>\` للمستقيم؛ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CS</mtext></math>\` مموج. **طور الارتباط لدى الأب غير محدد من المعطيات.**
 solution:
 شكل الشعر هنا سيادة غير تامة : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C</mtext></math>\` للمجعد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>S</mtext></math>\` للمستقيم، والهجين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CS</mtext></math>\` مموج. الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CS</mtext></math>\` والأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>SS</mtext></math>\`.
 في نموذج السؤال \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للأصابع القصيرة السائدة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للطويلة، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` للعسلية السائدة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` للزرقاء. الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>tt hh</mtext></math>\` ؛
@@ -3027,6 +3316,9 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 تزوج رجل شعره مموج وأصابعه قصيرة وعيونه عسلية من فتاة شعرها مستقيم وأصابعها طويلة وعيونها زرقاء، فولد لهما طفل شعره مستقيم وأصابعه طويلة وعيونه زرقاء. أليل الأصابع القصيرة T سائد على t، وأليل العيون العسلية H سائد على h. الجينان T و H مرتبطان ارتباطًا تامًا، ولا يحدث عبور بينهما. أليل شكل الشعر C للأجعد و S للمستقيم، والطراز CS مموج، وجين الشعر مستقل عن الجينين المرتبطين. ما أنواع غاميتات الأبوين؟
+final-answer:
+- **غاميتات الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CTH</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cth</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>STH</mtext></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Sth</mtext></math>\`.
+- **غاميت الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Sth</mtext></math>\` فقط.
 solution:
 ظهور الطفل tt hh يعني أن كل والد أعطى t و h. والأم طويلة الأصابع زرقاء العينين، فيكون طرازها tt hh. الأب قصير الأصابع عسلي العينين، لكنه أعطى t و h؛ لذلك هو Tt Hh.
 
@@ -3070,6 +3362,9 @@ body:
 تزوج رجل شعره مموج وأصابعه قصيرة وعيونه عسلية من فتاة شعرها مستقيم وأصابعها طويلة وعيونها زرقاء، فكان من بين النسل طفل شعره مستقيم وأصابعه طويلة وعيونه زرقاء. جينا الأصابع ولون العيون محمولان على نفس الكروموسوم. استخدمT للأصابع القصيرة وt للطويلة،H للعيون العسلية وh للزرقاء.
 
 4- ما مبدأ الوراثة للصفات الثلاث؟
+final-answer:
+- **شكل الشعر:** سيادة غير تامة.
+- **طول الأصابع ولون العينين:** سيادة تامة لكل صفة، مع **ارتباط جيني** بينهما.
 solution:
 شكل الشعر يخضع للسيادة غير التامة : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CS</mtext></math>\` مموج وسطياً بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CC</mtext></math>\` المجعد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>SS</mtext></math>\` المستقيم.
 الأصابع ولون العينين، في النموذج المبسط المعطى، لكل منهما سيادة تامة : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للقصير يسود على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للطويل و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` للعسلي يسود على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` للأزرق.
@@ -3088,6 +3383,9 @@ body:
 عند تزاوج نبات أملس البذور أصفر الأزهار مع نبات مجعد البذور أبيض الأزهار كانت الأفراد الناتجة:47.5% ملساء صفراء؛47.5% مجعدة بيضاء؛2.5% مجعدة صفراء؛2.5% ملساء بيضاء. جين الملساءB سائد على المجعدةb وجين الأزهار الصفراءR سائد على البيضاءr، وجينا الصفتين مرتبطان على نفس الكروموسوم.
 
 1- ما الطرز الجينية للأبوين وغاميتات الأبوين للصفتين معاً؟
+final-answer:
+- **الأملس الأصفر:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BbRr</mtext></math>\`، بترتيب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BR/br</mtext></math>\`. غاميتاته \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BR</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>br</mtext></math>\` بنسبة **47.5% لكل منهما**، و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bR</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Br</mtext></math>\` بنسبة **2.5% لكل منهما**.
+- **المجعد الأبيض:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbrr</mtext></math>\`، بترتيب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>br/br</mtext></math>\`. غاميته \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>br</mtext></math>\` بنسبة **100%**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأملس السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للمجعد، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للأصفر السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للأبيض. المجعد الأبيض \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbrr</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>br</mtext></math>\` فقط؛
 فتُظهر فئات النسل غاميتات الأب الآخر.
@@ -3108,6 +3406,8 @@ body:
 عند تزاوج نبات أملس البذور أصفر الأزهار مع نبات مجعد البذور أبيض الأزهار كانت الأفراد الناتجة:47.5% ملساء صفراء؛47.5% مجعدة بيضاء؛2.5% مجعدة صفراء؛2.5% ملساء بيضاء. جين الملساءB سائد على المجعدةb وجين الأزهار الصفراءR سائد على البيضاءr، وجينا الصفتين مرتبطان على نفس الكروموسوم.
 
 2- فسر سبب ظهور النسب المعطاة.
+final-answer:
+**ارتباط غير تام مع عبور بنسبة 5%**؛ ينتج **95% تراكيب أبوية** و**5% تراكيب جديدة**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأملس السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للمجعد، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للأصفر السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للأبيض. المجعد الأبيض \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbrr</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>br</mtext></math>\` فقط؛
 فتُظهر فئات النسل غاميتات الأب الآخر.
@@ -3130,6 +3430,9 @@ body:
 عند تزاوج نبات أملس البذور أصفر الأزهار مع نبات مجعد البذور أبيض الأزهار كانت الأفراد الناتجة:47.5% ملساء صفراء؛47.5% مجعدة بيضاء؛2.5% مجعدة صفراء؛2.5% ملساء بيضاء. جين الملساءB سائد على المجعدةb وجين الأزهار الصفراءR سائد على البيضاءr، وجينا الصفتين مرتبطان على نفس الكروموسوم.
 
 3- ما الطرز الجينية للأفراد الناتجة التي تحمل تراكيب جينية جديدة؟
+final-answer:
+- **ملساء بيضاء:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Bbrr</mtext></math>\`، بنسبة **2.5%**.
+- **مجعدة صفراء:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbRr</mtext></math>\`، بنسبة **2.5%**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأملس السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للمجعد، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للأصفر السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للأبيض. المجعد الأبيض \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbrr</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>br</mtext></math>\` فقط؛
 فتُظهر فئات النسل غاميتات الأب الآخر.
@@ -3154,6 +3457,9 @@ body:
 | mb | (2)، 46.2% | mmbb، 46.2% | 3.8% | mmBb، 3.8% |
 
 ما الطراز الشكلي للنباتين الأبوين؟
+final-answer:
+1. **ملون أملس البذور.**
+2. **عديم اللون مجعد البذور.**
 solution:
 M للون السائد وm لغيابه، وB للأملس السائد وb للمجعد.
 
@@ -3180,6 +3486,9 @@ body:
 | mb | (2)، 46.2% | mmbb، 46.2% | 3.8% | mmBb، 3.8% |
 
 ما الطراز الجيني لكل من الغاميت والفرد المشار إليهما بالرقمين (1،2)؟
+final-answer:
+1. **الغاميت (1):** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>mB</mtext></math>\`.
+2. **الفرد (2):** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>MmBb</mtext></math>\`.
 solution:
 M للون السائد وm لغيابه، وB للأملس السائد وb للمجعد.
 
@@ -3218,6 +3527,8 @@ body:
 | mb | (2)، 46.2% | mmbb، 46.2% | 3.8% | mmBb، 3.8% |
 
 ما المسافة بين جيني الصفتين على الكروموسوم بوحدة خريطة؟
+final-answer:
+**7.6 وحدات خريطة.**
 solution:
 M للون السائد وm لغيابه، وB للأملس السائد وb للمجعد.
 
@@ -3260,6 +3571,8 @@ body:
 | T وA | 7 | — |
 
 ما المسافة بين الجين A والجين G؟
+final-answer:
+**3 وحدات خريطة.**
 solution:
 في اصطلاح المنهج، الارتباط نسبة الأبويين والعبور نسبة الجديد؛
 مجموعهما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\` ، وكل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` جديد يقابل وحدة خريطة.
@@ -3288,6 +3601,8 @@ body:
 | T وA | 7 | — |
 
 ما نسبة الارتباط بين الجين D والجين A؟
+final-answer:
+**89%.**
 solution:
 كل وحدة خريطة تقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` تراكيب جديدة، ونسبة الارتباط مكملة لهذه النسبة إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
 نحوّل الارتباط إلى مسافة : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–G=100−97=3</mtext></math>\` ، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G–D=100−92=8</mtext></math>\` وحدات.
@@ -3316,6 +3631,8 @@ body:
 | T وA | 7 | — |
 
 ما نسبة تكرار التراكيب الجينية بين الجين G والجين D؟
+final-answer:
+**8% تراكيب جينية جديدة ناتجة بالعبور.**
 solution:
 الجدول يعطي ارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>92%</mtext></math>\` بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D</mtext></math>\` ، أي أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>92%</mtext></math>\` من النسل يحتفظ بالتراكيب الأبوية. نفسر «تكرار التراكيب الجينية» هنا باصطلاح المسألة على أنه تكرار **التراكيب الجديدة الناتجة بالعبور**؛ المطلوب نسبتها، فهي مكملة إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
 النسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−92%=8%</mtext></math>\`.
@@ -3343,6 +3660,14 @@ body:
 | T وA | 7 | — |
 
 ارسم خارطة جينات تحدد مواقع الجينات.
+final-answer:
+**الخريطة الجينية:**
+
+\`\`\`text
+T ──7── A ──3── G ──8── D
+\`\`\`
+
+المسافات بوحدة خريطة.
 solution:
 نستخدم كل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` عبور كوحدة خريطة، والعبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−</mtext></math>\` الارتباط.
 نحوّل الارتباط إلى مسافة : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–G=100−97=3</mtext></math>\` ، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G–D=100−92=8</mtext></math>\` وحدات.
@@ -3379,6 +3704,8 @@ body:
 | T وA | 7 | — |
 
 ما المقصود بالجينات المرتبطة؟
+final-answer:
+**جينات تقع على الكروموسوم نفسه وتميل إلى أن تورث معًا كوحدة واحدة.**
 solution:
 **الإجابة:** جينات تقع على الكروموسوم نفسه وتميل إلى أن تورث معاً كوحدة واحدة.
 
@@ -3402,6 +3729,8 @@ body:
 تقع الجينات A وB وC وD على الكروموسوم نفسه. نسبة تكرار التراكيب الجينية الجديدة بين A وB = 5%، وبين C وD = 2%، ونسبة الارتباط بين D وB = 99% وبين C وA = 98%.
 
 احسب نسبة الارتباط بين الجينين A وD.
+final-answer:
+**96%.**
 solution:
 كل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` جديد يقابل وحدة خريطة؛
 والارتباط مكمل للعبور.
@@ -3425,6 +3754,8 @@ body:
 تقع الجينات A وB وC وD على الكروموسوم نفسه. نسبة تكرار التراكيب الجينية الجديدة بين A وB = 5%، وبين C وD = 2%، ونسبة الارتباط بين D وB = 99% وبين C وA = 98%.
 
 ما نسبة حدوث عبور بين الجينين C وB؟
+final-answer:
+**3%.**
 solution:
 العبور يقدّر نسبة المؤتلفات ويقابل المسافة بوحدة الخريطة.
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–B=5</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C–D=2</mtext></math>\` مباشرة من نسبتي الجديد.
@@ -3447,6 +3778,8 @@ body:
 تقع الجينات A وB وC وD على الكروموسوم نفسه. نسبة تكرار التراكيب الجينية الجديدة بين A وB = 5%، وبين C وD = 2%، ونسبة الارتباط بين D وB = 99% وبين C وA = 98%.
 
 ما المقصود بالخرائط الجينية؟
+final-answer:
+**ترتيب خطي افتراضي لمواقع الجينات على طول كروموسوم معين.**
 solution:
 **الإجابة:** ترتيب خطي افتراضي لمواقع الجينات على طول كروموسوم معين.
 
@@ -3470,6 +3803,14 @@ body:
 تقع الجينات A وB وC وD على الكروموسوم نفسه. نسبة تكرار التراكيب الجينية الجديدة بين A وB = 5%، وبين C وD = 2%، ونسبة الارتباط بين D وB = 99% وبين C وA = 98%.
 
 ارسم خارطة جينية تحدد مواقع هذه الجينات.
+final-answer:
+**الخريطة الجينية:**
+
+\`\`\`text
+A ──2── C ──2── D ──1── B
+\`\`\`
+
+المسافات بوحدة خريطة.
 solution:
 كل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` من التراكيب الجديدة يقابل وحدة خريطة، والعبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−</mtext></math>\` الارتباط.
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–B=5</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C–D=2</mtext></math>\` مباشرة من نسبتي الجديد.
@@ -3498,6 +3839,8 @@ body:
 في ذبابة الفاكهة جين لون الجسم الرمادي G سائد على جين لون الجسم الأسود (g)، وجين حجم الأجنحة الطبيعية (T) سائد على جين الأجنحة الضامرة (t). عند تزاوج ذكر أسود ضامر الأجنحة مع أنثى رمادية الجسم طبيعية الأجنحة (غير متماثلة الجينات للصفتين) نتجت أفراد بالأعداد والطرز الجينية: GgTt: 151، ggtt: 149، Ggtt: 51، ggTt: 49.
 
 ما المسافة بين جين لون الجسم وجين حجم الأجنحة على الكروموسوم بوحدة خريطة؟
+final-answer:
+**25 وحدة خريطة.**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` للرمادي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للأسود، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطبيعي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للضامر. الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ggtt</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gt</mtext></math>\` فقط. الفئتان الكبيرتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>151 GgTt</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>149 ggtt</mtext></math>\` تكشفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>GT</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gt</mtext></math>\` الأبويتين عند الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>GT/gt</mtext></math>\`.
 الفئتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>51 Ggtt</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>49 ggTt</mtext></math>\` تكشفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Gt</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gT</mtext></math>\` الجديدتين.
@@ -3519,6 +3862,8 @@ body:
 في ذبابة الفاكهة جين لون الجسم الرمادي G سائد على جين لون الجسم الأسود (g)، وجين حجم الأجنحة الطبيعية (T) سائد على جين الأجنحة الضامرة (t). عند تزاوج ذكر أسود ضامر الأجنحة مع أنثى رمادية الجسم طبيعية الأجنحة (غير متماثلة الجينات للصفتين) نتجت أفراد بالأعداد والطرز الجينية: GgTt: 151، ggtt: 149، Ggtt: 51، ggTt: 49.
 
 اكتب الطرز الجينية للغاميتات الناتجة عن عملية العبور.
+final-answer:
+**الغاميتان:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Gt</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gT</mtext></math>\`.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` للرمادي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للأسود، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطبيعي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للضامر. الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ggtt</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gt</mtext></math>\` فقط. الفئتان الكبيرتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>151 GgTt</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>149 ggtt</mtext></math>\` تكشفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>GT</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gt</mtext></math>\` الأبويتين عند الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>GT/gt</mtext></math>\`.
 الفئتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>51 Ggtt</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>49 ggTt</mtext></math>\` تكشفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Gt</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gT</mtext></math>\` الجديدتين.
@@ -3537,6 +3882,8 @@ body:
 في ذبابة الفاكهة جين لون الجسم الرمادي G سائد على جين لون الجسم الأسود (g)، وجين حجم الأجنحة الطبيعية (T) سائد على جين الأجنحة الضامرة (t). عند تزاوج ذكر أسود ضامر الأجنحة مع أنثى رمادية الجسم طبيعية الأجنحة (غير متماثلة الجينات للصفتين) نتجت أفراد بالأعداد والطرز الجينية: GgTt: 151، ggtt: 149، Ggtt: 51، ggTt: 49.
 
 اكتب الطرز الجينية لغاميتات الأم عند عدم حدوث عبور.
+final-answer:
+**الغاميتان:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>GT</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gt</mtext></math>\`، بنسبة **1/2 لكل منهما** عند غياب العبور كليًا.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` للرمادي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للأسود، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطبيعي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للضامر. الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ggtt</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gt</mtext></math>\` فقط. الفئتان الكبيرتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>151 GgTt</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>149 ggtt</mtext></math>\` تكشفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>GT</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gt</mtext></math>\` الأبويتين عند الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>GT/gt</mtext></math>\`.
 الفئتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>51 Ggtt</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>49 ggTt</mtext></math>\` تكشفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Gt</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>gT</mtext></math>\` الجديدتين.
@@ -3553,6 +3900,16 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ارسم خريطة الجينات إذا كانت نسبة الارتباط بين (B، A) 96%، وبين (B، D) 87%، وبين (B، E) 92%، وكانت نسبة تكرار عملية العبور بين (D، A) 17%، وبين (D ، E) هي 5%، ثم أوجد نسبة تكرار عملية العبور بين (E، A).
+final-answer:
+**الخريطة الجينية:**
+
+\`\`\`text
+D ──5── E ──8── B ──4── A
+\`\`\`
+
+المسافات بوحدة خريطة.
+
+**نسبة العبور بين E وA: 12%.**
 solution:
 نسبة الارتباط تكمل نسبة التراكيب الجديدة إلى100%، ويقابل كل1% جديد وحدة خريطة في نموذج الدرس.
 
@@ -3622,6 +3979,8 @@ body:
 | E، F | — | — | 3 |
 
 كم يبعد الجين H عن الجين M؟
+final-answer:
+**5 وحدات خريطة.**
 solution:
 الارتباط هو نسبة التراكيب الأبوية، والعبور مكمله إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\` ويقابل عدد وحدات الخريطة.
 المعطى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H–M</mtext></math>\` ارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>95%</mtext></math>\` ، إذن العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−95%=5%</mtext></math>\`.
@@ -3650,6 +4009,14 @@ body:
 | E، F | — | — | 3 |
 
 ارسم خارطة جينات لهذه الكروموسومات.
+final-answer:
+**الخريطة الجينية:**
+
+\`\`\`text
+E ──3── F ──10── H ──5── M
+\`\`\`
+
+المسافات بوحدة خريطة.
 solution:
 نسبة العبور تقابل المسافة، وهي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%−</mtext></math>\` نسبة الارتباط. لذا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H–F=10</mtext></math>\` وحدات و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H–M=5</mtext></math>\` ؛
 كما أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M–F=15</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–H=13</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–F=3</mtext></math>\`.
@@ -3686,6 +4053,8 @@ body:
 | E، F | — | — | 3 |
 
 حدد أي الجينين بينهما أكبر نسبة تكرار عملية العبور، وما مقدارها؟
+final-answer:
+**الجينان E وM، بنسبة عبور 18%.**
 solution:
 نسبة العبور تقابل المسافة، وهي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%−</mtext></math>\` نسبة الارتباط. لذا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H–F=10</mtext></math>\` وحدات و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H–M=5</mtext></math>\` ؛
 كما أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M–F=15</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–H=13</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–F=3</mtext></math>\`.
@@ -3711,6 +4080,9 @@ body:
 ما نسبة تكرار عملية العبور بين الأزواج الآتية من الجينات: B،D / E،A؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/17ed3310de4a062d9091.webp)
+final-answer:
+- **بين B وD:** **8%**.
+- **بين E وA:** **17%**.
 solution:
 كل وحدة خريطة تقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` عبور.
 ![الخريطة الأصلية](assets/lessons/curriculum-evidence/17ed3310de4a062d9091.webp)
@@ -3737,6 +4109,9 @@ body:
 ما نسبة الارتباط بين الأزواج الآتية من الجينات: D،C / D،A؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/17ed3310de4a062d9091.webp)
+final-answer:
+- **بين D وC:** **97%**.
+- **بين D وA:** **88%**.
 solution:
 العبور يقابل المسافة، والارتباط مكمله إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
 ![الخريطة الأصلية](assets/lessons/curriculum-evidence/17ed3310de4a062d9091.webp)
@@ -3757,6 +4132,8 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما الوحدة المستخدمة للتعبير عن المسافات بين جينين في الخريطة الجينية؟
+final-answer:
+**السنتيمورغان (وحدة خريطة).**
 solution:
 **الإجابة:** وحدة خريطة، وتسمى السنتيمورغان.
 
@@ -3778,6 +4155,8 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما المقصود بالعبور؟
+final-answer:
+**تبادل أجزاء متناظرة بين كروماتيدين غير شقيقين من كروموسومين متماثلين في الطور التمهيدي الأول من الانقسام المنصف، مما يعيد ترتيب الأليلات ويكوّن تراكيب جينية جديدة.**
 solution:
 **الإجابة:** تبادل أجزاء متناظرة بين كروماتيدين غير شقيقين من كروموسومين متماثلين، في الطور التمهيدي الأول من الانقسام المنصف؛ فيعيد ترتيب الأليلات ويكوّن تراكيب جينية جديدة.
 
@@ -3801,6 +4180,8 @@ body:
 في أحد أنواع الحيوانات لون الجسم وطول الذيل صفتان مرتبطتان على نفس الكروموسوم. عند تزاوج ذكر أسود اللون طويل الذيل مع أنثى بيضاء اللون قصيرة الذيل نتج: 45.5% سوداء طويلة الذيل؛ 45.5% بيضاء قصيرة الذيل؛ 4.5% بيضاء طويلة الذيل؛ 4.5% سوداء قصيرة الذيل. جين الأسود B سائد على الأبيض b، وجين طويل الذيل G سائد على القصير g.
 
 احسب نسبة العبور بين الجينين G وB.
+final-answer:
+**9%.**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأسود السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للقصير. الأنثى البيضاء القصيرة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\` تعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` فقط؛
 لذا تعكس فئات النسل غاميتات الذكر.
@@ -3819,6 +4200,9 @@ body:
 في أحد أنواع الثدييات صفتا لون الجسم وطول الذيل مرتبطتان محمولتان على نفس الكروموسوم. تزاوجت أنثى سوداء اللون طويلة الذيل مع ذكر أبيض اللون قصير الذيل فكان الناتج: سوداء قصيرة الذيل (16)، بيضاء طويلة الذيل (16)، بيضاء قصيرة الذيل (84)، سوداء طويلة الذيل (84). جين الأسود B سائد على الأبيض b، وجين الذيل الطويل G سائد على القصير g.
 
 اكتب الطرز الجينية للأبوين.
+final-answer:
+- **الأنثى:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BbGg</mtext></math>\`، بترتيب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG/bg</mtext></math>\`.
+- **الذكر:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\`، بترتيب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg/bg</mtext></math>\`.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأسود السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للقصير. الذكر الأبيض القصير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` فقط. الأنثى السوداء الطويلة أنجبت أبيض قصير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\` ، فتحتاج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` ؛
 لذا هي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BbGg</mtext></math>\`.
@@ -3838,6 +4222,11 @@ body:
 في أحد أنواع الثدييات صفتا لون الجسم وطول الذيل مرتبطتان محمولتان على نفس الكروموسوم. تزاوجت أنثى سوداء اللون طويلة الذيل مع ذكر أبيض اللون قصير الذيل فكان الناتج: سوداء قصيرة الذيل (16)، بيضاء طويلة الذيل (16)، بيضاء قصيرة الذيل (84)، سوداء طويلة الذيل (84). جين الأسود B سائد على الأبيض b، وجين الذيل الطويل G سائد على القصير g.
 
 اكتب الطرز الجينية للأفراد الناتجة.
+final-answer:
+- **سوداء قصيرة الذيل:** \`Bbgg\`، وعددها **16**.
+- **بيضاء طويلة الذيل:** \`bbGg\`، وعددها **16**.
+- **بيضاء قصيرة الذيل:** \`bbgg\`، وعددها **84**.
+- **سوداء طويلة الذيل:** \`BbGg\`، وعددها **84**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأسود السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للقصير. الذكر الأبيض القصير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` فقط. الأنثى السوداء الطويلة أنجبت أبيض قصير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\` ، فتحتاج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` ؛
 لذا هي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BbGg</mtext></math>\`.
@@ -3865,6 +4254,9 @@ body:
 في أحد أنواع الثدييات صفتا لون الجسم وطول الذيل مرتبطتان محمولتان على نفس الكروموسوم. تزاوجت أنثى سوداء اللون طويلة الذيل مع ذكر أبيض اللون قصير الذيل فكان الناتج: سوداء قصيرة الذيل (16)، بيضاء طويلة الذيل (16)، بيضاء قصيرة الذيل (84)، سوداء طويلة الذيل (84). جين الأسود B سائد على الأبيض b، وجين الذيل الطويل G سائد على القصير g.
 
 حدد الأفراد الناتجة التي تحمل تراكيب جينية جديدة.
+final-answer:
+- **سوداء قصيرة الذيل:** \`Bbgg\`، وعددها **16**.
+- **بيضاء طويلة الذيل:** \`bbGg\`، وعددها **16**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأسود السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للقصير. الذكر الأبيض القصير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` فقط. الأنثى السوداء الطويلة أنجبت أبيض قصير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbgg</mtext></math>\` ، فتحتاج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` ؛
 لذا هي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BbGg</mtext></math>\`.
@@ -3888,6 +4280,8 @@ body:
 ما نسبة حدوث عبور بين الجينين A وB؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/409b3c15fe0e542d38f5.webp)
+final-answer:
+**3%**.
 solution:
 كل وحدة خريطة تقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` تكرار تراكيب جديدة في نموذج المنهج.
 ![الخريطة الأصلية](assets/lessons/curriculum-evidence/409b3c15fe0e542d38f5.webp)
@@ -3910,6 +4304,8 @@ body:
 ما نسبة الارتباط بين الجينين A وC؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/409b3c15fe0e542d38f5.webp)
+final-answer:
+**91%**.
 solution:
 العبور يقابل المسافة بوحدة الخريطة، والارتباط نسبة التراكيب الأبوية المكملة إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
 ![الخريطة الأصلية](assets/lessons/curriculum-evidence/409b3c15fe0e542d38f5.webp)
@@ -3933,6 +4329,8 @@ body:
 ما نسبة تكرار التراكيب الجينية الجديدة بين الجينين B وC؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/409b3c15fe0e542d38f5.webp)
+final-answer:
+**6%**.
 solution:
 نسبة التراكيب الجينية الجديدة هي نسبة المؤتلفات، وتقابل عدد وحدات الخريطة.
 ![الخريطة الأصلية](assets/lessons/curriculum-evidence/409b3c15fe0e542d38f5.webp)
@@ -3954,6 +4352,8 @@ body:
 ما أقل نسبة ارتباط في الخريطة المعطاة، وما قيمتها؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/409b3c15fe0e542d38f5.webp)
+final-answer:
+بين الجينين **A وE**، وقيمتها **87%**.
 solution:
 كلما زادت المسافة زادت نسبة الجديد وانخفضت نسبة الارتباط في هذا النموذج.
 ![الخريطة الأصلية](assets/lessons/curriculum-evidence/409b3c15fe0e542d38f5.webp)
@@ -3981,6 +4381,8 @@ body:
 | D | 4 | 2 | 5 | — |
 
 احسب نسبة تكرار العبور بين B وD.
+final-answer:
+**2%**.
 solution:
 السنتيمورغان الواحد يقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` تكرار عبور في نموذج هذه المسائل. نقرأ صف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` وعمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D</mtext></math>\` في الجدول فنجد المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2</mtext></math>\` سنتيمورغان.
 إذن نسبة العبور بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D</mtext></math>\` تساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2%</mtext></math>\` ؛
@@ -4007,6 +4409,8 @@ body:
 | D | 4 | 2 | 5 | — |
 
 احسب نسبة الارتباط بين A وC.
+final-answer:
+**99%**.
 solution:
 الجدول يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–C=1</mtext></math>\` سنتيمورغان؛
 كل وحدة تقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` جديد. إذن العبور بينهما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\`.
@@ -4033,6 +4437,12 @@ body:
 | D | 4 | 2 | 5 | — |
 
 ارسم خارطة جينية تبين مواقع الجينات الأربعة على طول الكروموسوم.
+final-answer:
+**الخريطة الجينية** — المسافات بالسنتيمورغان:
+
+\`\`\`text
+C ──1── A ──4── D ──2── B
+\`\`\`
 solution:
 المسافات تجمع على خط الكروموسوم؛
 نضع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>0</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1</mtext></math>\` لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C–A=1</mtext></math>\`. ولأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C–D=5</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–D=4</mtext></math>\` نضع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>5</mtext></math>\`. ولأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D–B=2</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C–B=7</mtext></math>\` نضع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>7</mtext></math>\`.
@@ -4144,6 +4554,11 @@ body:
 في إحدى تجارب مورغان على ذبابة الفاكهة أجري تلقيح بين ذكر وأنثى كلاهما رمادي اللون طبيعي الأجنحة غير متماثلي الجينات، فكانت ثلاثة أرباع النسل الناتج رمادية اللون طبيعية الأجنحة. باستخدام الرموز المناسبة أجب:
 
 اكتب الطراز الجيني لكل من الذكر والأنثى.
+final-answer:
+- **الذكر:** \`BG/bg\`، أي \`BbGg\`.
+- **الأنثى:** \`BG/bg\`، أي \`BbGg\`.
+
+**B:** رمادي، **b:** أسود؛ **G:** أجنحة طبيعية، **g:** أجنحة ضامرة.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للرمادي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأسود، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` للأجنحة الطبيعية السائدة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للضامرة. الأبوان غير متماثلين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BbGg</mtext></math>\`. ظهور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3/4</mtext></math>\` رمادي طبيعي مع بقاء الصفتين معاً يلائم ارتباطاً تاماً في الطور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG/bg</mtext></math>\` لدى كليهما.
 كل أب يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG</mtext></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` مناصفة دون عبور؛
@@ -4161,6 +4576,12 @@ body:
 في إحدى تجارب مورغان على ذبابة الفاكهة أجري تلقيح بين ذكر وأنثى كلاهما رمادي اللون طبيعي الأجنحة غير متماثلي الجينات، فكانت ثلاثة أرباع النسل الناتج رمادية اللون طبيعية الأجنحة. باستخدام الرموز المناسبة أجب:
 
 اكتب الطرز الجينية المحتملة لأفراد الجيل الأول.
+final-answer:
+- \`BBGG\`: **25%**.
+- \`BbGg\`: **50%**.
+- \`bbgg\`: **25%**.
+
+**B:** رمادي، **b:** أسود؛ **G:** أجنحة طبيعية، **g:** أجنحة ضامرة.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للرمادي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأسود، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` للأجنحة الطبيعية السائدة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للضامرة. الأبوان غير متماثلين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BbGg</mtext></math>\`. ظهور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3/4</mtext></math>\` رمادي طبيعي مع بقاء الصفتين معاً يلائم ارتباطاً تاماً في الطور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG/bg</mtext></math>\` لدى كليهما.
 كل أب يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG</mtext></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` مناصفة دون عبور؛
@@ -4180,6 +4601,8 @@ body:
 في إحدى تجارب مورغان على ذبابة الفاكهة أجري تلقيح بين ذكر وأنثى كلاهما رمادي اللون طبيعي الأجنحة غير متماثلي الجينات، فكانت ثلاثة أرباع النسل الناتج رمادية اللون طبيعية الأجنحة. باستخدام الرموز المناسبة أجب:
 
 ما نمط الوراثة للصفتين؟
+final-answer:
+**ارتباط تام دون عبور**، مع سيادة تامة لكل صفة.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للرمادي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأسود، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` للأجنحة الطبيعية السائدة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g</mtext></math>\` للضامرة. الأبوان غير متماثلين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BbGg</mtext></math>\`. ظهور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3/4</mtext></math>\` رمادي طبيعي مع بقاء الصفتين معاً يلائم ارتباطاً تاماً في الطور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG/bg</mtext></math>\` لدى كليهما.
 كل أب يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BG</mtext></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bg</mtext></math>\` مناصفة دون عبور؛
@@ -4196,6 +4619,13 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أسماك (أورندا) الذهبية من أكثر أسماك الزينة اقتناء في المنازل. أجري تزاوج بين أسماك أورندا التي تمتلك زعانف مفتوحة وذيلاً مروحياً مع أسماك لها نفس الطرز الشكلية، فنتجت 290 سمكة زعانفها مفتوحة وذيلها مروحي، و98 سمكة زعانفها مغلقة وذيلها سيفي. استخدم T للذيل المروحي وt للسيفي وR للزعنفة المفتوحة وr للمغلقة. فسر النتائج على أسس وراثية مبيناً نوع الوراثة.
+final-answer:
+**ارتباط تام دون عبور ظاهر، مع سيادة تامة لكل صفة.**
+
+- **الأبوان:** \`RT/rt × RT/rt\`، أي \`RrTt × RrTt\`.
+- **غاميتات كل أب:** \`RT\` و\`rt\`.
+- **النسل:** \`RRTT : RrTt : rrtt\` بنسبة **1 : 2 : 1**.
+- **النسبة الشكلية:** **3 مفتوحة الزعانف مروحية الذيل : 1 مغلقة الزعانف سيفية الذيل**، موافقة تقريباً للنسبة المشاهدة \`290 : 98\`.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للزعنفة المفتوحة السائدة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للمغلقة، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للذيل المروحي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للسيفي. ظهور المتنحي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rrtt</mtext></math>\` يثبت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` في كلا الأبوين ذوي المظهر السائد، فيكونان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RrTt</mtext></math>\`.
 الأعداد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>290:98</mtext></math>\` تقارب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3:1</mtext></math>\` ، وغياب المفتوح السيفي والمغلق المروحي يوافق الارتباط التام \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RT/rt</mtext></math>\` دون عبور ظاهر.
@@ -4215,6 +4645,11 @@ body:
 تزوج رجل سليم من عمى الألوان ونزف الدم، من فتاة سليمة من المرضين والدها مصاب بالمرضين، فأنجبا أربعة ذكور: الأول سليم من المرضين؛ الثاني مصاب بالمرضين؛ الثالث سليم من عمى الألوان ومصاب بنزف الدم؛ الرابع مصاب بعمى الألوان وسليم من نزف الدم. b لجين الإصابة بعمى الألوان وh لجين الإصابة بنزف الدم.
 
 اكتب الطرز الجينية للأبوين.
+final-answer:
+- **الأب:** \`X[BH]Y\`.
+- **الأم:** \`X[BH]X[bh]\`.
+
+**B:** رؤية طبيعية، **b:** عمى الألوان؛ **H:** سلامة من نزف الدم، **h:** نزف الدم.
 solution:
 المرضان متنحيان على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للرؤية الطبيعية و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` لعمى الألوان، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` للسلامة من نزف الدم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` للإصابة. نكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X[BH]</mtext></math>\` لأليلين على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` نفسه.
@@ -4234,6 +4669,13 @@ body:
 تزوج رجل سليم من عمى الألوان ونزف الدم، من فتاة سليمة من المرضين والدها مصاب بالمرضين، فأنجبا أربعة ذكور: الأول سليم من المرضين؛ الثاني مصاب بالمرضين؛ الثالث سليم من عمى الألوان ومصاب بنزف الدم؛ الرابع مصاب بعمى الألوان وسليم من نزف الدم. b لجين الإصابة بعمى الألوان وh لجين الإصابة بنزف الدم.
 
 اكتب الطرز الجينية للأبناء الذكور.
+final-answer:
+1. **الأول:** \`X[BH]Y\`.
+2. **الثاني:** \`X[bh]Y\`.
+3. **الثالث:** \`X[Bh]Y\`.
+4. **الرابع:** \`X[bH]Y\`.
+
+**B:** رؤية طبيعية، **b:** عمى الألوان؛ **H:** سلامة من نزف الدم، **h:** نزف الدم.
 solution:
 المرضان متنحيان على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للرؤية الطبيعية و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` لعمى الألوان، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` للسلامة من نزف الدم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` للإصابة. نكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X[BH]</mtext></math>\` لأليلين على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` نفسه.
@@ -4258,6 +4700,8 @@ body:
 تزوج رجل سليم من عمى الألوان ونزف الدم، من فتاة سليمة من المرضين والدها مصاب بالمرضين، فأنجبا أربعة ذكور: الأول سليم من المرضين؛ الثاني مصاب بالمرضين؛ الثالث سليم من عمى الألوان ومصاب بنزف الدم؛ الرابع مصاب بعمى الألوان وسليم من نزف الدم. b لجين الإصابة بعمى الألوان وh لجين الإصابة بنزف الدم.
 
 ما نوع الوراثة؟
+final-answer:
+**وراثة متنحية مرتبطة بالجنس على الكروموسوم X، مع ارتباط جيني وعبور لدى الأم.**
 solution:
 المرضان متنحيان على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للرؤية الطبيعية و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` لعمى الألوان، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` للسلامة من نزف الدم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` للإصابة. نكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X[BH]</mtext></math>\` لأليلين على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` نفسه.
@@ -4283,6 +4727,8 @@ body:
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/ac96d91bcd869ab169f7.webp)
 
+final-answer:
+**8 أنواع من الغاميتات** عبر انقسامات منصفة متعددة.
 solution:
 العدد المطلوب هو أنواع الغاميتات الممكنة للفرد عبر انقسامات مختلفة؛
 الغاميت يحمل أليلاً واحداً من كل جين.
@@ -4309,6 +4755,8 @@ body:
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/ac96d91bcd869ab169f7.webp)
 
+final-answer:
+**4 أنواع:** \`ABTR\`، \`ABtr\`، \`AbTR\`، \`Abtr\`.
 solution:
 الغاميت يحمل أليلاً واحداً لكل جين، ودون عبور تبقى تركيبات الجينين المرتبطين كما هي.
 ![الطراز الأصلي](assets/lessons/curriculum-evidence/ac96d91bcd869ab169f7.webp)
@@ -4326,6 +4774,8 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 حدد الدور الذي تقوم به الخرائط الجينية.
+final-answer:
+تبين **الترتيب الخطي الافتراضي لمواقع الجينات على الكروموسوم**، وتقدّر **المسافات بينها** من نسب التراكيب الجديدة الناتجة بالعبور.
 solution:
 **الإجابة:** تبين الخرائط الجينية ترتيباً خطياً افتراضياً لمواقع الجينات على الكروموسوم، وتقدّر المسافات بينها من نسب التراكيب الجديدة الناتجة بالعبور.
 
@@ -4356,6 +4806,8 @@ body:
 | P | 4 | 2 | 5 | — |
 
 ما نسبة تكرار العبور بين الجينين M وE؟
+final-answer:
+**7%**.
 solution:
 كل سنتيمورغان يقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` من التراكيب الجديدة في نموذج المنهج.
 نقرأ صف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M</mtext></math>\` وعمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E:</mtext></math>\` المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>7</mtext></math>\` سنتيمورغان، فتكون نسبة تكرار العبور بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E</mtext></math>\` تساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>7%</mtext></math>\`.
@@ -4381,6 +4833,8 @@ body:
 | P | 4 | 2 | 5 | — |
 
 ما نسبة الارتباط بين الجينين P وH؟
+final-answer:
+**96%**.
 solution:
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>P–H</mtext></math>\` في الجدول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4</mtext></math>\` سنتيمورغان، أي تكرار عبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4%</mtext></math>\`. نسبة الارتباط هي نسبة الأبويين المكملة إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
 الارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>P–H=100%−4%=96%</mtext></math>\`.
@@ -4406,6 +4860,8 @@ body:
 | P | 4 | 2 | 5 | — |
 
 ما نسبة تكرار التراكيب الجينية الجديدة بين الجينين H وE؟
+final-answer:
+**6%**.
 solution:
 التراكيب الجديدة هي المؤتلفات الناتجة بالعبور؛
 تقابل نسبتها عدد وحدات الخريطة.
@@ -4432,6 +4888,12 @@ body:
 | P | 4 | 2 | 5 | — |
 
 ارسم خريطة جينية تبين مواقع الجينات الأربعة على طول الكروموسوم.
+final-answer:
+**الخريطة الجينية** — المسافات بالسنتيمورغان:
+
+\`\`\`text
+M ──1── H ──4── P ──2── E
+\`\`\`
 solution:
 نرتب الجينات على خط بحيث توافق كل المسافات. نضع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>0</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1</mtext></math>\` لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M–H=1</mtext></math>\`. نضع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>P</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>5</mtext></math>\` ؛
 فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H–P=4</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M–P=5</mtext></math>\`. ثم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>7</mtext></math>\` ؛
@@ -4465,6 +4927,9 @@ body:
 | AD | 12% | AE | 82% |
 
 ما نسبة ارتباط كل من الجينات (EB)، (AD)؟
+final-answer:
+- **EB:** **98%**.
+- **AD:** **88%**.
 solution:
 نسبة الارتباط تمثل التراكيب الأبوية، ونسبة العبور تمثل الجديد؛
 مجموعهما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
@@ -4492,6 +4957,9 @@ body:
 | AD | 12% | AE | 82% |
 
 ما نسبة العبور بين كل من الجينات (EC)، (AE)؟
+final-answer:
+- **EC:** **12%**.
+- **AE:** **18%**.
 solution:
 نسبة العبور هي الجزء المتبقي بعد التراكيب الأبوية «نسبة الارتباط».
 للزوج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–C</mtext></math>\` ارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>88%</mtext></math>\` ؛
@@ -4520,6 +4988,12 @@ body:
 | AD | 12% | AE | 82% |
 
 ارسم خريطة جينية تبين مواقع الجينات الخمسة على طول الكروموسوم.
+final-answer:
+**الخريطة الجينية** — المسافات بوحدات الخريطة:
+
+\`\`\`text
+A ──6── C ──6── D ──4── B ──2── E
+\`\`\`
 solution:
 نحول الارتباط إلى مسافة باستعمال \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100−</mtext></math>\` الارتباط، وكل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` عبور يقابل وحدة خريطة.
 المسافات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–C=6</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B–C=10</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–C=12</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–E=18</mtext></math>\` ؛
@@ -4556,6 +5030,8 @@ body:
 | F، H | 90% | — | — |
 
 ما نسبة الارتباط بين الجينين (F، E)؟
+final-answer:
+**97%**.
 solution:
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–F=3</mtext></math>\` وحدات خريطة في الجدول، أي عبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3%</mtext></math>\`. الارتباط هو الباقي الأبوي إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
 نسبة الارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>F–E=100%−3%=97%</mtext></math>\`.
@@ -4574,6 +5050,18 @@ body:
 في أحد أنواع الحيوانات لون الجسم وطول الذيل صفتان مرتبطتان على نفس الكروموسوم. تزاوج ذكر أسود اللون طويل الذيل مع أنثى بيضاء اللون قصيرة الذيل، فكانت الأفراد الناتجة:179 سوداء طويلة الذيل؛181 بيضاء قصيرة الذيل؛21 بيضاء طويلة الذيل؛19 سوداء قصيرة الذيل. جين الأسود B سائد على الأبيض b، وجين الذيل الطويل T سائد على القصير t.
 
 اكتب الطرز الجينية للأبوين ولغاميتاتها للصفتين معاً محدداً نسبة ظهور كل غاميت.
+final-answer:
+- **الأب:** \`BT/bt\`، أي \`BbTt\`.
+- **الأم:** \`bt/bt\`، أي \`bbtt\`؛ غاميتها **bt بنسبة 100%**.
+
+**غاميتات الأب:**
+
+| الغاميت | النسبة المتوقعة | النسبة المشاهدة |
+|---|---|---|
+| \`BT\` | **45%** | 44.75% |
+| \`bt\` | **45%** | 45.25% |
+| \`bT\` | **5%** | 5.25% |
+| \`Bt\` | **5%** | 4.75% |
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأسود السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الأنثى البيضاء القصيرة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\` تعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` فقط. وجود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\` في النسل يثبت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` عند الذكر الأسود الطويل، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BbTt</mtext></math>\`.
 الفئتان الكبيرتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>179</mtext></math>\` أسود طويل و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>181</mtext></math>\` أبيض قصير تكشفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BT</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` الأبويتين؛
@@ -4612,6 +5100,8 @@ body:
 في أحد أنواع الحيوانات لون الجسم وطول الذيل صفتان مرتبطتان على نفس الكروموسوم. تزاوج ذكر أسود اللون طويل الذيل مع أنثى بيضاء اللون قصيرة الذيل، فكانت الأفراد الناتجة:179 سوداء طويلة الذيل؛181 بيضاء قصيرة الذيل؛21 بيضاء طويلة الذيل؛19 سوداء قصيرة الذيل. جين الأسود B سائد على الأبيض b، وجين الذيل الطويل T سائد على القصير t.
 
 ما نسبة الارتباط بين جينات الصفتين؟
+final-answer:
+**90%**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأسود السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\` تعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` فقط؛
 لذا الفئتان الكبيرتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>179</mtext></math>\` أسود طويل و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>181</mtext></math>\` أبيض قصير تعكسان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BT</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` الأبويتين من أب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BT/bt</mtext></math>\`
@@ -4634,6 +5124,8 @@ body:
 في أحد أنواع الحيوانات لون الجسم وطول الذيل صفتان مرتبطتان على نفس الكروموسوم. تزاوج ذكر أسود اللون طويل الذيل مع أنثى بيضاء اللون قصيرة الذيل، فكانت الأفراد الناتجة:179 سوداء طويلة الذيل؛181 بيضاء قصيرة الذيل؛21 بيضاء طويلة الذيل؛19 سوداء قصيرة الذيل. جين الأسود B سائد على الأبيض b، وجين الذيل الطويل T سائد على القصير t.
 
 ما المسافة بين جيني الصفتين؟
+final-answer:
+**10 سنتيمورغان (وحدات خريطة)**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأسود السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\` تعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` فقط؛
 لذا الفئتان الكبيرتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>179</mtext></math>\` أسود طويل و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>181</mtext></math>\` أبيض قصير تعكسان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BT</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` الأبويتين من أب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BT/bt</mtext></math>\`
@@ -4657,6 +5149,8 @@ body:
 في أحد أنواع الحيوانات لون الجسم وطول الذيل صفتان مرتبطتان على نفس الكروموسوم. تزاوج ذكر أسود اللون طويل الذيل مع أنثى بيضاء اللون قصيرة الذيل، فكانت الأفراد الناتجة:179 سوداء طويلة الذيل؛181 بيضاء قصيرة الذيل؛21 بيضاء طويلة الذيل؛19 سوداء قصيرة الذيل. جين الأسود B سائد على الأبيض b، وجين الذيل الطويل T سائد على القصير t.
 
 في حال عدم حدوث عبور، ما احتمال إنتاج الطراز الجيني BbTt؟
+final-answer:
+**1/2، أي 50%**.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأسود السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\` تعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` فقط؛
 لذا الفئتان الكبيرتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>179</mtext></math>\` أسود طويل و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>181</mtext></math>\` أبيض قصير تعكسان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BT</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` الأبويتين من أب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BT/bt</mtext></math>\`
@@ -4955,6 +5449,9 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 قارن بين طفرة الانقلاب وطفرة الانتقال من حيث المفهوم.
+final-answer:
+- **الانقلاب:** انفصال قطعة من الكروموسوم ودورانها **180°** ثم اتصالها به باتجاه معكوس.
+- **الانتقال:** تبادل قطعتين بين **كروموسومين غير متناظرين**.
 solution:
 **الإجابة:** الانقلاب: تنفصل قطعة وتدور180° ثم تعود معكوسة الاتجاه في الكروموسوم. الانتقال: تتبادل قطعتان بين كروموسومين غير متناظرين.
 
@@ -4980,6 +5477,8 @@ body:
 ما نوع الطفرة الكروموسومية المشار إليها بالرمز (س)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/fd9bfc4059e085f1a4f2.webp)
+final-answer:
+**عدم انفصال الكروموسومات الجنسية أثناء الانقسام المنصف.**
 solution:
 ![المخطط الأصلي](assets/lessons/curriculum-evidence/fd9bfc4059e085f1a4f2.webp)
 الخلية الأبوية تحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XY</mtext></math>\` ، لكن المخطط يجعل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` ينتقلان معاً إلى غاميت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XY</mtext></math>\` ، ويترك الغاميت(هـ) بلا كروموسوم جنسي.
@@ -4998,6 +5497,8 @@ body:
 ما اسم الاختلال الوراثي في الفرد المشار إليه بالرمز (ص)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/fd9bfc4059e085f1a4f2.webp)
+final-answer:
+**متلازمة كلينفلتر.**
 solution:
 ![المخطط الأصلي](assets/lessons/curriculum-evidence/fd9bfc4059e085f1a4f2.webp)
 البويضة الطبيعية تحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ، والحيوان المنوي في الفرع(ص) يحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XY</mtext></math>\` بعد عدم الانفصال.
@@ -5017,6 +5518,8 @@ body:
 كم عدد الكروموسومات الجسمية في الحيوان المنوي المشار إليه بالرمز (هـ)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/fd9bfc4059e085f1a4f2.webp)
+final-answer:
+**22 كروموسوماً جسمياً.**
 solution:
 ![المخطط الأصلي](assets/lessons/curriculum-evidence/fd9bfc4059e085f1a4f2.webp)
 الحيوان المنوي(هـ) خالٍ من كروموسوم جنسي نتيجة عدم انفصال \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` إلى الغاميت الآخر؛
@@ -5036,6 +5539,8 @@ body:
 ما جنس الفرد الناتج المشار إليه بالرمز (ع)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/fd9bfc4059e085f1a4f2.webp)
+final-answer:
+**أنثى.**
 solution:
 ![المخطط الأصلي](assets/lessons/curriculum-evidence/fd9bfc4059e085f1a4f2.webp)
 الحيوان المنوي(هـ) بلا كروموسوم جنسي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` ؛
@@ -5051,6 +5556,12 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 هناك أنواع مختلفة من الاختلالات الوراثية ناتجة عن حالات عدم الانفصال، وضح ذلك.
+final-answer:
+يؤدي **عدم الانفصال** إلى غاميتات زائدة أو ناقصة كروموسوماً، ثم إلى اختلالات يحددها الكروموسوم المتأثر:
+
+- **داون:** ثلاث نسخ من الكروموسوم **21**.
+- **كلينفلتر:** الطراز الجنسي **XXY**.
+- **تيرنر:** الطراز الجنسي **XO**.
 solution:
 عدم الانفصال خلل في توزيع الكروموسومات بالانقسام المنصف. قد يبقى كروموسومان متناظران معاً في الطور الانفصالي الأول، أوتبقى كروماتيدان شقيقان معاً في الطور الانفصالي الثاني.
 ينتج غاميت فيه نسختان من كروموسوم معين «\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>n+1</mtext></math>\`»، وآخر بلا نسخة منه «\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>n−1</mtext></math>\`»، بدلاً من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>n</mtext></math>\` الطبيعي. وعند إخصاب غاميت طبيعي قد يصبح الزيجوت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2n+1</mtext></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2n−1</mtext></math>\`.
@@ -5065,6 +5576,11 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما أنواع الطفرات الكروموسومية التي تحدث تغييراً في تركيب الكروموسوم؟
+final-answer:
+- **الحذف.**
+- **التكرار.**
+- **الانقلاب.**
+- **الانتقال.**
 solution:
 **الإجابة:** الحذف: فقد جزء من الكروموسوم. التكرار: تكرار جزء منه. الانقلاب: انفصال قطعة وانقلابها 180 درجة ثم اتصالها بشكل معكوس. الانتقال: تبادل قطعتين مختلفتين بين كروموسومين غير متناظرين.
 
@@ -5088,6 +5604,8 @@ body:
 اذكر اسم الاختلال الوراثي الناجم عن كل طراز كروموسومي جنسي من الآتية:
 
 أ. XXY
+final-answer:
+**متلازمة كلينفلتر.**
 solution:
 **الإجابة:** متلازمة كلينفلتر.
 
@@ -5111,6 +5629,8 @@ body:
 اذكر اسم الاختلال الوراثي الناجم عن كل طراز كروموسومي جنسي من الآتية:
 
 ب. XO
+final-answer:
+**متلازمة تيرنر.**
 solution:
 **الإجابة:** متلازمة تيرنر.
 
@@ -5132,6 +5652,9 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 قارن بين متلازمة كلينفلتر ومتلازمة داون من حيث الطراز الكروموسومي الجنسي.
+final-answer:
+- **كلينفلتر:** \`XXY\`.
+- **داون:** \`XX\` للأنثى أو \`XY\` للذكر.
 solution:
 **كلينفلتر: XXY.** يظهر في الشكل كروموسومانX وكروموسومY.
 
@@ -5153,6 +5676,8 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما المقصود بمرض كرابي؟
+final-answer:
+**مرض وراثي ناتج عن طفرة جينية متنحية على الكروموسوم رقم 14.**
 solution:
 **الإجابة:** مرض وراثي ناتج عن طفرة جينية متنحية على الكروموسوم رقم 14.
 
@@ -5174,6 +5699,12 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 قارن بين مرض فينيل كيتونوريا ومرض كرابي وحمى البحر الأبيض المتوسط من حيث رقم الكروموسوم الذي تحدث عليه الطفرة.
+final-answer:
+| المرض | رقم الكروموسوم |
+|---|---|
+| فينيل كيتونوريا | **12** |
+| كرابي | **14** |
+| حمى البحر الأبيض المتوسط | **16** |
 solution:
 **الإجابة:** فينيل كيتونوريا: 12؛ كرابي: 14؛ حمى البحر الأبيض المتوسط: 16.
 
@@ -5197,6 +5728,8 @@ body:
 من خلال دراستك للاختلالات الوراثية التي لها علاقة بالطفرات الجينية، أجب عما يأتي:
 
 ما المقصود بالطفرة الجينية؟
+final-answer:
+**تغير دائم في تسلسل القواعد النيتروجينية لجين معين.**
 solution:
 **الإجابة:** تغير دائم في تسلسل القواعد النيتروجينية لجين معين.
 
@@ -5220,6 +5753,10 @@ body:
 من خلال دراستك للاختلالات الوراثية التي لها علاقة بالطفرات الجينية، أجب عما يأتي:
 
 اكتب ثلاثة اختلالات لها علاقة بالطفرات الجينية، واذكر رقم الكروموسوم الذي حدثت فيه الطفرة في كل حالة.
+final-answer:
+1. **فينيل كيتونوريا:** الكروموسوم **12**.
+2. **كرابي:** الكروموسوم **14**.
+3. **حمى البحر الأبيض المتوسط:** الكروموسوم **16**.
 solution:
 **الإجابة:** فينيل كيتونوريا: طفرة جينية متنحية على الكروموسوم 12. كرابي: طفرة جينية متنحية على الكروموسوم 14. حمى البحر الأبيض المتوسط: طفرة جينية متنحية على الكروموسوم 16.
 
@@ -5245,6 +5782,8 @@ body:
 ما نوع الطفرة الكروموسومية المشار إليها بالرمز (أ)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/4a71524283a82245cbaf.webp)
+final-answer:
+**عدم انفصال الكروموسومات الجنسية.**
 solution:
 ![المخطط الأصلي](assets/lessons/curriculum-evidence/4a71524283a82245cbaf.webp)
 الخلية الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XX</mtext></math>\` تعطي في المخطط بويضة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XX</mtext></math>\` وأخرى بلا كروموسوم جنسي، بدلاً من بويضتين تحمل كل منهما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\`.
@@ -5264,6 +5803,8 @@ body:
 ما عدد الكروموسومات الجسمية في الفرد الناتج المشار إليه بالرمز (ب)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/4a71524283a82245cbaf.webp)
+final-answer:
+**44 كروموسوماً جسمياً.**
 solution:
 ![المخطط الأصلي](assets/lessons/curriculum-evidence/4a71524283a82245cbaf.webp)
 الفرد(ب) ناتج من بويضة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XX</mtext></math>\` وحيوان منوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` ، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XXY</mtext></math>\`. الزيادة محصورة في الجنسية.
@@ -5284,6 +5825,8 @@ body:
 ما الطراز الكروموسومي الجنسي للفرد المشار إليه بالرمز (ج)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/4a71524283a82245cbaf.webp)
+final-answer:
+**XO**.
 solution:
 ![المخطط الأصلي](assets/lessons/curriculum-evidence/4a71524283a82245cbaf.webp)
 الفرد(ج) يتكون من بويضة فقدت الكروموسوم الجنسي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` وحيوان منوي طبيعي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\`.
@@ -5303,6 +5846,8 @@ body:
 ما جنس الفرد الناتج المشار إليه بالرمز (ج)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/4a71524283a82245cbaf.webp)
+final-answer:
+**أنثى.**
 solution:
 ![المخطط الأصلي](assets/lessons/curriculum-evidence/4a71524283a82245cbaf.webp)
 الفرد(ج) ناتج من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` في البويضة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` في الحيوان المنوي، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XO</mtext></math>\`. لا يحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` ، ويصنف أنثى مصابة بمتلازمة تيرنر.
@@ -5320,6 +5865,8 @@ body:
 يعتبر مرض فينيل كيتونوريا (PKU) من الاختلالات الوراثية التي يتم تشخيصها لدى الأطفال حديثي الولادة:
 
 بين السبب الجيني للإصابة بالمرض.
+final-answer:
+**طفرة جينية متنحية على الكروموسوم رقم 12.**
 solution:
 **الإجابة:** طفرة جينية متنحية على الكروموسوم رقم12.
 
@@ -5341,6 +5888,17 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 صمم مخططاً لانقسام خلية تناسلية ذكرية حدث فيها عدم انفصال لزوج الكروموسومات الجنسية (XY) مبيناً حالات الإخصاب المختلفة مع بويضة طبيعية (X).
+final-answer:
+**عدم انفصال XY في الانقسام المنصف الأول:**
+
+\`\`\`text
+44 + XY → 2(22 + XY) + 2(22 + O)
+\`\`\`
+
+| الحيوان المنوي | البويضة الطبيعية | الناتج |
+|---|---|---|
+| \`22 + XY\` | \`22 + X\` | **44 + XXY — ذكر مصاب بكلينفلتر، 47 كروموسوماً** |
+| \`22 + O\` | \`22 + X\` | **44 + XO — أنثى مصابة بتيرنر، 45 كروموسوماً** |
 solution:
 عدم انفصال \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` في الانقسام المنصف الأول يجعل الغاميتات إما تحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XY</mtext></math>\` معاً أوتخلو منهما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` ؛
 وتظل الجسمية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>22</mtext></math>\` في كل غاميت.
@@ -5363,6 +5921,9 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 بالاعتماد على الطرز الكروموسومية كيف يمكن تشخيص كل من مريض مصاب بمتلازمة إدواردز ومتلازمة تيرنر؟
+final-answer:
+- **إدواردز:** ثلاث نسخ من الكروموسوم **18**؛ المجموع **47 كروموسوماً**: 45 جسمياً و\`XX\` أو\`XY\`.
+- **تيرنر:** الطراز **44 + XO**؛ المجموع **45 كروموسوماً**: 44 جسمياً وكروموسوم \`X\` واحد.
 solution:
 نفحص الطراز الكروموسومي بعد عد الكروموسومات وترتيبها:
 إدواردز: تظهر ثلاث نسخ من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>18</mtext></math>\` بدلاً من اثنتين؛
@@ -5381,6 +5942,9 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 قارن بين مرض حمى البحر الأبيض المتوسط ومرض عسر النمو العضلي التدريجي من حيث رقم الكروموسوم الذي حدثت عليه الطفرة.
+final-answer:
+- **حمى البحر الأبيض المتوسط:** الكروموسوم الجسمي **16**.
+- **عسر النمو العضلي التدريجي:** الكروموسوم **X** من الزوج الجنسي **23**.
 solution:
 **الإجابة:** حمى البحر الأبيض المتوسط: الكروموسوم الجسمي16. عسر النمو العضلي التدريجي: الكروموسومX، وهو من الزوج الجنسي23.
 
@@ -5418,6 +5982,8 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 كيف تنتج غاميتات تحتوي زيادة أو نقصاناً في عدد الكروموسومات الجسمية أو الجنسية عند حدوث طفرة عدم الانفصال؟
+final-answer:
+بفشل انفصال **الكروموسومات المتناظرة في الطور الانفصالي الأول** أو **الكروماتيدات الشقيقة في الطور الانفصالي الثاني**؛ فتنتقل النسختان معاً إلى غاميت **n + 1**، ويخلو الغاميت الآخر منهما فيصبح **n − 1**.
 solution:
 عادة يفترق الكروموسومان المتناظران في الانقسام المنصف الأول، وتفترق الكروماتيدات الشقيقة في الثاني، فيأخذ كل غاميت نسخة واحدة.
 إذا لم ينفصل المتناظران في الطور الانفصالي الأول، ينتقلان معاً؛
@@ -5433,6 +5999,20 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 بين بمخططين آليتين يمكن أن ينتج من خلالهما الاختلال الوراثي (متلازمة تيرنر).
+final-answer:
+**الآلية الأولى: عدم انفصال الكروموسومات الجنسية عند الأب.**
+
+\`\`\`text
+حيوان منوي (22 + O) + بويضة (22 + X) → 44 + XO
+\`\`\`
+
+**الآلية الثانية: عدم انفصال الكروموسومات الجنسية عند الأم.**
+
+\`\`\`text
+بويضة (22 + O) + حيوان منوي (22 + X) → 44 + XO
+\`\`\`
+
+**الناتج في الحالتين:** أنثى مصابة بتيرنر، **45 كروموسوماً**.
 solution:
 تيرنر تحتاج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` واحداً فقط؛
 لذلك يلزم غاميت خالٍ من كروموسوم جنسي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` يلتقي غاميتاً طبيعياً يحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\`. الجسمية تتوزع طبيعياً \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>22</mtext></math>\` في كل غاميت.
@@ -5500,6 +6080,8 @@ body:
 وضح المقصود:
 
 متلازمة إدواردز.
+final-answer:
+**متلازمة إدواردز:** اختلال وراثي يتمثل في وجود **ثلاث نسخ من الكروموسوم الجسمي 18**؛ المجموع **47 كروموسوماً**.
 solution:
 **متلازمة إدواردز:** وجود ثلاث نسخ من الكروموسوم الجسمي18 بدلاً من نسختين.
 
@@ -5539,6 +6121,9 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 قارن بين مرض كرابي ومرض حمى البحر الأبيض المتوسط من حيث رقم الكروموسوم الذي حدثت عليه الطفرة.
+final-answer:
+- **كرابي:** الكروموسوم **14**.
+- **حمى البحر الأبيض المتوسط:** الكروموسوم **16**.
 solution:
 **الإجابة:** كرابي:14؛ حمى البحر الأبيض المتوسط:16.
 
@@ -5564,6 +6149,11 @@ body:
 من خلال دراستك للطفرات الجينية والكروموسومية أجب:
 
 قارن بين متلازمة داون والطراز الكروموسومي الطبيعي من حيث عدد الكروموسومات الكلية وعدد الكروموسومات الجسمية.
+final-answer:
+| الطراز | الكروموسومات الكلية | الكروموسومات الجسمية |
+|---|---|---|
+| الطبيعي | **46** | **44** |
+| متلازمة داون | **47** | **45** |
 solution:
 الطراز الطبيعي في الشكل يحوي22 زوجاً من الكروموسومات الجسمية، مع كروموسومين جنسيين.
 
@@ -5619,6 +6209,8 @@ body:
 من خلال دراستك للطفرات الجينية والكروموسومية أجب:
 
 ما سبب الإصابة بمرض كرابي؟
+final-answer:
+**طفرة جينية متنحية على الكروموسوم رقم 14.**
 solution:
 **الإجابة:** طفرة جينية متنحية على الكروموسوم رقم14.
 
@@ -5644,6 +6236,8 @@ body:
 ما العدد الكلي للكروموسومات في الخلية رقم (1)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/bb48e20769586f23c628.webp)
+final-answer:
+**23 كروموسوماً.**
 solution:
 ![الشكل الأصلي](assets/lessons/curriculum-evidence/bb48e20769586f23c628.webp)
 الخلية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>(1)</mtext></math>\` بويضة طبيعية تحمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` واحداً، وليست الخلية الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XX</mtext></math>\`. البويضة أحادية المجموعة فتحتوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>22</mtext></math>\` جسمياً و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\`.
@@ -5662,6 +6256,8 @@ body:
 اكتب الطراز الكروموسومي الجنسي للفرد رقم (2).
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/bb48e20769586f23c628.webp)
+final-answer:
+**XXY**.
 solution:
 ![الشكل الأصلي](assets/lessons/curriculum-evidence/bb48e20769586f23c628.webp)
 العمود الذي يضم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>(2)</mtext></math>\` يمثل بويضة طبيعية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ، والصف حيواناً منوياً \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XY</mtext></math>\` نتج بعد عدم الانفصال.
@@ -5680,6 +6276,8 @@ body:
 ما اسم الاختلال الوراثي للفرد في الحالة رقم (3)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/bb48e20769586f23c628.webp)
+final-answer:
+**متلازمة تيرنر.**
 solution:
 ![الشكل الأصلي](assets/lessons/curriculum-evidence/bb48e20769586f23c628.webp)
 الحالة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>(3)</mtext></math>\` تجمع بويضة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` مع حيوان منوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` خالٍ من كروموسوم جنسي، بعد عدم انفصال \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` إلى الغاميت الآخر.
@@ -5697,6 +6295,9 @@ body:
 قارن بين مرض عسر النمو العضلي التدريجي ومرض فينيل كيتونوريا من حيث:
 
 سبب المرض.
+final-answer:
+- **عسر النمو العضلي التدريجي:** طفرة متنحية على الكروموسوم X.
+- **فينيل كيتونيوريا:** طفرة جينية متنحية على الكروموسوم 12.
 solution:
 **الإجابة:** عسر النمو العضلي التدريجي: طفرة متنحية محمولة علىX. فينيل كيتونيوريا: طفرة جينية متنحية على الكروموسوم12.
 
@@ -5728,6 +6329,9 @@ body:
 قارن بين مرض عسر النمو العضلي التدريجي ومرض فينيل كيتونوريا من حيث:
 
 الكروموسوم المسؤول.
+final-answer:
+- **عسر النمو العضلي التدريجي:** الكروموسوم **X**.
+- **فينيل كيتونيوريا:** الكروموسوم الجسمي **12**.
 solution:
 **الإجابة:** عسر النمو العضلي التدريجي: الكروموسومX. فينيل كيتونيوريا: الكروموسوم الجسمي12.
 
@@ -5759,6 +6363,8 @@ body:
 ما سبب ظهور كل من الحالات الوراثية الآتية؟
 
 متلازمة داون.
+final-answer:
+**عدم انفصال الكروموسوم 21 في الانقسام المنصف**، فتوجد ثلاث نسخ منه ويصبح العدد الكلي **47 كروموسوماً** في نموذج المسألة.
 solution:
 في نموذج عدم الانفصال، يفشل افتراق نسختي الكروموسوم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>21</mtext></math>\` في الانقسام المنصف، أوتفترق كروموسوماته في الأول ثم تفشل كروماتيداته الشقيقة في الثاني.
 ينتج غاميت يحمل نسختين من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>21</mtext></math>\` بدلاً من نسخة. يتحد مع غاميت طبيعي يحمل نسخة واحدة : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2+1=3</mtext></math>\` نسخ من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>21</mtext></math>\`.
@@ -5812,6 +6418,8 @@ body:
 
 الطراز الشكلي للأب.
 
+final-answer:
+**مصاب بنزف الدم، أصلع، وفصيلة دمه B.**
 solution:
 في صفة الشعر نرمز إلى أليل الصلع بـ b، وإلى أليل الشعر الطبيعي بـ b⁺؛ وتتغير سيادتهما تبعاً للجنس.
 نفسر التبرع في هذه المسألة وفق توافق كريات الدم الحمراء في نظام ABO.
@@ -5838,6 +6446,11 @@ body:
 
 الطراز الجيني للشاب والفتاة.
 
+final-answer:
+- **الشاب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY b⁺b Iᴮi</mtext></math>\`
+- **الفتاة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿXʳ b⁺b Iᴬi</mtext></math>\`
+
+الرموز: b للصلع، وb⁺ للشعر الطبيعي.
 solution:
 في صفة الشعر نرمز إلى أليل الصلع بـ b، وإلى أليل الشعر الطبيعي بـ b⁺؛ وتتغير سيادتهما تبعاً للجنس.
 نفسر التبرع في هذه المسألة وفق توافق كريات الدم الحمراء في نظام ABO.
@@ -5867,6 +6480,8 @@ body:
 
 ما احتمال إنجاب طفل ذكر سليم من المرض طبيعي الشعر وفصيلة دمه B؟
 
+final-answer:
+**الاحتمال:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1/64</mtext></math>\` من جميع النسل.
 solution:
 في صفة الشعر نرمز إلى أليل الصلع بـ b، وإلى أليل الشعر الطبيعي بـ b⁺؛ وتتغير سيادتهما تبعاً للجنس.
 نفسر التبرع في هذه المسألة وفق توافق كريات الدم الحمراء في نظام ABO.
@@ -5895,6 +6510,9 @@ body:
 جرى تلقيح بين نباتين أحدهما أملس البذور زهري الأزهار والآخر غير معروف الطراز الشكلي. كانت النتائج: ملساء زهرية(4)، مجعدة زهرية(4)، ملساء حمراء(2)، مجعدة حمراء(2)، ملساء بيضاء(2)، مجعدة بيضاء(2). نرمز للملساء A وللمجعدة a وللأزهار الحمراء R وللبيضاء W.
 
 ما نوع الوراثة في كل من الصفتين؟
+final-answer:
+- **شكل البذور:** سيادة تامة.
+- **لون الأزهار:** سيادة غير تامة.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` سائد للأملس و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>a</mtext></math>\` للمجعد. الأملس \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=4+2+2=8</mtext></math>\` والمجعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=4+2+2=8</mtext></math>\` ؛
 النسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1:1</mtext></math>\` تلائم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Aa × aa</mtext></math>\`.
@@ -5913,6 +6531,9 @@ body:
 جرى تلقيح بين نباتين أحدهما أملس البذور زهري الأزهار والآخر غير معروف الطراز الشكلي. كانت النتائج: ملساء زهرية(4)، مجعدة زهرية(4)، ملساء حمراء(2)، مجعدة حمراء(2)، ملساء بيضاء(2)، مجعدة بيضاء(2). نرمز للملساء A وللمجعدة a وللأزهار الحمراء R وللبيضاء W.
 
 ما الطرز الجينية لكل من النباتين (الأبوين) للصفتين معاً؟
+final-answer:
+- **النبات الأملس الزهري:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AaRW</mtext></math>\`
+- **النبات الآخر:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>aaRW</mtext></math>\`
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` سائد للأملس و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>a</mtext></math>\` للمجعد. الأملس \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=4+2+2=8</mtext></math>\` والمجعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=4+2+2=8</mtext></math>\` ؛
 النسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1:1</mtext></math>\` تلائم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Aa × aa</mtext></math>\`.
@@ -5934,6 +6555,8 @@ body:
 جرى تلقيح بين نباتين أحدهما أملس البذور زهري الأزهار والآخر غير معروف الطراز الشكلي. كانت النتائج: ملساء زهرية(4)، مجعدة زهرية(4)، ملساء حمراء(2)، مجعدة حمراء(2)، ملساء بيضاء(2)، مجعدة بيضاء(2). نرمز للملساء A وللمجعدة a وللأزهار الحمراء R وللبيضاء W.
 
 ما احتمال ظهور نباتات مجعدة البذور بيضاء الأزهار من بين النباتات الناتجة جميعها؟
+final-answer:
+**الاحتمال:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1/8</mtext></math>\` من جميع النباتات الناتجة.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` سائد للأملس و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>a</mtext></math>\` للمجعد. الأملس \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=4+2+2=8</mtext></math>\` والمجعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=4+2+2=8</mtext></math>\` ؛
 النسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1:1</mtext></math>\` تلائم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Aa × aa</mtext></math>\`.
@@ -5955,6 +6578,10 @@ body:
 تزوج رجل فصيلة دمه B من فتاة فصيلة دمها A سليمة من مرض عمى الألوان، فأنجبا طفلة فصيلة دمها O مصابة بعمى الألوان. جين الرؤية الطبيعية R سائد على جين عمى الألوان r.
 
 اكتب الطراز الجيني للأبوين وللطفلة للصفتين معاً.
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi XʳY</mtext></math>\`
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi XᴿXʳ</mtext></math>\`
+- **الطفلة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii XʳXʳ</mtext></math>\`
 solution:
 في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ABO</mtext></math>\` يسود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮ</mtext></math>\` على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` ويظهران معاً في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\`. الطفلة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` طرازها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ، فتثبت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` عند الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` والأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` ؛
 الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi</mtext></math>\` والأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi</mtext></math>\`.
@@ -5973,6 +6600,8 @@ body:
 تزوج رجل فصيلة دمه B من فتاة فصيلة دمها A سليمة من مرض عمى الألوان، فأنجبا طفلة فصيلة دمها O مصابة بعمى الألوان. جين الرؤية الطبيعية R سائد على جين عمى الألوان r.
 
 ما احتمال إنجاب ذكر فصيلة دمه AB سليم من مرض عمى الألوان؟
+final-answer:
+**الاحتمال:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1/16</mtext></math>\` من جميع النسل.
 solution:
 في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ABO</mtext></math>\` يسود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮ</mtext></math>\` على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` ويظهران معاً في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\`. الطفلة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` طرازها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ، فتثبت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` عند الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` والأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` ؛
 الأب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi</mtext></math>\` والأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi</mtext></math>\`.
@@ -5994,6 +6623,8 @@ body:
 جرى تلقيح بين نباتين أحدهما أملس البذور زهري الأزهار والآخر غير معروف الطراز الشكلي، ثم جمعت البذور الناتجة وزرعت فكانت الطرز الشكلية للنباتات الناتجة: ملساء البذور زهرية الأزهار (4)، ملساء البذور حمراء الأزهار (2)، مجعدة البذور زهرية الأزهار (4)، مجعدة البذور حمراء الأزهار (2)، ملساء البذور بيضاء الأزهار (2)، مجعدة البذور بيضاء الأزهار (2). يرمز لجين البذور الملساء بالرمز (A) ولجين البذور المجعدة (a)، ولجين الأزهار الحمراء (R) ولجين الأزهار البيضاء (W).
 
 ما الطراز الشكلي للنبات المجهول؟
+final-answer:
+**مجعد البذور، زهري الأزهار.**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` سائد للأملس و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>a</mtext></math>\` للمجعد. الأملس \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=4+2+2=8</mtext></math>\` والمجعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=4+2+2=8</mtext></math>\` ؛
 فيلائم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Aa × aa</mtext></math>\` ، والمعروف أملس \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Aa</mtext></math>\` فالمجهول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>aa</mtext></math>\`.
@@ -6012,6 +6643,11 @@ body:
 في إحدى سلالات الماشية حصل تزاوج بين ذكر شعره أسود ولديه بروز شبيه بالقرون في العظم الجبهي (غير متماثلة الجينات)، مع أنثى شعرها منقط (يحتوي شعراً أسود وشعراً أبيض) ولديها بروز شبيه بالقرون. صفة البروز شبيه بالقرون تتأثر بالهرمونات الجنسية، وجين وجود البروز سائد عند الذكور على الجين الطبيعي. أجب مستخدماً رموزاً مناسبة.
 
 اكتب الطرز الجينية للأبوين للصفتين معاً.
+final-answer:
+- **الذكر:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Hh CᴮCᴮ</mtext></math>\`
+- **الأنثى:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>HH CᴮCᵂ</mtext></math>\`
+
+الرموز: H للبروز، وh لغيابه؛ Cᴮ للشعر الأسود، وCᵂ للأبيض.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` للبروز و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` لغيابه؛
 الصفة متأثرة بالجنس، فيسود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` في الذكر ويتنحى في الأنثى. الذكر غير متماثل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Hh</mtext></math>\` وله بروز؛
@@ -6030,6 +6666,10 @@ body:
 في إحدى سلالات الماشية حصل تزاوج بين ذكر شعره أسود ولديه بروز شبيه بالقرون في العظم الجبهي (غير متماثلة الجينات)، مع أنثى شعرها منقط (يحتوي شعراً أسود وشعراً أبيض) ولديها بروز شبيه بالقرون. صفة البروز شبيه بالقرون تتأثر بالهرمونات الجنسية، وجين وجود البروز سائد عند الذكور على الجين الطبيعي. أجب مستخدماً رموزاً مناسبة.
 
 اكتب الطرز الجينية لغاميتات الأنثى للصفتين معاً.
+final-answer:
+**غاميتا الأنثى:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>HCᴮ</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>HCᵂ</mtext></math>\`؛ احتمال كل منهما **½**.
+
+الرموز: H للبروز، وCᴮ للشعر الأسود، وCᵂ للأبيض.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` للبروز و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` لغيابه؛
 الصفة متأثرة بالجنس، فيسود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` في الذكر ويتنحى في الأنثى. الذكر غير متماثل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Hh</mtext></math>\` وله بروز؛
@@ -6049,6 +6689,8 @@ body:
 في إحدى سلالات الماشية حصل تزاوج بين ذكر شعره أسود ولديه بروز شبيه بالقرون في العظم الجبهي (غير متماثلة الجينات)، مع أنثى شعرها منقط (يحتوي شعراً أسود وشعراً أبيض) ولديها بروز شبيه بالقرون. صفة البروز شبيه بالقرون تتأثر بالهرمونات الجنسية، وجين وجود البروز سائد عند الذكور على الجين الطبيعي. أجب مستخدماً رموزاً مناسبة.
 
 ما احتمال إنتاج أفراد شعرها بيضاء ولها بروز شبيه بالقرون من النسل الناتج؟
+final-answer:
+**الاحتمال: صفر.**
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` للبروز و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` لغيابه؛
 الصفة متأثرة بالجنس، فيسود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` في الذكر ويتنحى في الأنثى. الذكر غير متماثل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Hh</mtext></math>\` وله بروز؛
@@ -6068,6 +6710,9 @@ body:
 في إحدى سلالات الماشية حصل تزاوج بين ذكر شعره أسود ولديه بروز شبيه بالقرون في العظم الجبهي (غير متماثلة الجينات)، مع أنثى شعرها منقط (يحتوي شعراً أسود وشعراً أبيض) ولديها بروز شبيه بالقرون. صفة البروز شبيه بالقرون تتأثر بالهرمونات الجنسية، وجين وجود البروز سائد عند الذكور على الجين الطبيعي. أجب مستخدماً رموزاً مناسبة.
 
 ما نوع الوراثة؟
+final-answer:
+- **لون الشعر:** سيادة مشتركة.
+- **البروز الشبيه بالقرون:** صفة جسمية متأثرة بالجنس.
 solution:
 لون الشعر سيادة مشتركة: يظهر الأسود والأبيض معاً في الهجين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴮCᵂ</mtext></math>\` ، بدلاً من امتزاجهما إلى لون وسطي.
 البروز الشبيه بالقرون صفة متأثرة بالجنس: جينها جسمي وتتغير سيادته باختلاف الهرمونات الجنسية؛
@@ -6085,6 +6730,11 @@ body:
 تزوج رجل أصلع والده بشعر طبيعي ونوع الأنتيجين على سطح خلايا دمه الحمراء (أنتيجين A)، من فتاة صلعاء وبلازما دمها لا تحتوي أجساماً مضادة فأنجبا فرداً أصلع وفصيلة دمه B.
 
 اكتب الطرز الجينية للأبوين.
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b Iᴬi</mtext></math>\`
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb IᴬIᴮ</mtext></math>\`
+
+الرموز: b للصلع، وb⁺ للشعر الطبيعي.
 solution:
 في صفة الشعر نرمز إلى أليل الصلع بـ b، وإلى أليل الشعر الطبيعي بـ b⁺؛ وتتغير سيادتهما تبعاً للجنس.
 الصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود في الذكور ويتنحى في الإناث. الرجل الأصلع أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` من أبيه الطبيعي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\` ، فهو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\` ؛
@@ -6103,6 +6753,15 @@ body:
 تزوج رجل أصلع والده بشعر طبيعي ونوع الأنتيجين على سطح خلايا دمه الحمراء (أنتيجين A)، من فتاة صلعاء وبلازما دمها لا تحتوي أجساماً مضادة فأنجبا فرداً أصلع وفصيلة دمه B.
 
 اكتب غاميتات الأب.
+final-answer:
+**غاميتات الأب:**
+
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺Iᴬ</mtext></math>\`
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bIᴬ</mtext></math>\`
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺i</mtext></math>\`
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bi</mtext></math>\`
+
+احتمال كل منها **¼**. الرموز: b للصلع، وb⁺ للشعر الطبيعي.
 solution:
 في صفة الشعر نرمز إلى أليل الصلع بـ b، وإلى أليل الشعر الطبيعي بـ b⁺؛ وتتغير سيادتهما تبعاً للجنس.
 الصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود في الذكور ويتنحى في الإناث. الرجل الأصلع أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` من أبيه الطبيعي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\` ، فهو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\` ؛
@@ -6123,6 +6782,9 @@ body:
 تزوج رجل أصلع والده بشعر طبيعي ونوع الأنتيجين على سطح خلايا دمه الحمراء (أنتيجين A)، من فتاة صلعاء وبلازما دمها لا تحتوي أجساماً مضادة فأنجبا فرداً أصلع وفصيلة دمه B.
 
 ما نوع الوراثة للصفتين؟
+final-answer:
+- **الصلع:** صفة جسمية متأثرة بالجنس.
+- **فصائل ABO:** أليلات متعددة؛ سيادة مشتركة بين Iᴬ وIᴮ، وسيادة تامة لكل منهما على i.
 solution:
 **الإجابة:** الصلع: صفة جسمية متأثرة بالجنس. فصائلABO: أليلات متعددة؛ بينIᴬ وIᴮ سيادة مشتركة، ويسود كل منهما سيادة تامة علىi.
 
@@ -6165,6 +6827,8 @@ body:
 تزوج رجل أصلع والده بشعر طبيعي ونوع الأنتيجين على سطح خلايا دمه الحمراء (أنتيجين A)، من فتاة صلعاء وبلازما دمها لا تحتوي أجساماً مضادة فأنجبا فرداً أصلع وفصيلة دمه B.
 
 ما احتمال إنجاب أنثى صلعاء فصيلة دمها B؟
+final-answer:
+**الاحتمال:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1/16</mtext></math>\` من جميع النسل.
 solution:
 في صفة الشعر نرمز إلى أليل الصلع بـ b، وإلى أليل الشعر الطبيعي بـ b⁺؛ وتتغير سيادتهما تبعاً للجنس.
 الصلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود في الذكور ويتنحى في الإناث. الرجل الأصلع أخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` من أبيه الطبيعي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\` ، فهو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b</mtext></math>\` ؛
@@ -6188,6 +6852,9 @@ body:
 أجري تلقيح بين نباتين أحدهما طويل الساق زهري الأزهار، والآخر غير معروف الطراز الشكلي، ثم جمعت البذور الناتجة وزرعت فكانت الطرز الشكلية: قصيرة الساق زهرية الأزهار (10)، طويلة الساق زهرية الأزهار (34)، طويلة الساق حمراء الأزهار (12)، طويلة الساق بيضاء الأزهار (15)، قصيرة الساق حمراء الأزهار (6)، قصيرة الساق بيضاء الأزهار (6). استخدم T لجين طول الساق وt لجين قصر الساق.
 
 ما نوع السيادة في الصفتين؟
+final-answer:
+- **طول الساق:** سيادة تامة.
+- **لون الأزهار:** سيادة غير تامة.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الطويل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=34+12+15=61</mtext></math>\` ، والقصير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=10+6+6=22</mtext></math>\` ، أي نحو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3:1</mtext></math>\` ؛
 هذا يلائم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Tt × Tt</mtext></math>\`.
@@ -6208,6 +6875,10 @@ body:
 أجري تلقيح بين نباتين أحدهما طويل الساق زهري الأزهار، والآخر غير معروف الطراز الشكلي، ثم جمعت البذور الناتجة وزرعت فكانت الطرز الشكلية: قصيرة الساق زهرية الأزهار (10)، طويلة الساق زهرية الأزهار (34)، طويلة الساق حمراء الأزهار (12)، طويلة الساق بيضاء الأزهار (15)، قصيرة الساق حمراء الأزهار (6)، قصيرة الساق بيضاء الأزهار (6). استخدم T لجين طول الساق وt لجين قصر الساق.
 
 ما الطرز الجينية لكل من النباتين الأبوين؟
+final-answer:
+**كلا الأبوين:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>TtRW</mtext></math>\`.
+
+الرموز: R للأزهار الحمراء، وW للبيضاء.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الطويل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=34+12+15=61</mtext></math>\` ، والقصير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=10+6+6=22</mtext></math>\` ، أي نحو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3:1</mtext></math>\` ؛
 هذا يلائم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Tt × Tt</mtext></math>\`.
@@ -6230,6 +6901,8 @@ body:
 أجري تلقيح بين نباتين أحدهما طويل الساق زهري الأزهار، والآخر غير معروف الطراز الشكلي، ثم جمعت البذور الناتجة وزرعت فكانت الطرز الشكلية: قصيرة الساق زهرية الأزهار (10)، طويلة الساق زهرية الأزهار (34)، طويلة الساق حمراء الأزهار (12)، طويلة الساق بيضاء الأزهار (15)، قصيرة الساق حمراء الأزهار (6)، قصيرة الساق بيضاء الأزهار (6). استخدم T لجين طول الساق وt لجين قصر الساق.
 
 ما الطراز الشكلي للنبات المجهول؟
+final-answer:
+**طويل الساق، زهري الأزهار.**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطويل السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الطويل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=34+12+15=61</mtext></math>\` ، والقصير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=10+6+6=22</mtext></math>\` ، أي نحو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3:1</mtext></math>\` ؛
 هذا يلائم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Tt × Tt</mtext></math>\`.
@@ -6253,6 +6926,9 @@ body:
 اكتب الطرز الجينية للغاميتات المرقمة (1،2).
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/fdcaf5af081b5416d2e5.webp)
+final-answer:
+1. **الغاميت (1):** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Sa</mtext></math>\`
+2. **الغاميت (2):** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Ca</mtext></math>\`
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C</mtext></math>\` للمجعد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>S</mtext></math>\` للمستقيم؛
 الهجين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CS</mtext></math>\` مموج بسيادة غير تامة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>. A</mtext></math>\` للعسلي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>a</mtext></math>\` للأزرق في نموذج المسألة.
@@ -6275,6 +6951,9 @@ body:
 ما الطرز الجينية لكل من الأبوين؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/fdcaf5af081b5416d2e5.webp)
+final-answer:
+- **الذكر:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CS Aa</mtext></math>\`
+- **الأنثى:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CC Aa</mtext></math>\`
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C</mtext></math>\` للمجعد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>S</mtext></math>\` للمستقيم؛
 الهجين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CS</mtext></math>\` مموج بسيادة غير تامة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>. A</mtext></math>\` للعسلي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>a</mtext></math>\` للأزرق في نموذج المسألة.
@@ -6298,6 +6977,8 @@ body:
 ما الطراز الشكلي للفرد (4)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/fdcaf5af081b5416d2e5.webp)
+final-answer:
+**مموج الشعر، أزرق العينين.**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C</mtext></math>\` للمجعد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>S</mtext></math>\` للمستقيم؛
 الهجين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CS</mtext></math>\` مموج بسيادة غير تامة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>. A</mtext></math>\` للعسلي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>a</mtext></math>\` للأزرق في نموذج المسألة.
@@ -6318,6 +6999,8 @@ body:
 ما احتمال إنجاب ذكر يحمل الطراز الجيني رقم (3)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/fdcaf5af081b5416d2e5.webp)
+final-answer:
+**الاحتمال:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1/8</mtext></math>\` من جميع النسل.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C</mtext></math>\` للمجعد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>S</mtext></math>\` للمستقيم؛
 الهجين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CS</mtext></math>\` مموج بسيادة غير تامة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>. A</mtext></math>\` للعسلي السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>a</mtext></math>\` للأزرق في نموذج المسألة.
@@ -6340,6 +7023,8 @@ body:
 في إحدى سلالات الخيول الإسبانية التي تتحدر من أصول لخيول عربية، حصل تزاوج بين ذكر حصان بالامينو الجلد قصير العنق بني العيون، مع أنثى حصان مجهولة الطراز الشكلي. النسل الناتج: 100% طويلة العنق؛ 25% سوداء العيون كستنائية الجلد، 50% بالامينو الجلد، 25% كريمية الجلد. استخدم A للعيون البنية وa للسوداء وT لطول العنق وt لقصره.
 
 ما احتمال ظهور خيول قصيرة العنق كستنائية الجلد سوداء العيون؟
+final-answer:
+**الاحتمال: صفر.**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` للطول السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصر؛
 الذكر قصير العنق \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>tt</mtext></math>\`. النسل المتوقع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\` طويل، فيلزم أن تكون الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>TT</mtext></math>\` ؛
@@ -6359,6 +7044,11 @@ body:
 في أحد أنواع نباتات الزينة (الأضاليا) تم تلقيح نبات أضاليا مبرقش الأزهار (أزهاره بيضاء منقطة بالأحمر) أملس الأوراق، مع نبات أضاليا مبرقش الأزهار خشن الأوراق. كانت الأفراد الناتجة: حمراء الأزهار أملس الأوراق (118)، مبرقشة الأزهار أملس الأوراق (240)، بيضاء الأزهار أملس الأوراق (120). جين أملس الأوراق B سائد على خشن الأوراق b.
 
 اكتب الطرز الجينية للأبوين للصفتين معاً.
+final-answer:
+- **الأملس المبرقش:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BB CᴿCᵂ</mtext></math>\`
+- **الخشن المبرقش:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb CᴿCᵂ</mtext></math>\`
+
+الرموز: Cᴿ للأزهار الحمراء، وCᵂ للبيضاء.
 solution:
 لون الأزهار سيادة مشتركة : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᴿ</mtext></math>\` للأحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᵂ</mtext></math>\` للأبيض، والمبرقش \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᵂ</mtext></math>\` يظهر اللونين معاً. كلا الأبوين مبرقش إذن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᵂ</mtext></math>\`.
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` للأوراق الملساء يسود على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للخشن؛
@@ -6379,6 +7069,12 @@ body:
 
 ما الطراز الجيني الذي يلزم لنبات أضاليا أحمر الأزهار خشن الأوراق؟ وهل يمكن أن يظهر هذا الطراز بين أفراد التزاوج المعطى؟ وضح السبب.
 
+final-answer:
+**الطراز المطلوب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb CᴿCᴿ</mtext></math>\`.
+
+**لا يظهر في هذا التزاوج**؛ فجميع النسل أملس الأوراق بطراز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Bb</mtext></math>\`.
+
+الرمز Cᴿ للأزهار الحمراء.
 solution:
 السيادة المشتركة تعني ظهور أثر الأليلين معاً؛ لذلك نعدّ الأزهار البيضاء المنقطة بالأحمر هجينة اللون.
 لون الأزهار سيادة مشتركة : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᴿ</mtext></math>\` أحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᵂCᵂ</mtext></math>\` أبيض و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᵂ</mtext></math>\` مبرقش \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>. B</mtext></math>\` للأوراق الملساء سائد على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للخشن، لذلك الخشن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb</mtext></math>\`.
@@ -6397,6 +7093,9 @@ body:
 في أحد أنواع نباتات الزينة (الأضاليا) تم تلقيح نبات أضاليا مبرقش الأزهار (أزهاره بيضاء منقطة بالأحمر) أملس الأوراق، مع نبات أضاليا مبرقش الأزهار خشن الأوراق. كانت الأفراد الناتجة: حمراء الأزهار أملس الأوراق (118)، مبرقشة الأزهار أملس الأوراق (240)، بيضاء الأزهار أملس الأوراق (120). جين أملس الأوراق B سائد على خشن الأوراق b.
 
 ما نوع الوراثة في الصفتين؟
+final-answer:
+- **لون الأزهار:** سيادة مشتركة.
+- **ملمس الأوراق:** سيادة تامة.
 solution:
 لون الأزهار سيادة مشتركة؛
 المبرقش \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᵂ</mtext></math>\` يظهر بقعاً حمراء وبيضاء معاً، ويعطي تزاوج المبرقشين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᵂ × CᴿCᵂ</mtext></math>\` أحمر ومبرقشاً وأبيض بنسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1:2:1</mtext></math>\` ، موافقة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>118:240:120</mtext></math>\` تقريباً.
@@ -6416,6 +7115,8 @@ body:
 اكتب الطراز الشكلي للثور (الأب) للصفتين معاً.
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/50998e0df9157914745c.webp)
+final-answer:
+**عديم القرون، روزي الشعر (أحمر وأبيض معاً).**
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` لعدم وجود القرون سائد على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` لوجودها؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᴿ</mtext></math>\` للأحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᵂ</mtext></math>\` للأبيض بينهما سيادة مشتركة، فيظهر الهجين روزياً «أبيض وأحمر معاً».
@@ -6438,6 +7139,9 @@ body:
 اكتب الطرز الجينية لما تمثله الأرقام (1) و(2).
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/50998e0df9157914745c.webp)
+final-answer:
+1. **(1):** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BCᵂ</mtext></math>\`
+2. **(2):** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Bb CᵂCᵂ</mtext></math>\`
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` لعدم وجود القرون سائد على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` لوجودها؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᴿ</mtext></math>\` للأحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᵂ</mtext></math>\` للأبيض بينهما سيادة مشتركة، فيظهر الهجين روزياً «أبيض وأحمر معاً».
@@ -6462,6 +7166,8 @@ body:
 ما احتمال إنتاج أفراد تحمل الطراز المشار إليه رقم (3)؟
 
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/50998e0df9157914745c.webp)
+final-answer:
+**الاحتمال:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1/8</mtext></math>\`.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` لعدم وجود القرون سائد على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` لوجودها؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᴿ</mtext></math>\` للأحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᵂ</mtext></math>\` للأبيض بينهما سيادة مشتركة، فيكون الهجين روزياً.
@@ -6485,6 +7191,11 @@ body:
 حصل تزاوج بين ذكر طيور كريمي الريش طويل الأرجل (غير نقي لصفة طول الأرجل)، مع أنثى بنية الريش قصيرة الأرجل. نتج: ذكر بني الريش (2)، ذكر كريمي الريش (2)، أنثى بنية الريش (2)، أنثى بيضاء الريش (2). جينا طول الأرجل ولون الريش لا يقعان على نفس الكروموسوم. استخدم T للأرجل الطويلة وt للقصيرة.
 
 اكتب الطرز الجينية للأبوين.
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Tt ZᴮZᵂ</mtext></math>\`
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>tt ZᴮW</mtext></math>\`
+
+الرموز: Zᴮ يحمل أليل الريش البني، وZᵂ يحمل أليل الريش الأبيض؛ W المنفرد كروموسوم جنسي.
 solution:
 في الطيور الذكر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZZ</mtext></math>\` والأنثى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZW</mtext></math>\` ؛
 لون الريش هنا على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Z</mtext></math>\` بسيادة غير تامة. نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Zᴮ</mtext></math>\` للبني و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Zᵂ</mtext></math>\` للأبيض، فيكون الذكر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZᴮZᵂ</mtext></math>\` كريمياً \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>. W</mtext></math>\` المنفرد كروموسوم جنسي آخر، ويختلف عن رمز أليل اللون الأبيض المرتفع.
@@ -6505,6 +7216,15 @@ body:
 حصل تزاوج بين ذكر طيور كريمي الريش طويل الأرجل (غير نقي لصفة طول الأرجل)، مع أنثى بنية الريش قصيرة الأرجل. نتج: ذكر بني الريش (2)، ذكر كريمي الريش (2)، أنثى بنية الريش (2)، أنثى بيضاء الريش (2). جينا طول الأرجل ولون الريش لا يقعان على نفس الكروموسوم. استخدم T للأرجل الطويلة وt للقصيرة.
 
 اكتب الطرز الجينية للأفراد الذكور الناتجة من التزاوج.
+final-answer:
+**الطرز الجينية للذكور:**
+
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Tt ZᴮZᴮ</mtext></math>\`
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>tt ZᴮZᴮ</mtext></math>\`
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Tt ZᴮZᵂ</mtext></math>\`
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>tt ZᴮZᵂ</mtext></math>\`
+
+الرموز: Zᴮ يحمل أليل الريش البني، وZᵂ يحمل أليل الريش الأبيض.
 solution:
 في الطيور الذكر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZZ</mtext></math>\` والأنثى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZW</mtext></math>\` ؛
 لون الريش هنا على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Z</mtext></math>\` بسيادة غير تامة. نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Zᴮ</mtext></math>\` للبني و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Zᵂ</mtext></math>\` للأبيض، فيكون الذكر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZᴮZᵂ</mtext></math>\` كريمياً \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>. W</mtext></math>\` المنفرد كروموسوم جنسي آخر، ويختلف عن رمز أليل اللون الأبيض المرتفع.
@@ -6526,6 +7246,8 @@ body:
 حصل تزاوج بين ذكر طيور كريمي الريش طويل الأرجل (غير نقي لصفة طول الأرجل)، مع أنثى بنية الريش قصيرة الأرجل. نتج: ذكر بني الريش (2)، ذكر كريمي الريش (2)، أنثى بنية الريش (2)، أنثى بيضاء الريش (2). جينا طول الأرجل ولون الريش لا يقعان على نفس الكروموسوم. استخدم T للأرجل الطويلة وt للقصيرة.
 
 ما احتمال ظهور أنثى بيضاء طويلة الأرجل في النسل الناتج من التزاوج؟
+final-answer:
+**الاحتمال:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1/8</mtext></math>\` من جميع النسل.
 solution:
 في الطيور الذكر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZZ</mtext></math>\` والأنثى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZW</mtext></math>\` ؛
 لون الريش هنا على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Z</mtext></math>\` بسيادة غير تامة. نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Zᴮ</mtext></math>\` للبني و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Zᵂ</mtext></math>\` للأبيض، فيكون الذكر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ZᴮZᵂ</mtext></math>\` كريمياً \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>. W</mtext></math>\` المنفرد كروموسوم جنسي آخر، ويختلف عن رمز أليل اللون الأبيض المرتفع.
@@ -6549,6 +7271,8 @@ body:
 
 اكتب الطراز الشكلي للرجل لصفة أنيميا الفول.
 
+final-answer:
+**مصاب بأنيميا الفول.**
 solution:
 أنيميا الفول متنحية على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` كما نص السؤال؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للمرض و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للسلامة. البنت المصابة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳXʳ</mtext></math>\` تحتاج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` من الأب ومن الأم.
@@ -6567,6 +7291,12 @@ body:
 
 اكتب الطرز الجينية لكل من الرجل والفتاة والبنت.
 
+final-answer:
+- **الرجل:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi XʳY</mtext></math>\`
+- **الفتاة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴬIᴮ XᴿXʳ</mtext></math>\`
+- **البنت:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi XʳXʳ</mtext></math>\`
+
+الرمز R للسلامة من أنيميا الفول.
 solution:
 نفسر التبرع في هذه المسألة وفق توافق كريات الدم الحمراء في نظام ABO.
 أنيميا الفول متنحية على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
@@ -6588,6 +7318,8 @@ body:
 
 ما احتمال إنجاب ذكر فصيلة دمه B وسليم من أنيميا الفول بين النسل؟
 
+final-answer:
+**الاحتمال:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1/8</mtext></math>\` من جميع النسل.
 solution:
 نفسر التبرع في هذه المسألة وفق توافق كريات الدم الحمراء في نظام ABO.
 أنيميا الفول متنحية على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
@@ -6610,6 +7342,11 @@ body:
 تزوج شاب فصيلة دمه A سليم من عمى الألوان من فتاة مجهولة الطراز الشكلي للصفتين، فأنجبا ولداً مصاباً بعمى الألوان فصيلة دمه B، وولداً آخر سليماً من عمى الألوان فصيلة دمه O. باستخدام الرموز المناسبة أجب:
 
 اكتب الطراز الشكلي والجيني للفتاة للصفتين معاً.
+final-answer:
+- **الطراز الشكلي:** سليمة حاملة لعمى الألوان، وفصيلة دمها **B**.
+- **الطراز الجيني:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi XᴿXʳ</mtext></math>\`
+
+الرموز: R للرؤية الطبيعية، وr لعمى الألوان.
 solution:
 عمى الألوان متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` سليم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` مصاب. الابنان يأخذان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` من الأب، ووجود سليم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿY</mtext></math>\` ومصاب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY</mtext></math>\` يثبت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᴿ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` عند الأم، فهي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿXʳ</mtext></math>\` سليمة حاملة.
@@ -6630,6 +7367,10 @@ body:
 تزوج شاب فصيلة دمه A سليم من عمى الألوان من فتاة مجهولة الطراز الشكلي للصفتين، فأنجبا ولداً مصاباً بعمى الألوان فصيلة دمه B، وولداً آخر سليماً من عمى الألوان فصيلة دمه O. باستخدام الرموز المناسبة أجب:
 
 اكتب الطراز الجيني للشاب.
+final-answer:
+**الطراز الجيني:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi XᴿY</mtext></math>\`.
+
+الرمز R للرؤية الطبيعية.
 solution:
 عمى الألوان متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` سليم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` مصاب. الابنان يأخذان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` من الأب، ووجود سليم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿY</mtext></math>\` ومصاب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY</mtext></math>\` يثبت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᴿ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` عند الأم، فهي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿXʳ</mtext></math>\` سليمة حاملة.
@@ -6651,6 +7392,8 @@ body:
 تزوج شاب فصيلة دمه A سليم من عمى الألوان من فتاة مجهولة الطراز الشكلي للصفتين، فأنجبا ولداً مصاباً بعمى الألوان فصيلة دمه B، وولداً آخر سليماً من عمى الألوان فصيلة دمه O. باستخدام الرموز المناسبة أجب:
 
 ما احتمال إنجاب بنت سليمة من عمى الألوان فصيلة دمها (AB)؟
+final-answer:
+**الاحتمال:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1/8</mtext></math>\` من جميع النسل.
 solution:
 عمى الألوان متنح على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>X</mtext></math>\` ؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` سليم و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` مصاب. الابنان يأخذان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` من الأب، ووجود سليم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿY</mtext></math>\` ومصاب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XʳY</mtext></math>\` يثبت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xᴿ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Xʳ</mtext></math>\` عند الأم، فهي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>XᴿXʳ</mtext></math>\` سليمة حاملة.
@@ -6675,6 +7418,9 @@ body:
 تزوج شاب فصيلة دمه A سليم من عمى الألوان من فتاة مجهولة الطراز الشكلي للصفتين، فأنجبا ولداً مصاباً بعمى الألوان فصيلة دمه B، وولداً آخر سليماً من عمى الألوان فصيلة دمه O. باستخدام الرموز المناسبة أجب:
 
 ما مبدأ الوراثة لكل من الصفتين؟
+final-answer:
+- **فصائل ABO:** أليلات متعددة، وسيادة مشتركة بين Iᴬ وIᴮ.
+- **عمى الألوان:** صفة متنحية مرتبطة بالكروموسوم X.
 solution:
 **الإجابة:** فصائلABO: أليلات متعددة، وبينIᴬ وIᴮ سيادة مشتركة. عمى الألوان: صفة متنحية مرتبطة بالكروموسومX.
 
@@ -6717,6 +7463,11 @@ body:
 في إحدى سلالات الماشية صفة البروزات الشبيهة بالقرون سائدة عند الذكور ومتنحية عند الإناث، ويختلف الطراز الشكلي للذكور عنه للإناث في حالة عدم تماثل الجينات. تزاوج ذكر عديم القرون أحمر اللون مع أنثى بقرون بيضاء اللون، فكان النسل: جميع الذكور بقرون ولونها قرميدي، وجميع الإناث بدون قرون ولونها قرميدي.
 
 اكتب الطرز الجينية للأبوين.
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺ RR</mtext></math>\`
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb WW</mtext></math>\`
+
+الرموز: b للقرون، وb⁺ لغيابها؛ R للون الأحمر، وW للأبيض.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للقرون و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` لغيابها؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود عند الذكور ويتنحى عند الإناث. الذكر عديم القرون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\` ، والأنثى ذات القرون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb</mtext></math>\`.
@@ -6734,6 +7485,10 @@ body:
 في إحدى سلالات الماشية صفة البروزات الشبيهة بالقرون سائدة عند الذكور ومتنحية عند الإناث، ويختلف الطراز الشكلي للذكور عنه للإناث في حالة عدم تماثل الجينات. تزاوج ذكر عديم القرون أحمر اللون مع أنثى بقرون بيضاء اللون، فكان النسل: جميع الذكور بقرون ولونها قرميدي، وجميع الإناث بدون قرون ولونها قرميدي.
 
 اكتب الطرز الجينية لغاميتات الذكر.
+final-answer:
+**نوع واحد:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺R</mtext></math>\`، بنسبة **100%**.
+
+الرموز: b⁺ لغياب القرون، وR للون الأحمر.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للقرون و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` لغيابها؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود عند الذكور ويتنحى عند الإناث. الذكر عديم القرون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\` ، والأنثى ذات القرون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb</mtext></math>\`.
@@ -6754,6 +7509,10 @@ body:
 في إحدى سلالات الماشية صفة البروزات الشبيهة بالقرون سائدة عند الذكور ومتنحية عند الإناث، ويختلف الطراز الشكلي للذكور عنه للإناث في حالة عدم تماثل الجينات. تزاوج ذكر عديم القرون أحمر اللون مع أنثى بقرون بيضاء اللون، فكان النسل: جميع الذكور بقرون ولونها قرميدي، وجميع الإناث بدون قرون ولونها قرميدي.
 
 اكتب الطرز الجينية للأفراد الناتجة من التزاوج.
+final-answer:
+**جميع النسل:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b RW</mtext></math>\`.
+
+الرموز: b للقرون، وb⁺ لغيابها؛ R للون الأحمر، وW للأبيض.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للقرون و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺</mtext></math>\` لغيابها؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` يسود عند الذكور ويتنحى عند الإناث. الذكر عديم القرون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺</mtext></math>\` ، والأنثى ذات القرون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb</mtext></math>\`.
@@ -6774,6 +7533,11 @@ body:
 في أحد أنواع عصافير الزينة صفة وجود العرف سائدة في الذكور ومتنحية في الإناث، ويختلف الطراز الشكلي في الذكور عنه للإناث عند عدم تماثل الجينات. تزاوج ذكر ريشه مخطط وبدون عرف مع أنثى غير مخططة الريش ولها عرف. النسل: نصف الذكور مخطط وله عرف والنصف الآخر غير مخطط وله عرف؛ نصف الإناث مخطط وبدون عرف والنصف الآخر غير مخطط وبدون عرف. A لجين الريش المخطط السائد على غير المخطط a، وهذه الصفة مرتبطة بالجنس.
 
 اكتب الطرز الجينية للأبوين.
+final-answer:
+- **الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>hh ZᴬZᵃ</mtext></math>\`
+- **الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>HH ZᵃW</mtext></math>\`
+
+الرموز: H للعرف، وh لغيابه.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` للعرف و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` لغيابه؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` يسود في الذكور ويتنحى في الإناث. الذكر بلا عرف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>hh</mtext></math>\` والأنثى ذات عرف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>HH</mtext></math>\` ، فيكون كل النسل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Hh</mtext></math>\` ، الذكور بعرف والإناث بلا عرف.
@@ -6791,6 +7555,11 @@ body:
 في أحد أنواع عصافير الزينة صفة وجود العرف سائدة في الذكور ومتنحية في الإناث، ويختلف الطراز الشكلي في الذكور عنه للإناث عند عدم تماثل الجينات. تزاوج ذكر ريشه مخطط وبدون عرف مع أنثى غير مخططة الريش ولها عرف. النسل: نصف الذكور مخطط وله عرف والنصف الآخر غير مخطط وله عرف؛ نصف الإناث مخطط وبدون عرف والنصف الآخر غير مخطط وبدون عرف. A لجين الريش المخطط السائد على غير المخطط a، وهذه الصفة مرتبطة بالجنس.
 
 اكتب الطرز الجينية لغاميتات الأبوين.
+final-answer:
+- **غاميتات الأب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>hZᴬ</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>hZᵃ</mtext></math>\` مناصفة.
+- **غاميتات الأم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>HZᵃ</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>HW</mtext></math>\` مناصفة.
+
+الرموز: H للعرف، وh لغيابه.
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` للعرف و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` لغيابه؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H</mtext></math>\` يسود في الذكور ويتنحى في الإناث. الذكر بلا عرف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>hh</mtext></math>\` والأنثى ذات عرف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>HH</mtext></math>\` ، فيكون كل النسل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Hh</mtext></math>\` ، الذكور بعرف والإناث بلا عرف.
@@ -6814,6 +7583,11 @@ body:
 
 ما الطراز الجيني لكل من الشاب والفتاة للصفات الثلاث؟
 
+final-answer:
+- **الشاب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴮi XᵐY b⁺b</mtext></math>\`
+- **الفتاة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴬi XᴹXᵐ b⁺b</mtext></math>\`
+
+الرموز: m لعمى الألوان؛ b للصلع، وb⁺ للشعر الطبيعي.
 solution:
 في صفة الشعر نرمز إلى أليل الصلع بـ b، وإلى أليل الشعر الطبيعي بـ b⁺؛ وتتغير سيادتهما تبعاً للجنس.
 نفسر التبرع في هذه المسألة وفق توافق كريات الدم الحمراء في نظام ABO.
@@ -6843,6 +7617,8 @@ body:
 
 ما نوع الأجسام المضادة في بلازما دم الزوج؟
 
+final-answer:
+**الأجسام المضادة من نوع Anti-A فقط.**
 solution:
 نفسر التبرع في هذه المسألة وفق توافق كريات الدم الحمراء في نظام ABO.
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>O</mtext></math>\` للطفلة يعني \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` ، لذلك تحمل الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` ؛
@@ -6863,6 +7639,8 @@ body:
 
 ما احتمال إنجاب طفلة سليمة من المرض طبيعية الشعر وفصيلة دمها B من بين النسل؟
 
+final-answer:
+**الاحتمال:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3/64</mtext></math>\` من جميع النسل.
 solution:
 في صفة الشعر نرمز إلى أليل الصلع بـ b، وإلى أليل الشعر الطبيعي بـ b⁺؛ وتتغير سيادتهما تبعاً للجنس.
 نفسر التبرع في هذه المسألة وفق توافق كريات الدم الحمراء في نظام ABO.
@@ -6891,6 +7669,11 @@ body:
 في نوع من الأرانب يكون لون فرائها بنياً I^R أو أسود I^G أو ملوناً بني وأسود أو أبيض ii، وحجم الأذن الكبيرة صفة متنحية في الذكور وسائدة في الإناث. حصل تزاوج بين ذكر وأنثى كلاهما ملون بني وأسود وبآذان كبيرة.
 
 اكتب الطرز الجينية المحتملة للأبوين للصفتين معاً.
+final-answer:
+- **الذكر:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴿIᴳ EE</mtext></math>\`
+- **الأنثى:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴿIᴳ EE</mtext></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴿIᴳ Ee</mtext></math>\`
+
+الرموز: E للأذن الكبيرة، وe للصغيرة.
 solution:
 لون الفراء يظهر أثر الأليلين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴿ</mtext></math>\` للبني و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴳ</mtext></math>\` للأسود معاً في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴿIᴳ</mtext></math>\` ؛
 كلا الأبوين ملونان فيكونان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴿIᴳ</mtext></math>\`.
@@ -6912,6 +7695,10 @@ body:
 في نوع من الأرانب يكون لون فرائها بنياً I^R أو أسود I^G أو ملوناً بني وأسود أو أبيض ii، وحجم الأذن الكبيرة صفة متنحية في الذكور وسائدة في الإناث. حصل تزاوج بين ذكر وأنثى كلاهما ملون بني وأسود وبآذان كبيرة.
 
 اكتب الطرز الجينية لغاميتات الذكر.
+final-answer:
+**غاميتا الذكر:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴿE</mtext></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴳE</mtext></math>\`؛ احتمال كل منهما **½**.
+
+الرمز E للأذن الكبيرة.
 solution:
 لون الفراء يظهر أثر الأليلين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴿ</mtext></math>\` للبني و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴳ</mtext></math>\` للأسود معاً في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴿIᴳ</mtext></math>\` ؛
 كلا الأبوين ملونان فيكونان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴿIᴳ</mtext></math>\`.
@@ -6931,6 +7718,9 @@ body:
 في نوع من الأرانب يكون لون فرائها بنياً I^R أو أسود I^G أو ملوناً بني وأسود أو أبيض ii، وحجم الأذن الكبيرة صفة متنحية في الذكور وسائدة في الإناث. حصل تزاوج بين ذكر وأنثى كلاهما ملون بني وأسود وبآذان كبيرة.
 
 ما نمط الوراثة للصفتين؟
+final-answer:
+- **لون الفراء:** أليلات متعددة، مع سيادة مشتركة بين Iᴿ وIᴳ.
+- **حجم الأذن:** صفة جسمية متأثرة بالجنس.
 solution:
 لون الفراء يخضع لأليلات متعددة؛
 يوجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴿ</mtext></math>\` للبني و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴳ</mtext></math>\` للأسود و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>i</mtext></math>\` للأبيض في الجماعة، وكل فرد يحمل اثنين فقط. بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴿ</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Iᴳ</mtext></math>\` سيادة مشتركة، فيظهر البني والأسود معاً في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>IᴿIᴳ</mtext></math>\` ، بينما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ii</mtext></math>\` أبيض.
@@ -6949,6 +7739,8 @@ body:
 
 في تزاوج آخر، ما احتمال ظهور ذكور بآذان كبيرة من أب بآذان كبيرة وأم بآذان صغيرة؟
 
+final-answer:
+**الاحتمال: صفر.**
 solution:
 هذا الفرع يغير صفة الأم إلى صغيرة الأذن. نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E</mtext></math>\` للكبير و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>e</mtext></math>\` للصغير؛
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E</mtext></math>\` متنح في الذكور وسائد في الإناث.
@@ -6970,6 +7762,11 @@ body:
 في أحد أنواع الطيور تكون صفة لون الريش إما أحمر R أو أخضر G أو ملون بالأحمر والأخضر، وصفة وجود العرف b سائدة عند الذكور ومتنحية عند الإناث. تزاوج ذكر أحمر اللون بدون عرف مع أنثى خضراء اللون بعرف، وكانت أفراد الجيل الأول جميعها ملونة بالأحمر والأخضر، وجميع الذكور بعرف وجميع الإناث بدون عرف.
 
 اكتب الطرز الجينية للأبوين للصفتين معاً.
+final-answer:
+- **الذكر:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b⁺ CᴿCᴿ</mtext></math>\`
+- **الأنثى:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bb CᴳCᴳ</mtext></math>\`
+
+الرموز: b⁺ لغياب العرف؛ Cᴿ للريش الأحمر، وCᴳ للأخضر.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᴿ</mtext></math>\` لأليل الريش الأحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᴳ</mtext></math>\` للأخضر؛
 بينهما سيادة مشتركة فيظهر اللونان معاً في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᴳ</mtext></math>\`. الأب الأحمر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᴿ</mtext></math>\` والأم الخضراء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴳCᴳ</mtext></math>\`.
@@ -6989,6 +7786,10 @@ body:
 في أحد أنواع الطيور تكون صفة لون الريش إما أحمر R أو أخضر G أو ملون بالأحمر والأخضر، وصفة وجود العرف b سائدة عند الذكور ومتنحية عند الإناث. تزاوج ذكر أحمر اللون بدون عرف مع أنثى خضراء اللون بعرف، وكانت أفراد الجيل الأول جميعها ملونة بالأحمر والأخضر، وجميع الذكور بعرف وجميع الإناث بدون عرف.
 
 اكتب الطرز الجينية لأفراد الجيل الأول للصفتين معاً.
+final-answer:
+**جميع أفراد الجيل الأول:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b⁺b CᴿCᴳ</mtext></math>\`.
+
+الرموز: b⁺ لغياب العرف؛ Cᴿ للريش الأحمر، وCᴳ للأخضر.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᴿ</mtext></math>\` لأليل الريش الأحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᴳ</mtext></math>\` للأخضر؛
 بينهما سيادة مشتركة فيظهر اللونان معاً في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᴳ</mtext></math>\`. الأب الأحمر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᴿ</mtext></math>\` والأم الخضراء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴳCᴳ</mtext></math>\`.
@@ -7009,6 +7810,9 @@ body:
 في أحد أنواع الطيور تكون صفة لون الريش إما أحمر R أو أخضر G أو ملون بالأحمر والأخضر، وصفة وجود العرف b سائدة عند الذكور ومتنحية عند الإناث. تزاوج ذكر أحمر اللون بدون عرف مع أنثى خضراء اللون بعرف، وكانت أفراد الجيل الأول جميعها ملونة بالأحمر والأخضر، وجميع الذكور بعرف وجميع الإناث بدون عرف.
 
 ما مبدأ الوراثة لكل من الصفتين؟
+final-answer:
+- **لون الريش:** سيادة مشتركة.
+- **وجود العرف:** صفة جسمية متأثرة بالجنس.
 solution:
 لون الريش سيادة مشتركة؛
 الهجين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᴳ</mtext></math>\` يظهر الأحمر والأخضر معاً، ولا يتحول إلى لون وسطي واحد.
@@ -7027,6 +7831,8 @@ body:
 في أحد أنواع الطيور تكون صفة لون الريش إما أحمر R أو أخضر G أو ملون بالأحمر والأخضر، وصفة وجود العرف b سائدة عند الذكور ومتنحية عند الإناث. تزاوج ذكر أحمر اللون بدون عرف مع أنثى خضراء اللون بعرف، وكانت أفراد الجيل الأول جميعها ملونة بالأحمر والأخضر، وجميع الذكور بعرف وجميع الإناث بدون عرف.
 
 ما احتمال ظهور إناث ملونة بالأحمر والأخضر وبعرف في أفراد الجيل الثاني؟
+final-answer:
+**الاحتمال:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1/16</mtext></math>\` من جميع أفراد الجيل الثاني.
 solution:
 نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᴿ</mtext></math>\` لأليل الريش الأحمر و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Cᴳ</mtext></math>\` للأخضر؛
 بينهما سيادة مشتركة فيظهر اللونان معاً في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᴳ</mtext></math>\`. الأب الأحمر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴿCᴿ</mtext></math>\` والأم الخضراء \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>CᴳCᴳ</mtext></math>\`.

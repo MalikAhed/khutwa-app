@@ -25,7 +25,7 @@ function questionMarkdown(item) {
       `- [${index === item.correctChoiceIndex ? "x" : " "}] ${item.choiceIds[index]} | ${text}`).join("\n");
     return `:::mcq\n${header}\nkicker: ${item.kicker}\n${choices}\nexplanation:\n${item.explanation}\nhint: ${item.hint}\n${item.example ? `example:\n${item.example}\n` : ""}:::`;
   }
-  return `:::exam-question\n${header}\nanswer-label: ${item.answerLabel}\nbody:\n${item.question}\nsolution:\n${item.answer}\n:::`;
+  return `:::exam-question\n${header}\nanswer-label: ${item.answerLabel}\nbody:\n${item.question}\nfinal-answer:\n${item.finalAnswer}\nsolution:\n${item.answer}\n:::`;
 }
 
 /** Questions-only student curriculum; historical teaching and IDs remain in source. */

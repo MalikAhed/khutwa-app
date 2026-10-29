@@ -10,6 +10,8 @@ body:
 احسب مساحة المنطقة المحصورة بين منحنى الاقتران \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">١</mn></mrow></mrow></math>\` ومحور السينات والمستقيمين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٣</mn></mrow></math>\`.
 
 ![المنطقة المحصورة بين المستقيم ص = س + ١ والمحور والمستقيمين س = ٢، س = ٣](assets/lessons/mathematics/source-crops/u45-book-p120-ex1-diagram.webp)
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٧</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -76,6 +78,8 @@ body:
 احسب مساحة المنطقة المحصورة بين منحنى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mo>−</mo><mn dir="ltr">٩</mn></mrow></mrow></math>\` ومحور السينات.
 
 ![المنطقة المحصورة بين منحنى ص = س تربيع − ٩ ومحور السينات](assets/lessons/mathematics/source-crops/u45-book-p120-ex2-diagram.webp)
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣٦</mn></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -158,6 +162,8 @@ body:
 جد مساحة المنطقة المحصورة بين منحنيي الاقترانين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">٨</mn><mo>−</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">هـ</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></math>\`.
 
 ![المنطقة المشتركة بين منحنيي ص = ٨ − س تربيع وص = س تربيع](assets/lessons/mathematics/source-crops/u45-book-p121-ex3-diagram.webp)
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٦٤</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -241,6 +247,8 @@ body:
 احسب مساحة المنطقة المحصورة بين منحنيي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">|</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">هـ</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">٢</mn><mo>−</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></mrow></math>\`.
 
 ![المنطقة بين منحنى القيمة المطلقة ومنحنى ص = ٢ − س تربيع](assets/lessons/mathematics/source-crops/u45-book-p121-ex4-diagram.webp)
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٧</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -327,6 +335,8 @@ body:
 إذا علمت أن مساحة المنطقة المحصورة بين منحنيي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">هـ</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mi mathvariant="normal">ج</mi></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>∈</mo><mi mathvariant="normal">ح</mi></mrow></math>\`، هي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣٦</mn></math>\` وحدة مربعة، فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\`.
 
 ![المنطقة المحصورة بين القطع المكافئ ص = س تربيع والمستقيم الأفقي ص = ج](assets/lessons/mathematics/source-crops/u45-book-p122-ex5-diagram.webp)
+final-answer:
+**قيمة ج:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mn dir="ltr">٩</mn></mrow></math>\`.
 solution:
 ![المنطقة الأصلية بين القطع والخط الأفقي](assets/lessons/mathematics/source-crops/u45-book-p122-ex5-diagram.webp)
 
@@ -376,6 +386,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٢٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحصورة بين منحنى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">جتا</mi><mo>⁡</mo><mi mathvariant="normal">س</mi></mrow></mrow></math>\` ومحوري السينات والصادات، والواقعة في الربع الأول.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١</mn></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -440,6 +452,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٢٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحصورة بين منحنى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">٣</mn><mo>−</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></mrow></math>\` والمستقيم المار بالنقطتين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٠</mn><mo>،</mo><mn dir="ltr">٠</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٢</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow></math>\`، ومحور الصادات، والواقعة في الربع الأول.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 لإيجاد المستقيم المار بالنقطتين، نحسب الميل: تغير الصادات مقسومًا على تغير السينات.
 
@@ -531,6 +545,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٢٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحصورة بين منحنى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><mn dir="ltr">٩</mn></mrow><mo stretchy="true">)</mo></mrow><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></mrow></math>\` ومحور السينات، والواقعة في الربع الثالث.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٣٠٤</mn><mn dir="ltr">١٥</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -621,6 +637,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٢٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب المساحة المحصورة بين منحنيات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">هـ</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ك</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٢٨</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -762,6 +780,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٢٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحصورة بين منحنى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mn dir="ltr">٤</mn></mfrac></mrow></math>\` والمماس المرسوم له عند النقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٤</mn><mo>،</mo><mn dir="ltr">٤</mn><mo stretchy="true" fence="true">)</mo></mrow></math>\` ومحور السينات.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٤</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 ميل المماس هو المشتقة عند نقطة التماس.  مشتقة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mn dir="ltr">٤</mn></mfrac></math>\` هي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></mfrac></math>\`، فالميل عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٤</mn></math>\` يساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\`.
@@ -825,6 +845,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٢٦](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحصورة بين منحنيي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٢</mn></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="true">{</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤</mn><mo>−</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow></mtd><mtd><mrow><mi mathvariant="normal">س</mi><mo>≤</mo><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mrow><mi mathvariant="normal">س</mi><mo>&gt;</mo><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable></mrow></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">١٣</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -952,6 +974,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٢٦](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحصورة بين منحنيي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">٢</mn><mrow><mi mathvariant="normal">جا</mi><mo>⁡</mo><mi mathvariant="normal">س</mi></mrow></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">هـ</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\` في الفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">٠</mn><mo>،</mo><mi mathvariant="normal">π</mi><mo stretchy="true" fence="true">]</mo></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn><msqrt><mn dir="ltr">٣</mn></msqrt><mo>−</mo><mn dir="ltr">٤</mn><mo>−</mo><mfrac><mi mathvariant="normal">π</mi><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -1110,6 +1134,8 @@ reference: [السؤال الأصلي](assets/lessons/mathematics/source-crops/m
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة المنطقة المحصورة بين منحنيي الاقترانين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٤</mn></mfrac><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -1196,6 +1222,8 @@ reference: [السؤال الأصلي](assets/lessons/mathematics/source-crops/m
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحصورة بين منحنيي الاقترانين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><mn dir="ltr">١</mn></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">١</mn><mo>−</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -1277,6 +1305,8 @@ reference: [السؤال الأصلي](assets/lessons/mathematics/source-crops/m
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب المساحة المحصورة بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><msup><mtext dir="rtl">هـ</mtext><mi mathvariant="normal">س</mi></msup></mrow></math>\` والمستقيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mi mathvariant="normal">هـ</mi></mrow></math>\` ومحور الصادات، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">هـ</mi></math>\` العدد النيبيري.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١</mn></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -1342,6 +1372,8 @@ answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة المنطقة الواقعة في الربع الأول والمحصورة بين منحنى الاقتران \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٤</mn></mfrac><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow></mrow></math>\` ومحور الصادات والمستقيمين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٩</mn></mrow></math>\`.
 
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">١٠٤</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 المعطى أن المنطقة في الربع الأول؛ لذلك \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≥</mo><mn dir="ltr">٠</mn></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>≥</mo><mn dir="ltr">٠</mn></mrow></math>\`، حيث
 
@@ -1420,6 +1452,8 @@ reference: [السؤال الأصلي](assets/lessons/mathematics/source-crops/m
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحصورة بين منحنيي الاقترانين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٢</mn></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">٨</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">١٢٥</mn><mn dir="ltr">٦</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -1501,6 +1535,8 @@ reference: [السؤال الأصلي](assets/lessons/mathematics/source-crops/m
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحصورة بين منحنيي الاقترانين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">٨</mn><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">١٦</mn></mrow></mrow></math>\` ومحور السينات.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">١٦</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -1968,6 +2004,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد مساحة المنطقة المحصورة بين المنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\` والمستقيم \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٤</mn><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٣٢</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -2049,6 +2087,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد مساحة المنطقة المحصورة بين المنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\` و\`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٢</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\` ومحور السينات والواقعة في الربع الأول.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٦</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -2174,6 +2214,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد المساحة المحصورة بين منحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٦</mn><mo>−</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi><mo>−</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\` ومنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٣</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٣٢</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -2265,6 +2307,8 @@ body:
 
 
 
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">١٩</mn><mn dir="ltr">٦</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 المساحة بين منحنيين هي تكامل القيمة المطلقة للفرق؛ نطرح الأسفل من الأعلى في كل جزء.يتغير تعريف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١</mn></math>\`. وفي الفرع الثاني يتقاطع مع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\` عندما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٤</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\`، أي عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٣</mn></mrow></math>\`.
 
@@ -2338,6 +2382,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة المنطقة المحصورة بين منحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ص</mi><mrow><mn dir="ltr">١</mn></mrow></msub><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٣</mn></mrow></msup></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ص</mi><mrow><mn dir="ltr">٢</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">س</mi></mrow></math>\`، ومنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ص</mi><mrow><mn dir="ltr">٣</mn></mrow></msub><mo>=</mo><mn dir="ltr">٨</mn></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٨١</mn><mn dir="ltr">٤</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 نستخدم شرائح أفقية. من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mi mathvariant="normal">س</mi></mrow></math>\`، نعوض \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mi mathvariant="normal">ص</mi></mrow></math>\`، ومن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٣</mn></mrow></msup></mrow></mrow></math>\` نعوض \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mtext dir="rtl">الجذر</mtext></mrow></math>\` التكعيبي ل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\`. المنطقة التي تشارك فيها المنحنيات الثلاثة تبدأ عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\` وتنتهي بالمستقيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٨</mn></mrow></math>\`.
@@ -2377,6 +2423,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة المنطقة المحصورة بين منحنى كل من الاقترانين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mfrac><mrow><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٤</mn></mrow></mfrac><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">٤</mn></mrow></math>\` ومحور السينات.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٤</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -2499,6 +2547,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة المنطقة المحدودة بالمحورين الإحداثيين ومنحنى كل من الاقترانين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>+</mo><mn dir="ltr">١</mn></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٣</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">١٠</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -2624,6 +2674,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد المساحة المحصورة بين منحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٣</mn></mrow></msup></mrow></math>\`، ومنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mi mathvariant="normal">س</mi></mrow></math>\` والمستقيم \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٨</mn></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤٤</mn></mrow></math>\` وحدة مربعة.
 solution:
 
 نستخدم شرائح أفقية بين الارتفاعين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٠</mn></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٨</mn></math>\`. المستقيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mi mathvariant="normal">س</mi></mrow></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mi mathvariant="normal">ص</mi></mrow></math>\` على اليمين، والمنحنى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mo>−</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٣</mn></mrow></msup></mrow></mrow></mrow></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo>−</mo><mtext dir="rtl">الجذر</mtext></mrow></mrow></math>\` التكعيبي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ل</mi><mi mathvariant="normal">ص</mi></mrow></math>\` على اليسار.
@@ -2663,6 +2715,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة المنطقة المحصورة بين المنحنيين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ص</mi><mrow><mn dir="ltr">١</mn></mrow></msub><mo>=</mo><msqrt><mrow><mn dir="ltr">٢</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></msqrt></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ص</mi><mrow><mn dir="ltr">٢</mn></mrow></msub><mo>=</mo><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\` ومحور السينات.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">١٠</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 عند تقاطع الجذر والخط تتساوى الصادات. الجذر التربيعي غير سالب، لذلك يلزم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo>−</mo><mi mathvariant="normal">س</mi></mrow><mo>≥</mo><mn dir="ltr">٠</mn></mrow></math>\`، أي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≤</mo><mn dir="ltr">٠</mn></mrow></math>\` قبل تربيع المعادلة.
@@ -2726,6 +2780,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد المساحة المحصورة بين منحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mtext dir="rtl">هـ</mtext><mrow><mi mathvariant="normal">س</mi></mrow></msup></mrow></math>\` ومنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ك</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mtext dir="rtl">هـ</mtext><mrow><mo>−</mo><mi mathvariant="normal">س</mi></mrow></msup></mrow></math>\` والمستقيم \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn><msub><mtext dir="rtl">لو</mtext><mi mathvariant="normal">هـ</mi></msub><mo>(</mo><mn dir="ltr">٢</mn><mo>)</mo><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -2810,6 +2866,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحصورة بين منحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٤</mn><mi mathvariant="normal">س</mi><mo>−</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\` والمستقيم \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٤</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٩</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -2891,6 +2949,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد مساحة المنطقة المحصورة بين منحنيي الاقترانين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">١</mn></mrow></math>\` ومحور السينات.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">١٩</mn><mn dir="ltr">٦</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -3016,6 +3076,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد مساحة المنطقة المحصورة بين منحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">٢</mn></mrow><mo stretchy="true">)</mo></mrow><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\` والمستقيم \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٤</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\` ومحور السينات.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٦</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -3141,6 +3203,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحصورة بين المنحنيين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٣</mn></mrow></msup></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>−</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٣٧</mn><mn dir="ltr">١٢</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -3269,6 +3333,8 @@ body:
 احسب مساحة المنطقة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">م</mi></mrow></math>\` في الشكل المجاور.
 
 ![الرسم الأصلي للمنطقة م بين المستقيمات المبيّنة ومعادلاتها](assets/lessons/mathematics/source-crops/math-kamel-u5-p064-r7-figure.webp)
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn></mrow></math>\` وحدة مربعة.
 solution:
 ![الرسم الأصلي المستخدم في تحديد الحدود والإشارات](assets/lessons/mathematics/source-crops/math-kamel-u5-p064-r7-figure.webp)
 
@@ -3396,6 +3462,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة المنطقة الواقعة في الربع الأول والمحدودة بمنحنيي الاقترانين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٩</mn><mo>−</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٩</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\` والمحورين الإحداثيين.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">١٠٧</mn><mn dir="ltr">٦</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -3523,6 +3591,8 @@ body:
 في الشكل المجاور، احسب \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></msubsup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>−</mo><mn dir="ltr">٣</mn></mrow><mo stretchy="true">)</mo></mrow></mrow><mo stretchy="true">)</mo></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`، علماً بأن \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">١</mn></mrow></msub><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>\` وحدات مربعة، و\`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub><mo>=</mo><mn dir="ltr">١٢</mn></mrow></math>\` وحدة مربعة.
 
 ![الرسم الأصلي لق(س) مع المنطقتين م١ وم٢ وتقاطعات المنحنى مع المحور](assets/lessons/curriculum-evidence/7bd5b87b05e5994c2683.webp)
+final-answer:
+**قيمة التكامل:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></math>\`.
 solution:
 ![الرسم الأصلي وتحديد إشارات المساحتين](assets/lessons/curriculum-evidence/7bd5b87b05e5994c2683.webp)
 
@@ -3555,6 +3625,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب مساحة المنطقة المحدودة بمنحنيي الاقترانين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٣</mn></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٣٢</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -3636,6 +3708,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما مساحة المنطقة المحصورة بين منحنى الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>−</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">١</mn></mrow></math>\` والمستقيم المار بالنقطتين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">٣</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mo>−</mo><mn dir="ltr">١</mn><mo>،</mo><mo>−</mo><mn dir="ltr">٥</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`؟
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٩</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 الميل هو فرق الصادات مقسومًا على فرق السينات، مع استخدام ترتيب النقطتين نفسه في البسط والمقام.
 
@@ -3741,6 +3815,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما مساحة المنطقة المحصورة بين منحنيي الاقترانين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mfrac><mrow><mn dir="ltr">٣</mn></mrow><mrow><mi mathvariant="normal">س</mi></mrow></mfrac></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٢</mn></mrow></math>\` في الفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mn dir="ltr">١</mn><mo>،</mo><mtext dir="rtl">هـ</mtext></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`؟
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><msup><mi mathvariant="normal">هـ</mi><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">هـ</mi><mo>−</mo><mfrac><mn dir="ltr">١١</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -3823,6 +3899,8 @@ body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mo>∫</mo><mrow><mi mathvariant="normal">أ</mi></mrow><mrow><mi mathvariant="normal">ج</mi></mrow></msubsup><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٦</mn><mo>+</mo><msubsup><mo>∫</mo><mrow><mi mathvariant="normal">ج</mi></mrow><mrow><mi mathvariant="normal">ب</mi></mrow></msubsup><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`، وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mo>∫</mo><mrow><mi mathvariant="normal">أ</mi></mrow><mrow><mi mathvariant="normal">ج</mi></mrow></msubsup><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢</mn><mo>+</mo><msubsup><mo>∫</mo><mrow><mi mathvariant="normal">ج</mi></mrow><mrow><mi mathvariant="normal">ب</mi></mrow></msubsup><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`، معتمداً على الشكل جد المساحة المحصورة بين منحنيي الاقترانين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>،</mo><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`.
 
 ![الرسم الأصلي لمنحنيي ق(س) و هـ(س) مع نقاط التقاطع أ وج وب والمنطقتين بينهما](assets/lessons/curriculum-evidence/97023777698a948cd07f.webp)
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn></mrow></math>\` وحدة مربعة.
 solution:
 ![الرسم الأصلي المستخدم في تحديد الحدود والإشارات](assets/lessons/curriculum-evidence/97023777698a948cd07f.webp)
 
@@ -3848,6 +3926,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما مساحة المنطقة المحصورة بين منحنيي كل من \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mtext dir="rtl">جا</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mtext dir="rtl">جا</mtext><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` في الفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mn dir="ltr">٠</mn><mo>،</mo><mo>π</mo></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`؟
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -3973,6 +4053,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما مساحة المنطقة المحصورة بين منحنيي الاقترانين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٢</mn></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></math>\`؟
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٩</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -4054,6 +4136,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما مساحة المنطقة المحصورة بين منحنيي الاقترانين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٢٧</mn><mo>−</mo><mn dir="ltr">٣</mn><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ل</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٣</mn><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>+</mo><mn dir="ltr">٣</mn></mrow></math>\` ومحور السينات والصادات والواقعة في الربع الأول؟
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢٢</mn></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -4179,6 +4263,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما مساحة المنطقة المحصورة بين منحنيي الاقترانين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>+</mo><mn dir="ltr">٢</mn></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ل</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٦</mn><mo>−</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi></mrow></math>\` ومحور السينات والصادات الموجبين؟
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٢٣</mn><mn dir="ltr">٦</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -4306,6 +4392,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد مساحة المنطقة المحصورة بين منحنيي الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>+</mo><mn dir="ltr">١</mn></mrow></math>\` والمستقيم \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></math>\`، والواقعة فوق محور السينات في الفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -4421,6 +4509,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 احسب المساحة المحصورة بين منحنى الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">١</mn><mo>−</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\` ومحور الصادات والمستقيم \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٥</mn></mrow></math>\` والمستقيم \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">٤٧</mn><mn dir="ltr">٦</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 
@@ -4548,6 +4638,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد المساحة المحصورة بمحور الصادات ومنحنى الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><msup><mtext dir="rtl">هـ</mtext><mrow><mi mathvariant="normal">س</mi></mrow></msup></mrow></math>\` والمماس لمنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi></mrow></math>\` المار بنقطة الأصل.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mi mathvariant="normal">هـ</mi><mn dir="ltr">٢</mn></mfrac><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\` وحدة مربعة.
 solution:
 
 نفرض نقطة التماس ذات السين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`؛ صادها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">هـ</mi><mi mathvariant="normal">أ</mi></msup></math>\` و ميل المماس هناك \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">هـ</mi><mi mathvariant="normal">أ</mi></msup></math>\` لأن مشتقة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">هـ</mi><mi mathvariant="normal">س</mi></msup></math>\` هي نفسها.
@@ -4603,6 +4695,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد المساحة المحصورة بين منحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mtext dir="rtl">جتا</mtext><mi mathvariant="normal">س</mi><mo>−</mo><mtext dir="rtl">جا</mtext><mi mathvariant="normal">س</mi></mrow></math>\` ومحور السينات والخطين الرأسيين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٠</mn></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mfrac><mrow><mo>π</mo></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><msqrt><mn dir="ltr">٢</mn></msqrt><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\` وحدة مربعة.
 solution:
 
 المساحة بين المنحنى والمحور تجمع الارتفاع الموجب. نقسم عند انعدام \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">جتا</mi><mo>⁡</mo><mi mathvariant="normal">س</mi></mrow><mo>−</mo><mrow><mi mathvariant="normal">جا</mi><mo>⁡</mo><mi mathvariant="normal">س</mi></mrow></mrow></math>\`؛ في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">٠</mn><mo>،</mo><mfrac><mi mathvariant="normal">π</mi><mn dir="ltr">٢</mn></mfrac><mo stretchy="true" fence="true">]</mo></mrow></math>\` تساويهما عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mi mathvariant="normal">π</mi><mn dir="ltr">٤</mn></mfrac></math>\`.
@@ -4643,6 +4737,8 @@ answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد المساحة المحصورة بين منحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true">|</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>−</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true">|</mo></mrow></mrow></math>\` والمماس لمنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi></mrow></math>\` عند \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mn dir="ltr">٨</mn><msqrt><mn dir="ltr">٢</mn></msqrt><mo>−</mo><mn dir="ltr">٨</mn></mrow><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 قرب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٠</mn></math>\` تساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">|</mo><mrow><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true" fence="true">|</mo></mrow></math>\` المقدار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١</mn><mo>−</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></math>\`، ف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٠</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">ق</mi><mo>′</mo></msup><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٠</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mn dir="ltr">٠</mn></mrow></math>\`. المماس أفقي ومعادلته \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\`. المنطقة متناظرة حول محور الصادات.
@@ -4690,6 +4786,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد مساحة المنطقة المحصورة بين المنحنيين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ص</mi><mrow><mn dir="ltr">١</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٢</mn></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ص</mi><mrow><mn dir="ltr">٢</mn></mrow></msub><mo>=</mo><mrow><mo stretchy="true">{</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤</mn><mo>−</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mtd><mtd><mrow><mi mathvariant="normal">س</mi><mo>≤</mo><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mrow><mi mathvariant="normal">س</mi><mo>&gt;</mo><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable></mrow></mrow></math>\`.
+final-answer:
+**المساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mn dir="ltr">١٣</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\` وحدة مربعة.
 solution:
 
 عند تقاطع المنحنيين تتساوى الصادات. نساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٢</mn></mrow></math>\` بكل فرع، ونختار الجذر الذي يقع في مجاله.
@@ -4745,6 +4843,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد قيمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi></mrow></math>\` بحيث إن المساحة المحصورة بين المنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>−</mo><msup><mi mathvariant="normal">ج</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\` والمنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">ج</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>−</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\` تساوي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mn dir="ltr">٦٤</mn></mrow><mrow><mn dir="ltr">٣</mn></mrow></mfrac></mrow></math>\` وحدة مساحة.
+final-answer:
+**قيمة ج:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mo>±</mo><mn dir="ltr">٢</mn></mrow></math>\`.
 solution:
 
 تعتمد القاعدتان على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">ج</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></math>\`، فلا تتغيران بتغيير إشارة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\`. تقاطعهما يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mo>=</mo><mrow><msup><mi mathvariant="normal">ج</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></math>\`، أي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo>±</mo><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">ج</mi><mo stretchy="true" fence="true">|</mo></mrow></mrow></mrow></math>\`. بينهما المنحنى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">ج</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mo>−</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></math>\` أعلى، والارتفاع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٢</mn><mrow><msup><mi mathvariant="normal">ج</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow><mo>−</mo><mrow><mn dir="ltr">٢</mn><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></mrow></math>\`.

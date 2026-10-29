@@ -13,6 +13,8 @@ Word bank: put up - the latter - knowledge - ran into - reluctant - errors
 
 She has a lot of **things that she knows** about this subject because she has studied it for years.
 
+final-answer:
+She has a lot of **knowledge** about this subject because she has studied it for years.
 solution:
 **الإجابة:** She has a lot of knowledge about this subject because she has studied it for years.
 
@@ -47,6 +49,8 @@ Word bank: put up - the latter - knowledge - ran into - reluctant - errors
 
 Most of the problems were due to human **mistakes**.
 
+final-answer:
+Most of the problems were due to human **errors**.
 solution:
 **الإجابة:** Most of the problems were due to human errors.
 
@@ -73,6 +77,8 @@ Word bank: put up - the latter - knowledge - ran into - reluctant - errors
 
 Many parents feel **unwilling** to talk openly with their children.
 
+final-answer:
+Many parents feel **reluctant** to talk openly with their children.
 solution:
 **الإجابة:** Many parents feel reluctant to talk openly with their children.
 
@@ -107,6 +113,8 @@ Word bank: put up - the latter - knowledge - ran into - reluctant - errors
 
 We discussed two ideas for our project. **The second one mentioned** is the most applicable.
 
+final-answer:
+We discussed two ideas for our project. **The latter** is the most applicable.
 solution:
 the latter تعني الثاني من شيئين سبق ذكرهما. حدد السؤال فكرتين، ثم أشار إلى الثانية؛ لذلك نستبدل العبارة بـ The latter.
 
@@ -129,6 +137,8 @@ Word bank: put up - the latter - knowledge - ran into - reluctant - errors
 
 While walking down town I **by chance met** an old friend and stopped to talk.
 
+final-answer:
+While walking down town, I **ran into** an old friend and stopped to talk.
 solution:
 **الإجابة:** While walking down town, I ran into an old friend and stopped to talk.
 
@@ -155,6 +165,8 @@ Word bank: put up - the latter - knowledge - ran into - reluctant - errors
 
 She **gave** me **a place to stay** in her house for a night because I’d missed the last bus and there were no night buses running.
 
+final-answer:
+She **put me up** in her house for a night because I’d missed the last bus and there were no night buses running.
 solution:
 put someone up تعني توفير مكان يقيم فيه الشخص. وهي مناسبة هنا لأن المتحدثة وفرت له مبيتاً بعد فوات الحافلة.
 
@@ -184,6 +196,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: patting - colleague - reluctant - bald - straight - mentioned
 
 The report ………… nothing about the problem. (said something about)
+final-answer:
+The report **mentioned** nothing about the problem.
 solution:
 **الإجابة:** The report mentioned nothing about the problem.
 
@@ -209,6 +223,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: patting - colleague - reluctant - bald - straight - mentioned
 
 He felt a million hands ………… him on the back and congratulating him on the job. (hitting gently)
+final-answer:
+He felt a million hands **patting** him on the back and congratulating him on the job.
 solution:
 **الإجابة:** He felt a million hands patting him on the back and congratulating him on the job.
 
@@ -234,6 +250,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: patting - colleague - reluctant - bald - straight - mentioned
 
 He left his job after an argument with his ………… . (someone you work with)
+final-answer:
+He left his job after an argument with his **colleague**.
 solution:
 **الإجابة:** He left his job after an argument with his colleague.
 
@@ -259,6 +277,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: patting - colleague - reluctant - bald - straight - mentioned
 
 The doctor seemed ………… to tell the family about the patient’s serious diseases. (unwilling)
+final-answer:
+The doctor seemed **reluctant** to tell the family about the patient’s serious diseases.
 solution:
 **الإجابة:** The doctor seemed reluctant to tell the family about the patient’s serious diseases.
 
@@ -292,6 +312,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: patting - colleague - reluctant - bald - straight - mentioned
 
 I felt tired when I got home, so I went ………… to bed. (immediately)
+final-answer:
+I felt tired when I got home, so I went **straight** to bed.
 solution:
 straight تعني مباشرة أو فوراً، فتقابل immediately. تتابع الجملة حدثين ماضيين: الوصول إلى البيت ثم الذهاب إلى السرير؛ لذلك نستخدم went.
 
@@ -321,6 +343,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: patting - colleague - reluctant - bald - straight - mentioned
 
 He looks older than he is because he’s almost completely ………… . (without hair)
+final-answer:
+He looks older than he is because he’s almost completely **bald**.
 solution:
 **الإجابة:** He looks older than he is because he’s almost completely bald.
 
@@ -346,6 +370,8 @@ Complete the sentences with words from the box.
 Word bank: the latter - patting - knowledge - coincidence - reluctant - mentioned
 
 While I was ………… my friend’s back, he got nervous and started to shout.
+final-answer:
+While I was **patting** my friend’s back, he got nervous and started to shout.
 solution:
 المعنى التربيت الخفيف باليد. بعد was نستخدم ing، فنكتب patting مع مضاعفة t. التعبير الطبيعي pat my friend’s back دون on بعد الفعل.
 
@@ -368,6 +394,8 @@ Complete the sentences with words from the box.
 Word bank: the latter - patting - knowledge - coincidence - reluctant - mentioned
 
 In her speech, she ………… nothing about her previous job experience.
+final-answer:
+In her speech, she **mentioned** nothing about her previous job experience.
 solution:
 المعنى أنها لم تذكر شيئاً عن خبرتها السابقة. الفعل mention يعني يذكر أو يشير إلى، وصيغته الماضية mentioned.
 
@@ -390,6 +418,8 @@ Complete the sentences with words from the box.
 Word bank: the latter - patting - knowledge - coincidence - reluctant - mentioned
 
 Most women are ………… to answer questions about their weight and age.
+final-answer:
+Most women are **reluctant** to answer questions about their weight and age.
 solution:
 المطلوب صفة بمعنى غير راغبات أو مترددات في الإجابة. نستخدم reluctant بعد are، ويتبعها to answer كما في تركيب الكتاب.
 
@@ -412,6 +442,8 @@ Complete the sentences with words from the box.
 Word bank: the latter - patting - knowledge - coincidence - reluctant - mentioned
 
 It’s my belief that ………… is power.
+final-answer:
+**knowledge**
 solution:
 **Answer:** knowledge
 
@@ -434,6 +466,8 @@ Complete the sentences with words from the box.
 Word bank: the latter - patting - knowledge - coincidence - reluctant - mentioned
 
 It’s not a ………… that none of the directors are women.
+final-answer:
+**coincidence**
 solution:
 **Answer:** coincidence
 
@@ -456,6 +490,8 @@ Complete the sentences with words from the box.
 Word bank: the latter - patting - knowledge - coincidence - reluctant - mentioned
 
 Two agreements were signed in 1990 and 1998, but only ………… one was considered valid.
+final-answer:
+**the latter**
 solution:
 **Answer:** the latter
 
@@ -478,6 +514,8 @@ Complete the sentences with words from the box.
 Word bank: reluctant - latter - strangers - colleague - error
 
 The accident was caused by a human ………… .
+final-answer:
+**error**
 solution:
 **الإجابة:** error
 
@@ -503,6 +541,8 @@ Complete the sentences with words from the box.
 Word bank: reluctant - latter - strangers - colleague - error
 
 I am ………… to spend all that money on such a small project.
+final-answer:
+**reluctant**
 solution:
 **Answer:** reluctant
 
@@ -525,6 +565,8 @@ Complete the sentences with words from the box.
 Word bank: reluctant - latter - strangers - colleague - error
 
 I had two options, history and geography so I chose the ………… .
+final-answer:
+**latter**
 solution:
 **Answer:** latter
 
@@ -548,6 +590,8 @@ Complete the sentences with words from the box.
 Word bank: reluctant - latter - strangers - colleague - error
 
 Nabil is not my friend. He’s a ………… at the company.
+final-answer:
+**colleague**
 solution:
 **Answer:** colleague
 
@@ -570,6 +614,8 @@ Complete the sentences with words from the box.
 Word bank: reluctant - latter - strangers - colleague - error
 
 Tom trained his dog to bark at ………… .
+final-answer:
+**strangers**
 solution:
 **Answer:** strangers
 
@@ -592,6 +638,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: put up - turn out - came across - catch up with
 
 While I was tidying up my room yesterday, I ………… an old photo of me as a baby.
+final-answer:
+**came across**
 solution:
 **Answer:** came across
 
@@ -615,6 +663,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: put up - turn out - came across - catch up with
 
 He ran so fast that I couldn’t ………… him.
+final-answer:
+**catch up with**
 solution:
 **Answer:** catch up with
 
@@ -640,6 +690,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: put up - turn out - came across - catch up with
 
 I knew that everything would ………… fine in the end.
+final-answer:
+**turn out**
 solution:
 **Answer:** turn out
 
@@ -663,6 +715,9 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: put up - turn out - came across - catch up with
 
 He was visiting the town for a few days, so I ………… him ………… in my apartment.
+final-answer:
+1. **put**
+2. **up**
 solution:
 **Answer:** put / up
 
@@ -686,6 +741,9 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: ran into - turned out - put up - catch up
 
 He was visiting the town for a few days so I ………… him ………… in my flat.
+final-answer:
+1. **put**
+2. **up**
 solution:
 **Answer:** put / up
 
@@ -709,6 +767,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: ran into - turned out - put up - catch up
 
 We hadn’t seen each other for years, so having a meal together was a good chance to ………… with each other.
+final-answer:
+**catch up**
 solution:
 **Answer:** catch up
 
@@ -732,6 +792,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: ran into - turned out - put up - catch up
 
 I was surprised when I ………… an old friend of mine yesterday.
+final-answer:
+**ran into**
 solution:
 **Answer:** ran into
 
@@ -754,6 +816,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: ran into - turned out - put up - catch up
 
 I thought the party was going to be boring, but it ………… to be the most unforgettable evening of my life.
+final-answer:
+**turned out**
 solution:
 **Answer:** turned out
 
@@ -777,6 +841,8 @@ Complete the following sentences with the correct phrasal verb from the box.
 Word bank: run into - turned out - put up - catches up - came across
 
 We ………… our cousin in our flat when he came to visit Nablus.
+final-answer:
+**put up**
 solution:
 **Answer:** put up
 
@@ -802,6 +868,8 @@ Complete the following sentences with the correct phrasal verb from the box.
 Word bank: run into - turned out - put up - catches up - came across
 
 I ………… this book in our school library. It’s wonderful.
+final-answer:
+**came across**
 solution:
 **Answer:** came across
 
@@ -826,6 +894,8 @@ Complete the following sentences with the correct phrasal verb from the box.
 Word bank: run into - turned out - put up - catches up - came across
 
 I didn’t recognize her at first but it ………… that we’d been at school together.
+final-answer:
+**turned out**
 solution:
 **Answer:** turned out
 
@@ -849,6 +919,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: catch up with - turned out - put up - come across - ran into
 
 I ………… my cousin yesterday at the market.
+final-answer:
+**ran into**
 solution:
 **Answer:** ran into
 
@@ -871,6 +943,9 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: catch up with - turned out - put up - come across - ran into
 
 Sally agreed to ………… me ………… for the weekend.
+final-answer:
+1. **put**
+2. **up**
 solution:
 **Answer:** put / up
 
@@ -894,6 +969,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: catch up with - turned out - put up - come across - ran into
 
 They have ………… trouble while designing the new machine.
+final-answer:
+**come across**
 solution:
 **Answer:** come across
 
@@ -920,6 +997,8 @@ Word bank: catch up with - turned out - put up - come across - ran into
 
 He couldn’t ………… his new classmates in their schoolwork, although they tried to help him.
 
+final-answer:
+He couldn’t **catch up with** his new classmates in their schoolwork, although they tried to help him.
 solution:
 catch up with تعني هنا اللحاق بمستوى الآخرين في العمل الدراسي. عبارة in their schoolwork تحدد هذا المعنى، ولا تسأل عن الانسجام الاجتماعي معهم.
 
@@ -943,6 +1022,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: catch up - come across - put up - turned out - ran into
 
 Guess who I ………… in the town today.
+final-answer:
+**ran into**
 solution:
 **Answer:** ran into
 
@@ -967,6 +1048,9 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: catch up - come across - put up - turned out - ran into
 
 My uncle was visiting the country for a few days, so I ………… him ………… in my flat.
+final-answer:
+1. **put**
+2. **up**
 solution:
 **Answer:** put / up
 
@@ -990,6 +1074,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: catch up - come across - put up - turned out - ran into
 
 Having a meal together is a good chance to ………… with each other.
+final-answer:
+**catch up**
 solution:
 **Answer:** catch up
 
@@ -1012,6 +1098,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: catch up - come across - put up - turned out - ran into
 
 I didn’t realize who she was at first, but it ………… that we’d been at school together.
+final-answer:
+**turned out**
 solution:
 **Answer:** turned out
 
@@ -1034,6 +1122,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: turned out - run into - catch up - put up - came across
 
 While searching for his passport, he ………… his photo when he was six years old.
+final-answer:
+**came across**
 solution:
 **Answer:** came across
 
@@ -1056,6 +1146,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: turned out - run into - catch up - put up - came across
 
 The house they had offered us ………… to be a tiny apartment.
+final-answer:
+**turned out**
 solution:
 **Answer:** turned out
 
@@ -1078,6 +1170,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: turned out - run into - catch up - put up - came across
 
 We were ………… at a small hotel for a night after long travel.
+final-answer:
+**put up**
 solution:
 **Answer:** put up
 
@@ -1101,6 +1195,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: turned out - run into - catch up - put up - came across
 
 Let’s go to the coffee shop. I need to ………… with you all.
+final-answer:
+**catch up**
 solution:
 **Answer:** catch up
 
@@ -1123,6 +1219,8 @@ Complete the sentences with the suitable phrasal verbs from the box.
 Word bank: turned out - run into - catch up - put up - came across
 
 Who did you ………… on the way home yesterday?
+final-answer:
+**run into**
 solution:
 **Answer:** run into
 
@@ -1145,6 +1243,8 @@ Complete the following sentences with the suitable phrasal verbs from the box.
 Word bank: turned out - kept in touch - run into - come across - catch up - put up
 
 After missing a term through illness, he had to work hard to ………… with the others.
+final-answer:
+**catch up**
 solution:
 **Answer:** catch up
 
@@ -1168,6 +1268,8 @@ Complete the following sentences with the suitable phrasal verbs from the box.
 Word bank: turned out - kept in touch - run into - come across - catch up - put up
 
 After all that media attention, the whole event ………… to be false.
+final-answer:
+**turned out**
 solution:
 **Answer:** turned out
 
@@ -1190,6 +1292,9 @@ Complete the following sentences with the suitable phrasal verbs from the box.
 Word bank: turned out - kept in touch - run into - come across - catch up - put up
 
 We ………… our relatives ………… in our house when they came to visit Palestine.
+final-answer:
+1. **put**
+2. **up**
 solution:
 **Answer:** put / up
 
@@ -1212,6 +1317,8 @@ Complete the following sentences with the suitable phrasal verbs from the box.
 Word bank: turned out - kept in touch - run into - come across - catch up - put up
 
 I was surprised to ………… Noha when I was in the park.
+final-answer:
+**run into**
 solution:
 **Answer:** run into
 
@@ -1234,6 +1341,8 @@ Complete the following sentences with the suitable phrasal verbs from the box.
 Word bank: turned out - kept in touch - run into - come across - catch up - put up
 
 If students ………… unfamiliar words, they can use the dictionary to check their meanings.
+final-answer:
+**come across**
 solution:
 **Answer:** come across
 
@@ -1257,6 +1366,8 @@ Complete the following sentences with the suitable phrasal verbs from the box.
 Word bank: turned out - kept in touch - run into - come across - catch up - put up
 
 While he was away, he ………… with his family by email.
+final-answer:
+**kept in touch**
 solution:
 **Answer:** kept in touch
 
@@ -1280,6 +1391,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: worker - operation - behave - lead - heard
 
 Children often ………… in order to get attention.
+final-answer:
+Children often **misbehave** in order to get attention.
 solution:
 **Answer:** misbehave
 
@@ -1305,6 +1418,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: worker - operation - behave - lead - heard
 
 Never give your password to anyone, not even a ………… or a friend.
+final-answer:
+Never give your password to anyone, not even a **co-worker** or a friend.
 solution:
 **Answer:** co-worker
 
@@ -1330,6 +1445,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: worker - operation - behave - lead - heard
 
 Don’t let his friendly manner ………… you into trusting him.
+final-answer:
+Don’t let his friendly manner **mislead** you into trusting him.
 solution:
 **Answer:** mislead
 
@@ -1355,6 +1472,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: worker - operation - behave - lead - heard
 
 We want to thank you for your ………… and continuous support.
+final-answer:
+We want to thank you for your **co-operation** and continuous support.
 solution:
 **Answer:** co-operation
 
@@ -1380,6 +1499,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: worker - operation - behave - lead - heard
 
 Her voice wasn’t clear. I was certain I had ………… what she said.
+final-answer:
+Her voice wasn’t clear. I was certain I had **misheard** what she said.
 solution:
 **Answer:** misheard
 
@@ -1405,6 +1526,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: operation - use - leading - writers - behave
 
 Both their names are on the front of the book because they are the ………… .
+final-answer:
+Both their names are on the front of the book because they are the **co-writers**.
 solution:
 **Answer:** co-writers
 
@@ -1429,6 +1552,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: operation - use - leading - writers - behave
 
 The teacher usually gets annoyed when students ………… in the class.
+final-answer:
+The teacher usually gets annoyed when students **misbehave** in the class.
 solution:
 **Answer:** misbehave
 
@@ -1454,6 +1579,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: operation - use - leading - writers - behave
 
 There are many ………… advertisements on TV.
+final-answer:
+There are many **misleading** advertisements on TV.
 solution:
 **Answer:** misleading
 
@@ -1478,6 +1605,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: operation - use - leading - writers - behave
 
 ………… between schools is the most important thing we need in this critical stage.
+final-answer:
+**Co-operation** between schools is the most important thing we need in this critical stage.
 solution:
 **Answer:** Co-operation
 
@@ -1502,6 +1631,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: operation - use - leading - writers - behave
 
 Some people ………… modern technology by breaking the privacy of others.
+final-answer:
+Some people **misuse** modern technology by breaking the privacy of others.
 solution:
 **Answer:** misuse
 
@@ -1529,6 +1660,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: heard - incidence - operation - behave - founder
 
 Mr. Walid is the ………… of the university.
+final-answer:
+Mr. Walid is the **co-founder** of the university.
 solution:
 **Answer:** co-founder
 
@@ -1553,6 +1686,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: heard - incidence - operation - behave - founder
 
 The teacher gets angry with the students who ………… in class.
+final-answer:
+The teacher gets angry with the students who **misbehave** in class.
 solution:
 **Answer:** misbehave
 
@@ -1578,6 +1713,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: heard - incidence - operation - behave - founder
 
 Because of the size of the task, ………… was important.
+final-answer:
+Because of the size of the task, **co-operation** was important.
 solution:
 **Answer:** co-operation
 
@@ -1602,6 +1739,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: heard - incidence - operation - behave - founder
 
 The soldier didn’t follow the orders. He must have ………… the leader’s words.
+final-answer:
+The soldier didn’t follow the orders. He must have **misheard** the leader’s words.
 solution:
 **Answer:** misheard
 
@@ -1627,6 +1766,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: heard - incidence - operation - behave - founder
 
 It was a ………… that they were both in Paris on the same day.
+final-answer:
+It was a **coincidence** that they were both in Paris on the same day.
 solution:
 **Answer:** coincidence
 
@@ -1653,6 +1794,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: take - heard - operate - founder
 
 Her brother is a ………… of a medical firm.
+final-answer:
+Her brother is a **co-founder** of a medical firm.
 solution:
 **Answer:** co-founder
 
@@ -1677,6 +1820,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: take - heard - operate - founder
 
 It seemed a strange question; I wondered if I had ………… .
+final-answer:
+It seemed a strange question; I wondered if I had **misheard**.
 solution:
 **Answer:** misheard
 
@@ -1702,6 +1847,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: take - heard - operate - founder
 
 The medical lab must have made a ………… . This can’t be right.
+final-answer:
+The medical lab must have made a **mistake**. This can’t be right.
 solution:
 **Answer:** mistake
 
@@ -1728,6 +1875,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: take - heard - operate - founder
 
 Let’s all ………… to get the work done quickly and perfectly.
+final-answer:
+Let’s all **co-operate** to get the work done quickly and perfectly.
 solution:
 **Answer:** co-operate
 
@@ -1753,6 +1902,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: understood - operation - behave - lead - use
 
 Information in adverts isn’t usually untrue, but it can ………… people and give them the wrong idea.
+final-answer:
+Information in adverts isn’t usually untrue, but it can **mislead** people and give them the wrong idea.
 solution:
 **Answer:** mislead
 
@@ -1778,6 +1929,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: understood - operation - behave - lead - use
 
 This success couldn’t have been achieved without your ………… .
+final-answer:
+This success couldn’t have been achieved without your **co-operation**.
 solution:
 **Answer:** co-operation
 
@@ -1806,6 +1959,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: understood - operation - behave - lead - use
 
 Oh, I must have ………… you. I thought we were going to meet at 11:00.
+final-answer:
+Oh, I must have **misunderstood** you. I thought we were going to meet at 11:00.
 solution:
 **Answer:** misunderstood
 
@@ -1831,6 +1986,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: pilot - operation - behave - use
 
 Students always get in trouble when they ………… in class.
+final-answer:
+Students always get in trouble when they **misbehave** in class.
 solution:
 **Answer:** misbehave
 
@@ -1856,6 +2013,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: pilot - operation - behave - use
 
 There’s very little ………… between the two neighboring countries.
+final-answer:
+There’s very little **co-operation** between the two neighboring countries.
 solution:
 **Answer:** co-operation
 
@@ -1883,6 +2042,8 @@ Word bank: pilot - operation - behave - use
 
 The children sometimes ………… their toys by using them roughly, and end up breaking them.
 
+final-answer:
+The children sometimes **misuse** their toys by using them roughly, and end up breaking them.
 solution:
 **Answer:** misuse
 
@@ -1908,6 +2069,8 @@ Complete the sentences using the words in the box with (co-mis).
 Word bank: pilot - operation - behave - use
 
 The ………… succeeded in landing the plane safely.
+final-answer:
+The **co-pilot** succeeded in landing the plane safely.
 solution:
 **Answer:** co-pilot
 

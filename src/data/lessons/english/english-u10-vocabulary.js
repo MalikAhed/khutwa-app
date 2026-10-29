@@ -28,6 +28,8 @@ body:
 Complete the sentences with the correct form of the words in brackets.
 
 Most people tend to study language for a __________ of reasons. (combine)
+final-answer:
+Most people tend to study language for a **combination** of reasons.
 solution:
 a قبل الفراغ و of reasons بعده يطلبان اسمًا. combine فعل، ونحوّله إلى combination بحذف e وإضافة اللاحقة الاسمية ation؛ المعنى مزيج من الأسباب.
 

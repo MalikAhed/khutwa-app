@@ -74,16 +74,22 @@ test("chemistry keeps original crop coordinates and verified corrected explanati
 
 test("every chemistry formula renders under the app's strict math settings", async () => {
   let expressions = 0;
+  let finalAnswerExpressions = 0;
+  const formulas = source => source.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$\$([\s\S]*?)\$\$/g);
   for (const catalog of CHEMISTRY_LESSONS) {
     const lesson = await loadSubjectLesson("chemistry", catalog.id);
-    for (const match of lesson.authoringSource.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$\$([\s\S]*?)\$\$/g)) {
+    for (const step of parseLessonMarkdown(lesson.authoringSource, { published:true }).steps) {
+      if (step.type === "exam-question") finalAnswerExpressions += [...formulas(step.content.finalAnswer)].length;
+    }
+    for (const match of formulas(lesson.authoringSource)) {
       assert.doesNotThrow(() => katex.renderToString(match[1] ?? match[2] ?? match[3], {
         output:"mathml", throwOnError:true, strict:"error", trust:false, maxExpand:1000, maxSize:20,
       }), `${catalog.id}: ${match[0]}`);
       expressions += 1;
     }
   }
-  assert.equal(expressions, 2288);
+  assert.equal(expressions - finalAnswerExpressions, 2288, "original question and explanation formulas remain intact");
+  assert.ok(finalAnswerExpressions > 0, "final-answer formulas also pass strict rendering");
   for (const change of coverage.integration.math_notation.adaptations.filter(change => change.original.includes("فوتون"))) {
     assert.match(katex.renderToString(change.adapted, { output:"mathml", strict:"error" }), /<mtext>فوتون<\/mtext>/);
   }

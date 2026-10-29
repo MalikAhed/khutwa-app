@@ -10,6 +10,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 You should do a lot of market research before starting. (Everyone told me that)
+final-answer:
+Everyone told me that **I should do** a lot of market research before starting.
 solution:
 بعد told me that ننقل النصيحة في جملة كاملة، لا مصدر بـ to. المخاطب You يصبح I لأنني أنقل ما قيل لي، و should تبقى should.
 
@@ -32,6 +34,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 Don't go near the sea. (He warned him against)
+final-answer:
+He warned him **against going** near the sea.
 solution:
 warn someone against تعني يحذره من فعل شيء؛ بعد against، وهي حرف جر، نستخدم ing: go → going. معنى النهي Don't محفوظ في التحذير فلا نضيف not.
 
@@ -52,6 +56,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 Don't spend your money buying expensive clothes. (he warned me against)
+final-answer:
+He warned me **against spending** my money buying expensive clothes.
 solution:
 لنقل التحذير نستعمل \`warn + الشخص + against + فعل بصيغة ing\`؛ لأن against حرف جر.
 بعد warned me against نضع spending بدل spend. your تصبح my لأن الناقل هو المخاطب me؛ والتحذير نفسه يحمل معنى الامتناع فلا نكرر النفي.
@@ -73,6 +79,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 It's not a good idea to wait too long before deciding. (he warned me against)
+final-answer:
+He warned me **against waiting** too long before deciding.
 solution:
 لنقل التحذير نستعمل \`warn + الشخص + against + فعل بصيغة ing\`؛ لأن against حرف جر.
 الانتظار الطويل هو الفعل غير المستحسن. نحول wait إلى waiting بعد against، ونبقي before deciding لأن before حرف جر يتبعه ing.
@@ -94,6 +102,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 You’d better revise the material before the exam. (the teacher advised his students)
+final-answer:
+The teacher advised his students **to revise** the material before the exam.
 solution:
 You'd better تقدم نصيحة. نبني نقلها: \`advised + الشخص\` \`his students + to + الفعل المجرد\` revise؛ نحذف عبارة You'd better.
 
@@ -114,6 +124,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 Don’t accept the first offer you get. (His father advised him)
+final-answer:
+His father advised him **not to accept** the first offer he got.
 solution:
 لنقل النهي نستخدم advised + him + not to + accept. المخاطب you يصبح he، وفي النقل الماضي يرجع get إلى got. وتصح أيضًا advised him against accepting.
 
@@ -136,6 +148,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 “Don’t eat so much junk food”. (The doctor warned us against)
+final-answer:
+The doctor warned us **against eating** so much junk food.
 solution:
 لنقل التحذير نستعمل \`warn + الشخص + against + فعل بصيغة ing\`؛ لأن against حرف جر.
 بعد warned us against نستخدم eating. نحتفظ بـ so much من الأصل.
@@ -159,6 +173,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 You should stop for a rest when you feel exhausted. (the trainer/advised)
+final-answer:
+The trainer advised him **to stop** for a rest when he felt exhausted.
 solution:
 نستخدم \`advised + المفعول + to stop\`؛ ونغير you إلى he و feel إلى felt عند النقل في الماضي. افترض المفتاح أن المخاطب ذكر مفرد؛ إذا اختلف المخاطب جاز me أو us أو her مع الضمير المناسب.
 
@@ -180,6 +196,8 @@ Rewrite the sentences keeping the same meaning.
 
 Don’t treat people unkindly.
 My father warned me against ..............
+final-answer:
+My father warned me **against treating** people unkindly.
 solution:
 لنقل التحذير نستعمل \`warn + الشخص + against + فعل بصيغة ing\`؛ لأن against حرف جر.
 النهي عن الإساءة يتحول إلى warned me against + treating؛ treat فعل مجرد يصبح treating بعد حرف الجر against، ولا نضيف not ثانية.
@@ -202,6 +220,8 @@ Rewrite the sentences keeping the same meaning.
 
 You shouldn't waste your time playing football.
 My mother warned me against ..............
+final-answer:
+My mother warned me **against wasting** my time playing football.
 solution:
 لنقل التحذير نستعمل \`warn + الشخص + against + فعل بصيغة ing\`؛ لأن against حرف جر.
 التحذير يحمل معنى shouldn't. بعد against نستخدم wasting، و your time تصبح my time لأن النصيحة موجهة إلى me.
@@ -224,6 +244,8 @@ Rewrite the sentences keeping the same meaning.
 
 You'd better apply for this scholarship.
 Samir advised me ..............
+final-answer:
+Samir advised me **to apply** for this scholarship.
 solution:
 You'd better نصيحة مثبتة؛ نستبدلها بتركيب advised me to apply. apply تبقى مجردة بعد to.
 
@@ -245,6 +267,8 @@ Rewrite the sentences keeping the same meaning.
 
 You’d better use a dictionary for correct pronunciation.
 Our teacher advised us ..............
+final-answer:
+Our teacher advised us **to use** a dictionary for correct pronunciation.
 solution:
 لنقل النصيحة المثبتة نستعمل \`advise + الشخص + to + الفعل الأساسي\`.
 المنصوحون us، ولذلك نضعهم بعد advised ثم to use؛ هذا ينقل نصيحة استخدام القاموس.
@@ -271,6 +295,8 @@ Rewrite the sentences keeping the same meaning.
 
 It is a good idea to respect your parents' opinions.
 My teacher advised me that ..............
+final-answer:
+My teacher advised me that **it was a good idea** to respect my parents' opinions.
 solution:
 وجود that يطلب جملة كاملة. في النقل بعد advised الماضي تتحول is إلى was، و your إلى my لأن الكلام موجه إليّ؛ ويبقى to respect جزءًا من good idea.
 
@@ -292,6 +318,8 @@ Rewrite the sentences keeping the same meaning.
 
 You'd better not borrow others' properties.
 My father warned me against ..............
+final-answer:
+My father warned me **against borrowing** others' properties.
 solution:
 You'd better not تنصح بالامتناع. نستعمل warned me against borrowing؛ بعد against يأتي ing، ولا نضع not لأن المعنى السلبي موجود في التحذير.
 
@@ -313,6 +341,8 @@ Rewrite the sentences keeping the same meaning.
 
 It's not a good idea to depend on others.
 The teacher told me that ..............
+final-answer:
+The teacher told me that **it wasn't a good idea** to depend on others.
 solution:
 بعد told me that ننقل الحكم في جملة؛ is not تصبح was not عند الرجوع زمنًا إلى الماضي، مع الاحتفاظ بالنفي وبـ to depend.
 
@@ -337,6 +367,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 Stay inside to avoid catching COVID19. (He advised me)
+final-answer:
+He advised me **to stay** inside to avoid catching COVID19.
 solution:
 الأمر الإيجابي Stay ينقل بصيغة advised me to stay. to avoid تبين الغرض، وبعد avoid نستعمل catching لأنها تأتي مع ing.
 
@@ -359,6 +391,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 Don't waste your time chatting and texting. (My mother warned me against)
+final-answer:
+My mother warned me **against wasting** my time chatting and texting.
 solution:
 لنقل التحذير نستعمل \`warn + الشخص + against + فعل بصيغة ing\`؛ لأن against حرف جر.
 بعد against نحول waste إلى wasting بحذف e ثم إضافة ing. your تتحول إلى my؛ chatting و texting تصفان طريقة إضاعة الوقت وتبقيان.
@@ -380,6 +414,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 It’s not a good idea to wait too long before making up your mind. (My parents warned me that)
+final-answer:
+My parents warned me that **it was not a good idea** to wait too long before making up my mind.
 solution:
 that تتبعها جملة كاملة. It's not تصبح it was not في النقل الماضي، و your mind تصبح my mind لأن التحذير موجه إلى me.
 
@@ -400,6 +436,8 @@ body:
 Rewrite the sentences keeping the same meaning.
 
 “Don’t talk when others are talking.” (The teacher warned the students against)
+final-answer:
+The teacher warned the students **against talking** when others were talking.
 solution:
 لنقل التحذير نستعمل \`warn + الشخص + against + فعل بصيغة ing\`؛ لأن against حرف جر.
 بعد warned the students against يأتي talking بدل talk. وفي النقل إلى الماضي تتغير are talking إلى were talking؛ التحذير يغني عن Don't.
@@ -423,6 +461,8 @@ body:
 Rewrite the following using the words in brackets:
 
 Jamal took his car to the mechanic and paid him to repair it. (causative structure)
+final-answer:
+Jamal took his car to the mechanic and paid to **have it repaired**.
 solution:
 التركيب السببي \`have + الشيء + التصريف الثالث\` يصف خدمة ينفذها غير صاحب الشيء.
 
@@ -444,6 +484,8 @@ body:
 Rewrite the following using the words in brackets:
 
 We had better ask someone to check the accounts every month. (causative structure)
+final-answer:
+We had better **get the accounts checked** every month.
 solution:
 عندما نطلب فحص الحسابات من غيرنا نستخدم get + accounts + checked، أي التصريف الثالث من check. بعد had better يأتي الفعل مجردًا: get أو have، ولا نكتب got.
 
@@ -464,6 +506,8 @@ body:
 Rewrite the following using the words in brackets:
 
 He took his washing machine to the electrician and asked him to fix it. (causative structure)
+final-answer:
+He took his washing machine to the electrician and asked to **have it fixed**.
 solution:
 التركيب السببي \`have/get + الشيء + التصريف الثالث\` يبين أن شخصاً آخر ينفذ العمل.
 
@@ -490,6 +534,8 @@ Rewrite the sentences replacing the parts in bold with causative structure:
 
 Don't forget to **arrange for a professional to clean the jacket** before the wedding.
 
+final-answer:
+Don't forget to **get the jacket cleaned** before the wedding.
 solution:
 لترتيب تنظيف السترة لدى شخص آخر نضع get + the jacket + cleaned. بعد forget to نحتاج get المجردة؛ cleaned تصريف ثالث يبين العمل الواقع على السترة.
 
@@ -511,6 +557,8 @@ Rewrite the sentences replacing the parts in bold with causative structure:
 
 She took her bracelet to the jeweler’s so that **he could mend it**.
 
+final-answer:
+She took her bracelet to the jeweler’s so that she could **have it mended**.
 solution:
 في السببي تصبح هي من ترتب الخدمة، لا الصائغ الذي ينفذها؛ لذلك he يصبح she. بعد could نضع have مجردة، ثم it للسوار، ثم mended التصريف الثالث من mend.
 
@@ -532,6 +580,8 @@ Rewrite the sentences replacing the parts in bold with causative structure:
 
 She'd better **ask the jeweler to repair her necklace**.
 
+final-answer:
+She'd better **have her necklace repaired** by the jeweler.
 solution:
 She'd better = She had better، ويتبعها have مجردة. نضع القلادة مفعولًا ثم repaired؛ by the jeweler تحفظ هوية من يصلحها. get صحيحة بدل have أيضًا.
 
@@ -553,6 +603,8 @@ Rewrite the sentences replacing the parts in bold with causative structure:
 
 Huda didn't make the curtains herself so she **asked someone to make them**.
 
+final-answer:
+Huda didn't make the curtains herself, so she asked to **have them made**.
 solution:
 التركيب السببي \`have/get + الشيء + التصريف الثالث\` يبين أن شخصاً آخر ينفذ العمل.
 
@@ -579,6 +631,8 @@ Rewrite the sentences replacing the parts in bold with causative structure:
 
 Kamal has just **asked someone to repair the central heating** in his house.
 
+final-answer:
+Kamal has just asked to **have the central heating repaired** in his house.
 solution:
 has just asked تعني أن طلب الإصلاح صدر للتو، لا أن الإصلاح اكتمل. نحافظ عليها لهذا السبب.
 
@@ -603,6 +657,8 @@ Rewrite the sentences replacing the parts in bold with causative structure:
 
 Ahmed took his motorbike to the mechanic and **paid him to mend it**.
 
+final-answer:
+Ahmed took his motorbike to the mechanic and paid to **have it mended**.
 solution:
 التركيب السببي \`have/get + الشيء + التصريف الثالث\` يبين أن شخصاً آخر ينفذ العمل.
 
@@ -633,6 +689,8 @@ Rewrite the sentences replacing the parts in bold with causative structure:
 
 Salma can’t make a wedding dress, so she **asks a designer in Paris to make it** for her.
 
+final-answer:
+Salma can’t make a wedding dress, so she asks to **have it made** for her by a designer in Paris.
 solution:
 التركيب السببي \`have/get + الشيء + التصريف الثالث\` يبين أن شخصاً آخر ينفذ العمل.
 
@@ -659,6 +717,8 @@ Rewrite the sentences replacing the parts in bold with causative structure:
 
 He didn’t fix his car himself; he **asked someone at the garage to fix it**.
 
+final-answer:
+He didn’t fix his car himself; he asked to **have it fixed** by someone at the garage.
 solution:
 التركيب السببي \`have/get + الشيء + التصريف الثالث\` يبين أن شخصاً آخر ينفذ العمل.
 
@@ -683,6 +743,8 @@ Rewrite the sentences replacing the parts in bold with causative structure:
 
 I have an idea for a product, but I’m not sure how to **arrange for someone to make it**.
 
+final-answer:
+I have an idea for a product, but I’m not sure how to **have it made**.
 solution:
 arrange for someone تعني ترتيب قيام غيره بالعمل. بعد how to نستخدم have مجردة، ثم it للمنتج ثم made، التصريف الثالث من make.
 
@@ -704,6 +766,8 @@ Rewrite the sentences replacing the parts in bold with causative structure:
 
 If you want to wear earrings, you should **ask a professional to pierce your ears**.
 
+final-answer:
+If you want to wear earrings, you should **have your ears pierced**.
 solution:
 المقصود إجراء ثقب الأذنين على يد شخص يقدم الخدمة. بعد should نكتب have مجردة، ثم your ears، ثم pierced التصريف الثالث من pierce؛ لا تعني أنك تثقبهما بنفسك.
 
@@ -724,6 +788,8 @@ body:
 Rewrite the sentences using causative structure:
 
 We'd better ask someone to **check the letter** before we send it.
+final-answer:
+We'd better **have the letter checked** before we send it.
 solution:
 حدوث الفحص بواسطة آخر يصاغ have + the letter + checked. بعد had better نستخدم have المجردة؛ و get the letter checked بديل صحيح.
 
@@ -745,6 +811,8 @@ Rewrite the sentences using causative structure:
 
 You'd better **ask a garage to service the car**; the engine is starting to make strange noises.
 
+final-answer:
+You'd better **have the car serviced**; the engine is starting to make strange noises.
 solution:
 التركيب السببي \`have/get + الشيء + التصريف الثالث\` يبين أن شخصاً آخر ينفذ العمل.
 
@@ -767,6 +835,8 @@ body:
 Rewrite the sentences using causative structure:
 
 You must **ask the manager to sign the cover of your book** in the conference.
+final-answer:
+You must **have the cover of your book signed** by the manager in the conference.
 solution:
 الشخص يرتب توقيع المدير: \`have + الشيء الذي يوقّع + signed\`. بعد must الفعل مجرد؛ by the manager تحفظ منفذ التوقيع، و signed تصريف ثالث من sign.
 
@@ -788,6 +858,8 @@ Rewrite the sentences using causative structure:
 
 He needs to **arrange for someone to fix his radio** because it is very valuable.
 
+final-answer:
+He needs to **have his radio fixed** because it is very valuable.
 solution:
 نحوّل إصلاح الراديو إلى ترتيب إصلاحه: have + his radio + fixed. بعد needs to تبقى have مجردة، و fixed تصريف ثالث؛ ويجوز get بدل have.
 
@@ -808,6 +880,8 @@ body:
 Rewrite the sentences using causative structure:
 
 I pay someone **to wash my car** every week.
+final-answer:
+I pay to **have my car washed** every week.
 solution:
 التركيب have + my car + washed يبين أن شخصاً آخر يغسل السيارة.
 
@@ -829,6 +903,8 @@ body:
 Rewrite the sentences using causative structure:
 
 We'd better ask someone **to paint the room** before we clean it.
+final-answer:
+We’d better **have the room painted** before we clean it.
 solution:
 نرتب أن يدهن شخص آخر الغرفة؛ لذلك have + the room + painted. بعد had better نستخدم have المجردة، و painted تصريف ثالث، ونبقي ترتيب before.
 
@@ -856,6 +932,8 @@ Make sentences using have/get + the object in brackets + the past participle of 
 Word bank: sign, paint, take.
 
 I don’t like (my photograph) before being ready.
+final-answer:
+I don’t like to **have my photograph taken** before being ready.
 solution:
 المصور يلتقط الصورة للشخص؛ فنستخدم have + my photograph + taken. taken هو التصريف الثالث من take: take → took → taken. بعد like تصح to have أو having، لذلك I don’t like having my photograph taken بديل صحيح.
 
@@ -877,6 +955,8 @@ Make sentences using have/get + the object in brackets + the past participle of 
 Word bank: sign, paint, take.
 
 Don’t forget (the report) before the manager leaves the office.
+final-answer:
+Don’t forget to **have the report signed** before the manager leaves the office.
 solution:
 الأفعال المتاحة sign و paint و take؛ التقرير يناسبه sign. بعد forget to نضع have ثم the report ثم signed، التصريف الثالث؛ أي ترتيب توقيع التقرير من غيرنا.
 
@@ -898,6 +978,8 @@ Rewrite the sentences using have + the object in brackets + the past participle 
 Word bank: sign - repair - cut.
 
 You have no time, so you (your hair) before the party.
+final-answer:
+You have no time, so you **should have your hair cut** before the party.
 solution:
 الفعل المناسب للشعر من القائمة هو cut. نضيف should للنصيحة ثم have + your hair + cut؛ التصريف الثالث من cut هو cut نفسه. يدل التركيب على ترتيب القص لدى شخص آخر.
 
@@ -920,6 +1002,8 @@ body:
 Rewrite the following sentences using (have/get + object + the past participle).
 
 The dentist took out one of my teeth only yesterday.
+final-answer:
+I **had one of my teeth taken out** only yesterday by the dentist.
 solution:
 الطبيب نفذ الخلع والمتكلم تلقى الخدمة؛ لذا I ثم had للماضي المحدد بـ yesterday، ثم one of my teeth، ثم taken out. taken هو التصريف الثالث من take، ونبقي by the dentist.
 
@@ -940,6 +1024,8 @@ body:
 Correct the mistakes in the following sentences:
 
 He knew how to get his goods notice.
+final-answer:
+He knew how to get his goods **noticed**.
 solution:
 بعد \`get + الشيء\` نستخدم التصريف الثالث للدلالة على الفعل الواقع عليه. البضائع يلاحظها الناس، لذا notice → noticed؛ ويبقى get مجردًا بعد how to.
 
@@ -960,6 +1046,8 @@ body:
 Correct the mistakes in the following sentences:
 
 She didn't get her teeth check.
+final-answer:
+She didn't get her teeth **checked**.
 solution:
 الأسنان تتلقى الفحص؛ بعد get + her teeth نحتاج checked، التصريف الثالث من check. didn't يتبعه get مجردًا؛ لا نحوله إلى got.
 
@@ -980,6 +1068,8 @@ body:
 Correct the mistakes in the following sentences:
 
 The secretary must get the letter sign by the manager.
+final-answer:
+The secretary must get the letter **signed** by the manager.
 solution:
 المدير يوقع الرسالة؛ لذا نضع التصريف الثالث signed بعد المفعول the letter. must تتبعها get المجردة، و by the manager تبين منفذ الفعل.
 
@@ -1000,6 +1090,8 @@ body:
 Correct the mistakes in the following sentences:
 
 You need to have your watch repair. It's stopped working.
+final-answer:
+You need to have your watch **repaired**. It's stopped working.
 solution:
 الساعة تتلقى الإصلاح من آخر؛ الصيغة have + your watch + repaired. repair فعل منتظم، فتصريفه الثالث repaired، و have تبقى بعد need to.
 

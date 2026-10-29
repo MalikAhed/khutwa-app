@@ -11,6 +11,8 @@ Choose words from the box and match them with their meanings:
 Word bank: participate — zone — set — factor
 
 … part of reason
+final-answer:
+**factor**
 solution:
 **الإجابة:** “Factor” means a part of the reason.
 
@@ -43,6 +45,8 @@ Choose words from the box and match them with their meanings:
 Word bank: participate — zone — set — factor
 
 … area
+final-answer:
+**zone**
 solution:
 **الإجابة:** “Zone” means an area.
 
@@ -67,6 +71,8 @@ Choose words from the box and match them with their meanings:
 Word bank: participate — zone — set — factor
 
 … a complete group
+final-answer:
+**set**
 solution:
 **الإجابة:** “Set” means a complete group.
 
@@ -99,6 +105,8 @@ Choose words from the box and match them with their meanings:
 Word bank: participate — zone — set — factor
 
 … take part in
+final-answer:
+**participate**
 solution:
 **الإجابة:** “Participate” means take part in an activity.
 
@@ -130,6 +138,8 @@ Word bank: factor — foundation — excuse — creative — optional
 
 This part of the form is **not compulsory**. You don’t have to fill it. …
 
+final-answer:
+This part of the form is **optional**. You don’t have to fill it.
 solution:
 **الإجابة:** This part of the form is optional. You don’t have to fill it.
 
@@ -161,6 +171,8 @@ Word bank: factor — foundation — excuse — creative — optional
 
 Najy Al Ali was **good at making artistic things**. He drew many symbolic sketches. …
 
+final-answer:
+Najy Al Ali was **creative**. He drew many symbolic sketches.
 solution:
 **الإجابة:** Najy Al Ali was creative. He drew many symbolic sketches.
 
@@ -194,6 +206,8 @@ Word bank: factor — foundation — excuse — creative — optional
 
 I’m sure he isn’t ill. I think it’s just an **untrue reason** for not working hard. …
 
+final-answer:
+I’m sure he isn’t ill. I think it’s just an **excuse** for not working hard.
 solution:
 **الإجابة:** I’m sure he isn’t ill. I think it’s just an excuse for not working hard.
 
@@ -227,6 +241,8 @@ Word bank: factor — foundation — excuse — creative — optional
 
 I’m not sure why she feels tired but I think stress may be a **part of the reason**. …
 
+final-answer:
+I’m not sure why she feels tired, but I think stress may be a **factor**.
 solution:
 **الإجابة:** I’m not sure why she feels tired, but I think stress may be a factor.
 
@@ -260,6 +276,8 @@ Word bank: factor — foundation — excuse — creative — optional
 
 We shall create a two-year **basic** course in education and training. …
 
+final-answer:
+We shall create a two-year **foundation** course in education and training.
 solution:
 التركيب foundation course يعني دورة تأسيسية أو تمهيدية. في هذا التركيب يحدد الاسم foundation نوع الدورة، ولا نضع بدله صفة creative أو optional لأنهما لا تعنيان basic هنا.
 
@@ -286,6 +304,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: creative — confident — optional — like-minded — potential
 
 The law required a detailed analysis of the … impact on the environment of the proposed project. (possibility for the future)
+final-answer:
+The law required a detailed analysis of the **potential** impact on the environment of the proposed project.
 solution:
 نحتاج صفة قبل impact تصف أثراً محتملاً في المستقبل. كلمة potential تؤدي هذا المعنى؛ ويستعملها الكتاب بالطريقة نفسها قبل customers، أي الزبائن المحتملين.
 
@@ -315,6 +335,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: creative — confident — optional — like-minded — potential
 
 I know a lot about the subject, so I’m quite … that I’ll succeed. (sure)
+final-answer:
+I know a lot about the subject, so I’m quite **confident** that I’ll succeed.
 solution:
 **الإجابة:** I know a lot about the subject, so I’m quite confident that I’ll succeed.
 
@@ -347,6 +369,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: creative — confident — optional — like-minded — potential
 
 Muna is always … . (coming up with new ideas)
+final-answer:
+Muna is always **creative**.
 solution:
 **الإجابة:** Muna is always creative.
 
@@ -379,6 +403,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: creative — confident — optional — like-minded — potential
 
 He joined a local activists’ group, hoping to meet … people. (with similar attitude)
+final-answer:
+He joined a local activists’ group, hoping to meet **like-minded** people.
 solution:
 **الإجابة:** He joined a local activists’ group, hoping to meet like-minded people.
 
@@ -409,6 +435,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: creative — confident — optional — like-minded — potential
 
 Geography is … for sixth grade students. (not compulsory)
+final-answer:
+Geography is **optional** for sixth grade students.
 solution:
 **الإجابة:** Geography is optional for sixth grade students.
 
@@ -440,6 +468,8 @@ Word bank: factor — on show — excuse — participate — creative — potent
 
 I hope everyone will **take part** in this fruitful discussion. …
 
+final-answer:
+I hope everyone will **participate** in this fruitful discussion.
 solution:
 **الإجابة:** I hope everyone will participate in this fruitful discussion.
 
@@ -473,6 +503,8 @@ Word bank: factor — on show — excuse — participate — creative — potent
 
 Feeling unsafe is a major **part of reason** to leave the country and travel abroad. …
 
+final-answer:
+Feeling unsafe is a major **factor** in deciding to leave the country and travel abroad.
 solution:
 factor تعني عاملاً يسهم في نتيجة. نستخدم معها هنا in ثم اسم الفعل، كما في تركيب factor in helping في الكتاب.
 
@@ -501,6 +533,8 @@ Word bank: factor — on show — excuse — participate — creative — potent
 
 There’re lots of good paintings **able to be seen** at the museum. …
 
+final-answer:
+There’re lots of good paintings **on show** at the museum.
 solution:
 **الإجابة:** There’re lots of good paintings on show at the museum.
 
@@ -532,6 +566,8 @@ Word bank: factor — on show — excuse — participate — creative — potent
 
 Whenever I ask him why his essay’s late, he just comes out with the same old **untrue reason**. …
 
+final-answer:
+Whenever I ask him why his essay’s late, he just comes out with the same old **excuse**.
 solution:
 **الإجابة:** Whenever I ask him why his essay’s late, he just comes out with the same old excuse.
 
@@ -565,6 +601,8 @@ Word bank: factor — on show — excuse — participate — creative — potent
 
 Within certain limits, his imagination and invention are as active as those of the most **imaginative** poets. …
 
+final-answer:
+Within certain limits, his imagination and invention are as active as those of the most **creative** poets.
 solution:
 **الإجابة:** Within certain limits, his imagination and invention are as active as those of the most creative poets.
 
@@ -597,6 +635,8 @@ Complete the sentences with words from the box:
 Word bank: participates — field — optional — stuck — factor — excuse
 
 I have never known him to miss a meeting. I’m sure he’ll have an … .
+final-answer:
+I have never known him to miss a meeting. I’m sure he’ll have an **excuse**.
 solution:
 الاسم المطلوب بعد an هو excuse: لا يغيب عادة، لذا يتوقع المتكلم أن يقدم عذراً لغيابه.
 
@@ -618,6 +658,8 @@ Complete the sentences with words from the box:
 Word bank: participates — field — optional — stuck — factor — excuse
 
 She rarely … in any of the classroom discussions.
+final-answer:
+She rarely **participates** in any of the classroom discussions.
 solution:
 المعنى أنها نادراً ما تشارك. rarely تشير إلى عادة فنستخدم المضارع البسيط؛ ومع she نضيف s إلى participate.
 
@@ -639,6 +681,8 @@ Complete the sentences with words from the box:
 Word bank: participates — field — optional — stuck — factor — excuse
 
 Safety is an important … in car design.
+final-answer:
+Safety is an important **factor** in car design.
 solution:
 السلامة عامل يؤثر في تصميم السيارة، لذا يناسب المعنى الاسم factor، أي عنصر يسهم في القرار أو النتيجة.
 
@@ -660,6 +704,8 @@ Complete the sentences with words from the box:
 Word bank: participates — field — optional — stuck — factor — excuse
 
 We were … at the airport for twelve hours because of bad weather.
+final-answer:
+We were **stuck** at the airport for twelve hours because of bad weather.
 solution:
 بسبب الطقس لم يتمكنوا من المغادرة؛ فنستخدم stuck بمعنى عالقين، وتأتي بعد were لوصف حالتهم.
 
@@ -681,6 +727,8 @@ Complete the sentences with words from the box:
 Word bank: participates — field — optional — stuck — factor — excuse
 
 Attendance is … for those who aren’t working on the project.
+final-answer:
+Attendance is **optional** for those who aren’t working on the project.
 solution:
 الحضور هنا غير إلزامي لمن لا يعملون في المشروع؛ لذلك نستخدم optional، وهي عكس compulsory.
 
@@ -702,6 +750,8 @@ Complete the sentences with words from the box:
 Word bank: participates — field — optional — stuck — factor — excuse
 
 Ali’s … of study is law. He likes it very much.
+final-answer:
+Ali’s **field** of study is law. He likes it very much.
 solution:
 الاسم field يعني مجال التخصص أو الاهتمام؛ و field of study تعني مجال الدراسة، وهو القانون هنا.
 
@@ -723,6 +773,8 @@ Complete the sentences with words from the box:
 Word bank: show — optional — participated — like-minded — foundation course — field — creative
 
 Her book is full of … ways to decorate your home.
+final-answer:
+Her book is full of **creative** ways to decorate your home.
 solution:
 طرق التزيين المبتكرة توصف بالصفة creative؛ وتأتي قبل الاسم ways لتبيّن نوع هذه الطرق.
 
@@ -744,6 +796,8 @@ Complete the sentences with words from the box:
 Word bank: show — optional — participated — like-minded — foundation course — field — creative
 
 She has a master’s degree in a special … of biochemistry.
+final-answer:
+She has a master’s degree in a special **field** of biochemistry.
 solution:
 المطلوب اسم يدل على مجال متخصص داخل الكيمياء الحيوية؛ وهذا معنى field في مفردات الوحدة.
 
@@ -765,6 +819,8 @@ Complete the sentences with words from the box:
 Word bank: show — optional — participated — like-minded — foundation course — field — creative
 
 The price includes hotels and meals, but entertainment is … .
+final-answer:
+The price includes hotels and meals, but entertainment is **optional**.
 solution:
 يقابل السعر الشامل للفنادق والوجبات نشاطٌ يمكن اختياره؛ لذا الصفة optional هي المناسبة للترفيه.
 
@@ -786,6 +842,8 @@ Complete the sentences with words from the box:
 Word bank: show — optional — participated — like-minded — foundation course — field — creative
 
 As a child he was very much an outsider, he never … in the games other children played.
+final-answer:
+As a child he was very much an outsider; he never **participated** in the games other children played.
 solution:
 الحديث عن طفولته وألعاب كان الأطفال يلعبونها في الماضي، فنستخدم participated، وهو الماضي من participate، ومعناه شارك.
 
@@ -808,6 +866,8 @@ Word bank: show — optional — participated — like-minded — foundation cou
 
 There’s going to be a variety of paintings and handicrafts on … to suit every pocket.
 
+final-answer:
+There’s going to be a variety of paintings and handicrafts on **show** to suit every pocket.
 solution:
 حرف الجر on موجود قبل الفراغ؛ نضيف show لإكمال التعبير on show، أي معروضة.
 
@@ -829,6 +889,8 @@ Complete the sentences with words from the box:
 Word bank: show — optional — participated — like-minded — foundation course — field — creative
 
 All students should attend a … in English in the first year of university.
+final-answer:
+All students should attend a **foundation course** in English in the first year of university.
 solution:
 المقرر الذي يبني أساساً للدراسة يسمى foundation course؛ وهو التركيب الوارد في اختبار الوحدة، ويناسب السنة الجامعية الأولى هنا.
 
@@ -850,6 +912,8 @@ Complete the sentences with words from the box:
 Word bank: show — optional — participated — like-minded — foundation course — field — creative
 
 They quickly find that they are spending time with … people and they learn a lot from each other.
+final-answer:
+They quickly find that they are spending time with **like-minded** people and they learn a lot from each other.
 solution:
 توافق الأفكار والاهتمامات يفسر استفادتهم بعضهم من بعض؛ لذلك like-minded تعني متشابهين في التفكير.
 
@@ -940,6 +1004,8 @@ Complete the sentences with words from the box:
 Word bank: participated — excuse — creative — stuck — potential
 
 People often get … in their comfort zone, especially if they are afraid of failing.
+final-answer:
+People often get **stuck** in their comfort zone, especially if they are afraid of failing.
 solution:
 get stuck تعني يصبح عالقاً أو غير قادر على التقدم. الخوف من الفشل يفسر بقاء الناس في المألوف كما في القطعة.
 
@@ -961,6 +1027,8 @@ Complete the sentences with words from the box:
 Word bank: participated — excuse — creative — stuck — potential
 
 I need to think of a good … for being late.
+final-answer:
+I need to think of a good **excuse** for being late.
 solution:
 يحتاج المتحدث إلى عذر يبرر التأخر؛ لذا نستخدم excuse، ويأتي بعده for لتحديد ما نبرره.
 
@@ -982,6 +1050,8 @@ Complete the sentences with words from the box:
 Word bank: participated — excuse — creative — stuck — potential
 
 I have … in three events so far.
+final-answer:
+I have **participated** in three events so far.
 solution:
 المعنى المشاركة في فعاليات. بعد have نحتاج التصريف الثالث؛ والفعل منتظم، فيكون participate → participated.
 
@@ -1003,6 +1073,8 @@ Complete the sentences with words from the box:
 Word bank: participated — excuse — creative — stuck — potential
 
 The boy has great … as a pianist.
+final-answer:
+The boy has great **potential** as a pianist.
 solution:
 potential هنا اسم غير معدود يعني إمكانات مستقبلية، لذا تأتي great potential دون a. كلمة الفراغ الأصلية صحيحة، لكن الجملة المعطاة تحتوي a غير المناسبة لهذا المعنى.
 
@@ -1024,6 +1096,8 @@ Complete the sentences with words from the box:
 Word bank: participated — excuse — creative — stuck — potential
 
 He's very … . He paints wonderful pictures.
+final-answer:
+He’s very **creative**. He paints wonderful pictures.
 solution:
 رسم صور رائعة دليل على القدرة الفنية والإبداع؛ لذلك creative هي الصفة المناسبة بعد very.
 
@@ -1045,6 +1119,8 @@ Complete the sentences with words from the box:
 Word bank: like-minded — routine — participate — set — confident — potential
 
 Doing the same … is not always an advantage. It can make you get bored.
+final-answer:
+Doing the same **routine** is not always an advantage. It can make you get bored.
 solution:
 الأشياء التي نكررها يومياً هي routine، أي روتين. تكرار الشيء نفسه يفسر الملل في الجملة التالية.
 
@@ -1066,6 +1142,8 @@ Complete the sentences with words from the box:
 Word bank: like-minded — routine — participate — set — confident — potential
 
 I have done well in the exam. I'm … I will get high marks.
+final-answer:
+I have done well in the exam. I’m **confident** I will get high marks.
 solution:
 الأداء الجيد يمنح المتكلم ثقة بالحصول على درجات عالية؛ لذلك الصفة confident بمعنى واثق هي المناسبة.
 
@@ -1087,6 +1165,8 @@ Complete the sentences with words from the box:
 Word bank: like-minded — routine — participate — set — confident — potential
 
 She could answer the first … of questions in a very short time.
+final-answer:
+She could answer the first **set** of questions in a very short time.
 solution:
 set of questions تعني مجموعة أسئلة. المطلوب مجموعة مترابطة، وليس سؤالاً مفرداً أو سبباً.
 
@@ -1108,6 +1188,8 @@ Complete the sentences with words from the box:
 Word bank: like-minded — routine — participate — set — confident — potential
 
 Luckily, I live in a shared house with … people.
+final-answer:
+Luckily, I live in a shared house with **like-minded** people.
 solution:
 السكن المشترك أسهل مع أشخاص تتقارب اهتماماتهم وأفكارهم؛ وهذا ما تصفه like-minded.
 
@@ -1129,6 +1211,8 @@ Complete the sentences with words from the box:
 Word bank: like-minded — routine — participate — set — confident — potential
 
 Unfortunately, his English isn't good enough to … in academic discussions.
+final-answer:
+Unfortunately, his English isn’t good enough to **participate** in academic discussions.
 solution:
 المعنى أن مستواه لا يكفي للمشاركة في النقاشات. بعد to نستخدم المصدر participate، ويتبعه in.
 
@@ -1150,6 +1234,8 @@ Complete the sentences with words from the box:
 Word bank: like-minded — routine — participate — set — confident — potential
 
 She isn't a great singer, but she has great … .
+final-answer:
+She isn’t a great singer, but she has great **potential**.
 solution:
 مع أنها ليست مغنية بارعة الآن، فالجملة تقابل الحاضر بقدرتها المستقبلية؛ لذلك potential تعني إمكانات قابلة للتطور.
 
@@ -1171,6 +1257,8 @@ Complete the sentences with words from the box:
 Word bank: factor — excuse — stuck — potential — set — field — creative
 
 All people who are … are considered outstanding such as poets and musicians.
+final-answer:
+All people who are **creative** are considered outstanding, such as poets and musicians.
 solution:
 الأمثلة، الشعراء والموسيقيون، تشير في هذا التدريب إلى الإبداع الفني؛ فنستخدم creative لوصف هؤلاء الأشخاص.
 
@@ -1192,6 +1280,8 @@ Complete the sentences with words from the box:
 Word bank: factor — excuse — stuck — potential — set — field — creative
 
 We need to establish a new … of priorities.
+final-answer:
+We need to establish a new **set** of priorities.
 solution:
 التعبير set of priorities يعني مجموعة أولويات؛ فالمطلوب تنظيم أولويات متعددة في مجموعة واحدة.
 
@@ -1213,6 +1303,8 @@ Complete the sentences with words from the box:
 Word bank: factor — excuse — stuck — potential — set — field — creative
 
 She doesn't know much about this subject as it isn't really her … .
+final-answer:
+She doesn’t know much about this subject as it isn’t really her **field**.
 solution:
 ضعف معرفتها بالموضوع يفسره أنه خارج مجال تخصصها؛ field تعني المجال أو حقل الاهتمام.
 
@@ -1234,6 +1326,8 @@ Complete the sentences with words from the box:
 Word bank: factor — excuse — stuck — potential — set — field — creative
 
 His unhappiness at home was a major … in his decision to go abroad.
+final-answer:
+His unhappiness at home was a major **factor** in his decision to go abroad.
 solution:
 التعاسة في المنزل أسهمت في قرار السفر؛ لذا نسميها factor، أي عاملاً من العوامل المؤثرة في القرار.
 
@@ -1255,6 +1349,8 @@ Complete the sentences with words from the box:
 Word bank: factor — excuse — stuck — potential — set — field — creative
 
 He always finds a good … for not helping with homework.
+final-answer:
+He always finds a good **excuse** for not helping with homework.
 solution:
 هو يقدم تبريراً لعدم المساعدة؛ وهذا معنى excuse. التركيب excuse for يتبعه اسم الفعل، وهنا not helping.
 
@@ -1276,6 +1372,8 @@ Complete the sentences with words from the box:
 Word bank: factor — excuse — stuck — potential — set — field — creative
 
 She has great … to be a successful teacher in the future.
+final-answer:
+She has great **potential** to be a successful teacher in the future.
 solution:
 عبارة in the future توجّهنا إلى إمكانات لم تتحقق كاملة بعد؛ لذلك الاسم potential هو المناسب.
 
@@ -1297,6 +1395,8 @@ Complete the sentences with words from the box:
 Word bank: factor — excuse — stuck — potential — set — field — creative
 
 The driver was … in his car after the accident and couldn't get out.
+final-answer:
+The driver was **stuck** in his car after the accident and couldn’t get out.
 solution:
 عدم قدرته على الخروج يشرح stuck: كان عالقاً في السيارة بعد الحادث.
 
@@ -1318,6 +1418,8 @@ Complete the sentences with words from the box:
 Word bank: field — creative — routine — participate — like-minded
 
 She has one of the most … minds in business.
+final-answer:
+She has one of the most **creative** minds in business.
 solution:
 الصفة تصف عقلاً يبتكر أفكاراً وحلولاً جديدة؛ لذا نستخدم creative مع minds.
 
@@ -1339,6 +1441,8 @@ Complete the sentences with words from the box:
 Word bank: field — creative — routine — participate — like-minded
 
 Suha convinced a group of … friends to join her trekking in the Himalayas.
+final-answer:
+Suha convinced a group of **like-minded** friends to join her trekking in the Himalayas.
 solution:
 الأصدقاء الذين يشاركونها الاهتمام بالرحلات يمكن وصفهم بـ like-minded، أي متشابهين في الميول.
 
@@ -1360,6 +1464,8 @@ Complete the sentences with words from the box:
 Word bank: field — creative — routine — participate — like-minded
 
 Psychology isn't really my …, you’d better ask Samir.
+final-answer:
+Psychology isn’t really my **field**; you’d better ask Samir.
 solution:
 يحول المتكلم السؤال إلى شخص آخر لأن علم النفس ليس مجال تخصصه؛ وهذا معنى field.
 
@@ -1381,6 +1487,8 @@ Complete the sentences with words from the box:
 Word bank: field — creative — routine — participate — like-minded
 
 My grandfather gets upset if we change his … .
+final-answer:
+My grandfather gets upset if we change his **routine**.
 solution:
 المقصود عاداته وأعماله المتكررة التي اعتادها؛ و routine تعني ذلك النظام اليومي المألوف.
 
@@ -1402,6 +1510,8 @@ Complete the sentences with words from the box:
 Word bank: field — creative — routine — participate — like-minded
 
 Luckily, my students were able to … in all the activities done in the class.
+final-answer:
+Luckily, my students were able to **participate** in all the activities done in the class.
 solution:
 المعنى المشاركة في الأنشطة. يأتي المصدر participate بعد were able to، ويليه in.
 
@@ -1423,6 +1533,8 @@ Complete the sentences with words from the box:
 Word bank: excuse — participate — factors — field — like-minded — stuck
 
 This drawer is …, I can’t open it.
+final-answer:
+This drawer is **stuck**; I can’t open it.
 solution:
 عدم إمكان فتح الدرج يحدد معنى stuck هنا: عالق ولا يتحرك.
 
@@ -1444,6 +1556,8 @@ Complete the sentences with words from the box:
 Word bank: excuse — participate — factors — field — like-minded — stuck
 
 The rise in crimes is mainly due to social and economic … .
+final-answer:
+The rise in crimes is mainly due to social and economic **factors**.
 solution:
 هناك أسباب اجتماعية واقتصادية متعددة؛ لذا نستخدم جمع factor، وهو factors، بمعنى عوامل.
 
@@ -1465,6 +1579,8 @@ Complete the sentences with words from the box:
 Word bank: excuse — participate — factors — field — like-minded — stuck
 
 Ahmed has a degree in engineering, but he couldn’t find a job in his … .
+final-answer:
+Ahmed has a degree in engineering, but he couldn’t find a job in his **field**.
 solution:
 المقصود مجال التخصص الذي يحمل فيه شهادة، أي الهندسة؛ لذلك field هي الكلمة المناسبة.
 
@@ -1486,6 +1602,8 @@ Complete the sentences with words from the box:
 Word bank: excuse — participate — factors — field — like-minded — stuck
 
 Everyone in the class is expected to … actively in these discussions.
+final-answer:
+Everyone in the class is expected to **participate** actively in these discussions.
 solution:
 المطلوب المشاركة الفاعلة. بعد to نستخدم المصدر participate، ونحافظ على in قبل discussions.
 
@@ -1507,6 +1625,8 @@ Complete the sentences with words from the box:
 Word bank: excuse — participate — factors — field — like-minded — stuck
 
 People tend to talk mostly to … people who communicate in the same way.
+final-answer:
+People tend to talk mostly to **like-minded** people who communicate in the same way.
 solution:
 الجملة تصف أشخاصاً تتقارب طرق تفكيرهم وتواصلهم، وهذا هو معنى like-minded في الوحدة.
 
@@ -1528,6 +1648,8 @@ Complete the sentences with words from the box:
 Word bank: excuse — participate — factors — field — like-minded — stuck
 
 The manager didn't accept my … for being late.
+final-answer:
+The manager didn’t accept my **excuse** for being late.
 solution:
 المدير رفض العذر المقدم للتأخر؛ لذلك نضع excuse، وهو الاسم الذي يأتي مع for being late.
 

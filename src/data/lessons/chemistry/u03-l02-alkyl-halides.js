@@ -10,6 +10,12 @@ body:
 عبّر بالمعادلات الكيميائية عن كلّ من التفاعلات الآتية، وسمّ المركبات العضوية الناتجة:
 
 3. تفاعل كلورو إيثان مع \\(\\mathrm{NaOH}\\) في وسط كحولي.
+final-answer:
+**الناتج العضوي: الإيثين.**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>l</mi><mo>+</mo><mi>N</mi><mi>a</mi><mi>O</mi><mi>H</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>a</mi><mi>l</mi><mi>c</mi><mi>o</mi><mi>h</mi><mi>o</mi><mi>l</mi><mo separator="true">,</mo><mi mathvariant="normal">Δ</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><mi>N</mi><mi>a</mi><mi>C</mi><mi>l</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 في الوسط الكحولي الساخن يحدث حذف H و Cl من كربونين متجاورين، فتتكون رابطة ثنائية؛ الناتج العضوي **الإيثين**. نستكمل الملح والماء لموازنة الذرات.
 
@@ -35,6 +41,8 @@ body:
 أكمل المعادلات الآتية بكتابة الناتج العضوي المناسب:
 
 ![بنية الألكين ومعادلة الإضافة الخامسة](assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a5-reaction.webp)
+final-answer:
+**2-كلورو بروبان: CH₃CHClCH₃.**
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a5-reaction.webp)
 
@@ -295,6 +303,8 @@ body:
 سؤال: وضح المقصود بكل مما يلي:
 
 هلجنة الألكانات.
+final-answer:
+**هلجنة الألكانات:** تفاعل الألكان مع الهالوجين بوجود الضوء، بإحلال ذرة هالوجين محل ذرة هيدروجين، فينتج هاليد ألكيل.
 solution:
 **الإجابة:** يتفاعل الألكان مع الهالوجينات في وجود الضوء، فتحِلّ ذرة هالوجين محل ذرة هيدروجين، وينتج هاليد ألكيل.
 
@@ -314,6 +324,8 @@ body:
 سؤال: وضح المقصود بكل مما يلي:
 
 قاعدة ماركوفنيكوف.
+final-answer:
+**قاعدة ماركوفنيكوف:** عند إضافة هاليد هيدروجين إلى ألكين غير متماثل، ترتبط ذرة الهيدروجين بكربون الرابطة الثنائية المرتبط بأكبر عدد من ذرات الهيدروجين.
 solution:
 **الإجابة:** عند إضافة هاليدات الهيدروجين إلى ألكين غير متماثل، فإن ذرة الهيدروجين ترتبط بذرة الكربون المشاركة في الرابطة الثنائية، والمرتبطة بأكبر عدد من ذرات الهيدروجين.
 
@@ -333,6 +345,8 @@ body:
 سؤال: علل لما يأتي:
 
 تعتبر هلجنة الألكانات بوجود الضوء طريقة غير ملائمة لتحضير هاليدات الألكيل.
+final-answer:
+**لأنها تُنتج مزيجًا من الهاليدات، لا هاليد ألكيل واحدًا نقيًا.**
 solution:
 لأن هلجنة الألكانات قد تحدث عند مواضع مختلفة، وقد يستمر الاستبدال لأكثر من هيدروجين؛ فيتكون **مزيج هاليدات** بدلاً من مادة واحدة نقية. لذلك يصعب استعمالها لتحضير هاليد معين مباشرة.
 
@@ -350,6 +364,8 @@ body:
 سؤال: علل لما يأتي:
 
 تعد هاليدات الألكيل حجر الأساس في الكيمياء العضوية.
+final-answer:
+**لإمكان استبدال الهالوجين بمجموعات وظيفية أخرى، فتحضَّر منها مركبات عضوية متعددة.**
 solution:
 لأن الهالوجين يمكن أن يُستبدل بمجموعات وظيفية أخرى؛ مثل إحلال OH محله لتحضير الكحولات. هذا يجعل هاليدات الألكيل مواد بداية لتحضير مركبات عضوية متعددة.
 
@@ -375,6 +391,16 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 (2 - كلورو بروبان من 1 - كلورو بروبان).
+final-answer:
+**معادلات التحضير:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>l</mi><mo>+</mo><mi>K</mi><mi>O</mi><mi>H</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>a</mi><mi>l</mi><mi>c</mi><mi>o</mi><mi>h</mi><mi>o</mi><mi>l</mi><mo separator="true">,</mo><mi mathvariant="normal">Δ</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><mi>K</mi><mi>C</mi><mi>l</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><mi>H</mi><mi>C</mi><mi>l</mi><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mi>C</mi><mi>l</mi><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub></mrow></math>
+\`\`\`
 solution:
 نحتاج نقل Cl من الطرف إلى الكربون 2؛ نمر أولاً بألكين. **الحذف** في وسط كحولي ساخن ينزع H و Cl من كربونين متجاورين فيعطي البروبين.
 
@@ -408,6 +434,18 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 (1 - كلورو بروبان من حمض البروبانويك).
+final-answer:
+**معادلات التحضير:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><mn>4</mn><mo stretchy="false">[</mo><mi>H</mi><mo stretchy="false">]</mo><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>L</mi><mi>i</mi><mi>A</mi><mi>l</mi><msub><mi>H</mi><mn>4</mn></msub></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
+
+المعالجة المائية بعد الاختزال.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><mi>H</mi><mi>C</mi><mi>l</mi><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>l</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 نحافظ على الكربونات الثلاث. **الاختزال بـ LiAlH₄ ثم المعالجة المائية** يحول COOH إلى CH₂OH، فيعطي 1-بروبانول. [H] رمز لمكافئ اختزال وليس ذرة هيدروجين حرة نضيفها عملياً.
 
@@ -441,6 +479,16 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 (2 - كلورو بروبان من 1 - برومو بروبان).
+final-answer:
+**معادلات التحضير:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>B</mi><mi>r</mi><mo>+</mo><mi>K</mi><mi>O</mi><mi>H</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>a</mi><mi>l</mi><mi>c</mi><mi>o</mi><mi>h</mi><mi>o</mi><mi>l</mi><mo separator="true">,</mo><mi mathvariant="normal">Δ</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><mi>K</mi><mi>B</mi><mi>r</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><mi>H</mi><mi>C</mi><mi>l</mi><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mi>C</mi><mi>l</mi><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub></mrow></math>
+\`\`\`
 solution:
 أولاً نحذف HBr من كربونين متجاورين باستعمال KOH الكحولي الساخن؛ يتكون البروبين.
 
@@ -474,6 +522,8 @@ body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
 \\(\\mathrm{CH_3CH_2Br+NaOH_{(aq)}\\xrightarrow{H_2O}\\underline{\\qquad\\qquad}}\\)
+final-answer:
+**الإيثانول: CH₃CH₂OH.**
 solution:
 الوسط مائي؛ لذا يحدث إحلال OH محل Br، مع المحافظة على ذرتي الكربون. الناتج العضوي **الإيثانول**، ويتكون NaBr لتحقيق حفظ الذرات.
 
@@ -501,6 +551,8 @@ body:
 \\(\\mathrm{CH_3CH(Br)CH_3\\xrightarrow[\\text{\\char"0643\\char"062D\\char"0648\\char"0644\\char"064A}]{KOH}\\underline{\\qquad\\qquad}}\\)
 
 ![الصيغة البنائية للمتفاعل العضوي كما وردت في المصدر](assets/lessons/chemistry/source-crops/chemistry-oj-p196-q01-reactant.webp)
+final-answer:
+**البروبين: CH₃CH=CH₂.**
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p196-q01-reactant.webp)
 
@@ -528,6 +580,8 @@ body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
 \\(\\mathrm{CH_3CH_2Cl+NaOH\\xrightarrow[\\Delta]{\\text{\\char"0648\\char"0633\\char"0637 \\char"0643\\char"062D\\char"0648\\char"0644\\char"064A}}\\underline{\\qquad\\qquad}}\\)
+final-answer:
+**الإيثين: CH₂=CH₂.**
 solution:
 الوسط الكحولي والتسخين يدلان على **الحذف**؛ تزال Cl و H من كربونين متجاورين فتتكون رابطة C=C. الناتج العضوي الإيثين.
 
@@ -553,6 +607,8 @@ body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
 \\(\\mathrm{CH_3CH_2CH_2Br+NH_3\\xrightarrow{KOH}\\underline{\\qquad\\qquad}}\\)
+final-answer:
+**بروبان-1-أمين: CH₃CH₂CH₂NH₂.**
 solution:
 الأمونيا تمنح زوج إلكترونات لتكوين رابطةC–N بدل رابطةC–Br؛ لذلك يتكون أولًا أيون بروبيل أمونيوم، ثم تنزعOH⁻ منه بروتونًا ليعطي الأمين المتعادل.
 خطوة الإحلال تحفظ الذرات والشحنة.
@@ -595,6 +651,8 @@ body:
 ما المقصود بهلجنة المركب (أ)؟
 
 ![جدول المركبات أ إلى و: بروبان،1-بروبانول،CH3MgBr،بروبانون،بروبانال،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q02-figure.webp)
+final-answer:
+**هلجنة البروبان:** استبدال ذرة هيدروجين أو أكثر فيه بذرة هالوجين بوجود الضوء.
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q02-figure.webp)
 
@@ -624,6 +682,12 @@ body:
 اكتب معادلة كيميائية تمثل: أ. إضافة \\(\\mathrm{HCl}\\) إلى المركب (أ).
 
 ![جدول المركبات أ إلى و: بروبين،1-بروبانول،حمض البروبانويك،بروبانون،بروبانال،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q03-figure.webp)
+final-answer:
+**معادلة التفاعل:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><mi>H</mi><mi>C</mi><mi>l</mi><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mi>C</mi><mi>l</mi><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub></mrow></math>
+\`\`\`
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q03-figure.webp)
 
@@ -653,6 +717,8 @@ body:
 ما تصنيف المركب \\(A\\) (أولي، ثانوي، ثالثي)؟
 
 ![جدول A إلى E:1-برومو بيوتان،2-بيوتانول،حمض الإيثانويك،بيوتانال،2-بيوتانون](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q01-figure.webp)
+final-answer:
+**هاليد ألكيل أولي.**
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q01-figure.webp)
 
@@ -672,6 +738,8 @@ body:
 اكتب صيغة واسم الناتج العضوي في التفاعل الذي يحدث في الحالات الآتية: (10 علامات)
 
 إضافة كمية قليلة من غاز الكلور إلى غاز الإيثان بوجود الضوء.
+final-answer:
+**كلوروإيثان: CH₃CH₂Cl.**
 solution:
 هلجنة الألكان بوجود الضوء تفاعل استبدال؛ تحل Cl محل H. لقلة الكلور نكتب الاستبدال الأحادي المقصود؛ طرفا الإيثان متكافئان فيعطيان **كلوروإيثان CH₃CH₂Cl**.
 
@@ -697,6 +765,8 @@ body:
 اكتب صيغة واسم الناتج العضوي في التفاعل الذي يحدث في الحالات الآتية: (10 علامات)
 
 تفاعل البروبين مع حمض \\(\\mathrm{HCl}\\).
+final-answer:
+**2-كلورو بروبان: CH₃CHClCH₃.**
 solution:
 قاعدة ماركوفنيكوف توجه إضافة H إلى كربون الرابطة الثنائية الأكثر هيدروجيناً. في البروبين هو الطرفي؛ فتذهب Cl إلى الكربون 2. الناتج **2-كلورو بروبان**.
 
@@ -722,6 +792,8 @@ body:
 اكتب صيغة واسم الناتج العضوي في التفاعل الذي يحدث في الحالات الآتية: (10 علامات)
 
 تفاعل 1-كلورو بيوتان مع هيدروكسيد الصوديوم في وسط كحولي.
+final-answer:
+**1-بيوتين: CH₃CH₂CH=CH₂.**
 solution:
 الوسط الكحولي الساخن يسبب حذف H و Cl من كربونين متجاورين. Cl على طرف السلسلة، فلا يوجد إلا موضع مجاور واحد للحذف؛ الناتج **1-بيوتين**.
 

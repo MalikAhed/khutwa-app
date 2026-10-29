@@ -16,6 +16,8 @@ reference: ${item.reference}
 answer-label: ${item.answerLabel}
 body:
 ${item.body}
+final-answer:
+${item.finalAnswer}
 solution:
 ${item.solution}${item.guidance ? `
 guidance:

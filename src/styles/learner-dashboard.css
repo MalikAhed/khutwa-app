@@ -110,18 +110,18 @@
 
 /* One compact offline indicator lives in the sky banner, above the scenery. */
 .offline-download-status { position:absolute; z-index:5; top:16px; left:16px; display:flex; align-items:center; gap:12px; width:194px; padding:12px; border:1px solid #ffffffd9; border-radius:20px; background:#ffffffed; box-shadow:0 6px 22px #126b8b1a; color:#174761; direction:ltr; font-family:var(--font-ui); }
-.offline-download-status__ring { position:relative; flex:none; width:48px; height:48px; color:#159b75; }
+.offline-download-status__ring { position:relative; flex:none; width:48px; height:48px; color:var(--system-green); }
 .offline-download-status__ring svg { display:block; width:100%; height:100%; overflow:visible; }
 .offline-download-status__ring circle { fill:none; stroke-width:3.5; }
-.offline-download-status__track { stroke:#dcefe6; }
+.offline-download-status__track { stroke:color-mix(in srgb,var(--system-green) 18%,white); }
 .offline-download-status__value { stroke:currentColor; stroke-linecap:round; stroke-dasharray:100; stroke-dashoffset:calc(100 - var(--offline-progress)); transform:rotate(-90deg); transform-origin:center; transition:stroke-dashoffset .45s ease; }
 .offline-download-status__number { position:absolute; inset:0; display:grid; place-items:center; font:800 11px/1 var(--font-numeric); }
 .offline-download-status__copy { min-width:0; display:grid; gap:3px; direction:rtl; text-align:right; white-space:nowrap; }
 .offline-download-status__copy strong { font-size:12px; line-height:1.6; }
 .offline-download-status__copy > span { color:#587987; font-size:10px; line-height:1.6; }
-.offline-download-status__check { fill:none; stroke:currentColor; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:32; stroke-dashoffset:32; opacity:0; }
+.offline-download-status__check { fill:none; stroke:var(--system-white); stroke-width:4.5; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:32; stroke-dashoffset:32; opacity:0; }
 .offline-download-status:is([data-phase=downloading],[data-phase=finishing]) .offline-download-status__ring { animation:offline-breathe 1.8s ease-in-out infinite; }
-.offline-download-status[data-phase=ready] .offline-download-status__ring { color:#159b75; }
+.offline-download-status[data-phase=ready] .offline-download-status__track { fill:currentColor; stroke:currentColor; }
 .offline-download-status[data-phase=ready] .offline-download-status__number { opacity:0; }
 .offline-download-status[data-phase=ready] .offline-download-status__check { opacity:1; stroke-dashoffset:0; transition:stroke-dashoffset .4s ease; }
 @keyframes offline-breathe { 50% { opacity:.55; } }
@@ -135,5 +135,5 @@
 }
 @media (prefers-reduced-motion:reduce) {
   .offline-download-status .offline-download-status__ring { animation:none; }
-  .offline-download-status__value,.offline-download-status__check { transition:none; }
+  .offline-download-status__value,.offline-download-status[data-phase=ready] .offline-download-status__check { transition:none; }
 }

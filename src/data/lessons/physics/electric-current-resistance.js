@@ -306,6 +306,8 @@ body:
 
 السرعة الانسياقية.
 
+final-answer:
+**السرعة الانسياقية:** متوسط سرعة الشحنات الحرة التي تشكّل التيار الكهربائي في موصل.
 solution:
 الإجابة: السرعة الانسياقية: متوسط سرعة الشحنات الحرة التي تشكل التيار الكهربائي في موصل.
 
@@ -329,6 +331,8 @@ body:
 
 كثافة التيار.
 
+final-answer:
+**كثافة التيار:** شدة التيار الكهربائي لكل وحدة مساحة من المقطع العرضي للموصل.
 solution:
 الإجابة: كثافة التيار هي شدة التيار الكهربائي لكل وحدة مساحة.
 
@@ -352,6 +356,8 @@ body:
 
 الموصلية.
 
+final-answer:
+**الموصلية الكهربائية:** النسبة بين كثافة التيار والمجال الكهربائي، وتساوي مقلوب المقاومية: \\(\\sigma=\\frac{1}{\\rho}\\).
 solution:
 الإجابة: الموصلية الكهربائية هي النسبة بين كثافة التيار والمجال الكهربائي، وتساوي مقلوب المقاومية: \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>σ</mi><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mi>ρ</mi></mrow></math>\`.
 
@@ -3123,6 +3129,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 42، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما المقصود بـ: المقاومة الأومية؟
+final-answer:
+**المقاومة الأومية:** مقاومة تحقق قانون أوم؛ تبقى النسبة \\(V/I\\) ثابتة عند ثبوت درجة الحرارة.
 solution:
 الإجابة: المقاومة الأومية تحقق قانون أوم، وتبقى فيها النسبة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mi mathvariant="normal">/</mi><mi>I</mi></mrow></math>\` ثابتة عند ثبوت درجة الحرارة.
 
@@ -3143,6 +3151,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 42، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما المقصود بـ: المقاومة اللاأومية؟
+final-answer:
+**المقاومة اللاأومية:** مقاومة لا تحقق قانون أوم؛ تتغير النسبة \\(V/I\\) مع الجهد.
 solution:
 الإجابة: المقاومة اللاأومية لا تحقق قانون أوم؛ فلا تبقى النسبة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mi mathvariant="normal">/</mi><mi>I</mi></mrow></math>\` ثابتة عند تغيير الجهد.
 
@@ -3163,6 +3173,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 42، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما المقصود بـ: قانون جول؟
+final-answer:
+**قانون جول:** معدل تولّد الحرارة في مقاومة فلزية ثابتة يتناسب طرديًا مع مربع شدة التيار المار فيها: \\(P=I^2R\\).
 solution:
 الإجابة: قانون جول: معدل تولد الحرارة في مقاومة ثابتة يتناسب طردياً مع مربع التيار: \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>P</mi><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi></mrow></math>\`. وعند ثبات التيار خلال زمن \\(t\\) تكون الطاقة الحرارية \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>E</mi><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">h</mi></mrow></msub><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi><mi>t</mi></mrow></math>\`.
 
@@ -3183,6 +3195,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 42، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما المقصود بـ: التيار الاصطلاحي؟
+final-answer:
+**التيار الاصطلاحي:** اتجاه حركة الشحنات الموجبة من الجهد المرتفع إلى الجهد المنخفض في الدارة الخارجية.
 solution:
 الإجابة: التيار الاصطلاحي يأخذ اتجاه حركة الشحنات الموجبة؛ من الجهد المرتفع إلى الجهد المنخفض في الدارة الخارجية.
 
@@ -3205,6 +3219,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 42، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما المقصود بـ: المقاومية؟
+final-answer:
+**المقاومية:** مقاومة موصل منتظم المقطع من المادة، طوله متر واحد ومساحة مقطعه متر مربع.
 solution:
 الإجابة: المقاومية: مقاومة موصل منتظم المقطع من المادة، طوله متر واحد ومساحة مقطعه متر مربع.
 
@@ -3225,6 +3241,9 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 42، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 وضح الفرق بين التيار الإلكتروني والتيار الاصطلاحي من حيث التعريف.
+final-answer:
+- **التيار الإلكتروني:** حركة الإلكترونات الحرة في الموصل بعكس اتجاه المجال الكهربائي.
+- **التيار الاصطلاحي:** اتجاه حركة الشحنات الموجبة، ويعاكس اتجاه حركة الإلكترونات.
 solution:
 الإجابة: التيار الإلكتروني هو حركة الإلكترونات الحرة في الموصل بعكس اتجاه المجال. أما التيار الاصطلاحي فيأخذ اتجاه حركة الشحنات الموجبة، ويعاكس حركة الإلكترونات.
 
@@ -3253,6 +3272,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 42، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 علل: ارتفاع درجة حرارة المواد الموصلة عند مرور تيار كهربائي فيها.
+final-answer:
+بسبب **تصادم الإلكترونات بذرات الموصل ونقل الطاقة إليها**، فتزداد طاقته الداخلية وترتفع حرارته.
 solution:
 يبذل المجال الكهربائي شغلًا على الإلكترونات. وعند تصادمها المتكرر بذرات الفلز تنقل إليها طاقة، فتزداد الطاقة الداخلية واهتزازات الذرات، وترتفع درجة حرارة الموصل.
 :::
@@ -3265,6 +3286,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 42، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 علل: حركة الإلكترونات المتعرجة في الموصل إذا ما تعرضت إلى مجال كهربائي.
+final-answer:
+بسبب **التصادمات المتكررة للإلكترونات بذرات الفلز** التي تغيّر اتجاه حركتها.
 solution:
 يؤثر المجال في الإلكترونات بقوة عكس اتجاهه لأنها سالبة الشحنة. لكن التصادمات المتكررة بذرات الفلز تغيّر اتجاه حركتها، فيصبح مسارها متعرجًا مع بقاء حركة انسياقية متوسطة.
 :::
@@ -3277,6 +3300,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 42، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 علل: تكون السرعة الانسياقية للإلكترونات الحرة في الموصلات صغيرة جدًا.
+final-answer:
+بسبب **التصادمات المتكررة بذرات الفلز** التي تعوق استمرار تسارع الإلكترونات في اتجاه واحد.
 solution:
 التصادمات المتكررة بذرات الفلز تعوق استمرار تسارع الإلكترونات في اتجاه واحد؛ فيكون متوسط حركتها الموجهة، أي السرعة الانسياقية، صغيرًا.
 :::
@@ -3289,6 +3314,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 42، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 علل: تضيء المصابيح بسرعة عند غلق الدارة رغم بعدها عن مصدر الجهد.
+final-answer:
+لأن **التأثير الكهربائي ينتشر بسرعة كبيرة** عند غلق الدارة، فتتحرك الإلكترونات الموجودة أصلًا في جميع أجزائها.
 solution:
 الإلكترونات موجودة أصلًا في جميع أجزاء الأسلاك والمصباح. عند غلق الدارة ينتشر التأثير الكهربائي بسرعة كبيرة، فتبدأ الإلكترونات المحلية بالانسياب؛ ولا يلزم انتظار إلكترونات تسافر من البطارية إلى المصباح.
 :::
@@ -3301,6 +3328,9 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 43، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 علل: توصل الأجهزة في المنازل على التوازي.
+final-answer:
+- لتحصل الأجهزة على **فرق الجهد نفسه المناسب لتشغيلها**.
+- لتعمل **باستقلال**، فلا يؤدي فصل جهاز إلى انقطاع التيار عن بقية الأجهزة.
 solution:
 في التوازي يتصل كل جهاز مباشرة بطرفي المصدر، فيحصل على **فرق الجهد المناسب نفسه**. ولكل جهاز فرع مستقل؛ لذا فإن إطفاء جهاز أو انقطاع فرعه لا يقطع التيار عن بقية الأجهزة.
 :::
@@ -3313,6 +3343,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 43، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 علل: ينعدم (يتلاشى) التيار الكهربائي في دارة كهربائية عند فتح الدارة.
+final-answer:
+لأن **فتح الدارة يقطع المسار المغلق**، فتتوقف الحركة الانسياقية للشحنات بعد استقرار الدارة.
 solution:
 عند فتح الدارة ينقطع المسار المغلق، فتتوزع الشحنات من جديد حتى يتلاشى المجال الذي كان يدفع التيار المستمر في الأجزاء الموصلة. عندئذ تنعدم الحركة الانسياقية والتيار بعد استقرار الدارة.
 
@@ -3327,6 +3359,9 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 43، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 قارن بين كل مما يلي: المقاومة الأومية والمقاومة اللاأومية من حيث المفهوم.
+final-answer:
+- **المقاومة الأومية:** تحقق قانون أوم، وتبقى النسبة \\(V/I\\) ثابتة عند ثبوت درجة الحرارة.
+- **المقاومة اللاأومية:** لا تحقق قانون أوم، وتتغير النسبة \\(V/I\\) مع الجهد.
 solution:
 الإجابة: الأومية: تحقق قانون أوم عند ثبوت درجة الحرارة، وتبقى فيها النسبة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mi mathvariant="normal">/</mi><mi>I</mi></mrow></math>\` ثابتة.
 
@@ -3353,6 +3388,9 @@ body:
 ب. مقدار السرعة الانسياقية للإلكترونات الحرة، إذا كان عدد الإلكترونات الحرة في وحدة الحجم من هذا الموصل تساوي \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6.25</mn><mo>×</mo><msup><mn>10</mn><mn>28</mn></msup><mtext> </mtext><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">/</mi><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow></mrow></math>\` ويمر فيه تيار شدته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mi mathvariant="normal">A</mi></mrow></math>\`.
 
 ![منحنى المقاومة R بالأوم مقابل طول الموصل L بالمتر.](assets/lessons/curriculum-evidence/e4c55bfc71dc44616d88.webp)
+final-answer:
+1. **موصلية الفلز:** \\(\\sigma=5\\times10^6\\,\\mathrm{\\Omega^{-1}\\,m^{-1}}\\).
+2. **السرعة الانسياقية:** \\(v_d=10^{-4}\\,\\mathrm{m/s}\\).
 solution:
 المعطى مساحة المقطع \\(2\\,\\mathrm{mm^{2}}\\)، وكثافة الإلكترونات \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>=</mo><mn>6.25</mn><mo>×</mo><msup><mn>10</mn><mn>28</mn></msup></mrow></math>\` \\(\\,\\mathrm{electron/m^{3}}\\)، والتيار \\(2\\,\\mathrm{A}\\). المطلوب الموصلية والسرعة الانسياقية.
 
@@ -3472,6 +3510,10 @@ body:
 3. شدة المجال الكهربائي عندما تكون شدة التيار المار في الموصل \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mi mathvariant="normal">A</mi></mrow></math>\`.
 
 ![منحنى شدة المجال E مقابل شدة التيار I.](assets/lessons/curriculum-evidence/9f1403683a152a1c686d.webp)
+final-answer:
+1. **المقاومية:** \\(\\rho=6\\times10^{-9}\\,\\mathrm{\\Omega\\,m}\\).
+2. **المقاومة:** \\(R=4\\,\\mathrm{\\Omega}\\).
+3. **شدة المجال الكهربائي:** \\(E=0.02\\,\\mathrm{V/m}\\).
 solution:
 ![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/9f1403683a152a1c686d.webp)
 
@@ -3618,6 +3660,8 @@ body:
 في الشكل المجاور ثلاثة منحنيات \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn></mrow></math>\` توضح العلاقة بين شدة التيار الكهربائي المار في ثلاث مقاومات مع فرق الجهد بين طرفي كل مقاومة. هل هذه المقاومات أومية؟ فسر إجابتك.
 
 ![ثلاثة منحنيات مرقمة 1 و2 و3 لفرق الجهد V مقابل التيار I.](assets/lessons/curriculum-evidence/60354eccdc336ffd966a.webp)
+final-answer:
+**نعم، المقاومات الثلاث أومية**؛ منحنيات الجهد مقابل التيار خطوط مستقيمة تمر بنقطة الأصل، فتثبت النسبة \\(V/I\\) لكل مقاومة.
 solution:
 المقاومة الأومية هي التي يتناسب فيها التيار طردياً مع فرق الجهد عند ثبوت الحرارة؛ أي تبقى \\(V/I\\) ثابتة. في الرسم الجهد رأسي والتيار أفقي، والمنحنيات الثلاثة خطوط مستقيمة تمر بالأصل؛ لذلك تبقى النسبة ثابتة لكل منها.
 
@@ -3695,6 +3739,10 @@ body:
 1. كثافة شدة التيار في الموصل.
 2. السرعة الانسياقية.
 3. شدة المجال الكهربائي.
+final-answer:
+1. **كثافة التيار:** \\(J=2\\times10^7\\,\\mathrm{A/m^2}\\).
+2. **السرعة الانسياقية:** \\(v_d\\approx1.49\\times10^{-3}\\,\\mathrm{m/s}\\).
+3. **شدة المجال الكهربائي:** \\(E=0.344\\,\\mathrm{V/m}\\).
 solution:
 في تحويل المساحة نربّع معامل تحويل الطول: \\(1\\,\\mathrm{mm^{2}} = 10^{-6}\\,\\mathrm{m^{2}}\\).
 
@@ -3806,6 +3854,10 @@ body:
 أ. مقاومة الموصل.
 ب. السرعة الانسياقية.
 ج. شدة المجال.
+final-answer:
+1. **مقاومة الموصل:** \\(R=1.72\\,\\mathrm{\\Omega}\\).
+2. **السرعة الانسياقية:** \\(v_d\\approx1.49\\times10^{-3}\\,\\mathrm{m/s}\\).
+3. **شدة المجال الكهربائي:** \\(E=0.344\\,\\mathrm{V/m}\\).
 solution:
 في تحويل المساحة نربّع معامل تحويل الطول: \\(1\\,\\mathrm{mm^{2}} = 10^{-6}\\,\\mathrm{m^{2}}\\).
 
@@ -3950,6 +4002,9 @@ body:
 سلك من الحديد طوله \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>\` ومساحة مقطعه \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow></mrow></math>\`، ويحمل تيارًا كهربائيًا شدته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn><mtext> </mtext><mi mathvariant="normal">A</mi></mrow></math>\`. إذا كانت مقاومية الحديد \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9.7</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>8</mn></mrow></msup><mtext> </mtext><mi mathvariant="normal">Ω</mi><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>\`، احسب ما يأتي:
 1. فرق الجهد الكهربائي بين طرفي السلك.
 2. السرعة الانسياقية للإلكترونات الحرة فيه، إذا كانت كثافة الإلكترونات الحرة للحديد \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8.5</mn><mo>×</mo><msup><mn>10</mn><mn>28</mn></msup><mtext> </mtext><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">/</mi><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow></mrow></math>\`.
+final-answer:
+1. **فرق الجهد:** \\(V=194\\,\\mathrm{V}\\).
+2. **السرعة الانسياقية:** \\(v_d\\approx1.47\\times10^{-3}\\,\\mathrm{m/s}\\).
 solution:
 في تحويل المساحة نربّع معامل تحويل الطول: \\(1\\,\\mathrm{mm^{2}} = 10^{-6}\\,\\mathrm{m^{2}}\\).
 
@@ -4068,6 +4123,9 @@ body:
 سلك نحاسي طوله \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>200</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>\` ومساحة مقطعه العرضي \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow></mrow></math>\`، ويحمل تيارًا كهربائيًا شدته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mtext> </mtext><mi mathvariant="normal">A</mi></mrow></math>\`. إذا كانت موصلية سلك النحاس تساوي \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5.8</mn><mo>×</mo><msup><mn>10</mn><mn>7</mn></msup><mtext> </mtext><msup><mi mathvariant="normal">Ω</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mtext> </mtext><msup><mi mathvariant="normal">m</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>\`، فاحسب:
 1. شدة المجال الكهربي.
 2. إذا استخدم جزء من السلك طوله \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>100</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>\`، فما مقدار مقاوميته ومقاومة هذا الجزء من السلك؟
+final-answer:
+1. **شدة المجال الكهربائي:** \\(E\\approx0.0862\\,\\mathrm{V/m}\\).
+2. **للجزء الذي طوله مئة متر:** المقاومية \\(\\rho\\approx1.724\\times10^{-8}\\,\\mathrm{\\Omega\\,m}\\)، والمقاومة \\(R\\approx0.862\\,\\mathrm{\\Omega}\\).
 solution:
 في تحويل المساحة نربّع معامل تحويل الطول: \\(1\\,\\mathrm{mm^{2}} = 10^{-6}\\,\\mathrm{m^{2}}\\).
 
@@ -4200,6 +4258,8 @@ body:
 في الشكل المجاور جد قيمة المقاومة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>R</mi></mrow></math>\` التي تجعل البطارية تزود الدارة بقدرة كهربائية تساوي \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>48</mn><mtext> </mtext><mi mathvariant="normal">W</mi></mrow></math>\`، بإهمال المقاومة الداخلية للبطارية.
 
 ![مصدر 24 V ومقاومة 8 Ω على التوالي مع فرعين 12 Ω وR.](assets/lessons/curriculum-evidence/96d625a018212b15cebb.webp)
+final-answer:
+**المقاومة المطلوبة:** \\(R=6\\,\\mathrm{\\Omega}\\).
 solution:
 ![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/96d625a018212b15cebb.webp)
 
@@ -4316,6 +4376,9 @@ body:
 ![الشكل أ: دارة قياس السلك الفضي مع أميتر وفولتميتر.](assets/lessons/curriculum-evidence/0938822f5f6950c87699.webp)
 ![الشكل ب: منحنى فرق الجهد V مقابل التيار I للسلك.](assets/lessons/curriculum-evidence/33249f9d8a3ca7244060.webp)
 
+final-answer:
+1. **الطول الكلي للسلك:** \\(L=125\\,\\mathrm{m}\\).
+2. **المقاومة بعد مضاعفة الطول:** \\(R_2=8\\,\\mathrm{\\Omega}\\).
 solution:
 في تحويل المساحة نربّع معامل تحويل الطول: \\(1\\,\\mathrm{mm^{2}} = 10^{-6}\\,\\mathrm{m^{2}}\\).
 
@@ -4434,6 +4497,10 @@ body:
 1. موصلية السلك الفلزي.
 2. شدة المجال الكهربي في المقاومة.
 3. الكثافة الحجمية للإلكترونات الحرة في سلك المقاومة إذا كانت السرعة الانسياقية للإلكترونات الحرة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>7.4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>2</mn></mrow></msup><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\`.
+final-answer:
+1. **موصلية السلك:** \\(\\sigma\\approx3.57\\times10^7\\,\\mathrm{\\Omega^{-1}\\,m^{-1}}\\).
+2. **شدة المجال الكهربائي:** \\(E=4\\,\\mathrm{V/m}\\).
+3. **كثافة الإلكترونات الحرة:** \\(n\\approx1.21\\times10^{28}\\,\\mathrm{m^{-3}}\\).
 solution:
 المعطيات: قدرة المقاومة \\(400\\mathrm{J/s}\\)، أي \\(400\\,\\mathrm{W}\\)، وجهدها \\(100\\,\\mathrm{V}\\)، وطول السلك \\(25\\) متراً، ومساحة مقطعه \\(2.8\\times 10^{-8}\\,\\mathrm{m^{2}}\\). المطلوب الموصلية والمجال وكثافة الإلكترونات.
 
@@ -4568,6 +4635,9 @@ body:
 إذا كانت الكثافة الحجمية للإلكترونات الحرة في سلك نحاس \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8.5</mn><mo>×</mo><msup><mn>10</mn><mn>28</mn></msup><mtext> </mtext><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">/</mi><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow></mrow></math>\` ومساحة مقطعه العرضي \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mtext> </mtext><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow></math>\`، وشدة التيار المار \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mi mathvariant="normal">A</mi></mrow></math>\` ومقاوميته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1.7</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>8</mn></mrow></msup><mtext> </mtext><mi mathvariant="normal">Ω</mi><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>\`، احسب ما يأتي:
 أ. السرعة الانسياقية للإلكترونات الحرة.
 ب. شدة المجال الكهربي المؤثرة في السلك.
+final-answer:
+1. **السرعة الانسياقية:** \\(v_d\\approx3.68\\times10^{-5}\\,\\mathrm{m/s}\\).
+2. **شدة المجال الكهربائي:** \\(E=8.5\\times10^{-3}\\,\\mathrm{V/m}\\).
 solution:
 كثافة التيار هي التيار لكل وحدة مساحة مقطع. ولحاملات شحنة عددها \\(n\\) في وحدة الحجم، تكون شدة التيار حاصل ضرب \\(n\\) في مقدار شحنة الحامل \\(e\\) وفي المساحة \\(A\\) والسرعة الانسياقية.
 
@@ -4668,6 +4738,8 @@ body:
 يمثل الشكل المجاور العلاقة بين شدة التيار الكهربي المار في موصل فلزي وفرق الجهد بين طرفيه. إذا كان طول الموصل \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>25</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>\` ونصف قطر مقطعه العرضي \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0.5</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">m</mi></mrow></mrow></math>\`، احسب ثابت الموصلية الكهربية للموصل.
 
 ![منحنى التيار I مقابل الجهد V مع التدريج حتى 0.4 A و40 V.](assets/lessons/curriculum-evidence/96b3796426c02307957f.webp)
+final-answer:
+**ثابت الموصلية الكهربائية:** \\(\\sigma\\approx3.18\\times10^5\\,\\mathrm{\\Omega^{-1}\\,m^{-1}}\\).
 solution:
 المقاومة تعتمد على أبعاد الموصل ومقاومية مادته: تزيد بزيادة الطول وتقل بزيادة مساحة المقطع. نستخدم هذه العلاقة لأن السؤال يغيّر الأبعاد أو يربط المقاومة بها، مع ثبات درجة الحرارة عند المقارنة.
 
@@ -4754,6 +4826,8 @@ body:
 يمثل الشكل المجاور جزءًا من دارة كهربائية. إذا كانت قراءة الفولتميتر \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>18</mn></mrow></math>\` فولت، فما قراءة الأميتر؟
 
 ![جزء دارة بين a وb بمقاومات 3 Ω و6 Ω و4 Ω ومقياسين.](assets/lessons/curriculum-evidence/3808939b2af7af5aba88.webp)
+final-answer:
+**قراءة الأميتر:** \\(I_A=2\\,\\mathrm{A}\\).
 solution:
 قانون أوم يربط فرق الجهد بين طرفي المقاومة بالتيار المار فيها. نستخدم جهد المقاومة نفسها، ثم نقسم على مقاومتها لإيجاد تيارها أو نضرب التيار في المقاومة لإيجاد الجهد.
 
@@ -4902,6 +4976,10 @@ body:
 2. طول السلك الفلزي الذي صنعت منه مقاومة الفرن.
 3. تكاليف تشغيل الفرن الكهربائي لمدة \\(30\\) يومًا بمعدل \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn></mrow></math>\` ساعات يوميًا، علمًا بأن سعر الكيلوواط ساعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math>\` قروش.
 
+final-answer:
+1. **أكبر تيار:** \\(I=10\\,\\mathrm{A}\\).
+2. **طول السلك:** \\(L=200\\,\\mathrm{m}\\).
+3. **تكلفة التشغيل:** **١٨٠٠ قرش**.
 solution:
 المعطى قدرة الفرن \\(2000\\,\\mathrm{W}\\) عند جهد \\(200\\,\\mathrm{V}\\). المطلوب تياره وطول سلك مقاومته وتكلفة تشغيله.
 
@@ -5026,6 +5104,11 @@ body:
 3. طول السلك المستخدم إذا كانت مقاومة المتر الواحد منه \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>30</mn><mtext> </mtext><mi mathvariant="normal">Ω</mi></mrow></math>\`.
 4. تكاليف استخدام السخان ساعتين يوميًا ولمدة أسبوع، حيث سعر الكيلوواط ساعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn></mrow></math>\` قروش.
 
+final-answer:
+1. **قدرة السخان:** \\(P=500\\,\\mathrm{W}\\).
+2. **الشحنة بدلالة الزمن:** \\(Q(t)=\\frac{50}{21}t\\,\\mathrm{C}\\)، حيث \\(t\\) بالثانية.
+3. **طول السلك:** \\(L=2.94\\,\\mathrm{m}\\).
+4. **تكلفة التشغيل:** **٧٠ قرشًا**.
 solution:
 شدة التيار هي مقدار الشحنة التي تعبر مقطع الموصل في وحدة الزمن. لذلك نضرب التيار في الزمن لإيجاد الشحنة، مع قياس الزمن بالثانية والشحنة بالكولوم.
 
@@ -5201,6 +5284,8 @@ body:
 يمثل الشكل المجاور العلاقة بين شدة التيار الكهربائي المار في موصل فلزي وفرق الجهد الكهربائي بين طرفيه. إذا كان طول الموصل \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>\` وقطر مقطعه العرضي \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">m</mi></mrow></mrow></math>\`، والكثافة الحجمية للإلكترونات الحرة لمادة الموصل \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>n</mi><mi>e</mi></msub><mo>=</mo><mn>9</mn><mo>×</mo><msup><mn>10</mn><mn>25</mn></msup><mtext> </mtext><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">/</mi><msup><mi mathvariant="normal">m</mi><mn>3</mn></msup></mrow></mrow></math>\`، احسب السرعة الانسياقية للإلكترونات الحرة داخل الموصل تحت تأثير مجال كهربائي شدته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0.3</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">C</mi></mrow></mrow></math>\`.
 
 ![منحنى V مقابل I مع القيم 10 و15 و20 A و2 و3 و4 V.](assets/lessons/curriculum-evidence/cee63e7c2117b5373385.webp)
+final-answer:
+**السرعة الانسياقية:** \\(v_d\\approx0.147\\,\\mathrm{m/s}\\).
 solution:
 ![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/cee63e7c2117b5373385.webp)
 
@@ -5329,6 +5414,9 @@ body:
 سلك موصل، إذا كانت كثافة شدة التيار الكهربائي المار فيه \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>8</mn></msup><mtext> </mtext><mrow><mi mathvariant="normal">A</mi><mi mathvariant="normal">/</mi><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow></mrow></math>\`، وشدة المجال الكهربائي المؤثر فيه \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn><mtext> </mtext><mrow><mi mathvariant="normal">V</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">m</mi></mrow></mrow></math>\`، احسب:
 1. ثابت الموصلية لهذا السلك.
 2. الطول اللازم من هذا السلك لعمل سخان كهربائي قدرته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1.6</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">W</mi></mrow></mrow></math>\` ويعمل على فرق جهد \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>240</mn><mtext> </mtext><mi mathvariant="normal">V</mi></mrow></math>\` ومساحة مقطعه \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0.6</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow></mrow></math>\`.
+final-answer:
+1. **الموصلية:** \\(\\sigma\\approx1.667\\times10^7\\,\\mathrm{\\Omega^{-1}\\,m^{-1}}\\).
+2. **الطول اللازم:** \\(L=360\\,\\mathrm{m}\\).
 solution:
 في تحويل المساحة نربّع معامل تحويل الطول: \\(1\\,\\mathrm{mm^{2}} = 10^{-6}\\,\\mathrm{m^{2}}\\).
 
@@ -5472,6 +5560,11 @@ body:
 3. شدة المجال الكهربائي المؤثرة في السلك.
 4. مقاومة السلك إذا أعيد تشكيله ليصبح طوله \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>75</mn><mi mathvariant="normal">%</mi></mrow></math>\` مما كان عليه.
 
+final-answer:
+1. **مقاومة السلك:** \\(R=0.752\\,\\mathrm{\\Omega}\\).
+2. **كثافة التيار:** \\(J\\approx1.016\\times10^7\\,\\mathrm{A/m^2}\\).
+3. **شدة المجال الكهربائي:** \\(E\\approx0.9549\\,\\mathrm{V/m}\\).
+4. **المقاومة بعد إعادة التشكيل:** \\(R_2=0.423\\,\\mathrm{\\Omega}\\).
 solution:
 المقاومة تعتمد على أبعاد الموصل ومقاومية مادته: تزيد بزيادة الطول وتقل بزيادة مساحة المقطع. نستخدم هذه العلاقة لأن السؤال يغيّر الأبعاد أو يربط المقاومة بها، مع ثبات درجة الحرارة عند المقارنة.
 

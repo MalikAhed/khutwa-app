@@ -10,6 +10,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 If you feel hungry, let’s stop … (have) something to eat.
+final-answer:
+If you feel hungry, let’s stop **to have** something to eat.
 solution:
 \`stop + to + المصدر\` تعني نتوقف عن نشاط آخر لكي نفعل شيئاً.  
 هنا سبب التوقف هو تناول الطعام، لذا نستخدم to have؛ أما stop having فتعني التوقف عن تناول الطعام.
@@ -31,6 +33,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 My brother still remembers … (see) the Eiffel Tower in Paris.
+final-answer:
+My brother still remembers **seeing** the Eiffel Tower in Paris.
 solution:
 هو يتذكر حدثاً وقع سابقاً، ولذلك يتبع remember اسم الفعل ing.  
 نحول see إلى seeing؛ أما remember to see فتعني تذكّر مهمة لم تُنجز بعد.
@@ -52,6 +56,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 Farmers should avoid … (use) chemicals on the vegetables they grow.
+final-answer:
+Farmers should avoid **using** chemicals on the vegetables they grow.
 solution:
 avoid تعني يتجنب، ويتبعها اسم الفعل بصيغة ing.  
 نحذف e الأخيرة من use ونضيف ing: using، أي يتجنبون استعمال المواد الكيميائية.
@@ -73,6 +79,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 I’d hate … (live) at the top of a really tall building.
+final-answer:
+I’d hate **to live** at the top of a really tall building.
 solution:
 I’d هنا اختصار I would.  
 بعد would hate نستخدم \`to + المصدر\` للتعبير عن موقف من احتمال العيش هناك؛ لذلك to live هي الصيغة المناسبة.
@@ -94,6 +102,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 You shouldn’t stop … (try) just because it’s a bit difficult.
+final-answer:
+You shouldn’t stop **trying** just because it’s a bit difficult.
 solution:
 المعنى: لا تتوقف عن المحاولة.  
 عندما يعني stop إنهاء النشاط نفسه، يتبعه ing؛ لذلك نكتب trying، لا to try التي تجعل المحاولة غرض التوقف.
@@ -115,6 +125,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 It’s better to avoid … (travel) during the rush hour.
+final-answer:
+It’s better to avoid **travelling** during the rush hour.
 solution:
 avoid يتبعها فعل بصيغة ing، لأننا نتجنب نشاط السفر نفسه.  
 في الإملاء البريطاني نكتب travel → travelling بمضاعفة l؛ و traveling مقبولة أمريكياً.
@@ -136,6 +148,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 I didn’t manage … (catch) the early bus, so I was late.
+final-answer:
+I didn’t manage **to catch** the early bus, so I was late.
 solution:
 manage to تعني ينجح في فعل شيء.  
 ننفي النجاح بـ didn’t manage، ثم نستخدم \`to + المصدر\` catch، أي لم أتمكن من اللحاق بالحافلة.
@@ -157,6 +171,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 Although they had some difficulties, they kept … (work) on the same project.
+final-answer:
+Although they had some difficulties, they kept **working** on the same project.
 solution:
 keep + ing تعني يستمر في النشاط.  
 بما أنهم واصلوا العمل رغم الصعوبات، نستخدم working بعد kept، وهو ماضي keep.
@@ -178,6 +194,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 She didn’t feel like … (cook) anything so she went out to a restaurant.
+final-answer:
+She didn’t feel like **cooking** anything, so she went out to a restaurant.
 solution:
 feel like تعني يرغب في، ويتبعها اسم أو فعل بصيغة ing.  
 نضع cooking لأن المقصود عدم الرغبة في الطبخ، وهذا يفسر الذهاب إلى المطعم.
@@ -199,6 +217,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 You must remember … (switch off) the lights before you leave the room.
+final-answer:
+You must remember **to switch off** the lights before you leave the room.
 solution:
 المطلوب ألا تنسى تنفيذ مهمة لاحقة، فنستخدم \`remember + to + المصدر\`.  
 نحافظ على الفعل المركب switch off: to switch off.
@@ -220,6 +240,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 Some of us fail … (manage) our time effectively.
+final-answer:
+Some of us fail **to manage** our time effectively.
 solution:
 fail to تعني لا ينجح في فعل الشيء.  
 بعد fail نستخدم \`to + المصدر\` manage، فيصبح المعنى يفشل في إدارة الوقت بفعالية.
@@ -241,6 +263,8 @@ body:
 Complete the sentence with the correct form of the verb in brackets: to-infinitive or -ing form.
 
 Did I really tell you I was unhappy? I don’t remember … (say) that.
+final-answer:
+Did I really tell you I was unhappy? I don’t remember **saying** that.
 solution:
 المتكلم يحاول تذكّر قول صدر منه في الماضي.
 
@@ -264,6 +288,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 Paul avoids … (use) chemicals on the vegetables he grows.
+final-answer:
+Paul avoids **using** chemicals on the vegetables he grows.
 solution:
 avoid يتبعها اسم الفعل ing، فنكتب using بعد حذف e من use.  
 الصيغة avoids تخص Paul، لكن الكلمة التي بعدها لا تتحول إلى uses.
@@ -285,6 +311,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 You should remember … (send) an email to let them know about the changes.
+final-answer:
+You should remember **to send** an email to let them know about the changes.
 solution:
 الإرسال مهمة مطلوب تذكر تنفيذها، لا ذكرى قديمة.  
 نستخدم \`remember + to + المصدر\` send، أي تذكر أن ترسل الرسالة.
@@ -306,6 +334,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 Why don’t you stop … (play) computer games and do the homework?
+final-answer:
+Why don’t you stop **playing** computer games and do the homework?
 solution:
 الطلب أن ينهي اللعب وينتقل إلى الواجب؛ لذا stop + ing تعني التوقف عن النشاط.  
 الصيغة playing، وليست to play التي تعني التوقف بغرض اللعب.
@@ -328,6 +358,8 @@ Complete the sentences with the correct form (to-infinitive or -ing form).
 
 I still remember … (teach) my son the alphabet when he was young.
 
+final-answer:
+I still remember **teaching** my son the alphabet when he was young.
 solution:
 when he was young يحدد ذكرى ماضية.  
 نستخدم remember + ing للحدث الذي نسترجعه، فيصبح teach → teaching.  
@@ -350,6 +382,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 On cold mornings, the car may refuse … (start).
+final-answer:
+On cold mornings, the car may refuse **to start**.
 solution:
 refuse يتبعها \`to + المصدر\`.  
 الجملة تصور السيارة كأنها ترفض التشغيل في البرد، لذلك نستخدم to start.
@@ -371,6 +405,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 Let’s shake hands and agree … (forget) the argument.
+final-answer:
+Let’s shake hands and agree **to forget** the argument.
 solution:
 \`agree to + المصدر\` تعني يتفق على فعل شيء.  
 المطلوب الاتفاق على نسيان الخلاف، لذا نستخدم to forget.
@@ -395,6 +431,8 @@ Complete the sentences with the correct form (to-infinitive or -ing form).
 
 He promised … (not use) other people’s property without their permission.
 
+final-answer:
+He promised **not to use** other people’s property without their permission.
 solution:
 promise يتبعها مصدر مع to. عند نفي الفعل المتعهد به نضع not قبل to: promised not to use.
 
@@ -416,6 +454,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 My sister refused … (do) what father suggested.
+final-answer:
+My sister refused **to do** what father suggested.
 solution:
 refuse يعني يرفض، ويتبعه \`to + المصدر\`؛ لذلك نستخدم to do للدلالة على الفعل الذي رفضته الأخت.
 
@@ -437,6 +477,8 @@ Complete the sentences with the correct form (to-infinitive or -ing form).
 
 I must remember … (post) this letter while I’m in town.
 
+final-answer:
+I must remember **to post** this letter while I’m in town.
 solution:
 إرسال الرسالة واجب لم يُنجز بعد، لذا remember to تعني تذكر أن تفعل.  
 نضع to post، لا posting التي تشير إلى تذكر إرسال سابق.
@@ -458,6 +500,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 The most important thing is that we shouldn’t give up … (try).
+final-answer:
+The most important thing is that we shouldn’t give up **trying**.
 solution:
 give up تعني يتخلى عن نشاط أو يتوقف عنه، ويتبعها ing.  
 نكتب trying لأن النصيحة ألا نتخلى عن المحاولة.
@@ -479,6 +523,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 He advised me … a second hand refrigerator. (not-buy)
+final-answer:
+He advised me **not to buy** a second-hand refrigerator.
 solution:
 تركيب النصيحة هو \`advise + الشخص + to + المصدر\`.  
 للنصيحة المنفية نضع not بعد الشخص وقبل to؛ لذا advised me not to buy.
@@ -500,6 +546,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 On the way to Edinburgh, we stopped … at an old castle. (look)
+final-answer:
+On the way to Edinburgh, we stopped **to look** at an old castle.
 solution:
 كانوا في طريقهم إلى مدينة أخرى ثم توقفوا لغرض النظر إلى القلعة.  
 نستخدم \`stop + to + المصدر\` للدلالة على غرض التوقف؛ لذلك to look.
@@ -521,6 +569,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 I always remember … her for the first time. (meet)
+final-answer:
+I always remember **meeting** her for the first time.
 solution:
 المتكلم يسترجع ذكرى اللقاء الأول، وهو حدث وقع.  
 نستخدم remember + ing: meet → meeting، لا to meet التي تشير إلى مهمة لاحقة.
@@ -543,6 +593,8 @@ Complete the sentences with the correct form (to-infinitive or -ing form).
 
 Max enjoys … his cell phone to play games. (use)
 
+final-answer:
+Max enjoys **using** his cell phone to play games.
 solution:
 enjoy يتبعها اسم الفعل ing للدلالة على النشاط الممتع.  
 نحذف e من use قبل إضافة ing، فتكون using.
@@ -564,6 +616,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 I absolutely remember … him. I gave him $20. (pay)
+final-answer:
+I absolutely remember **paying** him. I gave him $20.
 solution:
 الجملة الثانية تثبت أن الدفع حدث في الماضي، فنستخدم remember + ing لاسترجاعه.  
 نكتب paying؛ و to pay تعني تذكر واجب الدفع قبل فعله.
@@ -585,6 +639,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 She managed … with them, even though she didn’t speak their language. (communicate)
+final-answer:
+She managed **to communicate** with them, even though she didn’t speak their language.
 solution:
 managed to تعني تمكنت أو نجحت في فعل شيء.  
 يأتي بعدها المصدر communicate مع to، فتكون to communicate رغم صعوبة اللغة.
@@ -606,6 +662,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 Rania couldn’t manage … all the ice cream. (eat)
+final-answer:
+Rania couldn’t manage **to eat** all the ice cream.
 solution:
 manage يتبعها \`to + المصدر\`.  
 المعنى أنها لم تستطع إتمام أكل كل المثلجات، فنستخدم to eat.
@@ -627,6 +685,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 I wish you wouldn’t keep … me. (interrupt)
+final-answer:
+I wish you wouldn’t keep **interrupting** me.
 solution:
 keep + ing تعني يستمر في النشاط أو يكرره.  
 المقاطعات متكررة ومزعجة للمتكلم، لذا نستخدم interrupting.
@@ -648,6 +708,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 You shouldn’t stop … just because it’s a bit difficult. (try)
+final-answer:
+You shouldn’t stop **trying** just because it’s a bit difficult.
 solution:
 المقصود عدم ترك المحاولة بسبب الصعوبة.  
 stop + ing تعني يتوقف عن الفعل نفسه، لذلك trying هي المطلوبة.
@@ -670,6 +732,8 @@ Complete the sentences with the correct form (to-infinitive or -ing form).
 
 We stopped … the tyres after an hour of driving. (check)
 
+final-answer:
+We stopped **to check** the tyres after an hour of driving.
 solution:
 كانوا يقودون ثم توقفوا لكي يفحصوا الإطارات.  
 نستخدم \`stopped + to + المصدر\` للدلالة على غرض التوقف، فتكون to check.
@@ -691,6 +755,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 He promised … the same mistake again. (not make)
+final-answer:
+He promised **not to make** the same mistake again.
 solution:
 بعد promise نستخدم \`to + المصدر\`.  
 لأن الوعد يتعلق بعدم تكرار الخطأ، نضع not قبل to: not to make.
@@ -712,6 +778,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 Ahmed avoids … chemicals on the vegetables he grows. (use)
+final-answer:
+Ahmed avoids **using** chemicals on the vegetables he grows.
 solution:
 avoid يتبعها فعل بصيغة ing.  
 نحول use إلى using بحذف e، فيكون المعنى يتجنب استعمال المواد الكيميائية.
@@ -733,6 +801,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 I would advise you … the night because the roads are dangerous. (stay)
+final-answer:
+I would advise you **to stay** the night because the roads are dangerous.
 solution:
 نصيحة شخص معين تأتي بتركيب \`advise + المفعول + to + المصدر\`.  
 بعد you نكتب to stay؛ والمعنى البقاء ليلاً لتجنب الطرق الخطرة.
@@ -754,6 +824,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 She kept … during the film. (talk)
+final-answer:
+She kept **talking** during the film.
 solution:
 kept هو ماضي keep، ويتبعه ing عندما يعني الاستمرار.  
 المطلوب أنها واصلت الكلام، لذا talking.
@@ -775,6 +847,8 @@ body:
 Complete the sentences with the correct form (to-infinitive or -ing form).
 
 I must remember … the electricity bill. (pay)
+final-answer:
+I must remember **to pay** the electricity bill.
 solution:
 دفع الفاتورة مهمة يجب ألا ننساها، فنستخدم \`remember + to + المصدر\`.  
 لذلك to pay، وليس paying الذي يدل على ذكرى دفع حدث فعلاً.
@@ -1335,6 +1409,8 @@ body:
 Choose the correct answer:
 
 I enjoyed (to meet – meeting) you. I hope (to see – seeing) you again.
+final-answer:
+I enjoyed **meeting** you. I hope **to see** you again.
 solution:
 بعد enjoy نستخدم ing، فيصبح meet → meeting لحدث استمتع به.  
 بعد hope نستخدم \`to + المصدر\` للتعبير عن الأمل بحدث لاحق، فتكون to see.
@@ -1738,6 +1814,8 @@ body:
 Correct the following sentences (There is one mistake in each sentence):
 
 Avoid to drive if you feel tired or sleepy.
+final-answer:
+Avoid **driving** if you feel tired or sleepy.
 solution:
 avoid يتبعها ing، لا \`to + المصدر\`.  
 نصحح to drive إلى driving، مع حذف e من drive قبل إضافة ing؛ فالمعنى تجنب القيادة عند النعاس.
@@ -1759,6 +1837,8 @@ body:
 Correct the following sentences (There is one mistake in each sentence):
 
 How did you manage keeping all that a secret?
+final-answer:
+How did you manage **to keep** all that a secret?
 solution:
 manage يتبعها \`to + المصدر\` بمعنى ينجح في فعل شيء.  
 لذلك نستبدل keeping بـ to keep؛ ويبقى manage بعد did بصورته الأساسية.
@@ -1780,6 +1860,8 @@ body:
 Correct the following sentences (There is one mistake in each sentence):
 
 Everything went well until they wanted increasing their profits.
+final-answer:
+Everything went well until they wanted **to increase** their profits.
 solution:
 want يتبعها \`to + المصدر\` عندما يحدد ما يرغب الشخص في فعله.  
 نصحح increasing إلى to increase، أي أرادوا زيادة الأرباح.
@@ -1801,6 +1883,8 @@ body:
 Correct the following sentences (There is one mistake in each sentence):
 
 The important thing is that you should never give up try.
+final-answer:
+The important thing is that you should never give up **trying**.
 solution:
 give up يتبعها ing عند الحديث عن ترك نشاط.  
 نحول try إلى trying، والمعنى ألا تتخلى عن المحاولة.
@@ -1822,6 +1906,8 @@ body:
 Correct the following sentences (There is one mistake in each sentence):
 
 I don’t remember to see Suha. She is a complete stranger.
+final-answer:
+I don’t remember **seeing** Suha. She is a complete stranger.
 solution:
 وصف سُهى بأنها غريبة يدل على عدم تذكر لقاء سابق، لا نسيان مهمة مستقبلية.  
 نستخدم remember + ing للذكرى، فنستبدل to see بـ seeing.
@@ -1845,6 +1931,8 @@ body:
 Correct the following sentences (There is one mistake in each sentence):
 
 The boy was in a difficult situation, so I agreed to helping him.
+final-answer:
+The boy was in a difficult situation, so I agreed **to help** him.
 solution:
 agree يتبعها مصدر مع to؛ و to هنا جزء من المصدر وليست حرف جر يقتضي ing.  
 لذلك نصحح to helping إلى to help.

@@ -47,13 +47,17 @@
 .lesson-question-source { display:inline-block; justify-self:start; width:fit-content; margin:0 0 14px; padding:4px 10px; border:1px solid #dfe2e6; border-radius:6px; background:#f1f3f5; color:#626970; font:600 13px/1.6 var(--font-ui); }
 .ready-lesson-stage[data-lesson-presentation="flashcard"] .level-layout-task { height:100%; min-height:0; grid-template-rows:minmax(0, 1fr); overflow:hidden; zoom:1; padding:var(--space-1) var(--page-gutter-right) var(--space-1) var(--page-gutter-left); }
 .lesson-exam-question { display:grid; grid-template-rows:minmax(0, 1fr); width:min(100%, 900px); max-height:100%; min-height:0; min-width:0; perspective:1600px; text-align:start; -webkit-tap-highlight-color:transparent; }
-.lesson-flashcard-rotor { position:relative; display:grid; grid-template-rows:minmax(0, 1fr); width:100%; min-height:0; transform-style:preserve-3d; transform:rotateY(0deg); }
+.lesson-flashcard-rotor { position:relative; display:grid; grid-template-rows:minmax(0, 1fr); width:100%; min-height:0; transform-style:preserve-3d; transform:rotateY(0deg); transition:none; }
 .lesson-flashcard-rotor.is-flipped { transform:rotateY(180deg); }
 .lesson-flashcard-face { position:relative; grid-area:1 / 1; display:grid; grid-template-rows:minmax(0, 1fr); min-width:0; min-height:0; border:3px solid #cbd4dd; border-radius:14px; background:#fff; color:#30363d; overflow:hidden; backface-visibility:hidden; -webkit-backface-visibility:hidden; cursor:pointer; }
 .lesson-flashcard-face[inert] { position:absolute; inset:0; }
 .lesson-flashcard-face[hidden] { display:none; }
 .lesson-flashcard-back { transform:rotateY(180deg); }
-.lesson-flashcard-scroll { display:flex; flex-direction:column; min-height:0; min-width:0; padding:clamp(20px, 3vw, 36px); border-radius:11px; overflow-x:hidden; overflow-y:auto; overscroll-behavior:contain; scrollbar-width:thin; scrollbar-color:#8a98a4 #e9eef2; touch-action:pan-x pan-y; }
+.lesson-flashcard-scroll { display:flex; flex-direction:column; min-height:0; min-width:0; padding:clamp(20px, 3vw, 36px); border-radius:11px; overflow-x:hidden; overflow-y:auto; overscroll-behavior:contain; scrollbar-gutter:stable; scrollbar-width:thin; scrollbar-color:#8a98a4 #e9eef2; touch-action:pan-x pan-y; }
+.lesson-flashcard-rotor.is-flipping .lesson-scroll-cue { visibility:hidden; }
+.lesson-flashcard-rotor.is-flipping .lesson-flashcard-scroll { scrollbar-color:transparent transparent; }
+.lesson-flashcard-rotor.is-flipping .lesson-flashcard-scroll::-webkit-scrollbar-thumb,
+.lesson-flashcard-rotor.is-flipping .lesson-flashcard-scroll::-webkit-scrollbar-track { background:transparent; }
 @media (max-height:500px) and (orientation:landscape) {
   .lesson-flashcard-scroll { padding:16px; }
 }
@@ -62,6 +66,8 @@
 .lesson-exam-question h1:last-child { margin-bottom:0; }
 .lesson-exam-question .markdown-rendered { min-height:0; padding:0; color:#30363d; font:500 clamp(17px, 2vw, 19px)/1.9 var(--font-ui); }
 .lesson-exam-question .markdown-rendered strong { color:#30363d; font-weight:800; }
+.lesson-exam-question .lesson-final-answer { font-weight:600; }
+.lesson-final-answer :is(ul,ol) > li::marker { font-weight:800; }
 .lesson-flashcard-back .markdown-rendered > p { margin-block:0 24px; }
 .lesson-english-term { padding:.08em .28em; border-radius:4px; background:#f1f3f5; color:#30363d; font:600 .92em/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; }
 .ui-lab-mcq :is(h1,.level-answer-list) code,

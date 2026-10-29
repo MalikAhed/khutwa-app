@@ -64,6 +64,12 @@ body:
 عبّر بالمعادلات الكيميائية عن كلّ من التفاعلات الآتية، وسمّ المركبات العضوية الناتجة:
 
 1. أكسدة 1- بروبانول باستخدام دايكرومات البوتاسيوم في وسط حمضي أكسدة تامة.
+final-answer:
+**حمض البروبانويك.**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><mn>2</mn><mo stretchy="false">[</mo><mi>O</mi><mo stretchy="false">]</mo><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><msub><mi>K</mi><mn>2</mn></msub><mi>C</mi><msub><mi>r</mi><mn>2</mn></msub><msub><mi>O</mi><mn>7</mn></msub><mi mathvariant="normal">/</mi><msup><mi>H</mi><mo>+</mo></msup></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 في1-بروبانول يرتبط الكربون الحامل لمجموعةOH بذرة كربون واحدة فقط؛ وهذا معنى أنه كحول أولي.
 
@@ -91,6 +97,8 @@ body:
 أكمل المعادلات الآتية بكتابة الناتج العضوي المناسب:
 
 ![المعادلة الثالثة وشروط التفاعل](assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a3-reaction.webp)
+final-answer:
+**البروبانال:** \\(\\mathrm{CH_3CH_2CHO}\\).
 solution:
 الكحول الأولي تكون مجموعةOH فيه على كربون طرفي متصل بكربون واحد؛ نزع هيدروجينين منه يكوّن مجموعة الألدهيد الطرفيةCHO.
 
@@ -120,6 +128,9 @@ body:
 أكمل المعادلات الآتية بكتابة الناتج العضوي المناسب:
 
 ![بنية الكحول وشروط التفاعل في المعادلة الرابعة](assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a4-reaction.webp)
+final-answer:
+- **الناتج الرئيس: 2-ميثيل-2-بيوتين** — \\(\\mathrm{CH_3CH=C(CH_3)CH_3}\\).
+- **الناتج الفرعي: 2-ميثيل-1-بيوتين** — \\(\\mathrm{CH_3CH_2C(CH_3)=CH_2}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-gaza-p063-q03-a4-reaction.webp)
 
@@ -556,6 +567,8 @@ body:
 سؤال: وضح المقصود بكل مما يلي:
 
 قاعدة زايتسف.
+final-answer:
+**قاعدة زايتسف:** الناتج الرئيس من حذف الماء من الكحول هو الألكين الناتج بنزع الهيدروجين من ذرة الكربون المجاورة لكربون الهيدروكسيل والأقل احتواءً على الهيدروجين.
 solution:
 **الإجابة:** ينتج الألكين بكمية كبيرة (الناتج الرئيس) من حذف الماء من الكحول بخروج هيدروجين الماء من ذرة الكربون المجاورة لذرة الكربون التي ترتبط بالهيدروكسيل، وتحتوي عددًا أقل من ذرات الهيدروجين.
 
@@ -575,6 +588,8 @@ body:
 سؤال: علل لما يأتي:
 
 تتميز الكحولات بخواص حمضية ضعيفة.
+final-answer:
+لأن **رابطة O–H قطبية**، فيمكن للكحول منح هيدروجين مجموعة الهيدروكسيل على هيئة بروتون، لكن بدرجة ضعيفة.
 solution:
 رابطة O–H قطبية؛ الأكسجين أعلى كهروسلبية فيجذب زوج الرابطة، ويصبح هيدروجين OH قابلاً للإزالة عند التفاعل المناسب. لذلك تظهر الكحولات صفات حمضية **ضعيفة**. يعرض الكتاب الصوديوم دليلاً عملياً:
 
@@ -600,6 +615,8 @@ body:
 سؤال: علل لما يأتي:
 
 يمتلك المركب \\((\\mathrm{CH_3CH_2OH})\\) صفات قاعدية. (تسلك الكحولات كقواعد في الوسط الحمضي)
+final-answer:
+لأن **أكسجين مجموعة OH يمتلك أزواجًا إلكترونية حرة تستقبل البروتون** في الوسط الحمضي.
 solution:
 قاعدة برونستد تستقبل بروتوناً؛ أكسجين الإيثانول يملك زوجين حرين يستطيع أحدهما الارتباط بـ H⁺، فيعمل الكحول قاعدة في الوسط الحمضي.
 
@@ -625,6 +642,8 @@ body:
 سؤال: علل لما يأتي:
 
 يمتلك المركب \\((\\mathrm{CH_3CH_2CH_2OH})\\) صفات أمفوتيرية. (تمتاز الكحولات بصفات أمفوتيرية)
+final-answer:
+لأنه **يمنح بروتونًا من مجموعة OH، ويستقبل بروتونًا بأحد الأزواج الحرة على الأكسجين**؛ فيسلك كحمض أو كقاعدة بحسب الوسط.
 solution:
 الأمفوتيري يستطيع منح بروتون أو استقباله بحسب التفاعل.1-بروبانول يحوي H في OH يمكن نزعه، وأكسجيناً ذا أزواج حرة يستطيع استقبال H⁺؛ نبين التحولين الشكليين:
 
@@ -658,6 +677,8 @@ body:
 سؤال: علل لما يأتي:
 
 لا تصلح عملية أكسدة الكحولات الأولية بدايكرومات البوتاسيوم لتحضير جميع الألدهيدات.
+final-answer:
+لأن **الألدهيدات غير المتطايرة تبقى في الوسط المؤكسد فتتأكسد إلى أحماض كربوكسيلية**؛ أما الألدهيدات الصغيرة المتطايرة فيمكن فصلها عند تكوّنها.
 solution:
 لأن الألدهيد الناتج **يتأكسد بسهولة إلى حمض كربوكسيلي** إذا بقي في الوسط المؤكسد. يوضح الكتاب أن الألدهيدات المتطايرة المحتوية 1–4 كربونات يمكن فصلها بالتطاير قبل استمرار الأكسدة؛ أما غير المتطايرة فلا تناسبها هذه الطريقة لتحضير الألدهيد.
 
@@ -691,6 +712,16 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 (2 - بروبانول) من (1 - بروبانول).
+final-answer:
+**تحضير 2-بروبانول:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>S</mi><msub><mi>O</mi><mn>4</mn></msub><mo separator="true">,</mo><msup><mn>160</mn><mo>∘</mo></msup><mi>C</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><msup><mi>H</mi><mo>+</mo></msup></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub></mrow></math>
+\`\`\`
 solution:
 نحوّل أولاً موضع OH إلى رابطة ثنائية، ثم نعيد إضافتها في الموضع المطلوب. **حذف الماء** من 1-بروبانول ب H₂SO₄ المركز الساخن يعطي البروبين.
 
@@ -724,6 +755,16 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 (2 - بروبانول) من (1 - برومو بروبان).
+final-answer:
+**تحضير 2-بروبانول:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>B</mi><mi>r</mi><mo>+</mo><mi>K</mi><mi>O</mi><mi>H</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>a</mi><mi>l</mi><mi>c</mi><mi>o</mi><mi>h</mi><mi>o</mi><mi>l</mi><mo separator="true">,</mo><mi mathvariant="normal">Δ</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><mi>K</mi><mi>B</mi><mi>r</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><msup><mi>H</mi><mo>+</mo></msup></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub></mrow></math>
+\`\`\`
 solution:
 KOH الكحولي الساخن يسبب حذف H و Br من كربونين متجاورين، فينتج البروبين.
 
@@ -757,6 +798,18 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 إيثوكسيد الصوديوم من الإيثين.
+final-answer:
+**تحضير إيثوكسيد الصوديوم:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><msup><mi>H</mi><mo>+</mo></msup></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>2</mn><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><mn>2</mn><mi>N</mi><mi>a</mi><mo>→</mo><mn>2</mn><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>N</mi><mi>a</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub></mrow></math>
+\`\`\`
+
+يُستعمل الإيثانول **الجاف** في التفاعل الثاني.
 solution:
 نحتاج كحولاً أولاً لتكوين الألكوكسيد. **إضافة الماء** إلى الإيثين بوسط حمضي تعطي الإيثانول؛ طرفا الإيثين متماثلان.
 
@@ -792,6 +845,10 @@ body:
 \\(\\mathrm{CH_3CH_2CH(OH)CH_3\\xrightarrow{K_2Cr_2O_7/H^+}\\underline{\\qquad\\qquad}}\\)
 
 ![الصيغة البنائية للمتفاعل العضوي كما وردت في المصدر](assets/lessons/chemistry/source-crops/chemistry-oj-p195-q08-s1-reactant.webp)
+final-answer:
+**2-بيوتانون:** \\(\\mathrm{CH_3CH_2C(=O)CH_3}\\).
+
+**لا يوجد ناتج عضوي فرعي مقصود.**
 solution:
 الرمز[O] يمثل الأكسجين المكافئ الذي يوفره العامل المؤكسد، وليس غازًا نضيفه منفصلًا.
 
@@ -822,6 +879,8 @@ body:
 
 \\(\\mathrm{CH_3CH_2CH_2OH\\xrightarrow[300^{\\circ}C]{Cu}\\underline{\\qquad\\qquad}}\\)
 
+final-answer:
+**البروبانال:** \\(\\mathrm{CH_3CH_2CHO}\\).
 solution:
 الكحول الأولي تكون مجموعةOH فيه على كربون طرفي متصل بكربون واحد؛ نزع هيدروجينين منه يكوّن مجموعة الألدهيد الطرفيةCHO.
 
@@ -849,6 +908,8 @@ body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
 \\(\\mathrm{CH_3CH_2OH\\xrightarrow[300^{\\circ}C]{Cu}\\underline{\\qquad\\qquad}}\\)
+final-answer:
+**الإيثانال:** \\(\\mathrm{CH_3CHO}\\).
 solution:
 الكحول الأولي تكون مجموعةOH فيه على كربون طرفي متصل بكربون واحد؛ نزع هيدروجينين منه يكوّن مجموعة الألدهيد الطرفيةCHO.
 
@@ -876,6 +937,8 @@ body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
 \\(\\mathrm{CH_3CH_2CH_2OH+Na\\rightarrow\\underline{\\qquad\\qquad}}\\)
+final-answer:
+**بروبوكسيد الصوديوم:** \\(\\mathrm{CH_3CH_2CH_2ONa}\\).
 solution:
 الصوديوم يستبدل H الهيدروكسيل في الكحول فيتكون الألكوكسيد. لأن الهيدروجين غاز H₂، نستخدم 2 كحول و 2Na. الناتج العضوي **بروبوكسيد الصوديوم**.
 
@@ -903,6 +966,9 @@ body:
 \\(\\mathrm{CH_3CH_2C(OH)(CH_3)CH_3\\xrightarrow[160^{\\circ}C]{H_2SO_4}\\underline{\\qquad\\qquad}}\\)
 
 ![الصيغة البنائية للمتفاعل العضوي كما وردت في المصدر](assets/lessons/chemistry/source-crops/chemistry-oj-p195-q10-s5-reactant.webp)
+final-answer:
+- **الرئيس: 2-ميثيل-2-بيوتين** — \\(\\mathrm{CH_3CH=C(CH_3)CH_3}\\).
+- **الفرعي: 2-ميثيل-1-بيوتين** — \\(\\mathrm{CH_3CH_2C(CH_3)=CH_2}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p195-q10-s5-reactant.webp)
 
@@ -940,6 +1006,9 @@ body:
 \\(\\mathrm{CH_3CH_2CH(OH)CH_3\\xrightarrow[160^{\\circ}C]{H_2SO_4}\\underline{\\qquad\\qquad}}\\)
 
 ![الصيغة البنائية للمتفاعل العضوي كما وردت في المصدر](assets/lessons/chemistry/source-crops/chemistry-oj-p195-q11-reactant.webp)
+final-answer:
+- **الرئيس: 2-بيوتين** — \\(\\mathrm{CH_3CH=CHCH_3}\\).
+- **الفرعي: 1-بيوتين** — \\(\\mathrm{CH_3CH_2CH=CH_2}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p195-q11-reactant.webp)
 
@@ -978,6 +1047,8 @@ body:
 
 ![الصيغة البنائية للمتفاعل العضوي كما وردت في المصدر](assets/lessons/chemistry/source-crops/chemistry-oj-p196-q02-reactant.webp)
 
+final-answer:
+**الإيثين:** \\(\\mathrm{CH_2=CH_2}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p196-q02-reactant.webp)
 
@@ -1006,6 +1077,8 @@ body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
 \\(\\mathrm{CH_3CH{=}CH_2\\xrightarrow{H_2O/H^+}\\underline{\\qquad\\qquad}}\\)
+final-answer:
+**2-بروبانول:** \\(\\mathrm{CH_3CH(OH)CH_3}\\).
 solution:
 إضافة الماء إلى ألكين غير متماثل بوسط حمضي تتبع ماركوفنيكوف: يذهب H للطرف الأكثر هيدروجيناً، و OH للكربون الأوسط. الناتج **2-بروبانول**.
 
@@ -1033,6 +1106,8 @@ body:
 \\(\\mathrm{CH_3CH_2CH(OH)CH_3\\xrightarrow{KMnO_4/H^+}\\underline{\\qquad\\qquad}}\\)
 
 ![الصيغة البنائية للمتفاعل العضوي كما وردت في المصدر](assets/lessons/chemistry/source-crops/chemistry-oj-p196-q06-reactant.webp)
+final-answer:
+**2-بيوتانون:** \\(\\mathrm{CH_3CH_2C(=O)CH_3}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p196-q06-reactant.webp)
 
@@ -1060,6 +1135,15 @@ body:
 سؤال: كيف يمكن التمييز مخبريًا بين الأزواج الآتية مستعينًا بالمعادلات؟
 
 (2 - ميثيل - 2 - بروبانول)، (2 - بيوتانول).
+final-answer:
+**الاختبار:** تمرير البخار على النحاس عند **300°س**.
+
+- **2-بيوتانول:** يعطي 2-بيوتانون ويتصاعد الهيدروجين.
+- **2-ميثيل-2-بروبانول:** لا يعطي الهيدروجين بهذا الاختبار.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>C</mi><mi>u</mi><mo separator="true">,</mo><msup><mn>300</mn><mo>∘</mo></msup><mi>C</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mo stretchy="false">(</mo><mo>=</mo><mi>O</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub></mrow></math>
+\`\`\`
 solution:
 نمرر بخار كل عينة على Cu عند 300° س. نزع الهيدروجين يتطلب H على O و H على كربون OH. يتوفر ذلك في 2-بيوتانول الثانوي؛ يتكون الكيتون ويُرصد H₂.
 
@@ -1085,6 +1169,15 @@ body:
 سؤال: كيف يمكن التمييز مخبريًا بين الأزواج الآتية مستعينًا بالمعادلات؟
 
 (1 - بيوتانول)، (2 - ميثيل - 2 - بروبانول).
+final-answer:
+**الاختبار:** تمرير البخار على النحاس عند **300°س**.
+
+- **1-بيوتانول:** يعطي البيوتانال ويتصاعد الهيدروجين.
+- **2-ميثيل-2-بروبانول:** لا يعطي الهيدروجين بهذا الاختبار.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>C</mi><mi>u</mi><mo separator="true">,</mo><msup><mn>300</mn><mo>∘</mo></msup><mi>C</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mi>O</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub></mrow></math>
+\`\`\`
 solution:
 نمرر بخار كل عينة على Cu عند 300° س.1-بيوتانول أولي، فيفقد H من O و H من CH₂OH ويتحول إلى ألدهيد مع H₂.
 
@@ -1111,6 +1204,15 @@ body:
 
 (إيثانول والهكسان).
 
+final-answer:
+**الاختبار:** إضافة الصوديوم إلى العينتين **الجافتين**.
+
+- **الإيثانول:** يتصاعد غاز الهيدروجين.
+- **الهكسان:** لا يتفاعل ولا يتصاعد الهيدروجين.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>2</mn><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><mn>2</mn><mi>N</mi><mi>a</mi><mo>→</mo><mn>2</mn><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>N</mi><mi>a</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub></mrow></math>
+\`\`\`
 solution:
 نضيف الصوديوم إلى عينتين جافتين. الكحول يحوي H في OH يمكن استبداله بالصوديوم، فيتكون الألكوكسيد ويتصاعد H₂. الإيثانول يعطي نتيجة موجبة:
 
@@ -1136,6 +1238,14 @@ body:
 أكمل المخطط الآتي بكتابة الصيغة الكيميائية للمركبات \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo separator="true">,</mo><mi>C</mi><mo separator="true">,</mo><mi>D</mi><mo separator="true">,</mo><mi>E</mi></mrow></math>\`.
 
 ![مخطط تحويل 1-برومو بروبان إلى كحول وألكين ثم مشتقاتهما A إلى E](assets/lessons/curriculum-evidence/68f1e1b8ad9c1c13f60a.webp)
+final-answer:
+| الرمز | الصيغة | الاسم |
+|---|---|---|
+| **A** | CH₃CH₂CH₂OH |1-بروبانول|
+| **B** | CH₃CH=CH₂ |بروبين|
+| **C** | CH₃CH₂COOH |حمض البروبانويك|
+| **D** | CH₃C(=O)CH₃ |بروبانون|
+| **E** | CH₃CH₂COONa |بروبانوات الصوديوم|
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/curriculum-evidence/68f1e1b8ad9c1c13f60a.webp)
 
@@ -1223,6 +1333,17 @@ body:
 ادرس المخطط الآتي، ثم اكتب الصيغ الكيميائية العضوية \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo separator="true">,</mo><mi>C</mi><mo separator="true">,</mo><mi>D</mi><mo separator="true">,</mo><mi>E</mi><mo separator="true">,</mo><mi>F</mi></mrow></math>\` وصيغ المواد أو العوامل المساعدة المشار إليها بالأرقام 1، 2. (8 علامات)
 
 ![مخطط تفاعلات المركبات A إلى F والكاشفين 1 و2](assets/lessons/curriculum-evidence/710f08ce306ff3ef5eac.webp)
+final-answer:
+| الرمز | الصيغة أو العامل |
+|---|---|
+| **A** | CH₃CH₂OH |
+| **B** | CH₃COOH |
+| **C** | CH₃CH₂Cl |
+| **D** | CH₃CH₃ |
+| **E** | CH₂=CH₂ |
+| **F** | CH₃COONa |
+| **1** |LiAlH₄ ثم معالجة مائية|
+| **2** |H₂O/H⁺|
 solution:
 [O] يرمز إلى مكافئ الأكسجين الذي يوفره العامل المؤكسد.
 
@@ -1323,6 +1444,11 @@ body:
 اكتب الصيغ البنائية للمركبات العضوية المشار إليها بالرموز \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo separator="true">,</mo><mi>C</mi><mo separator="true">,</mo><mi>D</mi></mrow></math>\` الواردة في المخطط.
 
 ![تحولات 1-بروبانول إلى البروبانال والحمض والألكين وهاليد الألكيل A إلى D](assets/lessons/curriculum-evidence/158294394f0ce9be9cfc.webp)
+final-answer:
+- **A:** \\(\\mathrm{CH_3CH_2CHO}\\) — البروبانال.
+- **B:** \\(\\mathrm{CH_3CH_2COOH}\\) — حمض البروبانويك.
+- **C:** \\(\\mathrm{CH_3CH=CH_2}\\) — البروبين.
+- **D:** \\(\\mathrm{CH_3CHClCH_3}\\) — 2-كلورو بروبان.
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/curriculum-evidence/158294394f0ce9be9cfc.webp)
 
@@ -1410,6 +1536,8 @@ body:
 ما الناتج العضوي الذي يتكون من تفاعل \\(B\\) مع \\(\\mathrm{H_2O/H^+}\\)؟
 
 ![جدول صيغ المركبات A إلى F؛ A هو الهكسان وC هو 1-كلورو بروبان](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q01-figure.webp)
+final-answer:
+**2-بروبانول:** \\(\\mathrm{CH_3CH(OH)CH_3}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q01-figure.webp)
 
@@ -1439,6 +1567,8 @@ body:
 يمتلك المركب \\(E\\) صفات أمفوتيرية. فسر العبارة.
 
 ![جدول صيغ المركبات A إلى F؛ A هو الهكسان وC هو 1-كلورو بروبان](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q01-figure.webp)
+final-answer:
+**E (1-بروبانول) يمنح بروتونًا من OH ويستقبل بروتونًا بأحد الأزواج الحرة على الأكسجين**؛ فيسلك كحمض أو كقاعدة بحسب الوسط.
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q01-figure.webp)
 
@@ -1481,6 +1611,8 @@ body:
 ما صيغة المركب العضوي الناتج عن معالجة المركب (و) بحمض \\(\\mathrm{H_2SO_4}\\) المركز عند \\(160^\\circ\\mathrm{\\char"0645}\\)؟
 
 ![جدول المركبات أ إلى و: بروبان،1-بروبانول،CH3MgBr،بروبانون،بروبانال،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q02-figure.webp)
+final-answer:
+**البروبين:** \\(\\mathrm{CH_3CH=CH_2}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q02-figure.webp)
 
@@ -1510,6 +1642,8 @@ body:
 ما رمز المركب العضوي الناتج من أكسدة المركب (ب) بتمريره على مسحوق \\(\\mathrm{Cu}\\) عند \\(300^\\circ\\mathrm{\\char"0633}\\)؟
 
 ![جدول المركبات أ إلى و: بروبان،1-بروبانول،CH3MgBr،بروبانون،بروبانال،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q02-figure.webp)
+final-answer:
+**هـ — البروبانال.**
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q02-figure.webp)
 
@@ -1539,6 +1673,8 @@ body:
 ما رمز المركب الذي يتكون من إضافة حمض \\(\\mathrm{H_2SO_4}\\) المركز الساخن إلى المركب (و)؟
 
 ![جدول المركبات أ إلى و: بروبين،1-بروبانول،حمض البروبانويك،بروبانون،بروبانال،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q03-figure.webp)
+final-answer:
+**أ — البروبين.**
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q03-figure.webp)
 
@@ -1568,6 +1704,9 @@ body:
 ما نواتج تفاعل فلز الصوديوم \\(\\mathrm{Na}\\) مع المركب (ب)؟
 
 ![جدول المركبات أ إلى و: بروبين،1-بروبانول،حمض البروبانويك،بروبانون،بروبانال،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q03-figure.webp)
+final-answer:
+- **بروبوكسيد الصوديوم:** \\(\\mathrm{CH_3CH_2CH_2ONa}\\).
+- **غاز الهيدروجين:** \\(\\mathrm{H_2}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q03-figure.webp)
 
@@ -1597,6 +1736,16 @@ body:
 بين بمعادلات كيميائية طريقة تحضير المركب \\(B\\) من المركب \\(A\\).
 
 ![جدول A إلى E:1-برومو بيوتان،2-بيوتانول،حمض الإيثانويك،بيوتانال،2-بيوتانون](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q01-figure.webp)
+final-answer:
+**تحضير B (2-بيوتانول):**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>B</mi><mi>r</mi><mo>+</mo><mi>N</mi><mi>a</mi><mi>O</mi><mi>H</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>a</mi><mi>l</mi><mi>c</mi><mi>o</mi><mi>h</mi><mi>o</mi><mi>l</mi><mo separator="true">,</mo><mi mathvariant="normal">Δ</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><mi>N</mi><mi>a</mi><mi>B</mi><mi>r</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><msup><mi>H</mi><mo>+</mo></msup></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>H</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub></mrow></math>
+\`\`\`
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q01-figure.webp)
 
@@ -1634,6 +1783,8 @@ body:
 ما صيغة المركب الناتج من إضافة حمض \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi mathvariant="normal">H</mi><mn>2</mn></msub><mi mathvariant="normal">S</mi><msub><mi mathvariant="normal">O</mi><mn>4</mn></msub></mrow></math>\` المركز الساخن إلى المركب (و)؟
 
 ![جدول أ إلى و:بروبين،بروبانون،بروبانال،حمض البروبانويك،1-بروبانول،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q02-figure.webp)
+final-answer:
+**البروبين:** \\(\\mathrm{CH_3CH=CH_2}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q02-figure.webp)
 
@@ -1663,6 +1814,8 @@ body:
 ما صيغة المركب الناتج من إضافة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="normal">H</mi><mo>+</mo></msup><mi mathvariant="normal">/</mi><msub><mi mathvariant="normal">K</mi><mn>2</mn></msub><mi mathvariant="normal">C</mi><msub><mi mathvariant="normal">r</mi><mn>2</mn></msub><msub><mi mathvariant="normal">O</mi><mn>7</mn></msub></mrow></math>\` إلى المركب (و)؟
 
 ![جدول أ إلى و:بروبين،بروبانون،بروبانال،حمض البروبانويك،1-بروبانول،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q02-figure.webp)
+final-answer:
+**البروبانون:** \\(\\mathrm{CH_3C(=O)CH_3}\\).
 solution:
 [O] يرمز إلى مكافئ الأكسجين الذي يوفره العامل المؤكسد.
 
@@ -1694,6 +1847,8 @@ body:
 ما صيغة المركب الذي يمثل كحولاً ثانوياً؟
 
 ![جدول أ إلى و:بروبين،بروبانون،بروبانال،حمض البروبانويك،1-بروبانول،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q02-figure.webp)
+final-answer:
+**و — 2-بروبانول:** \\(\\mathrm{CH_3CH(OH)CH_3}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q02-figure.webp)
 
@@ -1715,6 +1870,8 @@ body:
 اكتب الصيغة البنائية للمركب العضوي الذي ينتج من تفاعل المركب (2) مع \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">O</mi><mi mathvariant="normal">H</mi></mrow></math>\` المائي.
 
 ![جدول1 إلى6:إيثانول،كلورو إيثان،بروبانون،بروبين،إيثانال،2-ميثيل-2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q03-figure.webp)
+final-answer:
+**الإيثانول:** \\(\\mathrm{CH_3CH_2OH}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q03-figure.webp)
 
@@ -1744,6 +1901,12 @@ body:
 اكتب معادلة تفاعل إضافة الماء إلى المركب (4) في وسط حمضي.
 
 ![جدول1 إلى6:إيثانول،كلورو إيثان،بروبانون،بروبين،إيثانال،2-ميثيل-2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q03-figure.webp)
+final-answer:
+**معادلة التفاعل:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><msup><mi>H</mi><mo>+</mo></msup></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub></mrow></math>
+\`\`\`
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q03-figure.webp)
 
@@ -1774,6 +1937,8 @@ body:
 
 ![جدول1 إلى6:إيثانول،كلورو إيثان،بروبانون،بروبين،إيثانال،2-ميثيل-2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q03-figure.webp)
 
+final-answer:
+**الإيثين:** \\(\\mathrm{CH_2=CH_2}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q03-figure.webp)
 
@@ -1803,6 +1968,8 @@ body:
 ما نواتج تفاعل المركب (6) مع \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">K</mi><mi mathvariant="normal">M</mi><mi mathvariant="normal">n</mi><msub><mi mathvariant="normal">O</mi><mn>4</mn></msub></mrow></math>\`؟
 
 ![جدول1 إلى6:إيثانول،كلورو إيثان،بروبانون،بروبين،إيثانال،2-ميثيل-2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q03-figure.webp)
+final-answer:
+**لا يحدث تفاعل الأكسدة المعتاد** مع برمنغنات البوتاسيوم في الشروط المذكورة؛ يبقى **2-ميثيل-2-بروبانول** دون تأكسد.
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q03-figure.webp)
 
@@ -1824,6 +1991,12 @@ body:
 وضح بمعادلة كيميائية تفاعل المركب \\(X\\) مع \\(\\mathrm{HCl}\\).
 
 ![جدول معلومات المركبين X وZ؛ X كحول يتأكسد إلى ألدهيد وZ يعطي راسب فهلنج](assets/lessons/chemistry/source-crops/chemistry-oj-p200-q01-figure.webp)
+final-answer:
+**الناتج العضوي: 1-كلورو بروبان.**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><mi>H</mi><mi>C</mi><mi>l</mi><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>l</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p200-q01-figure.webp)
 
@@ -1851,6 +2024,8 @@ body:
 اكتب صيغة واسم الناتج العضوي في التفاعل الذي يحدث في الحالات الآتية: (10 علامات)
 
 تمرير بخار 1-بيوتانول على مسحوق نحاس عند درجة حرارة \\(400^\\circ\\mathrm{\\char"0633}\\).
+final-answer:
+**البيوتانال:** \\(\\mathrm{CH_3CH_2CH_2CHO}\\).
 solution:
 1-بيوتانول كحول أولي؛ النحاس الساخن ينزع هيدروجينين من OH وكربونها، فيتحول CH₂OH إلى CHO. الناتج **بيوتانال CH₃CH₂CH₂CHO** و H₂.
 

@@ -27,6 +27,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 Coincidences …………
 
+final-answer:
+Story **B** is a coincidence.
 solution:
 المصادفة في القصة B هي لقاء صديقة قديمة في القطار بعد أيام قليلة من الحديث عنها، دون ترتيب مسبق.
 
@@ -64,6 +66,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 Misunderstanding …………
 
+final-answer:
+Story **C** is a misunderstanding.
 solution:
 ظن الرجل أن الشخص الذي أمامه زميله دان، فربت على رأس غريب. هذا الخطأ في تحديد الشخص هو سوء الفهم.
 
@@ -101,6 +105,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 Unintended meaning …………
 
+final-answer:
+Story **A** illustrates an unintended meaning.
 solution:
 أرادت الأم تقديم هدية لطيفة، لكن كلام فاطمة عن الموز القديم أوصل معنى محرجاً غير مقصود؛ لذلك يناسب القصة عنوان المعنى غير المقصود.
 
@@ -138,6 +144,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 Why did Fatima’s mother suggest taking banana cakes to her neighbor Mr. Aziz?
 
+final-answer:
+Fatima’s mother suggested taking a banana cake to Mr Aziz because **they had tried one and found it delicious**.
 solution:
 **الإجابة:** Fatima’s mother suggested taking a banana cake to Mr Aziz because they had tried one and found it delicious.
 
@@ -178,6 +186,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 What happened while Suzan was travelling to the office?
 
+final-answer:
+While Suzan was travelling to the office, she saw **her old school friend Jan on the train**.
 solution:
 **الإجابة:** While Suzan was travelling to the office, she saw her old school friend Jan on the train.
 
@@ -221,6 +231,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 What does the company often do each year?
 
+final-answer:
+The company organises **a day of meetings for people who work from home**, **three or four times a year**.
 solution:
 **الإجابة:** The company organises a day of meetings for people who work from home three or four times a year.
 
@@ -261,6 +273,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 How did the short bald man react to the situation?
 
+final-answer:
+The short bald man was **rather formal** and **did not see the funny side** of the situation.
 solution:
 **الإجابة:** The short bald man was rather formal and did not see the funny side of the situation.
 
@@ -458,6 +472,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 Fatima told Mr. Aziz that they made cakes from the old bananas instead of …………
 
+final-answer:
+Fatima told Mr Aziz that they made cakes from the old bananas instead of **throwing them away**.
 solution:
 **الإجابة:** Fatima told Mr Aziz that they made cakes from the old bananas instead of throwing them away.
 
@@ -498,6 +514,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 While Suzan was talking to her old school friend, she …………
 
+final-answer:
+While Suzan was talking to her old school friend, she **heard her friend mention another person called Jan**.
 solution:
 **الإجابة:** While Suzan was talking to her old school friend, she heard her friend mention another person called Jan.
 
@@ -541,6 +559,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 In the last company meeting, the man went straight to bed because he …………
 
+final-answer:
+In the last company meeting, the man went straight to bed because **he had arrived late at the hotel**.
 solution:
 **الإجابة:** In the last company meeting, the man went straight to bed because he had arrived late at the hotel.
 
@@ -581,6 +601,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 Them (story A)
 
+final-answer:
+“Them” refers to **the banana cakes**.
 solution:
 الضمير مفعول للفعل making؛ والأم وابنتها كانتا تصنعان الكعك، لذلك يعود إلى banana cakes.
 
@@ -618,6 +640,8 @@ About three or four times a year, a company that I do some work for organizes a 
 
 Her (story B)
 
+final-answer:
+“Her” refers to **Jan**.
 solution:
 يأتي الضمير بعد ذكر Jan، الصديقة التي لم يسمعا أخبارها منذ أكثر من عشر سنوات. في الكتاب المرفق يُكتب الاسم Jan.
 
@@ -652,6 +676,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 What do people think of coincidences?
 
+final-answer:
+People often think coincidences are **evidence of something mysterious happening** or of **a hidden plan outside our knowledge**.
 solution:
 **الإجابة:** People often think coincidences are evidence of something mysterious happening or of a hidden plan outside our knowledge.
 
@@ -689,6 +715,9 @@ The other part of the scientific explanation for coincidences is simply that the
 
 What two definitions of “coincidences” does the writer give?
 
+final-answer:
+1. **Events that unexpectedly happen at the same time for no clear reason.**
+2. **Unexpected connections between seemingly random things or people.**
 solution:
 **الإجابة:** a. Coincidences are events that unexpectedly happen at the same time for no clear reason.
 b. They can also be unexpected connections between seemingly random things or people.
@@ -727,6 +756,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 How does the writer prove coincidences scientifically?
 
+final-answer:
+The writer uses **a mathematical calculation of shared-birthday probabilities**.
 solution:
 **الإجابة:** The writer uses a mathematical calculation of shared-birthday probabilities to explain coincidences scientifically.
 
@@ -764,6 +795,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 When do you definitely come across coincidences?
 
+final-answer:
+You will definitely come across coincidences **if you are the kind of person who talks to strangers**.
 solution:
 **الإجابة:** According to the text, you will definitely come across coincidences if you are the kind of person who talks to strangers.
 
@@ -909,6 +942,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 this
 
+final-answer:
+“This” refers to **running into someone you know from home while on holiday in another country**.
 solution:
 الضمير في experiences like this يشير إلى مثال الفقرة السابقة: لقاء شخص تعرفه من وطنك في بلد آخر من غير أن يخطط أحدكما لذلك.
 
@@ -943,6 +978,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 them
 
+final-answer:
+“Them” refers to **the fifty people reading these words**.
 solution:
 العبارة one of them تأتي بعد افتراض وجود fifty people reading these words، فتعود إلى هؤلاء القراء الخمسين.
 
@@ -977,6 +1014,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 it
 
+final-answer:
+“It” refers to **the scientific explanation**.
 solution:
 في reluctant to accept it، الشيء الذي يتردد بعض الناس في قبوله هو التفسير العلمي المذكور في بداية الجملة.
 
@@ -1011,6 +1050,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 10000
 
+final-answer:
+**Over 10,000:** the estimated number of people you have had some kind of connection with during your life.
 solution:
 **الإجابة:** Over 10,000 is the estimated number of people you have had some kind of connection with during your life.
 
@@ -1048,6 +1089,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 What do people often think of strange coincidences?
 
+final-answer:
+People often think strange coincidences are **evidence of something mysterious** or of **a hidden plan outside our knowledge**.
 solution:
 **الإجابة:** People often think strange coincidences are evidence of something mysterious or of a hidden plan outside our knowledge.
 
@@ -1085,6 +1128,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 How are strange coincidences explained by science?
 
+final-answer:
+Science explains coincidences through **mathematical probability** and **the large number of events and connections in our lives**.
 solution:
 **الإجابة:** Science explains coincidences through mathematical probability and the large number of events and connections in our lives.
 
@@ -1128,6 +1173,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 Why does the writer think some people don’t want to believe in scientific explanation for strange coincidences?
 
+final-answer:
+Some people are reluctant to accept the scientific explanation because **it is less exciting than a mysterious explanation**.
 solution:
 **الإجابة:** Some people are reluctant to accept the scientific explanation because it is less exciting than a mysterious explanation.
 
@@ -1167,6 +1214,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 You will absolutely come across coincidences if …………
 
+final-answer:
+You will absolutely come across coincidences **if you are the kind of person who talks to strangers**.
 solution:
 **الإجابة:** You will absolutely come across coincidences if you are the kind of person who talks to strangers.
 
@@ -1349,6 +1398,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 There (line 4)
 
+final-answer:
+“There” refers to **the other country where you are on holiday**.
 solution:
 في going there too، المقصود المكان المذكور قبلها: البلد الآخر الذي تقضي فيه عطلتك.
 
@@ -1383,6 +1434,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 it (line 7)
 
+final-answer:
+“It” refers to **the scientific explanation**.
 solution:
 الضمير مفعول accept، ويعود إلى التفسير العلمي الذي يصفه الكاتب بأنه أقل إثارة.
 
@@ -1593,6 +1646,9 @@ The other part of the scientific explanation for coincidences is simply that the
 
 ………… way and ………… show that coincidences are not surprising or strange as people believe.
 
+final-answer:
+1. **The mathematical way.**
+2. **The large number of events and connections in our lives.**
 solution:
 **الإجابة:** The mathematical way and the large number of events and connections in our lives show why coincidences are not really surprising.
 
@@ -1640,6 +1696,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 50%
 
+final-answer:
+**50%:** the approximate chance that at least two people in a group of **23** share a birthday.
 solution:
 **الإجابة:** 50% is the approximate chance that at least two people in a group of 23 share a birthday.
 
@@ -1680,6 +1738,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 48 (line 12)
 
+final-answer:
+**48:** the number of people in a room for which the text gives an approximately **95%** chance of a shared birthday.
 solution:
 **الإجابة:** 48 is the number of people in a room for which the text gives an approximately 95% chance of a shared birthday.
 
@@ -1720,6 +1780,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 me
 
+final-answer:
+“Me” refers to **the writer**.
 solution:
 في same birthday as me يتحدث الكاتب عن نفسه، فيعود ضمير المتكلم me إلى كاتب النص.
 
@@ -1754,6 +1816,8 @@ The other part of the scientific explanation for coincidences is simply that the
 
 The more there will be
 
+final-answer:
+“The more there will be” means **there will be more people with whom you have had some kind of connection**.
 solution:
 المقارنة تربط زيادة العمر بزيادة عدد الأشخاص الذين اتصلت بهم في حياتك؛ فالمحذوف بعد more هو people.
 

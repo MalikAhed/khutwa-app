@@ -152,7 +152,7 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor }) => {
     const mcq=parseLessonMarkdown(lesson.authoringSource).steps.find(s=>s.type==='mcq');
     window.mountLayoutLesson=(type)=>{
       window.stopLayoutLesson?.();
-      const step=type==='mcq' ? mcq : {id:'layout-flashcard',type:'exam-question',content:{body:'ما الخطوة التالية؟',solution:'راجع الإجابة ثم تابع.'}};
+      const step=type==='mcq' ? mcq : {id:'layout-flashcard',type:'exam-question',content:{body:'ما الخطوة التالية؟',finalAnswer:'راجع الإجابة ثم تابع.',solution:'راجع الإجابة ثم تابع.'}};
       window.stopLayoutLesson=renderAuthoredInteractiveLesson(document.querySelector('#lesson-content'),'الدرس',lesson,[step],{isLessonPart:true});
     };
   })()`);

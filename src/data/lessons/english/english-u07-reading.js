@@ -24,6 +24,8 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 4 .............. Charity worker, Ben Harper: 'I can understand why this work comes so high in the list. It's the job satisfaction, isn't it? A lot of people probably feel they'd rather do something to help others than work for a company making money for someone else. But the thing is that for most charity workers, it's just an office job. Even non-profit organizations have to be run like businesses these days. The people at the top are paid well, but those lower down are often volunteers.'
 
 Paragraph 1: ..............
+final-answer:
+**b. airline pilot**
 solution:
 **الإجابة:** b. airline pilot
 
@@ -61,6 +63,8 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 4 .............. Charity worker, Ben Harper: 'I can understand why this work comes so high in the list. It's the job satisfaction, isn't it? A lot of people probably feel they'd rather do something to help others than work for a company making money for someone else. But the thing is that for most charity workers, it's just an office job. Even non-profit organizations have to be run like businesses these days. The people at the top are paid well, but those lower down are often volunteers.'
 
 Paragraph 2: ..............
+final-answer:
+**c. TV and theatre actor**
 solution:
 **الإجابة:** c. TV and theatre actor
 
@@ -98,6 +102,8 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 4 .............. Charity worker, Ben Harper: 'I can understand why this work comes so high in the list. It's the job satisfaction, isn't it? A lot of people probably feel they'd rather do something to help others than work for a company making money for someone else. But the thing is that for most charity workers, it's just an office job. Even non-profit organizations have to be run like businesses these days. The people at the top are paid well, but those lower down are often volunteers.'
 
 Paragraph 3: ..............
+final-answer:
+**a. Musician and singer**
 solution:
 **الإجابة:** a. Musician and singer
 
@@ -135,6 +141,8 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 4 .............. Charity worker, Ben Harper: 'I can understand why this work comes so high in the list. It's the job satisfaction, isn't it? A lot of people probably feel they'd rather do something to help others than work for a company making money for someone else. But the thing is that for most charity workers, it's just an office job. Even non-profit organizations have to be run like businesses these days. The people at the top are paid well, but those lower down are often volunteers.'
 
 Paragraph 4: ..............
+final-answer:
+**d. charity worker**
 solution:
 **الإجابة:** d. charity worker
 
@@ -175,6 +183,9 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 Negatives of the job:
 1. It is not exciting because ..............
 2. There is no ..............
+final-answer:
+1. You do not see the world, just **the insides of airports**.
+2. **Little job security**.
 solution:
 **الإجابة:** 1. You do not see the world, just the insides of airports.
 2. Job security.
@@ -219,6 +230,10 @@ Negatives of the job:
 1. ..............
 2. ..............
 3. ..............
+final-answer:
+1. **Pressure.**
+2. **Stage fright.**
+3. **Long periods without work.**
 solution:
 **الإجابة:** 1. Pressure.
 2. Stage fright.
@@ -262,6 +277,10 @@ Negatives of the job:
 1. ..............
 2. ..............
 3. ..............
+final-answer:
+1. **Late nights.**
+2. **Long hours practicing.**
+3. **Not being paid enough.**
 solution:
 الأجر الذي يكفي الطعام بالكاد والحاجة إلى دخل آخر يفسران عبارة Not being paid enough في الإجابة؛ إنها خلاصة للمعنى، وليست اقتباساً حرفياً.
 
@@ -303,6 +322,8 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 | Name | Negatives of the job |
 |---|---|
 | Ben Harper | Even non-profit organisations have to be run like businesses: the people at the top are paid well, but .............. |
+final-answer:
+**those lower down are often volunteers.**
 solution:
 **الإجابة:** those lower down are often volunteers.
 
@@ -338,6 +359,8 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 4 .............. Charity worker, Ben Harper: 'I can understand why this work comes so high in the list. It's the job satisfaction, isn't it? A lot of people probably feel they'd rather do something to help others than work for a company making money for someone else. But the thing is that for most charity workers, it's just an office job. Even non-profit organizations have to be run like businesses these days. The people at the top are paid well, but those lower down are often volunteers.'
 
 What is the purpose of the survey?
+final-answer:
+**To reveal the top ten dream jobs.**
 solution:
 **الإجابة:** To reveal the top ten dream jobs.
 
@@ -375,6 +398,8 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 4 .............. Charity worker, Ben Harper: 'I can understand why this work comes so high in the list. It's the job satisfaction, isn't it? A lot of people probably feel they'd rather do something to help others than work for a company making money for someone else. But the thing is that for most charity workers, it's just an office job. Even non-profit organizations have to be run like businesses these days. The people at the top are paid well, but those lower down are often volunteers.'
 
 Why is James satisfied with his job at the moment?
+final-answer:
+**Because he is young and single.**
 solution:
 **الإجابة:** Because he is young and single.
 
@@ -412,6 +437,8 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 4 .............. Charity worker, Ben Harper: 'I can understand why this work comes so high in the list. It's the job satisfaction, isn't it? A lot of people probably feel they'd rather do something to help others than work for a company making money for someone else. But the thing is that for most charity workers, it's just an office job. Even non-profit organizations have to be run like businesses these days. The people at the top are paid well, but those lower down are often volunteers.'
 
 Where does the trick lie in a musician's job?
+final-answer:
+**In making a living from the job.**
 solution:
 **الإجابة:** In making a living from the job.
 
@@ -556,6 +583,8 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 4 .............. Charity worker, Ben Harper: 'I can understand why this work comes so high in the list. It's the job satisfaction, isn't it? A lot of people probably feel they'd rather do something to help others than work for a company making money for someone else. But the thing is that for most charity workers, it's just an office job. Even non-profit organizations have to be run like businesses these days. The people at the top are paid well, but those lower down are often volunteers.'
 
 Why does James’s job suit him at present?
+final-answer:
+**Because he is young and single.**
 solution:
 **الإجابة:** Because he is young and single.
 
@@ -593,6 +622,10 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 4 .............. Charity worker, Ben Harper: 'I can understand why this work comes so high in the list. It's the job satisfaction, isn't it? A lot of people probably feel they'd rather do something to help others than work for a company making money for someone else. But the thing is that for most charity workers, it's just an office job. Even non-profit organizations have to be run like businesses these days. The people at the top are paid well, but those lower down are often volunteers.'
 
 What are the negatives of being a theatre actor?
+final-answer:
+- **Stage fright.**
+- **Pressure.**
+- **Long periods without work.**
 solution:
 **الإجابة:** Stage fright, pressure and long periods without work.
 
@@ -631,6 +664,11 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 
 How do musicians see their jobs?
 a. .............. b. .............. c. .............. d. ..............
+final-answer:
+- a. **Late nights.**
+- b. **Long hours practising.**
+- c. **Travelling from place to place.**
+- d. **Being paid just enough to put food on the table.**
 solution:
 **الإجابة:** a. Late nights.
 b. Long hours practicing.
@@ -784,6 +822,8 @@ A survey of 3,000 workers in the UK has revealed the top ten dream jobs. Being d
 4 .............. Charity worker, Ben Harper: 'I can understand why this work comes so high in the list. It's the job satisfaction, isn't it? A lot of people probably feel they'd rather do something to help others than work for a company making money for someone else. But the thing is that for most charity workers, it's just an office job. Even non-profit organizations have to be run like businesses these days. The people at the top are paid well, but those lower down are often volunteers.'
 
 Anyone can become a musician, but the trick is ..............
+final-answer:
+**To make a living from it.**
 solution:
 **الإجابة:** To make a living from it.
 
@@ -817,6 +857,8 @@ The emphasis on employment continues during the first two years at Milton and th
 Throughout their secondary education, students have professional careers advice which costs the school over £30,000 a year. Head teacher Harriet Downs believes it's worth **it**. 'Teachers aren't trained as careers advisers,' she says, 'so we bring in professional help. It's part of a coordinated program **that** aims to make students aware of the employment options available, and how to make the most of **them**. It's too late to start talking about work in their final year.'
 
 What claim does Milton Secondary School take seriously?
+final-answer:
+**Preparing students for the world of work.**
 solution:
 **الإجابة:** Preparing students for the world of work.
 
@@ -850,6 +892,8 @@ The emphasis on employment continues during the first two years at Milton and th
 Throughout their secondary education, students have professional careers advice which costs the school over £30,000 a year. Head teacher Harriet Downs believes it's worth **it**. 'Teachers aren't trained as careers advisers,' she says, 'so we bring in professional help. It's part of a coordinated program **that** aims to make students aware of the employment options available, and how to make the most of **them**. It's too late to start talking about work in their final year.'
 
 Why do future students get an informal interview at their primary school?
+final-answer:
+**To discuss their hopes and preferences for the future.**
 solution:
 **الإجابة:** To discuss their hopes and preferences for the future.
 
@@ -883,6 +927,8 @@ The emphasis on employment continues during the first two years at Milton and th
 Throughout their secondary education, students have professional careers advice which costs the school over £30,000 a year. Head teacher Harriet Downs believes it's worth **it**. 'Teachers aren't trained as careers advisers,' she says, 'so we bring in professional help. It's part of a coordinated program **that** aims to make students aware of the employment options available, and how to make the most of **them**. It's too late to start talking about work in their final year.'
 
 Why aren't teachers at Milton school expected to give students professional careers advice?
+final-answer:
+**Because they are not trained as careers advisers.**
 solution:
 **الإجابة:** Because they are not trained as careers advisers.
 
@@ -918,6 +964,9 @@ Throughout their secondary education, students have professional careers advice 
 What is the purpose of the coordinated program?
 a. ..............
 b. ..............
+final-answer:
+- a. **To make students aware of the employment options available.**
+- b. **To show them how to make the most of these options.**
 solution:
 **الإجابة:** a. To make students aware of the employment options available.
 b. To show them how to make the most of these options.
@@ -961,6 +1010,15 @@ Steps being followed:
 | during the first two years | .............. |
 | In the third year | .............. |
 | Two years later | .............. |
+final-answer:
+General aim: **Preparing students for the world of work.**
+
+| Period of time | What should be done |
+|---|---|
+| Before joining Milton | **An informal interview** at primary school to discuss hopes and preferences. |
+| During the first two years | **The emphasis on employment continues.** |
+| In the third year | **One day of work experience** with a local company. |
+| Two years later | **A whole week with a company**, usually arranged by the students themselves. |
 solution:
 **الإجابة:** General aim: Preparing students for the world of work.
 
@@ -1156,6 +1214,8 @@ The emphasis on employment continues during the first two years at Milton and th
 Throughout their secondary education, students have professional careers advice which costs the school over £30,000 a year. Head teacher Harriet Downs believes it's worth **it**. 'Teachers aren't trained as careers advisers,' she says, 'so we bring in professional help. It's part of a coordinated program **that** aims to make students aware of the employment options available, and how to make the most of **them**. It's too late to start talking about work in their final year.'
 
 the claim ..............
+final-answer:
+**Preparing students for the world of work.**
 solution:
 **Answer:** Preparing students for the world of work.
 
@@ -1186,6 +1246,8 @@ The emphasis on employment continues during the first two years at Milton and th
 Throughout their secondary education, students have professional careers advice which costs the school over £30,000 a year. Head teacher Harriet Downs believes it's worth **it**. 'Teachers aren't trained as careers advisers,' she says, 'so we bring in professional help. It's part of a coordinated program **that** aims to make students aware of the employment options available, and how to make the most of **them**. It's too late to start talking about work in their final year.'
 
 this ..............
+final-answer:
+**Doing work experience.**
 solution:
 **Answer:** Doing work experience.
 
@@ -1216,6 +1278,8 @@ The emphasis on employment continues during the first two years at Milton and th
 Throughout their secondary education, students have professional careers advice which costs the school over £30,000 a year. Head teacher Harriet Downs believes it's worth **it**. 'Teachers aren't trained as careers advisers,' she says, 'so we bring in professional help. It's part of a coordinated program **that** aims to make students aware of the employment options available, and how to make the most of **them**. It's too late to start talking about work in their final year.'
 
 it ..............
+final-answer:
+**The cost of professional careers advice: over £30,000 a year.**
 solution:
 **Answer:** The cost of professional careers advice: over £30,000 a year.
 
@@ -1246,6 +1310,8 @@ The emphasis on employment continues during the first two years at Milton and th
 Throughout their secondary education, students have professional careers advice which costs the school over £30,000 a year. Head teacher Harriet Downs believes it's worth **it**. 'Teachers aren't trained as careers advisers,' she says, 'so we bring in professional help. It's part of a coordinated program **that** aims to make students aware of the employment options available, and how to make the most of **them**. It's too late to start talking about work in their final year.'
 
 that ..............
+final-answer:
+**The coordinated program.**
 solution:
 **Answer:** The coordinated program.
 
@@ -1276,6 +1342,8 @@ The emphasis on employment continues during the first two years at Milton and th
 Throughout their secondary education, students have professional careers advice which costs the school over £30,000 a year. Head teacher Harriet Downs believes it's worth **it**. 'Teachers aren't trained as careers advisers,' she says, 'so we bring in professional help. It's part of a coordinated program **that** aims to make students aware of the employment options available, and how to make the most of **them**. It's too late to start talking about work in their final year.'
 
 them ..............
+final-answer:
+**Employment options.**
 solution:
 **Answer:** Employment options.
 
@@ -1339,6 +1407,8 @@ In a speech yesterday, the Education Minister advised students to avoid arts sub
 It quickly became clear that the minister's words were controversial, with teachers and university heads reacting strongly to his advice. 'Of course, science and technology are important,' said one, 'but it would be completely wrong to neglect the arts. **They** provide important skills and an understanding of the world and people in general. Also, the economy depends as much on creativity as on technical knowledge.'
 
 How can students improve their job prospects, according to the minister's speech?
+final-answer:
+**By avoiding arts subjects and choosing science or maths.**
 solution:
 **الإجابة:** By avoiding arts subjects and choosing science or maths.
 
@@ -1370,6 +1440,8 @@ In a speech yesterday, the Education Minister advised students to avoid arts sub
 It quickly became clear that the minister's words were controversial, with teachers and university heads reacting strongly to his advice. 'Of course, science and technology are important,' said one, 'but it would be completely wrong to neglect the arts. **They** provide important skills and an understanding of the world and people in general. Also, the economy depends as much on creativity as on technical knowledge.'
 
 What was the reason for choosing arts subjects by students in the past?
+final-answer:
+**They did not have a clear idea of what they wanted to do in the future and felt that arts subjects involved skills useful for many different jobs.**
 solution:
 **الإجابة:** They did not have a clear idea of what they wanted to do in the future and felt that arts subjects involved skills useful for many different jobs.
 
@@ -1401,6 +1473,9 @@ In a speech yesterday, the Education Minister advised students to avoid arts sub
 It quickly became clear that the minister's words were controversial, with teachers and university heads reacting strongly to his advice. 'Of course, science and technology are important,' said one, 'but it would be completely wrong to neglect the arts. **They** provide important skills and an understanding of the world and people in general. Also, the economy depends as much on creativity as on technical knowledge.'
 
 Why do university heads believe that arts subjects are important?
+final-answer:
+- **Important skills and an understanding of the world and people.**
+- **Creativity**, on which the economy depends as much as technical knowledge.
 solution:
 **الإجابة:** They provide important skills and an understanding of the world and people. The economy also depends as much on creativity as on technical knowledge.
 
@@ -1432,6 +1507,8 @@ In a speech yesterday, the Education Minister advised students to avoid arts sub
 It quickly became clear that the minister's words were controversial, with teachers and university heads reacting strongly to his advice. 'Of course, science and technology are important,' said one, 'but it would be completely wrong to neglect the arts. **They** provide important skills and an understanding of the world and people in general. Also, the economy depends as much on creativity as on technical knowledge.'
 
 The education Minister advises students to stop choosing ..............
+final-answer:
+**arts subjects**
 solution:
 **الإجابة:** arts subjects
 
@@ -1463,6 +1540,8 @@ In a speech yesterday, the Education Minister advised students to avoid arts sub
 It quickly became clear that the minister's words were controversial, with teachers and university heads reacting strongly to his advice. 'Of course, science and technology are important,' said one, 'but it would be completely wrong to neglect the arts. **They** provide important skills and an understanding of the world and people in general. Also, the economy depends as much on creativity as on technical knowledge.'
 
 Science and maths subjects are more likely to help students improve their ..............
+final-answer:
+**job prospects**
 solution:
 **الإجابة:** job prospects
 
@@ -1496,6 +1575,8 @@ In a speech yesterday, the Education Minister advised students to avoid arts sub
 It quickly became clear that the minister's words were controversial, with teachers and university heads reacting strongly to his advice. 'Of course, science and technology are important,' said one, 'but it would be completely wrong to neglect the arts. **They** provide important skills and an understanding of the world and people in general. Also, the economy depends as much on creativity as on technical knowledge.'
 
 their (line 2) ..............
+final-answer:
+**students**
 solution:
 **Answer:** students
 
@@ -1524,6 +1605,8 @@ In a speech yesterday, the Education Minister advised students to avoid arts sub
 It quickly became clear that the minister's words were controversial, with teachers and university heads reacting strongly to his advice. 'Of course, science and technology are important,' said one, 'but it would be completely wrong to neglect the arts. **They** provide important skills and an understanding of the world and people in general. Also, the economy depends as much on creativity as on technical knowledge.'
 
 this (line 4) ..............
+final-answer:
+**choosing arts subjects**
 solution:
 **Answer:** choosing arts subjects
 
@@ -1552,6 +1635,8 @@ In a speech yesterday, the Education Minister advised students to avoid arts sub
 It quickly became clear that the minister's words were controversial, with teachers and university heads reacting strongly to his advice. 'Of course, science and technology are important,' said one, 'but it would be completely wrong to neglect the arts. **They** provide important skills and an understanding of the world and people in general. Also, the economy depends as much on creativity as on technical knowledge.'
 
 ones (line 7) ..............
+final-answer:
+**subjects**
 solution:
 **Answer:** subjects
 
@@ -1580,6 +1665,8 @@ In a speech yesterday, the Education Minister advised students to avoid arts sub
 It quickly became clear that the minister's words were controversial, with teachers and university heads reacting strongly to his advice. 'Of course, science and technology are important,' said one, 'but it would be completely wrong to neglect the arts. **They** provide important skills and an understanding of the world and people in general. Also, the economy depends as much on creativity as on technical knowledge.'
 
 They (line 12) ..............
+final-answer:
+**arts subjects**
 solution:
 **Answer:** arts subjects
 

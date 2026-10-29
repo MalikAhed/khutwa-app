@@ -52,7 +52,7 @@ try {
         const host=document.createElement('section');host.className='ready-lesson-stage';elements.lessonContent.replaceChildren(host);
         const options={locale:'ar',onContinue:()=>{},beforeAnswer:()=>resources.get(owner).hearts===0&&!resources.get(owner).unlimited?'نفدت القلوب':undefined,onAnswer:()=>resources.spend(owner,crypto.randomUUID())};
         stopQuestion=written
-          ?renderExamQuestion(host,{id:'written-resource',content:{title:'الكتاب المدرسي ص 3',body:'ما المقصود بالنموذج؟',solution:'واجهة للتعامل مع البيانات.'}},options)
+          ?renderExamQuestion(host,{id:'written-resource',content:{title:'الكتاب المدرسي ص 3',body:'ما المقصود بالنموذج؟',finalAnswer:'واجهة للتعامل مع البيانات.',solution:'واجهة للتعامل مع البيانات.'}},options)
           :renderQuestion(host,{...options,definition:{id:'mcq-resource',type:'mcq',content:{title:'امتحان سابق',prompt:'اختر الإجابة الصحيحة.',answers:[{id:'a',text:'الأولى',correct:true},{id:'b',text:'الثانية',correct:false}]}}});
         mountQuestionFeedback({host,shell:elements.lessonShell,signal:controller.signal,locale:'ar',feedback:{report:async()=>({status:'saved'}),getRating:()=>null}});
       };

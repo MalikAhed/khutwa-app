@@ -8,6 +8,8 @@ reference: الكتاب، ص ٥٢، مثال ١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 عددان موجبان مجموعهما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٦٠</mn></math>\`، جد العددين إذا كان حاصل ضربهما أكبر ما يمكن.
+final-answer:
+**العددان: ٣٠ و٣٠.**
 solution:
 نسمي العدد الأول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، فيكون الآخر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٦٠</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\`. كلاهما موجب، لذا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٠</mn><mo>&lt;</mo><mi mathvariant="normal">س</mi></mrow><mo>&lt;</mo><mn dir="ltr">٦٠</mn></mrow></math>\`. نريد تكبير حاصل ضربهما.
 
@@ -61,6 +63,8 @@ body:
 يراد صنع صندوق هدايا بقاعدة مربعة الشكل من الكرتون المقوى حجمه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٨</mn><mi mathvariant="normal">د</mi></mrow><mrow><msup><mi mathvariant="normal">سم</mi><mrow><mn dir="ltr">٣</mn></mrow></msup></mrow></mrow></math>\`. جد أبعاده بحيث تكون تكلفة تصنيعه أقل ما يمكن. سعر المتر المربع ثابت.
 
 ![صندوق بقاعدة مربعة وضلع س وارتفاع ص](assets/lessons/mathematics/source-crops/u2-book-p054-ex2.webp)
+final-answer:
+**أبعاد الصندوق: ٢ دسم × ٢ دسم × ٢ دسم.**
 solution:
 ![الشكل الأصلي](assets/lessons/mathematics/source-crops/u2-book-p054-ex2.webp)
 
@@ -178,6 +182,8 @@ body:
 جد أقصر مسافة بين النقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ك</mi><mrow><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٠</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></mrow></math>\` ومنحنى العلاقة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">ص</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow><mo>=</mo><mn dir="ltr">٨</mn></mrow></math>\`.
 
 ![نقطة ك ومنحنى العلاقة والنقطة ل](assets/lessons/mathematics/source-crops/u2-book-p055-ex3.webp)
+final-answer:
+**أقصر مسافة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msqrt><mn dir="ltr">١٠</mn></msqrt></math>\` وحدة.
 solution:
 ![الشكل الأصلي](assets/lessons/mathematics/source-crops/u2-book-p055-ex3.webp)
 
@@ -259,6 +265,8 @@ body:
 أوجد أقل محيط ممكن لمستطيل مساحته \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١٦</mn><mrow><msup><mi mathvariant="normal">سم</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></math>\`.
 
 ![المستطيل الأصلي وعليه رمزا الطول والعرض](assets/lessons/mathematics/source-crops/math-book-p055-ex4-figure.webp)
+final-answer:
+**أقل محيط: ١٦ سم.**
 solution:
 ![الشكل الأصلي](assets/lessons/mathematics/source-crops/math-book-p055-ex4-figure.webp)
 
@@ -354,6 +362,8 @@ reference: الكتاب، ص ٥٤، تمرين-١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 يريد رجل عمل حديقة مستطيلة الشكل في أرضه وذلك بإحاطتها بسياج. فإذا كان لديه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٨٠</mn></math>\` مترًا من الأسلاك، فما مساحة أكبر حديقة يمكن للرجل إحاطتها؟
+final-answer:
+**أكبر مساحة: ٤٠٠ م².**
 solution:
 نفرض الطول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` مترًا والعرض \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\` مترًا. السياج يحيط بالأضلاع الأربعة، فيساوي محيط المستطيل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٨٠</mn><mi mathvariant="normal">م</mi></mrow></math>\`.
 
@@ -445,6 +455,9 @@ reference: الكتاب، ص ٥٤، تمرين-٢
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 مقلمة على شكل أسطوانة دائرية قائمة مفتوحة من أعلى، سعتها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">١٩٢</mn><mi mathvariant="normal">π</mi></mrow><mrow><msup><mi mathvariant="normal">سم</mi><mrow><mn dir="ltr">٣</mn></mrow></msup></mrow></mrow></math>\`. إذا كان سعر كل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١</mn><mrow><msup><mi mathvariant="normal">سم</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></math>\` من البلاستيك المستخدم لصنع القاعدة يعادل ثلاثة أمثال سعر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١</mn><mrow><msup><mi mathvariant="normal">سم</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></math>\` من البلاستيك المستخدم لصنع الجوانب، جد أبعاد المقلمة ذات الأقل تكلفة.
+final-answer:
+- **نصف القطر: ٤ سم.**
+- **الارتفاع: ١٢ سم.**
 solution:
 نفرض نصف القطر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` سم والارتفاع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ع</mi></math>\` سم، وكلاهما موجب. حجم الأسطوانة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">π</mi><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow><mi mathvariant="normal">ع</mi></mrow><mo>=</mo><mrow><mn dir="ltr">١٩٢</mn><mi mathvariant="normal">π</mi></mrow></mrow></math>\`.
 
@@ -548,6 +561,8 @@ body:
 طريق منحني معادلته في المستوى الديكارتي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><msqrt><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msqrt></mrow></math>\`، والنقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">م</mi><mrow><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">٠</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></mrow></math>\` تمثل موقع مستشفى. يراد شق شارع فرعي مستقيم من النقطة و إلى موقع المستشفى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">م</mi></math>\`. عين إحداثيات و ليكون طول الشارع و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">م</mi></math>\` أقل ما يمكن.
 
 ![الطريق المنحني والنقطة و وموقع المستشفى م](assets/lessons/mathematics/source-crops/u2-book-p056-ex3.webp)
+final-answer:
+**إحداثيات و:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>(</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac><mo>،</mo><mfrac><msqrt><mn dir="ltr">١٤</mn></msqrt><mn dir="ltr">٢</mn></mfrac><mo>)</mo></mrow></math>\`.
 solution:
 ![الشكل الأصلي](assets/lessons/mathematics/source-crops/u2-book-p056-ex3.webp)
 
@@ -619,6 +634,9 @@ reference: الكتاب، ص ٥٤، تمرين-٤ · صياغة تعليمية �
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 يتحرك جسم في خط مستقيم، ويُعطى موضعه بالأمتار بعد \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ن</mi></mrow></math>\` ثانية بالعلاقة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ف</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">ن</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi mathvariant="normal">أ</mi><mi mathvariant="normal">جتا</mi><mo>⁡</mo><mrow><mrow><mo stretchy="true" fence="true">(</mo><mfrac><mrow><mi>π</mi><mi mathvariant="normal">ن</mi></mrow><mn dir="ltr">٤</mn></mfrac><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">ن</mi><mo>+</mo><mi mathvariant="normal">ب</mi><mi mathvariant="normal">جا</mi><mo>⁡</mo><mrow><mrow><mo stretchy="true" fence="true">(</mo><mfrac><mrow><mi>π</mi><mi mathvariant="normal">ن</mi></mrow><mn dir="ltr">٤</mn></mfrac><mo stretchy="true" fence="true">)</mo></mrow></mrow></mrow></math>\`. إذا كانت سرعته المتوسطة على \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><mn dir="ltr">٠</mn><mo separator="true">,</mo><mn dir="ltr">٢</mn><mo stretchy="false">]</mo></mrow></math>\` تساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mrow><mrow><mn dir="ltr">١٠</mn></mrow></mrow><mi mathvariant="normal">م</mi></mrow><mi mathvariant="normal">ث</mi></mfrac></math>\`، وكانت سرعته المتجهة أكبر ما يمكن عند \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ن</mi><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\` ثانية، فاحسب \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">أ</mi><mo separator="true">,</mo><mi mathvariant="normal">ب</mi></mrow></math>\`.
+final-answer:
+- **قيمة أ:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo>−</mo><mn dir="ltr">٩</mn></mrow></mrow></math>\`.
+- **قيمة ب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٩</mn></mrow></math>\`.
 solution:
 السرعة المتوسطة هي التغير في الموضع مقسومًا على الزمن المنقضي؛ لذلك نحسب موضعي البداية والنهاية.
 
@@ -752,6 +770,8 @@ reference: الكتاب، ص ٥٤، تمرين-٥
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد حجم أكبر أسطوانة دائرية قائمة يمكن وضعها داخل مخروط دائري قائم ارتفاعه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٢</mn></math>\` سم، ونصف قطر قاعدته \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٤</mn></math>\` سم.
+final-answer:
+**الحجم الأكبر:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mn dir="ltr">٢٥٦</mn><mi mathvariant="normal">π</mi></mrow><mn dir="ltr">٩</mn></mfrac></math>\` سم³.
 solution:
 نفرض ارتفاع الأسطوانة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ع</mi></math>\` سم ونصف قطرها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` سم. في المقطع الرأسي للمخروط، تتشابه المثلثات؛ تتناسب أنصاف الأقطار مع البعد من رأس المخروط.
 
@@ -831,6 +851,8 @@ reference: الكتاب، ص ٥٥، ورقة عمل-٤
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mi mathvariant="normal">جـ</mi></mrow><mi mathvariant="normal">د</mi></mrow></math>\` مستطيل عرضه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mo>=</mo><mn dir="ltr">٨</mn></mrow></math>\` سم وطوله \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">جـ</mi></mrow><mo>=</mo><mn dir="ltr">١٠</mn></mrow></math>\` سم. \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">م</mi></math>\` نقطة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\` بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">م</mi></mrow><mo>=</mo><mi mathvariant="normal">س</mi></mrow></math>\` سم، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ن</mi></math>\` نقطة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">جـ</mi></mrow></math>\` بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ن</mi><mi mathvariant="normal">جـ</mi></mrow><mo>=</mo><mfrac><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi></mrow><mn dir="ltr">٢</mn></mfrac></mrow></math>\` سم. جد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` بحيث تكون مساحة المثلث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">م</mi><mi mathvariant="normal">ن</mi></mrow><mi mathvariant="normal">جـ</mi></mrow></math>\` أكبر ما يمكن.
+final-answer:
+**قيمة س: ٤ سم.**
 solution:
 قاعدة المثلث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ن</mi><mi mathvariant="normal">ج</mi></mrow></math>\` طولها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi></mrow><mn dir="ltr">٢</mn></mfrac></math>\`، وارتفاعه العمودي عنها هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">م</mi></mrow><mo>=</mo><mrow><mn dir="ltr">٨</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></mrow></math>\`. من وقوع النقطتين على الضلعين: \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≥</mo><mn dir="ltr">٠</mn></mrow></math>\`، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≤</mo><mn dir="ltr">٨</mn></mrow></math>\`، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi></mrow><mn dir="ltr">٢</mn></mfrac><mo>≤</mo><mn dir="ltr">١٠</mn></mrow></math>\`؛ فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٠</mn><mo>≤</mo><mi mathvariant="normal">س</mi></mrow><mo>≤</mo><mfrac><mn dir="ltr">٢٠</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\`.
 
@@ -908,6 +930,8 @@ reference: الكتاب، ص ٥٥، ورقة عمل-٦
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 سلك طوله \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٨</mn></math>\` سم صنع منه مثلثان، كل منهما متساوي الأضلاع. ما طول ضلع كل من المثلثين ليكون مجموع مساحتيهما أصغر ما يمكن؟
+final-answer:
+**طول ضلع كل مثلث: ٣ سم.**
 solution:
 المعطى سلك \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٨</mn></math>\` سم لصنع مثلثين متساويي الأضلاع. نريد طول ضلعيهما بحيث يكون مجموع المساحتين أصغرمايمكن.
 
@@ -995,6 +1019,9 @@ reference: الكتاب، ص ٨٠، اختبار-١٠
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما أبعاد مخروط دائري قائم ذي أكبر حجم يمكن وضعه داخل كرة نصف قطرها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٠</mn></math>\` سم؟
+final-answer:
+- **الارتفاع:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">٤٠</mn><mn dir="ltr">٣</mn></mfrac></math>\` سم.
+- **نصف قطر القاعدة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mn dir="ltr">٢٠</mn><msqrt><mn dir="ltr">٢</mn></msqrt></mrow><mn dir="ltr">٣</mn></mfrac></math>\` سم.
 solution:
 نفرض ارتفاع المخروط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ع</mi></math>\` ونصف قطر قاعدته \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، بوحدة السم. نأخذ مقطعًا يمر بمحور المخروط ومركز الكرة.
 
@@ -1082,6 +1109,8 @@ reference: الكامل، الوحدة ٢ · النسخة المصورة، ص ٥
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ثني سلك طوله \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٢</mn></math>\` سم ليكون مثلثًا متساوي الساقين. جد أطوال أضلاع المثلث التي تجعل مساحته أكبر ما يمكن.
+final-answer:
+**أطوال الأضلاع: ٤ سم، ٤ سم، ٤ سم.**
 solution:
 نفرض نصف القاعدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` سم، فيكون طول القاعدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></math>\`. من المحيط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٢</mn></math>\`، يكون طول كل ساق \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٦</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\`.
 
@@ -1129,6 +1158,8 @@ body:
 تتحرك النقطة \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">م</mi><mo stretchy="false">(</mo><mi mathvariant="normal">س</mi><mo separator="true">,</mo><mi mathvariant="normal">ص</mi><mo stretchy="false">)</mo></mrow></math>\` في الربع الأول على منحنى، ويكون ميل القاطع الواصل بين نقطة الأصل \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">و</mi></mrow></math>\` والنقطة \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">م</mi></mrow></math>\` مساويًا \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn dir="ltr">١٢</mn><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">٣</mn><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow></math>\`. إذا كانت \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ب</mi></mrow></math>\` إسقاط \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">م</mi></mrow></math>\` على محور السينات، فأوجد أكبر مساحة للمثلث \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">م</mi><mi mathvariant="normal">ب</mi><mi mathvariant="normal">و</mi></mrow></math>\`.
 
 ![القاطعوم والنقطةم وإسقاطهاب في الرسم الأصلي](assets/lessons/mathematics/source-crops/u2-kamel-p051-r1-diagram.webp)
+final-answer:
+**المساحة العظمى:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">٨١</mn><mn dir="ltr">٢</mn></mfrac></math>\` وحدة مربعة.
 solution:
 ميل المستقيم الواصل من الأصل إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` هو مقدار الارتفاع مقسومًا على الإزاحة الأفقية؛ وبما أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` في الربع الأول، فإن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` موجبة.
 
@@ -1217,6 +1248,8 @@ reference: الكامل، الوحدة ٢ · النسخة المصورة، ص ٥
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد مساحة أكبر مستطيل يمكن رسمه في الربع الأول، بحيث يقع رأسان من رؤوسه على محور السينات، أما الرأسان الآخران: فإحداهما يقع على المستقيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mn dir="ltr">٢٠</mn><mi mathvariant="normal">س</mi></mrow></mrow></math>\`، والآخر على المستقيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mn dir="ltr">٤٢</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></mrow></math>\`.
+final-answer:
+**أكبر مساحة: ٤٢٠ وحدة مربعة.**
 solution:
 نفرض ارتفاع المستطيل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\`. من المستقيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mn dir="ltr">٢٠</mn><mi mathvariant="normal">س</mi></mrow></mrow></math>\` يكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` للرأس العلوي الأيسر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mi mathvariant="normal">ص</mi><mn dir="ltr">٢٠</mn></mfrac></math>\`، ومن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mn dir="ltr">٤٢</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></mrow></math>\` يكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` للرأس الأيمن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤٢</mn><mo>−</mo><mi mathvariant="normal">ص</mi></mrow></math>\`.
 
@@ -1296,6 +1329,8 @@ reference: الكامل، الوحدة ٢ · النسخة المصورة، ص ٥
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد مساحة أكبر شبه منحرف متساوي الساقين يمكن رسمه داخل منحنى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><msqrt><mrow><mn dir="ltr">١٦</mn><mo>−</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow></msqrt></mrow></math>\`، بحيث إن رأسين هما صفرا الاقتران، والرأسين الآخرين يقعان على منحنى الاقتران فوق محور السينات.
+final-answer:
+**أكبر مساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٦</mn><msqrt><mn dir="ltr">١٢</mn></msqrt></mrow></math>\` وحدة مربعة.
 solution:
 نصف الدائرة نصف قطرها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٤</mn></math>\`، وصفرا الاقتران \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٤</mn></math>\`؛ طول القاعدة السفلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٨</mn></math>\`. التماثل في شبه المنحرف متساوي الساقين يجعل رأسيه العلويين عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>±</mo><mi mathvariant="normal">س</mi></mrow></math>\` وبالارتفاع نفسه.
 
@@ -1365,6 +1400,8 @@ reference: الكامل، الوحدة ٢ · النسخة المصورة، ص ٥
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة أكبر مستطيل يمكن وضعه داخل مثلث متساوي الساقين، طول قاعدته \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٢</mn></math>\` سم وارتفاعه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٠</mn></math>\` سم، بحيث ينطبق أحد أضلاعه على قاعدة المثلث، ويقع الرأسان الآخران على ساقي المثلث.
+final-answer:
+**أكبر مساحة: ٣٠ سم².**
 solution:
 نفرض ارتفاع المستطيل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٠</mn><mo>&lt;</mo><mi mathvariant="normal">س</mi></mrow><mo>&lt;</mo><mn dir="ltr">١٠</mn></mrow></math>\`. من تشابه المثلث الصغير فوق المستطيل مع المثلث الأصلي، نسبة العرض إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٢</mn></math>\` تساوي نسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١٠</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\` إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٠</mn></math>\`.
 
@@ -1442,6 +1479,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد مساحة أكبر مستطيل يمكن رسمه داخل دائرة نصف قطرها \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١٠</mn></mrow></math>\` سم.
+final-answer:
+**أكبر مساحة: ٢٠٠ سم².**
 solution:
 نفرض نصفي ضلعي المستطيل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\`، وكلاهما موجب. قطر المستطيل قطر للدائرة، فيعطي فيثاغورس \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mo>+</mo><mrow><msup><mi mathvariant="normal">ص</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow><mo>=</mo><mn dir="ltr">١٠٠</mn></mrow></math>\`.
 
@@ -1503,6 +1542,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 مثلث متساوي الساقين محيطه \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١٨</mn></mrow></math>\` سم، أوجد أطوال أضلاعه عندما تكون مساحته أكبر ما يمكن.
+final-answer:
+**أطوال الأضلاع: ٦ سم، ٦ سم، ٦ سم.**
 solution:
 نفرض نصف القاعدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` سم. طول القاعدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></math>\`، وكل ساق \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٩</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\` لأن المحيط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٨</mn></math>\`. الارتفاع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ع</mi></math>\` ينصف القاعدة؛ نطبق فيثاغورس.
 
@@ -1548,6 +1589,9 @@ body:
 معتمداً على الشكل المجاور، جد بعدي المستطيل ذي المساحة الكبرى، الذي يمكن رسمه داخل مثلث قائم الزاوية، بحيث ينطبق أحد أضلاع هذا المستطيل على أحد ضلعي القائمة في المثلث، ورأساه الآخران على ضلعي المثلث الآخرين.
 
 ![المثلث القائم والمستطيل داخله وخطا قياس الضلعين المسمّيين بب](assets/lessons/mathematics/source-crops/math-kamel-u2-p049-r3-figure.webp)
+final-answer:
+- **البعد الأول:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`.
+- **البعد الثاني:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mi mathvariant="normal">ب</mi><mn dir="ltr">٢</mn></mfrac></math>\`.
 solution:
 ![الشكل الأصلي](assets/lessons/mathematics/source-crops/math-kamel-u2-p049-r3-figure.webp)
 
@@ -1635,6 +1679,9 @@ reference: السؤال، الصورة، · الحل · صياغة تعليمي�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد بعدي المستطيل ذي أكبر مساحة في الربع الأول، إذا كان رأسا قاعدته على محور السينات ورأساه العلويان على المنحنى \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٤</mn><mi mathvariant="normal">س</mi><mo>−</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٢</mn></mrow></math>\`، وكانت أضلاعه موازية لمحوري الإحداثيات.
+final-answer:
+- **العرض:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><msqrt><mn dir="ltr">٢</mn></msqrt></mrow></math>\` وحدة طول.
+- **الارتفاع: ٤ وحدات طول.**
 solution:
 نكتب المنحنى حول محور تماثله بإكمال المربع؛ لأن الرأسين العلويين لهما الارتفاع نفسه.
 
@@ -1728,6 +1775,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد أقصر مسافة بين النقطة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٠</mn><mo>،</mo><mn dir="ltr">٦</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` ومنحنى الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><msup><mi mathvariant="normal">ص</mi><mn dir="ltr">٢</mn></msup><mo>=</mo><mn dir="ltr">١٦</mn></mrow></math>\`.
+final-answer:
+**أقصر مسافة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msqrt><mn dir="ltr">٣٤</mn></msqrt></math>\` وحدة.
 solution:
 نفرض نقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo>،</mo><mi mathvariant="normal">ص</mi><mo stretchy="true" fence="true">)</mo></mrow></math>\` على المنحنى. نقلل مربع المسافة إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٠</mn><mo>،</mo><mn dir="ltr">٦</mn><mo stretchy="true" fence="true">)</mo></mrow></math>\`، لأن الجذر يحافظ على ترتيب الأعداد غير السالبة.
 
@@ -1789,6 +1838,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد ميل المستقيم الذي يمر بالنقطة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٤</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` ويصنع مع المحورين الإحداثيين في الربع الأول مثلثاً مساحته أصغر ما يمكن.
+final-answer:
+**ميل المستقيم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\`.
 solution:
 نفرض المقطع السيني \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` والمقطع الصادي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`، وكلاهما موجب. صيغة المقطعين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mfrac><mi mathvariant="normal">س</mi><mi mathvariant="normal">أ</mi></mfrac><mo>+</mo><mfrac><mi mathvariant="normal">ص</mi><mi mathvariant="normal">ب</mi></mfrac></mrow><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\` تمثل المستقيم الواصل بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">أ</mi><mo>،</mo><mn dir="ltr">٠</mn><mo stretchy="true" fence="true">)</mo></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٠</mn><mo>،</mo><mi mathvariant="normal">ب</mi><mo stretchy="true" fence="true">)</mo></mrow></math>\`.
 
@@ -1884,6 +1935,9 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 يراد صنع وعاء معدني على هيئة أسطوانة دائرية قائمة مفتوحة من أعلى سعتها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mn dir="ltr">٨١</mn><mo>π</mo></mrow></mrow><mrow><msup><mi mathvariant="normal">سم</mi><mrow><mn dir="ltr">٣</mn></mrow></msup></mrow></mrow></math>\`، فإذا كانت تكلفة المواد المستعملة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn></mrow></math>\` دنانير لكل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">سم</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></math>\` من قاعدة الأسطوانة، وديناراً واحداً لكل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">سم</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></math>\` من سطحها الجانبي، جد أبعاد الأسطوانة التي تجعل تكاليف صنعها أقل ما يمكن.
+final-answer:
+- **نصف القطر: ٣ سم.**
+- **الارتفاع: ٩ سم.**
 solution:
 نفرض نصف القطر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` سم والارتفاع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ع</mi></math>\` سم، وكلاهما موجب. الحجم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">π</mi><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow><mi mathvariant="normal">ع</mi></mrow><mo>=</mo><mrow><mn dir="ltr">٨١</mn><mi mathvariant="normal">π</mi></mrow></mrow></math>\`، فيحدد الارتفاع.
 
@@ -1977,6 +2031,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد معادلة المستقيم الذي يمر بالنقطة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">٤</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` ويصنع مع المحورين الإحداثيين في الربع الأول مثلثاً مساحته أصغر ما يمكن.
+final-answer:
+**معادلة المستقيم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mo>−</mo><mfrac><mn dir="ltr">٤</mn><mn dir="ltr">٣</mn></mfrac><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٨</mn></mrow></mrow></math>\`.
 solution:
 نفرض المقطع السيني \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` والمقطع الصادي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`، وكلاهما موجب. صيغة المقطعين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mfrac><mi mathvariant="normal">س</mi><mi mathvariant="normal">أ</mi></mfrac><mo>+</mo><mfrac><mi mathvariant="normal">ص</mi><mi mathvariant="normal">ب</mi></mfrac></mrow><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\` تمثل المستقيم. نعوض النقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">٤</mn><mo stretchy="true" fence="true">)</mo></mrow></math>\`.
 
@@ -2062,6 +2118,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد الإحداثي السيني للنقطة الواقعة على منحنى العلاقة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">ص</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">ص</mi><mo>+</mo><mn dir="ltr">٤</mn><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">٢٣</mn><mo>=</mo><mn dir="ltr">٠</mn></mrow></math>\`، وتكون أقرب ما يمكن للنقطة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+**الإحداثي السيني:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٥</mn></mrow></math>\`.
 solution:
 نفرض النقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo>،</mo><mi mathvariant="normal">ص</mi><mo stretchy="true" fence="true">)</mo></mrow></math>\` على المنحنى. بإضافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١</mn></math>\` للطرفين، تصبح معادلته:
 
@@ -2121,6 +2179,8 @@ reference: السؤال، الصورة، · الحل · صياغة تعليمي�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة أكبر مستطيل محصور فوق محور السينات وتحت المنحنى \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٨</mn><mo>−</mo><mstyle scriptlevel="0" displaystyle="true"><mfrac><mn dir="ltr">٢</mn><mn dir="ltr">٣</mn></mfrac></mstyle><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow></math>\`، بحيث يقع رأسا قاعدته على محور السينات ورأساه العلويان على المنحنى، وأضلاعه موازية للمحورين.
+final-answer:
+**أكبر مساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">٦٤</mn><mn dir="ltr">٣</mn></mfrac></math>\` وحدة مربعة.
 solution:
 لأن المنحنى متماثل حول محور الصادات، والرأسان العلويان لهما الارتفاع نفسه، نكتب إحداثييهما السينيين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` موجبة.
 
@@ -2211,6 +2271,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد باستخدام التفاضل أكبر حجم للشكل الناتج من دوران المستطيل محيطه \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٦٠</mn></mrow></math>\` سم دورة كاملة حول أحد أضلاعه.
+final-answer:
+**أكبر حجم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤٠٠٠</mn><mi mathvariant="normal">π</mi></mrow></math>\` سم³.
 solution:
 دوران المستطيل حول ضلع يصنع أسطوانة؛ هذا الضلع ارتفاعها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ع</mi></math>\`، والآخر نصف قطرها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`. من المحيط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٦٠</mn></math>\` سم:
 
@@ -2278,6 +2340,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد أقرب نقطة واقعة على المنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><msqrt><mrow><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msqrt></mrow></math>\` إلى النقطة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٠</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+**أقرب نقطة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>(</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac><mo>،</mo><msqrt><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac></msqrt><mo>)</mo></mrow></math>\`.
 solution:
 نفرض نقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo>،</mo><mi mathvariant="normal">ص</mi><mo stretchy="true" fence="true">)</mo></mrow></math>\` على المنحنى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><msqrt><mrow><mo stretchy="true" fence="true">(</mo><mrow><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true" fence="true">)</mo></mrow></msqrt></mrow></math>\`، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≥</mo><mn dir="ltr">١</mn></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>≥</mo><mn dir="ltr">٠</mn></mrow></math>\`. نقلل مربع المسافة إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٠</mn><mo stretchy="true" fence="true">)</mo></mrow></math>\` لتجنب الجذر.
 
@@ -2339,6 +2403,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد أقصر مسافة بين النقطة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٠</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` ومنحنى العلاقة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">ص</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>=</mo><mn dir="ltr">٨</mn></mrow></math>\`.
+final-answer:
+**أقصر مسافة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msqrt><mn dir="ltr">١٠</mn></msqrt></math>\` وحدة.
 solution:
 نفرض نقطة على المنحنى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo>،</mo><mi mathvariant="normal">ص</mi><mo stretchy="true" fence="true">)</mo></mrow></math>\`. مربع المسافة إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٠</mn><mo stretchy="true" fence="true">)</mo></mrow></math>\` هو مجموع مربعي الفرقين. نقلل المربع لتجنب الجذر؛ فتصغير العدد غير السالب يصغر جذره.
 
@@ -2416,6 +2482,9 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 سلك طوله \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٥٦</mn></mrow></math>\` سم قسم إلى جزأين، صنع من أحدهما مربع ومن الآخر مستطيل طوله يساوي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn></mrow></math>\` أمثال عرضه، ما أبعاد المربع والمستطيل ليكون مجموع مساحتيهما أقل ما يمكن؟
+final-answer:
+- **المربع: ٦ سم × ٦ سم.**
+- **المستطيل: ٤ سم × ١٢ سم.**
 solution:
 نفرض ضلع المربع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` سم، وعرض المستطيل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\` سم، وطوله \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">ص</mi></mrow></math>\`. السلك مجموع المحيطين.
 
@@ -2519,6 +2588,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mi mathvariant="normal">ج</mi></mrow></math>\` مثلث قائم الزاوية في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`، إذا كان طول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mrow><mrow><mo>=</mo><mn dir="ltr">٢</mn></mrow></mrow></mrow></math>\` سم وطول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow><mrow><mrow><mo>=</mo><mn dir="ltr">٣</mn></mrow></mrow></mrow></math>\` سم، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">د</mi></math>\` نقطة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow></math>\`، أوجد طول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">ج</mi></mrow></math>\` بحيث يكون مجموع طول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">ج</mi></mrow></math>\` ومثلي طول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">د</mi></mrow></math>\` أقل ما يمكن.
+final-answer:
+**طول دج:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mn dir="ltr">٩</mn><mo>−</mo><mn dir="ltr">٢</mn><msqrt><mn dir="ltr">٣</mn></msqrt></mrow><mn dir="ltr">٣</mn></mfrac></math>\` سم.
 solution:
 نفرض \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">د</mi></mrow><mo>=</mo><mi mathvariant="normal">س</mi></mrow></math>\` سم؛ بما أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">د</mi></math>\` على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow></math>\`، يكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٠</mn><mo>≤</mo><mi mathvariant="normal">س</mi></mrow><mo>≤</mo><mn dir="ltr">٣</mn></mrow></math>\`، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">ج</mi></mrow><mo>=</mo><mrow><mn dir="ltr">٣</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></mrow></math>\`. في المثلث القائم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mi mathvariant="normal">د</mi></mrow></math>\`، فيثاغورس يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">د</mi></mrow><mo>=</mo><msqrt><mrow><mo stretchy="true" fence="true">(</mo><mrow><mn dir="ltr">٤</mn><mo>+</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow><mo stretchy="true" fence="true">)</mo></mrow></msqrt></mrow></math>\`.
 
@@ -2616,6 +2687,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أرض مستطيلة الشكل رؤوسها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">د</mi></math>\` تتكون من حديقة مستطيلة الشكل مساحتها \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣٢٠٠</mn></mrow></math>\` متر مربع محاطة بأرصفة عرض كل من الرصيفين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mi mathvariant="normal">د</mi></mrow></math>\` يساوي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn></mrow></math>\` متر، وعرض كل من الرصيفين على الضلعين الآخرين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn></mrow></math>\` متر. أوجد أقل مساحة ممكنة لقطعة الأرض.
+final-answer:
+**أقل مساحة للأرض: ٣٨٧٢ م².**
 solution:
 نفرض بعدي الحديقة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\` مترًا، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">س</mi><mi mathvariant="normal">ص</mi></mrow><mo>=</mo><mn dir="ltr">٣٢٠٠</mn></mrow></math>\`. نختار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` في اتجاه الرصيفين ذوي العرض \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\`، فتزيده الأرصفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٤</mn></math>\`، وتزيد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\` بمقدار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٨</mn></math>\`.
 
@@ -2709,6 +2782,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 شبه منحرف فيه \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn></mrow></math>\` أضلاع متساوية في الطول وطول كل منها \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٦</mn></mrow></math>\` سم، جد أكبر مساحة ممكنة لشبه المنحرف.
+final-answer:
+**أكبر مساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢٧</mn><msqrt><mn dir="ltr">٣</mn></msqrt></mrow></math>\` سم².
 solution:
 نفرض أولًا أن القاعدة ذات الطول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٦</mn></math>\` هي الصغرى، والساقان طول كل منهما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٦</mn></math>\`. نسمي إسقاط كل ساق على اتجاه القاعدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` سم؛ القاعدة الأخرى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٦</mn><mo>+</mo><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></mrow></math>\`، والارتفاع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ع</mi></math>\`. بفيثاغورس:
 
@@ -2790,6 +2865,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mi mathvariant="normal">ج</mi></mrow></math>\` مثلث قائم الزاوية في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`، ومتساوي الساقين، وطول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ج</mi></mrow><mrow><mrow><mo>=</mo><mn dir="ltr">١٢</mn></mrow></mrow></mrow></math>\` سم. ما مساحة أكبر مستطيل يمكن رسمه داخل المثلث بحيث ينطبق أحد أضلاعه على الوتر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ج</mi></mrow></math>\`، ويقع الرأسان الآخران على ضلعي القائمة؟
+final-answer:
+**أكبر مساحة: ١٨ سم².**
 solution:
 في المثلث القائم متساوي الساقين، إذا كان طول الساق \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ل</mi></math>\`، يعطي فيثاغورس \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٢</mn><mrow><msup><mi mathvariant="normal">ل</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">١</mn><mrow><msup><mn mathvariant="normal">٢</mn><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></mrow></math>\`، أي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">ل</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mo>=</mo><mn dir="ltr">٧٢</mn></mrow></math>\`.
 
@@ -2861,6 +2938,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد حجم أكبر مخروط دائري قائم طول راسمه \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msqrt><mrow><mn dir="ltr">١٢</mn></mrow></msqrt></mrow></math>\` سم.
+final-answer:
+**أكبر حجم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mn dir="ltr">١٦</mn><mi mathvariant="normal">π</mi></mrow><mn dir="ltr">٣</mn></mfrac></math>\` سم³.
 solution:
 نفرض ارتفاع المخروط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ع</mi></math>\` سم ونصف قطره نق سم. الراسم طوله \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msqrt><mn dir="ltr">١٢</mn></msqrt></math>\` وهو وتر المثلث القائم في المقطع المحوري؛ لذا بفيثاغورس:
 
@@ -2934,6 +3013,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد أكبر مساحة ممكنة لمستطيل يمكن رسمه داخل دائرة طول نصف قطرها \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn></mrow></math>\` سم، بحيث يقع أحد أضلاعه على قطر الدائرة ورأساه الآخران على الدائرة.
+final-answer:
+**أكبر مساحة: ١٦ سم².**
 solution:
  المثلث من مركز الدائرة إلى أحد الرأسين قائم؛ بفيثاغورس:
 
@@ -3017,6 +3098,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mi mathvariant="normal">ج</mi></mrow><mi mathvariant="normal">د</mi></mrow></math>\` مستطيل فيه طول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mrow><mrow><mo>=</mo><mn dir="ltr">٤</mn></mrow></mrow></mrow></math>\` متراً، وطول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow><mrow><mrow><mo>=</mo><mn dir="ltr">٦</mn></mrow></mrow></mrow></math>\` متراً، و نقطة على الضلع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow></math>\`. عين موقع النقطة و بحيث تكون قيمة المقدار ثلاثة أمثال طول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` و مضافاً إليه طول و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\` أقل ما يمكن.
+final-answer:
+**موقع و:** على الضلع بج، بحيث **طول بو** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msqrt><mn dir="ltr">٢</mn></msqrt></math>\` متر.
 solution:
 
 
@@ -3104,6 +3187,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 سلك طوله \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١٢٠</mn></mrow></math>\` سم، تم قطعه إلى أجزاء لتشكيل حواف (أحرف) صندوق على شكل متوازي مستطيلات قاعدته مربعة الشكل. ما أكبر حجم ذلك الصندوق؟
+final-answer:
+**أكبر حجم: ١٠٠٠ سم³.**
 solution:
 
 
@@ -3181,6 +3266,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما مساحة أكبر مستطيل يمكن رسمه داخل دائرة طول نصف قطرها يساوي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٥</mn></mrow></math>\` سم؟
+final-answer:
+**أكبر مساحة: ٥٠ سم².**
 solution:
  أي نصفه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\`. المثلث من مركز الدائرة إلى أحد الرأسين قائم؛ بفيثاغورس:
 
@@ -3264,6 +3351,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما مساحة أكبر مستطيل يمكن إحاطته بسياج طوله \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mn dir="ltr">١٦</mn></mrow></mrow><mi mathvariant="normal">م</mi></mrow></math>\`؟
+final-answer:
+**أكبر مساحة: ١٦ م².**
 solution:
 
 
@@ -3341,6 +3430,9 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 يراد إنشاء خزان على شكل متوازي مستطيلات قاعدته مربعة الشكل ومفتوح من الأعلى بتكلفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤٨</mn></mrow></math>\` ديناراً، فإذا كانت تكلفة المتر المربع من القاعدة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١٦</mn></mrow></math>\` ديناراً، وتكلفة المتر المربع من الجوانب \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn></mrow></math>\` دنانير، أوجد أبعاد الخزان بحيث تكون سعته أكبر ما يمكن.
+final-answer:
+- **القاعدة: ١ م × ١ م.**
+- **الارتفاع: ٢ م.**
 solution:
 نفرض ضلع القاعدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mi mathvariant="normal">م</mi></mrow></math>\` والارتفاع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ع</mi><mi mathvariant="normal">م</mi></mrow></math>\`. مساحة القاعدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></math>\`، ومساحة الجوانب الأربعة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٤</mn><mi mathvariant="normal">س</mi></mrow><mi mathvariant="normal">ع</mi></mrow></math>\`. نجمع تكلفتها وفق السعرين.
 
@@ -3410,6 +3502,10 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mi mathvariant="normal">ج</mi></mrow><mi mathvariant="normal">د</mi></mrow></math>\` شبه منحرف متساوي الساقين محيطه \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤٠</mn></mrow></math>\` سم وقياس الزاوية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mi mathvariant="normal">ج</mi></mrow><mrow><mrow><mo>=</mo><mn dir="ltr">٦٠</mn><mo>°</mo></mrow></mrow></mrow></math>\`. احسب أطوال أضلاعه التي تجعل مساحته أكبر ما يمكن؟
+final-answer:
+- **الساقان أب وجد: ١٠ سم لكل منهما.**
+- **القاعدة أد: ٥ سم.**
+- **القاعدة بج: ١٥ سم.**
 solution:
 نفرض طول كل ساق \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، وطول القاعدة الصغرى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\`، بوحدة السم. إسقاط الساق الأفقي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">جتا</mi><mo>⁡</mo><mn dir="ltr">٦٠</mn></mrow></mrow><mo>=</mo><mfrac><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></mfrac></mrow></math>\`، والارتفاع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">جا</mi><mo>⁡</mo><mn dir="ltr">٦٠</mn></mrow></mrow><mo>=</mo><mfrac><msqrt><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi></mrow></msqrt><mn dir="ltr">٢</mn></mfrac></mrow></math>\`.
 
@@ -3495,6 +3591,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mi mathvariant="normal">ج</mi></mrow></math>\` مثلث قائم الزاوية في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`، طول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mrow><mrow><mo>=</mo><mn dir="ltr">٤</mn></mrow></mrow></mrow></math>\`، وطول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow><mrow><mrow><mo>=</mo><mn dir="ltr">٣</mn></mrow></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">د</mi></math>\` نقطة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">هـ</mi></math>\` نقطة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ج</mi></mrow></math>\`، و نقطة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow></math>\`. جد أبعاد المستطيل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">هـ</mi></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">د</mi></mrow></math>\` التي تكون عندها مساحة المستطيل أكبر ما يمكن.
+final-answer:
+**بعدا المستطيل:** ٢ و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac></math>\` بوحدة الطول المستعملة.
 solution:
 نفرض بعدي المستطيل على ضلعي القائمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\`، بوحدة طول السؤال. تشابه المثلثات يعطي نسبة الجزء المستهلك من كل ضلع.
 
@@ -3570,6 +3668,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\` قطر في دائرة طوله \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn></mrow></math>\` سم، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\` نقطة تبدأ حركتها من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` على محيط الدائرة باتجاه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`. أوجد قياس الزاوية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` بحيث تكون مساحة المثلث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mi mathvariant="normal">ج</mi></mrow></math>\` أكبر ما يمكن.
+final-answer:
+**قياس الزاوية ب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mi mathvariant="normal">π</mi><mn dir="ltr">٤</mn></mfrac></math>\` راديان (**٤٥°**).
 solution:
 
 
@@ -3613,6 +3713,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد أكبر حجم لمخروط دائري قائم يمكن رسمه داخل مخروط دائري قائم آخر نصف قطر قاعدته \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn></mrow></math>\` سم وارتفاعه \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١٢</mn></mrow></math>\` سم، بحيث ينطبق رأس المخروط الداخلي مع مركز قاعدة المخروط الخارجي.
+final-answer:
+**أكبر حجم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mn dir="ltr">٢٥٦</mn><mi mathvariant="normal">π</mi></mrow><mn dir="ltr">٢٧</mn></mfrac></math>\` سم³.
 solution:
 نفرض ارتفاع المخروط الداخلي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ع</mi></math>\` ونصف قطره \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٠</mn><mo>&lt;</mo><mi mathvariant="normal">ع</mi></mrow><mo>&lt;</mo><mn dir="ltr">١٢</mn></mrow></math>\`. في مقطع المخروط الخارجي تتشابه المثلثات، فينخفض نصف القطر مع الارتفاع.
 
@@ -3690,6 +3792,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة أكبر مستطيل يمكن رسمه داخل شبه المنحرف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mi mathvariant="normal">ج</mi></mrow><mi mathvariant="normal">د</mi></mrow></math>\` الذي فيه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">د</mi></mrow></math>\` يوازي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow></math>\`، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\` عمودي على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow></math>\`، حيث طول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mrow><mrow><mo>=</mo><mn dir="ltr">٣٠</mn></mrow></mrow></mrow></math>\` سم، وطول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">د</mi></mrow><mrow><mrow><mo>=</mo><mn dir="ltr">٢٠</mn></mrow></mrow></mrow></math>\` سم، وطول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow><mrow><mrow><mo>=</mo><mn dir="ltr">٥٠</mn></mrow></mrow></mrow></math>\` سم، بحيث يقع أحد أضلاعه على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\`، والضلع الآخر على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ج</mi></mrow></math>\`، ورأسه الرابع على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mi mathvariant="normal">د</mi></mrow></math>\`؟
+final-answer:
+**أكبر مساحة: ٦٢٥ سم².**
 solution:
 نضع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٠</mn><mo>،</mo><mn dir="ltr">٠</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow></math>\`، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٠</mn><mo>،</mo><mn dir="ltr">٣٠</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow></math>\`. بما أن القاعدتين أفقيتان، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٥٠</mn><mo>،</mo><mn dir="ltr">٠</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow></math>\`، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">د</mi><mo>=</mo><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٢٠</mn><mo>،</mo><mn dir="ltr">٣٠</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow></math>\`. رأس المستطيل الرابع يقع على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mi mathvariant="normal">د</mi></mrow></math>\`.
 
@@ -3761,6 +3865,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 تتحرك النقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mrow><mrow><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi><mo>،</mo><mi mathvariant="normal">ص</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></mrow></mrow></math>\` على منحنى الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mfrac><mrow><mn dir="ltr">١</mn></mrow><mrow><mi mathvariant="normal">س</mi></mrow></mfrac></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>&gt;</mo><mn dir="ltr">٠</mn></mrow></math>\`، ورسم منها عمودان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ج</mi></mrow></math>\` على محوري السينات والصادات على الترتيب. جد بعدي المستطيل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\`، حيث و نقطة الأصل، لتكون محيطه أقل ما يمكن.
+final-answer:
+**بعدا المستطيل: ١ × ١ بوحدة الطول المستعملة.**
 solution:
 إسقاط النقطة على المحورين يعطي بعدي المستطيل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mfrac><mn dir="ltr">١</mn><mi mathvariant="normal">س</mi></mfrac></mrow></math>\`، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>&gt;</mo><mn dir="ltr">٠</mn></mrow></math>\`. المحيط ضعف مجموع البعدين.
 
@@ -3820,6 +3926,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` نقطتان ماديتان، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` تقع شرق \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` والمسافة الأفقية بينهما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mn dir="ltr">٢٨</mn></mrow></mrow><mi mathvariant="normal">م</mi></mrow></math>\`. فإذا انطلقت النقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` إلى الشمال بسرعة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mrow><mrow><mn dir="ltr">٢</mn></mrow></mrow><mi mathvariant="normal">م</mi></mrow><mi mathvariant="normal">ث</mi></mfrac></math>\`، وبعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mn dir="ltr">٢</mn></mrow></mrow><mi mathvariant="normal">ث</mi></mrow></math>\` انطلقت النقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` إلى الشرق بسرعة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mrow><mrow><mn dir="ltr">٤</mn></mrow></mrow><mi mathvariant="normal">م</mi></mrow><mi mathvariant="normal">ث</mi></mfrac></math>\`، جد الزمن الذي تكون فيه المسافة بين النقطتين أقل ما يمكن؟
+final-answer:
+**الزمن: ٧٫٢ ثانية من انطلاق أ**، أي **٥٫٢ ثانية من انطلاق ب**.
 solution:
 نقيس الزمن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ن</mi></math>\` بالثواني من بدء حركة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`. نريد أقل مسافة في جميع الأزمنة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ن</mi><mo>≥</mo><mn dir="ltr">٠</mn></mrow></math>\`، فنفصل المرحلتين.
 
@@ -3923,6 +4031,8 @@ reference: السؤال، الصورة، · الحل · صياغة تعليمي�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 داخل المنطقة المثلثة المحدودة بالمستقيمين \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></math>\`، \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٦</mn><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\`، ومحور السينات، يُرسم مثلث قاعدته أفقية وطرفاها على المستقيمين، ورأسه الثالث على القطعة المحصورة بين تقاطعيهما مع محور السينات. أوجد أكبر مساحة ممكنة لهذا المثلث.
+final-answer:
+**أكبر مساحة: ٣ وحدات مربعة.**
 solution:
 نختار ارتفاع القاعدة فوق محور السينات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ت</mi></math>\`. عند هذا الارتفاع نوجد موضعي طرفي القاعدة بالتعويض في المستقيمين.
 
@@ -4031,6 +4141,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جسيم يسير في خط مستقيم وفقاً للعلاقة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ف</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">ن</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">ن</mi><mn dir="ltr">٤</mn></msup><mo>−</mo><mn dir="ltr">١٢</mn><msup><mi mathvariant="normal">ن</mi><mn dir="ltr">٣</mn></msup><mo>+</mo><mn dir="ltr">٨</mn><msup><mi mathvariant="normal">ن</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><mn dir="ltr">٦</mn><mi mathvariant="normal">ن</mi><mo>+</mo><mn dir="ltr">٥</mn></mrow></math>\` حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ف</mi></math>\` المسافة بالأمتار، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ن</mi></math>\` الزمن بالثواني. أوجد أقل تسارع ممكن لهذا الجسم.
+final-answer:
+**أقل تسارع:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">٩٢</mn></mrow></math>\` م/ث².
 solution:
 السرعة مشتقة الموقع بالنسبة إلى الزمن، والتسارع مشتقة السرعة. نشتق العلاقة مرتين.
 
@@ -4090,6 +4202,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أوجد حجم أكبر أسطوانة دائرية قائمة يمكن رسمها داخل كرة نصف قطرها \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msqrt><mrow><mn dir="ltr">٣</mn></mrow></msqrt></mrow></math>\` سم.
+final-answer:
+**أكبر حجم:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn><mi mathvariant="normal">π</mi></mrow></math>\` سم³.
 solution:
 نفرض نصف ارتفاع الأسطوانة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` سم، ونصف قطر قاعدتها نق. مقطع يمر بمحور الأسطوانة يعطي مثلثًا قائمًا وتره نصف قطر الكرة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msqrt><mn dir="ltr">٣</mn></msqrt></math>\`.
 
@@ -4173,6 +4287,8 @@ reference: السؤال، الصورة، · الحل · صياغة تعليمي�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لدى مزارع \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn dir="ltr">٣٦٠</mn></mrow></math>\` مترًا من السلك، يريد بها إحاطة ست حظائر مستطيلة متطابقة متلاصقة مرتبة في صفين وثلاثة أعمدة، مع تسوير الحد الخارجي وجميع الفواصل الداخلية. كل فاصل مشترك يُحسب مرة واحدة. ما أكبر مساحة كلية للحظائر؟
+final-answer:
+**أكبر مساحة كلية: ٢٧٠٠ م².**
 solution:
 لنرمز لطول المستطيل الخارجي الأفقي ب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، ولعرضه الرأسي ب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\`. نعد أطوال السلك أولًا وفق التخطيط المحدد.
 
@@ -4269,6 +4385,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة أكبر مستطيل يمكن رسمه داخل مثلث قائم وتره \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢٤</mn></mrow></math>\` وإحدى زواياه \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣٠</mn></mrow></math>\` درجة.
+final-answer:
+**أكبر مساحة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣٦</mn><msqrt><mn dir="ltr">٣</mn></msqrt></mrow></math>\` وحدة مربعة.
 solution:
 الساق المقابلة لزاوية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣٠</mn></math>\` تساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٢٤</mn><mrow><mi mathvariant="normal">جا</mi><mo>⁡</mo><mn dir="ltr">٣٠</mn></mrow></mrow><mo>=</mo><mn dir="ltr">١٢</mn></mrow></math>\`، والساق الأخرى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٢٤</mn><mrow><mi mathvariant="normal">جتا</mi><mo>⁡</mo><mn dir="ltr">٣٠</mn></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">١٢</mn><msqrt><mn dir="ltr">٣</mn></msqrt></mrow></mrow></math>\`.
 
@@ -4340,6 +4458,8 @@ body:
 جد أكبر مساحة ممكنة للمستطيل في الشكل التالي.
 
 ![المستطيل بين المنحنى والمستقيم الأفقي على الشبكة الإحداثية الأصلية](assets/lessons/curriculum-evidence/ff7ae0ce21ec04efcb2e.webp)
+final-answer:
+**أكبر مساحة: ٣٢ وحدة مربعة.**
 solution:
 ![الشكل الأصلي](assets/lessons/curriculum-evidence/ff7ae0ce21ec04efcb2e.webp)
 
@@ -4421,6 +4541,8 @@ reference: السؤال، الصورة، · الحل · صياغة تعليمي�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد مساحة أكبر مستطيل أضلاعه موازية للمحورين ومحـصور داخل المنطقة بين المنحنيين \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow></math>\`، \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٦</mn><mo>−</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow></math>\`، بحيث يقع رأساه السفليان على الأول ورأساه العلويان على الثاني.
+final-answer:
+**أكبر مساحة: ٨ وحدات مربعة.**
 solution:
 الرأسان السفليان لهما الارتفاع نفسه؛ لذلك يكون إحداثياهما السينيان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، وكذلك الرأسان العلويان. عرض المستطيل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></math>\`.
 
@@ -4505,6 +4627,10 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msub><mtext dir="rtl">لو</mtext><mrow><mtext dir="rtl">هـ</mtext></mrow></msub><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi><mo>−</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`، جد قيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` الحرجة ومجالات تزايد وتناقص الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+- **القيمة الحرجة الوحيدة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>\`.
+- **التزايد:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>(</mo><mn dir="ltr">٠</mn><mo>،</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo>]</mo></mrow></math>\`.
+- **التناقص:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>[</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo>،</mo><mn dir="ltr">١</mn><mo>)</mo></mrow></math>\`.
 solution:
 اللوغاريتم الطبيعي يعرف عندما يكون مدخله موجبًا. نحل شرط المجال أولًا.
 
@@ -4540,6 +4666,9 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` اقتران كثير حدود ومتزايداً على \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true">[</mo><mo>−</mo><mn dir="ltr">٣</mn><mo>،</mo><mo>−</mo><mn dir="ltr">١</mn><mo stretchy="true">]</mo></mrow></math>\` ويقع في الربع الثاني، وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>×</mo><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mi mathvariant="normal">س</mi></mrow></math>\`، جد فترات التزايد والتناقص لمنحنى \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+- **التزايد:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>[</mo><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mo>،</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>]</mo></mrow></math>\`.
+- **التناقص:** لا توجد فترات تناقص ضمن الفترة المعطاة.
 solution:
 
 
@@ -4611,6 +4740,11 @@ body:
 يمثل الشكل المشتقة الثانية \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="normal">ق</mi><mrow><mo mathvariant="normal">′</mo><mo mathvariant="normal">′</mo></mrow></msup></mrow></math>\` داخل \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo separator="true">,</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo></mrow></math>\`، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\` قابل للاشتقاق مرتين داخل الفترة ومشتقته الأولى متصلة على \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><mo>−</mo><mn dir="ltr">١</mn><mo separator="true">,</mo><mn dir="ltr">٤</mn><mo stretchy="false">]</mo></mrow></math>\`. ليكن \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ج</mi></mrow></math>\` الإحداثي السيني لتقاطع الرسم الموجب مع محور السينات. إذا كان \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="normal">ق</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">(</mo><mi mathvariant="normal">أ</mi><mo stretchy="false">)</mo><mo>=</mo><mn dir="ltr">٠</mn></mrow></math>\` عند \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn dir="ltr">١</mn><mo>&lt;</mo><mi mathvariant="normal">أ</mi><mo>&lt;</mo><mn dir="ltr">٠</mn></mrow></math>\`، و\`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="normal">ق</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">(</mo><mi mathvariant="normal">ب</mi><mo stretchy="false">)</mo><mo>=</mo><mn dir="ltr">٠</mn></mrow></math>\` عند \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn dir="ltr">٠</mn><mo>&lt;</mo><mi mathvariant="normal">ب</mi><mo>&lt;</mo><mi mathvariant="normal">ج</mi></mrow></math>\`، وكان \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="normal">ق</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>&gt;</mo><mn dir="ltr">٠</mn></mrow></math>\`، فحدّد فترات تزايد \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ق</mi></mrow></math>\` وتناقصه داخل \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo separator="true">,</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo></mrow></math>\`، ونوع القيم القصوى عند \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">أ</mi><mo separator="true">,</mo><mi mathvariant="normal">ب</mi></mrow></math>\`، بدلالة هذين الرمزين.
 
 ![الرسم الأصلي للمشتقة الثانية](assets/lessons/curriculum-evidence/7db2f317ab7c7a165230.webp)
+final-answer:
+- **التزايد:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mi mathvariant="normal">أ</mi><mo>)</mo></mrow><mo>∪</mo><mrow><mo>(</mo><mi mathvariant="normal">ب</mi><mo>،</mo><mn dir="ltr">٤</mn><mo>)</mo></mrow></mrow></math>\`.
+- **التناقص:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>(</mo><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi><mo>)</mo></mrow></math>\`.
+- **عظمى محلية عند:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>(</mo><mi mathvariant="normal">أ</mi><mo>،</mo><mrow><mi mathvariant="normal">ق</mi><mo>(</mo><mi mathvariant="normal">أ</mi><mo>)</mo></mrow><mo>)</mo></mrow></math>\`.
+- **صغرى محلية عند:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>(</mo><mi mathvariant="normal">ب</mi><mo>،</mo><mrow><mi mathvariant="normal">ق</mi><mo>(</mo><mi mathvariant="normal">ب</mi><mo>)</mo></mrow><mo>)</mo></mrow></math>\`.
 solution:
 نحتاج إشارة المشتقة الأولى لمعرفة تزايد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\` وتناقصه. الرسم المعطى هو المشتقة الثانية؛ فهو يخبرنا أين تتزايد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">ق</mi><mo>′</mo></msup></math>\` وأين تتناقص.
 
@@ -4710,6 +4844,9 @@ body:
 يمثل الشكل المشتقة الثانية \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="normal">ق</mi><mrow><mo mathvariant="normal">′</mo><mo mathvariant="normal">′</mo></mrow></msup></mrow></math>\` لاقتران قابل للاشتقاق مرتين على \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo separator="true">,</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo></mrow></math>\`. ليكن \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ج</mi></mrow></math>\` الإحداثي السيني الموجب لتقاطع الرسم مع محور السينات. حدّد فترات تقعر منحنى \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ق</mi></mrow></math>\` للأعلى وللأسفل داخل \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo separator="true">,</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo></mrow></math>\`، بدلالة \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ج</mi></mrow></math>\`.
 
 ![الرسم الأصلي للمشتقة الثانية](assets/lessons/curriculum-evidence/7db2f317ab7c7a165230.webp)
+final-answer:
+- **التقعر للأعلى:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>(</mo><mn dir="ltr">٠</mn><mo>،</mo><mi mathvariant="normal">ج</mi><mo>)</mo></mrow></math>\`.
+- **التقعر للأسفل:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">٠</mn><mo>)</mo></mrow><mo>∪</mo><mrow><mo>(</mo><mi mathvariant="normal">ج</mi><mo>،</mo><mn dir="ltr">٤</mn><mo>)</mo></mrow></mrow></math>\`.
 solution:
 المشتقة الثانية الموجبة تعني تقعر المنحنى للأعلى، والسالبة تعني تقعره للأسفل؛ لذلك نقرأ موضع الرسم بالنسبة إلى محور السينات مباشرة.
 
@@ -4761,6 +4898,11 @@ body:
 يمثل الشكل المشتقة الثانية \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="normal">ق</mi><mrow><mo mathvariant="normal">′</mo><mo mathvariant="normal">′</mo></mrow></msup></mrow></math>\` لاقتران قابل للاشتقاق مرتين على \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo separator="true">,</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo></mrow></math>\`. ليكن \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ج</mi></mrow></math>\` الإحداثي السيني الموجب لتقاطع الرسم مع محور السينات. أوجد نقطتي انعطاف منحنى \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ق</mi></mrow></math>\`، بدلالة \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ج</mi></mrow></math>\` وقيم الاقتران عندهما.
 
 ![الرسم الأصلي للمشتقة الثانية](assets/lessons/curriculum-evidence/7db2f317ab7c7a165230.webp)
+final-answer:
+**نقطتا الانعطاف:**
+
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>(</mo><mn dir="ltr">٠</mn><mo>،</mo><mrow><mi mathvariant="normal">ق</mi><mo>(</mo><mn dir="ltr">٠</mn><mo>)</mo></mrow><mo>)</mo></mrow></math>\`.
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>(</mo><mi mathvariant="normal">ج</mi><mo>،</mo><mrow><mi mathvariant="normal">ق</mi><mo>(</mo><mi mathvariant="normal">ج</mi><mo>)</mo></mrow><mo>)</mo></mrow></math>\`.
 solution:
 نقطة الانعطاف تتطلب اتصال \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\` وتغير تقعره، لا مجرد انعدام مشتقته الثانية. الاتصال متحقق لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\` قابل للاشتقاق.
 
@@ -4790,6 +4932,9 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></math>\` يمس منحنى الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` عند نقطة الأصل، وكان للاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` قيمة صغرى محلية عند النقطة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٠</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`، فما قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`؟
+final-answer:
+- **قيمة أ:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>\`.
+- **قيمة ب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mrow></math>\`.
 solution:
 
 
@@ -4879,6 +5024,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mfrac><mrow><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٣</mn></mrow></mfrac><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mo>−</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٣</mn><msup><mi mathvariant="normal">أ</mi><mn dir="ltr">٢</mn></msup><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٢</mn></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>&gt;</mo><mn dir="ltr">٠</mn></mrow></math>\`، له قيمة عظمى محلية عند \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mi mathvariant="normal">م</mi></mrow></math>\`، وله قيمة صغرى محلية عند \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mi mathvariant="normal">ن</mi></mrow></math>\`، وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">م</mi></mrow><mo stretchy="true">)</mo></mrow><mo>−</mo><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">ن</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٣٦</mn></mrow></math>\`، فما قيمة الثابت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`؟
+final-answer:
+**قيمة الثابت:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\`.
 solution:
 نحدد موضعي العظمى والصغرى من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">ق</mi><mo>′</mo></msup></math>\`، ثم نعوض قيمتيهما في العلاقة المعطاة.
 
@@ -4962,6 +5109,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد قاعدة الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` من الدرجة الثالثة الذي يمر منحناه بنقطة الأصل وله نقطة حرجة عند \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>\`، وكانت معادلة المماس للمنحنى عند النقطة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">١</mn><mo>،</mo><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">١</mn></mrow><mo stretchy="true">)</mo></mrow></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` الواقعة عليه \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٩</mn><mi mathvariant="normal">س</mi><mo>−</mo><mi mathvariant="normal">ص</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٧</mn></mrow></math>\`.
+final-answer:
+**قاعدة الاقتران:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mo>(</mo><mi mathvariant="normal">س</mi><mo>)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mo>−</mo><mn dir="ltr">٩</mn><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٢٤</mn><mi mathvariant="normal">س</mi></mrow></math>\`.
 solution:
 نكتب التكعيبي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">أ</mi><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٣</mn></mrow></msup></mrow></mrow><mo>+</mo><mrow><mi mathvariant="normal">ب</mi><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></mrow></mrow><mo>+</mo><mrow><mi mathvariant="normal">ج</mi><mi mathvariant="normal">س</mi></mrow></mrow></math>\`؛ الحد الثابت صفر لأن المنحنى يمر بالأصل.
 
@@ -5095,6 +5244,9 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان للاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">أ</mi></mrow><mrow><mn dir="ltr">٣</mn></mrow></mfrac><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mo>+</mo><mn dir="ltr">٣</mn><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mi mathvariant="normal">ب</mi></mrow></math>\` نقطة انعطاف عند \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\` وصغرى محلية قيمتها \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٥</mn></mrow></math>\`، جد قيمة الثابتين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`؟
+final-answer:
+- **قيمة أ:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mrow></math>\`.
+- **قيمة ب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٥</mn></mrow></math>\`.
 solution:
 
 
@@ -5200,6 +5352,8 @@ reference: السؤال، الصورة، · الحل
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mo>+</mo><mi mathvariant="normal">أ</mi><mi mathvariant="normal">س</mi></mrow></math>\`، جد الثابت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` في الحالة التالية: \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١</mn></math>\`) إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` متزايداً على \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ح</mi></mrow></math>\`.
+final-answer:
+**قيم الثابت:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>≥</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
  نريد جميع قيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` التي تجعل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\` متزايدًا على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ح</mi></math>\`. نبدأ بالمشتقة لأنها تبين اتجاه التغير.
 
@@ -5231,6 +5385,9 @@ body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` كثيري حدود معرفين على الفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true">[</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٤</mn><mo stretchy="true">]</mo></mrow></math>\` وممثلين كما في الشكل المجاور، جد فترات التزايد والتناقص للاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ك</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">ق</mi><mn dir="ltr">٢</mn></msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>+</mo><mfrac><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></mfrac></mrow></math>\` في الفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true">[</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٤</mn><mo stretchy="true">]</mo></mrow></math>\`؟
 
 ![الرسم الأصلي لمنحنيي ق وهـ والمحورين مع القيم المعلّمة](assets/lessons/curriculum-evidence/8d4f2d36596232557305.webp)
+final-answer:
+- **التناقص:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>[</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٤</mn><mo>]</mo></mrow></math>\`.
+- **التزايد:** لا توجد فترات تزايد ضمن الفترة المعطاة.
 solution:
 ![الشكل الأصلي](assets/lessons/curriculum-evidence/8d4f2d36596232557305.webp)
 

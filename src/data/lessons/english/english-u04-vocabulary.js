@@ -13,6 +13,8 @@ Word bank: network - hub - addicted - restrictions - trend - remote
 
 Your comments are rather **distant** from the subject we are discussing.
 
+final-answer:
+Your comments are rather **remote** from the subject we are discussing.
 solution:
 **الإجابة:** Your comments are rather remote from the subject we are discussing.
 
@@ -36,6 +38,8 @@ Fill in the following sentences by replacing the words in brackets with the appr
 Word bank: borders - justified - fear - remote - hub
 
 Unlike the rest of us, Dave had no ………… of snakes. (What you feel when you are afraid)
+final-answer:
+**fear**
 solution:
 **الإجابة:** fear
 
@@ -65,6 +69,8 @@ Fill in the following sentences by replacing the words in brackets with the appr
 Word bank: borders - justified - fear - remote - hub
 
 She lives in a ………… house far away from the center of the town. (difficult to get to)
+final-answer:
+**remote**
 solution:
 **الإجابة:** remote
 
@@ -90,6 +96,8 @@ Complete the sentences with words from the box.
 Word bank: motivate - restrictions - hub - vary - justified - panic
 
 Flowers ………… widely in size and shape.
+final-answer:
+**vary**
 solution:
 **Answer:** vary
 
@@ -113,6 +121,8 @@ Complete the sentences with words from the box.
 Word bank: motivate - restrictions - hub - vary - justified - panic
 
 The company has used a number of methods to ………… its employees to work harder.
+final-answer:
+**motivate**
 solution:
 **Answer:** motivate
 
@@ -136,6 +146,8 @@ Complete the sentences with words from the box.
 Word bank: hub - justified - trends - vary - citizen - restrictions
 
 She’s Italian by birth but now she is an American ………… .
+final-answer:
+**citizen**
 solution:
 **الإجابة:** citizen
 
@@ -159,6 +171,8 @@ Complete the sentences with words from the box.
 Word bank: hub - justified - trends - vary - citizen - restrictions
 
 Prices ………… widely from shop to shop. Some are expensive, others are cheap.
+final-answer:
+**vary**
 solution:
 **Answer:** vary
 
@@ -182,6 +196,8 @@ Suggested exercises: Write each word next to its definition.
 Word bank: trend - vary - panic - addicted - motivated
 
 differ
+final-answer:
+**vary**
 solution:
 **الإجابة:** vary
 
@@ -211,6 +227,8 @@ Suggested exercises: Write each word next to its definition.
 Word bank: trend - vary - panic - addicted - motivated
 
 caused or encouraged
+final-answer:
+**motivated**
 solution:
 **الإجابة:** motivated
 
@@ -237,6 +255,8 @@ Word bank: capable - potential - remote - citizens
 
 People who are legal members of a country
 
+final-answer:
+**citizens**
 solution:
 الإجابة: citizens، أي المواطنون.
 
@@ -258,6 +278,8 @@ Suggested exercises: Write each word next to its definition.
 Word bank: capable - potential - remote - citizens
 
 Possible to take place in the future
+final-answer:
+**potential**
 solution:
 **الإجابة:** potential
 
@@ -287,6 +309,8 @@ Suggested exercises: Write each word next to its definition.
 Word bank: capable - potential - remote - citizens
 
 Difficult to get to
+final-answer:
+**remote**
 solution:
 **الإجابة:** remote
 
@@ -312,6 +336,8 @@ Suggested exercises: Complete the sentences with words from the box.
 Word bank: addicted - fear - trend - motivated - panic
 
 Palestinians never stop fighting because they are ………… by love of land.
+final-answer:
+**motivated**
 solution:
 **Answer:** motivated
 
@@ -335,6 +361,8 @@ Suggested exercises: Complete the sentences with words from the box.
 Word bank: addicted - fear - trend - motivated - panic
 
 Although she prepared well for the exam, she still has a ………… of failing.
+final-answer:
+**fear**
 solution:
 **Answer:** fear
 
@@ -357,6 +385,8 @@ Suggested exercises: Complete the sentences with words from the box.
 Word bank: trend - remote - citizen - panic - vary
 
 Temperatures ………… from city to city even in the same state.
+final-answer:
+**vary**
 solution:
 **Answer:** vary
 
@@ -380,6 +410,8 @@ Suggested exercises: Complete the sentences with words from the box.
 Word bank: trend - remote - citizen - panic - vary
 
 Dane lives a solitary life in a ………… area in China.
+final-answer:
+**remote**
 solution:
 **الإجابة:** remote
 
@@ -405,6 +437,8 @@ Suggested exercises: Complete the sentences with words from the box.
 Word bank: trend - remote - citizen - panic - vary
 
 A good ………… respects the laws.
+final-answer:
+**citizen**
 solution:
 **Answer:** citizen
 
@@ -429,6 +463,8 @@ Suggested exercises: Complete the sentences with words from the box.
 Word bank: addicted - motivate - borders - restrictions - justified
 
 Our new teacher certainly knows how to ………… his classes.
+final-answer:
+**motivate**
 solution:
 **Answer:** motivate
 

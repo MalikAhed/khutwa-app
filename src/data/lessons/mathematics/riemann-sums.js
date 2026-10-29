@@ -8,6 +8,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٢](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أي من الآتية يعتبر تجزئة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">٣</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`؟ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٣</mn></mrow></msub></mrow><mo>=</mo><mrow><mo stretchy="true" fence="true">{</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">١</mn><mo>،</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac><mo>،</mo><mn dir="ltr">٣</mn><mo stretchy="true" fence="true">}</mo></mrow></mrow></math>\`.
+final-answer:
+**نعم، هي تجزئة للفترة.**
 solution:
 
 
@@ -36,6 +38,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٢](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أي من الآتية يعتبر تجزئة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">٣</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`؟ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></mrow><mo>=</mo><mrow><mo stretchy="true" fence="true">{</mo><mn dir="ltr">٠</mn><mo>،</mo><mn dir="ltr">١</mn><mo>،</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac><mo>،</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٣</mn><mo stretchy="true" fence="true">}</mo></mrow></mrow></math>\`.
+final-answer:
+**ليست تجزئة للفترة.**
 solution:
 أول عنصر يجب أن يساوي سالب واحد، لكنه صفر هنا.
 
@@ -56,6 +60,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٢](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أي من الآتية يعتبر تجزئة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">٣</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`؟ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></mrow><mo>=</mo><mrow><mo stretchy="true" fence="true">{</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">٤</mn><mo>،</mo><mn dir="ltr">٤</mn><mo stretchy="true" fence="true">}</mo></mrow></mrow></math>\`.
+final-answer:
+**ليست تجزئة للفترة.**
 solution:
 العنصر أربعة خارج الفترة، كما أن تكراره يخالف التزايد التام.
 
@@ -76,6 +82,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٢](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أي من الآتية يعتبر تجزئة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">٣</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`؟ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></mrow><mo>=</mo><mrow><mo stretchy="true" fence="true">{</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٠</mn><mo>،</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٣</mn><mo stretchy="true" fence="true">}</mo></mrow></mrow></math>\`.
+final-answer:
+**ليست تجزئة للفترة.**
 solution:
 العناصر يجب أن تتزايد؛ الانتقال من واحد إلى صفر يخالف ذلك.
 
@@ -96,6 +104,10 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 اكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣</mn></math>\` تجزئات خماسية للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٧</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`.
+final-answer:
+1. \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mn dir="ltr">٥</mn></msub><mo>=</mo><mo>{</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">٤</mn><mo>،</mo><mn dir="ltr">٥</mn><mo>،</mo><mn dir="ltr">٦</mn><mo>،</mo><mn dir="ltr">٧</mn><mo>}</mo></mrow></math>\`
+2. \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mn dir="ltr">٥</mn></msub><mo>=</mo><mo>{</mo><mn dir="ltr">٢</mn><mo>،</mo><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٢</mn></mfrac><mo>،</mo><mn dir="ltr">٤</mn><mo>،</mo><mfrac><mn dir="ltr">٩</mn><mn dir="ltr">٢</mn></mfrac><mo>،</mo><mn dir="ltr">٦</mn><mo>،</mo><mn dir="ltr">٧</mn><mo>}</mo></mrow></math>\`
+3. \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mn dir="ltr">٥</mn></msub><mo>=</mo><mo>{</mo><mn dir="ltr">٢</mn><mo>،</mo><mfrac><mn dir="ltr">٧</mn><mn dir="ltr">٣</mn></mfrac><mo>،</mo><mn dir="ltr">٣</mn><mo>،</mo><mfrac><mn dir="ltr">١١</mn><mn dir="ltr">٢</mn></mfrac><mo>،</mo><mn dir="ltr">٦</mn><mo>،</mo><mn dir="ltr">٧</mn><mo>}</mo></mrow></math>\`
 solution:
 
 
@@ -131,6 +143,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 كم تجزئة خماسية للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٧</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\` يمكن تكوينها؟
+final-answer:
+**عدد لا نهائي من التجزئات الخماسية.**
 solution:
 يمكن تغيير إحدى النقاط الداخلية باستمرار مع إبقائها بين جاراتها؛ فلا ينحصر عدد التجزئات.
 
@@ -151,6 +165,10 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٣</mn></mrow></msub></mrow><mo>=</mo><mrow><mo stretchy="true" fence="true">{</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">٤</mn><mo>،</mo><mn dir="ltr">٦</mn><mo stretchy="true" fence="true">}</mo></mrow></mrow></math>\` تجزئة ثلاثية للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">٦</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`، فاكتب جميع الفترات الجزئية الناتجة عنها، ثم احسب طول كل منها.
+final-answer:
+1. **الفترة الأولى:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>[</mo><mo>−</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٣</mn><mo>]</mo></mrow></math>\`؛ **طولها:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn></mrow></math>\`.
+2. **الفترة الثانية:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>[</mo><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">٤</mn><mo>]</mo></mrow></math>\`؛ **طولها:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١</mn></mrow></math>\`.
+3. **الفترة الثالثة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>[</mo><mn dir="ltr">٤</mn><mo>،</mo><mn dir="ltr">٦</mn><mo>]</mo></mrow></math>\`؛ **طولها:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn></mrow></math>\`.
 solution:
 التجزئة تقسم الفترة عند كل نقطة داخلية. كل نقطتين متتاليتين تحددان فترة جزئية.
 
@@ -192,6 +210,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></mrow><mo>=</mo><mrow><mo stretchy="true" fence="true">{</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٤</mn><mo>،</mo><mn dir="ltr">٦</mn><mo>،</mo><mn dir="ltr">٨</mn><mo>،</mo><mn dir="ltr">١٠</mn><mo stretchy="true" fence="true">}</mo></mrow></mrow></math>\` تجزئة رباعية للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">١٠</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`، فما العلاقة بين أطوال الفترات الجزئية الناتجة عنها؟
+final-answer:
+**الأطوال متساوية، وطول كل فترة جزئية ٢.**
 solution:
 طول كل فترة جزئية يساوي طرفها الأكبر ناقص الأصغر؛ نحسب فروق النقاط المتتالية فنجدها متساوية.
 
@@ -209,6 +229,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 للتجزئة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></mrow><mo>=</mo><mrow><mo stretchy="true" fence="true">{</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٤</mn><mo>،</mo><mn dir="ltr">٦</mn><mo>،</mo><mn dir="ltr">٨</mn><mo>،</mo><mn dir="ltr">١٠</mn><mo stretchy="true" fence="true">}</mo></mrow></mrow></math>\`، كم عدد الفترات الجزئية؟
+final-answer:
+**٤ فترات جزئية.**
 solution:
 كل نقطتين متتاليتين تحددان فترة؛ عدد الفترات أقل من عدد النقاط بواحد.
 
@@ -226,6 +248,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 للتجزئة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></mrow><mo>=</mo><mrow><mo stretchy="true" fence="true">{</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٤</mn><mo>،</mo><mn dir="ltr">٦</mn><mo>،</mo><mn dir="ltr">٨</mn><mo>،</mo><mn dir="ltr">١٠</mn><mo stretchy="true" fence="true">}</mo></mrow></mrow></math>\`، كم عدد عناصر التجزئة؟ ماذا تلاحظ؟
+final-answer:
+**٥ عناصر؛ عدد العناصر يزيد واحدًا على عدد الفترات الجزئية.**
 solution:
 نعد النقاط بما فيها طرفا الفترة.
 
@@ -243,6 +267,8 @@ reference: [السؤال، النسخة المصورة، ص ١٠٤](assets/lesso
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 اكتب تجزئة خماسية منتظمة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow><mo>،</mo><mn dir="ltr">١٣</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`.
+final-answer:
+**التجزئة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mn dir="ltr">٥</mn></msub><mo>=</mo><mo>{</mo><mo>−</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٤</mn><mo>،</mo><mn dir="ltr">٧</mn><mo>،</mo><mn dir="ltr">١٠</mn><mo>،</mo><mn dir="ltr">١٣</mn><mo>}</mo></mrow></math>\`
 solution:
 نقسم طول الفترة الكلية على خمس فترات لنحصل على العرض المشترك.
 
@@ -268,6 +294,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٤](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 هل هناك تجزئات خماسية منتظمة أخرى للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow><mo>،</mo><mn dir="ltr">١٣</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`؟
+final-answer:
+**لا؛ توجد تجزئة خماسية منتظمة واحدة فقط لهذه الفترة.**
 solution:
 التجزئة المنتظمة تعني أن عروض الفترات الجزئية متساوية. عرض كل فترة يساوي طول الفترة الكلية مقسومًا على عدد أجزائها؛ وعدد نقاط التجزئة يزيد واحدًا على عدد الفترات.
 
@@ -295,6 +323,8 @@ reference: [السؤال، النسخة المصورة، ص ١٠٤](assets/lesso
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi>σ</mi><mn dir="ltr">٦</mn></msub></math>\` تجزئة منتظمة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">٥</mn><mo>،</mo><mi mathvariant="normal">ب</mi><mo stretchy="true" fence="true">]</mo></mrow></math>\`، وكان طول الفترة الجزئية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac></math>\`، جد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`.
+final-answer:
+**الإجابة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٧</mn></mrow></math>\`
 solution:
 الطول الكلي يساوي عدد الفترات مضروبًا في عرض الواحدة.
 
@@ -320,6 +350,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٤](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 في التجزئة المنتظمة، علل أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow><mo>=</mo><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mfrac><mrow><mn dir="ltr">٢</mn><mrow><mo stretchy="true" fence="true">(</mo><mrow><mi mathvariant="normal">ب</mi><mo>−</mo><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true" fence="true">)</mo></mrow></mrow><mi mathvariant="normal">ن</mi></mfrac></mrow></mrow></math>\`.
+final-answer:
+**لأن النقطة الثانية تبعد عن بداية الفترة بمقدار عرضَي فترتين جزئيتين متساويتين.**
 solution:
 عرض الفترة الجزئية في التجزئة المنتظمة هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">Δ</mi><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mfrac><mrow><mo stretchy="true" fence="true">(</mo><mrow><mi mathvariant="normal">ب</mi><mo>−</mo><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true" fence="true">)</mo></mrow><mi mathvariant="normal">ن</mi></mfrac></mrow></math>\`، لأننا نقسم الطول الكلي بالتساوي على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ن</mi></math>\` أجزاء.
 
@@ -342,6 +374,9 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٥](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لتكن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">١٢</mn></mrow></msub></math>\` تجزئة منتظمة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">١٩</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`. جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٩</mn></mrow></msub></math>\`.
+final-answer:
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mfrac><mn dir="ltr">٧</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\`.
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">س</mi><mn dir="ltr">٩</mn></msub><mo>=</mo><mn dir="ltr">١٤</mn></mrow></math>\`.
 solution:
 التجزئة المنتظمة تعني أن عروض الفترات الجزئية متساوية. عرض كل فترة يساوي طول الفترة الكلية مقسومًا على عدد أجزائها؛ وعدد نقاط التجزئة يزيد واحدًا على عدد الفترات.
 
@@ -377,6 +412,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٥](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لتكن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">١٢</mn></mrow></msub></math>\` تجزئة منتظمة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">١٩</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`. جد العنصر الثامن.
+final-answer:
+**العنصر الثامن:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">س</mi><mn dir="ltr">٧</mn></msub><mo>=</mo><mfrac><mn dir="ltr">٣٢</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\`
 solution:
 عرض كل فترة هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mo stretchy="true" fence="true">(</mo><mrow><mn dir="ltr">١٩</mn><mo>−</mo><mrow><mo stretchy="true" fence="true">(</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo stretchy="true" fence="true">)</mo></mrow><mn dir="ltr">١٢</mn></mfrac><mo>=</mo><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\`.
 
@@ -397,6 +434,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٥](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لتكن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">١٢</mn></mrow></msub></math>\` تجزئة منتظمة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">١٩</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`. جد الفترة الجزئية الخامسة.
+final-answer:
+**الفترة الجزئية الخامسة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>[</mo><mfrac><mn dir="ltr">١٧</mn><mn dir="ltr">٣</mn></mfrac><mo>،</mo><mfrac><mn dir="ltr">٢٢</mn><mn dir="ltr">٣</mn></mfrac><mo>]</mo></mrow></math>\`
 solution:
 عرض كل فترة هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mo stretchy="true" fence="true">(</mo><mrow><mn dir="ltr">١٩</mn><mo>−</mo><mrow><mo stretchy="true" fence="true">(</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo stretchy="true" fence="true">)</mo></mrow><mn dir="ltr">١٢</mn></mfrac><mo>=</mo><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>\`.
 
@@ -431,6 +470,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٥](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">٢</mn></mrow></mrow></math>\`، وكانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٣</mn></mrow></msub></mrow><mo>=</mo><mrow><mo stretchy="true" fence="true">{</mo><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">٤</mn><mo>،</mo><mn dir="ltr">٥</mn><mo>،</mo><mn dir="ltr">٦</mn><mo stretchy="true" fence="true">}</mo></mrow></mrow></math>\` تجزئة ثلاثية للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">٦</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`، فاحسب مجموع ريمان، معتبرًا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msubsup><mi mathvariant="normal">س</mi><mi mathvariant="normal">ر</mi><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msub></mrow></mrow></math>\`.
+final-answer:
+**مجموع ريمان:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٦</mn></mrow></math>\`
 solution:
 ![مستطيلات مجموع ريمان](assets/lessons/mathematics/source-crops/math-book-p105-ex7-figure.webp)
 
@@ -486,6 +527,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٦](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></mrow></math>\`، وكانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></math>\` تجزئة رباعية منتظمة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mo>،</mo><mn dir="ltr">٥</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`، فاحسب مجموع ريمان، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msubsup><mi mathvariant="normal">س</mi><mi mathvariant="normal">ر</mi><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msub></mrow></mrow></math>\`.
+final-answer:
+**مجموع ريمان:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤٠</mn></mrow></math>\`
 solution:
  مجموع ريمان هو مجموع قيمة الاقتران عند نقطة الاختيار مضروبة في عرض فترتها.
 العرض المشترك \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mo stretchy="true" fence="true">(</mo><mrow><mn dir="ltr">٥</mn><mo>−</mo><mrow><mo stretchy="true" fence="true">(</mo><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo stretchy="true" fence="true">)</mo></mrow><mn dir="ltr">٤</mn></mfrac><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\`. نقاط الطرف الأيسر هي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١</mn></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣</mn></math>\`.
@@ -547,6 +590,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٦](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٦</mn></mrow></msub></math>\` تجزئة منتظمة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">٢</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`، فجد العنصر الثالث في التجزئة.
+final-answer:
+**العنصر الثالث:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mn dir="ltr">٠</mn></mrow></math>\`
 solution:
 التجزئة المنتظمة تعني أن عروض الفترات الجزئية متساوية. عرض كل فترة يساوي طول الفترة الكلية مقسومًا على عدد أجزائها؛ وعدد نقاط التجزئة يزيد واحدًا على عدد الفترات.
 
@@ -576,6 +621,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٦](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٦</mn></mrow></msub></math>\` تجزئة منتظمة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">٢</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`، فجد الفترة الجزئية الرابعة.
+final-answer:
+**الفترة الجزئية الرابعة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>[</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo>،</mo><mn dir="ltr">١</mn><mo>]</mo></mrow></math>\`
 solution:
 عرض كل فترة هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mo stretchy="true" fence="true">(</mo><mrow><mn dir="ltr">٢</mn><mo>−</mo><mrow><mo stretchy="true" fence="true">(</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo stretchy="true" fence="true">)</mo></mrow><mn dir="ltr">٦</mn></mfrac><mo>=</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>\`.
 
@@ -604,6 +651,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٦](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان العنصر الخامس في التجزئة المنتظمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">١٠</mn></mrow></msub></math>\` للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mi mathvariant="normal">ج</mi><mo>،</mo><mn dir="ltr">٧</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\` يساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٤</mn></math>\`، جد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\`.
+final-answer:
+**الإجابة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\`
 solution:
 التجزئة المنتظمة تقسم الفترة إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٠</mn></math>\` فترات متساوية؛ عرض كل واحدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mo stretchy="true" fence="true">(</mo><mrow><mn dir="ltr">٧</mn><mo>−</mo><mi mathvariant="normal">ج</mi></mrow><mo stretchy="true" fence="true">)</mo></mrow><mn dir="ltr">١٠</mn></mfrac></math>\`. العنصر الخامس هو النقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></math>\`، لأن عد العناصر يبدأ ب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٠</mn></mrow></msub></math>\`.
 
@@ -655,6 +704,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٦](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">٦</mn><mo>−</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow></mrow></math>\` معرفًا على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٥</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`، وكانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></math>\` تجزئة منتظمة للفترة نفسها، فجد مجموع ريمان، معتبرًا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msubsup><mi mathvariant="normal">س</mi><mi mathvariant="normal">ر</mi><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow></msub></mrow></mrow></math>\`.
+final-answer:
+**مجموع ريمان:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">٣٠</mn></mrow></math>\`
 solution:
  مجموع ريمان هو مجموع قيمة الاقتران عند نقطة الاختيار مضروبة في عرض فترتها.
 العرض المشترك \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mo stretchy="true" fence="true">(</mo><mrow><mn dir="ltr">٥</mn><mo>−</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true" fence="true">)</mo></mrow><mn dir="ltr">٤</mn></mfrac><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\`. نقاط الطرف الأيمن هي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣</mn></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٤</mn></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٥</mn></math>\`.
@@ -716,6 +767,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٠٦](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">س</mi></mrow><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٢</mn></mrow></mfrac></mrow></math>\` معرفًا على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">٨</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`، وكانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٥</mn></mrow></msub></mrow><mo>=</mo><mrow><mo stretchy="true" fence="true">{</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٣</mn><mo>،</mo><mn dir="ltr">٦</mn><mo>،</mo><mn dir="ltr">٨</mn><mo stretchy="true" fence="true">}</mo></mrow></mrow></math>\` تجزئة للفترة، فاحسب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` علمًا بأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">مجموع ريمان</mtext><mo>=</mo><mn dir="ltr">٥٫٦</mn></mrow></math>\`، معتبرًا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msubsup><mi mathvariant="normal">س</mi><mi mathvariant="normal">ر</mi><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msub></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mfrac><mn dir="ltr">٢١</mn><mn dir="ltr">٨</mn></mfrac></mrow></math>\`
 solution:
 المطلوب مجموع ريمان، ثم استخدام قيمته المعطاة لتعيين الثابت.
 
@@ -923,6 +976,9 @@ reference: [الكتاب، النسخة المصورة، ص ١٢٣](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٨</mn></mrow></msub></math>\` تجزئة منتظمة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi><mo stretchy="true" fence="true">]</mo></mrow></math>\` والعنصر الثالث فيها يساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\`، وكانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">١٢</mn></mrow></msub></math>\` تجزئة منتظمة للفترة نفسها والعنصر الخامس فيها يساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٤</mn></math>\`، جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`.
+final-answer:
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٤</mn></mrow></math>\`.
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٢٠</mn></mrow></math>\`.
 solution:
 التجزئة المنتظمة تعني أن عروض الفترات الجزئية متساوية. عرض كل فترة يساوي طول الفترة الكلية مقسومًا على عدد أجزائها؛ وعدد نقاط التجزئة يزيد واحدًا على عدد الفترات.
 
@@ -1001,6 +1057,9 @@ reference: [الكتاب، النسخة المصورة، ص ١٢٥](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">١٢</mn></mrow></msub></math>\` تجزئة منتظمة للفترة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi><mo stretchy="true" fence="true">]</mo></mrow></math>\`، وكان العنصر السابع فيها يساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٢</mn></math>\` والعنصر الرابع يساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٧</mn></math>\`، فما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`؟
+final-answer:
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\`.
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٢٢</mn></mrow></math>\`.
 solution:
 بين العنصرين الرابع والسابع ثلاث فترات؛ نحسب عرض الواحدة.
 
@@ -1036,6 +1095,8 @@ reference: [الكتاب، النسخة المصورة، ص ١٢٦](https://moe.
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">هـ</mi></math>\` اقترانين معرفين في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">١٠</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`، وكان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mtext dir="rtl">هـ</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">٣</mn><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">س</mi></mrow></mrow></math>\`، ومجموع ريمان ل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\` يساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٦</mn></math>\`، فجد مجموع ريمان ل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">هـ</mi></math>\` معتبرًا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msubsup><mi mathvariant="normal">س</mi><mi mathvariant="normal">ر</mi><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow></msub></mrow></mrow></math>\`، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></math>\` تجزئة منتظمة للفترة.
+final-answer:
+**مجموع ريمان للاقتران هـ:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٧٤</mn></mrow></math>\`
 solution:
 مجموع ريمان يجمع قيمة الاقتران عند كل نقطة اختيار مضروبة في عرض فترتها. نستخدم التجزئة ونقاط الاختيار نفسها ل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\` ولهـ، لذلك يتوزع المجموع على الحدين في العلاقة المعطاة.
 
@@ -2352,6 +2413,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">١٢</mn></mrow></msub></mrow></math>\` تجزئة منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mn dir="ltr">٢</mn><mo>،</mo><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\` وكان العنصر السابع يساوي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٨</mn></mrow></math>\`، فما قيمة الثابت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi></mrow></math>\`؟
+final-answer:
+**الإجابة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">١٤</mn></mrow></math>\`
 solution:
 العنصر السابع يأتي بعد ستة عروض.
 
@@ -2377,6 +2440,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لتكن \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mi mathvariant="normal">ن</mi></mrow></msub></mrow></math>\` تجزئة نونية منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mn dir="ltr">١٤</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكان العنصر الخامس والسابع \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٦</mn><mo>،</mo><mn dir="ltr">١٠</mn></mrow></math>\` على الترتيب. أوجد طول الفترة الكلية.
+final-answer:
+**طول الفترة الكلية:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١٦</mn></mrow></math>\`
 solution:
 بين العنصرين الخامس والسابع عرضان، فنحسب عرض الواحدة.
 
@@ -2412,6 +2477,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لتكن \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mi mathvariant="normal">ن</mi></mrow></msub></mrow></math>\` تجزئة نونية منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mn dir="ltr">١٤</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكان العنصر الخامس والسابع \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٦</mn><mo>،</mo><mn dir="ltr">١٠</mn></mrow></math>\` على الترتيب. أوجد قيمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ن</mi></mrow></math>\`.
+final-answer:
+**الإجابة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ن</mi><mo>=</mo><mn dir="ltr">٨</mn></mrow></math>\`
 solution:
 بين العنصرين الخامس والسابع عرضان، فنحسب عرض الواحدة.
 
@@ -2450,6 +2517,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٥</mn><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\` معرفاً على الفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mn dir="ltr">١</mn><mo>،</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٥</mn></mrow></msub></mrow></math>\` تجزئة خماسية منتظمة لهذه الفترة بحيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">م</mi><mrow><mo stretchy="true">(</mo><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٥</mn></mrow></msub><mo>،</mo><mi mathvariant="normal">ق</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٣٦</mn></mrow></math>\`، أوجد قيمة الثابت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi></mrow></math>\` حيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow><mrow><mo>∗</mo></mrow></msubsup><mo>=</mo><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow></msub></mrow></math>\`.
+final-answer:
+**الإجابة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>\`
 solution:
 المطلوب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` من مجموع ريمان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣٦</mn></math>\`، ل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn dir="ltr">٥</mn><mi mathvariant="normal">س</mi></mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mrow></math>\` على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">١</mn><mo>،</mo><mi mathvariant="normal">ب</mi><mo stretchy="true" fence="true">]</mo></mrow></math>\` بخمس فترات منتظمة واختيار الأطراف اليمنى. نكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">Δ</mi><mi mathvariant="normal">س</mi></mrow></math>\` لعرض الفترة.
 
@@ -2537,6 +2606,9 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mi mathvariant="normal">ن</mi></mrow></msub></mrow></math>\` تجزئة منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mn dir="ltr">٨</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكان العنصر الخامس عشر يساوي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mn dir="ltr">٣</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></math>\`، وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٨</mn></mrow></msub><mo>−</mo><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٥</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn dir="ltr">٣</mn></mrow><mrow><mn dir="ltr">٤</mn></mrow></mfrac></mrow></math>\`، فما قيمة كل من \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ن</mi></mrow></math>\`؟
+final-answer:
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\`.
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ن</mi><mo>=</mo><mn dir="ltr">٤٠</mn></mrow></math>\`.
 solution:
 المعطيات التي سنستخدمها:
 
@@ -2582,6 +2654,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">١٢</mn></mrow></msub></mrow></math>\` تجزئة منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mn dir="ltr">٨</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\` وكان العنصر التاسع فيها يساوي مثلي العنصر الثالث، فما قيمة الثابت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi></mrow></math>\`؟
+final-answer:
+**الإجابة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\`
 solution:
 العنصر التاسع هو النقطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٨</mn></mrow></msub></math>\`، والثالث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></math>\`؛ لأن البداية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٠</mn></mrow></msub></math>\`. نكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` ل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">Δ</mi><mi mathvariant="normal">س</mi></mrow></math>\` لعرض الفترة.
 
@@ -2655,6 +2729,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` اقتراناً معرفاً ومحدداً في الفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mn dir="ltr">٠</mn><mo>،</mo><mn dir="ltr">١٠</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\` وكانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٢٠</mn></mrow></msub></mrow></math>\` تجزئة منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mn dir="ltr">٠</mn><mo>،</mo><mn dir="ltr">١٠</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\` بحيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">م</mi><mrow><mo stretchy="true">(</mo><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٢٠</mn></mrow></msub><mo>،</mo><mi mathvariant="normal">ق</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٢٧</mn></mrow></math>\` عندما \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow><mrow><mo>∗</mo></mrow></msubsup><mo>=</mo><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow></msub></mrow></math>\`، وكانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">م</mi><mrow><mo stretchy="true">(</mo><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٢٠</mn></mrow></msub><mo>،</mo><mi mathvariant="normal">ق</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">١٦</mn></mrow></math>\` عندما \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow><mrow><mo>∗</mo></mrow></msubsup><mo>=</mo><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msub></mrow></math>\`، فما قيمة المقدار \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">١٠</mn></mrow><mo stretchy="true">)</mo></mrow><mo>−</mo><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٠</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`؟
+final-answer:
+**قيمة المقدار:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢٢</mn></mrow></math>\`
 solution:
 المعطى مجموع الأطراف اليمنى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢٧</mn></math>\` واليسرى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٦</mn></math>\`، لتجزئة منتظمة من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢٠</mn></math>\` فترة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mn dir="ltr">٠</mn><mo>،</mo><mn dir="ltr">١٠</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\`.
 
@@ -2698,6 +2774,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">ب</mi></mrow></math>\` معرفاً في الفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٧</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\` وكانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></mrow></math>\` تجزئة رباعية منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٧</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\` بحيث أن \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">م</mi><mrow><mo stretchy="true">(</mo><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub><mo>،</mo><mi mathvariant="normal">ق</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">١٦</mn></mrow></math>\` عندما \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow><mo>*</mo></msubsup><mo>=</mo><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msub></mrow></math>\`، فما قيمة الثابت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi></mrow></math>\`؟
+final-answer:
+**الإجابة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\`
 solution:
  مجموع ريمان يجمع قيمة الاقتران عند نقطة الاختيار مضروبة في عرض فترتها.
 أربع فترات منتظمة على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>،</mo><mn dir="ltr">٧</mn><mo stretchy="true" fence="true">]</mo></mrow></math>\` تعطي العرض المشترك:
@@ -2778,6 +2856,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لتكن \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">١٢</mn></mrow></msub></mrow></math>\` تجزئة منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mi mathvariant="normal">ب</mi><mo>،</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">ب</mi><mo>+</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\` وكان العنصر الخامس فيها يساوي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١١</mn></mrow></math>\`، فما قيمة الثابت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi></mrow></math>\`؟
+final-answer:
+**الإجابة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٨</mn></mrow></math>\`
 solution:
 طول الفترة هو النهاية ناقص البداية: \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mo stretchy="true" fence="true">(</mo><mrow><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">ب</mi></mrow><mo>+</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true" fence="true">)</mo></mrow><mo>−</mo><mi mathvariant="normal">ب</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">ب</mi><mo>+</mo><mn dir="ltr">١</mn></mrow></mrow></math>\`. نقسمه على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٢</mn></math>\` لنجد عرض كل فترة؛ لأن التجزئة منتظمة.
 
@@ -2812,6 +2892,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٢</mn><mo>+</mo><msup><mtext dir="rtl">هـ</mtext><mrow><mi mathvariant="normal">س</mi></mrow></msup></mrow></math>\` معرفاً في الفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٢</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٣</mn></mrow></msub></mrow></math>\` تجزئة منتظمة للفترة نفسها فجد \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">م</mi><mrow><mo stretchy="true">(</mo><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٣</mn></mrow></msub><mo>،</mo><mi mathvariant="normal">ق</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` معتبراً \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow><mrow><mo>∗</mo></mrow></msubsup><mo>=</mo><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow></msub></mrow></math>\`.
+final-answer:
+**مجموع ريمان:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٧</mn><mo>+</mo><mi mathvariant="normal">هـ</mi><mo>+</mo><msup><mi mathvariant="normal">هـ</mi><mn dir="ltr">٢</mn></msup></mrow></math>\`
 solution:
 المطلوب مجموع ريمان.
 
@@ -2942,6 +3024,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mi mathvariant="normal">ن</mi></mrow></msub></mrow></math>\` تجزئة منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mn dir="ltr">٨</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\` بحيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow></msub><mo>−</mo><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٤</mn></mrow></mfrac></mrow></math>\` لجميع قيم \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ر</mi></mrow></math>\` الممكنة، فما عدد عناصر التجزئة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mi mathvariant="normal">ن</mi></mrow></msub></mrow></math>\` علماً بأن العنصر الخامس فيها يساوي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn></mrow></math>\`؟
+final-answer:
+**عدد عناصر التجزئة: ٢٥ عنصرًا.**
 solution:
 المعطيات التي سنستخدمها:
 
@@ -2975,6 +3059,9 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان عدد عناصر التجزئة المنتظمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mi mathvariant="normal">ن</mi></mrow></msub></mrow></math>\` للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\` هو \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١٣</mn></mrow></math>\` وكانت الفترة الجزئية السادسة هي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mfrac><mrow><mn dir="ltr">١٧</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac><mo>،</mo><mfrac><mrow><mn dir="ltr">٢٠</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد كلاً من الثابتين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi></mrow></math>\`.
+final-answer:
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\`.
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">١٩</mn></mrow></math>\`.
 solution:
 الفترة السادسة تحدد عرض الواحدة بفرق طرفيها.
 
@@ -3010,6 +3097,9 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٢١</mn></mrow></msub></mrow></math>\` تجزئة منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\` وكان العنصر الخامس عشر فيها يساوي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣٢</mn></mrow></math>\` وكانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">١٤</mn></mrow></msub></mrow></math>\` تجزئة منتظمة لنفس الفترة وكان العنصر الثامن فيها يساوي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢٥</mn></mrow></math>\`، فما قيمة كل من الثابتين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi></mrow></math>\`؟
+final-answer:
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>\`.
+- \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٤٦</mn></mrow></math>\`.
 solution:
 التجزئة المنتظمة تقسم الفترة إلى أجزاء متساوية. نكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` للطرف الأول و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ل</mi></math>\` لطول الفترة الكلية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>−</mo><mi mathvariant="normal">أ</mi></mrow></math>\`.
 العنصر الخامس عشر يأتي بعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٤</mn></math>\` عرضًا في التجزئة ذات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢١</mn></math>\` فترة. والعنصر الثامن يأتي بعد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٧</mn></math>\` عروض في التجزئة ذات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١٤</mn></math>\` فترة.
@@ -3068,6 +3158,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>−</mo><mn dir="ltr">٤</mn><mi mathvariant="normal">س</mi></mrow></math>\`، وكانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></mrow></math>\` تجزئة رباعية منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mo>−</mo><mn dir="ltr">٢</mn><mo>،</mo><mn dir="ltr">٦</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`، احسب \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">م</mi><mrow><mo stretchy="true">(</mo><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub><mo>،</mo><mi mathvariant="normal">ق</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` حيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow><mrow><mo>∗</mo></mrow></msubsup><mo>=</mo><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msub></mrow></math>\`.
+final-answer:
+**مجموع ريمان:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">١٦</mn></mrow></math>\`
 solution:
 المطلوب مجموع ريمان.
 
@@ -3266,6 +3358,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true">{</mo><mtable><mtr><mtd><mrow><mrow><mo stretchy="true">|</mo><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">٣</mn></mrow><mo stretchy="true">|</mo></mrow></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn><mo>≤</mo><mi mathvariant="normal">س</mi><mo>&lt;</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mo stretchy="true">[</mo><mrow><mfrac><mrow><mi mathvariant="normal">س</mi></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac><mo>+</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn><mo>≤</mo><mi mathvariant="normal">س</mi><mo>≤</mo><mn dir="ltr">٧</mn></mrow></mtd></mtr></mtable></mrow></mrow></math>\` معرفاً على الفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٧</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></mrow></math>\` تجزئة رباعية منتظمة للفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٧</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`، أجد \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">م</mi><mrow><mo stretchy="true">(</mo><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٤</mn></mrow></msub><mo>،</mo><mi mathvariant="normal">ق</mi></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` معتبراً \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow><mrow><mo>∗</mo></mrow></msubsup><mo>=</mo><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msub></mrow></math>\`.
+final-answer:
+**مجموع ريمان:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢٤</mn></mrow></math>\`
 solution:
  مجموع ريمان هو مجموع قيمة الاقتران عند نقطة الاختيار مضروبة في العرض.
 
@@ -3325,6 +3419,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان الاقتران \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٤</mn><mi mathvariant="normal">س</mi></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>∈</mo><mrow><mo stretchy="true">[</mo><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mn dir="ltr">٥</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow><mrow><mo>∗</mo></mrow></msubsup><mo>=</mo><msub><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ر</mi></mrow></msub></mrow></math>\`، وكانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٣</mn></mrow></msub></mrow></math>\` تجزئة منتظمة في \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mn dir="ltr">٥</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\`، حيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">م</mi><mrow><mo stretchy="true">(</mo><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mn dir="ltr">٣</mn></mrow></msub><mo>،</mo><mi mathvariant="normal">ق</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٧٢</mn></mrow></math>\`، فما قيمة الثابت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi></mrow></math>\`؟
+final-answer:
+**القيمتان الممكنتان:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٤</mn></mrow></math>\`.
 solution:
 المطلوب بدايتا الفترة الممكنتان. نكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">Δ</mi><mi mathvariant="normal">س</mi></mrow></math>\` لعرض الفترة الموجب.
 
@@ -3394,6 +3490,8 @@ reference: السؤال، الصورة، · الإجابة المطبوعة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت النسبة بين قيمتي العنصر الخامس إلى العنصر السادس في التجزئة المنتظمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">σ</mi><mrow><mi mathvariant="normal">ن</mi></mrow></msub></mrow></math>\` على الفترة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mrow><mo>−</mo><mn dir="ltr">١</mn><mo>،</mo><mn dir="ltr">٧</mn></mrow><mo stretchy="true">]</mo></mrow></mrow></math>\` تساوي \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>:</mo><mn dir="ltr">٥</mn></mrow></math>\`، فما قيمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ن</mi></mrow></math>\`؟
+final-answer:
+**الإجابة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ن</mi><mo>=</mo><mn dir="ltr">٢٠</mn></mrow></math>\`
 solution:
 نكتب \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>Δ</mo><mi mathvariant="normal">س</mi></mrow></mrow></math>\` لعرض الفترة. العنصر الخامس هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٤</mn></mrow></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>+</mo><mrow><mn dir="ltr">٤</mn><mi mathvariant="normal">د</mi></mrow></mrow></mrow></math>\`، والسادس \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٥</mn></mrow></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mo>+</mo><mrow><mn dir="ltr">٥</mn><mi mathvariant="normal">د</mi></mrow></mrow></mrow></math>\`.
 النسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣</mn></math>\`:\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٥</mn></math>\` تعني أن قسمة قيمة الخامس على السادس تساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٥</mn></mfrac></math>\`، مع عدم صفر المقام.
@@ -3457,6 +3555,9 @@ body:
 
 
 أوجد عدد نقاط σ بدلالة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ن</mi></math>\`، ثم اكتب الفترة الجزئية الثانية عشرة عندما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ن</mi><mo>=</mo><mn dir="ltr">١٨</mn></mrow></math>\`.
+final-answer:
+- **عدد النقاط:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn><mi mathvariant="normal">ن</mi><mo>+</mo><mn dir="ltr">١</mn></mrow></math>\`.
+- **الفترة الجزئية الثانية عشرة عند ن = ١٨:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>[</mo><mfrac><mn dir="ltr">٢٣</mn><mn dir="ltr">٦</mn></mfrac><mo>،</mo><mn dir="ltr">٤</mn><mo>]</mo></mrow></math>\`.
 solution:
 الفرق بين كل نقطتين متتاليتين يساوي طول الفترة الجزئية.
 

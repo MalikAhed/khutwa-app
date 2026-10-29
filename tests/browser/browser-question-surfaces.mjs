@@ -7,6 +7,7 @@ import { loadSubjectLesson, subjectLessonRegistry } from "../../src/data/lessons
 import { parseLessonMarkdown } from "../../src/markdown/lesson-authoring.js";
 import { findChrome, getAvailablePort, rawRequest, delay, terminateProcess } from "./browser-session.mjs";
 
+const flashcardAnswersOnly = process.env.FLASHCARD_ANSWERS_ONLY === "1";
 const evidence = process.env.BROWSER_SCREENSHOT_DIR || "/tmp/learn-question-surfaces";
 await mkdir(evidence, { recursive:true });
 const questions = [];
@@ -15,7 +16,8 @@ for (const key of subjectLessonRegistry.keys()) {
   const lesson = await loadSubjectLesson(subjectId, lessonId);
   const parsed = parseLessonMarkdown(lesson.authoringSource, { published:true });
   assert.deepEqual(parsed.issues, [], `${key}: published authoring parses`);
-  for (const step of parsed.steps.filter(step => ["mcq", "exam-question"].includes(step.type))) {
+  for (const step of parsed.steps.filter(step => flashcardAnswersOnly ? step.type === "exam-question" : ["mcq", "exam-question"].includes(step.type))) {
+    if (step.type === "exam-question") assert.ok(step.content.finalAnswer?.trim(), `${key}:${step.id}: explicit final answer`);
     questions.push({ id:`${key}:${step.id}`, subjectId, lessonId, title:lesson.title,
       locale:subjectId === "english" ? "en" : "ar", step });
   }
@@ -89,7 +91,7 @@ try {
   let fieldCount = 0, formulaCount = 0, tableCount = 0;
   const risks = [];
   for (let offset = 0; offset < questions.length; offset += 100) {
-    const results = await page.evaluate(async questions => {
+    const results = await page.evaluate(async ({ questions, flashcardAnswersOnly }) => {
       const [{ renderMarkdownDocument, renderMarkdownInline, renderLessonInline }, { renderQuestionContent }] = await Promise.all([
         import("./src/markdown/renderer.js"), import("./src/ui/lesson/question-layout.js"),
       ]);
@@ -99,7 +101,7 @@ try {
         const surfaces = step.type === "mcq"
           ? [["prompt", content.prompt, true], ["example", content.example], ["explanation", content.correctFeedback],
             ["hint", content.wrongFeedback, true], ...content.answers.map((answer, index) => [`option-${index + 1}`, answer.text, true])]
-          : [["body", content.body], ["solution", content.solution]];
+          : [["body", content.body], ["final-answer", content.finalAnswer], ...(flashcardAnswersOnly ? [] : [["solution", content.solution]])];
         const issues = [], images = [];
         const frontImageSources = [];
         let fieldCount = 0, formulas = 0, tables = 0, textLength = 0;
@@ -134,7 +136,7 @@ try {
           formulas += renderedMath;
           tables += renderedTables;
           textLength += host.textContent.length;
-          if (!["explanation", "hint", "solution"].includes(name)) {
+          if (!["explanation", "hint", "solution", "final-answer"].includes(name)) {
             frontLength += host.textContent.length;
             frontFormulas += renderedMath;
             frontTables += renderedTables;
@@ -142,12 +144,12 @@ try {
             host.querySelectorAll("img").forEach(image => frontImageSources.push(image.getAttribute("src")));
           }
           if (name.startsWith("option-")) optionLength = Math.max(optionLength, host.textContent.length);
-          if (name === "solution") solutionLength = host.textContent.length;
+          if (name === "final-answer") solutionLength = host.textContent.length;
         }
         return { id:question.id, issues, images, fieldCount, formulas, tables, textLength,
           frontLength, optionLength, frontFormulas, frontTables, frontImages, frontImageSources, solutionLength };
       });
-    }, questions.slice(offset, offset + 100));
+    }, { questions:questions.slice(offset, offset + 100), flashcardAnswersOnly });
     for (const result of results) {
       fieldCount += result.fieldCount;
       formulaCount += result.formulas;

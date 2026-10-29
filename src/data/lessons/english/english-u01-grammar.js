@@ -10,6 +10,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Huda normally … up at 7:00 o’clock in the morning. (get)
+final-answer:
+Huda normally **gets** up at 7:00 o’clock in the morning.
 solution:
 normally تدل على عادة متكررة، فنستعمل المضارع البسيط.  
 مع Huda، وهي مفرد غائب، نضيف s إلى get: gets.
@@ -31,6 +33,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Ahmed … for the English exam now. You can’t talk to him. (study)
+final-answer:
+Ahmed **is studying** for the English exam now. You can’t talk to him.
 solution:
 now وعدم إمكان التحدث إليه يدلان على فعل جارٍ الآن، فنستخدم المضارع المستمر: is مع Ahmed ثم study + ing = studying.
 
@@ -51,6 +55,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I’ve been working in the garden all day, and I … yet. (finish)
+final-answer:
+I’ve been working in the garden all day, and I **haven’t finished** yet.
 solution:
 yet مع النفي تعني أن العمل لم يكتمل حتى الآن.  
 نستخدم المضارع التام البسيط: \`I + have not + التصريف الثالث\`؛ و finish منتظم فيصبح finished.
@@ -72,6 +78,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I … my breakfast, so I will call you back in ten minutes. (have)
+final-answer:
+I **am having** my breakfast, so I will call you back in ten minutes.
 solution:
 have هنا تعني يتناول الطعام، فهي نشاط يحدث الآن وليست ملكية.  
 المضارع المستمر مع I هو am + having؛ لذلك سيعاود الاتصال بعد انتهائه.
@@ -93,6 +101,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I always … (enjoy) parties. But I don’t like this one. I … (not enjoy) it.
+final-answer:
+I always **enjoy** parties, but I don’t like this one. I **am not enjoying** it.
 solution:
 always تصف عادة فنستخدم enjoy بالمضارع البسيط مع I.  
 أما الحفلة الحالية فهي تجربة مؤقتة الآن؛ ننفي المستمر باستعمال am not + enjoying.
@@ -114,6 +124,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I … my keys. Can you help me look for them? (lose)
+final-answer:
+I **have lost** my keys. Can you help me look for them?
 solution:
 فقدان المفاتيح حدث سابق له نتيجة حاضرة: ما زالت مفقودة.  
 نستخدم المضارع التام \`have + التصريف الثالث\`؛ وتصريف lose الثالث هو lost.
@@ -135,6 +147,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Asia and Africa … still … rapid rises in population. (show)
+final-answer:
+Asia and Africa **are still showing** rapid rises in population.
 solution:
 الزيادة مستمرة ولم تنته، لذا نستخدم المضارع المستمر.  
 Asia and Africa فاعل جمع، فتكون الصيغة are + showing، وتأتي still بينهما.
@@ -156,6 +170,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 He … German for two years, but he still can’t speak it very well. (learn)
+final-answer:
+He **has been learning** German for two years, but he still can’t speak it very well.
 solution:
 for two years تعطي مدة تعلم بدأ في الماضي واستمر حتى الآن.  
 نبرز النشاط ومدته بالمضارع التام المستمر: he + has been + learning.
@@ -177,6 +193,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 What … he usually … after school? (do)
+final-answer:
+What **does** he usually **do** after school?
 solution:
 usually تسأل عن عادة، فنكوّن سؤال المضارع البسيط: \`What + does + he + مصدر الفعل\` do.  
 بعد does لا نضيف s إلى الفعل.
@@ -198,6 +216,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 They all … (not agree) with what he … (say) now.
+final-answer:
+They all **don’t agree** with what he **is saying** now.
 solution:
 agree يصف موقفاً ذهنياً فلا يأتي مستمراً عادة؛ نستخدم don’t agree مع they.  
 أما كلامه فيجري now، فنستخدم he + is saying.
@@ -219,6 +239,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 You were away for a long time, where … you …? (be)
+final-answer:
+You were away for a long time. Where **have you been**?
 solution:
 السؤال عن غياب انتهى وله صلة باللحظة الحالية.  
 نستخدم Where + have + you + been، و been هو التصريف الثالث من be.  
@@ -241,6 +263,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 He … with his friends for too long a time. He needs to find a house of his own. (stay)
+final-answer:
+He **has been staying** with his friends for too long a time. He needs to find a house of his own.
 solution:
 الإقامة بدأت سابقاً وما زالت مستمرة، و for يحدد مدتها.  
 الصيغة he + has been + staying؛ ونستخدم a في too long a time عند إكمال الجملة.
@@ -262,6 +286,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 The passengers … (wait) for three hours, and the train … yet. (arrive)
+final-answer:
+The passengers **have been waiting** for three hours, and the train **hasn’t arrived** yet.
 solution:
 الانتظار بدأ قبل ثلاث ساعات واستمر إلى الآن، فنستخدم المضارع التام المستمر.  
 مع الجمع passengers تكون الصيغة have + been + waiting.  
@@ -285,6 +311,8 @@ Complete the sentences with the correct tense of the verbs in brackets:
 
 Listen! What language … Ali’s guests …? (speak)
 
+final-answer:
+Listen! What language **are** Ali’s guests **speaking**?
 solution:
 Listen يلفت إلى حديث جارٍ الآن.  
 الفاعل guests جمع، فنقدم are في السؤال ثم نستخدم speaking.  
@@ -307,6 +335,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 The teacher … the exam is complicated. (think)
+final-answer:
+The teacher **thinks** the exam is complicated.
 solution:
 think هنا تعني يعتقد أو يرى رأياً، فهي فعل حالة.  
 نستخدم المضارع البسيط ونضيف s مع the teacher المفرد: thinks.
@@ -328,6 +358,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 January … the first month of the year. (be)
+final-answer:
+January **is** the first month of the year.
 solution:
 هذه حقيقة ثابتة، فنستخدم المضارع البسيط.  
 January مفرد، وصيغة be المناسبة له هي is.
@@ -349,6 +381,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 We can’t get a table right now because we … a table yet. (not book)
+final-answer:
+We can’t get a table right now because we **haven’t booked** a table yet.
 solution:
 عدم وجود حجز حتى الآن سبب المشكلة الحاضرة.  
 مع yet نستخدم النفي في المضارع التام: we + have not + booked؛ و booked هو التصريف الثالث.
@@ -370,6 +404,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 My grandmother … her glasses now, so she can’t read this note. (not wear)
+final-answer:
+My grandmother **isn’t wearing** her glasses now, so she can’t read this note.
 solution:
 now يحدد حالة مؤقتة: لا ترتدي نظارتها في هذه اللحظة.  
 ننفي المستمر مع المفرد باستعمال isn’t + wearing.
@@ -391,6 +427,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 My uncle … Jerusalem yet. (not visit)
+final-answer:
+My uncle **hasn’t visited** Jerusalem yet.
 solution:
 yet تشير إلى أن الزيارة لم تحدث حتى الآن.  
 مع my uncle نستخدم has not + visited، والتصريف الثالث من visit منتظم بإضافة ed.
@@ -412,6 +450,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 You are very quiet. What … you … about? (think)
+final-answer:
+You are very quiet. What **are you thinking** about?
 solution:
 السؤال عن عملية تفكير تحدث الآن، لا عن رأي ثابت.  
 نستخدم المضارع المستمر: What + are + you + thinking + about.
@@ -433,6 +473,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Where have you been? I … for you for the last half an hour. (look)
+final-answer:
+Where have you been? I **have been looking** for you for the last half an hour.
 solution:
 البحث بدأ قبل نصف ساعة واستمر حتى حضور الشخص.  
 نركز على النشاط ومدته، فنستخدم I + have been + looking، و for تحدد مدة البحث.
@@ -454,6 +496,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Sorry, you can’t speak to him now. He … a shower. (have)
+final-answer:
+Sorry, you can’t speak to him now. He **is having** a shower.
 solution:
 have a shower نشاط يقوم به الآن، لذلك يقبل المستمر.  
 مع he نستخدم is + having؛ ولا نعامله هنا كـ have بمعنى يمتلك.
@@ -476,6 +520,8 @@ Complete the sentences with the correct tense of the verbs in brackets:
 
 Salma and her sister … the house all day, and they are still at work. (clean)
 
+final-answer:
+Salma and her sister **have been cleaning** the house all day, and they are still at work.
 solution:
 all day وكونهما ما زالتا تعملان يبرزان مدة التنظيف الممتدة إلى الآن.  
 الفاعل جمع، فنستعمل have been + cleaning للتام المستمر.
@@ -497,6 +543,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Everything is going well. We … any problems so far. (not have)
+final-answer:
+Everything is going well. We **haven’t had** any problems so far.
 solution:
 so far تعني حتى الآن، والمقصود عدم وقوع مشكلات خلال الفترة الماضية.  
 ننفي التام البسيط: we + haven’t + had؛ و had هو التصريف الثالث من have.
@@ -518,6 +566,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Reading stories for children … their brain development and imagination. (promote)
+final-answer:
+Reading stories for children **promotes** their brain development and imagination.
 solution:
 هذه فائدة عامة فنستخدم المضارع البسيط.  
 الفاعل Reading stories نشاط واحد يعامل معاملة المفرد، لذلك نضيف s: promotes.
@@ -539,6 +589,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I … this book on psychology for hours and I’m still on page 6. (read)
+final-answer:
+I **have been reading** this book on psychology for hours and I’m still on page 6.
 solution:
 for hours و still يوضحان استمرار القراءة مع قلة الإنجاز.  
 نركز على النشاط والمدة: I + have been + reading.
@@ -560,6 +612,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Nowadays, people … more and more about their health. (think)
+final-answer:
+Nowadays, people **are thinking** more and more about their health.
 solution:
 more and more و Nowadays يصوران اتجاهاً يتطور حالياً.  
 think هنا نشاط التفكير والاهتمام؛ لذا نستخدم people + are thinking.
@@ -581,6 +635,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 All of them seem surprised. I don’t know what they … at. (look)
+final-answer:
+All of them seem surprised. I don’t know what they **are looking** at.
 solution:
 المقصود النظر إلى شيء الآن، وهو فعل حركي لا معنى يبدو.  
 مع they نستخدم are + looking، ونحتفظ بحرف الجر at.
@@ -602,6 +658,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Nabil … about changing his job for years but he isn’t doing anything about it. (talk)
+final-answer:
+Nabil **has been talking** about changing his job for years, but he isn’t doing anything about it.
 solution:
 for years تعطي مدة كلام متكرر بدأ سابقاً وما زال قائماً.  
 نستخدم التام المستمر مع Nabil المفرد: has been + talking.
@@ -623,6 +681,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I … (not agree) with what he usually … (say).
+final-answer:
+I **don’t agree** with what he usually **says**.
 solution:
 agree فعل حالة فننفيه بالمضارع البسيط مع I: don’t agree.  
 usually تدل على عادة، ومع he نضيف s إلى say: says.
@@ -644,6 +704,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Why … you … at me like that? Have I said something wrong? (look)
+final-answer:
+Why **are you looking** at me like that? Have I said something wrong?
 solution:
 السؤال عن نظرة تحدث الآن، لذا نستخدم المستمر.  
 ترتيب السؤال: Why + are + you + looking، ثم at لتحديد من تنظر إليه.
@@ -665,6 +727,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Tamer … (read) a book for two hours and he … (read) 53 pages so far.
+final-answer:
+Tamer **has been reading** a book for two hours, and he **has read** 53 pages so far.
 solution:
 الجزء الأول يركز على مدة النشاط for two hours، فنستخدم المضارع التام المستمر.  
 مع Tamer تكون الصيغة has + been + reading.  
@@ -687,6 +751,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I … (call) you for half an hour. Where … you …? (be)
+final-answer:
+I **have been calling** you for half an hour. Where **have you been**?
 solution:
 الاتصالات مستمرة منذ نصف ساعة فنستخدم have been calling.  
 نسأل عن مكان الشخص خلال غيابه بصيغة التام: Where + have + you + been؛ و been تصريف be الثالث.
@@ -708,6 +774,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Suha and Ruba … in the next room. Don’t disturb them. (study)
+final-answer:
+Suha and Ruba **are studying** in the next room. Don’t disturb them.
 solution:
 طلب عدم الإزعاج يدل على دراسة جارية الآن.  
 الفاعل شخصان، فنستخدم are + studying في المضارع المستمر.
@@ -729,6 +797,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Don’t interrupt me! I … about my exam now. (think)
+final-answer:
+Don’t interrupt me! I **am thinking** about my exam now.
 solution:
 now وطلب عدم المقاطعة يدلان على عملية تفكير جارية.  
 مع I نستخدم am + thinking، فالمعنى هنا يفكر في أمر وليس يعتقد رأياً.
@@ -750,6 +820,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I … (not understand) the word “ant”. What … it …? (mean)
+final-answer:
+I **don’t understand** the word “ant”. What **does it mean**?
 solution:
 understand و mean فعلان يصفان حالة أو معنى، فنستخدم البسيط.  
 النفي مع I هو don’t understand؛ والسؤال مع it هو \`does + it + المصدر\` mean.
@@ -771,6 +843,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 He … a shower that’s why you can’t speak to him now. (have)
+final-answer:
+He **is having** a shower; that’s why you can’t speak to him now.
 solution:
 الاستحمام نشاط جارٍ يمنع الحديث معه الآن؛ لذلك نستخدم is having.  
 معنى have هنا يؤدي نشاطاً، وليس يمتلك.
@@ -793,6 +867,8 @@ Complete the sentences with the correct tense of the verbs in brackets:
 
 My sister who has been teaching English for thirty years … yet. (not retire)
 
+final-answer:
+My sister, who has been teaching English for thirty years, **hasn’t retired** yet.
 solution:
 السؤال عن عدم وقوع التقاعد حتى الآن، لا عن مدة التدريس.  
 yet تناسب نفي التام البسيط: has not + retired، والتصريف الثالث منتظم.
@@ -814,6 +890,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 My grandfather still … the day when the dam broke. (remember)
+final-answer:
+My grandfather still **remembers** the day when the dam broke.
 solution:
 remember فعل حالة يدل على التذكر، فلا نستخدمه مستمراً هنا.  
 grandfather مفرد، لذلك نضيف s: remembers؛ و still تبين استمرار التذكر.
@@ -835,6 +913,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Sorry you can’t talk to him right now. He … downtown. (drive)
+final-answer:
+Sorry, you can’t talk to him right now. He **is driving** downtown.
 solution:
 right now يدل على فعل يحدث في هذه اللحظة.  
 مع he نستخدم is + driving؛ نحذف e الأخيرة من drive قبل إضافة ing.
@@ -856,6 +936,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 He can’t play with us because he … for two hours. (run)
+final-answer:
+He can’t play with us because he **has been running** for two hours.
 solution:
 الجري استمر ساعتين وله أثر حالي يفسر عدم قدرته على اللعب.  
 نركز على النشاط ومدته بالتام المستمر: he + has been + running، مع مضاعفة n.
@@ -877,6 +959,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Her friend … to parties normally. (not go)
+final-answer:
+Her friend **doesn’t go** to parties normally.
 solution:
 normally تصف عادة.  
 مع her friend المفرد ننفي المضارع البسيط باستعمال doesn’t، ثم المصدر go دون s.
@@ -898,6 +982,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 My brother … in this school for a long time and he is still there. (teach)
+final-answer:
+My brother **has been teaching** in this school for a long time and he is still there.
 solution:
 for a long time و still there تؤكدان أن التدريس بدأ سابقاً وما زال مستمراً.  
 مع my brother نستخدم has been + teaching.
@@ -919,6 +1005,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I can’t talk now because I … (have) my dinner. Ask him what he … (want).
+final-answer:
+I can’t talk now because I **am having** my dinner. Ask him what he **wants**.
 solution:
 تناول العشاء نشاط جارٍ now، فنستخدم I am having.  
 want رغبة وحالة لا نشاط مستمر، لذا مع he نقول wants بالمضارع البسيط.
@@ -941,6 +1029,8 @@ Complete the sentences with the correct tense of the verbs in brackets:
 
 Shadia … for us for a long time, and she is still waiting. (wait)
 
+final-answer:
+Shadia **has been waiting** for us for a long time, and she is still waiting.
 solution:
 الانتظار بدأ سابقاً واستمر مدة طويلة حتى الآن.  
 التام المستمر مع Shadia المفرد هو has been + waiting.
@@ -962,6 +1052,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Manal … such invitations quite often. (not accept)
+final-answer:
+Manal **doesn’t accept** such invitations quite often.
 solution:
 quite often يتحدث عن التكرار، فنستخدم المضارع البسيط.  
 ننفي مع Manal بواسطة doesn’t ثم المصدر accept.
@@ -984,6 +1076,8 @@ Complete the sentences with the correct tense of the verbs in brackets:
 
 I … badly for a long time, and the problem is continuing. (sleep)
 
+final-answer:
+I **have been sleeping** badly for a long time, and the problem is continuing.
 solution:
 المقصود نمط نوم سيئ استمر مدة طويلة إلى الحاضر.  
 مع I نستخدم التام المستمر have been + sleeping، و for تحدد المدة.
@@ -1005,6 +1099,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Muna … with her cousin online at the moment. (chat)
+final-answer:
+Muna **is chatting** with her cousin online at the moment.
 solution:
 at the moment تدل على محادثة جارية الآن.  
 مع Muna نستخدم is، ثم chatting؛ نضاعف t قبل إضافة ing إلى chat.
@@ -1027,6 +1123,8 @@ Complete the sentence using the present simple form of look to describe appearan
 
 The design of our new house … very beautiful. (look)
 
+final-answer:
+The design of our new house **looks** very beautiful.
 solution:
 Look بمعنى «يبدو» يصف المظهر، ويستعمل الكتاب المضارع البسيط لهذا المعنى. design مفرد، فتكون الإجابة المنهجية looks.
 
@@ -1047,6 +1145,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I … blue is the right color for her. (not think)
+final-answer:
+I **don’t think** blue is the right color for her.
 solution:
 think هنا تعبر عن رأي، فتأتي بالمضارع البسيط.  
 مع I ننفي باستعمال don’t ثم المصدر think.
@@ -1068,6 +1168,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Languages … very fast these days. (disappear)
+final-answer:
+Languages **are disappearing** very fast these days.
 solution:
 these days مع very fast تصف تغيراً جارياً في الفترة الحالية.  
 Languages جمع، فنستخدم are + disappearing في المستمر.
@@ -1089,6 +1191,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Rula … since 3 o’clock. She’ll take a break in an hour. (study)
+final-answer:
+Rula **has been studying** since 3 o’clock. She’ll take a break in an hour.
 solution:
 since 3 o’clock تحدد نقطة بدء الدراسة، والاستراحة المستقبلية تؤكد استمرارها.  
 مع Rula نستخدم has been + studying.
@@ -1110,6 +1214,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Ali … about our new project now, he is busy with something else. (not think)
+final-answer:
+Ali **isn’t thinking** about our new project now; he is busy with something else.
 solution:
 think about هنا عملية تفكير، و now يحدد اللحظة.  
 ننفي المستمر مع Ali باستعمال isn’t + thinking لأنه منشغل بشيء آخر.
@@ -1131,6 +1237,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 How often … you … to the cinema? (go)
+final-answer:
+How often **do you go** to the cinema?
 solution:
 How often تسأل عن تكرار عادة.  
 ترتيب السؤال في البسيط: \`How often + do + you + المصدر\` go.
@@ -1152,6 +1260,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 You should go to bed. You … on the computer for over two hours. (play)
+final-answer:
+You should go to bed. You **have been playing** on the computer for over two hours.
 solution:
 مدة اللعب تجاوزت ساعتين ونتيجتها الحاجة إلى النوم.  
 نستخدم you + have been + playing للتام المستمر، ونكمل التعبير الطبيعي on the computer.
@@ -1173,6 +1283,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Be careful! The snake … you. (approach)
+final-answer:
+Be careful! The snake **is approaching** you.
 solution:
 التحذير يتعلق بحركة الثعبان الآن.  
 snake مفرد، فصيغة المضارع المستمر هي is + approaching.
@@ -1194,6 +1306,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Sameer … an exam every Tuesday. So he must study hard. (have)
+final-answer:
+Sameer **has** an exam every Tuesday, so he must study hard.
 solution:
 every Tuesday تدل على موعد متكرر.  
 نستخدم المضارع البسيط، وصيغة have مع Sameer المفرد هي has.
@@ -1215,6 +1329,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I’m reading the magazine you lent me, but I … it yet. (not finish)
+final-answer:
+I’m reading the magazine you lent me, but I **haven’t finished** it yet.
 solution:
 القراءة مستمرة لكن إتمامها لم يحدث حتى الآن.  
 yet تناسب نفي التام البسيط: I + haven’t + finished، وهو التصريف الثالث من finish.
@@ -1236,6 +1352,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 The cost of living … very fast these days. Every year things become very expensive. (rise)
+final-answer:
+The cost of living **is rising** very fast these days. Every year things become very expensive.
 solution:
 these days تشير إلى تغير مستمر في الفترة الحالية.  
 الفاعل cost مفرد؛ نستخدم is + rising، مع حذف e من rise قبل ing.
@@ -1258,6 +1376,8 @@ Complete the sentence using the present simple form of look to describe appearan
 
 Look! The girl’s new dress … so beautiful. (look)
 
+final-answer:
+Look! The girl’s new dress **looks** so beautiful.
 solution:
 Look! في أول الجملة أمر بمعنى «انظر». أما الفراغ فيصف مظهر الفستان؛ والإجابة المنهجية looks مع dress المفرد.
 
@@ -1278,6 +1398,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 I … to study for hours, but my brother keeps on interrupting me. (try)
+final-answer:
+I **have been trying** to study for hours, but my brother keeps on interrupting me.
 solution:
 for hours تبين مدة محاولات الدراسة المستمرة، والمقاطعات ما زالت متكررة.  
 نستخدم I + have been + trying للتام المستمر.
@@ -1300,6 +1422,8 @@ Complete the sentence: use the present continuous for the action of looking out 
 
 Watch out! Everyone … (look) out of the window at the man that … (look) strange.
 
+final-answer:
+Watch out! Everyone **is looking** out of the window at the man that **looks** strange.
 solution:
 النظر من النافذة فعل جارٍ الآن. everyone يعامل كمفرد، فنكتب is looking.
 
@@ -1322,6 +1446,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 She … (work) in the evenings, but today she … (take) her children on a picnic.
+final-answer:
+She **works** in the evenings, but today she **is taking** her children on a picnic.
 solution:
 العمل في المساء عادة فنستخدم works.  
 today تقابل العادة بنشاط مؤقت اليوم، فنستخدم is + taking مع she.
@@ -1343,6 +1469,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 … you … when Mr. Karim is coming back? He isn’t in his office. (know)
+final-answer:
+**Do you know** when Mr. Karim is coming back? He isn’t in his office.
 solution:
 know فعل حالة فلا نستخدمه مستمراً.  
 نكوّن سؤال المضارع البسيط مع you باستعمال \`Do + you + المصدر\` know.
@@ -1364,6 +1492,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Mr Ali … (mark) the exams all morning, but he … them all. (not read)
+final-answer:
+Mr Ali **has been marking** the exams all morning, but he **hasn’t read** them all.
 solution:
 all morning تبرز مدة التصحيح، فنستخدم has been marking.  
 أما قراءة الجميع فلم تكتمل: hasn’t + read، والتصريف الثالث يكتب read.  
@@ -1388,6 +1518,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets:
 
 Ahmed can't come to our meeting. He … the car to the garage at 5 p.m. (take).
+final-answer:
+Ahmed can’t come to our meeting. He **is taking** the car to the garage at 5 p.m.
 solution:
 الموعد المحدد عند الخامسة وتعذر حضور الاجتماع يدلان على ترتيب شخصي مقرر. يمكن استعمال المضارع المستمر للترتيبات المستقبلية: is مع he ثم taking.
 
@@ -1486,6 +1618,8 @@ body:
 Circle the correct answer:
 
 Normally I (finish – am finishing) work at 5, but this week I (work – am working) until 6 to earn a bit more money.
+final-answer:
+Normally I **finish** work at 5, but this week I **am working** until 6 to earn a bit more money.
 solution:
 Normally تشير إلى موعد معتاد، لذا finish بالبسيط.  
 this week يحدد تغييراً مؤقتاً هذا الأسبوع؛ فنستخدم I + am + working بالمستمر.
@@ -1790,6 +1924,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 How many messages did you already sent?
+final-answer:
+How many messages **have you already sent**?
 solution:
 السؤال يعد الرسائل المرسلة حتى الآن، فنستخدم التام البسيط: have + you + sent؛ و sent تصريف send الثالث.  
 هذه إجابة المنهج.  
@@ -1812,6 +1948,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 Dad works in the afternoons, but today he takes my brother to the dentist.
+final-answer:
+Dad works in the afternoons, but today he **is taking** my brother to the dentist.
 solution:
 works تصف عادة الأب في فترات بعد الظهر.  
 today يحدد استثناءً مؤقتاً، فنستبدل takes بـ is + taking في المضارع المستمر.
@@ -1833,6 +1971,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 I’m not understanding English when native speakers talk fast.
+final-answer:
+I **don’t understand** English when native speakers talk fast.
 solution:
 understand فعل حالة، والحديث عن صعوبة عامة عند سرعة الكلام.  
 نستخدم النفي بالمضارع البسيط: I + don’t + understand.
@@ -1854,6 +1994,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 He isn’t here. He has lunch with some customers.
+final-answer:
+He isn’t here. He **is having** lunch with some customers.
 solution:
 غيابه الآن يفسر بنشاط جارٍ.  
 have lunch تعني يتناول الغداء، لذا تقبل المستمر: he + is + having.
@@ -1875,6 +2017,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 I have been reading four stories so far this week.
+final-answer:
+I **have read** four stories so far this week.
 solution:
 four stories عدد منجز، و so far تعني حتى الآن.  
 نستخدم التام البسيط have + read، لا التام المستمر الذي يركز على مدة القراءة.
@@ -1896,6 +2040,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 I can’t understand what the writer is meaning.
+final-answer:
+I can’t understand what the writer **means**.
 solution:
 mean بمعنى يقصد فعل حالة، فنستخدم البسيط.  
 writer مفرد، لذلك نصحح is meaning إلى means بإضافة s.
@@ -1917,6 +2063,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 What are you thinking the reason for her success is?
+final-answer:
+What **do you think** the reason for her success is?
 solution:
 think هنا تسأل عن الرأي، لذلك نستخدم المضارع البسيط.
 
@@ -1940,6 +2088,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 We are having three bedrooms in our house.
+final-answer:
+We **have** three bedrooms in our house.
 solution:
 have تعني يمتلك في هذه الجملة، فلا نستخدم المستمر.  
 مع we نستخدم have، وتكتب bedrooms كلمة واحدة.
@@ -1961,6 +2111,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 She is sick. She eats so much recently.
+final-answer:
+She is sick. She **has been eating** so much recently.
 solution:
 recently مع أثر حالي، المرض، يجعل المقصود نشاطاً متكرراً في الفترة الأخيرة.  
 نستخدم she + has been + eating للتام المستمر بدلاً من eats الذي يصف عادة عامة.
@@ -1982,6 +2134,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 Listen! Can you hear those people next door? They shout at each other again.
+final-answer:
+Listen! Can you hear those people next door? They **are shouting** at each other again.
 solution:
 Listen و hear يدلان على صوت نسمعه الآن، فالصياح جارٍ.  
 مع they نستخدم are + shouting في المستمر.
@@ -2003,6 +2157,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 My father is thinking that I should stop playing computer games.
+final-answer:
+My father **thinks** that I should stop playing computer games.
 solution:
 think يقدم رأي الأب، لا عملية تفكير مؤقتة.  
 نستخدم البسيط، ومع my father المفرد نضيف s: thinks.
@@ -2024,6 +2180,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 He is having three luxury cars.
+final-answer:
+He **has** three luxury cars.
 solution:
 have هنا تعني ملكية السيارات، وهي حالة.  
 صيغة المضارع البسيط مع he هي has؛ لذلك نستبدل is having بـ has.
@@ -2045,6 +2203,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 I’m sorry, but I am not agreeing with what you are doing.
+final-answer:
+I’m sorry, but I **don’t agree** with what you are doing.
 solution:
 agree يصف موقفاً أو رأياً، فننفيه بالبسيط: don’t agree مع I.  
 أما ما يفعله المخاطب فهو نشاط جارٍ، وتبقى are doing صحيحة.
@@ -2070,6 +2230,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 He works in the afternoons but today he takes his son to the doctor.
+final-answer:
+He works in the afternoons, but today he **is taking** his son to the doctor.
 solution:
 نميز العادة works in the afternoons من الفعل المؤقت today.  
 مع he نستخدم للمؤقت is + taking.
@@ -2091,6 +2253,8 @@ body:
 Correct the sentences (there is one mistake in each sentence):
 
 I pay the telephone bill yet.
+final-answer:
+I **haven’t paid** the telephone bill yet.
 solution:
 yet في هذا السياق تعني أن الدفع لم يحدث حتى الآن؛ ننفي المضارع التام: I + haven’t + paid.  
 paid هو التصريف الثالث من pay.
@@ -2112,6 +2276,8 @@ body:
 Do as required in brackets:
 
 you - ever - hear - of The Blue Sky Restaurant? (Write a full question)
+final-answer:
+**Have you ever heard of The Blue Sky Restaurant?**
 solution:
 ever تسأل عن تجربة في أي وقت حتى الآن، فنستخدم التام البسيط.  
 الترتيب Have + you + ever + heard؛ و heard هو التصريف الثالث من hear.
@@ -2134,6 +2300,9 @@ Do as required in brackets:
 
 The Palestinian students usually choose **technical subjects**. (Write a question beginning with What to ask about the bold words)
 
+final-answer:
+- **What do the Palestinian students usually choose?**
+- **What subjects do the Palestinian students usually choose?**
 solution:
 يمكن أن نسأل عن الشيء المختار technical subjects بواسطة What أو What subjects. usually تدل على عادة، ومع الطلاب الجمع نستخدم do، ثم الفاعل، ثم المصدر choose.
 
@@ -2155,6 +2324,8 @@ body:
 Do as required in brackets:
 
 ever / you / ridden a camel? (Write a full question)
+final-answer:
+**Have you ever ridden a camel?**
 solution:
 ever تسأل عن تجربة سابقة دون وقت محدد، لذا نستخدم التام البسيط.  
 ridden هو التصريف الثالث من ride، ونقدم Have على you.
@@ -2176,6 +2347,8 @@ body:
 Make complete questions of the following:
 
 What kind of music / you / prefer?
+final-answer:
+**What kind of music do you prefer?**
 solution:
 prefer تعبر عن تفضيل عام، فنستخدم المضارع البسيط.  
 نضع أداة السؤال ثم \`do + you + المصدر\` prefer.
@@ -2197,6 +2370,8 @@ body:
 Make complete questions of the following:
 
 How long / you / work / in this company?
+final-answer:
+**How long have you been working in this company?**
 solution:
 How long تسأل عن مدة عمل بدأ في الماضي وما زال مستمراً.  
 نستخدم have + you + been + working؛ ويمكن أيضاً have you worked إذا ركزنا على مدة الخدمة.
@@ -2218,6 +2393,8 @@ body:
 Make complete questions of the following:
 
 Listen! What languages / they / speak?
+final-answer:
+**Listen! What languages are they speaking?**
 solution:
 Listen تدل على كلام جارٍ نسمعه الآن.  
 نصوغ السؤال بالمستمر: What languages + are + they + speaking.
@@ -2239,6 +2416,8 @@ body:
 Make complete questions of the following:
 
 You / ever / be / to Jerusalem?
+final-answer:
+**Have you ever been to Jerusalem?**
 solution:
 ever تسأل عن تجربة زيارة في الحياة، فنستخدم Have + you + ever + been.  
 been تصريف be الثالث، و been to تعني زار المكان وعاد.
@@ -2260,6 +2439,8 @@ body:
 Make complete questions of the following:
 
 What / he / do / all this time?
+final-answer:
+**What has he been doing all this time?**
 solution:
 all this time تركز على نشاط استغرق المدة حتى الآن.  
 ترتيب التام المستمر في السؤال: What + has + he + been + doing.

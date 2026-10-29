@@ -226,6 +226,7 @@ await withBrowserPage(async ({ base, send, evaluate:runEvaluation, waitFor }) =>
     await send("Emulation.setDeviceMetricsOverride", { width,height,deviceScaleFactor:1,mobile:false });
     await evaluate(`lessonFixture.mount('exam-question',{steps:[{id:'overflow-card',type:'exam-question',content:{
       body:${JSON.stringify('اذكر خطوات الحل.\n\n'+overflowSolution)},
+      finalAnswer:${JSON.stringify(overflowSolution)},
       solution:${JSON.stringify(overflowSolution)},
     }}]})`);
     await waitFor("!document.querySelector('[data-exam-front] [data-content-scroll]').hidden");

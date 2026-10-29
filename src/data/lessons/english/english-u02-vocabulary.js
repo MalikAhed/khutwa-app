@@ -12,6 +12,8 @@ Word bank: point — aware of — priorities — inevitable — persevere — co
 
 If you are finding a job difficult, it is important that you **don’t give up**. …
 
+final-answer:
+If you are finding a job difficult, it is important that you **persevere**.
 solution:
 **الإجابة:** If you are finding a job difficult, it is important that you persevere.
 
@@ -45,6 +47,8 @@ Word bank: point — aware of — priorities — inevitable — persevere — co
 
 Her husband wasn’t **persuaded** by her argument that they needed a bigger house. …
 
+final-answer:
+Her husband wasn’t **convinced** by her argument that they needed a bigger house.
 solution:
 persuaded و convinced يصفان الاقتناع بالفكرة بعد عرض الحجة. نضع convinced بعد wasn’t، ونبقي by her argument كما هي.
 
@@ -75,6 +79,8 @@ Word bank: point — aware of — priorities — inevitable — persevere — co
 
 We need to make people **knowledgeable about** the effect of their life style on the environment. …
 
+final-answer:
+We need to make people **aware of** the effect of their life style on the environment.
 solution:
 aware of تعني على علمٍ بـ. نستخدمها هنا بعد make people لوصف وعي الناس بأثر أسلوب حياتهم، ونحافظ على of قبل الشيء الذي يعرفونه.
 
@@ -102,6 +108,8 @@ Fill in the following sentences by replacing the words in brackets with the appr
 Word bank: fees — reward — inevitable — point
 
 He depends on his parents for his university … . (money you pay for a service)
+final-answer:
+He depends on his parents for his university **fees**.
 solution:
 **الإجابة:** He depends on his parents for his university fees.
 
@@ -129,6 +137,8 @@ Fill in the following sentences by replacing the words in brackets with the appr
 Word bank: fees — reward — inevitable — point
 
 The company gave him a … for his years of service. (something good)
+final-answer:
+The company gave him a **reward** for his years of service.
 solution:
 بعد a نحتاج اسماً مفرداً. تجيز قائمة الكتاب استعمال reward اسماً وفعلاً؛ فنستخدم a reward بمعنى مكافأة على سنوات الخدمة.
 
@@ -171,6 +181,8 @@ Complete the following sentences with words from the box:
 Word bank: impatient — nowadays — convinced — priorities — personal — aware of
 
 Are you … the risks involved in this job?
+final-answer:
+Are you **aware of** the risks involved in this job?
 solution:
 السؤال عن إدراك المخاطر ومعرفتها. التركيب الصحيح aware of؛ وتأتي المخاطر بعد of.
 
@@ -192,6 +204,8 @@ Complete the following sentences with words from the box:
 Word bank: impatient — nowadays — convinced — priorities — personal — aware of
 
 She was … that sooner or later she would fulfill her dreams.
+final-answer:
+She was **convinced** that sooner or later she would fulfill her dreams.
 solution:
 الجملة تعبر عن يقينها بتحقيق أحلامها؛ نختار convinced، ثم تأتي that لعرض مضمون القناعة.
 
@@ -221,6 +235,8 @@ Complete the following sentences with words from the box:
 Word bank: fees — convinced — rewards — personal — persevere — disappointed — point
 
 They don’t know any English. But if they …, they will become good students.
+final-answer:
+They don’t know any English. But if they **persevere**, they will become good students.
 solution:
 persevere تعني يثابر ولا يستسلم. في هذه الجملة الشرطية نستخدم المصدر مع they بعد if: if they persevere.
 
@@ -255,6 +271,8 @@ Complete the following sentences with words from the box:
 Word bank: fees — convinced — rewards — personal — persevere — disappointed — point
 
 At university today, … are too high for students to pay.
+final-answer:
+At university today, **fees** are too high for students to pay.
 solution:
 الكلمة المطلوبة هي fees بمعنى رسوم الخدمة التعليمية. نستخدمها بالجمع لتوافق are؛ والمقصود رسوم الجامعة.
 
@@ -284,6 +302,8 @@ Complete the following sentences with words from the box:
 Word bank: fees — convinced — rewards — personal — persevere — disappointed — point
 
 There are some problems with this idea. I’m not really … it will work.
+final-answer:
+There are some problems with this idea. I’m not really **convinced** it will work.
 solution:
 وجود مشكلات يجعل المتكلم غير مقتنع بنجاح الفكرة؛ لذلك نضع الصفة convinced بعد I’m not really.
 
@@ -313,6 +333,8 @@ Complete the following sentences with words from the box:
 Word bank: fees — convinced — rewards — personal — persevere — disappointed — point
 
 The school has a system of … and punishments to encourage good behavior.
+final-answer:
+The school has a system of **rewards** and punishments to encourage good behavior.
 solution:
 العقوبات تقابلها المكافآت. تجيز قائمة الكتاب reward اسماً؛ ونستخدم جمعه rewards لأن السؤال يعرض نظام مكافآت وعقوبات.
 
@@ -355,6 +377,8 @@ Complete the following sentences with words from the box:
 Word bank: convinced — revision — impatient — on the market — be aware of — priorities — aware of
 
 The most frequent flights were taken by those who were most … environmental issues.
+final-answer:
+The most frequent flights were taken by those who were most **aware of** environmental issues.
 solution:
 المقصود أشخاص أكثر وعياً بالقضايا البيئية. التركيب هو aware of، ويأتي بعد were لوصف هؤلاء الأشخاص.
 
@@ -376,6 +400,8 @@ Complete the following sentences with words from the box:
 Word bank: convinced — revision — impatient — on the market — be aware of — priorities — aware of
 
 … can be stressful, but it’s necessary.
+final-answer:
+**Revision** can be stressful, but it’s necessary.
 solution:
 المطلوب نشاط قد يسبب ضغطاً لكنه ضروري، وهو revision بمعنى مراجعة الدروس استعداداً للامتحان.
 
@@ -397,6 +423,8 @@ Complete the following sentences with words from the box:
 Word bank: convinced — revision — impatient — on the market — be aware of — priorities — aware of
 
 There are many Chinese products … nowadays.
+final-answer:
+There are many Chinese products **on the market** nowadays.
 solution:
 المنتجات المتاحة للبيع توصف بأنها on the market، أي مطروحة في السوق. نستخدم العبارة كاملة بعد products.
 
@@ -418,6 +446,8 @@ Complete the following sentences with words from the box:
 Word bank: convinced — revision — impatient — on the market — be aware of — priorities — aware of
 
 He says he is doing it for benefits. Hum, I’m still not … about his intentions.
+final-answer:
+He says he is doing it for benefits. Hum, I’m still not **convinced** about his intentions.
 solution:
 المتكلم يشك في دوافعه، لذلك يقول إنه غير مقتنع. الصفة convinced تأتي بعد am not، ويتبعها هنا about لتحديد موضوع القناعة.
 
@@ -440,6 +470,8 @@ Word bank: convinced — revision — impatient — on the market — be aware o
 
 Just be reasonable with your diet, … what sugary food and drinks can do to your teeth.
 
+final-answer:
+Just be reasonable with your diet; **be aware of** what sugary food and drinks can do to your teeth.
 solution:
 المطلوب نصيحة بإدراك أثر السكريات. نبدأ الأمر بالمصدر be، ثم aware of بمعنى كن واعياً بـ.
 

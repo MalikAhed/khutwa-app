@@ -8,6 +8,12 @@ reference: الكتاب، ص ٧٠، مثال١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فبين أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></math>\`.
+final-answer:
+**نعم، ب هي النظير الضربي للمصفوفة أ.**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi><mo>=</mo><mi mathvariant="normal">ب</mi><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين.
 المصفوفة ونظيرها تعطيان الوحدة في ترتيبي الضرب؛ نحسب الطرفين.
@@ -68,6 +74,9 @@ reference: الكتاب، ص ٧٠، مثال٢
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أي المصفوفات الآتية منفردة وأيها غير منفردة؟ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٦</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+- **أ: غير منفردة.**
+- **ب: منفردة.**
 solution:
 المصفوفة المنفردة لا يوجد لها نظير ضربي؛ يحدث ذلك بالضبط عندما يكون محددها صفرًا. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 نحسب محدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`.
@@ -106,6 +115,12 @@ reference: الكتاب، ص ٧١، مثال ٣
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` التي تجعل المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\` منفردة.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">١١</mn></mrow></math>
+\`\`\`
 solution:
 المصفوفة المنفردة لا يوجد لها نظير ضربي؛ يحدث ذلك بالضبط عندما يكون محددها صفرًا. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 
@@ -131,6 +146,12 @@ reference: الكتاب، ص ٧١، مثال٤
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد النظير الضربي للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٦</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\` إن وجد.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mn dir="ltr">٢</mn></mfrac></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">٣</mn></mtd><mtd><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٢</mn></mfrac></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 
@@ -172,6 +193,12 @@ reference: الكتاب، ص ٧٢، مثال ٥
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">س</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` (إن أمكن).
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><msup><mi mathvariant="normal">س</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٨</mn></mfrac></mtd><mtd><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٤</mn></mfrac></mtd></mtr><mtr><mtd><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٨</mn></mfrac></mtd><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mn dir="ltr">٤</mn></mfrac></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 
@@ -213,6 +240,9 @@ reference: الكتاب، ص ٧٣، تمرين-١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 بين أي من المصفوفات الآتية لها نظير ضربي: \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٨</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٦</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٩</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+- **أ: لها نظير ضربي.**
+- **ب، ج: ليس لهما نظير ضربي.**
 solution:
 المصفوفة المربعة لها نظير ضربي إذا كان محددها غير صفري. نحسب محدد كل مصفوفة لنختبر هذا الشرط.
 
@@ -267,6 +297,18 @@ reference: الكتاب، ص ٧٣، تمرين-٢-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما قيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` التي تجعل المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mi mathvariant="normal">ك</mi></mtd><mtd><mi mathvariant="normal">ك</mi></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">ك</mi></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\` منفردة؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ك</mi><mo>=</mo><mn dir="ltr">٠</mn></mrow></math>
+\`\`\`
+
+**أو**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ك</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
+\`\`\`
 solution:
 المصفوفة المنفردة لا يوجد لها نظير ضربي؛ يحدث ذلك بالضبط عندما يكون محددها صفرًا. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 
@@ -292,6 +334,18 @@ reference: الكتاب، ص ٧٣، تمرين-٢-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما قيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` التي تجعل المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mi mathvariant="normal">ك</mi></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mi mathvariant="normal">ك</mi></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\` منفردة؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ك</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
+\`\`\`
+
+**أو**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ك</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>
+\`\`\`
 solution:
 المصفوفة المنفردة لا يوجد لها نظير ضربي؛ يحدث ذلك بالضبط عندما يكون محددها صفرًا. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 
@@ -317,6 +371,12 @@ reference: الكتاب، ص ٧٣، تمرين-٣-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` إن أمكن.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac></mtd><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow><mn dir="ltr">٢</mn></mfrac></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 
@@ -358,6 +418,12 @@ reference: الكتاب، ص ٧٣، تمرين-٣-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mrow><mo stretchy="true" fence="true">(</mo><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mo stretchy="true" fence="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><msup><mrow><mo>(</mo><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>)</mo></mrow><mrow><mo>−</mo><mn>١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">أ</mi></mrow></mrow><mo>=</mo><mi mathvariant="normal">م</mi></mrow></math>\`، فإن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` أيضًا نظير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`؛ لهذا نظير النظير يعيد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`.
 نثبت أولًا وجود النظير داخل هذا السؤال.
@@ -387,6 +453,12 @@ reference: الكتاب، ص ٧٣، تمرين-٤
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mi mathvariant="normal">س</mi></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، وكان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true" fence="true">|</mo><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mo stretchy="true" fence="true">|</mo></mrow><mo>=</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٥</mn></mfrac></mrow></math>\`، فما قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٥</mn></mrow></math>
+\`\`\`
 solution:
 محدد النظير الضربي هو مقلوب المحدد: لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow><mo>=</mo><mi mathvariant="normal">م</mi></mrow></math>\`، فإن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">أ</mi><mo stretchy="true" fence="true">|</mo></mrow><mrow><mo stretchy="true" fence="true">|</mo><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mo stretchy="true" fence="true">|</mo></mrow></mrow><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\`، مع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">أ</mi><mo stretchy="true" fence="true">|</mo></mrow><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 
@@ -412,6 +484,12 @@ reference: الكتاب، ص ٧٣، تمرين-٥
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا علمت أن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، وكان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">جـ</mi></mrow><mo>=</mo><mi mathvariant="normal">ب</mi></mrow></math>\`، فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mrow><msup><mi mathvariant="normal">ـ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><msup><mi mathvariant="normal">ج</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٨</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. نظير حاصل الضرب يعكس الترتيب حتى تتجاور كل مصفوفة ونظيرها. نتحقق من وجود النظيرين أولًا.
 نحسب المحددين.
@@ -503,6 +581,12 @@ reference: الكتاب، ص ٧٩، اختبار-١٣-ج
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mrow><mo>(</mo><mo>−</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi><mo>)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mo>−</mo><mn dir="ltr">١</mn></mtd><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow><mn dir="ltr">٤</mn></mfrac></mtd></mtr><mtr><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mn dir="ltr">٢</mn></mfrac></mtd><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mn dir="ltr">٤</mn></mfrac></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 نظير مضاعف غير صفري يساوي نظير المصفوفة مضروبًا في مقلوب المعامل؛ هنا نضرب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mn dir="ltr">٢</mn></mfrac></math>\`.
@@ -544,6 +628,12 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ٣
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mrow><mo>(</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi><mo>−</mo><mi mathvariant="normal">ب</mi><mo>)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mn dir="ltr">٢</mn></mfrac></mtd><mtd><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٢</mn></mfrac></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -592,6 +682,12 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ٣
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mo>−</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mfrac><mn dir="ltr">٢٣</mn><mn dir="ltr">٤</mn></mfrac></mtd><mtd><mo>−</mo><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mfrac><mn dir="ltr">٧</mn><mn dir="ltr">٢</mn></mfrac></mtd><mtd><mo>−</mo><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري. نظير النظير يعيد المصفوفة الأصلية.
 محدد الأولى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١</mn></math>\`، ومحدد الثانية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\`؛ إذن نعكس كلتيهما.
@@ -683,6 +779,12 @@ body:
 
 
 فأوجد \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi mathvariant="normal">أ</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><msup><mi mathvariant="normal">ب</mi><mn dir="ltr">٢</mn></msup></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١١</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">١٢</mn></mtd><mtd><mn dir="ltr">١١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
  إذا كان معكوس \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">هـ</mi></math>\` يساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">م</mi></math>\`، فإن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">هـ</mi><mo>=</mo><mrow><msup><mi mathvariant="normal">م</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></math>\`.
 
@@ -816,6 +918,12 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ٣
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">|</mo></mrow><mo>=</mo><mn dir="ltr">١٨</mn></mrow></math>\`، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` مصفوفة مربعة ثانية، وكان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mo>=</mo><mrow><msqrt><mn dir="ltr">٦</mn></msqrt><msup><mi mathvariant="normal">ج</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></math>\`، فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">ج</mi><mo stretchy="true" fence="true">|</mo></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mo>|</mo><mi mathvariant="normal">ج</mi><mo>|</mo><mo>=</mo><mn dir="ltr">١</mn></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري.
 
@@ -2029,6 +2137,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٩</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، أوجد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>⋅</mo><mi mathvariant="normal">ب</mi><mo>−</mo><mn dir="ltr">٢٤</mn><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">٣٧</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١٥</mn></mtd><mtd><mo>−</mo><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 نحسب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\`، ثم نضربه في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` بقاعدة صف في عمود ونطرح \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢٤</mn><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow></math>\`.
@@ -2100,6 +2214,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٩</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، أوجد \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mrow><mfrac><mrow><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٣</mn></mrow></mfrac><msup><mi mathvariant="normal">ب</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mo stretchy="true">|</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mn dir="ltr">١</mn></mrow></math>
+\`\`\`
 solution:
 المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين. إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` مربعة من الرتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ن</mi></math>\`، فإن ضرب كل مدخلاتها في العدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` يضرب محددها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">ك</mi><mi mathvariant="normal">ن</mi></msup></math>\`، لأن العامل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` يظهر مرة من كل صف. محدد حاصل ضرب مصفوفتين مربعتين من الرتبة نفسها يساوي حاصل ضرب محدديهما: \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true" fence="true">|</mo><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true" fence="true">|</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">أ</mi><mo stretchy="true" fence="true">|</mo></mrow><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">ب</mi><mo stretchy="true" fence="true">|</mo></mrow></mrow></mrow></math>\`.
 نحسب محدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` مباشرة.
@@ -2129,6 +2249,20 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">ع</mi></mrow></mtd><mtd><mrow><mn dir="ltr">٥٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">ص</mi></mrow></mtd><mtd><mrow><msqrt><mrow><mi mathvariant="normal">ع</mi></mrow></msqrt></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mn dir="ltr">٢</mn><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>⋅</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٧</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤٨</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٦</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، أوجد قيمة كل من \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>،</mo><mi mathvariant="normal">ص</mi><mo>،</mo><mi mathvariant="normal">ع</mi></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٣٢</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٨</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ع</mi><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>
+\`\`\`
 solution:
 
 
@@ -2215,6 +2349,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">ع</mi></mrow></mtd><mtd><mrow><mn dir="ltr">٥٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">ص</mi></mrow></mtd><mtd><mrow><msqrt><mrow><mi mathvariant="normal">ع</mi></mrow></msqrt></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mn dir="ltr">٢</mn><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>⋅</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٧</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤٨</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٦</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mfrac><mrow><mi mathvariant="normal">ج</mi></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mn dir="ltr">٣</mn></mfrac></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٤</mn></mfrac></mtd><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow><mn dir="ltr">٨</mn></mfrac></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -2251,6 +2391,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٩</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، أوجد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi></mrow></math>\` بحيث أن \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>⋅</mo><mi mathvariant="normal">ج</mi><mo>=</mo><mi mathvariant="normal">ب</mi><mo>−</mo><mi mathvariant="normal">ج</mi></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نجمع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\` في الطرفين: \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ج</mi></mrow><mo>+</mo><mi mathvariant="normal">ج</mi></mrow><mo>=</mo><mrow><mrow><mo stretchy="true" fence="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow><mo stretchy="true" fence="true">)</mo></mrow><mi mathvariant="normal">ج</mi></mrow></mrow></math>\`. الوحدة ضرورية لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow><mi mathvariant="normal">ج</mi></mrow></mrow></math>\`.  ننقل حدودها ونجمع معاملها مع المحافظة على ترتيب الضرب.
 بعد ترتيب المعادلة نحصل على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ك</mi><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mi mathvariant="normal">ر</mi></mrow></math>\`.
@@ -2304,6 +2450,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 حل المعادلة المصفوفية التالية \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>×</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>−</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>×</mo><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٢</mn></mfrac></mtd></mtr><mtr><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٧</mn></mrow><mn dir="ltr">٢</mn></mfrac></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نخرج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` عاملًا من اليمين: \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mo stretchy="true" fence="true">(</mo><mrow><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi></mrow><mo>−</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true" fence="true">)</mo></mrow><mi mathvariant="normal">س</mi></mrow><mo>=</mo></mrow></math>\` عمود الثوابت. نحسب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi></mrow><mo>−</mo><mi mathvariant="normal">ب</mi></mrow></math>\` مدخلة مدخلة.  ننقل حدودها ونجمع معاملها مع المحافظة على ترتيب الضرب.
 بعد ترتيب المعادلة نحصل على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ك</mi><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mi mathvariant="normal">ر</mi></mrow></math>\`.
@@ -2357,6 +2509,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 حل المعادلة المصفوفية \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi><mo>−</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٤</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mrow><mrow><mn dir="ltr">٣</mn><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow><mi mathvariant="normal">س</mi></mrow></mrow></math>\`، لذلك بعد إخراج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` من اليمين يصبح معاملها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow></math>\`\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mo>−</mo></math>\`المصفوفة المعطاة.  ننقل حدودها ونجمع معاملها مع المحافظة على ترتيب الضرب.
 بعد ترتيب المعادلة نحصل على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ك</mi><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mi mathvariant="normal">ر</mi></mrow></math>\`.
@@ -2410,6 +2568,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٨</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، أوجد \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mo>⋅</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١٢</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١٢</mn></mtd><mtd><mo>−</mo><mn dir="ltr">١٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري. نظير حاصل الضرب يعكس الترتيب؛ في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></math>\` تتجاور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` ونظيرها ثم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` ونظيرها.
 نحسب محدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` ونظيرها.
@@ -2447,6 +2611,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، فجد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mo>−</mo><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">١٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نظير حاصل الضرب يعكس الترتيب، ونظير النظير يعيد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`. إذن المعطى يساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mi mathvariant="normal">أ</mi></mrow></math>\`، فنضرب من اليسار ب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`.
 نسمّي المصفوفة المعطاة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\`، ونعزل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">أ</mi></mrow></math>\`.
@@ -2476,6 +2646,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac><mi mathvariant="normal">أ</mi><mo>=</mo><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">ب</mi><mo>−</mo><mi mathvariant="normal">ج</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></math>\`، فجد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٦</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٧</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -2544,6 +2720,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>+</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">ب</mi></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mi mathvariant="normal">و</mi><mo>+</mo><mn dir="ltr">٣</mn><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></math>\`، فجد قيمة الثابت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi></mrow></math>\` التي تجعل المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` منفردة.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٧</mn></mrow></math>
+\`\`\`
 solution:
 المصفوفة المنفردة لا يوجد لها نظير ضربي؛ يحدث ذلك بالضبط عندما يكون محددها صفرًا. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 
@@ -2570,6 +2752,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، أوجد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` بحيث يكون \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>⋅</mo><mi mathvariant="normal">أ</mi><mo>=</mo><msup><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>−</mo><mn dir="ltr">٤</mn><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١٠</mn></mtd><mtd><mo>−</mo><mn dir="ltr">١٥</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٦</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٨</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -2638,6 +2826,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، فجد \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">ب</mi><mo>−</mo><mn dir="ltr">٣</mn><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mo>−</mo><mn dir="ltr">١٣</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٧</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -2704,6 +2898,16 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">ص</mi></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، فما قيم \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>،</mo><mi mathvariant="normal">ص</mi></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٣</mn></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -2729,6 +2933,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، فجد المصفوفة غير المنفردة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` بحيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>+</mo><msup><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mi mathvariant="normal">ج</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٧</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mo>−</mo><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نظير حاصل الضرب يعكس الترتيب: \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true" fence="true">(</mo><mrow><mrow><msup><mi mathvariant="normal">س</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mi mathvariant="normal">ج</mi></mrow><mo stretchy="true" fence="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mrow><msup><mi mathvariant="normal">ج</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mi mathvariant="normal">س</mi></mrow></mrow></math>\`. محدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mn dir="ltr">٩</mn><mo>−</mo><mn dir="ltr">٨</mn></mrow></mrow><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\`، فيكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">ج</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mo>=</mo><mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></mrow></math>\`. نجمع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٢</mn><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow><mo>+</mo><mrow><msup><mi mathvariant="normal">ج</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></math>\` لنجد معامل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`.  ننقل حدودها ونجمع معاملها مع المحافظة على ترتيب الضرب.
 بعد ترتيب المعادلة نحصل على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ك</mi><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mi mathvariant="normal">ر</mi></mrow></math>\`.
@@ -2790,6 +3000,24 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">أ</mi></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٧</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">ب</mi></mrow></mtd><mtd><mrow><mi mathvariant="normal">ج</mi></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">د</mi></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ع</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><msup><mi mathvariant="normal">ع</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mi mathvariant="normal">س</mi><mo>⋅</mo><mi mathvariant="normal">ص</mi></mrow></math>\`، فجد كل من \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi><mo>،</mo><mi mathvariant="normal">ج</mi><mo>،</mo><mi mathvariant="normal">د</mi></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mo>−</mo><mn dir="ltr">١</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">د</mi><mo>=</mo><mn dir="ltr">٣</mn></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -2890,6 +3118,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">ب</mi><mo>⋅</mo><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٩</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>−</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mi mathvariant="normal">و</mi><mo>−</mo><mn dir="ltr">٣</mn><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></math>\`، حيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi></mrow></math>\` مصفوفتين، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٧</mn></mtd><mtd><mn dir="ltr">٢٩</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">١٦</mn></mtd><mtd><mo>−</mo><mn dir="ltr">١٦</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -2956,6 +3190,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">ك</mi></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mfrac><mrow><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mi mathvariant="normal">ك</mi></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، فما قيمة / قيم \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ك</mi></mrow></math>\` الممكنة؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ك</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -2981,6 +3221,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>⋅</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٧</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٩</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mrow><mi mathvariant="normal">ج</mi></mrow><mo stretchy="true">|</mo></mrow><mo>=</mo><mrow><mo stretchy="true">|</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mrow><mi mathvariant="normal">س</mi></mrow></mtd></mtr></mtable><mo stretchy="true">|</mo></mrow></mrow></math>\`، جد قيمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
+\`\`\`
 solution:
 المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين. لحساب محدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\` نختار صفًا أو عمودًا: لكل مدخلة نحذف صفها وعمودها، ثم نضربها في محدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` الباقي. الإشارة موجبة إذا كان مجموع رقمي الصف والعمود زوجيًا، وسالبة إذا كان فرديًا؛ لذلك إشارات الصف الأول\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mo>+</mo></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mo>−</mo></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mo>+</mo></math>\`.
 
@@ -3007,6 +3253,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\`، علمًا بأن \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mo>⋅</mo><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi><mo>−</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr><mtr><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٧</mn></mrow><mn dir="ltr">٢</mn></mfrac></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -3104,6 +3356,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>⋅</mo><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>+</mo><mi mathvariant="normal">س</mi></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نطرح \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` من الطرفين، ونكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow><mi mathvariant="normal">س</mi></mrow></mrow></math>\`؛ فيكون معاملها المصفوفة المعطاة ناقص \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></math>\`.  ننقل حدودها ونجمع معاملها مع المحافظة على ترتيب الضرب.
 بعد ترتيب المعادلة نحصل على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ك</mi><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mi mathvariant="normal">ر</mi></mrow></math>\`.
@@ -3157,6 +3415,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow><mo>+</mo><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">ج</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>×</mo><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mi mathvariant="normal">أ</mi><mo>×</mo><mi mathvariant="normal">ب</mi></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow><mn dir="ltr">٣</mn></mfrac></mtd><mtd><mo>−</mo><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mfrac><mn dir="ltr">٤</mn><mn dir="ltr">٣</mn></mfrac></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -3273,6 +3537,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٧</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi><mo>−</mo><msup><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>⋅</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mn dir="ltr">٧</mn></mfrac></mtd><mtd><mfrac><mn dir="ltr">٦</mn><mn dir="ltr">٧</mn></mfrac></mtd></mtr><mtr><mtd><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نظير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">س</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mi mathvariant="normal">ب</mi></mrow></math>\` هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mi mathvariant="normal">س</mi></mrow></math>\` لأن النظير يعكس ترتيب الضرب. محدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mrow><mn dir="ltr">٥</mn><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٣</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>−</mo><mrow><mn dir="ltr">٢</mn><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٧</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\`، لذلك \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mo>=</mo><mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٧</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></mrow></math>\`. معامل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٣</mn><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow><mo>−</mo><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></math>\`.  ننقل حدودها ونجمع معاملها مع المحافظة على ترتيب الضرب.
 بعد ترتيب المعادلة نحصل على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ك</mi><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mi mathvariant="normal">ر</mi></mrow></math>\`.
@@ -3334,6 +3604,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">ص</mi></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\` مصفوفة منفردة، وكان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mrow><mi mathvariant="normal">ج</mi><mo>−</mo><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow><mo stretchy="true">|</mo></mrow><mo>=</mo><mo>−</mo><mn dir="ltr">٧</mn></mrow></math>\`، جد قيمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>+</mo><msup><mi mathvariant="normal">ص</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mn dir="ltr">٤٤</mn></mrow></math>
+\`\`\`
 solution:
 المصفوفة المنفردة لا يوجد لها نظير ضربي؛ يحدث ذلك بالضبط عندما يكون محددها صفرًا. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 
@@ -3365,6 +3641,18 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">س</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mo>−</mo><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn><mi mathvariant="normal">س</mi></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد قيمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` التي تجعل المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ب</mi></mrow></math>\` منفردة؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mfrac><mn dir="ltr">٢</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>
+\`\`\`
+
+**أو**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٥</mn></mrow></math>
+\`\`\`
 solution:
 المصفوفة المنفردة لا يوجد لها نظير ضربي؛ يحدث ذلك بالضبط عندما يكون محددها صفرًا. المحدد عدد يرتبط بالمصفوفة المربعة. للمصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نضرب مدخلتي القطر الرئيسي، ثم نطرح حاصل ضرب المدخلتين الأخريين.
 
@@ -3390,6 +3678,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` إن أمكن علمًا بأن \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>⋅</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><msup><mi mathvariant="normal">ب</mi><mrow><mn dir="ltr">٩</mn></mrow></msup></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">٢٠</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نظير حاصل الضرب يعكس الترتيب، فيصبح \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true" fence="true">(</mo><mrow><mrow><msup><mi mathvariant="normal">س</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true" fence="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mi mathvariant="normal">س</mi></mrow></mrow></math>\`. نضرب من اليسار ب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`، فينتج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mn dir="ltr">١٠</mn></mrow></msup></mrow></mrow></math>\`.
 المصفوفة المعطاة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` محددها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١</mn></math>\`. نبادل القطر ونغير الإشارتين الأخريين لاستعادة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`.
@@ -3427,6 +3721,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٧</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١٤</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٦</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">أ</mi><mrow><mo stretchy="true" fence="true">(</mo><mrow><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow><mo>+</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true" fence="true">)</mo></mrow></mrow></mrow></math>\`، لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mi mathvariant="normal">أ</mi><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow></mrow></math>\`. نأخذ نظير المصفوفة المعطاة ثم نضرب من اليسار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></math>\`.
 نحسب محدد المعطاة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` ونظيرها بتبديل القطر وتغيير الإشارتين الأخريين.
@@ -3464,6 +3764,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">ص</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` بحيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">ص</mi><mo>+</mo><mi mathvariant="normal">س</mi><mi mathvariant="normal">ص</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mi mathvariant="normal">ص</mi></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mo>−</mo><mn dir="ltr">١</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">١</mn></mtd><mtd><mo>−</mo><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -3509,6 +3815,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mo>−</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow><mo>⋅</mo><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نظير النظير يعيد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`. محدد المصفوفة المعطاة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mn dir="ltr">٢</mn><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٣</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>−</mo><mrow><mn dir="ltr">١</mn><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٠</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow></mrow><mo>=</mo><mn dir="ltr">٦</mn></mrow></math>\`، لذا بقاعدة النظير:
 
@@ -3563,6 +3875,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 حل المعادلة المصفوفية الآتية: \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">س</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>×</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>+</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>×</mo><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١٢</mn></mtd><mtd><mn dir="ltr">١٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢٩</mn></mtd><mtd><mn dir="ltr">٢٦</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نسمي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></mrow></math>\`. محددها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١</mn></math>\`، ونظيرها:\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></math>\`، وهي المصفوفة الأخرى نفسها. عكس ترتيب النظير يجعل الطرف الأيسر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٢</mn><mrow><msup><mi mathvariant="normal">ج</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow><mi mathvariant="normal">س</mi></mrow></math>\`. الطرف الأيمن حاصل ضرب صف في عمود يساوي\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></math>\`.  ننقل حدودها ونجمع معاملها مع المحافظة على ترتيب الضرب.
 نحسب الطرف الأيمن فعلًا بضرب الصفوف في الأعمدة:
@@ -3632,6 +3950,16 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mn dir="ltr">٢</mn><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٧</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٧</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٧</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mrow><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true">|</mo></mrow><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\`، جد المصفوفتين \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري. لأن المحدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١</mn></math>\` لا تتغير المدخلات بعد القسمة عليه. نكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">ن</mi></mrow></mtd><mtd><mrow><mi mathvariant="normal">ك</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">ل</mi></mrow></mtd><mtd><mrow><mi mathvariant="normal">ع</mi></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></mrow></math>\` ثم نساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mrow><mn dir="ltr">٢</mn><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></mrow></math>\` بالمصفوفة المعطاة.
 من المدخلتين خارج القطر نجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ل</mi></math>\`.
@@ -3693,6 +4021,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi></mrow></math>\` مصفوفتين مربعتين من الرتبة الثانية بحيث أن \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mrow><mn dir="ltr">٤</mn><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true">|</mo></mrow><mo>=</mo><mn dir="ltr">٣٢</mn></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true">|</mo></mrow><mo>=</mo><mn dir="ltr">١٦</mn></mrow></math>\`، فما قيمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">|</mo></mrow><mo>+</mo><mrow><mo stretchy="true">|</mo><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true">|</mo></mrow><mo>+</mo><mrow><mo stretchy="true">|</mo><mrow><mo>−</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">|</mo></mrow></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mn dir="ltr">٦٦</mn></mrow></math>
+\`\`\`
 solution:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` مربعة من الرتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ن</mi></math>\`، فإن ضرب كل مدخلاتها في العدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` يضرب محددها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">ك</mi><mi mathvariant="normal">ن</mi></msup></math>\`، لأن العامل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` يظهر مرة من كل صف. محدد حاصل ضرب مصفوفتين مربعتين من الرتبة نفسها يساوي حاصل ضرب محدديهما: \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true" fence="true">|</mo><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true" fence="true">|</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">أ</mi><mo stretchy="true" fence="true">|</mo></mrow><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">ب</mi><mo stretchy="true" fence="true">|</mo></mrow></mrow></mrow></math>\`.
 
@@ -3722,6 +4056,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>،</mo><mi mathvariant="normal">ب</mi></mrow></math>\` مصفوفتين مربعتين من الرتبة الثانية بحيث أن \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mrow><mn dir="ltr">٤</mn><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true">|</mo></mrow><mo>=</mo><mn dir="ltr">٣٢</mn></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true">|</mo></mrow><mo>=</mo><mn dir="ltr">١٦</mn></mrow></math>\`، فما قيمة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">أ</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mo stretchy="true">|</mo></mrow></mrow></math>\`؟
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mfrac><mn dir="ltr">١</mn><mn dir="ltr">١٦</mn></mfrac></mrow></math>
+\`\`\`
 solution:
 محدد النظير الضربي هو مقلوب المحدد: لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow><mo>=</mo><mi mathvariant="normal">م</mi></mrow></math>\`، فإن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">أ</mi><mo stretchy="true" fence="true">|</mo></mrow><mrow><mo stretchy="true" fence="true">|</mo><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow><mo stretchy="true" fence="true">|</mo></mrow></mrow><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\`، مع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">أ</mi><mo stretchy="true" fence="true">|</mo></mrow><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 
@@ -3741,6 +4081,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 أحل المعادلة المصفوفية الآتية: \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>⋅</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>⋅</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">١٤</mn></mfrac></mtd><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow><mn dir="ltr">٥٦</mn></mfrac></mtd></mtr><mtr><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow><mn dir="ltr">٧</mn></mfrac></mtd><mtd><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٥٦</mn></mfrac></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري. نأخذ نظير الطرفين ثم نضرب من اليسار بنصف نظير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\`؛ لا نبدل ترتيب العوامل.
 نحسب حاصل الضرب الأيمن.
@@ -3786,6 +4132,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، أوجد \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` التي تحقق المعادلة: \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>+</mo><mi mathvariant="normal">ب</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>−</mo><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١١</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢٣</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نجمع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow><mo>−</mo><mrow><mi mathvariant="normal">ب</mi><mi mathvariant="normal">س</mi></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="true" fence="true">(</mo><mrow><mrow><mn dir="ltr">٢</mn><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow><mo>−</mo><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true" fence="true">)</mo></mrow><mi mathvariant="normal">س</mi></mrow></mrow></math>\`، والطرف الآخر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mo>+</mo><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></math>\`. بحساب الصف في العمود نجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></mrow><mo>=</mo><mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></mrow></math>\`؛ ومحدد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mn dir="ltr">١</mn></mrow></math>\` فنظيرها\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></math>\`.  ننقل حدودها ونجمع معاملها مع المحافظة على ترتيب الضرب.
 حساب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٢</mn></mrow></msup></math>\` المستخدم:
@@ -3848,6 +4200,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، أوجد \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi><mo>−</mo><mi mathvariant="normal">ب</mi></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١٨</mn></mtd><mtd><mo>−</mo><mn dir="ltr">١٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١١</mn></mtd><mtd><mo>−</mo><mn dir="ltr">١١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 لجمع مصفوفتين أو طرحهما نطبق العملية على المدخلات في الصف والعمود نفسيهما، والضرب بعدد حقيقي يضرب كل مدخلة.
 
@@ -3894,6 +4252,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، أوجد \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><msup><mi mathvariant="normal">ب</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mn dir="ltr">٢</mn></mfrac></mtd><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow><mn dir="ltr">٢</mn></mfrac></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">٢</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -3944,6 +4308,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 حل المعادلة المصفوفية \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>×</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi><mo>−</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>×</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٣</mn></mfrac></mtd></mtr><mtr><mtd><mfrac><mn dir="ltr">٥٩</mn><mn dir="ltr">٣٠</mn></mfrac></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نكتب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mrow><mrow><mn dir="ltr">٣</mn><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow><mi mathvariant="normal">س</mi></mrow></mrow></math>\`، ثم نخرج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` من اليمين. المعامل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi></mrow><mo>−</mo><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">ب</mi></mrow></mrow><mo>+</mo><mrow><mn dir="ltr">٣</mn><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow></mrow></math>\` يساوي\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٣</mn><mo>−</mo><mo>(</mo><mo>−</mo><mn dir="ltr">٤</mn><mo>)</mo><mo>+</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٦</mn><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٩</mn><mo>−</mo><mn dir="ltr">٦</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn><mo>+</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></math>\`.  ننقل حدودها ونجمع معاملها مع المحافظة على ترتيب الضرب.
 بعد ترتيب المعادلة نحصل على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ك</mi><mi mathvariant="normal">س</mi></mrow><mo>=</mo><mi mathvariant="normal">ر</mi></mrow></math>\`.
@@ -3997,6 +4367,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi></mrow></math>\` مصفوفة مربعة من الرتبة الثانية بحيث \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><msup><mi mathvariant="normal">س</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></math>\`، حل المعادلة المصفوفية \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٢</mn></mrow></msup><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>=</mo><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mo>−</mo><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mo>−</mo><mn dir="ltr">١</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -4022,6 +4398,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 حل المعادلة المصفوفية الآتية: \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">س</mi><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 نخرج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` عاملًا من اليسار؛ ثم نضرب من اليمين بنظير معاملها.
 
@@ -4084,6 +4466,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mo stretchy="true">)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، جد المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢٨</mn></mfrac></mtd><mtd><mfrac><mn dir="ltr">١</mn><mn dir="ltr">١٤</mn></mfrac></mtd></mtr><mtr><mtd><mfrac><mn dir="ltr">١</mn><mn dir="ltr">١٤</mn></mfrac></mtd><mtd><mfrac><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow><mn dir="ltr">٧</mn></mfrac></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري. نسمّي المعطاة\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mrow><mo>(</mo><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi><mo>)</mo></mrow><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` بالرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\`. بأخذ النظير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mi mathvariant="normal">ب</mi></mrow><mo>=</mo><mrow><msup><mi mathvariant="normal">ك</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></math>\`؛ نضرب من اليسار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></mrow></math>\` لعزل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`.
 نحسب المحددين والنظيرين.
@@ -4129,6 +4517,12 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">[</mo><mtable><mtr><mtd><mrow><mn dir="ltr">٧</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr></mtable><mo stretchy="true">]</mo></mrow></mrow></math>\`، حل المعادلة المصفوفية \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mo>×</mo><mrow><mo stretchy="true">(</mo><mrow><msub><mi mathvariant="normal">م</mi><mrow><mn dir="ltr">٢</mn></mrow></msub><mo>+</mo><mi mathvariant="normal">أ</mi><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><mo>=</mo><mi mathvariant="normal">ب</mi></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٩</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mo>−</mo><mn dir="ltr">٧</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
 solution:
 النظير الضربي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mi mathvariant="normal">أ</mi><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></math>\` هو المصفوفة التي تعطي مصفوفة الوحدة عند ضربها في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` بالترتيبين. يوجد للمصفوفة المربعة إذا وفقط إذا كان محددها غير صفري. لنظير مصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` نبادل مدخلتي القطر الرئيسي، ونغير إشارتي المدخلتين الأخريين، ثم نقسم كل المدخلات على المحدد غير الصفري.
 
@@ -4164,6 +4558,18 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد قيمة الثابت \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ك</mi></mrow></math>\` بحيث يكون \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">٢</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\` أحد عوامل المحدد \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">|</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٨</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mrow><mn dir="ltr">٤</mn><mi mathvariant="normal">ك</mi></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">ك</mi><mo>+</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">ك</mi></mrow></mtd></mtr></mtable><mo stretchy="true">|</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة النهائية:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ك</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٣</mn></mrow></math>
+\`\`\`
+
+**أو**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ك</mi><mo>=</mo><mn dir="ltr">١</mn></mrow></math>
+\`\`\`
 solution:
 المحدد كثير حدود في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`. العامل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\` يعني أن قيمته عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\` تساوي صفرًا، لأن العامل نفسه ينعدم هناك.
 نعوض \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\` ثم نوسع على الصف الأول بإشارات\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mo>+</mo></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mo>−</mo></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mo>+</mo></math>\`؛ نحذف صف وعمود كل مدخلة لحساب محددها الصغير.

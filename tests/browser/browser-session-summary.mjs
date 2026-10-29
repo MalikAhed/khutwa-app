@@ -79,7 +79,7 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor }) => {
     summaryLifecycle.clear();
     const {renderAuthoredInteractiveLesson}=await import('/src/ui/lesson/authored.js');
     window.writtenSaved=false;window.writtenXp=0;
-    const step={id:'written-session',type:'exam-question',title:'سؤال',content:{body:'سؤال',solution:'حل'}};
+    const step={id:'written-session',type:'exam-question',title:'سؤال',content:{body:'سؤال',finalAnswer:'حل',solution:'حل'}};
     window.stopWrittenCheck=renderAuthoredInteractiveLesson(document.querySelector('#lesson-content'),'جلسة',{title:'جلسة',locale:'ar'},[step,{...step,id:'written-next'}],{
       isLessonPart:true,
       onAnswer:({correct})=>new Promise(resolve=>setTimeout(()=>{window.writtenSaved=true;window.writtenXp=correct?7:0;resolve({status:'saved'});},120)),

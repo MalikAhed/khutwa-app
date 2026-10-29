@@ -32,7 +32,7 @@ try {
       document.body.classList.add('ready-lesson-open');
       elements.main.classList.add('lesson-mode');elements.lessonView.classList.add('is-visible');
       const mcq = id => ({ id,type:'mcq',content:{title:'امتحان سابق',prompt:'اختر الإجابة الصحيحة.',answers:[{id:'a',text:'الأولى',correct:true},{id:'b',text:'الثانية',correct:false}]} });
-      const steps = [mcq('one'),{ id:'two',type:'exam-question',content:{title:'الكتاب المدرسي',body:'ما المقصود بالنموذج؟',solution:'واجهة للتعامل مع البيانات.'} },mcq('three')];
+      const steps = [mcq('one'),{ id:'two',type:'exam-question',content:{title:'الكتاب المدرسي',body:'ما المقصود بالنموذج؟',finalAnswer:'واجهة للتعامل مع البيانات.',solution:'واجهة للتعامل مع البيانات.'} },mcq('three')];
       let owner='account:1',stop,feedback,failing=false,exits=0;
       const answers=[],progress=[];
       const key = stepId => ({ subjectId:'ict',lessonId:'lesson',partId:'part',stepId });

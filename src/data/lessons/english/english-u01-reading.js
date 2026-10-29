@@ -22,6 +22,8 @@ Love
 Mahmoud
 
 Where is Mahmoud now?
+final-answer:
+Mahmoud is in **an English-speaking country**.
 solution:
 يذكر محمود أنه يسمع الإنجليزية حوله وأنه بعيد عن وطنه، لذلك نستنتج وجوده في بلد يتحدث الإنجليزية. النص لا يحدد اسم البلد.
 
@@ -54,6 +56,8 @@ Love
 Mahmoud
 
 Why was Mahmoud surprised about the language at first?
+final-answer:
+Mahmoud was surprised because **the English people spoke seemed different from the English he had studied at school**.
 solution:
 **الإجابة:** Mahmoud was surprised because the English people spoke seemed different from the English he had studied at school.
 
@@ -89,6 +93,8 @@ Love
 Mahmoud
 
 When do lectures begin at university, as Mahmoud mentions?
+final-answer:
+Lectures begin **the following week**, in Mahmoud’s second week there.
 solution:
 **الإجابة:** Lectures begin the following week, in Mahmoud’s second week there.
 
@@ -267,6 +273,8 @@ Love
 Mahmoud
 
 What does “It” (line 1) refer to?
+final-answer:
+“It” refers to **Mahmoud’s first week in his new situation**.
 solution:
 الجملة السابقة تتحدث عن مرور الأسبوع الأول، ثم يصفه بأنه لم يكن سهلاً؛ لذلك يعود الضمير إلى ذلك الأسبوع وتجربته فيه.
 
@@ -299,6 +307,8 @@ Love
 Mahmoud
 
 What does “the one” (line 4) refer to?
+final-answer:
+“The one” refers to **the English language Mahmoud studied at school**.
 solution:
 تحل one محل الاسم language لتجنب تكراره؛ والمقارنة بين اللغة المسموعة الآن والإنجليزية التي درسها في المدرسة.
 
@@ -331,6 +341,8 @@ Love
 Mahmoud
 
 What does “They” (line 7) refer to?
+final-answer:
+“They” refers to **the members or organisers of the Palestine Society**.
 solution:
 الاسم السابق هو Palestine Society، والأفعال اللاحقة تصف ما ينظمه أعضاؤها، لذلك يعود الضمير إلى الجمعية وأعضائها.
 
@@ -361,6 +373,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 What does the phrase comfort zone mean?
+final-answer:
+A comfort zone is **the area where you feel comfortable**: the set of routines and known abilities that make you feel safe.
 solution:
 **الإجابة:** A comfort zone is the area where you feel comfortable: the set of routines and known abilities that make you feel safe.
 
@@ -394,6 +408,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 What helps people feel positive about themselves according to many studies?
+final-answer:
+People feel positive about themselves when they feel that **they are developing and making progress in their lives**.
 solution:
 **الإجابة:** People feel positive about themselves when they feel that they are developing and making progress in their lives.
 
@@ -429,6 +445,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 We feel safe in our comfort zones because we’re confident that … and are unlikely to be challenged by anything … .
+final-answer:
+We feel safe in our comfort zones because we’re confident that **we can manage** and are unlikely to be challenged by anything **unexpected or worrying**.
 solution:
 **الإجابة:** We feel safe in our comfort zones because we’re confident that we can manage and are unlikely to be challenged by anything unexpected or worrying.
 
@@ -462,6 +480,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 We’re often told in self-help books that it’s a good idea to do … .
+final-answer:
+We’re often told in self-help books that it’s a good idea to do **things that are outside our comfort zone**.
 solution:
 **الإجابة:** We’re often told in self-help books that it’s a good idea to do things that are outside our comfort zone.
 
@@ -593,6 +613,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 What does “one” (line 2) refer to?
+final-answer:
+“One” refers to **a comfort zone**.
 solution:
 تأتي one بعد الحديث عن منطقة الراحة، ومعنى الجملة أن لكل واحد منا منطقة راحة؛ لذا تستبدل الاسم لتجنب تكراره.
 
@@ -623,6 +645,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 What does “they” (line 8) refer to?
+final-answer:
+“They” refers to **people**.
 solution:
 العبارة تتحدث عن مساعدة الناس على الشعور الإيجابي حين يشعرون بأنهم يتطورون؛ فالضمير يعود إلى people.
 
@@ -785,6 +809,9 @@ We feel safe inside our comfort zone.
 Reasons:
 a. …
 b. …
+final-answer:
+1. We are confident that **we can manage**.
+2. We are unlikely to be challenged by anything **unexpected or worrying**.
 solution:
 **الإجابة:** a. We are confident that we can manage.
 b. We are unlikely to be challenged by anything unexpected or worrying.
@@ -823,6 +850,9 @@ People don’t often like to try new things.
 Reasons:
 a. …
 b. …
+final-answer:
+1. They may be **afraid of failing**.
+2. They may be **unsure how to begin**.
 solution:
 **الإجابة:** a. They may be afraid of failing.
 b. They may be unsure how to begin.
@@ -857,6 +887,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 When would people feel positive about themselves?
+final-answer:
+People feel positive about themselves when they feel that **they are developing and making progress in their lives**.
 solution:
 **الإجابة:** People feel positive about themselves when they feel that they are developing and making progress in their lives.
 
@@ -892,6 +924,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 A comfort zone can be described as … or … .
+final-answer:
+A comfort zone can be described as **the area where we feel comfortable** or **the set of routines and known abilities that make us feel safe**.
 solution:
 **الإجابة:** A comfort zone can be described as the area where we feel comfortable or the set of routines and known abilities that make us feel safe.
 
@@ -925,6 +959,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 “Self-help” books often recommend … outside your comfort zone.
+final-answer:
+“Self-help” books often recommend **doing things that are outside your comfort zone**.
 solution:
 **الإجابة:** “Self-help” books often recommend doing things that are outside your comfort zone.
 
@@ -959,6 +995,8 @@ Unfortunately, people often get stuck in their comfort zones and don't feel able
 
 I’m tired of listening to his **untrue reasons**! The word that has the same meaning of the phrase in bold is … .
 
+final-answer:
+**Excuses**.
 solution:
 **الإجابة:** I’m tired of listening to his excuses!
 
@@ -1000,6 +1038,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 What does “they” (line 8) refer to?
+final-answer:
+“They” refers to **people**.
 solution:
 الضمير في they are developing يعود إلى people الذين تساعدهم فكرة التطور على الشعور بالإيجابية تجاه أنفسهم.
 
@@ -1028,6 +1068,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 In the sentence “There are various possible reasons for this”, what does “this” refer to?
+final-answer:
+“This” refers to **getting stuck in their comfort zones and not feeling able to try different things**.
 solution:
 **الإجابة:** getting stuck in their comfort zones and not feeling able to try different things.
 
@@ -1301,6 +1343,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 The phrase comfort zone can be defined as … and … .
+final-answer:
+A comfort zone is **the area where you feel comfortable** and **the set of routines and known abilities that make you feel safe**.
 solution:
 **الإجابة:** A comfort zone is the area where you feel comfortable and the set of routines and known abilities that make you feel safe.
 
@@ -1334,6 +1378,8 @@ On the other hand, we are often told in "self-help books" that it's a good idea 
 Unfortunately, people often get stuck in their comfort zones and don't feel able to try different things. There are various possible reasons for **this**. They may be afraid of failing or unsure how to begin. Many people think, "**This** is the way I am and I'll never change", using this as an excuse for not trying something new. Whatever the reason may be, it's sometimes necessary to force yourself to do something you'd rather not do. Once you've made the effort, though, the door to new experiences will be open and you'll probably wonder why you thought it was a problem.
 
 According to the “self-help” books, people are advised to … .
+final-answer:
+According to self-help books, people are advised to **do things that are outside their comfort zone**.
 solution:
 **الإجابة:** According to self-help books, people are advised to do things that are outside their comfort zone.
 
@@ -1371,6 +1417,11 @@ a. …
 b. …
 c. …
 d. …
+final-answer:
+1. It can help people **feel positive about themselves**.
+2. It can help them **develop and make progress**.
+3. It can help them **reach their full potential**.
+4. It can help them **improve themselves** by learning something new, becoming more creative or getting fit.
 solution:
 تجمع الفقرة الثانية هذه الفوائد: الشعور الإيجابي، والتطور، واستثمار الإمكانات، وتحسين النفس. والأمثلة الأخيرة تبين صور التحسين عملياً.
 
@@ -1406,6 +1457,9 @@ Unfortunately, people often get stuck in their comfort zones and don't feel able
 Why don’t people often get out of their comfort zone and do different things?
 a. …
 b. …
+final-answer:
+1. They may be **afraid of failing**.
+2. They may be **unsure how to begin**.
 solution:
 **الإجابة:** a. They may be afraid of failing.
 b. They may be unsure how to begin.
@@ -1566,6 +1620,10 @@ A famous Chinese proverb says, “Pearls don’t lie on the seashore. If you wan
 Tip 4: Many of us are so afraid of failure, that we would rather do nothing than take a shot at our dreams. Begin to treat failure as a teacher. First you should learn from the experience. Then you take that lesson to your next adventure to increase your chance of success.
 
 Staying in your comfort zone, you are likely to miss out on …, … and … .
+final-answer:
+1. **Professional opportunities**.
+2. **Life experiences**.
+3. **Personal growth**.
 solution:
 نستخرج العناصر الثلاثة التي تأتي بعد missing out on في مقدمة النص.
 
@@ -1609,6 +1667,16 @@ Write suitable tips from the text to the people in the following situations:
 | --- | --- |
 | I want to do public speaking, but I'm afraid I can't. | a. …; b. … |
 | How can I turn failure into big success? | a. …; b. … |
+final-answer:
+**Public speaking**
+
+1. Take every opportunity to **speak to small groups of people**.
+2. **Practise with family and friends**.
+
+**Turning failure into success**
+
+1. **Learn from the experience**.
+2. **Take that lesson to your next adventure** to increase your chance of success.
 solution:
 للخوف من التحدث أمام الجمهور نرجع إلى النصيحة الثالثة التي تبدأ بخطوات صغيرة. ولتحويل الفشل إلى نجاح نستخدم الرابعة: نتعلم من التجربة ونطبق درسها في المحاولة التالية.
 
@@ -1728,6 +1796,8 @@ A famous Chinese proverb says, “Pearls don’t lie on the seashore. If you wan
 Tip 4: Many of us are so afraid of failure, that we would rather do nothing than take a shot at our dreams. Begin to treat failure as a teacher. First you should learn from the experience. Then you take that lesson to your next adventure to increase your chance of success.
 
 What does “those things” (line 6) refer to?
+final-answer:
+“Those things” refers to **things you believe are worth doing but are afraid of doing because you might fail**.
 solution:
 نعود إلى العبارة السابقة داخل النصيحة الأولى، لا إلى سؤال آخر في البنك. يشير those things إلى الأشياء التي نرى أنها تستحق الفعل لكننا نخشى فعلها بسبب احتمال الفشل.
 
@@ -1761,6 +1831,8 @@ A famous Chinese proverb says, “Pearls don’t lie on the seashore. If you wan
 Tip 4: Many of us are so afraid of failure, that we would rather do nothing than take a shot at our dreams. Begin to treat failure as a teacher. First you should learn from the experience. Then you take that lesson to your next adventure to increase your chance of success.
 
 What does “them” (line 10) refer to?
+final-answer:
+“Them” refers to **people who are doing what you want to do**.
 solution:
 المطلوب تقليد الأشخاص الذين يمارسون ما نريد تعلمه؛ لذلك يعود them إلى هؤلاء الأشخاص، لا إلى الأشياء أو المخاوف.
 
@@ -1798,6 +1870,10 @@ What do we have in our comfort zone?
 a. …
 b. …
 c. …
+final-answer:
+1. **Familiarity**.
+2. **Security**.
+3. **Certainty**.
 solution:
 نبحث في الفقرة الأولى عن الأشياء التي نشعر بها داخل منطقة الراحة؛ وردت بعد a sense of.
 
@@ -1836,6 +1912,9 @@ In an increasingly competitive, cautious and accelerated world, those who are wi
 Mention what happens when we step out of our comfort zone?
 a. …
 b. …
+final-answer:
+1. We **take a risk**.
+2. We open ourselves up to the possibility of **stress and anxiety**.
 solution:
 تذكر الجملة نتيجتين مترابطتين للخروج من منطقة الراحة: المخاطرة، وإمكان التعرض للضغط والقلق. نكتب كليهما.
 
@@ -1879,6 +1958,10 @@ According to the writer our world today is:
 a. …
 b. …
 c. …
+final-answer:
+1. **Competitive**.
+2. **Cautious**.
+3. **Accelerated**.
 solution:
 نبحث عن وصف العالم في الفقرة الأخيرة. تأتي الصفات الثلاث قبل world مباشرة.
 

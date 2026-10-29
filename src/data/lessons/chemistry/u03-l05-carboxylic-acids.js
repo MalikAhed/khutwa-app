@@ -52,6 +52,12 @@ body:
 عبّر بالمعادلات الكيميائية عن كلّ من التفاعلات الآتية، وسمّ المركبات العضوية الناتجة:
 
 2. اختزال حمض الإيثانويك باستخدام هيدريد ليثيوم ألمنيوم \\(\\mathrm{LiAlH_4}\\).
+final-answer:
+**الناتج العضوي: الإيثانول، بعد المعالجة المائية.**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><mn>4</mn><mo stretchy="false">[</mo><mi>H</mi><mo stretchy="false">]</mo><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>L</mi><mi>i</mi><mi>A</mi><mi>l</mi><msub><mi>H</mi><mn>4</mn></msub></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 المطلوب ناتج اختزال حمض الإيثانويك.
 الاختزال بـ LiAlH₄ ثم المعالجة المائية يحول مجموعة COOH إلى CH₂OH، ويحافظ على عدد ذرات الكربون.
@@ -153,6 +159,22 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 حمض الإيثانويك من الإيثان.
+final-answer:
+**تحضير حمض الإيثانويك:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mo>+</mo><mi>C</mi><msub><mi>l</mi><mn>2</mn></msub><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>h</mi><mi>ν</mi></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>l</mi><mo>+</mo><mi>H</mi><mi>C</mi><mi>l</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>l</mi><mo>+</mo><mi>N</mi><mi>a</mi><mi>O</mi><msub><mi>H</mi><mrow><mo stretchy="false">(</mo><mi>a</mi><mi>q</mi><mo stretchy="false">)</mo></mrow></msub><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><mi>N</mi><mi>a</mi><mi>C</mi><mi>l</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><mn>2</mn><mo stretchy="false">[</mo><mi>O</mi><mo stretchy="false">]</mo><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>K</mi><mi>M</mi><mi>n</mi><msub><mi>O</mi><mn>4</mn></msub><mi mathvariant="normal">/</mi><msup><mi>H</mi><mo>+</mo></msup></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
+
+تُجرى الكلورة بكمية محدودة من الكلور مع فائض من الإيثان، ويُفصل كلوروإيثان.
 solution:
 المعطى هو الإيثان، والمطلوب تحضير حمض الإيثانويك مع بقاء السلسلة من ذرتي كربون.
 نبدأ بإدخال Cl مكان H؛ حتى نستطيع استبدال Cl بمجموعة OH لاحقاً.
@@ -200,6 +222,16 @@ body:
 سؤال: بين بالمعادلات الكيميائية طريقة تحضير كلا مما يلي، باستخدام أية مواد غير عضوية مناسبة.
 
 بروبانوات الصوديوم من 1 - بروبانول.
+final-answer:
+**تحضير بروبانوات الصوديوم:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><mn>2</mn><mo stretchy="false">[</mo><mi>O</mi><mo stretchy="false">]</mo><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>K</mi><mi>M</mi><mi>n</mi><msub><mi>O</mi><mn>4</mn></msub><mi mathvariant="normal">/</mi><msup><mi>H</mi><mo>+</mo></msup></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>N</mi><mi>a</mi><mi>O</mi><mi>H</mi><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>N</mi><mi>a</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 المطلوب تحويل 1-بروبانول إلى بروبانوات الصوديوم.
 1-بروبانول كحول أولي؛ لأن الكربون الحامل لـ OH متصل بذرة كربون واحدة.
@@ -237,6 +269,8 @@ body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
 \\(\\mathrm{CH_3COOH+NaHCO_3\\rightarrow\\underline{\\qquad\\qquad}}\\)
+final-answer:
+**إيثانوات الصوديوم:** \\(\\mathrm{CH_3COONa}\\).
 solution:
 المتفاعلان حمض الإيثانويك وبيكربونات الصوديوم.
 ينقل الحمض الهيدروجين الحمضي إلى أيون البيكربونات HCO₃⁻، فيتكون حمض الكربونيك غير المستقر.
@@ -280,6 +314,8 @@ body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
 \\(\\mathrm{H_3CCOOH+NaOH_{(aq)}\\rightarrow\\underline{\\qquad\\qquad}}\\)
+final-answer:
+**إيثانوات الصوديوم:** \\(\\mathrm{CH_3COONa}\\).
 solution:
 يتفاعل حمض الإيثانويك مع NaOH بالتعادل.
 يتحد هيدروجين COOH الحمضي مع OH⁻ ليعطي الماء.
@@ -309,6 +345,9 @@ body:
 \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">C</mi><msub><mi mathvariant="normal">H</mi><mn>3</mn></msub><mi mathvariant="normal">C</mi><mo stretchy="false">(</mo><mo>=</mo><mi mathvariant="normal">O</mi><mo stretchy="false">)</mo><mi mathvariant="normal">O</mi><msub><mi mathvariant="normal">C</mi><mn>2</mn></msub><msub><mi mathvariant="normal">H</mi><mn>5</mn></msub><mo>+</mo><mi mathvariant="normal">N</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">O</mi><mi mathvariant="normal">H</mi><mo>→</mo><munder accentunder="true"><mrow><mspace width="2em"/><mspace width="2em"/></mrow><mo stretchy="true">‾</mo></munder></mrow></math>\`
 
 ![الصيغة البنائية للمتفاعل العضوي كما وردت في المصدر](assets/lessons/curriculum-evidence/8661e30d19edf5cd2094.webp)
+final-answer:
+- **إيثانوات الصوديوم:** \\(\\mathrm{CH_3C(=O)ONa}\\).
+- **الإيثانول:** \\(\\mathrm{C_2H_5OH}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/curriculum-evidence/8661e30d19edf5cd2094.webp)
 
@@ -338,6 +377,8 @@ body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
 \\(\\mathrm{CH_3CH_2COOH+NaOH\\rightarrow\\underline{\\qquad\\qquad}}\\)
+final-answer:
+**بروبانوات الصوديوم:** \\(\\mathrm{CH_3CH_2COONa}\\).
 solution:
 هذا تعادل حمض البروبانويك مع NaOH.
 ينتقل هيدروجين COOH الحمضي إلى OH⁻، فينتج الماء.
@@ -364,6 +405,8 @@ body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
 \\(\\mathrm{CH_3CH_2COOH+Na\\rightarrow\\underline{\\qquad\\qquad}}\\)
+final-answer:
+**بروبانوات الصوديوم:** \\(\\mathrm{CH_3CH_2COONa}\\).
 solution:
 الصوديوم فلز نشط يستبدل هيدروجين COOH الحمضي، فيتكون ملح الحمض ويتصاعد H₂.
 هنا يكون الملح **بروبانوات الصوديوم**.
@@ -391,6 +434,8 @@ body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
 \\(\\mathrm{CH_3CH_2COOH+KHCO_3\\rightarrow\\underline{\\qquad\\qquad}}\\)
+final-answer:
+**بروبانوات البوتاسيوم:** \\(\\mathrm{CH_3CH_2COOK}\\).
 solution:
 يتفاعل حمض البروبانويك مع بيكربونات البوتاسيوم.
 يمنح الحمض هيدروجينه الحمضي لأيون البيكربونات، فيتكون حمض الكربونيك.
@@ -433,6 +478,15 @@ body:
 سؤال: كيف يمكن التمييز مخبريًا بين الأزواج الآتية مستعينًا بالمعادلات؟
 
 هكسان وحمض الإيثانويك.
+final-answer:
+**بإضافة محلول بيكربونات الصوديوم:**
+
+- **حمض الإيثانويك:** يُطلق فقاعات غاز ثاني أكسيد الكربون.
+- **الهكسان:** لا يُطلق الغاز.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>N</mi><mi>a</mi><mi>H</mi><mi>C</mi><msub><mi>O</mi><mn>3</mn></msub><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>N</mi><mi>a</mi><mo>+</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 نستخدم محلول بيكربونات الصوديوم NaHCO₃ للتمييز بين العينتين.
 الحمض الكربوكسيلي يحرر CO₂ من البيكربونات؛ لذلك يعطي **حمض الإيثانويك** فقاعات:
@@ -460,6 +514,15 @@ body:
 سؤال: كيف يمكن التمييز مخبريًا بين الأزواج الآتية مستعينًا بالمعادلات؟
 
 (1- بيوتانول وحمض البيوتانويك).
+final-answer:
+**بإضافة محلول بيكربونات الصوديوم:**
+
+- **حمض البيوتانويك:** يُطلق فقاعات غاز ثاني أكسيد الكربون.
+- **1-بيوتانول:** لا يُطلق الغاز.
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>N</mi><mi>a</mi><mi>H</mi><mi>C</mi><msub><mi>O</mi><mn>3</mn></msub><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>N</mi><mi>a</mi><mo>+</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 نضيف محلول بيكربونات الصوديوم NaHCO₃ إلى كل عينة.
 الحمض الكربوكسيلي أقوى حمضياً من الكحول، فيحرر CO₂ من البيكربونات.
@@ -488,6 +551,9 @@ body:
 اكتب صيغ المركبات العضوية \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>A</mi><mo separator="true">,</mo><mi>B</mi></mrow></math>\` الناتجة من التفاعل الآتي:
 
 ![اختزال حمض البروبانويك إلى A ثم تفاعله مع HCl لتكوين B](assets/lessons/curriculum-evidence/733dee5a0bf7dcba7aba.webp)
+final-answer:
+- **A (1-بروبانول):** \\(\\mathrm{CH_3CH_2CH_2OH}\\).
+- **B (1-كلورو بروبان):** \\(\\mathrm{CH_3CH_2CH_2Cl}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/curriculum-evidence/733dee5a0bf7dcba7aba.webp)
 
@@ -529,6 +595,8 @@ body:
 ما الناتج العضوي من اختزال المركب \\(D\\) باستخدام \\(\\mathrm{LiAlH_4}\\)؟
 
 ![جدول صيغ المركبات A إلى F؛ A هو الهكسان وC هو 1-كلورو بروبان](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q01-figure.webp)
+final-answer:
+**E — 1-بروبانول:** \\(\\mathrm{CH_3CH_2CH_2OH}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q01-figure.webp)
 
@@ -560,6 +628,12 @@ body:
 اكتب معادلة كيميائية تمثل: ب. إضافة \\(\\mathrm{LiAlH_4}\\) إلى المركب (ج).
 
 ![جدول المركبات أ إلى و: بروبين،1-بروبانول،حمض البروبانويك،بروبانون،بروبانال،2-بروبانول](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q03-figure.webp)
+final-answer:
+**الناتج العضوي: 1-بروبانول، بعد المعالجة المائية.**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><mn>4</mn><mo stretchy="false">[</mo><mi>H</mi><mo stretchy="false">]</mo><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>L</mi><mi>i</mi><mi>A</mi><mi>l</mi><msub><mi>H</mi><mn>4</mn></msub></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p198-q03-figure.webp)
 
@@ -591,6 +665,8 @@ body:
 اكتب صيغة الناتج العضوي من تفاعل المركب \\(C\\) مع فلز الصوديوم \\(\\mathrm{Na}\\).
 
 ![جدول A إلى E:1-برومو بيوتان،2-بيوتانول،حمض الإيثانويك،بيوتانال،2-بيوتانون](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q01-figure.webp)
+final-answer:
+**إيثانوات الصوديوم:** \\(\\mathrm{CH_3COONa}\\).
 solution:
 ![الشكل الأصلي للسؤال](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q01-figure.webp)
 
@@ -619,6 +695,12 @@ body:
 ادرس المركبات العضوية الآتية: \\(\\mathrm{CH_3COOH}\\)، \\(\\mathrm{CH_3CH_2OH}\\)، \\(\\mathrm{CH_3Cl}\\)، \\(\\mathrm{CH_3COOCH_3}\\).
 
 اكتب معادلة لتحضير المركب \\(\\mathrm{CH_3COOH}\\) من المركب \\(\\mathrm{CH_3CH_2OH}\\).
+final-answer:
+**معادلة تحضير حمض الإيثانويك:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><mn>2</mn><mo stretchy="false">[</mo><mi>O</mi><mo stretchy="false">]</mo><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>K</mi><mi>M</mi><mi>n</mi><msub><mi>O</mi><mn>4</mn></msub><mi mathvariant="normal">/</mi><msup><mi>H</mi><mo>+</mo></msup></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`
 solution:
 الإيثانول كحول أولي؛ لأن الكربون الحامل لـ OH متصل بذرة كربون واحدة.
 الأكسدة التامة للكحول الأولي تحول CH₂OH إلى COOH، مع بقاء عدد الكربونات.
@@ -647,6 +729,8 @@ body:
 اكتب صيغة واسم الناتج العضوي في التفاعل الذي يحدث في الحالات الآتية: (10 علامات)
 
 اختزال حمض الإيثانويك باستخدام هيدريد ليثيوم ألمنيوم \\(\\mathrm{LiAlH_4}\\).
+final-answer:
+**الإيثانول:** \\(\\mathrm{CH_3CH_2OH}\\).
 solution:
 المتفاعل حمض الإيثانويك، وفيه ذرتا كربون.
 اختزاله بـ LiAlH₄ ثم المعالجة المائية يحول COOH إلى CH₂OH مع بقاء الكربونين.

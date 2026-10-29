@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { parseLessonMarkdown } from "../src/markdown/lesson-authoring.js";
+import { questionExplanation } from "../src/domain/question-explanations.js";
 import { compileLessonMarkdown } from "../src/markdown/lesson-model.js";
 
 const body = `اقرأ الجدول ثم أجب عن البندين كما وردا.
@@ -29,6 +30,7 @@ const solution = `Result:
 \`\`\`sql
 WHERE Mark >= 80;
 \`\`\``;
+const finalAnswer = "1. **علي: ٩٠، سارة: ٨٠.**\n2. **تحديد الدرجات من ٨٠ إلى ١٠٠.**";
 const source = `:::exam-question
 id: original-written-question
 title: تدريب كتابي من المصدر
@@ -37,6 +39,8 @@ reference: ورقة المصدر، PDF ص 3، السؤال 2
 answer-label: حل للمراجعة الذاتية
 body:
 ${body}
+final-answer:
+${finalAnswer}
 solution:
 ${solution}
 guidance:
@@ -51,7 +55,9 @@ test("written source questions retain multiline prompts, tables, SQL and figures
   assert.equal(step.id, "original-written-question");
   assert.equal(step.type, "exam-question");
   assert.equal(step.content.body, body);
+  assert.equal(step.content.finalAnswer, finalAnswer);
   assert.equal(step.content.solution, solution);
+  assert.equal(questionExplanation(step).markdown, solution, "the Explain section retains the original worked solution");
   assert.match(step.content.body, /Patients:\n\n\| Num/);
   assert.match(step.content.solution, /^Result:\n\n/);
   assert.equal(step.content.reference, "ورقة المصدر، PDF ص 3، السؤال 2");
@@ -74,4 +80,23 @@ test("published written questions require attribution and a disclosed solution s
   }
   const unsafe = source.replace(body, '<img src=x onerror="alert(1)">');
   assert.ok(parseLessonMarkdown(unsafe, { published:true }).issues.some(issue => issue.includes("raw HTML")));
+});
+
+
+test("legacy written content never copies its worked solution into the final answer", () => {
+  const legacy = source.replace(`final-answer:\n${finalAnswer}\n`, "");
+  const parsed = parseLessonMarkdown(legacy, { published:true });
+  assert.deepEqual(parsed.issues, []);
+  assert.equal(parsed.steps[0].content.finalAnswer, "");
+  assert.equal(parsed.steps[0].content.solution, solution);
+});
+
+test("final answer Markdown remains isolated from prompt, solution and fenced labels", () => {
+  const answer = "**SQL:**\n\n```sql\nsolution:\nSELECT Name FROM Student;\n```\n\n- ==علي==\n- **سارة**";
+  const parsed = parseLessonMarkdown(source.replace(finalAnswer, answer), { published:true });
+  assert.deepEqual(parsed.issues, []);
+  assert.equal(parsed.steps[0].content.body, body);
+  assert.equal(parsed.steps[0].content.finalAnswer, answer);
+  assert.equal(parsed.steps[0].content.solution, solution);
+  assert.ok(parseLessonMarkdown(source.replace(finalAnswer, '<img src=x onerror="alert(1)">')).issues.some(issue => issue.includes("raw HTML")));
 });

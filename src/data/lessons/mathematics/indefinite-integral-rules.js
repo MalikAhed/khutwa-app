@@ -10,6 +10,60 @@ body:
 أكمل الجدول حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>∈</mo><mi mathvariant="normal">ح</mi></mrow></math>\`.
 
 ![الجدول الأصلي بجميع المعطيات والخانات المطلوب إكمالها](assets/lessons/mathematics/source-crops/math-book-p088-activity1-table.webp)
+final-answer:
+**الصفوف بالترتيب — المشتقة، ثم التكامل:**
+
+**الصف 1:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mi mathvariant="normal">د</mi><mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></mfrac><mo stretchy="false">(</mo><mn dir="ltr">٥</mn><mo stretchy="false">)</mo><mo>=</mo><mn dir="ltr">٠</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mn dir="ltr">٠</mn><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الصف 2:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mi mathvariant="normal">د</mi><mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></mfrac><mo stretchy="false">(</mo><mi mathvariant="normal">أ</mi><mi mathvariant="normal">س</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">أ</mi></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mi mathvariant="normal">أ</mi><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mi mathvariant="normal">أ</mi><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الصف 3:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mi mathvariant="normal">د</mi><mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></mfrac><mo stretchy="false">(</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn dir="ltr">٣</mn><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mn dir="ltr">٣</mn><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الصف 4:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mi mathvariant="normal">د</mi><mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></mfrac><mo stretchy="false">(</mo><msup><mi mathvariant="normal">س</mi><mi mathvariant="normal">ن</mi></msup><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">ن</mi><msup><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ن</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msup></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mi mathvariant="normal">ن</mi><msup><mi mathvariant="normal">س</mi><mrow><mi mathvariant="normal">ن</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></msup><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><msup><mi mathvariant="normal">س</mi><mi mathvariant="normal">ن</mi></msup><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الصف 5:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mi mathvariant="normal">د</mi><mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></mfrac><mo stretchy="false">(</mo><msub><mtext dir="rtl">لو</mtext><mi mathvariant="normal">هـ</mi></msub><mo>⁡</mo><mi mathvariant="normal">س</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn dir="ltr">١</mn><mi mathvariant="normal">س</mi></mfrac></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mfrac><mn dir="ltr">١</mn><mi mathvariant="normal">س</mi></mfrac><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><msub><mtext dir="rtl">لو</mtext><mi mathvariant="normal">هـ</mi></msub><mo>⁡</mo><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**في الصف الأخير:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>&gt;</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
 ![الجدول الأصلي بجميع المعطيات والخانات المطلوب إكمالها](assets/lessons/mathematics/source-crops/math-book-p088-activity1-table.webp)
 
@@ -108,6 +162,8 @@ body:
 ما العلاقة بين نواتج العمود الثاني ونواتج العمود الثالث؟
 
 ![الجدول الأصلي بجميع المعطيات والخانات المطلوب إكمالها](assets/lessons/mathematics/source-crops/math-book-p088-activity1-table.webp)
+final-answer:
+**نواتج العمود الثالث اقترانات أصلية لنواتج العمود الثاني، وتختلف عن نواتج العمود الأول بثابت تكامل.**
 solution:
 ![الجدول الأصلي](assets/lessons/mathematics/source-crops/math-book-p088-activity1-table.webp)
 
@@ -139,6 +195,8 @@ body:
 بالاعتماد على النتائج التي توصلت إليها، وأن التكامل عملية عكسية للتفاضل، كيف يمكنك التحقق من صحة قواعد التكامل؟
 
 ![الجدول الأصلي بجميع المعطيات والخانات المطلوب إكمالها](assets/lessons/mathematics/source-crops/math-book-p088-activity1-table.webp)
+final-answer:
+**باشتقاق ناتج التكامل؛ يجب أن تساوي مشتقته الاقتران تحت إشارة التكامل.**
 solution:
 ![الجدول الأصلي](assets/lessons/mathematics/source-crops/math-book-p088-activity1-table.webp)
 
@@ -166,6 +224,14 @@ reference: [السؤال، النسخة المصورة، ص ٨٩](assets/lessons
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mrow><mo stretchy="true">(</mo><mrow><mfrac><mn dir="ltr">١</mn><mi mathvariant="normal">س</mi></mfrac><mo>+</mo><mn dir="ltr">٣</mn></mrow><mo stretchy="true">)</mo></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١</mn><mi mathvariant="normal">س</mi></mfrac><mo>+</mo><mn dir="ltr">٣</mn><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><msub><mtext dir="rtl">لو</mtext><mi mathvariant="normal">هـ</mi></msub><mo>⁡</mo><mi mathvariant="normal">∣</mi><mi mathvariant="normal">س</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الشرط:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
  التكامل يحسب اقترانًا تعيد مشتقته المكامل. نكامل المجموع حدًا حدًا؛ تكامل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">١</mn><mi mathvariant="normal">س</mi></mfrac></math>\` هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">لو</mi><mo>⁡</mo><mrow><mi mathvariant="normal">هـ</mi><mrow><mo stretchy="true" fence="true">|</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">|</mo></mrow></mrow></mrow></math>\` حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`، وتكامل الثابت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣</mn></math>\` هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi></mrow></math>\`.
 
@@ -199,6 +265,14 @@ reference: [الكتاب، النسخة المصورة، ص ٨٩](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mrow><mrow><mtext dir="rtl">قا</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mrow><mo stretchy="true">(</mo><mrow><mrow><mtext dir="rtl">قا</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>+</mo><mrow><mtext dir="rtl">ظا</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow></mrow><mo stretchy="true">)</mo></mrow></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mi mathvariant="normal">قا</mi><mo>⁡</mo><mi mathvariant="normal">س</mi><mo stretchy="false">(</mo><mi mathvariant="normal">قا</mi><mo>⁡</mo><mi mathvariant="normal">س</mi><mo>+</mo><mtext dir="rtl">ظا</mtext><mo>⁡</mo><mi mathvariant="normal">س</mi><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mtext dir="rtl">ظا</mtext><mo>⁡</mo><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">قا</mi><mo>⁡</mo><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الشرط:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">جتا</mtext><mo>(</mo><mi mathvariant="normal">س</mi><mo>)</mo><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
 
 نوزّع القاطع على ما داخل القوس؛ حتى يظهر حدّان نعرف تكاملهما.
@@ -244,6 +318,12 @@ reference: [الكتاب، النسخة المصورة، ص ٨٩](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><msup><mtext dir="rtl">هـ</mtext><mi mathvariant="normal">س</mi></msup></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mo stretchy="false">(</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><msup><mi mathvariant="normal">هـ</mi><mi mathvariant="normal">س</mi></msup><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mfrac><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mi mathvariant="normal">هـ</mi><mi mathvariant="normal">س</mi></msup><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
 solution:
  نكامل حدّي الجمع كلًّا على حدة.
 قاعدة تكامل القوة تزيد الأس واحدًا وتقسم على الأس الجديد؛ لذا:
@@ -281,6 +361,14 @@ reference: [الكتاب، النسخة المصورة، ص ٨٩](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٢</mn><mo>−</mo><msup><mrow><mtext dir="rtl">ظا</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mn dir="ltr">٢</mn></msup></mrow><mo stretchy="true">)</mo></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo>−</mo><msup><mrow><mtext dir="rtl">ظا</mtext><mo>⁡</mo></mrow><mn dir="ltr">٢</mn></msup><mi mathvariant="normal">س</mi><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">س</mi><mo>−</mo><mtext dir="rtl">ظا</mtext><mo>⁡</mo><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الشرط:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">جتا</mtext><mo>(</mo><mi mathvariant="normal">س</mi><mo>)</mo><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
 
 المتطابقة \`mathml: <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn dir="ltr">١</mn><mo>+</mo><msup><mrow><mi mathvariant="normal">ظا</mi><mo>⁡</mo></mrow><mn dir="ltr">٢</mn></msup><mi mathvariant="normal">س</mi><mo>=</mo><msup><mrow><mi mathvariant="normal">قا</mi><mo>⁡</mo></mrow><mn dir="ltr">٢</mn></msup><mi mathvariant="normal">س</mi></mrow></math>\` تسمح بتحويل مربع الظل إلى مربع القاطع؛ ونختار ذلك لأن مربع القاطع هو مشتقة الظل.
@@ -318,6 +406,14 @@ reference: [الكتاب، النسخة المصورة، ص ٨٩](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mfrac><msup><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mfrac><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mfrac><msup><mrow><mo fence="true">(</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mfrac><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mfrac><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>−</mo><mfrac><mn dir="ltr">١</mn><mi mathvariant="normal">س</mi></mfrac><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الشرط:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
 المطلوب إيجاد ناتج التكامل المعطى.
 
@@ -465,6 +561,16 @@ body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mfrac><msup><mrow><mo stretchy="true">(</mo><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mfrac><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
 
 هل يمكنك إيجاد ناتج التكامل في المثال \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\` بطريقة أخرى؟
+final-answer:
+**نعم؛ بإعادة كتابة المكامل على صورة مربع مجموع.**
+
+**الناتج:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mfrac><mrow><mo stretchy="false">(</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">١</mn><msup><mo stretchy="false">)</mo><mn dir="ltr">٢</mn></msup></mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mfrac><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mfrac><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi><mo>−</mo><mfrac><mn dir="ltr">١</mn><mi mathvariant="normal">س</mi></mfrac><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الشرط:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
 المثال \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\` المقصود في الكتاب هو التكامل الآتي؛
 
@@ -517,6 +623,10 @@ reference: [الكتاب، النسخة المصورة، ص ٩٠](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">قَ</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٥</mn><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٤</mn></msup><mo>−</mo><mn dir="ltr">١</mn></mrow><mo stretchy="true">)</mo></mrow></mrow></math>\`، وكان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">١</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mn dir="ltr">٥</mn></mrow></math>\`، فجد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٢</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mo>(</mo><mn dir="ltr">٢</mn><mo>)</mo><mo>=</mo><mn dir="ltr">٣٥</mn></mrow></math>\`
 solution:
 المعطى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msup><mi mathvariant="normal">ق</mi><mo>′</mo></msup><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn dir="ltr">٥</mn><mrow><msup><mi mathvariant="normal">س</mi><mrow><mn dir="ltr">٤</mn></mrow></msup></mrow></mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">١</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mn dir="ltr">٥</mn></mrow></math>\`، والمطلوب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٢</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow></math>\`.
 التكامل يعكس الاشتقاق، لذلك نكامل المشتقة لإيجاد قاعدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\`. نزيد أس القوة واحدًا ونقسم عليه، وتكامل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">الثابت</mtext><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\` هو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mi mathvariant="normal">س</mi></mrow></math>\`.
@@ -576,6 +686,9 @@ reference: [الكتاب، النسخة المصورة، ص ٩٠](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما الفرق بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mrow><mi mathvariant="normal">د</mi><mrow><mo>∫</mo><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></mrow><mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></mfrac></math>\` و\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mrow><mi mathvariant="normal">قَ</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`، علمًا بأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow></math>\` اقتران متصل؟
+final-answer:
+1. **اشتقاق التكامل:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mo>(</mo><mi mathvariant="normal">س</mi><mo>)</mo></mrow></math>\`
+2. **تكامل المشتقة:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mo>(</mo><mi mathvariant="normal">س</mi><mo>)</mo><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>\`.
 solution:
 
 
@@ -609,6 +722,12 @@ reference: [الكتاب، النسخة المصورة، ص ٩٠](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mn dir="ltr">٨</mn><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mn dir="ltr">٨</mn><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٨</mn><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
 solution:
 المطلوب تكامل الثابت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٨</mn></math>\` بالنسبة إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`.
 
@@ -634,6 +753,14 @@ reference: [الكتاب، النسخة المصورة، ص ٩٠](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mrow><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٣</mn><mo>+</mo><mi mathvariant="normal">س</mi></mrow><mo stretchy="true">)</mo></mrow><msqrt><mi mathvariant="normal">س</mi></msqrt></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><msqrt><mi mathvariant="normal">س</mi></msqrt><mrow><mo fence="true">(</mo><mi mathvariant="normal">س</mi><mo>+</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mfrac><mrow><mn dir="ltr">٢</mn><msup><mi mathvariant="normal">س</mi><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٢</mn></mfrac></msup></mrow><mn dir="ltr">٥</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><msup><mi mathvariant="normal">س</mi><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac></msup><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**المجال الحقيقي:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≥</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
 المطلوب إيجاد ناتج التكامل المعطى.
 
@@ -767,6 +894,14 @@ reference: [الكتاب، النسخة المصورة، ص ٩٠](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٥</mn><mi mathvariant="normal">س</mi><mo>+</mo><mrow><mtext dir="rtl">قا</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mrow><mtext dir="rtl">ظا</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow></mrow><mo stretchy="true">)</mo></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mo stretchy="false">(</mo><mn dir="ltr">٥</mn><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">قا</mi><mo>⁡</mo><mi mathvariant="normal">س</mi><mtext dir="rtl">ظا</mtext><mo>⁡</mo><mi mathvariant="normal">س</mi><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٢</mn></mfrac><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mi mathvariant="normal">قا</mi><mo>⁡</mo><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الشرط:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">جتا</mtext><mo>(</mo><mi mathvariant="normal">س</mi><mo>)</mo><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
  نكامل حدّي الجمع كلًّا على حدة.
 قاعدة القوة تزيد الأس واحدًا وتقسم على الأس الجديد.
@@ -805,6 +940,14 @@ reference: [الكتاب، النسخة المصورة، ص ٩٠](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mfrac><mrow><mn dir="ltr">٢</mn><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mo>+</mo><mn dir="ltr">٥</mn><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><mn dir="ltr">١</mn></mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mfrac><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mfrac><mrow><mn dir="ltr">٢</mn><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mo>+</mo><mn dir="ltr">٥</mn><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><mn dir="ltr">١</mn></mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mfrac><mtext> </mtext><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٥</mn><mi mathvariant="normal">س</mi><mo>+</mo><mfrac><mn dir="ltr">١</mn><mi mathvariant="normal">س</mi></mfrac><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الشرط:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
 المطلوب إيجاد ناتج التكامل المعطى.
 
@@ -948,6 +1091,12 @@ reference: [الكتاب، النسخة المصورة، ص ٩٠](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mfrac><mn dir="ltr">١</mn><msup><mrow><mtext dir="rtl">جتا</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mn dir="ltr">٢</mn></msup></mfrac><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">ظا</mtext><mo>(</mo><mi mathvariant="normal">س</mi><mo>)</mo><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>\`
+
+**الشرط:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mtext dir="rtl">جتا</mtext><mo>(</mo><mi mathvariant="normal">س</mi><mo>)</mo><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
 القاطع هو مقلوب جيب التمام؛ لذلك مقلوب مربع جيب التمام يساوي مربع القاطع.
 
@@ -977,6 +1126,14 @@ reference: [الكتاب، النسخة المصورة، ص ٩٠](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>∫</mo><mrow><mo stretchy="true">(</mo><mrow><mn dir="ltr">٥</mn><msup><mtext dir="rtl">هـ</mtext><mi mathvariant="normal">س</mi></msup><mo>+</mo><mfrac><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mfrac></mrow><mo stretchy="true">)</mo></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>∫</mo><mrow><mo fence="true">(</mo><mn dir="ltr">٥</mn><msup><mi mathvariant="normal">هـ</mi><mi mathvariant="normal">س</mi></msup><mo>+</mo><mfrac><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mfrac><mo fence="true">)</mo></mrow><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٥</mn><msup><mi mathvariant="normal">هـ</mi><mi mathvariant="normal">س</mi></msup><mo>+</mo><mn dir="ltr">٢</mn><msub><mtext dir="rtl">لو</mtext><mi mathvariant="normal">هـ</mi></msub><mo>⁡</mo><mi mathvariant="normal">∣</mi><mi mathvariant="normal">س</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">جـ</mi></mrow></math>
+\`\`\`
+
+**الشرط:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\`.
 solution:
  يلزم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>≠</mo><mn dir="ltr">٠</mn></mrow></math>\` لأن المكامل يحتوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mfrac></math>\`.
 نكامل حدّي الجمع مع إبقاء المعاملين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٥</mn></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\` خارج التكامل.
@@ -1015,6 +1172,12 @@ reference: [الكتاب، النسخة المصورة، ص ٩٠](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><mi mathvariant="normal">قَ</mi><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow><mo>+</mo><msup><mtext dir="rtl">هـ</mtext><mi mathvariant="normal">س</mi></msup></mrow><mo>=</mo><mrow><mtext dir="rtl">جتا</mtext><mrow><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo></mrow></mrow></mrow></math>\`، جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow></math>\`، حيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٠</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">ق</mi><mo stretchy="false">(</mo><mi mathvariant="normal">س</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">جا</mi><mo>⁡</mo><mi mathvariant="normal">س</mi><mo>−</mo><msup><mi mathvariant="normal">هـ</mi><mi mathvariant="normal">س</mi></msup></mrow></math>
+\`\`\`
 solution:
 المعطى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mrow><msup><mi mathvariant="normal">ق</mi><mo>′</mo></msup><mrow><mo stretchy="true" fence="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mrow><mi mathvariant="normal">هـ</mi></mrow><mrow><mi mathvariant="normal">س</mi></mrow></msup></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">جتا</mi><mo>⁡</mo><mi mathvariant="normal">س</mi></mrow></mrow></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">ق</mi><mrow><mo stretchy="true" fence="true">(</mo><mn dir="ltr">٠</mn><mo stretchy="true" fence="true">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mrow></math>\`، والمطلوب قاعدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ق</mi></math>\`.
 نطرح الأسّي من الطرفين لعزل المشتقة.

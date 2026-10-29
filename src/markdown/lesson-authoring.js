@@ -5,7 +5,7 @@ const SHARED_QUESTION_FIELDS = ["id", "title", "question", "prompt", "kicker", "
 const DIRECTIVE_FIELDS = new Map([
   ["mcq", new Set([...SHARED_QUESTION_FIELDS, "example", "reference"])],
   ["true-false", new Set([...SHARED_QUESTION_FIELDS, "answer", "example"])],
-  ["exam-question", new Set(["id", "title", "question", "reference", "body", "solution", "guidance", "answer-label"])],
+  ["exam-question", new Set(["id", "title", "question", "reference", "body", "final-answer", "solution", "guidance", "answer-label"])],
 ]);
 
 function slug(value, fallback) {
@@ -24,7 +24,11 @@ function stripChoiceMarker(text) {
 
 function section(source, name, boundaries = null) {
   const lines = source.split("\n");
-  const start = lines.findIndex((line) => new RegExp(`^${name}:[ \\t]*$`, "i").test(line));
+  let insideFence = false;
+  const start = lines.findIndex((line) => {
+    if (/^```/.test(line.trim())) insideFence = !insideFence;
+    return !insideFence && new RegExp(`^${name}:[ \\t]*$`, "i").test(line);
+  });
   if (start < 0) return [];
   const result = [];
   let fenced = false;
@@ -52,7 +56,7 @@ function checkboxItems(source, { preserveChoiceMarkers = false } = {}) {
 
 function validateDirectiveFields(source, type, index, issues) {
   const allowed = DIRECTIVE_FIELDS.get(type);
-  // Exam body/solution are literal multiline Markdown, including labels like
+  // Exam body/answer/solution are literal multiline Markdown, including labels like
   // "Patients:" from the paper, not additional authoring metadata.
   if (type === "exam-question") source = source.split(/^body:[ \t]*$/m)[0];
   let fenced = false;
@@ -178,7 +182,8 @@ function parseDirective(type, source, index, issues) {
     const content = {
       title:field(source, "title"), prompt:field(source, "question"),
       reference:field(source, "reference"), answerLabel:field(source, "answer-label"),
-      body:section(source, "body", ["solution", "guidance"]).join("\n").trim(),
+      body:section(source, "body", ["final-answer", "solution", "guidance"]).join("\n").trim(),
+      finalAnswer:section(source, "final-answer", ["solution", "guidance"]).join("\n").trim(),
       solution:section(source, "solution", ["guidance"]).join("\n").trim(),
       guidance:section(source, "guidance", []).join("\n").trim(),
     };

@@ -20,7 +20,7 @@ function layoutWrittenPrompt(source) {
   return firstLine < 0 ? [text, ""] : [text.slice(0, firstLine), text.slice(firstLine).trim()];
 }
 
-/** Written answers are self-checked after revealing their solution. */
+/** Written answers are self-checked; worked solutions stay in the explanation dialog. */
 export function renderExamQuestion(container, step, { locale = "ar", onBack, onContinue, onReveal, onAnswer, beforeAnswer, selfCheck = true } = {}) {
   const controller = new AbortController();
   const { signal } = controller;
@@ -47,7 +47,7 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
         <section id="${escapeHtml(solutionId)}" class="lesson-flashcard-face lesson-flashcard-back" data-exam-solution hidden inert aria-hidden="true">
           <div id="${escapeHtml(solutionId)}-scroll" class="lesson-flashcard-scroll" tabindex="0" role="region" aria-label="${ar ? "الإجابة" : "Answer"}" aria-keyshortcuts="Enter Space" aria-description="${ar ? "اضغط Enter أو مسافة لقلب البطاقة" : "Press Enter or Space to flip the card"}">
             <div class="lesson-flashcard-copy">
-              <div class="markdown-rendered">${renderMarkdownDocument(content.solution, { locale })}</div>
+              <div class="markdown-rendered lesson-final-answer" data-exam-final-answer>${renderMarkdownDocument(content.finalAnswer || (ar ? "الإجابة النهائية غير متاحة حاليًا." : "The final answer is currently unavailable."), { locale })}</div>
               ${selfCheck ? `<fieldset class="lesson-self-check" data-exam-self-check><legend>${ar ? "كيف كانت إجابتك؟" : "How did you do?"}</legend><div>
                 <button class="system-action system-action--primary" type="button" data-exam-correct="true" aria-pressed="false">${ar ? "أجبتُ بشكل صحيح" : "I got it right"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m8 14 4 4 8-8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
                 <button class="system-action system-action--primary" type="button" data-exam-correct="false" aria-pressed="false">${ar ? "أجبتُ بشكل خاطئ" : "I got it wrong"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m10 10 8 8m0-8-8 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button>
@@ -84,14 +84,17 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
   let pointerStart = null;
   let dragged = false;
 
+  const refreshScrollIndicators = [];
   card.querySelectorAll(".lesson-flashcard-scroll").forEach((scroll, index) => {
     mountSummaryScans(scroll, { titleId:`${titleId}-face-${index}`, locale, signal, exam:true });
     mountMarkdownFeatures(scroll, { locale, signal, scrollSurface:scroll });
-    mountTemplateScrollIndicator(scroll.parentElement, { signal, surface:scroll });
+    refreshScrollIndicators.push(mountTemplateScrollIndicator(scroll.parentElement, { signal, surface:scroll }));
   });
   const hideInactiveFace = () => {
     front.hidden = flipped;
     solution.hidden = !flipped;
+    refreshScrollIndicators.forEach(refresh => refresh?.());
+    rotor.classList.remove("is-flipping");
   };
   const flip = showAnswer => {
     if (showAnswer === flipped || signal.aborted) return;
@@ -115,6 +118,8 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
       hideInactiveFace();
       return;
     }
+    // Native scrollbars and resize-driven cues should not repaint through a 3D turn.
+    rotor.classList.add("is-flipping");
     const turn = rotor.animate([
       { transform:from }, { transform:flipped ? "rotateY(180deg)" : "rotateY(0deg)" },
     ], { duration:420, easing:"cubic-bezier(.2,.7,.2,1)" });
@@ -196,6 +201,7 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
   return () => {
     controller.abort();
     animation?.cancel();
+    rotor.classList.remove("is-flipping");
     delete container.dataset.lessonPresentation;
   };
 }

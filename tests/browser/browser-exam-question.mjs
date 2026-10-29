@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
 import { mkdir } from "node:fs/promises";
-import { chromium } from "playwright";
+import { chromium, webkit } from "playwright";
 import { findChrome, getAvailablePort, waitForServer, terminateProcess } from "./browser-session.mjs";
 
 const originalBody = `اقرأ الجدول ثم أجب عن البندين.
@@ -27,6 +27,19 @@ reference: مصدر الاختبار، PDF ص 3، السؤال 2
 answer-label: حل تعليمي للمقارنة
 body:
 ${originalBody}
+final-answer:
+**الناتج المرجعي: علي ثم سارة.**
+
+| Name | Mark |
+| --- | --- |
+| علي | **90** |
+| سارة | **80** |
+
+**الشرط:** الدرجة من **80** إلى **100**، شاملة الطرفين.
+
+![الرسم الأصلي للإجابة](assets/lessons/ict/exams/book-p12-center-solution.webp)
+
+${Array.from({length:16}, (_, index) => `- **البند ${index + 1}:** ==${index + 80}==`).join("\n")}
 solution:
 الناتج المرجعي: علي ثم سارة.
 
@@ -44,15 +57,17 @@ guidance:
 const nextQuestion = fixture.replaceAll("written-source-one", "written-source-two");
 const port = await getAvailablePort();
 const server = spawn(process.execPath, ["dev-server.mjs"], {
-  env:{ ...process.env, PORT:String(port), LIVE_RELOAD:"0", ACCOUNTS_DATABASE_PATH:":memory:" }, stdio:"ignore",
+  env:{ ...process.env, PORT:String(port), LIVE_RELOAD:"0", LEARN_BACKEND:"local", DEV_AUTO_LOGIN:"0", ACCOUNTS_DATABASE_PATH:":memory:" }, stdio:"ignore",
 });
 let browser;
 try {
   await mkdir('/tmp/ict-questions/flashcards', {recursive:true});
   await waitForServer(port);
-  browser = await chromium.launch({ executablePath:await findChrome(), args:["--no-sandbox"] });
+  browser = process.env.FLASHCARD_BROWSER === "webkit"
+    ? await webkit.launch()
+    : await chromium.launch({ executablePath:await findChrome(), args:["--no-sandbox"] });
   for (const viewport of [{ width:1280, height:900 }, { width:390, height:844 }, { width:390, height:568 }, { width:844, height:390 }]) {
-    const reducedMotion = viewport.width === 1280 ? "no-preference" : "reduce";
+    const reducedMotion = viewport.width === 1280 || viewport.height === 844 ? "no-preference" : "reduce";
     const context = await browser.newContext({ viewport, reducedMotion });
     try {
       // Use production styles and renderers with an isolated source fixture; no account or paper bank is needed.
@@ -62,7 +77,7 @@ try {
       const mutations = [];
       page.on("pageerror", error => errors.push(error.message));
       page.on("request", request => { if (["POST", "PUT", "PATCH", "DELETE"].includes(request.method())) mutations.push(request.url()); });
-      await page.goto(`http://127.0.0.1:${port}/`);
+      await page.goto(`http://127.0.0.1:${port}/`, { waitUntil:"domcontentloaded" });
       await page.evaluate(async source => {
         document.querySelectorAll("link[data-app-style]").forEach(link => { link.media = "all"; });
         const [{ parseLessonMarkdown }, { renderAuthoredInteractiveLesson }] = await Promise.all([
@@ -82,6 +97,15 @@ try {
           onProgress:progress => window.examProgress.push(progress),
         });
       }, `${fixture}\n\n${nextQuestion}`);
+      await page.waitForFunction(() => {
+        const ready = sheet => {
+          if (!sheet) return false;
+          try { return [...sheet.cssRules].every(rule => rule.type !== CSSRule.IMPORT_RULE || ready(rule.styleSheet)); }
+          catch { return false; }
+        };
+        return [...document.querySelectorAll('link[data-app-style]')].every(link => ready(link.sheet));
+      });
+      await page.evaluate(() => document.fonts.ready);
       await page.locator("[data-exam-front] img").waitFor();
       await page.waitForFunction(() => [...document.querySelectorAll(".lesson-exam-question img")].every(image => image.complete && image.naturalWidth > 0));
       assert.equal(await page.locator("[data-live-authored-step]").getAttribute("data-lesson-step"), "written-source-one");
@@ -99,6 +123,7 @@ try {
       assert.equal(await figureViewer.locator("img").getAttribute("src"), await page.locator("[data-exam-front] img").getAttribute("src"));
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), true, "zoom never widens the lesson");
       await page.keyboard.press("Escape");
+      await page.waitForFunction(() => !document.querySelector('.lesson-question-image-viewer[open]') && document.activeElement?.matches('[data-exam-front] [data-summary-scan-zoom]'));
       assert.equal(await figureZoom.evaluate(element => element === document.activeElement), true);
       assert.equal(await figureZoom.getAttribute("aria-expanded"), "false");
       await page.evaluate(() => {
@@ -111,6 +136,7 @@ try {
       assert.equal(await figureZoom.getAttribute("aria-expanded"), "true", "a queued image close cannot reset a reopened viewer");
       assert.equal(await figureViewer.locator("button").evaluate(element => element === document.activeElement), true);
       await page.keyboard.press("Escape");
+      await page.waitForFunction(() => !document.querySelector('.lesson-question-image-viewer[open]') && document.activeElement?.matches('[data-exam-front] [data-summary-scan-zoom]'));
       assert.equal(await page.locator("[data-exam-solution]").getAttribute("aria-hidden"), "true", "zoom never flips the card");
       assert.equal(await page.locator("[data-exam-solution]").isVisible(), false);
       assert.equal(await page.locator("[data-template-primary]").isEnabled(), true);
@@ -125,13 +151,39 @@ try {
       await page.screenshot({path:`/tmp/ict-questions/flashcards/front-${viewport.width}-${viewport.height}.png`});
       const questionScroll = page.locator("[data-exam-front] .lesson-flashcard-scroll");
       await questionScroll.focus();
+      await page.evaluate(() => document.addEventListener('keydown', () => {
+        const rotor = document.querySelector('.lesson-flashcard-rotor');
+        window.turnState = {
+          animating:rotor.getAnimations().some(animation => animation.effect?.target === rotor && animation.playState === 'running'),
+          reducedMotion:matchMedia('(prefers-reduced-motion: reduce)').matches,
+          flipping:rotor.classList.contains('is-flipping'),
+          cue:getComputedStyle(document.querySelector('[data-exam-solution] [data-content-scroll]')).visibility,
+          scrollbarSupported:CSS.supports('scrollbar-color', 'transparent transparent'),
+          scrollbar:getComputedStyle(document.querySelector('[data-exam-solution] .lesson-flashcard-scroll')).scrollbarColor,
+        };
+      }, {once:true}));
       await questionScroll.press("Enter");
       assert.equal(await page.locator("[data-exam-solution]").isVisible(), true);
       assert.equal(await page.locator('.level-question-rating-panel').evaluate(node => node.inert), false);
-      if (reducedMotion === 'no-preference') assert.equal(await page.locator('.lesson-flashcard-rotor').evaluate(node=>node.getAnimations().length > 0), true, 'turning the card animates');
+      const turnState = await page.evaluate(() => window.turnState);
+      assert.equal(turnState.reducedMotion, reducedMotion === 'reduce', 'browser applies requested motion preference');
+      if (reducedMotion === 'no-preference') {
+        assert.equal(turnState.animating, true, 'turning the card animates');
+        assert.equal(turnState.flipping, true);
+        assert.equal(turnState.cue, 'hidden', 'scroll cue stays suppressed during the turn');
+        if (turnState.scrollbarSupported) assert.equal(turnState.scrollbar, 'rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)', 'native scrollbar stays suppressed during the turn');
+      } else {
+        assert.equal(turnState.animating, false, 'reduced motion switches faces without animation');
+        assert.equal(turnState.flipping, false);
+      }
       await page.waitForFunction(()=>document.querySelector('[data-exam-front]').hidden);
+      assert.equal(await page.locator('.lesson-flashcard-rotor').evaluate(node => node.classList.contains('is-flipping')), false);
       assert.equal(await page.evaluate(() => document.activeElement === document.querySelector("[data-exam-solution] .lesson-flashcard-scroll")), true);
       assert.match(await page.locator("[data-exam-solution]").innerText(), /الناتج المرجعي: علي ثم سارة/);
+      assert.doesNotMatch(await page.locator("[data-exam-solution]").innerText(), /الخطوة|قارن قيم السجلات|افحص الشرط/, "neither explanation nor guidance leaks into the card");
+      assert.equal(await page.locator("[data-exam-final-answer] strong").first().evaluate(node => Number(getComputedStyle(node).fontWeight)), 800);
+      assert.equal(await page.locator("[data-exam-final-answer] li").count(), 16);
+      assert.equal(await page.locator("[data-exam-final-answer] mark").count(), 16);
       assert.deepEqual(await page.evaluate(() => window.examProgress), [], "reveal alone does not save completion");
       await page.locator("[data-template-primary]").click();
       assert.equal(await page.locator("[data-exam-choice-error]").isVisible(), true, "Continue reminds the student to assess the answer");
@@ -192,10 +244,11 @@ try {
       assert.equal(await page.locator('.lesson-flashcard-rotor').evaluate(node=>node.getAnimations().length),0);
       assert.deepEqual(mutations, [], "written answers stay offline and are never submitted for grading");
       assert.deepEqual(errors, []);
+      console.log(`Flashcard viewport passed: ${viewport.width}×${viewport.height}, ${reducedMotion}.`);
     } finally { await context.close(); }
   }
 } finally {
   await browser?.close();
   await terminateProcess(server);
 }
-console.log("Flashcards passed: white fixed faces, original images, internal scrolling, mouse/keyboard flips, reduced motion, review progress and cleanup.");
+console.log("Flashcards passed: final answers without explanation leakage, bold/list/highlight formatting, stable scroll chrome during flips, images, internal scrolling, keyboard, reduced motion and review progress.");

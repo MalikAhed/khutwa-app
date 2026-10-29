@@ -11,6 +11,8 @@ Choose words from the box and match them with their meanings.
 Word bank: outweigh - controversial - fantasy - charity - neglect - coordinated
 
 causing argument ..............
+final-answer:
+**controversial**
 solution:
 **الإجابة:** controversial
 
@@ -43,6 +45,8 @@ Choose words from the box and match them with their meanings.
 Word bank: outweigh - controversial - fantasy - charity - neglect - coordinated
 
 more important than ..............
+final-answer:
+**outweigh**
 solution:
 **الإجابة:** outweigh
 
@@ -67,6 +71,8 @@ Choose words from the box and match them with their meanings.
 Word bank: outweigh - controversial - fantasy - charity - neglect - coordinated
 
 non-profit organization ..............
+final-answer:
+**charity**
 solution:
 **الإجابة:** charity
 
@@ -91,6 +97,8 @@ Choose words from the box and match them with their meanings.
 Word bank: outweigh - controversial - fantasy - charity - neglect - coordinated
 
 different parts working together ..............
+final-answer:
+**coordinated**
 solution:
 **الإجابة:** coordinated
 
@@ -123,6 +131,8 @@ Choose words from the box and match them with their meanings.
 Word bank: outweigh - controversial - fantasy - charity - neglect - coordinated
 
 unreality ..............
+final-answer:
+**fantasy**
 solution:
 **الإجابة:** fantasy
 
@@ -147,6 +157,8 @@ Choose words from the box and match them with their meanings.
 Word bank: outweigh - controversial - fantasy - charity - neglect - coordinated
 
 ignore, not pay attention ..............
+final-answer:
+**neglect**
 solution:
 **الإجابة:** neglect
 
@@ -180,6 +192,8 @@ Word bank: throughout - neglected - reveal - fantasy - worth - make a living - j
 
 He refused to do it because it wasn't part of **the list of duties involved in his job**.
 
+final-answer:
+He refused to do it because it wasn’t part of his **job description**.
 solution:
 job description تعني قائمة المهام التي تشملها الوظيفة.
 
@@ -209,6 +223,8 @@ Word bank: throughout - neglected - reveal - fantasy - worth - make a living - j
 
 Doctors are not allowed to **show** confidential information about their patients.
 
+final-answer:
+**reveal**
 solution:
 **الإجابة:** reveal
 
@@ -236,6 +252,8 @@ Word bank: throughout - neglected - reveal - fantasy - worth - make a living - j
 
 Some people work hard to **earn enough money to survive**.
 
+final-answer:
+**make a living**
 solution:
 **الإجابة:** make a living
 
@@ -261,6 +279,8 @@ Word bank: throughout - neglected - reveal - fantasy - worth - make a living - j
 
 He **didn't pay attention** to the advice given by his parents, so he failed his exams.
 
+final-answer:
+He **neglected the advice** given by his parents, so he failed his exams.
 solution:
 **Answer:** neglected
 
@@ -304,6 +324,8 @@ Word bank: throughout - neglected - reveal - fantasy - worth - make a living - j
 
 We never know the **value** of water till the well is dry.
 
+final-answer:
+We never know the **worth** of water till the well is dry.
 solution:
 worth يمكن أن تأتي اسماً بمعنى «قيمة». هنا value اسم بعد the، فنستبدله بالاسم worth ونبقي of water.
 
@@ -330,6 +352,8 @@ Word bank: throughout - neglected - reveal - fantasy - worth - make a living - j
 
 It is sometimes hard to distinguish between reality and **unreality**.
 
+final-answer:
+**fantasy**
 solution:
 **الإجابة:** fantasy
 
@@ -354,6 +378,8 @@ Fill in the spaces by replacing the words in brackets with words from the box.
 Word bank: employment - worth - charity - prospects
 
 He hopes this course will improve his career .............. (possibilities for future)
+final-answer:
+**prospects**
 solution:
 **الإجابة:** prospects
 
@@ -386,6 +412,8 @@ Fill in the spaces by replacing the words in brackets with words from the box.
 Word bank: employment - worth - charity - prospects
 
 Kind words are .............. much and cost a little. (giving good value)
+final-answer:
+**worth**
 solution:
 **الإجابة:** worth
 
@@ -418,6 +446,8 @@ Fill in the spaces by replacing the words in brackets with words from the box.
 Word bank: employment - worth - charity - prospects
 
 The BC is a .............. which works to provide educational chances. (non-profit organization)
+final-answer:
+**charity**
 solution:
 **الإجابة:** charity
 
@@ -442,6 +472,8 @@ Fill in the spaces by replacing the words in brackets with words from the box.
 Word bank: employment - worth - charity - prospects
 
 Many graduates are looking for .............. (having or getting a job)
+final-answer:
+**employment**
 solution:
 **الإجابة:** employment
 
@@ -474,6 +506,8 @@ Complete the sentences with words from the box.
 Word bank: revealed - aware of - outweigh - fantasy - charity - neglect
 
 Are you .............. the risks involved in this job?
+final-answer:
+**aware of**
 solution:
 **Answer:** aware of
 
@@ -497,6 +531,8 @@ Complete the sentences with words from the box.
 Word bank: revealed - aware of - outweigh - fantasy - charity - neglect
 
 That gentleman supports a .............. that helps disabled people.
+final-answer:
+**charity**
 solution:
 **الإجابة:** charity
 
@@ -521,6 +557,8 @@ Complete the sentences with words from the box.
 Word bank: revealed - aware of - outweigh - fantasy - charity - neglect
 
 A new study .............. that the population is increasing sharply.
+final-answer:
+**revealed**
 solution:
 **Answer:** revealed
 
@@ -543,6 +581,8 @@ Complete the sentences with words from the box.
 Word bank: revealed - aware of - outweigh - fantasy - charity - neglect
 
 In order to keep a tidy kitchen, don't .............. washing your dishes.
+final-answer:
+**neglect**
 solution:
 **Answer:** neglect
 
@@ -567,6 +607,8 @@ Complete the sentences with words from the box.
 Word bank: revealed - aware of - outweigh - fantasy - charity - neglect
 
 The film is a mixture between reality and ..............
+final-answer:
+**fantasy**
 solution:
 **الإجابة:** fantasy
 
@@ -591,6 +633,8 @@ Complete the sentences with words from the box.
 Word bank: revealed - aware of - outweigh - fantasy - charity - neglect
 
 Medical experts maintain that benefits of the new drug .............. the costs involved.
+final-answer:
+**outweigh**
 solution:
 **Answer:** outweigh
 
@@ -616,6 +660,8 @@ Complete the sentences with words from the box.
 Word bank: fantasy - stage fright - revealed - prospects - job opportunities
 
 I get .............. whenever I have to speak in front of a large group of people.
+final-answer:
+**stage fright**
 solution:
 **الإجابة:** stage fright
 
@@ -642,6 +688,8 @@ Complete the sentences with words from the box.
 Word bank: fantasy - stage fright - revealed - prospects - job opportunities
 
 Her preferred reading was horror and .............. stories.
+final-answer:
+**fantasy**
 solution:
 **الإجابة:** fantasy
 
@@ -666,6 +714,8 @@ Complete the sentences with words from the box.
 Word bank: fantasy - stage fright - revealed - prospects - job opportunities
 
 The research has .............. the highest results of using smart phones among children.
+final-answer:
+**revealed**
 solution:
 **Answer:** revealed
 
@@ -690,6 +740,8 @@ Complete the sentences with the appropriate prepositions in the box.
 Word bank: for - from - in - about - of
 
 Teachers should be aware .............. the needs of their students.
+final-answer:
+**of**
 solution:
 **Answer:** of
 
@@ -713,6 +765,8 @@ Complete the sentences with the appropriate prepositions in the box.
 Word bank: for - from - in - about - of
 
 It seemed that people were more interested .............. eating than the game itself.
+final-answer:
+**in**
 solution:
 **Answer:** in
 
@@ -739,6 +793,8 @@ Complete the sentences with the appropriate prepositions in the box.
 Word bank: for - from - in - about - of
 
 Physical exercises can protect you .............. heart disease.
+final-answer:
+**from**
 solution:
 **Answer:** from
 
@@ -763,6 +819,8 @@ Complete the sentences with the appropriate prepositions in the box.
 Word bank: for - from - in - about - of
 
 The farmer was responsible .............. the damage done by the animals.
+final-answer:
+**for**
 solution:
 **Answer:** for
 
@@ -789,6 +847,8 @@ Word bank: suitable for - protect from - aware of - choose between
 
 She had to .............. keeping her job and looking after her family full-time.
 
+final-answer:
+**choose between**
 solution:
 **Answer:** choose between
 
@@ -813,6 +873,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: suitable for - protect from - aware of - choose between
 
 The city lifestyle seems .............. her; she certainly looks very well.
+final-answer:
+**suitable for**
 solution:
 **Answer:** suitable for
 
@@ -836,6 +898,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: suitable for - protect from - aware of - choose between
 
 The most frequent flights were taken by those who were most .............. environmental issues.
+final-answer:
+**aware of**
 solution:
 **Answer:** aware of
 
@@ -859,6 +923,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: suitable for - protect from - aware of - choose between
 
 Cyclists have to wear helmets to .............. them .............. injuries.
+final-answer:
+Cyclists have to wear helmets to **protect** them **from** injuries.
 solution:
 **Answer:** Cyclists have to wear helmets to protect them from injuries.
 
@@ -881,6 +947,8 @@ Complete the sentences with suitable words from the box.
 Word bank: Suitable for - protect from - choose between - expert in - satisfied with
 
 He isn't .............. his present job so he wants to apply for another.
+final-answer:
+**satisfied with**
 solution:
 **Answer:** satisfied with
 
@@ -905,6 +973,8 @@ Complete the sentences with suitable words from the box.
 Word bank: Suitable for - protect from - choose between - expert in - satisfied with
 
 This job isn't .............. older people.
+final-answer:
+**suitable for**
 solution:
 **Answer:** suitable for
 
@@ -928,6 +998,8 @@ Complete the sentences with suitable words from the box.
 Word bank: Suitable for - protect from - choose between - expert in - satisfied with
 
 Physical exercise can .............. you .............. heart disease.
+final-answer:
+Physical exercise can **protect** you **from** heart disease.
 solution:
 **Answer:** Physical exercise can protect you from heart disease.
 
@@ -950,6 +1022,8 @@ Complete the sentences with suitable words from the box.
 Word bank: Suitable for - protect from - choose between - expert in - satisfied with
 
 The school brought in an .............. career advice.
+final-answer:
+**expert in**
 solution:
 **Answer:** expert in
 
@@ -974,6 +1048,8 @@ Complete the sentences with suitable words from the box.
 Word bank: Suitable for - protect from - choose between - expert in - satisfied with
 
 You may have to .............. job satisfaction and high salary.
+final-answer:
+**choose between**
 solution:
 **Answer:** choose between
 
@@ -998,6 +1074,8 @@ Complete the sentences with the appropriate prepositions in the box.
 Word bank: For - between - from - with
 
 He was satisfied .............. his test result as he didn't study hard.
+final-answer:
+**with**
 solution:
 **Answer:** with
 
@@ -1021,6 +1099,8 @@ Complete the sentences with the appropriate prepositions in the box.
 Word bank: For - between - from - with
 
 He isn't suitable .............. this job; he needs to practice more.
+final-answer:
+**for**
 solution:
 **Answer:** for
 
@@ -1044,6 +1124,8 @@ Complete the sentences with the appropriate prepositions in the box.
 Word bank: For - between - from - with
 
 You have two forms A and B; you have to choose .............. them.
+final-answer:
+**between**
 solution:
 **Answer:** between
 
@@ -1067,6 +1149,8 @@ Complete the sentences with the appropriate prepositions in the box.
 Word bank: For - between - from - with
 
 This room is safe, enclosed and protected .............. the sun’s heat.
+final-answer:
+**from**
 solution:
 **Answer:** from
 

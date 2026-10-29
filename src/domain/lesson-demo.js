@@ -2,7 +2,7 @@
 const plain = value => String(value || "").replace(/<[^>]*>|[*_`#]/g, "").replace(/\s+/g, " ").trim();
 function complexity(step) {
   const content = step.content;
-  const text = step.type === "mcq" ? content.prompt : `${content.body} ${content.solution}`;
+  const text = step.type === "mcq" ? content.prompt : `${content.body} ${content.finalAnswer || ""}`;
   return plain(text).length + (content.answers || []).reduce((sum, answer) => sum + plain(answer.text).length, 0)
     + (text.match(/!\[|<math|\\frac|\\int|\\sum/g) || []).length * 300
     + (content.example ? 400 : 0);
@@ -18,9 +18,9 @@ export function selectLessonDemo(authoredSteps, { firstMcq = false } = {}) {
   if (mcq) sources.set(mcq.id, { stepId:mcq.id, type:"mcq", save:true });
   else {
     const source = card;
-    const correct = source.content.solution;
+    const correct = source.content.finalAnswer;
     const alternatives = [...new Set(questions.filter(step => step.id !== source.id)
-      .sort((a, b) => complexity(a) - complexity(b)).map(step => step.content.solution))]
+      .sort((a, b) => complexity(a) - complexity(b)).map(step => step.content.finalAnswer))]
       .filter(answer => plain(answer) !== plain(correct)).slice(0, 3);
     mcq = { id:`demo-mcq-${source.id}`, type:"mcq", content:{
       prompt:source.content.body, title:source.content.title, reference:source.content.reference,
@@ -37,7 +37,8 @@ export function selectLessonDemo(authoredSteps, { firstMcq = false } = {}) {
     const source = questions.filter(step => step.id !== mcq.id).sort((a, b) => complexity(a) - complexity(b))[0] || mcq;
     card = { id:`demo-card-${source.id}`, type:"exam-question", content:{
       title:source.content.title, body:source.content.prompt,
-      solution:source.content.answers.find(answer => answer.correct).text,
+      finalAnswer:source.content.answers.find(answer => answer.correct).text,
+      solution:source.content.correctFeedback || "",
       reference:source.content.reference,
     } };
     // Reading an MCQ as a flashcard must not mark its original MCQ correctly solved.

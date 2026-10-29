@@ -11,6 +11,8 @@ Rewrite the following using the words between brackets.
 
 What kind of activities does she practice in her free time?
 (I asked Mona) ..............
+final-answer:
+I asked Mona **what kind of activities she practised in her free time.**
 solution:
 **Answer:** I asked Mona what kind of activities she practised in her free time.
 
@@ -33,6 +35,8 @@ Rewrite the following using the words between brackets.
 
 Are you going to the market?
 (she asked me) ..............
+final-answer:
+She asked me **if I was going to the market.**
 solution:
 **Answer:** She asked me if I was going to the market.
 
@@ -55,6 +59,8 @@ Rewrite the following using the words between brackets.
 
 How much money did you pay for the gift?
 (I asked Huda) ..............
+final-answer:
+I asked Huda **how much money she had paid for the gift.**
 solution:
 **Answer:** I asked Huda how much money she had paid for the gift.
 
@@ -77,6 +83,8 @@ Rewrite the following using the words between brackets.
 
 Is that the best way to do the job?
 (I asked him) ..............
+final-answer:
+I asked him **if that was the best way to do the job.**
 solution:
 **Answer:** I asked him if that was the best way to do the job.
 
@@ -101,6 +109,8 @@ Rewrite the following using the words between brackets.
 
 Are you planning to go to Deir Qruntil?
 (she asked the tourists) ..............
+final-answer:
+She asked the tourists **if they were planning to go to Deir Qruntil.**
 solution:
 **Answer:** She asked the tourists if they were planning to go to Deir Qruntil.
 
@@ -123,6 +133,8 @@ Rewrite the following using the words between brackets.
 
 Why must we leave the hall so early?
 (The workers asked the manager) ..............
+final-answer:
+The workers asked the manager **why they had to leave the hall so early.**
 solution:
 **Answer:** The workers asked the manager why they had to leave the hall so early.
 
@@ -145,6 +157,8 @@ Rewrite the following using the words between brackets.
 
 Does anyone know where the nearest police station is?
 (He asked) ..............
+final-answer:
+He asked **if anyone knew where the nearest police station was.**
 solution:
 **Answer:** He asked if anyone knew where the nearest police station was.
 
@@ -167,6 +181,8 @@ Rewrite the following using the words between brackets.
 
 Why don’t you phone me before 9.30?
 (Ahmad asked his father) ..............
+final-answer:
+Ahmad asked his father **why he didn't phone him before 9.30.**
 solution:
 **Answer:** Ahmad asked his father why he didn't phone him before 9.30.
 
@@ -189,6 +205,8 @@ Rewrite the following using the words between brackets.
 
 What time do banks close in Palestine during Ramadan?
 (The tourists asked) ..............
+final-answer:
+The tourists asked **what time banks closed in Palestine during Ramadan.**
 solution:
 **Answer:** The tourists asked what time banks closed in Palestine during Ramadan.
 
@@ -212,6 +230,8 @@ Rewrite the following using the words between brackets.
 Is your plane arriving on schedule on Monday?
 (My friend asked me) ..............
 
+final-answer:
+My friend asked **if my plane was arriving on schedule on Monday.**
 solution:
 **Answer:** My friend asked if my plane was arriving on schedule on Monday.
 
@@ -235,6 +255,8 @@ Rewrite the following using the words between brackets.
 
 Were you at the party with your father?
 (My friend asked me) ..............
+final-answer:
+My friend asked me **if I had been at the party with my father.**
 solution:
 **Answer:** My friend asked me if I had been at the party with my father.
 
@@ -257,6 +279,8 @@ Rewrite the following using the words between brackets.
 
 Why didn't you take the medicine regularly?
 (She asked the patient) ..............
+final-answer:
+She asked the patient **why he/she hadn't taken the medicine regularly.**
 solution:
 **Answer:** She asked the patient why he/she hadn't taken the medicine regularly.
 
@@ -279,6 +303,8 @@ Rewrite the following using the words between brackets.
 
 How much money did you pay for that suit?
 (She asked her friend) ..............
+final-answer:
+She asked her friend **how much money she had paid for that suit.**
 solution:
 **Answer:** She asked her friend how much money she had paid for that suit.
 
@@ -303,6 +329,8 @@ Report the questions.
 
 Do all the workers get the same wages?
 I asked ..............
+final-answer:
+I asked **if all the workers got the same wages.**
 solution:
 **Answer:** I asked if all the workers got the same wages.
 
@@ -325,6 +353,8 @@ Report the questions.
 
 Why didn't you phone me?
 My cousin asked me ..............
+final-answer:
+My cousin asked me **why I hadn't phoned him.**
 solution:
 **Answer:** My cousin asked me why I hadn't phoned him.
 
@@ -351,6 +381,8 @@ Report the questions.
 
 Have you ever been to a concert?
 The teacher asked the boy ..............
+final-answer:
+The teacher asked the boy **if he had ever been to a concert.**
 solution:
 **Answer:** The teacher asked the boy if he had ever been to a concert.
 
@@ -373,6 +405,8 @@ Report the questions.
 
 What does Samir always wear at work?
 The insurance company asked ..............
+final-answer:
+The insurance company asked **what Samir always wore at work.**
 solution:
 **Answer:** The insurance company asked what Samir always wore at work.
 
@@ -395,6 +429,8 @@ Report the questions.
 
 When will they leave the station?
 He asked ..............
+final-answer:
+He asked **when they would leave the station.**
 solution:
 **Answer:** He asked when they would leave the station.
 
@@ -421,6 +457,8 @@ Report the questions.
 
 Are you happy with your new house?
 I asked my brother ..............
+final-answer:
+I asked my brother **if he was happy with his new house.**
 solution:
 **Answer:** I asked my brother if he was happy with his new house.
 
@@ -444,6 +482,8 @@ Report the questions.
 Why did you miss the meeting?
 The boss asked me ..............
 
+final-answer:
+The boss asked **why I had missed the meeting.**
 solution:
 **Answer:** The boss asked why I had missed the meeting.
 
@@ -469,6 +509,8 @@ Report the questions.
 
 Why didn’t you take the medicine regularly?
 The doctor asked the patient ..............
+final-answer:
+The doctor asked the patient **why he/she hadn't taken the medicine regularly.**
 solution:
 **Answer:** The doctor asked the patient why he/she hadn't taken the medicine regularly.
 
@@ -491,6 +533,8 @@ Report the questions.
 
 Have the tourists enjoyed the beautiful scenes of the city?
 The guide asked ..............
+final-answer:
+The guide asked **if the tourists had enjoyed the beautiful scenes of the city.**
 solution:
 **Answer:** The guide asked if the tourists had enjoyed the beautiful scenes of the city.
 
@@ -515,6 +559,8 @@ Report the questions.
 
 Am I following the instructions well?
 The secretary asked herself ..............
+final-answer:
+The secretary asked herself **if she was following the instructions well.**
 solution:
 **Answer:** The secretary asked herself if she was following the instructions well.
 
@@ -537,6 +583,8 @@ Report the questions.
 
 What will you do after travelling?
 They asked Ahmed ..............
+final-answer:
+They asked Ahmed **what he would do after travelling.**
 solution:
 **Answer:** They asked Ahmed what he would do after travelling.
 
@@ -559,6 +607,8 @@ Report the questions.
 
 Have you ever worked at schools before?
 I asked the teacher ..............
+final-answer:
+I asked the teacher **if he/she had ever worked at schools before.**
 solution:
 **Answer:** I asked the teacher if he/she had ever worked at schools before.
 
@@ -581,6 +631,8 @@ Report the questions.
 
 Who do you usually meet on Fridays?
 We asked Sameer ..............
+final-answer:
+We asked Sameer **who he usually met on Fridays.**
 solution:
 **Answer:** We asked Sameer who he usually met on Fridays.
 
@@ -603,6 +655,8 @@ Report the questions.
 
 Have you ever seen such a huge pyramid?
 I asked my friend ..............
+final-answer:
+I asked my friend **if he/she had ever seen such a huge pyramid.**
 solution:
 **Answer:** I asked my friend if he/she had ever seen such a huge pyramid.
 
@@ -627,6 +681,8 @@ Report the questions.
 
 “What have I done to deserve such a severe punishment?”
 The student asked the head teacher ..............
+final-answer:
+The student asked the head teacher **what he/she had done to deserve such a severe punishment.**
 solution:
 **Answer:** The student asked the head teacher what he/she had done to deserve such a severe punishment.
 
@@ -649,6 +705,8 @@ Report the questions.
 
 “Have you done secretarial work before?”
 The manager asked me ..............
+final-answer:
+The manager asked me **if I had done secretarial work before.**
 solution:
 **Answer:** The manager asked me if I had done secretarial work before.
 
@@ -671,6 +729,8 @@ Report the questions.
 
 “When will I know the results of the examination?”
 Muna asked her teacher ..............
+final-answer:
+Muna asked her teacher **when she would know the results of the examination.**
 solution:
 **Answer:** Muna asked her teacher when she would know the results of the examination.
 
@@ -693,6 +753,8 @@ Report the questions.
 
 “Is there anything I can do for you?”
 Alia asked her friend ..............
+final-answer:
+Alia asked her friend **if there was anything she could do for her.**
 solution:
 **Answer:** Alia asked her friend if there was anything she could do for her.
 
@@ -716,6 +778,8 @@ body:
 Add question tags to the sentences below.
 
 She speaks three languages, ..............?
+final-answer:
+She speaks three languages, **doesn't she?**
 solution:
 **Answer:** She speaks three languages, doesn't she?
 
@@ -737,6 +801,8 @@ body:
 Add question tags to the sentences below.
 
 Maher won’t buy the trainers, ..............?
+final-answer:
+Maher won’t buy the trainers, **will he?**
 solution:
 **Answer:** Maher won’t buy the trainers, will he?
 
@@ -758,6 +824,8 @@ body:
 Add question tags to the sentences below.
 
 Samy put his car in the garage, ..............?
+final-answer:
+Samy put his car in the garage, **didn't he?**
 solution:
 **Answer:** Samy put his car in the garage, didn't he?
 
@@ -780,6 +848,8 @@ body:
 Add question tags to the sentences below.
 
 She'd walked all the distance to the bus station, ..............?
+final-answer:
+She'd walked all the distance to the bus station, **hadn't she?**
 solution:
 **Answer:** She'd walked all the distance to the bus station, hadn't she?
 
@@ -801,6 +871,8 @@ body:
 Add question tags to the sentences below.
 
 Your neighbors never use their car, ..............?
+final-answer:
+Your neighbors never use their car, **do they?**
 solution:
 **Answer:** Your neighbors never use their car, do they?
 
@@ -822,6 +894,8 @@ body:
 Add question tags to the sentences below.
 
 Ramy hurt his hand while fixing the door, ..............?
+final-answer:
+Ramy hurt his hand while fixing the door, **didn't he?**
 solution:
 **Answer:** Ramy hurt his hand while fixing the door, didn't he?
 
@@ -843,6 +917,8 @@ body:
 Add question tags to the sentences below.
 
 He has been here recently, ..............?
+final-answer:
+He has been here recently, **hasn't he?**
 solution:
 **Answer:** He has been here recently, hasn't he?
 
@@ -864,6 +940,8 @@ body:
 Add question tags to the sentences below.
 
 Their story wasn't true, ..............?
+final-answer:
+Their story wasn't true, **was it?**
 solution:
 **Answer:** Their story wasn't true, was it?
 
@@ -885,6 +963,8 @@ body:
 Add question tags to the sentences below.
 
 She's the fastest in the group, ..............?
+final-answer:
+She's the fastest in the group, **isn't she?**
 solution:
 **Answer:** She's the fastest in the group, isn't she?
 
@@ -906,6 +986,8 @@ body:
 Add question tags to the sentences below.
 
 The letter hasn't arrived yet, ..............?
+final-answer:
+The letter hasn't arrived yet, **has it?**
 solution:
 **Answer:** The letter hasn't arrived yet, has it?
 
@@ -927,6 +1009,8 @@ body:
 Add question tags to the sentences below.
 
 They play football on Sundays, ..............?
+final-answer:
+They play football on Sundays, **don't they?**
 solution:
 **Answer:** They play football on Sundays, don't they?
 
@@ -948,6 +1032,8 @@ body:
 Add question tags to the sentences below.
 
 Amal has never travelled to America, ..............?
+final-answer:
+Amal has never travelled to America, **has she?**
 solution:
 **Answer:** Amal has never travelled to America, has she?
 
@@ -969,6 +1055,8 @@ body:
 Add question tags to the sentences below.
 
 Ahmed’s car is really durable, ..............?
+final-answer:
+Ahmed’s car is really durable, **isn't it?**
 solution:
 **Answer:** Ahmed’s car is really durable, isn't it?
 
@@ -990,6 +1078,8 @@ body:
 Add question tags to the sentences below.
 
 The students’ books had disappeared, ..............?
+final-answer:
+The students’ books had disappeared, **hadn't they?**
 solution:
 **Answer:** The students’ books had disappeared, hadn't they?
 
@@ -1012,6 +1102,8 @@ body:
 Add question tags to the sentences below.
 
 It can’t be as easy as it looks, ..............?
+final-answer:
+It can’t be as easy as it looks, **can it?**
 solution:
 **Answer:** It can’t be as easy as it looks, can it?
 
@@ -1033,6 +1125,8 @@ body:
 Add question tags to the sentences below.
 
 They had much work to do yesterday, ..............?
+final-answer:
+They had much work to do yesterday, **didn't they?**
 solution:
 **Answer:** They had much work to do yesterday, didn't they?
 
@@ -1058,6 +1152,8 @@ body:
 Add question tags to the sentences below.
 
 She rarely comes these days, ..............?
+final-answer:
+She rarely comes these days, **does she?**
 solution:
 **Answer:** She rarely comes these days, does she?
 
@@ -1079,6 +1175,8 @@ body:
 Add question tags to the sentences below.
 
 Children won’t come to the party, ..............?
+final-answer:
+Children won’t come to the party, **will they?**
 solution:
 **Answer:** Children won’t come to the party, will they?
 
@@ -1100,6 +1198,8 @@ body:
 Add question tags to the sentences below.
 
 He had cake and coffee for dessert, ..............?
+final-answer:
+He had cake and coffee for dessert, **didn't he?**
 solution:
 **Answer:** He had cake and coffee for dessert, didn't he?
 
@@ -1121,6 +1221,8 @@ body:
 Add question tags to the sentences below.
 
 The student read the poem by heart, ..............?
+final-answer:
+The student read the poem by heart, **didn't he/she?**
 solution:
 **Answer:** The student read the poem by heart, didn't he/she?
 
@@ -1142,6 +1244,8 @@ body:
 Add question tags to the sentences below.
 
 She's very pretty, ..............?
+final-answer:
+She's very pretty, **isn't she?**
 solution:
 **Answer:** She's very pretty, isn't she?
 
@@ -1163,6 +1267,8 @@ body:
 Add question tags to the sentences below.
 
 You never come on time, ..............?
+final-answer:
+You never come on time, **do you?**
 solution:
 **Answer:** You never come on time, do you?
 
@@ -1185,6 +1291,8 @@ Add question tags to the sentences below.
 
 Nowadays, they usually cut these branches in March, ..............?
 
+final-answer:
+Nowadays, they usually cut these branches in March, **don’t they?**
 solution:
 Nowadays و usually تدلان على عادة في الوقت الحاضر، فنستخدم مساعد المضارع البسيط do مع they. الجملة مثبتة، لذلك يكون الذيل منفيًا: don’t they?
 
@@ -1207,6 +1315,8 @@ Add question tags to the sentences below.
 
 My grandfather’s sickness made it difficult for him to move, ..............?
 
+final-answer:
+My grandfather’s sickness made it difficult for him to move, **didn't it?**
 solution:
 **Answer:** My grandfather’s sickness made it difficult for him to move, didn't it?
 
@@ -1229,6 +1339,8 @@ body:
 Add question tags to the sentences below.
 
 He is never late for his appointment, ..............?
+final-answer:
+He is never late for his appointment, **is he?**
 solution:
 **Answer:** He is never late for his appointment, is he?
 
@@ -1250,6 +1362,8 @@ body:
 Add question tags to the sentences below.
 
 We haven't seen him for a long time, ..............?
+final-answer:
+We haven't seen him for a long time, **have we?**
 solution:
 **Answer:** We haven't seen him for a long time, have we?
 
@@ -1271,6 +1385,8 @@ body:
 Add question tags to the sentences below.
 
 My children prefer watching cartoons, ..............?
+final-answer:
+My children prefer watching cartoons, **don't they?**
 solution:
 **Answer:** My children prefer watching cartoons, don't they?
 
@@ -1292,6 +1408,8 @@ body:
 Add question tags to the sentences below.
 
 The news of the queen’s death shocked everyone, ..............?
+final-answer:
+The news of the queen’s death shocked everyone, **didn't it?**
 solution:
 **Answer:** The news of the queen’s death shocked everyone, didn't it?
 
@@ -1314,6 +1432,8 @@ body:
 Add question tags to the sentences below.
 
 She’s never been annoying, ..............?
+final-answer:
+She’s never been annoying, **has she?**
 solution:
 **Answer:** She’s never been annoying, has she?
 
@@ -1335,6 +1455,8 @@ body:
 Add question tags to the sentences below.
 
 She wasn't playing tennis when I saw her, ..............?
+final-answer:
+She wasn't playing tennis when I saw her, **was she?**
 solution:
 **Answer:** She wasn't playing tennis when I saw her, was she?
 
@@ -1356,6 +1478,8 @@ body:
 Add question tags to the sentences below.
 
 Your aunt worked as a teacher for 30 years, ..............?
+final-answer:
+Your aunt worked as a teacher for 30 years, **didn't she?**
 solution:
 **Answer:** Your aunt worked as a teacher for 30 years, didn't she?
 
@@ -1377,6 +1501,8 @@ body:
 Add question tags to the sentences below.
 
 The criteria of evaluation aren't clear, ..............?
+final-answer:
+The criteria of evaluation aren't clear, **are they?**
 solution:
 **Answer:** The criteria of evaluation aren't clear, are they?
 
@@ -1398,6 +1524,8 @@ body:
 Add question tags to the sentences below.
 
 She's finished her studies, ..............?
+final-answer:
+She's finished her studies, **hasn't she?**
 solution:
 **Answer:** She's finished her studies, hasn't she?
 
@@ -1419,6 +1547,8 @@ body:
 Add question tags to the sentences below.
 
 We'd prefer to stay at a hotel, ..............?
+final-answer:
+We'd prefer to stay at a hotel, **wouldn't we?**
 solution:
 **Answer:** We'd prefer to stay at a hotel, wouldn't we?
 
@@ -1440,6 +1570,8 @@ body:
 Add question tags to the sentences below.
 
 Nabil's aunt hit him hard, ..............?
+final-answer:
+Nabil's aunt hit him hard, **didn't she?**
 solution:
 **Answer:** Nabil's aunt hit him hard, didn't she?
 
@@ -1462,6 +1594,8 @@ body:
 Add question tags to the sentences below.
 
 Their problem won't be solved easily, ..............?
+final-answer:
+Their problem won't be solved easily, **will it?**
 solution:
 **Answer:** Their problem won't be solved easily, will it?
 
@@ -1483,6 +1617,8 @@ body:
 Add question tags to the sentences below.
 
 Heba has had no money, ..............?
+final-answer:
+Heba has had no money, **has she?**
 solution:
 **Answer:** Heba has had no money, has she?
 
@@ -1504,6 +1640,8 @@ body:
 Add question tags to the sentences below.
 
 Your aunt works as a teacher, ..............?
+final-answer:
+Your aunt works as a teacher, **doesn't she?**
 solution:
 **Answer:** Your aunt works as a teacher, doesn't she?
 
@@ -1525,6 +1663,8 @@ body:
 Add question tags to the sentences below.
 
 Dina and Muna never wear uniform, ..............?
+final-answer:
+Dina and Muna never wear uniform, **do they?**
 solution:
 **Answer:** Dina and Muna never wear uniform, do they?
 
@@ -1546,6 +1686,8 @@ body:
 Add question tags to the sentences below.
 
 She's sent us two invitations, ..............?
+final-answer:
+She's sent us two invitations, **hasn't she?**
 solution:
 **Answer:** She's sent us two invitations, hasn't she?
 
@@ -1567,6 +1709,8 @@ body:
 Add question tags to the sentences below.
 
 Rania never visited Paris, ..............?
+final-answer:
+Rania never visited Paris, **did she?**
 solution:
 **Answer:** Rania never visited Paris, did she?
 
@@ -1588,6 +1732,8 @@ body:
 Add question tags to the sentences below.
 
 I cut my fingers two days ago, ..............?
+final-answer:
+I cut my fingers two days ago, **didn't I?**
 solution:
 **Answer:** I cut my fingers two days ago, didn't I?
 
@@ -1609,6 +1755,8 @@ body:
 Add question tags to the sentences below.
 
 Corona virus has a dangerous effect on sick people, ..............?
+final-answer:
+Corona virus has a dangerous effect on sick people, **doesn't it?**
 solution:
 **Answer:** Corona virus has a dangerous effect on sick people, doesn't it?
 
@@ -1635,6 +1783,8 @@ body:
 Add question tags to the sentences below.
 
 The funny lady shut the door violently, ..............?
+final-answer:
+The funny lady shut the door violently, **didn't she?**
 solution:
 **Answer:** The funny lady shut the door violently, didn't she?
 
@@ -1656,6 +1806,8 @@ body:
 Add question tags to the sentences below.
 
 My mother's sickness was very serious, ..............?
+final-answer:
+My mother's sickness was very serious, **wasn't it?**
 solution:
 **Answer:** My mother's sickness was very serious, wasn't it?
 
@@ -1677,6 +1829,8 @@ body:
 Add question tags to the sentences below.
 
 You won’t get the results soon, ..............?
+final-answer:
+You won’t get the results soon, **will you?**
 solution:
 **Answer:** You won’t get the results soon, will you?
 
@@ -1698,6 +1852,8 @@ body:
 Add question tags to the sentences below.
 
 The man I met downtown was our previous teacher, ..............?
+final-answer:
+The man I met downtown was our previous teacher, **wasn't he?**
 solution:
 **Answer:** The man I met downtown was our previous teacher, wasn't he?
 
@@ -1719,6 +1875,8 @@ body:
 Add question tags to the sentences below.
 
 You’d never say a thing behind my back, ..............?
+final-answer:
+You’d never say a thing behind my back, **would you?**
 solution:
 **Answer:** You’d never say a thing behind my back, would you?
 
@@ -1740,6 +1898,8 @@ body:
 Add question tags to the sentences below.
 
 They always look happy together, ..............?
+final-answer:
+They always look happy together, **don't they?**
 solution:
 **Answer:** They always look happy together, don't they?
 
@@ -1761,6 +1921,8 @@ body:
 Add question tags to the sentences below.
 
 The monster of Loch Ness has never existed, ..............?
+final-answer:
+The monster of Loch Ness has never existed, **has it?**
 solution:
 **Answer:** The monster of Loch Ness has never existed, has it?
 
@@ -1782,6 +1944,8 @@ body:
 Add question tags to the sentences below.
 
 The butcher cut the meat into small pieces, ..............?
+final-answer:
+The butcher cut the meat into small pieces, **didn't he?**
 solution:
 **Answer:** The butcher cut the meat into small pieces, didn't he?
 
@@ -1805,6 +1969,8 @@ body:
 Correct the sentences (there is one mistake in each sentence).
 
 The headmaster has interviewed two candidates for the teaching position, isn't he?
+final-answer:
+The headmaster has interviewed two candidates for the teaching position, **hasn't he?**
 solution:
 **Answer:** The headmaster has interviewed two candidates for the teaching position, hasn't he?
 
@@ -1826,6 +1992,8 @@ body:
 Correct the sentences (there is one mistake in each sentence).
 
 He'd never met her before, hadn't he?
+final-answer:
+He'd never met her before, **had he?**
 solution:
 السؤال الذيلي يستعمل فعل الجملة المساعد بعكس النفي والإثبات. هنا He'd = He had لأن بعدها met، وهي التصريف الثالث. وكلمة never تجعل الجملة منفية؛ لذلك الذيل مثبت: had he.
 
@@ -1846,6 +2014,8 @@ body:
 Correct the sentences (there is one mistake in each sentence).
 
 They’d replace the offer soon, don’t they?
+final-answer:
+They’d replace the offer soon, **wouldn’t they?**
 solution:
 هنا They’d = They would لأن replace فعل مجرد، وليست had التي يليها التصريف الثالث. الجملة مثبتة؛ نعكس would إلى wouldn’t، ويبقى الضمير they.
 
@@ -1866,6 +2036,8 @@ body:
 Suggested Material: Question tags. Correct the mistakes in the following sentences.
 
 You don’t really like that painting, don’t you?
+final-answer:
+You don’t really like that painting, **do you?**
 solution:
 الجملة منفية بـ don’t؛ لذلك يكون الذيل مثبتًا. المساعد في المضارع البسيط هو do والفاعل you؛ فنكتب do you.
 
@@ -1886,6 +2058,8 @@ body:
 Suggested Material: Question tags. Correct the mistakes in the following sentences.
 
 Sarah never comes to school late, doesn’t she?
+final-answer:
+Sarah never comes to school late, **does she?**
 solution:
 never تنفي المعنى رغم عدم وجود not. الفعل comes مضارع بسيط مع مفرد، فمساعده does؛ نحوله إلى ذيل مثبت، ونستبدل Sarah بـ she.
 
@@ -1906,6 +2080,8 @@ body:
 Suggested Material: Question tags. Correct the mistakes in the following sentences.
 
 He’s just arrived, isn’t he?
+final-answer:
+He’s just arrived, **hasn’t he?**
 solution:
 He’s هنا اختصار He has لأن arrived تصريف ثالث في المضارع التام. just تشير إلى حدث اكتمل للتو. نأخذ has وننفيه في الذيل لأن الجملة مثبتة: hasn’t he.
 
@@ -1926,6 +2102,8 @@ body:
 Suggested Material: Question tags. Correct the mistakes in the following sentences.
 
 He's arrived too late, isn’t he?
+final-answer:
+He's arrived too late, **hasn't he?**
 solution:
 arrived هنا تصريف ثالث؛ لذلك He's = He has في المضارع التام. too late تصف التأخر ولا تنفي الجملة. نستخدم الذيل المنفي hasn’t he، وليس isn’t he.
 
@@ -1947,6 +2125,8 @@ Rewrite the question tag using do or does as the auxiliary for possession.
 
 She has nothing to do today, has she?
 
+final-answer:
+She has nothing to do today, **does she?**
 solution:
 nothing تجعل المعنى منفيًا، فالذيل مثبت. has هنا فعل بمعنى لديها، وليس مساعدًا في زمن تام؛ وفق استعمال do مع الملكية نستخدم does للمفرد ثم she. الأصل has she صحيح في بعض الاستعمال البريطاني. جواب does she يعيد صياغة الذيل وفق قاعدة do التي يستهدفها تدريب الكتاب، وليس تصحيحاً لخطأ لازم في كل استعمال.
 

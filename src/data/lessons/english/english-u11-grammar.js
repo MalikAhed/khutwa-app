@@ -337,6 +337,8 @@ body:
 Complete the sentences using should (not) must (not) + have + the past participle.
 
 You __________ your answers carefully before you handed in your exam. (check)
+final-answer:
+You **should have checked** your answers carefully before you handed in your exam.
 solution:
 قبل تسليم الامتحان فرصة ماضية للفحص؛ should have + checked تعني كان ينبغي أن تراجع. checked تصريف ثالث منتظم من check. نضع check في التصريف الثالث بعد have، فتصبح should have checked.
 
@@ -358,6 +360,8 @@ body:
 Complete the sentences using should (not) must (not) + have + the past participle.
 
 He ate a whole chicken, he __________ very hungry. (be)
+final-answer:
+He ate a whole chicken; he **must have been** very hungry.
 solution:
 أكل دجاجة كاملة دليل يستنتج منه المتكلم جوعًا شديدًا في الماضي؛ must have + been، و been التصريف الثالث من be.
 
@@ -379,6 +383,8 @@ body:
 Complete the sentences using should (not) must (not) + have + the past participle.
 
 I’m sorry. I __________ you before, but I forgot. (contact)
+final-answer:
+I’m sorry. I **should have contacted** you before, but I forgot.
 solution:
 الاعتذار والنسيان يدلان على واجب ماضٍ لم يؤدَّ. نستخدم \`should + have + التصريف الثالث\`؛ contact فعل منتظم نضيف له ed.
 
@@ -402,6 +408,8 @@ body:
 Complete the sentences using should (not) must (not) + have + the past participle.
 
 I lost my keys. I __________ them in the car. (leave)
+final-answer:
+I lost my keys. I **must have left** them in the car.
 solution:
 بين should و must المطلوبتين، must تنقل استنتاج المتكلم عن مكان ترك المفاتيح. الصيغة must have + left، و left تصريف leave الثالث. ضياعها وحده لا يثبت مكانها؛ الجملة تعبر عن اعتقاد قوي لدى المتكلم، لا برهان قطعي.
 
@@ -791,6 +799,8 @@ body:
 Complete the sentences using should (not) / must + have + the past participle.
 
 She isn’t happy with the salary she’s getting. She __________ the job. (accept)
+final-answer:
+She **shouldn’t have accepted** the job.
 solution:
 عدم رضاها عن الراتب الآن يؤدي في تمرين الندم إلى نقد قبولها السابق للوظيفة. نستخدم shouldn't have + accepted؛ accepted تصريف accept الثالث، لا shouldn't accept التي تتعلق بقرار لم يتخذ بعد.
 
@@ -812,6 +822,8 @@ body:
 Complete the sentences using should (not) / must + have + the past participle.
 
 The train accident was terrible, the passengers __________ extremely frightened. (be)
+final-answer:
+The train accident was terrible; the passengers **must have been** extremely frightened.
 solution:
 شدة الحادث الماضي دليل على خوف الركاب آنذاك؛ نستخدم must have + been. been تصريف be الثالث، و frightened صفة تصف شعورهم.
 
@@ -833,6 +845,8 @@ body:
 Rewrite the sentences using the words in brackets.
 
 I’m sorry, I didn’t bring back the book which I borrowed. (should)
+final-answer:
+I **should have brought back** the book which I borrowed.
 solution:
 الاعتذار لأن إعادة الكتاب لم تحدث في الماضي؛ should have + brought back تعني كان ينبغي إعادته. bring → brought → brought، ونبقي which I borrowed لتحديد الكتاب.
 
@@ -854,6 +868,8 @@ body:
 Rewrite the sentences using the words in brackets.
 
 I wonder how I didn’t hear the phone. (must / asleep)
+final-answer:
+I **must have been** asleep.
 solution:
 عدم سماع الهاتف دليل يستنتج منه المتكلم أنه كان نائمًا؛ نستعمل \`must + have + التصريف الثالث\` للحالة الماضية؛ been هو التصريف الثالث من be. asleep صفة تعني نائمًا، وتأتي بعد been.
 

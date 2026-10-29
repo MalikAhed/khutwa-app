@@ -11,6 +11,8 @@ Choose words from the box and match them with their meanings.
 Word bank: graphic - upmarket - distribute - attempt - humanitarian - sector
 
 a more expensive luxury item ..............
+final-answer:
+**upmarket**
 solution:
 **الإجابة:** upmarket
 
@@ -44,6 +46,8 @@ Choose words from the box and match them with their meanings.
 Word bank: graphic - upmarket - distribute - attempt - humanitarian - sector
 
 related to pictures ..............
+final-answer:
+**graphic**
 solution:
 **الإجابة:** graphic
 
@@ -76,6 +80,8 @@ Choose words from the box and match them with their meanings.
 Word bank: graphic - upmarket - distribute - attempt - humanitarian - sector
 
 send to other places ..............
+final-answer:
+**distribute**
 solution:
 **الإجابة:** distribute
 
@@ -108,6 +114,8 @@ Choose words from the box and match them with their meanings.
 Word bank: graphic - upmarket - distribute - attempt - humanitarian - sector
 
 try ..............
+final-answer:
+**attempt**
 solution:
 **الإجابة:** attempt
 
@@ -140,6 +148,8 @@ Choose words from the box and match them with their meanings.
 Word bank: graphic - upmarket - distribute - attempt - humanitarian - sector
 
 part of the country's economy ..............
+final-answer:
+**sector**
 solution:
 **الإجابة:** sector
 
@@ -172,6 +182,8 @@ Choose words from the box and match them with their meanings.
 Word bank: graphic - upmarket - distribute - attempt - humanitarian - sector
 
 concerned with helping people ..............
+final-answer:
+**humanitarian**
 solution:
 **الإجابة:** humanitarian
 
@@ -204,6 +216,8 @@ Complete the sentences with words from the box.
 Word bank: lack - humanitarian - currently - distribute - graphic - returns - running - attempt
 
 I passed my driving test at the first ..............
+final-answer:
+I passed my driving test at the first **attempt**.
 solution:
 at the first attempt تعني من المحاولة الأولى؛ لذا يلزم اسم محاولة بعد first.
 
@@ -226,6 +240,8 @@ Word bank: lack - humanitarian - currently - distribute - graphic - returns - ru
 
 He has no idea about .............. a business, so he asked for his manager's help.
 
+final-answer:
+He has no idea about **running** a business, so he asked for his manager's help.
 solution:
 run a business تعني يدير مشروعًا. بعد حرف الجر about نستخدم الفعل بصيغة ing: run تصبح running بتضعيف n.
 
@@ -247,6 +263,8 @@ Complete the sentences with words from the box.
 Word bank: lack - humanitarian - currently - distribute - graphic - returns - running - attempt
 
 The scenes of .............. violence in the film were very terrifying.
+final-answer:
+The scenes of **graphic** violence in the film were very terrifying.
 solution:
 graphic قد تصف مشهداً واضحاً شديد التفصيل. وفي graphic violence يكون المقصود عرض العنف بتفاصيل صريحة؛ لذلك تلائم مشاهد الفيلم المروعة.
 
@@ -270,6 +288,8 @@ Complete the sentences with words from the box.
 Word bank: lack - humanitarian - currently - distribute - graphic - returns - running - attempt
 
 Most people get fairly low .............. from personal investment.
+final-answer:
+Most people get fairly low **returns** from personal investment.
 solution:
 returns تعني العوائد المالية؛ وجود investment هو الدليل على هذا المعنى، و low تصف انخفاضها.
 
@@ -295,6 +315,8 @@ Complete the sentences with words from the box.
 Word bank: lack - humanitarian - currently - distribute - graphic - returns - running - attempt
 
 He made a lot of mistakes because of his .............. of experience.
+final-answer:
+He made a lot of mistakes because of his **lack** of experience.
 solution:
 lack of experience تعني نقص الخبرة؛ وهي سبب معقول لكثرة الأخطاء. نضع الاسم lack بعد his وقبل of.
 
@@ -316,6 +338,8 @@ Complete the sentences with words from the box.
 Word bank: lack - humanitarian - currently - distribute - graphic - returns - running - attempt
 
 The plan is .............. under consideration.
+final-answer:
+The plan is **currently** under consideration.
 solution:
 currently ظرف يعني في الوقت الحالي؛ يصف وضع الخطة الآن، أي أنها ما تزال قيد الدراسة.
 
@@ -338,6 +362,8 @@ Word bank: Currently - returns - attempt - distribute - lack - breakthrough
 
 Scientists have made an **important advance** in their treatment of that disease.
 
+final-answer:
+Scientists have made a **breakthrough** in their treatment of that disease.
 solution:
 breakthrough تعني تقدماً مهماً أو حدثاً يحدث فرقاً كبيراً؛ وهذا هو المعنى الذي يحدده تمرين الكتاب.
 
@@ -367,6 +393,8 @@ Word bank: Currently - returns - attempt - distribute - lack - breakthrough
 
 ICT start-ups are **at the moment** growing faster than any other kind of company.
 
+final-answer:
+**currently**
 solution:
 **الإجابة:** currently
 
@@ -400,6 +428,8 @@ Word bank: Currently - returns - attempt - distribute - lack - breakthrough
 
 He made a lot of mistakes because of **not having enough** experience.
 
+final-answer:
+He made a lot of mistakes because of **a lack of** experience.
 solution:
 lack اسم بمعنى نقص، ويتبعه of لتحديد الشيء الناقص: lack of experience.
 
@@ -425,6 +455,8 @@ Word bank: Currently - returns - attempt - distribute - lack - breakthrough
 
 A number of charities are coordinating their efforts to **send** food **to other places**.
 
+final-answer:
+A number of charities are coordinating their efforts to **distribute** food.
 solution:
 distribute تعني send to other places. لذلك نستبدل send بـ distribute ونحذف to other places، لأن المعنى أصبح داخل الفعل الجديد. ويبقى food مفعوله.
 
@@ -448,6 +480,8 @@ Word bank: Currently - returns - attempt - distribute - lack - breakthrough
 
 He made an unsuccessful **try** to stop the thief.
 
+final-answer:
+He made an unsuccessful **attempt** to stop the thief.
 solution:
 **الإجابة:** He made an unsuccessful attempt to stop the thief.
 
@@ -481,6 +515,8 @@ Word bank: Currently - returns - attempt - distribute - lack - breakthrough
 
 Most companies have suffered a drop in their **profits**.
 
+final-answer:
+Most companies have suffered a drop in their **returns**.
 solution:
 **الإجابة:** Most companies have suffered a drop in their returns.
 
@@ -513,6 +549,8 @@ Complete the sentences with words from the box.
 Word bank: sector - currently - attempt - lack
 
 He is .............. working for an oil company, but is trying to get a different job.
+final-answer:
+He is **currently** working for an oil company, but is trying to get a different job.
 solution:
 currently ظرف بمعنى حاليًا؛ موقعه بين is و working يبين أنه يصف عمله في الوقت الحالي قبل تغيير الوظيفة.
 
@@ -534,6 +572,8 @@ Complete the sentences with words from the box.
 Word bank: sector - currently - attempt - lack
 
 As the industrial .............. grew, more and more of the population moved to the cities.
+final-answer:
+As the industrial **sector** grew, more and more of the population moved to the cities.
 solution:
 industrial sector هو القطاع الصناعي؛ نحتاج اسمًا بعد الصفة industrial، ويؤكد سياق نمو الصناعة هذا الاختيار.
 
@@ -555,6 +595,8 @@ Complete the sentences with words from the box.
 Word bank: sector - currently - attempt - lack
 
 The police closed the road in an .............. to reduce the traffic in the city.
+final-answer:
+The police closed the road in an **attempt** to reduce the traffic in the city.
 solution:
 in an attempt to تعني في محاولة لِـ؛ ويتبعها الفعل المجرد reduce لبيان هدف إغلاق الطريق.
 
@@ -576,6 +618,8 @@ Complete the sentences with words from the box.
 Word bank: sector - currently - attempt - lack
 
 There is a .............. of medicine in the Health Care stores.
+final-answer:
+There is a **lack** of medicine in the Health Care stores.
 solution:
 lack of medicine تعني نقص الدواء؛ وجود a قبل الفراغ و of بعده يتطلب الاسم lack.
 
@@ -597,6 +641,8 @@ Complete the sentences with words from the box.
 Word bank: humanitarian - distribute - returns - lack - running
 
 He’s been .............. his own company since 1996.
+final-answer:
+He’s been **running** his own company since 1996.
 solution:
 run a company تعني يدير شركة. He's been تكوّن has been؛ وللتعبير عن النشاط المستمر منذ 1996 نضيف ing إلى run مع تضعيف n: running.
 
@@ -618,6 +664,8 @@ Complete the sentences with words from the box.
 Word bank: humanitarian - distribute - returns - lack - running
 
 They’re promising high .............. on investments of over $100,000.
+final-answer:
+They’re promising high **returns** on investments of over $100,000.
 solution:
 returns on investments تعني عوائد الاستثمارات؛ كلمة high تصف مقدار الربح الموعود.
 
@@ -639,6 +687,8 @@ Complete the sentences with words from the box.
 Word bank: humanitarian - distribute - returns - lack - running
 
 We need to print the notices and then .............. them to as many people as possible.
+final-answer:
+We need to print the notices and then **distribute** them to as many people as possible.
 solution:
 بعد طباعة الإعلانات تأتي مرحلة توزيعها؛ distribute فعل مجرد معطوف على print بعد to.
 
@@ -660,6 +710,8 @@ Complete the sentences with words from the box.
 Word bank: humanitarian - distribute - returns - lack - running
 
 The prisoner has been released for .............. reasons.
+final-answer:
+The prisoner has been released for **humanitarian** reasons.
 solution:
 humanitarian reasons أسباب إنسانية؛ نحتاج صفة تصف reasons وتوضح سبب الإفراج المتصل بظروف إنسانية.
 
@@ -681,6 +733,8 @@ Complete the sentences with words from the box.
 Word bank: humanitarian - distribute - returns - lack - running
 
 His answer demonstrated a complete .............. of understanding of the question.
+final-answer:
+His answer demonstrated a complete **lack** of understanding of the question.
 solution:
 a complete lack of تعني انعدامًا تامًا لشيء؛ هنا عدم فهم السؤال، لذلك نختار الاسم lack.
 
@@ -702,6 +756,8 @@ Complete the sentences with words from the box.
 Word bank: Lack - sector - returns - running - market share - humanitarian
 
 The UN is sending .............. aid to the areas which were affected by the disaster.
+final-answer:
+The UN is sending **humanitarian** aid to the areas which were affected by the disaster.
 solution:
 humanitarian تصف المعونة الموجهة لمتضرري الكارثة. aid بمعنى المساعدة اسم غير معدود؛ لذلك الصياغة السليمة aid.
 
@@ -723,6 +779,8 @@ Complete the sentences with words from the box.
 Word bank: Lack - sector - returns - running - market share - humanitarian
 
 The .............. of water has caused the animals to die of thirst.
+final-answer:
+The **lack** of water has caused the animals to die of thirst.
 solution:
 الموت عطشًا ينتج عن نقص الماء؛ lack اسم تتبعه of لتحديد الشيء الناقص.
 
@@ -744,6 +802,8 @@ Complete the sentences with words from the box.
 Word bank: Lack - sector - returns - running - market share - humanitarian
 
 Don't forget that .............. your company is hard work.
+final-answer:
+Don't forget that **running** your company is hard work.
 solution:
 running تعني إدارة الشركة، وتعمل مع مفعولها فاعلًا للجملة بعد that. run تصبح running. work هنا غير معدود، فالصحيح hard work دون a.
 
@@ -767,6 +827,8 @@ Complete the sentences with words from the box.
 Word bank: Lack - sector - returns - running - market share - humanitarian
 
 The country has a new policy of transferring state industries from the public .............. to the private one.
+final-answer:
+The country has a new policy of transferring state industries from the public **sector** to the private one.
 solution:
 public sector هو القطاع العام، ويقابله private sector القطاع الخاص؛ one تعوض الاسم sector في الجزء الثاني.
 وجود the قبل public sector يطابق المقابلة مع the private one.
@@ -789,6 +851,8 @@ Complete the sentences with words from the box.
 Word bank: Lack - sector - returns - running - market share - humanitarian
 
 The .............. on this kind of investment are quite low at the moment.
+final-answer:
+The **returns** on this kind of investment are quite low at the moment.
 solution:
 returns هي عوائد الاستثمار؛ الجمع يناسب الفعل are، ويؤكد السياق المالي معنى الأرباح.
 
@@ -810,6 +874,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: take over (3) - broken through - take off - cutback
 
 People are wondering who is going to .............. when the old king dies.
+final-answer:
+People are wondering who is going to **take over** when the old king dies.
 solution:
 take over تعني يتولى السلطة أو السيطرة؛ هذا مناسب لخلافة الملك. بعد going to يأتي الفعل المجرد take.
 
@@ -835,6 +901,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: take over (3) - broken through - take off - cutback
 
 Have our soldiers .............. the enemies’ defences?
+final-answer:
+Have our soldiers **broken through** the enemies’ defences?
 solution:
 break through تعني يخترق الحاجز أو الدفاعات. السؤال يبدأ بـ Have في المضارع التام، فنحتاج التصريف الثالث: break → broke → broken.
 
@@ -856,6 +924,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: take over (3) - broken through - take off - cutback
 
 The new team will make changes the moment they .............. the job.
+final-answer:
+The new team will make changes the moment they **take over** the job.
 solution:
 المقصود تولي الفريق الجديد العمل: take over. بعد the moment للإشارة إلى المستقبل نستخدم المضارع البسيط في جملة الزمن، ومع they يكون take دون s.
 
@@ -877,6 +947,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: take over (3) - broken through - take off - cutback
 
 He'll .............. the job permanently when the accountant retires.
+final-answer:
+He'll **take over** the job permanently when the accountant retires.
 solution:
 take over the job تعني يتولى الوظيفة. He'll = He will؛ وبعد will نستعمل المصدر المجرد take.
 
@@ -898,6 +970,8 @@ Choose the correct phrasal verb from the box to fill in the following sentences.
 Word bank: stand by - take over - handed over - break through
 
 Some workers will lose their jobs as machines ..............
+final-answer:
+Some workers will lose their jobs as machines **take over**.
 solution:
 الآلات تحل محل العاملين وتتولى مهامهم؛ لذلك take over مناسبة. machines جمع، فالفعل في المضارع take دون s.
 
@@ -919,6 +993,8 @@ Choose the correct phrasal verb from the box to fill in the following sentences.
 Word bank: stand by - take over - handed over - break through
 
 The owner .............. the factory to his sons.
+final-answer:
+The owner **handed over** the factory to his sons.
 solution:
 hand over تعني يسلم المسؤولية أو الملكية إلى آخرين؛ to his sons تبين المستلمين. الصندوق يقدم الصيغة الماضية handed over، وهي المناسبة هنا لتسليم المصنع إلى الأبناء.
 
@@ -940,6 +1016,8 @@ Choose the correct phrasal verb from the box to fill in the following sentences.
 Word bank: stand by - take over - handed over - break through
 
 Ambulances .............. in case anyone gets seriously injured.
+final-answer:
+Ambulances **stand by** in case anyone gets seriously injured.
 solution:
 stand by تعني تكون جاهزة للتدخل؛ وهذا دور سيارات الإسعاف تحسبًا لإصابة. الفاعل جمع، فنكتب stand دون s.
 
@@ -961,6 +1039,8 @@ Choose the correct phrasal verb from the box to fill in the following sentences.
 Word bank: stand by - take over - handed over - break through
 
 The prisoners tried to .............. the police barrier.
+final-answer:
+The prisoners tried to **break through** the police barrier.
 solution:
 المقصود اختراق الحاجز؛ لذا break through. بعد tried to يأتي الفعل المجرد break، لا broke.
 
@@ -982,6 +1062,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: break through - handed over - cuts back - take over (2)
 
 Who will .............. the leadership of the club next year?
+final-answer:
+Who will **take over** the leadership of the club next year?
 solution:
 take over تعني يتولى القيادة؛ ووجود will يوجب الفعل المجرد take، بينما next year يحدد المستقبل.
 
@@ -1003,6 +1085,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: break through - handed over - cuts back - take over (2)
 
 She resigned and .............. the company to one of her younger colleagues.
+final-answer:
+She resigned and **handed over** the company to one of her younger colleagues.
 solution:
 hand over تعني تسليم المسؤولية. resigned ماضٍ؛ وننسق الحدث الثاني معه في الماضي: handed over.
 
@@ -1024,6 +1108,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: break through - handed over - cuts back - take over (2)
 
 When the machines .............., we won't be needed to do manual jobs anymore.
+final-answer:
+When the machines **take over**, we won't be needed to do manual jobs anymore.
 solution:
 take over تعني تتولى الآلات المهام. بعد When في شرط زمني مستقبلي نستعمل المضارع take، ويأتي المستقبل في النتيجة won't be needed.
 
@@ -1045,6 +1131,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: break through - handed over - cuts back - take over (2)
 
 Due to shortage of resources, the government .............. its expenses.
+final-answer:
+Due to shortage of resources, the government **cuts back** its expenses.
 solution:
 cut back تعني يقلل الإنفاق؛ نقص الموارد يفسر التخفيض. في قراءة المضارع ومع government المفرد نضيف s: cuts back. الصندوق يقدم cuts back بصيغة المضارع، لذلك نستخدمها كما هي.
 
@@ -1066,6 +1154,8 @@ Complete the sentences with suitable phrasal verbs from the box.
 Word bank: break through - handed over - cuts back - take over (2)
 
 Scientists think they are beginning to .............. in the fight against cancer.
+final-answer:
+Scientists think they are beginning to **break through** in the fight against cancer.
 solution:
 break through هنا تعني يحقق تقدمًا مهمًا في التغلب على مشكلة؛ وبعد beginning to نستخدم الفعل المجرد break.
 

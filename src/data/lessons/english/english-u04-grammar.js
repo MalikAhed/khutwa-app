@@ -900,6 +900,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets.
 
 A: “Sami, I can’t go out because I haven’t got any money.” B: “Don’t worry I ………… you some.” (lend)
+final-answer:
+A: “Sami, I can’t go out because I haven’t got any money.” B: “Don’t worry I **will lend** you some.”
 solution:
 **Answer:** A: “Sami, I can’t go out because I haven’t got any money.” B: “Don’t worry I will lend you some.”
 
@@ -921,6 +923,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets.
 
 Ahmed can’t come to our meeting. He ………… the car to the garage at 5 p.m. (take)
+final-answer:
+Ahmed can’t come to our meeting. He **is taking** the car to the garage at 5 p.m.
 solution:
 **Answer:** Ahmed can’t come to our meeting. He is taking the car to the garage at 5 p.m.
 
@@ -944,6 +948,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets.
 
 A: Why are you filling that packet with water? B: I ………… the car. (wash)
+final-answer:
+A: Why are you filling that packet with water? B: I **am going to wash** the car.
 solution:
 **Answer:** A: Why are you filling that packet with water? B: I am going to wash the car.
 
@@ -965,6 +971,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets.
 
 I ………… my friends at the weekend so I can’t see you. (meet)
+final-answer:
+I **am meeting** my friends at the weekend so I can’t see you.
 solution:
 **Answer:** I am meeting my friends at the weekend so I can’t see you.
 
@@ -988,6 +996,8 @@ body:
 Complete the sentences with the correct tense of the verbs in brackets.
 
 A: Why are you holding a piece of paper? B: I ………… a letter to my friend in Palestine. (write)
+final-answer:
+A: Why are you holding a piece of paper? B: I **am going to write** a letter to my friend in Palestine.
 solution:
 **Answer:** A: Why are you holding a piece of paper? B: I am going to write a letter to my friend in Palestine.
 
@@ -1009,6 +1019,8 @@ body:
 Complete the sentences using going to, will or the present continuous tense with the verbs in brackets.
 
 Ali ………… a garage sale this weekend. He’s put out signs and organized everything he wants to sell. (have)
+final-answer:
+Ali **is having** a garage sale this weekend. He’s put out signs and organized everything he wants to sell.
 solution:
 **Answer:** Ali is having a garage sale this weekend. He’s put out signs and organized everything he wants to sell.
 
@@ -1032,6 +1044,8 @@ body:
 Complete the sentences using going to, will or the present continuous tense with the verbs in brackets.
 
 There’s no milk. Really? In that case I ………… and get some. (go)
+final-answer:
+There’s no milk. Really? In that case I **will go** and get some.
 solution:
 **Answer:** There’s no milk. Really? In that case I will go and get some.
 
@@ -1053,6 +1067,8 @@ body:
 Complete the sentences using going to, will or the present continuous tense with the verbs in brackets.
 
 A: Why are you carrying a hammer? B: I ………… up some pictures. (put)
+final-answer:
+A: Why are you carrying a hammer? B: I **am going to put** up some pictures.
 solution:
 **Answer:** A: Why are you carrying a hammer? B: I am going to put up some pictures.
 
@@ -1079,6 +1095,8 @@ Rewrite the sentence to express certainty about the future event, using will.
 
 I’m sure scientists may find a solution to the problem of climate change.
 
+final-answer:
+I’m sure scientists **will find** a solution to the problem of climate change.
 solution:
 **Answer:** I’m sure scientists will find a solution to the problem of climate change.
 
@@ -1103,6 +1121,8 @@ Correct the mistakes. (There’s one mistake in each sentence.)
 
 Only applicants are considered for this job. Ali didn’t apply, so he may get it.
 
+final-answer:
+Only applicants are considered for this job. Ali didn’t apply, so he **won’t get** it.
 solution:
 **Answer:** Only applicants are considered for this job. Ali didn’t apply, so he won’t get it.
 
@@ -1125,6 +1145,8 @@ Rewrite the prediction using will not rather than a past or conditional modal.
 
 What we can predict in advance is that the new generation couldn’t forget Jerusalem.
 
+final-answer:
+What we can predict in advance is that the new generation **won’t forget** Jerusalem.
 solution:
 **Answer:** What we can predict in advance is that the new generation won’t forget Jerusalem.
 
@@ -1147,6 +1169,8 @@ Rewrite the response using will to make a new offer at the moment of speaking.
 
 A: This exercise is too difficult for me! B: Don’t worry I am going to help you.
 
+final-answer:
+A: This exercise is too difficult for me! B: Don’t worry, I **will help** you.
 solution:
 **Answer:** A: This exercise is too difficult for me! B: Don’t worry, I will help you.
 
@@ -1171,6 +1195,8 @@ Rewrite the sentence to express certainty about the future event, using will.
 
 I’m sure that Ahmed may arrive soon.
 
+final-answer:
+I’m sure that Ahmed **will arrive** soon.
 solution:
 **Answer:** I’m sure that Ahmed will arrive soon.
 
@@ -1195,6 +1221,8 @@ Rewrite the sentence to express a negative future prediction using probably won�
 
 He is quite unpopular, so he could win the elections.
 
+final-answer:
+He is quite unpopular, so he **probably won’t win** the elections.
 solution:
 **Answer:** He is quite unpopular, so he probably won’t win the elections.
 
@@ -1219,6 +1247,8 @@ Rewrite the sentence to express certainty about the future event, using will.
 
 Don’t worry I’m sure the economic situation could get better.
 
+final-answer:
+Don’t worry, I’m sure the economic situation **will get** better.
 solution:
 يطلب السؤال التعبير عن الثقة بوقوع التحسن في المستقبل باستخدام will. لذلك نكتب will get better بدل could get better التي تصف إمكان التحسن.
 
@@ -1241,6 +1271,8 @@ Rewrite the sentence as a firm promise about the future, using will.
 
 I promise I may phone you as soon as possible.
 
+final-answer:
+I promise I **will phone** you as soon as possible.
 solution:
 **Answer:** I promise I will phone you as soon as possible.
 
@@ -1264,6 +1296,8 @@ body:
 Correct the mistakes. (There’s one mistake in each sentence.)
 
 Murad will win the final competition. Who knows?
+final-answer:
+Murad **may win** the final competition. Who knows?
 solution:
 **Answer:** Murad may win the final competition. Who knows?
 
@@ -1290,6 +1324,8 @@ Do as required in brackets.
 
 The one thing we can predict is that the figures may continue to rise in future.
 The one thing we can predict is that ………… (show a 100% possibility)
+final-answer:
+The one thing we can predict is that the figures **will continue** to rise in the future.
 solution:
 **Answer:** The one thing we can predict is that the figures will continue to rise in the future.
 
@@ -1313,6 +1349,8 @@ Do as required in brackets.
 We are able to breathe in space without special equipment.
 We ………… (express future impossibility using will not be able to)
 
+final-answer:
+We **won’t be able to** breathe in space without special equipment.
 solution:
 المطلوب التعبير عن استحالة في المستقبل بصيغة will not be able to. نضع won’t be able to قبل المصدر breathe، ونحتفظ بشرط without special equipment.
 

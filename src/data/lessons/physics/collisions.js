@@ -414,6 +414,8 @@ body:
 
 2- سرعة الجسم الثاني بعد التصادم مباشرة.
 
+final-answer:
+**سرعة الجسم الثاني:** \\(35\\,\\mathrm{m/s}\\)، في اتجاه الحركة الابتدائية للجسم الأول.
 solution:
 في التصادم المرن على خط واحد، سرعة ابتعاد الجسمين النسبية تساوي سرعة اقترابهما النسبية مقدارًا. نستخدم ذلك هنا لأن التصادم مرن؛ وتبقى السرعات في العلاقة بإشاراتها.
 
@@ -491,6 +493,8 @@ answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 عربة قطار كتلتها \\(2000\\,\\mathrm{kg}\\) تتحرك على قضبان مستقيمة أفقية بسرعة \\(2\\,\\mathrm{m/s}\\)، اصطدمت بها عربة أخرى كتلتها \\(3000\\,\\mathrm{kg}\\) تسير بالاتجاه نفسه وبسرعة \\(5\\,\\mathrm{m/s}\\) وتحركتا معًا كجسم واحد. ما مقدار السرعة المشتركة بعد التصادم؟
 
+final-answer:
+**السرعة المشتركة:** \\(3.8\\,\\mathrm{m/s}\\)، في اتجاه حركة العربتين قبل التصادم.
 solution:
 نستخدم حفظ الزخم لأن قوى التفاعل بين الأجسام داخلية، ونهمل الدفع الخارجي في الاتجاه المدروس خلال التصادم أو الإطلاق. نجمع الزخم مع إشارات السرعات؛ ولا نفترض حفظ طاقة الحركة إلا إذا كان التصادم مرنًا.
 
@@ -554,6 +558,9 @@ body:
 
 ![الرسم الأصلي من كتاب الفيزياء — أسئلة الفصل — س5 — فرع 1.](assets/lessons/physics/source-crops/physics-book-2024-p019-review-5-1-figure-01.webp)
 
+final-answer:
+- **الكرة ذات الكتلة \\(2\\,\\mathrm{kg}\\):** \\(10\\,\\mathrm{m/s}\\) إلى اليمين.
+- **الكرة ذات الكتلة \\(4\\,\\mathrm{kg}\\):** \\(10\\,\\mathrm{m/s}\\) إلى اليسار.
 solution:
 ![الرسم الأصلي المرتبط بالسؤال](assets/lessons/physics/source-crops/physics-book-2024-p019-review-5-1-figure-01.webp)
 
@@ -625,6 +632,9 @@ body:
 
 ![الرسم الأصلي من كتاب الفيزياء — أسئلة الفصل — س5 — فرع 2.](assets/lessons/physics/source-crops/physics-book-2024-p019-review-5-1-figure-01.webp)
 
+final-answer:
+- **الكرة ذات الكتلة \\(2\\,\\mathrm{kg}\\):** \\(\\frac{50}{3}\\,\\mathrm{m/s}\\) إلى اليسار.
+- **الكرة ذات الكتلة \\(4\\,\\mathrm{kg}\\):** \\(\\frac{10}{3}\\,\\mathrm{m/s}\\) إلى اليمين.
 solution:
 حفظ الزخم يعني مساواة مجموع زخم الجسمين قبل التصادم بمجموعه بعده. نستخدمه لأن قوى التفاعل بين الأجسام داخلية، ونهمل الدفع الخارجي في الاتجاه المدروس خلال التصادم أو الإطلاق. نجمع الزخم مع إشارات السرعات؛ ولا نفترض حفظ طاقة الحركة إلا إذا كان التصادم مرنًا.
 
@@ -772,6 +782,11 @@ body:
 
 ![الرسم الأصلي من كتاب الفيزياء — أسئلة الفصل — س5 — فرع 3.](assets/lessons/physics/source-crops/physics-book-2024-p019-review-5-1-figure-01.webp)
 
+final-answer:
+- **الكرة ذات الكتلة \\(2\\,\\mathrm{kg}\\):** \\(h_1=\\frac{125}{9}\\,\\mathrm{m}\\approx13.89\\,\\mathrm{m}\\).
+- **الكرة ذات الكتلة \\(4\\,\\mathrm{kg}\\):** \\(h_2=\\frac{5}{9}\\,\\mathrm{m}\\approx0.556\\,\\mathrm{m}\\).
+
+الارتفاعان **من أسفل المسار**.
 solution:
 نرمز للكرة ذات الكتلة \\(2\\,\\mathrm{kg}\\) بالجسم الأول، ولذات الكتلة \\(4\\,\\mathrm{kg}\\) بالجسم الثاني. نأخذ اليمين موجباً، ونستخدم \\(g=10\\,\\mathrm{m/s^{2}}\\) وفق تقريب المنهج.
 
@@ -973,6 +988,8 @@ body:
 
 ![الرسم الأصلي من كتاب الفيزياء — مثال 2 — فرع 1.](assets/lessons/physics/source-crops/physics-book-2024-p015-example-2-1-figure-01.webp)
 
+final-answer:
+**سرعة الكرة الثانية:** \\(3\\,\\mathrm{m/s}\\) **غربًا**.
 solution:
 نختار الشرق موجباً؛ بذلك تكون سرعة الكرة الأولى قبل التصادم \\(-6\\,\\mathrm{m/s}\\)، وسرعة الثانية \\(+4\\,\\mathrm{m/s}\\)، وسرعة الأولى بعده \\(+4.5\\,\\mathrm{m/s}\\).
 
@@ -1155,6 +1172,8 @@ body:
 
 هناك فقد كبير للطاقة الحركية في التصادم عديم المرونة.
 
+final-answer:
+**يلتحم الجسمان وتنعدم حركتهما النسبية**، ويتحول جزء كبير من طاقة الحركة إلى تشوه وحرارة وصوت.
 solution:
 في التصادم عديم المرونة يلتحم الجسمان ويتحركان بسرعة مشتركة؛ لذلك تنعدم حركة كل منهما بالنسبة إلى الآخر.
 
@@ -1200,6 +1219,8 @@ body:
 
 إذا سقطت كرة من الطين تجاه أرضية صلبة فإنها لا ترتد بشكل ملحوظ.
 
+final-answer:
+**تتحول معظم طاقة حركة كرة الطين إلى التشوه والحرارة**، فلا تبقى طاقة كافية لارتداد ملحوظ.
 solution:
 تتشوه كرة الطين عند اصطدامها، فتنتقل معظم طاقة حركتها إلى التشوه والحرارة.
 
@@ -1241,6 +1262,8 @@ body:
 
 1- كتلة الجسم الأول.
 
+final-answer:
+**كتلة الجسم الأول:** \\(m_1=\\frac{7}{3}\\,\\mathrm{kg}\\).
 solution:
 المعطيات: سرعة الجسم الأول قبل التصادم \\(55\\,\\mathrm{m/s}\\)، وبعده \\(20\\,\\mathrm{m/s}\\) في الاتجاه المعاكس. الجسم الثاني كتلته \\(5\\,\\mathrm{kg}\\) وكان ساكناً. المطلوب كتلة الجسم الأول \\(m_{1}\\).
 
@@ -2285,6 +2308,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 15، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما المقصود بـ: البندول القذفي؟
+final-answer:
+**البندول القذفي:** أداة لحساب سرعة اصطدام رصاصة تستقر في كتلة خشبية أكبر منها بكثير، معلقة بحبلين متساويين في الطول، متوازيين وغير مرنين.
 solution:
 **الإجابة:** أداة لحساب سرعة اصطدام رصاصة تستقر في قطعة خشبية معلقة بحبلين متساويين متوازيين غير مرنين.
 
@@ -2306,6 +2331,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 15، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما المقصود بـ: التصادم غير المرن؟
+final-answer:
+**التصادم غير المرن:** تصادم لا تُحفظ فيه الطاقة الحركية، ويتحرك كل من الجسمين منفردًا بعده، بحسب تصنيف الكتاب.
 solution:
 الإجابة: تصادم لا تُحفظ فيه الطاقة الحركية، ويتحرك كل من الجسمين منفرداً بعده، بحسب تصنيف الكتاب.
 
@@ -2326,6 +2353,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 15، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما المقصود بـ: التصادم المرن؟
+final-answer:
+**التصادم المرن:** تصادم يتحقق فيه حفظ الزخم وحفظ الطاقة الحركية.
 solution:
 الإجابة: تصادم يتحقق فيه حفظ الزخم وحفظ الطاقة الحركية.
 
@@ -2354,6 +2383,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 15، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 علل: في التصادم عديم المرونة تكون النسبة بين الطاقة الحركية للنظام قبل التصادم إلى الطاقة الحركية للنظام بعد التصادم مباشرة أكبر من واحد، عندما تكون الطاقة الحركية النهائية غير صفرية.
+final-answer:
+**لأن جزءًا من طاقة الحركة يتحول إلى تشوه وحرارة وصوت**، فتكون الطاقة الحركية الابتدائية أكبر من النهائية، ونسبتهما **أكبر من واحد** عندما تكون النهائية غير صفرية.
 solution:
 في التصادم عديم المرونة يلتحم الجسمان ويتحركان بسرعة مشتركة، ويتحول جزء من طاقة الحركة إلى تشوه وحرارة وصوت؛ لذلك تكون الطاقة الابتدائية أكبر من النهائية.
 
@@ -2386,6 +2417,11 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 15، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 قارن بين التصادم المرن والتصادم عديم المرونة من حيث: حفظ الزخم الخطي، السرعة النسبية للجسمين قبل وبعد التصادم.
+final-answer:
+| وجه المقارنة | التصادم المرن | التصادم عديم المرونة |
+| --- | --- | --- |
+| الزخم الخطي في نظام معزول | **محفوظ** | **محفوظ** |
+| السرعة النسبية بعد التصادم مقارنة بما قبله | **مساوية مقدارًا ومعاكسة اتجاهًا** في بعد واحد | **صفر بعد التصادم**؛ يتحرك الجسمان بسرعة مشتركة |
 solution:
 نقارن التصادمين في نظام معزول، أي نهمل محصلة الدفع الخارجي خلال التصادم. عندئذ يحفظ مجموع الزخم في النوعين.
 
@@ -2454,6 +2490,9 @@ body:
 يبين الشكل المجاور تصادم كرتين، الأولى كتلتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` وتسير بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\` والثانية ساكنة وكتلتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\`، وبعد التصادم تحركت الكرة الأولى باتجاه يصنع زاوية مقدارها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mn>37</mn><mo>∘</mo></msup></mrow></math>\` مع اتجاهها الأصلي وتحركت الثانية باتجاه عمودي على اتجاه الأولى بعد التصادم. جد سرعة كل من الكرتين بعد التصادم؟
 
 ![اتجاهات حركة الكرتين قبل التصادم وبعده مع الزاوية 37°.](assets/lessons/curriculum-evidence/40eb9ad96a0a5cb8766f.webp)
+final-answer:
+- **سرعة الكرة الأولى:** \\(8\\,\\mathrm{m/s}\\)، بزاوية \\(37^\\circ\\) مع اتجاهها الأصلي كما في الرسم.
+- **سرعة الكرة الثانية:** \\(3\\,\\mathrm{m/s}\\)، في الاتجاه العمودي على حركة الأولى بعد التصادم كما في الرسم.
 solution:
 المعطيات: كتلة الكرة الأولى \\(1\\,\\mathrm{kg}\\) وسرعتها الابتدائية \\(10\\,\\mathrm{m/s}\\)، والثانية كتلتها \\(2\\,\\mathrm{kg}\\) وساكنة. المطلوب مقدارا السرعتين بعد التصادم.
 
@@ -2583,6 +2622,10 @@ body:
 
 ![جسم على مسار من ارتفاع h وجسم ساكن عند أسفل المسار.](assets/lessons/curriculum-evidence/200d29a297517bc744d8.webp)
 
+final-answer:
+أ. **الارتفاع:** \\(h=5\\,\\mathrm{m}\\).
+
+ب. **الدفع على الجسم الثاني:** \\(10\\,\\mathrm{N\\,s}\\)، في اتجاه حركة المجموعة.
 solution:
 نسمي سرعة الجسم الأول قبل التصادم \\(u\\)، والسرعة المشتركة بعد التحام الجسمين \\(V\\). كتلة كل جسم \\(2\\,\\mathrm{kg}\\)، والطاقة الحركية بعد التصادم \\(50\\,\\mathrm{J}\\).
 
@@ -2693,6 +2736,9 @@ body:
 أثرت قوة مقدارها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>15</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>\` على جسم ساكن كتلته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0.5</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` لمدة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0.4</mn><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>\`، فانطلق على سطح أفقي أملس ليصطدم بجسم آخر كتلته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` يتحرك بنفس الاتجاه بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\`، فإذا كان التصادم مرنًا، احسب سرعة كل من الجسمين بعد التصادم مباشرة.
 
 ![الجسمان واتجاها حركتهما، والقوة المؤثرة في الجسم الأول.](assets/lessons/curriculum-evidence/8b392b56b489ad100fb9.webp)
+final-answer:
+- **الجسم الأول:** \\(5.6\\,\\mathrm{m/s}\\)، عكس اتجاه حركته الأصلي.
+- **الجسم الثاني:** \\(5.4\\,\\mathrm{m/s}\\)، في اتجاه الحركة الأصلي.
 solution:
 المعطيات: قوة \\(15\\,\\mathrm{N}\\) تؤثر مدة \\(0.4\\,\\mathrm{s}\\) في الجسم الأول الساكن، كتلته \\(0.5\\,\\mathrm{kg}\\). الجسم الثاني كتلته \\(2\\,\\mathrm{kg}\\) وسرعته \\(1\\,\\mathrm{m/s}\\) في الاتجاه نفسه. المطلوب سرعتهما بعد التصادم المرن.
 
@@ -2803,6 +2849,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 16، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 جسمان كتلة كل منهما \\(m>0\\)، يتحرك الأول بسرعة مقدارها \\(v>0\\) والثاني بسرعة مقدارها \\(2v\\). تصادما خلال زمن قصير كان فيه الدفع الخارجي المحصل مهملاً. بعد التصادم تحرك الأول بسرعة \\(v/2\\) والثاني بسرعة \\(v\\)، وكلاهما شرقاً. احسب الزاوية بين اتجاهي السرعتين قبل التصادم.
+final-answer:
+**الزاوية بين السرعتين قبل التصادم:** \\(\\theta=\\cos^{-1}\\!\\left(-\\frac{11}{16}\\right)\\approx133.43^\\circ\\).
 solution:
 نهمل الدفع الخارجي خلال التصادم؛ لذلك يساوي الزخم الكلي قبله الزخم الكلي بعده.
 
@@ -2883,6 +2931,9 @@ body:
 كرة كتلتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` تسير بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\` لتصطدم بكرة أخرى كتلتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` تتحرك باتجاهها وبسرعة مقدارها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>8</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\`، كما في الشكل المجاور. إذا كان مقدار الدفع المؤثر على كل منهما أثناء التصادم \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>\`، جد سرعة كل من الكرتين بعد التصادم.
 
 ![كرتان تتجهان إحداهما نحو الأخرى، بكتلتين 3 kg و2 kg.](assets/lessons/curriculum-evidence/57515c2b0ca9f7f92f13.webp)
+final-answer:
+- **الكرة ذات الكتلة \\(3\\,\\mathrm{kg}\\):** \\(\\frac{2}{3}\\,\\mathrm{m/s}\\) إلى اليسار.
+- **الكرة ذات الكتلة \\(2\\,\\mathrm{kg}\\):** \\(2\\,\\mathrm{m/s}\\) إلى اليمين.
 solution:
 نأخذ اليمين موجبًا؛ الأولى تتحرك يمينًا والثانية يسارًا، والدفع على كل منهما يعاكس اقترابها.
 
@@ -3000,6 +3051,9 @@ body:
 
 ![بندول قذفي في وضعيه وارتفاع h عن مستوى الاتزان.](assets/lessons/curriculum-evidence/c621bdabb5ba2a8eb484.webp)
 
+final-answer:
+1. **سرعة الرصاصة قبل الاصطدام:** \\(210\\,\\mathrm{m/s}\\).
+2. **أقصى ارتفاع:** \\(0.07938\\,\\mathrm{m}\\approx7.94\\,\\mathrm{cm}\\)، فوق مستوى الاتزان.
 solution:
 المعطيات: كتلة الرصاصة \\(30\\) غراماً، وكتلة الخشب \\(4.97\\,\\mathrm{kg}\\)، والسرعة المشتركة بعد استقرار الرصاصة في الخشب \\(1.26\\,\\mathrm{m/s}\\). المطلوب سرعة الرصاصة قبل الاصطدام وأقصى ارتفاع للمجموعة.
 
@@ -3103,6 +3157,8 @@ body:
 \`\`\`
 
 
+final-answer:
+**النسبة المطلوبة:** \\(\\frac{v_{1f}}{v_{2f}}=\\frac{4}{1}\\).
 solution:
 نستخدم حفظ الزخم لأن قوى التفاعل بين الأجسام داخلية، ونهمل الدفع الخارجي في الاتجاه المدروس خلال التصادم أو الإطلاق. نجمع الزخم مع إشارات السرعات؛ ولا نفترض حفظ طاقة الحركة إلا إذا كان التصادم مرنًا.
 
@@ -3261,6 +3317,9 @@ body:
 جسم كتلته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` يتحرك لليمين بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\`، اصطدم بجسم آخر كتلته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` ويتحرك في اتجاه معاكس وبمقدار السرعة نفسها. أجب عن الآتية:
 1. احسب سرعة كل من الجسمين بعد التصادم مباشرة إذا كان التصادم مرنًا.
 2. عرف التصادم.
+final-answer:
+1. **سرعتا الجسمين بعد التصادم:** الأول \\(\\frac{2}{3}\\,\\mathrm{m/s}\\) إلى اليسار، والثاني \\(\\frac{10}{3}\\,\\mathrm{m/s}\\) إلى اليمين.
+2. **التصادم:** تأثير متبادل بين جسمين أو أكثر، أحدهما على الأقل متحرك، تؤثر خلاله الأجسام بعضها في بعض بقوة خلال فترة زمنية قصيرة نسبيًا.
 solution:
 المعطيات: كتلة الأول \\(4\\,\\mathrm{kg}\\) وسرعته \\(2\\,\\mathrm{m/s}\\) يميناً، وكتلة الثاني \\(2\\,\\mathrm{kg}\\) وسرعته \\(2\\,\\mathrm{m/s}\\) يساراً. نأخذ اليمين موجباً، ونسمي سرعتيهما بعد التصادم \\(v_{1f}\\) و\\(v_{2f}\\).
 
@@ -3375,6 +3434,10 @@ body:
 
 ![بندول بطول 1.8 m وجسم ساكن عند نقطة الاتزان.](assets/lessons/curriculum-evidence/765ace5205a1bf210776.webp)
 
+final-answer:
+1. **سرعة الكرة عند الاتزان:** \\(6\\,\\mathrm{m/s}\\).
+2. **سرعة الجسم بعد التصادم:** \\(2.4\\,\\mathrm{m/s}\\)، في اتجاه حركة الكرة قبل التصادم.
+3. **نوع التصادم:** مرن.
 solution:
 ![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/765ace5205a1bf210776.webp)
 
@@ -3525,6 +3588,8 @@ body:
 
 ![كتلة على مسار أملس من ارتفاع 5 m وكتلة ساكنة عند أسفله.](assets/lessons/curriculum-evidence/0e76cf39f969bdf47c20.webp)
 
+final-answer:
+**سرعة المجموعة:** \\(6.25\\,\\mathrm{m/s}\\)، في اتجاه حركة الكتلة الأولى قبل التصادم.
 solution:
 ![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/0e76cf39f969bdf47c20.webp)
 
@@ -3619,6 +3684,10 @@ body:
 
 ![الجسم المتحرك والجسم المعلق وموضعهما بعد التصادم والزاوية 37°.](assets/lessons/curriculum-evidence/a9df6d1bcaf3d8af3e5c.webp)
 
+final-answer:
+1. **السرعة المشتركة بعد التصادم:** \\(2\\,\\mathrm{m/s}\\).
+2. **سرعة الجسم الأول قبل التصادم:** \\(12\\,\\mathrm{m/s}\\).
+3. **الطاقة الحركية المفقودة:** \\(30\\,\\mathrm{J}\\).
 solution:
 ![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/a9df6d1bcaf3d8af3e5c.webp)
 
@@ -3783,6 +3852,9 @@ body:
 2. جد أكبر زاوية يصنعها خيط البندول مع الخط الرأسي \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>θ</mi></mrow></math>\`.
 
 ![البندول الخشبي في وضعيه وزاوية انحرافه θ.](assets/lessons/curriculum-evidence/96174843902369bc5a08.webp)
+final-answer:
+1. **سرعة الخشبة:** \\(\\frac{100}{9}\\,\\mathrm{m/s}\\approx11.11\\,\\mathrm{m/s}\\)، في اتجاه الرصاصة.
+2. **أكبر زاوية مع الرأسي:** \\(\\theta\\approx67.50^\\circ\\).
 solution:
 المعطيات: كتلة الرصاصة \\(0.2\\,\\mathrm{kg}\\)، وسرعتها قبل الاختراق \\(400\\,\\mathrm{m/s}\\) وبعده \\(300\\,\\mathrm{m/s}\\). كتلة الخشبة \\(1.8\\,\\mathrm{kg}\\)، وطول الخيط \\(10\\,\\mathrm{m}\\). نستخدم تقريب المنهج \\(g=10\\,\\mathrm{m/s^{2}}\\).
 
@@ -3907,6 +3979,9 @@ body:
 كرة فولاذية كتلتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1.5</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` وسرعتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\`، لحقت بها كرة فولاذية أخرى كتلتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0.5</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` وسرعتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\` واصطدمت بها على نفس خط تحركها الأفقي وفي اتجاه واحد، فأصبحت سرعة الكرة الثانية \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\` وبنفس اتجاه حركتها الأصلي. احسب:
 1. سرعة الكرة الأولى بعد التصادم مباشرة.
 2. الطاقة الحركية الضائعة نتيجة التصادم.
+final-answer:
+1. **سرعة الكرة الأولى:** \\(8\\,\\mathrm{m/s}\\)، في اتجاه حركتها الأصلي.
+2. **الطاقة الحركية الضائعة:** \\(0\\,\\mathrm{J}\\).
 solution:
 نستخدم حفظ الزخم لأن قوى التفاعل بين الأجسام داخلية، ونهمل الدفع الخارجي في الاتجاه المدروس خلال التصادم أو الإطلاق. نجمع الزخم مع إشارات السرعات؛ ولا نفترض حفظ طاقة الحركة إلا إذا كان التصادم مرنًا.
 
@@ -4023,6 +4098,8 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 19، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 كرة كتلتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` وتتحرك بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\`، اصطدمت بكرة أخرى ساكنة كتلتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\`. إذا تحركت الكرة الساكنة بعد التصادم مباشرة بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2.5</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\` على نفس الخط وبنفس اتجاه حركة الكرة الأولى قبل التصادم، احسب سرعة الكرة الأولى بعد التصادم.
+final-answer:
+**سرعة الكرة الأولى:** \\(4\\,\\mathrm{m/s}\\)، **عكس اتجاه حركتها قبل التصادم**.
 solution:
 نختار اتجاه حركة الكرة الأولى موجبًا. خلال التصادم نهمل الدفع الخارجي، فيبقى مجموع الزخم محفوظًا؛ والزخم هو حاصل ضرب الكتلة في السرعة بإشارتها.
 
@@ -4078,6 +4155,9 @@ body:
 
 ![مسار أملس من ارتفاع 3.2 m وموضعا الكتلتين m1 وm2.](assets/lessons/curriculum-evidence/d5e10d260fd2ac1b6e81.webp)
 
+final-answer:
+1. **سرعة الجسم الثاني:** \\(\\frac{16}{3}\\,\\mathrm{m/s}\\)، في اتجاه حركة الأول قبل التصادم.
+2. **أقصى ارتفاع للجسم الأول:** \\(\\frac{16}{45}\\,\\mathrm{m}\\approx0.356\\,\\mathrm{m}\\)، من أسفل المسار.
 solution:
 ![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/d5e10d260fd2ac1b6e81.webp)
 
@@ -4262,6 +4342,9 @@ reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 19، ا
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 كرة كتلتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0.4</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` تتحرك بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>v</mi></mrow></math>\` فتصطدم تصادمًا مرنًا بشكل مباشر بكرة أخرى كتلتها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0.6</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` ساكنة، فأصبحت سرعة الكرة الثانية بعد التصادم مباشرة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\` بنفس اتجاه حركة الكرة الأولى قبل التصادم. احسب سرعة الكرة الأولى قبل وبعد التصادم مباشرة.
+final-answer:
+- **قبل التصادم:** \\(3.75\\,\\mathrm{m/s}\\).
+- **بعد التصادم:** \\(0.75\\,\\mathrm{m/s}\\)، **عكس اتجاه حركتها الأصلي**.
 solution:
 نستخدم حفظ الزخم لأن قوى التفاعل بين الأجسام داخلية، ونهمل الدفع الخارجي في الاتجاه المدروس خلال التصادم أو الإطلاق. نجمع الزخم مع إشارات السرعات؛ ولا نفترض حفظ طاقة الحركة إلا إذا كان التصادم مرنًا.
 
@@ -4374,6 +4457,9 @@ body:
 جسم ساكن كتلته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` موضوع على سطح أفقي أملس، أثرت عليه قوة فأكسبته طاقة حركية مقدارها \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>324</mn></mrow></math>\` جول، ثم توقف تأثير القوة، فتابع الجسم حركته حتى التحم مع جسم آخر ساكن على نفس السطح كتلته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\`، وتحرك الجسمان معًا. جد:
 1. سرعة الجسمين بعد الالتحام مباشرة.
 2. التغير في طاقة حركة النظام.
+final-answer:
+1. **السرعة المشتركة بعد الالتحام:** \\(7.2\\,\\mathrm{m/s}\\)، في اتجاه حركة الجسم الأول.
+2. **التغير في طاقة الحركة:** \\(\\Delta K=-194.4\\,\\mathrm{J}\\).
 solution:
 نستخدم حفظ الزخم لأن قوى التفاعل بين الأجسام داخلية، ونهمل الدفع الخارجي في الاتجاه المدروس خلال التصادم أو الإطلاق. نجمع الزخم مع إشارات السرعات؛ ولا نفترض حفظ طاقة الحركة إلا إذا كان التصادم مرنًا.
 
@@ -4499,6 +4585,8 @@ body:
 
 ![رصاصة وبندول خشبي قبل الاصطدام وبعد الارتفاع.](assets/lessons/curriculum-evidence/048d158e8b2c14576339.webp)
 
+final-answer:
+**سرعة الرصاصة قبل الاصطدام:** \\(200\\,\\mathrm{m/s}\\).
 solution:
 نرمز لكتلة الرصاصة بالرمز \\(m\\)، وكتلة الخشب بالرمز \\(M\\)، ولسرعة الرصاصة قبل التصادم بالرمز \\(u\\)، والسرعة المشتركة بعده بالرمز \\(V\\).
 
@@ -4594,6 +4682,9 @@ body:
 
 ![موضعا البندول والجسم الساكن قبل التصادم وبعده، مع h وhf وسرعة الجسم.](assets/lessons/curriculum-evidence/0bdfb4db929e6e498ed3.webp)
 
+final-answer:
+1. **الارتفاع قبل التصادم:** \\(h=0.45\\,\\mathrm{m}\\).
+2. **أقصى ارتفاع بعد التصادم:** \\(h_f=0.1125\\,\\mathrm{m}\\).
 solution:
 ![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/0bdfb4db929e6e498ed3.webp)
 
@@ -4752,6 +4843,9 @@ body:
 2. مقدار الطاقة الحركية الناتجة من الانفجار.
 
 ![انفجار كتلة 2m إلى جزأين واتجاها حركتهما والزاوية θ.](assets/lessons/curriculum-evidence/4f55afef86a10a8be1bb.webp)
+final-answer:
+1. **الزاوية بين الجزأين:** \\(\\theta=120^\\circ\\).
+2. **الطاقة الحركية الناتجة من الانفجار:** \\(\\Delta K=\\frac{3}{4}mV^2\\).
 solution:
 نستخدم حفظ الزخم لأن قوى التفاعل بين الأجسام داخلية، ونهمل الدفع الخارجي في الاتجاه المدروس خلال التصادم أو الإطلاق. نجمع الزخم مع إشارات السرعات؛ ولا نفترض حفظ طاقة الحركة إلا إذا كان التصادم مرنًا.
 
@@ -4884,6 +4978,10 @@ body:
 جسم كتلته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` يتحرك في خط مستقيم أفقي بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>20</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\` على سطح أملس، فإذا اصطدم به عموديًا جسم آخر كتلته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` يتحرك بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>30</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\`، والتصق الجسمان وسارا معًا بالسرعة نفسها، احسب سرعة الجسمين الملتصقين بعد التصادم مباشرة مقدارًا واتجاهًا.
 
 ![التصادم العمودي بين الجسمين واتجاه السرعة المشتركة والزاوية θ.](assets/lessons/curriculum-evidence/e228ee9729b3fbe4cc9d.webp)
+final-answer:
+**السرعة المشتركة:** \\(\\frac{20\\sqrt{10}}{3}\\,\\mathrm{m/s}\\approx21.08\\,\\mathrm{m/s}\\).
+
+**الاتجاه:** بزاوية \\(71.57^\\circ\\) من اتجاه حركة الجسم الأول نحو الأسفل، كما في الرسم.
 solution:
 نستخدم حفظ الزخم لأن قوى التفاعل بين الأجسام داخلية، ونهمل الدفع الخارجي في الاتجاه المدروس خلال التصادم أو الإطلاق. نجمع الزخم مع إشارات السرعات؛ ولا نفترض حفظ طاقة الحركة إلا إذا كان التصادم مرنًا.
 
@@ -5013,6 +5111,10 @@ body:
 1. سرعة الجسم الأول قبل التصادم وبعد التصادم مباشرة.
 2. سرعة الجسم الثاني بعد التصادم مباشرة.
 3. كتلة الجسم الثاني.
+final-answer:
+1. **سرعة الجسم الأول:** قبل التصادم \\(20\\,\\mathrm{m/s}\\)، وبعده \\(\\frac{20}{3}\\,\\mathrm{m/s}\\) في الاتجاه المعاكس.
+2. **سرعة الجسم الثاني بعد التصادم:** \\(\\frac{40}{3}\\,\\mathrm{m/s}\\)، في اتجاه حركة الأول قبل التصادم.
+3. **كتلة الجسم الثاني:** \\(2\\,\\mathrm{kg}\\).
 solution:
 دفع القوة هو حاصل ضربها في زمن تأثيرها، ويساوي تغير الزخم. بما أن الجسم ساكن أولًا وعلى سطح أملس، يكون \\(F\\Delta t=m_{1}u_{1}\\)؛ فنقسم على كتلته لمعرفة سرعته قبل التصادم.
 
@@ -5131,6 +5233,9 @@ body:
 جسم كتلته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` يتحرك بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\` اصطدم بجسم آخر كتلته \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>\` يتحرك نحوه بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\`، وكان زمن التصادم \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0.1</mn><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>\` وقوة الدفع بينهما تساوي \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>60</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>\`، احسب:
 1. سرعة الجسمين بعد التصادم مباشرة.
 2. ما نوع التصادم؟
+final-answer:
+1. **سرعتا الجسمين:** الأول \\(2\\,\\mathrm{m/s}\\)، والثاني \\(4\\,\\mathrm{m/s}\\)، وكلاهما في اتجاه حركة الجسم الأول قبل التصادم.
+2. **نوع التصادم:** غير مرن.
 solution:
 نظرية الدفع والزخم تقول إن دفع القوة المحصلة يساوي تغير الزخم. نستخدمها هنا لربط القوة أو زمن تأثيرها بتغير سرعة الجسم، مع ثبات كتلته.
 

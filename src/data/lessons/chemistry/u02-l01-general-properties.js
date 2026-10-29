@@ -47,6 +47,8 @@ body:
 لديك المركبات الآتية: \\(\\mathrm{HI}\\char"060C\\mathrm{HCOOH}\\char"060C\\mathrm{KCN}\\char"060C\\mathrm{Sr(OH)_2}\\char"060C\\mathrm{CH_3NH_2}\\char"060C\\mathrm{(NH_4)_2SO_4}\\char"060C\\mathrm{NaClO_4}\\). حدد من هذه المركبات كل مما يلي:
 
 حمض قوي
+final-answer:
+**HI**
 solution:
 **الإجابة:** HI
 
@@ -71,6 +73,8 @@ body:
 لديك المركبات الآتية: \\(\\mathrm{HI}\\char"060C\\mathrm{HCOOH}\\char"060C\\mathrm{KCN}\\char"060C\\mathrm{Sr(OH)_2}\\char"060C\\mathrm{CH_3NH_2}\\char"060C\\mathrm{(NH_4)_2SO_4}\\char"060C\\mathrm{NaClO_4}\\). حدد من هذه المركبات كل مما يلي:
 
 قاعدة قوية
+final-answer:
+**Sr(OH)₂**
 solution:
 **الإجابة:** Sr(OH)₂
 
@@ -94,6 +98,8 @@ reference: [الملزمة، ص ١٣٨](https://chatgpt.com/api/library/files/li
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لديك المركبات: NH₄ClO₄، HCOOK، CH₃NH₂، CH₃OH، Ca(OH)₂، HBr، HNO₂. حدد الحمض القوي.
+final-answer:
+**HBr**
 solution:
 الإجابة: HBr؛ حمض قوي يتأين كلياً في الماء.
 
@@ -109,6 +115,8 @@ reference: [الملزمة، ص ١٣٨](https://chatgpt.com/api/library/files/li
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لديك المركبات: NH₄ClO₄، HCOOK، CH₃NH₂، CH₃OH، Ca(OH)₂، HBr، HNO₂. حدد القاعدة القوية.
+final-answer:
+**Ca(OH)₂**
 solution:
 الإجابة: Ca(OH)₂؛ يتفكك الجزء الذائب منه كلياً، وتعطي كل وحدة منه أيون Ca²⁺ وأيونَي OH⁻. قوة القاعدة لا تعني أن ذوبانها غير محدود.
 

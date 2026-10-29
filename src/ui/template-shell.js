@@ -132,6 +132,7 @@ export function mountTemplateScrollIndicator(container, { signal, surface = cont
     observer.disconnect();
     window.cancelAnimationFrame(frame);
   }, { once:true });
+  return update;
 }
 
 export function renderTemplateScrollIndicators({ scrollId, locale = "en", horizontal = false }) {

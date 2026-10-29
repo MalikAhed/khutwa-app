@@ -56,6 +56,8 @@ reference: [الرزمة التعليمية، ص ٤٥ (PDF ٤٧)](https://moe.ed
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 ما المقصود بكل من المصطلحات الآتية: تميه الأملاح
+final-answer:
+**تميه الأملاح:** قدرة بعض أيونات الأملاح على التفاعل مع الماء وإنتاج أيونات H₃O⁺ أو OH⁻ أو كليهما.
 solution:
 **تميه الأملاح:** «قدرة بعض أيونات الأملاح على التفاعل مع الماء وإنتاج أيوناتH₃O⁺ أوOH⁻ أوكليهما».
 
@@ -493,6 +495,8 @@ reference: [الملزمة، ص ١٣٣](https://chatgpt.com/api/library/files/li
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 فسر ما يلي: يسلك ملح NH4Cl سلوكًا حمضيًا عند إذابته في الماء. فسر ذلك.
+final-answer:
+**لأن أيون NH₄⁺ يتميه مولّدًا H₃O⁺، بينما لا يتميه Cl⁻ بصورة مؤثرة.**
 solution:
 التميه تفاعل أيون الملح مع الماء. يذوب NH₄Cl أولاً إلى أيوناته:
 
@@ -524,6 +528,8 @@ reference: [الملزمة، ص ١٣٣](https://chatgpt.com/api/library/files/li
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 فسر ما يلي: قيمة الرقم الهيدروجيني pH لمحلول الملح NH4Cl أقل من 7.
+final-answer:
+**لأن تميه NH₄⁺ يزيد تركيز H₃O⁺، فيكون المحلول حمضيًا وpH أقل من 7 عند 25°س.**
 solution:
 عند 25° س يكون pH المتعادل 7؛ انخفاضه يعني زيادة الهيدرونيوم. مصدر الزيادة هنا تميه NH₄⁺، حمض NH₃ الملازم، بعد ذوبان الملح.
 
@@ -555,6 +561,16 @@ reference: [الملزمة، ص ١٣٣](https://chatgpt.com/api/library/files/li
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 فسر ما يلي: سلوك محلول ملح إيثانوات الصوديوم CH3COONa. وضح ذلك بالمعادلات.
+final-answer:
+**المحلول قاعدي؛ يتميه CH₃COO⁻ مولّدًا OH⁻، بينما لا يتميه Na⁺.**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>N</mi><mi>a</mi><mo>→</mo><mi>N</mi><msup><mi>a</mi><mo>+</mo></msup><mo>+</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><msup><mi>O</mi><mo>−</mo></msup></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><msup><mi>O</mi><mo>−</mo></msup><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>⇌</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup></mrow></math>
+\`\`\`
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب.
 
@@ -599,6 +615,8 @@ body:
 
 
 أي الأيونات \\((\\mathrm{CN^-}\\) أم \\(\\mathrm{NO_2^-})\\) له قدرة أكبر على التميه؟
+final-answer:
+**CN⁻** أكثر قدرة على التميه.
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب. القاعدة الملازمة هي الحمض بعد فقد بروتون؛ كلما ضعف الحمض قويت قاعدته الملازمة وزاد تميهها عند تساوي التركيز.
 
@@ -642,6 +660,16 @@ body:
 
 
 فسر بالمعادلات السلوك القاعدي لمحلول ملح (KA).
+final-answer:
+**يتميه A⁻ مولّدًا OH⁻، بينما لا يتميه K⁺؛ لذا يكون المحلول قاعديًا.**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>K</mi><mi>A</mi><mo>→</mo><msup><mi>K</mi><mo>+</mo></msup><mo>+</mo><msup><mi>A</mi><mo>−</mo></msup></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mi>A</mi><mo>−</mo></msup><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>⇌</mo><mi>H</mi><mi>A</mi><mo>+</mo><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup></mrow></math>
+\`\`\`
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب.
 
@@ -688,6 +716,8 @@ body:
 
 ما رمز المحلول الذي صيغته يمكن أن تمثل الملح (CH3COOK)؟
 
+final-answer:
+**المحلول E.**
 solution:
 المقصود تصنيف المحاليل نوعيًا في الجدول: حمض قوي أو ضعيف، ملح متعادل أو حمضي أو قاعدي، وقاعدة قوية أو ضعيفة. عند٢٥°س يكونpH=٧ متعادلًا، والأصغر حمضيًا والأكبر قاعديًا.
 
@@ -727,6 +757,8 @@ body:
 
 ما رمز المحلول الذي ينتج من تمام تعادل حمض قوي وقاعدة ضعيفة دون فائض منهما؟
 
+final-answer:
+**المحلول A.**
 solution:
 المقصود تصنيف المحاليل نوعيًا في الجدول: حمض قوي أو ضعيف، ملح متعادل أو حمضي أو قاعدي، وقاعدة قوية أو ضعيفة. عند٢٥°س يكونpH=٧ متعادلًا، والأصغر حمضيًا والأكبر قاعديًا.
 
@@ -756,6 +788,16 @@ body:
 
 
 فسر السلوك الحمضي لمحلول الملح CH3NH3Cl مستعينًا بالمعادلات.
+final-answer:
+**يتميه CH₃NH₃⁺ مولّدًا H₃O⁺، بينما لا يتميه Cl⁻؛ لذا يكون المحلول حمضيًا.**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>N</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>l</mi><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>N</mi><msubsup><mi>H</mi><mn>3</mn><mo>+</mo></msubsup><mo>+</mo><mi>C</mi><msup><mi>l</mi><mo>−</mo></msup></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>N</mi><msubsup><mi>H</mi><mn>3</mn><mo>+</mo></msubsup><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>⇌</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>N</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup></mrow></math>
+\`\`\`
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب.
 
@@ -800,6 +842,8 @@ body:
 
 ما رمز محلول ملح NaCl؟
 
+final-answer:
+**المحلول C.**
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب.
 
@@ -819,6 +863,8 @@ body:
 لديك المركبات الآتية: \\(\\mathrm{HI}\\char"060C\\mathrm{HCOOH}\\char"060C\\mathrm{KCN}\\char"060C\\mathrm{Sr(OH)_2}\\char"060C\\mathrm{CH_3NH_2}\\char"060C\\mathrm{(NH_4)_2SO_4}\\char"060C\\mathrm{NaClO_4}\\). حدد من هذه المركبات كل مما يلي:
 
 ملح لا يتميه
+final-answer:
+**NaClO₄.**
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب.
 
@@ -838,6 +884,8 @@ body:
 لديك المركبات الآتية: \\(\\mathrm{HI}\\char"060C\\mathrm{HCOOH}\\char"060C\\mathrm{KCN}\\char"060C\\mathrm{Sr(OH)_2}\\char"060C\\mathrm{CH_3NH_2}\\char"060C\\mathrm{(NH_4)_2SO_4}\\char"060C\\mathrm{NaClO_4}\\). حدد من هذه المركبات كل مما يلي:
 
 ملح محلوله المائي حمضي
+final-answer:
+**(NH₄)₂SO₄.**
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب.
 
@@ -880,6 +928,8 @@ body:
 
 
 ملح مشتق من حمض قوي وقاعدة قوية
+final-answer:
+**D.**
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب.
 
@@ -906,6 +956,8 @@ body:
 
 
 ملح محلوله له أثر حمضي
+final-answer:
+**C.**
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب.
 
@@ -925,6 +977,8 @@ body:
 لديك المركبات الآتية: \\((\\mathrm{NH_4ClO_4}\\char"060C\\mathrm{HCOOK}\\char"060C\\mathrm{CH_3NH_2}\\char"060C\\mathrm{CH_3OH}\\char"060C\\mathrm{Ca(OH)_2}\\char"060C\\mathrm{HBr}\\char"060C\\mathrm{HNO_2})\\) حدد منها ما يأتي:
 
 ملح محلوله المائي حمضي
+final-answer:
+**NH₄ClO₄.**
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب.
 
@@ -952,6 +1006,8 @@ body:
 لديك المركبات الآتية: \\((\\mathrm{NH_4ClO_4}\\char"060C\\mathrm{HCOOK}\\char"060C\\mathrm{CH_3NH_2}\\char"060C\\mathrm{CH_3OH}\\char"060C\\mathrm{Ca(OH)_2}\\char"060C\\mathrm{HBr}\\char"060C\\mathrm{HNO_2})\\) حدد منها ما يأتي:
 
 ملح محلوله المائي قاعدي
+final-answer:
+**HCOOK.**
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب.
 
@@ -977,6 +1033,12 @@ reference: [الملزمة، ص ١٣٨](https://chatgpt.com/api/library/files/li
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 رتب محاليل المواد الآتية المتساوية في التركيز حسب الرقم الهيدروجيني pH: \\(\\mathrm{KOH}\\char"060C\\mathrm{NH_4NO_3}\\char"060C\\mathrm{HClO_4}\\char"060C\\mathrm{NaNO_3}\\char"060C\\mathrm{KF}\\)
+final-answer:
+**الترتيب التصاعدي حسب pH:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>H</mi><mi>C</mi><mi>l</mi><msub><mi>O</mi><mn>4</mn></msub><mo stretchy="false">)</mo><mo>&lt;</mo><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>N</mi><msub><mi>H</mi><mn>4</mn></msub><mi>N</mi><msub><mi>O</mi><mn>3</mn></msub><mo stretchy="false">)</mo><mo>&lt;</mo><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>N</mi><mi>a</mi><mi>N</mi><msub><mi>O</mi><mn>3</mn></msub><mo stretchy="false">)</mo><mo>&lt;</mo><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>K</mi><mi>F</mi><mo stretchy="false">)</mo><mo>&lt;</mo><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>K</mi><mi>O</mi><mi>H</mi><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب.
 
@@ -1013,6 +1075,12 @@ body:
 
 
 رتب محاليل أملاح الصوديوم NaD، NaA متساوية التركيز حسب pH.
+final-answer:
+**الترتيب التصاعدي حسب pH:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>N</mi><mi>a</mi><mi>D</mi><mo stretchy="false">)</mo><mo>&lt;</mo><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>N</mi><mi>a</mi><mi>A</mi><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 solution:
 تميه الملح هو تفاعل أيوناته مع الماء. أيون مشتق من حمض ضعيف يستقبل بروتونًا من الماء فيولدOH⁻؛ وأيون مشتق من قاعدة ضعيفة يمنح الماء بروتونًا فيولدH₃O⁺. نهمل تميه أيونات الحمض القوي والقاعدة القوية في نموذج الكتاب. pH الأصغر يعنيH₃O⁺ أكثر؛ عند تساوي التركيز يدل ذلك على حمض أقوى وقاعدة ملازمة أضعف.
 
@@ -1039,6 +1107,12 @@ reference: [الملزمة، ص ١٣٩](https://chatgpt.com/api/library/files/li
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 HX و HY و HZ حموض ضعيفة أحادية البروتون. الحمض HY أضعف من HX، والقاعدة Z⁻ أقوى من Y⁻. رتب محاليل الأملاح KX و KY و KZ تصاعدياً حسب pH، إذا كانت تراكيزها متساوية وعند 25°س. اعتبر K⁺ أيوناً لا يتميه.
+final-answer:
+**الترتيب التصاعدي حسب pH:**
+
+\`\`\`mathml
+<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>K</mi><mi>X</mi><mo stretchy="false">)</mo><mo>&lt;</mo><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>K</mi><mi>Y</mi><mo stretchy="false">)</mo><mo>&lt;</mo><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>K</mi><mi>Z</mi><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 solution:
 لأن HY أضعف من HX، تكون قاعدته Y⁻ أقوى من X⁻. ونضم إلى ذلك المعطى Z⁻ أقوى من Y⁻.
 

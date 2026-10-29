@@ -12,6 +12,8 @@ Word bank: rule out - dropped - astonishing - trial - infuriated - reserve - jud
 
 It’s a good idea to have a **second choice** plan in case the first one doesn’t work.
 
+final-answer:
+It’s a good idea to have a **reserve** plan in case the first one doesn’t work.
 solution:
 **الإجابة:** It’s a good idea to have a reserve plan in case the first one doesn’t work.
 
@@ -45,6 +47,8 @@ Word bank: rule out - dropped - astonishing - trial - infuriated - reserve - jud
 
 They agreed to employ him for a **test** period to see if he was suitable.
 
+final-answer:
+They agreed to employ him for a **trial** period to see if he was suitable.
 solution:
 **الإجابة:** They agreed to employ him for a trial period to see if he was suitable.
 
@@ -78,6 +82,8 @@ Word bank: rule out - dropped - astonishing - trial - infuriated - reserve - jud
 
 The idea of speaking in front of hundreds of people fills me with **great fear**.
 
+final-answer:
+The idea of speaking in front of hundreds of people fills me with **terror**.
 solution:
 **الإجابة:** The idea of speaking in front of hundreds of people fills me with terror.
 
@@ -111,6 +117,8 @@ Word bank: rule out - dropped - astonishing - trial - infuriated - reserve - jud
 
 I can’t choose between them. There’s no way of **deciding which is acceptable**.
 
+final-answer:
+I can’t choose between them. There’s no way of **judging**.
 solution:
 **الإجابة:** I can’t choose between them. There’s no way of judging.
 
@@ -146,6 +154,8 @@ Word bank: rule out - dropped - astonishing - trial - infuriated - reserve - jud
 
 When he read the team list, he saw that he had been **left out**.
 
+final-answer:
+When he read the team list, he saw that he had been **dropped**.
 solution:
 **الإجابة:** When he read the team list, he saw that he had been dropped.
 
@@ -179,6 +189,8 @@ Word bank: rule out - dropped - astonishing - trial - infuriated - reserve - jud
 
 I was really **very angry** by the rude comments in his article.
 
+final-answer:
+I was really **infuriated** by the rude comments in his article.
 solution:
 **الإجابة:** I was really infuriated by the rude comments in his article.
 
@@ -212,6 +224,8 @@ Word bank: rule out - dropped - astonishing - trial - infuriated - reserve - jud
 
 I find it absolutely **very surprising** that you didn’t like it.
 
+final-answer:
+I find it absolutely **astonishing** that you didn’t like it.
 solution:
 **الإجابة:** I find it absolutely astonishing that you didn’t like it.
 
@@ -244,6 +258,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: get on - objective - criteria - promising - infuriated
 
 What are the .............. for being accepted on the course? (the reasons and qualifications)
+final-answer:
+What are the **criteria** for being accepted on the course?
 solution:
 **الإجابة:** What are the criteria for being accepted on the course?
 
@@ -276,6 +292,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: get on - objective - criteria - promising - infuriated
 
 We need to look at the facts and reach a decision that is .............. (not based on personal opinions)
+final-answer:
+We need to look at the facts and reach a decision that is **objective**.
 solution:
 **الإجابة:** We need to look at the facts and reach a decision that is objective.
 
@@ -308,6 +326,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: get on - objective - criteria - promising - infuriated
 
 This plan isn’t perfect yet, but it’s a very .............. one. (having future possibilities)
+final-answer:
+This plan isn’t perfect yet, but it’s a very **promising** one.
 solution:
 **الإجابة:** This plan isn’t perfect yet, but it’s a very promising one.
 
@@ -340,6 +360,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: get on - objective - criteria - promising - infuriated
 
 We .............. quite well, but we’re not really close friends. (have a good relationship)
+final-answer:
+We **get on** quite well, but we’re not really close friends.
 solution:
 **الإجابة:** We get on quite well, but we’re not really close friends.
 
@@ -372,6 +394,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: get on - objective - criteria - promising - infuriated
 
 I was .............. by the rude comments in his article. (made me very angry)
+final-answer:
+I was **infuriated** by the rude comments in his article.
 solution:
 **الإجابة:** I was infuriated by the rude comments in his article.
 
@@ -404,6 +428,8 @@ Complete the sentences with words from the box.
 Word bank: astonishing - trial (2) - tragedy - drop - infuriated - objective - criteria
 
 When she found that the French course was too difficult, she decided to .............. it.
+final-answer:
+When she found that the French course was too difficult, she decided to **drop** it.
 solution:
 drop a course تعني يترك المقرر. بعد decided to يأتي الفعل المجرد drop؛ صعوبة الدورة سبب تركها.
 
@@ -425,6 +451,8 @@ Complete the sentences with words from the box.
 Word bank: astonishing - trial (2) - tragedy - drop - infuriated - objective - criteria
 
 There are various .............. for acceptance in specific studies at university.
+final-answer:
+There are various **criteria** for acceptance in specific studies at university.
 solution:
 various و are يدلان على الجمع؛ نستخدم criteria بمعنى معايير قبول، ومفردها criterion.
 
@@ -446,6 +474,8 @@ Complete the sentences with words from the box.
 Word bank: astonishing - trial (2) - tragedy - drop - infuriated - objective - criteria
 
 The pilot avoided a .............. when he succeeded in preventing the plane from crashing.
+final-answer:
+The pilot avoided a **tragedy** when he succeeded in preventing the plane from crashing.
 solution:
 tragedy مأساة أو كارثة؛ منع التحطم يعني تجنب كارثة. وجود a يتطلب المفرد tragedy لا الجمع tragedies.
 
@@ -467,6 +497,8 @@ Complete the sentences with words from the box.
 Word bank: astonishing - trial (2) - tragedy - drop - infuriated - objective - criteria
 
 A man should be fair and .............. when judging his son’s work.
+final-answer:
+A man should be fair and **objective** when judging his son’s work.
 solution:
 objective تعني يحكم بحسب الأدلة دون تحيز شخصي؛ حتى عند تقييم عمل ابنه يجب ألا تغلب العاطفة على الحكم.
 
@@ -488,6 +520,8 @@ Complete the sentences with words from the box.
 Word bank: astonishing - trial (2) - tragedy - drop - infuriated - objective - criteria
 
 What really .............. me was the fact that he'd lied.
+final-answer:
+What really **infuriated** me was the fact that he'd lied.
 solution:
 الكذب هو ما أثار الغضب الشديد؛ نستخدم الفعل infuriated في الماضي، ويتلقى me أثر الغضب.
 
@@ -509,6 +543,8 @@ Complete the sentences with words from the box.
 Word bank: astonishing - trial (2) - tragedy - drop - infuriated - objective - criteria
 
 That player is really .............. . I can't believe he scored 5 goals in one match.
+final-answer:
+That player is really **astonishing**. I can't believe he scored 5 goals in one match.
 solution:
 astonishing تعني مدهشًا جدًا؛ إحراز خمسة أهداف هو ما يثير الدهشة، فنصف اللاعب بما يسببه من إعجاب.
 
@@ -530,6 +566,8 @@ Complete the sentences with words from the box.
 Word bank: astonishing - trial (2) - tragedy - drop - infuriated - objective - criteria
 
 The system was introduced on a .............. basis for one month.
+final-answer:
+The system was introduced on a **trial** basis for one month.
 solution:
 on a trial basis تعني على سبيل التجربة؛ الشهر المحدد يتيح اختبار النظام قبل اعتماده النهائي.
 
@@ -551,6 +589,8 @@ Complete the sentences with words from the box.
 Word bank: astonishing - trial (2) - tragedy - drop - infuriated - objective - criteria
 
 They let me have the computer set on .............. for thirty days.
+final-answer:
+They let me have the computer set on **trial** for thirty days.
 solution:
 on trial تعني قيد التجربة؛ الثلاثون يومًا فترة لاختبار الجهاز، لا محاكمة في هذا السياق.
 
@@ -572,6 +612,8 @@ Fill in the following sentences by replacing the words in brackets with words fr
 Word bank: Amateur - judging - criteria - infuriating - astonishing
 
 There are **reasons and qualifications** for being accepted on this course.
+final-answer:
+There are **criteria** for being accepted on this course.
 solution:
 **الإجابة:** There are criteria for being accepted on this course.
 
@@ -605,6 +647,8 @@ Fill in the sentence with a word from the box that means “making people very a
 Word bank: amateur — judging — criteria — infuriating — astonishing
 
 It’s .............. when people keep spelling your name wrongly, isn’t it?
+final-answer:
+It’s **infuriating** when people keep spelling your name wrongly, isn’t it?
 solution:
 المطلوب وصف شيء يسبب الغضب للناس، وليس وصف شخص يشعر بالغضب.
 
@@ -633,6 +677,8 @@ Word bank: amateur — judging — criteria — infuriating — astonishing
 
 We are always **deciding which is acceptable** when we compare the two proposals.
 
+final-answer:
+We are always **judging** when we compare the two proposals.
 solution:
 العبارة deciding which is acceptable تعني إصدار حكم بشأن ما يمكن قبوله.
 
@@ -659,6 +705,8 @@ Complete the sentences with suitable words from the box:
 Word bank: rule out - get on with - criteria - trial - judging - objective
 
 I can’t choose between them. There is no way of ..............
+final-answer:
+I can’t choose between them. There is no way of **judging**.
 solution:
 بعد of نستخدم judging بصيغة ing؛ والمعنى عدم وجود وسيلة للحكم بين الخيارين واختيار المقبول.
 
@@ -680,6 +728,8 @@ Complete the sentences with suitable words from the box:
 Word bank: rule out - get on with - criteria - trial - judging - objective
 
 He isn't a clear choice, but I wouldn't .............. the young player.
+final-answer:
+He isn't a clear choice, but I wouldn't **rule out** the young player.
 solution:
 rule out تعني يستبعد. wouldn't rule out تعني لا يستبعد اللاعب رغم أنه ليس الاختيار الواضح؛ وبعد would يأتي rule مجردًا.
 
@@ -701,6 +751,8 @@ Complete the sentences with suitable words from the box:
 Word bank: rule out - get on with - criteria - trial - judging - objective
 
 Try to get .............. judgment or assessment. I hope you won't be affected by others.
+final-answer:
+Try to get **objective** judgment or assessment. I hope you won't be affected by others.
 solution:
 objective تعني موضوعيًا مستقلًا عن الآراء الشخصية؛ الرجاء ألا يتأثر بالآخرين يوضح سبب اختيارها.
 
@@ -722,6 +774,8 @@ Complete the sentences with suitable words from the box:
 Word bank: rule out - get on with - criteria - trial - judging - objective
 
 I have appointed a secretary for a .............. period to see how she does the job.
+final-answer:
+I have appointed a secretary for a **trial** period to see how she does the job.
 solution:
 trial period فترة تجريبية؛ الهدف المذكور to see how يفسر أنها لاختبار ملاءمة الموظفة للعمل.
 
@@ -743,6 +797,8 @@ Complete the sentences with suitable words from the box:
 Word bank: rule out - get on with - criteria - trial - judging - objective
 
 What are the .............. for being accepted on the course?
+final-answer:
+What are the **criteria** for being accepted on the course?
 solution:
 criteria هي معايير القبول. هي جمع؛ لذلك تتفق مع are، وليس criterion المفرد.
 
@@ -764,6 +820,8 @@ Complete the sentences with suitable words from the box:
 Word bank: rule out - get on with - criteria - trial - judging - objective
 
 She found it difficult to .............. her friends, possibly because of the difference in their ages.
+final-answer:
+She found it difficult to **get on with** her friends, possibly because of the difference in their ages.
 solution:
 get on with someone تعني تكون على علاقة طيبة معه؛ اختلاف الأعمار قد يصعب التفاهم. بعد difficult to يأتي get مجردًا، وتربط with الأصدقاء بالتعبير.
 
@@ -785,6 +843,8 @@ Complete the sentences using the words in the box with (under / over).
 Word bank: cook - confident - paid - charge
 
 He is angry because he thinks he is .............. for the work he does.
+final-answer:
+He is angry because he thinks he is **underpaid** for the work he does.
 solution:
 under- تضيف معنى أقل من اللازم؛ underpaid تعني أجره أقل مما يستحق. غضبه من أجره هو قرينة الاختيار، و paid التصريف الثالث من pay.
 
@@ -806,6 +866,8 @@ Complete the sentences using the words in the box with (under / over).
 Word bank: cook - confident - paid - charge
 
 Don't buy tickets from strangers outside the stadium. They often .............. you.
+final-answer:
+Don't buy tickets from strangers outside the stadium. They often **overcharge** you.
 solution:
 over- تعني أكثر من اللازم؛ overcharge يطلب سعرًا مبالغًا فيه. الفاعل they جمع، فيبقى الفعل دون s.
 
@@ -827,6 +889,8 @@ Complete the sentences using the words in the box with (under / over).
 Word bank: cook - confident - paid - charge
 
 They should be neither proud nor .............. and hopeless about their success.
+final-answer:
+They should be neither proud nor **underconfident** and hopeless about their success.
 solution:
 under- تفيد النقص؛ underconfident تعني ضعيف الثقة. اقترانها بـ hopeless يدل على الطرف السلبي في مقابلة الغرور proud.
 
@@ -849,6 +913,8 @@ Word bank: cook - confident - paid - charge
 
 If you .............. the meat, it may still be raw inside.
 
+final-answer:
+If you **undercook** the meat, it may still be raw inside.
 solution:
 under- تعني أقل من القدر المطلوب؛ undercook تعني عدم طهو الطعام بالقدر الكافي. بقاء اللحم نيئًا من الداخل يحدد معنى النقص، ولا يعتمد الجواب على مدة طهو واحدة تصلح لجميع أنواع اللحم.
 
@@ -869,6 +935,8 @@ Complete the sentences using words in the box with (Over, under).
 Word bank: paying - charge (2) - work (2) - rated - cooked
 
 Many firms were illegally .............. workers. That's why they think of going on strike.
+final-answer:
+Many firms were illegally **underpaying** workers. That's why they think of going on strike.
 solution:
 underpay تعني يدفع أقل من المستحق. were تحتاج صيغة ing للماضي المستمر: underpaying؛ احتجاج العمال يلائم نقص الأجر.
 
@@ -892,6 +960,8 @@ Complete the sentences using words in the box with (Over, under).
 Word bank: paying - charge (2) - work (2) - rated - cooked
 
 Being .............. by their employer, most workers decided to leave the company.
+final-answer:
+Being **underrated** by their employer, most workers decided to leave the company.
 solution:
 underrated تعني مقدَّرين بأقل من قيمتهم أو قدراتهم؛ نقص تقدير صاحب العمل يفسر الرحيل. بعد Being في المبني للمجهول نستخدم rated، التصريف الثالث، مع under-.
 
@@ -913,6 +983,8 @@ Complete the sentences using words in the box with (Over, under).
 Word bank: paying - charge (2) - work (2) - rated - cooked
 
 When people .............., they may get very tired.
+final-answer:
+When people **overwork**, they may get very tired.
 solution:
 over- تفيد الإفراط؛ overwork يعني يعملون أكثر مما ينبغي، وهو سبب التعب المذكور. people جمع، فلا نضيف s.
 
@@ -934,6 +1006,8 @@ Complete the sentences using words in the box with (Over, under).
 Word bank: paying - charge (2) - work (2) - rated - cooked
 
 The gift shop in Paris usually .............. tourists. They raise the prices a lot.
+final-answer:
+The gift shop in Paris usually **overcharges** tourists. They raise the prices a lot.
 solution:
 overcharge تعني يتقاضى سعرًا زائدًا، و raise the prices هي القرينة. الفاعل shop مفرد، فنضيف s: overcharges. المدينة تسبقها in، و tourists جمع يدل على السياح عموماً.
 
@@ -955,6 +1029,8 @@ Complete the sentences using words in the box with (Over, under).
 Word bank: paying - charge (2) - work (2) - rated - cooked
 
 People may become infected after eating tough and .............. meat.
+final-answer:
+People may become infected after eating tough and **undercooked** meat.
 solution:
 under- تعني دون القدر الكافي؛ undercooked لحم لم يطه جيدًا. بعد eating نحتاج وصفًا للاسم meat، فيأتي التصريف الثالث cooked مع السابقة under-.
 
@@ -976,6 +1052,8 @@ Complete the sentences using words in the box with (Over, under).
 Word bank: paying - charge (2) - work (2) - rated - cooked
 
 When you .............. more than 12 hours, you look exhausted.
+final-answer:
+When you **overwork** more than 12 hours, you look exhausted.
 solution:
 overwork يعني تفرط في العمل؛ ذكر أكثر من 12 ساعة والإرهاق يحدد معنى الزيادة. مع you يبقى الفعل المجرد overwork في المضارع.
 
@@ -998,6 +1076,8 @@ Word bank: Confident (2) - pays - cooked - worked - rated - paid (3) - charge
 
 Ali earns less than the usual salary for his work. Even though he is .............. at his job, he loves it.
 
+final-answer:
+Ali earns less than the usual salary for his work. Even though he is **underpaid** at his job, he loves it.
 solution:
 under- تعني أقل من اللازم؛ و underpaid تعني أن الأجر أقل من المعتاد أو مما يستحقه العمل. ذكر الراتب المنخفض في الجملة الأولى يحدد هذا المعنى، ثم Even though تربط قلة الأجر بحب علي لعمله رغم ذلك.
 
@@ -1018,6 +1098,8 @@ Complete the sentences using words in the box with (Over, under):
 Word bank: Confident (2) - pays - cooked - worked - rated - paid (3) - charge
 
 Don't be ..............; you are capable of doing more than you realize.
+final-answer:
+Don't be **underconfident**; you are capable of doing more than you realize.
 solution:
 underconfident تعني أقل ثقة بنفسك مما ينبغي؛ تذكيره بقدرته الأكبر يدل على أن المشكلة نقص الثقة لا زيادتها.
 
@@ -1039,6 +1121,8 @@ Complete the sentences using words in the box with (Over, under):
 Word bank: Confident (2) - pays - cooked - worked - rated - paid (3) - charge
 
 The company .............. its workers because of the financial problems it faces.
+final-answer:
+The company **underpays** its workers because of the financial problems it faces.
 solution:
 المشاكل المالية تفسر دفع أجور أقل من المستحق: underpay. company مفرد في المضارع، فنضيف s: underpays.
 
@@ -1060,6 +1144,8 @@ Complete the sentences using words in the box with (Over, under):
 Word bank: Confident (2) - pays - cooked - worked - rated - paid (3) - charge
 
 Some small shops often try to .............. tourists while shopping.
+final-answer:
+Some small shops often try to **overcharge** tourists while shopping.
 solution:
 overcharge تعني تطلب سعرًا أكبر من المناسب. بعد try to نستخدم الفعل المجرد دون s؛ tourists هم من يدفعون السعر الزائد.
 
@@ -1081,6 +1167,8 @@ Complete the sentences using words in the box with (Over, under):
 Word bank: Confident (2) - pays - cooked - worked - rated - paid (3) - charge
 
 Don't be .............. . You never know when something goes wrong.
+final-answer:
+Don't be **overconfident**. You never know when something goes wrong.
 solution:
 التحذير من احتمال الفشل يدعو لتجنب الثقة المفرطة؛ over- تضيف معنى أكثر من اللازم إلى confident.
 
@@ -1102,6 +1190,8 @@ Complete the sentences using words in the box with (Over, under):
 Word bank: Confident (2) - pays - cooked - worked - rated - paid (3) - charge
 
 I don't think there are people as good as you say; they are ..............
+final-answer:
+I don't think there are people as good as you say; they are **overrated**.
 solution:
 overrated تعني أن تقييمهم أعلى من حقيقتهم؛ قول المتكلم إنهم ليسوا بالجودة المزعومة يحدد المبالغة في التقدير.
 
@@ -1123,6 +1213,8 @@ Complete the sentences using words in the box with (Over, under):
 Word bank: Confident (2) - pays - cooked - worked - rated - paid (3) - charge
 
 He's angry because he receives little money for the huge work he does, so he is ..............
+final-answer:
+He's angry because he receives little money for the huge work he does, so he is **underpaid**.
 solution:
 قلة المال مقارنة بحجم العمل تشير إلى أجر دون المستحق. نركب under- + paid؛ paid التصريف الثالث من pay بعد is.
 
@@ -1144,6 +1236,8 @@ Complete the sentences using words in the box with (Over, under):
 Word bank: Confident (2) - pays - cooked - worked - rated - paid (3) - charge
 
 Eating .............. meat may hurt your stomach.
+final-answer:
+Eating **undercooked** meat may hurt your stomach.
 solution:
 under- تفيد النقص؛ undercooked تصف اللحم غير المطهو كفاية، وهو المعنى الذي يلائم التحذير في الجملة.
 
@@ -1166,6 +1260,8 @@ Word bank: Confident (2) - pays - cooked - worked - rated - paid (3) - charge
 
 When people .............. in the factory last year, they often felt very tired.
 
+final-answer:
+When people **overworked** in the factory last year, they often felt very tired.
 solution:
 over- تفيد الإفراط. الكلمة المعطاة worked هي الماضي من work، فتكون overworked بمعنى أفرطوا في العمل.
 
@@ -1188,6 +1284,8 @@ Complete the sentences using words in the box with (Over, under):
 Word bank: Confident (2) - pays - cooked - worked - rated - paid (3) - charge
 
 The factory workers are .............. even though they work for long hours.
+final-answer:
+The factory workers are **underpaid** even though they work for long hours.
 solution:
 even though تقابل كثرة ساعات العمل بقلة الأجر؛ لذلك underpaid. are تتبعها paid تصريفًا ثالثًا مع under-.
 

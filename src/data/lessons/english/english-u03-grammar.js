@@ -10,6 +10,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 When I ………… (enter) the shop I realized I ………… (forget) the money at home.
+final-answer:
+When I **entered** the shop I realized I **had forgotten** the money at home.
 solution:
 **Answer:** When I entered the shop I realized I had forgotten the money at home.
 
@@ -31,6 +33,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 The boy fell while he ………… the garden’s wall. (climb)
+final-answer:
+The boy fell while he **was climbing** the garden’s wall.
 solution:
 **Answer:** The boy fell while he was climbing the garden’s wall.
 
@@ -52,6 +56,9 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 I ………… to him many times before he replied. (write)
+final-answer:
+- I **had written** to him many times before he replied.
+- I **wrote** to him many times before he replied.
 solution:
 **Answer:** I had written to him many times before he replied.
 
@@ -75,6 +82,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 While Jamal ………… (travel) home, he realized that he ………… the keys. (forget)
+final-answer:
+While Jamal **was travelling** home, he realized that he **had forgotten** the keys.
 solution:
 **Answer:** While Jamal was travelling home, he realized that he had forgotten the keys.
 
@@ -96,6 +105,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 Our teacher was absent yesterday, so we ………… the exam. (not take)
+final-answer:
+Our teacher was absent yesterday, so we **didn’t take** the exam.
 solution:
 **Answer:** Our teacher was absent yesterday, so we didn’t take the exam.
 
@@ -117,6 +128,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 While I ………… (work) in the garden, I ………… (hurt) my back.
+final-answer:
+While I **was working** in the garden, I **hurt** my back.
 solution:
 **Answer:** While I was working in the garden, I hurt my back.
 
@@ -138,6 +151,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 The accident took place while the students ………… the street. (cross)
+final-answer:
+The accident took place while the students **were crossing** the street.
 solution:
 **Answer:** The accident took place while the students were crossing the street.
 
@@ -159,6 +174,9 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 She ………… a bear before she moved to Alaska. (not see)
+final-answer:
+- She **hadn’t seen** a bear before she moved to Alaska.
+- She **didn’t see** a bear before she moved to Alaska.
 solution:
 **Answer:** She hadn’t seen a bear before she moved to Alaska.
 
@@ -182,6 +200,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 When I returned home, I realized I ………… my keys. (forget)
+final-answer:
+When I returned home, I realized I **had forgotten** my keys.
 solution:
 **Answer:** When I returned home, I realized I had forgotten my keys.
 
@@ -203,6 +223,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 The teacher asked the student to come back later because he ………… . (work)
+final-answer:
+The teacher asked the student to come back later because he **was working**.
 solution:
 **Answer:** The teacher asked the student to come back later because he was working.
 
@@ -224,6 +246,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 While the teacher ………… (explain) the lesson, the headmistress ………… (enter).
+final-answer:
+While the teacher **was explaining** the lesson, the headmistress **entered**.
 solution:
 **Answer:** While the teacher was explaining the lesson, the headmistress entered.
 
@@ -245,6 +269,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 As I ………… to school, it rained. (walk)
+final-answer:
+As I **was walking** to school, it rained.
 solution:
 **Answer:** As I was walking to school, it rained.
 
@@ -267,6 +293,8 @@ Complete the sentence using the past perfect to mark the earlier completed actio
 
 He was happy yesterday because he ………… the joyful days of childhood. (recall)
 
+final-answer:
+He was happy yesterday because he **had recalled** the joyful days of childhood.
 solution:
 **Answer:** He was happy yesterday because he had recalled the joyful days of childhood.
 
@@ -288,6 +316,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 We ………… home until very late last night. (not get)
+final-answer:
+We **didn’t get** home until very late last night.
 solution:
 **Answer:** We didn’t get home until very late last night.
 
@@ -309,6 +339,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 I ………… music coming from my neighbor’s apartment last night. (hear)
+final-answer:
+I **heard** music coming from my neighbor’s apartment last night.
 solution:
 **Answer:** I heard music coming from my neighbor’s apartment last night.
 
@@ -330,6 +362,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 I saw that most people ………… already ………… the party when I arrived. (leave)
+final-answer:
+I saw that most people **had already left** the party when I arrived.
 solution:
 **Answer:** I saw that most people had already left the party when I arrived.
 
@@ -351,6 +385,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 When they got home last night, they ………… (find) that somebody ………… (break into) their apartment.
+final-answer:
+When they got home last night, they **found** that somebody **had broken into** their apartment.
 solution:
 **Answer:** When they got home last night, they found that somebody had broken into their apartment.
 
@@ -372,6 +408,9 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 Nuha ………… a frightening movie at ten p.m. last night. (watch)
+final-answer:
+- Nuha **was watching** a frightening movie at ten p.m. last night.
+- Nuha **watched** a frightening movie at ten p.m. last night.
 solution:
 **Answer:** Nuha was watching a frightening movie at ten p.m. last night.
 
@@ -395,6 +434,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 She ………… (have) a beautiful dream when the alarm clock ………… (ring).
+final-answer:
+She **was having** a beautiful dream when the alarm clock **rang**.
 solution:
 **Answer:** She was having a beautiful dream when the alarm clock rang.
 
@@ -416,6 +457,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 They decided to go for a walk while the sun ………… (shine).
+final-answer:
+They decided to go for a walk while the sun **was shining**.
 solution:
 **Answer:** They decided to go for a walk while the sun was shining.
 
@@ -437,6 +480,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 They got wet during their walk because it ………… (rain) and they ………… (forget) to take their umbrellas.
+final-answer:
+They got wet during their walk because it **was raining** and they **had forgotten** to take their umbrellas.
 solution:
 **Answer:** They got wet during their walk because it was raining and they had forgotten to take their umbrellas.
 
@@ -459,6 +504,8 @@ Complete the sentence using the past perfect to mark the earlier completed actio
 
 Hadeel passed the exam easily because she ………… a long time studying. (spend)
 
+final-answer:
+Hadeel passed the exam easily because she **had spent** a long time studying.
 solution:
 **Answer:** Hadeel passed the exam easily because she had spent a long time studying.
 
@@ -480,6 +527,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 While Sami ………… (paint) the door, he ………… (notice) a snake which had been in the store for a long time.
+final-answer:
+While Sami **was painting** the door, he **noticed** a snake which had been in the store for a long time.
 solution:
 **Answer:** While Sami was painting the door, he noticed a snake which had been in the store for a long time.
 
@@ -501,6 +550,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 The film wasn’t good; I ………… (not enjoy) it yesterday.
+final-answer:
+The film wasn’t good; I **didn’t enjoy** it yesterday.
 solution:
 **Answer:** The film wasn’t good; I didn’t enjoy it yesterday.
 
@@ -522,6 +573,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 I was waiting in the queue at passport control when suddenly I ………… (realize) that I ………… (forget) my passport.
+final-answer:
+I was waiting in the queue at passport control when suddenly I **realized** that I **had forgotten** my passport.
 solution:
 **Answer:** I was waiting in the queue at passport control when suddenly I realized that I had forgotten my passport.
 
@@ -543,6 +596,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 An old woman knocked at the front door while I ………… (watch) TV in the sitting room.
+final-answer:
+An old woman knocked at the front door while I **was watching** TV in the sitting room.
 solution:
 **Answer:** An old woman knocked at the front door while I was watching TV in the sitting room.
 
@@ -564,6 +619,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 When I went in, everyone ………… (laugh), probably because someone ………… just ………… (tell) them a joke.
+final-answer:
+When I went in, everyone **was laughing**, probably because someone **had just told** them a joke.
 solution:
 **Answer:** When I went in, everyone was laughing, probably because someone had just told them a joke.
 
@@ -587,6 +644,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 We ………… (wait) for the train when the bomb ………… (explode).
+final-answer:
+We **were waiting** for the train when the bomb **exploded**.
 solution:
 **Answer:** We were waiting for the train when the bomb exploded.
 
@@ -608,6 +667,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 When Sara came home, she realized that someone ………… her apartment. (break into)
+final-answer:
+When Sara came home, she realized that someone **had broken into** her apartment.
 solution:
 **Answer:** When Sara came home, she realized that someone had broken into her apartment.
 
@@ -629,6 +690,9 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 He went to school after he ………… (have) his breakfast.
+final-answer:
+- He went to school after he **had had** his breakfast.
+- He went to school after he **had** his breakfast.
 solution:
 **Answer:** He went to school after he had had his breakfast.
 
@@ -652,6 +716,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 While she ………… (drive) to work, she suddenly remembered that she ………… (forget) to turn off the cooker.
+final-answer:
+While she **was driving** to work, she suddenly remembered that she **had forgotten** to turn off the cooker.
 solution:
 **Answer:** While she was driving to work, she suddenly remembered that she had forgotten to turn off the cooker.
 
@@ -673,6 +739,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 We got home to find that someone ………… (break) into the house.
+final-answer:
+We got home to find that someone **had broken** into the house.
 solution:
 **Answer:** We got home to find that someone had broken into the house.
 
@@ -694,6 +762,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 He became wet during his walk because it ………… (rain).
+final-answer:
+He became wet during his walk because it **was raining**.
 solution:
 **Answer:** He became wet during his walk because it was raining.
 
@@ -715,6 +785,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 When the boss walked into the room, we ………… that someone was going to get fired. (know)
+final-answer:
+When the boss walked into the room, we **knew** that someone was going to get fired.
 solution:
 **Answer:** When the boss walked into the room, we knew that someone was going to get fired.
 
@@ -736,6 +808,9 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 While Laila ………… (come) into the office, she realized that she ………… (forget) her mobile at home.
+final-answer:
+- While Laila **was coming** into the office, she realized that she **had forgotten** her mobile at home.
+- While Laila **came** into the office, she realized that she **had forgotten** her mobile at home.
 solution:
 **Answer:** While Laila was coming into the office, she realized that she had forgotten her mobile at home.
 
@@ -759,6 +834,8 @@ body:
 Complete the sentences with the correct tense of the verbs between brackets.
 
 When the boys ………… (arrive) at the cinema, the film ………… already ………… (start).
+final-answer:
+When the boys **arrived** at the cinema, the film **had already started**.
 solution:
 **Answer:** When the boys arrived at the cinema, the film had already started.
 
@@ -848,6 +925,8 @@ body:
 Choose the correct answer for each blank.
 
 I ………… (had known - have known) him for a long time before I ………… (met - meet) his family.
+final-answer:
+I **had known** him for a long time before I **met** his family.
 solution:
 **Answer:** I had known him for a long time before I met his family.
 
@@ -869,6 +948,8 @@ body:
 Choose the correct answer for each blank.
 
 The picture ………… (went off - had gone) while the children ………… (had watched - were watching) the match.
+final-answer:
+The picture **went off** while the children **were watching** the match.
 solution:
 **Answer:** The picture went off while the children were watching the match.
 
@@ -956,6 +1037,8 @@ body:
 Complete the sentence. Use the past simple negative for the first blank and the past perfect for the earlier action in the second blank.
 
 My sister ………… (not see) the note that I ………… (lay) on the kitchen table for her yesterday.
+final-answer:
+My sister **didn’t see** the note that I **had laid** on the kitchen table for her yesterday.
 solution:
 عدم رؤية الملاحظة هو الحدث الماضي الذي نرويه.
 
@@ -981,6 +1064,8 @@ body:
 Correct the following sentences. (There is one mistake in each sentence.)
 
 When I got to the airport, I found that the plane has already left.
+final-answer:
+When I got to the airport, I found that the plane **had already left**.
 solution:
 **Answer:** When I got to the airport, I found that the plane had already left.
 
@@ -1002,6 +1087,8 @@ body:
 Correct the following sentences. (There is one mistake in each sentence.)
 
 We have lived in that house for eight years before we moved to another city.
+final-answer:
+We **had lived** in that house for eight years before we moved to another city.
 solution:
 **Answer:** We had lived in that house for eight years before we moved to another city.
 
@@ -1023,6 +1110,8 @@ body:
 Correct the following sentences. (There is one mistake in each sentence.)
 
 The Titanic was crossing the Atlantic when it hits an iceberg.
+final-answer:
+The Titanic was crossing the Atlantic when it **hit** an iceberg.
 solution:
 **Answer:** The Titanic was crossing the Atlantic when it hit an iceberg.
 
@@ -1044,6 +1133,8 @@ body:
 Correct the following sentences. (There is one mistake in each sentence.)
 
 What did the teacher gave Ahmed?
+final-answer:
+What did the teacher **give** Ahmed?
 solution:
 **Answer:** What did the teacher give Ahmed?
 
@@ -1065,6 +1156,8 @@ body:
 Correct the following sentences. (There is one mistake in each sentence.)
 
 I was making dinner when she was arriving.
+final-answer:
+I was making dinner when she **arrived**.
 solution:
 **Answer:** I was making dinner when she arrived.
 
@@ -1086,6 +1179,8 @@ body:
 Correct the following sentences. (There is one mistake in each sentence.)
 
 Which film have you watched last night?
+final-answer:
+Which film **did you watch** last night?
 solution:
 **Answer:** Which film did you watch last night?
 
@@ -1107,6 +1202,8 @@ body:
 Correct the following sentences. (There is one mistake in each sentence.)
 
 Did you wrote the invitation?
+final-answer:
+Did you **write** the invitation?
 solution:
 **Answer:** Did you write the invitation?
 
@@ -1128,6 +1225,8 @@ body:
 Use the words in brackets to join each pair of the following.
 
 The students were making noise. The teacher punished them. (because)
+final-answer:
+The teacher punished the students **because** they were making noise.
 solution:
 **Answer:** The teacher punished the students because they were making noise.
 
@@ -1149,6 +1248,8 @@ body:
 Use the words in brackets to join each pair of the following.
 
 I saw Sami. He was shouting loudly at his son. (when)
+final-answer:
+**When** I saw Sami, he was shouting loudly at his son.
 solution:
 **Answer:** When I saw Sami, he was shouting loudly at his son.
 
@@ -1171,6 +1272,9 @@ body:
 Use the words in brackets to join each pair of the following.
 
 I spent a long time studying this subject. I passed the exam easily. (because)
+final-answer:
+- I passed the exam easily because I **had spent** a long time studying this subject.
+- I passed the exam easily because I **spent** a long time studying this subject.
 solution:
 **Answer:** I passed the exam easily because I had spent a long time studying this subject.
 
@@ -1194,6 +1298,8 @@ body:
 Use the words in brackets to join each pair of the following.
 
 He missed the train. He was talking with some friends. (because)
+final-answer:
+He missed the train **because** he was talking with some friends.
 solution:
 **Answer:** He missed the train because he was talking with some friends.
 
@@ -1215,6 +1321,8 @@ body:
 Use the words in brackets to join each pair of the following.
 
 It started raining. We got into the car. (as soon as)
+final-answer:
+**As soon as** it started raining, we got into the car.
 solution:
 **Answer:** As soon as it started raining, we got into the car.
 
@@ -1237,6 +1345,8 @@ Do as required in brackets.
 
 His new apartment cost 60,000 dollars.
 How much …………? (Complete the question)
+final-answer:
+**How much did** his new apartment **cost**?
 solution:
 **Answer:** How much did his new apartment cost?
 
@@ -1258,6 +1368,8 @@ body:
 Do as required in brackets.
 
 How many / books / you / buy / yesterday? (Write a full question)
+final-answer:
+**How many books did** you **buy** yesterday?
 solution:
 **Answer:** How many books did you buy yesterday?
 

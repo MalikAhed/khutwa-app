@@ -10,6 +10,8 @@ body:
 Complete the sentences with words from the box which have the same meaning between brackets. Word bank: expatriates; essential; accent; clinging to; puzzle; conviction; stubborn.
 
 He developed an American __________. (way of speaking)
+final-answer:
+He developed an American **accent**.
 solution:
 **الإجابة:** He developed an American accent.
 
@@ -36,6 +38,8 @@ body:
 Complete the sentences with words from the box which have the same meaning between brackets. Word bank: expatriates; essential; accent; clinging to; puzzle; conviction; stubborn.
 
 The Palestinian refugees had a __________ that they would return to their home one day. (strong belief)
+final-answer:
+The Palestinian refugees had a **conviction** that they would return to their home one day.
 solution:
 **الإجابة:** The Palestinian refugees had a conviction that they would return to their home one day.
 
@@ -70,6 +74,8 @@ Complete the sentences with words from the box which have the same meaning betwe
 
 The Palestinian __________ are an important source of economic and political support to their country. (people living outside their own country)
 
+final-answer:
+The Palestinian **expatriates** are an important source of economic and political support to their country.
 solution:
 expatriates تعني أشخاصًا يعيشون خارج بلدهم الأصلي. لا تشترط الكلمة وحدها أن تكون الإقامة دائمة؛ فقد تكون مؤقتة أو دائمة بحسب السياق.
 
@@ -89,6 +95,8 @@ body:
 Complete the sentences with words from the box which have the same meaning between brackets. Word bank: expatriates; essential; accent; clinging to; puzzle; conviction; stubborn.
 
 You can’t convince her easily, she’s __________. (unwilling to change her mind)
+final-answer:
+You can’t convince her easily; she’s **stubborn**.
 solution:
 **الإجابة:** You can’t convince her easily; she’s stubborn.
 
@@ -122,6 +130,8 @@ body:
 Complete the sentences with words from the box. Word bank: object; accent; expatriates; become accustomed; unconsciously.
 
 I guessed from her __________ that she is from America.
+final-answer:
+I guessed from her **accent** that she is from America.
 solution:
 **الإجابة:** I guessed from her accent that she is from America.
 
@@ -148,6 +158,8 @@ body:
 Complete the sentences with words from the box. Word bank: object; accent; expatriates; become accustomed; unconsciously.
 
 The Palestinian __________ are an important source of economic and political support to their country.
+final-answer:
+The Palestinian **expatriates** are an important source of economic and political support to their country.
 solution:
 **الإجابة:** The Palestinian expatriates are an important source of economic and political support to their country.
 
@@ -174,6 +186,8 @@ body:
 Complete the sentences with words from the box. Word bank: expatriates; committed to; unconsciously; accent; essential; fellow countrymen.
 
 His __________ sounds strange; I can’t decide where he comes from.
+final-answer:
+His **accent** sounds strange; I can’t decide where he comes from.
 solution:
 **الإجابة:** His accent sounds strange; I can’t decide where he comes from.
 
@@ -200,6 +214,8 @@ body:
 Complete the sentences with words from the box. Word bank: expatriates; committed to; unconsciously; accent; essential; fellow countrymen.
 
 I know a lot of Palestinian __________ in America longing to come home.
+final-answer:
+I know a lot of Palestinian **expatriates** in America longing to come home.
 solution:
 **الإجابة:** I know a lot of Palestinian expatriates in America longing to come home.
 

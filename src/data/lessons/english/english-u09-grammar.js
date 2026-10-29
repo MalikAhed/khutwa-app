@@ -10,6 +10,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 I was lazy when I was younger. (I wish)
+final-answer:
+I wish I **hadn't been** lazy when I was younger.
 solution:
 التمني هنا ندم على كسل حدث وانتهى؛ بعد wish نستخدم الماضي التام \`had + التصريف الثالث\`. الواقع was lazy مثبت، فنتمنى عكسه hadn't been lazy؛ been هو التصريف الثالث من be.
 
@@ -30,6 +32,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 He didn't buy the car when he had the chance. (he should)
+final-answer:
+He **should have bought** the car when he had the chance.
 solution:
 ندم على فرصة ماضية لم يستغلها؛ \`should have + التصريف الثالث\` تعني كان ينبغي أن يفعل. buy غير منتظم: buy → bought → bought؛ لذا نستخدم have bought.
 
@@ -53,6 +57,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 I didn't study well for the exam.
 I wish ..............
+final-answer:
+I wish I **had studied** well for the exam.
 solution:
 الواقع أنه لم يدرس جيدًا؛ بعد wish نتمنى عكس الماضي باستعمال \`had + التصريف الثالث\`. study → studied؛ نحذف didn't ونكتب had studied مثبتة.
 
@@ -74,6 +80,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 She didn't report the accident to the police.
 She should ..............
+final-answer:
+She **should have reported** the accident to the police.
 solution:
 لم تبلغ في الماضي؛ فنقول كان ينبغي أن تبلغ: should + have + reported. reported التصريف الثالث المنتظم من report، ولا نضع الماضي مباشرة بعد should.
 
@@ -97,6 +105,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 He neglected all the warnings of his boss.
 He regrets ..............
+final-answer:
+He regrets **neglecting** all the warnings of his boss.
 solution:
 regret يتبعه فعل بصيغة ing للتعبير عن الندم. هو أهمل فعلًا التحذيرات، فنكتب neglecting مثبتة دون not؛ الندم منصب على الفعل الذي وقع.
 
@@ -117,6 +127,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 I went out without having an umbrella though it was raining. (I regret)
+final-answer:
+I regret **going out** without having an umbrella though it was raining.
 solution:
 الفعل الذي ندم عليه وقع: خرج بلا مظلة. بعد regret نحول go إلى going، ونحافظ على without having وعلى though لإبقاء معنى المخالفة رغم المطر.
 
@@ -139,6 +151,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 I was supposed to finish my project before the end of the term, but I didn’t. (I should)
+final-answer:
+I **should have finished** my project before the end of the term.
 solution:
 لم ينجز المشروع في الموعد الماضي؛ should have + V3 تعني كان ينبغي إنجازه. finish منتظم، فتصريفه الثالث finished.
 
@@ -161,6 +175,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 They didn’t buy a new defender last season. (They regret)
+final-answer:
+They regret **not buying** a new defender last season.
 solution:
 الندم على فعل لم يحدث، لذلك نستخدم regret + not + ing. buy تصبح buying، ونضع not قبلها، لا did not بعد regret.
 
@@ -182,6 +198,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 I didn’t read lots of books when I was younger. (start with the given words)
 I wish ..............
+final-answer:
+I wish I **had read** lots of books when I was younger.
 solution:
 نتمنى عكس عدم القراءة في الماضي؛ بعد wish نكتب had + read. read لها الكتابة نفسها في المصدر والماضي والتصريف الثالث، لكن نطق V3 هو /red/.
 
@@ -202,6 +220,8 @@ body:
 Rewrite the sentences using the words in brackets:
 
 I shouted at my little sister this morning. I feel bad about it now. (wish)
+final-answer:
+I wish I **hadn't shouted** at my little sister this morning.
 solution:
 للتمني المخالف لما حدث في الماضي نستعمل \`wish + فاعل + الماضي التام\`: had أو \`hadn’t + التصريف الثالث\`.
 الصراخ حدث والمتكلم يتمنى عدم حدوثه؛ لذا wish + hadn't + shouted. shouted هو التصريف الثالث، و this morning لا تمنع الماضي التام بعد wish عند الحديث عن حدث منتهٍ.
@@ -223,6 +243,8 @@ body:
 Rewrite the sentences using the words in brackets:
 
 I shouted at my little sister this morning. I feel bad about it now. (regret)
+final-answer:
+I regret **shouting** at my little sister this morning.
 solution:
 مع regret نذكر الفعل الذي ندمنا عليه بصيغة ing. وقع الصراخ فعلًا، فنكتب shouting دون not؛ لا نعكس النفي كما نفعل مع wish.
 
@@ -243,6 +265,8 @@ body:
 Rewrite the sentences using the words in brackets:
 
 I didn’t go to college and I think that was one of my biggest mistakes. (I regret)
+final-answer:
+I regret **not going** to college.
 solution:
 عدم الذهاب هو سبب الندم؛ الصيغة regret + not + going. not تأتي قبل فعل ing، فتحفظ أن الذهاب لم يحدث.
 
@@ -263,6 +287,8 @@ body:
 Rewrite the sentences using the words in brackets:
 
 I didn’t go to college and I think that was one of my biggest mistakes. (I wish)
+final-answer:
+I wish I **had gone** to college.
 solution:
 للتمني المخالف لما حدث في الماضي نستعمل \`wish + فاعل + الماضي التام\`: had أو \`hadn’t + التصريف الثالث\`.
 التمني يعكس الواقع الماضي: لم يذهب، ويتمنى أنه ذهب. نستخدم had + gone؛ go → went → gone.
@@ -284,6 +310,8 @@ body:
 Rewrite the sentences using the words in brackets:
 
 Mary didn’t prepare for the interview, so she didn’t get the job. (wish)
+final-answer:
+Mary wishes she **had prepared** for the interview.
 solution:
 للتمني المخالف لما حدث في الماضي نستعمل \`wish + فاعل + الماضي التام\`: had أو \`hadn’t + التصريف الثالث\`.
 ماري لم تستعد؛ لذلك تتمنى الفعل الإيجابي المعاكس باستعمال had prepared. Mary مفرد، فنكتب wishes؛ و prepared التصريف الثالث من prepare.
@@ -305,6 +333,8 @@ body:
 Rewrite the sentences using the words in brackets:
 
 I took no notice of the teacher and I did really badly in the test. (regret)
+final-answer:
+I regret **taking no notice** of the teacher.
 solution:
 regret تحتاج ing: take تصبح taking بحذف e. نحتفظ بـ no notice لأنها تصف التجاهل الذي وقع؛ إضافة not سيقلب المعنى إلى الندم على عدم التجاهل.
 
@@ -325,6 +355,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 My brother spent so much money on his shopping trip. (he / wishes)
+final-answer:
+He wishes he **hadn't spent** so much money on his shopping trip.
 solution:
 للتمني المخالف لما حدث في الماضي نستعمل \`wish + فاعل + الماضي التام\`: had أو \`hadn’t + التصريف الثالث\`.
 وقع إنفاق كثير في الماضي فيتمنى عكسه. wish مع he تصبح wishes، ثم hadn't + spent؛ spend → spent → spent.
@@ -346,6 +378,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 The boys didn’t go for a picnic when it was sunny. (They / should)
+final-answer:
+They **should have gone** for a picnic when it was sunny.
 solution:
 فاتتهم نزهة في وقت مشمس؛ should have + V3 تعبر عما كان ينبغي فعله. go تصريفه الثالث gone، فتكون have gone.
 
@@ -368,6 +402,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 Mariam drank too much coffee, so she didn't sleep well last night. (She / regrets)
+final-answer:
+She regrets **drinking** too much coffee.
 solution:
 regret للتعبير عن الندم يتبعه الفعل بصيغة ing.
 شرب القهوة الزائد حدث وسبب قلة النوم؛ بعد regrets نضع drinking. لا نضيف not لأن ندمها على الشرب نفسه.
@@ -390,6 +426,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 Ameer didn’t follow his parents' advice.
 He should ..............
+final-answer:
+He **should have followed** his parents' advice.
 solution:
 لبيان ما كان ينبغي فعله في الماضي نستعمل \`should + have + التصريف الثالث\`.
 لم يتبع النصيحة، فنكتب should have followed. follow فعل منتظم، فتصريفه الثالث followed.
@@ -414,6 +452,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 I ate a lot of food before going to bed.
 I regret ..............
+final-answer:
+I regret **eating** a lot of food before going to bed.
 solution:
 regret تعني يندم، ويتبعها الفعل بصيغة ing لذكر ما ندم عليه. تناول الطعام حدث فعلًا، فنكتب eating دون not. before حرف جر، لذا تبقى going في الجزء الثاني.
 
@@ -435,6 +475,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 My friend bought a lot of expensive clothes.
 She wishes ..............
+final-answer:
+She wishes she **hadn't bought** a lot of expensive clothes.
 solution:
 للتمني المخالف لما حدث في الماضي نستعمل \`wish + فاعل + الماضي التام\`: had أو \`hadn’t + التصريف الثالث\`.
 شراء الملابس وقع، فتتمنى نقيضه. نستخدم wishes + hadn't + bought؛ bought التصريف الثالث غير المنتظم من buy.
@@ -456,6 +498,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 Ali did me a favour, but I didn't appreciate it. (I wish)
+final-answer:
+I wish I **had appreciated** Ali's favour.
 solution:
 الواقع أنه لم يقدّر معروف علي؛ التمني يعكس ذلك إلى فعل مثبت في الماضي التام: had + appreciated. appreciate فعل منتظم ينتهي بـ e؛ نضيف d فقط، فتصبح appreciated.
 
@@ -476,6 +520,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 I didn't pay more attention before the exam. (I / wish)
+final-answer:
+I wish I **had paid** more attention before the exam.
 solution:
 للتمني بعكس ما حدث في الماضي نستعمل \`wish + الفاعل + had + التصريف الثالث\`. هنا لم ينتبه، فيتمنى أنه انتبه: had paid مثبتة لعكس didn't pay. pay → paid → paid.
 
@@ -497,6 +543,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 He didn’t have enough experience for the job required.
 He wishes ..............
+final-answer:
+He wishes he **had had** enough experience for the job required.
 solution:
 الواقع أنه لم تكن لديه خبرة كافية؛ نتمنى عكسه بماضٍ تام. had الأولى مساعد الزمن، و had الثانية التصريف الثالث من have بمعنى يمتلك؛ لذلك had had صحيحة.
 
@@ -518,6 +566,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 Nabil went home alone and it was frightening.
 He regrets ..............
+final-answer:
+He regrets **going** home alone.
 solution:
 للتعبير عن الندم باستعمال regret نضع الفعل بعده بصيغة ing.
 الرجوع منفردًا حدث وأخافه؛ بعد regrets يأتي going بصيغة ing، ولا نضيف not لأنه يندم على الفعل الذي وقع.
@@ -540,6 +590,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 Ali was very careless when he was studying at the university.
 Ali wishes ..............
+final-answer:
+Ali wishes he **hadn't been** very careless when he was studying at the university.
 solution:
 للتمني المخالف لماضٍ نستعمل \`wish + الفاعل + had\` أو \`hadn’t + التصريف الثالث\`.
 الإهمال صفة كانت موجودة في الماضي؛ wish تتبعها hadn't been لتمني زوالها آنذاك. been تصريف ثالث من be، وتبقى جملة الزمن when he was studying.
@@ -562,6 +614,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 I didn’t go to the college and I think that was one of my biggest mistakes.
 I wish ..............
+final-answer:
+I wish I **had gone** to the college.
 solution:
 للتمني المخالف لماضٍ نستعمل \`wish + الفاعل + had\` أو \`hadn’t + التصريف الثالث\`.
 عدم الذهاب فعل ماضٍ يندم عليه؛ نعكسه إلى had gone بعد wish. gone هو التصريف الثالث من go؛ ويمكن حذف the إذا قصد التعليم الجامعي عمومًا، مع بقاء المعنى السياقي.
@@ -586,6 +640,8 @@ Rewrite the sentences using the given starters or the words in brackets.
 
 Ahmed bought a car. It breaks down so often and causes him trouble.
 Ahmed wishes ..............
+final-answer:
+Ahmed wishes he **hadn't bought** the car.
 solution:
 للتمني المخالف لماضٍ نستعمل \`wish + الفاعل + had\` أو \`hadn’t + التصريف الثالث\`.
 الشراء حدث وظهرت مشاكله، فيتمنى عدم حدوثه. Ahmed مفرد فتكون wishes، ثم hadn't bought؛ bought التصريف الثالث من buy.
@@ -607,6 +663,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 We stayed at a very bad hotel. (I wish)
+final-answer:
+I wish we **hadn't stayed** at a very bad hotel.
 solution:
 للتمني المخالف لماضٍ نستعمل \`wish + الفاعل + had\` أو \`hadn’t + التصريف الثالث\`.
 البداية المطلوبة I wish تجعل المتكلم فردًا، لكن من أقاموا هم we؛ لذلك لا نحول we إلى I. الإقامة حدثت، فنعكسها بـ hadn't stayed.
@@ -628,6 +686,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 Amjad left school at the age of 13. (He regrets)
+final-answer:
+He regrets **leaving** school at the age of 13.
 solution:
 للتعبير عن الندم باستعمال regret نضع الفعل بعده بصيغة ing.
 الندم على مغادرة المدرسة التي حدثت؛ بعد regrets نستخدم leaving بحذف e من leave ثم إضافة ing، ونبقي العمر.
@@ -649,6 +709,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 Salim drove very fast which caused a terrible accident. (He shouldn't)
+final-answer:
+He **shouldn't have driven** very fast.
 solution:
 السرعة حدثت وسببت حادثًا؛ shouldn't have + V3 تعني لم يكن ينبغي فعل ذلك. drive → drove → driven، فنختار driven بعد have.
 
@@ -671,6 +733,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 Kamal didn't pay attention to his father's advice. (He regrets)
+final-answer:
+He regrets **not paying** attention to his father's advice.
 solution:
 هو لم ينتبه، فالندم على عدم الفعل. الصيغة regrets + not + paying؛ نضع not قبل ing، ونحافظ على his father's advice.
 
@@ -691,6 +755,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 I didn't ask the doctor about the final report. (I regret)
+final-answer:
+I regret **not asking** the doctor about the final report.
 solution:
 الواقع أن السؤال لم يحدث؛ نستخدم regret + not + asking. لا نكتب didn't ask بعد regret لأنها تحتاج صيغة ing في هذا المعنى.
 
@@ -711,6 +777,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 Manal hid the cause of the accident. (She shouldn't)
+final-answer:
+She **shouldn't have hidden** the cause of the accident.
 solution:
 إخفاء السبب حدث وكان غير مناسب؛ نستخدم \`shouldn't have + التصريف الثالث\`. hide غير منتظم: hide → hid → hidden.
 
@@ -733,6 +801,9 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 The film we went to see last week was terrible. (We wish)
+final-answer:
+- We wish we **hadn't gone** to see the film last week.
+- We wish the film we went to see last week **hadn't been terrible**.
 solution:
 للتمني المخالف لماضٍ نستعمل \`wish + الفاعل + had\` أو \`hadn’t + التصريف الثالث\`.
 لأن مشاهدة الفيلم كانت تجربة سيئة، يمكن تمني عدم الذهاب: wish + hadn't gone؛ gone تصريف ثالث من go. وتصح We wish the film we went to see last week hadn't been terrible إذا كان الندم منصبًا على جودة الفيلم نفسها.
@@ -754,6 +825,8 @@ body:
 Rewrite the sentences using the given starters or the words in brackets.
 
 Fareed left his present job before finding a new one. (He regrets)
+final-answer:
+He regrets **leaving** his present job before finding a new one.
 solution:
 للتعبير عن الندم باستعمال regret نضع الفعل بعده بصيغة ing.
 الندم على ترك الوظيفة قبل تأمين بديل؛ regrets تتبعها leaving بحذف e، و before finding تبقى لأن before هنا حرف جر.
@@ -777,6 +850,8 @@ body:
 Correct the mistakes in the sentences: (There is only one mistake in each sentence.)
 
 It’s getting dark. We should leave half an hour ago.
+final-answer:
+It’s getting dark. We **should have left** half an hour ago.
 solution:
 ago تحدد وقتًا انقضى؛ should leave نصيحة للحاضر ولا تلائمها. نستخدم should have + left، التصريف الثالث من leave، للتعبير عما كان ينبغي أن نفعله.
 
@@ -799,6 +874,8 @@ body:
 Correct the mistakes in the sentences: (There is only one mistake in each sentence.)
 
 Why did you borrow the money from the bank? You should ask me for that?
+final-answer:
+Why did you borrow the money from the bank? You **should have asked** me for that.
 solution:
 لبيان ما كان ينبغي فعله في الماضي نستخدم \`should + have + التصريف الثالث\`.
 did you borrow يبين أن الاقتراض حدث سابقًا؛ التعليق عليه يحتاج should have asked، أي كان ينبغي أن تطلب مني. ask فعل منتظم، فتصريفه الثالث asked.

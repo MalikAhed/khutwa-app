@@ -8,6 +8,10 @@ reference: الكتاب، ص ٥٦، مثال ١، الفرع ١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٧</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، جد رتبة كل من المصفوفتين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`.
+final-answer:
+- **رتبة أ:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\`.
+- **رتبة ب:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\`.
+
 solution:
 رتبة المصفوفة تكتب بالترتيب: عدد الصفوف\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mo>×</mo></math>\`عدد الأعمدة.
 
@@ -27,6 +31,10 @@ reference: الكتاب، ص ٥٦، مثال١-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٧</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd><mtd><mn dir="ltr">٦</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، جد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mrow></msub></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">ب</mi><mrow><mn dir="ltr">٢</mn><mn dir="ltr">١</mn></mrow></msub></math>\`.
+final-answer:
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mrow></msub><mo>=</mo><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ب</mi><mrow><mn dir="ltr">٢</mn><mn dir="ltr">١</mn></mrow></msub><mo>=</mo><mn dir="ltr">١</mn></mrow></math>\`**
+
 solution:
 رقم المدخلة الأول هو رقم الصف، والثاني هو رقم العمود.
 
@@ -46,6 +54,9 @@ reference: الكتاب، ص ٥٧، مثال ٢، الفرع ١
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لديك المصفوفات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٨</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٩</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٨</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. ما نوع المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\`؟
+final-answer:
+**مصفوفة عمود.**
+
 solution:
 مصفوفة العمود هي مصفوفة لها عمود واحد، مهما كان عدد صفوفها.
 
@@ -65,6 +76,9 @@ reference: الكتاب، ص ٥٧، مثال٢-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لديك المصفوفات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٨</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٩</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٨</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. هل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` مصفوفة وحدة؟
+final-answer:
+**لا، ب ليست مصفوفة وحدة.**
+
 solution:
 مصفوفة الوحدة مربعة، فيها آحاد على القطر الرئيسي وأصفار خارجه. القطر الرئيسي يمر بمواضع رقم صفها مساوٍ لرقم عمودها.
 
@@ -88,6 +102,9 @@ reference: الكتاب، ص ٥٧، مثال٢-ج
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لديك المصفوفات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٨</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٩</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٠</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mn dir="ltr">٠</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٨</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. ما مجموع مدخلات العمود الثاني من المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`؟
+final-answer:
+**المجموع: ٢.**
+
 solution:
 العمود مجموعة مدخلات تقع رأسياً فوق بعضها.
 
@@ -117,6 +134,9 @@ reference: الكتاب، ص ٥٨، نشاط-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 كونت ياسمين المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` من الرتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\` حسب الشروط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ك</mi><mrow><mi mathvariant="normal">ي</mi><mtext dir="rtl">هـ</mtext></mrow></msub><mo>=</mo><mrow><mo stretchy="true">{</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">ي</mi><mo>+</mo><mtext dir="rtl">هـ</mtext></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&gt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">ي</mi><mo>−</mo><mtext dir="rtl">هـ</mtext></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&lt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mfrac><mi mathvariant="normal">ي</mi><mrow><mi mathvariant="normal">ي</mi><mo>+</mo><mtext dir="rtl">هـ</mtext></mrow></mfrac></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>=</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr></mtable></mrow></mrow></math>\`. ما قيمة المدخلة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">ك</mi><mrow><mn dir="ltr">١</mn><mn dir="ltr">١</mn></mrow></msub></math>\`؟
+final-answer:
+**\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ك</mi><mrow><mn dir="ltr">١</mn><mn dir="ltr">١</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></math>\`**
+
 solution:
 الرقم الأول في المدخلة هو رقم الصف، والثاني رقم العمود. نقارن الرقمين لنختار سطر القاعدة المناسب، ثم نعوض بهما.
 
@@ -136,6 +156,9 @@ reference: الكتاب، ص ٥٨، نشاط-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 كونت ياسمين المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` من الرتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\` حسب الشروط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ك</mi><mrow><mi mathvariant="normal">ي</mi><mtext dir="rtl">هـ</mtext></mrow></msub><mo>=</mo><mrow><mo stretchy="true">{</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">ي</mi><mo>+</mo><mtext dir="rtl">هـ</mtext></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&gt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">ي</mi><mo>−</mo><mtext dir="rtl">هـ</mtext></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&lt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mfrac><mi mathvariant="normal">ي</mi><mrow><mi mathvariant="normal">ي</mi><mo>+</mo><mtext dir="rtl">هـ</mtext></mrow></mfrac></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>=</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr></mtable></mrow></mrow></math>\`. ما قيمة المدخلة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msub><mi mathvariant="normal">ك</mi><mrow><mn dir="ltr">٢</mn><mn dir="ltr">١</mn></mrow></msub></math>\`؟
+final-answer:
+**\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ك</mi><mrow><mn dir="ltr">٢</mn><mn dir="ltr">١</mn></mrow></msub><mo>=</mo><mn dir="ltr">٣</mn></mrow></math>\`**
+
 solution:
 الرقم الأول في المدخلة هو رقم الصف، والثاني رقم العمود. نقارن الرقمين لنختار سطر القاعدة المناسب، ثم نعوض بهما.
 
@@ -155,6 +178,9 @@ reference: الكتاب، ص ٥٨، نشاط-ج
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 كونت ياسمين المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` من الرتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\` حسب الشروط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ك</mi><mrow><mi mathvariant="normal">ي</mi><mtext dir="rtl">هـ</mtext></mrow></msub><mo>=</mo><mrow><mo stretchy="true">{</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">ي</mi><mo>+</mo><mtext dir="rtl">هـ</mtext></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&gt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">ي</mi><mo>−</mo><mtext dir="rtl">هـ</mtext></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&lt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mfrac><mi mathvariant="normal">ي</mi><mrow><mi mathvariant="normal">ي</mi><mo>+</mo><mtext dir="rtl">هـ</mtext></mrow></mfrac></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>=</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr></mtable></mrow></mrow></math>\`. ما مجموع مدخلات العمود الثالث؟
+final-answer:
+**مجموع مدخلات العمود الثالث:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mfrac><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></math>\`.
+
 solution:
 الرقم الأول في المدخلة هو رقم الصف، والثاني رقم العمود. نقارن الرقمين لنختار سطر القاعدة المناسب، ثم نعوض بهما.
 
@@ -180,6 +206,9 @@ reference: الكتاب، ص ٥٨، نشاط-د
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 كونت ياسمين المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ك</mi></math>\` من الرتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\` حسب الشروط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ك</mi><mrow><mi mathvariant="normal">ي</mi><mtext dir="rtl">هـ</mtext></mrow></msub><mo>=</mo><mrow><mo stretchy="true">{</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">ي</mi><mo>+</mo><mtext dir="rtl">هـ</mtext></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&gt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">ي</mi><mo>−</mo><mtext dir="rtl">هـ</mtext></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&lt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mfrac><mi mathvariant="normal">ي</mi><mrow><mi mathvariant="normal">ي</mi><mo>+</mo><mtext dir="rtl">هـ</mtext></mrow></mfrac></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>=</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr></mtable></mrow></mrow></math>\`. ما مدخلات القطر الرئيسي؟
+final-answer:
+**\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">ك</mi><mrow><mn dir="ltr">١</mn><mn dir="ltr">١</mn></mrow></msub><mo>=</mo><msub><mi mathvariant="normal">ك</mi><mrow><mn dir="ltr">٢</mn><mn dir="ltr">٢</mn></mrow></msub><mo>=</mo><msub><mi mathvariant="normal">ك</mi><mrow><mn dir="ltr">٣</mn><mn dir="ltr">٣</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn dir="ltr">١</mn></mrow><mrow><mn dir="ltr">٢</mn></mrow></mfrac></mrow></math>\`**
+
 solution:
 الرقم الأول في المدخلة هو رقم الصف، والثاني رقم العمود. نقارن الرقمين لنختار سطر القاعدة المناسب، ثم نعوض بهما.
 
@@ -205,6 +234,9 @@ reference: الكتاب، ص ٥٨، مثال٣-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mi mathvariant="normal">س</mi></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><msup><mi mathvariant="normal">ص</mi><mn dir="ltr">٢</mn></msup></mtd><mtd><msqrt><mi mathvariant="normal">ع</mi></msqrt></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. هل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mi mathvariant="normal">ب</mi></mrow></math>\`؟ ولماذا؟
+final-answer:
+**لا، أ ≠ ب؛ المدخلتان المتناظرتان أ₁₁ وب₁₁ مختلفتان (٢ و٣).**
+
 solution:
 تساوي مصفوفتين يقتضي تساوي الرتبتين، ثم تساوي كل مدخلتين في الصف والعمود نفسيهما.
 
@@ -230,6 +262,11 @@ reference: الكتاب، ص ٥٨، مثال٣-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mi mathvariant="normal">س</mi></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr><mtr><mtd><msup><mi mathvariant="normal">ص</mi><mn dir="ltr">٢</mn></msup></mtd><mtd><msqrt><mi mathvariant="normal">ع</mi></msqrt></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`. جد قيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ع</mi></math>\` التي تجعل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mi mathvariant="normal">جـ</mi></mrow></math>\`.
+final-answer:
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mo>±</mo><mn dir="ltr">٢</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ع</mi><mo>=</mo><mn dir="ltr">٢٥</mn></mrow></math>\`**
+
 solution:
 تتساوى مصفوفتان عندما تتساوى رتبتهما وكل مدخلتين تقعان في الصف والعمود نفسيهما؛ لذلك يجب تحقيق المعادلات الناتجة جميعًا.
 
@@ -255,6 +292,9 @@ reference: الكتاب، ص ٥٩، تمرين-١-أ
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٦</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd><mtd><mi mathvariant="normal">س</mi></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mrow><mo>−</mo><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mn dir="ltr">٧</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٢٠</mn></mtd><mtd><mn dir="ltr">٧</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد رتبة المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`.
+final-answer:
+**رتبة أ:** \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٤</mn><mo>×</mo><mn dir="ltr">٣</mn></mrow></math>\`.
+
 solution:
 رتبة المصفوفة تكتب بعدد الصفوف ثم عدد الأعمدة بالترتيب.
 
@@ -274,6 +314,9 @@ reference: الكتاب، ص ٥٩، تمرين-١-ب
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٦</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd><mtd><mi mathvariant="normal">س</mi></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mrow><mo>−</mo><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mn dir="ltr">٧</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٢٠</mn></mtd><mtd><mn dir="ltr">٧</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٣</mn><mn dir="ltr">١</mn></mrow></msub></mrow><mo>+</mo><mrow><msub><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mrow></msub></mrow></mrow></math>\`.
+final-answer:
+**\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٣</mn><mn dir="ltr">١</mn></mrow></msub><mo>+</mo><msub><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mrow></msub><mo>=</mo><mn dir="ltr">٦</mn></mrow></math>\`**
+
 solution:
 رقم المدخلة الأول يحدد الصف، والثاني يحدد العمود؛ نقرأ العدد في تقاطعهما ثم نعوض في المطلوب.
 
@@ -293,6 +336,9 @@ reference: الكتاب، ص ٥٩، تمرين-١-ج
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٤</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٦</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd><mtd><mi mathvariant="normal">س</mi></mtd></mtr><mtr><mtd><mn dir="ltr">١</mn></mtd><mtd><mrow><mo>−</mo><mi mathvariant="normal">س</mi></mrow></mtd><mtd><mn dir="ltr">٧</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mn dir="ltr">٢٠</mn></mtd><mtd><mn dir="ltr">٧</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\` بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mrow><mo stretchy="true" fence="true">(</mo><mrow><msub><mi mathvariant="normal">أ</mi><mrow><mn dir="ltr">٢</mn><mn dir="ltr">٣</mn></mrow></msub></mrow><mo stretchy="true" fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mo>=</mo><mn dir="ltr">٢٧</mn></mrow></math>\`.
+final-answer:
+**\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٣</mn></mrow></math>\`**
+
 solution:
 رقم المدخلة الأول يحدد الصف، والثاني يحدد العمود؛ نقرأ العدد في تقاطعهما ثم نعوض في المطلوب.
 
@@ -318,6 +364,9 @@ reference: الكتاب، ص ٥٩، تمرين-٢
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢</mn></mtd><mtd><mn dir="ltr">١٠</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٥</mn></mtd><mtd><mrow><mi mathvariant="normal">س</mi><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد قيمة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`.
+final-answer:
+**\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٣</mn></mrow></math>\`**
+
 solution:
 تساوي المصفوفتين يعني تساوي كل مدخلتين تقعان في الصف والعمود نفسيهما.
 
@@ -366,6 +415,13 @@ reference: الكتاب، ص ٧٧، ورقة عمل-٤
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mn dir="ltr">٥</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٦</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، فجد المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` من الرتبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٢</mn></mrow></math>\` بحيث \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mrow><mi mathvariant="normal">أ</mi></mrow><mrow><mi mathvariant="normal">يهـ</mi></mrow></msub></mrow><mo>=</mo><mrow><msub><mrow><mi mathvariant="normal">ب</mi></mrow><mrow><mi mathvariant="normal">هـي</mi></mrow></msub></mrow></mrow></math>\` لجميع قيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ي</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">هـ</mi></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٦</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٥</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 تبديل رقمي المدخلة يعني أن مدخلة الصف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ي</mi></math>\` والعمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">هـ</mi></math>\` في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` تنتقل إلى الصف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">هـ</mi></math>\` والعمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ي</mi></math>\` في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`؛ لذلك يصبح كل صف من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\` عمودًا في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`.
 صف أالأول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٥</mn></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١</mn></math>\` يصير عمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\` الأول، والثاني \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٦</mn></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></math>\`،\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٥</mn></math>\` يصير العمود الثاني.
@@ -436,6 +492,9 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ٦
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٣</mn></msup><mo>+</mo><msup><mi mathvariant="normal">ص</mi><mn dir="ltr">٣</mn></msup></mrow></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">ص</mi></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٨</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، جد قيمة المقدار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><mi mathvariant="normal">س</mi><mi mathvariant="normal">ص</mi><mo>+</mo><msup><mi mathvariant="normal">ص</mi><mn dir="ltr">٢</mn></msup></mrow></math>\`.
+final-answer:
+**القيمة: ٤.**
+
 solution:
 تتساوى مصفوفتان عندما تتساوى رتبتهما وكل مدخلتين تقعان في الصف والعمود نفسيهما؛ لذلك يجب تحقيق المعادلات الناتجة جميعًا.
 
@@ -467,6 +526,9 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ٦
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup><mo>−</mo><msup><mi mathvariant="normal">ص</mi><mn dir="ltr">٢</mn></msup></mrow></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">ص</mi></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٨</mn></mtd><mtd><mn dir="ltr">١</mn></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٢</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، جد قيمة المقدار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mrow><mo stretchy="true">(</mo><mrow><mi mathvariant="normal">س</mi><mo>−</mo><mi mathvariant="normal">ص</mi></mrow><mo stretchy="true">)</mo></mrow><mn dir="ltr">٣</mn></msup></math>\`.
+final-answer:
+**القيمة: ٦٤.**
+
 solution:
 تساوي مصفوفتين يقتضي تساوي الرتبتين، ثم تساوي كل مدخلتين في الصف والعمود نفسيهما.
 
@@ -498,6 +560,9 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ٦
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><msup><mi mathvariant="normal">س</mi><mn dir="ltr">٢</mn></msup></mtd><mtd><msup><mi mathvariant="normal">ص</mi><mn dir="ltr">٣</mn></msup></mtd><mtd><msqrt><mi mathvariant="normal">ل</mi></msqrt></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٢٥</mn></mtd><mtd><mn dir="ltr">٨</mn></mtd><mtd><mn dir="ltr">٤</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، جد قيمة المقدار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>+</mo><mi mathvariant="normal">ص</mi><mo>+</mo><mi mathvariant="normal">ل</mi></mrow></math>\`.
+final-answer:
+**القيمتان الممكنتان للمجموع: ٢٣ أو ١٣.**
+
 solution:
 التساوي المصفوفي يفرض تساوي كل مدخل مع نظيره؛ لا يكفي اختيار قيمة تحقق بعض المدخلات فقط.
 
@@ -544,6 +609,12 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ٦
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">أ</mi><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">ب</mi><mo>+</mo><mn dir="ltr">١</mn></mrow></mtd></mtr><mtr><mtd><mi mathvariant="normal">ج</mi></mtd><mtd><mn dir="ltr">١٦</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٣</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٥</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">أ</mi><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">د</mi><mo>−</mo><mn dir="ltr">٢</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، جد قيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">د</mi></math>\`.
+final-answer:
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">٥</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٣</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">د</mi><mo>=</mo><mn dir="ltr">٦</mn></mrow></math>\`**
+
 solution:
 تتساوى مصفوفتان عندما تتساوى رتبتهما وكل مدخلتين تقعان في الصف والعمود نفسيهما؛ لذلك يجب تحقيق المعادلات الناتجة جميعًا.
 
@@ -569,6 +640,12 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ٦
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 لتكن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ب</mi></mrow></mtd><mtd><mrow><mi mathvariant="normal">أ</mi><mo>−</mo><mi mathvariant="normal">ب</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mi mathvariant="normal">ب</mi><mo>+</mo><mi mathvariant="normal">ج</mi></mrow></mtd><mtd><mrow><mi mathvariant="normal">أ</mi><mo>−</mo><mi mathvariant="normal">ب</mi><mo>+</mo><mn dir="ltr">٢</mn><mi mathvariant="normal">د</mi></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">٩</mn></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></mtd></mtr><mtr><mtd><mn dir="ltr">٧</mn></mtd><mtd><mn dir="ltr">٥</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، جد قيم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">أ</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ب</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ج</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">د</mi></math>\`.
+final-answer:
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">٣</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٦</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">د</mi><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>\`**
+
 solution:
 تتساوى مصفوفتان عندما تتساوى رتبتهما وكل مدخلتين تقعان في الصف والعمود نفسيهما؛ لذلك يجب تحقيق المعادلات الناتجة جميعًا.
 
@@ -600,6 +677,12 @@ reference: الكامل، الوحدة ٣ · النسخة المصورة، ص ٦
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 إذا كانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mn dir="ltr">١٢٨</mn></mtd><mtd><mrow><msub><mtext dir="rtl">لو</mtext><mn dir="ltr">٧</mn></msub><mrow><mo stretchy="true">(</mo><msup><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٤٩</mn></mfrac><mi mathvariant="normal">س</mi></msup><mo stretchy="true">)</mo></mrow></mrow></mtd></mtr><mtr><mtd><msqrt><mi mathvariant="normal">ع</mi></msqrt></mtd><mtd><mfrac><mn dir="ltr">٦</mn><mrow><mi mathvariant="normal">ل</mi><mo>+</mo><mn dir="ltr">٥</mn></mrow></mfrac></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><msup><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></msup></mtd><mtd><mi mathvariant="normal">ص</mi></mtd></mtr><mtr><mtd><mn dir="ltr">٤</mn></mtd><mtd><mn dir="ltr">٣</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>\`، جد قيمة كل من الثوابت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">س</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ص</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ع</mi></math>\`، \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ل</mi></math>\`.
+final-answer:
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٧</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ص</mi><mo>=</mo><mo>−</mo><mn dir="ltr">١٤</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ع</mi><mo>=</mo><mn dir="ltr">١٦</mn></mrow></math>\`**
+- **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ل</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٣</mn></mrow></math>\`**
+
 solution:
 تتساوى مصفوفتان عندما تتساوى رتبتهما وكل مدخلتين تقعان في الصف والعمود نفسيهما؛ لذلك يجب تحقيق المعادلات الناتجة جميعًا.
 
@@ -885,6 +968,13 @@ reference: الكامل في الرياضيات توجيهي علمي (الوح�
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 اكتب المصفوفة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">أ</mi></mrow></math>\` من الرتبة \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٤</mn></mrow></math>\` بحيث: \`mathml:<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msub><mrow><mi mathvariant="normal">أ</mi></mrow><mrow><mrow><mi mathvariant="normal">ي</mi></mrow><mrow><mtext dir="rtl">هـ</mtext></mrow></mrow></msub><mo>=</mo><mrow><mo stretchy="true">{</mo><mtable><mtr><mtd><mrow><msup><mn dir="ltr">٢</mn><mrow><mi mathvariant="normal">ي</mi></mrow></msup></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&gt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>=</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٥</mn><mtext dir="rtl">هـ</mtext></mrow></mtd><mtd><mrow><mi mathvariant="normal">ي</mi><mo>&lt;</mo><mtext dir="rtl">هـ</mtext></mrow></mtd></mtr></mtable></mrow></mrow></math>\`.
+final-answer:
+**الإجابة:**
+
+\`\`\`mathml
+<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mrow><mo stretchy="true">(</mo><mtable><mtr><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٠</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٤</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">١٥</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢٠</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٨</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></mtd><mtd><mrow><mn dir="ltr">٢٠</mn></mrow></mtd></mtr></mtable><mo stretchy="true">)</mo></mrow></mrow></math>
+\`\`\`
+
 solution:
 المصفوفة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٣</mn><mo>×</mo><mn dir="ltr">٤</mn></mrow></math>\`، أي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٣</mn></math>\` صفوف و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٤</mn></math>\` أعمدة. نقارن رقم الصف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">ي</mi></math>\` برقم العمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">هـ</mi></math>\` لكل مدخلة: تحت القطر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">ي</mi><mo>&gt;</mo><mi mathvariant="normal">هـ</mi></mrow></math>\` نستعمل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><msup><mn dir="ltr">٢</mn><mi mathvariant="normal">ي</mi></msup></math>\`، وعلى القطر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\`، وفوقه \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mn dir="ltr">٥</mn><mi mathvariant="normal">هـ</mi></mrow></math>\`.
 في الصف الأول تكون المدخلة القطرية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mo>−</mo><mn dir="ltr">١</mn></mrow></math>\` والباقي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٥</mn></math>\` أمثال العمود.

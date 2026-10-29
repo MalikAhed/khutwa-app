@@ -24,6 +24,8 @@ Like a lot of other Palestinian business people, he wants to do something positi
 One way he believes he can help is to pass on what he's learnt to others even younger than he is. 'I learnt a lot from that start-up weekend. When I go to the next one, I hope I'll learn more, but I'll also be able to advise others.'
 
 Why did people encourage Mustafa to study English at university?
+final-answer:
+**Because he was good at languages.**
 solution:
 **الإجابة:** Because he was good at languages.
 
@@ -61,6 +63,10 @@ Like a lot of other Palestinian business people, he wants to do something positi
 One way he believes he can help is to pass on what he's learnt to others even younger than he is. 'I learnt a lot from that start-up weekend. When I go to the next one, I hope I'll learn more, but I'll also be able to advise others.'
 
 How did the start-up weekend help Mustafa in his work?
+final-answer:
+- He received **financial support** to develop more ideas.
+- He **met other business people**.
+- He learnt **how to run a business and get his products noticed**.
 solution:
 **الإجابة:** He received financial support to develop more ideas, met other business people, and learnt how to run a business and get his products noticed.
 
@@ -98,6 +104,8 @@ Like a lot of other Palestinian business people, he wants to do something positi
 One way he believes he can help is to pass on what he's learnt to others even younger than he is. 'I learnt a lot from that start-up weekend. When I go to the next one, I hope I'll learn more, but I'll also be able to advise others.'
 
 What does Mustafa hope to do at the next start up weekend?
+final-answer:
+**He hopes to learn more and advise others.**
 solution:
 **الإجابة:** He hopes to learn more and advise others.
 
@@ -246,6 +254,8 @@ One way he believes he can help is to pass on what he's learnt to others even yo
 
 Don’t forget that **managing** a day to day business is not an easy task.
 
+final-answer:
+Don’t forget that **running** a day-to-day business is not an easy task.
 solution:
 **الإجابة:** Don’t forget that running a day-to-day business is not an easy task.
 
@@ -287,6 +297,8 @@ One way he believes he can help is to pass on what he's learnt to others even yo
 
 Farmers are seeking to improve their **profits** from their crops.
 
+final-answer:
+Farmers are seeking to improve their **returns** from their crops.
 solution:
 **الإجابة:** Farmers are seeking to improve their returns from their crops.
 
@@ -327,6 +339,8 @@ Like a lot of other Palestinian business people, he wants to do something positi
 One way he believes he can help is to pass on what he's learnt to others even younger than he is. 'I learnt a lot from that start-up weekend. When I go to the next one, I hope I'll learn more, but I'll also be able to advise others.'
 
 his (line 6) ..............
+final-answer:
+**Mustafa Jawad**
 solution:
 His تدل على صاحب breakthrough؛ وصاحب الإنجاز الذي تتحدث عنه الفقرة هو مصطفى جواد.
 
@@ -361,6 +375,8 @@ Like a lot of other Palestinian business people, he wants to do something positi
 One way he believes he can help is to pass on what he's learnt to others even younger than he is. 'I learnt a lot from that start-up weekend. When I go to the next one, I hope I'll learn more, but I'll also be able to advise others.'
 
 his country (line 14) ..............
+final-answer:
+**Palestine**
 solution:
 his country تعني بلد مصطفى. يصفه السياق ضمن رجال الأعمال الفلسطينيين، فالبلد المقصود فلسطين.
 
@@ -395,6 +411,8 @@ Like a lot of other Palestinian business people, he wants to do something positi
 One way he believes he can help is to pass on what he's learnt to others even younger than he is. 'I learnt a lot from that start-up weekend. When I go to the next one, I hope I'll learn more, but I'll also be able to advise others.'
 
 Nationality ..............
+final-answer:
+**Palestinian**
 solution:
 **الإجابة:** Palestinian
 
@@ -432,6 +450,8 @@ Like a lot of other Palestinian business people, he wants to do something positi
 One way he believes he can help is to pass on what he's learnt to others even younger than he is. 'I learnt a lot from that start-up weekend. When I go to the next one, I hope I'll learn more, but I'll also be able to advise others.'
 
 Current position (job) ..............
+final-answer:
+**Head of an online graphic design company**
 solution:
 **الإجابة:** Head of an online graphic design company
 
@@ -469,6 +489,8 @@ Like a lot of other Palestinian business people, he wants to do something positi
 One way he believes he can help is to pass on what he's learnt to others even younger than he is. 'I learnt a lot from that start-up weekend. When I go to the next one, I hope I'll learn more, but I'll also be able to advise others.'
 
 First attempt ..............
+final-answer:
+**A game**
 solution:
 **الإجابة:** A game
 
@@ -506,6 +528,8 @@ Like a lot of other Palestinian business people, he wants to do something positi
 One way he believes he can help is to pass on what he's learnt to others even younger than he is. 'I learnt a lot from that start-up weekend. When I go to the next one, I hope I'll learn more, but I'll also be able to advise others.'
 
 Breakthrough ..............
+final-answer:
+**Attending a business start-up weekend in Ramallah**
 solution:
 **الإجابة:** Attending a business start-up weekend in Ramallah
 
@@ -545,6 +569,9 @@ One way he believes he can help is to pass on what he's learnt to others even yo
 Business aims
 a. ..............
 b. ..............
+final-answer:
+1. **To get good returns on the investment.**
+2. **To help his country.**
 solution:
 **الإجابة:** a. To get good returns on the investment.
 b. To help his country.
@@ -583,6 +610,8 @@ His big breakthrough came when he attended a 'start-up weekend' in Ramallah. He 
 Mustafa is currently working on a program that makes teaching of chemistry at schools more fun. He has already had interest from within Palestine and from other countries in the Arab World. Like a lot of other Palestinian business people, he wants to do something positive to help his country, but he stresses that his company isn't a humanitarian operation. '**It's** a business,' he says 'and the aim is to get good returns on the investment.'
 
 Who said that ICT could be the best hope for the economic future of Palestine?
+final-answer:
+**Experts inside and outside the country.**
 solution:
 **الإجابة:** Experts inside and outside the country.
 
@@ -622,6 +651,8 @@ His big breakthrough came when he attended a 'start-up weekend' in Ramallah. He 
 Mustafa is currently working on a program that makes teaching of chemistry at schools more fun. He has already had interest from within Palestine and from other countries in the Arab World. Like a lot of other Palestinian business people, he wants to do something positive to help his country, but he stresses that his company isn't a humanitarian operation. '**It's** a business,' he says 'and the aim is to get good returns on the investment.'
 
 When did Jawad’s great achievement become a reality?
+final-answer:
+**When he attended a start-up weekend in Ramallah.**
 solution:
 **الإجابة:** When he attended a start-up weekend in Ramallah.
 
@@ -659,6 +690,8 @@ His big breakthrough came when he attended a 'start-up weekend' in Ramallah. He 
 Mustafa is currently working on a program that makes teaching of chemistry at schools more fun. He has already had interest from within Palestine and from other countries in the Arab World. Like a lot of other Palestinian business people, he wants to do something positive to help his country, but he stresses that his company isn't a humanitarian operation. '**It's** a business,' he says 'and the aim is to get good returns on the investment.'
 
 The internet cloud is the place where you can ..............
+final-answer:
+**distribute your final product**
 solution:
 **الإجابة:** distribute your final product
 
@@ -696,6 +729,9 @@ His big breakthrough came when he attended a 'start-up weekend' in Ramallah. He 
 Mustafa is currently working on a program that makes teaching of chemistry at schools more fun. He has already had interest from within Palestine and from other countries in the Arab World. Like a lot of other Palestinian business people, he wants to do something positive to help his country, but he stresses that his company isn't a humanitarian operation. '**It's** a business,' he says 'and the aim is to get good returns on the investment.'
 
 A .............. and a .............. are needed for the ICT start-up.
+final-answer:
+1. **computer**
+2. **connection**
 solution:
 **الإجابة:** computer; connection
 
@@ -733,6 +769,8 @@ His big breakthrough came when he attended a 'start-up weekend' in Ramallah. He 
 Mustafa is currently working on a program that makes teaching of chemistry at schools more fun. He has already had interest from within Palestine and from other countries in the Arab World. Like a lot of other Palestinian business people, he wants to do something positive to help his country, but he stresses that his company isn't a humanitarian operation. '**It's** a business,' he says 'and the aim is to get good returns on the investment.'
 
 Mustafa makes sure that his firm is a ..............
+final-answer:
+**business**
 solution:
 **الإجابة:** business
 
@@ -845,6 +883,8 @@ His big breakthrough came when he attended a 'start-up weekend' in Ramallah. He 
 Mustafa is currently working on a program that makes teaching of chemistry at schools more fun. He has already had interest from within Palestine and from other countries in the Arab World. Like a lot of other Palestinian business people, he wants to do something positive to help his country, but he stresses that his company isn't a humanitarian operation. '**It's** a business,' he says 'and the aim is to get good returns on the investment.'
 
 Instead ..............
+final-answer:
+**Instead of studying English at university.**
 solution:
 Instead تشير إلى البديل الذي اختاره: علّم نفسه البرمجة بدل تنفيذ نصيحة دراسة الإنجليزية في الجامعة.
 
@@ -879,6 +919,8 @@ His big breakthrough came when he attended a 'start-up weekend' in Ramallah. He 
 Mustafa is currently working on a program that makes teaching of chemistry at schools more fun. He has already had interest from within Palestine and from other countries in the Arab World. Like a lot of other Palestinian business people, he wants to do something positive to help his country, but he stresses that his company isn't a humanitarian operation. '**It's** a business,' he says 'and the aim is to get good returns on the investment.'
 
 more importantly ..............
+final-answer:
+**Meeting other business people and learning from them.**
 solution:
 more importantly تقارن التمويل بالفائدة التالية؛ وهي مقابلة رجال أعمال والتعلم منهم عن الإدارة وإظهار المنتجات.
 
@@ -913,6 +955,8 @@ His big breakthrough came when he attended a 'start-up weekend' in Ramallah. He 
 Mustafa is currently working on a program that makes teaching of chemistry at schools more fun. He has already had interest from within Palestine and from other countries in the Arab World. Like a lot of other Palestinian business people, he wants to do something positive to help his country, but he stresses that his company isn't a humanitarian operation. '**It's** a business,' he says 'and the aim is to get good returns on the investment.'
 
 It ..............
+final-answer:
+**Mustafa’s company.**
 solution:
 في It's a business يعود It إلى الشركة التي ينفي عنها الوصف الإنساني، لا إلى البرنامج التعليمي.
 
@@ -946,6 +990,11 @@ Complete the table with missing information from the text.
 |---|---|---|
 | Anita | .............. | .............. |
 | Hashem | .............. | .............. |
+final-answer:
+| Name | Product | Business advice |
+|---|---|---|
+| **Anita** | **Jewellery** | Work out the financial figures and have them checked by someone who understands them. |
+| **Hashem** | **Online music videos** | Understand the market and identify potential customers, competitors and what they offer. |
 solution:
 **الإجابة:**
 
@@ -988,6 +1037,8 @@ PDF p. 82 · printed p. 81
 'I think initially the key thing is to understand the market. Work out who your potential customers are, who your competitors are, what they offer and how you could do it better. It's easy these days to get professional help with this kind of market research. After that, just be determined and don't give up if things get difficult (which they almost certainly will at some point). Starting and running a business is hard work. If you think it's only going to be a nine-to-five job, you should go and do something else.'
 
 warns that success doesn't come easily.
+final-answer:
+**Hashem Ali**
 solution:
 **الإجابة:** Hashem Ali
 
@@ -1029,6 +1080,8 @@ PDF p. 82 · printed p. 81
 'I think initially the key thing is to understand the market. Work out who your potential customers are, who your competitors are, what they offer and how you could do it better. It's easy these days to get professional help with this kind of market research. After that, just be determined and don't give up if things get difficult (which they almost certainly will at some point). Starting and running a business is hard work. If you think it's only going to be a nine-to-five job, you should go and do something else.'
 
 talks about spending priorities.
+final-answer:
+**Anita Simons**
 solution:
 **الإجابة:** Anita Simons
 
@@ -1070,6 +1123,8 @@ PDF p. 82 · printed p. 81
 'I think initially the key thing is to understand the market. Work out who your potential customers are, who your competitors are, what they offer and how you could do it better. It's easy these days to get professional help with this kind of market research. After that, just be determined and don't give up if things get difficult (which they almost certainly will at some point). Starting and running a business is hard work. If you think it's only going to be a nine-to-five job, you should go and do something else.'
 
 advises others not to give up.
+final-answer:
+**Hashem Ali**
 solution:
 **الإجابة:** Hashem Ali
 
@@ -1111,6 +1166,8 @@ PDF p. 82 · printed p. 81
 'I think initially the key thing is to understand the market. Work out who your potential customers are, who your competitors are, what they offer and how you could do it better. It's easy these days to get professional help with this kind of market research. After that, just be determined and don't give up if things get difficult (which they almost certainly will at some point). Starting and running a business is hard work. If you think it's only going to be a nine-to-five job, you should go and do something else.'
 
 According to Anita's parents ..............
+final-answer:
+**she should spend more on marketing and less on product development.**
 solution:
 **الإجابة:** she should spend more on marketing and less on product development.
 
@@ -1146,6 +1203,8 @@ PDF p. 82 · printed p. 81
 'I think initially the key thing is to understand the market. Work out who your potential customers are, who your competitors are, what they offer and how you could do it better. It's easy these days to get professional help with this kind of market research. After that, just be determined and don't give up if things get difficult (which they almost certainly will at some point). Starting and running a business is hard work. If you think it's only going to be a nine-to-five job, you should go and do something else.'
 
 According to Hashem the key thing to succeed in business is ..............
+final-answer:
+**understanding the market**
 solution:
 **الإجابة:** understanding the market
 
@@ -1181,6 +1240,8 @@ PDF p. 82 · printed p. 81
 'I think initially the key thing is to understand the market. Work out who your potential customers are, who your competitors are, what they offer and how you could do it better. It's easy these days to get professional help with this kind of market research. After that, just be determined and don't give up if things get difficult (which they almost certainly will at some point). Starting and running a business is hard work. If you think it's only going to be a nine-to-five job, you should go and do something else.'
 
 Both Anita and Hashem consider .............. as an important point.
+final-answer:
+**getting advice**
 solution:
 أنيتا تصرح بأهمية النصيحة، وهاشم يدعو للاستعانة بخبرة مهنية في أبحاث السوق؛ فالفكرة المشتركة الاستفادة من نصيحة المختصين.
 
@@ -1215,6 +1276,8 @@ c. .............. You need a support system while you are starting a business an
 d. .............. Save up if you have to. approach potential investors and lenders. Figure your financial fall back plan. Don’t expect to start a business and then walk into a bank and get the amount you need.
 
 Tip a: ..............
+final-answer:
+**2. Be passionate about what you do**
 solution:
 **الإجابة:** 2. Be passionate about what you do
 
@@ -1251,6 +1314,8 @@ c. .............. You need a support system while you are starting a business an
 d. .............. Save up if you have to. approach potential investors and lenders. Figure your financial fall back plan. Don’t expect to start a business and then walk into a bank and get the amount you need.
 
 Tip b: ..............
+final-answer:
+**4. Write a business plan**
 solution:
 **الإجابة:** 4. Write a business plan
 
@@ -1287,6 +1352,8 @@ c. .............. You need a support system while you are starting a business an
 d. .............. Save up if you have to. approach potential investors and lenders. Figure your financial fall back plan. Don’t expect to start a business and then walk into a bank and get the amount you need.
 
 Tip c: ..............
+final-answer:
+**1. Don’t do it alone**
 solution:
 **الإجابة:** 1. Don’t do it alone
 
@@ -1323,6 +1390,8 @@ c. .............. You need a support system while you are starting a business an
 d. .............. Save up if you have to. approach potential investors and lenders. Figure your financial fall back plan. Don’t expect to start a business and then walk into a bank and get the amount you need.
 
 Tip d: ..............
+final-answer:
+**3. Get the money**
 solution:
 **الإجابة:** 3. Get the money
 
@@ -1362,6 +1431,10 @@ What inquiries should a person raise to check whether he is on the right path?
 a. ..............
 b. ..............
 c. ..............
+final-answer:
+1. **Are you willing to work hard?**
+2. **Do you really want to operate independently?**
+3. **Do you have the self-confidence and self-discipline?**
 solution:
 **الإجابة:** a. Are you willing to work hard?
 b. Do you really want to operate independently?
@@ -1400,6 +1473,8 @@ c. .............. You need a support system while you are starting a business an
 d. .............. Save up if you have to. approach potential investors and lenders. Figure your financial fall back plan. Don’t expect to start a business and then walk into a bank and get the amount you need.
 
 Why is it necessary to make a business plan first?
+final-answer:
+**It can help you avoid wasting time and money starting a business that will not succeed.**
 solution:
 **الإجابة:** It can help you avoid wasting time and money starting a business that will not succeed.
 
@@ -1436,6 +1511,8 @@ c. .............. You need a support system while you are starting a business an
 d. .............. Save up if you have to. approach potential investors and lenders. Figure your financial fall back plan. Don’t expect to start a business and then walk into a bank and get the amount you need.
 
 How can you get the money for your business?
+final-answer:
+**Save up and approach potential investors and lenders.**
 solution:
 **الإجابة:** Save up and approach potential investors and lenders.
 
