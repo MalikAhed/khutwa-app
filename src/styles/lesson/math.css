@@ -88,7 +88,6 @@
   cursor:pointer;
 }
 .lesson-shell:is([data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="physics"]) .math-question-filter-button svg { display:block; width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linejoin:round; }
-.lesson-shell:is([data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="physics"]) .math-question-filter-button:hover { background:#e7f6fd; border-color:#78b6d3; }
 .lesson-shell:is([data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="physics"]) .math-question-filter-button:focus-visible { outline:3px solid var(--system-focus); outline-offset:3px; }
 .math-question-filter-dialog {
   width:min(680px,calc(100% - 28px));

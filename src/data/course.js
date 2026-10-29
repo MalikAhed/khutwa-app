@@ -1,10 +1,10 @@
 export const COURSE_SUBJECTS = Object.freeze([
-  { id:"ict", name:"تكنولوجيا المعلومات", status:"available" },
   { id:"mathematics", name:"الرياضيات 1", status:"available", artwork:"mathematics" },
   { id:"mathematics-2", name:"الرياضيات 2", status:"available", artwork:"mathematics" },
   { id:"physics", name:"الفيزياء", status:"available" },
-  { id:"biology", name:"الأحياء", status:"available" },
   { id:"chemistry", name:"الكيمياء", status:"available", artwork:"chemistry" },
+  { id:"biology", name:"الأحياء", status:"available" },
+  { id:"ict", name:"تكنولوجيا المعلومات", status:"available" },
   { id:"english", name:"اللغة الإنجليزية", status:"available" },
   { id:"arabic", name:"اللغة العربية", status:"available" },
   { id:"islamic-education", name:"التربية الإسلامية", status:"available" },

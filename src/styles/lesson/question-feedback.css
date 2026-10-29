@@ -4,7 +4,6 @@
 .ui-lab-mcq>.lesson-question-meta { margin:0; }
 .question-report-button { flex:0 0 44px; width:44px; height:44px; display:grid; place-items:center; border:0; border-radius:10px; background:transparent; color:#77818b; cursor:pointer; }
 .question-report-button svg { width:23px; height:23px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linejoin:round; stroke-linecap:round; }
-.question-report-button:hover { color:#30475a; background:#f5f7f8; }
 .question-report-button:focus-visible { outline:3px solid var(--system-focus); outline-offset:2px; }
 .question-report-dialog { width:min(440px,calc(100vw - 32px)); max-height:calc(100dvh - 32px); padding:24px; border:1px solid #e5e5e5; border-radius:20px; color:var(--system-ink); font-family:var(--font-ui); }
 .question-report-dialog::backdrop { background:#17313f99; }

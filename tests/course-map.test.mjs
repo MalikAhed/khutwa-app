@@ -17,7 +17,7 @@ test("the learning map contains no development reference nodes", () => {
 test("the learning map renders every subject with the approved shared card layout", () => {
   const markup = renderCourseMapMarkup();
   const subjects = [...markup.matchAll(/data-subject="([^"]+)"/g)].map((match) => match[1]);
-  assert.deepEqual(subjects, ["ict", "mathematics", "mathematics-2", "physics", "biology", "chemistry", "english", "arabic", "islamic-education"]);
+  assert.deepEqual(subjects, ["mathematics", "mathematics-2", "physics", "chemistry", "biology", "ict", "english", "arabic", "islamic-education"]);
   assert.match(markup, /data-subject="mathematics"[^]*?<h2>الرياضيات 1<\/h2>/);
   assert.match(markup, /data-subject="mathematics-2"[^]*?<h2>الرياضيات 2<\/h2>/);
   assert.equal((markup.match(/<button class="subject-card(?: [^"]+)?"/g) || []).length, 9);

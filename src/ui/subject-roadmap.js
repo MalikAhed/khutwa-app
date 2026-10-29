@@ -102,6 +102,30 @@ export function mountSubjectRoadmap({ container, roadmap, onStartLesson, isLesso
   const controller = new AbortController();
   const { signal } = controller;
   container.innerHTML = renderSubjectRoadmapMarkup(roadmap, { isLessonLocked, getPartProgress, getPartQuestionIds, getPartReview });
+  // Touch browsers can delay :active until release. Show the full press on contact.
+  let pressedButton = null, pressedPointerId = null;
+  const releasePress = () => {
+    pressedButton?.classList.remove("is-pressed");
+    pressedButton = null; pressedPointerId = null;
+  };
+  container.addEventListener("pointerdown", event => {
+    if (event.pointerType === "mouse" || !event.isPrimary || event.button !== 0) return;
+    const button = event.target.closest("[data-roadmap-part]");
+    if (!button || button.disabled) return;
+    releasePress();
+    pressedButton = button; pressedPointerId = event.pointerId;
+    button.classList.add("is-pressed");
+  }, { signal });
+  container.addEventListener("pointermove", event => {
+    if (!pressedButton || event.pointerId !== pressedPointerId) return;
+    const rect = pressedButton.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) releasePress();
+  }, { signal });
+  for (const type of ["pointerup", "pointercancel"]) window.addEventListener(type, event => {
+    if (event.pointerId === pressedPointerId) releasePress();
+  }, { signal });
+  window.addEventListener("blur", releasePress, { signal });
+  signal.addEventListener("abort", releasePress, { once:true });
   container.querySelectorAll("[data-unit-guide]").forEach(button => {
     if (!UNIT_GUIDE_ENABLED) {
       button.addEventListener("click", () => onComingSoon?.(), { signal });

@@ -112,7 +112,7 @@ try {
     const normal=await inspect();await close.hover();await close.focus();
     const focused=await inspect();
     assert.equal(focused.background,"rgba(0, 0, 0, 0)");assert.equal(focused.outline,"none");assert.equal(focused.shadow,"none");assert.equal(focused.transform,"none");
-    assert.ok(normal.width>=48&&normal.height>=48&&parseFloat(normal.icon)>=34&&normal.mask.includes('stroke-linecap'));
+    assert.ok(normal.width>=44&&normal.height>=44&&parseFloat(normal.icon)===24&&normal.mask.includes('stroke-linecap'));
     await page.mouse.down();await page.waitForFunction(color=>getComputedStyle(document.querySelector("[data-explanation-close]")).color!==color,normal.color);const pressed=await inspect();assert.equal(pressed.y,normal.y);assert.notEqual(pressed.color,normal.color,"press darkens only the close icon");
     await page.mouse.move(0,890);await page.mouse.up();
     if(process.env.BROWSER_SCREENSHOT_DIR){await mkdir(process.env.BROWSER_SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:`${process.env.BROWSER_SCREENSHOT_DIR}/reading-controls-${width}.png`});}

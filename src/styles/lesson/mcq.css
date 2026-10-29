@@ -119,16 +119,8 @@
   background: transparent;
   color: #afafaf;
 }
-.ui-lab-mcq-open .ui-lab-mcq .level-answer-list button:hover {
-  background: #f7f7f7;
-}
-.ui-lab-mcq-open .ui-lab-mcq .level-answer-list button:hover:not(.is-selected) {
-  transform: translateY(1px);
-  box-shadow: 0 3px 0 #e5e5e5;
-}
-.ui-lab-mcq-open .ui-lab-mcq .level-answer-list button:active {
-  transform: translateY(2px);
-  box-shadow: 0 1px 0 var(--quest-theme-main);
+@media (hover:hover) {
+  .ui-lab-mcq-open .ui-lab-mcq .level-answer-list button:hover:not(.is-selected) { background:#f7f7f7; }
 }
 .ui-lab-mcq-open .ui-lab-mcq .level-answer-list button.is-selected {
   border-color: #84d8ff;
@@ -359,6 +351,7 @@
   flex:1;
   min-width:0;
   cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
 }
 .level-question-ratings input {
   position:absolute;
@@ -383,7 +376,7 @@
   border-radius:12px;
   color:var(--rating-ink);
   font:900 16px/1.2 var(--font-ui);
-  transition:background-color 150ms ease;
+  transition:color 150ms ease;
 }
 .level-question-ratings label svg {
   flex:none;
@@ -396,8 +389,9 @@
   stroke-linejoin:round;
 }
 @media (hover:hover) {
-  .level-question-ratings label:not(:has(input:checked)):hover > span { background:#f1f3f5; }
+  .level-question-ratings label:hover > span { color:color-mix(in srgb,var(--rating-ink) 75%,black); }
 }
+.level-question-ratings label:active > span { color:color-mix(in srgb,var(--rating-ink) 75%,black); }
 .level-question-ratings input:focus-visible + span { outline:3px solid var(--system-focus); outline-offset:-3px; }
 @media (prefers-reduced-motion:reduce) {
   .level-question-rating-highlight { transition:none; }

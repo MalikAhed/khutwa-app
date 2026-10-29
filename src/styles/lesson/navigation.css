@@ -51,9 +51,8 @@
 .level-action[hidden] { display: none; }
 .level-action--primary { --action-edge: var(--system-green-action-edge); border-color: var(--system-green-action); background: var(--system-green-action); color: var(--system-action-ink); }
 @media (hover:hover) {
-  .level-action--primary:hover:not(:disabled) { background: var(--system-green-action-hover); border-color: var(--system-green-action-hover); }
+  .level-action--primary:hover:not(:disabled) { background:var(--system-green-action-hover); border-color:var(--system-green-action-hover); }
 }
-.level-action:active:not(:disabled) { transform: translateY(var(--control-press, 3px)); box-shadow: 0 1px 0 var(--action-edge); }
 .level-action:disabled { --action-edge: #c5c9cc; border-color: #d7dce0; background: #e7ebee; color: #63717d; cursor: not-allowed; }
 .level-action:focus-visible { outline: 3px solid var(--system-focus); outline-offset: 4px; }
 .level-action--check > span { min-width: 0; flex: 1; white-space: normal; overflow-wrap: anywhere; }
@@ -67,10 +66,7 @@
   background:#ff4b4b;
 }
 @media (hover:hover) {
-  .ui-lab-mcq-open .level-layout-actions:has(> .level-feedback.is-wrong) [data-template-primary]:hover:not(:disabled) {
-    border-color:#ff6868;
-    background:#ff6868;
-  }
+  .ui-lab-mcq-open .level-layout-actions:has(> .level-feedback.is-wrong) [data-template-primary]:hover:not(:disabled) { border-color:#ff6868; background:#ff6868; }
 }
 .level-layout-actions[dir="rtl"] > .level-feedback { direction: rtl; }
 @media (min-width: 761px) {
@@ -123,7 +119,6 @@
 @media (prefers-reduced-motion: reduce) {
   .level-layout-actions, .level-action { transition: none; }
   .level-layout-actions > .level-feedback:is(.is-correct, .is-wrong) { animation: none; }
-  .level-action:active:not(:disabled) { transform: none; }
 }
 
 /* Question numbers sit above ratings at every viewport width. */

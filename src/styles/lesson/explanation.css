@@ -35,7 +35,7 @@
   pointer-events:none;
   animation:explanation-shimmer 2500ms ease-in-out infinite;
 }
-.level-action--explain:hover:not(:disabled) { background:#ffcd36; }
+@media (hover:hover) { .level-action--explain:hover:not(:disabled) { background:#ffcd36; } }
 .explanation-price { display:inline-flex; align-items:center; gap:5px; white-space:nowrap; }
 .explanation-price img { display:block; width:22px; height:22px; object-fit:contain; }
 .explanation-included { font-size:1.4em; line-height:1; }

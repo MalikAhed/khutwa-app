@@ -12,8 +12,13 @@ export function mountQuestionNavigation({ shell, signal, locale, getQuestions, g
     else button.removeAttribute('aria-current');
     button.setAttribute('aria-label',`${locale === 'ar' ? 'السؤال' : 'Question'} ${index + 1}، ${labels[rating]}`);
   });
-  const reveal = button => {
-    if (button) track.scrollLeft = button.offsetLeft - (track.clientWidth - button.offsetWidth) / 2;
+  const reveal = (button, animate = true) => {
+    if (!button) return;
+    const item = button.getBoundingClientRect(), viewport = track.getBoundingClientRect();
+    track.scrollTo({
+      left:track.scrollLeft + item.left - viewport.left - (track.clientWidth - item.width) / 2,
+      behavior:animate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'smooth' : 'instant',
+    });
   };
   const mount = () => {
     const nextFooter = shell.querySelector('[data-lesson-step] .level-layout-actions');
@@ -22,6 +27,8 @@ export function mountQuestionNavigation({ shell, signal, locale, getQuestions, g
     if (!rating) return;
     const currentId = getCurrentId();
     if (nextFooter === footer && toolbar?.parentElement === footer && toolbar.contains(rating) && currentId === lastId) return;
+    const animate = lastId !== undefined;
+    const scrollLeft = track?.scrollLeft || 0;
     footer = nextFooter;
     lastId = currentId;
     if (!toolbar) {
@@ -49,12 +56,13 @@ export function mountQuestionNavigation({ shell, signal, locale, getQuestions, g
     }
     toolbar.replaceChildren(slider,...(rating ? [rating] : []));
     footer.prepend(toolbar);footer.classList.add('level-layout-actions--question-slider');
+    track.scrollLeft = scrollLeft;
     refresh();
     cancelAnimationFrame(frame);
     frame = requestAnimationFrame(() => {
       if (signal.aborted) return;
       const button = buttons.find(button => button.hasAttribute('aria-current'));
-      if (button && (button.offsetLeft < track.scrollLeft || button.offsetLeft + button.offsetWidth > track.scrollLeft + track.clientWidth)) reveal(button);
+      reveal(button,animate);
     });
     if (track.dataset.bound) return;
     track.dataset.bound = 'true';
@@ -80,7 +88,9 @@ export function mountQuestionNavigation({ shell, signal, locale, getQuestions, g
     track.addEventListener('click',event => {
       if (event.detail > 0 && performance.now() < suppressUntil) { event.preventDefault();return; }
       const button = event.target.closest('[data-question-jump]');
-      if (button && button.dataset.questionJump !== getCurrentId()) onSelect(button.dataset.questionJump);
+      if (!button) return;
+      if (button.dataset.questionJump !== getCurrentId()) onSelect(button.dataset.questionJump);
+      else reveal(button);
     },{signal});
     track.addEventListener('wheel',event => {
       if (track.scrollWidth <= track.clientWidth + 2 || Math.abs(event.deltaX) >= Math.abs(event.deltaY)) return;

@@ -3,6 +3,8 @@ export function replaceQuestionShell(container, markup) {
   const footer = container.querySelector('.level-layout-actions');
   if (!footer) { container.innerHTML = markup;return; }
   const slider = footer.querySelector('[data-question-slider]');
+  const track = slider?.querySelector('.question-number-track');
+  const scrollLeft = track?.scrollLeft || 0;
   const template = document.createElement('template');
   template.innerHTML = markup;
   const nextFooter = template.content.querySelector('.level-layout-actions');
@@ -13,4 +15,5 @@ export function replaceQuestionShell(container, markup) {
   if (slider) footer.prepend(slider);
   nextFooter.replaceWith(footer);
   container.replaceChildren(template.content);
+  if (track) track.scrollLeft = scrollLeft;
 }
