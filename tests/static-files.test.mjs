@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import { resolvePublicFilePath } from "../src/server/static-files.mjs";
 import { createStaticFileHandler } from "../src/server/static-files.mjs";
 import { createServer } from "node:http";
-import { mkdtemp, mkdir, writeFile, rm } from "node:fs/promises";
+import { mkdtemp, mkdir, readFile, writeFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 
 const projectRoot = path.resolve(
@@ -43,6 +43,22 @@ test("static file resolver rejects malformed and null-byte paths", () => {
     () => resolvePublicFilePath(projectRoot, "/assets/file.js%00.png"),
     URIError,
   );
+});
+
+test("Apple Home Screen discovery returns the Rocky PNG at the root URL", async () => {
+  const server = createServer(await createStaticFileHandler({ root:projectRoot }));
+  await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
+  try {
+    const response = await fetch(`http://127.0.0.1:${server.address().port}/apple-touch-icon.png`);
+    assert.equal(response.status, 200);
+    assert.match(response.headers.get("content-type"), /image\/png/);
+    const png = Buffer.from(await response.arrayBuffer());
+    assert.deepEqual(png, await readFile(path.join(projectRoot, "assets/app/icon-180.png")));
+    assert.equal(png.readUInt32BE(16), 180);
+    assert.equal(png.readUInt32BE(20), 180);
+  } finally {
+    await new Promise(resolve => server.close(resolve));
+  }
 });
 
 test("public assets revalidate without resending bytes and edits invalidate the cache", async () => {

@@ -91,7 +91,7 @@ export function resolvePublicFilePath(root, urlPath) {
   const isPublic =
     normalizedPath === "/" ||
     normalizedPath === "/index.html" ||
-    ["/content-worker.js", "/content-manifest.json", "/release.json"].includes(normalizedPath) ||
+    ["/content-worker.js", "/content-manifest.json", "/release.json", "/apple-touch-icon.png"].includes(normalizedPath) ||
     PUBLIC_DEPENDENCIES.has(normalizedPath) ||
     (isApplicationFile &&
       PUBLIC_EXTENSIONS.has(path.posix.extname(normalizedPath).toLowerCase()));

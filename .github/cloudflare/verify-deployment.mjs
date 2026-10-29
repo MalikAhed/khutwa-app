@@ -17,6 +17,12 @@ const html = await fetch(base).then(response => response.text());
 assert.match(html, /name="learn-account-mode" content="http"/, 'production uses the real account service');
 const release = JSON.parse(await readFile(path.join(root, 'release.json'), 'utf8'));
 assert.deepEqual(await fetch(new URL('/release.json', base)).then(response => response.json()), release);
+assert.match(html, /rel="apple-touch-icon"[^>]*href="\/apple-touch-icon\.png"/, 'iOS uses the dedicated Home Screen icon');
+const appleIcon = await fetch(new URL('/apple-touch-icon.png', base));
+assert.equal(appleIcon.status, 200, 'the Apple icon is published at its conventional root URL');
+assert.match(appleIcon.headers.get('content-type'), /image\/png/);
+assert.deepEqual(Buffer.from(await appleIcon.arrayBuffer()), await readFile(path.join(root, 'apple-touch-icon.png')),
+  'the Apple icon must be the tested Rocky PNG, not an HTML fallback');
 const catalog = await fetch(new URL('/content-manifest.json', base)).then(response => response.json());
 assert.deepEqual(catalog, JSON.parse(await readFile(path.join(root, 'content-manifest.json'), 'utf8')),
   'the deployed lesson catalog must match the tested build');

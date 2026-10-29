@@ -41,7 +41,7 @@ export async function packageApp({ server = false } = {}) {
   const outputDirectory = server ? path.join(root, "_server") : previewDirectory;
   await rm(outputDirectory, { recursive:true, force:true });
   await mkdir(outputDirectory, { recursive:true });
-  for (const entry of ["src", "assets", ".nojekyll"]) {
+  for (const entry of ["src", "assets", ".nojekyll", "apple-touch-icon.png"]) {
     await cp(path.join(root, entry), path.join(outputDirectory, entry), {
       recursive:true, filter:source => includeRuntimeFile(source, lessonImages),
     });
