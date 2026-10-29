@@ -22,7 +22,7 @@ function onboardingChoiceError(name, value) {
     : "";
 }
 const TITLES = {
-  entry: "الرئيسية",
+  entry: "خطوة",
   register: "إنشاء حساب",
   "sign-in": "تسجيل الدخول",
 };

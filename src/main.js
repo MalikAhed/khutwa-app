@@ -27,7 +27,7 @@ import { createQuestionFeedback } from "./services/question-feedback.js";
 import { getSubjectRoadmap } from "./data/subject-roadmaps.js";
 import { watchPreviewUpdates } from "./services/preview-updates.js";
 
-const APP_TITLE = "مساحة التعلّم";
+const APP_TITLE = "خطوة";
 const ROCKY_TOUR_ENABLED = false;
 const appConfig = readAppConfig(document);
 const offlineStorage = { getItem:key => window.localStorage.getItem(key), setItem:(key,value) => window.localStorage.setItem(key,value) };
