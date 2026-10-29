@@ -40,7 +40,7 @@ export function mountQuestionFeedback({ host, shell, feedback, signal, locale = 
     const reasons = ar
       ? [["question","مشكلة في السؤال"],["answer","مشكلة في الإجابة"],["display","مشكلة في العرض"],["other","سبب آخر"]]
       : [["question","Question issue"],["answer","Answer issue"],["display","Display issue"],["other","Other"]];
-    dialog.innerHTML = `<form data-question-report-form><div class="question-report-heading"><h2 id="question-report-title">${ar ? "الإبلاغ عن سؤال" : "Report a question"}</h2><button type="button" data-report-close aria-label="${ar ? "إغلاق" : "Close"}">×</button></div>
+    dialog.innerHTML = `<form data-question-report-form><div class="question-report-heading"><h2 id="question-report-title">${ar ? "الإبلاغ عن سؤال" : "Report a question"}</h2><button class="app-close" type="button" data-report-close aria-label="${ar ? "إغلاق" : "Close"}">×</button></div>
       <p>${ar ? "شكرًا لمساعدتنا في تحسين الأسئلة. اختر المشكلة." : "Help us improve this question. Choose the issue."}</p>
       <fieldset><legend>${ar ? "نوع المشكلة" : "Issue"}</legend>${reasons.map(([value,label],index) => `<label><input type="radio" name="reason" value="${value}"${index === 0 ? " checked" : ""}>${label}</label>`).join("")}</fieldset>
       <label class="question-report-details">${ar ? "تفاصيل إضافية (اختياري)" : "Details (optional)"}<textarea name="details" maxlength="1000" rows="3"></textarea></label>
@@ -57,7 +57,7 @@ export function mountQuestionFeedback({ host, shell, feedback, signal, locale = 
     activeDialog.querySelector("[data-report-close]").addEventListener("click",close,{ signal });
     activeDialog.querySelector("[data-question-hide]")?.addEventListener("click", () => {
       activeDialog.setAttribute("aria-describedby","question-hide-warning");
-      activeDialog.innerHTML = `<form data-question-hide-form><div class="question-report-heading"><h2 id="question-report-title">${ar ? "إخفاء هذا السؤال؟" : "Hide this question?"}</h2><button type="button" data-report-close aria-label="${ar ? "إغلاق" : "Close"}">×</button></div>
+      activeDialog.innerHTML = `<form data-question-hide-form><div class="question-report-heading"><h2 id="question-report-title">${ar ? "إخفاء هذا السؤال؟" : "Hide this question?"}</h2><button class="app-close" type="button" data-report-close aria-label="${ar ? "إغلاق" : "Close"}">×</button></div>
         <p id="question-hide-warning">${ar ? "لن يظهر هذا السؤال مجددًا في دروسك أو مراجعاتك. يُخفى من حسابك فقط، ويبقى متاحًا للطلاب الآخرين. إخفاؤه لا يُحتسب إجابة ولا يمنحك نقاطًا." : "This question will no longer appear in your lessons or reviews. It will be hidden only for your account and remain available to other students. Hiding it does not count as an answer or earn points."}</p>
         <p class="question-feedback-status" data-hide-status role="status" aria-live="polite"></p>
         <div class="question-hide-actions"><button type="button" class="system-action" data-hide-cancel>${ar ? "إلغاء" : "Cancel"}</button><button type="submit" class="system-action system-action--primary" data-hide-confirm>${ar ? "تأكيد الإخفاء" : "Confirm hiding"}</button></div></form>`;

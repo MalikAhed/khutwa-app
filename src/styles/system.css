@@ -82,15 +82,30 @@ button {
   transition:transform 120ms ease,box-shadow 120ms ease,filter 140ms ease,background-color 160ms ease,border-color 160ms ease,color 160ms ease;
 }
 @media (hover:hover) {
-  button:not(.auth-back):not(.auth-links button):not(.subject-card):not(.rated-subject-open):not(.rated-subject-difficulty):not(.nav-item):not(.roadmap-part):not([data-exam-correct]):not(:is(.lesson-shell--ui-lab,.lesson-shell--subject) .lesson-back):not(:disabled):not([aria-disabled="true"]):hover {
+  button:not(.app-close):not(.auth-back):not(.auth-links button):not(.subject-card):not(.rated-subject-open):not(.rated-subject-difficulty):not(.nav-item):not(.roadmap-part):not([data-exam-correct]):not(:is(.lesson-shell--ui-lab,.lesson-shell--subject) .lesson-back):not(:disabled):not([aria-disabled="true"]):hover {
     transform:translateY(2px)!important;
     box-shadow:0 2px 0 var(--button-press-edge)!important;
   }
 }
-button:not(.auth-back):not(.auth-links button):not(.subject-card):not(.rated-subject-open):not(.rated-subject-difficulty):not(.nav-item):not(.roadmap-part):not([data-exam-correct]):not(:is(.lesson-shell--ui-lab,.lesson-shell--subject) .lesson-back):not(:disabled):not([aria-disabled="true"]):active {
+button:not(.app-close):not(.auth-back):not(.auth-links button):not(.subject-card):not(.rated-subject-open):not(.rated-subject-difficulty):not(.nav-item):not(.roadmap-part):not([data-exam-correct]):not(:is(.lesson-shell--ui-lab,.lesson-shell--subject) .lesson-back):not(:disabled):not([aria-disabled="true"]):active {
   transform:translateY(var(--control-press))!important;
   box-shadow:0 1px 0 var(--button-press-edge)!important;
 }
+/* Shared X controls stay still and change only their icon color on press. */
+button.app-close {
+  display:grid; place-items:center; flex:0 0 48px; width:48px; height:48px;
+  min-width:48px; min-height:48px; padding:0; border:0; border-radius:12px;
+  background:transparent; color:var(--close-ink,var(--system-muted)); font-size:0;
+  line-height:1; outline:none; box-shadow:none; transform:none;
+  cursor:pointer; transition:color 120ms ease; -webkit-tap-highlight-color:transparent;
+}
+button.app-close::before {
+  content:""; display:block; width:34px; height:34px; background:currentColor;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m5 5 14 14M5 19 19 5' fill='none' stroke='black' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+button.app-close > svg { display:none; }
+button.app-close:active { color:var(--close-pressed,#30475a); }
+
 button.nav-item:not(:disabled):is(:hover,:active) {
   transform:none!important;
 }

@@ -102,7 +102,7 @@ export function mountHeartDepletion({ resourceStore, ownerId, signal, returnFocu
     dialog.dir = "rtl";
     dialog.setAttribute("aria-labelledby","heart-depletion-title");
     dialog.innerHTML = `<div class="heart-depletion__layout">
-      <button class="heart-depletion__close" type="button" data-heart-close aria-label="إغلاق">×</button>
+      <button class="heart-depletion__close app-close" type="button" data-heart-close aria-label="إغلاق">×</button>
       <div class="heart-depletion__scene" data-heart-scene>
         <img class="heart-depletion__rocky" data-heart-rocky src="assets/mascot/${mode === "offer" ? "rocky-super.svg" : "rocky-sad.svg"}" alt="روكي" width="320" height="304" />
         <div class="heart-depletion__rig" data-heart-rig aria-hidden="true"></div>

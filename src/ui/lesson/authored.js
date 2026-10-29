@@ -76,6 +76,7 @@ export function renderAuthoredInteractiveLesson(
   const lessonStatus = shell.querySelector(".lesson-status");
   const previousChrome = {
     backMarkup: backButton?.innerHTML,
+    backClose: backButton?.classList.contains("app-close"),
     backLabel: backButton?.getAttribute("aria-label"),
     statusHidden: lessonStatus?.hidden,
     progressHidden: topProgress?.hidden,
@@ -166,6 +167,7 @@ export function renderAuthoredInteractiveLesson(
   shell.classList.add("lesson-shell--ui-lab", "lesson-shell--ready-lesson");
   container.classList.add("lesson-card--ui-lab", "lesson-card--ready-lesson");
   backButton.textContent = "×";
+  backButton.classList.add("app-close");
   backButton.setAttribute("aria-label", isLessonPart && !demoMode ? (locale === "ar" ? "إنهاء الجلسة" : "End session") : copy.closeLesson);
   lessonStatus.hidden = true;
   topProgress.setAttribute("role", "progressbar");
@@ -668,6 +670,7 @@ export function renderAuthoredInteractiveLesson(
       "lesson-card--instant-entry",
     );
     backButton.innerHTML = previousChrome.backMarkup;
+    backButton.classList.toggle("app-close",Boolean(previousChrome.backClose));
     if (previousChrome.backLabel === null)
       backButton.removeAttribute("aria-label");
     else backButton.setAttribute("aria-label", previousChrome.backLabel);

@@ -104,9 +104,6 @@
 .math-question-filter-dialog::backdrop { background:#173b4a66; }
 .math-question-filter-dialog-head { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:20px 22px 8px; }
 .math-question-filter-dialog h2 { margin:0; color:#24566b; font:900 20px/1.5 var(--font-ui); }
-.math-question-filter-close { width:44px; height:44px; flex:0 0 auto; border:0; border-radius:12px; background:#f1f7fa; color:#496575; font:400 28px/1 Tahoma, Arial, sans-serif; cursor:pointer; }
-.math-question-filter-close:hover { background:#e4f2f8; }
-.math-question-filter-close:focus-visible { outline:3px solid var(--system-focus); outline-offset:3px; }
 .math-question-filter-empty { margin:0; padding:26px 12px; border:1px dashed #b9d5e5; border-radius:14px; color:#526477; font-size:14px; line-height:1.8; text-align:center; }
 .math-question-filter-levels,.math-question-filter-scopes { display:flex; flex-wrap:wrap; gap:8px; margin:0 22px 14px; padding:0; border:0; }
 .math-question-filter-levels legend,.math-question-filter-scopes legend { width:100%; margin-bottom:2px; color:#526477; font-size:12px; font-weight:900; }

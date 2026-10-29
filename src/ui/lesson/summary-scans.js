@@ -77,7 +77,7 @@ export function mountSummaryScans(summary, { titleId, locale = "ar", signal, exa
       button.setAttribute("aria-haspopup", "dialog");
       const close = doc.createElement("button");
       close.type = "button";
-      close.className = "lesson-summary-scan-toggle lesson-question-image-close";
+      close.className = "lesson-question-image-close app-close";
       close.setAttribute("aria-label", arabic ? "إغلاق الصورة" : "Close image");
       close.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg>';
       const fullImage = img.cloneNode();

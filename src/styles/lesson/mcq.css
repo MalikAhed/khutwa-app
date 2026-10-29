@@ -75,8 +75,8 @@
 .ui-lab-mcq .lesson-question-example img { display:block; width:auto; min-width:min(100%, 480px); max-width:100%; max-height:min(36vh, 340px); height:auto; margin-inline:auto; object-fit:contain; }
 .ui-lab-mcq .lesson-question-example :is(h2, h3, p) { margin: 0 0 10px; color: #24566b; font: 700 17px/1.6 var(--font-ui); }
 .ui-lab-mcq .lesson-question-example table { width: 100%; min-width: 0; margin: 0 0 22px; border-collapse: collapse; table-layout: fixed; font: 600 16px/1.6 var(--font-ui); }
-.ui-lab-mcq .lesson-question-example :is(th, td) { padding: 9px 10px; border: 0; border-bottom: 1px solid #cce4ef; text-align: center; overflow-wrap: anywhere; }
-.ui-lab-mcq .lesson-question-example thead th { background: #f1f3f5; color: #4f565d; font: 800 16px/1.6 var(--font-ui); }
+.ui-lab-mcq .lesson-question-example :is(th, td) { padding: 9px 10px; border: 0; border-bottom: 1px solid var(--markdown-border); text-align: center; overflow-wrap: anywhere; }
+.ui-lab-mcq .lesson-question-example thead th { background: var(--markdown-highlight); color: #4f565d; font: 800 16px/1.6 var(--font-ui); }
 .ui-lab-mcq .lesson-question-example td { color: #233e4e; }
 .ui-lab-mcq .lesson-question-example > :last-child { margin-bottom: 0; }
 .ui-lab-mcq-open .ui-lab-mcq .level-answer-list:is([data-answer-count="2"], [data-answer-count="4"]) {

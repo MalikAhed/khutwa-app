@@ -42,11 +42,10 @@
 .question-explanation-dialog { position:fixed; inset:0; width:100%; max-width:none; height:100dvh; max-height:none; margin:0; padding:0; border:0; border-radius:0; background:#fff; color:var(--system-ink); font:400 1.2rem/1.9 "Rounded Digits","Amiri","Lesson Math",serif; overflow:hidden; }
 .question-explanation-dialog[open] { display:flex; flex-direction:column; animation:explanation-section-enter 320ms cubic-bezier(.2,.8,.2,1) both; }
 .question-explanation-dialog::backdrop { background:transparent; }
+.question-explanation-reading { position:relative; display:flex; flex:1; min-width:0; min-height:0; width:100%; max-width:960px; margin-inline:auto; overflow:hidden; }
 .question-explanation-dialog header { display:flex; flex:none; align-items:center; justify-content:space-between; gap:16px; padding:calc(16px + env(safe-area-inset-top,0px)) var(--page-gutter-right) 16px var(--page-gutter-left); border-bottom:1px solid #e5e7eb; }
 .question-explanation-dialog [data-explanation-body] { flex:1; min-width:0; min-height:0; width:100%; max-width:960px; margin-inline:auto; padding:24px var(--page-gutter-right) calc(24px + env(safe-area-inset-bottom,0px)) var(--page-gutter-left); overflow:auto; overscroll-behavior:contain; scrollbar-gutter:stable; }
 .question-explanation-dialog > header h2 { margin:0; font-size:1.3rem; }
-.question-explanation-dialog header button { flex:0 0 44px; width:44px; height:44px; border:0; border-radius:10px; background:#f3f5f7; color:var(--system-ink); font:inherit; font-size:28px; cursor:pointer; }
-.question-explanation-dialog header button:focus-visible { outline:3px solid var(--system-focus); outline-offset:2px; }
 .question-explanation-dialog .markdown-rendered { overflow-wrap:anywhere; line-height:2; }
 .question-explanation-dialog .markdown-rendered > p { margin-block:0 24px; }
 .question-explanation-dialog .markdown-rendered li + li { margin-top:18px; }

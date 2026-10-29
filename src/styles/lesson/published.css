@@ -69,9 +69,9 @@
 .lesson-exam-question .lesson-final-answer { font-weight:600; }
 .lesson-final-answer :is(ul,ol) > li::marker { font-weight:800; }
 .lesson-flashcard-back .markdown-rendered > p { margin-block:0 24px; }
-.lesson-english-term { padding:.08em .28em; border-radius:4px; background:#f1f3f5; color:#30363d; font:600 .92em/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.lesson-english-term { padding:.08em .28em; border-radius:4px; background:var(--markdown-highlight); color:#30363d; font:600 .92em/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; }
 .ui-lab-mcq :is(h1,.level-answer-list) code,
-.lesson-exam-question :not(pre) > code { padding:.08em .28em; border:0; border-radius:4px; background:#f1f3f5; color:#30363d; }
+.lesson-exam-question :not(pre) > code { padding:.08em .28em; border:0; border-radius:4px; background:var(--markdown-tint); color:#30363d; }
 .lesson-exam-question .markdown-rendered :is(ul,ol) { margin:0 0 24px; padding:0; padding-inline-start:1.5em; }
 .lesson-exam-question .markdown-rendered li { padding:0; padding-inline-start:.25em; }
 .lesson-exam-question .markdown-rendered li + li { margin-top:10px; }
@@ -94,12 +94,12 @@
 .lesson-self-check-error { margin:12px 0 0; color:var(--system-error); font:var(--type-helper); font-weight:700; }
 .lesson-exam-question :is(button,summary,a,.lesson-flashcard-scroll):focus-visible { outline:2px solid #626970; outline-offset:-3px; }
 .lesson-exam-question :is(.lesson-question-reference,.lesson-question-reference a) { color:#626970; }
-.lesson-exam-question .markdown-rendered :is(pre,code,th,td) { background:#fff; color:#30363d; border-color:#dfe2e6; }
-.lesson-exam-question .markdown-rendered :not(pre) > code { padding:.08em .25em; border:0; border-radius:3px; background:#f3f4f5; overflow-wrap:anywhere; }
+.lesson-exam-question .markdown-rendered :is(pre,code,th,td) { color:#30363d; border-color:var(--markdown-border); }
+.lesson-exam-question .markdown-rendered :not(pre) > code { padding:.08em .25em; border:0; border-radius:3px; background:var(--markdown-tint); overflow-wrap:anywhere; }
 .lesson-exam-question .markdown-rendered pre code { font-size:clamp(14px, 1.6vw, 16px); line-height:1.75; }
 .lesson-exam-question :is(.hljs-keyword,.hljs-literal) { font-weight:700; }
-.lesson-exam-question :is(.markdown-code-block,.markdown-table-scroll) { background:#fff; border-color:#dfe2e6; box-shadow:none; scrollbar-color:#a6abb1 #fff; }
-.lesson-exam-question .markdown-code-head,.lesson-exam-question .markdown-rendered thead th { background:#f1f3f5; border-color:#dfe2e6; }
+.lesson-exam-question :is(.markdown-code-block,.markdown-table-scroll) { border-color:var(--markdown-border); box-shadow:none; scrollbar-color:var(--markdown-border) var(--markdown-tint); }
+.lesson-exam-question .markdown-code-head,.lesson-exam-question .markdown-rendered thead th { background:var(--markdown-highlight); border-color:var(--markdown-border); }
 .lesson-exam-question :is(.markdown-code-head span,.markdown-code-head b,.hljs span),.lesson-exam-question .markdown-rendered li::marker { color:#626970; }
 .ready-lesson-heading {
   margin-bottom: 24px;
@@ -493,14 +493,9 @@
   object-fit: contain;
 }
 .lesson-question-image-close {
-  position: absolute;
-  inset-block-start: 12px;
-  inset-inline-end: 12px;
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  padding: 0;
+  position:absolute;
+  inset-block-start:12px;
+  inset-inline-end:12px;
 }
 .lesson-summary-scan-toggle:focus-visible,
 .lesson-summary-scan-viewport:focus-visible { outline: 3px solid #1782ad; outline-offset: -3px; }

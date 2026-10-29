@@ -2,6 +2,7 @@ import { escapeHtml, prefersReducedMotion } from "../../lib/dom.js";
 import { EXPLANATION_GEM_COST } from "../../domain/question-explanations.js";
 import { renderMarkdownDocument, mountMarkdownFeatures } from "../../markdown/renderer.js";
 import { spaceWorkedEquations } from "./shared.js";
+import { renderTemplateScrollIndicators, mountTemplateScrollIndicator } from "../template-shell.js";
 
 /** A purchase opens reading only; it never answers or completes the question. */
 export function mountQuestionExplanation({ host, explanation, locale = "ar", signal }) {
@@ -58,7 +59,7 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
     activeDialog.dir = ar ? "rtl" : "ltr";
     activeDialog.lang = locale;
     activeDialog.setAttribute("aria-labelledby","question-explanation-title");
-    activeDialog.innerHTML = `<header><h2 id="question-explanation-title">${ar ? "الشرح المفصّل" : "Detailed explanation"}</h2><button type="button" data-explanation-close aria-label="${ar ? "إغلاق الشرح" : "Close explanation"}">×</button></header><div data-explanation-body aria-busy="true"><p role="status">${ar ? "جارٍ فتح الشرح…" : "Opening explanation…"}</p></div>`;
+    activeDialog.innerHTML = `<header><h2 id="question-explanation-title">${ar ? "الشرح المفصّل" : "Detailed explanation"}</h2><button class="app-close" type="button" data-explanation-close aria-label="${ar ? "إغلاق الشرح" : "Close explanation"}">×</button></header><div class="question-explanation-reading"><div id="question-explanation-scroll" data-explanation-body tabindex="0" role="region" aria-labelledby="question-explanation-title" aria-busy="true"><p role="status">${ar ? "جارٍ فتح الشرح…" : "Opening explanation…"}</p></div>${renderTemplateScrollIndicators({scrollId:"question-explanation-scroll",locale,horizontal:true})}</div>`;
     let closing = false;
     const dismiss = () => {
       if (closing || !activeDialog.open) return;
@@ -90,6 +91,7 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
       body.innerHTML = `${result.note ? `<p class="question-explanation-note">${escapeHtml(result.note)}</p>` : ""}<div class="markdown-rendered">${renderMarkdownDocument(result.markdown,{locale,highlightQuotes:true})}</div>`;
       spaceWorkedEquations(body);
       mountMarkdownFeatures(body,{locale,signal:requestSignal,scrollSurface:body});
+      mountTemplateScrollIndicator(activeDialog.querySelector(".question-explanation-reading"),{surface:body,signal:requestSignal});
     } catch (error) {
       if (requestSignal.aborted || dialog !== activeDialog) return;
       body.innerHTML = `<p role="status">${error.code === "insufficient-gems"
