@@ -1,6 +1,11 @@
 import { escapeHtml } from "../../lib/dom.js";
 import { lessonReferenceLabel } from "./shared.js";
 
+export function renderLessonLoading(container) {
+  container.setAttribute("aria-busy", "true");
+  container.innerHTML = '<section class="lesson-loading" role="status" dir="rtl"><span class="lesson-loading__indicator" aria-hidden="true"></span><p>جارٍ التحميل…</p></section>';
+}
+
 export function renderLessonError(container, day) {
   container.innerHTML = `
     <section class="lesson-error" role="status" dir="rtl">

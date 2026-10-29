@@ -62,6 +62,29 @@ await withBrowserPage(async ({base,send,evaluate,waitFor,onEvent}) => {
     const response = await fetch('/api/auth/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:'rated-navigation',phone:'0561234567',password:'Learn12345',curriculum:'gaza',path:'scientific'})});
     if (!response.ok) throw new Error(await response.text());
   })()`);
+  await visit('?page=learn');
+  await screenshot('rated-rocky-banner-reference');
+  for (const width of [1440,390]) {
+    await send('Emulation.setDeviceMetricsOverride',{width,height:900,deviceScaleFactor:1,mobile:width<600});
+    await visit('?page=rated-questions&subject=ict&rating=medium');
+    await waitFor("document.querySelector('.rated-questions-rocky')?.naturalWidth > 0");
+    assert.equal(await evaluate("document.querySelector('.rated-questions-empty').textContent"),'لا توجد أسئلة بعد.');
+    assert.equal(await evaluate("document.querySelectorAll('.rated-question-toggle input[type=radio]').length"),3);
+    assert.equal(await evaluate("document.querySelectorAll('.rated-question-toggle button').length"),0);
+    const seat = await evaluate(`(() => {
+      const rocky=document.querySelector('.rated-questions-rocky').getBoundingClientRect();
+      const middle=document.querySelector('[data-rated-filter=medium]').getBoundingClientRect();
+      const card=document.querySelector('.level-question-ratings').getBoundingClientRect();
+      return {center:Math.abs((rocky.left+rocky.right-middle.left-middle.right)/2),overlap:rocky.bottom>card.top && rocky.bottom<card.bottom};
+    })()`);
+    assert.ok(seat.center < 2 && seat.overlap,JSON.stringify(seat));
+    assert.equal(await evaluate('document.documentElement.scrollWidth <= innerWidth'),true);
+    await screenshot(`rated-empty-${width}`);
+    await evaluate("document.querySelector('[data-rated-filter=medium]').focus()");
+    await send('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowRight',code:'ArrowRight',windowsVirtualKeyCode:39});
+    await send('Input.dispatchKeyEvent',{type:'keyUp',key:'ArrowRight',code:'ArrowRight',windowsVirtualKeyCode:39});
+    await waitFor("document.activeElement?.matches('[data-rated-filter]:checked') && document.activeElement.value !== 'medium'");
+  }
   await visit(`?subject=ict&lesson=${mcqs[0].key.lessonId}&part=${mcqs[0].key.partId}`);
   await evaluate(`window.ratingTestOwner=document.body.dataset.accountId || '';`);
   // The account ID is returned by the normal authenticated session endpoint.
@@ -133,14 +156,15 @@ await withBrowserPage(async ({base,send,evaluate,waitFor,onEvent}) => {
     assert.equal(await evaluate("document.documentElement.scrollWidth <= innerWidth"),true);
     await screenshot(`rated-home-${width}`);
     await click('[data-rated-subject=ict][data-rating=easy]');
-    await waitFor("document.querySelector('[data-rated-filter=easy][aria-pressed=true]') && document.querySelector('.roadmap-lesson-group')");
+    await waitFor("document.querySelector('[data-rated-filter=easy]:checked') && document.querySelector('.roadmap-lesson-group')");
+    assert.equal(await evaluate("Boolean(document.querySelector('.rated-question-browser--empty, .rated-questions-rocky'))"),false,'rated questions restore the normal top toggle without the empty mascot');
     assert.equal(await evaluate("document.querySelectorAll('.roadmap-lesson-group').length"),1);
     await click('[data-rated-filter=hard]');
     await waitFor(`document.querySelector('[data-roadmap-lesson="${other.key.lessonId}"]')`);
     assert.equal(await evaluate("document.querySelectorAll('.roadmap-lesson-group').length"),1);
     await screenshot(`rated-roadmap-${width}`);
     await navigateDocument("Page.reload",{});
-    await waitFor("!document.querySelector('#app-splash') && document.querySelector('[data-rated-filter=hard][aria-pressed=true]')");
+    await waitFor("!document.querySelector('#app-splash') && document.querySelector('[data-rated-filter=hard]:checked')");
     await click('[data-roadmap-part]');
     await click('[data-bubble-start]');
     await current(other.key.stepId);
@@ -156,11 +180,11 @@ await withBrowserPage(async ({base,send,evaluate,waitFor,onEvent}) => {
     await send("Input.dispatchKeyEvent",{type:"keyUp",key:"Home",code:"Home",windowsVirtualKeyCode:36});
     assert.equal(await evaluate("document.activeElement.matches('[data-question-jump]')"),true);
     await click('.lesson-back');
-    await waitFor("document.querySelector('[data-rated-filter=hard][aria-pressed=true]')");
+    await waitFor("document.querySelector('[data-rated-filter=hard]:checked')");
     await click('[data-rated-filter=medium]');
-    await waitFor("document.querySelector('[data-rated-filter=medium][aria-pressed=true]')");
+    await waitFor("document.querySelector('[data-rated-filter=medium]:checked')");
     await evaluate("history.back()");
-    await waitFor("document.querySelector('[data-rated-filter=hard][aria-pressed=true]')");
+    await waitFor("document.querySelector('[data-rated-filter=hard]:checked')");
   }
   await visit("?page=rated-questions&subject=ict&rating=easy");
   await waitFor("document.querySelector('.roadmap-question-ring')");

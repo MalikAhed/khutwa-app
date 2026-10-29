@@ -5,7 +5,7 @@ import { brotliCompress, constants, gzip } from "node:zlib";
 import { promisify } from "node:util";
 import { PUBLIC_DEPENDENCIES } from "../src/server/static-files.mjs";
 import { versionPreview } from "./version-preview.mjs";
-import { createContentManifest, versionContentManifest } from "./content-manifest.mjs";
+import { createContentManifest, versionContentManifest, fingerprintContentManifest } from "./content-manifest.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const previewDirectory = path.join(root, "_site");
@@ -52,7 +52,6 @@ export async function packageApp({ server = false } = {}) {
   if (!html.includes(`name="learn-account-mode" content="${mode}"`)) throw new Error(`Package requires explicit ${mode} account mode.`);
   html = await versionPreview(outputDirectory, html, contentManifest.version);
   const { version } = JSON.parse(await readFile(path.join(outputDirectory, "release.json"), "utf8"));
-  await writeFile(path.join(outputDirectory, "content-manifest.json"), JSON.stringify(versionContentManifest(contentManifest, version)));
   await cp(path.join(root, "content-worker.js"), path.join(outputDirectory, "content-worker.js"));
   await writeFile(path.join(outputDirectory, "index.html"), html);
   if (server) {
@@ -77,6 +76,8 @@ export async function packageApp({ server = false } = {}) {
       }
     }
   }
+  await writeFile(path.join(outputDirectory, "content-manifest.json"), JSON.stringify(
+    await fingerprintContentManifest(outputDirectory, versionContentManifest(contentManifest, version))));
   // Compress the authored bank once for the Node host. Static hosts negotiate
   // their own compression and need only the ordinary modules.
   if (server) {

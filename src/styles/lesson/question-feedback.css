@@ -27,13 +27,11 @@
 .question-hidden-empty { display:grid; justify-items:center; gap:24px; padding:40px 24px; text-align:center; }
 .question-rating-save-status { display:block; min-height:1.4em; color:var(--system-muted); font:600 11px/1.4 var(--font-ui); text-align:center; }
 .lesson-exam-actions .question-rating-save-status:empty { display:none; }
-.rated-question-toggle svg { width:26px; height:26px; }
-.rated-question-toggle { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin:0 auto 24px; padding:6px; }
-.rated-question-toggle button { display:flex; align-items:center; justify-content:center; gap:8px; min-height:48px; padding:8px 16px; border:2px solid #dce4e8; border-radius:14px; background:#fff; font:800 16px var(--font-ui); cursor:pointer; }
-.rated-question-toggle [data-rating="easy"] { color:#46a302; }
-.rated-question-toggle [data-rating="medium"] { color:#b86d00; }
-.rated-question-toggle [data-rating="hard"] { color:#e03838; }
-.rated-question-toggle button[aria-pressed="true"] { border-color:currentColor; background:color-mix(in srgb,currentColor 9%,white); box-shadow:0 2px 0 currentColor; }
-.rated-questions-empty { padding:24px; color:var(--system-muted); text-align:center; font:700 17px/1.8 var(--font-ui); }
-@media (max-width:480px) { .rated-question-toggle { gap:6px; } .rated-question-toggle button { gap:5px; padding:8px; font-size:14px; } }
+.rated-question-browser { margin:0 auto 24px; }
+.rated-question-toggle { position:relative; width:min(100%,440px); margin-inline:auto; }
+.rated-question-browser--empty { box-sizing:border-box; min-height:calc(100dvh - 260px); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; padding:190px 0 24px; }
+/* The toggle itself is the seat; the same banner animation hangs over its edge. */
+.rated-questions-rocky { position:absolute; z-index:3; left:50%; bottom:calc(100% - 30px); width:240px; height:auto; translate:-50% 0; object-fit:contain; pointer-events:none; }
+.rated-questions-empty { margin:0; color:var(--system-muted); text-align:center; font:700 17px/1.8 var(--font-ui); }
+@media (max-width:480px) { .rated-question-browser--empty { padding-top:165px; } .rated-questions-rocky { width:210px; bottom:calc(100% - 26px); } }
 @media (max-width:480px) { .question-report-dialog { padding:18px; } }

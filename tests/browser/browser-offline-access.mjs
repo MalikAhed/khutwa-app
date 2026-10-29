@@ -18,7 +18,10 @@ await writeFile(htmlPath,(await readFile(htmlPath,'utf8')).replace('name="learn-
 const compressedHtml=gzipSync(await readFile(htmlPath));
 const catalog=JSON.parse(await readFile(path.join(root,'content-manifest.json'),'utf8'));
 const core=[...new Set([...catalog.onboarding,...catalog.helpers])];
-const heldFiles=new Set(core.slice(Math.ceil(core.length*.86)).map(file=>'/'+file));
+const installedFiles=[...new Set([...core,...catalog.lessons.flatMap(lesson=>[...lesson.first,...lesson.files])])];
+const heldImage=installedFiles.findLast(file=>/^assets\/lessons\/.*\.(webp|png|svg)$/.test(file));
+assert.ok(heldImage,'installation includes lesson images');
+const heldFiles=new Set(['/'+heldImage]);
 let holdPreparation=true, disconnected=false, startupFailures=0;
 const app=await createAppServer({root,logger:()=>{},remoteBackend:async(request,response)=>{if(holdPreparation&&request.headers['x-learn-download']&&heldFiles.has(request.url)){response.writeHead(503).end();return true;}if(request.url==='/assets/app/icon-maskable-512.png'&&request.headers['x-learn-download']&&startupFailures<4){startupFailures++;response.writeHead(503).end();return true;}if(disconnected){request.socket.destroy();return true;}if(request.url.split('?')[0]==='/index.html'){response.writeHead(301,{Location:'/'}).end();return true;}if(request.url.split('?')[0]==='/'){response.writeHead(200,{'Content-Type':'text/html','Content-Encoding':'gzip','Content-Length':compressedHtml.length});response.end(compressedHtml);return true;}return false;},config:readRuntimeConfig({PORT:'0',LIVE_RELOAD:'0',DEV_AUTO_LOGIN:'0',ACCOUNTS_DATABASE_PATH:':memory:'},{root})});
 await app.accountStore.createAccount({username:'offline-test',phone:'0591234567',curriculum:'gaza',path:'scientific',password:'Test-only-123'});
@@ -43,7 +46,7 @@ try {
      if(options?.headers?.['X-Learn-Download'])window.downloadRequests.push(new URL(url,location.href).href);
      return nativeFetch(url,options);
    };
-   // Core preparation must continue with data saver; optional bulk lessons can wait.
+   // Installation must include lesson images even with data saver enabled.
    Object.defineProperty(navigator,'connection',{configurable:true,value:{saveData:true,addEventListener(){}}});
    const post=ServiceWorker.prototype.postMessage;
    ServiceWorker.prototype.postMessage=function(message,...rest){
@@ -54,7 +57,9 @@ try {
  let page=await context.newPage();
  page.on('pageerror',error=>console.error('browser:',error.message));
  await page.goto(base);await ready(page);
- await page.waitForFunction(()=>Number(document.querySelector('[data-offline-download-status] [role=progressbar]')?.getAttribute('aria-valuenow'))>=85);
+ await page.waitForFunction(()=>Number(document.querySelector('[data-offline-download-status] [role=progressbar]')?.getAttribute('aria-valuenow'))>=99,null,{timeout:180000});
+ assert.equal(await page.evaluate(()=>document.documentElement.dataset.offlineReady),undefined,'missing lesson image must prevent 100% readiness');
+ console.log('Installation reached 99%; the blocked lesson image correctly prevents readiness.');
  const checkpoint=await page.evaluate(async()=>{
    const version=document.querySelector('meta[name=learn-release]').content;
    return (await (await caches.open(`khutwa-content:/:${version}`)).keys()).map(request=>request.url);
@@ -77,20 +82,33 @@ try {
  assert.ok(navigation.interactive,'navigation remains visible and clickable while images are delayed');
  assert.ok(navigation.elapsed<1000,`four section changes took ${navigation.elapsed}ms`);
  await page.reload();await ready(page);
- await page.waitForFunction(()=>Number(document.querySelector('[data-offline-download-status] [role=progressbar]')?.getAttribute('aria-valuenow'))>=85);
+ await page.waitForFunction(()=>Number(document.querySelector('[data-offline-download-status] [role=progressbar]')?.getAttribute('aria-valuenow'))>=99,null,{timeout:60000});
  const repeated=await page.evaluate(saved=>window.downloadRequests.filter(url=>saved.includes(url)),checkpoint);
  assert.deepEqual(repeated,[],'reopening must skip every already saved file');
+ console.log('Reload verified saved files without downloading them again; releasing the held image.');
  holdPreparation=false;
  await page.evaluate(()=>window.dispatchEvent(new Event('online')));
  const originalDocument=await page.evaluate(()=>performance.timeOrigin);
  await page.waitForFunction(()=>document.querySelector('[data-offline-download-status] [role=progressbar]')?.getAttribute('aria-valuenow')==='99');
  await page.screenshot({path:'/tmp/khutwa-preparing-mobile.png'});
- await page.waitForFunction(()=>document.documentElement.dataset.offlineReady==='true',{timeout:120000});
+ await page.waitForFunction(()=>document.documentElement.dataset.offlineReady==='true',null,{timeout:120000});
  assert.match(await page.locator('[data-offline-download-status]').innerText(),/جاهز للفتح/);
  assert.equal(startupFailures,4,'repeated startup failures recovered automatically');
  assert.equal(await page.evaluate(()=>performance.timeOrigin),originalDocument,'completion must not need a reload');
  assert.ok(await page.evaluate(()=>window.offlineConfirmationDrops)>=2,'lost confirmation is automatically retried');
  assert.equal(await page.locator('[data-offline-download-status] [role=progressbar]').getAttribute('aria-valuenow'),'100');
+ assert.deepEqual(await page.evaluate(async ({files,version})=>{
+   const cache=await caches.open(`khutwa-content:/:${version}`);
+   const saved=new Set((await cache.keys()).map(request=>request.url));
+   return files.filter(file=>!saved.has(new URL(file,location.href).href));
+ },{files:installedFiles,version:catalog.version}),[],'100% means every lesson, explanation and image is actually saved');
+ await disconnect(true);
+ const figures=[...new Set(catalog.lessons.map(lesson=>lesson.files.find(file=>/^assets\/lessons\/.*\.(webp|png|svg)$/.test(file))).filter(Boolean))];
+ await page.evaluate(async files=>{
+   for(const file of files){const image=new Image();image.src=file;await image.decode();if(!image.naturalWidth)throw Error(`Missing offline figure: ${file}`);}
+ },[heldImage,...figures]);
+ await disconnect(false);
+ console.log(`Offline image decoding passed for ${figures.length+1} lesson figures; all ${installedFiles.length} catalog files are saved.`);
  for(const width of [320,390,1440]) {
    await page.setViewportSize({width,height:900});
    const geometry=await page.locator('[data-offline-download-status]').evaluate(card=>{
@@ -106,7 +124,8 @@ try {
  const version=await page.locator('meta[name=learn-release]').getAttribute('content');
  await page.evaluate(async version=>{
   const {prioritizeLesson}=await import(`/src/app/background-loading.js?v=${version}`);
-  prioritizeLesson('ict','database-management');
+  const release=prioritizeLesson('ict','database-management');
+  release();
   const manifest=await (await fetch('/content-manifest.json')).json();
   const files=manifest.lessons.find(x=>x.subjectId==='ict'&&x.lessonId==='database-management').files;
   const cache=await caches.open(`khutwa-content:/:${version}`);

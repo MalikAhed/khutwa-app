@@ -25,6 +25,10 @@ async function bounded(task) {
 }
 
 function stylesheetReady(link) {
+  // A parent sheet can expose its rules while @import requests are still pending.
+  // Warm-cache detection must include those sheets before uncovering the app.
+  const hasLoadedRules = sheet => Boolean(sheet?.cssRules.length) && [...sheet.cssRules]
+    .every(rule => rule.type !== CSSRule.IMPORT_RULE || hasLoadedRules(rule.styleSheet));
   return new Promise((resolve, reject) => {
     const cleanup = () => {
       clearTimeout(timer);
@@ -38,19 +42,17 @@ function stylesheetReady(link) {
     let poll = 0;
     link.addEventListener("load", ready, { once:true });
     link.addEventListener("error", failed, { once:true });
-    let hasLoadedRules = false;
-    if (link.sheet) {
-      try { hasLoadedRules = link.sheet.cssRules.length > 0; } catch { hasLoadedRules = false; }
-    }
-    if (hasLoadedRules) ready();
-    else if (link.dataset.startupAttempt) {
+    let loaded = false;
+    try { loaded = hasLoadedRules(link.sheet); } catch { /* Wait for the load/error event. */ }
+    if (loaded) { ready(); return; }
+    if (link.dataset.startupAttempt) {
       const href = link.href;
       link.removeAttribute("href");
       link.href = href;
     }
     poll = setInterval(() => {
       if (!link.sheet) return;
-      try { if (link.sheet.cssRules.length > 0) ready(); } catch { failed(); }
+      try { if (hasLoadedRules(link.sheet)) ready(); } catch { failed(); }
     }, 50);
     link.dataset.startupAttempt = "true";
   });

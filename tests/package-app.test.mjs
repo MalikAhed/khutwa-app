@@ -8,6 +8,7 @@ import { pathToFileURL } from 'node:url';
 import { packageApp } from '../scripts/package-app.mjs';
 import { versionPreview } from '../scripts/version-preview.mjs';
 import { PUBLIC_DEPENDENCIES } from '../src/server/static-files.mjs';
+import { createHash } from 'node:crypto';
 
 test('static artifact is self-contained, fixture-only and excludes private/source tooling', async () => {
   const output = await packageApp();
@@ -32,7 +33,11 @@ test('static artifact is self-contained, fixture-only and excludes private/sourc
   const contentManifest = JSON.parse(await readFile(path.join(output, 'content-manifest.json'), 'utf8'));
   const catalogFiles = new Set([...contentManifest.onboarding, ...contentManifest.helpers,
     ...contentManifest.lessons.flatMap(lesson => [...lesson.first, ...lesson.files])]);
-  for (const file of catalogFiles) await access(path.join(output, file.split('?')[0]));
+  assert.deepEqual(new Set(Object.keys(contentManifest.hashes)), catalogFiles);
+  for (const file of catalogFiles) {
+    const bytes = await readFile(path.join(output, file.split('?')[0]));
+    assert.equal(contentManifest.hashes[file], createHash('sha256').update(bytes).digest('hex'), `${file}: fingerprint matches packaged bytes`);
+  }
   const referenceOnly = 'assets/lessons/islamic-education/source-crops/islamic-tasnif-2025-p019-madd-rules.webp';
   await access(referenceOnly);
   await assert.rejects(access(path.join(output, referenceOnly)), { code:'ENOENT' });

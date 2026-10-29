@@ -5,6 +5,7 @@ const keyFor = key => JSON.stringify([key.subjectId,key.lessonId,key.partId,key.
 export function createQuestionFeedback({ service, progressStore, apiBase = null, storage = null, fetchImpl = globalThis.fetch }) {
   const client = apiBase ? createAuthClient({ baseUrl:apiBase,fetchImpl }) : null;
   const cache = new Map();
+  const refreshedAt = new Map();
   let revision = 0;
   const queues = new Map();
   const listeners = new Set();
@@ -71,11 +72,13 @@ export function createQuestionFeedback({ service, progressStore, apiBase = null,
     return result;
   }
   return Object.freeze({
-    async ready({ signal } = {}) {
+    async ready({ signal, maxAge = 0 } = {}) {
       const owner = service.getLearnerProgressOwner();
       if (owner === "guest") return;
       await queues.get(owner);
       if (!client || signal?.aborted || owner !== service.getLearnerProgressOwner()) return;
+      // Navigation can reuse a recent read after pending personal choices settle.
+      if (Date.now() - (refreshedAt.get(owner) ?? -Infinity) < maxAge) return;
       const readRevision = ++revision;
       const result = await client.request("/question-feedback",{ headers:{ "X-Progress-Owner":owner },signal });
       if (!result.ok || signal?.aborted || owner !== service.getLearnerProgressOwner() || readRevision !== revision) return;
@@ -96,6 +99,7 @@ export function createQuestionFeedback({ service, progressStore, apiBase = null,
       }
       try { storage?.setItem(`tawjihi:question-feedback:${owner}`,JSON.stringify(owned(owner))); } catch { /* Server preferences remain durable. */ }
       ratingIndexes.delete(owner);
+      refreshedAt.set(owner, Date.now());
       notify();
     },
     isHidden:key => owned(service.getLearnerProgressOwner())[questionRewardKey(key)]?.hidden === true,

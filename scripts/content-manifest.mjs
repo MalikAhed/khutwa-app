@@ -94,4 +94,17 @@ export function versionContentManifest(manifest, version) {
     lessons:manifest.lessons.map(lesson => ({ ...lesson, first:urls(lesson.first), files:urls(lesson.files) })) };
 }
 
+// Hash the final packaged bytes, including versioned imports. Cache reuse must
+// reproduce these exact bytes, never just assume a matching URL is unchanged.
+export async function fingerprintContentManifest(root, manifest) {
+  const files = [...new Set([...manifest.onboarding, ...manifest.helpers,
+    ...manifest.lessons.flatMap(lesson => [...lesson.first, ...lesson.files])])];
+  const hashes = {};
+  for (const file of files) {
+    const bytes = await readFile(path.join(root, file.split('?')[0]));
+    hashes[file] = createHash('sha256').update(bytes).digest('hex');
+  }
+  return { ...manifest, hashes };
+}
+
 if (parentPort && workerData?.root) parentPort.postMessage(await createContentManifest(workerData.root));

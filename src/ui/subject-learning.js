@@ -4,12 +4,12 @@ import { getCourseSubject } from "../data/course.js";
 import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
 import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js";
 import { getSubjectPartAccess } from "../domain/subject-access.js";
-import { escapeHtml, prefersReducedMotion } from "../lib/dom.js";
-import { renderLessonError } from "./lesson/status.js";
+import { escapeHtml } from "../lib/dom.js";
+import { renderLessonError, renderLessonLoading } from "./lesson/status.js";
 import { mountSubjectRoadmap } from "./subject-roadmap.js";
 import { getShellViewportBounds } from "./app-shell.js";
 import { mountHeartDepletion } from "./heart-depletion.js";
-import { prioritizeLesson } from "../app/background-loading.js";
+import { prioritizeInteraction, prioritizeLesson } from "../app/background-loading.js";
 
 
 export function createSubjectLearningController({
@@ -56,6 +56,16 @@ export function createSubjectLearningController({
     return Object.freeze({ subjectId, lessonId, partId:selectedPartId, opener, pathScrollPosition, rating });
   }
 
+  function showLoading(title, subject, view = null) {
+    setViewMode(view);
+    elements.lessonShell.dataset.subject = subject;
+    elements.lessonTitle.textContent = title;
+    elements.lessonStatus.hidden = true;
+    renderLessonLoading(elements.lessonContent);
+    showContentView({ animate:false });
+    window.scrollTo({ top:0, behavior:"auto" });
+  }
+
   async function openSubject(
     nextSubjectId,
     nextOpener = null,
@@ -82,21 +92,24 @@ export function createSubjectLearningController({
     subjectId = subject.id;
     lessonId = null;
     writeRoute({ subject:subject.id,...(rating ? {page:"rated-questions",rating} : {}) }, historyMode);
+    const roadmap = getSubjectRoadmap(subject.id);
+    const { ownerId, store } = progressContext();
+    // Returning to a roadmap uses the already loaded local progress/preferences.
+    // Never leave a dismantled question on screen while awaiting remote ratings.
+    if (store.getSaveState(ownerId) === "loading" || rating && !restoreMap) {
+      const release = prioritizeInteraction({ signal:operation.signal });
+      showLoading("", subject.id, "subject");
+      try {
+        await Promise.all([store.ready(ownerId), rating && !restoreMap ? questionFeedback?.ready?.({ signal:operation.signal, maxAge:30000 }) : null]);
+      } finally { release(); }
+      if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
+    }
+    if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
     setViewMode("subject");
     elements.lessonShell.dataset.subject = subject.id;
     elements.lessonTitle.textContent = subject.name;
     elements.lessonStatus.textContent = rating ? "أسئلتي المقيّمة" : "مسار المادة";
     elements.lessonContent.removeAttribute("aria-busy");
-    const roadmap = getSubjectRoadmap(subject.id);
-    const { ownerId, store } = progressContext();
-    if (store.getSaveState(ownerId) === "loading") {
-      elements.lessonContent.innerHTML = "";
-      showContentView();
-      await store.ready(ownerId);
-      if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
-    }
-    await questionFeedback?.ready?.({ signal:operation.signal });
-    if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
     const ratedQuestions = rating ? getRatedSubjectQuestions(subject.id,questionFeedback) : [];
     const displayedRoadmap = rating && roadmap ? filterRatedRoadmap(roadmap,ratedQuestions,rating) : roadmap;
     let mountedRoadmap = null;
@@ -148,13 +161,17 @@ export function createSubjectLearningController({
       elements.lessonContent.innerHTML = `<section class="subject-status-view" data-subject="${escapeHtml(subject.id)}" aria-labelledby="subject-status-title"><p>${escapeHtml(subject.name)}</p><h1 id="subject-status-title">قيد الإعداد</h1><p class="subject-status-message">نعمل حاليًا على إعداد محتوى هذه المادة.</p></section>`;
     if (rating) mountRatedQuestionToggle(elements.lessonContent, {
       questions:ratedQuestions,rating,signal:operation.signal,
-      onChange:nextRating => void openSubject(subject.id,null,{rating:nextRating,focusContent:true}),
+      onChange:async nextRating => {
+        await openSubject(subject.id,null,{rating:nextRating});
+        if (subjectId === subject.id && rating === nextRating && !lessonId)
+          elements.lessonContent.querySelector(`[data-rated-filter="${nextRating}"]`)?.focus({ preventScroll:true });
+      },
     });
     document.title = `${subject.name} · ${appTitle}`;
     showContentView();
     window.scrollTo({
       top: restoreMap ? mapScrollPosition : 0,
-      behavior: restoreMap || prefersReducedMotion() ? "auto" : "smooth",
+      behavior:"auto",
     });
     if (restoreMap) {
       const selected = reviewUnitId ? elements.lessonContent.querySelector('.roadmap-review-panel:not([hidden])') : [
@@ -200,16 +217,24 @@ export function createSubjectLearningController({
     const operation = viewLifecycle.begin();
     const { ownerId, store } = progressContext();
     const reference = lessonLabel || target.part.label;
-    prioritizeLesson(nextSubjectId, nextLessonId, { signal:operation.signal });
+    const releaseLoading = prioritizeLesson(nextSubjectId, nextLessonId, { signal:operation.signal });
     subjectId = nextSubjectId;
     lessonId = nextLessonId;
     selectedPartId = partId;
     writeRoute({ subject:nextSubjectId, lesson:nextLessonId, part:partId, ...(reviewStepId ? { question:reviewStepId } : {}),...(rating ? {page:"rated-questions",rating} : {}) }, historyMode);
+    showLoading(reference, nextSubjectId);
 
     const load = async () => {
       try {
         const { loadSubjectLesson, loadSubjectLessonPart } = await import("../data/lessons/subject-lesson-registry.js");
-        await Promise.all([store.ready(ownerId), questionFeedback?.ready?.({ signal:operation.signal })]);
+        if (!operation.isCurrent()) return;
+        // Fetch independent dependencies together, without serial network rounds.
+        const [lesson, { renderLesson }] = await Promise.all([
+          loadSubjectLesson(nextSubjectId, nextLessonId),
+          import("./lesson-view.js"),
+          store.ready(ownerId),
+          questionFeedback?.ready?.({ signal:operation.signal, maxAge:30000 }),
+        ]);
         if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
         if (reviewStepId && questionFeedback?.isHidden({ subjectId:nextSubjectId,stepId:reviewStepId })) {
           returnToRoadmap();
@@ -226,11 +251,6 @@ export function createSubjectLearningController({
           if (subjectId === nextSubjectId && lessonId === null) map?.openPart({ lessonId:nextLessonId, partId });
           return;
         }
-        const [lesson, { renderLesson }] = await Promise.all([
-          loadSubjectLesson(nextSubjectId, nextLessonId),
-          import("./lesson-view.js"),
-        ]);
-        if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
         // Old review URLs still open their part after source exercises replace
         // retired practice. Historical answers stay stored, not silently relabelled.
         if (reviewStepId && !lesson?.steps.some(step => step.id === reviewStepId)) reviewStepId = null;
@@ -315,8 +335,7 @@ export function createSubjectLearningController({
           };
           return result;
         };
-        // Keep the roadmap visible until every lesson dependency is ready. The
-        // chrome and first question then replace it in the same browser frame.
+        // Commit the lesson chrome and question together after dependencies load.
         setViewMode();
         elements.lessonContent.setAttribute("aria-busy", "false");
         elements.lessonShell.dataset.subject = nextSubjectId;
@@ -426,7 +445,7 @@ export function createSubjectLearningController({
           heartDepletion = mountHeartDepletion({ resourceStore, ownerId, signal:operation.signal, returnFocus:elements.lessonContent });
           operation.add(heartDepletion.destroy);
         }
-        showContentView({ animate:false });
+        showContentView();
         window.scrollTo({ top:0, behavior:"auto" });
         document.title = `${lesson?.title || "الدرس غير متاح"} · ${appTitle}`;
         elements.lessonContent.focus({ preventScroll: true });
@@ -449,7 +468,8 @@ export function createSubjectLearningController({
         elements.lessonContent.focus({ preventScroll: true });
       }
     };
-    await load();
+    try { await load(); }
+    finally { releaseLoading(); }
   }
 
   function returnToRoadmap() {

@@ -8,5 +8,5 @@
 .question-number[data-rating="medium"] { background:#fff4c7; border-color:#dfb647; color:#775b10; }
 .question-number[data-rating="hard"] { background:#ffebeb; border-color:#de9393; color:#963d3d; }
 .question-number[aria-current] { outline:2px solid #356d93; outline-offset:2px; font-weight:800; }
-.question-number:focus-visible,.rated-question-toggle button:focus-visible { outline:3px solid var(--system-focus,#356d93); outline-offset:2px; }
+.question-number:focus-visible { outline:3px solid var(--system-focus,#356d93); outline-offset:2px; }
 @media (max-width:760px) { .question-number-track { gap:8px; } }

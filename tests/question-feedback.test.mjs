@@ -150,3 +150,35 @@ test("failed personal hiding leaves the question visible",async () => {
   assert.equal((await local.hide(key)).status,"unavailable");
   assert.equal(local.isHidden(key),false);
 });
+
+test("navigation reuses recent preferences without bypassing pending writes or account ownership", async t => {
+  let now = 100000, owner = "account:1", reads = 0, release;
+  t.mock.method(Date, "now", () => now);
+  const pending = new Promise(resolve => { release = resolve; });
+  const feedback = createQuestionFeedback({ service:{ getLearnerProgressOwner:() => owner },apiBase:"http://app.example/api",
+    fetchImpl:async (_url,options) => {
+      if (options.method === "POST") { await pending; return Response.json({status:"saved"}); }
+      reads += 1;
+      return Response.json({ratings:[],hiddenQuestions:[]});
+    },
+  });
+  await feedback.ready({maxAge:30000});
+  await feedback.ready({maxAge:30000});
+  assert.equal(reads,1, "nearby navigation avoids a redundant network round trip");
+  const key = {subjectId:"ict",lessonId:"lesson",partId:"part",stepId:"question"};
+  const saving = feedback.hide(key);
+  let settled = false;
+  const ready = feedback.ready({maxAge:30000}).then(() => { settled = true; });
+  await Promise.resolve(); await Promise.resolve();
+  assert.equal(settled,false, "pending hiding still settles before lesson content is chosen");
+  release(); await saving; await ready;
+  assert.equal(feedback.isHidden(key),true);
+  assert.equal(reads,1);
+  now += 30001;
+  await feedback.ready({maxAge:30000});
+  assert.equal(reads,2, "expired preferences are refreshed");
+  owner = "account:2";
+  await feedback.ready({maxAge:30000});
+  assert.equal(reads,3, "another learner cannot reuse the previous learner's read");
+  assert.equal(feedback.isHidden(key),false);
+});
