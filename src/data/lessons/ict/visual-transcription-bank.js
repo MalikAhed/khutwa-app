@@ -816,7 +816,7 @@ export const ICT_VISUAL_TRANSCRIPTION_QUESTIONS = [
       12
     ],
     "format": "mcq",
-    "question": "ما جملة (SQL) المناسبة لحذف جميع بيانات الطالب الذي رقمه (No) يساوي (100) من جدول الطالب (St_tbl)؟",
+    "question": "ما جملة (SQL) المناسبة لحذف جميع بيانات الطالب الذي رقمه `(No)` يساوي (100) من جدول الطالب `(St_tbl)`؟",
     "choices": [
       "Delete from St_tbl Where [No]=100;",
       "Delete from * St_tbl Where [No]=100;",
@@ -852,7 +852,7 @@ export const ICT_VISUAL_TRANSCRIPTION_QUESTIONS = [
       12
     ],
     "format": "mcq",
-    "question": "ما جملة SQL المستخدمة لحذف الدواء الذي رقمه (M_ID=18) من الجدول (M_tbl)؟",
+    "question": "ما جملة SQL المستخدمة لحذف الدواء الذي رقمه `(M_ID=18)` من الجدول `(M_tbl)`؟",
     "choices": [
       "DELETE FROM M_tbl WHERE M_ID=18",
       "DELETE M_ID=18 FROM M_tbl",
@@ -888,7 +888,7 @@ export const ICT_VISUAL_TRANSCRIPTION_QUESTIONS = [
       12
     ],
     "format": "mcq",
-    "question": "لديك الجدول EmpTbl، وفيه الحقل الرقمي phnum لرقم الهاتف والحقل Empid لرقم الموظف. ما أمر SQL الذي يجعل phnum=20888 للموظف الذي Empid=102 فقط؟",
+    "question": "لديك الجدول `EmpTbl`، وفيه الحقل الرقمي `phnum` لرقم الهاتف والحقل `Empid` لرقم الموظف. ما أمر SQL الذي يجعل `phnum=20888` للموظف الذي `Empid=102` فقط؟",
     "choices": [
       "`Update EmpTbl SET phnum=20888 where Empid=102;`",
       "`Update phnum=20888 From EmpTbl where Empid=102;`",
@@ -1240,7 +1240,7 @@ export const ICT_VISUAL_TRANSCRIPTION_QUESTIONS = [
       12
     ],
     "format": "written",
-    "question": "حدد نوع الاستعلام والحقول المطبق عليها والمعيار لكل جملة SQL: 1- SELECT * FROM emp_tbl where salary&lt;=2000 ORDER BY name ASC; 2- Delete from emp where salary>=5000; 3- Update emp set salary=salary*1.15 where salary&lt;1500.",
+    "question": "حدد نوع الاستعلام والحقول المطبق عليها والمعيار لكل جملة SQL:\n\n**1.**\n\n```sql\nSELECT *\nFROM emp_tbl\nwhere salary<=2000\nORDER BY name ASC;\n```\n\n**2.**\n\n```sql\nDelete from emp\nwhere salary>=5000;\n```\n\n**3.**\n\n```sql\nUpdate emp\nset salary=salary*1.15\nwhere salary<1500.\n```",
     "finalAnswer": "| الجملة | النوع والجدول | الحقول والمعيار |\n| --- | --- | --- |\n| 1 | **تحديد** من `emp_tbl` | جميع الحقول؛ `salary <= 2000`؛ ترتيب تصاعدي حسب `name`. |\n| 2 | **حذف** من `emp` | السجلات كاملة؛ `salary >= 5000`. |\n| 3 | **تحديث** في `emp` | الحقل `salary` بزيادة **15%**؛ `salary < 1500`. |",
     "answer": "نوع الاستعلام تحدده كلمة بدايته: `SELECT` للاسترجاع، و `DELETE` للحذف، و `UPDATE` للتحديث.\n\nالنجمة في `SELECT` تشمل كل الحقول؛ فهي لا تعني الاسم والراتب فقط.\n\nنفصل عملية كل جملة عن شرطها وعن الحقول التي تؤثر فيها:\n\n| الجملة | النوع والجدول | الحقول والشرط |\n| --- | --- | --- |\n| 1 | تحديد من `emp_tbl` | تعرض **كل الحقول** بالنجمة؛ الشرط `salary <= 2000`، والفرز `name ASC` |\n| 2 | حذف من `emp` | تحذف السجلات التي `salary >= 5000` |\n| 3 | تحديث `emp` | تزيد `salary` بنسبة **15%** لمن `salary < 1500` |\n\nالضرب في `1.15` يعني الراتب القديم مع إضافة 15% منه.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة `SQL`، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة `SQL`، ص 26 مطبوعة (ص 28 في PDF)؛ الدرس الثاني: الاستعلامات ولغة `SQL`، ص 30 مطبوعة (ص 32 في PDF).",
     "answerProvenance": "curriculum-corrected-2026-10-24",
@@ -1316,7 +1316,7 @@ export const ICT_VISUAL_TRANSCRIPTION_QUESTIONS = [
       12
     ],
     "format": "written",
-    "question": "اكتب أوامر SQL لتنفيذ: إضافة سجل (ID=14, Name=sami, BOD=1/1/2009, Discount=45)، عرض أسماء الزبائن الذين حصلوا على خصم أقل من أو يساوي 40، حذف بيانات الزبون Noor.\n![الشكل الأصلي للسؤال](assets/lessons/ict/exams/transcription/assets/unit1/ict-tasneef-2023-unit1-sql-q3-6-body-customer-table.webp)",
+    "question": "اكتب أوامر SQL لتنفيذ: إضافة سجل `(ID=14, Name=sami, BOD=1/1/2009, Discount=45)`، عرض أسماء الزبائن الذين حصلوا على خصم أقل من أو يساوي 40، حذف بيانات الزبون Noor.\n![الشكل الأصلي للسؤال](assets/lessons/ict/exams/transcription/assets/unit1/ict-tasneef-2023-unit1-sql-q3-6-body-customer-table.webp)",
     "finalAnswer": "**1. إضافة السجل:**\n\n```sql\nINSERT INTO Custmor_tbl (ID, [Name], BOD, Discount)\nVALUES (14, \"sami\", #2009-01-01#, 45);\n```\n\n**2. عرض الأسماء:**\n\n```sql\nSELECT [Name] FROM Custmor_tbl\nWHERE Discount <= 40;\n```\n\n**3. حذف Noor:**\n\n```sql\nDELETE FROM Custmor_tbl\nWHERE [Name] = \"Noor\";\n```",
     "answer": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/ict/exams/transcription/assets/unit1/ict-tasneef-2023-unit1-sql-q3-6-body-customer-table.webp)\n\nنطابق كل قيمة مع الحقل الذي ستدخل فيه، ثم نستخدم `WHERE` لاختيار الصفوف المقصودة بالاسترجاع أو الحذف.\n\n**1. إضافة السجل:** نضيف سجل `sami`. نرتب القيم مثل الحقول، ونكتب النص باقتباسين والتاريخ بعلامتي #.\n\n```sql\nINSERT INTO Custmor_tbl (ID, [Name], BOD, Discount)\nVALUES (14, \"sami\", #2009-01-01#, 45);\n```\n\n**2. عرض الأسماء:** نريد الأسماء فقط، ونشمل خصم 40 لأن الشرط «أقل من أو يساوي».\n\n```sql\nSELECT [Name] FROM Custmor_tbl\nWHERE Discount <= 40;\n```\n\n**3. حذف السجل:** نحدد `Noor` بالاسم حتى لا نحذف بقية الزبائن.\n\n```sql\nDELETE FROM Custmor_tbl\nWHERE [Name] = \"Noor\";\n```\n\nالأسماء المطابقة لشرط الخصم: **`Doha` و `Maha`**.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة `SQL`، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة `SQL`، ص 27 مطبوعة (ص 29 في PDF)؛ الدرس الثاني: الاستعلامات ولغة `SQL`، ص 30 مطبوعة (ص 32 في PDF).",
     "answerProvenance": "curriculum-corrected-2026-10-24",
@@ -1368,7 +1368,7 @@ export const ICT_VISUAL_TRANSCRIPTION_QUESTIONS = [
       12
     ],
     "format": "written",
-    "question": "بيّن وظيفة كل استعلام مما يأتي، وحدد إن كانت صيغته قابلة للتنفيذ كما كُتبت:\n\n1. الاستعلام الأول:\n```sql\nSELECT t_name, salary FROM teacher WHERE Salary >= 3500;\n```\n\n2. الاستعلام الثاني:\n```sql\nINSERT INTO DEP1 ([NO], [NAME])\nSELECT DEP2.[NAME] FROM DEP2;\n```",
+    "question": "بيّن وظيفة كل استعلام مما يأتي، وحدد إن كانت صيغته قابلة للتنفيذ كما كُتبت:\n\n1. الاستعلام الأول:\n```sql\nSELECT t_name, salary\nFROM teacher\nWHERE Salary >= 3500;\n```\n\n2. الاستعلام الثاني:\n```sql\nINSERT INTO DEP1 ([NO], [NAME])\nSELECT DEP2.[NAME]\nFROM DEP2;\n```",
     "finalAnswer": "1. **قابل للتنفيذ:** يعرض `t_name` و`salary` من `teacher` للرواتب **3500 فأكثر**.\n2. **غير قابل للتنفيذ كما كُتب:** يستهدف حقلين في `DEP1`، بينما يعيد المصدر حقلًا واحدًا فقط.",
     "answer": "في `SELECT` نحدد الحقول بعد اسم الأمر، والجدول بعد `FROM`، وشرط قبول السجل بعد `WHERE`.\n\nفي الإلحاق يجب أن تقابل كل قيمة أو خانة مصدر خانة وجهة واحدة.\n\n**الاستعلام الأول:** يعرض اسم المعلم `t_name` وراتبه `salary` من `teacher` إذا كان الراتب **3500 فأكثر**؛ المساواة مشمولة.\n\n**الاستعلام الثاني:** لا يُنفّذ بصيغته المعطاة؛ حدد `INSERT` حقلين (`NO` و `NAME`)، لكن `SELECT` يعيد حقلًا واحدًا (`DEP2.NAME`). يجب أن يتساوى عدد حقول المصدر والوجهة.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة `SQL`، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة `SQL`، ص 27 مطبوعة (ص 29 في PDF)؛ الدرس الثاني: الاستعلامات ولغة `SQL`، ص 29 مطبوعة (ص 31 في PDF).",
     "answerProvenance": "curriculum-corrected-2026-10-24",
@@ -1496,7 +1496,7 @@ export const ICT_VISUAL_TRANSCRIPTION_QUESTIONS = [
       12
     ],
     "format": "written",
-    "question": "ما وظيفة كل من الاستعلامين الآتيين؟\n\n1. الاستعلام الأول:\n```sql\nSELECT * FROM student WHERE [avg] >= 50 ORDER BY [name] DESC;\n```\n\n2. الاستعلام الثاني:\n```sql\nUPDATE student SET student.Mark = [Mark] * 1.1;\n```",
+    "question": "ما وظيفة كل من الاستعلامين الآتيين؟\n\n1. الاستعلام الأول:\n```sql\nSELECT *\nFROM student\nWHERE [avg] >= 50\nORDER BY [name] DESC;\n```\n\n2. الاستعلام الثاني:\n```sql\nUPDATE student\nSET student.Mark = [Mark] * 1.1;\n```",
     "finalAnswer": "1. **عرض جميع بيانات الطلاب** الذين معدلهم **50 فأكثر**، مرتبة بالاسم **تنازليًا**.\n2. **زيادة علامات جميع الطلاب بنسبة 10%.**",
     "answer": "**الاستعلام الأول:**\n\n`SELECT` يسترجع البيانات، والنجمة تعني جميع الحقول.\n\n`WHERE` يختار الطلاب الذين معدلهم 50 فأكثر؛ المساواة مشمولة.\n\n`ORDER BY` يرتب النتائج بالاسم تنازليًا بسبب `DESC`.\n\n```sql\nSELECT * FROM student\nWHERE [avg] >= 50\nORDER BY [name] DESC;\n```\n\n**الاستعلام الثاني:**\n\n`UPDATE` يغير العلامة الموجودة.\n\nزيادة 10% تعني العلامة القديمة مضافًا إليها عُشرها.\n\n\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>1</mn><mo>+</mo><mn>10</mn><mi mathvariant=\"normal\">/</mi><mn>100</mn><mo>=</mo><mn>1.1</mn></mrow></math>\n```\n\n\n\nلذلك `Mark * 1.1` هي العلامة بعد الزيادة.\n\nلا توجد `WHERE`، فتشمل العملية جميع الطلاب.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة `SQL`، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة `SQL`، ص 25 مطبوعة (ص 27 في PDF)؛ الدرس الثاني: الاستعلامات ولغة `SQL`، ص 26 مطبوعة (ص 28 في PDF).",
     "answerProvenance": "curriculum-corrected-2026-10-24",
@@ -1826,7 +1826,7 @@ export const ICT_VISUAL_TRANSCRIPTION_QUESTIONS = [
       12
     ],
     "format": "written",
-    "question": "ما وظيفة كل جملة SQL؟ 1- SELECT * FROM class WHERE class_code=\"ثانوي\" ORDER BY class_no ASC; 2- UPDATE Mark_tbl SET Mark_tbl.mark=[mark]*1.03; 3- Delete * FROM School;",
+    "question": "ما وظيفة كل جملة SQL؟\n\n**1.**\n\n```sql\nSELECT *\nFROM class\nWHERE class_code=\"ثانوي\"\nORDER BY class_no ASC;\n```\n\n**2.**\n\n```sql\nUPDATE Mark_tbl\nSET Mark_tbl.mark=[mark]*1.03;\n```\n\n**3.**\n\n```sql\nDelete *\nFROM School;\n```",
     "finalAnswer": "1. **عرض جميع حقول `class`** للسجلات التي `class_code = \"ثانوي\"`، مرتبة **تصاعديًا حسب `class_no`**.\n2. **زيادة علامات جميع سجلات `Mark_tbl` بنسبة 3%.**\n3. **حذف جميع سجلات `School`** مع بقاء بنية الجدول.",
     "answer": "**1. استعلام `SELECT`:**\n\nالنجمة تعني عرض جميع حقول `class`.\n\n`WHERE` يقبل السجلات التي قيمة `class_code` فيها «ثانوي».\n\n`ORDER BY` `class_no` `ASC` يرتبها تصاعديًا بحسب `class_no`.\n\n**2. استعلام `UPDATE`:**\n\n\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>1</mn><mo>+</mo><mn>3</mn><mi mathvariant=\"normal\">/</mi><mn>100</mn><mo>=</mo><mn>1.03</mn></mrow></math>\n```\n\n\n\nلذلك ضرب العلامة في 1.03 يزيدها 3% من قيمتها القديمة.\n\nلا توجد `WHERE`، فتشمل الزيادة جميع السجلات.\n\n**3. استعلام `DELETE`:**\n\nيحذف جميع سجلات `School` لعدم وجود `WHERE`.\n\nتبقى بنية الجدول؛ الأمر لا يحذف الجدول نفسه.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة `SQL`، ص 16 مطبوعة (ص 18 في PDF)؛ الدرس الثاني: الاستعلامات ولغة `SQL`، ص 26 مطبوعة (ص 28 في PDF)؛ الدرس الثاني: الاستعلامات ولغة `SQL`، ص 30 مطبوعة (ص 32 في PDF).",
     "answerProvenance": "curriculum-corrected-2026-10-24",

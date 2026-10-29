@@ -9749,8 +9749,7 @@ body:
 3. مقدار المقاومة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>R</mi></mrow></math>\`.
 4. قراءة الفولتميتر \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi></mrow></math>\`.
 
-![رسم تخطيطي لمنحنى الجهد مع المستويين 24 V و15 V وربطه بعناصر الدارة.](assets/lessons/curriculum-evidence/803bf07a139e682603d4.webp)
-![دارة بمصدر مجهول ε ومصدر 6 V ومقاومة مجهولة R وفولتميتر.](assets/lessons/curriculum-evidence/433a366bb7d62b2e0119.webp)
+![منحنى الجهد والدارة كاملين، مع مقاومتي المصدرين 2 Ω و1 Ω.](assets/lessons/physics/source-crops/q399-complete-source.webp)
 final-answer:
 1. **القوة الدافعة:** \\(\\varepsilon=18\\,\\mathrm{V}\\).
 2. **تيار الدارة:** \\(3\\,\\mathrm{A}\\).
@@ -9759,8 +9758,7 @@ final-answer:
 solution:
 نقرأ ارتفاع جهد المصادر وهبوطه داخلها من المنحنى. نستخدم \\(V=IR\\)؛ وللمقاومات المتوازية نجمع المقلوبات. جهد بطارية تفرغ طاقتها هو \\(\\varepsilon -Ir\\).
 
-![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/803bf07a139e682603d4.webp)
-![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/433a366bb7d62b2e0119.webp)
+![منحنى الجهد والدارة كاملين، مع مقاومتي المصدرين 2 Ω و1 Ω.](assets/lessons/physics/source-crops/q399-complete-source.webp)
 
 المصدران يساعدان التيار؛ ارتفاع الجهد من الرسم يساوي مجموع قوتيهما الدافعتين.
 

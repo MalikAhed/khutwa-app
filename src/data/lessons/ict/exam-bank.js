@@ -287,7 +287,7 @@ export const ICT_EXAM_QUESTIONS = [
     "topic": "delete-review",
     "lessonId": "sql-queries",
     "partId": "delete-review",
-    "question": "ما جملة Sql المناسبة لحذف سجل المشروع الذي يحمل رقم (Pro_No) 55 من جدول المشروع (Project) إذا كانت تكلفته (Cost) أكبر من 1500؟",
+    "question": "ما جملة Sql المناسبة لحذف سجل المشروع الذي يحمل رقم `(Pro_No)` 55 من جدول المشروع `(Project)` إذا كانت تكلفته `(Cost)` أكبر من 1500؟",
     "explanation": "نحدد جدول الحذف بعد `DELETE FROM`. يجب أن يتحقق الرقم والتكلفة في السجل نفسه، لذلك نربطهما بـ `AND`.\n\n```sql\nDELETE FROM Project\nWHERE Pro_No = 55 AND Cost > 1500;\n```\n\nهذه صيغة **الخيار الأول**؛ استخدام `OR` قد يحذف سجلات لا تحقق الشرطين معًا.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 15 مطبوعة (ص 17 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 30 مطبوعة (ص 32 في PDF).",
     "sourcePage": 9,
     "answerPage": 9,
@@ -327,7 +327,7 @@ export const ICT_EXAM_QUESTIONS = [
     "topic": "where-conditions",
     "lessonId": "sql-queries",
     "partId": "where-conditions",
-    "question": "في ترميز أمثلة SQL في الكتاب، ما نوع القيمة المكتوبة بين علامتي اقتباس مثل \"107\" في الشرط st_no = \"107\"؟",
+    "question": "في ترميز أمثلة SQL في الكتاب، ما نوع القيمة المكتوبة بين علامتي اقتباس مثل `\"107\"` في الشرط `st_no = \"107\"`؟",
     "explanation": "علامتا الاقتباس تحيطان بالقيمة النصية في ترميز هذا التمرين. وقد يتكون النص من رموز رقمية، مثل \"107\"، دون أن نقصد إجراء حساب عليها.\n\nإذن الإجابة: نص. المطلوب هنا تفسير طريقة كتابة القيمة؛ أما نوع الحقل الفعلي في قاعدة بيانات قائمة فيُعرف من تصميم الجدول، لا من هذا الشرط وحده.\n\n**المصدر:** الصفحات 6، 19 من الكتاب.",
     "sourcePage": 9,
     "answerPage": 9,
@@ -3038,7 +3038,7 @@ export const ICT_EXAM_QUESTIONS = [
     "bookPages": [
       27
     ],
-    "question": "تأمل الجداول الآتية جيداً، ثم اكتب أوامر SQL لتنفيذ الاستعلامات التي تليها:\ndoctor (dr_id, dr_name, salary, dep_no)\ndepartment (dep_no, dep_name)\nإضافة سجل للجدول (doctor) بالبيانات الآتية: (dr_id=22, dr_name=ahmad, salary=4500, dep_no=3).",
+    "question": "تأمل الجداول الآتية جيداً، ثم اكتب أوامر SQL لتنفيذ الاستعلامات التي تليها:\n\n`doctor (dr_id, dr_name, salary, dep_no)`\n\n`department (dep_no, dep_name)`\n\nإضافة سجل للجدول (doctor) بالبيانات الآتية: (dr_id=22, dr_name=ahmad, salary=4500, dep_no=3).",
     "finalAnswer": "**أمر SQL:**\n\n```sql\nINSERT INTO doctor (dr_id, dr_name, salary, dep_no)\nVALUES (22, \"ahmad\", 4500, 3);\n```",
     "answer": "![الرسم الأصلي للعلاقة بين الطبيب والقسم](assets/lessons/curriculum-evidence/86cf99c558bb05d7b4d1.webp)\n\nنرتب القيم مثل الحقول: رقم الطبيب، اسمه، راتبه، ثم رقم القسم. الاسم نص فنضعه بين اقتباسين.\n\n```sql\nINSERT INTO doctor (dr_id, dr_name, salary, dep_no)\nVALUES (22, \"ahmad\", 4500, 3);\n```\n\nعند فرض التكامل المرجعي، يجب أن يكون القسم 3 موجودًا.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 27 مطبوعة (ص 29 في PDF).",
     "sourcePage": 74,
@@ -3073,7 +3073,7 @@ export const ICT_EXAM_QUESTIONS = [
       32,
       33
     ],
-    "question": "doctor (dr_id, dr_name, salary, dep_no)\ndepartment (dep_no, dep_name)\nاكتب أمر SQL: حذف الطبيب الذي يتم إدخال رقمه (dr_id) من قبل المستخدم.",
+    "question": "`doctor (dr_id, dr_name, salary, dep_no)`\n\n`department (dep_no, dep_name)`\n\nاكتب أمر SQL: حذف الطبيب الذي يتم إدخال رقمه (dr_id) من قبل المستخدم.",
     "finalAnswer": "**أمر SQL:**\n\n```sql\nDELETE FROM doctor\nWHERE dr_id = [أدخل رقم الطبيب];\n```",
     "answer": "![الرسم الأصلي للعلاقة بين الطبيب والقسم](assets/lessons/curriculum-evidence/86cf99c558bb05d7b4d1.webp)\n\nالرقم غير ثابت؛ يحدده المستخدم. نضع طلب إدخاله في شرط رقم الطبيب بين أقواس مربعة.\n\n```sql\nDELETE FROM doctor\nWHERE dr_id = [أدخل رقم الطبيب];\n```\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 32 مطبوعة (ص 34 في PDF)؛ الدرس الثاني: الاستعلامات ولغة SQL، ص 33 مطبوعة (ص 35 في PDF).",
     "sourcePage": 74,
@@ -3107,7 +3107,7 @@ export const ICT_EXAM_QUESTIONS = [
       22,
       23
     ],
-    "question": "doctor (dr_id, dr_name, salary, dep_no)\ndepartment (dep_no, dep_name)\nاكتب أمر SQL: عرض اسم القسم (dep_name) مع أسماء الأطباء (dr_name) الذين يعملون فيه.",
+    "question": "`doctor (dr_id, dr_name, salary, dep_no)`\n\n`department (dep_no, dep_name)`\n\nاكتب أمر SQL: عرض اسم القسم (dep_name) مع أسماء الأطباء (dr_name) الذين يعملون فيه.",
     "finalAnswer": "**أمر SQL:**\n\n```sql\nSELECT department.dep_name, doctor.dr_name\nFROM department, doctor\nWHERE department.dep_no = doctor.dep_no;\n```",
     "answer": "![الرسم الأصلي للعلاقة بين الطبيب والقسم](assets/lessons/curriculum-evidence/86cf99c558bb05d7b4d1.webp)\n\nاسم القسم في جدول واسم الطبيب في آخر، لذلك نستخدم الجدولين. مساواة `dep_no` تربط كل طبيب بقسمه الصحيح.\n\n```sql\nSELECT department.dep_name, doctor.dr_name\nFROM department, doctor\nWHERE department.dep_no = doctor.dep_no;\n```\n\nكتابة اسم الجدول قبل الحقل تميز حقلي `dep_no` المتشابهين.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 23 مطبوعة (ص 25 في PDF).",
     "sourcePage": 74,

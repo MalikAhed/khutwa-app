@@ -2883,7 +2883,7 @@ explanation:
 
 النقطة خارج السلكين؛ بعدها عن السلك ذي التيار المعلوم عشرة سنتيمترات وعن الآخر خمسة وعشرون.
 
-![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/b887a444d197b54857fe.webp)
+![الرسم الأصلي المرتبط بالسؤال](assets/lessons/physics/source-crops/q432-complete-source.webp)
 
 
 
@@ -2928,7 +2928,7 @@ explanation:
 
 hint: راجع المعطيات والوحدات ثم اختر الإجابة وفق نص المصدر.
 example:
-![سلكان رأسيان بينهما 15 cm والتيار I₁=10 A والنقطة a تبعد 10 cm إلى اليمين.](assets/lessons/curriculum-evidence/b887a444d197b54857fe.webp)
+![سلكان رأسيان بينهما 15 cm والتيار I₁=10 A والنقطة a تبعد 10 cm إلى اليمين.](assets/lessons/physics/source-crops/q432-complete-source.webp)
 :::
 
 :::mcq

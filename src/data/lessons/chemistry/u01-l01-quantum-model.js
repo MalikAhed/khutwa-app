@@ -111,10 +111,10 @@ title: الوحدة ١ · الدرس ١ · ص ١٢ · س السؤال الأول
 kicker: أسئلة الفصل — الرزمة التعليمية ٢٠٢٤
 reference: [الرزمة التعليمية، ص ١٢ (PDF ١٤)](https://moe.edu.ps/m/4059#page=14)
 question: أي من مجموعات الأعداد الكمية الآتية غير مقبولة؟
-- [ ] option-1 | \\(n=4,\\ell=3,m_\\ell=2,m_s=+1/2\\)
-- [ ] option-2 | \\(n=3,\\ell=2,m_\\ell=2,m_s=+1/2\\)
-- [ ] option-3 | \\(n=3,\\ell=2,m_\\ell=0,m_s=-1/2\\)
-- [x] option-4 | \\(n=3,\\ell=2,m_\\ell=3,m_s=+1/2\\)
+- [ ] option-1 | \\(\\begin{gathered}n=4,\\ell=3\\\\m_\\ell=2,m_s=+1/2\\end{gathered}\\)
+- [ ] option-2 | \\(\\begin{gathered}n=3,\\ell=2\\\\m_\\ell=2,m_s=+1/2\\end{gathered}\\)
+- [ ] option-3 | \\(\\begin{gathered}n=3,\\ell=2\\\\m_\\ell=0,m_s=-1/2\\end{gathered}\\)
+- [x] option-4 | \\(\\begin{gathered}n=3,\\ell=2\\\\m_\\ell=3,m_s=+1/2\\end{gathered}\\)
 explanation:
 المجموعة الرابعة غير مقبولة.
 
@@ -411,10 +411,10 @@ title: الوحدة ١ · الدرس ١ · ص ٢٧ · س ٤
 kicker: وزاري ٢٠٢٥ دورة ١، ٢، ٣؛ تجريبي ٢٠٢٢ شمال غزة
 reference: [الملزمة، ص ٢٧](https://chatgpt.com/api/library/files/libfile_d6f8fd6cedc0819189c667772787424c/download#page=27)
 question: أي من مجموعات الأعداد الكمية الآتية غير مقبولة؟
-- [x] option-1 | \\(n=2,\\ell=0,m_\\ell=1,m_s=+1/2\\)
-- [ ] option-2 | \\(n=4,\\ell=3,m_\\ell=-2,m_s=-1/2\\)
-- [ ] option-3 | \\(n=3,\\ell=2,m_\\ell=1,m_s=+1/2\\)
-- [ ] option-4 | \\(n=2,\\ell=1,m_\\ell=0,m_s=+1/2\\)
+- [x] option-1 | \\(\\begin{gathered}n=2,\\ell=0\\\\m_\\ell=1,m_s=+1/2\\end{gathered}\\)
+- [ ] option-2 | \\(\\begin{gathered}n=4,\\ell=3\\\\m_\\ell=-2,m_s=-1/2\\end{gathered}\\)
+- [ ] option-3 | \\(\\begin{gathered}n=3,\\ell=2\\\\m_\\ell=1,m_s=+1/2\\end{gathered}\\)
+- [ ] option-4 | \\(\\begin{gathered}n=2,\\ell=1\\\\m_\\ell=0,m_s=+1/2\\end{gathered}\\)
 explanation:
 المجموعة الأولى غير مقبولة.
 
@@ -1247,10 +1247,10 @@ question: أي مجموعة الأعداد الكمية الآتية مقبول�
 
 
 
-- [ ] option-1 | \\(n=2,\\ell=0,m_\\ell=+1,m_s=+1/2\\)
-- [ ] option-2 | \\(n=3,\\ell=1,m_\\ell=-1,m_s=-1/2\\)
-- [x] option-3 | \\(n=2,\\ell=1,m_\\ell=0,m_s=+1/2\\)
-- [ ] option-4 | \\(n=2,\\ell=1,m_\\ell=+2,m_s=-1/2\\)
+- [ ] option-1 | \\(\\begin{gathered}n=2,\\ell=0\\\\m_\\ell=+1,m_s=+1/2\\end{gathered}\\)
+- [ ] option-2 | \\(\\begin{gathered}n=3,\\ell=1\\\\m_\\ell=-1,m_s=-1/2\\end{gathered}\\)
+- [x] option-3 | \\(\\begin{gathered}n=2,\\ell=1\\\\m_\\ell=0,m_s=+1/2\\end{gathered}\\)
+- [ ] option-4 | \\(\\begin{gathered}n=2,\\ell=1\\\\m_\\ell=+2,m_s=-1/2\\end{gathered}\\)
 explanation:
 الرمز2p يعني المستوى الرئيسn=2، والنوعp الذي يقابله العدد الفرعيℓ=1.
 
@@ -1887,7 +1887,7 @@ id: chemistry-oj-p036-q09
 title: الوحدة ١ · الدرس ١ · ص ٣٦ · س ٨٠
 kicker: تجريبي ٢٠٢٠
 reference: [الملزمة، ص ٣٦](https://chatgpt.com/api/library/files/libfile_d6f8fd6cedc0819189c667772787424c/download#page=36)
-question: ما السعة القصوى من الإلكترونات التي تمتلك الأعداد الكمية: \\(n=4,\\ell=2,m_\\ell=(0,-1,2),m_s=+1/2\\)؟
+question: ما السعة القصوى من الإلكترونات التي تمتلك الأعداد الكمية: \\(\\begin{gathered}n=4,\\ell=2\\\\m_\\ell=(0,-1,2),m_s=+1/2\\end{gathered}\\)؟
 - [ ] option-1 | 10
 - [ ] option-2 | 5
 - [x] option-3 | 3

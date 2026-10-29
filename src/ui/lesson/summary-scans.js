@@ -61,7 +61,7 @@ export function mountSummaryScans(summary, { titleId, locale = "ar", signal, exa
     img.draggable = false;
     viewport.append(img);
     if (!paragraph.textContent.trim() && !paragraph.children.length) paragraph.remove();
-    if (exam) figure.append(button, viewport);
+    if (exam) figure.append(viewport, button);
     else figure.append(caption, help, viewport);
     if (correction) {
       correction.classList.add("lesson-summary-scan-note");

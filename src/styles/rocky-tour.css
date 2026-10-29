@@ -37,7 +37,7 @@
 .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list { margin-top:0; }
 .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list button { min-height:76px; grid-template-columns:40px minmax(0,1fr) 40px; gap:12px; padding:12px 16px; border-width:2px; border-radius:18px; }
 .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list button>span { width:40px; height:40px; border-width:2px; border-radius:12px; }
-.lesson-shell:has(.rocky-coach-slot) .level-answer-list :is(code,.lesson-english-term) { padding:0; background:transparent; font:inherit; white-space:normal; }
+.lesson-shell:has(.rocky-coach-slot) .level-answer-list :is(code:not(.lesson-sql-code),.lesson-english-term) { padding:0; background:transparent; font:inherit; white-space:normal; }
 @media (min-width:761px) and (min-height:501px) {
   .lesson-shell:has(.rocky-coach-slot) .level-layout-actions { padding-inline:max(24px,calc((100% - 1000px) / 2)); }
 }

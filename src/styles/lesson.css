@@ -117,7 +117,7 @@ body.ready-lesson-open main.page.lesson-mode { width:100%; max-width:none; min-h
 .level-answer-list button.is-selected>span { background:var(--quest-theme-top); color:var(--quest-theme-text); }
 .level-answer-list button.is-correct { border-color:#62bd3d; background:#e5f7dc; color:#315f26; }
 .level-answer-list button.is-wrong { border-color:#ef8e9f; background:#fff0f3; color:#8a4e59; }
-.level-answer-list code { color:var(--quest-theme-text); font:800 18px ui-monospace,monospace; }
+.level-answer-list code:not(.lesson-sql-code) { color:var(--quest-theme-text); font:800 18px ui-monospace,monospace; }
 .level-answer-list button > span { font:700 16px var(--font-ui); }
 .level-feedback { min-height:24px; margin:20px 0 0; color:#68717a; font:700 15px/1.5 var(--font-ui); }
 .level-feedback.is-correct { color:#39752f; }

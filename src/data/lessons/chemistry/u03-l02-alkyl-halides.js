@@ -548,7 +548,9 @@ answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 سؤال: أكمل المعادلات الآتية بكتابة الصيغة البنائية للناتج العضوي الرئيس والفرعي إن وجد:
 
-\\(\\mathrm{CH_3CH(Br)CH_3\\xrightarrow[\\text{\\char"0643\\char"062D\\char"0648\\char"0644\\char"064A}]{KOH}\\underline{\\qquad\\qquad}}\\)
+في وسط كحولي:
+
+\\(\\mathrm{CH_3CH(Br)CH_3\\xrightarrow{KOH}\\underline{\\qquad\\qquad}}\\)
 
 ![الصيغة البنائية للمتفاعل العضوي كما وردت في المصدر](assets/lessons/chemistry/source-crops/chemistry-oj-p196-q01-reactant.webp)
 final-answer:
@@ -716,7 +718,13 @@ body:
 
 ما تصنيف المركب \\(A\\) (أولي، ثانوي، ثالثي)؟
 
-![جدول A إلى E:1-برومو بيوتان،2-بيوتانول،حمض الإيثانويك،بيوتانال،2-بيوتانون](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q01-figure.webp)
+| الرمز | الصيغة البنائية |
+| --- | --- |
+| A | \\(\\mathrm{CH_3CH_2CH_2CH_2Br}\\) |
+| B | \\(\\begin{array}{rcl}&\\mathrm{OH}&\\\\&\\vert&\\\\\\mathrm{CH_3CH_2}&\\mathrm{CH}&\\mathrm{CH_3}\\end{array}\\) |
+| C | \\(\\mathrm{CH_3COOH}\\) |
+| D | \\(\\begin{array}{rcl}&\\mathrm{O}&\\\\&\\Vert&\\\\\\mathrm{CH_3CH_2CH_2}&\\mathrm{C}&\\mathrm{H}\\end{array}\\) |
+| E | \\(\\begin{array}{rcl}&\\mathrm{O}&\\\\&\\Vert&\\\\\\mathrm{CH_3CH_2}&\\mathrm{C}&\\mathrm{CH_3}\\end{array}\\) |
 final-answer:
 **هاليد ألكيل أولي.**
 solution:

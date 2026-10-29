@@ -5,6 +5,7 @@ import { escapeHtml } from "../lib/dom.js";
 import { getLessonUiCopy } from "../ui/lesson-ui-copy.js";
 import { LESSON_CONTENT_DIRECTIVES } from "./lesson-authoring.js";
 import { renderMathML, renderLatex } from "./math.js";
+import { isSqlStatement, formatSqlForReading } from "./sql.js";
 
 const GLOSSARY = new Map([
   ["api", "A defined way for software systems to request data or actions from each other."],
@@ -211,12 +212,16 @@ const codeRenderer = {
   codespan({ text }) {
     if (text.startsWith("mathml:")) return renderMathML(text.slice(7).trim());
     if (text.startsWith("latex:")) return renderLatex(text.slice(6).trim());
+    if (isSqlStatement(text)) return `<code class="lesson-sql-code" dir="ltr">${escapeHtml(formatSqlForReading(text))}</code>`;
     const firstLetter = text.match(/[A-Za-z\p{Script=Arabic}]/u)?.[0] || "";
     const direction = /\p{Script=Arabic}/u.test(firstLetter) ? "rtl" : "ltr";
     return `<code dir="${direction}">${escapeHtml(text)}</code>`;
   },
   code({ text, lang }) {
     const { language, title, highlightedLines } = parseCodeMeta(lang);
+    // Formatting changes whitespace only; authored highlighted line numbers keep
+    // their original positions when a code example explicitly supplies them.
+    if (language === "sql" && !highlightedLines.size) text = formatSqlForReading(text);
     if (language === "latex") {
       return `<figure class="lesson-math-sample">${title ? `<figcaption>${escapeHtml(title)}</figcaption>` : ""}<div class="lesson-math-scroll" dir="ltr" tabindex="0" role="region" aria-label="معادلة">${renderLatex(text, { display:true })}</div></figure>`;
     }
@@ -348,10 +353,18 @@ export function renderMarkdownInline(source, { locale = "en" } = {}) {
 }
 
 export function renderLessonInline(source, options = {}) {
+  if (/^\s*[+−-]?[0-9٠-٩۰-۹]+(?:[.,٫][0-9٠-٩۰-۹]+)?\s*$/.test(String(source))) {
+    return `<bdi dir="ltr">${escapeHtml(source)}</bdi>`;
+  }
+  if (isSqlStatement(source)) {
+    return isolateArabicCode(`<code class="lesson-inline-code lesson-sql-code" dir="ltr">${escapeHtml(formatSqlForReading(source))}</code>`);
+  }
   return renderMarkdownInline(source, options)
     .replace(/<math\b[\s\S]*?<\/math>/g, inlineMath)
     .replace(/<img\b[^>]*>/g, inlineImage)
-    .replaceAll("<code ", '<code class="lesson-inline-code" ');
+    .replace(/<code\b([^>]*)>/g, (_match, attributes) => `<code${/\sclass="/.test(attributes)
+      ? attributes.replace(/\sclass="/, ' class="lesson-inline-code ')
+      : ` class="lesson-inline-code"${attributes}`}>`);
 }
 
 function wrapTables(container, copy) {

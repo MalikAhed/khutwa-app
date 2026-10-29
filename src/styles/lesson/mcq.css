@@ -428,9 +428,9 @@
     0 0 24px rgba(255, 216, 77, 0.8);
 }
 
-/* Keep authored SQL together and readable within Arabic question text. */
-.ui-lab-mcq > h1 code,
-.ui-lab-mcq .level-answer-list code {
+/* Short code terms stay inline; complete SQL uses the shared multiline style. */
+.ui-lab-mcq > h1 code:not(.lesson-sql-code),
+.ui-lab-mcq .level-answer-list code:not(.lesson-sql-code) {
   display: inline-block;
   direction: ltr;
   unicode-bidi: isolate;
@@ -441,3 +441,4 @@
   vertical-align: middle;
   font: 0.86em/1.8 ui-monospace, monospace;
 }
+.ui-lab-mcq .lesson-answer:has(.lesson-sql-code) > b { width:100%; text-align:left; }

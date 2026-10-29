@@ -459,12 +459,10 @@
   font-weight: 700;
   cursor: pointer;
 }
-.lesson-question-image { position: relative; }
+.lesson-question-image { display: grid; }
 .lesson-question-image > .lesson-summary-scan-toggle {
-  position: absolute;
-  inset-block-start: 8px;
-  inset-inline-end: 8px;
-  z-index: 1;
+  justify-self: end;
+  margin: 6px 8px;
   display: grid;
   place-items: center;
   width: 44px;

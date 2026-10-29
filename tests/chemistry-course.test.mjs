@@ -88,7 +88,7 @@ test("every chemistry formula renders under the app's strict math settings", asy
       expressions += 1;
     }
   }
-  assert.equal(expressions - finalAnswerExpressions, 2288, "original question and explanation formulas remain intact");
+  assert.equal(expressions - finalAnswerExpressions, 2313, "question and explanation formulas include the native structures in all five organic-table questions");
   assert.ok(finalAnswerExpressions > 0, "final-answer formulas also pass strict rendering");
   for (const change of coverage.integration.math_notation.adaptations.filter(change => change.original.includes("فوتون"))) {
     assert.match(katex.renderToString(change.adapted, { output:"mathml", strict:"error" }), /<mtext>فوتون<\/mtext>/);

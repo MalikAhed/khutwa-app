@@ -38,11 +38,15 @@
 .markdown-code-block pre:focus-visible { outline:3px solid var(--system-focus,#1685b2); outline-offset:-3px; }
 
 .markdown-rendered :not(pre) > code { padding:.1em .3em; border-radius:4px; background:#f1f4f7; color:#273d4c; font-family:ui-monospace,SFMono-Regular,Consolas,"Noto Sans Arabic",monospace; font-size:.88em; overflow-wrap:anywhere; box-decoration-break:clone; -webkit-box-decoration-break:clone; }
+.markdown-rendered :is(th,td) code:not(.lesson-sql-code) { white-space:nowrap; overflow-wrap:normal; word-break:normal; }
 .markdown-code-block { min-width:0; max-width:100%; margin-block:1em 1.5em; overflow:hidden; border:1px solid #d5dee6; border-radius:10px; background:#f8fafc; }
 .markdown-code-head { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:6px 12px; padding:9px 14px; border-bottom:1px solid #d5dee6; background:#edf4f9; color:#40596a; font:600 .75rem/1.5 var(--font-ui); }
 .markdown-code-head b { flex:none; font-size:.7rem; }
 .markdown-code-block pre { min-width:0; max-width:100%; margin:0; padding:16px; overflow:auto; text-align:left; unicode-bidi:isolate; tab-size:2; touch-action:pan-x pan-y; }
 .markdown-code-block pre code { padding:0; background:transparent; color:#273d4c; font:400 .875rem/1.8 ui-monospace,SFMono-Regular,Consolas,"Noto Sans Arabic",monospace; white-space:pre; overflow-wrap:normal; }
+.lesson-sql-code { display:block; width:100%; max-width:100%; direction:ltr; unicode-bidi:isolate; text-align:left; white-space:pre-wrap; overflow-wrap:anywhere; font:500 .9375rem/1.8 ui-monospace,SFMono-Regular,Consolas,"Noto Sans Arabic",monospace; }
+.markdown-code-block pre:has(.language-sql) { white-space:pre-wrap; }
+.markdown-code-block pre code.language-sql { white-space:pre-wrap; overflow-wrap:anywhere; }
 .markdown-code-line.is-highlighted { background:#fff0a3; box-shadow:0 0 0 2px #fff0a3; }
 .markdown-code-block :is(.hljs-keyword,.hljs-selector-tag,.hljs-built_in) { color:#6d3691; font-weight:600; }
 .markdown-code-block :is(.hljs-string,.hljs-attr) { color:#146350; }

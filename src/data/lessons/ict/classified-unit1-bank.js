@@ -768,7 +768,7 @@ export const ICT_CLASSIFIED_UNIT1_QUESTIONS = [
       20
     ],
     "format": "mcq",
-    "question": "في برنامج أكسس Microsoft access، ماذا تعني العملية (&lt;> )؟",
+    "question": "في برنامج أكسس Microsoft access، ماذا تعني العملية `(<> )`؟",
     "choices": [
       "أكبر وأصغر",
       "أصغر وليس أكبر",
@@ -887,7 +887,7 @@ export const ICT_CLASSIFIED_UNIT1_QUESTIONS = [
       18
     ],
     "format": "mcq",
-    "question": "ما ناتج تنفيذ الجملة التالية بعد تصحيح اسم الجدول المحجوز بأقواس مربعة: SELECT * FROM [Table];",
+    "question": "ما ناتج تنفيذ الجملة التالية بعد تصحيح اسم الجدول المحجوز بأقواس مربعة: `SELECT * FROM [Table];`",
     "choices": [
       "استخراج بعض البيانات",
       "استخراج جميع الحقول من الجدول",
@@ -930,7 +930,7 @@ export const ICT_CLASSIFIED_UNIT1_QUESTIONS = [
       28
     ],
     "format": "mcq",
-    "question": "ما الصيغة المستخدمة في إضافة السجل التالي (B_name=\"Numbers\", B_id=2555, pub_date=20/5/2000) في جدول Book؟",
+    "question": "ما الصيغة المستخدمة في إضافة السجل التالي `(B_name=\"Numbers\", B_id=2555, pub_date=20/5/2000)` في جدول `Book`؟",
     "choices": [
       "INSERT INTO Book(B_id,B_name,pub_date) VALUES (2555,\"Numbers\",#20/5/2000#)",
       "INSERT INTO Book(B_id,B_name,pub_date) SET (2555,\"Numbers\",#20/5/2000#)",
@@ -1054,7 +1054,7 @@ export const ICT_CLASSIFIED_UNIT1_QUESTIONS = [
       27
     ],
     "format": "written",
-    "question": "ما دلالة جملة SQL الآتية كما قصدها المصدر؟\n\n```sql\nUPDATE Student_tbl SET Student_tbl.[Student_name]=[Enter Student name];\n```",
+    "question": "ما دلالة جملة SQL الآتية كما قصدها المصدر؟\n\n```sql\nUPDATE Student_tbl\nSET Student_tbl.[Student_name]=[Enter Student name];\n```",
     "finalAnswer": "**مطالبة المستخدم بإدخال اسم، ثم تعديل حقل `Student_name` في جميع سجلات `Student_tbl` إلى الاسم المدخل.**",
     "answer": "**تصحيح مطبعي في المصدر:** ترد الكلمة `UPDATAE`؛ الصواب `UPDATE` كما في السؤال المعروض.\n\nيعرض `Access` مطالبة بإدخال اسم الطالب، لأن العبارة `[Enter Student name]` بين الأقواس تمثل معلمة إدخال في هذا السؤال. ثم يستخدم الأمر `UPDATE` القيمة المدخلة لتعديل حقل `Student_name`.\n\n```sql\nUPDATE Student_tbl\nSET Student_name = [Enter Student name];\n```\n\nلا توجد `WHERE`، لذلك يُعدّل الاسم في **جميع السجلات** إلى القيمة المدخلة.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 25 مطبوعة (ص 27 في PDF).",
     "answerProvenance": "curriculum-corrected-2026-10-24",

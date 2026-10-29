@@ -6056,13 +6056,13 @@ answer-label: الإجابة والشرح من المجموعة المصححة
 body:
 يمثل الشكل المجاور ثلاثة أسلاك مستقيمة طويلة جدًا يسري في كل منها تيار كهربائي. إذا علمت أن اتجاه محصلة القوى المؤثرة على السلك \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>b</mi></mrow></math>\` تصنع زاوية \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mn>45</mn><mo>∘</mo></msup></mrow></math>\` مع محور السينات السالب، احسب مقدار واتجاه التيار الكهربائي في السلك \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>C</mi></mrow></math>\`.
 
-![ثلاثة أسلاك a وb وc والتيارات عند a وb تساوي 3 A واتجاه محصلة القوة على b.](assets/lessons/curriculum-evidence/5170f8e11c705c29cd8d.webp)
+![ثلاثة أسلاك a وb وc والتيارات عند a وb تساوي 3 A واتجاه محصلة القوة على b.](assets/lessons/physics/source-crops/q537-complete-source.webp)
 final-answer:
 **تيار السلك \\(C\\):** \\(4\\,\\mathrm{A}\\) **نحو الناظر** \\((+Z)\\).
 solution:
 تيار السلك الأول يعاكس تيار السلك الأوسط، فيدفعه إلى أسفل؛ نحسب هذه القوة لكل وحدة طول.
 
-![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/5170f8e11c705c29cd8d.webp)
+![الرسم الأصلي المرتبط بالسؤال](assets/lessons/physics/source-crops/q537-complete-source.webp)
 
 قوة كل وحدة طول بين سلكين متوازيين هي \\(\\mu _{0}I_{1}I_{2}/(2\\pi d)\\). التياران المختلفان اتجاهًا يتنافران؛ لذلك تؤثر قوة \\(a\\) في \\(b\\) إلى أسفل كما يوافق الرسم.
 
@@ -6459,14 +6459,14 @@ body:
 1. شدة التيار المار في كل من السلكين.
 2. القوة المغناطيسية المؤثرة على بروتون يتحرك بسرعة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>\` باتجاه \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mi>Y</mi></mrow></math>\` في نفس مستوى السلكين، عند مروره بالنقطة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>b</mi></mrow></math>\` التي تبعد عن السلك الأول مسافة \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>\`.
 
-![سلكان رأسيان متوازيان والنقطتان a وb والمسافة 2 m.](assets/lessons/curriculum-evidence/b98b768a9809b56c5352.webp)
+![سلكان رأسيان متوازيان والنقطتان a وb والمسافة 2 m.](assets/lessons/physics/source-crops/q541-complete-source.webp)
 final-answer:
 1. **تيار كل سلك:** \\(I_1=I_2=20\\,\\mathrm{A}\\).
 2. **القوة على البروتون:** \\(1.92\\times10^{-18}\\,\\mathrm{N}\\) نحو \\(+X\\).
 solution:
 هذه علاقة مجال سلك مستقيم طويل عند نقطة تبعد عنه عموديًا مسافة \\(r\\). نستخدمها لكل سلك على حدة، ثم نجمع المجالات كمتجهات وفق اتجاهاتها.
 
-![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/b98b768a9809b56c5352.webp)
+![الرسم الأصلي المرتبط بالسؤال](assets/lessons/physics/source-crops/q541-complete-source.webp)
 
 
 

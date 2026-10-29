@@ -876,7 +876,13 @@ body:
 
 بين بمعادلات كيف تميز مخبرياً بين المركبين \\(E\\) و\\(D\\) باستخدام محلول فهلنج.
 
-![جدول A إلى E:1-برومو بيوتان،2-بيوتانول،حمض الإيثانويك،بيوتانال،2-بيوتانون](assets/lessons/chemistry/source-crops/chemistry-oj-p199-q01-figure.webp)
+| الرمز | الصيغة البنائية |
+| --- | --- |
+| A | \\(\\mathrm{CH_3CH_2CH_2CH_2Br}\\) |
+| B | \\(\\begin{array}{rcl}&\\mathrm{OH}&\\\\&\\vert&\\\\\\mathrm{CH_3CH_2}&\\mathrm{CH}&\\mathrm{CH_3}\\end{array}\\) |
+| C | \\(\\mathrm{CH_3COOH}\\) |
+| D | \\(\\begin{array}{rcl}&\\mathrm{O}&\\\\&\\Vert&\\\\\\mathrm{CH_3CH_2CH_2}&\\mathrm{C}&\\mathrm{H}\\end{array}\\) |
+| E | \\(\\begin{array}{rcl}&\\mathrm{O}&\\\\&\\Vert&\\\\\\mathrm{CH_3CH_2}&\\mathrm{C}&\\mathrm{CH_3}\\end{array}\\) |
 final-answer:
 **بإضافة فهلنج والتسخين:**
 
