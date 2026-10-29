@@ -85,7 +85,7 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
       const result = await explanation.unlock({signal:requestSignal});
       if (requestSignal.aborted || dialog !== activeDialog) return;
       updateLabel();
-      body.innerHTML = `${result.note ? `<p class="question-explanation-note">${escapeHtml(result.note)}</p>` : ""}<div class="markdown-rendered">${renderMarkdownDocument(result.markdown,{locale})}</div>`;
+      body.innerHTML = `${result.note ? `<p class="question-explanation-note">${escapeHtml(result.note)}</p>` : ""}<div class="markdown-rendered">${renderMarkdownDocument(result.markdown,{locale,highlightQuotes:true})}</div>`;
       spaceWorkedEquations(body);
       mountMarkdownFeatures(body,{locale,signal:requestSignal,scrollSurface:body});
     } catch (error) {

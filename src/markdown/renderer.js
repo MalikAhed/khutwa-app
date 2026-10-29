@@ -191,6 +191,26 @@ const highlightExtension = {
   childTokens:["tokens"],
 };
 
+const quotedHighlightExtension = {
+  ...highlightExtension,
+  name:"quotedHighlight",
+  start(source) {
+    const index = source.indexOf("«");
+    return index >= 0 ? index : undefined;
+  },
+  tokenizer(source) {
+    if (!source.startsWith("«")) return undefined;
+    let depth = 0;
+    for (let index = 0; index < source.length; index += 1) {
+      if (source[index] === "«") depth += 1;
+      if (source[index] !== "»" || --depth !== 0) continue;
+      return { type:"quotedHighlight", raw:source.slice(0,index + 1),
+        tokens:this.lexer.inlineTokens(source.slice(1,index)) };
+    }
+    return undefined;
+  },
+};
+
 const latexBlockExtension = {
   name:"latexBlock",
   level:"block",
@@ -247,14 +267,15 @@ const codeRenderer = {
 };
 
 const markdownByLocale = new Map();
-function markdownFor(locale = "en") {
-  const key = locale === "ar" ? "ar" : "en";
+function markdownFor(locale = "en", highlightQuotes = false) {
+  const language = locale === "ar" ? "ar" : "en";
+  const key = `${language}${highlightQuotes ? ":highlight-quotes" : ""}`;
   if (markdownByLocale.has(key)) return markdownByLocale.get(key);
-  const copy = getLessonUiCopy(key);
+  const copy = getLessonUiCopy(language);
   const markdown = new Marked({
   async:false,
   breaks:false,
-  extensions:[mathmlInlineExtension, latexInlineExtension, latexBlockExtension, highlightExtension, { ...technicalTermExtension, renderer(token) { return technicalTermExtension.renderer(token, copy); } }, lessonDirectiveExtension, youtubeVideoExtension],
+  extensions:[mathmlInlineExtension, latexInlineExtension, latexBlockExtension, highlightExtension, ...(highlightQuotes ? [quotedHighlightExtension] : []), { ...technicalTermExtension, renderer(token) { return technicalTermExtension.renderer(token, copy); } }, lessonDirectiveExtension, youtubeVideoExtension],
   gfm:true,
   pedantic:false,
   renderer:codeRenderer,
@@ -343,8 +364,8 @@ function directMixedText(markup, locale) {
   return template.innerHTML;
 }
 
-export function renderMarkdownDocument(source, { locale = "en" } = {}) {
-  return directMixedText(isolateArabicCode(sanitize(markdownFor(locale).parse(String(source)))), locale)
+export function renderMarkdownDocument(source, { locale = "en", highlightQuotes = false } = {}) {
+  return directMixedText(isolateArabicCode(sanitize(markdownFor(locale,highlightQuotes).parse(String(source)))), locale)
     .replace(/<math\b(?=[^>]*\bdisplay="inline")[\s\S]*?<\/math>/g, inlineMath);
 }
 
