@@ -53,6 +53,8 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
     dialog = document.createElement("dialog");
     const activeDialog = dialog;
     activeDialog.className = "question-explanation-dialog";
+    const subject = host.closest("[data-subject]")?.getAttribute("data-subject");
+    if (subject) activeDialog.dataset.subject = subject;
     activeDialog.dir = ar ? "rtl" : "ltr";
     activeDialog.lang = locale;
     activeDialog.setAttribute("aria-labelledby","question-explanation-title");
