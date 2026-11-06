@@ -6,7 +6,7 @@ import { applyProgressUpdate, emptyPart, partKey, restorePartEntries } from "../
 
 // The server owns confirmed rewards. IndexedDB retains confirmed records and an
 // account-bound outbox so a lost response, reload or account switch can be retried.
-/** @param {{local:import('./indexeddb-progress.js').IndexedProgressAdapter, baseUrl?:string, fetchImpl?:typeof fetch, onError?:(error:unknown,ownerId:string)=>void, onResources?:(owner:string,value:any,id?:string,gemReward?:number)=>void, requiresOnlineAnswer?:(owner:string)=>boolean}} options @returns {import('./subject-progress-store.js').ProgressAdapter} */
+/** @param {{local:import('./indexeddb-progress.js').IndexedProgressAdapter, baseUrl?:string, fetchImpl?:typeof fetch, onError?:(error:unknown,ownerId:string)=>void, onResources?:(owner:string,value:any,id?:string,gemReward?:number)=>void, requiresOnlineAnswer?:(owner:string,key?:any)=>boolean}} options @returns {import('./subject-progress-store.js').ProgressAdapter} */
 export function createServerProgressAdapter({ local, baseUrl = "/api/progress", fetchImpl = globalThis.fetch, onError = console.warn, onResources, requiresOnlineAnswer = () => false }) {
   /** @param {string} ownerId @param {object} [body] @returns {Promise<Map<string,PartRecord>>} */
   async function request(ownerId, body) {
@@ -95,7 +95,7 @@ export function createServerProgressAdapter({ local, baseUrl = "/api/progress", 
       await local.enqueue(update);
       // Keep the durable outbox even if the response is lost. Free answers must
       // receive the server's atomic quota decision before showing their result.
-      if (update.type === 'answer' && requiresOnlineAnswer(update.value.ownerId)) await flush(update.value.ownerId);
+      if (update.type === 'answer' && requiresOnlineAnswer(update.value.ownerId,update.value)) await flush(update.value.ownerId);
       return readCached(update.value.ownerId);
     },
     close:()=>local.close(),

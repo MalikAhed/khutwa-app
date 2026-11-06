@@ -39,7 +39,7 @@ export function createOfflineAccess({ storage, wallNow = Date.now, monotonicNow 
       const expires = [account.accessExpiresAt, account.subscriptionExpiresAt].filter(Boolean)
         .map(value => typeof value === 'number' ? value : Date.parse(value)).filter(Number.isFinite);
       // Persist only the minimal profile; never passwords, cookies or tokens.
-      const profile = Object.fromEntries(['id','username','displayName','accountType','curriculum','path']
+      const profile = Object.fromEntries(['id','username','displayName','accountType','curriculum','path','subscriptionSubjects']
         .filter(key => Object.hasOwn(account,key)).map(key => [key,account[key]]));
       anchor = null;
       return save({ version:1, account:profile, verifiedAt:serverTime,

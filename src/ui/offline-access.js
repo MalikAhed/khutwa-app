@@ -1,16 +1,24 @@
 // One gate for free connectivity and paid lease/clock checks. Keep all pending work.
-export function mountOfflineAccess({ service, reconnect }) {
+export function mountOfflineAccess({ service, reconnect, getStudyKey = () => undefined, onReturnHome }) {
   const dialog = document.createElement('dialog');
   dialog.className = 'offline-access';
   dialog.setAttribute('aria-labelledby', 'offline-access-title');
   dialog.innerHTML = '<h2 id="offline-access-title">اتصل بالإنترنت للمتابعة</h2><p data-offline-access-message></p><p>إجاباتك وتقدّمك المحفوظان على هذا الجهاز باقيان، وستُرسل الإجابات المعلّقة عند عودة الاتصال.</p><button type="button">تحقّق من الاتصال</button><p role="status" aria-live="polite"></p>';
   document.body.append(dialog);
+  const returnHome = document.createElement('button');
+  returnHome.type = 'button';returnHome.textContent = 'العودة إلى المواد المشمولة';returnHome.hidden = true;
+  returnHome.addEventListener('click',() => {onReturnHome?.();check();});
+  dialog.append(returnHome);
   dialog.addEventListener('cancel', event => event.preventDefault());
   const check = () => {
     dialog.querySelector('[data-offline-access-message]').textContent = service.getAccountType() === 'subscribed'
       ? 'اتصل بالإنترنت مرة كل ٧ أيام للتحقّق من الاشتراك، ومزامنة تقدّمك، واستقبال التحديثات والمزايا الجديدة. قد نطلب الاتصال أيضًا عند تغيّر ساعة الجهاز.'
       : 'الحساب المجاني يحتاج إلى اتصال بالإنترنت للدراسة. تحقّق من الاتصال للمتابعة؛ الدراسة دون إنترنت متاحة مع سوبر.';
-    const allowed = service.getAccessState().allowed;
+    const key = getStudyKey();
+    const scopeBlocked = service.isOffline?.() && key?.subjectId && service.getAccountType() === 'subscribed' && !service.hasSuperAccess?.(key);
+    if (scopeBlocked) dialog.querySelector('[data-offline-access-message]').textContent = 'هذه المادة غير مشمولة باشتراكك. اتصل بالإنترنت لاستخدام القلوب المجانية، أو عد إلى المواد المشمولة للدراسة دون اتصال.';
+    returnHome.hidden = !scopeBlocked || !onReturnHome;
+    const allowed = service.getAccessState(key).allowed;
     if (!allowed && !document.body.hasAttribute('data-startup') && !dialog.open) dialog.showModal();
     if (allowed && dialog.open) dialog.close();
     return allowed;

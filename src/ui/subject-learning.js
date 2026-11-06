@@ -376,7 +376,7 @@ export function createSubjectLearningController({
               const key = sourceKey(step.id);
               return {
                 isUnlocked:() => resourceStore.hasExplanation(ownerId,key),
-                isIncluded:() => resourceStore.get(ownerId).unlimited,
+                isIncluded:() => resourceStore.get(ownerId,key).unlimited,
                 subscribe:resourceStore.subscribe,
                 unlock:async ({signal}) => {
                   if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) throw new Error("The active learner changed.");
@@ -423,7 +423,7 @@ export function createSubjectLearningController({
                 else if (resourceStore.get(ownerId).hearts === 0) heartDepletion?.show('hearts');
                 return blocked;
               }
-              const balance = resourceStore?.get(ownerId);
+              const balance = resourceStore?.get(ownerId,practiceKey);
               if (!balance || balance.unlimited || hasFreeLessonPractice(practiceKey) || balance.hearts > 0) return;
               heartDepletion?.show();
               return "نفدت قلوب اليوم. تتجدد القلوب السبعة عند منتصف الليل بتوقيت فلسطين. اتصل بالإنترنت لتأكيد الرصيد الجديد.";

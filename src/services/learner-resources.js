@@ -4,7 +4,7 @@ import { questionRewardKey } from "../domain/question-rewards.js";
 import { hasFreeLessonPractice, QUESTION_JUMPS_REQUIRE_SUPER } from '../domain/free-practice.js';
 
 // HTTP balances are confirmed by the progress API; fixture balances stay local.
-export function createLearnerResources({ storage, getAccountType, apiBase = null, fetchImpl = globalThis.fetch, now = Date.now, onError = console.warn }) {
+export function createLearnerResources({ storage, getAccountType, hasSuperAccess = () => getAccountType() === 'subscribed', apiBase = null, fetchImpl = globalThis.fetch, now = Date.now, onError = console.warn }) {
   const owners = new Map();
   const subscribers = new Set();
   const keyFor = owner => `tawjihi:resources:v1:${encodeURIComponent(owner)}`;
@@ -21,7 +21,7 @@ export function createLearnerResources({ storage, getAccountType, apiBase = null
   const persist = (owner, state) => {
     try { storage?.setItem(keyFor(owner), JSON.stringify(state.value)); } catch (error) { onError(error); }
   };
-  const get = owner => resourceSnapshot(stateFor(owner).value, getAccountType() === "subscribed", now(), refillOptions(owner));
+  const get = (owner,key) => resourceSnapshot(stateFor(owner).value, hasSuperAccess(key), now(), refillOptions(owner));
   const confirm = (owner, value, updateId, gemReward) => {
     const state = stateFor(owner);
     state.pending.delete(updateId);
@@ -57,9 +57,9 @@ export function createLearnerResources({ storage, getAccountType, apiBase = null
     },
     async navigate(owner, key, { kind = 'jump', signal, solved = false } = {}) {
       signal?.throwIfAborted();
-      if (QUESTION_JUMPS_REQUIRE_SUPER && kind === 'jump' && !solved && getAccountType() !== 'subscribed')
+      if (QUESTION_JUMPS_REQUIRE_SUPER && kind === 'jump' && !solved && !hasSuperAccess(key))
         throw Object.assign(new Error('اختيار سؤال من الشريط متاح مع خطوة سوبر.'),{code:'super-required'});
-      if (!QUESTION_NAVIGATION_LIMIT_ENABLED || getAccountType() === 'subscribed') return;
+      if (!QUESTION_NAVIGATION_LIMIT_ENABLED || hasSuperAccess(key)) return;
       if (apiBase && owner.startsWith('account:')) {
         let response;
         try {
@@ -88,7 +88,7 @@ export function createLearnerResources({ storage, getAccountType, apiBase = null
       }
     },
     async checkAnswerAccess(owner, { signal, key, onConnectionRequired = () => {} } = {}) {
-      if (!apiBase || !owner.startsWith("account:") || getAccountType() === "subscribed") return;
+      if (!apiBase || !owner.startsWith("account:") || hasSuperAccess(key)) return;
       let response;
       try {
         response = await fetchImpl(apiBase, { credentials:"same-origin", cache:"no-store",
@@ -115,7 +115,7 @@ export function createLearnerResources({ storage, getAccountType, apiBase = null
       if (apiBase && owner.startsWith("account:")) {
         // Downloaded lessons already contain their authored solutions. Reading an
         // existing entitlement must not depend on a purchase request or connectivity.
-        const balance = get(owner);
+        const balance = get(owner,key);
         const explanation = questionExplanation(step);
         if (explanation && (balance.unlimited || balance.explanationUnlocks.includes(questionRewardKey(key))))
           return explanation;
@@ -143,7 +143,7 @@ export function createLearnerResources({ storage, getAccountType, apiBase = null
       if (!explanation) throw Object.assign(new Error("Explanation unavailable."),{code:"unavailable"});
       const state = stateFor(owner);
       const questionKey = questionRewardKey(key);
-      const balance = get(owner);
+      const balance = get(owner,key);
       if (!(balance.explanationUnlocks || []).includes(questionKey)) {
         const price = balance.unlimited ? 0 : EXPLANATION_GEM_COST;
         if (balance.gems < price) throw Object.assign(new Error("Not enough gems."),{code:"insufficient-gems"});
@@ -159,12 +159,12 @@ export function createLearnerResources({ storage, getAccountType, apiBase = null
       if (hasFreeLessonPractice(key)) return;
       const state = stateFor(owner);
       if (state.pending.has(id)) return;
-      if (!get(owner).unlimited) {
+      if (!get(owner,key).unlimited) {
         const value = spendHeart(state.value, now(), refillOptions(owner));
         if (!value) throw new Error("No hearts available.");
         state.value = value;
       }
-      if (owner.startsWith("account:")) state.pending.add(id);
+      if (owner.startsWith("account:") && !hasSuperAccess(key)) state.pending.add(id);
       persist(owner, state);
       notify();
     },

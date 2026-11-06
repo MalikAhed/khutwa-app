@@ -28,7 +28,7 @@ export function withBrowserAllowance(handler, { accountStore, readJsonBody, orig
     };
     let reservation;
     if (body?.type === 'answer' && typeof body.id === 'string' && body.id.length >= 8 && body.id.length <= 240
-      && !hasFreeLessonPractice(body) && !accountStore.progress.readResources(account.id).unlimited
+      && !hasFreeLessonPractice(body) && !accountStore.progress.readResources(account.id,body).unlimited
       && !accountStore.progress.hasUpdate(account.id,body.id)) {
       try { reservation = await policy.reserve(device.tokenHash,account.id,body); }
       catch (error) {

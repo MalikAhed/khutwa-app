@@ -6,11 +6,12 @@ export const STUDENT_DASHBOARD_PATH = "/students";
 export function renderStudentDashboard({version=""}={}) {
   const suffix=version?`?v=${encodeURIComponent(version)}`:"";
   return `<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#edf8fe"><meta name="color-scheme" content="only light">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f5f7f8"><meta name="color-scheme" content="only light">
 <title>إدارة الطلاب | خطوة</title><link rel="icon" href="/assets/brand/khotwa-wordmark.svg"><link rel="stylesheet" href="/src/styles/student-dashboard.css${suffix}"><script type="module" src="/src/ui/student-dashboard.js${suffix}"></script></head>
 <body><a class="skip-link" href="#main-content">انتقل إلى الطلاب</a>
 <aside class="sidebar" aria-label="التنقل الرئيسي">
   <a class="brand" href="/students"><img src="/assets/brand/khotwa-wordmark.svg" alt="خطوة" width="120" height="50"></a>
+  <p class="sidebar-caption">إدارة الطلاب والاشتراكات</p>
   <nav class="navigation" aria-label="تصفية الطلاب">
     <button type="button" class="nav-item" data-filter="all" aria-label="جميع الطلاب" aria-pressed="true"><span data-icon="users"></span><span>جميع الطلاب</span></button>
     <button type="button" class="nav-item" data-filter="subscribed" aria-label="المشتركون" aria-pressed="false"><span data-icon="card"></span><span>المشتركون</span></button>
@@ -24,7 +25,7 @@ export function renderStudentDashboard({version=""}={}) {
   <div class="account-tools"><span class="owner-avatar" data-icon="shield"></span><div><strong>مساحة المالك</strong><span>إدارة الطلاب والاشتراكات</span></div></div>
 </header>
 <main id="main-content" tabindex="-1">
-  <section class="page-heading" aria-labelledby="page-title"><h1 id="page-title">جميع الطلاب</h1></section>
+  <section class="page-heading" aria-labelledby="page-title"><div><span class="eyebrow">مساحة المالك</span><h1 id="page-title">جميع الطلاب</h1><p>حسابات الطلاب، اشتراكاتهم، وتقدّمهم في مكان واحد.</p></div></section>
   <section class="student-panel" aria-label="حسابات الطلاب">
     <div class="panel-toolbar"><div class="panel-title"><h2 id="list-title">سجل الطلاب</h2><span id="student-count" class="count-badge">—</span></div><button id="refresh" type="button" class="button button-outline"><span data-icon="refresh"></span>تحديث القائمة</button></div>
     <p id="status" role="status" aria-live="polite">جارٍ تحميل الطلاب…</p>
@@ -33,7 +34,7 @@ export function renderStudentDashboard({version=""}={}) {
   </section>
   <p class="dashboard-footnote"><span data-icon="shield"></span>بيانات الطلاب متاحة لمالك التطبيق فقط.</p>
 </main>
-<dialog id="student-detail" aria-labelledby="detail-title"><div class="dialog-top"><span class="eyebrow">ملف الطالب</span><button id="close-detail" class="icon-button" type="button" aria-label="إغلاق تفاصيل الطالب">×</button></div><div id="detail-content"></div></dialog>
+<dialog id="student-detail" aria-labelledby="detail-title"><div class="dialog-top"><span class="eyebrow">ملف الطالب</span><button id="close-detail" class="icon-button" type="button" aria-label="إغلاق تفاصيل الطالب"><span data-icon="close"></span></button></div><div id="detail-content"></div></dialog>
 <noscript><p>يرجى تفعيل JavaScript لعرض حسابات الطلاب.</p></noscript></body></html>`;
 }
 

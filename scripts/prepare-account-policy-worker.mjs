@@ -1,8 +1,9 @@
-import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { DEVICE_SCHEMA } from "../src/server/browser-registration.mjs";
 import { BROWSER_POLICY_SCHEMA } from '../src/server/browser-policy-store.mjs';
+import { patchSubscriptionWorker } from './patch-subscription-worker.mjs';
 
 // Prepare an unpublished candidate from a freshly recovered live Worker. Never
 // upload a historical baseline, create replacement namespaces, or migrate live
@@ -12,11 +13,11 @@ export async function prepareAccountPolicyWorker({ baseline, directory }) {
   if (!/export\s*\{[^}]*\bas Authentication\b/.test(source)
     || !/\bas StudentProgress\b/.test(source)) throw new Error("Expected the recovered live Worker module.");
   await mkdir(directory, { recursive:true });
-  await copyFile(baseline, path.join(directory, "baseline.mjs"));
   const relativeImport = file => {
     const relative = path.relative(directory, path.resolve(file)).split(path.sep).join("/");
     return relative.startsWith(".") ? relative : `./${relative}`;
   };
+  await writeFile(path.join(directory,'baseline.mjs'),patchSubscriptionWorker(source,relativeImport('src/domain/subscription-access.js')));
   const entry = `import original, { Authentication as BaseAuthentication, StudentProgress as BaseStudentProgress } from './baseline.mjs';
 import { withBrowserRegistration } from ${JSON.stringify(relativeImport("src/server/cloudflare-browser-registration.mjs"))};
 import { withDailyResources } from ${JSON.stringify(relativeImport("src/server/cloudflare-daily-resources.mjs"))};
@@ -26,6 +27,7 @@ export default original;
 `;
   await writeFile(path.join(directory, "entry.mjs"), entry);
   await writeFile(path.join(directory, "account-devices.sql"), DEVICE_SCHEMA + '\n' + BROWSER_POLICY_SCHEMA + "\n");
+  await writeFile(path.join(directory,'subscription-scope.sql'),'ALTER TABLE accounts ADD COLUMN subscription_subjects TEXT;\n');
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {

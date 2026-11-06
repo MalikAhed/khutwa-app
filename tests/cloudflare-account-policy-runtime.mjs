@@ -28,7 +28,7 @@ try {
  const sqlite=new DatabaseSync(':memory:');initializeAccountSchema(sqlite);
  const schema=sqlite.prepare("SELECT sql FROM sqlite_master WHERE sql IS NOT NULL AND name NOT LIKE 'sqlite_%' ORDER BY type DESC").all().map(x=>x.sql+';').join('\n');sqlite.close();
  await db.exec(schema.replaceAll('\n',' '));
- for(const sql of ["ALTER TABLE accounts ADD COLUMN access_disabled INTEGER NOT NULL DEFAULT 0","ALTER TABLE accounts ADD COLUMN subscription_expires_at TEXT","ALTER TABLE accounts ADD COLUMN version INTEGER NOT NULL DEFAULT 0"])await db.exec(sql);
+ for(const sql of ["ALTER TABLE accounts ADD COLUMN subscription_subjects TEXT","ALTER TABLE accounts ADD COLUMN access_disabled INTEGER NOT NULL DEFAULT 0","ALTER TABLE accounts ADD COLUMN subscription_expires_at TEXT","ALTER TABLE accounts ADD COLUMN version INTEGER NOT NULL DEFAULT 0"])await db.exec(sql);
  const ua={computer:'Mozilla/5.0 (X11; Linux x86_64) Chrome/143.0.0.0 Safari/537.36',phone:'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) Mobile/15E148 Safari/604.1'};
  const request=(path,{agent=ua.computer,cookie='',body,ip='192.0.2.1',owner}={})=>mf.dispatchFetch('https://app.test'+path,{method:body?'POST':'GET',headers:{'User-Agent':agent,'CF-Connecting-IP':ip,...(cookie?{Cookie:cookie}:{}),...(body?{'Content-Type':'application/json'}:{}),...(owner?{'X-Progress-Owner':owner}:{})},...(body?{body:JSON.stringify(body)}:{})});
  const cookies=response=>response.headers.getSetCookie().map(x=>x.split(';')[0]).join('; ');

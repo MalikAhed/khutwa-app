@@ -9,7 +9,7 @@ const COOKIE = 'khutwa_cloudflare_session';
 const MAX_OFFLINE_AGE = 30 * 24 * 60 * 60 * 1000;
 const digest = token => createHash('sha256').update(token).digest('hex');
 const profile = account => account && Object.fromEntries(
-  ['id', 'username', 'displayName', 'accountType', 'curriculum', 'path', 'isOwner']
+  ['id', 'username', 'displayName', 'accountType', 'curriculum', 'path', 'isOwner', 'subscriptionSubjects', 'subscriptionExpiresAt']
     .filter(key => Object.hasOwn(account, key)).map(key => [key, account[key]]));
 
 // Development only: the website remains local; account requests use the existing

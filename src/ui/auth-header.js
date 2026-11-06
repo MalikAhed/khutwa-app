@@ -1,4 +1,5 @@
 import { CORRECT_ANSWER_GEM_REWARD, CORRECT_ANSWERS_PER_REWARD } from "../domain/learner-resources.js";
+import { readRoute } from '../app/route.js';
 
 export function createAuthHeader({ guest, member, label, flowButtons, signOutButton, courseContainer, service, progressStore, resourceStore, onFlow }) {
   if (!guest || !member || !label || !signOutButton || !courseContainer || !service || !onFlow) throw new TypeError("auth header dependencies are required");
@@ -58,7 +59,8 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
   }, {signal});
   const updateResources = () => {
     if (!resourceStore) return;
-    const balance = resourceStore.get(service.getLearnerProgressOwner());
+    const route = readRoute(globalThis.location?.search);
+    const balance = resourceStore.get(service.getLearnerProgressOwner(),{subjectId:route.subject,lessonId:route.lesson});
     for (const resource of ["hearts", "gems"]) {
       document.querySelectorAll(`[data-resource-${resource}]`).forEach(count => {
         count.textContent = balance.unlimited ? "∞" : String(balance[resource]);

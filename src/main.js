@@ -45,6 +45,7 @@ const browserLocalStorage = () => ({ getItem:(key) => window.localStorage.getIte
 const resourceStore = createLearnerResources({
   storage:{ getItem:key => window.localStorage.getItem(key), setItem:(key,value) => window.localStorage.setItem(key,value) },
   getAccountType:() => productService.getAccountType(),
+  hasSuperAccess:key => productService.hasSuperAccess(key),
   now:() => appConfig.accountMode === "http" ? offlineAccess.inspect().now : Date.now(),
   apiBase:appConfig.accountMode === "http" ? "/api/progress" : null,
 });
@@ -59,7 +60,7 @@ const guestProgress = createSessionProgressAdapter({
 });
 const memberProgress = createIndexedDbProgressAdapter({ legacyStorage:browserLocalStorage(), onError:reportProgressRecovery });
 const serverProgress = appConfig.accountMode === "http" ? createServerProgressAdapter({local:memberProgress, onError:reportProgressRecovery, onResources:resourceStore.confirm,
-  requiresOnlineAnswer:() => productService.getAccountType() !== "subscribed"}) : null;
+  requiresOnlineAnswer:(_owner,key) => !productService.hasSuperAccess(key)}) : null;
 const progressAdapterFor = (owner) => owner === "guest" ? guestProgress : owner.startsWith("account:") && serverProgress ? serverProgress : memberProgress;
 const progressStore = createSubjectProgressStore({ resourceStore, adapter:{
   isRemoteOwner:(owner) => owner.startsWith("account:") && Boolean(serverProgress),
@@ -103,7 +104,9 @@ window.addEventListener("online", refreshProgress);
 window.addEventListener("pageshow", refreshProgress);
 window.addEventListener("focus", refreshProgress);
 setInterval(refreshProgress, 60000);
-if (appConfig.accountMode === "http") mountOfflineAccess({ service:productService, reconnect:refreshProgress });
+if (appConfig.accountMode === "http") mountOfflineAccess({ service:productService, reconnect:refreshProgress,
+  getStudyKey:() => {const route=readRoute(window.location.search);return {subjectId:route.subject,lessonId:route.lesson};},
+  onReturnHome:() => selectPage(getPageTarget('learn'),{historyMode:'replace'}) });
 const elements = mountAppShell();
 watchPreviewUpdates({
   canReload:() => !document.body.matches(".ui-lab-open,.product-flow-active")

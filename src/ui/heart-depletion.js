@@ -13,7 +13,6 @@ export function mountHeartDepletion({ resourceStore, ownerId, signal, returnFocu
   const controller = new AbortController();
   let dialog = null, opener = null, timer = null;
   let shownEmpty = false;
-  let previousGems = resourceStore.get(ownerId).gems;
   const close = () => {
     if (dialog?.dataset.mode === 'gems') document.querySelector('.question-explanation-dialog[open]')?.close();
     dialog?.close(); dialog?.remove(); dialog = null;
@@ -38,12 +37,9 @@ export function mountHeartDepletion({ resourceStore, ownerId, signal, returnFocu
     if (controller.signal.aborted) return;
     const balance = resourceStore.get(ownerId);
     const empty = !balance.unlimited && balance.hearts === 0;
-    const gemsDepleted = !balance.unlimited && balance.gems < EXPLANATION_GEM_COST && previousGems >= EXPLANATION_GEM_COST;
-    previousGems = balance.gems;
     if (!empty) shownEmpty = false;
     if (!dialog) {
       if (autoShowEmpty && empty && !shownEmpty) show('hearts');
-      else if (gemsDepleted) show('gems');
       return;
     }
     if (balance.unlimited) {close();return;}
@@ -64,6 +60,9 @@ export function mountHeartDepletion({ resourceStore, ownerId, signal, returnFocu
   };
   function show(reason = 'hearts') {
     if (controller.signal.aborted || resourceStore.get(ownerId).unlimited) return;
+    // A successful purchase may leave fewer than 50 gems. Only a rejected
+    // purchase requests this invitation; spending gems must not open it.
+    if (reason === 'gems' && resourceStore.get(ownerId).gems >= EXPLANATION_GEM_COST) return;
     if (reason === 'navigation' && !QUESTION_NAVIGATION_LIMIT_ENABLED && !QUESTION_JUMPS_REQUIRE_SUPER) return;
     if (reason === 'empty') reason = 'hearts';
     if (dialog) {dialog.dataset.mode = reason;update();return;}

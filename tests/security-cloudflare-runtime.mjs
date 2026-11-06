@@ -29,7 +29,7 @@ try {
   sqlite.close();
   await db.exec(schema.replaceAll('\n', ' '));
   for (const sql of [
-    'ALTER TABLE accounts ADD COLUMN access_disabled INTEGER NOT NULL DEFAULT 0',
+    'ALTER TABLE accounts ADD COLUMN subscription_subjects TEXT','ALTER TABLE accounts ADD COLUMN access_disabled INTEGER NOT NULL DEFAULT 0',
     'ALTER TABLE accounts ADD COLUMN subscription_expires_at TEXT',
     'ALTER TABLE accounts ADD COLUMN admin_version INTEGER NOT NULL DEFAULT 0',
     'CREATE TABLE admin_audit (id INTEGER PRIMARY KEY AUTOINCREMENT, actor_id INTEGER NOT NULL, student_id INTEGER NOT NULL, action TEXT NOT NULL, details TEXT NOT NULL, created_at TEXT NOT NULL)',
@@ -113,6 +113,34 @@ try {
   assert.equal((await search.json()).total, 0);
   const forgedPrivilege = await request(owner, studentRoute, { body:{ action:'grant', version:0, duration:'week', staff_role:'owner' } });
   assert.equal(forgedPrivilege.status, 422);
+
+  const scoped = client();
+  await register(scoped,'scope-student');
+  const scopedRoute = `/api/owner/students/${scoped.account.id}`;
+  for (const subscriptionSubjects of [[],['missing'],['ict',1],false]) {
+    assert.equal((await request(owner,scopedRoute,{body:{action:'grant',version:0,duration:'year',subscriptionSubjects}})).status,422);
+  }
+  const scopeGrant = await request(owner,scopedRoute,{body:{action:'grant',version:0,duration:'year',subscriptionSubjects:['physics']}});
+  assert.equal(scopeGrant.status,200,await scopeGrant.clone().text());
+  const scopeSession=(await (await request(scoped,'/api/auth/session')).json()).account;
+  assert.deepEqual(scopeSession.subscriptionSubjects,['physics']);
+  assert.equal(scopeSession.accountType,'subscribed');
+  const beforeExpiry=scopeSession.subscriptionExpiresAt;
+  const navigate=()=>request(scoped,'/api/progress',{headers:ownerHeader(scoped),body:{...location,type:'question-navigation',kind:'jump',id:'scope-question-jump',stepId:questionIds[0]}});
+  assert.equal((await navigate()).status,402,'paid physics cannot jump in unpurchased ICT');
+  assert.equal((await request(owner,scopedRoute,{body:{action:'grant',version:0,duration:'year',subscriptionSubjects:null}})).status,409,'stale scope change cannot overwrite');
+  const scopeChange=await request(owner,scopedRoute,{body:{action:'grant',version:1,duration:'keep',subscriptionSubjects:['ict']}});
+  assert.equal(scopeChange.status,200,await scopeChange.clone().text());
+  const changedScope=(await(await request(scoped,'/api/auth/session')).json()).account;
+  assert.deepEqual(changedScope.subscriptionSubjects,['ict']);
+  assert.equal(changedScope.subscriptionExpiresAt,beforeExpiry,'subject edits preserve the existing expiry');
+  assert.equal((await navigate()).status,200,'selected subject unlocks navigation');
+  assert.deepEqual((await(await request(owner,scopedRoute)).json()).subscriptionSubjects,['ict']);
+  assert.deepEqual((await(await request(owner,'/api/owner/students')).json()).students.find(student=>student.id===scoped.account.id).subscriptionSubjects,['ict']);
+  assert.equal((await request(owner,scopedRoute,{body:{action:'grant',version:2,duration:'keep',subscriptionSubjects:null}})).status,200);
+  assert.equal((await(await request(scoped,'/api/auth/session')).json()).account.subscriptionSubjects,null);
+  const scopeAudit=await db.prepare('SELECT details FROM admin_audit WHERE student_id=? ORDER BY id').bind(Number(scoped.account.id)).all();
+  assert.deepEqual(JSON.parse(scopeAudit.results[0].details).subscriptionSubjects,['physics']);
 
   const grant = await request(owner, studentRoute, { body:{ action:'grant', version:0, duration:'week' } });
   assert.equal(grant.status, 200, await grant.clone().text());

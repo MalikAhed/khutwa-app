@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {mkdtemp, rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
-import {chromium} from 'playwright';
+import {chromium, webkit} from 'playwright';
 import {findChrome} from './browser-session.mjs';
 import {createAppServer} from '../../src/server/app-server.mjs';
 import {readRuntimeConfig} from '../../src/server/runtime-config.mjs';
@@ -11,7 +11,7 @@ import {createCloudflareDevelopmentBackend} from '../../src/server/cloudflare-de
 // Exercise the real local proxy + UI with the deployed API's shape. Mutations
 // affect these disposable fixtures only; no request reaches live student data.
 const directory = await mkdtemp(path.join(tmpdir(), 'khutwa-admin-ui-'));
-const students = Array.from({length:53}, (_, index) => ({id:String(index + 1), username:`student-${index + 1}`, phone:`059800${String(index + 1).padStart(4,'0')}`,
+const students = Array.from({length:53}, (_, index) => ({id:String(index + 1), username:index === 1 ? "سارة-2" : `student-${index + 1}`, phone:`059800${String(index + 1).padStart(4,'0')}`,
   curriculum:index % 2 ? 'gaza' : 'full-palestinian', path:index % 2 ? 'scientific' : 'literary',
   accountType:index === 1 ? 'subscribed' : 'free', subscriptionType:index === 1 ? 'subscribed' : 'free',
   accessDisabled:index === 2, subscriptionExpiresAt:index === 1 ? '2027-10-28T00:00:00Z' : null, version:0, createdAt:'2026-10-25T12:00:00Z'}));
@@ -35,7 +35,7 @@ const fetchImpl = async (url, options) => {
     if (change.version !== student.version) return Response.json({error:'تغيّرت بيانات الطالب. حدّثها قبل الحفظ.'}, {status:409});
     mutations.push(change);
     student.version++;
-    if (change.action === 'grant') { student.accountType = student.subscriptionType = 'subscribed'; student.subscriptionExpiresAt = change.duration === 'permanent' ? null : change.expiresAt || '2027-01-28T00:00:00Z'; }
+    if (change.action === 'grant') { student.accountType = student.subscriptionType = 'subscribed'; student.subscriptionSubjects = change.subscriptionSubjects; student.subscriptionExpiresAt = change.duration === 'permanent' ? null : change.expiresAt || '2027-01-28T00:00:00Z'; }
     if (change.action === 'revoke') { student.accountType = student.subscriptionType = 'free'; student.subscriptionExpiresAt = null; }
     if (change.action === 'suspend') student.accessDisabled = true;
     if (change.action === 'restore') student.accessDisabled = false;
@@ -50,7 +50,8 @@ const remoteBackend = await createCloudflareDevelopmentBackend({cachePath:path.j
 const root = path.resolve('.');
 const app = await createAppServer({root, config:readRuntimeConfig({PORT:'0', LIVE_RELOAD:'0', ACCOUNTS_DATABASE_PATH:':memory:'}, {root}), remoteBackend, logger:() => {}});
 const base = `http://127.0.0.1:${await app.listen()}`;
-const browser = await chromium.launch({headless:true, executablePath:await findChrome(), args:['--no-sandbox']});
+const engine = process.env.BROWSER_ENGINE === 'webkit' ? 'webkit' : 'chromium';
+const browser = await (engine === 'webkit' ? webkit.launch({headless:true}) : chromium.launch({headless:true, executablePath:await findChrome(), args:['--no-sandbox']}));
 try {
   const context = await browser.newContext({viewport:{width:1440, height:960}});
   await context.addCookies([{name:'khutwa_cloudflare_session', value:'fixture-owner', url:base, httpOnly:true, sameSite:'Strict'}]);
@@ -58,6 +59,7 @@ try {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   page.on('response', response => { if (response.status() >= 400 && !response.url().includes('/api/owner/')) errors.push(`${response.status()}: ${response.url()}`); });
+  await page.addInitScript(() => { AbortSignal.any = undefined; AbortSignal.timeout = undefined; });
   await page.goto(base + '/students');
   await page.waitForSelector('.student');
   assert.equal(await page.locator('.student').count(), 50);
@@ -80,7 +82,7 @@ try {
   await page.evaluate(() => scrollTo(0, 0));
   await page.locator('[data-filter="subscribed"]').click();
   await page.waitForFunction(() => document.querySelectorAll('.student').length === 1);
-  assert.match(await page.locator('.student h2').innerText(), /student-2$/);
+  assert.match(await page.locator('.student h2').innerText(), /سارة-2$/);
   await page.locator('[data-filter="suspended"]').click();
   await page.waitForFunction(() => document.querySelector('.student h2')?.textContent === 'student-3');
   await page.locator('[data-filter="all"]').click();
@@ -103,26 +105,27 @@ try {
     assert.ok(await page.locator('[data-student-id="1"]').evaluate(element => element.getBoundingClientRect().width >= 44), 'student action remains usable');
   }
   await page.locator('#search').blur();
-  await page.screenshot({path:'/tmp/khutwa-admin-desktop.png', fullPage:false});
+  await page.screenshot({path:`/tmp/khutwa-admin-desktop-${engine}.png`, fullPage:false});
   await page.setViewportSize({width:390, height:844});
   await page.evaluate(() => scrollTo(0, 0));
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'mobile page fits viewport');
-  await page.screenshot({path:'/tmp/khutwa-admin-mobile.png', fullPage:false});
+  await page.screenshot({path:`/tmp/khutwa-admin-mobile-${engine}.png`, fullPage:false});
   await page.locator('#load-more').scrollIntoViewIfNeeded();
   await page.waitForFunction(() => document.querySelectorAll('.student').length === 53);
   assert.ok(await page.locator('[data-student-id="53"]').isVisible(), 'mobile scrolling reaches every student');
   await page.evaluate(() => scrollTo(0, 0));
   await page.locator('[data-student-id="1"]').click();
-  await page.waitForSelector('#detail-content .part');
+  await page.waitForSelector('#detail-content .part',{state:'attached'});
   assert.ok(await page.locator('#student-detail').evaluate(element => element.contains(document.activeElement)), 'dialog receives focus');
   assert.ok(await page.locator('#student-detail').evaluate(element => element.scrollWidth <= element.clientWidth), 'mobile dialog fits');
   assert.match(await page.locator('.metrics dd').nth(1).innerText(), /^(120|١٢٠)$/);
-  await page.screenshot({path:'/tmp/khutwa-admin-detail-mobile.png'});
+  await page.screenshot({path:`/tmp/khutwa-admin-detail-mobile-${engine}.png`});
   await page.keyboard.press('Escape');
   await page.waitForFunction(() => !document.querySelector('#student-detail').open);
   assert.ok(await page.locator('[data-student-id="1"]').evaluate(element => element === document.activeElement), 'focus returns to student action');
   await page.setViewportSize({width:1440, height:960});
   await page.locator('[data-student-id="1"]').click();
+  await page.locator('[data-detail-tab=subscription]').click();
   await page.waitForSelector('#subscription-form');
   conflict = true;
   await page.locator('#subscription-form button').click();
@@ -151,13 +154,30 @@ try {
     await page.waitForFunction(() => document.querySelector('#action-status')?.textContent === 'تم حفظ التغيير.');
     assert.equal(mutations.at(-1).action, action);
   }
+  await page.locator('[name=subscriptionScope][value=selected]').check();
+  const beforeScope = mutations.length;
+  await page.locator('#subscription-form button').click();
+  assert.equal(mutations.length,beforeScope,'empty subject selection cannot save');
+  await page.locator('[name=subscriptionSubjects][value=physics]').check();
+  await page.locator('[name=subscriptionSubjects][value=ict]').check();
+  await page.locator('#subscription-form button').click();
+  await page.waitForFunction(() => document.querySelector('#action-status')?.textContent === 'تم حفظ التغيير.');
+  assert.deepEqual(mutations.at(-1).subscriptionSubjects,['physics','ict']);
+  assert.equal(await page.locator('[name=subscriptionSubjects]:checked').count(),2,'saved subjects survive a detail refresh');
+  await page.screenshot({path:`/tmp/khutwa-admin-subscriptions-${engine}.png`});
+  await page.setViewportSize({width:390,height:844});
+  assert.ok(await page.locator('#student-detail').evaluate(element=>element.scrollWidth<=element.clientWidth),'mobile subject picker fits');
+  await page.locator('#subscription-form').scrollIntoViewIfNeeded();
+  await page.screenshot({path:`/tmp/khutwa-admin-subscriptions-mobile-${engine}.png`});
   await page.locator('.danger-zone summary').click();
-  await page.locator('#confirm-username').fill('wrong-name');
   const beforeDelete = mutations.length;
-  await page.locator('#delete-student-form button').click();
-  assert.equal(mutations.length, beforeDelete, 'wrong confirmation cannot delete');
-  await page.locator('#confirm-username').fill('student-1');
-  await page.locator('#delete-student-form button').click();
+  await page.locator('[data-account-action=delete]').click();
+  assert.equal(mutations.length,beforeDelete,'opening deletion confirmation does not delete');
+  assert.equal(await page.locator('#confirm-username').count(),0,'deletion does not require retyping a name');
+  await page.locator('[data-cancel-action]').click();
+  assert.equal(mutations.length,beforeDelete,'cancel preserves the account');
+  await page.locator('[data-account-action=delete]').click();
+  await page.locator('[data-confirm-action=delete]').click();
   await page.waitForFunction(() => !document.querySelector('#student-detail').open);
   await page.waitForFunction(() => !document.querySelector('[data-student-id="1"]'));
   assert.equal(mutations.at(-1).action, 'delete');

@@ -4,6 +4,7 @@ import { canonicalQuestionStepId, getPartQuestionIds, getQuestionXp, isSourceQue
 import { CORRECT_ANSWERS_PER_REWARD, CORRECT_ANSWER_GEM_REWARD, MAX_DAILY_SKIPS, QUESTION_NAVIGATION_LIMIT_ENABLED, heartDay, resourceSnapshot, spendHeart } from "../domain/learner-resources.js";
 import { getSubjectRoadmapLesson } from "../data/subject-roadmaps.js";
 import { hasFreeLessonPractice, QUESTION_JUMPS_REQUIRE_SUPER } from '../domain/free-practice.js';
+import { readSubscriptionSubjects, subscriptionCovers } from '../domain/subscription-access.js';
 import { applyProgressUpdate, emptyPart, localDateKey, mergeImportedPart, recalculateQuestionRewards, validReview } from "../domain/subject-progress.js";
 
 export function assertSupportedDatabaseVersion(database) {
@@ -36,6 +37,10 @@ export function initializeProgressSchema(database) {
       CREATE TABLE IF NOT EXISTS learner_resources (
         account_id INTEGER PRIMARY KEY REFERENCES accounts(id) ON DELETE CASCADE,
         hearts INTEGER NOT NULL, gems INTEGER NOT NULL, refill_at INTEGER NOT NULL
+      );
+      CREATE TABLE IF NOT EXISTS account_subscription_scopes (
+        account_id INTEGER PRIMARY KEY REFERENCES accounts(id) ON DELETE CASCADE,
+        subjects TEXT
       );
       CREATE TABLE IF NOT EXISTS learner_super_trials (
         account_id INTEGER PRIMARY KEY REFERENCES accounts(id) ON DELETE CASCADE,
@@ -85,6 +90,7 @@ export function createDatabaseProgressStore(database, { questionFeedback, now = 
   const saveResources = database.prepare(`INSERT INTO learner_resources(account_id,hearts,gems,refill_at) VALUES(?,?,?,?)
     ON CONFLICT(account_id) DO UPDATE SET hearts=excluded.hearts,gems=excluded.gems,refill_at=excluded.refill_at`);
   const accountType = database.prepare('SELECT * FROM accounts WHERE id=?');
+  const subscriptionScope = database.prepare('SELECT subjects FROM account_subscription_scopes WHERE account_id=?');
   const lookupTrial = database.prepare('SELECT ends_at FROM learner_super_trials WHERE account_id=?');
   const unlocks = database.prepare('SELECT question_key FROM question_explanation_unlocks WHERE account_id=?');
   const unlock = database.prepare('INSERT INTO question_explanation_unlocks VALUES(?,?,?)');
@@ -113,10 +119,11 @@ export function createDatabaseProgressStore(database, { questionFeedback, now = 
     return { navigationRemaining:MAX_DAILY_SKIPS - (reset ? 0 : saved.used),
       navigationRefillAt:reset ? now() : saved.refill_at };
   };
-  const readResources = accountId => {
+  const readResources = (accountId, key) => {
     const saved = lookupResources.get(accountId) || resourceSnapshot(null, false, now());
     const account = accountType.get(accountId);
     const subscribed = account?.account_type === 'subscribed' && !account.access_disabled
+      && subscriptionCovers(readSubscriptionSubjects(subscriptionScope.get(accountId)?.subjects),key)
       && (!account.subscription_expires_at || Date.parse(account.subscription_expires_at) > now());
     const reward = gemRewards.get(accountId);
     return resourceSnapshot({ ...saved, ...navigationBalance(accountId),
@@ -133,7 +140,7 @@ export function createDatabaseProgressStore(database, { questionFeedback, now = 
     navigate(accountId, input) {
       const location = resolveQuestionLocation(input);
       if (!location) throw Object.assign(new Error('Unknown published question.'),{status:422});
-      if (QUESTION_JUMPS_REQUIRE_SUPER && input.kind === 'jump' && !readResources(accountId).unlimited
+      if (QUESTION_JUMPS_REQUIRE_SUPER && input.kind === 'jump' && !readResources(accountId,location).unlimited
         && !solvedQuestions(ownerRecords(accountId)).has(questionRewardKey(location)))
         throw Object.assign(new Error('اختيار سؤال من الشريط متاح مع خطوة سوبر.'), {status:402,code:'super-required'});
       // Older open clients may still call this endpoint. Confirm valid browsing
@@ -164,7 +171,7 @@ export function createDatabaseProgressStore(database, { questionFeedback, now = 
         // Teaching screens use Continue too. Only the first authorized entry
         // may use the resume position; a later entry cannot reset the cursor.
         const entering = !previous && ['enter','continue'].includes(input.kind) && location.stepId === resume;
-        const balance = readResources(accountId);
+        const balance = readResources(accountId,location);
         const costsSkip = location.stepId !== previous && !entering && !sequential;
         if (!balance.unlimited && costsSkip) {
           if (balance.navigationRemaining <= 0)
@@ -184,7 +191,7 @@ export function createDatabaseProgressStore(database, { questionFeedback, now = 
     unlockExplanation(accountId, key) {
       const questionKey = questionRewardKey(key);
       return transaction(database, () => {
-        const balance = readResources(accountId);
+        const balance = readResources(accountId,key);
         if (!balance.explanationUnlocks.includes(questionKey)) {
           const price = balance.unlimited ? 0 : EXPLANATION_GEM_COST;
           if (balance.gems < price) throw Object.assign(new Error('Not enough gems.'),{status:402});
@@ -251,7 +258,7 @@ export function createDatabaseProgressStore(database, { questionFeedback, now = 
               throw Object.assign(new Error('Review changed on another device. Refresh before retrying.'),{status:409});
           }
           if (type === 'answer') {
-            const balance = readResources(accountId);
+            const balance = readResources(accountId,value);
             if (!balance.unlimited && !hasFreeLessonPractice(value)) {
               const spent = spendHeart(balance, now());
               if (!spent) throw Object.assign(new Error('نفدت قلوب اليوم. تتجدد القلوب السبعة عند منتصف الليل بتوقيت فلسطين.'), {status:429});

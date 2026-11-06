@@ -1,6 +1,7 @@
 // @ts-check
 import { createOfflineAccess } from "./offline-access.js";
 import { COURSE_SUBJECTS } from "../data/course.js";
+import { readSubscriptionSubjects, subscriptionCovers } from '../domain/subscription-access.js';
 import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
 import { duplicateAccountFieldMessage, identifierAliases, isAccountIdentifierField, isValidVisitorSelection, validateAccountField } from "../domain/account.js";
 import { createAuthClient } from "./auth-client.js";
@@ -8,8 +9,8 @@ import { createLearnerStorage, defaultErrorReporter, GUEST_TRIAL_STORAGE_KEY, TE
 
 /** @typedef {'free'|'subscribed'|'banned'} AccountType */
 /** @typedef {{curriculum:string, path:string}} VisitorSelection */
-/** @typedef {VisitorSelection & {id:string, username:string, accountType:AccountType, displayName?:string, isOwner?:boolean}} ApiAccount */
-/** @typedef {{progressOwner:string, type:AccountType, displayName:string, homeScenarioId:string, isOwner?:boolean}} LearnerAccount */
+/** @typedef {VisitorSelection & {id:string, username:string, accountType:AccountType, displayName?:string, isOwner?:boolean, subscriptionSubjects?:string[]|null}} ApiAccount */
+/** @typedef {{progressOwner:string, type:AccountType, displayName:string, homeScenarioId:string, isOwner?:boolean, subscriptionSubjects?:string[]|null}} LearnerAccount */
 /** @typedef {VisitorSelection & {username:string, password:string, phone:string}} Registration */
 /** @typedef {{status:'invalid'|'unavailable'|'aborted'|'forbidden'|'rate-limited'|'duplicate'|'device-limit', error?:string, field?:string, fieldErrors?:Record<string,string>}} AccountFailure */
 /** @typedef {{status:'created'|'signed-in', accountType:AccountType}|AccountFailure} AccountResult */
@@ -88,6 +89,7 @@ export function createLearnerSession({
     activeAccount = account ? {
       progressOwner:`account:${account.id}`,
       type:availableAccountType(account.accountType),
+      subscriptionSubjects:readSubscriptionSubjects(account.subscriptionSubjects),
       isOwner:account.isOwner === true,
       displayName:account.displayName || account.username,
       homeScenarioId:account.accountType === "subscribed" ? "student-paid" : "student-free-new",
@@ -128,11 +130,12 @@ export function createLearnerSession({
 
   return Object.freeze({
     kind:accountApi ? "http" : "fixture",
-    getAccessState:() => {
+    /** @param {{subjectId?:string|null,lessonId?:string|null}|undefined} [key] */
+    getAccessState:(key = undefined) => {
       if (!accountApi || !activeAccount) return { allowed:true };
       const grant = offlineAccess.inspect();
       return { ...grant, allowed:grant.allowed && `account:${grant.account?.id}` === activeAccount.progressOwner
-        && (activeAccount.type === "subscribed" || !offline) };
+        && (!offline || activeAccount.type === "subscribed" && (!key?.subjectId || subscriptionCovers(activeAccount.subscriptionSubjects,key))) };
     },
     getEffectiveNow:() => accountApi ? offlineAccess.inspect().now : Date.now(),
     isOffline:() => offline,
@@ -145,6 +148,8 @@ export function createLearnerSession({
       return { ...visitorSelection };
     },
     getAccountType:() => activeAccount?.type || "guest",
+    /** @param {{subjectId?:string|null,lessonId?:string|null}|string|undefined} [key] */
+    hasSuperAccess:(key = undefined) => activeAccount?.type === 'subscribed' && subscriptionCovers(activeAccount.subscriptionSubjects,key),
     isOwner:() => Boolean(accountApi && activeAccount?.isOwner),
     getLearnerProgressOwner:() => activeAccount?.progressOwner || (activeAccount ? `legacy:${activeAccount.displayName}` : "guest"),
     getLearnerDisplayName:() => activeAccount?.displayName || "",
