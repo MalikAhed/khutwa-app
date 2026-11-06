@@ -50,7 +50,17 @@ test('navigation honors historical question aliases and the persisted second-mat
   assert.equal((await request(nav(math,questions[1],'math-two-navigation-next','continue'))).body.resources.navigationRemaining,5);
 });
 
-test('free jumps require Super while normal entry and continuation ignore the retired allowance',async t=>{
+test('starter lessons allow unsolved jumps without charging hearts or gems',async t=>{
+  const {request}=await fixture(t);
+  const before=(await request()).body.resources;
+  for(const stepId of getPartQuestionIds(part).slice(0,4)){
+    const result=await request({...part,stepId,type:'question-navigation',kind:'jump',id:`starter-jump-${stepId}`});
+    assert.equal(result.status,200);assert.equal(result.body.resources.hearts,before.hearts);assert.equal(result.body.resources.gems,before.gems);
+  }
+});
+
+test('later-lesson jumps require Super while normal entry and continuation ignore the retired allowance',async t=>{
+  const part={subjectId:'ict',lessonId:'smartphone-operating-systems',partId:'android-features'};
   const {request,accounts,store,databasePath}=await fixture(t);
   const ids=getPartQuestionIds(part);
   let sequence=0;
@@ -79,7 +89,8 @@ test('free jumps require Super while normal entry and continuation ignore the re
   } finally {db.close();}
 });
 
-test('free jumps use this account’s saved solves, not posted flags or mere attempts',async t=>{
+test('later-lesson jumps use this account’s saved solves, not posted flags or mere attempts',async t=>{
+  const part={subjectId:'ict',lessonId:'smartphone-operating-systems',partId:'android-features'};
   const {request,accounts}=await fixture(t);
   const [stepId,unsolved]=getPartQuestionIds(part);
   const jump=(id=stepId)=>({...part,stepId:id,type:'question-navigation',kind:'jump',id:`solved-jump-${id}`});

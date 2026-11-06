@@ -71,6 +71,9 @@ try {
  const sharedResponses=await Promise.all(Array.from({length:8},(_,n)=>request('/api/progress',{cookie:cookies(sharedLogin),owner:sharedOwner,body:{...part,id:`shared-runtime-${n}`}})));
  assert.equal(sharedResponses.filter(response=>response.status===200).length,7-used,'D1 browser allowance is shared across account Durable Objects');
  assert.equal((await(await request('/api/progress',{cookie:cookies(sharedLogin),owner:sharedOwner})).json()).resources.hearts,0);
+ const freeJump=await request('/api/progress',{cookie:computerCookies,owner,body:{...freeLocation,stepId:getPartQuestionIds(freeLocation)[3],type:'question-navigation',kind:'jump',id:'runtime-free-starter-jump'}});
+ assert.equal(freeJump.status,200,await freeJump.clone().text());
+ assert.equal((await freeJump.json()).resources.hearts,0,'starter jumps need no hearts');
  const rewardRegistration=await request('/api/auth/register',{ip:'192.0.2.4',body:{username:'reward-student',phone:'0591234568',password:'Runtime123',curriculum:'gaza',path:'scientific'}});
  assert.equal(rewardRegistration.status,201);
  const rewardOwner=`account:${(await rewardRegistration.json()).account.id}`,rewardCookies=cookies(rewardRegistration);

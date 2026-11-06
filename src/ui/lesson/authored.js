@@ -161,6 +161,8 @@ export function renderAuthoredInteractiveLesson(
   let bestAnswerRun = 0;
   let sessionElapsed = null;
   let resultPending = false;
+  let endingSession = false;
+  let saveCurrentAssessment;
   const pendingAnswers = [];
   const mistakes = new Set((progress?.mistakeStepIds || []).filter((id) => stepIds.has(id)));
   const scoredQuestions = new Set();
@@ -200,7 +202,7 @@ export function renderAuthoredInteractiveLesson(
     const saving = source && !source.save ? undefined : onAnswer?.(value);
     if (saving?.then) pendingAnswers.push(saving);
     const celebrate = result => {
-      if (!signal.aborted && !resultVisible && !demoMode && result?.dailyStreak) showDailyStreak(shell, result.dailyStreak, signal);
+      if (!signal.aborted && !resultVisible && !endingSession && !demoMode && result?.dailyStreak) showDailyStreak(shell, result.dailyStreak, signal);
     };
     const confirmed = saved => {
       if (saved?.status === 'failed') return saved.retry ? { ...saved, retry:async () => {
@@ -387,8 +389,19 @@ export function renderAuthoredInteractiveLesson(
       ? reviewOpeningIndex : visibleIndex(currentIndex - 1);
     renderCurrent('jump');
   };
+  const endSession = async () => {
+    if (endingSession || resultPending) return;
+    endingSession = true;
+    container.inert = true;
+    try {
+      // Ending a session commits the selected written assessment just like
+      // Continue. Both actions share one save, including its retained retry ID.
+      if (await saveCurrentAssessment?.() === false || signal.aborted) return;
+      await renderResult({ sessionEnded:true });
+    } finally { endingSession = false; container.inert = false; }
+  };
   const exitFromOpening = () => {
-    if (isLessonPart && !demoMode) void renderResult({ sessionEnded:true });
+    if (isLessonPart && !demoMode) void endSession();
     else if (onExitLesson) onExitLesson();
     else backButton?.click();
   };
@@ -397,7 +410,7 @@ export function renderAuthoredInteractiveLesson(
     if (!isLessonPart || demoMode || resultVisible && !resultPending) return;
     event.stopImmediatePropagation();
     if (!questionSteps.length && hasHiddenQuestions()) { (onExitLesson || onFinishLesson)?.(); return; }
-    if (!resultVisible) void renderResult({ sessionEnded:true });
+    if (!resultVisible) void endSession();
   }, { capture:true, signal });
   const finishQuestions = () => {
     if (demoMode) { void renderResult(); return; }
@@ -413,7 +426,7 @@ export function renderAuthoredInteractiveLesson(
     } });
   };
   const goNext = () => {
-    if (navigationPending) return false;
+    if (navigationPending || endingSession) return false;
     if (reviewIndex >= 0) {
       if (reviewIndex + 1 === reviewQueue.length) { void renderResult(); return; }
       reviewIndex += 1;
@@ -522,6 +535,7 @@ export function renderAuthoredInteractiveLesson(
   const renderCurrentContent = () => {
     destroyStep();
     destroyStep = () => {};
+    saveCurrentAssessment = undefined;
     const instantEntry = !renderedStep && isLessonPart;
     renderedStep = true;
     container.classList.toggle("lesson-card--instant-entry", instantEntry);
@@ -659,6 +673,7 @@ export function renderAuthoredInteractiveLesson(
     if (step.type === "exam-question") {
       const examController = new AbortController();
       const destroyExam = renderExamQuestion(host, step, { locale, onBack:goBack, selfCheck:!demoMode, beforeAnswer,
+        registerSessionSave:save => { saveCurrentAssessment = save; },
         onAssess:({ correct }) => {
           void Promise.resolve(questionFeedbackFor(step.id)?.saveRating(correct ? "easy" : "hard", { automatic:true })).catch(() => {});
         },

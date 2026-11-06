@@ -33,15 +33,10 @@ try {
   const target=page.locator('[data-question-jump]').nth(3);
   const targetId=await target.getAttribute('data-question-jump');
   await target.click();
-  const wall=page.locator('.super-invitation[open][data-mode=navigation]');await wall.waitFor();
-  assert.equal(await page.locator('[data-live-authored-step]').getAttribute('data-lesson-step'),original);
-  assert.equal(await wall.locator('[data-heart-timer-wrap]').isVisible(),false,'paid jumping has no daily reset timer');
-  assert.match(await wall.innerText(),/اختر أي سؤال مع سوبر/);
-  assert.equal(await wall.locator('h1').evaluate(node=>getComputedStyle(node).color),'rgb(48, 52, 59)');
-  assert.equal(await wall.evaluate(node=>node.contains(document.activeElement)),true);
-  await page.keyboard.press('Escape');await ready(page);
-  await target.focus();await page.keyboard.press('Enter');await wall.waitFor();
-  await page.keyboard.press('Escape');await ready(page);
+  await page.waitForFunction(id=>document.querySelector('[data-live-authored-step]')?.dataset.lessonStep===id,targetId);
+  assert.equal(await page.locator('.super-invitation[open]').count(),0,'new questions in starter lessons are selectable without a paywall');
+  await page.locator(`[data-question-jump="${original}"]`).focus();await page.keyboard.press('Enter');
+  await page.waitForFunction(id=>document.querySelector('[data-live-authored-step]')?.dataset.lessonStep===id,original);
   await page.locator('[data-ui-lab-answer][data-correct=true]').click();
   await page.locator('[data-ui-lab-check]').click();
   await page.locator('.level-feedback.is-correct').waitFor();
@@ -54,14 +49,35 @@ try {
   await page.waitForFunction(id=>document.querySelector('[data-live-authored-step]')?.dataset.lessonStep===id,original);
   assert.equal(await page.locator('.super-invitation[open]').count(),0,'solved questions stay freely selectable');
   await page.reload();await ready(page);
-  await page.locator('[data-question-jump]').nth(4).click();await wall.waitFor();
-  await page.keyboard.press('Escape');await ready(page);
+  const fresh=page.locator('[data-question-jump]').nth(4),freshId=await fresh.getAttribute('data-question-jump');
+  await fresh.click();await page.waitForFunction(id=>document.querySelector('[data-live-authored-step]')?.dataset.lessonStep===id,freshId);
+  assert.equal(await page.locator('.super-invitation[open]').count(),0,'starter lesson jumping remains free after reload');
   await page.locator(`[data-question-jump="${original}"]`).click();
   assert.equal(await page.locator('.super-invitation[open]').count(),0,'solved access survives reload');
   await page.goto(base+`/?subject=ict&lesson=${later.lessonId}&part=${later.partId}`);
   await page.locator('.super-invitation[open][data-mode=hearts]').waitFor();
   if(process.env.BROWSER_SCREENSHOT_DIR){await mkdir(process.env.BROWSER_SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.BROWSER_SCREENSHOT_DIR,`free-policy-${width}.png`)});}
-  const db=new DatabaseSync(databasePath);db.prepare("UPDATE accounts SET account_type='subscribed' WHERE id=?").run(Number(account.id));db.close();
+  const db=new DatabaseSync(databasePath);
+  db.prepare('UPDATE learner_resources SET refill_at=? WHERE account_id=?').run(Date.now()-48*3600000,Number(account.id));
+  db.prepare("UPDATE browser_heart_attempts SET day='2000-01-01' WHERE account_id=?").run(Number(account.id));
+  const laterIds=getPartQuestionIds(later);
+  const solved=await context.request.post(base+'/api/progress',{headers,data:{...later,stepId:laterIds[0],type:'answer',correct:true,id:`first-later-solve-${width}`}});
+  assert.equal(solved.status(),200);
+  await page.goto(base+`/?subject=ict&lesson=${later.lessonId}&part=${later.partId}&question=${laterIds[1]}`);await ready(page);
+  await page.locator(`[data-question-jump="${laterIds[0]}"]`).click();
+  await page.waitForFunction(id=>document.querySelector('[data-live-authored-step]')?.dataset.lessonStep===id,laterIds[0]);
+  assert.equal(await page.locator('.super-invitation[open]').count(),0,'solved later questions remain selectable');
+  const laterTarget=page.locator('[data-question-jump]').nth(3);
+  const wall=page.locator('.super-invitation[open][data-mode=navigation]');
+  for(const keyboard of [false,true]){
+    if(keyboard){await laterTarget.focus();await page.keyboard.press('Enter');}else await laterTarget.click();
+    await wall.waitFor();
+    assert.equal(await page.locator('[data-live-authored-step]').getAttribute('data-lesson-step'),laterIds[0]);
+    assert.equal(await wall.locator('[data-heart-timer-wrap]').isVisible(),false);
+    assert.match(await wall.innerText(),/اختر أي سؤال مع سوبر/);
+    await page.keyboard.press('Escape');await ready(page);
+  }
+  db.prepare("UPDATE accounts SET account_type='subscribed' WHERE id=?").run(Number(account.id));db.close();
   await page.reload();await ready(page);
   const paidTarget=page.locator('[data-question-jump]').nth(4);const paidId=await paidTarget.getAttribute('data-question-jump');
   await paidTarget.click();await page.waitForFunction(id=>document.querySelector('[data-live-authored-step]')?.dataset.lessonStep===id,paidId);

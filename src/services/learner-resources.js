@@ -57,7 +57,7 @@ export function createLearnerResources({ storage, getAccountType, hasSuperAccess
     },
     async navigate(owner, key, { kind = 'jump', signal, solved = false } = {}) {
       signal?.throwIfAborted();
-      if (QUESTION_JUMPS_REQUIRE_SUPER && kind === 'jump' && !solved && !hasSuperAccess(key))
+      if (QUESTION_JUMPS_REQUIRE_SUPER && kind === 'jump' && !solved && !hasFreeLessonPractice(key) && !hasSuperAccess(key))
         throw Object.assign(new Error('اختيار سؤال من الشريط متاح مع خطوة سوبر.'),{code:'super-required'});
       if (!QUESTION_NAVIGATION_LIMIT_ENABLED || hasSuperAccess(key)) return;
       if (apiBase && owner.startsWith('account:')) {

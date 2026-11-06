@@ -233,3 +233,10 @@ test('lowering legacy hearts preserves gems, purchased solutions and reward vers
   assert.equal(balance.hearts,7); assert.equal(balance.gems,631); assert.equal(balance.gemRevision,12);
   assert.deepEqual(balance.explanationUnlocks,saved.explanationUnlocks);
 });
+
+test('starter lesson jumps are free even with no hearts, including persisted Math 2 identities',async()=>{
+  const resources=createLearnerResources({getAccountType:()=> 'free',apiBase:'/api/progress',fetchImpl:assert.fail});
+  resources.confirm('account:1',{hearts:0,gems:0,refillAt:Date.now(),gemRevision:0});
+  for(const key of [{subjectId:'ict',lessonId:'database-management'},{subjectId:'mathematics',lessonId:'average-change'},{subjectId:'mathematics',lessonId:'indefinite-integral'},{subjectId:'mathematics',lessonId:'indefinite-integral-rules'}])
+    await resources.navigate('account:1',key,{kind:'jump',solved:false});
+});

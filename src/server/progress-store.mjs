@@ -140,7 +140,7 @@ export function createDatabaseProgressStore(database, { questionFeedback, now = 
     navigate(accountId, input) {
       const location = resolveQuestionLocation(input);
       if (!location) throw Object.assign(new Error('Unknown published question.'),{status:422});
-      if (QUESTION_JUMPS_REQUIRE_SUPER && input.kind === 'jump' && !readResources(accountId,location).unlimited
+      if (QUESTION_JUMPS_REQUIRE_SUPER && input.kind === 'jump' && !hasFreeLessonPractice(location) && !readResources(accountId,location).unlimited
         && !solvedQuestions(ownerRecords(accountId)).has(questionRewardKey(location)))
         throw Object.assign(new Error('اختيار سؤال من الشريط متاح مع خطوة سوبر.'), {status:402,code:'super-required'});
       // Older open clients may still call this endpoint. Confirm valid browsing

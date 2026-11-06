@@ -8,7 +8,7 @@ const normalize=rows=>rows.map(row=>JSON.stringify(row)).sort();
 const tables=db=>db.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'").all().map(x=>x.name);
 const snapshot=db=>Object.fromEntries(tables(db).map(name=>[name,{columns:db.prepare('PRAGMA table_info('+quote(name)+')').all().map(row=>row.name),rows:normalize(db.prepare('SELECT * FROM '+quote(name)).all())}]));
 const unchanged=(db,before)=>{for(const [name,{columns,rows}] of Object.entries(before))assert.deepEqual(normalize(db.prepare('SELECT '+columns.map(quote).join(',')+' FROM '+quote(name)).all()),rows,`Preserve ${name}`);assert.equal(db.prepare('PRAGMA integrity_check').get().integrity_check,'ok');};
-const d1=new DatabaseSync(':memory:');d1.exec(readFileSync(root+'/accounts.sql','utf8'));const original=snapshot(d1);d1.exec('ALTER TABLE accounts ADD COLUMN subscription_subjects TEXT');unchanged(d1,original);d1.close();
+const d1=new DatabaseSync(':memory:');d1.exec(readFileSync(root+'/accounts.sql','utf8'));const original=snapshot(d1);if(!d1.prepare('PRAGMA table_info(accounts)').all().some(column=>column.name==='subscription_subjects'))d1.exec('ALTER TABLE accounts ADD COLUMN subscription_subjects TEXT');unchanged(d1,original);d1.close();
 const data=JSON.parse(readFileSync(root+'/durable-objects.json','utf8'));let count=0,rows=0;
 for(const ns of data.namespaces)for(const item of ns.saved){
  const db=new DatabaseSync(':memory:');db.exec('PRAGMA foreign_keys=OFF');

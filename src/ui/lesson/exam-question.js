@@ -21,7 +21,7 @@ function layoutWrittenPrompt(source) {
 }
 
 /** Written answers are self-checked; worked solutions stay in the explanation dialog. */
-export function renderExamQuestion(container, step, { locale = "ar", onBack, onContinue, onReveal, onAssess, onAnswer, beforeAnswer, selfCheck = true } = {}) {
+export function renderExamQuestion(container, step, { locale = "ar", onBack, onContinue, onReveal, onAssess, onAnswer, beforeAnswer, registerSessionSave, selfCheck = true } = {}) {
   const controller = new AbortController();
   const { signal } = controller;
   const { content } = step;
@@ -186,6 +186,42 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
     }
     message.textContent = text;
   };
+  let savingAssessment;
+  const saveAssessment = () => {
+    if (savingAssessment) return savingAssessment;
+    if (!selfCheck || assessment === null || answered) return Promise.resolve(true);
+    checking = true;
+    next.disabled = true;
+    savingAssessment = (async () => {
+      try {
+        let blocked = retryAnswer ? undefined : await beforeAnswer?.();
+        if (signal.aborted) return false;
+        if (!blocked) {
+          const saved = retryAnswer ? await retryAnswer() : await onAnswer?.({ correct:assessment });
+          if (signal.aborted) return false;
+          if (saved?.status === "failed") {
+            retryAnswer = saved.retry;
+            blocked = "تعذّر تأكيد الإجابة. احتُفظ بها بأمان. اتصل بالإنترنت وحاول مجددًا.";
+          }
+        }
+        if (blocked) {
+          showBlocked(blocked);
+          return false;
+        }
+        answered = true;
+        return true;
+      } catch {
+        if (!signal.aborted) showBlocked("تعذّر تأكيد الإجابة. اتصل بالإنترنت وحاول مجددًا.");
+        return false;
+      } finally {
+        checking = false;
+        savingAssessment = null;
+        if (!submitted) next.disabled = false;
+      }
+    })();
+    return savingAssessment;
+  };
+  registerSessionSave?.(saveAssessment);
   next.addEventListener("click", async () => {
     if (next.disabled || submitted) return;
     if (selfCheck && assessment === null) {
@@ -197,32 +233,14 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
       container.querySelector("[data-exam-correct]").focus({ preventScroll:true });
       return;
     }
-    next.disabled = true;
-    checking = true;
+    if (!await saveAssessment() || signal.aborted) return;
     try {
-      if (selfCheck && !answered) {
-        let blocked = retryAnswer ? undefined : await beforeAnswer?.();
-        if (signal.aborted) return;
-        if (!blocked) {
-          const saved = retryAnswer ? await retryAnswer() : await onAnswer?.({ correct:assessment });
-          if (signal.aborted) return;
-          if (saved?.status === "failed") {
-            retryAnswer = saved.retry;
-            blocked = "تعذّر تأكيد الإجابة. احتُفظ بها بأمان. اتصل بالإنترنت وحاول مجددًا.";
-          }
-        }
-        if (blocked) {
-          showBlocked(blocked);
-          return;
-        }
-        answered = true;
-      }
       submitted = true;
       next.disabled = true;
       if (await onContinue?.() === false) submitted = false;
     } catch {
       if (!signal.aborted) showBlocked("تعذّر تأكيد الإجابة. اتصل بالإنترنت وحاول مجددًا.");
-    } finally { checking = false; if (!submitted) next.disabled = false; }
+    } finally { if (!submitted) next.disabled = false; }
   }, { signal });
   container.querySelector("[data-template-back]").addEventListener("click", () => onBack?.(), { signal });
   return () => {
