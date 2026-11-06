@@ -378,7 +378,8 @@ export function createSubjectLearningController({
               const key = sourceKey(step.id);
               return {
                 isUnlocked:() => resourceStore.hasExplanation(ownerId,key),
-                isIncluded:() => resourceStore.get(ownerId,key).unlimited,
+                isIncluded:() => resourceStore.get(ownerId,key).unlimited || hasFreeLessonPractice(key),
+                isFree:() => hasFreeLessonPractice(key),
                 subscribe:resourceStore.subscribe,
                 unlock:async ({signal}) => {
                   if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) throw new Error("The active learner changed.");

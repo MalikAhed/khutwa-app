@@ -9,7 +9,7 @@ import { getPartQuestionIds } from '../src/domain/question-rewards.js';
 const [bundlePath, runtimeModule] = process.argv.slice(2);
 if (!bundlePath || !runtimeModule) throw new Error('Usage: node tests/security-cloudflare-runtime.mjs <candidate-bundle.mjs> <miniflare-module-path>');
 const { Miniflare, convertV4MiniflareOptions } = await import(pathToFileURL(path.resolve(runtimeModule)).href);
-const location = { subjectId:'ict', lessonId:'database-management', partId:'access-basics' };
+const location = { subjectId:'ict', lessonId:'smartphone-operating-systems', partId:'android-features' };
 const questionIds = getPartQuestionIds(location);
 const lesson = { status:'published', parts:[{ id:location.partId, stepIds:questionIds }], steps:questionIds.map(id => ({ id, type:'mcq' })) };
 const mf = new Miniflare(convertV4MiniflareOptions({
@@ -17,7 +17,7 @@ const mf = new Miniflare(convertV4MiniflareOptions({
   d1Databases:{ ACCOUNTS:'isolated-security-accounts' },
   durableObjects:{ AUTH:{ className:'Authentication', useSQLite:true }, STUDENTS:{ className:'StudentProgress', useSQLite:true } },
   serviceBindings:{ ASSETS:async request => Response.json(/\/catalog\.[a-f0-9]+\.json$/.test(new URL(request.url).pathname)
-    ? { lessons:{ 'ict:database-management':'lesson.json' } } : lesson) },
+    ? { lessons:{ 'ict:smartphone-operating-systems':'lesson.json' } } : lesson) },
 }));
 
 try {

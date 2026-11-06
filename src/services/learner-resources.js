@@ -117,7 +117,7 @@ export function createLearnerResources({ storage, getAccountType, hasSuperAccess
         // existing entitlement must not depend on a purchase request or connectivity.
         const balance = get(owner,key);
         const explanation = questionExplanation(step);
-        if (explanation && (balance.unlimited || balance.explanationUnlocks.includes(questionRewardKey(key))))
+        if (explanation && (balance.unlimited || hasFreeLessonPractice(key) || balance.explanationUnlocks.includes(questionRewardKey(key))))
           return explanation;
         const response = await fetchImpl(apiBase,{method:"POST",credentials:"same-origin",
           signal:signal ? AbortSignal.any([signal,AbortSignal.timeout(12000)]) : AbortSignal.timeout(12000),
@@ -145,7 +145,7 @@ export function createLearnerResources({ storage, getAccountType, hasSuperAccess
       const questionKey = questionRewardKey(key);
       const balance = get(owner,key);
       if (!(balance.explanationUnlocks || []).includes(questionKey)) {
-        const price = balance.unlimited ? 0 : EXPLANATION_GEM_COST;
+        const price = balance.unlimited || hasFreeLessonPractice(key) ? 0 : EXPLANATION_GEM_COST;
         if (balance.gems < price) throw Object.assign(new Error("Not enough gems."),{code:"insufficient-gems"});
         const value = {...balance,gems:balance.gems - price,explanationUnlocks:[...(balance.explanationUnlocks || []),questionKey]};
         // Balance and entitlement share one durable write in fixture mode too.

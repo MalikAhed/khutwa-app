@@ -19,11 +19,12 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
   const updateLabel = () => {
     const unlocked = explanation.isUnlocked();
     const included = explanation.isIncluded?.();
+    const free = explanation.isFree?.();
     button.dataset.explanationIncluded = String(Boolean(included));
     button.innerHTML = `<span>${ar ? "اشرح" : "Explain"}</span>${included
       ? '<span class="explanation-included ui-number" aria-hidden="true">∞</span>'
       : unlocked ? "" : `<span class="explanation-price"><bdi class="ui-number">${EXPLANATION_GEM_COST}</bdi><img src="assets/icons/nav-gem.svg" width="22" height="22" alt="${ar ? "جوهرة" : "gems"}"></span>`}`;
-    button.setAttribute("aria-label",included ? (ar ? "اشرح، مشمول مع سوبر" : "Explain, included with Super")
+    button.setAttribute("aria-label",free ? (ar ? "اشرح، مشمول مجانًا" : "Explain, included for free") : included ? (ar ? "اشرح، مشمول مع سوبر" : "Explain, included with Super")
       : unlocked ? (ar ? "عرض الشرح المفتوح" : "View unlocked explanation")
         : (ar ? `اشرح، فتح دائم مقابل ${EXPLANATION_GEM_COST} جوهرة` : `Explain, unlock for ${EXPLANATION_GEM_COST} gems`));
   };

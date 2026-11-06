@@ -12,11 +12,16 @@ import { readJsonBody } from '../src/server/http.mjs';
 import { loadSubjectLessonPart } from '../src/data/lessons/subject-lesson-registry.js';
 import { getQuestionXp } from '../src/domain/question-rewards.js';
 import { SUPER_TRIAL_MS } from '../src/domain/learner-resources.js';
+import {getSubjectRoadmap} from '../src/data/subject-roadmaps.js';
+import {parseLessonMarkdown} from '../src/markdown/lesson-authoring.js';
+import {questionExplanation} from '../src/domain/question-explanations.js';
 import { hasFreeLessonPractice } from '../src/domain/free-practice.js';
 import { getPartQuestionIds } from '../src/domain/question-rewards.js';
 import { currentPartProgress, emptyPart, partKey } from '../src/domain/subject-progress.js';
 
 const part={subjectId:'ict',lessonId:'database-management',partId:'access-basics'};
+const pricedPart={subjectId:'ict',lessonId:'smartphone-operating-systems',partId:'android-features'};
+const pricedSolutions=['exam-p09-q1-9','exam-p69-q3-a2','exam-p73-q1-8','past-p63-q1-1','past-p63-q1-4'];
 const lesson=await loadSubjectLessonPart(part.subjectId,part.lessonId,part.partId);
 const steps=lesson.steps.map(step=>step.id);
 
@@ -119,8 +124,8 @@ test('every new correct solve grants seven gems and retries cannot farm rewards'
     const earned=(await request()).body.resources;
     assert.equal(earned.gems,70);assert.equal(earned.correctTowardGems,0);
     assert.equal((await request(answer(9))).body.resources.gems,70,'a lost receipt cannot award twice');
-    const solutions=['exam-p09-q1-1'];
-    for(const stepId of solutions)assert.equal((await request({...part,type:'explanation-unlock',stepId})).status,200);
+    const solutions=[pricedSolutions[0]];
+    for(const stepId of solutions)assert.equal((await request({...pricedPart,type:'explanation-unlock',stepId})).status,200);
     assert.equal((await request()).body.resources.gems,20);
     assert.equal((await request()).body.resources.explanationUnlocks.length,1);
     db.prepare('UPDATE learner_resources SET refill_at=? WHERE account_id=?').run(Date.now()-48*3600000,Number(accounts[0].id));
@@ -133,7 +138,7 @@ test('every new correct solve grants seven gems and retries cannot farm rewards'
 test('legacy correct answers imported after a purchase establish the gem baseline without retroactive awards',async t=>{
   const {request}=await fixture(t);
   const ids=getPartQuestionIds(part);
-  assert.equal((await request({...part,stepId:ids[0],type:'explanation-unlock'})).status,200);
+  assert.equal((await request({...pricedPart,stepId:pricedSolutions[0],type:'explanation-unlock'})).status,200);
   const imported={...part,id:'late-legacy-gem-baseline',type:'import',completedStepIds:[],isComplete:false,
     review:ids.slice(0,9).map(stepId=>({stepId,misses:0,active:false,solved:true}))};
   assert.equal((await request(imported)).body.resources.gems,150,'importing historical answers never grants gems');
@@ -347,7 +352,7 @@ test('retired trials cannot be activated through the API and old trial rows are 
 
 test('explanations cost 50 gems once, survive reopening and stay isolated from progress and other learners', async t => {
   const {request,accounts,databasePath} = await fixture(t);
-  const purchase = {...part,type:'explanation-unlock',stepId:'exam-p09-q1-1'};
+  const purchase = {...pricedPart,type:'explanation-unlock',stepId:pricedSolutions[0]};
   assert.equal((await request(purchase,accounts[0],{Cookie:''})).status,401);
   assert.equal((await request(purchase,accounts[1],{'X-Progress-Owner':`account:${accounts[0].id}`})).status,409);
   assert.equal((await request({...purchase,cost:0})).status,422);
@@ -357,7 +362,7 @@ test('explanations cost 50 gems once, survive reopening and stay isolated from p
     assert.equal(result.body.resources.gems,150);
     assert.equal(result.body.resources.hearts,7);
     assert.equal(result.body.resources.explanationUnlocks.length,1);
-    assert.match(result.body.explanation.markdown,/MySQL/);
+    assert.match(result.body.explanation.markdown,/الإطار/);
   }
   assert.equal((await request(purchase)).body.resources.gems,150);
   const other = await request(undefined,accounts[1]);
@@ -377,16 +382,16 @@ test('explanations cost 50 gems once, survive reopening and stay isolated from p
 
 test('unavailable solutions and insufficient gems cannot debit the learner or create an unlock', async t => {
   const {request} = await fixture(t);
-  const purchase = {...part,type:'explanation-unlock'};
+  const purchase = {...pricedPart,type:'explanation-unlock'};
   for (const stepId of ['invented-question']) {
     assert.equal((await request({...purchase,stepId})).status,422);
     assert.equal((await request()).body.resources.gems,200);
     assert.deepEqual((await request()).body.resources.explanationUnlocks,[]);
   }
-  const bought = ['exam-p09-q1-1','exam-p57-q1-b2','exam-p59-q4-b2','exam-p71-q6-a3'];
+  const bought = pricedSolutions.slice(0,4);
   for (const stepId of bought) assert.equal((await request({...purchase,stepId})).status,200,stepId);
   assert.equal((await request()).body.resources.gems,0);
-  const denied = await request({...purchase,stepId:'past-p6-q1-1'});
+  const denied = await request({...purchase,stepId:pricedSolutions[4]});
   assert.equal(denied.status,402);
   assert.equal(denied.body.resources.gems,0);
   assert.equal(denied.body.resources.explanationUnlocks.length,4);
@@ -399,14 +404,14 @@ test('paid Super includes explanation unlocks, which remain available when the s
   try {
     db.prepare('INSERT INTO learner_resources VALUES(?,?,?,?)').run(Number(accounts[0].id),10,0,Date.now());
     db.prepare("UPDATE accounts SET account_type='subscribed' WHERE id=?").run(Number(accounts[0].id));
-    const purchase = {...part,type:'explanation-unlock',stepId:'exam-p09-q1-1'};
+    const purchase = {...pricedPart,type:'explanation-unlock',stepId:pricedSolutions[0]};
     const result = await request(purchase);
     assert.equal(result.status,200);
     assert.equal(result.body.resources.gems,0);
     assert.equal(result.body.resources.explanationUnlocks.length,1);
     db.prepare("UPDATE accounts SET account_type='free' WHERE id=?").run(Number(accounts[0].id));
     assert.equal((await request(purchase)).status,200);
-    assert.equal((await request({...purchase,stepId:'exam-p57-q1-b2'})).status,402);
+    assert.equal((await request({...purchase,stepId:pricedSolutions[1]})).status,402);
   } finally { db.close(); }
 });
 
@@ -541,4 +546,21 @@ test('rated collection attempts sync independently while preserving lifetime XP'
   assert.deepEqual(again.body.records[0][1].ratedProgress,{easy:[stepId]});
   const other=await request({...answer,id:'rated-hard-attempt',rating:'hard'});
   assert.deepEqual(other.body.records[0][1].ratedProgress,{easy:[stepId],hard:[stepId]});
+});
+
+
+test('the first two lessons include explanations at zero gems without answering a question',async t=>{
+ const {request,databasePath,accounts}=await fixture(t);const db=new DatabaseSync(databasePath);
+ try {
+  db.prepare('INSERT INTO learner_resources VALUES(?,?,?,?)').run(Number(accounts[0].id),0,0,Date.now());
+  const starters=getSubjectRoadmap('ict').units.flatMap(unit=>unit.lessons).filter(lesson=>!lesson.hidden&&!lesson.optional).slice(0,2);
+  for(const starter of starters) {
+   const segment=starter.parts.find(part=>part.startStepId);
+   const lesson=await loadSubjectLessonPart('ict',starter.id,segment.id);
+   const step=parseLessonMarkdown(lesson.authoringSource).steps.find(step=>questionExplanation(step));
+   const key={subjectId:'ict',lessonId:starter.id,partId:segment.id,stepId:step.id};
+   const result=await request({...key,type:'explanation-unlock'});assert.equal(result.status,200);assert.equal(result.body.resources.gems,0);assert.equal(result.body.resources.hearts,0);assert.ok(result.body.explanation.markdown);
+  }
+  assert.deepEqual((await request()).body.records,[]);
+ } finally {db.close();}
 });

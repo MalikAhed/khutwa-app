@@ -196,10 +196,10 @@ test("fixture explanation purchases persist atomically and reopen without anothe
 });
 
 
-test("downloaded HTTP explanations open offline for confirmed purchases and active Super only", async () => {
+test("downloaded paid-lesson explanations open offline for confirmed purchases and active Super only", async () => {
   const values = new Map();
   const storage = {getItem:key=>values.get(key),setItem:(key,value)=>values.set(key,value)};
-  const key = {subjectId:"ict",lessonId:"database-management",partId:"access-basics",stepId:"exam-p09-q1-1"};
+  const key = {subjectId:"ict",lessonId:"smartphone-operating-systems",partId:"android-features",stepId:"exam-p09-q1-9"};
   const step = {type:"mcq",content:{correctFeedback:"شرح محفوظ مع الدرس"}};
   let time=1_000_000, requests=0, type="free";
   const create=()=>createLearnerResources({storage,now:()=>time,getAccountType:()=>type,apiBase:"/api/progress",
@@ -239,4 +239,17 @@ test('starter lesson jumps are free even with no hearts, including persisted Mat
   resources.confirm('account:1',{hearts:0,gems:0,refillAt:Date.now(),gemRevision:0});
   for(const key of [{subjectId:'ict',lessonId:'database-management'},{subjectId:'mathematics',lessonId:'average-change'},{subjectId:'mathematics',lessonId:'indefinite-integral'},{subjectId:'mathematics',lessonId:'indefinite-integral-rules'}])
     await resources.navigate('account:1',key,{kind:'jump',solved:false});
+});
+
+
+test('starter explanations are included for free and partial subscribers without gems or purchase requests',async()=>{
+ for(const accountType of ['free','subscribed']) {
+  let requests=0;
+  const resources=createLearnerResources({getAccountType:()=>accountType,hasSuperAccess:()=>false,apiBase:'/api/progress',fetchImpl:async()=>{requests++;throw Error('offline');}});
+  const key={subjectId:'ict',lessonId:'database-management',partId:'access-basics',stepId:'exam-p09-q1-1'};
+  resources.confirm('account:starter',{hearts:0,gems:0,refillAt:Date.now()});
+  const explanation=await resources.unlockExplanation('account:starter',key,{step:{type:'mcq',content:{correctFeedback:'Free full-trial solution'}}});
+  assert.equal(explanation.markdown,'Free full-trial solution');assert.equal(requests,0);
+  assert.equal(resources.get('account:starter').gems,0);assert.equal(resources.hasExplanation('account:starter',key),false);
+ }
 });

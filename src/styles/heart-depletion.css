@@ -22,16 +22,18 @@
 /* Requested supporting copy stays hidden; its resource rules are unchanged. */
 .super-invitation :is(.super-invitation__balance,.super-invitation__reward),
 .super-invitation [data-heart-status] { display:none; }
-.super-invitation[data-mode="offline"] [data-heart-status] { position:relative; z-index:3; display:block; }
+.super-invitation[data-mode="offline"] .super-invitation__visual { container-type:inline-size; }
+.super-invitation[data-mode="offline"] h1 { left:0; width:100%; max-width:100%; white-space:nowrap; font-size:min(37px,6cqw); }
+.super-invitation[data-mode="offline"] [data-heart-status] { position:relative; z-index:3; display:block; width:100%; max-width:100%; white-space:nowrap; font-size:min(14px,2.5cqw); }
 .heart-depletion__content { position:relative; z-index:3; display:grid; gap:14px; width:100%; padding:28px; border:0; border-radius:0; background:transparent; box-shadow:none; text-align:center; animation:super-panel-enter 540ms cubic-bezier(.22,1,.36,1) 120ms both; }
 .super-invitation__panel-title { margin:0; color:#183e58; font-size:21px; font-weight:900; line-height:1.5; }
-.super-invitation__benefits { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(0,1fr); gap:7px; margin:0; padding:0 0 14px; list-style:none; }
+.super-invitation__benefits { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(0,1fr); gap:12px; margin:0; padding:0 0 14px; list-style:none; }
 .super-invitation__benefits li { position:relative; display:flex; flex-direction:column; align-items:center; gap:5px; min-width:0; font-size:12px; line-height:1.5; }
 .super-benefit__icon { position:relative; display:grid; place-items:center; flex:none; width:44px; height:44px; }
 .super-benefit__icon>img { display:block; width:44px; height:44px; object-fit:contain; }
 .super-benefit__infinity { position:absolute; width:43%; height:auto; left:50%; top:48%; transform:translate(-50%,-50%); }
 .super-benefit__copy { display:grid; gap:1px; }
-.super-benefit__copy strong { color:#244e68; font-size:12px; font-weight:850; }
+.super-benefit__copy strong { color:#244e68; font-size:11px; font-weight:850; }
 .super-invitation__sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 .super-invitation__plans { display:grid; grid-template-columns:minmax(0,1fr); gap:11px; min-width:0; margin:0; padding:6px 0 0; border:0; }
 .super-plan { position:relative; display:grid; grid-template-columns:minmax(0,1fr); align-content:center; align-items:center; min-width:0; min-height:112px; padding:16px 16px 16px 43px; border:2px solid #dce9f1; border-radius:18px; background:#fff; cursor:pointer; text-align:right; transition:background 160ms,border-color 160ms,box-shadow 160ms; }
@@ -102,9 +104,9 @@
   .heart-depletion .heart-depletion__status { flex:none; font-size:12px; line-height:1.5; }
   .heart-depletion__content { gap:10px; padding:18px; }
   .super-invitation__panel-title { font-size:17px; }
-  .super-invitation__benefits { gap:5px; padding-bottom:10px; }
+  .super-invitation__benefits { gap:8px; padding-bottom:10px; }
   .super-benefit__icon,.super-benefit__icon>img { width:34px; height:34px; }
-  .super-benefit__copy strong { font-size:12px; }
+  .super-benefit__copy strong { font-size:10.5px; }
   .super-invitation__plans { gap:10px; }
   .super-plan { min-height:104px; padding:10px 12px 10px 39px; border-radius:15px; }
   .super-plan__label { font-size:13px; }
@@ -122,7 +124,7 @@
   .super-invitation__rocky { height:min(140px,100%); }
   .heart-depletion h1 { font-size:22px; }
   .heart-depletion .heart-depletion__status { font-size:10px; }
-  .super-invitation__benefits { gap:4px; padding-bottom:7px; }
+  .super-invitation__benefits { gap:8px; padding-bottom:7px; }
   .super-benefit__icon,.super-benefit__icon>img { width:30px; height:30px; }
   .super-invitation__benefits li { gap:3px; }
   .super-invitation__plans { grid-template-columns:1fr 1fr; gap:9px; }

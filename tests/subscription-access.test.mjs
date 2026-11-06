@@ -75,6 +75,6 @@ test('partial subscribers answer free starter lessons offline without making oth
  await resources.navigate(owner,key);
  resources.spend(owner,'offline-starter-answer',key);
  assert.equal(resources.get(owner,key).hearts,0);
- assert.equal(resources.get(owner,key).unlimited,false,'starter access never grants unlimited explanations in an unpurchased subject');
+ assert.equal(resources.get(owner,key).unlimited,false,'starter access does not grant Super to the entire unpurchased subject');
  assert.equal(typeof await resources.checkAnswerAccess(owner,{key:{subjectId:'physics',lessonId:'electric-current-resistance'}}),'string');
 });

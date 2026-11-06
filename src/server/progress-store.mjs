@@ -193,7 +193,7 @@ export function createDatabaseProgressStore(database, { questionFeedback, now = 
       return transaction(database, () => {
         const balance = readResources(accountId,key);
         if (!balance.explanationUnlocks.includes(questionKey)) {
-          const price = balance.unlimited ? 0 : EXPLANATION_GEM_COST;
+          const price = balance.unlimited || hasFreeLessonPractice(key) ? 0 : EXPLANATION_GEM_COST;
           if (balance.gems < price) throw Object.assign(new Error('Not enough gems.'),{status:402});
           saveResources.run(accountId,balance.hearts,balance.gems - price,balance.refillAt);
           ensureGemRewards(accountId);

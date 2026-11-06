@@ -14,14 +14,19 @@ const freeLocation={subjectId:'ict',lessonId:'database-management',partId:'acces
 const freeIds=getPartQuestionIds(freeLocation);
 const questionIds=getPartQuestionIds(location);
 const source=readFileSync(bundlePath,'utf8');
+const {loadSubjectLessonPart}=await import('../src/data/lessons/subject-lesson-registry.js');
+const starterSource=(await loadSubjectLessonPart(freeLocation.subjectId,freeLocation.lessonId,freeLocation.partId)).authoringSource;
+const laterSource=(await loadSubjectLessonPart(location.subjectId,location.lessonId,location.partId)).authoringSource;
+const {parseLessonMarkdown}=await import('../src/markdown/lesson-authoring.js');
+const explanationSteps=new Map([...parseLessonMarkdown(starterSource).steps,...parseLessonMarkdown(laterSource).steps].map(step=>[step.id,step]));
 const assets={
  '/content/catalog.ba1d0a1e6782f489.json':{lessons:{'ict:smartphone-operating-systems':'lesson.json','ict:database-management':'free.json'}},
- '/lesson.json':{status:'published',parts:[{id:location.partId,stepIds:questionIds}],steps:questionIds.map(id=>({id,type:'mcq'}))},
- '/free.json':{status:'published',parts:[{id:freeLocation.partId,stepIds:freeIds}],steps:freeIds.map(id=>({id,type:'mcq'}))}
+ '/lesson.json':{status:'published',parts:[{id:location.partId,stepIds:questionIds}],steps:questionIds.map(id=>({id,type:'mcq',url:`steps/${id}.json`}))},
+ '/free.json':{status:'published',parts:[{id:freeLocation.partId,stepIds:freeIds}],steps:freeIds.map(id=>({id,type:'mcq',url:`steps/${id}.json`}))}
 };
 const mf=new Miniflare(convertV4MiniflareOptions({script:source,modules:true,compatibilityDate:'2026-10-23',compatibilityFlags:['nodejs_compat'],
  d1Databases:{ACCOUNTS:'isolated-accounts'},durableObjects:{AUTH:{className:'Authentication',useSQLite:true},STUDENTS:{className:'StudentProgress',useSQLite:true}},
- serviceBindings:{ASSETS:async request=>new Response(JSON.stringify(/\/catalog\.[a-f0-9]+\.json$/.test(new URL(request.url).pathname)?Object.values(assets)[0]:assets[new URL(request.url).pathname]||{}),{headers:{'Content-Type':'application/json'}})}
+ serviceBindings:{ASSETS:async request=>new Response(JSON.stringify(/\/catalog\.[a-f0-9]+\.json$/.test(new URL(request.url).pathname)?Object.values(assets)[0]:assets[new URL(request.url).pathname]||explanationSteps.get(new URL(request.url).pathname.match(/^\/steps\/(.*)\.json$/)?.[1])||{}),{headers:{'Content-Type':'application/json'}})}
 }));
 try {
  const db=await mf.getD1Database('ACCOUNTS');
@@ -55,7 +60,7 @@ try {
  assert.equal((await request('/api/progress',{cookie:computerCookies,owner,body:navigationBody(questionIds[0],'nav-runtime-reentry','enter')})).status,200,'re-entry is unrestricted for every browser');
  const requests=Array.from({length:12},(_,n)=>request('/api/progress',{cookie:n%2?cookies(phone):computerCookies,owner,body:{...part,id:`runtime-heart-${n}`}}));
  const results=await Promise.all(requests);const statuses=results.map(x=>x.status);
- assert.equal(statuses.filter(x=>x===200).length,7,JSON.stringify(await Promise.all(results.map(x=>x.clone().text()))));
+ assert.equal(statuses.filter(x=>x===200).length,7,statuses.filter(x=>x===200).length===7 ? undefined : JSON.stringify(await Promise.all(results.map(x=>x.bodyUsed?'consumed':x.clone().text()))));
  assert.equal(statuses.filter(x=>x===429).length,5);
  const state=await request('/api/progress',{cookie:computerCookies,owner});assert.equal((await state.json()).resources.hearts,0);
  assert.equal((await request('/api/progress',{cookie:computerCookies,owner,body:{type:'super-trial'}})).status,403);
@@ -74,6 +79,10 @@ try {
  const freeJump=await request('/api/progress',{cookie:computerCookies,owner,body:{...freeLocation,stepId:getPartQuestionIds(freeLocation)[3],type:'question-navigation',kind:'jump',id:'runtime-free-starter-jump'}});
  assert.equal(freeJump.status,200,await freeJump.clone().text());
  assert.equal((await freeJump.json()).resources.hearts,0,'starter jumps need no hearts');
+ const freeExplanation=await request('/api/progress',{cookie:computerCookies,owner,body:{...freeLocation,type:'explanation-unlock',stepId:'exam-p09-q1-1'}});
+ assert.equal(freeExplanation.status,200,await freeExplanation.clone().text());const freeReceipt=await freeExplanation.json();assert.equal(freeReceipt.resources.gems,200);assert.ok(freeReceipt.explanation.markdown);
+ const pricedExplanation=await request('/api/progress',{cookie:computerCookies,owner,body:{...location,type:'explanation-unlock',stepId:'exam-p09-q1-9'}});
+ assert.equal(pricedExplanation.status,200,await pricedExplanation.clone().text());assert.equal((await pricedExplanation.json()).resources.gems,150,'later unpurchased explanations still cost gems');
  const rewardRegistration=await request('/api/auth/register',{ip:'192.0.2.4',body:{username:'reward-student',phone:'0591234568',password:'Runtime123',curriculum:'gaza',path:'scientific'}});
  assert.equal(rewardRegistration.status,201);
  const rewardOwner=`account:${(await rewardRegistration.json()).account.id}`,rewardCookies=cookies(rewardRegistration);

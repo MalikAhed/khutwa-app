@@ -63,6 +63,13 @@ try {
       await page.waitForTimeout(100);
      }
      await page.waitForFunction(()=>Boolean(navigator.serviceWorker.controller));
+     if(type==='free') {
+      await navigate(page,freeStarter);await page.locator('[data-question-explain]').waitFor();
+      assert.equal(await page.locator('.explanation-price').count(),0,'free starter solutions never show a gem price');
+      assert.match(await page.locator('[data-question-explain]').getAttribute('aria-label'),/مجانًا/);
+      await page.locator('[data-question-explain]').click();await page.locator('.question-explanation-dialog .markdown-rendered').waitFor();await page.locator('[data-explanation-close]').click();
+      await navigate(page,{page:'learn'});await page.locator('[data-learner-dashboard]').waitFor();
+     }
      if(type==='subscribed') {
       for(const key of [freeStarter,paid]) {await navigate(page,key);await page.locator('[data-ui-lab-check]').waitFor();}
      }
@@ -78,6 +85,8 @@ try {
       await page.locator('[data-question-jump]').nth(2).click();
       assert.equal(await page.locator('.heart-depletion[open]').count(),0,'paid skipping works offline at zero hearts and gems');
       await navigate(page,freeStarter);await page.locator('[data-ui-lab-check]').waitFor();
+      assert.equal(await page.locator('.explanation-price').count(),0,'unpaid starter explanations are included at zero gems');
+      await page.locator('[data-question-explain]').click();await page.locator('.question-explanation-dialog .markdown-rendered').waitFor();await page.locator('[data-explanation-close]').click();
       await page.locator('[data-ui-lab-answer]').first().click();await page.locator('[data-ui-lab-check]').click();
       await page.locator('.level-feedback').waitFor();
       assert.doesNotMatch(await page.locator('.level-feedback').innerText(),/اتصل بالإنترنت|نفدت قلوب/);
