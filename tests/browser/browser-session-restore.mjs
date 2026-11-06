@@ -13,10 +13,10 @@ const app = await createAppServer({ root, logger:() => {}, config:readRuntimeCon
   PORT:'0', LIVE_RELOAD:'0', ACCOUNTS_DATABASE_PATH:':memory:',
 }, { root }) });
 try {
-  await app.accountStore.createAccount({ username:'restart-test', phone:'0591234567',
-    curriculum:'gaza', path:'scientific', password:'Test-only-123' });
   const base = `http://127.0.0.1:${await app.listen()}`;
   for (const [name, engine] of Object.entries({ chromium, webkit })) {
+    await app.accountStore.createAccount({ username:`restart-test-${name}`,
+      curriculum:'gaza',path:'scientific',password:'Test-only-123' });
     const profile = await mkdtemp(path.join(tmpdir(), 'khutwa-session-'));
     const options = { viewport:{ width:390, height:844 }, reducedMotion:'reduce',
       ...(name === 'chromium' ? { executablePath:await findChrome(), args:['--no-sandbox'] } : {}) };
@@ -24,7 +24,7 @@ try {
     try {
       context = await engine.launchPersistentContext(profile, options);
       const login = await context.request.post(`${base}/api/auth/sign-in`, {
-        data:{ identifier:'restart-test', password:'Test-only-123' },
+        data:{ identifier:`restart-test-${name}`, password:'Test-only-123' },
       });
       assert.equal(login.status(), 200);
       const cookie = (await context.cookies()).find(cookie => cookie.name === 'tawjihi_session');

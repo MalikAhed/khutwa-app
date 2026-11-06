@@ -1,0 +1,29 @@
+/* Subscribe sets the shared corner shape; roadmap level buttons retain their own design. */
+:root { --button-radius:16px; --button-height:50px; }
+:is(button,[role="button"],a.system-action,a.button,a.lesson-source-download):not(.roadmap-part):not(.lesson-scroll-cue) {
+  /* Keep screen-specific sizing from changing the shared button shape. */
+  border-radius:var(--button-radius)!important;
+}
+:is(.system-action,.level-action,.topbar-login,.topbar-create,.button,
+    .offline-access button,.auth-links button,.question-hide-action,
+    .roadmap-guide-review,.roadmap-review-item,.roadmap-review-back,
+    .lesson-video-tour-actions button,a.lesson-source-download):not(.app-close):not(.roadmap-part) {
+  height:var(--button-height)!important;
+  min-height:var(--button-height)!important;
+  box-sizing:border-box;
+}
+@media (max-width:760px) {
+  :root { --button-height:46px; }
+}
+@media (max-height:760px) and (max-width:760px) {
+  :root { --button-height:44px; }
+}
+:is(button,[role="button"],a.system-action,a.button,a.lesson-source-download):not(.roadmap-part):not(:disabled):not([aria-disabled="true"]):not(.lesson-self-check button[aria-pressed="true"]):active {
+  /* The face travels through its full edge depth without changing its shape or size. */
+  transform:translateY(var(--button-press-depth,var(--control-edge,4px)))!important;
+  box-shadow:none!important;
+  filter:brightness(.98)!important;
+}
+@media (prefers-reduced-motion:reduce) {
+  :is(button,[role="button"],a.system-action,a.button,a.lesson-source-download):not(.roadmap-part):not(:disabled):not([aria-disabled="true"]):not(.lesson-self-check button[aria-pressed="true"]):active { transform:none!important; }
+}

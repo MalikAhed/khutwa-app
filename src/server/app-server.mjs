@@ -73,7 +73,8 @@ export async function createAppServer({root,config,contentManifest=null,remoteBa
       server.once('error',onError);
       // Let Node accept both localhost families (and fall back on IPv4-only hosts).
       // Binding only 0.0.0.0 refuses clients that resolve localhost to ::1.
-      server.listen(config.port,...(remoteBackend ? ['127.0.0.1'] : []),()=>{
+      const host=remoteBackend ? '127.0.0.1' : config.listenHost;
+      server.listen(config.port,...(host ? [host] : []),()=>{
         server.removeListener('error',onError);
         resolve(server.address().port);
       });

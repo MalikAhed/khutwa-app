@@ -15,7 +15,7 @@
   .lesson-shell--subject .lesson-back:not(.app-close):hover { color:#4B5563; }
 }
 .lesson-shell--subject .lesson-back:not(.app-close):active { transform:none; color:#4B5563; }
-.lesson-shell--subject button.lesson-back:not(.app-close):not(.nav-item):not(.roadmap-part):not(:disabled):not([aria-disabled="true"]):is(:hover,:active) { box-shadow:none!important; transform:none!important; text-decoration:none; }
+.lesson-shell--subject button.lesson-back:not(.app-close):not(.nav-item):not(.roadmap-part):not(:disabled):not([aria-disabled="true"]):is(:hover,:active) { box-shadow:none!important; text-decoration:none; }
 .lesson-shell--subject .lesson-back:not(.app-close):focus-visible { outline:3px solid #1675B8; outline-offset:4px; }
 @media (prefers-reduced-motion:reduce) {
   .lesson-shell--subject .lesson-back:not(.app-close) { transition:none; }

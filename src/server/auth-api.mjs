@@ -1,6 +1,7 @@
 import { duplicateAccountFieldMessage, isAccountIdentifierField, validateAccountField, validateRegistration } from "../domain/account.js";
 import { createAuthRateLimiter } from "./auth-rate-limiter.mjs";
 import { hasJsonContentType, sendJson } from "./http.mjs";
+import { browserCookie, browserRegistration, DEVICE_LIMIT, BROWSER_ACCOUNT_LIMIT } from "./browser-registration.mjs";
 
 const SESSION_COOKIE = "tawjihi_session";
 const AUTH_ROUTES = new Set(["/api/auth/session", "/api/auth/availability", "/api/auth/register", "/api/auth/sign-in", "/api/auth/sign-out"]);
@@ -57,7 +58,14 @@ export function createAuthApi({ accountStore, readJsonBody, rateLimiter = create
         response.writeHead(405, { Allow:"GET" }).end("Method not allowed");
         return;
       }
-      sendJson(response, 200, { account:accountStore.getAccountForSession(token) });
+      const device = browserRegistration(request.headers);
+      const account = accountStore.getAccountForSession(token);
+      if (account && !await accountStore.claimDevice(account.id,device)) { sendJson(response,403,DEVICE_LIMIT); return; }
+      // Establish the browser identity before submitting credentials. A lost
+      // sign-in receipt can then retry the same permanent registration.
+      sendJson(response, 200, { account }, {
+        "Set-Cookie":browserCookie(device.token, secureCookies || Boolean(request.socket.encrypted)),
+      });
       return;
     }
 
@@ -121,8 +129,17 @@ export function createAuthApi({ accountStore, readJsonBody, rateLimiter = create
         sendJson(response, 422, { status:"invalid", fieldErrors });
         return;
       }
-      const result = await accountStore.createAccount(values);
+      const device = browserRegistration(request.headers);
+      const claim = await accountStore.browserPolicy.beginRegistration(device.tokenHash);
+      if (!claim) { sendJson(response, 403, BROWSER_ACCOUNT_LIMIT); return; }
+      let result;
+      try { result = await accountStore.createAccount(values); }
+      catch (error) {
+        await accountStore.browserPolicy.cancelRegistration(device.tokenHash, claim);
+        throw error;
+      }
       if (result.status === "duplicate") {
+        await accountStore.browserPolicy.cancelRegistration(device.tokenHash, claim);
         sendJson(response, 409, {
           status:"duplicate",
           field:result.field,
@@ -130,9 +147,15 @@ export function createAuthApi({ accountStore, readJsonBody, rateLimiter = create
         });
         return;
       }
-      const session = accountStore.createSession(result.account.id);
+      await accountStore.browserPolicy.finishRegistration(device.tokenHash, claim, result.account.id);
+      if (!await accountStore.claimDevice(result.account.id, device)) {
+        sendJson(response, 403, DEVICE_LIMIT);
+        return;
+      }
+      const session = await accountStore.createSession(result.account.id);
       sendJson(response, 201, { status:"created", account:result.account }, {
-        "Set-Cookie":sessionCookie(session.token, session.expiresAt, secureCookies || Boolean(request.socket.encrypted)),
+        "Set-Cookie":[sessionCookie(session.token, session.expiresAt, secureCookies || Boolean(request.socket.encrypted)),
+          browserCookie(device.token, secureCookies || Boolean(request.socket.encrypted))],
       });
       return;
     }
@@ -150,10 +173,16 @@ export function createAuthApi({ accountStore, readJsonBody, rateLimiter = create
         sendJson(response, 401, { status:"invalid", error:"الاسم أو كلمة المرور غير صحيحة." });
         return;
       }
+      const device = browserRegistration(request.headers);
+      if (!await accountStore.claimDevice(account.id, device)) {
+        sendJson(response, 403, DEVICE_LIMIT);
+        return;
+      }
       rateLimiter.reset(limiterKey);
-      const session = accountStore.createSession(account.id);
+      const session = await accountStore.createSession(account.id);
       sendJson(response, 200, { status:"signed-in", account }, {
-        "Set-Cookie":sessionCookie(session.token, session.expiresAt, secureCookies || Boolean(request.socket.encrypted)),
+        "Set-Cookie":[sessionCookie(session.token, session.expiresAt, secureCookies || Boolean(request.socket.encrypted)),
+          browserCookie(device.token, secureCookies || Boolean(request.socket.encrypted))],
       });
       return;
     }

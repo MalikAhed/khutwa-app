@@ -13,7 +13,7 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
   if (!primary) return;
   const button = document.createElement("button");
   button.type = "button";
-  button.className = "level-action level-action--explain";
+  button.className = "level-action level-action--explain system-action--gold";
   button.dataset.questionExplain = "";
   button.setAttribute("aria-haspopup","dialog");
   const updateLabel = () => {
@@ -35,6 +35,7 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
   let dialog;
   let opening;
   let closingAnimation;
+  let unlocking = false;
   const removeDialog = () => {
     opening?.abort();
     closingAnimation?.cancel();
@@ -43,7 +44,7 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
     dialog = null;
   };
   button.addEventListener("click",async () => {
-    if (dialog?.open || signal.aborted) return;
+    if (dialog?.open || unlocking || signal.aborted) return;
     // A native close event is queued; retire its dialog before a quick reopen.
     if (dialog) removeDialog();
     const wasIncluded = button.dataset.explanationIncluded === "true";
@@ -51,6 +52,20 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
     if (wasIncluded && !explanation.isIncluded?.() && !explanation.isUnlocked()) return;
     opening = new AbortController();
     const requestSignal = AbortSignal.any([signal,opening.signal]);
+    let result, unlockError;
+    unlocking = true;
+    button.setAttribute("aria-busy","true");
+    try {
+      result = await explanation.unlock({signal:requestSignal});
+    } catch (error) {
+      if (error.code === "insufficient-gems") return;
+      unlockError = error;
+    } finally {
+      unlocking = false;
+      button.removeAttribute("aria-busy");
+      updateLabel();
+    }
+    if (requestSignal.aborted || document.querySelector('.super-invitation[open][data-mode="gems"]')) return;
     dialog = document.createElement("dialog");
     const activeDialog = dialog;
     activeDialog.className = "question-explanation-dialog";
@@ -85,7 +100,7 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
     activeDialog.showModal();
     const body = activeDialog.querySelector("[data-explanation-body]");
     try {
-      const result = await explanation.unlock({signal:requestSignal});
+      if (unlockError) throw unlockError;
       if (requestSignal.aborted || dialog !== activeDialog) return;
       updateLabel();
       body.innerHTML = `${result.note ? `<p class="question-explanation-note">${escapeHtml(result.note)}</p>` : ""}<div class="markdown-rendered">${renderMarkdownDocument(result.markdown,{locale,highlightQuotes:true})}</div>`;
@@ -94,9 +109,7 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
       mountTemplateScrollIndicator(activeDialog.querySelector(".question-explanation-reading"),{surface:body,signal:requestSignal});
     } catch (error) {
       if (requestSignal.aborted || dialog !== activeDialog) return;
-      body.innerHTML = `<p role="status">${error.code === "insufficient-gems"
-        ? (ar ? "تحتاج إلى 50 جوهرة لفتح هذا الشرح. رصيدك غير كافٍ." : "You need 50 gems to unlock this explanation. Your balance is too low.")
-        : error.code === "connection-required"
+      body.innerHTML = `<p role="status">${error.code === "connection-required"
           ? (ar ? "اتصل بالإنترنت لفتح شرح جديد بالجواهر. الشروح المفتوحة وشروح سوبر المحمّلة متاحة دون إنترنت." : "Connect to unlock a new explanation with gems. Downloaded unlocked and Super explanations are available offline.")
         : error.code === "unavailable"
           ? (ar ? "الشرح المفصّل لهذا السؤال غير متاح حاليًا. لم تُخصم أي جواهر." : "This explanation is not available yet. No gems were charged.")

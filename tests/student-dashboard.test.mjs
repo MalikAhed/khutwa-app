@@ -42,6 +42,7 @@ test("owner alone can inspect durable student progress; reset removes data and i
     const response=await fetch(base+"/api/progress",{method:"POST",headers:{...studentHeaders,"X-Progress-Owner":`account:${account.id}`,"Content-Type":"application/json"},
       body:JSON.stringify({...key,type:"answer",id:`saved-answer-${index}`,stepId,correct})});
     assert.equal(response.status,200);
+    studentHeaders.Cookie=`tawjihi_session=${studentSession.token}; ${response.headers.getSetCookie().map(cookie=>cookie.split(';')[0]).join('; ')}`;
   }
   const reopened=createAccountStore({databasePath});
   try {

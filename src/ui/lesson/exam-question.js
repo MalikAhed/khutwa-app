@@ -21,7 +21,7 @@ function layoutWrittenPrompt(source) {
 }
 
 /** Written answers are self-checked; worked solutions stay in the explanation dialog. */
-export function renderExamQuestion(container, step, { locale = "ar", onBack, onContinue, onReveal, onAnswer, beforeAnswer, selfCheck = true } = {}) {
+export function renderExamQuestion(container, step, { locale = "ar", onBack, onContinue, onReveal, onAssess, onAnswer, beforeAnswer, selfCheck = true } = {}) {
   const controller = new AbortController();
   const { signal } = controller;
   const { content } = step;
@@ -49,8 +49,8 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
             <div class="lesson-flashcard-copy">
               <div class="markdown-rendered lesson-final-answer" data-exam-final-answer>${renderMarkdownDocument(content.finalAnswer || (ar ? "الإجابة النهائية غير متاحة حاليًا." : "The final answer is currently unavailable."), { locale })}</div>
               ${selfCheck ? `<fieldset class="lesson-self-check" data-exam-self-check><legend>${ar ? "كيف كانت إجابتك؟" : "How did you do?"}</legend><div>
-                <button class="system-action system-action--primary" type="button" data-exam-correct="true" aria-pressed="false">${ar ? "أجبتُ بشكل صحيح" : "I got it right"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m8 14 4 4 8-8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-                <button class="system-action system-action--primary" type="button" data-exam-correct="false" aria-pressed="false">${ar ? "أجبتُ بشكل خاطئ" : "I got it wrong"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m10 10 8 8m0-8-8 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button>
+                <button class="system-action system-action--primary" type="button" data-exam-correct="true" aria-pressed="false">${ar ? "صحيحة" : "Correct"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m8 14 4 4 8-8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <button class="system-action system-action--primary" type="button" data-exam-correct="false" aria-pressed="false">${ar ? "خاطئة" : "Wrong"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m10 10 8 8m0-8-8 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button>
               </div><p class="lesson-self-check-error" data-exam-choice-error role="alert" hidden></p></fieldset>` : ""}
             </div>
           </div>
@@ -72,13 +72,16 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
   const next = container.querySelector("[data-template-primary]");
   const footer = next.closest(".level-layout-actions");
   footer.classList.add("lesson-exam-actions");
-  footer.querySelector('.level-feedback').insertAdjacentHTML("afterend", renderQuestionRatingControls(locale));
+  footer.querySelector('.level-feedback').insertAdjacentHTML("afterend", renderQuestionRatingControls(locale, { hidden:true }));
   const rating = footer.querySelector(".level-question-rating-panel");
   rating.inert = true;
   mountQuestionRating(footer, signal);
   let flipped = false;
   let revealed = false;
   let assessment = null;
+  let checking = false;
+  let retryAnswer;
+  let answered = false;
   let submitted = false;
   let animation = null;
   let pointerStart = null;
@@ -104,13 +107,16 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
     front.hidden = false;
     solution.hidden = false;
     flipped = showAnswer;
-    rating.inert = !flipped;
     rotor.classList.toggle("is-flipped", flipped);
     front.inert = flipped;
     solution.inert = !flipped;
     front.setAttribute("aria-hidden", String(flipped));
     solution.setAttribute("aria-hidden", String(!flipped));
-    if (flipped && !selfCheck) next.disabled = false;
+    if (flipped && !selfCheck) {
+      next.disabled = false;
+      rating.hidden = false;
+      rating.inert = false;
+    }
     if (flipped && !revealed) { revealed = true; onReveal?.(); }
     const visibleFace = flipped ? solution : front;
     visibleFace.querySelector(".lesson-flashcard-scroll").focus({ preventScroll:true });
@@ -132,10 +138,13 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
   };
   container.querySelectorAll("[data-exam-correct]").forEach(button => {
     button.addEventListener("click", () => {
-      if (!flipped || submitted) return;
+      if (!flipped || submitted || retryAnswer || checking || answered) return;
       container.querySelector("[data-heart-message]")?.remove();
       container.querySelector("[data-exam-choice-error]").hidden = true;
       assessment = button.dataset.examCorrect === "true";
+      onAssess?.({ correct:assessment });
+      rating.hidden = false;
+      rating.inert = false;
       container.querySelectorAll("[data-exam-correct]").forEach(control => {
         control.setAttribute("aria-pressed", String(control === button));
       });
@@ -167,7 +176,17 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
     }
     flip(!flipped);
   }, { signal });
-  next.addEventListener("click", () => {
+  const showBlocked = text => {
+    let message = container.querySelector("[data-heart-message]");
+    if (!message) {
+      message = document.createElement("p");
+      message.dataset.heartMessage = "";
+      message.setAttribute("role", "status");
+      container.querySelector("[data-exam-self-check]").append(message);
+    }
+    message.textContent = text;
+  };
+  next.addEventListener("click", async () => {
     if (next.disabled || submitted) return;
     if (selfCheck && assessment === null) {
       if (!flipped) flip(true);
@@ -178,24 +197,32 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
       container.querySelector("[data-exam-correct]").focus({ preventScroll:true });
       return;
     }
-    if (selfCheck) {
-      const blocked = beforeAnswer?.();
-      if (blocked) {
-        let message = container.querySelector("[data-heart-message]");
-        if (!message) {
-          message = document.createElement("p");
-          message.dataset.heartMessage = "";
-          message.setAttribute("role", "status");
-          container.querySelector("[data-exam-self-check]").append(message);
-        }
-        message.textContent = blocked;
-        return;
-      }
-    }
-    submitted = true;
     next.disabled = true;
-    if (selfCheck) onAnswer?.({ correct:assessment });
-    onContinue?.();
+    checking = true;
+    try {
+      if (selfCheck && !answered) {
+        let blocked = retryAnswer ? undefined : await beforeAnswer?.();
+        if (signal.aborted) return;
+        if (!blocked) {
+          const saved = retryAnswer ? await retryAnswer() : await onAnswer?.({ correct:assessment });
+          if (signal.aborted) return;
+          if (saved?.status === "failed") {
+            retryAnswer = saved.retry;
+            blocked = "تعذّر تأكيد الإجابة. احتُفظ بها بأمان. اتصل بالإنترنت وحاول مجددًا.";
+          }
+        }
+        if (blocked) {
+          showBlocked(blocked);
+          return;
+        }
+        answered = true;
+      }
+      submitted = true;
+      next.disabled = true;
+      if (await onContinue?.() === false) submitted = false;
+    } catch {
+      if (!signal.aborted) showBlocked("تعذّر تأكيد الإجابة. اتصل بالإنترنت وحاول مجددًا.");
+    } finally { checking = false; if (!submitted) next.disabled = false; }
   }, { signal });
   container.querySelector("[data-template-back]").addEventListener("click", () => onBack?.(), { signal });
   return () => {

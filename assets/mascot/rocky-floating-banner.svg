@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="krf-banner" viewBox="0 0 800 620" width="800" height="620" fill="none" role="img" aria-labelledby="krf-title krf-description" preserveAspectRatio="xMidYMid meet">
+  <title id="krf-title">Rocky floating with hearts and gems</title>
+  <desc id="krf-description">The original Rocky mascot gently floats with small movements in his raised hands and detached feet. Two hearts and two gems drift around him. Transparent background; reduced-motion preferences are respected.</desc>
+  <style>
+/* All animation is native CSS. The original visible SVG paths are preserved. */
+#krf-banner { display: block; width: 100%; height: auto; overflow: hidden; }
+#krf-banner .krf-motion {
+  transform-box: view-box;
+  transform-origin: 0 0;
+  animation-timing-function: cubic-bezier(.37, 0, .63, 1);
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+#krf-banner .krf-rocky-x { animation-name: krf-rocky-x; animation-duration: 12.8s; animation-delay: -3.2s; }
+#krf-banner .krf-rocky-y { animation-name: krf-rocky-y; animation-duration: 6.4s; }
+#krf-banner .krf-rocky-roll { animation-name: krf-rocky-roll; animation-duration: 12.8s; animation-delay: -2.1s; }
+#krf-banner .krf-arm-left { animation-name: krf-arm-left; animation-duration: 6.4s; animation-delay: -.24s; }
+#krf-banner .krf-arm-right { animation-name: krf-arm-right; animation-duration: 6.4s; animation-delay: -.62s; }
+#krf-banner .krf-foot-left { animation-name: krf-foot-left; animation-duration: 6.4s; animation-delay: -.48s; }
+#krf-banner .krf-foot-right { animation-name: krf-foot-right; animation-duration: 6.4s; animation-delay: -.76s; }
+#krf-banner .krf-orbit-x { animation-name: krf-orbit-x; animation-duration: var(--krf-time); animation-delay: var(--krf-x-delay); }
+#krf-banner .krf-orbit-y { animation-name: krf-orbit-y; animation-duration: var(--krf-time); animation-delay: var(--krf-y-delay); }
+#krf-banner .krf-orbit-roll { animation-name: krf-orbit-roll; animation-duration: var(--krf-time); animation-delay: var(--krf-roll-delay); }
+@keyframes krf-rocky-x {
+  0%, 100% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+}
+@keyframes krf-rocky-y {
+  0%, 100% { transform: translateY(10px); }
+  50% { transform: translateY(-13px); }
+}
+@keyframes krf-rocky-roll {
+  0%, 100% { transform: rotate(-1.15deg); }
+  50% { transform: rotate(1.15deg); }
+}
+@keyframes krf-arm-left {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3.5deg); }
+}
+@keyframes krf-arm-right {
+  0%, 100% { transform: rotate(3.5deg); }
+  50% { transform: rotate(-3deg); }
+}
+@keyframes krf-foot-left {
+  0%, 100% { transform: translateY(1.5px) rotate(-4deg); }
+  50% { transform: translateY(-1.5px) rotate(4deg); }
+}
+@keyframes krf-foot-right {
+  0%, 100% { transform: translateY(-1px) rotate(4deg); }
+  50% { transform: translateY(2px) rotate(-4deg); }
+}
+@keyframes krf-orbit-x {
+  0%, 100% { transform: translateX(var(--krf-x-min)); }
+  50% { transform: translateX(var(--krf-x-max)); }
+}
+@keyframes krf-orbit-y {
+  0%, 100% { transform: translateY(var(--krf-y-min)); }
+  50% { transform: translateY(var(--krf-y-max)); }
+}
+@keyframes krf-orbit-roll {
+  0%, 100% { transform: rotate(var(--krf-roll-min)); }
+  50% { transform: rotate(var(--krf-roll-max)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #krf-banner .krf-motion { animation: none !important; }
+}
+/* Optional host control when this SVG is inlined. */
+#krf-banner[data-paused="true"] .krf-motion { animation-play-state: paused; }
+</style>
+  <defs><path id="krf-rocky-body-outline" d="M167.4 373.9 L174.3 327.9 L178.9 288.8 L201.9 270.4 L211.1 240.5 L250.2 229.5 L284.7 238.2 L310 213.6 L339.9 204.4 L358.3 183.7 L365.2 166.9 L402 173.8 L431.9 143.9 L466.4 139.3 L484.8 141.6 L514.7 180.7 L552 196 L565.3 235.9 L590 248 L602.1 261.2 L613.6 272.7 C618 322 622 379 625.1 426.8 C632 460 637 493 634.3 523.4 C627 540 612 555 590.6 567.1 C546 574 495 578 461.8 578.6 L438.8 580.9 L277.8 578.6 C238 578 207 575 183.5 569.4 C168 553 160 527 155.9 479.7 C154 439 158 401 167.4 373.9 Z"/>
+    <clipPath id="krf-rocky-body-clip">
+      <use href="#krf-rocky-body-outline"/>
+    </clipPath>
+    </defs>
+  <g transform="translate(0 -90)" data-scene="floating">
+    <g class="krf-motion krf-rocky-x" data-object="rocky">
+      <g class="krf-motion krf-rocky-y">
+        <g transform="translate(394 377)">
+          <g class="krf-motion krf-rocky-roll">
+            <g transform="translate(-394 -377)"><g transform="translate(342 629)"><g class="krf-motion krf-foot-left"><g transform="scale(1.22 1) rotate(-55) scale(.74 1.2) translate(-291 -600)"><g data-part="foot-left">
+      <path d="M249 580 C270 573 317 574 336 585 C348 592 347 604 337 612 C324 622 259 624 243 612 C232 604 235 588 249 580 Z" fill="#888374"/>
+    </g>
+    </g></g></g><g transform="translate(448 631)"><g class="krf-motion krf-foot-right"><g transform="scale(1.22 1) rotate(55) scale(.74 1.2) translate(-493 -602)"><g data-part="foot-right">
+      <path d="M454 584 C475 576 519 577 538 588 C550 595 549 607 539 615 C526 624 462 625 446 613 C435 605 440 591 454 584 Z" fill="#888374"/>
+    </g>
+
+    </g></g></g><g transform="translate(182 422)"><g class="krf-motion krf-arm-left"><g transform="rotate(124) translate(-182 -422)"><g data-part="arm-left">
+      <path d="M169 405 C148 407 135 434 135 468 L140 522 C142 543 154 556 169 556 C185 556 195 543 192 523 L186 469 C185 433 183 407 169 405 Z" fill="#928d7e"/>
+      <g data-part="hand-left">
+        <path d="M172 514 C154 515 144 528 145 544 C146 559 158 570 174 570 C191 570 202 558 201 543 C200 527 189 515 172 514 Z" fill="#8c8778"/>
+      </g>
+    </g>
+    </g></g></g><g transform="translate(606 422)"><g class="krf-motion krf-arm-right"><g transform="rotate(-124) translate(-606 -422)"><g data-part="arm-right">
+      <path d="M619 405 C640 407 653 434 653 468 L648 522 C646 543 634 556 619 556 C603 556 593 543 596 523 L602 469 C603 433 605 407 619 405 Z" fill="#928d7e"/>
+      <g data-part="hand-right">
+        <path d="M616 514 C634 515 644 528 643 544 C642 559 630 570 614 570 C597 570 586 558 587 543 C588 527 599 515 616 514 Z" fill="#8c8778"/>
+      </g>
+    </g>
+
+    </g></g></g><g data-part="body">
+      <use href="#krf-rocky-body-outline" fill="#c6b8a3"/>
+
+      <g data-part="body-facets" clip-path="url(#krf-rocky-body-clip)" opacity="0.72">
+        <path d="M207 271 L225 231 L271 208 L288 247 L255 284 Z" fill="#d2c6b2"/>
+        <path d="M271 208 L317 201 L347 181 L365 229 L317 250 L288 247 Z" fill="#d8cebc"/>
+        <path d="M403 191 L445 202 L476 167 L500 218 L461 252 L421 237 Z" fill="#cbbda5"/>
+        <path d="M476 167 L520 161 L552 199 L522 230 L500 218 Z" fill="#d8cdb9"/>
+        <path d="M552 199 L591 215 L600 258 L571 284 L546 251 Z" fill="#ada28b"/>
+        <path d="M171 294 L207 271 L255 284 L234 329 L187 339 L157 367 L151 330 Z" fill="#cbbda5"/>
+        <path d="M151 367 L187 339 L197 397 L165 431 L148 414 Z" fill="#b3a78f"/>
+        <path d="M159 501 L184 466 L213 500 L224 572 L184 542 Z" fill="#ada18a"/>
+        <path d="M224 572 L264 535 L306 569 L339 598 L276 590 Z" fill="#cbbda5"/>
+        <path d="M306 569 L361 548 L399 585 L414 599 L339 598 Z" fill="#b3a68f"/>
+        <path d="M483 590 L507 548 L545 574 Z" fill="#9f947d"/>
+        <path d="M545 574 L567 521 L612 529 L597 552 Z" fill="#ada18a"/>
+        <path d="M630 509 L592 476 L611 425 L650 458 Z" fill="#aca089"/>
+        <path d="M642 408 L606 385 L627 333 L655 363 Z" fill="#cbbda5"/>
+        <path d="M600 258 L627 283 L637 327 L596 321 L571 284 Z" fill="#ada18a"/>
+        <path d="M240 326 L263 314 L278 337 L253 351 Z" fill="#a6a090" opacity="0.62"/>
+        <path d="M530 318 L553 303 L570 329 L544 344 Z" fill="#a39d8d" opacity="0.62"/>
+        <path d="M218 438 L246 424 L260 450 L230 462 Z" fill="#aaa494" opacity="0.48"/>
+      </g>
+
+      <g data-part="eyebrow-left">
+        <path d="M289 307 C292 300 303 296 328 289 C337 288 344 295 344 304 L344 312 C342 319 332 322 308 326 L294 326 C288 323 287 313 289 307 Z" fill="#8e8979"/>
+      </g>
+      <g data-part="eyebrow-right">
+        <path d="M448 293 C452 283 462 282 478 286 L494 291 C500 294 503 302 501 314 C498 321 489 321 480 318 L457 314 C449 312 446 303 448 293 Z" fill="#8e8979"/>
+      </g>
+
+      <g data-part="mouth-closed" opacity="1">
+        <path d="M379 460 C392 470 410 470 424 459" fill="none" stroke="#3b3b37" stroke-width="8" stroke-linecap="round"/>
+      </g>
+      <g opacity="0.42" fill="#928c7c">
+        <path d="M205 385 L216 377 L222 383 L211 396 Z"/>
+        <path d="M217 370 L226 362 L233 368 L223 378 Z"/>
+        <path d="M576 374 L589 366 L596 375 L581 385 Z"/>
+      </g>
+    <svg width="420" height="140.68359375" viewBox="0 0 2048 686" x="190" y="320" data-part="sunglasses">
+<title>Black angular sunglasses, isolated</title><desc>Editable vector tracing of the original two-lens sunglasses artwork, with transparent background.</desc>
+<defs>
+<linearGradient id="krf-frameShade" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#161616"/><stop offset=".45" stop-color="#151515"/><stop offset="1" stop-color="#151515"/></linearGradient>
+<linearGradient id="krf-lensShade" x1=".15" y1="0" x2=".8" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fdfbf7"/><stop offset=".6" stop-color="#fdfbf7"/><stop offset="1" stop-color="#fcfbf7"/></linearGradient>
+</defs>
+<path id="krf-frame" d="M2010.0,194.0 2007.0,147.0 2004.0,136.0 1999.0,126.0 1989.0,116.0 1980.0,111.0 1967.0,107.0 1946.0,104.0 1433.0,107.0 1039.0,119.0 903.0,117.0 790.0,112.0 617.0,107.0 94.0,107.0 66.0,112.0 56.0,117.0 47.0,127.0 39.0,147.0 36.0,180.0 36.0,214.0 39.0,226.0 48.0,241.0 157.0,362.0 338.0,557.0 360.0,578.0 378.0,593.0 402.0,606.0 416.0,609.0 574.0,609.0 594.0,605.0 618.0,592.0 697.0,539.0 701.0,535.0 742.0,509.0 746.0,505.0 912.0,400.0 931.0,391.0 962.0,381.0 989.0,377.0 1018.0,376.0 1044.0,377.0 1063.0,380.0 1078.0,384.0 1109.0,398.0 1130.0,413.0 1185.0,458.0 1320.0,573.0 1345.0,593.0 1363.0,604.0 1383.0,609.0 1549.0,609.0 1577.0,602.0 1598.0,591.0 1622.0,575.0 1678.0,531.0 1783.0,440.0 1894.0,338.0 1999.0,236.0 2005.0,227.0 2009.0,216.0Z" fill="url(#krf-frameShade)" opacity=".996"/>
+<path id="krf-right-lens" d="M1725.0,153.0 1717.0,150.0 1321.0,155.0 1310.0,158.0 1301.0,166.0 1298.0,172.0 1297.0,181.0 1302.0,197.0 1406.0,451.0 1445.0,551.0 1449.0,557.0 1456.0,563.0 1463.0,566.0 1471.0,567.0 1497.0,567.0 1506.0,565.0 1514.0,561.0 1569.0,524.0 1636.0,476.0 1786.0,360.0 1792.0,353.0 1795.0,347.0 1796.0,335.0 1751.0,209.0 1737.0,166.0 1734.0,161.0Z" fill="url(#krf-lensShade)" opacity=".996"/>
+<path id="krf-left-lens" d="M363.0,168.0 361.0,173.0 362.0,188.0 369.0,203.0 503.0,547.0 507.0,555.0 514.0,562.0 528.0,567.0 537.0,566.0 545.0,563.0 628.0,516.0 767.0,433.0 777.0,423.0 780.0,415.0 779.0,401.0 691.0,168.0 685.0,161.0 674.0,156.0 380.0,156.0 369.0,161.0Z" fill="url(#krf-lensShade)" opacity=".996"/>
+</svg></g>
+
+    </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(87 226)" data-object="heart-left" style="--krf-time:7.2s;--krf-x-delay:-2.800s;--krf-y-delay:-1.000s;--krf-roll-delay:-1.450s;--krf-x-min:-5px;--krf-x-max:5px;--krf-y-min:-12px;--krf-y-max:12px;--krf-roll-min:-5deg;--krf-roll-max:5deg">
+      <g class="krf-motion krf-orbit-x">
+        <g class="krf-motion krf-orbit-y">
+          <g class="krf-motion krf-orbit-roll">
+            <g transform="rotate(-17) scale(3.55) translate(-17 -17)">
+              <path d="M2.65625 13.4717C2.65625 16.2267 4.05262 18.6627 6.19106 20.1401L15.3112 28.0973C16.3946 29.0426 18.0133 29.03 19.0819 28.0679L28.254 19.8104C30.1391 18.3144 31.3438 16.0307 31.3438 13.4717C31.3438 8.96552 27.6079 5.3125 22.9993 5.3125C20.6443 5.3125 18.5172 6.26635 17 7.80049C15.4828 6.26635 13.3557 5.3125 11.0008 5.3125C6.39223 5.3125 2.65625 8.96552 2.65625 13.4717Z" fill="#FF4B4B" stroke="white" stroke-width="2"/>
+              <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M10.6619 16.9888C12.5042 16.9888 13.9977 15.4513 13.9977 13.5546C13.9977 11.6579 12.5042 10.1204 10.6619 10.1204C8.81964 10.1204 7.32617 11.6579 7.32617 13.5546C7.32617 15.4513 8.81964 16.9888 10.6619 16.9888Z" fill="white"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(713 223)" data-object="gem-right" style="--krf-time:8.0s;--krf-x-delay:-5.300s;--krf-y-delay:-3.300s;--krf-roll-delay:-3.750s;--krf-x-min:-5px;--krf-x-max:5px;--krf-y-min:-13px;--krf-y-max:13px;--krf-roll-min:-5deg;--krf-roll-max:5deg">
+      <g class="krf-motion krf-orbit-x">
+        <g class="krf-motion krf-orbit-y">
+          <g class="krf-motion krf-orbit-roll">
+            <g transform="rotate(14) scale(3.75) translate(-12 -15)">
+              <path d="M3.12035 6.45972C1.80438 7.25391 1 8.67887 1 10.2159V19.8822C1 21.4192 1.80438 22.8442 3.12035 23.6384L9.59501 27.5458C10.9891 28.3872 12.7345 28.3872 14.1287 27.5459L20.6037 23.6384C21.9197 22.8442 22.7241 21.4192 22.7241 19.8821V10.216C22.7241 8.67889 21.9197 7.2539 20.6037 6.45972L14.1287 2.55221C12.7345 1.71089 10.9891 1.71091 9.59501 2.55226L3.12035 6.45972Z" fill="#1CB0F6" stroke="white" stroke-width="2"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2449 5.45314C10.9645 5.01112 11.8902 5.52889 11.8902 6.37339V9.53852C11.8902 9.91649 11.6926 10.267 11.3692 10.4626L8.42194 12.2455C8.05585 12.4669 7.59354 12.4514 7.24315 12.2058L4.85711 10.5338C4.22068 10.0878 4.24944 9.13584 4.91163 8.7291L10.2449 5.45314Z" fill="#DDF4FF"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(100 510)" data-object="gem-left" style="--krf-time:6.4s;--krf-x-delay:-3.600s;--krf-y-delay:-2.000s;--krf-roll-delay:-2.450s;--krf-x-min:-4px;--krf-x-max:4px;--krf-y-min:-10px;--krf-y-max:10px;--krf-roll-min:-6deg;--krf-roll-max:6deg">
+      <g class="krf-motion krf-orbit-x">
+        <g class="krf-motion krf-orbit-y">
+          <g class="krf-motion krf-orbit-roll">
+            <g transform="rotate(-12) scale(2.55) translate(-12 -15)">
+              <path d="M3.12035 6.45972C1.80438 7.25391 1 8.67887 1 10.2159V19.8822C1 21.4192 1.80438 22.8442 3.12035 23.6384L9.59501 27.5458C10.9891 28.3872 12.7345 28.3872 14.1287 27.5459L20.6037 23.6384C21.9197 22.8442 22.7241 21.4192 22.7241 19.8821V10.216C22.7241 8.67889 21.9197 7.2539 20.6037 6.45972L14.1287 2.55221C12.7345 1.71089 10.9891 1.71091 9.59501 2.55226L3.12035 6.45972Z" fill="#1CB0F6" stroke="white" stroke-width="2"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2449 5.45314C10.9645 5.01112 11.8902 5.52889 11.8902 6.37339V9.53852C11.8902 9.91649 11.6926 10.267 11.3692 10.4626L8.42194 12.2455C8.05585 12.4669 7.59354 12.4514 7.24315 12.2058L4.85711 10.5338C4.22068 10.0878 4.24944 9.13584 4.91163 8.7291L10.2449 5.45314Z" fill="#DDF4FF"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(710 512)" data-object="heart-right" style="--krf-time:7.6s;--krf-x-delay:-6.200s;--krf-y-delay:-4.300s;--krf-roll-delay:-4.750s;--krf-x-min:-4px;--krf-x-max:4px;--krf-y-min:-12px;--krf-y-max:12px;--krf-roll-min:-5deg;--krf-roll-max:5deg">
+      <g class="krf-motion krf-orbit-x">
+        <g class="krf-motion krf-orbit-y">
+          <g class="krf-motion krf-orbit-roll">
+            <g transform="rotate(15) scale(3.05) translate(-17 -17)">
+              <path d="M2.65625 13.4717C2.65625 16.2267 4.05262 18.6627 6.19106 20.1401L15.3112 28.0973C16.3946 29.0426 18.0133 29.03 19.0819 28.0679L28.254 19.8104C30.1391 18.3144 31.3438 16.0307 31.3438 13.4717C31.3438 8.96552 27.6079 5.3125 22.9993 5.3125C20.6443 5.3125 18.5172 6.26635 17 7.80049C15.4828 6.26635 13.3557 5.3125 11.0008 5.3125C6.39223 5.3125 2.65625 8.96552 2.65625 13.4717Z" fill="#FF4B4B" stroke="white" stroke-width="2"/>
+              <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M10.6619 16.9888C12.5042 16.9888 13.9977 15.4513 13.9977 13.5546C13.9977 11.6579 12.5042 10.1204 10.6619 10.1204C8.81964 10.1204 7.32617 11.6579 7.32617 13.5546C7.32617 15.4513 8.81964 16.9888 10.6619 16.9888Z" fill="white"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -3,6 +3,7 @@ import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { readJsonBody, sendJson } from './http.mjs';
 import { renderStudentDashboard } from './student-dashboard.mjs';
+import { DEVICE_COOKIE, readCookie } from './browser-registration.mjs';
 
 const COOKIE = 'khutwa_cloudflare_session';
 const MAX_OFFLINE_AGE = 30 * 24 * 60 * 60 * 1000;
@@ -54,7 +55,10 @@ export async function createCloudflareDevelopmentBackend({ cachePath,
     target.pathname = local.pathname;
     target.search = local.search;
     const headers = new Headers({ Accept:local.pathname === '/students' ? 'text/html' : 'application/json', Origin:target.origin });
-    if (token) headers.set('Cookie', `tawjihi_session=${token}`);
+    const device = readCookie(request.headers.cookie);
+    const cookiesToForward = [token && `tawjihi_session=${token}`, device && `${DEVICE_COOKIE}=${device}`].filter(Boolean);
+    if (cookiesToForward.length) headers.set('Cookie', cookiesToForward.join('; '));
+    if (request.headers['user-agent']) headers.set('User-Agent', request.headers['user-agent']);
     if (request.headers['x-progress-owner']) headers.set('X-Progress-Owner', request.headers['x-progress-owner']);
     const body = ['GET', 'HEAD'].includes(request.method) ? undefined : JSON.stringify(await readJsonBody(request));
     if (body) headers.set('Content-Type', 'application/json');

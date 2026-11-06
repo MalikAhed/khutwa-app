@@ -40,7 +40,7 @@
 .subject-map .subject-card__hero { grid-column:2; grid-row:1; display:flex; align-items:end; min-height:0; padding:22px 0 6px; overflow:visible; background:none; color:inherit; direction:rtl; }
 .subject-map .subject-card h2 { font-size:clamp(23px,2.6cqi,30px); font-weight:900; line-height:1.6; }
 .subject-map[data-catalog="learn"] .subject-card__details { grid-column:2; grid-row:2; display:flex; align-items:start; gap:20px; min-height:0; padding:10px 0 24px; border-radius:0; background:none; direction:rtl; }
-.subject-map[data-catalog="learn"] .subject-card__progress-track { flex:1; min-width:0; height:28px; --progress-gloss-inset:12px; margin-top:3px; border:0; background:color-mix(in srgb,var(--card-surface) 24%,white); }
+.subject-map[data-catalog="learn"] .subject-card__progress-track { flex:1; min-width:0; height:28px; --progress-gloss-inset:12px; margin-top:3px; border:0; background:#fff; }
 .subject-map[data-catalog="learn"] .subject-card__progress-track>span { background:var(--card-accent); }
 .subject-map[data-catalog="learn"] .subject-card__progress-count { position:absolute; top:50%; left:50%; translate:-50% -50%; padding:0 6px; background:none; color:var(--card-ink); font:900 15px/1.3 var(--font-numeric); direction:ltr; max-width:100%; white-space:nowrap; }
 .subject-card--rated { cursor:default; }

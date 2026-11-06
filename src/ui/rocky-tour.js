@@ -13,7 +13,7 @@ const descriptions = {
   flashcard:{ mode:"lesson",placement:"footer",title:"والآن… جرّب أن تتذكّر",message:"أجب في ذهنك، ثم المس البطاقة لترى الحل.",selectors:["[data-exam-card]"] },
   "flashcard-answer":{ mode:"lesson",side:"left",title:"قارن إجابتك بالحل",message:"وجدت خطأ في سؤال؟ أبلغ عنه بالعلم أعلى اليسار، ثم تابع.",selectors:["[data-question-report]","[data-exam-card]"] },
   level:{ title:"كل إجابة تُقرّبك",message:"الإجابة الصحيحة الجديدة تمنحك 10 XP. كل 100 XP ترفع مستواك.",selectors:[".dashboard-stat--level"],next:"streak",nextLabel:"متابعة" },
-  streak:{ title:"خطوة صغيرة كل يوم",message:"تعلّم يوميًا لتحافظ على سلسلتك. تبدأ بـ200 جوهرة و10 قلوب. كل إجابة تستهلك قلبًا، ويتجدد قلب كل 12 دقيقة. مع سوبر تحصل على قلوب وجواهر غير محدودة.",selectors:[".app-stat--streak",".app-stat--gems",".app-stat--hearts"],next:"navigation",nextLabel:"متابعة" },
+  streak:{ title:"خطوة صغيرة كل يوم",message:"تعلّم يوميًا لتحافظ على سلسلتك. تبدأ بـ200 جوهرة و10 قلوب. كل إجابة تستهلك قلبًا. تتجدد القلوب العشرة عند منتصف الليل بتوقيت فلسطين بعد الاتصال بالإنترنت. مع سوبر تحصل على قلوب وجواهر غير محدودة.",selectors:[".app-stat--streak",".app-stat--gems",".app-stat--hearts"],next:"navigation",nextLabel:"متابعة" },
   navigation:{ title:"أنت جاهز!",message:"اختر مادة لتتابع التعلّم. بقية أقسام التطبيق ستتوفر قريبًا.",selectors:[".nav-links [data-page=learn]",".nav-links [data-page=shop]"],next:"done",nextLabel:"لنواصل التعلّم",mood:"celebrate" },
 };
 

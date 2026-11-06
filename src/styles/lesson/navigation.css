@@ -1,5 +1,6 @@
 /* The shared footer owns navigation size, layout and states for every lesson type. */
 .level-layout-actions {
+  --question-rating-surface:var(--system-surface,#fff);
   position: relative;
   z-index: 2;
   display: grid;
@@ -56,8 +57,9 @@
 .level-action:disabled { --action-edge: #c5c9cc; border-color: #d7dce0; background: #e7ebee; color: #63717d; cursor: not-allowed; }
 .level-action:focus-visible { outline: 3px solid var(--system-focus); outline-offset: 4px; }
 .level-action--check > span { min-width: 0; flex: 1; white-space: normal; overflow-wrap: anywhere; }
-.level-layout-actions:has(.level-feedback.is-correct) { background: var(--system-green-soft, #d7ffb8); }
-.level-layout-actions:has(.level-feedback.is-wrong) { background: var(--system-red-soft, #ffdfe0); }
+.level-layout-actions:has(.level-feedback.is-correct) { --question-rating-top-space:8px; --question-rating-surface:var(--system-green-soft,#d7ffb8); background:var(--question-rating-surface); }
+.level-layout-actions:has(.level-feedback.is-wrong) { --question-rating-top-space:8px; --question-rating-surface:var(--system-red-soft,#ffdfe0); background:var(--question-rating-surface); }
+.level-layout-actions:has(.level-feedback:is(.is-correct,.is-wrong))::before { content:""; position:absolute; bottom:100%; inset-inline:0; height:var(--question-rating-overlap,0px); background:var(--question-rating-surface); pointer-events:none; }
 .level-layout-actions .level-feedback.is-correct { color: #46a302; }
 .level-layout-actions .level-feedback.is-wrong { color: #d93636; }
 .ui-lab-mcq-open .level-layout-actions:has(> .level-feedback.is-wrong) [data-template-primary] {
@@ -84,13 +86,12 @@
   .level-layout-actions:not(.level-layout-actions--explanations):not(:has([data-template-back]:not([hidden]))) [data-template-primary] { grid-column:1; }
   .level-action--check kbd { display: none; }
 }
-/* Every question rating gets its own full-width row above the actions. */
-.level-layout-actions:has(> .level-question-rating-panel:not([hidden])) { grid-template-rows:auto auto auto; row-gap:var(--question-rating-gap,12px); }
+/* Question controls cover the reading area from their top edge down. */
 .lesson-exam-actions { --question-rating-gap:6px; padding-top:var(--space-2); }
-.level-layout-actions:has(> .level-question-rating-panel:not([hidden])) > .level-feedback { grid-column:1 / -1; grid-row:1; justify-self:start; }
-.level-layout-actions > .level-question-rating-panel { position:relative; grid-column:1 / -1; grid-row:2; justify-self:stretch; }
+.level-layout-actions > .level-question-rating-panel { position:absolute; bottom:100%; left:var(--page-gutter-left); right:var(--page-gutter-right); width:auto; padding-top:var(--question-rating-top-space,0px); padding-bottom:var(--question-rating-gap,4px); background:var(--question-rating-surface); z-index:1; }
 .lesson-exam-actions > .level-question-rating-panel[inert] { visibility:hidden; }
-.level-layout-actions:has(> .level-question-rating-panel:not([hidden])) :is([data-template-back],[data-template-primary]) { grid-row:3; }
+.level-layout-preview.question-overlays :is(.ui-lab-mcq,.lesson-flashcard-copy) { position:relative; }
+.level-layout-preview.question-overlays :is(.ui-lab-mcq,.lesson-flashcard-copy)::after { content:""; position:absolute; top:100%; left:0; width:1px; height:var(--question-rating-overlap,0px); pointer-events:none; }
 .level-layout-actions .level-question-rating-prompt { position:static; }
 .ui-lab-mcq-open .level-layout-actions:not(.level-layout-actions--explanations):has(> .level-feedback:is(.is-correct, .is-wrong)) [data-template-back] { display:none; }
 .ui-lab-mcq-open .level-layout-actions:not(.level-layout-actions--explanations):has(> .level-feedback:is(.is-correct, .is-wrong)) > .level-feedback {
@@ -121,11 +122,12 @@
   .level-layout-actions > .level-feedback:is(.is-correct, .is-wrong) { animation: none; }
 }
 
-/* Question numbers sit above ratings at every viewport width. */
+/* The number strip stays in place while ratings float above it. */
 .level-layout-actions.level-layout-actions--question-slider { grid-template-rows:auto auto; row-gap:8px; }
-.level-layout-actions--question-slider > .question-footer-toolbar { grid-column:1 / -1; grid-row:1; display:flex; flex-direction:column; align-items:stretch; gap:12px; min-width:0; }
+.level-layout-actions--question-slider > .question-footer-toolbar { position:relative; grid-column:1 / -1; grid-row:1; display:flex; flex-direction:column; align-items:stretch; gap:12px; min-width:0; }
 .question-footer-toolbar > .question-number-slider { width:100%; min-width:0; }
-.question-footer-toolbar > .level-question-rating-panel { width:100%; min-width:0; gap:0; }
+.question-number-slider > [data-question-skips] { display:block; margin-top:5px; color:var(--system-muted); text-align:center; font:var(--type-helper); }
+.question-footer-toolbar > .level-question-rating-panel { position:absolute; bottom:100%; left:0; right:0; width:100%; min-width:0; gap:0; padding-top:var(--question-rating-top-space,0px); padding-bottom:4px; background:var(--question-rating-surface); }
 .question-footer-toolbar .level-question-ratings label > span { min-height:42px; padding:4px 2px; font-size:14px; gap:4px; }
 .question-footer-toolbar .question-rating-save-status:empty { display:none; }
 .level-layout-actions.level-layout-actions--question-slider:has(> .question-footer-toolbar) :is([data-template-back],[data-template-primary],[data-question-explain]) { grid-row:2; }

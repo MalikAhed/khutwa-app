@@ -129,6 +129,7 @@ export function registerMarkup() {
         <h1 tabindex="-1">اختر كلمة مرور</h1>
         <div class="onboarding-step-fields">
         ${field("password", "", 'aria-label="كلمة المرور" type="password" autocomplete="new-password" maxlength="128" required', true)}
+        <p class="auth-hint">يرتبط حسابك بمتصفح كمبيوتر واحد ومتصفح هاتف واحد، حتى بعد تسجيل الخروج. احتفظ ببيانات الموقع واستخدم المتصفح نفسه.</p>
         </div>
         </div>
         ${onboardingActions({ submit:true })}
@@ -152,6 +153,7 @@ export function signInMarkup() {
   const form = `<form class="auth-form" data-sign-in-form novalidate>
     ${field("identifier", "اسم المستخدم أو رقم الهاتف", 'autocomplete="username" maxlength="254" required')}
     ${field("password", "كلمة المرور", 'type="password" autocomplete="current-password" maxlength="128" required')}
+    <p class="auth-hint">متصفح كمبيوتر واحد ومتصفح هاتف واحد للحساب. تسجيل الخروج لا يغيّر المتصفحات المسجّلة. لا تحذف بيانات الموقع.</p>
     <div class="auth-form-status"><div class="visitor-callout visitor-callout--error" data-auth-error role="alert" hidden></div></div>
     <button class="visitor-primary system-action system-action--primary system-action--prominent" type="submit">تسجيل الدخول</button>
   </form>`;

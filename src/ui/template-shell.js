@@ -103,8 +103,18 @@ export function mountTemplateScrollIndicator(container, { signal, surface = cont
   const update = () => {
     if (signal?.aborted) return;
     const zoom = Number(getComputedStyle(surface).zoom) || 1;
-    const overflow = surface.scrollHeight > surface.parentElement.clientHeight / zoom + 2;
-    const moreBelow = surface.clientHeight > 0 && overflow && surface.scrollHeight - surface.clientHeight - surface.scrollTop > 2;
+    const layout = surface.closest(".question-overlays");
+    const overflow = surface.scrollHeight > (layout ? surface.clientHeight : surface.parentElement.clientHeight / zoom) + 2;
+    let moreBelow = surface.clientHeight > 0 && overflow && surface.scrollHeight - surface.clientHeight - surface.scrollTop > 2;
+    if (layout) {
+      const overlap = parseFloat(getComputedStyle(layout).getPropertyValue("--question-rating-overlap")) || 0;
+      const visibleBottom = Math.min(surface.getBoundingClientRect().bottom,layout.querySelector('.level-layout-content').getBoundingClientRect().bottom-overlap);
+      const copy = surface.querySelector(":scope > .lesson-flashcard-copy,:scope > .ui-lab-mcq");
+      if (copy) moreBelow = surface.clientHeight > 0 && copy.getBoundingClientRect().bottom > visibleBottom + 2;
+      const anchor = button.parentElement;
+      const scale = anchor.getBoundingClientRect().height / anchor.offsetHeight || 1;
+      button.style.bottom = `${Math.max(0,(anchor.getBoundingClientRect().bottom-visibleBottom)/scale)}px`;
+    }
     if (surface.classList.contains("level-layout-task")) surface.tabIndex = overflow ? 0 : -1;
     if (!moreBelow && button === document.activeElement) surface.focus({ preventScroll:true });
     button.hidden = !moreBelow;

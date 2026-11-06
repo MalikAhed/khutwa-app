@@ -6,7 +6,7 @@ export const STUDENT_DASHBOARD_PATH = "/students";
 export function renderStudentDashboard({version=""}={}) {
   const suffix=version?`?v=${encodeURIComponent(version)}`:"";
   return `<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#edf8fe">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#edf8fe"><meta name="color-scheme" content="only light">
 <title>إدارة الطلاب | خطوة</title><link rel="icon" href="/assets/brand/khotwa-wordmark.svg"><link rel="stylesheet" href="/src/styles/student-dashboard.css${suffix}"><script type="module" src="/src/ui/student-dashboard.js${suffix}"></script></head>
 <body><a class="skip-link" href="#main-content">انتقل إلى الطلاب</a>
 <aside class="sidebar" aria-label="التنقل الرئيسي">

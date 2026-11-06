@@ -9,6 +9,8 @@ import { renderLessonError, renderLessonLoading } from "./lesson/status.js";
 import { mountSubjectRoadmap } from "./subject-roadmap.js";
 import { getShellViewportBounds } from "./app-shell.js";
 import { mountHeartDepletion } from "./heart-depletion.js";
+import { QUESTION_NAVIGATION_LIMIT_ENABLED } from "../domain/learner-resources.js";
+import { hasFreeLessonPractice, QUESTION_JUMPS_REQUIRE_SUPER } from '../domain/free-practice.js';
 import { prioritizeInteraction, prioritizeLesson } from "../app/background-loading.js";
 
 
@@ -27,6 +29,7 @@ export function createSubjectLearningController({
   onRequireAccount,
   onComingSoon,
   onReturnToRoadmap,
+  onReturnHome,
 }) {
   const progressContext = () => ({ ownerId:productService.getLearnerProgressOwner(), store:progressStore });
   let selectedPartId = null;
@@ -323,12 +326,14 @@ export function createSubjectLearningController({
             lessonShare:home.currentQuestionsTotal ? Math.round(lesson.steps.length / home.currentQuestionsTotal * 100) : undefined };
         };
         const before = currentOutcome();
+        const sessionGemUpdates = new Set();
         let heartDepletion;
         const outcome = () => {
           const after = currentOutcome();
           const result = {
             ...after,
             xpGain: after.totalXp - before.totalXp,
+            gemGain:[...sessionGemUpdates].reduce((total,id) => total + (resourceStore?.getGemReward?.(ownerId,id) || 0),0),
             progressGain: after.progress - before.progress,
             streakGain: Math.max(0, after.streak - before.streak),
             alreadyCompleted:saved.completed,
@@ -349,6 +354,22 @@ export function createSubjectLearningController({
           {
             isLessonPart: true,
             demoMode,
+            onReturnHome,
+            initialQuestionId:!demoMode && !reviewStepId ? resourceStore?.getNavigationCursor(ownerId,{subjectId:nextSubjectId,lessonId:nextLessonId}) : undefined,
+            getNavigationStatus:QUESTION_NAVIGATION_LIMIT_ENABLED && resourceStore ? () => ({remaining:resourceStore.get(ownerId).navigationRemaining ?? 5,unlimited:resourceStore.get(ownerId).unlimited}) : undefined,
+            subscribeNavigation:QUESTION_NAVIGATION_LIMIT_ENABLED ? resourceStore?.subscribe : undefined,
+            beforeQuestionNavigation:(QUESTION_NAVIGATION_LIMIT_ENABLED || QUESTION_JUMPS_REQUIRE_SUPER) && !demoMode && resourceStore ? async (id,options) => {
+              if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) throw new Error('The active learner changed.');
+              const key = sourceKey(id);
+              const solved = store.getReview({ ...key, ownerId }).some(item => item.stepId === id && item.solved);
+              try { await resourceStore.navigate(ownerId,key,{ ...options, solved }); }
+              catch (error) {
+                if (operation.isCurrent() && ['navigation-limit','super-required'].includes(error.code)) heartDepletion?.show('navigation');
+                else if (operation.isCurrent() && error.code === 'connection-required') heartDepletion?.show('connection');
+                throw error;
+              }
+              if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) throw new Error('The active learner changed.');
+            } : undefined,
             questionFilterIds:rating ? getRatedSubjectQuestions(nextSubjectId,questionFeedback).filter(question => question.lessonId === nextLessonId && question.rating === rating).map(question => question.stepId) : undefined,
             onLessonEvent:demoMode ? event => onboardingTour.lessonEvent(event) : undefined,
             getQuestionExplanation:resourceStore ? step => {
@@ -359,7 +380,12 @@ export function createSubjectLearningController({
                 subscribe:resourceStore.subscribe,
                 unlock:async ({signal}) => {
                   if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) throw new Error("The active learner changed.");
-                  const result = await resourceStore.unlockExplanation(ownerId,key,{signal,step});
+                  let result;
+                  try { result = await resourceStore.unlockExplanation(ownerId,key,{signal,step}); }
+                  catch (error) {
+                    if (operation.isCurrent() && error.code === 'insufficient-gems') heartDepletion?.show('gems');
+                    throw error;
+                  }
                   if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) throw new Error("The active learner changed.");
                   return result;
                 },
@@ -377,6 +403,7 @@ export function createSubjectLearningController({
               };
             },
             getCompletionOutcome: outcome,
+            subscribeRewards:resourceStore?.subscribe,
             onExitLesson: returnToRoadmap,
             onFinishLesson: () => {
               if (demoMode && onboardingTour?.finishLesson()) return;
@@ -384,25 +411,36 @@ export function createSubjectLearningController({
             },
             reviewStepId,
             onReviewComplete: returnToRoadmap,
-            beforeAnswer:() => {
+            beforeAnswer:async () => {
               if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return "انتهت جلسة التعلّم.";
+              let connectionRequired = false;
+              const practiceKey = {subjectId:nextSubjectId,lessonId:nextLessonId};
+              const blocked = await resourceStore?.checkAnswerAccess(ownerId, { signal:operation.signal, key:practiceKey,
+                onConnectionRequired:() => {connectionRequired = true;} });
+              if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return "انتهت جلسة التعلّم.";
+              if (blocked) {
+                if (connectionRequired) heartDepletion?.show('connection');
+                else if (resourceStore.get(ownerId).hearts === 0) heartDepletion?.show('hearts');
+                return blocked;
+              }
               const balance = resourceStore?.get(ownerId);
-              if (!balance || balance.unlimited || balance.hearts > 0) return;
+              if (!balance || balance.unlimited || hasFreeLessonPractice(practiceKey) || balance.hearts > 0) return;
               heartDepletion?.show();
-              const minutes = Math.max(1, Math.ceil((balance.nextHeartAt - Date.now()) / 60000));
-              return `نفدت القلوب. ستحصل على قلب خلال ${minutes} دقيقة. تتجدد القلوب بمعدل قلب كل 12 دقيقة.`;
+              return "نفدت قلوب اليوم. تتجدد القلوب السبعة عند منتصف الليل بتوقيت فلسطين. اتصل بالإنترنت لتأكيد الرصيد الجديد.";
             },
             onAnswer: async ({ stepId, correct, reviewing = false }) => {
               if (typeof correct === "boolean" && !demoMode) {
                 void questionFeedback?.saveRating(sourceKey(stepId), correct ? "easy" : "hard", { automatic:true }).catch(() => {});
               }
-              return store.recordAnswer({
+              const result = await store.recordAnswer({
                 ownerId,
                 ...sourceKey(stepId),
                 correct,
                 ...(rating ? { rating } : {}),
                 reviewing: reviewing || Boolean(rating) || stepId === reviewStepId,
               });
+              if (result.updateId) sessionGemUpdates.add(result.updateId);
+              return result;
             },
             getMathFilterCatalog:!rating && isFilterSubject ? mathFilterCatalog : undefined,
             mathFilterState:mathFilters.get(mathFilterKey(ownerId, nextSubjectId, nextLessonId)),
@@ -442,7 +480,9 @@ export function createSubjectLearningController({
         );
         operation.add(rendered.destroy);
         if (resourceStore) {
-          heartDepletion = mountHeartDepletion({ resourceStore, ownerId, signal:operation.signal, returnFocus:elements.lessonContent });
+          heartDepletion = mountHeartDepletion({ resourceStore, ownerId, signal:operation.signal, returnFocus:elements.lessonContent, onReturnHome,
+            autoShowEmpty:!hasFreeLessonPractice({subjectId:nextSubjectId,lessonId:nextLessonId}),
+            onReturnToSubject:() => returnToRoadmap() });
           operation.add(heartDepletion.destroy);
         }
         showContentView();

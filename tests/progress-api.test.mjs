@@ -12,11 +12,144 @@ import { readJsonBody } from '../src/server/http.mjs';
 import { loadSubjectLessonPart } from '../src/data/lessons/subject-lesson-registry.js';
 import { getQuestionXp } from '../src/domain/question-rewards.js';
 import { SUPER_TRIAL_MS } from '../src/domain/learner-resources.js';
+import { hasFreeLessonPractice } from '../src/domain/free-practice.js';
+import { getPartQuestionIds } from '../src/domain/question-rewards.js';
 import { currentPartProgress, emptyPart, partKey } from '../src/domain/subject-progress.js';
 
 const part={subjectId:'ict',lessonId:'database-management',partId:'access-basics'};
 const lesson=await loadSubjectLessonPart(part.subjectId,part.lessonId,part.partId);
 const steps=lesson.steps.map(step=>step.id);
+
+test('first entry and re-entry are unlimited without spending resources',async t=>{
+  const {request}=await fixture(t);
+  const ids=getPartQuestionIds(part);
+  const nav=(stepId,id,kind)=>({...part,stepId,type:'question-navigation',id,kind});
+  for(const [stepId,id,kind] of [[ids[0],'intro-first-question','continue'],[ids[0],'intro-return-question','enter']]) {
+    const result=await request(nav(stepId,id,kind));
+    assert.equal(result.status,200);
+    assert.equal(result.body.resources.navigationUnlimited,false);
+    assert.equal(result.body.resources.hearts,7);
+    assert.equal(result.body.resources.gems,200);
+  }
+});
+
+test('navigation honors historical question aliases and the persisted second-math subject identity',async t=>{
+  const {request,accounts}=await fixture(t);
+  const ids=getPartQuestionIds(part);
+  const nav=(key,stepId,id,kind='enter')=>({...key,stepId,type:'question-navigation',id,kind});
+  await request(nav(part,ids[0],'alias-navigation-entry'));
+  assert.equal((await request({...part,stepId:'exam-p61-q6-a2',id:'alias-navigation-answer',type:'answer',correct:false})).status,200);
+  assert.equal((await request(nav(part,ids[1],'alias-navigation-next','continue'))).body.resources.navigationRemaining,5,'historical aliases remain accepted');
+  await request({...part,id:'alias-navigation-import',type:'import',completedStepIds:[],isComplete:false,
+    review:[{stepId:'exam-p61-q6-a2',misses:1,active:false}]},accounts[1]);
+  assert.equal((await request(nav(part,ids[1],'alias-navigation-resume'),accounts[1])).body.resources.navigationRemaining,5,'legacy progress remains compatible with unrestricted navigation');
+  const math={subjectId:'mathematics',lessonId:'matrices',partId:'matrices-practice'};
+  const questions=getPartQuestionIds(math);
+  assert.equal((await request(nav(math,questions[0],'math-two-navigation-entry'))).body.resources.navigationRemaining,5);
+  await request({...math,stepId:questions[0],id:'math-two-navigation-answer',type:'answer',correct:false});
+  assert.equal((await request(nav(math,questions[1],'math-two-navigation-next','continue'))).body.resources.navigationRemaining,5);
+});
+
+test('free jumps require Super while normal entry and continuation ignore the retired allowance',async t=>{
+  const {request,accounts,store,databasePath}=await fixture(t);
+  const ids=getPartQuestionIds(part);
+  let sequence=0;
+  const nav=(stepId,kind='jump')=>({...part,stepId,type:'question-navigation',id:`nav-test-${++sequence}`,kind});
+  const db=new DatabaseSync(databasePath);
+  try {
+    const savedAt=Date.now();
+    db.prepare('INSERT INTO learner_navigation_allowance VALUES(?,?,?)').run(Number(accounts[0].id),5,savedAt);
+    const secondSession={id:accounts[0].id,token:store.createSession(accounts[0].id).token};
+    const attempts=await Promise.all(ids.slice(0,12).map((id,n)=>request(nav(id),n%2?secondSession:accounts[0])));
+    assert.ok(attempts.every(result=>result.status===402));
+    for(const kind of ['enter','continue'])assert.equal((await request(nav(ids[0],kind))).status,200);
+    const resources=(await request()).body.resources;
+    assert.equal(resources.navigationUnlimited,false);
+    assert.equal(Object.keys(resources.navigationCursors).length,0,'unlimited browsing does not write retired cursor locks');
+    assert.equal(resources.hearts,7);
+    assert.equal(resources.gems,200);
+    assert.deepEqual({...db.prepare('SELECT used,refill_at FROM learner_navigation_allowance WHERE account_id=?').get(Number(accounts[0].id))},{used:5,refill_at:savedAt},'retired allowance rows are preserved');
+    assert.equal((await request({...nav(ids[8]),navigationRemaining:5})).status,422);
+    assert.equal((await request({...nav(ids[8]),date:'2099-01-01'})).status,422);
+    assert.equal((await request(nav('not-a-published-question'))).status,422);
+    assert.equal((await request(nav(ids[9]),accounts[1])).status,402);
+    db.prepare("UPDATE accounts SET account_type='subscribed' WHERE id=?").run(Number(accounts[0].id));
+    for(const id of ids.slice(0,10))assert.equal((await request(nav(id))).status,200);
+    assert.equal((await request()).body.resources.navigationUnlimited,true);
+  } finally {db.close();}
+});
+
+test('free jumps use this account’s saved solves, not posted flags or mere attempts',async t=>{
+  const {request,accounts}=await fixture(t);
+  const [stepId,unsolved]=getPartQuestionIds(part);
+  const jump=(id=stepId)=>({...part,stepId:id,type:'question-navigation',kind:'jump',id:`solved-jump-${id}`});
+  assert.equal((await request(jump())).status,402);
+  await request({...part,stepId,type:'answer',correct:false,id:'attempt-before-solve'});
+  assert.equal((await request(jump())).status,402);
+  await request({...part,stepId,type:'answer',correct:true,id:'confirmed-first-solve'});
+  const before=(await request()).body.resources;
+  assert.equal((await request(jump())).status,200);
+  const after=(await request()).body.resources;
+  assert.equal(after.hearts,before.hearts,'revisiting costs no hearts');
+  assert.equal(after.gems,before.gems,'revisiting costs no gems');
+  assert.equal((await request(jump(unsolved))).status,402);
+  assert.equal((await request({...jump(unsolved),solved:true})).status,422);
+  assert.equal((await request(jump(),accounts[1])).status,402,'another student cannot use this solve');
+});
+
+test('every new correct solve grants seven gems and retries cannot farm rewards',async t=>{
+  const {request,accounts,databasePath}=await fixture(t);
+  const db=new DatabaseSync(databasePath);
+  try {
+    db.prepare('INSERT INTO learner_resources(account_id,hearts,gems,refill_at) VALUES(?,?,?,?)').run(Number(accounts[0].id),10,0,Date.now());
+    const ids=getPartQuestionIds(part).slice(0,10);
+    const answer=n=>({...part,stepId:ids[n],id:`gem-reward-${n}`,type:'answer',correct:true});
+    for(let n=0;n<10;n++){const result=await request(answer(n));assert.equal(result.status,200);assert.equal(result.body.gemReward,7);assert.equal(result.body.resources.gems,(n+1)*7);}
+    const earned=(await request()).body.resources;
+    assert.equal(earned.gems,70);assert.equal(earned.correctTowardGems,0);
+    assert.equal((await request(answer(9))).body.resources.gems,70,'a lost receipt cannot award twice');
+    const solutions=['exam-p09-q1-1'];
+    for(const stepId of solutions)assert.equal((await request({...part,type:'explanation-unlock',stepId})).status,200);
+    assert.equal((await request()).body.resources.gems,20);
+    assert.equal((await request()).body.resources.explanationUnlocks.length,1);
+    db.prepare('UPDATE learner_resources SET refill_at=? WHERE account_id=?').run(Date.now()-48*3600000,Number(accounts[0].id));
+    assert.equal((await request({...answer(0),id:'repeat-solved-question'})).status,200);
+    assert.equal((await request()).body.resources.gems,20,'a new attempt on an already solved question cannot farm gems');
+    assert.equal(db.prepare('SELECT correct_count FROM learner_gem_rewards WHERE account_id=?').get(Number(accounts[0].id)).correct_count,10);
+  } finally {db.close();}
+});
+
+test('legacy correct answers imported after a purchase establish the gem baseline without retroactive awards',async t=>{
+  const {request}=await fixture(t);
+  const ids=getPartQuestionIds(part);
+  assert.equal((await request({...part,stepId:ids[0],type:'explanation-unlock'})).status,200);
+  const imported={...part,id:'late-legacy-gem-baseline',type:'import',completedStepIds:[],isComplete:false,
+    review:ids.slice(0,9).map(stepId=>({stepId,misses:0,active:false,solved:true}))};
+  assert.equal((await request(imported)).body.resources.gems,150,'importing historical answers never grants gems');
+  const correct=await request({...part,stepId:ids[9],id:'correct-after-late-import',type:'answer',correct:true});
+  assert.equal(correct.body.resources.gems,157,'only the new correct question grants seven gems');
+  assert.equal((await request(imported)).body.resources.gems,157,'replaying the import cannot change the baseline or reward');
+});
+
+test('old batch counters never trigger retroactive credits and paid students also earn seven gems',async t=>{
+  for(const subscribed of [false,true]) {
+    const {request,accounts,databasePath}=await fixture(t,{subscribed});
+    const db=new DatabaseSync(databasePath);
+    try {
+      db.prepare('INSERT INTO learner_resources VALUES(?,?,?,?)').run(Number(accounts[0].id),10,123,Date.now());
+      db.prepare('INSERT INTO learner_gem_rewards VALUES(?,?,?,?)').run(Number(accounts[0].id),20,2,8);
+      const answer={...part,stepId:getPartQuestionIds(part)[0],id:'new-policy-first-correct',type:'answer',correct:true};
+      const result=await request(answer);
+      assert.equal(result.status,200);assert.equal(result.body.gemReward,7);
+      assert.equal(result.body.resources.gems,130);
+      const replay=await request(answer);
+      assert.equal(replay.body.gemReward,7);assert.equal(replay.body.resources.gems,130);
+      const repeated=await request({...answer,id:'new-policy-repeat-correct'});
+      assert.equal(repeated.body.gemReward,0);assert.equal(repeated.body.resources.gems,130);
+      assert.equal(db.prepare('SELECT COUNT(*) AS n FROM answer_gem_rewards').get().n,1);
+    }finally{db.close();}
+  }
+});
 
 async function fixture(t, {subscribed = false} = {}) {
   const directory=await mkdtemp(path.join(tmpdir(),'learn-progress-api-'));
@@ -38,7 +171,7 @@ async function fixture(t, {subscribed = false} = {}) {
   const url=`http://127.0.0.1:${server.address().port}/api/progress`;
   t.after(async()=>{await new Promise(resolve=>server.close(resolve));store.close();await rm(directory,{recursive:true,force:true});});
   const request=async(body,actor=accounts[0],headers={})=>{
-    const response=await fetch(url,{method:body?'POST':'GET',headers:{'Content-Type':'application/json','X-Progress-Owner':`account:${actor.id}`,Cookie:`tawjihi_session=${actor.token}`,...headers},...(body?{body:JSON.stringify(body)}:{})});
+    const response=await fetch(url,{method:body?'POST':'GET',headers:{'Content-Type':'application/json','X-Progress-Owner':`account:${actor.id}`,Cookie:`tawjihi_session=${actor.token}; tawjihi_device=${createHash('sha256').update('fixture-browser:'+actor.id).digest('base64url')}`,...headers},...(body?{body:JSON.stringify(body)}:{})});
     return {status:response.status,body:await response.json()};
   };
   return {request,store,accounts,databasePath};
@@ -147,64 +280,58 @@ test('written questions earn XP only after a correct self check, including retri
   assert.equal((await request()).body.records[0][1].rewardXp, getQuestionXp({ ...key, stepId }));
 });
 
-test('answer hearts are atomic, idempotent, timed and unlimited for subscribers', async t => {
+test('answer hearts are atomic, idempotent, reset daily and remain unlimited for subscribers', async t => {
   const {request, accounts, databasePath} = await fixture(t);
   const initial = (await request()).body.resources;
-  assert.equal(initial.hearts, 10);
+  assert.equal(initial.hearts, 7);
   assert.equal(initial.gems, 200);
-  const stepId = lesson.steps.find(step => step.type === 'question').id;
+  const part = {subjectId:'ict',lessonId:'smartphone-operating-systems',partId:'android-features'};
+  const stepId = getPartQuestionIds(part)[0];
   const attempt = n => ({...part, id:`heart-answer-${n}`, type:'answer', stepId, correct:n % 2 === 0});
-  for (let n = 0; n < 10; n++) {
+  for (let n = 0; n < 7; n++) {
     const saved = await request(attempt(n));
     assert.equal(saved.status, 200);
-    assert.equal(saved.body.resources.hearts, 9 - n);
+    assert.equal(saved.body.resources.hearts, 6 - n);
   }
-  assert.equal((await request(attempt(9))).status, 200, 'a retry costs no extra heart');
-  assert.equal((await request(attempt(10))).status, 429, 'an empty balance rejects the answer');
-  assert.equal((await request(undefined, accounts[1])).body.resources.hearts, 10, 'accounts have independent balances');
+  assert.equal((await request(attempt(6))).status, 200, 'a retry costs no extra heart');
+  assert.equal((await request(attempt(7))).status, 429, 'an empty balance rejects the answer');
+  assert.equal((await request(undefined, accounts[1])).body.resources.hearts, 7, 'separate browsers retain separate allowances');
   const db = new DatabaseSync(databasePath);
   t.after(() => db.close());
-  db.prepare('UPDATE learner_resources SET refill_at=? WHERE account_id=?').run(Date.now() - 18 * 60 * 1000, Number(accounts[0].id));
-  const restored = (await request()).body.resources;
-  assert.equal(restored.hearts, 1, 'one heart is restored after 18 minutes');
-  assert.ok(restored.nextHeartAt - Date.now() > 5 * 60 * 1000, 'the remaining six minutes are retained');
-  assert.equal((await request(attempt(10))).status, 200);
+  const exhausted=(await request()).body.resources;
+  assert.equal(exhausted.hearts,0);
+  assert.ok(exhausted.nextHeartAt>Date.now());
+  db.prepare('UPDATE learner_resources SET refill_at=? WHERE account_id=?').run(Date.now()-48*60*60*1000,Number(accounts[0].id));
+  db.prepare("UPDATE browser_heart_attempts SET day='2000-01-01'").run();
+  assert.equal((await request()).body.resources.hearts,7,'both server-owned allowances reset each day');
+  assert.equal((await request(attempt(7))).status,200);
   db.prepare("UPDATE accounts SET account_type='subscribed' WHERE id=?").run(Number(accounts[0].id));
   for (let n = 11; n < 23; n++) assert.equal((await request(attempt(n))).status, 200);
   assert.equal((await request()).body.resources.unlimited, true);
 });
 
-test('a Super trial is authenticated, durable, one-time and expires without billing', async t => {
-  const {request,store,accounts,databasePath} = await fixture(t);
+test('retired trials cannot be activated through the API and old trial rows are retained without benefits', async t => {
+  const {request,store,accounts,databasePath}=await fixture(t);
   assert.equal((await request({type:'super-trial'},accounts[0],{Cookie:''})).status,401);
   assert.equal((await request({type:'super-trial'},accounts[1],{'X-Progress-Owner':`account:${accounts[0].id}`})).status,409);
   assert.equal((await request({type:'super-trial'},accounts[0],{Origin:'https://other.example'})).status,403);
   assert.equal((await request({type:'super-trial',trialEndsAt:Date.now()+1e12})).status,422);
-  const before = Date.now();
-  const [first,duplicate] = await Promise.all([request({type:'super-trial'}),request({type:'super-trial'})]);
-  assert.equal(first.status,200);
-  assert.equal(duplicate.body.resources.trialEndsAt,first.body.resources.trialEndsAt);
-  assert.ok(first.body.resources.trialEndsAt >= before + SUPER_TRIAL_MS);
-  assert.ok(first.body.resources.trialEndsAt <= Date.now() + SUPER_TRIAL_MS);
-  assert.equal((await request(undefined,accounts[1])).body.resources.unlimited,false);
-  const reopened = createAccountStore({databasePath});
-  try { assert.equal(reopened.progress.readResources(accounts[0].id).trialEndsAt,first.body.resources.trialEndsAt); }
-  finally { reopened.close(); }
-  const stepId = lesson.steps.find(step=>step.type==='question').id;
-  for(let n=0;n<12;n++) assert.equal((await request({...part,id:`trial-answer-${n}`,type:'answer',stepId,correct:false})).status,200);
-  assert.equal((await request()).body.resources.hearts,10);
-  const db = new DatabaseSync(databasePath);
+  const db=new DatabaseSync(databasePath);
+  const ends=Date.now()+SUPER_TRIAL_MS;
   try {
-    const expired = Date.now()-1;
-    db.prepare('UPDATE learner_super_trials SET ends_at=? WHERE account_id=?').run(expired,Number(accounts[0].id));
-    const retried = (await request({type:'super-trial'})).body.resources;
-    assert.equal(retried.unlimited,false);
-    assert.equal(retried.trialEligible,false);
-    assert.equal(retried.trialEndsAt,expired);
-    for(let n=0;n<10;n++) assert.equal((await request({...part,id:`expired-answer-${n}`,type:'answer',stepId,correct:false})).status,200);
-    assert.equal((await request({...part,id:'expired-answer-blocked',type:'answer',stepId,correct:false})).status,429);
+    db.prepare('INSERT INTO learner_super_trials VALUES(?,?)').run(Number(accounts[0].id),ends);
+    assert.equal((await request({type:'super-trial'})).status,403);
+    const current=(await request()).body.resources;
+    assert.equal(current.trialEndsAt,ends);
+    assert.equal(current.unlimited,false);
+    assert.equal(current.trialEligible,false);
+    assert.equal(db.prepare('SELECT ends_at FROM learner_super_trials WHERE account_id=?').get(Number(accounts[0].id)).ends_at,ends);
+    const part={subjectId:'ict',lessonId:'smartphone-operating-systems',partId:'android-features'};
+    const stepId=getPartQuestionIds(part)[0];
+    for(let n=0;n<7;n++)assert.equal((await request({...part,id:`retired-trial-${n}`,type:'answer',stepId,correct:false})).status,200);
+    assert.equal((await request({...part,id:'retired-trial-limit',type:'answer',stepId,correct:false})).status,429);
     assert.equal(store.getAccountForSession(accounts[0].token).accountType,'free');
-  } finally { db.close(); }
+  } finally {db.close();}
 });
 
 test('explanations cost 50 gems once, survive reopening and stay isolated from progress and other learners', async t => {
@@ -217,7 +344,7 @@ test('explanations cost 50 gems once, survive reopening and stay isolated from p
   for (const result of results) {
     assert.equal(result.status,200);
     assert.equal(result.body.resources.gems,150);
-    assert.equal(result.body.resources.hearts,10);
+    assert.equal(result.body.resources.hearts,7);
     assert.equal(result.body.resources.explanationUnlocks.length,1);
     assert.match(result.body.explanation.markdown,/MySQL/);
   }
@@ -255,18 +382,18 @@ test('unavailable solutions and insufficient gems cannot debit the learner or cr
   assert.equal((await request({...purchase,stepId:bought[0]})).status,200,'already purchased explanations stay readable at zero gems');
 });
 
-test('Super includes explanation unlocks, which remain available when the trial ends', async t => {
+test('paid Super includes explanation unlocks, which remain available when the subscription ends', async t => {
   const {request,databasePath,accounts} = await fixture(t);
   const db = new DatabaseSync(databasePath);
   try {
     db.prepare('INSERT INTO learner_resources VALUES(?,?,?,?)').run(Number(accounts[0].id),10,0,Date.now());
-    await request({type:'super-trial'});
+    db.prepare("UPDATE accounts SET account_type='subscribed' WHERE id=?").run(Number(accounts[0].id));
     const purchase = {...part,type:'explanation-unlock',stepId:'exam-p09-q1-1'};
     const result = await request(purchase);
     assert.equal(result.status,200);
     assert.equal(result.body.resources.gems,0);
     assert.equal(result.body.resources.explanationUnlocks.length,1);
-    db.prepare('UPDATE learner_super_trials SET ends_at=? WHERE account_id=?').run(Date.now()-1,Number(accounts[0].id));
+    db.prepare("UPDATE accounts SET account_type='free' WHERE id=?").run(Number(accounts[0].id));
     assert.equal((await request(purchase)).status,200);
     assert.equal((await request({...purchase,stepId:'exam-p57-q1-b2'})).status,402);
   } finally { db.close(); }
@@ -334,7 +461,7 @@ test('cross-part ICT aliases preserve database history, purchases, imports and r
     assert.equal(saved.status,200,JSON.stringify(saved.body));
     const review = currentPartProgress(new Map(saved.body.records),destination).review;
     assert.deepEqual(review,[{stepId,misses:0,active:false,solved:true}]);
-    assert.equal(saved.body.resources.hearts,before.body.resources.hearts-1);
+    assert.equal(saved.body.resources.hearts,before.body.resources.hearts-(hasFreeLessonPractice(answer) ? 0 : 1));
     assert.equal((await request(answer)).body.resources.hearts,saved.body.resources.hearts);
     assert.equal((await request({...answer,correct:false})).status,409);
     assert.equal((await request({...answer,id:`stale-moved-${index}`})).status,409,'a newer destination review cannot be reset from a stale part revision');

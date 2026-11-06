@@ -11,7 +11,7 @@ import { createLearnerStorage, defaultErrorReporter, GUEST_TRIAL_STORAGE_KEY, TE
 /** @typedef {VisitorSelection & {id:string, username:string, accountType:AccountType, displayName?:string, isOwner?:boolean}} ApiAccount */
 /** @typedef {{progressOwner:string, type:AccountType, displayName:string, homeScenarioId:string, isOwner?:boolean}} LearnerAccount */
 /** @typedef {VisitorSelection & {username:string, password:string, phone:string}} Registration */
-/** @typedef {{status:'invalid'|'unavailable'|'aborted'|'forbidden'|'rate-limited'|'duplicate', error?:string, field?:string, fieldErrors?:Record<string,string>}} AccountFailure */
+/** @typedef {{status:'invalid'|'unavailable'|'aborted'|'forbidden'|'rate-limited'|'duplicate'|'device-limit', error?:string, field?:string, fieldErrors?:Record<string,string>}} AccountFailure */
 /** @typedef {{status:'created'|'signed-in', accountType:AccountType}|AccountFailure} AccountResult */
 /** @typedef {{status:'available', field:string}|AccountFailure} AvailabilityResult */
 /** @typedef {{storage?:Storage|null, progressStore?:ReturnType<typeof import('./subject-progress-store.js').createSubjectProgressStore>|null, onError?:(error:Error)=>void, apiBase?:string|null, fetchImpl?:typeof fetch, offlineStorage?:Storage|null, offlineAccess?:ReturnType<typeof createOfflineAccess>}} SessionOptions */
@@ -19,7 +19,7 @@ import { createLearnerStorage, defaultErrorReporter, GUEST_TRIAL_STORAGE_KEY, TE
 
 /** @param {unknown} body @returns {AccountFailure} */
 function accountFailure(body) {
-  if (body && typeof body === "object" && "status" in body && ["invalid", "unavailable", "aborted", "forbidden", "rate-limited", "duplicate"].includes(String(body.status))) {
+  if (body && typeof body === "object" && "status" in body && ["invalid", "unavailable", "aborted", "forbidden", "rate-limited", "duplicate", "device-limit"].includes(String(body.status))) {
     // Only this transport boundary narrows the untrusted response after validation.
     const status = /** @type {AccountFailure['status']} */ (body.status);
     const fieldErrors = "fieldErrors" in body && body.fieldErrors && typeof body.fieldErrors === "object"
@@ -75,6 +75,9 @@ export function createLearnerSession({
 
   const { save, remove } = persistence;
   const notify = () => subscribers.forEach((subscriber) => subscriber());
+  // A browser disconnect locks free study immediately. Only an actual account
+  // response clears it; the online event alone never proves connectivity.
+  if (accountApi) globalThis.window?.addEventListener("offline", () => { offline = true; notify(); });
   const clearGuestTrial = () => remove(GUEST_TRIAL_STORAGE_KEY);
   const saveActiveAccount = () => activeAccount
     ? save(TEMPORARY_ACCOUNT_STORAGE_KEY, JSON.stringify(activeAccount))
@@ -128,7 +131,8 @@ export function createLearnerSession({
     getAccessState:() => {
       if (!accountApi || !activeAccount) return { allowed:true };
       const grant = offlineAccess.inspect();
-      return { ...grant, allowed:grant.allowed && `account:${grant.account?.id}` === activeAccount.progressOwner };
+      return { ...grant, allowed:grant.allowed && `account:${grant.account?.id}` === activeAccount.progressOwner
+        && (activeAccount.type === "subscribed" || !offline) };
     },
     getEffectiveNow:() => accountApi ? offlineAccess.inspect().now : Date.now(),
     isOffline:() => offline,

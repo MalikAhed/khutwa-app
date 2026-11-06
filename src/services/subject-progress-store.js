@@ -13,9 +13,9 @@ export { getUnitPartProgress, localDateKey } from "../domain/subject-progress.js
 /** @typedef {{read:(owner:string)=>Map<string,PartRecord>|Promise<Map<string,PartRecord>>, update:(update:ProgressUpdate)=>Promise<Map<string,PartRecord>>, close:()=>void|Promise<void>, sync?:(owner:string)=>Promise<void>, readCached?:(owner:string)=>Map<string,PartRecord>|Promise<Map<string,PartRecord>>, isRemoteOwner?:(owner:string)=>boolean}} ProgressAdapter */
 
 /** @typedef {{dailyStreak?:{streak:number, activeToday:boolean}}} StreakResult */
-/** @typedef {StreakResult & {status:'saved'|'failed', whenSynced?:Promise<StreakResult>}} SaveResult */
+/** @typedef {StreakResult & {status:'saved'|'failed', updateId?:string, whenSynced?:Promise<StreakResult>, retry?:()=>Promise<SaveResult>}} SaveResult */
 /** @typedef {{records:Map<string,PartRecord>, pending:ProgressUpdate[], failed:boolean, loaded:boolean, recoveryWarning:boolean, queue:Promise<void|SaveResult>}} OwnerState */
-/** @typedef {{storage?:Pick<Storage,'getItem'|'setItem'>|null, onError?:(error:unknown)=>void, resourceStore?:{spend:(owner:string,id:string)=>void}, adapter?:ProgressAdapter}} ProgressStoreOptions */
+/** @typedef {{storage?:Pick<Storage,'getItem'|'setItem'>|null, onError?:(error:unknown)=>void, resourceStore?:{spend:(owner:string,id:string,key?:ProgressKey)=>void}, adapter?:ProgressAdapter}} ProgressStoreOptions */
 
 // One cache/subscription boundary for Home and lessons. Writes are optimistic;
 // only committed adapter writes report saved. Failed operations stay retryable.
@@ -140,7 +140,7 @@ export function createSubjectProgressStore({ storage = null, onError = console.w
     }
     const key = update.value;
     if (![key.ownerId, key.subjectId, key.lessonId, key.partId].every((id) => typeof id === "string" && id)) throw new TypeError("Progress identity is required.");
-    if (update.type === "answer") resourceStore?.spend(key.ownerId, update.id);
+    if (update.type === "answer") resourceStore?.spend(key.ownerId, update.id, key);
     const state = stateFor(key.ownerId);
     state.pending.push(update);
     state.records = applyCached(state.records, update);
@@ -180,16 +180,30 @@ export function createSubjectProgressStore({ storage = null, onError = console.w
       const date = value.date || localDateKey();
       const result = await write({ type:"answer", value:{ ...value, date } });
       /** @returns {StreakResult} */
-      const streakResult = () => {
+      const streakResult = (status = result.status) => {
         const records = recordsFor(value.ownerId);
         const after = summarizeParts(records.values(), 0, date);
         const claimed = [...records.values()].some(record =>
           record.streakCelebration?.id === result.updateId && record.streakCelebration?.date === date);
-        return result.status === "saved" && claimed && after.activeToday
+        return status === "saved" && claimed && after.activeToday
           ? { dailyStreak:{ streak:after.streak, activeToday:true } } : {};
       };
-      return { status:result.status, ...(adapter.isRemoteOwner?.(value.ownerId)
-        ? { whenSynced:result.synced.then(streakResult) } : streakResult()) };
+      const saved = { status:result.status, updateId:result.updateId, ...(adapter.isRemoteOwner?.(value.ownerId)
+        ? { whenSynced:result.synced.then(() => streakResult()) } : streakResult()) };
+      if (result.status === "failed") {
+        /** @returns {Promise<SaveResult>} */
+        const retry = async () => {
+          const state = stateFor(value.ownerId);
+          const ready = state.queue.then(() => savePending(value.ownerId));
+          state.queue = ready;
+          const retried = await ready;
+          // Retry the retained update ID, never enqueue a second answer or spend
+          // another local heart after a lost acknowledgement.
+          return { status:retried.status, updateId:result.updateId, ...streakResult(retried.status), ...(retried.status === "failed" ? { retry } : {}) };
+        };
+        return { ...saved, retry };
+      }
+      return saved;
     },
     /** @param {ProgressKey} key */
     getReview:(key) => {

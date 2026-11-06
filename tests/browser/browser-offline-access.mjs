@@ -3,15 +3,17 @@ import {mkdtemp,rm,readFile,writeFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {gzipSync} from 'node:zlib';
+import {DatabaseSync} from 'node:sqlite';
 import {chromium,webkit} from 'playwright';
 const engine=process.env.OFFLINE_BROWSER==='webkit'?webkit:chromium;
 import {findChrome} from './browser-session.mjs';
 import {packageApp} from '../../scripts/package-app.mjs';
 import {createAppServer} from '../../src/server/app-server.mjs';
 import {readRuntimeConfig} from '../../src/server/runtime-config.mjs';
+import {CORRECT_ANSWER_GEM_REWARD} from '../../src/domain/learner-resources.js';
 
 // Packaged, versioned files with disposable HTTP accounts; never production data.
-const root=await packageApp();
+const root=process.env.PREVIEW_ROOT || await packageApp();
 assert.ok((await readFile(path.join(root,'assets/lessons/ict/exams/classified-p127-nic.jpg'))).length,'legacy lesson image URL remains published');
 const htmlPath=path.join(root,'index.html');
 await writeFile(htmlPath,(await readFile(htmlPath,'utf8')).replace('name="learn-account-mode" content="fixture"','name="learn-account-mode" content="http"'));
@@ -23,10 +25,11 @@ const heldImage=installedFiles.findLast(file=>/^assets\/lessons\/.*\.(webp|png|s
 assert.ok(heldImage,'installation includes lesson images');
 const heldFiles=new Set(['/'+heldImage]);
 let holdPreparation=true, disconnected=false, startupFailures=0;
-const app=await createAppServer({root,logger:()=>{},remoteBackend:async(request,response)=>{if(holdPreparation&&request.headers['x-learn-download']&&heldFiles.has(request.url)){response.writeHead(503).end();return true;}if(request.url==='/assets/app/icon-maskable-512.png'&&request.headers['x-learn-download']&&startupFailures<4){startupFailures++;response.writeHead(503).end();return true;}if(disconnected){request.socket.destroy();return true;}if(request.url.split('?')[0]==='/index.html'){response.writeHead(301,{Location:'/'}).end();return true;}if(request.url.split('?')[0]==='/'){response.writeHead(200,{'Content-Type':'text/html','Content-Encoding':'gzip','Content-Length':compressedHtml.length});response.end(compressedHtml);return true;}return false;},config:readRuntimeConfig({PORT:'0',LIVE_RELOAD:'0',DEV_AUTO_LOGIN:'0',ACCOUNTS_DATABASE_PATH:':memory:'},{root})});
+const profile=await mkdtemp(path.join(tmpdir(),'khutwa-offline-'));
+const databasePath=path.join(profile,'test-accounts.sqlite');
+const app=await createAppServer({root,logger:()=>{},remoteBackend:async(request,response)=>{if(holdPreparation&&request.headers['x-learn-download']&&heldFiles.has(request.url)){response.writeHead(503).end();return true;}if(request.url==='/assets/app/icon-maskable-512.png'&&request.headers['x-learn-download']&&startupFailures<4){startupFailures++;response.writeHead(503).end();return true;}if(disconnected){request.socket.destroy();return true;}if(request.url.split('?')[0]==='/index.html'){response.writeHead(301,{Location:'/'}).end();return true;}if(request.url.split('?')[0]==='/'){response.writeHead(200,{'Content-Type':'text/html','Content-Encoding':'gzip','Content-Length':compressedHtml.length});response.end(compressedHtml);return true;}return false;},config:readRuntimeConfig({PORT:'0',LIVE_RELOAD:'0',DEV_AUTO_LOGIN:'0',ACCOUNTS_DATABASE_PATH:databasePath},{root})});
 await app.accountStore.createAccount({username:'offline-test',phone:'0591234567',curriculum:'gaza',path:'scientific',password:'Test-only-123'});
 const base=`http://127.0.0.1:${await app.listen()}`;
-const profile=await mkdtemp(path.join(tmpdir(),'khutwa-offline-'));
 const options={...(engine===chromium?{executablePath:await findChrome(),args:['--no-sandbox']}:{isMobile:true,hasTouch:true}),headless:true,viewport:{width:390,height:844},reducedMotion:'reduce'};
 let context;
 // Playwright 1.63 WebKit kills service-worker responses with setOffline(true).
@@ -57,7 +60,38 @@ try {
  let page=await context.newPage();
  page.on('pageerror',error=>console.error('browser:',error.message));
  await page.goto(base);await ready(page);
- await page.waitForFunction(()=>Number(document.querySelector('[data-offline-download-status] [role=progressbar]')?.getAttribute('aria-valuenow'))>=99,null,{timeout:180000});
+ // Free accounts retain identity during outages, but never install all subjects
+ // or study offline. A stale online event cannot dismiss the access gate.
+ for(const width of [390,1440]) {
+   await page.setViewportSize({width,height:900});
+   assert.equal(await page.locator('[data-offline-download-status]').isVisible(),false);
+ }
+ await page.waitForTimeout(1500);
+ assert.deepEqual(await page.evaluate(()=>window.downloadRequests),[]);
+ await disconnect(true);
+ await page.evaluate(()=>dispatchEvent(new Event('offline')));
+ await page.locator('.offline-access[open]').waitFor();
+ await page.evaluate(()=>dispatchEvent(new Event('online')));
+ await page.waitForFunction(()=>!document.querySelector('.offline-access button').disabled);
+ assert.equal(await page.locator('.offline-access[open]').count(),1);
+ await disconnect(false);
+ await page.locator('.offline-access button').click();
+ await page.waitForFunction(()=>!document.querySelector('.offline-access[open]'));
+ const database=new DatabaseSync(databasePath);
+ database.prepare("UPDATE accounts SET account_type='subscribed' WHERE id=?").run(account.id);
+ database.close();
+ await page.evaluate(()=>dispatchEvent(new Event('focus')));
+ await page.waitForFunction(()=>!document.querySelector('[data-offline-download-status]').hidden);
+ console.log('Free dashboard downloads no course backlog; offline gate survives false online hints and reconnects without deleting identity.');
+ // Full-catalog installation can be slower on a contended test machine. Fail
+ // on a stalled download, not on total time while verified progress advances.
+ let installedPercent=-1,progressDeadline=Date.now()+45000;
+ while(installedPercent<99) {
+   const percent=Number(await page.locator('[data-offline-download-status] [role=progressbar]').getAttribute('aria-valuenow'));
+   if(percent>installedPercent){installedPercent=percent;progressDeadline=Date.now()+45000;}
+   assert.ok(Date.now()<progressDeadline,`Offline preparation stalled at ${installedPercent}%`);
+   if(installedPercent<99)await page.waitForTimeout(250);
+ }
  assert.equal(await page.evaluate(()=>document.documentElement.dataset.offlineReady),undefined,'missing lesson image must prevent 100% readiness');
  console.log('Installation reached 99%; the blocked lesson image correctly prevents readiness.');
  const checkpoint=await page.evaluate(async()=>{
@@ -114,9 +148,11 @@ try {
    const geometry=await page.locator('[data-offline-download-status]').evaluate(card=>{
      const a=card.getBoundingClientRect(),b=card.closest('.learner-dashboard__hero').getBoundingClientRect(),c=card.closest('.learner-dashboard__hero').querySelector('header').getBoundingClientRect();
      const lines=[...card.querySelector('.offline-download-status__copy').children].every(el=>el.getBoundingClientRect().height<=parseFloat(getComputedStyle(el).lineHeight)+1&&el.scrollWidth<=el.clientWidth);
-     return {height:a.height,lines,color:getComputedStyle(card.querySelector('.offline-download-status__ring')).color,headerInside:c.bottom<=b.bottom,inside:a.left>=b.left&&a.right<=b.right&&a.top>=b.top&&a.bottom<=b.bottom,overlap:a.left<c.right&&a.right>c.left&&a.top<c.bottom&&a.bottom>c.top,animation:getComputedStyle(card.querySelector('.offline-download-status__ring')).animationName};
+     const probe=document.createElement('span');probe.style.color='var(--system-green)';card.append(probe);
+     const themeColor=getComputedStyle(probe).color;probe.remove();
+     return {themeColor,height:a.height,lines,color:getComputedStyle(card.querySelector('.offline-download-status__ring')).color,headerInside:c.bottom<=b.bottom,inside:a.left>=b.left&&a.right<=b.right&&a.top>=b.top&&a.bottom<=b.bottom,overlap:a.left<c.right&&a.right>c.left&&a.top<c.bottom&&a.bottom>c.top,animation:getComputedStyle(card.querySelector('.offline-download-status__ring')).animationName};
    });
-   assert.ok(geometry.inside);assert.ok(geometry.headerInside);assert.equal(geometry.overlap,false);assert.ok(geometry.lines,'exactly two text rows');assert.equal(geometry.color,'rgb(21, 155, 117)');if(width<700)assert.equal(geometry.height,52);assert.equal(geometry.animation,'none');
+   assert.ok(geometry.inside);assert.ok(geometry.headerInside);assert.equal(geometry.overlap,false);assert.ok(geometry.lines,'exactly two text rows');assert.equal(geometry.color,geometry.themeColor);if(width<700)assert.equal(geometry.height,52);assert.equal(geometry.animation,'none');
    await page.screenshot({path:`/tmp/khutwa-offline-ready-${width}.png`});
  }
  console.log(`Navigation stayed interactive (${Math.round(navigation.elapsed)}ms for four switches); partial preparation resumed without redownloading saved files.`);
@@ -135,7 +171,7 @@ try {
   }
   throw new Error('Lesson not downloaded');
  },version);
- // Buy one explanation online, then read it with every network connection denied.
+ // Read an included paid explanation with every network connection denied.
  const explanationKey={subjectId:'ict',lessonId:'database-management',partId:'access-basics',stepId:'exam-p09-q1-1'};
  const purchased=await context.request.post(`${base}/api/progress`,{headers:{'X-Progress-Owner':owner},data:{type:'explanation-unlock',...explanationKey}});
  assert.equal(purchased.status(),200);
@@ -153,8 +189,6 @@ try {
  assert.equal(explanationRequests,0);
  await page.locator('[data-explanation-close]').click();
  await disconnect(false);
- const trial=await context.request.post(`${base}/api/progress`,{headers:{'X-Progress-Owner':owner},data:{type:'super-trial'}});
- assert.equal(trial.status(),200);
  await page.goto(`${base}/?page=learn`);await ready(page);
  // Reproduce an existing production cache created through Pages' HTML redirect.
  await page.evaluate(async version=>{const response=await fetch('/index.html');if(!response.redirected)throw new Error('Expected production redirect');await(await caches.open(`khutwa-content:/:${version}`)).put(new URL('/index.html',location.href),response);},version);
@@ -199,7 +233,7 @@ try {
  await page.locator('[data-explanation-close]').click();
  assert.equal((await pending()).length,1,'reading explanations preserves pending answers');
  await page.goto(`${base}/?page=learn`);await ready(page);
- console.log('Purchased and first-open Super explanations render offline, including after browser restart.');
+ console.log('Downloaded and first-open paid explanations render offline, including after browser restart.');
  // Ordinary wall-clock rollback must immediately block learning and stay blocked.
  await page.evaluate(()=>{window.clockOffset=-3600000;window.dispatchEvent(new Event('focus'));});
  await page.locator('.offline-access[open]').waitFor();
@@ -218,13 +252,16 @@ try {
  await disconnect(false);
  await page.locator('.offline-access button').click();
  await page.waitForFunction(()=>!document.querySelector('.offline-access[open]'),{timeout:30000});
- await page.waitForFunction(async({version,owner})=>{
-  const {createIndexedDbProgressAdapter}=await import(`/src/services/indexeddb-progress.js?v=${version}`);const local=createIndexedDbProgressAdapter();
-  const rows=await local.pending(owner);local.close();return rows.length===0;
- },{version,owner},{timeout:30000});
- const progress=await (await context.request.get(`${base}/api/progress`,{headers:{'X-Progress-Owner':owner}})).json();
+ const syncDeadline=Date.now()+30000;
+ while((await pending()).length) {
+   assert.ok(Date.now()<syncDeadline,'reconnected outbox must receive server acknowledgement');
+   await page.waitForTimeout(100);
+ }
+ const progressResponse=await context.request.get(`${base}/api/progress`,{headers:{'X-Progress-Owner':owner}});
+ assert.equal(progressResponse.status(),200,'server progress remains available after reconnect');
+ const progress=await progressResponse.json();
  assert.ok(JSON.stringify(progress.records).includes(stepId),'server received the offline answer');
- assert.equal(progress.resources.gems,purchaseReceipt.resources.gems,'offline reading never charges gems');
+ assert.equal(progress.resources.gems,purchaseReceipt.resources.gems+CORRECT_ANSWER_GEM_REWARD,'offline reading never charges gems; the acknowledged correct answer earns its single reward');
  console.log('Clock rollback gate and reconnect preserved and synchronized the answer.');
  // A tab that stays open beyond seven days must also pause.
  await disconnect(true);

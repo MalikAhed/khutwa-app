@@ -1,42 +1,113 @@
-import { refillResources, resourceSnapshot, spendHeart, SUPER_TRIAL_MS } from "../domain/learner-resources.js";
+import { MAX_DAILY_SKIPS, QUESTION_NAVIGATION_LIMIT_ENABLED, refillResources, resourceSnapshot, spendHeart } from "../domain/learner-resources.js";
 import { EXPLANATION_GEM_COST, questionExplanation } from "../domain/question-explanations.js";
 import { questionRewardKey } from "../domain/question-rewards.js";
+import { hasFreeLessonPractice, QUESTION_JUMPS_REQUIRE_SUPER } from '../domain/free-practice.js';
 
 // HTTP balances are confirmed by the progress API; fixture balances stay local.
 export function createLearnerResources({ storage, getAccountType, apiBase = null, fetchImpl = globalThis.fetch, now = Date.now, onError = console.warn }) {
   const owners = new Map();
   const subscribers = new Set();
   const keyFor = owner => `tawjihi:resources:v1:${encodeURIComponent(owner)}`;
+  const refillOptions = owner => ({ allowRefill:!(apiBase && owner.startsWith("account:")) });
   const notify = () => subscribers.forEach(callback => callback());
   const stateFor = owner => {
     if (!owners.has(owner)) {
       let saved;
       try { saved = JSON.parse(storage?.getItem(keyFor(owner)) || "null"); } catch (error) { onError(error); }
-      owners.set(owner, { value:refillResources(saved, now()), pending:new Set() });
+      owners.set(owner, { value:refillResources(saved, now(), refillOptions(owner)), pending:new Set(), rewards:new Map() });
     }
     return owners.get(owner);
   };
   const persist = (owner, state) => {
     try { storage?.setItem(keyFor(owner), JSON.stringify(state.value)); } catch (error) { onError(error); }
   };
-  const get = owner => resourceSnapshot(stateFor(owner).value, getAccountType() === "subscribed", now());
-  const confirm = (owner, value, updateId) => {
+  const get = owner => resourceSnapshot(stateFor(owner).value, getAccountType() === "subscribed", now(), refillOptions(owner));
+  const confirm = (owner, value, updateId, gemReward) => {
     const state = stateFor(owner);
     state.pending.delete(updateId);
-    // A response already in flight when the trial began cannot erase it.
+    if (updateId && Number.isSafeInteger(gemReward) && gemReward >= 0) state.rewards.set(updateId,gemReward);
     const receivedUnlocks = new Set(value.explanationUnlocks || []);
     const missingUnlocks = (state.value.explanationUnlocks || []).filter(key => !receivedUnlocks.has(key));
-    // Gems are only spent; older progress receipts cannot refund a purchase.
-    state.value = refillResources({ ...value, gems:Math.min(value.gems,state.value.gems),
-      explanationUnlocks:[...receivedUnlocks,...missingUnlocks], trialEndsAt:value.trialEndsAt || state.value.trialEndsAt }, now());
+    // A versioned reward may increase gems; a late receipt may never undo that
+    // reward or refund a purchase. Older backends retain the previous fallback.
+    const receivedRevision = Number.isSafeInteger(value.gemRevision) ? value.gemRevision : -1;
+    const currentRevision = Number.isSafeInteger(state.value.gemRevision) ? state.value.gemRevision : -1;
+    const gems = receivedRevision >= 0 && receivedRevision >= currentRevision ? value.gems
+      : currentRevision >= 0 ? state.value.gems : Math.min(value.gems,state.value.gems);
+    const correctTowardGems = receivedRevision < currentRevision ? state.value.correctTowardGems
+      : receivedRevision === currentRevision ? Math.max(value.correctTowardGems || 0,state.value.correctTowardGems || 0)
+        : value.correctTowardGems;
+    state.value = refillResources({ ...value, gems,
+      correctTowardGems,
+      ...(Math.max(receivedRevision,currentRevision) >= 0 ? {gemRevision:Math.max(receivedRevision,currentRevision)} : {}),
+      explanationUnlocks:[...receivedUnlocks,...missingUnlocks], trialEndsAt:value.trialEndsAt || state.value.trialEndsAt }, now(), refillOptions(owner));
     if (!get(owner).unlimited) {
-      for (const id of state.pending) state.value = spendHeart(state.value, now()) || state.value;
+      for (const id of state.pending) state.value = spendHeart(state.value, now(), refillOptions(owner)) || state.value;
     }
     persist(owner, state);
     notify();
   };
   return Object.freeze({
     get,
+    getGemReward:(owner,updateId) => stateFor(owner).rewards.get(updateId) || 0,
+    getNavigationCursor(owner, {subjectId,lessonId}) {
+      if (!QUESTION_NAVIGATION_LIMIT_ENABLED) return;
+      const subject = subjectId === 'mathematics-2' ? 'mathematics' : subjectId;
+      return get(owner).navigationCursors?.[`${subject}:${lessonId}`];
+    },
+    async navigate(owner, key, { kind = 'jump', signal, solved = false } = {}) {
+      signal?.throwIfAborted();
+      if (QUESTION_JUMPS_REQUIRE_SUPER && kind === 'jump' && !solved && getAccountType() !== 'subscribed')
+        throw Object.assign(new Error('اختيار سؤال من الشريط متاح مع خطوة سوبر.'),{code:'super-required'});
+      if (!QUESTION_NAVIGATION_LIMIT_ENABLED || getAccountType() === 'subscribed') return;
+      if (apiBase && owner.startsWith('account:')) {
+        let response;
+        try {
+          response = await fetchImpl(apiBase,{method:'POST',credentials:'same-origin',
+            headers:{'Content-Type':'application/json','X-Progress-Owner':owner},
+            signal:signal ? AbortSignal.any([signal,AbortSignal.timeout(12000)]) : AbortSignal.timeout(12000),
+            body:JSON.stringify({type:'question-navigation',id:`nav:${crypto.randomUUID()}`,kind,...key})});
+        } catch (cause) {
+          throw Object.assign(new Error('اتصل بالإنترنت لتأكيد تنقّلك بين الأسئلة.'),{code:'connection-required',cause});
+        }
+        const result = await response.json();
+        signal?.throwIfAborted();
+        if ((response.ok || [409,429].includes(response.status)) && `account:${result.accountId}` !== owner)
+          throw new Error('The active account changed.');
+        if (result.resources) confirm(owner,result.resources);
+        if (!response.ok) throw Object.assign(new Error(result.error || 'تعذّر تأكيد التنقّل.'),
+          {code:result.status === 'navigation-limit' ? 'navigation-limit' : 'request-failed',currentStepId:result.currentStepId});
+        return;
+      }
+      if (kind === 'jump') {
+        const state = stateFor(owner), balance = get(owner);
+        if ((balance.navigationRemaining ?? MAX_DAILY_SKIPS) === 0)
+          throw Object.assign(new Error('Daily navigation limit reached.'),{code:'navigation-limit'});
+        state.value = {...balance,navigationRemaining:(balance.navigationRemaining ?? MAX_DAILY_SKIPS) - 1};
+        persist(owner,state); notify();
+      }
+    },
+    async checkAnswerAccess(owner, { signal, key, onConnectionRequired = () => {} } = {}) {
+      if (!apiBase || !owner.startsWith("account:") || getAccountType() === "subscribed") return;
+      let response;
+      try {
+        response = await fetchImpl(apiBase, { credentials:"same-origin", cache:"no-store",
+          headers:{ "X-Progress-Owner":owner },
+          signal:signal ? AbortSignal.any([signal, AbortSignal.timeout(12000)]) : AbortSignal.timeout(12000) });
+        const result = await response.json();
+        signal?.throwIfAborted();
+        if (response.status === 401 || response.status === 403)
+          return "تعذّر تأكيد جلسة الدخول. سجّل الدخول مجددًا.";
+        if (!response.ok || `account:${result.accountId}` !== owner || !Number.isInteger(result.resources?.hearts))
+          return "تعذّر تأكيد الرصيد من الخادم. حاول مجددًا.";
+        confirm(owner, result.resources);
+        return hasFreeLessonPractice(key) || get(owner).hearts > 0 ? undefined : "نفدت قلوب اليوم. تتجدد القلوب السبعة عند منتصف الليل بتوقيت فلسطين.";
+      } catch {
+        if (!response) onConnectionRequired();
+        return response ? "تعذّر تأكيد الرصيد من الخادم. حاول مجددًا."
+          : "اتصل بالإنترنت لتأكيد قلوبك والإجابة. دروسك المحمّلة وتقدّمك المحفوظ متاحان دون اتصال.";
+      }
+    },
     hasExplanation:(owner,key) => (get(owner).explanationUnlocks || []).includes(questionRewardKey(key)),
     async unlockExplanation(owner, key, { signal, step } = {}) {
       if (owner === "guest") throw Object.assign(new Error("Sign in first."),{code:"sign-in"});
@@ -84,11 +155,12 @@ export function createLearnerResources({ storage, getAccountType, apiBase = null
       }
       return explanation;
     },
-    spend(owner, id) {
+    spend(owner, id, key) {
+      if (hasFreeLessonPractice(key)) return;
       const state = stateFor(owner);
       if (state.pending.has(id)) return;
       if (!get(owner).unlimited) {
-        const value = spendHeart(state.value, now());
+        const value = spendHeart(state.value, now(), refillOptions(owner));
         if (!value) throw new Error("No hearts available.");
         state.value = value;
       }
@@ -98,23 +170,8 @@ export function createLearnerResources({ storage, getAccountType, apiBase = null
     },
     confirm,
     async startTrial(owner, { signal } = {}) {
-      if (getAccountType() !== "free" || owner === "guest") throw new Error("Sign in with a free account.");
       signal?.throwIfAborted();
-      if (apiBase && owner.startsWith("account:")) {
-        const response = await fetchImpl(apiBase, { method:"POST", credentials:"same-origin",
-          signal:signal ? AbortSignal.any([signal, AbortSignal.timeout(12000)]) : AbortSignal.timeout(12000),
-          headers:{ "Content-Type":"application/json", "X-Progress-Owner":owner }, body:JSON.stringify({ type:"super-trial" }) });
-        const result = await response.json();
-        signal?.throwIfAborted();
-        if (!response.ok || `account:${result.accountId}` !== owner || !Number.isSafeInteger(result.resources?.trialEndsAt)) throw new Error("The trial could not be activated.");
-        confirm(owner, result.resources);
-      } else {
-        const state = stateFor(owner);
-        if (!state.value.trialEndsAt) state.value = { ...refillResources(state.value, now()), trialEndsAt:now() + SUPER_TRIAL_MS };
-        persist(owner, state);
-        notify();
-      }
-      return get(owner);
+      throw new Error("The free Super trial is no longer available.");
     },
     subscribe(callback) { subscribers.add(callback); return () => subscribers.delete(callback); },
   });

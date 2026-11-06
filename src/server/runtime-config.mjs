@@ -5,6 +5,8 @@ const normalizeAddress=address=>String(address||'').replace(/^::ffff:/,'');
 export function readRuntimeConfig(environment,{root,production=false}) {
   const port=Number(environment.PORT??4173);
   if(!Number.isInteger(port)||port<0||port>65535)throw new Error('PORT must be an integer between 0 and 65535.');
+  const listenHost=environment.LISTEN_HOST || null;
+  if(listenHost&&!isIP(listenHost))throw new Error('LISTEN_HOST must be an explicit IP address.');
   let publicOrigin=null;
   if(environment.PUBLIC_ORIGIN) {
     const url=new URL(environment.PUBLIC_ORIGIN);
@@ -16,7 +18,7 @@ export function readRuntimeConfig(environment,{root,production=false}) {
   if(production&&(!environment.ACCOUNTS_DATABASE_PATH||environment.ACCOUNTS_DATABASE_PATH===':memory:'))throw new Error('Production requires ACCOUNTS_DATABASE_PATH on durable storage.');
   const trustedProxies=new Set((environment.TRUSTED_PROXY_ADDRESSES||'').split(',').filter(Boolean).map(value=>normalizeAddress(value.trim())));
   if([...trustedProxies].some(address=>!isIP(address)))throw new Error('TRUSTED_PROXY_ADDRESSES must list explicit IP addresses.');
-  return {port,publicOrigin,trustedProxies,secureCookies:publicOrigin?.startsWith('https:')||false,
+  return {port,listenHost,publicOrigin,trustedProxies,secureCookies:publicOrigin?.startsWith('https:')||false,
     databasePath:environment.ACCOUNTS_DATABASE_PATH||path.join(root,'data/accounts.sqlite'),
     liveReload:!production&&environment.LIVE_RELOAD!=='0',
     devAutoLogin:!production&&environment.DEV_AUTO_LOGIN==='1',production};

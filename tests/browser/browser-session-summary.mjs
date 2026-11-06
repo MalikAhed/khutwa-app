@@ -12,18 +12,19 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor }) => {
     document.querySelectorAll('link[rel=stylesheet]').forEach(link=>link.media='all');
     document.body.removeAttribute('data-startup');
     document.body.innerHTML='<main class="page lesson-mode"><section class="lesson-view is-visible"><div class="lesson-shell"><div class="lesson-top"><button type="button" class="lesson-back">×</button><div class="lesson-top-title"><span class="current-view-title"></span></div><span class="lesson-status"></span></div><div class="lesson-card" id="lesson-content" tabindex="-1"></div></div></section></main>';
-    const [{createSubjectLearningController},{createViewLifecycle},{createSubjectProgressStore},{createIndexedDbProgressAdapter},{createServerProgressAdapter}]=await Promise.all([
-      import('/src/ui/subject-learning.js'),import('/src/app/view-lifecycle.js'),import('/src/services/subject-progress-store.js'),import('/src/services/indexeddb-progress.js'),import('/src/services/server-progress.js')]);
+    const [{createSubjectLearningController},{createViewLifecycle},{createSubjectProgressStore},{createIndexedDbProgressAdapter},{createServerProgressAdapter},{createLearnerResources}]=await Promise.all([
+      import('/src/ui/subject-learning.js'),import('/src/app/view-lifecycle.js'),import('/src/services/subject-progress-store.js'),import('/src/services/indexeddb-progress.js'),import('/src/services/server-progress.js'),import('/src/services/learner-resources.js')]);
     const stamp=Date.now();
     const response=await fetch('/api/auth/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:'summary-'+stamp,phone:'059'+String(stamp%10000000).padStart(7,'0'),curriculum:'gaza',path:'scientific',password:'Learn123'})});
     const {account}=await response.json();
     if(!account)throw new Error('The isolated summary account was not created');
     window.summaryOwner='account:'+account.id;
     window.summaryLifecycle=createViewLifecycle();
-    window.summaryStore=createSubjectProgressStore({adapter:createServerProgressAdapter({local:createIndexedDbProgressAdapter({name:'session-summary-check'})})});
+    window.summaryResources=createLearnerResources({getAccountType:()=> 'free',apiBase:'/api/progress'});
+    window.summaryStore=createSubjectProgressStore({resourceStore:summaryResources,adapter:createServerProgressAdapter({local:createIndexedDbProgressAdapter({name:'session-summary-check'}),requiresOnlineAnswer:()=>true,onResources:summaryResources.confirm})});
     window.summaryController=createSubjectLearningController({
       elements:{lessonContent:document.querySelector('#lesson-content'),lessonShell:document.querySelector('.lesson-shell'),lessonTitle:document.querySelector('.current-view-title'),lessonStatus:document.querySelector('.lesson-status')},
-      productService:{getAccountType:()=> 'free',getLearnerProgressOwner:()=>summaryOwner},progressStore:summaryStore,appTitle:'Test',viewLifecycle:summaryLifecycle,
+      productService:{getAccountType:()=> 'free',getLearnerProgressOwner:()=>summaryOwner},progressStore:summaryStore,resourceStore:summaryResources,appTitle:'Test',viewLifecycle:summaryLifecycle,
       setViewMode:()=>{},showContentView:()=>{},writeRoute:params=>history.replaceState(null,'','?'+new URLSearchParams(params)),onComingSoon:()=>{},onRequireAccount:()=>{throw new Error('Unexpected account redirect');}
     });
     document.querySelector('.lesson-back').addEventListener('click',()=>summaryController.returnToRoadmap());
@@ -49,12 +50,25 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor }) => {
   await waitFor("document.querySelector('.lesson-daily-streak[open]')");
   await evaluate("document.querySelector('.lesson-daily-streak').close()");
   await waitFor("!document.querySelector('.lesson-daily-streak')");
+  await evaluate("document.querySelector('[data-question-explain]').click()");
+  await waitFor("document.querySelector('.question-explanation-dialog[open]')");
+  await evaluate("document.querySelector('.question-explanation-dialog').close()");
+  await waitFor("!document.querySelector('.question-explanation-dialog')");
   await evaluate("document.querySelector('[data-template-primary]').click()");
   await waitFor(`document.querySelector('[data-live-authored-step]')?.dataset.lessonStep !== ${JSON.stringify(firstId)}`);
   const nextId = await evaluate("document.querySelector('[data-live-authored-step]').dataset.lessonStep");
   await finish();
   assert.equal(await gain('.subject-gain--xp'), expectedXp);
   assert.equal(await gain('.subject-gain--accuracy'), 100);
+  assert.equal(await evaluate("Number(document.querySelector('[data-session-gems]').textContent)"),7,'session gems come from its acknowledged answer receipt');
+  for(const [width,height] of [[390,844],[320,568]]) {
+    await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:true});
+    const layout=await evaluate(`(()=>{const gems=document.querySelector('.subject-session-gems').getBoundingClientRect(),task=document.querySelector('.level-layout-task').getBoundingClientRect();return {visible:gems.top>=task.top&&gems.bottom<=task.bottom,overflow:document.documentElement.scrollWidth>innerWidth};})()`);
+    assert.equal(layout.visible,true,'session gems stay visible on mobile');assert.equal(layout.overflow,false);
+    const shot=await send('Page.captureScreenshot',{format:'png'});
+    await writeFile(`/tmp/khutwa-session-gems-${width}.png`,Buffer.from(shot.data,'base64'));
+  }
+  await send('Emulation.setDeviceMetricsOverride',{width:1440,height:900,deviceScaleFactor:1,mobile:false});
   const elapsed = await gain('.subject-gain--quick');
   await waitFor("document.querySelector('.subject-completion').dataset.animationState === 'complete'");
   await evaluate("window.resumedAt=performance.now();document.querySelector('[data-authored-review]').click()");
@@ -78,16 +92,18 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor }) => {
   await evaluate(`(async()=>{
     summaryLifecycle.clear();
     const {renderAuthoredInteractiveLesson}=await import('/src/ui/lesson/authored.js');
-    window.writtenSaved=false;window.writtenXp=0;
+    window.writtenSaved=false;window.writtenSaving=false;window.writtenXp=0;
     const step={id:'written-session',type:'exam-question',title:'سؤال',content:{body:'سؤال',finalAnswer:'حل',solution:'حل'}};
     window.stopWrittenCheck=renderAuthoredInteractiveLesson(document.querySelector('#lesson-content'),'جلسة',{title:'جلسة',locale:'ar'},[step,{...step,id:'written-next'}],{
       isLessonPart:true,
-      onAnswer:({correct})=>new Promise(resolve=>setTimeout(()=>{window.writtenSaved=true;window.writtenXp=correct?7:0;resolve({status:'saved'});},120)),
+      onAnswer:({correct})=>new Promise(resolve=>{window.writtenSaving=true;setTimeout(()=>{window.writtenSaved=true;window.writtenXp=correct?7:0;resolve({status:'saved'});},120);}),
       getCompletionOutcome:()=>({xpGain:writtenXp,totalXp:writtenXp})
     });
   })()`);
   await waitFor("document.querySelector('[data-exam-card]')");
-  await evaluate("document.querySelector('[data-exam-card]').click();document.querySelector('[data-exam-correct=true]').click();document.querySelector('[data-template-primary]').click();document.querySelector('.lesson-back').click()");
+  await evaluate("document.querySelector('[data-exam-card]').click();document.querySelector('[data-exam-correct=true]').click();document.querySelector('[data-template-primary]').click()");
+  await waitFor('writtenSaving');
+  await evaluate("document.querySelector('.lesson-back').click()");
   await waitFor("document.querySelector('.subject-completion--result') && !document.querySelector('.media-pending')");
   assert.equal(await gain('.subject-gain--accuracy'),100,"written self checks contribute to session accuracy");
   assert.equal(await gain('.subject-gain--xp'),7);

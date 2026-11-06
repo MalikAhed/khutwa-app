@@ -3,9 +3,10 @@ import { hasJsonContentType, sendJson } from "./http.mjs";
 import { getSessionToken, isCrossSiteRequest } from "./auth-api.mjs";
 import { readQuestionExplanation } from "./question-explanations.mjs";
 import { getSourceQuestionAliases, resolveQuestionLocation } from "../domain/question-rewards.js";
+import { withResourceActions } from "./resource-actions.mjs";
 
 export function createProgressApi({accountStore,readJsonBody,originPolicy=isCrossSiteRequest}) {
-  return async (request,response) => {
+  const handler = async (request,response) => {
     if(originPolicy(request)) {sendJson(response,403,{error:'Invalid request origin.'});return;}
     const account=accountStore.getAccountForSession(getSessionToken(request));
     if(!account||account.accountType==='banned') {sendJson(response,401,{error:'Sign in to save progress.'});return;}
@@ -62,4 +63,5 @@ export function createProgressApi({accountStore,readJsonBody,originPolicy=isCros
       sendJson(response,200,{accountId:account.id,records:accountStore.progress.read(account.id),resources:accountStore.progress.readResources(account.id)});
     }catch(error){sendJson(response,error.code==='ETOOBIG'?413:error instanceof SyntaxError?400:error.status||500,{error:error.status?error.message:'Progress could not be saved.',...([402,429].includes(error.status)?{accountId:account.id,resources:accountStore.progress.readResources(account.id)}:{})});}
   };
+  return withResourceActions(handler,{accountStore,readJsonBody,originPolicy});
 }

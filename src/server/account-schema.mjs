@@ -1,3 +1,6 @@
+import { DEVICE_SCHEMA } from "./browser-registration.mjs";
+import { BROWSER_POLICY_SCHEMA } from './browser-policy-store.mjs';
+
 function migrateLegacyAccounts(database) {
   // Early prototype databases required email/phone and lacked curriculum data.
   // This one-time rebuild preserves accounts while invalidating old sessions.
@@ -99,4 +102,6 @@ export function initializeAccountSchema(database) {
     );
     CREATE INDEX IF NOT EXISTS account_identifiers_account_id_idx ON account_identifiers(account_id);
   `);
+  database.exec(DEVICE_SCHEMA);
+  database.exec(BROWSER_POLICY_SCHEMA);
 }

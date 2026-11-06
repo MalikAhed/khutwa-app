@@ -26,6 +26,7 @@ import { createRockyTour } from "./ui/rocky-tour.js";
 import { createQuestionFeedback } from "./services/question-feedback.js";
 import { getSubjectRoadmap } from "./data/subject-roadmaps.js";
 import { watchPreviewUpdates } from "./services/preview-updates.js";
+import { configureBackgroundLoading } from './app/background-loading.js';
 
 const APP_TITLE = "خطوة";
 const ROCKY_TOUR_ENABLED = false;
@@ -57,7 +58,8 @@ const guestProgress = createSessionProgressAdapter({
   onError:reportProgressRecovery,
 });
 const memberProgress = createIndexedDbProgressAdapter({ legacyStorage:browserLocalStorage(), onError:reportProgressRecovery });
-const serverProgress = appConfig.accountMode === "http" ? createServerProgressAdapter({local:memberProgress, onError:reportProgressRecovery, onResources:resourceStore.confirm}) : null;
+const serverProgress = appConfig.accountMode === "http" ? createServerProgressAdapter({local:memberProgress, onError:reportProgressRecovery, onResources:resourceStore.confirm,
+  requiresOnlineAnswer:() => productService.getAccountType() !== "subscribed"}) : null;
 const progressAdapterFor = (owner) => owner === "guest" ? guestProgress : owner.startsWith("account:") && serverProgress ? serverProgress : memberProgress;
 const progressStore = createSubjectProgressStore({ resourceStore, adapter:{
   isRemoteOwner:(owner) => owner.startsWith("account:") && Boolean(serverProgress),
@@ -77,6 +79,7 @@ const restoredSession = await productService.restoreSession();
 // A verified lease can resume offline. Otherwise show reconnect recovery;
 // never clear answers or mistake an outage for a confirmed sign-out.
 if (restoredSession.status === "unavailable") throw Object.assign(new Error("Reconnect to verify offline access. Saved work is preserved."), { code:"offline-reconnect" });
+productService.subscribe(configureBackgroundLoading({getAccountType:() => productService.getAccountType()}));
 await progressStore.ready(productService.getLearnerProgressOwner());
 let progressOwner = productService.getLearnerProgressOwner();
 productService.subscribe(() => {
@@ -105,7 +108,15 @@ const elements = mountAppShell();
 watchPreviewUpdates({
   canReload:() => !document.body.matches(".ui-lab-open,.product-flow-active")
     && !elements.main.matches(".lesson-mode,.coming-mode")
+    && !document.querySelector('dialog[open]')
     && progressStore.getSaveState(productService.getLearnerProgressOwner()) === "saved",
+  subscribe:progressStore.subscribe,
+  beforeReload:async () => {
+    const owner = productService.getLearnerProgressOwner();
+    if (appConfig.accountMode !== 'http' || !owner.startsWith('account:')) return true;
+    await progressStore.refresh(owner);
+    return owner === productService.getLearnerProgressOwner() && (await memberProgress.pending(owner)).length === 0;
+  },
 });
 const comingSoonToast = mountComingSoonToast(elements.comingSoonToast);
 mountProgressFeedback({ store:progressStore, service:productService });
@@ -249,6 +260,7 @@ const subjectLearning = createSubjectLearningController({
   onRequireAccount: (flow) => openVisitorFlow(flow),
   onComingSoon: () => comingSoonToast.show(),
   onExitRatedQuestions:() => selectPage(getPageTarget("rated-questions"), { historyMode:"replace" }),
+  onReturnHome:() => selectPage(getPageTarget("learn"), { historyMode:"replace" }),
   onReturnToRoadmap({ subjectId, lessonId, partId, explainAccess }) {
     if (pendingMapReturn) return true;
     if (window.history.state?.subjectMapBehind !== subjectId) return false;

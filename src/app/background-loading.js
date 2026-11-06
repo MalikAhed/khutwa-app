@@ -1,16 +1,18 @@
 import { updateOfflineDownloadStatus } from "../ui/offline-download-status.js";
 import { createDownloadQueue } from "../services/download-queue.js";
-import { useManagedImagePreloading } from "../ui/media-ready.js";
+import { canPrefetchAssets, useManagedImagePreloading } from "../ui/media-ready.js";
 
 let initialization, queue, manifest, cache, selected, started = false;
 let offlineFiles = new Set(), offlineReady = false, savingShell, finishOffline = async () => {};
 let offlineIssue = false;
+let getAccountType = () => "guest";
+const installsOffline = () => getAccountType() === "subscribed";
 let offlineTotal = 0, lastRefresh = 0;
 let quietUntil = 0, interactionTimer, refreshDownloads = () => {};
 let catalogController, shellController;
 const foregroundLoads = new Set();
 const showOfflineStatus = () => updateOfflineDownloadStatus({
-  completed:offlineTotal - offlineFiles.size, total:offlineTotal,
+  enabled:installsOffline(), completed:offlineTotal - offlineFiles.size, total:offlineTotal,
   phase:offlineReady ? "ready" : !cache || offlineIssue ? "waiting" : offlineFiles.size ? "downloading" : "finishing",
 });
 const base = () => new URL("./", document.baseURI);
@@ -89,8 +91,13 @@ async function initialize() {
       try {
         cache = await caches.open(cacheName(release));
         // Validate resumed files, including entries saved by an older worker.
-        const saved = new Set((await cache.keys()).map(request => request.url));
-        for (const file of files) {
+        // A former subscriber can retain a complete cache. Free startup must not
+        // read/hash that entire installation just to warm one lesson.
+        const resumeFiles = installsOffline() ? files : backgroundFiles(catalog, {
+          accountType:getAccountType(), selectedLesson:!selected?.signal?.aborted ? selected : null, connection:navigator.connection,
+        });
+        const saved = new Set((resumeFiles.length ? await cache.keys() : []).map(request => request.url));
+        for (const file of resumeFiles) {
           controller.signal.throwIfAborted();
           const url = new URL(file, base());
           if (saved.has(url.href) && await savedContentMatches(await cache.match(url), file)) completedFiles.push(file);
@@ -106,7 +113,7 @@ async function initialize() {
     showOfflineStatus();
     async function finishOfflineShell() {
       showOfflineStatus();
-      if (!backgroundAllowed() || !cache || offlineReady || offlineFiles.size || savingShell) return;
+      if (!installsOffline() || !backgroundAllowed() || !cache || offlineReady || offlineFiles.size || savingShell) return;
       offlineIssue = false;
       showOfflineStatus();
       let timer;
@@ -141,7 +148,7 @@ async function initialize() {
     queue = createDownloadQueue({ completedFiles, onError:() => { offlineIssue = true; showOfflineStatus(); }, download:async (file, { signal, priority }) => {
       const url = new URL(file, base());
       if (!cache && release && "caches" in window) cache = await caches.open(cacheName(release));
-      if (release && !cache) throw new Error("Offline storage unavailable");
+      if (installsOffline() && release && !cache) throw new Error("Offline storage unavailable");
       try { if (cache && await savedContentMatches(await cache.match(url), file)) { offlineFiles.delete(file); offlineIssue = false; await finishOfflineShell(); return; } } catch (error) { cache = null; throw error; }
       const response = await fetch(url, { signal:AbortSignal.any([signal, AbortSignal.timeout(20000)]), priority,
         cache:/[?&]v=/.test(url.search) ? "default" : "no-cache", headers:{ "X-Learn-Download":"1" } });
@@ -165,6 +172,31 @@ async function initialize() {
   return initialization;
 }
 
+// Account changes replace only pending work; previously saved files stay intact.
+export function configureBackgroundLoading({ getAccountType:readAccountType }) {
+  getAccountType = readAccountType;
+  const refresh = () => {
+    queue?.pause();
+    if (!installsOffline()) shellController?.abort();
+    showOfflineStatus();
+    refreshDownloads();
+  };
+  refresh();
+  return refresh;
+}
+
+export function backgroundFiles(catalog, { accountType, selectedLesson, connection } = {}) {
+  const current = selectedLesson && catalog.lessons.find(lesson => lesson.subjectId === selectedLesson.subjectId && lesson.lessonId === selectedLesson.lessonId);
+  const currentFiles = current ? [...current.first, ...current.files] : [];
+  if (accountType === "subscribed") return [...new Set([...currentFiles, ...catalog.onboarding, ...catalog.helpers,
+    ...catalog.lessons.flatMap(lesson => lesson.first), ...catalog.lessons.flatMap(lesson => lesson.files)])];
+  if (accountType !== "free" || !current) return [];
+  // Only one neighboring lesson, and only when the link can afford speculation.
+  const subject = catalog.lessons.filter(lesson => lesson.subjectId === current.subjectId);
+  const next = canPrefetchAssets(connection) ? subject[subject.indexOf(current) + 1] : null;
+  return [...new Set([...currentFiles, ...(next?.first || [])])];
+}
+
 // Called at click time, before importing the renderer or question bank.
 export function prioritizeLesson(subjectId, lessonId, { signal } = {}) {
   selected = { subjectId, lessonId, signal };
@@ -186,12 +218,9 @@ export function warmLearningExperience() {
     void initialize().then(downloads => {
       if (!downloads) return;
       if (!backgroundAllowed()) { downloads.pause(); return; }
-      // A complete offline install includes images on every connection. Keep it
-      // low priority and interruptible by navigation/input, even with data saver.
-      const lessons = manifest.lessons;
-      const lesson = !selected?.signal?.aborted && manifest.lessons.find(item => item.subjectId === selected?.subjectId && item.lessonId === selected?.lessonId);
-      downloads.start([...(lesson ? [...lesson.first, ...lesson.files] : []), ...manifest.onboarding, ...manifest.helpers,
-        ...lessons.flatMap(lesson => lesson.first), ...lessons.flatMap(lesson => lesson.files)]);
+      showOfflineStatus();
+      downloads.start(backgroundFiles(manifest, { accountType:getAccountType(),
+        selectedLesson:!selected?.signal?.aborted ? selected : null, connection:navigator.connection }));
       downloads.resume();
       void finishOffline();
     });

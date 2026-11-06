@@ -57,11 +57,12 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor }) => {
     assert.equal(await evaluate("document.querySelectorAll('[data-exam-correct][aria-pressed=true]').length"),0);
     assert.equal(await totalXp(),0,"the reminder does not award XP");
     const baseColors = await buttonColors();
-    assert.deepEqual(baseColors[1].fill,[255,75,75],"wrong uses the saturated bright red");
+    assert.deepEqual(baseColors,[{fill:[255,255,255],ink:'rgb(88, 204, 2)'},{fill:[255,255,255],ink:'rgb(255, 75, 75)'}],"both choices start white with their green or red text");
     await evaluate("document.querySelector('[data-exam-correct=true]').click();document.querySelector('[data-exam-correct=false]').click()");
     assert.equal(await evaluate("document.querySelector('[data-exam-choice-error]').hidden"),true,"choosing an answer clears the reminder");
     const selectedRed = (await buttonColors())[1].fill;
-    assert.ok(selectedRed.every((value,index)=>value<baseColors[1].fill[index] && value>=baseColors[1].fill[index]*0.94),"selection only slightly darkens red");
+    assert.deepEqual(selectedRed,[255,75,75],"the selected choice fills red");
+    assert.deepEqual((await buttonColors())[0].fill,[255,255,255],"the previous choice returns to white");
     assert.equal(await totalXp(),0,"changing a choice does not award XP");
     assert.equal(await evaluate("document.querySelector('[data-template-primary]').disabled"),false);
     await evaluate("document.querySelector('[data-template-primary]').click()");
@@ -89,10 +90,8 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor }) => {
       assert.equal(await evaluate("document.querySelector('[data-exam-correct=false]').getAttribute('aria-pressed')"),"false");
       assert.equal(await evaluate("document.querySelectorAll('[data-exam-correct]:disabled').length"),0,"both buttons stay available for toggling");
       const colors = await buttonColors();
-      const [green,red] = colors.map(color=>color.fill);
-      assert.ok(green[1]>green[0] && red[0]>red[1],JSON.stringify(colors));
-      assert.ok(green.every((value,index)=>value<=baseColors[0].fill[index] && value>=baseColors[0].fill[index]*0.94),"selection only slightly darkens green");
-      assert.ok(colors.every(color=>color.ink==='rgb(255, 255, 255)'));
+      assert.deepEqual(colors[0],{fill:[88,204,2],ink:'rgb(255, 255, 255)'},"the selected correct choice is green with white text");
+      assert.deepEqual(colors[1],{fill:[255,255,255],ink:'rgb(255, 75, 75)'},"the other choice returns to white with red text");
       assert.equal(await totalXp(),attempt ? reward : 0,"a selection is not saved before Continue");
       assert.equal(await evaluate("document.documentElement.scrollWidth<=innerWidth"),true);
       const { data } = await send("Page.captureScreenshot", { format:"png" });

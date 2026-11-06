@@ -8,6 +8,7 @@ import { identifierAliases, isAccountIdentifierField, normalizeEmail, normalizeP
 import { initializeAccountSchema } from "./account-schema.mjs";
 import { createStudentDirectory } from "./student-directory.mjs";
 import { createQuestionFeedbackStore } from "./question-feedback-store.mjs";
+import { createBrowserPolicyStore, sqliteBrowserDatabase } from './browser-policy-store.mjs';
 
 export { normalizeEmail, normalizePhone, normalizeUsername } from "../domain/account.js";
 
@@ -17,7 +18,8 @@ const DUMMY_PASSWORD_SALT = "tawjihi-invalid-account";
 const DUMMY_PASSWORD_HASH = scryptSync("invalid-password-sentinel", DUMMY_PASSWORD_SALT, 64).toString("base64url");
 
 function publicAccount(row) {
-  if (!row) return null;
+  // A suspended identity must not become a free account with a valid session.
+  if (!row || row.account_type === "banned") return null;
   return {
     id:String(row.id),
     username:row.username,
@@ -223,6 +225,7 @@ export function createAccountStore({ databasePath } = {}) {
 
   return Object.freeze({
     progress,
+    browserPolicy:createBrowserPolicyStore(sqliteBrowserDatabase(database)),
     questionFeedback,
     students:createStudentDirectory(database),
     getDataResetId:() => database.prepare("SELECT value FROM app_metadata WHERE key='data_reset_id'").get()?.value || null,
@@ -234,6 +237,13 @@ export function createAccountStore({ databasePath } = {}) {
       return !identifierExists(value);
     },
     createSession,
+    claimDevice(accountId, { kind, tokenHash }) {
+      // The unique slot constraint also arbitrates simultaneous sign-ins.
+      database.prepare("INSERT OR IGNORE INTO account_devices VALUES(?,?,?,?)")
+        .run(Number(accountId), kind, tokenHash, new Date().toISOString());
+      return Boolean(database.prepare("SELECT 1 FROM account_devices WHERE account_id=? AND token_hash=?")
+        .get(Number(accountId), tokenHash));
+    },
     getAccountForSession,
     deleteSession(token) { if (token) deleteSession.run(tokenDigest(token)); },
     close() { database.close(); },

@@ -52,6 +52,7 @@ export function renderSubjectCompletion(title, outcome) {
       ${stat("accuracy", showAccuracy ? "دقّة الإجابات" : outcome.demoMode ? "نسبة التجربة" : "نسبة الدرس", '<img class="subject-gain-icon subject-gain-icon--accuracy" src="assets/icons/dashboard-challenges.svg" alt="" aria-hidden="true">', `<bdi class="ui-number" dir="ltr">${score == null ? "—" : `${count(score, 220)}%`}</bdi>`)}
       ${stat("quick", "وقت التعلّم", '<img class="subject-gain-icon subject-gain-icon--quick" src="assets/icons/dashboard-quest-time.svg" alt="" aria-hidden="true">', `<bdi class="ui-number" dir="ltr">${Number.isFinite(elapsedSeconds) ? count(elapsedSeconds, 320, "duration", duration) : duration}</bdi>`)}
     </div>
+    ${outcome.demoMode ? '' : `<div class="subject-session-gems"><img src="assets/icons/nav-gem.svg" width="30" height="30" alt="" aria-hidden="true"><span>جواهر الجلسة</span><bdi class="ui-number" dir="ltr" data-session-gems>${Math.max(0,Math.floor(Number(outcome.gemGain) || 0))}</bdi></div>`}
     ${renderCompletionLevel(outcome)}
     <span class="visually-hidden">تقدّم المادة ${progress}%</span>
   </div>`;

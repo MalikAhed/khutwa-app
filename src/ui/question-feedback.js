@@ -109,18 +109,9 @@ export function mountQuestionFeedback({ host, shell, feedback, signal, locale = 
     activeDialog.showModal();
   }, { signal });
 
-  const restored = new WeakSet();
   const restoreRating = () => {
     const panel = host.querySelector(".level-question-rating-panel");
     if (!panel) return;
-    if (!restored.has(panel)) {
-      restored.add(panel);
-      const status = document.createElement("span");
-      status.className = "question-rating-save-status";
-      status.setAttribute("role","status");
-      status.setAttribute("aria-live","polite");
-      panel.append(status);
-    }
     const rating = feedback?.getRating();
     const selected = [...panel.querySelectorAll("[data-question-rating]")].find(input => input.value === rating);
     if (selected) {
@@ -138,13 +129,16 @@ export function mountQuestionFeedback({ host, shell, feedback, signal, locale = 
     if (!event.target.matches("[data-question-rating]")) return;
     const current = ++revision;
     const panel = event.target.closest(".level-question-rating-panel");
-    const status = panel.querySelector(".question-rating-save-status");
-    if (status) status.textContent = ar ? "جارٍ الحفظ…" : "Saving…";
-    const result = await feedback?.saveRating(event.target.value,{ signal });
-    if (signal.aborted || current !== revision || !status?.isConnected) return;
-    status.textContent = result?.status === "saved"
-      ? ""
-      : (ar ? "تعذّر حفظ التقييم. اختره مجددًا للمحاولة." : "Could not save. Try choosing again.");
+    panel.querySelector(".question-rating-save-status")?.remove();
+    let result;
+    try { result = await feedback?.saveRating(event.target.value,{ signal }); } catch { /* Keep the retry message for a failed save. */ }
+    if (signal.aborted || current !== revision || !panel.isConnected || result?.status === "saved") return;
+    const status = document.createElement("span");
+    status.className = "question-rating-save-status";
+    status.setAttribute("role","status");
+    status.setAttribute("aria-live","polite");
+    status.textContent = ar ? "تعذّر حفظ التقييم. اختره مجددًا للمحاولة." : "Could not save. Try choosing again.";
+    panel.append(status);
   }, { signal });
   signal.addEventListener("abort", () => { unsubscribe?.(); observer.disconnect(); close(); flag.remove(); },{ once:true });
 }

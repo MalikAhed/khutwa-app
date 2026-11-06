@@ -1,6 +1,6 @@
 import { MATHEMATICS_LESSONS } from "./mathematics/math-course.js";
 import { CHEMISTRY_LESSONS } from "./chemistry/chemistry-course.js";
-import { ISLAMIC_LESSONS, createIslamicLesson } from "./islamic-education/islamic-bank.js";
+import { ISLAMIC_LESSONS } from "../subject-catalog.js";
 import { getSubjectRoadmapLesson } from "../subject-roadmaps.js";
 
 function lessonKey(subjectId, lessonId) {
@@ -118,9 +118,9 @@ export const subjectLessonRegistry = new Map([
 
 // Register each canonical book lesson once. Legacy routes resolve below.
 for (const lesson of ISLAMIC_LESSONS) {
-  subjectLessonRegistry.set(lessonKey("islamic-education", lesson.id), () => ({
+  subjectLessonRegistry.set(lessonKey("islamic-education", lesson.id), () => import("./islamic-education/islamic-bank.js").then(({ createIslamicLesson }) => ({
     default:createIslamicLesson(lesson.id),
-  }));
+  })));
 }
 
 function roadmapLesson(subjectId, lessonId) {
@@ -141,7 +141,7 @@ export function createSubjectLessonLoader({ registry = subjectLessonRegistry } =
     let load = registry.get(key);
     if (!load && registry === subjectLessonRegistry && subjectId === "islamic-education"
         && roadmapLesson(subjectId, lessonId)?.hidden) {
-      load = () => ({ default:createIslamicLesson(lessonId.replace(/^islamic-/, "")) });
+      load = () => import("./islamic-education/islamic-bank.js").then(({ createIslamicLesson }) => ({ default:createIslamicLesson(lessonId.replace(/^islamic-/, "")) }));
     }
     if (!load) return null;
 

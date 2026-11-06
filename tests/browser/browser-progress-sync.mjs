@@ -37,6 +37,7 @@ await withBrowserPage(async first => {
   await first.waitFor("document.querySelector('[data-learner-dashboard]') && document.querySelector('.progress-feedback')?.hidden");
 
   await withBrowserPage(async second => {
+    await second.send('Emulation.setUserAgentOverride',{userAgent:'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) Mobile/15E148 Safari/604.1'});
     await second.send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});
     await visit(second,'?flow=sign-in');
     await second.waitFor("document.querySelector('[data-sign-in-form]')");
@@ -138,8 +139,11 @@ await withBrowserPage(async first => {
     assert.equal((await first.evaluate('syncStore.recordAnswer({...syncKey,stepId:syncStep,correct:false}).then(async result=>{await result.whenSynced;return {status:result.status};})')).status,'saved');
     assert.equal(await first.evaluate('syncLocal.pending(syncKey.ownerId).then(updates=>updates.length)'),1);
     await accountRequest(first,'sign-out',{});
-    const other=await accountRequest(first,'register',{username:'sync-b',email:'sync-b@example.com',phone:'+972598000022',curriculum:'gaza',path:'scientific',password:'Learn123'});
-    assert.equal(other.status,201);
+    // Switching to an existing account remains supported; a second signup from
+    // this registered browser is intentionally blocked by the browser policy.
+    await app.accountStore.createAccount({username:'sync-b',email:'sync-b@example.com',phone:'+972598000022',curriculum:'gaza',path:'scientific',password:'Learn123'});
+    const other=await accountRequest(first,'sign-in',{identifier:'sync-b',password:'Learn123'});
+    assert.equal(other.status,200);
     assert.equal((await first.evaluate('syncStore.retry(syncKey.ownerId)')).status,'saved');
     const otherRecords=await first.evaluate(`fetch('/api/progress',{headers:{'X-Progress-Owner':${JSON.stringify(`account:${other.body.account.id}`)}}}).then(response=>response.json())`);
     assert.deepEqual(otherRecords.records,[]);

@@ -53,8 +53,8 @@
 .dashboard-materials-heading h3,.dashboard-materials-heading p { margin:0; }
 .dashboard-materials-heading h3 { color:var(--system-ink); font-size:20px; font-weight:800; line-height:1.5; }
 .dashboard-materials-heading p { margin-top:3px; color:var(--system-muted); font-size:13px; line-height:1.6; }
-.dashboard-materials-heading>span { display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border:2px solid #d1d5db; border-radius:999px; background:#fff; color:#15803d; font-size:18px; font-weight:700; line-height:1.5; white-space:nowrap; direction:rtl; }
-.dashboard-materials-heading>span bdi { color:#166534; font-size:22px; font-weight:800; }
+.dashboard-materials-heading>span { display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border:2px solid #d1d5db; border-radius:999px; background:#fff; color:#36454f; font-size:18px; font-weight:700; line-height:1.5; white-space:nowrap; direction:rtl; }
+.dashboard-materials-heading>span bdi { color:inherit; font-size:22px; font-weight:800; }
 .dashboard-completion__ring { flex:none; width:32px; height:32px; transform:rotate(-90deg); }
 .dashboard-completion__track { stroke:#bbf7d0; }
 .dashboard-completion__value { stroke:#16a34a; }
@@ -110,6 +110,7 @@
 
 /* One compact offline indicator lives in the sky banner, above the scenery. */
 .offline-download-status { position:absolute; z-index:5; top:16px; left:16px; display:flex; align-items:center; gap:12px; width:194px; padding:12px; border:1px solid #ffffffd9; border-radius:20px; background:#ffffffed; box-shadow:0 6px 22px #126b8b1a; color:#174761; direction:ltr; font-family:var(--font-ui); }
+.offline-download-status[hidden] { display:none; }
 .offline-download-status__ring { position:relative; flex:none; width:48px; height:48px; color:var(--system-green); }
 .offline-download-status__ring svg { display:block; width:100%; height:100%; overflow:visible; }
 .offline-download-status__ring circle { fill:none; stroke-width:3.5; }

@@ -1,7 +1,8 @@
 @import url("./amiri-digits.css");
+@import url("./buttons.css");
 
 @font-face { font-family:"Noto Sans Arabic"; font-style:normal; font-weight:100 900; font-display:swap; src:url("../../assets/fonts/noto-sans-arabic/noto-sans-arabic-arabic-variable.woff2") format("woff2"); }
-:root { color-scheme:light; --ink:#102451; --muted:#7188aa; --blue:#0782ff; --line:#e2edf9; --sky:#edf8fe; --sidebar-width:264px; }
+:root { color-scheme:only light; --ink:#102451; --muted:#7188aa; --blue:#0782ff; --line:#e2edf9; --sky:#edf8fe; --sidebar-width:264px; }
 * { box-sizing:border-box; }
 body { margin:0; background:#fff; color:var(--ink); font:15px/1.7 "Amiri Digits","Noto Sans Arabic",sans-serif; -webkit-font-smoothing:antialiased; }
 h1,h2,h3,h4,p { margin:0; }

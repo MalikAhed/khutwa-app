@@ -7,10 +7,15 @@ export { renderLessonError } from "./lesson/status.js";
 
 /** @typedef {{completedStepIds:string[], isComplete:boolean}} LessonProgressUpdate */
 /** @typedef {{completedStepIds:string[], attemptedStepIds?:string[], completedAt?:string|null, mistakeStepIds?:string[]}} LessonProgress */
-/** @typedef {ReturnType<typeof import('../domain/subject-progress.js').summarizeParts> & {xpGain:number, progressGain:number, streakGain:number, alreadyCompleted?:boolean}} CompletionOutcome */
+/** @typedef {ReturnType<typeof import('../domain/subject-progress.js').summarizeParts> & {xpGain:number, gemGain?:number, progressGain:number, streakGain:number, alreadyCompleted?:boolean}} CompletionOutcome */
 /** @typedef {{isLessonPart?:boolean, progress?:LessonProgress,
  * onProgress?:(value:LessonProgressUpdate)=>void|Promise<void|import("../services/subject-progress-store.js").SaveResult>, onAnswer?:(value:{stepId:string,correct:boolean|null,reviewing?:boolean})=>void|Promise<void|import("../services/subject-progress-store.js").SaveResult>,
- * beforeAnswer?:()=>string|undefined,
+ * beforeAnswer?:()=>string|undefined|Promise<string|undefined>,
+ * beforeQuestionNavigation?:(id:string,options:{kind:string,signal:AbortSignal})=>Promise<void>,
+ * getNavigationStatus?:()=>{remaining:number,unlimited:boolean}, subscribeNavigation?:(listener:()=>void)=>()=>void,
+ * initialQuestionId?:string,
+ * subscribeRewards?:(listener:()=>void)=>()=>void,
+ * onReturnHome?:()=>void,
  * reviewStepId?:string|null, onReviewComplete?:()=>void, getCompletionOutcome?:()=>CompletionOutcome, onExitLesson?:()=>void, onFinishLesson?:()=>void,
  * getMathFilterCatalog?:(scope:string)=>Promise<Array<object>>, mathFilterState?:{scope:string,stepIds:string[]},
  * questionFilterIds?:string[],

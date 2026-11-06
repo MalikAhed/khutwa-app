@@ -1,3 +1,5 @@
+@import url("./buttons.css");
+
 /* Shared native controls. Feature owners choose size/appearance through these roles. */
 .system-action {
   --action-fill:var(--system-white);
@@ -31,6 +33,8 @@
 .system-action:disabled { --action-fill:var(--block); --action-border:var(--system-border); --action-edge:var(--system-border); --action-ink:var(--system-muted); cursor:not-allowed; }
 [aria-busy="true"] .system-action:disabled { cursor:wait; }
 .system-action:focus-visible { outline:3px solid var(--system-focus); outline-offset:4px; }
+/* Input modality, rather than viewport width, preserves external-keyboard access. */
+:root[data-input-modality="touch"] :is(button,a,[role="button"],[tabindex]):focus { outline:none!important; }
 .system-feedback { width:100%; padding:var(--space-4); border-radius:var(--radius-control); }
 .system-feedback.is-success { background:#e5f7dc; color:#315f26; }
 .system-feedback.is-error { background:#fff0f3; color:#8a4e59; }
@@ -72,25 +76,21 @@ body.ui-lab-open {
 .progress-feedback[hidden], .progress-feedback [hidden] { display: none; }
 body.ready-lesson-open .progress-feedback { display: none; }
 
-/* Raised actions keep their physical feedback; text controls only change ink. */
+/* Raised actions also collapse their edge; every button shares buttons.css press feedback. */
 button {
   --button-press-edge:var(--action-edge,rgba(48,71,90,.18));
   transition:transform 120ms ease,box-shadow 120ms ease,color 120ms ease;
   -webkit-tap-highlight-color:transparent;
 }
 @media (hover:hover) {
-  button:is(.system-action,.level-action,.topbar-login,.topbar-create,.level-answer-list button,.lesson-self-check button,.lesson-video-chapter,.lesson-video-tour-actions button):not(:disabled):not([aria-disabled="true"]):hover {
+  button:is(.system-action,.level-action,.topbar-login,.topbar-create,.level-answer-list button,.lesson-self-check button,.lesson-video-chapter,.lesson-video-tour-actions button):not(:disabled):not([aria-disabled="true"]):not(.lesson-self-check button[aria-pressed="true"]):hover {
     transform:translateY(2px)!important;
     box-shadow:0 2px 0 var(--button-press-edge)!important;
   }
   button:is(.lesson-back,.auth-back,.auth-links button,.nav-item,.question-report-button,.math-question-filter-button,.lesson-scroll-cue,.question-number):not(.app-close):not(:disabled):not([aria-disabled="true"]):hover { color:var(--button-interaction-ink,#30475a); }
 }
-button:is(.system-action,.level-action,.topbar-login,.topbar-create,.level-answer-list button,.lesson-self-check button,.lesson-video-chapter,.lesson-video-tour-actions button):not(:disabled):not([aria-disabled="true"]):active {
-  transform:translateY(var(--control-press))!important;
-  box-shadow:0 1px 0 var(--button-press-edge)!important;
-}
 button:is(.lesson-back,.auth-back,.auth-links button,.nav-item,.question-report-button,.math-question-filter-button,.lesson-scroll-cue,.question-number):not(.app-close):not(:disabled):not([aria-disabled="true"]):active { color:var(--button-interaction-ink,#30475a); }
-/* Shared X controls stay still and change only their icon color on press. */
+/* Shared X controls also change their icon color on press. */
 button.app-close {
   display:grid; place-items:center; flex:0 0 44px; width:44px; height:44px;
   min-width:44px; min-height:44px; padding:0; border:0; border-radius:12px;
@@ -111,6 +111,30 @@ button.app-close:active { color:var(--close-pressed,#30475a); }
 @media (prefers-reduced-motion:reduce) {
   button { transition:none; }
   button:not(.nav-item):not(.roadmap-part):not([data-exam-correct]):not(:disabled):not([aria-disabled="true"]):is(:hover,:active) { transform:none!important; }
+}
+
+/* Shared gold actions: one painted face, collapsing edge and a single shimmer. */
+:is(button,a).system-action--gold {
+  --action-edge:#efb72c;
+  --button-press-depth:3px;
+  position:relative; isolation:isolate; overflow:hidden;
+  padding:0 14px; border:3px solid #ffd000; border-radius:var(--button-radius);
+  background:linear-gradient(100deg,#ffe64b,#ffdf00 18%,#ffe600 53%,#ffdf00 82%,#ffe64b);
+  box-shadow:0 3px 0 #efb72c; color:#073b55; font-weight:900;
+  transform:translateY(0); transition:transform 120ms ease,box-shadow 120ms ease,filter 120ms ease;
+  touch-action:manipulation; -webkit-tap-highlight-color:transparent;
+}
+.system-action--gold::before { content:""; position:absolute; inset:0; background:linear-gradient(133deg,#fff68a 0 10%,transparent 10.3% 28%,#fff68a 28.3% 31.4%,transparent 31.7% 36%,#fff68a 36.3% 44%,transparent 44.3% 88%,#fff68a 88.3%); opacity:.75; pointer-events:none; }
+.system-action--gold::after { content:""; position:absolute; inset:-60% auto -60% -38%; width:28%; background:linear-gradient(90deg,transparent,#fff9,transparent); opacity:0; pointer-events:none; animation:gold-action-shimmer 3500ms ease-in-out 900ms infinite; }
+.system-action--gold>span { position:relative; z-index:1; }
+@media(hover:hover) and (pointer:fine) {
+  :is(button,a).system-action--gold:hover:not(:disabled):not([aria-disabled="true"]) { transform:translateY(2px)!important; box-shadow:0 1px 0 #efb72c!important; }
+}
+@keyframes gold-action-shimmer { 0%,62% { opacity:0; transform:translateX(0) skewX(-20deg); } 64% { opacity:.85; } 83% { opacity:.85; transform:translateX(500%) skewX(-20deg); } 84%,100% { opacity:0; transform:translateX(500%) skewX(-20deg); } }
+@media(prefers-reduced-motion:reduce) {
+  :is(button,a).system-action--gold { transition:none; }
+  :is(button,a).system-action--gold:is(:hover,:active):not(:disabled):not([aria-disabled="true"]) { transform:none!important; }
+  .system-action--gold::after { opacity:0; animation:none; }
 }
 
 /* Locked navigation feedback, shared by desktop and mobile. */

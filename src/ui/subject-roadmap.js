@@ -4,6 +4,7 @@ import { escapeHtml } from "../lib/dom.js";
 import { getLessonQuestionProgress } from "../domain/subject-question-progress.js";
 import { getSubjectPartAccess } from "../domain/subject-access.js";
 import { getShellViewportBounds } from "./app-shell.js";
+import { hasFreeLessonPractice } from "../domain/free-practice.js";
 import { readablePageReferences } from "../lib/page-labels.js";
 
 const UNIT_GUIDE_ENABLED = false;
@@ -23,7 +24,7 @@ const levelButtonArt = number => `<svg class="roadmap-level-art" viewBox="20 29 
   <span class="roadmap-part-number" aria-hidden="true">${escapeHtml(String(number))}</span>
 </span>`;
 
-function lessonGroup(unit, lesson, { getPartProgress, getPartQuestionIds, getAccess, currentPart, questionsOnly, lessonNumbers }) {
+function lessonGroup(unit, lesson, { getPartProgress, getPartQuestionIds, getAccess, currentPart, questionsOnly, lessonNumbers, isHeartFreeLesson }) {
   const questions = getLessonQuestionProgress(lesson, getPartProgress, getPartQuestionIds);
   const parts = questionsOnly ? [questions.nextPart].filter(Boolean) : lesson.parts || [];
   const stops = parts.map((part, index) => {
@@ -53,7 +54,7 @@ function lessonGroup(unit, lesson, { getPartProgress, getPartQuestionIds, getAcc
     const buttonContent = questionsOnly ? levelButtonArt(number) : `<span class="roadmap-part-number" aria-hidden="true">${state === "completed" ? check : pathLocked || locked || !available ? lock : escapeHtml(String(number))}</span>`;
     return `<li class="roadmap-stop" data-part-state="${state}"><div class="roadmap-node">${current ? `<span class="roadmap-start-hint" aria-hidden="true">${state === "in-progress" ? "تابع" : "ابدأ"}</span>` : ""}<div class="roadmap-part-wrap"><button class="roadmap-part" type="button" data-roadmap-unit="${escapeHtml(unit.id)}" data-roadmap-lesson="${escapeHtml(lesson.id)}" data-roadmap-part="${escapeHtml(part.id)}" data-unit-label="${escapeHtml(lesson.label)}" data-lesson-label="${escapeHtml(label)}" data-part-pages="${escapeHtml(pages)}" data-part-state="${state}" data-part-available="${available}" data-path-locked="${pathLocked}" data-access-state="${access.state}"${locked ? ' data-account-locked="true"' : ""} ${current ? 'aria-current="step" ' : ""}aria-controls="roadmap-part-brief" aria-expanded="false" aria-label="${escapeHtml(label)}${questionsOnly ? `، ${count}` : ""}${status ? `، ${status}` : ""}">${buttonContent}</button>${ring}</div><span class="roadmap-part-copy"><strong>${escapeHtml(label)}</strong>${questionsOnly ? `<small>${count}</small>` : ""}</span></div>${connector}</li>`;
   }).join("");
-  return `<section class="roadmap-lesson-group"${questionsOnly ? ` data-level-number="${lessonNumbers.get(lesson.id)}" data-path-position="${(lessonNumbers.get(lesson.id) - 1) % 4}"` : ""}><header class="roadmap-lesson-divider"><div class="roadmap-lesson-heading"><h3>${escapeHtml(lesson.label)}${lesson.recommended ? '<span class="roadmap-recommended">موصى به</span>' : ""}</h3></div></header><ol class="roadmap-parts${questionsOnly ? " roadmap-parts--questions" : ""}" aria-label="${escapeHtml(lesson.label)}">${stops}</ol></section>`;
+  return `<section class="roadmap-lesson-group"${questionsOnly ? ` data-level-number="${lessonNumbers.get(lesson.id)}" data-path-position="${(lessonNumbers.get(lesson.id) - 1) % 4}"` : ""}><header class="roadmap-lesson-divider"><div class="roadmap-lesson-heading"><h3>${escapeHtml(lesson.label)}${isHeartFreeLesson?.(lesson) ? '<span class="roadmap-recommended">تدريب دون قلوب</span>' : ''}${lesson.recommended ? '<span class="roadmap-recommended">موصى به</span>' : ""}</h3></div></header><ol class="roadmap-parts${questionsOnly ? " roadmap-parts--questions" : ""}" aria-label="${escapeHtml(lesson.label)}">${stops}</ol></section>`;
 }
 
 
@@ -68,7 +69,7 @@ function unitCard(unit, options) {
 
 export function renderSubjectRoadmapMarkup(roadmap, options = {}) {
   roadmap = { ...roadmap, units:roadmap.units.map(unit => ({ ...unit, lessons:unit.lessons.filter(lesson => !lesson.hidden) })) };
-  options = { ...options, getAccess:(lesson, part) => getSubjectPartAccess(roadmap, { lessonId:lesson.id, partId:part.id, getPartProgress:options.getPartProgress, accountRequired:options.isLessonLocked?.(roadmap.units.find(unit => unit.lessons.includes(lesson)), lesson) }) };
+  options = { ...options, isHeartFreeLesson:lesson => hasFreeLessonPractice({subjectId:roadmap.subjectId,lessonId:lesson.id}), getAccess:(lesson, part) => getSubjectPartAccess(roadmap, { lessonId:lesson.id, partId:part.id, getPartProgress:options.getPartProgress, accountRequired:options.isLessonLocked?.(roadmap.units.find(unit => unit.lessons.includes(lesson)), lesson) }) };
   options.questionsOnly = roadmap.questionsOnly || roadmap.subjectId === "ict" && roadmap.units.some(unit => unit.lessons.some(lesson => lesson.id === "database-management"));
   const visibleLessons = roadmap.units.flatMap(unit => unit.lessons);
   options.lessonNumbers = new Map(visibleLessons.map((lesson, index) => [lesson.id, index + 1]));

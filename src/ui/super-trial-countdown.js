@@ -1,6 +1,7 @@
+import { SUPER_TRIAL_ENABLED } from "../domain/learner-resources.js";
 /** Home shares the account's real trial expiry with the offers. */
 export function mountSuperTrialCountdown({ container, resourceStore, getOwnerId, now = Date.now }) {
-  if (!resourceStore) return { update() {}, destroy() {} };
+  if (!resourceStore || !SUPER_TRIAL_ENABLED) return { update() {}, destroy() {} };
   const badge = document.createElement("div");
   badge.className = "super-trial-countdown";
   badge.dataset.superTrialCountdown = "";

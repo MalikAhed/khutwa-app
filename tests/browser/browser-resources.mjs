@@ -29,6 +29,7 @@ try {
       const [{mountAppShell},{createAuthHeader},{createLearnerResources},{renderLearnerDashboardMarkup},{renderQuestion},{renderExamQuestion},{mountQuestionFeedback}] = await Promise.all([
         import('/src/ui/app-shell.js'),import('/src/ui/auth-header.js'),import('/src/services/learner-resources.js'),import('/src/ui/learner-dashboard.js'),import('/src/ui/lesson/question.js'),import('/src/ui/lesson/exam-question.js'),import('/src/ui/question-feedback.js')
       ]);
+      const {nextHeartReset}=await import('/src/domain/learner-resources.js');
       let type='free',clock=Date.now(),controller,stopQuestion;
       const listeners=new Set();
       const owner='demo:resource-ui';
@@ -56,7 +57,7 @@ try {
           :renderQuestion(host,{...options,definition:{id:'mcq-resource',type:'mcq',content:{title:'امتحان سابق',prompt:'اختر الإجابة الصحيحة.',answers:[{id:'a',text:'الأولى',correct:true},{id:'b',text:'الثانية',correct:false}]}}});
         mountQuestionFeedback({host,shell:elements.lessonShell,signal:controller.signal,locale:'ar',feedback:{report:async()=>({status:'saved'}),getRating:()=>null}});
       };
-      window.resourceUi={show,home,balance:()=>resources.get(owner),advance:()=>{clock+=12*60*1000;header.update()},empty:()=>{while(resources.get(owner).hearts>0)resources.spend(owner,crypto.randomUUID())},subscribe:()=>{type='subscribed';listeners.forEach(cb=>cb())},destroy:()=>{home();header.destroy()}};
+      window.resourceUi={show,home,balance:()=>resources.get(owner),advance:()=>{clock=nextHeartReset(clock);header.update()},empty:()=>{while(resources.get(owner).hearts>0)resources.spend(owner,crypto.randomUUID())},subscribe:()=>{type='subscribed';listeners.forEach(cb=>cb())},destroy:()=>{home();header.destroy()}};
       await document.fonts.ready;
     })()`);
     const hearts=value=>waitFor(`document.querySelector('[data-resource-hearts]').textContent === '${value}'`);
@@ -117,8 +118,8 @@ try {
     await evaluate("resourceUi.empty();resourceUi.show(false)");await hearts(0);
     await evaluate("document.querySelector('[data-ui-lab-answer][data-correct=true]').click();document.querySelector('[data-ui-lab-check]').click()");
     assert.match(await evaluate("document.querySelector('[data-ui-lab-feedback]').textContent"),/نفدت القلوب/);
-    await evaluate("resourceUi.advance()");await hearts(1);
-    await evaluate("document.querySelector('[data-ui-lab-check]').click()");await hearts(0);
+    await evaluate("resourceUi.advance()");await hearts(10);
+    await evaluate("document.querySelector('[data-ui-lab-check]').click()");await hearts(9);
     await evaluate("resourceUi.subscribe()");await hearts("∞");
     assert.equal(await evaluate("document.querySelector('[data-resource-gems]').textContent"),"∞");
     assert.equal(await evaluate("getComputedStyle(document.querySelector('[data-resource-hearts]')).color"),"rgb(255, 75, 75)");

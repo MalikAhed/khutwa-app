@@ -48,11 +48,17 @@ export function renderAuthoredInteractiveLesson(
     isLessonPart = false,
     onAnswer,
     beforeAnswer,
+    beforeQuestionNavigation,
+    getNavigationStatus,
+    subscribeNavigation,
+    subscribeRewards,
+    initialQuestionId,
     reviewStepId,
     onReviewComplete,
     getCompletionOutcome,
     onExitLesson,
     onFinishLesson,
+    onReturnHome,
     getMathFilterCatalog,
     mathFilterState,
     onMathFilterApply,
@@ -110,6 +116,8 @@ export function renderAuthoredInteractiveLesson(
     0,
     authoredSteps.findIndex((step) => !completed.has(step.id)),
   );
+  if (!reviewStepId && initialQuestionId && authoredSteps.some(step => step.id === initialQuestionId))
+    currentIndex = authoredSteps.findIndex(step => step.id === initialQuestionId);
   const reviewTargetIndex = reviewStepId ? authoredSteps.findIndex((step) => step.id === reviewStepId) : -1;
   let reviewOpeningIndex = -1;
   if (reviewTargetIndex >= 0) {
@@ -158,6 +166,7 @@ export function renderAuthoredInteractiveLesson(
   const scoredQuestions = new Set();
   let reviewQueue = [];
   let reviewIndex = -1;
+  let navigationPending = false;
 
   document.body.classList.add(
     "ui-lab-open",
@@ -186,25 +195,34 @@ export function renderAuthoredInteractiveLesson(
     return onProgress?.({ completedStepIds:ids, isComplete });
   };
   const saveAnswer = async (answer) => {
-    if (typeof answer.correct === "boolean") { attempted.add(answer.stepId);updateProgress(); }
-    if (reviewIndex < 0 && typeof answer.correct === "boolean" && !scoredQuestions.has(answer.stepId)) {
-      scoredQuestions.add(answer.stepId);
-      answerCount += 1;
-      if (answer.correct) correctCount += 1;
-      answerRun = answer.correct ? answerRun + 1 : 0;
-      bestAnswerRun = Math.max(bestAnswerRun, answerRun);
-    }
     const source = demo?.sources.get(answer.stepId);
-    if (source && !source.save) return;
     const value = source ? { ...answer,stepId:source.stepId,correct:source.type === "exam-question" ? null : answer.correct } : answer;
-    const saving = onAnswer?.(value);
+    const saving = source && !source.save ? undefined : onAnswer?.(value);
     if (saving?.then) pendingAnswers.push(saving);
-    const saved = await saving;
     const celebrate = result => {
       if (!signal.aborted && !resultVisible && !demoMode && result?.dailyStreak) showDailyStreak(shell, result.dailyStreak, signal);
     };
-    celebrate(saved);
-    if (saved?.whenSynced) void saved.whenSynced.then(celebrate);
+    const confirmed = saved => {
+      if (saved?.status === 'failed') return saved.retry ? { ...saved, retry:async () => {
+        const retrying = saved.retry();
+        pendingAnswers.push(retrying);
+        return confirmed(await retrying);
+      } } : saved;
+      if (signal.aborted) return saved;
+      if (typeof answer.correct === "boolean") { attempted.add(answer.stepId);updateProgress(); }
+      if (!answer.reviewing && typeof answer.correct === "boolean" && !scoredQuestions.has(answer.stepId)) {
+        scoredQuestions.add(answer.stepId);
+        answerCount += 1;
+        if (answer.correct) correctCount += 1;
+        else mistakes.add(answer.stepId);
+        answerRun = answer.correct ? answerRun + 1 : 0;
+        bestAnswerRun = Math.max(bestAnswerRun, answerRun);
+      }
+      celebrate(saved);
+      if (saved?.whenSynced) void saved.whenSynced.then(celebrate);
+      return saved;
+    };
+    return confirmed(await saving);
   };
   const focusHost = () =>
     window.requestAnimationFrame(() => {
@@ -239,7 +257,7 @@ export function renderAuthoredInteractiveLesson(
     );
   };
   const renderResult = async ({ sessionEnded = false } = {}) => {
-    if (sessionEnded && answerCount === 0) {
+    if (sessionEnded && answerCount === 0 && pendingAnswers.length === 0) {
       (onExitLesson || onFinishLesson)?.();
       return;
     }
@@ -362,11 +380,12 @@ export function renderAuthoredInteractiveLesson(
     renderCompletionStep();
   };
   const goBack = () => {
+    if (navigationPending) return;
     if (reviewIndex >= 0) return;
     if (currentIndex === 0) return;
     currentIndex = currentIndex === reviewTargetIndex && reviewOpeningIndex >= 0
       ? reviewOpeningIndex : visibleIndex(currentIndex - 1);
-    renderCurrent();
+    renderCurrent('jump');
   };
   const exitFromOpening = () => {
     if (isLessonPart && !demoMode) void renderResult({ sessionEnded:true });
@@ -374,6 +393,7 @@ export function renderAuthoredInteractiveLesson(
     else backButton?.click();
   };
   backButton.addEventListener("click", (event) => {
+    if (navigationPending) { event.stopImmediatePropagation(); return; }
     if (!isLessonPart || demoMode || resultVisible && !resultPending) return;
     event.stopImmediatePropagation();
     if (!questionSteps.length && hasHiddenQuestions()) { (onExitLesson || onFinishLesson)?.(); return; }
@@ -393,12 +413,12 @@ export function renderAuthoredInteractiveLesson(
     } });
   };
   const goNext = () => {
+    if (navigationPending) return false;
     if (reviewIndex >= 0) {
       if (reviewIndex + 1 === reviewQueue.length) { void renderResult(); return; }
       reviewIndex += 1;
       currentIndex = authoredSteps.indexOf(reviewQueue[reviewIndex]);
-      renderCurrent();
-      return;
+      return renderCurrent('continue');
     }
     if (reviewStepId === authoredSteps[currentIndex].id) {
       onReviewComplete?.();
@@ -415,7 +435,7 @@ export function renderAuthoredInteractiveLesson(
     }
     announce(false);
     currentIndex = nextIndex;
-    renderCurrent();
+    return renderCurrent('continue');
   };
   const hideCurrent = (step) => {
     const nextIds = authoredSteps.slice(currentIndex + 1).map(item => item.id);
@@ -432,7 +452,74 @@ export function renderAuthoredInteractiveLesson(
     currentIndex = authoredSteps.indexOf(next);
     renderCurrent();
   };
-  const renderCurrent = () => {
+  let navigationSequence = 0;
+  let displayedIndex = null;
+  let displayedSteps, displayedQuestions, displayedFilter;
+  let displayedReviewIndex, displayedReviewQueue, displayedResult;
+  const rememberDisplayed = () => {
+    displayedIndex = currentIndex;
+    displayedSteps = authoredSteps; displayedQuestions = questionSteps; displayedFilter = activeFilterIds;
+    displayedReviewIndex = reviewIndex; displayedReviewQueue = reviewQueue; displayedResult = resultVisible;
+  };
+  const renderCurrent = (kind = 'enter') => {
+    const sequence = ++navigationSequence;
+    const targetIndex = visibleIndex(currentIndex);
+    const target = authoredSteps[targetIndex];
+    if (!beforeQuestionNavigation || demoMode || !target || target.type === 'markdown') {
+      navigationPending = false;
+      container.inert = false;
+      container.removeAttribute('aria-busy');
+      renderCurrentContent();
+      rememberDisplayed();
+      return true;
+    }
+    navigationPending = true;
+    shell.querySelector('[data-navigation-error]')?.remove();
+    container.inert = true;
+    container.setAttribute('aria-busy','true');
+    return beforeQuestionNavigation(target.id,{kind,signal}).then(() => {
+      if (signal.aborted || sequence !== navigationSequence) return false;
+      currentIndex = targetIndex;
+      renderCurrentContent();
+      rememberDisplayed();
+      return true;
+    }).catch(error => {
+      if (signal.aborted || sequence !== navigationSequence) return false;
+      // Keep the exact current card when a jump is denied. Deep links are
+      // authorized before any question is rendered, so reloading cannot reset skips.
+      if (displayedIndex !== null) {
+        currentIndex = displayedIndex;
+        authoredSteps = displayedSteps; questionSteps = displayedQuestions; activeFilterIds = displayedFilter;
+        reviewIndex = displayedReviewIndex; reviewQueue = displayedReviewQueue; resultVisible = displayedResult;
+      }
+      else if (authoredSteps.some(step => step.id === error.currentStepId)) {
+        currentIndex = authoredSteps.findIndex(step => step.id === error.currentStepId);
+        void renderCurrent('enter');
+      }
+      else {
+        const returnHome = error.code === 'connection-required';
+        container.innerHTML = `<section class="question-hidden-empty" dir="rtl"><p role="status" hidden>تعذّر فتح هذا السؤال. حسابك وتقدّمك محفوظان.</p><button class="system-action" data-navigation-return>${returnHome ? 'العودة إلى الرئيسية' : 'العودة لمسار المادة'}</button></section>`;
+        container.querySelector('[data-navigation-return]').addEventListener('click',() =>
+          (returnHome ? onReturnHome || onExitLesson || onFinishLesson : onExitLesson || onFinishLesson)?.(),{signal});
+      }
+      if (!['connection-required','navigation-limit','super-required'].includes(error.code)) {
+        const notice = document.createElement('p');
+        notice.dataset.navigationError = '';
+        notice.className = 'level-feedback';
+        notice.setAttribute('role','alert');
+        notice.textContent = 'تعذّر تأكيد الطلب من الخادم. حاول مجددًا.';
+        container.append(notice);
+      }
+      return false;
+    }).finally(() => {
+      if (!signal.aborted && sequence === navigationSequence) {
+        navigationPending = false;
+        container.inert = false;
+        container.removeAttribute('aria-busy');
+      }
+    });
+  };
+  const renderCurrentContent = () => {
     destroyStep();
     destroyStep = () => {};
     const instantEntry = !renderedStep && isLessonPart;
@@ -548,6 +635,7 @@ export function renderAuthoredInteractiveLesson(
                 signal:stepController.signal, locale,
                 finishLabel:shouldResume ? (locale === "ar" ? "متابعة الدرس" : "Resume lesson") : undefined,
                 onFinish() {
+                  if (navigationPending) return;
                   if (!shouldResume) return;
                   currentIndex = tourResume.index;
                   resultVisible = tourResume.resultVisible;
@@ -571,11 +659,14 @@ export function renderAuthoredInteractiveLesson(
     if (step.type === "exam-question") {
       const examController = new AbortController();
       const destroyExam = renderExamQuestion(host, step, { locale, onBack:goBack, selfCheck:!demoMode, beforeAnswer,
+        onAssess:({ correct }) => {
+          void Promise.resolve(questionFeedbackFor(step.id)?.saveRating(correct ? "easy" : "hard", { automatic:true })).catch(() => {});
+        },
         onAnswer:({ correct }) => {
-          void saveAnswer({ stepId:step.id, correct, reviewing:reviewIndex >= 0 });
+          return saveAnswer({ stepId:step.id, correct, reviewing:reviewIndex >= 0 });
         }, onContinue() {
           if (demoMode) void saveAnswer({ stepId:step.id, correct:null });
-          goNext();
+          return goNext();
         }, onReveal:() => onLessonEvent?.({ type:"reveal",step }) });
       mountQuestionFeedback({ host,shell,feedback:questionFeedbackFor(step.id),signal:examController.signal,locale,onHidden:() => hideCurrent(step) });
       mountQuestionExplanation({host,explanation:demoMode ? null : getQuestionExplanation?.(step),locale,signal:examController.signal});
@@ -594,9 +685,9 @@ export function renderAuthoredInteractiveLesson(
       onBack: goBack,
       onContinue: goNext,
       onAnswer: (result) => {
-        if (reviewIndex < 0 && !result.correct) mistakes.add(step.id);
-        void saveAnswer({ ...result, stepId: step.id, reviewing: reviewIndex >= 0 });
+        const saving = saveAnswer({ ...result, stepId: step.id, reviewing: reviewIndex >= 0 });
         onLessonEvent?.({ type:"answer",step,correct:result.correct });
+        return saving;
       },
       locale,
     });
@@ -618,6 +709,7 @@ export function renderAuthoredInteractiveLesson(
     getCatalog:demoMode ? undefined : getMathFilterCatalog,
     initialState:mathFilterState,
     onApply(selection) {
+      if (navigationPending) return false;
       const currentId = authoredSteps[currentIndex]?.id;
       const ids = onMathFilterApply?.(selection);
       if (signal.aborted) return;
@@ -627,26 +719,35 @@ export function renderAuthoredInteractiveLesson(
       reviewIndex = -1;
       reviewQueue = [];
       currentIndex = Math.max(0, authoredSteps.findIndex(step => step.id === currentId));
-      renderCurrent();
+      return renderCurrent('jump');
     },
   });
   const destroyQuestionNavigation = demoMode ? () => {} : mountQuestionNavigation({
     shell,signal,locale,getQuestions:() => questionSteps,
-    getCurrentId:() => resultVisible ? null : authoredSteps[currentIndex]?.id,
+    getCurrentId:() => resultVisible ? null : container.querySelector('[data-live-authored-step]')?.dataset.lessonStep || authoredSteps[currentIndex]?.id,
     getRating:id => questionFeedbackFor(id)?.getRating(),
     subscribe:listener => questionFeedbackFor(questionSteps[0]?.id)?.subscribe?.(listener),
+    getNavigationStatus,subscribeNavigation,
     onSelect(id) {
+      if (navigationPending) return;
       const index = authoredSteps.findIndex(step => step.id === id);
       if (index < 0) return;
       resultVisible = false;reviewIndex = -1;reviewQueue = [];currentIndex = index;
-      renderCurrent();
+      renderCurrent('jump');
     },
   });
   mountTemplateEnterShortcut(container, { signal });
   mountTemplateContentZoom(container, { signal });
+  const stopRewardUpdates = subscribeRewards?.(() => {
+    const counter = container.querySelector('[data-session-gems]');
+    if (counter) counter.textContent = String(getCompletionOutcome?.().gemGain || 0);
+  });
   if (resultVisible && (questionSteps.length || !hasHiddenQuestions())) renderResult();
   else renderCurrent();
   return () => {
+    stopRewardUpdates?.();
+    container.inert = false;
+    container.removeAttribute('aria-busy');
     shell.classList.remove("lesson-shell--completion");
     shell.classList.remove("lesson-shell--pre-quiz");
     destroyQuestionNavigation();

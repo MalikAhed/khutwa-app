@@ -15,12 +15,16 @@ test("signed-out subject and lesson links require registration before reading pr
   assert.equal(controller.getState().subjectId, null);
 });
 
-test("roadmap navigation records its destination before waiting and never mounts a previous owner's progress", async () => {
+test("roadmap navigation records its destination before waiting and never mounts a previous owner's progress", async (t) => {
+  const previousWindow = globalThis.window;
+  globalThis.window = { scrollTo() {} };
+  t.after(() => { if (previousWindow === undefined) delete globalThis.window; else globalThis.window = previousWindow; });
   let release;
   const ready = new Promise((resolve) => { release = resolve; });
   let owner = "account:first";
   const routes = [];
-  const content = { innerHTML:"", removeAttribute() {} };
+  const attributes = new Map();
+  const content = { innerHTML:"", setAttribute(name, value) { attributes.set(name, value); }, removeAttribute(name) { attributes.delete(name); } };
   const controller = createSubjectLearningController({
     elements:{ lessonShell:{ dataset:{} }, lessonTitle:{}, lessonStatus:{}, lessonContent:content },
     productService:{ getLearnerProgressOwner:() => owner, getAccountType:() => "free" },
@@ -31,7 +35,7 @@ test("roadmap navigation records its destination before waiting and never mounts
   });
   const opening = controller.openSubject("ict");
   assert.deepEqual(routes, [{ subject:"ict" }], "account changes must already see the pending subject destination");
-  assert.equal(content.innerHTML, "", "the pending route has no transient lesson panel");
+  assert.equal(attributes.get("aria-busy"), "true", "the pending route shows its loading state");
   const loading = content.innerHTML;
   owner = "guest";
   release();

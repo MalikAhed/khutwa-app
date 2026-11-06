@@ -21,6 +21,7 @@
 /* Shared palette, spacing, controls, and motion. Feature-specific values stay with their styles. */
 /* Keep the scale small; one-off geometry belongs to its owning screen. */
 :root {
+  color-scheme:only light;
   --app-nav-width:218px;
   --canvas:#fafafa;
   --block:#e8e8e8;

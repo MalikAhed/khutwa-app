@@ -20,7 +20,7 @@ test("header streak freeze follows learner switches, then unsubscribes", async t
   assert.equal(streakFreeze.hidden, false);
   await service.signIn({ identifier:"subscribed", password:"Learn123" });
   assert.equal(streakFreeze.hidden, false);
-  assert.equal(label.textContent, "حساب مشترك");
+  assert.equal(label.textContent, "خطوة سوبر");
   subscribers.forEach(callback => callback());
   assert.equal(streakFreeze.hidden, false);
   await service.signOut();

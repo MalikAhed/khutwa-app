@@ -96,3 +96,32 @@ test('saved files are skipped immediately after restoring a queue', async () => 
   assert.deepEqual(calls,['missing']);
   queue.pause();
 });
+
+test('switching the download scope cancels obsolete bytes and never retries files outside the new scope', async () => {
+  const {queue,calls} = harness();
+  queue.start(['paid-bank','paid-image']);
+  await until(() => calls.length === 1);
+  queue.start(['current-lesson']);
+  assert.equal(calls[0].signal.aborted,true);
+  await until(() => calls.length === 2);
+  assert.equal(calls[1].file,'current-lesson');
+  calls[1].finish();
+  await until(() => !calls[1].signal.aborted);
+  queue.pause(); queue.resume();
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(calls.some(call=>call.file==='paid-image'),false);
+  queue.pause();
+});
+
+test('a failed paid download is not resurrected after switching to a free lesson', async () => {
+  const calls=[];
+  const queue=createDownloadQueue({defer:setImmediate,download:async file=>{
+    calls.push(file); if(file==='paid-bank') throw new Error('offline');
+  }});
+  queue.start(['paid-bank']);
+  await until(()=>calls.length===1);
+  queue.start(['current']);queue.resume();
+  await until(()=>calls.includes('current'));
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.deepEqual(calls,['paid-bank','current']);queue.pause();
+});

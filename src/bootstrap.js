@@ -3,6 +3,16 @@ import { waitForImage } from "./ui/media-ready.js";
 import { readRoute } from "./app/route.js";
 import { warmLearningExperience } from "./app/background-loading.js";
 
+// Touch-triggered/programmatic focus should not draw keyboard rings. A real
+// keyboard event restores them, including on phones with an external keyboard.
+document.addEventListener('pointerdown',event => {
+  document.documentElement.dataset.inputModality = event.pointerType;
+},{capture:true,passive:true});
+document.addEventListener('keydown',event => {
+  if (!event.metaKey && !event.ctrlKey && !event.altKey)
+    document.documentElement.dataset.inputModality = 'keyboard';
+},{capture:true});
+
 const splash = createSplashScreen();
 const controller = new AbortController();
 window.addEventListener("pagehide", () => controller.abort(), { once:true });

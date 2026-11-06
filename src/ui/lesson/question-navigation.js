@@ -1,8 +1,15 @@
-export function mountQuestionNavigation({ shell, signal, locale, getQuestions, getCurrentId, getRating, subscribe, onSelect }) {
+import { QUESTION_NAVIGATION_LIMIT_ENABLED } from "../../domain/learner-resources.js";
+
+export function mountQuestionNavigation({ shell, signal, locale, getQuestions, getCurrentId, getRating, subscribe, onSelect, getNavigationStatus, subscribeNavigation }) {
   const container = shell.querySelector('.lesson-card') || shell;
   let footer, slider, track, toolbar, lastId, buttons = [], frame = 0;
   const labels = locale === 'ar' ? {easy:'سهل',medium:'متوسط',hard:'صعب',unrated:'غير مقيّم'} : {easy:'Easy',medium:'Medium',hard:'Hard',unrated:'Unrated'};
-  const refresh = () => buttons.forEach((button,index) => {
+  const refresh = () => {
+    const status = QUESTION_NAVIGATION_LIMIT_ENABLED ? getNavigationStatus?.() : undefined;
+    const label = slider?.querySelector('[data-question-skips]');
+    if (label && status) label.textContent = status.unlimited ? (locale === 'ar' ? 'تنقّل غير محدود مع سوبر' : 'Unlimited Super navigation')
+      : (locale === 'ar' ? `التنقّلات المتبقية اليوم: ${status.remaining} من ٥` : `${status.remaining} of 5 daily skips left`);
+    buttons.forEach((button,index) => {
     const id = button.dataset.questionJump;
     const rating = getRating(id) || 'unrated';
     button.dataset.rating = rating;
@@ -11,7 +18,8 @@ export function mountQuestionNavigation({ shell, signal, locale, getQuestions, g
     if (current) button.setAttribute('aria-current','step');
     else button.removeAttribute('aria-current');
     button.setAttribute('aria-label',`${locale === 'ar' ? 'السؤال' : 'Question'} ${index + 1}، ${labels[rating]}`);
-  });
+    });
+  };
   const reveal = (button, animate = true) => {
     if (!button) return;
     const item = button.getBoundingClientRect(), viewport = track.getBoundingClientRect();
@@ -43,6 +51,12 @@ export function mountQuestionNavigation({ shell, signal, locale, getQuestions, g
       track = document.createElement('div');
       track.className = 'question-number-track';track.dir = 'ltr';
       slider.append(track);
+      if (QUESTION_NAVIGATION_LIMIT_ENABLED && getNavigationStatus) {
+        const status = document.createElement('small');
+        status.dataset.questionSkips = '';
+        status.setAttribute('role','status');
+        slider.append(status);
+      }
     }
     const questions = getQuestions();
     if (buttons.length !== questions.length || questions.some((question,index) => buttons[index]?.dataset.questionJump !== question.id)) {
@@ -54,7 +68,7 @@ export function mountQuestionNavigation({ shell, signal, locale, getQuestions, g
       });
       track.replaceChildren(...buttons);
     }
-    toolbar.replaceChildren(slider,...(rating ? [rating] : []));
+    toolbar.replaceChildren(rating,slider);
     footer.prepend(toolbar);footer.classList.add('level-layout-actions--question-slider');
     track.scrollLeft = scrollLeft;
     refresh();
@@ -89,6 +103,7 @@ export function mountQuestionNavigation({ shell, signal, locale, getQuestions, g
       if (event.detail > 0 && performance.now() < suppressUntil) { event.preventDefault();return; }
       const button = event.target.closest('[data-question-jump]');
       if (!button) return;
+      if (shell.querySelector('.lesson-card[aria-busy="true"]')) return;
       if (button.dataset.questionJump !== getCurrentId()) onSelect(button.dataset.questionJump);
       else reveal(button);
     },{signal});
@@ -109,6 +124,7 @@ export function mountQuestionNavigation({ shell, signal, locale, getQuestions, g
   const observer = new MutationObserver(mount);
   observer.observe(container,{childList:true,subtree:true});
   const unsubscribe = subscribe?.(refresh);
+  const unsubscribeNavigation = subscribeNavigation?.(refresh);
   mount();
-  return () => { observer.disconnect();unsubscribe?.();cancelAnimationFrame(frame);slider?.remove(); };
+  return () => { observer.disconnect();unsubscribe?.();unsubscribeNavigation?.();cancelAnimationFrame(frame);slider?.remove(); };
 }

@@ -92,10 +92,14 @@ export function renderQuestion(container, { definition, onBack, onContinue, onAn
   const checkText = locale === "ar" ? "تحقّق" : "CHECK";
   setCheckAction(checkButton, checkLabel, CHECK_ACTION.CHECK, checkText, true);
 
-  feedback.insertAdjacentHTML("afterend",renderQuestionRatingControls(locale));
+  feedback.insertAdjacentHTML("afterend",renderQuestionRatingControls(locale, { hidden:true }));
+  const ratingPanel = footer.querySelector(".level-question-rating-panel");
   mountQuestionRating(footer, signal);
 
+  let checking = false;
+  let retryAnswer;
   answers.forEach((answer) => answer.addEventListener("click", () => {
+    if (checking || retryAnswer) return;
     if (checkButton.dataset.actionState === CHECK_ACTION.CONTINUE) return;
     selectedAnswer = answer;
     answers.forEach((option) => {
@@ -108,29 +112,50 @@ export function renderQuestion(container, { definition, onBack, onContinue, onAn
     setCheckAction(checkButton, checkLabel, CHECK_ACTION.CHECK, checkText, false);
   }, { signal }));
 
-  checkButton.addEventListener("click", () => {
-    if (checkButton.dataset.actionState === CHECK_ACTION.CONTINUE) { closeTemplate(); return; }
-    if (!selectedAnswer) return;
-    const blocked = beforeAnswer?.();
-    if (blocked) {
-      feedback.className = "level-feedback is-blocked";
-      feedback.textContent = blocked;
-      feedback.setAttribute("role", "status");
+  checkButton.addEventListener("click", async () => {
+    if (checking) return;
+    if (checkButton.dataset.actionState === CHECK_ACTION.CONTINUE) {
+      checking = true;
+      checkButton.disabled = true;
+      try { await closeTemplate(); }
+      finally { checking = false; if (!signal.aborted) checkButton.disabled = false; }
       return;
     }
-    const isCorrect = selectedAnswer.dataset.correct === "true";
-    onAnswer?.({ correct:isCorrect });
-    answers.forEach((answer) => {
-      answer.setAttribute("aria-disabled", "true");
-      answer.classList.toggle("is-correct", answer.dataset.correct === "true");
-      answer.classList.toggle("is-wrong", answer === selectedAnswer && !isCorrect);
-    });
-    feedback.className = `level-feedback ${isCorrect ? "is-correct" : "is-wrong"}`;
-    feedback.classList.toggle("level-feedback--quiet",!QUESTION_RESULT_LABELS_ENABLED);
-    if (QUESTION_RESULT_LABELS_ENABLED) feedback.innerHTML = compactResult(copy, isCorrect);
-    else feedback.textContent = isCorrect ? copy.excellent : copy.wrongAnswer;
-    setCheckAction(checkButton, checkLabel, CHECK_ACTION.CONTINUE, copy.continue);
-    if (isCorrect) triggerPinata(signal);
+    if (!selectedAnswer) return;
+    checking = true;
+    checkButton.disabled = true;
+    const block = message => {
+      feedback.className = "level-feedback is-blocked";
+      feedback.textContent = message;
+      feedback.setAttribute("role", "status");
+    };
+    try {
+      const blocked = retryAnswer ? undefined : await beforeAnswer?.();
+      if (signal.aborted) return;
+      if (blocked) { block(blocked); return; }
+      const isCorrect = selectedAnswer.dataset.correct === "true";
+      const saved = retryAnswer ? await retryAnswer() : await onAnswer?.({ correct:isCorrect });
+      if (signal.aborted) return;
+      if (saved?.status === "failed") {
+        retryAnswer = saved.retry;
+        block("تعذّر تأكيد الإجابة. احتُفظ بها بأمان. اتصل بالإنترنت وحاول مجددًا.");
+        return;
+      }
+      answers.forEach((answer) => {
+        answer.setAttribute("aria-disabled", "true");
+        answer.classList.toggle("is-correct", answer.dataset.correct === "true");
+        answer.classList.toggle("is-wrong", answer === selectedAnswer && !isCorrect);
+      });
+      feedback.className = `level-feedback ${isCorrect ? "is-correct" : "is-wrong"}`;
+      feedback.classList.toggle("level-feedback--quiet",!QUESTION_RESULT_LABELS_ENABLED);
+      if (QUESTION_RESULT_LABELS_ENABLED) feedback.innerHTML = compactResult(copy, isCorrect);
+      else feedback.textContent = isCorrect ? copy.excellent : copy.wrongAnswer;
+      setCheckAction(checkButton, checkLabel, CHECK_ACTION.CONTINUE, copy.continue);
+      ratingPanel.hidden = false;
+      if (isCorrect) triggerPinata(signal);
+    } catch {
+      if (!signal.aborted) block("تعذّر تأكيد الإجابة. اتصل بالإنترنت وحاول مجددًا.");
+    } finally { checking = false; checkButton.disabled = false; }
   }, { signal });
 
   return destroy;

@@ -9,33 +9,7 @@
 .level-layout-actions--explanations [data-template-back] { grid-column:1; grid-row:3; }
 .level-layout-actions--explanations [data-template-primary] { grid-column:3; grid-row:3; }
 .level-layout-actions--explanations [data-question-explain] { grid-column:2; grid-row:3; justify-self:center; width:min(100%,240px); }
-.level-action--explain {
-  --action-edge:#c88a00;
-  position:relative;
-  isolation:isolate;
-  overflow:hidden;
-  flex-wrap:wrap;
-  gap:6px 12px;
-  border-color:#efb400;
-  background:#ffd24a;
-  color:#654500;
-}
-/* A single lighter, tilted band sweeps over a flat fill once every 2.5 seconds. */
-.level-action--explain::before {
-  content:"";
-  position:absolute;
-  z-index:-1;
-  inset-block:-70%;
-  left:0;
-  width:22px;
-  background:#fff4c1;
-  opacity:.7;
-  box-shadow:0 0 9px #fff8db88;
-  transform:translateX(-80px) skewX(-22deg);
-  pointer-events:none;
-  animation:explanation-shimmer 2500ms ease-in-out infinite;
-}
-@media (hover:hover) { .level-action--explain:hover:not(:disabled) { background:#ffcd36; } }
+.level-action--explain { flex-wrap:wrap; gap:6px 12px; }
 .explanation-price { display:inline-flex; align-items:center; gap:5px; white-space:nowrap; }
 .explanation-price img { display:block; width:22px; height:22px; object-fit:contain; }
 .explanation-included { font-size:1.4em; line-height:1; }
@@ -54,10 +28,6 @@
 .question-explanation-dialog .markdown-rendered :is(.markdown-table-scroll,.markdown-code-block,.lesson-math-sample) { width:100%; }
 .question-explanation-dialog .lesson-math-scroll { max-width:100%; }
 .question-explanation-note { padding:12px 16px; border-inline-start:4px solid #dfac20; background:#fff8df; line-height:1.8; }
-@keyframes explanation-shimmer {
-  0%,65% { left:0; transform:translateX(-80px) skewX(-22deg); }
-  95%,100% { left:100%; transform:translateX(80px) skewX(-22deg); }
-}
 @keyframes explanation-section-enter {
   from { transform:translateY(100%); }
   to { transform:translateY(0); }
@@ -71,6 +41,5 @@
   .level-layout-actions--explanations [data-question-explain] { width:100%; gap:4px 6px; }
 }
 @media(prefers-reduced-motion:reduce) {
-  .level-action--explain::before { animation:none; display:none; }
   .question-explanation-dialog[open] { animation:none; }
 }

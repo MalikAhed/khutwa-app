@@ -2,7 +2,7 @@
 export function createDownloadQueue({ download, onError = () => {}, completedFiles = [], defer = callback => setTimeout(callback, 0) }) {
   const completed = new Set(completedFiles);
   const retries = new Map();
-  let background = [], foreground = null, active = null, running = false, paused = true;
+  let scheduled = new Set(), background = [], foreground = null, active = null, running = false, paused = true;
   const nextFile = files => files.find(file => !completed.has(file));
   const interrupt = () => active?.controller.abort();
   async function run() {
@@ -17,7 +17,7 @@ export function createDownloadQueue({ download, onError = () => {}, completedFil
           break;
         }
         const controller = new AbortController();
-        active = { controller, job };
+        active = { controller, job, file };
         try {
           await download(file, { signal:controller.signal, priority:job ? "high" : "low" });
           if (!controller.signal.aborted) { completed.add(file); retries.delete(file); }
@@ -35,10 +35,15 @@ export function createDownloadQueue({ download, onError = () => {}, completedFil
     } finally { running = false; }
   }
   return Object.freeze({
-    start(files) { background = [...new Set(files)]; paused = false; void run(); },
+    start(files) {
+      scheduled = new Set(files);
+      background = [...scheduled];
+      if (active && !active.job && !scheduled.has(active.file)) interrupt();
+      paused = false; void run();
+    },
     pause() { paused = true; if (!active?.job) interrupt(); },
     resume() {
-      for (const [file, attempts] of retries) if (attempts < 3 && !background.includes(file)) background.push(file);
+      for (const [file, attempts] of retries) if (scheduled.has(file) && attempts < 3 && !background.includes(file)) background.push(file);
       paused = false; void run();
     },
     prioritize(files, { signal } = {}) {

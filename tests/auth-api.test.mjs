@@ -34,11 +34,13 @@ async function requestApi(handler, pathname, { method = "POST", body = {}, heade
 
 function createStore(overrides = {}) {
   return {
+    browserPolicy:{beginRegistration:async () => 'claim',finishRegistration:async () => {},cancelRegistration:async () => {}},
     getAccountForSession:() => null,
     deleteSession:() => {},
     isIdentifierAvailable:() => true,
     createAccount:async () => ({ status:"created", account:{ id:"1", username:"student", accountType:"free", curriculum:"gaza", path:"scientific" } }),
     authenticate:async () => null,
+    claimDevice:() => true,
     createSession:() => ({ token:"secret-session-token", expiresAt:new Date("2030-01-01T00:00:00.000Z") }),
     ...overrides,
   };
@@ -118,8 +120,8 @@ test("successful registration sets a protected strict same-site session cookie",
   });
 
   assert.equal(response.statusCode, 201);
-  assert.match(response.headers["Set-Cookie"], /HttpOnly/);
-  assert.match(response.headers["Set-Cookie"], /SameSite=Strict/);
+  assert.match(response.headers["Set-Cookie"][0], /HttpOnly/);
+  assert.match(response.headers["Set-Cookie"][0], /SameSite=Strict/);
   assert.equal(response.body.includes("secret-session-token"), false);
 });
 

@@ -6,8 +6,8 @@ import { applyProgressUpdate, emptyPart, partKey, restorePartEntries } from "../
 
 // The server owns confirmed rewards. IndexedDB retains confirmed records and an
 // account-bound outbox so a lost response, reload or account switch can be retried.
-/** @param {{local:import('./indexeddb-progress.js').IndexedProgressAdapter, baseUrl?:string, fetchImpl?:typeof fetch, onError?:(error:unknown,ownerId:string)=>void, onResources?:(owner:string,value:any,id?:string)=>void}} options @returns {import('./subject-progress-store.js').ProgressAdapter} */
-export function createServerProgressAdapter({ local, baseUrl = "/api/progress", fetchImpl = globalThis.fetch, onError = console.warn, onResources }) {
+/** @param {{local:import('./indexeddb-progress.js').IndexedProgressAdapter, baseUrl?:string, fetchImpl?:typeof fetch, onError?:(error:unknown,ownerId:string)=>void, onResources?:(owner:string,value:any,id?:string,gemReward?:number)=>void, requiresOnlineAnswer?:(owner:string)=>boolean}} options @returns {import('./subject-progress-store.js').ProgressAdapter} */
+export function createServerProgressAdapter({ local, baseUrl = "/api/progress", fetchImpl = globalThis.fetch, onError = console.warn, onResources, requiresOnlineAnswer = () => false }) {
   /** @param {string} ownerId @param {object} [body] @returns {Promise<Map<string,PartRecord>>} */
   async function request(ownerId, body) {
     const controller=new AbortController();
@@ -21,7 +21,7 @@ export function createServerProgressAdapter({ local, baseUrl = "/api/progress", 
         throw Object.assign(new Error(result.error||'Progress could not be saved.'),{status:response.status});
       }
       if(`account:${result.accountId}`!==ownerId||!Array.isArray(result.records))throw new Error('The progress response does not belong to this account.');
-      if(result.resources) onResources?.(ownerId, result.resources, body && "id" in body ? String(body.id) : undefined);
+      if(result.resources) onResources?.(ownerId, result.resources, body && "id" in body ? String(body.id) : undefined, result.gemReward);
       // Validate HTTP data at the boundary. Preserve the server's review revision.
       const records=restorePartEntries({version:1,records:result.records},error=>{throw error;});
       for(const [key,record] of result.records)if(records.has(key)&&Number.isSafeInteger(record.revision))(/** @type {PartRecord} */ (records.get(key))).revision=record.revision;
@@ -93,6 +93,9 @@ export function createServerProgressAdapter({ local, baseUrl = "/api/progress", 
       // Commit locally before any network work. Further answers can be stored
       // even while an earlier request is slow, interrupted or unauthenticated.
       await local.enqueue(update);
+      // Keep the durable outbox even if the response is lost. Free answers must
+      // receive the server's atomic quota decision before showing their result.
+      if (update.type === 'answer' && requiresOnlineAnswer(update.value.ownerId)) await flush(update.value.ownerId);
       return readCached(update.value.ownerId);
     },
     close:()=>local.close(),

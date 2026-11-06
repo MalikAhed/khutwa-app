@@ -35,9 +35,11 @@ if (process.env.LIVE_RELOAD !== "0" && process.env.LEARN_PREVIEW_WATCH_CHILD !==
   const remoteBackend = process.env.LEARN_BACKEND === 'cloudflare'
     ? await createCloudflareDevelopmentBackend({ cachePath:path.join(root,'data/cloudflare-offline-profiles.json') }) : null;
   const environment = remoteBackend ? { ...process.env, ACCOUNTS_DATABASE_PATH:':memory:', DEV_AUTO_LOGIN:'0' } : process.env;
-  const app=await createAppServer({root,config:readRuntimeConfig(environment,{root}),contentManifest,remoteBackend});
+  const config=readRuntimeConfig(environment,{root});
+  const app=await createAppServer({root,config,contentManifest,remoteBackend});
   const port=await app.listen();
-  console.log(`Live preview: http://${remoteBackend ? '127.0.0.1' : 'localhost'}:${port}/`);
+  const host=remoteBackend ? '127.0.0.1' : config.listenHost || 'localhost';
+  console.log(`Live preview: http://${host.includes(':') ? `[${host}]` : host}:${port}/`);
   if(remoteBackend)console.log('Real Cloudflare accounts; offline study uses the last verified account.');
   if(process.env.LIVE_RELOAD!=='0')console.log('Watching source files and preserving scroll position on reload.');
   const shutdown=()=>{ void catalogWorker?.terminate(); void app.close(); };

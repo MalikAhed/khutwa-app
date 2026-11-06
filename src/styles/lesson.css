@@ -31,6 +31,9 @@ main.coming-mode .column,main.lesson-mode .column { display:none; }
 .lesson-view.is-visible { display:block; }
 .lesson-loading { min-height:min(480px,60dvh); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; padding:24px; text-align:center; color:var(--system-muted); }
 .lesson-loading p { margin:0; font:700 18px/1.5 var(--font-ui); }
+/* Lesson controls become visible together with the first ready question. */
+.lesson-shell:has(.lesson-loading) > .lesson-top { display:none; }
+.lesson-shell .lesson-card:has(> .lesson-loading) { border:0; background:transparent; box-shadow:none; }
 .lesson-loading__indicator { width:32px; height:32px; border:3px solid #e2e8f0; border-top-color:var(--system-blue-action); border-radius:50%; animation:lesson-loading-spin 900ms linear infinite; }
 @keyframes lesson-loading-spin { to { transform:rotate(360deg); } }
 @media (prefers-reduced-motion:reduce) { .lesson-loading__indicator { animation:none; } }
@@ -65,6 +68,9 @@ body.ready-lesson-open main.page.lesson-mode { width:100%; max-width:none; min-h
 @media (max-width:760px) { .lesson-error { min-height:calc(100dvh - 90px); padding:20px 16px; } }
 .lesson-card--ui-lab { flex:1 1 auto; min-height:0; overflow:hidden; padding:0; border:0; border-radius:0; background:#fff; box-shadow:none; }
 .level-layout-preview { height:100%; min-height:0; display:grid; grid-template-rows:minmax(0,1fr) auto; overflow:hidden; background:#fff; }
+/* The header masks above the progress bar; reading keeps its own top padding. */
+.lesson-shell--ui-lab:has(.question-overlays) .lesson-top { margin-bottom:calc(-1 * var(--question-header-overhang,0px)); background:linear-gradient(to bottom,#fff calc(100% - var(--question-header-overhang,0px)),transparent 0); pointer-events:none; }
+.lesson-shell--ui-lab:has(.question-overlays) .lesson-top > * { pointer-events:auto; }
 .lesson-shell--ui-lab .level-layout-preview { min-height:0; }
 .level-layout-content { position:relative; min-height:0; overflow:hidden; background:#fff; }
 .lesson-scroll-frame { position:relative; display:grid; grid-template-columns:minmax(0,1fr); min-width:0; max-width:100%; }

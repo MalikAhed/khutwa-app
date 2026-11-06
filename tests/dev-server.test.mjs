@@ -9,8 +9,55 @@ import { fileURLToPath } from 'node:url';
 import { setTimeout as delay } from 'node:timers/promises';
 import { createAccountStore } from '../src/server/account-store.mjs';
 import { getSubjectRoadmap } from '../src/data/subject-roadmaps.js';
+import {createServer} from 'node:net';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+
+test('isolated lesson preview ignores live backend/data settings and confirms lesson answers locally',async t=>{
+  const directory=await mkdtemp(path.join(tmpdir(),'learn-lesson-preview-'));
+  const probe=createServer();
+  await new Promise(resolve=>probe.listen(0,'127.0.0.1',resolve));
+  const port=probe.address().port;
+  await new Promise(resolve=>probe.close(resolve));
+  let child;
+  t.after(async()=>{
+    if(child&&child.exitCode===null){const stopped=once(child,'exit');child.kill('SIGTERM');await stopped;}
+    await rm(directory,{recursive:true,force:true});
+  });
+  await cp(path.join(root,'src'),path.join(directory,'src'),{recursive:true});
+  await cp(path.join(root,'dev-server.mjs'),path.join(directory,'dev-server.mjs'));
+  await cp(path.join(root,'index.html'),path.join(directory,'index.html'));
+  await mkdir(path.join(directory,'scripts'));
+  await cp(path.join(root,'scripts/preview-lessons.mjs'),path.join(directory,'scripts/preview-lessons.mjs'));
+  await mkdir(path.join(directory,'assets'));
+  await writeFile(path.join(directory,'package.json'),JSON.stringify({type:'module'}));
+  await symlink(path.join(root,'node_modules'),path.join(directory,'node_modules'),'dir');
+  const untouched=path.join(directory,'existing-data.sqlite');
+  await writeFile(untouched,'existing data must remain unchanged');
+  child=spawn(process.execPath,['scripts/preview-lessons.mjs'],{cwd:directory,
+    env:{...process.env,LEARN_BACKEND:'cloudflare',PORT:'4173',LESSON_PREVIEW_PORT:String(port),ACCOUNTS_DATABASE_PATH:untouched,LIVE_RELOAD:'0'},stdio:['ignore','pipe','pipe']});
+  let output='';
+  child.stdout.on('data',chunk=>{output+=chunk;});child.stderr.on('data',chunk=>{output+=chunk;});
+  const until=Date.now()+10000;
+  while(!output.includes(`http://127.0.0.1:${port}/`)&&Date.now()<until&&child.exitCode===null)await delay(40);
+  assert.ok(output.includes(`http://127.0.0.1:${port}/`),output);
+  const base=`http://127.0.0.1:${port}`;
+  const opened=await fetch(base+'/',{redirect:'manual'});
+  assert.equal(opened.status,302);
+  const cookie=opened.headers.get('set-cookie').split(';')[0];
+  const {account}=await(await fetch(base+'/api/auth/session',{headers:{Cookie:cookie}})).json();
+  assert.equal(account.username,'developer');
+  const headers={Cookie:cookie,'Content-Type':'application/json','X-Progress-Owner':`account:${account.id}`};
+  const key={subjectId:'ict',lessonId:'database-management',partId:'access-basics',stepId:'exam-p09-q1-1'};
+  const enter=await fetch(base+'/api/progress',{method:'POST',headers,body:JSON.stringify({...key,type:'question-navigation',id:'preview-enter-test',kind:'enter'})});
+  assert.equal(enter.status,200);
+  const answer=await fetch(base+'/api/progress',{method:'POST',headers,body:JSON.stringify({...key,type:'answer',id:'preview-answer-test',correct:false})});
+  assert.equal(answer.status,200);
+  const saved=await answer.json();
+  assert.equal(saved.resources.hearts,9);
+  assert.ok(saved.records.length>0);
+  assert.equal(await readFile(untouched,'utf8'),'existing data must remain unchanged');
+});
 
 test('preview reloads API lesson validation after content edits and preserves durable progress', async t => {
   const directory = await mkdtemp(path.join(tmpdir(), 'learn-dev-reload-'));

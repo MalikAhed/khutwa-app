@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 120" fill="none">
+  <defs>
+    <linearGradient id="front" x1="360" y1="0" x2="360" y2="108" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE51B"/>
+      <stop offset=".55" stop-color="#FFE200"/>
+      <stop offset="1" stop-color="#FFDA00"/>
+    </linearGradient>
+    <linearGradient id="tails" x1="360" y1="16" x2="360" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD84A"/>
+      <stop offset="1" stop-color="#FFD13B"/>
+    </linearGradient>
+    <clipPath id="face"><rect x="52" width="616" height="108" rx="12"/></clipPath>
+  </defs>
+  <path d="M9 16H74V112C74 116.4 70.4 120 66 120H9C1.4 120-2.8 112.8 1.8 106.8L32 68 1.8 29.2C-2.8 23.2 1.4 16 9 16Z" fill="url(#tails)"/>
+  <path d="M711 16H646V112C646 116.4 649.6 120 654 120H711C718.6 120 722.8 112.8 718.2 106.8L688 68 718.2 29.2C722.8 23.2 718.6 16 711 16Z" fill="url(#tails)"/>
+  <path d="M52 94H74V120L52 108Z" fill="#EAB82A"/>
+  <path d="M668 94H646V120L668 108Z" fill="#EAB82A"/>
+  <rect x="52" width="616" height="108" rx="12" fill="url(#front)"/>
+  <path d="M170 0H246L318 108H242Z" fill="#FFF9AD" fill-opacity=".88" clip-path="url(#face)"/>
+</svg>

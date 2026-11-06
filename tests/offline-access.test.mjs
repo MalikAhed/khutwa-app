@@ -10,8 +10,8 @@ function setup() {
   const options={storage,wallNow:()=>wall,monotonicNow:()=>mono};
   return {storage,values,options, advance:ms=>{wall+=ms;mono+=ms;},wall:ms=>{wall+=ms;},mono:ms=>{mono+=ms;}};
 }
-test('seven days include time closed; a restart never renews the lease',()=>{
- const x=setup();const grant=createOfflineAccess(x.options);grant.verify(account,1700000000000);
+test('cached free identity verification expires after seven days including time closed',()=>{
+ const x=setup();const grant=createOfflineAccess(x.options);grant.verify({...account,accountType:'free'},1700000000000);
  x.advance(3*86400000);assert.equal(grant.inspect().allowed,true);
  x.wall(4*86400000);const restarted=createOfflineAccess(x.options);
  assert.equal(restarted.inspect().allowed,false);
@@ -25,7 +25,7 @@ test('rollback is sticky across restarts; only server verification unlocks it',(
  grant.verify(account,1700003600000);assert.equal(grant.inspect().allowed,true);
 });
 test('monotonic elapsed time prevents freezing the phone clock while open',()=>{
- const x=setup();const grant=createOfflineAccess(x.options);grant.verify(account,1700000000000);grant.inspect();
+ const x=setup();const grant=createOfflineAccess(x.options);grant.verify({...account,accountType:'free'},1700000000000);grant.inspect();
  x.mono(OFFLINE_WINDOW_MS);assert.equal(grant.inspect().allowed,false);
 });
 test('clock skew on first verification is allowed, minor corrections cannot refund time',()=>{
@@ -57,7 +57,7 @@ test('HTTP identity survives offline restart but a server rejection revokes it w
  mode='offline';assert.equal((await session().restoreSession()).status,'unavailable');assert.equal(x.values.get('pending-answers'),'keep');
 });
 test('development cached offline responses cannot renew the seven-day window',async()=>{
- const x=setup();const grant=createOfflineAccess(x.options);grant.verify(account,1700000000000);x.advance(OFFLINE_WINDOW_MS);
+ const x=setup();const grant=createOfflineAccess(x.options);grant.verify({...account,accountType:'free'},1700000000000);x.advance(OFFLINE_WINDOW_MS);
  const session=createLearnerSession({apiBase:'/api/auth',offlineAccess:grant,fetchImpl:async()=>({ok:true,status:200,headers:new Headers({Date:new Date().toUTCString()}),json:async()=>({account,offline:true})})});
  assert.equal((await session.restoreSession()).status,'unavailable');assert.equal(grant.inspect().allowed,false);
 });
@@ -79,4 +79,45 @@ test('another tab changing accounts does not authorize this tab with the wrong o
  await service.restoreSession();assert.equal(service.getAccessState().allowed,true);
  createOfflineAccess(x.options).verify({...account,id:'other'},1700000000000);
  assert.equal(service.getAccessState().allowed,false);assert.equal(service.getLearnerProgressOwner(),'account:1');
+});
+
+test('paid accounts must reconnect weekly for synchronization and updates, with earlier subscription expiry honored',()=>{
+ const x=setup();const grant=createOfflineAccess(x.options);const start=1700000000000;
+ grant.verify({...account,subscriptionExpiresAt:start+365*86400000},start);
+ x.advance(OFFLINE_WINDOW_MS-1);assert.equal(createOfflineAccess(x.options).inspect().allowed,true);
+ x.advance(1);assert.equal(createOfflineAccess(x.options).inspect().allowed,false);
+ grant.verify(account,start+OFFLINE_WINDOW_MS);assert.equal(grant.inspect().allowed,true);
+ const y=setup();const short=createOfflineAccess(y.options);short.verify({...account,subscriptionExpiresAt:start+86400000},start);
+ y.advance(86400000);assert.equal(short.inspect().allowed,false);
+});
+
+test('free study requires a real online account check while cached identity and pending work survive outages',async()=>{
+ const x=setup();let disconnected=false;
+ const fetchImpl=async()=>{
+  if(disconnected)throw Error('network unavailable');
+  return {ok:true,status:200,headers:new Headers({Date:new Date(1700000000000).toUTCString()}),json:async()=>({account:{...account,accountType:'free'}})};
+ };
+ const service=createLearnerSession({apiBase:'/api/auth',offlineAccess:createOfflineAccess(x.options),fetchImpl,onError:()=>{}});
+ await service.restoreSession();assert.equal(service.getAccessState().allowed,true);
+ x.values.set('pending-answers','preserved');disconnected=true;
+ assert.equal((await service.restoreSession()).status,'offline');
+ assert.equal(service.getAccessState().allowed,false);
+ assert.equal(service.getLearnerProgressOwner(),'account:1');
+ assert.equal(createOfflineAccess(x.options).inspect().account.accountType,'free');
+ disconnected=false;await service.restoreSession();assert.equal(service.getAccessState().allowed,true);
+ assert.equal(x.values.get('pending-answers'),'preserved');
+});
+
+test('browser disconnect immediately gates free study; successful verification overrides a stale offline hint',async()=>{
+ const previous=globalThis.window;const events=new EventTarget();globalThis.window=events;
+ try {
+  for(const accountType of ['free','subscribed']) {
+   const x=setup();const service=createLearnerSession({apiBase:'/api/auth',offlineAccess:createOfflineAccess(x.options),fetchImpl:async()=>({ok:true,status:200,headers:new Headers({Date:new Date(1700000000000).toUTCString()}),json:async()=>({account:{...account,accountType}})})});
+   await service.restoreSession();events.dispatchEvent(new Event('offline'));
+   assert.equal(service.getAccessState().allowed,accountType==='subscribed');
+   events.dispatchEvent(new Event('online'));
+   assert.equal(service.getAccessState().allowed,accountType==='subscribed','online event does not verify the free account');
+   await service.restoreSession();assert.equal(service.getAccessState().allowed,true);
+  }
+ } finally {if(previous===undefined)delete globalThis.window;else globalThis.window=previous;}
 });

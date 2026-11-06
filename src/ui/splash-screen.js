@@ -68,6 +68,12 @@ export function createSplashScreen() {
       // Let the browser apply the inert/style changes before handing off focus,
       // including the immediate (reduced-motion) completion path.
       await new Promise((resolve) => requestAnimationFrame(resolve));
+      const modal = [...document.querySelectorAll('dialog[open]')].at(-1);
+      if (modal) {
+        (modal.querySelector('button:not([disabled]), input:not([type="hidden"]):not([disabled]), select:not([disabled])') || modal)
+          .focus({ preventScroll:true });
+        return;
+      }
       const destination = destinationFor();
       const textField = getDesktopTextField(destination);
       if (textField) {

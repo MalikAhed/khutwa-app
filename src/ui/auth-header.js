@@ -1,3 +1,5 @@
+import { CORRECT_ANSWER_GEM_REWARD, CORRECT_ANSWERS_PER_REWARD } from "../domain/learner-resources.js";
+
 export function createAuthHeader({ guest, member, label, flowButtons, signOutButton, courseContainer, service, progressStore, resourceStore, onFlow }) {
   if (!guest || !member || !label || !signOutButton || !courseContainer || !service || !onFlow) throw new TypeError("auth header dependencies are required");
   const controller = new AbortController();
@@ -14,8 +16,8 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
         const name = resource === "hearts" ? "قلوب" : "جواهر";
         count.parentElement.setAttribute("aria-label", balance.unlimited ? `${name} غير محدودة` : `${balance[resource]} ${name}`);
         count.parentElement.title = resource === "hearts" && !balance.unlimited
-          ? balance.nextHeartAt ? `قلب جديد خلال ${Math.max(1, Math.ceil((balance.nextHeartAt - Date.now()) / 60000))} دقيقة` : "10 قلوب، يتجدد قلب كل 12 دقيقة"
-          : balance.unlimited ? `${name} غير محدودة مع سوبر` : "";
+          ? "٧ قلوب يوميًا مشتركة على هذا المتصفح، تتجدد عند منتصف الليل بتوقيت فلسطين. أول درسين في كل مادة دون قلوب."
+          : balance.unlimited ? `${name} غير محدودة مع سوبر` : `كل ${CORRECT_ANSWERS_PER_REWARD} أسئلة مختلفة تحلّها بشكل صحيح تمنحك ${CORRECT_ANSWER_GEM_REWARD} جوهرة لفتح ٥ شروح.`;
       });
     }
   };
@@ -28,7 +30,7 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
     guest.hidden = !isGuest;
     member.hidden = isGuest;
     if (ownerLink) ownerLink.hidden = !service.isOwner?.();
-    label.textContent = { free:"حساب مجاني", subscribed:"حساب مشترك" }[type] || "";
+    label.textContent = { free:"حساب مجاني", subscribed:"خطوة سوبر" }[type] || "";
     label.lang = "ar";
     if (streakFreeze) streakFreeze.hidden = isGuest;
     if (streakCount) {
