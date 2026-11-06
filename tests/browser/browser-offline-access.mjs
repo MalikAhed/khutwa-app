@@ -10,6 +10,7 @@ import {findChrome} from './browser-session.mjs';
 import {packageApp} from '../../scripts/package-app.mjs';
 import {createAppServer} from '../../src/server/app-server.mjs';
 import {readRuntimeConfig} from '../../src/server/runtime-config.mjs';
+import {SUPER_PAYWALL_ASSETS} from '../../src/domain/super-plans.js';
 import {CORRECT_ANSWER_GEM_REWARD} from '../../src/domain/learner-resources.js';
 
 // Packaged, versioned files with disposable HTTP accounts; never production data.
@@ -79,16 +80,20 @@ try {
    assert.equal(await page.locator('[data-offline-download-status]').isVisible(),false);
  }
  await page.waitForTimeout(1500);
- assert.deepEqual(await page.evaluate(()=>window.downloadRequests),[]);
+ assert.ok((await page.evaluate(()=>window.downloadRequests)).every(url=>SUPER_PAYWALL_ASSETS.includes(new URL(url).pathname.slice(1))));
+ await page.goto(`${base}/?subject=ict`);
+ await page.locator('.subject-roadmap').waitFor();
  await disconnect(true);
  await page.evaluate(()=>dispatchEvent(new Event('offline')));
- await page.locator('.offline-access[open]').waitFor();
+ await page.locator('.heart-depletion[data-mode=offline][open]').waitFor();
+ await page.locator('[data-heart-close]').click();
+ await page.locator('[data-learner-dashboard]').waitFor();
+ assert.equal(await page.locator('.offline-access[open]').count(),0);
+ // Paid lease/clock recovery remains distinct from a missing entitlement.
  await page.evaluate(()=>dispatchEvent(new Event('online')));
- await page.waitForFunction(()=>!document.querySelector('.offline-access button').disabled);
- assert.equal(await page.locator('.offline-access[open]').count(),1);
+ assert.equal(await page.locator('.offline-access[open]').count(),0);
  await disconnect(false);
- await page.locator('.offline-access button').first().click();
- await page.waitForFunction(()=>!document.querySelector('.offline-access[open]'));
+ await page.evaluate(()=>dispatchEvent(new Event('focus')));
  const database=new DatabaseSync(databasePath);
  database.prepare("UPDATE accounts SET account_type='subscribed' WHERE id=?").run(account.id);
  database.prepare('INSERT INTO account_subscription_scopes(account_id,subjects) VALUES(?,?)').run(account.id,'["ict"]');

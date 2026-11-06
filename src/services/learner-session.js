@@ -1,4 +1,5 @@
 // @ts-check
+import { hasFreeLessonPractice } from '../domain/free-practice.js';
 import { createOfflineAccess } from "./offline-access.js";
 import { COURSE_SUBJECTS } from "../data/course.js";
 import { readSubscriptionSubjects, subscriptionCovers } from '../domain/subscription-access.js';
@@ -136,7 +137,7 @@ export function createLearnerSession({
       if (!accountApi || !activeAccount) return { allowed:true };
       const grant = offlineAccess.inspect();
       return { ...grant, allowed:grant.allowed && `account:${grant.account?.id}` === activeAccount.progressOwner
-        && (!offline || activeAccount.type === "subscribed" && (!key?.subjectId || subscriptionCovers(activeAccount.subscriptionSubjects,key))) };
+        && (!offline || activeAccount.type === "subscribed" && (!key?.subjectId || !key?.lessonId || subscriptionCovers(activeAccount.subscriptionSubjects,key) || hasFreeLessonPractice(key))) };
     },
     getEffectiveNow:() => accountApi ? offlineAccess.inspect().now : Date.now(),
     isOffline:() => offline,

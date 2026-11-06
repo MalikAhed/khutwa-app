@@ -59,7 +59,7 @@ export function createLearnerResources({ storage, getAccountType, hasSuperAccess
       signal?.throwIfAborted();
       if (QUESTION_JUMPS_REQUIRE_SUPER && kind === 'jump' && !solved && !hasFreeLessonPractice(key) && !hasSuperAccess(key))
         throw Object.assign(new Error('اختيار سؤال من الشريط متاح مع خطوة سوبر.'),{code:'super-required'});
-      if (!QUESTION_NAVIGATION_LIMIT_ENABLED || hasSuperAccess(key)) return;
+      if (!QUESTION_NAVIGATION_LIMIT_ENABLED || hasSuperAccess(key) || getAccountType() === "subscribed" && hasFreeLessonPractice(key)) return;
       if (apiBase && owner.startsWith('account:')) {
         let response;
         try {
@@ -88,7 +88,7 @@ export function createLearnerResources({ storage, getAccountType, hasSuperAccess
       }
     },
     async checkAnswerAccess(owner, { signal, key, onConnectionRequired = () => {} } = {}) {
-      if (!apiBase || !owner.startsWith("account:") || hasSuperAccess(key)) return;
+      if (!apiBase || !owner.startsWith("account:") || hasSuperAccess(key) || getAccountType() === "subscribed" && hasFreeLessonPractice(key)) return;
       let response;
       try {
         response = await fetchImpl(apiBase, { credentials:"same-origin", cache:"no-store",

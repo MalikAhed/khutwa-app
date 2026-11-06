@@ -17,11 +17,12 @@
 .super-invitation__rocky { position:absolute; z-index:2; width:420px; aspect-ratio:800/620; left:50%; bottom:0; margin-left:-210px; opacity:0; transform-origin:50% 89%; }
 .heart-depletion__rocky { display:block; width:100%; height:100%; object-fit:contain; }
 .heart-depletion h1 { position:relative; z-index:3; margin:0 0 7px; color:#fff; text-shadow:0 2px 5px #163f4266; font-size:clamp(27px,3vw,37px); font-weight:900; line-height:1.4; letter-spacing:-.5px; }
-.heart-depletion:is([data-mode="hearts"],[data-mode="gems"],[data-mode="navigation"]) h1 { color:#30343b; text-shadow:none; }
+.heart-depletion:is([data-mode="hearts"],[data-mode="gems"],[data-mode="navigation"],[data-mode="offline"]) h1 { color:#30343b; text-shadow:none; }
 .heart-depletion .heart-depletion__status { max-width:430px; color:#315f79; font-size:14px; line-height:1.7; }
 /* Requested supporting copy stays hidden; its resource rules are unchanged. */
 .super-invitation :is(.super-invitation__balance,.super-invitation__reward),
 .super-invitation [data-heart-status] { display:none; }
+.super-invitation[data-mode="offline"] [data-heart-status] { position:relative; z-index:3; display:block; }
 .heart-depletion__content { position:relative; z-index:3; display:grid; gap:14px; width:100%; padding:28px; border:0; border-radius:0; background:transparent; box-shadow:none; text-align:center; animation:super-panel-enter 540ms cubic-bezier(.22,1,.36,1) 120ms both; }
 .super-invitation__panel-title { margin:0; color:#183e58; font-size:21px; font-weight:900; line-height:1.5; }
 .super-invitation__benefits { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(0,1fr); gap:7px; margin:0; padding:0 0 14px; list-style:none; }

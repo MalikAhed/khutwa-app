@@ -30,7 +30,9 @@ try {
   assert.equal(await page.locator('[data-offline-download-status]').isVisible(),false);
  }
  await page.waitForTimeout(1500);
- assert.deepEqual(await page.evaluate(()=>window.backgroundRequests),[],'free Home never downloads the complete catalog');
+ const homeRequests=await page.evaluate(()=>window.backgroundRequests);
+ const {SUPER_PAYWALL_ASSETS}=await import('../../src/domain/super-plans.js');
+ assert.ok(homeRequests.every(url=>SUPER_PAYWALL_ASSETS.includes(new URL(url).pathname.slice(1))),'free Home prepares only the offline paywall');
  const manifest=await page.evaluate(()=>fetch('content-manifest.json').then(r=>r.json()));
  const target=manifest.lessons.find(x=>x.subjectId==='physics');
  const allowed=backgroundFiles(manifest,{accountType:'free',selectedLesson:target,connection:{saveData:true}}).map(file=>new URL(file,server.base).href);

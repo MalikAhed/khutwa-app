@@ -1,3 +1,4 @@
+import { SUPER_PAYWALL_ASSETS } from '../domain/super-plans.js';
 import { updateOfflineDownloadStatus } from "../ui/offline-download-status.js";
 import { createDownloadQueue } from "../services/download-queue.js";
 import { canPrefetchAssets, useManagedImagePreloading } from "../ui/media-ready.js";
@@ -83,6 +84,17 @@ async function initialize() {
         registration = await navigator.serviceWorker.ready;
       }
       const worker = registration.active;
+      // ready can expose an activating worker. Its client configuration must
+      // arrive after activation, before the invitation can be used offline.
+      if (worker?.state !== "activated") await new Promise((resolve,reject) => {
+        const finish = error => { clearTimeout(timer); worker?.removeEventListener("statechange",changed); error ? reject(error) : resolve(undefined); };
+        const changed = () => {
+          if (worker?.state === "activated") finish();
+          else if (!worker || worker.state === "redundant") finish(new Error("Offline worker activation failed"));
+        };
+        const timer = setTimeout(() => finish(new Error("Offline worker activation timed out")),5000);
+        worker?.addEventListener("statechange",changed);changed();
+      });
       if (!await messageWorker(worker, { type:"CONTENT_CONFIG", version:release, files, hashes:manifest.hashes })) throw new Error("Offline worker is not ready");
       return worker;
     }
@@ -104,10 +116,10 @@ async function initialize() {
         }
         for (const file of completedFiles) offlineFiles.delete(file);
       } catch { cache = null; /* Retry storage on the next download. */ }
-      // A delayed worker must not discard already downloaded files or disable caching.
-      void navigator.serviceWorker.register(new URL("content-worker.js", base()), { scope:base().pathname, updateViaCache:"none" }).catch(() => {});
-      // Serve already saved files immediately, including before preparation reaches 100%.
-      void configureWorker().catch(() => {});
+      // Configure the client before downloads can finish: a free user can go
+      // offline immediately after the invitation artwork is saved. Failed
+      // registration still preserves cached bytes for the next retry.
+      await configureWorker().catch(() => {});
     }
     controller.signal.throwIfAborted();
     showOfflineStatus();
@@ -188,13 +200,15 @@ export function configureBackgroundLoading({ getAccountType:readAccountType }) {
 export function backgroundFiles(catalog, { accountType, selectedLesson, connection } = {}) {
   const current = selectedLesson && catalog.lessons.find(lesson => lesson.subjectId === selectedLesson.subjectId && lesson.lessonId === selectedLesson.lessonId);
   const currentFiles = current ? [...current.first, ...current.files] : [];
-  if (accountType === "subscribed") return [...new Set([...currentFiles, ...catalog.onboarding, ...catalog.helpers,
+  const paywallFiles = catalog.helpers.filter(file => SUPER_PAYWALL_ASSETS.includes(file));
+  if (accountType === "subscribed") return [...new Set([...currentFiles, ...paywallFiles, ...catalog.onboarding, ...catalog.helpers,
     ...catalog.lessons.flatMap(lesson => lesson.first), ...catalog.lessons.flatMap(lesson => lesson.files)])];
-  if (accountType !== "free" || !current) return [];
+  if (accountType !== "free") return [];
+  if (!current) return paywallFiles;
   // Only one neighboring lesson, and only when the link can afford speculation.
   const subject = catalog.lessons.filter(lesson => lesson.subjectId === current.subjectId);
   const next = canPrefetchAssets(connection) ? subject[subject.indexOf(current) + 1] : null;
-  return [...new Set([...currentFiles, ...(next?.first || [])])];
+  return [...new Set([...currentFiles, ...paywallFiles, ...(next?.first || [])])];
 }
 
 // Called at click time, before importing the renderer or question bank.

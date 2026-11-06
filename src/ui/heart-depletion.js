@@ -22,7 +22,7 @@ export function mountHeartDepletion({ resourceStore, ownerId, studyKey, signal, 
     if (!controller.signal.aborted && target?.isConnected) target.focus({preventScroll:true});
   };
   const dismiss = () => {
-    const returnHome = dialog?.dataset.mode === 'connection' || dialog?.dataset.mode === 'hearts';
+    const returnHome = dialog?.dataset.mode === 'connection' || dialog?.dataset.mode === 'hearts' || dialog?.dataset.mode === 'offline';
     close();
     if (returnHome && !controller.signal.aborted) onReturnHome?.();
   };
@@ -30,6 +30,7 @@ export function mountHeartDepletion({ resourceStore, ownerId, studyKey, signal, 
     hearts:['نفدت قلوب اليوم','قلوبك السبعة مشتركة على هذا المتصفح وتتجدد عند منتصف الليل بتوقيت فلسطين. يمكنك متابعة أول درسين في كل مادة دون قلوب.'],
     gems:['نفدت الجواهر','رصيد الجواهر غير كافٍ. افتح الشروح بلا حدود مع سوبر.'],
     navigation:['اختر أي سؤال مع سوبر','اختر أي سؤال مجانًا في أول درسين من كل مادة. في الدروس الأخرى، يمكنك الرجوع إلى الأسئلة التي حللتها، أو متابعة الأسئلة الجديدة بالترتيب. اختيار سؤال جديد من الشريط متاح مع سوبر.'],
+    offline:['الدراسة دون إنترنت مع خطوة سوبر','الدراسة دون إنترنت ميزة مدفوعة. اشترك في خطوة سوبر لهذه المادة لتتابع دروسها دون اتصال.'],
     connection:['اتصل بالإنترنت للمتابعة','الإجابات المجانية تحتاج إلى الإنترنت. مع سوبر تدرس الدروس المحمّلة دون اتصال.'],
     offer:['طموحك يستاهل سوبر.','تعلّم بإيقاعك. كلّ المزايا في خطوة واحدة.'],
   })[reason] || ['خطوة سوبر','افتح كل مزايا التعلّم.'];
@@ -135,5 +136,5 @@ export function mountHeartDepletion({ resourceStore, ownerId, studyKey, signal, 
   const destroy = () => {controller.abort();unsubscribe();close();signal?.removeEventListener('abort',destroy);};
   signal?.addEventListener('abort',destroy,{once:true});
   if (signal?.aborted) destroy();else update();
-  return {show,showOffer:() => show('offer'),destroy};
+  return {show,showOffer:() => show('offer'),contains:target => Boolean(dialog?.contains(target)),destroy};
 }

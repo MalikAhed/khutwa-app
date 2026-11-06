@@ -15,6 +15,7 @@ import { prioritizeInteraction, prioritizeLesson } from "../app/background-loadi
 
 
 export function createSubjectLearningController({
+  canStudy = () => true,
   elements,
   productService,
   progressStore,
@@ -76,7 +77,7 @@ export function createSubjectLearningController({
   ) {
     if (requiresAccount()) return onRequireAccount("register");
     const subject = getCourseSubject(nextSubjectId);
-    if (!subject) return;
+    if (!subject || !canStudy({subjectId:subject.id,lessonId:targetLessonId})) return;
     if (targetLessonId === "course-introduction" && nextSubjectId === "ict") {
       targetLessonId = "database-management";
       targetPartId = "access-basics";
@@ -214,6 +215,7 @@ export function createSubjectLearningController({
     historyMode = "push",
   }) {
     if (requiresAccount()) return onRequireAccount("register");
+    if (!canStudy({subjectId:nextSubjectId,lessonId:nextLessonId})) return;
     const roadmap = getSubjectRoadmap(nextSubjectId);
     const target = getSubjectPartAccess(roadmap, { lessonId:nextLessonId, partId });
     if (!target) return openSubject(nextSubjectId, null, { historyMode:"replace", focusContent:true });

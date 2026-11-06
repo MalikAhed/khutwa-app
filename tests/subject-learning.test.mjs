@@ -42,3 +42,13 @@ test("roadmap navigation records its destination before waiting and never mounts
   await opening;
   assert.equal(content.innerHTML, loading, "the old request cannot paint a roadmap or read the old owner's records");
 });
+
+
+test('offline study guard stops subject and question navigation before loading or changing progress',async()=>{
+ const attempts=[];
+ const controller=createSubjectLearningController({productService:{getAccountType:()=> 'free'},canStudy:key=>{attempts.push(key);return false;}});
+ await controller.openSubject('ict');
+ await controller.openSubject('ict',null,{lessonId:'database-management',partId:'access-basics'});
+ assert.equal(attempts.length,2);
+ assert.equal(controller.getState().subjectId,null);
+});

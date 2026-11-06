@@ -65,3 +65,16 @@ test('partial Super uses paid behavior only inside selected subjects and retains
   offline.verify({id:'1',username:'scope-student',accountType:'subscribed',subscriptionSubjects:['ict']},Date.now());
   assert.deepEqual(createOfflineAccess({storage}).inspect().account.subscriptionSubjects,['ict']);
 });
+
+
+test('partial subscribers answer free starter lessons offline without making other subjects Super',async()=>{
+ const resources=createLearnerResources({getAccountType:()=> 'subscribed',hasSuperAccess:key=>subscriptionCovers(['ict'],key),apiBase:'/api/progress',fetchImpl:async()=>{throw Error('offline');}});
+ const owner='account:starter',key={subjectId:'physics',lessonId:'momentum-impulse'};
+ resources.confirm(owner,{hearts:0,gems:0,refillAt:Date.now()});
+ assert.equal(await resources.checkAnswerAccess(owner,{key}),undefined);
+ await resources.navigate(owner,key);
+ resources.spend(owner,'offline-starter-answer',key);
+ assert.equal(resources.get(owner,key).hearts,0);
+ assert.equal(resources.get(owner,key).unlimited,false,'starter access never grants unlimited explanations in an unpurchased subject');
+ assert.equal(typeof await resources.checkAnswerAccess(owner,{key:{subjectId:'physics',lessonId:'electric-current-resistance'}}),'string');
+});

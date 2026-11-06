@@ -135,6 +135,10 @@ test('selected-subject subscriptions resume offline and gate only unpurchased su
  for(const key of [{subjectId:'ict'},{subjectId:'mathematics',lessonId:'matrices'}]) {
   assert.equal(resumed.hasSuperAccess(key),true);assert.equal(resumed.getAccessState(key).allowed,true);
  }
- assert.equal(resumed.getAccessState({subjectId:'physics'}).allowed,false);
+ assert.equal(resumed.getAccessState({subjectId:'ict',lessonId:'smartphone-operating-systems'}).allowed,true);
  assert.equal(resumed.hasSuperAccess({subjectId:'physics'}),false);
+ assert.equal(resumed.getAccessState({subjectId:'physics'}).allowed,true,'subscribers can browse a roadmap to reach free starters');
+ for(const lessonId of ['average-change','differentiation-rules'])
+  assert.equal(resumed.getAccessState({subjectId:'mathematics',lessonId}).allowed,true,'both unpaid starter lessons work offline');
+ assert.equal(resumed.getAccessState({subjectId:'mathematics',lessonId:'trigonometric-derivatives'}).allowed,false,'later unpurchased lessons still require internet');
 });
