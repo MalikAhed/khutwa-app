@@ -77,8 +77,13 @@ test('seven browser hearts are shared atomically across existing accounts, with 
  assert.equal((await request(actors[1])).json.resources.hearts,0,'browser quota survives a server restart');
  const db=new DatabaseSync(f.databasePath);
  db.prepare("UPDATE accounts SET account_type='subscribed' WHERE id=?").run(Number(actors[0].id));
+ db.prepare('INSERT INTO account_subscription_scopes(account_id,subjects) VALUES(?,?)').run(Number(actors[0].id),'["physics"]');
+ assert.equal((await request(actors[0],answer(later,'uncovered-at-zero'))).status,429,'a partial subscriber retains the browser limit in unpurchased subjects');
+ db.prepare('UPDATE account_subscription_scopes SET subjects=? WHERE account_id=?').run('["ict"]',Number(actors[0].id));
  for(let n=0;n<9;n++)assert.equal((await request(actors[0],answer(later,`paid-attempt-${n}`))).status,200);
  assert.equal((await request(actors[1])).json.resources.hearts,0,'paid answers do not affect free accounts');
+ db.prepare('UPDATE account_subscription_scopes SET subjects=? WHERE account_id=?').run('["physics"]',Number(actors[0].id));
+ assert.equal((await request(actors[0],answer(later,'uncovered-still-zero'))).status,429,'paid study never resets the saved free browser quota');
  db.prepare("UPDATE browser_heart_attempts SET day='2000-01-01'").run();
  db.prepare('UPDATE learner_resources SET refill_at=?').run(Date.now()-86400000*2);
  assert.equal((await request(actors[1])).json.resources.hearts,7,'both quotas reset at the server day boundary');

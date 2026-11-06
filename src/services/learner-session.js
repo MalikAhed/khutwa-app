@@ -25,7 +25,8 @@ function accountFailure(body) {
     const status = /** @type {AccountFailure['status']} */ (body.status);
     const fieldErrors = "fieldErrors" in body && body.fieldErrors && typeof body.fieldErrors === "object"
       ? Object.fromEntries(Object.entries(body.fieldErrors).filter(([, value]) => typeof value === "string")) : undefined;
-    return { status, ...( "error" in body && typeof body.error === "string" ? { error:body.error } : {}),
+    return { status, ...( status === "device-limit" ? { error:"وصلت للحدّ المسموح: متصفح كمبيوتر ومتصفح هاتف. لتغيير المتصفح، تواصل مع إدارة خطوة." }
+        : "error" in body && typeof body.error === "string" ? { error:body.error } : {}),
       ...( "field" in body && typeof body.field === "string" ? { field:body.field } : {}), ...(fieldErrors ? { fieldErrors } : {}) };
   }
   return unavailableAccountResponse();

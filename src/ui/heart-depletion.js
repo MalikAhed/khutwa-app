@@ -9,7 +9,7 @@ const subjectPlan = SUPER_PLANS.find(plan => plan.id === 'one-subject');
 const infinityMark = '<svg class="super-benefit__infinity" viewBox="0 0 36 22" fill="none" aria-hidden="true"><path d="M18 11c-4-5-6-7-9-7a7 7 0 0 0 0 14c3 0 5-2 9-7s6-7 9-7a7 7 0 0 1 0 14c-3 0-5-2-9-7Z" stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
 /** One full-screen invitation shared by hearts and gems. */
-export function mountHeartDepletion({ resourceStore, ownerId, signal, returnFocus, autoShowEmpty = true, onReturnHome, onReturnToSubject }) {
+export function mountHeartDepletion({ resourceStore, ownerId, studyKey, signal, returnFocus, autoShowEmpty = true, onReturnHome, onReturnToSubject }) {
   const controller = new AbortController();
   let dialog = null, opener = null, timer = null;
   let shownEmpty = false;
@@ -35,7 +35,7 @@ export function mountHeartDepletion({ resourceStore, ownerId, signal, returnFocu
   })[reason] || ['خطوة سوبر','افتح كل مزايا التعلّم.'];
   const update = () => {
     if (controller.signal.aborted) return;
-    const balance = resourceStore.get(ownerId);
+    const balance = resourceStore.get(ownerId,studyKey);
     const empty = !balance.unlimited && balance.hearts === 0;
     if (!empty) shownEmpty = false;
     if (!dialog) {
@@ -59,14 +59,14 @@ export function mountHeartDepletion({ resourceStore, ownerId, signal, returnFocu
     dialog.querySelector('[data-heart-timer]').textContent = `${String(Math.floor(seconds / 3600)).padStart(2,'0')}:${String(Math.floor(seconds / 60) % 60).padStart(2,'0')}:${String(seconds % 60).padStart(2,'0')}`;
   };
   function show(reason = 'hearts') {
-    if (controller.signal.aborted || resourceStore.get(ownerId).unlimited) return;
+    if (controller.signal.aborted || resourceStore.get(ownerId,studyKey).unlimited) return;
     // A successful purchase may leave fewer than 50 gems. Only a rejected
     // purchase requests this invitation; spending gems must not open it.
-    if (reason === 'gems' && resourceStore.get(ownerId).gems >= EXPLANATION_GEM_COST) return;
+    if (reason === 'gems' && resourceStore.get(ownerId,studyKey).gems >= EXPLANATION_GEM_COST) return;
     if (reason === 'navigation' && !QUESTION_NAVIGATION_LIMIT_ENABLED && !QUESTION_JUMPS_REQUIRE_SUPER) return;
     if (reason === 'empty') reason = 'hearts';
     if (dialog) {dialog.dataset.mode = reason;update();return;}
-    if (reason === 'hearts' && resourceStore.get(ownerId).hearts > 0) return;
+    if (reason === 'hearts' && resourceStore.get(ownerId,studyKey).hearts > 0) return;
     if (reason === 'hearts') shownEmpty = true;
     opener = document.activeElement;
     dialog = document.createElement('dialog');

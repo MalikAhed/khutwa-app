@@ -32,12 +32,24 @@ await app.accountStore.createAccount({username:'offline-test',phone:'0591234567'
 const base=`http://127.0.0.1:${await app.listen()}`;
 const options={...(engine===chromium?{executablePath:await findChrome(),args:['--no-sandbox']}:{isMobile:true,hasTouch:true}),headless:true,viewport:{width:390,height:844},reducedMotion:'reduce'};
 let context;
+// The isolated auth adapter has no subject-scoping API. Mirror the live session
+// payload while the disposable progress backend enforces the same stored scope.
+const scopeSession = context => context.route('**/api/auth/session', async route => {
+ if(disconnected){await route.abort();return;}
+ let response;
+ try {response=await route.fetch();}
+ catch(error){if(disconnected){await route.abort();return;}throw error;}
+ const body=await response.json();
+ if(body.account)body.account.subscriptionSubjects=['ict'];
+ await route.fulfill({response,json:body});
+});
 // Playwright 1.63 WebKit kills service-worker responses with setOffline(true).
 // Deny every origin connection instead; no API or asset can reach the server.
 const disconnect=async value=>{disconnected=value;};
 const ready=async page=>{await page.locator('[data-learner-dashboard]').waitFor({timeout:60000});await page.waitForFunction(()=>!document.querySelector('#app-splash'),{timeout:60000});};
 try {
  context=await engine.launchPersistentContext(profile,options);
+ await scopeSession(context);
  await context.addInitScript(()=>{const nativeNow=Date.now;window.clockOffset=0;Date.now=()=>nativeNow()+window.clockOffset;});
  const login=await context.request.post(`${base}/api/auth/sign-in`,{data:{identifier:'offline-test',password:'Test-only-123'}});assert.equal(login.status(),200);
  const account=(await login.json()).account,owner=`account:${account.id}`;
@@ -75,10 +87,12 @@ try {
  await page.waitForFunction(()=>!document.querySelector('.offline-access button').disabled);
  assert.equal(await page.locator('.offline-access[open]').count(),1);
  await disconnect(false);
- await page.locator('.offline-access button').click();
+ await page.locator('.offline-access button').first().click();
  await page.waitForFunction(()=>!document.querySelector('.offline-access[open]'));
  const database=new DatabaseSync(databasePath);
  database.prepare("UPDATE accounts SET account_type='subscribed' WHERE id=?").run(account.id);
+ database.prepare('INSERT INTO account_subscription_scopes(account_id,subjects) VALUES(?,?)').run(account.id,'["ict"]');
+ database.prepare('INSERT OR REPLACE INTO learner_resources(account_id,hearts,gems,refill_at) VALUES(?,0,200,?)').run(account.id,Date.now());
  database.close();
  await page.evaluate(()=>dispatchEvent(new Event('focus')));
  await page.waitForFunction(()=>!document.querySelector('[data-offline-download-status]').hidden);
@@ -179,6 +193,7 @@ try {
  const questionUrl=stepId=>`${base}/?${new URLSearchParams({subject:'ict',lesson:'database-management',part:'access-basics',question:stepId})}`;
  await page.goto(questionUrl(explanationKey.stepId));
  await page.locator('[data-question-explain]').waitFor();
+ assert.equal(await page.locator('.heart-depletion[open]').count(),0,'purchased subject never shows the empty-heart paywall');
  let explanationRequests=0;
  const trackExplanation=request=>{if(request.method()==='POST'&&request.postData()?.includes('explanation-unlock'))explanationRequests++;};
  page.on('request',trackExplanation);
@@ -210,6 +225,7 @@ try {
  if(engine===chromium) await (await context.newCDPSession(page)).send('Network.clearBrowserCache');
  await context.close();
  context=await engine.launchPersistentContext(profile,options);
+ await scopeSession(context);
  await context.addInitScript(()=>{const nativeNow=Date.now;window.clockOffset=0;Date.now=()=>nativeNow()+window.clockOffset;});await disconnect(true);
  page=await context.newPage();page.on('pageerror',error=>console.error('browser:',error.message));
  await page.goto(`${base}/?page=learn`);await ready(page);
@@ -224,6 +240,7 @@ try {
  // A never-opened explanation in a downloaded lesson is available through active Super.
  await page.goto(questionUrl('exam-p57-q1-b2'));
  await page.locator('[data-question-explain]').waitFor();
+ assert.equal(await page.locator('.heart-depletion[open]').count(),0,'purchased subject never shows the empty-heart paywall');
  assert.equal(await page.locator('[data-question-explain] .explanation-included').count(),1);
  await page.locator('[data-question-explain]').click();
  await page.locator('.question-explanation-dialog .markdown-rendered').waitFor({timeout:3000});
@@ -245,12 +262,12 @@ try {
  await page.setViewportSize({width:1440,height:900});
  assert.ok(await page.locator('.offline-access').evaluate(el=>el.getBoundingClientRect().width<=innerWidth));
  await page.screenshot({path:'/tmp/khutwa-offline-desktop.png'});
- await page.locator('.offline-access button').click();
+ await page.locator('.offline-access button').first().click();
  await page.waitForFunction(()=>!document.querySelector('.offline-access button').disabled && document.querySelector('.offline-access [role=status]').textContent.includes('لم نتمكّن'));
  assert.equal(await page.locator('.offline-access[open]').count(),1,'retry without connectivity stays locked');
  await page.evaluate(()=>{Object.defineProperty(navigator,'onLine',{configurable:true,get:()=>false});});
  await disconnect(false);
- await page.locator('.offline-access button').click();
+ await page.locator('.offline-access button').first().click();
  await page.waitForFunction(()=>!document.querySelector('.offline-access[open]'),{timeout:30000});
  const syncDeadline=Date.now()+30000;
  while((await pending()).length) {

@@ -356,7 +356,7 @@ export function createSubjectLearningController({
             demoMode,
             onReturnHome,
             initialQuestionId:!demoMode && !reviewStepId ? resourceStore?.getNavigationCursor(ownerId,{subjectId:nextSubjectId,lessonId:nextLessonId}) : undefined,
-            getNavigationStatus:QUESTION_NAVIGATION_LIMIT_ENABLED && resourceStore ? () => ({remaining:resourceStore.get(ownerId).navigationRemaining ?? 5,unlimited:resourceStore.get(ownerId).unlimited}) : undefined,
+            getNavigationStatus:QUESTION_NAVIGATION_LIMIT_ENABLED && resourceStore ? () => ({remaining:resourceStore.get(ownerId,{subjectId:nextSubjectId,lessonId:nextLessonId}).navigationRemaining ?? 5,unlimited:resourceStore.get(ownerId,{subjectId:nextSubjectId,lessonId:nextLessonId}).unlimited}) : undefined,
             subscribeNavigation:QUESTION_NAVIGATION_LIMIT_ENABLED ? resourceStore?.subscribe : undefined,
             beforeQuestionNavigation:(QUESTION_NAVIGATION_LIMIT_ENABLED || QUESTION_JUMPS_REQUIRE_SUPER) && !demoMode && resourceStore ? async (id,options) => {
               if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) throw new Error('The active learner changed.');
@@ -480,7 +480,7 @@ export function createSubjectLearningController({
         );
         operation.add(rendered.destroy);
         if (resourceStore) {
-          heartDepletion = mountHeartDepletion({ resourceStore, ownerId, signal:operation.signal, returnFocus:elements.lessonContent, onReturnHome,
+          heartDepletion = mountHeartDepletion({ resourceStore, ownerId, studyKey:{subjectId:nextSubjectId,lessonId:nextLessonId}, signal:operation.signal, returnFocus:elements.lessonContent, onReturnHome,
             autoShowEmpty:!hasFreeLessonPractice({subjectId:nextSubjectId,lessonId:nextLessonId}),
             onReturnToSubject:() => returnToRoadmap() });
           operation.add(heartDepletion.destroy);

@@ -121,3 +121,20 @@ test('browser disconnect immediately gates free study; successful verification o
   }
  } finally {if(previous===undefined)delete globalThis.window;else globalThis.window=previous;}
 });
+
+
+test('selected-subject subscriptions resume offline and gate only unpurchased subjects',async()=>{
+ const x=setup();let disconnected=false;
+ const service=()=>createLearnerSession({apiBase:'/api/auth',offlineAccess:createOfflineAccess(x.options),onError:()=>{},fetchImpl:async()=>{
+  if(disconnected)throw Error('offline');
+  return {ok:true,status:200,headers:new Headers({Date:new Date(1700000000000).toUTCString()}),json:async()=>({account:{...account,subscriptionSubjects:['ict','mathematics-2']}})};
+ }});
+ await service().restoreSession();disconnected=true;
+ const resumed=service();assert.equal((await resumed.restoreSession()).status,'offline');
+ assert.equal(resumed.getAccessState().allowed,true);
+ for(const key of [{subjectId:'ict'},{subjectId:'mathematics',lessonId:'matrices'}]) {
+  assert.equal(resumed.hasSuperAccess(key),true);assert.equal(resumed.getAccessState(key).allowed,true);
+ }
+ assert.equal(resumed.getAccessState({subjectId:'physics'}).allowed,false);
+ assert.equal(resumed.hasSuperAccess({subjectId:'physics'}),false);
+});
