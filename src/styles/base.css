@@ -126,7 +126,7 @@ button,input,select,textarea { font:inherit; }
 .nav-item.active { border-color:#84d8ff; background:#ddf4ff; color:#1899d6; }
 .nav-item:focus-visible { outline:3px solid var(--system-focus); outline-offset:2px; }
 .topbar .nav-links .nav-profile { display:none; }
-.nav-profile__initial { display:grid; place-items:center; flex:none; width:34px; height:34px; border:2px solid #84d8ff; border-radius:50%; background:#ddf4ff; color:#0878ae; font:900 21px/1 var(--font-ui); }
+.nav-profile__initial { display:grid; place-items:center; flex:none; width:34px; height:34px; border:2px solid hsl(var(--profile-hue,200) 60% 77%); border-radius:50%; background:hsl(var(--profile-hue,200) 70% 94%); color:hsl(var(--profile-hue,200) 65% 30%); font:400 21px/1 var(--font-ui); }
 .mobile-profile-card { position:fixed; inset:auto 16px calc(var(--app-bottom-space,65px) + 12px); box-sizing:border-box; width:min(360px,calc(100% - 32px)); max-height:calc(100dvh - var(--app-bottom-space,65px) - 36px); margin:0 auto; padding:28px 24px 24px; overflow:auto; border:1px solid var(--system-border); border-radius:24px; background:#fff; color:var(--system-ink); text-align:center; font-family:var(--font-ui); box-shadow:0 12px 36px #17313f26; }
 .mobile-profile-card::backdrop { background:#17313f66; }
 .mobile-profile-card>.app-close { position:absolute; top:8px; inset-inline-end:8px; }

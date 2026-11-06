@@ -41,6 +41,7 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
     card.setAttribute('aria-labelledby','mobile-profile-name');
     card.innerHTML = '<button class="app-close" type="button" data-profile-close aria-label="إغلاق"></button><b class="nav-profile__initial" aria-hidden="true"></b><h2 id="mobile-profile-name"></h2><p data-profile-plan></p><button class="system-action" type="button" data-profile-sign-out>تسجيل الخروج</button><p role="status"></p>';
     card.querySelector('.nav-profile__initial').textContent = profileButton.querySelector('b').textContent;
+    card.style.setProperty('--profile-hue',profileButton.style.getPropertyValue('--profile-hue'));
     card.querySelector('h2').textContent = service.getLearnerDisplayName();
     card.querySelector('[data-profile-plan]').textContent = label.textContent;
     card.querySelector('[data-profile-close]').addEventListener('click',closeProfile);
@@ -80,7 +81,11 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
     if (profileButton) {
       profileButton.hidden = isGuest;
       const name = service.getLearnerDisplayName().trim();
-      profileButton.querySelector('b').textContent = (Array.from(name)[0] || '؟').toLocaleUpperCase();
+      profileButton.querySelector('b').textContent = (Array.from(name)[0] || '؟').toLocaleLowerCase();
+      // Derive a stable, varied color from account identity without storing new account data.
+      let colorSeed = 2166136261;
+      for (const character of service.getLearnerProgressOwner()) colorSeed = Math.imul(colorSeed ^ character.codePointAt(0),16777619);
+      profileButton.style.setProperty('--profile-hue',String((colorSeed >>> 0) % 360));
       profileButton.setAttribute('aria-label',name ? `حساب ${name}` : 'حسابي');
       if (isGuest || profileOwner !== service.getLearnerProgressOwner()) closeProfile();
     }
