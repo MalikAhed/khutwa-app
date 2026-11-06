@@ -26,7 +26,7 @@ export function getShellViewportBounds() {
 export function mountAppShell() {
   const template = getRequiredElement("#app-header-template");
   template.replaceWith(template.content);
-  document.querySelectorAll(".nav-item").forEach((item) => {
+  document.querySelectorAll(".nav-item[data-page]").forEach((item) => {
     if (!isUnlockedPage(item.dataset.page)) item.setAttribute("aria-disabled", "true");
   });
   return {
@@ -36,7 +36,7 @@ export function mountAppShell() {
     lessonShell:getRequiredElement(".lesson-shell"), lessonStatus:getRequiredElement(".lesson-status"),
     lessonTitle:getRequiredElement(".current-view-title"), lessonView:getRequiredElement(".lesson-view"),
     main:getRequiredElement("main"),
-    navigationItems:[...document.querySelectorAll(".nav-item")],
+    navigationItems:[...document.querySelectorAll(".nav-item[data-page]")],
     authGuest:getRequiredElement(".topbar-auth-guest"), authMember:getRequiredElement(".topbar-auth-member"),
     accountLabel:getRequiredElement("[data-account-label]"), authFlowButtons:[...document.querySelectorAll("[data-auth-flow]")],
     authSignOut:getRequiredElement("[data-auth-sign-out]"),

@@ -7,6 +7,54 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
   const streakFreeze = member.ownerDocument.querySelector("[data-learner-streak-freeze]");
   const streakCount = document.querySelector?.("[data-header-streak-count]");
   const ownerLink = document.querySelector?.("[data-owner-dashboard]");
+  const profileButton = document.querySelector?.("[data-mobile-profile]");
+  let profileCard = null, profileOwner = null, signingOut = false;
+  const closeProfile = () => profileCard?.close();
+  const signOut = async () => {
+    if (signingOut) return;
+    signingOut = true;
+    signOutButton.disabled = true;
+    const card = profileCard;
+    const action = card?.querySelector('[data-profile-sign-out]');
+    const status = card?.querySelector('[role="status"]');
+    if (action) action.disabled = true;
+    if (status) status.textContent = '';
+    try {
+      const result = await service.signOut();
+      if (result?.status === 'unavailable') throw new Error('Sign out unavailable');
+      closeProfile();
+      update();
+    } catch {
+      if (status?.isConnected) status.textContent = 'تعذّر تسجيل الخروج. اتصل بالإنترنت وحاول مجددًا.';
+    } finally {
+      signingOut = false;
+      signOutButton.disabled = false;
+      if (action) action.disabled = false;
+    }
+  };
+  profileButton?.addEventListener('click', () => {
+    if (service.getAccountType() === 'guest' || profileCard) return;
+    profileOwner = service.getLearnerProgressOwner();
+    const card = document.createElement('dialog');
+    card.className = 'mobile-profile-card';
+    card.dir = 'rtl';
+    card.setAttribute('aria-labelledby','mobile-profile-name');
+    card.innerHTML = '<button class="app-close" type="button" data-profile-close aria-label="إغلاق"></button><b class="nav-profile__initial" aria-hidden="true"></b><h2 id="mobile-profile-name"></h2><p data-profile-plan></p><button class="system-action" type="button" data-profile-sign-out>تسجيل الخروج</button><p role="status"></p>';
+    card.querySelector('.nav-profile__initial').textContent = profileButton.querySelector('b').textContent;
+    card.querySelector('h2').textContent = service.getLearnerDisplayName();
+    card.querySelector('[data-profile-plan]').textContent = label.textContent;
+    card.querySelector('[data-profile-close]').addEventListener('click',closeProfile);
+    card.querySelector('[data-profile-sign-out]').addEventListener('click',signOut);
+    card.addEventListener('close', () => {
+      card.remove();
+      if (profileCard === card) profileCard = null;
+      profileButton.setAttribute('aria-expanded','false');
+    }, {once:true});
+    profileCard = card;
+    document.body.append(card);
+    profileButton.setAttribute('aria-expanded','true');
+    card.showModal();
+  }, {signal});
   const updateResources = () => {
     if (!resourceStore) return;
     const balance = resourceStore.get(service.getLearnerProgressOwner());
@@ -29,6 +77,13 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
     const isGuest = type === "guest";
     guest.hidden = !isGuest;
     member.hidden = isGuest;
+    if (profileButton) {
+      profileButton.hidden = isGuest;
+      const name = service.getLearnerDisplayName().trim();
+      profileButton.querySelector('b').textContent = (Array.from(name)[0] || '؟').toLocaleUpperCase();
+      profileButton.setAttribute('aria-label',name ? `حساب ${name}` : 'حسابي');
+      if (isGuest || profileOwner !== service.getLearnerProgressOwner()) closeProfile();
+    }
     if (ownerLink) ownerLink.hidden = !service.isOwner?.();
     label.textContent = { free:"حساب مجاني", subscribed:"خطوة سوبر" }[type] || "";
     label.lang = "ar";
@@ -48,12 +103,13 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
   const unsubscribe = service.subscribe(update);
   const unsubscribeProgress = progressStore?.subscribe(update);
   flowButtons.forEach((button) => button.addEventListener("click", () => onFlow(button.dataset.authFlow), { signal }));
-  signOutButton.addEventListener("click", async () => { await service.signOut(); update(); }, { signal });
+  signOutButton.addEventListener("click", signOut, { signal });
   update();
   return Object.freeze({
     update,
     destroy() {
       controller.abort();
+      closeProfile();
       unsubscribe();
       unsubscribeProgress?.();
       unsubscribeResources?.();
