@@ -57,7 +57,7 @@ try {
           :renderQuestion(host,{...options,definition:{id:'mcq-resource',type:'mcq',content:{title:'امتحان سابق',prompt:'اختر الإجابة الصحيحة.',answers:[{id:'a',text:'الأولى',correct:true},{id:'b',text:'الثانية',correct:false}]}}});
         mountQuestionFeedback({host,shell:elements.lessonShell,signal:controller.signal,locale:'ar',feedback:{report:async()=>({status:'saved'}),getRating:()=>null}});
       };
-      window.resourceUi={show,home,balance:()=>resources.get(owner),advance:()=>{clock=nextHeartReset(clock);header.update()},empty:()=>{while(resources.get(owner).hearts>0)resources.spend(owner,crypto.randomUUID())},subscribe:()=>{type='subscribed';listeners.forEach(cb=>cb())},destroy:()=>{home();header.destroy()}};
+      window.resourceUi={show,home,balance:()=>resources.get(owner),advance:()=>{clock=nextHeartReset(clock);header.update()},empty:async()=>{while(resources.get(owner).hearts>0)await resources.spend(owner,crypto.randomUUID())},subscribe:()=>{type='subscribed';listeners.forEach(cb=>cb())},destroy:()=>{home();header.destroy()}};
       await document.fonts.ready;
     })()`);
     const hearts=value=>waitFor(`document.querySelector('[data-resource-hearts]').textContent === '${value}'`);

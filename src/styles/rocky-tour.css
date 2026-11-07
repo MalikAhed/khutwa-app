@@ -1,96 +1,75 @@
-/* Rocky shares the lesson column; the temporary shade never blocks answers. */
-.rocky-app-tour { position:fixed; inset:0; z-index:10000; pointer-events:none; font-family:var(--font-ui); }
-.rocky-app-tour[hidden],.rocky-app-tour[hidden][data-layout] { display:none; }
-.rocky-app-tour [data-rocky-tour-next][hidden] { display:none; }
-.rocky-tour-shade { position:fixed; inset:0; width:100%; height:100%; overflow:visible; opacity:0; transition:opacity 240ms ease; }
-.rocky-tour-dim { fill:rgba(31,52,65,.12); }
-.rocky-tour-rings rect { fill:none; stroke:#81cce3; stroke-width:2; }
-.rocky-app-tour.is-speaking .rocky-tour-shade,.rocky-app-tour[data-layout="home"] .rocky-tour-shade { opacity:1; }
-.rocky-app-tour-guide { position:fixed; box-sizing:border-box; width:min(760px,calc(100vw - 40px)); pointer-events:auto; outline:none; }
-.rocky-coach-row { display:flex; align-items:center; gap:24px; }
-.rocky-app-tour[data-side="left"] .rocky-coach-row { flex-direction:row-reverse; }
-.rocky-app-tour.is-moving .rocky-app-tour-guide { pointer-events:none; }
-.rocky-app-tour-character { width:200px; flex:0 0 200px; aspect-ratio:590 / 545; }
+/* A quiet, contextual guide; only its controls intercept pointer input. */
+.rocky-app-tour { position:fixed; inset:0; width:100%; height:100%; max-width:none; max-height:none; margin:0; padding:0; border:0; overflow:visible; background:transparent; z-index:10000; pointer-events:none; font-family:var(--font-ui); }
+.rocky-app-tour[hidden],.rocky-app-tour [hidden] { display:none!important; }
+.rocky-app-tour::backdrop { background:transparent; pointer-events:none; }
+.rocky-tour-shade { position:fixed; inset:0; width:100%; height:100%; overflow:visible; animation:rocky-shade-in 240ms ease both; }
+.rocky-tour-dim { fill:rgba(16,29,43,.62); }
+.rocky-tour-rings rect { fill:none; stroke:#b3e6ed; stroke-width:2; }
+.rocky-app-tour-guide { position:fixed; box-sizing:border-box; width:min(540px,calc(100vw - 24px)); pointer-events:none; outline:none; }
+.rocky-coach-row { display:flex; align-items:center; gap:12px; }
+.rocky-app-tour-character { pointer-events:none; width:132px; flex:0 0 132px; aspect-ratio:590/545; }
 .rocky-app-tour-character :is(svg,img) { display:block; width:100%; height:100%; overflow:visible; object-fit:contain; }
 .rocky-app-tour-character [data-part="body"] { transform-box:view-box; transform-origin:400px 545px; }
 .rocky-app-tour-character [data-part="arm-left"] { transform-box:view-box; transform-origin:182px 422px; }
 .rocky-app-tour-character [data-part^="mouth-"] { transform-box:view-box; transform-origin:402px 460px; }
 .rocky-app-tour-character [data-part^="eye-"] { transform-box:fill-box; transform-origin:center; }
-.rocky-app-tour-character [data-part^="foot-"] { transform-box:fill-box; transform-origin:center bottom; }
 .rocky-coach-copy { flex:1; min-width:0; }
-.rocky-app-tour-bubble { position:relative; padding:20px 24px; border:2px solid #dce9ee; border-radius:24px; background:#fff; color:#30475a; }
-.rocky-app-tour-bubble::after { content:""; position:absolute; right:-9px; top:50%; width:14px; height:14px; border-top:2px solid #dce9ee; border-right:2px solid #dce9ee; background:#fff; transform:rotate(45deg); }
-.rocky-app-tour[data-side="left"] .rocky-app-tour-bubble::after { right:auto; left:-9px; transform:rotate(-135deg); }
-.rocky-coach-copy>[data-rocky-tour-next] { min-height:44px; margin-top:12px; padding-inline:24px; }
-.rocky-app-tour-bubble h2 { margin:0 0 6px; color:#234859; font-size:23px; line-height:1.5; }
+.rocky-app-tour-bubble { pointer-events:auto; position:relative; isolation:isolate; padding:16px 20px; border-radius:20px; color:#30475a; }
+.rocky-bubble-frame { position:absolute; inset:0; z-index:-1; width:100%; height:100%; overflow:visible; pointer-events:none; filter:drop-shadow(0 3px 8px #10203012); }
+.rocky-bubble-frame path { fill:#fff; stroke:#dce9ee; stroke-width:2; stroke-linejoin:round; vector-effect:non-scaling-stroke; }
+.rocky-control-previews { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:8px; margin-top:8px; pointer-events:none; }
+.rocky-control-previews:empty { display:none; }
+.rocky-control-previews>span { padding:5px 12px!important; border:1px solid #e1e8ec!important; border-radius:12px!important; background:#f6fafb!important; }
+.rocky-control-previews svg { width:22px!important; height:22px!important; flex:none; }
+.rocky-tour-gesture { position:fixed; width:76px; height:76px; object-fit:contain; pointer-events:none; filter:drop-shadow(0 2px 3px #fff); opacity:0; transform:scale(0); transform-origin:44% 14%; transition:opacity 240ms ease,transform 360ms cubic-bezier(.22,1,.36,1); }
+.rocky-tour-gesture.is-visible { opacity:1; transform:scale(1); }
+.rocky-tour-gesture.is-exiting { transition:opacity 240ms ease,transform 240ms cubic-bezier(.4,0,1,1); }
+.rocky-inline-control { display:inline-flex!important; vertical-align:middle; min-height:20px!important; padding:1px 6px!important; margin-inline:3px!important; gap:3px!important; border:1px solid #c5eab2!important; border-radius:8px!important; background:#edf9e6!important; font-size:12px!important; line-height:1.25!important; }
+.rocky-inline-control>span { font-size:inherit!important; line-height:inherit!important; }
+.rocky-inline-control svg { position:static!important; width:16px!important; height:16px!important; }
+.rocky-inline-navigation { white-space:nowrap!important; flex-wrap:nowrap!important; color:#206488!important; border-color:#b9dff3!important; background:#edf8fe!important; }
+.rocky-inline-navigation>span { display:inline!important; width:auto!important; height:auto!important; flex:none; white-space:nowrap; color:inherit!important; }
+.rocky-inline-navigation>div,.rocky-inline-navigation img { width:20px!important; height:20px!important; flex:none; }
+.rocky-inline-navigation img { object-fit:contain; }
+.rocky-inline-equation { display:inline-flex; align-items:center; gap:5px; vertical-align:middle; white-space:nowrap; font-weight:700; }
+.rocky-inline-equation img { display:block; width:22px; height:22px; object-fit:contain; }
+.rocky-app-tour[data-layout="centered"] { pointer-events:auto; }
+.rocky-app-tour[data-layout="centered"] .rocky-tour-dim { fill:rgba(10,18,28,.84); }
+.rocky-app-tour[data-layout="centered"] .rocky-app-tour-guide { width:min(460px,calc(100vw - 32px)); }
+.rocky-app-tour[data-layout="centered"] .rocky-coach-row { flex-direction:column; gap:18px; }
+.rocky-app-tour[data-layout="centered"] .rocky-app-tour-character { width:clamp(200px,50vw,280px); flex-basis:auto; }
+.rocky-app-tour[data-layout="centered"] .rocky-coach-copy { width:100%; text-align:center; }
 .rocky-app-tour-bubble p { margin:0; font-size:17px; font-weight:600; line-height:1.75; }
+.rocky-letter { opacity:0; animation:rocky-letter-in 120ms ease var(--letter-delay) forwards; }
+.rocky-app-tour.is-text-complete .rocky-letter { opacity:1; animation:none; }
+.rocky-coach-actions { pointer-events:auto; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; align-items:center; margin-top:8px; }
+.rocky-coach-actions .system-action { width:100%; min-width:0; padding:2px 8px; font:700 14px/1.3 var(--font-ui); --control-edge:4px; }
+.rocky-coach-actions .rocky-tour-skip { --action-ink:#526777; --action-border:#c7d3db; --action-edge:#afbec8; }
 .rocky-app-tour button:focus-visible { outline:3px solid var(--system-focus); outline-offset:3px; }
-.rocky-coach-slot { flex:0 0 auto; width:100%; }
-.level-layout-preview:has(>.rocky-coach-slot) { grid-template-rows:minmax(0,1fr) auto auto; }
-.lesson-shell:has(.rocky-coach-slot[data-position="footer"]) .level-layout-task:has([data-exam-card]) { align-items:end; }
-.rocky-app-tour[data-layout="lesson"] .rocky-app-tour-guide { padding:6px 0 12px; }
-.rocky-app-tour-flight { position:fixed; z-index:10002; object-fit:contain; pointer-events:none; transform-origin:top left; }
-.rocky-app-tour.is-flying .rocky-app-tour-character { opacity:0; }
-/* Keep the prompt and answers together in the guided two-question lesson. */
-.lesson-shell:has(.rocky-coach-slot) .level-layout-task { padding-top:12px; }
-.lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq { width:min(100%,760px); gap:22px; align-self:start; border-radius:22px; }
-.lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list { margin-top:0; }
-.lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list button { min-height:76px; grid-template-columns:40px minmax(0,1fr) 40px; gap:12px; padding:12px 16px; border-width:2px; border-radius:18px; }
-.lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list button>span { width:40px; height:40px; border-width:2px; border-radius:12px; }
-.lesson-shell:has(.rocky-coach-slot) .level-answer-list :is(code:not(.lesson-sql-code),.lesson-english-term) { padding:0; background:transparent; font:inherit; white-space:normal; }
-@media (min-width:761px) and (min-height:501px) {
-  .lesson-shell:has(.rocky-coach-slot) .level-layout-actions { padding-inline:max(24px,calc((100% - 1000px) / 2)); }
-}
+.rocky-app-tour.is-leaving { opacity:0; transition:opacity 240ms ease; pointer-events:none; }
+.rocky-app-tour.is-leaving :is(.rocky-app-tour-guide,.rocky-app-tour-bubble,.rocky-coach-actions) { pointer-events:none; }
+@keyframes rocky-letter-in { to { opacity:1; } }
+@keyframes rocky-shade-in { from { opacity:0; } to { opacity:1; } }
 @media (max-width:760px) {
-  .rocky-app-tour-guide { width:calc(100vw - 24px); }
-  .rocky-coach-row { gap:12px; }
-  .rocky-app-tour-character { width:128px; flex-basis:128px; }
-  .rocky-app-tour-bubble { padding:12px; border-radius:20px; }
-  .rocky-app-tour-bubble h2 { margin-bottom:4px; font-size:17px; }
-  .rocky-app-tour-bubble p { font-size:14px; line-height:1.75; }
-  .rocky-coach-copy>[data-rocky-tour-next] { width:100%; }
-  .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq { gap:18px; }
-  .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list { grid-template-columns:minmax(0,1fr); gap:10px; }
-  .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list button { min-height:62px; grid-template-columns:32px minmax(0,1fr); gap:8px; padding:10px; font-size:17px; }
-  .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list button>span { width:32px; height:32px; border-radius:10px; }
-}
-@media (max-width:350px) {
+  .rocky-app-tour-character { width:96px; flex-basis:96px; }
   .rocky-coach-row { gap:10px; }
-  .rocky-app-tour-character { width:112px; flex-basis:112px; }
-  .rocky-app-tour-bubble { padding:10px; }
-  .rocky-app-tour-bubble h2 { font-size:16px; }
-  .rocky-app-tour-bubble p { font-size:13px; }
-  .lesson-shell:has(.rocky-coach-slot) .level-layout-task { padding-block:8px; }
-  .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq { gap:12px; }
-  .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list { gap:10px; }
-  .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list button { grid-template-columns:24px minmax(0,1fr); gap:6px; padding:8px; font-size:16px; }
-  .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list button>span { width:24px; height:28px; border-radius:8px; font-size:12px; }
+  .rocky-app-tour-bubble { padding:12px 14px; border-radius:16px; }
+  .rocky-app-tour-bubble p { font-size:15px; line-height:1.65; }
 }
-@media (max-height:620px) and (min-width:761px) {
-  .rocky-app-tour-character { width:128px; flex-basis:128px; }
-  .rocky-app-tour-bubble { padding-block:10px; }
+@media (max-height:500px) {
+  .rocky-app-tour-guide { width:min(500px,calc(100vw - 24px)); }
+  .rocky-app-tour-character { width:64px; flex-basis:64px; }
+  .rocky-app-tour-bubble { padding:8px 12px; }
+  .rocky-app-tour-bubble p { font-size:14px; }
+  .rocky-coach-actions { margin-top:4px; }
+  .rocky-app-tour[data-layout="centered"] .rocky-app-tour-character { width:120px; }
+  .rocky-app-tour[data-layout="centered"] .rocky-coach-row { gap:10px; }
 }
-@media (max-height:500px) and (min-width:761px) {
-  .lesson-shell:has(.rocky-coach-slot) { position:relative; }
-  .lesson-shell:has(.rocky-coach-slot)>.rocky-coach-slot { position:absolute; top:80px; left:16px; width:280px; }
-  .lesson-shell:has(.rocky-coach-slot)>.lesson-card { margin-left:312px; }
-  .rocky-app-tour[data-layout="lesson"] .rocky-app-tour-guide { width:280px; }
-  .rocky-app-tour[data-layout="lesson"][data-side] .rocky-coach-row { flex-direction:column; gap:8px; }
-  .rocky-app-tour[data-layout="lesson"] .rocky-app-tour-character { width:110px; flex-basis:auto; }
-  .rocky-app-tour[data-layout="lesson"] .rocky-coach-copy { width:100%; }
-  .rocky-app-tour[data-layout="lesson"] .rocky-app-tour-bubble { padding:10px 14px; }
-  .rocky-app-tour[data-layout="lesson"][data-side] .rocky-app-tour-bubble::after { left:auto; right:50%; top:-9px; transform:rotate(-45deg); }
-  .rocky-app-tour[data-layout="lesson"] .rocky-app-tour-bubble h2 { font-size:17px; }
-  .rocky-app-tour[data-layout="lesson"] .rocky-app-tour-bubble p { font-size:13px; }
-  .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list[data-answer-count] { grid-template-columns:minmax(0,1fr); }
-  .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list button { grid-template-columns:32px minmax(0,1fr); min-height:56px; gap:8px; padding:8px; }
-  .lesson-shell:has(.rocky-coach-slot) .ui-lab-mcq .level-answer-list button>span { width:32px; height:32px; }
-  .lesson-shell:has(.rocky-coach-slot) .level-layout-actions:has(>.level-feedback:is(.is-correct,.is-wrong)) { grid-template-columns:minmax(0,1fr) 130px; grid-template-rows:auto auto; min-height:0; gap:8px 12px; padding:10px 16px; }
-  .lesson-shell:has(.rocky-coach-slot) .level-layout-actions:has(>.level-feedback:is(.is-correct,.is-wrong))>.level-feedback { grid-column:1 / -1; grid-row:1; }
-  .lesson-shell:has(.rocky-coach-slot) .level-layout-actions:has(>.level-feedback:is(.is-correct,.is-wrong))>.level-question-rating-panel { grid-column:1; grid-row:2; width:100%; }
-  .lesson-shell:has(.rocky-coach-slot) .level-layout-actions:has(>.level-feedback:is(.is-correct,.is-wrong)) [data-template-primary] { grid-column:2; grid-row:2; width:100%; min-width:0; min-height:48px; padding:10px 16px; white-space:nowrap; }
-  .lesson-shell:has(.rocky-coach-slot) .level-result-icon { display:none; }
-  .lesson-shell:has(.rocky-coach-slot) .level-result-copy strong { font-size:16px; }
-  .lesson-shell:has(.rocky-coach-slot) .level-result-copy>span { font-size:13px; }
+@media (min-width:761px) {
+  .rocky-app-tour[data-layout="lesson"] .rocky-app-tour-guide { width:248px; }
+  .rocky-app-tour[data-layout="lesson"] .rocky-coach-row { flex-direction:column; gap:10px; }
 }
-@media (prefers-reduced-motion:reduce) { .rocky-app-tour *, .rocky-app-tour-flight { animation:none!important; transition:none!important; } }
+@media (prefers-reduced-motion:reduce) {
+  .rocky-app-tour,.rocky-tour-shade,.rocky-letter,.rocky-tour-gesture { animation:none!important; transition:none!important; }
+  .rocky-letter { opacity:1; }
+}

@@ -4,6 +4,7 @@ import { createSubjectProgressStore, getUnitPartProgress } from "../src/services
 import { getSubjectRoadmap } from "../src/data/subject-roadmaps.js";
 import { applyProgressUpdate, emptyPart, homeLearningSummary, partKey } from "../src/domain/subject-progress.js";
 import { getQuestionXp } from "../src/domain/question-rewards.js";
+import { createLearnerResources } from '../src/services/learner-resources.js';
 
 function memoryStorage() {
   const values = new Map();
@@ -14,6 +15,107 @@ const steps = ["intro", "check"];
 const firstQuestion = "exam-p09-q1-1";
 const secondQuestion = "exam-p57-q1-b2";
 const questionXp = stepId => getQuestionXp({ subjectId:"ict", stepId });
+
+test('saved local correct answers credit actual gems once and preserve the balance across reopening',async()=>{
+  const storage=memoryStorage(),ownerId='demo:gem-session';
+  const resources=createLearnerResources({storage,getAccountType:()=> 'subscribed'});
+  const store=createSubjectProgressStore({storage,resourceStore:resources});
+  const question={...key,ownerId,stepId:firstQuestion};
+  await store.ready(ownerId);
+  const wrong=await store.recordAnswer({...question,correct:false});
+  assert.equal(resources.getGemReward(ownerId,wrong.updateId),0);
+  const first=await store.recordAnswer({...question,correct:true});
+  assert.equal(resources.getGemReward(ownerId,first.updateId),7);
+  assert.equal(resources.get(ownerId).gems,207);
+  const repeated=await store.recordAnswer({...question,correct:true,reviewing:true});
+  assert.equal(resources.getGemReward(ownerId,repeated.updateId),0);
+  await store.close();
+  const reopenedResources=createLearnerResources({storage,getAccountType:()=> 'subscribed'});
+  const reopened=createSubjectProgressStore({storage,resourceStore:reopenedResources});
+  await reopened.ready(ownerId);
+  await reopened.recordAnswer({...question,correct:true});
+  assert.equal(reopenedResources.get(ownerId).gems,207);
+  assert.equal(reopenedResources.get('demo:other').gems,200);
+  await reopened.close();
+});
+
+test('a failed local gem receipt keeps the saved answer retryable without duplicate credits',async()=>{
+  const values=new Map(),errors=[];let failReceipt=true;
+  const storage={getItem:key=>values.get(key),setItem:(key,value)=>{
+    if(failReceipt&&key.startsWith('tawjihi:resources:')&&value.includes('localGemRewards'))throw new Error('Receipt storage interrupted');
+    values.set(key,value);
+  }};
+  const ownerId='demo:gem-retry',resources=createLearnerResources({storage,getAccountType:()=> 'subscribed'});
+  const store=createSubjectProgressStore({storage,resourceStore:resources,onError:error=>errors.push(error)});
+  await store.ready(ownerId);
+  const failed=await store.recordAnswer({...key,ownerId,stepId:firstQuestion,correct:true});
+  assert.equal(failed.status,'failed');assert.equal(resources.get(ownerId).gems,200);
+  failReceipt=false;
+  const saved=await failed.retry();assert.equal(saved.status,'saved');assert.equal(saved.updateId,failed.updateId);
+  assert.equal(resources.get(ownerId).gems,207);assert.equal(resources.getGemReward(ownerId,saved.updateId),7);
+  assert.equal(errors.length,1);await store.close();
+});
+
+test('a failed local gem receipt recovers after reload without rewarding historical solves',async()=>{
+  const values=new Map();let failReceipt=true;
+  const storage={getItem:key=>values.get(key),setItem:(key,value)=>{
+    if(failReceipt&&key.startsWith('tawjihi:resources:')&&value.includes('localGemRewards'))throw Error('Receipt storage interrupted');
+    values.set(key,value);
+  }};
+  const ownerId='demo:gem-reload',question={...key,ownerId,stepId:firstQuestion,correct:true};
+  const resources=createLearnerResources({storage,getAccountType:()=> 'subscribed'});
+  const store=createSubjectProgressStore({storage,resourceStore:resources,onError:()=>{}});
+  await store.ready(ownerId);assert.equal((await store.recordAnswer(question)).status,'failed');await store.close();
+  failReceipt=false;
+  const reopenedResources=createLearnerResources({storage,getAccountType:()=> 'subscribed'});
+  const reopened=createSubjectProgressStore({storage,resourceStore:reopenedResources});
+  await reopened.ready(ownerId);assert.equal(reopenedResources.get(ownerId).gems,207,'the durably solved answer fulfills its retained credit reservation');
+  await reopened.recordAnswer(question);await reopened.ready(ownerId);
+  assert.equal(reopenedResources.get(ownerId).gems,207);await reopened.close();
+  const historical=createSubjectProgressStore({storage});
+  await historical.ready('demo:historical');await historical.recordAnswer({...question,ownerId:'demo:historical'});await historical.close();
+  const historyResources=createLearnerResources({storage,getAccountType:()=> 'subscribed'});
+  const history=createSubjectProgressStore({storage,resourceStore:historyResources});
+  await Promise.all([history.ready('demo:historical'),history.recordAnswer({...question,ownerId:'demo:historical'})]);
+  assert.equal(historyResources.get('demo:historical').gems,200,'history without a new credit reservation never receives retroactive gems');await history.close();
+});
+
+test('a later-lesson answer in a stale local store preserves another tabs purchase and credits',async()=>{
+  const storage=memoryStorage(),ownerId='demo:paid-two-tabs';
+  const options={storage,getAccountType:()=> 'free'};
+  const firstResources=createLearnerResources(options),secondResources=createLearnerResources(options);
+  const first=createSubjectProgressStore({storage,resourceStore:firstResources}),second=createSubjectProgressStore({storage,resourceStore:secondResources});
+  await Promise.all([first.ready(ownerId),second.ready(ownerId)]);
+  firstResources.get(ownerId);secondResources.get(ownerId);
+  const question={ownerId,subjectId:'ict',lessonId:'smartphone-operating-systems',partId:'android-features',correct:true};
+  await first.recordAnswer({...question,stepId:'exam-p09-q1-9'});
+  const purchase={subjectId:'biology',lessonId:'lesson',partId:'part',stepId:'question'};
+  await firstResources.unlockExplanation(ownerId,purchase,{step:{type:'mcq',content:{correctFeedback:'شرح السؤال'}}});
+  await second.recordAnswer({...question,stepId:'exam-p69-q3-a2'});
+  const restored=createLearnerResources(options);
+  assert.equal(restored.get(ownerId).gems,164);assert.equal(restored.get(ownerId).hearts,5);
+  assert.equal(restored.hasExplanation(ownerId,purchase),true);
+  await Promise.all([first.close(),second.close()]);
+});
+
+test('a reservation without a saved answer survives reload but cannot grant gems',async()=>{
+  const values=new Map();let failAnswer=true;
+  const storage={getItem:key=>values.get(key),setItem:(key,value)=>{
+    if(failAnswer&&key.startsWith('tawjihi:subject-parts:'))throw Error('Answer storage interrupted');
+    values.set(key,value);
+  }};
+  const ownerId='demo:reserved-only',question={...key,ownerId,stepId:firstQuestion,correct:true};
+  const resources=createLearnerResources({storage,getAccountType:()=> 'subscribed'});
+  const store=createSubjectProgressStore({storage,resourceStore:resources,onError:()=>{}});
+  await store.ready(ownerId);assert.equal((await store.recordAnswer(question)).status,'failed');await store.close();
+  failAnswer=false;
+  const reopenedResources=createLearnerResources({storage,getAccountType:()=> 'subscribed'});
+  const reopened=createSubjectProgressStore({storage,resourceStore:reopenedResources});
+  await reopened.ready(ownerId);assert.equal(reopenedResources.get(ownerId).gems,200);
+  const saved=await reopened.recordAnswer(question);
+  assert.equal(reopenedResources.get(ownerId).gems,207);assert.equal(reopenedResources.getGemReward(ownerId,saved.updateId),7);
+  await reopened.close();
+});
 
 test("math and ICT question counts and solved records stay separate on Home", () => {
   const roadmaps = ["ict", "mathematics"].map(subjectId => ({ subjectId, questionsOnly:true, units:[{ lessons:[{

@@ -1,3 +1,4 @@
+.level-layout-actions--question-slider [data-template-back] { display:none!important; }
 .question-number-track { position:relative; display:flex; align-items:center; gap:10px; min-width:0; height:54px; padding:8px max(8px,calc(50% - 19px)); overflow-x:auto; overflow-y:hidden; overscroll-behavior-x:contain; scrollbar-width:none; touch-action:pan-x; cursor:grab; mask-image:linear-gradient(to right,transparent,#000 24px,#000 calc(100% - 24px),transparent); }
 .question-number-track::-webkit-scrollbar { display:none; }
 .question-number-track.is-dragging { cursor:grabbing; user-select:none; }

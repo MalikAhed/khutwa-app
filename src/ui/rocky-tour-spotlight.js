@@ -1,6 +1,11 @@
 import { prefersReducedMotion } from "../lib/dom.js";
 import { mountRockyCoach } from "./rocky-coach.js";
 
+const GESTURE_IMAGES=Object.freeze({
+  click:{animated:'assets/icons/guidance-click.svg',still:'assets/icons/guidance-click-still.svg'},
+  left:{animated:'assets/icons/guidance-slide-left.svg',still:'assets/icons/guidance-slide-left-still.svg'},
+  right:{animated:'assets/icons/guidance-slide-right.svg',still:'assets/icons/guidance-slide-right-still.svg'},
+});
 const SVG = "http://www.w3.org/2000/svg";
 const clamp = (value,min,max) => Math.max(min,Math.min(value,max));
 function visibleBox(element) {
@@ -20,168 +25,221 @@ function visibleBox(element) {
     height:Math.min(innerHeight - 2,bottom + 4) - Math.max(2,top - 4),rx:Math.max(14,radius + 4) };
 }
 
+// A visual copy of the real control, never another live control or duplicate ID.
+function controlPreview(source) {
+  const clone=source.cloneNode(true);
+  const originals=[source,...source.querySelectorAll('*')],copies=[clone,...clone.querySelectorAll('*')];
+  const properties=['display','position','font-family','font-size','font-weight','line-height','color','background-color','border','border-radius','box-shadow','padding','gap','align-items','justify-content','flex-direction','flex-wrap','fill','stroke','stroke-width','width','height','opacity','visibility'];
+  originals.forEach((node,index)=>{
+    const copy=copies[index],style=getComputedStyle(node);
+    for(const attribute of [...copy.attributes])if(/^(id|class|name|for|tabindex|autofocus|aria-|data-)/.test(attribute.name))copy.removeAttribute(attribute.name);
+    for(const property of properties)copy.style.setProperty(property,style.getPropertyValue(property));
+    if(copy instanceof HTMLInputElement){copy.disabled=true;copy.removeAttribute('name');}
+    if(copy instanceof SVGElement)copy.style.position='static';
+  });
+  Object.assign(clone.style,{position:'relative',width:'auto',height:'auto',maxWidth:'100%',minWidth:'0',minHeight:'32px',fontSize:'13px',flex:'0 1 auto',margin:'0',whiteSpace:'normal'});
+  if(source instanceof HTMLButtonElement)Object.assign(clone.style,{display:'inline-flex',alignItems:'center',justifyContent:'center',gap:'6px'});
+  clone.inert=true;clone.setAttribute('aria-hidden','true');
+  return clone;
+}
+
+// One closed outline joins the rounded body and tail, so their borders cannot
+// overlap or leave a seam when the Arabic text changes the bubble height.
+function speechBubblePath(width,height,radius,above) {
+  const l=1,t=1,r=width-1,b=height-1;
+  const corner=Math.max(4,Math.min(radius,(height-24)/2,(width-24)/2));
+  const cx=width/2,cy=height/2;
+  const top=above
+    ? `H${cx-10} C${cx-5} ${t} ${cx-4} -4 ${cx-2} -9 Q${cx} -13 ${cx+2} -9 C${cx+4} -4 ${cx+5} ${t} ${cx+10} ${t}`
+    : '';
+  const right=above ? ''
+    : `V${cy-10} C${r} ${cy-5} ${r+5} ${cy-4} ${r+10} ${cy-2} Q${r+14} ${cy} ${r+10} ${cy+2} C${r+5} ${cy+4} ${r} ${cy+5} ${r} ${cy+10}`;
+  return `M${l+corner} ${t} ${top} H${r-corner} Q${r} ${t} ${r} ${t+corner} ${right} V${b-corner} Q${r} ${b} ${r-corner} ${b} H${l+corner} Q${l} ${b} ${l} ${b-corner} V${t+corner} Q${l} ${t} ${l+corner} ${t} Z`;
+}
+
 export function createRockyTourSpotlight({ onNext,onSkip }) {
-  const controller = new AbortController();
-  const { signal } = controller;
-  const root = document.createElement("div");
-  root.className = "rocky-app-tour";
-  root.dir = "rtl";
-  root.hidden = true;
-  root.innerHTML = `<svg class="rocky-tour-shade" aria-hidden="true"><defs><mask id="rocky-tour-mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse"><rect data-mask-base fill="white"/><g data-mask-holes></g></mask></defs><rect class="rocky-tour-dim" mask="url(#rocky-tour-mask)"/><g class="rocky-tour-rings"></g></svg>
+  const controller=new AbortController(), {signal}=controller;
+  const root=document.createElement('div');
+  root.className='rocky-app-tour';root.dir='rtl';root.hidden=true;
+  root.setAttribute('popover','manual');
+  root.innerHTML=`<svg class="rocky-tour-shade" aria-hidden="true"><defs><mask id="rocky-tour-mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse"><rect data-mask-base fill="white"/><g data-mask-holes></g></mask></defs><rect class="rocky-tour-dim" mask="url(#rocky-tour-mask)"/><g class="rocky-tour-rings"></g></svg>
     <section class="rocky-app-tour-guide" role="region" aria-label="روكي يساعدك" tabindex="-1">
       <div class="rocky-coach-row"><div class="rocky-app-tour-character" aria-hidden="true"><img src="assets/mascot/rocky-coach.svg" alt="" width="180" height="166"></div>
-      <div class="rocky-coach-copy"><div class="rocky-app-tour-bubble" aria-live="polite" aria-atomic="true"><h2 id="rocky-app-tour-title"></h2><p id="rocky-app-tour-message"></p></div>
-      <button type="button" class="system-action system-action--primary" data-rocky-tour-next hidden></button></div></div>
-    </section>`;
+      <div class="rocky-coach-copy"><div class="rocky-app-tour-bubble"><svg class="rocky-bubble-frame" aria-hidden="true" focusable="false"><path/></svg><p id="rocky-app-tour-message"></p><div class="rocky-control-previews" aria-hidden="true" inert></div><span class="visually-hidden" data-rocky-announcement role="status" aria-live="polite" aria-atomic="true"></span></div>
+      <div class="rocky-coach-actions"><button type="button" class="system-action system-action--primary" data-rocky-tour-next hidden>التالي</button><button type="button" class="system-action rocky-tour-skip" data-rocky-tour-skip>تخطّي</button></div></div></div>
+    </section><img class="rocky-tour-gesture" src="assets/icons/guidance-click-still.svg" alt="" aria-hidden="true" hidden>`;
   document.body.append(root);
-  const guide = root.querySelector(".rocky-app-tour-guide");
-  const shade = root.querySelector(".rocky-tour-shade");
-  const next = root.querySelector("[data-rocky-tour-next]");
-  const character = root.querySelector(".rocky-app-tour-character");
-  const rocky = mountRockyCoach(character,signal);
-  const slot = document.createElement("div");
-  slot.className = "rocky-coach-slot";
-  slot.setAttribute("aria-hidden","true");
-  let targets = [], layout = "home", placement = "header", side = null, frame = 0, speechTimer = 0, trackingUntil = 0, flight = null;
-  let flightAnimation = null, movement = null;
-  let geometry = "";
-  const rectNode = (box,fill) => {
-    const node = document.createElementNS(SVG,"rect");
-    for (const [key,value] of Object.entries(box)) node.setAttribute(key,String(value));
-    if (fill) node.setAttribute("fill",fill);
-    return node;
+  const guide=root.querySelector('.rocky-app-tour-guide'),shade=root.querySelector('.rocky-tour-shade');
+  const gesture=root.querySelector('.rocky-tour-gesture');
+  const motion=matchMedia('(prefers-reduced-motion: reduce)');
+  let gestureImage=GESTURE_IMAGES.click;
+  const updateGesture=()=>{gesture.src=motion.matches||gesture.hidden?gestureImage.still:gestureImage.animated;};
+  motion.addEventListener('change',updateGesture,{signal});
+  const bubble=root.querySelector('.rocky-app-tour-bubble'),bubbleFrame=bubble.querySelector('.rocky-bubble-frame');
+  const next=root.querySelector('[data-rocky-tour-next]'), character=root.querySelector('.rocky-app-tour-character');
+  const rocky=mountRockyCoach(character,signal);
+  let targets=[],gestureTarget=null,frame=0,timer=0,gestureExitTimer=0,gestureFrame=0,gestureRevision=0,geometry='',returnFocus=null,centeredMode=false;
+  const rectNode=(box,fill)=>{
+    const node=document.createElementNS(SVG,'rect');
+    for(const [key,value] of Object.entries(box)) node.setAttribute(key,String(value));
+    if(fill)node.setAttribute('fill',fill);return node;
   };
   function position() {
-    frame = 0;
-    if (root.hidden) return;
-    const viewportWidth = document.documentElement.clientWidth;
-    const shadeBounds = shade.getBoundingClientRect();
-    shade.setAttribute("viewBox",`0 0 ${shadeBounds.width} ${shadeBounds.height}`);
-    for (const rectangle of shade.querySelectorAll("[data-mask-base],.rocky-tour-dim")) {
-      rectangle.setAttribute("width",String(innerWidth)); rectangle.setAttribute("height",String(innerHeight));
+    frame=0;if(root.hidden||root.classList.contains('is-leaving'))return;
+    const width=document.documentElement.clientWidth,height=window.visualViewport?.height || innerHeight;
+    shade.setAttribute('viewBox',`0 0 ${width} ${innerHeight}`);
+    shade.querySelectorAll('[data-mask-base],.rocky-tour-dim').forEach(node=>{node.setAttribute('width',width);node.setAttribute('height',innerHeight);});
+    const target=targets[0],shell=target?.closest('.lesson-shell--ui-lab'),dialog=target?.closest('dialog');
+    const sidebar=Boolean(shell && !dialog && width>=761);
+    root.dataset.layout=centeredMode?'centered':shell?'lesson':dialog?'dialog':'home';
+    const bubbleWidth=bubble.offsetWidth,bubbleHeight=bubble.offsetHeight;
+    const bubblePath=speechBubblePath(bubbleWidth,bubbleHeight,parseFloat(getComputedStyle(bubble).borderTopLeftRadius),sidebar||centeredMode);
+    const outline=bubbleFrame.querySelector('path');
+    if(outline.getAttribute('d')!==bubblePath){
+      bubbleFrame.setAttribute('viewBox',`0 0 ${bubbleWidth} ${bubbleHeight}`);
+      outline.setAttribute('d',bubblePath);
     }
-    if (layout === "lesson") {
-      const shell = document.querySelector(".lesson-shell--ui-lab:not(.lesson-shell--completion)");
-      const topbar = shell?.querySelector(".lesson-top");
-      const actions = shell?.querySelector(".level-layout-actions");
-      const sidebar = matchMedia("(max-height:500px) and (min-width:761px)").matches;
-      const atFooter = placement === "footer" && !sidebar && actions;
-      slot.dataset.position = atFooter ? "footer" : "header";
-      if (atFooter) { if (slot.nextElementSibling !== actions) actions.before(slot); }
-      else if (topbar && slot.parentElement !== shell) topbar.after(slot);
-      const height = guide.offsetHeight;
-      if (slot.style.height !== `${height}px`) slot.style.height = `${height}px`;
-      const rect = slot.getBoundingClientRect();
-      guide.style.left = `${getComputedStyle(slot).position === "absolute" ? rect.left : side === "left" ? 12 : Math.max(12,(viewportWidth - guide.offsetWidth) / 2)}px`;
-      guide.style.top = `${rect.top}px`;
-    } else slot.remove();
-    // Reserve the coach's space before measuring targets, including the first paint.
-    const boxes = targets.filter(target => target.isConnected).map(visibleBox).filter(Boolean);
-    const nextGeometry = JSON.stringify(boxes);
-    if (geometry !== nextGeometry) {
-      geometry = nextGeometry;
-      shade.querySelector("[data-mask-holes]").replaceChildren(...boxes.map(box => rectNode(box,"black")));
-      shade.querySelector(".rocky-tour-rings").replaceChildren(...boxes.map(box => rectNode(box)));
+    const boxes=targets.filter(node=>node.isConnected).map(visibleBox).filter(Boolean);
+    const nextGeometry=JSON.stringify(boxes);
+    if(geometry!==nextGeometry){geometry=nextGeometry;shade.querySelector('[data-mask-holes]').replaceChildren(...boxes.map(box=>rectNode(box,'black')));shade.querySelector('.rocky-tour-rings').replaceChildren(...boxes.map(box=>rectNode(box)));}
+    const w=guide.offsetWidth,h=guide.offsetHeight;
+    let x=(width-w)/2,y=height-h-16;
+    if(centeredMode){y=(height-h)/2;}
+    else if(shell&&!dialog) {
+      x=sidebar?12:(width-w)/2;
+      y=(shell.querySelector('.lesson-top')?.getBoundingClientRect().bottom || 64)+24;
+    } else if(boxes.length) {
+      const b=boxes[0];
+      x=clamp(b.x+b.width/2-w/2,12,width-w-12);
+      y=b.y+b.height+h+24<height ? b.y+b.height+14 : b.y-h-14>=12 ? b.y-h-14 : height-h-12;
     }
-    if (boxes.length && (layout === "home" || slot.dataset.position === "footer")) {
-      const target = boxes[0], center = target.x + target.width / 2;
-      const facing = side || (layout === "home" && center < viewportWidth / 2 ? "left" : "right");
-      root.dataset.side = facing;
-      const characterWidth = character.offsetWidth;
-      const x = facing === "left" ? center - characterWidth / 2 : center - guide.offsetWidth + characterWidth / 2;
-      guide.style.left = `${clamp(x,12,viewportWidth - guide.offsetWidth - 12)}px`;
-    } else root.dataset.side = side || "right";
-    if (layout === "home" && boxes.length) {
-      const height = guide.offsetHeight;
-      const top = Math.min(...boxes.map(box => box.y)), bottom = Math.max(...boxes.map(box => box.y + box.height));
-      const y = bottom + height + 28 <= innerHeight ? bottom + 18 : top - height - 18 >= 12 ? top - height - 18 : innerHeight - height - 16;
-      guide.style.top = `${clamp(y,12,innerHeight - height - 12)}px`;
-    } else if (layout !== "lesson") { guide.style.top = ""; guide.style.left = ""; }
-    if (flight && !flightAnimation && !root.hidden) {
-      const destination = character.getBoundingClientRect();
-      flightAnimation = flight.animate([{ transform:"none",opacity:1 },
-        { transform:`translate(${destination.left - flight.offsetLeft}px,${destination.top - flight.offsetTop}px) scale(${destination.width / flight.offsetWidth})`,opacity:0 }],
-      { duration:prefersReducedMotion() ? 0 : 460,easing:"cubic-bezier(.22,1,.36,1)",fill:"forwards" });
-      const moving = flight;
-      void flightAnimation.finished.catch(() => {}).then(() => {
-        moving.remove();
-        if (flight === moving) { flight = null; flightAnimation = null; root.classList.remove("is-flying"); }
-      });
+    // Keep small actionable targets clear even though the coach may overlay
+    // the lesson content. The card itself never changes size or position.
+    const anchor=boxes[0];
+    if(!centeredMode&&anchor&&anchor.height<180&&x<anchor.x+anchor.width&&x+w>anchor.x&&y<anchor.y+anchor.height&&y+h>anchor.y){
+      const below=anchor.y+anchor.height+16,above=anchor.y-h-16;
+      if(below+h<height-12)y=below;else if(above>=12)y=above;
     }
-    if (performance.now() < trackingUntil) frame = requestAnimationFrame(position);
+    guide.style.left=`${clamp(x,12,width-w-12)}px`;guide.style.top=`${clamp(y,8,height-h-8)}px`;
+    if(!gesture.hidden&&boxes.length){
+      const box=gestureTarget?.isConnected&&visibleBox(gestureTarget)||boxes[0],pointX=box.x+box.width*.55,pointY=box.y+Math.min(box.height*.35,64);
+      gesture.style.left=`${clamp(pointX-33,6,width-82)}px`;gesture.style.top=`${clamp(pointY-9,6,height-82)}px`;
+    }
   }
-  const queuePosition = () => { if (!frame && !root.hidden) frame = requestAnimationFrame(position); };
-  const resize = new ResizeObserver(queuePosition);
-  resize.observe(guide);
-  const viewportChanged = () => { movement?.finish(); queuePosition(); };
-  window.addEventListener("resize",viewportChanged,{ signal });
-  window.visualViewport?.addEventListener("resize",viewportChanged,{ signal });
-  matchMedia("(prefers-reduced-motion: reduce)").addEventListener("change",event => {
-    if (event.matches) { flightAnimation?.finish(); movement?.finish(); }
-  },{ signal });
-  document.addEventListener("scroll",queuePosition,{ signal,capture:true,passive:true });
-  next.addEventListener("click",onNext,{ signal });
-  document.addEventListener("keydown",event => {
-    if (root.hidden || document.querySelector("dialog[open]")) return;
-    if (event.key === "Escape") { event.preventDefault(); onSkip(); return; }
-  },{ signal });
-  const hide = () => {
-    root.hidden = true; slot.remove(); rocky.stop(); clearTimeout(speechTimer);
-    movement?.cancel(); movement = null; root.classList.remove("is-moving");
-    cancelAnimationFrame(frame); frame = 0;
+  const finishGestureExit=()=>{
+    clearTimeout(gestureExitTimer);gestureExitTimer=0;
+    gesture.hidden=true;gesture.classList.remove('is-visible','is-exiting');updateGesture();
+  };
+  const hideGesture=()=>{
+    gestureRevision+=1;cancelAnimationFrame(gestureFrame);clearTimeout(gestureExitTimer);
+    if(gesture.hidden)return;
+    gesture.classList.remove('is-visible');gesture.classList.add('is-exiting');
+    if(motion.matches)finishGestureExit();
+    else gestureExitTimer=setTimeout(finishGestureExit,240);
+  };
+  const showGesture=()=>{
+    const revision=++gestureRevision;
+    cancelAnimationFrame(gestureFrame);clearTimeout(gestureExitTimer);
+    gesture.style.transition='none';gesture.classList.remove('is-visible','is-exiting');gesture.hidden=false;updateGesture();
+    void gesture.decode().catch(()=>{}).then(()=>{
+      if(revision!==gestureRevision||signal.aborted||root.hidden||root.classList.contains('is-leaving'))return;
+      // Commit the zero-size state before transitioning to the visible state.
+      gesture.getBoundingClientRect();gesture.style.removeProperty('transition');
+      gestureFrame=requestAnimationFrame(()=>{
+        gesture.classList.add('is-visible');
+      });
+    });
+  };
+  const queue=()=>{if(!frame&&!root.hidden)frame=requestAnimationFrame(position);};
+  const resize=new ResizeObserver(queue);resize.observe(guide);
+  window.addEventListener('resize',queue,{signal});window.visualViewport?.addEventListener('resize',queue,{signal});
+  document.addEventListener('scroll',queue,{signal,capture:true,passive:true});
+  next.addEventListener('click',()=>{if(!root.hidden&&!root.classList.contains('is-leaving'))onNext();},{signal});
+  root.querySelector('[data-rocky-tour-skip]').addEventListener('click',()=>{if(!root.hidden&&!root.classList.contains('is-leaving'))onSkip();},{signal});
+  root.querySelector('.rocky-app-tour-bubble').addEventListener('click',()=>root.classList.add('is-text-complete'),{signal});
+  document.addEventListener('keydown',event=>{
+    if(root.hidden||root.classList.contains('is-leaving'))return;
+    if(centeredMode&&event.key==='Tab'){
+      const buttons=[...guide.querySelectorAll('button:not([hidden])')],first=buttons[0],last=buttons.at(-1);
+      if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+      else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+      return;
+    }
+    if(event.key!=='Escape'||document.querySelector('dialog[open]'))return;
+    event.preventDefault();onSkip();
+  },{signal});
+  const hide=()=>{
+    if(root.hidden||root.classList.contains('is-leaving'))return;
+    clearTimeout(timer);hideGesture();rocky.stop();
+    root.classList.add('is-leaving');
+    if(root.contains(document.activeElement)&&returnFocus?.isConnected)returnFocus.focus({preventScroll:true});
+    timer=setTimeout(()=>{root.hidePopover?.();root.hidden=true;root.classList.remove('is-leaving');},prefersReducedMotion()?0:240);
   };
   return {
-    show({ id,title,message,selectors = [],mode = "home",placement:nextPlacement = "header",side:nextSide = null,nextLabel = null,mood = "explain" }) {
-      const selected = selectors.flatMap(selector => [...document.querySelectorAll(selector)])
-        .filter(target => !target.closest("[hidden], [inert]") && target.getClientRects().length);
-      if (!selected.length) { hide(); return false; }
-      resize.disconnect(); resize.observe(guide); selected.forEach(target => resize.observe(target));
-      const previous = root.hidden ? null : guide.getBoundingClientRect();
-      movement?.cancel(); movement = null; root.classList.remove("is-moving");
-      targets = selected; layout = mode; placement = nextPlacement; side = nextSide;
-      root.dataset.layout = layout;
-      root.dataset.tourStep = id;
-      root.hidden = false;
-      guide.querySelector("h2").textContent = title;
-      guide.querySelector("p").textContent = message;
-      next.hidden = !nextLabel; next.textContent = nextLabel || "";
-      const duration = clamp(message.length * 30,2200,4000);
-      clearTimeout(speechTimer);
-      root.classList.add("is-speaking");
-      rocky.speak({ mood,duration });
-      speechTimer = setTimeout(() => root.classList.remove("is-speaking"),duration);
-      trackingUntil = performance.now() + Math.max(600,duration);
-      position();
-      if (previous && !prefersReducedMotion()) {
-        const destination = guide.getBoundingClientRect();
-        const dx = clamp(previous.left,12,document.documentElement.clientWidth - destination.width - 12) - destination.left;
-        const dy = clamp(previous.top,12,innerHeight - destination.height - 12) - destination.top;
-        if (Math.abs(dx) + Math.abs(dy) > 4) {
-          const animation = guide.animate([{ transform:`translate(${dx}px,${dy}px)` },{ transform:"translate(0,0)" }],
-            { duration:460,easing:"cubic-bezier(.22,1,.36,1)" });
-          movement = animation; root.classList.add("is-moving");
-          rocky.travel();
-          void animation.finished.catch(() => {}).then(() => {
-            if (movement === animation) { movement = null; root.classList.remove("is-moving"); }
-          });
+    show({id,message,selectors=[],elements=[],preview=[],inlinePreview=null,equation=null,centered=false,mood=null,gesture:gestureKind=null,gestureSelector=null,nextLabel=null}) {
+      const selected=[...elements,...selectors.flatMap(selector=>[...document.querySelectorAll(selector)])]
+        .filter(node=>!node.closest('[hidden],[inert]')&&node.getClientRects().length);
+      if(!selected.length&&!centered){hide();return false;}
+      if(!centered&&(!selected.some(visibleBox)||gestureKind)) selected[0].scrollIntoView({block:'nearest',behavior:'instant'});
+      clearTimeout(timer);root.classList.remove('is-leaving','is-text-complete');
+      centeredMode=centered;
+      guide.setAttribute('role',centered?'dialog':'region');
+      if(centered)guide.setAttribute('aria-modal','true');else guide.removeAttribute('aria-modal');
+      const parent=selected[0]?.closest('dialog[open]') || document.body;
+      if(root.parentElement!==parent){root.hidePopover?.();parent.append(root);}
+      targets=selected;gestureTarget=gestureSelector?document.querySelector(gestureSelector):selected[0];geometry='';resize.disconnect();resize.observe(guide);targets.forEach(node=>resize.observe(node));
+      if (!root.contains(document.activeElement)) returnFocus=document.activeElement;
+      if (!returnFocus?.isConnected) returnFocus=selected[0]||document.querySelector('[data-page=learn]');
+      root.dataset.tourStep=id;root.hidden=false;
+      const messageNode=root.querySelector('#rocky-app-tour-message');
+      messageNode.setAttribute('aria-hidden','true');
+      const previewSources=preview.map(selector=>document.querySelector(selector)).filter(Boolean);
+      const fragment=document.createDocumentFragment();let letterIndex=0;
+      const appendText=text=>{
+        for(const {segment} of new Intl.Segmenter('ar',{granularity:'grapheme'}).segment(text)){
+          const span=document.createElement('span');span.className='rocky-letter';span.textContent=segment;
+          span.style.setProperty('--letter-delay',`${letterIndex++*22}ms`);fragment.append(span);
         }
+      };
+      const inlineAt=inlinePreview&&previewSources[0]?message.indexOf(inlinePreview):-1;
+      if(inlineAt>=0){
+        appendText(message.slice(0,inlineAt));
+        const chip=controlPreview(previewSources[0]);chip.classList.add('rocky-inline-control','rocky-letter');
+        if(previewSources[0].matches('[data-page]'))chip.classList.add('rocky-inline-navigation');
+        chip.style.removeProperty('opacity');chip.style.setProperty('--letter-delay',`${letterIndex*22}ms`);
+        letterIndex+=inlinePreview.length;fragment.append(chip);appendText(message.slice(inlineAt+inlinePreview.length));
+      } else appendText(message);
+      if(equation){
+        appendText(' ');
+        const value=document.createElement('bdi');value.className='rocky-inline-equation rocky-letter';value.dir='ltr';
+        value.style.setProperty('--letter-delay',`${letterIndex++*22}ms`);
+        const amount=document.createElement('span');amount.className='ui-number';amount.textContent=equation.amount;
+        const icon=document.createElement('img');icon.src=equation.icon;icon.alt=equation.label;icon.width=22;icon.height=22;
+        const equal=document.createElement('span');equal.textContent='=';
+        const one=document.createElement('span');one.className='ui-number';one.textContent='1';
+        const unit=document.createElement('span');unit.dir='rtl';unit.textContent=equation.unit;
+        value.append(amount,icon,equal,one,unit);fragment.append(value);
+        if(equation.after)appendText(equation.after);
       }
-      if (nextLabel) next.focus({ preventScroll:true });
+      messageNode.replaceChildren(fragment);
+      root.querySelector('.rocky-control-previews').replaceChildren(...(inlineAt>=0?[]:previewSources.map(controlPreview)));
+      root.querySelector('[data-rocky-announcement]').textContent=equation?`${message} ${equation.amount} ${equation.label} = 1 ${equation.unit}${equation.after||''}`:inlineAt>=0?message:[message,...previewSources.map(node=>node.getAttribute('aria-label')||node.textContent)].join(' ');
+      root.dataset.gesture=gestureKind||'';
+      const scrollSurface=selected[0]?.querySelector('.question-number-track')||selected[0];
+      const swipeRight=scrollSurface&&getComputedStyle(scrollSurface).direction==='rtl';
+      gestureImage=gestureKind==='swipe' ? (swipeRight?GESTURE_IMAGES.right:GESTURE_IMAGES.left) : GESTURE_IMAGES.click;
+      if(gestureKind)showGesture();else hideGesture();
+      next.hidden=!nextLabel;next.textContent=nextLabel||'';
+      root.showPopover?.();position();
+      const duration=Math.max(message.length*22+180,centered?2200:0);
+      rocky.speak({duration,mood:mood||(id==='hard'?'reassure':'explain')});
+      if(!prefersReducedMotion())guide.animate([{opacity:0,transform:'translateY(10px) scale(.98)'},{opacity:1,transform:'none'}],{duration:260,easing:'cubic-bezier(.22,1,.36,1)'});
+      if(nextLabel)next.focus({preventScroll:true});
+      else if(selected[0]?.matches('button,[tabindex]'))selected[0].focus({preventScroll:true});
       return true;
     },
-    carry(source) {
-      const image = source?.querySelector("img");
-      if (!image || prefersReducedMotion()) return;
-      const rect = image.getBoundingClientRect();
-      flight = image.cloneNode();
-      flight.className = "rocky-app-tour-flight"; flight.alt = "";
-      flight.style.cssText = `left:${rect.left}px;top:${rect.top}px;width:${rect.width}px;height:${rect.height}px`;
-      document.body.append(flight); source.style.visibility = "hidden";
-      root.classList.add("is-flying");
-    },
-    hide,
-    reposition:queuePosition,
-    destroy() { hide(); controller.abort(); resize.disconnect(); flightAnimation?.cancel(); flight?.remove(); root.remove(); },
-    get targets() { return targets; },
+    hide,stopGesture:hideGesture,reposition:queue,
+    destroy(){gestureRevision+=1;clearTimeout(timer);clearTimeout(gestureExitTimer);cancelAnimationFrame(gestureFrame);cancelAnimationFrame(frame);controller.abort();resize.disconnect();root.hidePopover?.();root.remove();},
+    get targets(){return targets;},
   };
 }

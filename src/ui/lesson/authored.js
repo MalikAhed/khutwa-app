@@ -64,6 +64,7 @@ export function renderAuthoredInteractiveLesson(
     onMathFilterApply,
     demoMode = false,
     onLessonEvent,
+    deferDailyStreak,
     getQuestionFeedback,
     getQuestionExplanation,
     questionFilterIds,
@@ -202,7 +203,11 @@ export function renderAuthoredInteractiveLesson(
     const saving = source && !source.save ? undefined : onAnswer?.(value);
     if (saving?.then) pendingAnswers.push(saving);
     const celebrate = result => {
-      if (!signal.aborted && !resultVisible && !endingSession && !demoMode && result?.dailyStreak) showDailyStreak(shell, result.dailyStreak, signal);
+      if (demoMode || !result?.dailyStreak) return;
+      // A flashcard can commit its assessment while End session is saving.
+      // Capture onboarding's earned streak before suppressing lesson overlays.
+      if (deferDailyStreak?.(result.dailyStreak)) return;
+      if (!signal.aborted && !resultVisible && !endingSession) showDailyStreak(shell, result.dailyStreak, signal);
     };
     const confirmed = saved => {
       if (saved?.status === 'failed') return saved.retry ? { ...saved, retry:async () => {
@@ -365,7 +370,7 @@ export function renderAuthoredInteractiveLesson(
       const stopReadiness = revealWhenReady(container, {
         signal,
         onReady() {
-          if (demoMode) onLessonEvent?.({ type:"complete" });
+          onLessonEvent?.({ type:"complete" });
           stopAnimation =
             isLessonPart && outcome
               ? animateSubjectCompletion(container)
@@ -676,15 +681,16 @@ export function renderAuthoredInteractiveLesson(
         registerSessionSave:save => { saveCurrentAssessment = save; },
         onAssess:({ correct }) => {
           void Promise.resolve(questionFeedbackFor(step.id)?.saveRating(correct ? "easy" : "hard", { automatic:true })).catch(() => {});
+          onLessonEvent?.({ type:"answer",step,correct });
         },
         onAnswer:({ correct }) => {
           return saveAnswer({ stepId:step.id, correct, reviewing:reviewIndex >= 0 });
         }, onContinue() {
           if (demoMode) void saveAnswer({ stepId:step.id, correct:null });
           return goNext();
-        }, onReveal:() => onLessonEvent?.({ type:"reveal",step }) });
-      mountQuestionFeedback({ host,shell,feedback:questionFeedbackFor(step.id),signal:examController.signal,locale,onHidden:() => hideCurrent(step) });
-      mountQuestionExplanation({host,explanation:demoMode ? null : getQuestionExplanation?.(step),locale,signal:examController.signal});
+        }, onReveal:() => onLessonEvent?.({ type:"reveal",step }), onFlip:({revealed}) => onLessonEvent?.({type:"flip",step,revealed}) });
+      mountQuestionFeedback({ host,shell,onReportOpen:() => onLessonEvent?.({type:"report"}),feedback:questionFeedbackFor(step.id),signal:examController.signal,locale,onHidden:() => hideCurrent(step) });
+      mountQuestionExplanation({host,onOpen:() => onLessonEvent?.({type:"explanation",step}),explanation:demoMode ? null : getQuestionExplanation?.(step),locale,signal:examController.signal});
       const back = host.querySelector("[data-template-back]");
       back.disabled = currentIndex === 0;
       back.hidden = currentIndex === 0;
@@ -701,13 +707,15 @@ export function renderAuthoredInteractiveLesson(
       onContinue: goNext,
       onAnswer: (result) => {
         const saving = saveAnswer({ ...result, stepId: step.id, reviewing: reviewIndex >= 0 });
-        onLessonEvent?.({ type:"answer",step,correct:result.correct });
+        void Promise.resolve(saving).then(saved => {
+          if (!questionController.signal.aborted && saved?.status !== "failed") onLessonEvent?.({ type:"answer",step,correct:result.correct });
+        },()=>{}); // The question controls show save failures; coaching stays quiet.
         return saving;
       },
       locale,
     });
-    mountQuestionFeedback({ host,shell,feedback:questionFeedbackFor(step.id),signal:questionController.signal,locale,onHidden:() => hideCurrent(step) });
-    mountQuestionExplanation({host,explanation:demoMode ? null : getQuestionExplanation?.(step),locale,signal:questionController.signal});
+    mountQuestionFeedback({ host,shell,onReportOpen:() => onLessonEvent?.({type:"report"}),feedback:questionFeedbackFor(step.id),signal:questionController.signal,locale,onHidden:() => hideCurrent(step) });
+    mountQuestionExplanation({host,onOpen:() => onLessonEvent?.({type:"explanation",step}),explanation:demoMode ? null : getQuestionExplanation?.(step),locale,signal:questionController.signal});
     revealWhenReady(host.querySelector(".level-layout-task"), { signal:questionController.signal, animate:!instantEntry });
     destroyStep = () => { questionController.abort(); destroyQuestion(); };
     const stepBackButton = host.querySelector("[data-template-back]");

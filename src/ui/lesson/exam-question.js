@@ -21,7 +21,7 @@ function layoutWrittenPrompt(source) {
 }
 
 /** Written answers are self-checked; worked solutions stay in the explanation dialog. */
-export function renderExamQuestion(container, step, { locale = "ar", onBack, onContinue, onReveal, onAssess, onAnswer, beforeAnswer, registerSessionSave, selfCheck = true } = {}) {
+export function renderExamQuestion(container, step, { locale = "ar", onBack, onContinue, onReveal, onFlip, onAssess, onAnswer, beforeAnswer, registerSessionSave, selfCheck = true } = {}) {
   const controller = new AbortController();
   const { signal } = controller;
   const { content } = step;
@@ -107,6 +107,7 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
     front.hidden = false;
     solution.hidden = false;
     flipped = showAnswer;
+    onFlip?.({revealed:showAnswer});
     rotor.classList.toggle("is-flipped", flipped);
     front.inert = flipped;
     solution.inert = !flipped;

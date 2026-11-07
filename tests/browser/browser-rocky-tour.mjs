@@ -1,174 +1,211 @@
-import assert from "node:assert/strict";
-import { mkdir, writeFile } from "node:fs/promises";
-import { withBrowserPage } from "./browser-page.mjs";
+import assert from 'node:assert/strict';
+import {mkdir} from 'node:fs/promises';
+import {chromium} from 'playwright';
+import {createAppServer} from '../../src/server/app-server.mjs';
+import {readRuntimeConfig} from '../../src/server/runtime-config.mjs';
+import {findChrome} from './browser-session.mjs';
+const root=process.cwd(),output=process.env.BROWSER_SCREENSHOT_DIR||'/tmp/khutwa-rocky-tour-v2';
+await mkdir(output,{recursive:true});
+const app=await createAppServer({root,config:readRuntimeConfig({PORT:'0',LIVE_RELOAD:'0',ACCOUNTS_DATABASE_PATH:':memory:'},{root}),logger:()=>{}});
+const base=`http://127.0.0.1:${await app.listen()}`;
+const browser=await chromium.launch({executablePath:await findChrome(),headless:true,args:['--no-sandbox']});
+async function learner(name,width=390,reduced=true,arm=true){
+ const {account}=await app.accountStore.createAccount({username:name,curriculum:'gaza',path:'scientific',password:'Test-only-123'});
+ const context=await browser.newContext({viewport:{width,height:width===1440?900:844},reducedMotion:reduced?'reduce':'no-preference'});
+ await context.request.post(`${base}/api/auth/sign-in`,{data:{identifier:name,password:'Test-only-123'}});
+ const page=await context.newPage(),errors=[];page.on('pageerror',error=>errors.push(error.message));
+ await page.goto(base);await page.waitForFunction(()=>!document.querySelector('#app-splash'));
+ if(arm)await page.evaluate(owner=>localStorage.setItem(`tawjihi:rocky-first-run:v1:${owner}`,JSON.stringify({version:3,status:'active',stage:'wait-question',seen:[]})),`account:${account.id}`);
+ return {page,context,errors,owner:`account:${account.id}`};
+}
+const stage=async(page,id)=>{await page.locator(`.rocky-app-tour:not([hidden]):not(.is-leaving)[data-tour-step="${id}"]`).waitFor();await page.waitForTimeout(300);};
+const next=page=>page.locator('[data-rocky-tour-next]:visible').click();
+const savedTour=(page,owner)=>page.evaluate(owner=>JSON.parse(localStorage.getItem(`tawjihi:rocky-first-run:v1:${owner}`)),owner);
+async function shot(page,name){
+ await page.locator('.rocky-app-tour-bubble').click();
+ const box=await page.locator('.rocky-app-tour-guide').boundingBox(),size=page.viewportSize();
+ assert.ok(box.x>=0&&box.y>=0&&box.x+box.width<=size.width+1&&box.y+box.height<=size.height+1,JSON.stringify(box));
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+ await page.screenshot({path:`${output}/${name}.png`});
+}
+async function swipeSlider(page){
+ await stage(page,'slider');assert.equal(await page.locator('[data-rocky-tour-next]').isVisible(),false);
+ await page.locator('.question-number-track').hover();await page.mouse.wheel(320,0);await page.waitForTimeout(600);assert.equal(await page.locator('.rocky-app-tour:not([hidden]):not(.is-leaving)[data-tour-step=report]').count(),0,'report guidance waits while the slider is being explored');await stage(page,'report');
+}
+async function reportPreview(page){
+ await page.locator('[data-question-report]').click();await stage(page,'report-send');
+ assert.equal(await page.locator('[data-question-hide]').isDisabled(),true);
+ assert.ok(await page.locator('[data-question-report-form] button[type=submit]').isEnabled(),'reporting is explained before optional hiding');
+ await next(page);await stage(page,'report-hide');
+ assert.equal(await page.locator('[data-question-hide]').isDisabled(),true);
+ await page.locator('[data-question-hide]').evaluate(node=>node.click());
+ assert.equal(await page.locator('[data-question-hide-form]').count(),0,'the walkthrough cannot hide a real question');
+ assert.equal(await page.locator('.rocky-control-previews').evaluate(node=>node.children.length),0,'hide control is highlighted only in the real dialog');
+ await shot(page,`${page.viewportSize().width}-report-hide`);
+ await next(page);await stage(page,'report-close');await page.locator('[data-report-close]').click();
+ await stage(page,'exit');assert.equal(await page.locator('.lesson-back.app-close').isDisabled(),true,'exit is locked only during its own tip');await page.locator('.lesson-back.app-close').evaluate(node=>node.click());assert.equal(await page.locator('.subject-completion').count(),0);await next(page);assert.equal(await page.locator('.lesson-back.app-close').isDisabled(),false,'the next coaching step restores exit');
+ await page.locator('[data-question-report]').click();assert.equal(await page.locator('[data-question-hide]').isDisabled(),false,'later reports keep the real hide control available');await page.locator('[data-report-close]').click();
+}
+async function insertWideLine(page,selector){
+ await page.locator(selector).evaluate(host=>{
+   const line=document.createElement('div');line.className='lesson-math-scroll';line.style.cssText='width:180px;max-width:100%;overflow-x:auto';
+   line.innerHTML='<span style="display:block;width:900px">سطر طويل للاختبار — ١ + ٢ + ٣ + ٤ + ٥ + ٦ + ٧ + ٨ + ٩</span>';
+   host.prepend(line);
+ });
+}
+async function scrollLine(page){
+ await stage(page,'side-scroll');assert.equal(await page.locator('[data-rocky-tour-next]').isVisible(),false);
+ const line=page.locator('.lesson-math-scroll').last();await line.hover();
+ const direction=await line.evaluate(node=>getComputedStyle(node).direction),sign=direction==='rtl'?-1:1;
+ const tourStage=()=>page.evaluate(()=>{const key=Object.keys(localStorage).find(key=>key.startsWith('tawjihi:rocky-first-run:'));return JSON.parse(localStorage.getItem(key)).stage;});
+ await page.mouse.wheel(sign*160,0);await page.waitForTimeout(350);
+ assert.equal(await tourStage(),'side-scroll','a partial swipe must not advance the guide');
+ await line.hover();await page.mouse.wheel(sign*1600,0);await page.waitForTimeout(1000);
+ assert.equal(await tourStage(),'side-scroll','the learner gets a reading pause after reaching the hidden end');
+ await page.waitForFunction(()=>{const key=Object.keys(localStorage).find(key=>key.startsWith('tawjihi:rocky-first-run:'));return JSON.parse(localStorage.getItem(key)).stage!=='side-scroll';});
+}
 
-const output = process.env.BROWSER_SCREENSHOT_DIR || "/tmp/learn-rocky-tour";
-await mkdir(output,{ recursive:true });
-await withBrowserPage(async ({ base,send,evaluate,waitFor,onEvent }) => {
-  const exceptions = [];
-  onEvent(event => { if (event.method === "Runtime.exceptionThrown") exceptions.push(event.params.exceptionDetails.text); });
-  const click = selector => evaluate(`document.querySelector(${JSON.stringify(selector)}).click()`);
-  const realClick = async selector => {
-    const point = await evaluate(`(() => {
-      const e=document.querySelector(${JSON.stringify(selector)}),r=e.getBoundingClientRect(),x=r.left+r.width/2,y=r.top+r.height/2;
-      return {x,y,available:x>=0&&x<innerWidth&&y>=0&&y<innerHeight&&e.contains(document.elementFromPoint(x,y))};
-    })()`);
-    assert.ok(point.available,`${selector} is visible and not covered by Rocky`);
-    delete point.available;
-    await send("Input.dispatchMouseEvent",{ type:"mousePressed",button:"left",clickCount:1,...point });
-    await send("Input.dispatchMouseEvent",{ type:"mouseReleased",button:"left",clickCount:1,...point });
-  };
-  const fill = (name,value) => evaluate(`(() => { const e=document.querySelector('[name="${name}"]'); e.value=${JSON.stringify(value)}; e.dispatchEvent(new Event('input',{bubbles:true})); })()`);
-  const ready = step => waitFor(`document.querySelector('[data-onboarding-step="${step}"]:not([hidden])') && !document.querySelector('.onboarding-step:is(.media-pending,.is-entering-forward,.is-entering-backward,.is-leaving-forward,.is-leaving-backward)')`);
-  const stage = async step => {
-    await waitFor(`document.querySelector('.rocky-app-tour:not([hidden]):not(.is-flying):not(.is-moving)[data-tour-step="${step}"]') && !document.querySelector('.media-pending')`);
-    await evaluate("new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))");
-  };
-  const snapshot = async name => {
-    const { data } = await send("Page.captureScreenshot",{ format:"png" });
-    await writeFile(`${output}/${name}.png`,Buffer.from(data,"base64"));
-  };
-  const key = async value => {
-    const windowsVirtualKeyCode = { Enter:13, Escape:27, Tab:9 }[value];
-    await send("Input.dispatchKeyEvent",{ type:"keyDown",key:value,code:value,windowsVirtualKeyCode });
-    await send("Input.dispatchKeyEvent",{ type:"keyUp",key:value,code:value,windowsVirtualKeyCode });
-  };
-  const layout = async () => {
-    await evaluate("new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))");
-    const result = await evaluate(`(() => {
-      const guide=document.querySelector('.rocky-app-tour-guide').getBoundingClientRect();
-      const slot=document.querySelector('.rocky-coach-slot')?.getBoundingClientRect();
-      return {fits:guide.left>=0&&guide.top>=0&&guide.right<=innerWidth&&guide.bottom<=innerHeight,
-        overflow:document.documentElement.scrollWidth>innerWidth,
-        separated:!slot||Math.abs(slot.bottom-guide.bottom)<2||guide.right<=document.querySelector('#lesson-content').getBoundingClientRect().left,
-        rounded:[...document.querySelectorAll('.rocky-tour-rings rect')].every(e=>Number(e.getAttribute('rx'))>=14),
-        rocky:document.querySelector('.rocky-app-tour-character').getBoundingClientRect().width};
-    })()`);
-    assert.ok(result.fits && result.separated && result.rounded && !result.overflow,JSON.stringify(result));
-    assert.ok(result.rocky >= 110,"Rocky remains large enough to read on mobile");
-    assert.ok(await evaluate("Math.abs(document.querySelector('.rocky-tour-shade').getScreenCTM().a-1)<.001"),"SVG coordinates remain exact with desktop scrollbars");
-  };
-  for (const [width,height,reduced] of [[1440,900,false],[390,844,true]]) {
-    await send("Emulation.setDeviceMetricsOverride",{ width,height,deviceScaleFactor:1,mobile:width<760 });
-    await send("Emulation.setEmulatedMedia",{ features:[{ name:"prefers-reduced-motion",value:reduced ? "reduce" : "no-preference" }] });
-    await send("Page.navigate",{ url:base+"?flow=register" });
-    await waitFor("document.querySelector('[data-register-form]') && !document.querySelector('#app-splash')");
-    for (const step of ["intro","0","1","2","3","4"]) {
-      await ready(step);
-      if (step === "0") await fill("username",`rocky-tour-${width}`);
-      if (step === "1") await click("input[name=curriculum][value=gaza]");
-      if (step === "2") await click("input[name=path][value=scientific]");
-      if (step === "3") await fill("phone",width === 390 ? "0591004002" : "0591004001");
-      if (step === "4") await fill("password","Tour-pass-123");
-      await click(`[data-onboarding-step="${step}"] .visitor-primary`);
-    }
-    await stage("answer"); await layout();
-    assert.equal(await evaluate("new URLSearchParams(location.search).get('subject')"),"ict","signup opens ICT without a subject choice");
-    assert.equal(await evaluate("document.querySelector('[data-live-authored-step]').dataset.lessonStep"),"exam-p09-q1-1","the demo begins with the first source MCQ");
-    await send("Page.reload"); await stage("answer"); await layout();
-    assert.equal(await evaluate("!!document.querySelector('.lesson-view').closest('[inert]')"),false,"reload does not leave the lesson inert");
-    assert.equal(await evaluate("document.querySelector('.lesson-top-title').getAttribute('aria-valuemax')"),"2");
-    assert.equal(await evaluate("document.querySelector('[data-rocky-tour-next]').hidden"),true,"lesson controls replace explanation Next gates");
-    await waitFor("document.querySelector('.rocky-app-tour-character svg')");
-    if (reduced) assert.equal(await evaluate("document.querySelector('.rocky-app-tour-character').getAnimations({subtree:true}).length"),0);
-    else {
-      await waitFor("document.querySelector('.rocky-app-tour-character').dataset.pose==='attentive' && !document.querySelector('.rocky-app-tour').classList.contains('is-speaking')");
-      assert.equal(await evaluate("document.querySelector('.rocky-app-tour-character').getAnimations({subtree:true}).length"),0,"gestures finish while the learner thinks");
-    }
-    assert.equal(await evaluate("!!document.querySelector('[data-tour-count],[data-rocky-tour-skip]')"),false,"coaching has no extra labels or Skip link");
-    if (width < 760) assert.ok(await evaluate(`(() => {
-      const answers=[...document.querySelectorAll('.level-answer-list button')].map(e=>e.getBoundingClientRect());
-      return answers.every((r,i)=>!i||(r.top>=answers[i-1].bottom&&Math.abs(r.left-answers[0].left)<1));
-    })()`),"mobile answers are stacked in a single column");
-    await snapshot(`${width}-mcq`);
-    const geometry = await evaluate(`(() => {
-      const question=document.querySelector('.ui-lab-mcq'),r=question.getBoundingClientRect();
-      const highlight=document.querySelector('.rocky-tour-rings rect');
-      const answers=question.querySelector('.level-answer-list').getBoundingClientRect();
-      const prompt=question.querySelector('h1').getBoundingClientRect();
-      return Math.abs(Number(highlight.getAttribute('x'))-(r.left-4))<2 &&
-        Math.abs(Number(highlight.getAttribute('width'))-(r.width+8))<2 && answers.top-prompt.bottom<60;
-    })()`);
-    assert.ok(geometry,"the rounded highlight follows the question and answers stay close to the prompt");
-    const openingTop = await evaluate("document.querySelector('.rocky-app-tour-guide').getBoundingClientRect().top");
-    if (!reduced) await evaluate(`(() => { window.rockyTravelFrames=[]; const until=performance.now()+800;
-      const record=()=>{window.rockyTravelFrames.push(Math.round(document.querySelector('.rocky-app-tour-guide').getBoundingClientRect().top));if(performance.now()<until)requestAnimationFrame(record);};requestAnimationFrame(record);
-    })()`);
-    await realClick("[data-ui-lab-answer][data-correct=true]"); await stage("check"); await layout();
-    assert.ok(await evaluate(`(() => {const guide=document.querySelector('.rocky-app-tour-guide').getBoundingClientRect(),target=document.querySelector('[data-ui-lab-check]').getBoundingClientRect();return guide.top>${openingTop}+100&&target.top-guide.bottom>=0&&target.top-guide.bottom<70;})()`),"Rocky moves down beside Check without covering it");
-    if (reduced) assert.equal(await evaluate("document.querySelector('.rocky-app-tour-guide').getAnimations().length"),0,"reduced motion relocates Rocky without travel animation");
-    if (!reduced) assert.ok(await evaluate("new Set(window.rockyTravelFrames).size>3"),"Rocky visibly travels between the question and Check");
-    await snapshot(`${width}-check`);
-    await realClick("[data-ui-lab-check]"); await stage("rating"); await layout();
-    await realClick("[data-question-rating=easy]");
-    await waitFor("document.querySelector('.question-rating-save-status')?.textContent === '' && document.querySelector('[data-question-rating=easy]').checked");
-    await snapshot(`${width}-rating`);
-    await realClick("[data-template-primary]"); await stage("flashcard"); await layout();
-    await snapshot(`${width}-flashcard`);
-    assert.equal(await evaluate("document.querySelector('[data-live-authored-step]').dataset.lessonPresentation"),"flashcard");
-    await evaluate("document.querySelector('[data-exam-front] .lesson-flashcard-scroll').focus()");
-    await key("Enter"); await stage("flashcard-answer"); await layout();
-    assert.ok(await evaluate("(() => {const rocky=document.querySelector('.rocky-app-tour-character').getBoundingClientRect(),flag=document.querySelector('[data-question-report]').getBoundingClientRect();return rocky.left<flag.right+16&&rocky.top-flag.bottom<45;})()"),"Rocky moves to the left beside the report flag");
-    await snapshot(`${width}-report`);
-    await realClick("[data-question-report]"); await waitFor("document.querySelector('.question-report-dialog[open]')");
-    await key("Escape"); await waitFor("!document.querySelector('.question-report-dialog')");
-    assert.equal(await evaluate("document.querySelector('.rocky-app-tour').dataset.tourStep"),"flashcard-answer","closing the report dialog does not skip the tour");
-    await realClick("[data-question-report]"); await fill("details","Guided tour browser report.");
-    await click("[data-question-report-form] [type=submit]");
-    await waitFor("document.querySelector('.question-report-dialog')?.textContent.includes('تم إرسال بلاغك')");
-    await click(".question-report-dialog button"); await waitFor("!document.querySelector('.question-report-dialog')");
-    await realClick("[data-template-primary]");
-    await waitFor("document.querySelector('.subject-completion')?.dataset.animationState==='complete'");
-    assert.equal(await evaluate("document.querySelector('.rocky-app-tour').hidden && !document.querySelector('.rocky-coach-slot')"),true);
-    assert.equal(await evaluate("document.querySelector('[data-gain-count]').textContent"),"10","only the correct MCQ earns XP");
-    await snapshot(`${width}-complete`);
-    await realClick("[data-authored-restart]");
-    for (const name of ["level","streak","navigation"]) {
-      await stage(name); await layout(); await snapshot(`${width}-${name}`);
-      if (name === "streak") assert.ok(await evaluate("document.querySelector('#rocky-app-tour-message').textContent.includes('قريبًا')"));
-      await realClick("[data-rocky-tour-next]");
-    }
-    await waitFor("!document.querySelector('.rocky-app-tour')");
-    const saved = await evaluate(`(async () => {
-      const session=await fetch('/api/auth/session').then(response=>response.json()),owner='account:'+session.account.id;
-      const body=await fetch('/api/progress',{headers:{'X-Progress-Owner':owner}}).then(response=>response.json());
-      return {owner,records:body.records};
-    })()`);
-    assert.equal(saved.records.reduce((sum,[,record])=>sum+record.rewardXp,0),10);
-    assert.equal(saved.records.flatMap(([,record])=>record.completedStepIds).length,2);
-    assert.ok(saved.records.every(([,record])=>record.completed===false),"the demo does not complete a full part");
-    await send("Page.reload"); await waitFor("document.querySelector('.learner-dashboard') && !document.querySelector('#app-splash')");
-    assert.equal(await evaluate("!!document.querySelector('.rocky-app-tour')"),false,"completed tours do not restart");
-    await click(".subject-card[data-subject=ict]"); await waitFor("document.querySelector('.subject-roadmap')");
-    await click("[data-roadmap-part]"); await click("[data-bubble-start]");
-    await waitFor("document.querySelector('[data-live-authored-step]') && !document.querySelector('.media-pending')");
-    assert.ok(Number(await evaluate("document.querySelector('.lesson-top-title').getAttribute('aria-valuemax')"))>2);
-    assert.equal(await evaluate("document.querySelector('[data-live-authored-step]').dataset.lessonStep"),"exam-p57-q1-b2","normal source order resumes at the next unanswered question");
-    if (reduced) {
-      await evaluate("localStorage.setItem('tawjihi:rocky-first-run:v1:'+"+JSON.stringify(saved.owner)+",JSON.stringify({version:2,status:'active',stage:'pick-subject'}))");
-      await send("Page.navigate",{url:base+"?page=learn"}); await stage("answer");
-      await send("Emulation.setDeviceMetricsOverride",{width:320,height:640,deviceScaleFactor:1,mobile:true});
-      await layout(); await snapshot("320-ict");
-      await send("Page.reload"); await stage("answer"); await layout();
-      await realClick("[data-ui-lab-answer][data-correct=false]"); await stage("check");
-      await realClick("[data-ui-lab-check]"); await stage("rating");
-      assert.ok(await evaluate("document.querySelector('#rocky-app-tour-title').textContent.includes('لا بأس')"),"a wrong answer receives reassurance");
-      await send("Emulation.setDeviceMetricsOverride",{width:844,height:390,deviceScaleFactor:1,mobile:true});
-      await waitFor("document.querySelector('.rocky-app-tour-guide').getBoundingClientRect().right <= document.querySelector('#lesson-content').getBoundingClientRect().left");
-      await layout(); await snapshot("landscape-ict");
-      assert.ok(await evaluate("(() => {const answers=[...document.querySelectorAll('.level-answer-list button')].map(e=>e.getBoundingClientRect());return answers.every((r,i)=>!i||r.top>=answers[i-1].bottom);})()"),"phone landscape also keeps one answer per row");
-      assert.ok(await evaluate("document.querySelector('[data-template-primary]').getBoundingClientRect().width>=120"),"landscape retains a readable Continue action");
-      await realClick("[data-template-primary]"); await stage("flashcard"); await layout();
-      await key("Escape"); await waitFor("!document.querySelector('.rocky-app-tour') && document.querySelector('[data-live-authored-step]')");
-      assert.equal(await evaluate("!!document.querySelector('.rocky-coach-slot')"),false,"skipping removes the reserved guide space");
-      await waitFor("Number(document.querySelector('.lesson-top-title').getAttribute('aria-valuemax'))>2 && !document.querySelector('.media-pending')");
-      assert.ok(Number(await evaluate("document.querySelector('.lesson-top-title').getAttribute('aria-valuemax')"))>2,"skipping restores the full lesson");
-      await send("Emulation.setDeviceMetricsOverride",{width,height,deviceScaleFactor:1,mobile:true});
-    }
-    await send("Page.navigate",{url:base+"?page=learn"});
-    await waitFor("document.querySelector('.learner-dashboard') && !document.querySelector('#app-splash')");
-    await click("[data-auth-sign-out]"); await waitFor("document.querySelector('.visitor-landing')");
-    console.log(`${width}x${height}: lesson-first coaching, finite gestures, rounded highlights, keyboard, reporting, ratings, real XP, normal lesson restoration and reload passed${reduced ? ' with reduced motion' : ''}.`);
+try{
+ for(const width of [1440,390].filter(width=>!process.env.BROWSER_WIDTH||String(width)===process.env.BROWSER_WIDTH)){
+  const {page,context,errors,owner}=await learner(`mcq-${width}`,width,width===390);
+  await page.goto(`${base}/?subject=ict&lesson=smartphone-operating-systems&part=android-features`);await page.waitForFunction(()=>!document.querySelector('#app-splash'));
+  assert.equal(await page.locator('.rocky-app-tour:visible').count(),0);
+  await insertWideLine(page,'.ui-lab-mcq');await scrollLine(page);
+  await page.locator('[data-ui-lab-answer][data-correct=true]').click();await page.locator('[data-ui-lab-check]').click();
+  await stage(page,'easy');await shot(page,`${width}-easy`);
+  assert.equal(await page.locator('#rocky-app-tour-message .rocky-inline-control').count(),1,'Easy appears inside the sentence');
+  assert.equal(await page.locator('.rocky-control-previews').evaluate(node=>node.children.length),0);
+  const actions=await page.locator('.rocky-coach-actions button').evaluateAll(buttons=>buttons.map(button=>({width:button.offsetWidth,height:button.offsetHeight,shadow:getComputedStyle(button).boxShadow})));
+  assert.equal(actions[0].width,actions[1].width);assert.equal(actions[0].height,actions[1].height);assert.ok(actions.every(button=>button.shadow.includes('4px')),'both coaching buttons have the same raised edge');
+  assert.equal(await page.locator('.rocky-app-tour[data-tour-step="rating"]').count(),0);
+  assert.equal(await page.locator('.rocky-control-previews [data-question-rating]').count(),0,'visual copies have no live identity');
+  await next(page);await swipeSlider(page);await reportPreview(page);
+  await page.locator('[data-template-primary]').click();await page.locator('[data-ui-lab-answer][data-correct=false]').first().click();await page.locator('[data-ui-lab-check]').click();
+  await stage(page,'hard');await next(page);await stage(page,'explain');
+  assert.equal(await page.locator('[data-rocky-tour-next]').isVisible(),false);
+  await page.locator('[data-question-explain]').click();await stage(page,'solution');
+  assert.equal(await page.locator('.lesson-daily-streak').count(),0,'Explain is not a session exit');
+  await insertWideLine(page,'[data-explanation-body] .markdown-rendered');await next(page);await scrollLine(page);
+  await stage(page,'solution-close');await page.locator('[data-explanation-close]').click();
+  await page.locator('.lesson-back.app-close').click();await stage(page,'rewards');await next(page);await stage(page,'session-leave');
+  await page.locator('[data-authored-restart]').click();await page.locator('.lesson-daily-streak[open]').waitFor();
+  assert.equal(new URL(page.url()).searchParams.has('lesson'),false);
+  await page.locator('.lesson-daily-streak button').click({timeout:60000});await stage(page,'streak');await next(page);
+  await stage(page,'rated-open');await shot(page,`${width}-rated-open`);
+  const ratedLabel=await page.locator('.rocky-inline-navigation>span').evaluate(node=>{const range=document.createRange();range.selectNodeContents(node);return [...range.getClientRects()].filter(rect=>rect.width>0).length;});
+  assert.equal(ratedLabel,1,'rated questions stays together inside the sentence');
+  assert.equal(await page.locator('.rocky-control-previews').evaluate(node=>node.children.length),0);
+  if(width===1440){await page.waitForTimeout(6200);assert.equal(await page.locator('.rocky-tour-gesture.is-visible').isVisible(),true,'action cues keep playing beyond the old five-second timeout');}
+  await page.locator('[data-page="rated-questions"]').click();await stage(page,'rated-subject');
+  assert.ok(await page.locator('.subject-card--rated').first().evaluate(card=>{const box=card.getBoundingClientRect();return [...document.querySelectorAll('.rocky-tour-rings rect')].some(rect=>{const x=+rect.getAttribute('x'),y=+rect.getAttribute('y'),w=+rect.getAttribute('width'),h=+rect.getAttribute('height');return x<=box.left+1&&y<=box.top+1&&x+w>=box.right-1&&y+h>=box.bottom-1;});}),'the spotlight includes the whole subject card');
+  await page.locator('[data-rated-subject="ict"]').first().click();await stage(page,'rated-filter');assert.equal(await page.locator('.rocky-tour-gesture').isVisible(),true);
+  await page.locator('[data-rated-filter="hard"]').check();await page.waitForTimeout(700);
+  assert.equal(await page.locator('.rocky-tour-gesture').isVisible(),false,'the cue stops after the requested filter action');await next(page);
+  for(const id of ['free','hearts','gems','companion','goodbye']){
+   await stage(page,id);await shot(page,`${width}-${id}`);
+   if(id==='hearts'||id==='gems'){
+    assert.deepEqual(await page.locator('.rocky-inline-equation .ui-number').allTextContents(),[id==='hearts'?'1':'50','1']);
+    assert.ok((await page.locator('.rocky-inline-equation img').getAttribute('src')).endsWith(id==='hearts'?'nav-heart.svg':'nav-gem.svg'));
+   }
+   if(id==='companion'||id==='goodbye'){
+    assert.equal(await page.locator('.rocky-app-tour').getAttribute('data-layout'),'centered');
+    assert.equal(await page.locator('.rocky-tour-rings rect').count(),0,'farewell never highlights a lesson');
+    const hero=await page.locator('.rocky-app-tour-character').boundingBox();assert.ok(hero.width>=200);
+    const guide=await page.locator('.rocky-app-tour-guide').boundingBox(),viewport=page.viewportSize();
+    assert.ok(Math.abs(guide.x+guide.width/2-viewport.width/2)<2&&Math.abs(guide.y+guide.height/2-viewport.height/2)<2);
+    assert.equal(await page.locator('.rocky-app-tour-character [data-part=shadow]').getAttribute('fill'),'#18212b');
+    if(width===1440)assert.ok(await page.locator('.rocky-app-tour-character [data-part=arm-left]').evaluate(node=>node.getAnimations().length>0),'Rocky waves during the farewell');
+   }
+   await next(page);
   }
-  assert.deepEqual(exceptions,[]);
-});
+  const completed=await savedTour(page,owner);
+  assert.equal(completed.seen.includes('flashcard'),false,'the first MCQ session never encountered flashcard guidance');
+  assert.equal(completed.status,'complete','farewell completes the walkthrough even with unseen question types');
+  await page.reload();await page.waitForFunction(()=>!document.querySelector('#app-splash'));
+  await page.goto(`${base}/?subject=mathematics&lesson=average-change&part=average-change-practice`);await page.locator('[data-exam-card]').waitFor();
+  await page.waitForTimeout(2300);
+  assert.equal(await page.locator('.rocky-app-tour:visible').count(),0,'completed coaching never returns for a new question type');
+  assert.equal((await savedTour(page,owner)).status,'complete');
+  assert.deepEqual(errors,[]);await context.close();console.log(`${width}px: action gates, real-control previews, report protection, horizontal question/explanation scrolling, session-only streak, and permanent completion passed.`);
+ }
+ if(!process.env.BROWSER_WIDTH||process.env.BROWSER_WIDTH==='flash'){
+  for(const width of [1440,390]){
+   const {page,context,errors}=await learner(`flash-${width}`,width,width===390);
+   await page.goto(`${base}/?subject=mathematics&lesson=average-change&part=average-change-practice`);await page.waitForFunction(()=>!document.querySelector('#app-splash'));
+   const readingHeight=await page.locator('.level-layout-task').evaluate(node=>node.clientHeight);
+   const beforeCard=await page.locator('[data-exam-card]').boundingBox();
+   await page.locator('.rocky-app-tour:not([hidden]):not(.is-leaving)[data-tour-step="flashcard"]').waitFor();
+   const cue=page.locator('.rocky-tour-gesture');await page.waitForFunction(()=>document.querySelector('.rocky-tour-gesture').classList.contains('is-visible'));
+   const entrance=await cue.evaluate(async node=>{const frames=[],start=performance.now();while(performance.now()-start<420){const style=getComputedStyle(node);frames.push({opacity:+style.opacity,scale:new DOMMatrixReadOnly(style.transform).a});await new Promise(requestAnimationFrame);}return frames;});
+   if(width===1440)assert.ok(entrance.some(frame=>frame.opacity>0&&frame.opacity<1&&frame.scale>0&&frame.scale<1),'gesture fades and scales in');
+   const afterCard=await page.locator('[data-exam-card]').boundingBox();assert.deepEqual(afterCard,beforeCard,'Rocky never shifts or resizes the card');
+   assert.equal(await page.locator('.rocky-coach-slot').count(),0);
+   await shot(page,`${width}-flashcard`);
+   if(width===1440)assert.ok(await page.locator('.level-layout-task').evaluate(node=>node.clientHeight)>=readingHeight-2,'desktop coaching never reduces the card reading height');
+   await page.locator('[data-exam-front] .lesson-flashcard-scroll').focus();await page.keyboard.press('Enter');
+   if(width===1440){const exit=await cue.evaluate(async node=>{const frames=[],start=performance.now();while(performance.now()-start<160){const style=getComputedStyle(node);frames.push({hidden:node.hidden,opacity:+style.opacity,scale:new DOMMatrixReadOnly(style.transform).a});await new Promise(requestAnimationFrame);}return frames;});assert.ok(exit.some(frame=>!frame.hidden&&frame.opacity>0&&frame.opacity<1&&frame.scale<1),'gesture shrinks/fades before it is hidden');}
+   await stage(page,'assess');assert.equal(await page.locator('.rocky-control-previews').evaluate(node=>node.children.length),0,'self-check buttons are not duplicated in the bubble');await shot(page,`${width}-assess`);
+   assert.ok(await page.locator('[data-exam-self-check]').evaluate(group=>{const viewport=group.closest('.lesson-flashcard-scroll').getBoundingClientRect();return [...group.querySelectorAll('button')].every(button=>{const box=button.getBoundingClientRect();return box.top>=viewport.top&&box.bottom<=viewport.bottom+1;});}),'both assessment buttons stay visible together');
+   assert.equal(await page.locator('[data-rocky-tour-next]').isVisible(),false);
+   await page.locator('[data-exam-correct=true]').click();await stage(page,'easy');await next(page);
+   await stage(page,'flip-back');await page.locator('[data-exam-solution] .lesson-flashcard-scroll').focus();await page.keyboard.press('Enter');
+   await swipeSlider(page);await reportPreview(page);
+   await page.locator('[data-template-primary]').click();
+   await page.locator('[data-exam-front] .lesson-flashcard-scroll').click();await page.locator('[data-exam-correct=false]').click();
+   await stage(page,'hard');await next(page);await stage(page,'explain');await page.locator('[data-question-explain]').click();await stage(page,'solution');
+   assert.equal(await page.locator('.lesson-daily-streak').count(),0);
+   await page.locator('[data-rocky-tour-skip]').click();await page.waitForTimeout(250);
+   assert.equal(await page.locator('.lesson-daily-streak').count(),0,'skipping inside Explain cannot release the queued welcome animation');
+   await page.locator('[data-explanation-close]').click();await page.locator('.lesson-back.app-close').click();
+   await page.locator('[data-authored-restart]').click();await page.locator('.lesson-daily-streak[open]').waitFor();
+   assert.equal(new URL(page.url()).searchParams.has('lesson'),false);
+   assert.deepEqual(errors,[]);await context.close();console.log(`${width}px: reveal → self-check → one outcome tip → flip back, desktop height, and skip/explanation streak regression passed.`);
+  }
+ }
+ if(!process.env.BROWSER_WIDTH||process.env.BROWSER_WIDTH==='persistence'){
+  const {page,context,owner,errors}=await learner('tour-tabs');
+  const route=`${base}/?subject=mathematics&lesson=average-change&part=average-change-practice`;
+  await page.goto(route);await stage(page,'flashcard');
+  const second=await context.newPage();second.on('pageerror',error=>errors.push(error.message));
+  await second.goto(route);await stage(second,'flashcard');
+  await page.locator('[data-rocky-tour-skip]').click();
+  await second.waitForFunction(()=>!document.querySelector('.rocky-app-tour:not([hidden])'));
+  assert.equal((await savedTour(second,owner)).status,'complete','another tab cannot overwrite skipped guidance');
+  await second.reload();await second.locator('[data-exam-card]').waitFor();await second.waitForTimeout(2300);
+  assert.equal(await second.locator('.rocky-app-tour:visible').count(),0,'skipping remains complete after reload');
+  assert.deepEqual(errors,[]);await context.close();
+
+  const returning=await learner('tour-returning',390,true,false);
+  await returning.page.goto(route);await returning.page.locator('[data-exam-card]').waitFor();await returning.page.waitForTimeout(2300);
+  assert.equal(await savedTour(returning.page,returning.owner),null,'sign-in never enrolls an existing student');
+  assert.equal(await returning.page.locator('.rocky-app-tour:visible').count(),0);
+  const switched=await returning.page.evaluate(async()=>{
+    const {createRockyTour}=await import('/src/ui/rocky-tour.js');
+    const saved=new Map();let owner='account:tour-first',notify;
+    const tour=createRockyTour({service:{getLearnerProgressOwner:()=>owner,subscribe:callback=>{notify=callback;return()=>{};}},storage:{getItem:key=>saved.get(key),setItem:(key,value)=>saved.set(key,value)},onHome:()=>{}});
+    tour.arm();tour.lessonEvent({type:'question',step:{id:'switch-card',type:'exam-question'}});
+    await new Promise(resolve=>setTimeout(resolve,2900));
+    const oldGuide=document.querySelector('.rocky-app-tour:not([hidden])');
+    const wasVisible=Boolean(oldGuide);
+    owner='account:tour-second';notify();tour.arm();
+    oldGuide?.querySelector('[data-rocky-tour-skip]').click();
+    document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+    const secondStatus=JSON.parse(saved.get(`tawjihi:rocky-first-run:v1:${owner}`)).status;
+    owner='account:tour-first';notify();
+    const firstStatus=JSON.parse(saved.get(`tawjihi:rocky-first-run:v1:${owner}`)).status;
+    tour.destroy();return {wasVisible,firstStatus,secondStatus};
+  });
+  assert.deepEqual(switched,{wasVisible:true,firstStatus:'active',secondStatus:'active'},'a leaving guide cannot skip a newly selected learner');
+  assert.deepEqual(returning.errors,[]);await returning.context.close();
+
+  const report=await learner('tour-submit-report');
+  await report.page.goto(`${base}/?subject=ict&lesson=smartphone-operating-systems&part=android-features`);
+  await report.page.locator('[data-question-report]').click();await stage(report.page,'report-send');
+  await report.page.locator('[data-question-report-form] button[type=submit]').click();await stage(report.page,'report-close');
+  assert.equal((await savedTour(report.page,report.owner)).seen.includes('report-hide'),true,'a submitted report does not leave the walkthrough waiting for its removed hide control');
+  await report.page.locator('[data-report-close]').click();await stage(report.page,'slider');
+  await report.page.locator('.question-number-track').hover();await report.page.mouse.wheel(320,0);await stage(report.page,'exit');
+  assert.deepEqual(report.errors,[]);await report.context.close();
+  console.log('Cross-tab skip, reload, account switches, existing-student enrollment and submitted-report progression passed.');
+ }
+}finally{await browser.close();await app.close();}

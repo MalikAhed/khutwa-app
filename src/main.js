@@ -30,7 +30,7 @@ import { watchPreviewUpdates } from "./services/preview-updates.js";
 import { configureBackgroundLoading } from './app/background-loading.js';
 
 const APP_TITLE = "خطوة";
-const ROCKY_TOUR_ENABLED = false;
+const ROCKY_TOUR_ENABLED = true;
 const appConfig = readAppConfig(document);
 const offlineStorage = { getItem:key => window.localStorage.getItem(key), setItem:(key,value) => window.localStorage.setItem(key,value) };
 const offlineAccess = createOfflineAccess({ storage:offlineStorage });
@@ -179,14 +179,6 @@ const questionFeedback = createQuestionFeedback({ service:productService, progre
 const rockyTour = ROCKY_TOUR_ENABLED ? createRockyTour({ service:productService,
   storage:{ getItem:key => window.localStorage.getItem(key),setItem:(key,value) => window.localStorage.setItem(key,value) },
   onHome:() => openLearnHome({ historyMode:"replace", startTour:true }),
-  onStartLesson:() => {
-    const first = getSubjectRoadmap("ict")?.units.flatMap(unit => unit.lessons).find(lesson => !lesson.hidden && !lesson.optional && lesson.parts?.length);
-    if (first) subjectLearning.openSubject("ict",null,{ lessonId:first.id,partId:first.parts[0].id,historyMode:"replace" });
-  },
-  onSkip:() => {
-    if (pendingAccountRoute) openLearnHome({ historyMode:"replace" });
-    else if (readRoute(window.location.search).lesson) applyCurrentRoute();
-  },
   onComplete:() => { pendingAccountRoute = null; },
 }) : null;
 const visitorFlowController = createVisitorFlow({
@@ -198,7 +190,8 @@ const visitorFlowController = createVisitorFlow({
   onHome(options) {
     openLearnHome(options);
   },
-  onAccountCreated:rockyTour ? mascot => rockyTour.start(mascot) : undefined,
+  onAccountRegistered:() => rockyTour?.arm(),
+  onAccountCreated:rockyTour ? () => rockyTour.start() : undefined,
 });
 
 function openLearnHome({ historyMode = "push", startTour = false } = {}) {

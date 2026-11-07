@@ -77,7 +77,7 @@ export function renderSubjectStreak(outcome = {}, titleId = "authored-lesson-com
   const streak = Math.max(0, Number(outcome.streak) || 0);
   return `<div class="subject-completion subject-completion--streak" dir="rtl">
     <div class="completion-streak-celebration">
-      <div class="completion-streak-stage"><div class="completion-streak-mascot"><p class="completion-streak-greeting">أهلًا بعودتك!</p><div class="completion-streak-body" role="img" aria-label="روكي يحتفل بسلسلتك"><span class="completion-streak-rig" aria-hidden="true"></span><img class="completion-streak-rocky" src="assets/mascot/rocky-standing-still${prefersReducedMotion() ? "-reduced" : ""}.svg" alt="" aria-hidden="true"></div></div></div>
+      <div class="completion-streak-stage"><div class="completion-streak-mascot"><p class="completion-streak-greeting">${streak > 1 ? "أهلًا بعودتك!" : "بداية موفّقة!"}</p><div class="completion-streak-body" role="img" aria-label="روكي يحتفل بسلسلتك"><span class="completion-streak-rig" aria-hidden="true"></span><img class="completion-streak-rocky" src="assets/mascot/rocky-standing-still${prefersReducedMotion() ? "-reduced" : ""}.svg" alt="" aria-hidden="true"></div></div></div>
       <div class="completion-streak-scene"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/icons/streak-fire-burning-reduced.svg"><img class="completion-streak-fire" src="assets/icons/streak-fire-burning${prefersReducedMotion() ? "-reduced" : ""}.svg" alt="" aria-hidden="true"></picture></div>
     </div>
     <h1 id="${titleId}" class="completion-streak-count"><strong class="ui-number" data-gain-count="${streak}" data-gain-from="${Math.max(0, streak - 1)}" data-gain-delay="450">${streak}</strong><span>سلسلة التعلّم</span></h1>
@@ -87,7 +87,7 @@ export function renderSubjectStreak(outcome = {}, titleId = "authored-lesson-com
 }
 
 // Overlay the saved answer without replacing its controls or feedback.
-export function showDailyStreak(container, outcome, signal) {
+export function showDailyStreak(container, outcome, signal, onClose = () => {}) {
   if (signal.aborted) return;
   const dialog = document.createElement("dialog");
   dialog.className = "lesson-daily-streak";
@@ -114,9 +114,10 @@ export function showDailyStreak(container, outcome, signal) {
     dialog.remove();
     if (!signal.aborted && previousFocus?.isConnected) previousFocus.focus({ preventScroll:true });
   };
-  dialog.addEventListener("close", cleanup, { once:true });
+  dialog.addEventListener("close", () => { cleanup(); if (!signal.aborted) onClose(); }, { once:true });
   dialog.querySelector("button").addEventListener("click", dismiss, { once:true });
   signal.addEventListener("abort", cleanup, { once:true });
+  return dialog;
 }
 
 function formatAnimatedGain(value, format) {

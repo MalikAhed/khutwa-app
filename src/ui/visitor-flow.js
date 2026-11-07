@@ -42,6 +42,7 @@ export function createVisitorFlow({
   onNavigate,
   onHome,
   onAccountCreated,
+  onAccountRegistered,
   documentObject = document,
 }) {
   if (!container || !service || !onNavigate || !onHome)
@@ -353,6 +354,7 @@ export function createVisitorFlow({
         const result = await service.createAccount(data, { signal: signal });
         if (signal.aborted || result.status === "aborted") return;
         if (result.status === "created") {
+          onAccountRegistered?.();
           container.innerHTML = accountCompleteMarkup();
           alignActions(container.querySelector(".onboarding-page"));
           // The learner can continue immediately, even while the celebration loads.

@@ -373,7 +373,8 @@ export function createSubjectLearningController({
               if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) throw new Error('The active learner changed.');
             } : undefined,
             questionFilterIds:rating ? getRatedSubjectQuestions(nextSubjectId,questionFeedback).filter(question => question.lessonId === nextLessonId && question.rating === rating).map(question => question.stepId) : undefined,
-            onLessonEvent:demoMode ? event => onboardingTour.lessonEvent(event) : undefined,
+            onLessonEvent:event => onboardingTour?.lessonEvent(event),
+            deferDailyStreak:outcome => operation.isCurrent() && ownerId === productService.getLearnerProgressOwner() && (onboardingTour?.deferStreak(outcome) || false),
             getQuestionExplanation:resourceStore ? step => {
               const key = sourceKey(step.id);
               return {
@@ -399,6 +400,7 @@ export function createSubjectLearningController({
               return {
                 subscribe:questionFeedback?.subscribe,
                 isHidden:() => questionFeedback?.isHidden(key) || false,
+                canHide:() => !onboardingTour?.protectQuestionHide(),
                 hide:(options) => questionFeedback?.hide(key,options),
                 getRating:() => questionFeedback?.getRating(key),
                 saveRating:(rating,options) => questionFeedback?.saveRating(key,rating,options),
@@ -409,7 +411,7 @@ export function createSubjectLearningController({
             subscribeRewards:resourceStore?.subscribe,
             onExitLesson: returnToRoadmap,
             onFinishLesson: () => {
-              if (demoMode && onboardingTour?.finishLesson()) return;
+              if (onboardingTour?.finishLesson()) return;
               returnToRoadmap();
             },
             reviewStepId,

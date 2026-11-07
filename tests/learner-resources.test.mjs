@@ -4,6 +4,82 @@ import { HEART_REFILL_MS, SUPER_TRIAL_MS, nextHeartReset, heartDay, refillResour
 import { createLearnerResources } from "../src/services/learner-resources.js";
 import { questionRewardKey } from "../src/domain/question-rewards.js";
 
+test('local gem credits persist with their receipt and never grant client credits to HTTP accounts',async()=>{
+  const values=new Map(),storage={getItem:key=>values.get(key),setItem:(key,value)=>values.set(key,value)};
+  const options={storage,getAccountType:()=> 'free',now:()=>1_000_000};
+  const answer={subjectId:'ict',stepId:'exam-p09-q1-1',correct:true};
+  const resources=createLearnerResources(options);
+  await resources.reserveLocalAnswer('demo:gems','correct-1',answer);
+  await resources.creditLocalAnswer('demo:gems','correct-1',answer);
+  await resources.creditLocalAnswer('demo:gems','correct-1',answer);
+  await resources.creditLocalAnswer('demo:gems','repeat-1',answer);
+  assert.equal(resources.get('demo:gems').gems,207);
+  assert.equal(resources.getGemReward('demo:gems','correct-1'),7);
+  assert.equal(resources.getGemReward('demo:gems','repeat-1'),0);
+  await resources.spend('demo:gems','later-answer');
+  await resources.unlockExplanation('demo:gems',{subjectId:'biology',lessonId:'lesson',partId:'part',stepId:'question'},
+    {step:{type:'mcq',content:{correctFeedback:'شرح السؤال'}}});
+  const reopened=createLearnerResources(options);
+  await reopened.creditLocalAnswer('demo:gems','repeat-after-reload',answer);
+  assert.equal(reopened.get('demo:gems').gems,157,'purchases preserve reward receipts and cannot refund themselves on replay');
+  assert.equal(reopened.get('demo:other').gems,200);
+  const remote=createLearnerResources({...options,apiBase:'/api/progress'});
+  await remote.reserveLocalAnswer('account:1','forged-client-credit',answer);
+  await remote.creditLocalAnswer('account:1','forged-client-credit',answer);
+  assert.equal(remote.get('account:1').gems,200);
+});
+
+test('local instances preserve other tabs purchases and both answer receipts',async()=>{
+  const values=new Map(),storage={getItem:key=>values.get(key),setItem:(key,value)=>values.set(key,value)};
+  const options={storage,getAccountType:()=> 'free',now:()=>1_000_000};
+  const owner='demo:two-tabs',first=createLearnerResources(options),second=createLearnerResources(options);
+  first.get(owner);second.get(owner);
+  const answerA={subjectId:'ict',stepId:'exam-p09-q1-1',correct:true},answerB={subjectId:'ict',stepId:'exam-p57-q1-b2',correct:true};
+  const purchase={subjectId:'biology',lessonId:'lesson',partId:'part',stepId:'question'};
+  await first.reserveLocalAnswer(owner,'answer-a',answerA);await first.creditLocalAnswer(owner,'answer-a',answerA);
+  await second.reserveLocalAnswer(owner,'answer-b',answerB);
+  await Promise.all([
+    first.unlockExplanation(owner,purchase,{step:{type:'mcq',content:{correctFeedback:'شرح السؤال'}}}),
+    second.creditLocalAnswer(owner,'answer-b',answerB),
+  ]);
+  await first.spend(owner,'later-answer');
+  const restored=createLearnerResources(options);
+  assert.equal(restored.get(owner).gems,164);assert.equal(restored.hasExplanation(owner,purchase),true);
+  const saved=JSON.parse(values.get('tawjihi:resources:v1:demo%3Atwo-tabs'));
+  assert.equal(saved.localGemRewards.length,2);assert.equal(saved.localGemPending,undefined);
+  await restored.creditLocalAnswer(owner,'repeated',answerA);assert.equal(restored.get(owner).gems,164);
+});
+
+test('pending local receipts survive denied reads and canonical aliases share one reward',async()=>{
+  const values=new Map();let denyRead=false;
+  const storage={getItem:key=>{if(denyRead)throw Error('Read interrupted');return values.get(key);},setItem:(key,value)=>values.set(key,value)};
+  const resources=createLearnerResources({storage,getAccountType:()=> 'free'}),owner='demo:pending-alias';
+  const old={subjectId:'arabic',stepId:'arabic-p157-mcq04-occurrence2',correct:true},canonical={...old,stepId:'arabic-p157-mcq04'};
+  await resources.reserveLocalAnswer(owner,'original',old);
+  const before=new Map(values);denyRead=true;
+  await assert.rejects(resources.creditLocalAnswer(owner,'original',canonical),/Read interrupted/);
+  assert.deepEqual(values,before,'a failed read cannot replace the retained reservation');
+  denyRead=false;await resources.creditLocalAnswer(owner,'original',canonical);
+  await resources.reserveLocalAnswer(owner,'repeat',old);await resources.creditLocalAnswer(owner,'repeat',old);
+  assert.equal(resources.get(owner).gems,207);assert.equal(resources.getGemReward(owner,'repeat'),0);
+});
+
+test('a queued local explanation purchase rechecks cancellation after acquiring its lock',async context=>{
+  if(!globalThis.navigator?.locks?.request){context.skip('Web Locks are unavailable in this test runtime');return;}
+  const values=new Map(),storage={getItem:key=>values.get(key),setItem:(key,value)=>values.set(key,value)};
+  const owner='demo:cancelled-purchase',resources=createLearnerResources({storage,getAccountType:()=> 'free'});
+  let release,entered;
+  const ready=new Promise(resolve=>{entered=resolve;}),gate=new Promise(resolve=>{release=resolve;});
+  const held=navigator.locks.request('tawjihi:resources:v1:demo%3Acancelled-purchase',async()=>{entered();await gate;});
+  await ready;
+  const controller=new AbortController();
+  const purchasing=resources.unlockExplanation(owner,{subjectId:'biology',lessonId:'lesson',partId:'part',stepId:'question'},
+    {signal:controller.signal,step:{type:'mcq',content:{correctFeedback:'شرح السؤال'}}});
+  const rejected=assert.rejects(purchasing,{name:'AbortError'});
+  controller.abort();release();await held;await rejected;
+  assert.equal(resources.get(owner).gems,200);assert.equal(values.size,0);
+});
+
 test('versioned gem rewards can increase the balance and stale receipts cannot undo rewards or refund purchases',()=>{
   const resources=createLearnerResources({getAccountType:()=>"free",apiBase:'/api/progress',now:()=>1_000_000});
   resources.confirm('account:1',{hearts:7,gems:100,refillAt:1_000_000,gemRevision:0});
@@ -69,29 +145,29 @@ test("all seven hearts reset together at Palestine midnight, including DST bound
   }
 });
 
-test("fixture balances survive reopening, stay isolated and regenerate while closed", () => {
+test("fixture balances survive reopening, stay isolated and regenerate while closed", async () => {
   const values = new Map();
   const storage = { getItem:key => values.get(key), setItem:(key,value) => values.set(key,value) };
   let time = 1_000_000;
   let type = "free";
   const create = () => createLearnerResources({ storage, now:() => time, getAccountType:() => type });
   const resources = create();
-  resources.spend("demo:a", "answer-1");
+  await resources.spend("demo:a", "answer-1");
   assert.equal(create().get("demo:a").hearts, 6);
   assert.equal(resources.get("demo:b").hearts, 7);
   time += HEART_REFILL_MS;
   assert.equal(create().get("demo:a").hearts, 7);
   type = "subscribed";
-  for (let i = 0; i < 20; i++) resources.spend("demo:a", `pro-${i}`);
+  for (let i = 0; i < 20; i++) await resources.spend("demo:a", `pro-${i}`);
   assert.equal(resources.get("demo:a").unlimited, true);
   type = "free";
   assert.equal(resources.get("demo:a").hearts, 7);
 });
 
-test("server receipts acknowledge once and preserve other pending heart reservations", () => {
+test("server receipts acknowledge once and preserve other pending heart reservations", async () => {
   const resources = createLearnerResources({ now:() => 1_000_000, getAccountType:() => "free" });
-  resources.spend("account:1", "answer-1");
-  resources.spend("account:1", "answer-2");
+  await resources.spend("account:1", "answer-1");
+  await resources.spend("account:1", "answer-2");
   resources.confirm("account:1", { hearts:7, gems:200, refillAt:1_000_000 });
   assert.equal(resources.get("account:1").hearts, 5);
   resources.confirm("account:1", { hearts:6, gems:200, refillAt:1_000_000 }, "answer-1");

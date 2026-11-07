@@ -5,7 +5,7 @@ import { spaceWorkedEquations } from "./shared.js";
 import { renderTemplateScrollIndicators, mountTemplateScrollIndicator } from "../template-shell.js";
 
 /** A purchase opens reading only; it never answers or completes the question. */
-export function mountQuestionExplanation({ host, explanation, locale = "ar", signal }) {
+export function mountQuestionExplanation({ host, explanation, locale = "ar", signal, onOpen }) {
   if (!explanation) return;
   const ar = locale === "ar";
   const footer = host.querySelector(".level-layout-actions");
@@ -108,6 +108,7 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
       spaceWorkedEquations(body);
       mountMarkdownFeatures(body,{locale,signal:requestSignal,scrollSurface:body});
       mountTemplateScrollIndicator(activeDialog.querySelector(".question-explanation-reading"),{surface:body,signal:requestSignal});
+      onOpen?.();
     } catch (error) {
       if (requestSignal.aborted || dialog !== activeDialog) return;
       body.innerHTML = `<p role="status">${error.code === "connection-required"

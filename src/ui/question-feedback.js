@@ -1,4 +1,4 @@
-export function mountQuestionFeedback({ host, shell, feedback, signal, locale = "ar", onHidden }) {
+export function mountQuestionFeedback({ host, shell, feedback, signal, locale = "ar", onHidden, onReportOpen }) {
   const ar = locale === "ar";
   const flag = document.createElement("button");
   flag.type = "button";
@@ -49,6 +49,8 @@ export function mountQuestionFeedback({ host, shell, feedback, signal, locale = 
       ${feedback?.hide ? `<button class="question-hide-action" type="button" data-question-hide>${ar ? "إخفاء هذا السؤال عني" : "Hide this question for me"}</button>` : ""}</form>`;
     document.body.append(dialog);
     const activeDialog = dialog;
+    const previewOnly=feedback?.canHide?.()===false;
+    if(previewOnly) activeDialog.querySelector("[data-question-hide]")?.setAttribute("disabled", "");
     activeDialog.addEventListener("close", () => {
       activeDialog.remove();
       if (dialog === activeDialog) dialog = null;
@@ -56,6 +58,7 @@ export function mountQuestionFeedback({ host, shell, feedback, signal, locale = 
     }, { once:true });
     activeDialog.querySelector("[data-report-close]").addEventListener("click",close,{ signal });
     activeDialog.querySelector("[data-question-hide]")?.addEventListener("click", () => {
+      if(previewOnly) return;
       activeDialog.setAttribute("aria-describedby","question-hide-warning");
       activeDialog.innerHTML = `<form data-question-hide-form><div class="question-report-heading"><h2 id="question-report-title">${ar ? "إخفاء هذا السؤال؟" : "Hide this question?"}</h2><button class="app-close" type="button" data-report-close aria-label="${ar ? "إغلاق" : "Close"}">×</button></div>
         <p id="question-hide-warning">${ar ? "لن يظهر هذا السؤال مجددًا في دروسك أو مراجعاتك. يُخفى من حسابك فقط، ويبقى متاحًا للطلاب الآخرين. إخفاؤه لا يُحتسب إجابة ولا يمنحك نقاطًا." : "This question will no longer appear in your lessons or reviews. It will be hidden only for your account and remain available to other students. Hiding it does not count as an answer or earn points."}</p>
@@ -97,16 +100,17 @@ export function mountQuestionFeedback({ host, shell, feedback, signal, locale = 
       const result = await feedback?.report(String(data.get("reason")),String(data.get("details") || ""),{ signal });
       if (signal.aborted || !activeDialog.open) return;
       submit.disabled = false;
-      if (hide) hide.disabled = false;
+      if (hide) hide.disabled = previewOnly;
       if (result?.status !== "saved") {
         status.textContent = ar ? "تعذّر إرسال البلاغ. حاول مجددًا." : "Could not send the report. Try again.";
         return;
       }
-      form.innerHTML = `<h2 id="question-report-title">${ar ? "شكرًا لك!" : "Thank you!"}</h2><p role="status">${ar ? "تم إرسال بلاغك للمراجعة." : "Your report was saved for review."}</p><button type="button" class="system-action system-action--primary">${ar ? "تم" : "Done"}</button>`;
+      form.innerHTML = `<h2 id="question-report-title">${ar ? "شكرًا لك!" : "Thank you!"}</h2><p role="status">${ar ? "تم إرسال بلاغك للمراجعة." : "Your report was saved for review."}</p><button type="button" data-report-close class="system-action system-action--primary">${ar ? "تم" : "Done"}</button>`;
       form.querySelector("button").addEventListener("click",close,{ signal });
       form.querySelector("button").focus();
     }, { signal });
     activeDialog.showModal();
+    onReportOpen?.();
   }, { signal });
 
   const restoreRating = () => {

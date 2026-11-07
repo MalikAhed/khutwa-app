@@ -1,4 +1,4 @@
-import { CORRECT_ANSWER_GEM_REWARD, CORRECT_ANSWERS_PER_REWARD } from "../domain/learner-resources.js";
+import { CORRECT_ANSWER_GEM_REWARD } from "../domain/learner-resources.js";
 import { readRoute } from '../app/route.js';
 
 export function createAuthHeader({ guest, member, label, flowButtons, signOutButton, courseContainer, service, progressStore, resourceStore, onFlow }) {
@@ -68,7 +68,7 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
         count.parentElement.setAttribute("aria-label", balance.unlimited ? `${name} غير محدودة` : `${balance[resource]} ${name}`);
         count.parentElement.title = resource === "hearts" && !balance.unlimited
           ? "٧ قلوب يوميًا مشتركة على هذا المتصفح، تتجدد عند منتصف الليل بتوقيت فلسطين. أول درسين في كل مادة دون قلوب."
-          : balance.unlimited ? `${name} غير محدودة مع سوبر` : `كل ${CORRECT_ANSWERS_PER_REWARD} أسئلة مختلفة تحلّها بشكل صحيح تمنحك ${CORRECT_ANSWER_GEM_REWARD} جوهرة لفتح ٥ شروح.`;
+          : balance.unlimited ? `${name} غير محدودة مع سوبر` : `كل سؤال جديد تحلّه بشكل صحيح يمنحك ${CORRECT_ANSWER_GEM_REWARD} جواهر. الشرح مقابل ٥٠ جوهرة.`;
       });
     }
   };

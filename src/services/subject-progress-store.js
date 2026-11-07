@@ -2,7 +2,7 @@
 import { applyProgressUpdate, currentPartProgress, emptyPart, homeLearningSummary, localDateKey, partKey, progressSubjectId, recalculateQuestionRewards, summarizeParts } from "../domain/subject-progress.js";
 import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
 import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js";
-import { getPartQuestionIds, resolveQuestionLocation } from "../domain/question-rewards.js";
+import { getPartQuestionIds, questionRewardKey, resolveQuestionLocation } from "../domain/question-rewards.js";
 import { defaultAnswerRating } from "../domain/question-ratings.js";
 import { createSessionProgressAdapter } from "./session-progress.js";
 export { getUnitPartProgress, localDateKey } from "../domain/subject-progress.js";
@@ -15,7 +15,7 @@ export { getUnitPartProgress, localDateKey } from "../domain/subject-progress.js
 /** @typedef {{dailyStreak?:{streak:number, activeToday:boolean}}} StreakResult */
 /** @typedef {StreakResult & {status:'saved'|'failed', updateId?:string, whenSynced?:Promise<StreakResult>, retry?:()=>Promise<SaveResult>}} SaveResult */
 /** @typedef {{records:Map<string,PartRecord>, pending:ProgressUpdate[], failed:boolean, loaded:boolean, recoveryWarning:boolean, queue:Promise<void|SaveResult>}} OwnerState */
-/** @typedef {{storage?:Pick<Storage,'getItem'|'setItem'>|null, onError?:(error:unknown)=>void, resourceStore?:{spend:(owner:string,id:string,key?:ProgressKey)=>void}, adapter?:ProgressAdapter}} ProgressStoreOptions */
+/** @typedef {{storage?:Pick<Storage,'getItem'|'setItem'>|null, onError?:(error:unknown)=>void, resourceStore?:{spend:(owner:string,id:string,key?:ProgressKey)=>void|Promise<void>,reserveLocalAnswer?:(owner:string,id:string,key:import('../domain/subject-progress.js').AnswerUpdate)=>Promise<void>,creditLocalAnswer?:(owner:string,id:string,key:import('../domain/subject-progress.js').AnswerUpdate)=>Promise<void>,recoverLocalAnswerCredits?:(owner:string,solved:Set<string>)=>Promise<void>}, adapter?:ProgressAdapter}} ProgressStoreOptions */
 
 // One cache/subscription boundary for Home and lessons. Writes are optimistic;
 // only committed adapter writes report saved. Failed operations stay retryable.
@@ -58,12 +58,18 @@ export function createSubjectProgressStore({ storage = null, onError = console.w
     onError(error);
     notify();
   }
+  const solvedQuestions = records => new Set([...records].flatMap(([recordKey,record])=>{
+    const [subjectId]=JSON.parse(recordKey);
+    return record.review.filter(item=>item.solved).map(item=>questionRewardKey({subjectId,stepId:item.stepId}));
+  }));
   /** @param {string} ownerId */
   async function readOwner(ownerId) {
     const state = stateFor(ownerId);
     try {
       if (!state.loaded && adapter.readCached) overlay(state, await adapter.readCached(ownerId));
-      overlay(state, await adapter.read(ownerId)); state.loaded = true;
+      const records=await adapter.read(ownerId);
+      if(!adapter.isRemoteOwner?.(ownerId))await resourceStore?.recoverLocalAnswerCredits?.(ownerId,solvedQuestions(records));
+      overlay(state, records); state.loaded = true;
       if (!state.pending.length) state.failed = false;
     }
     catch (error) { state.failed = true; onError(error); }
@@ -112,7 +118,17 @@ export function createSubjectProgressStore({ storage = null, onError = console.w
     const state = stateFor(ownerId);
     while (state.pending.length) {
       try {
-        const records = await adapter.update(state.pending[0]);
+        const update=state.pending[0];
+        const localAnswer=update.type==='answer'&&!adapter.isRemoteOwner?.(ownerId);
+        if(localAnswer&&update.id){
+          await resourceStore?.spend(ownerId,update.id,update.value);
+          if(update.value.correct===true&&resourceStore?.reserveLocalAnswer){
+            const saved=await adapter.read(ownerId);
+            if(!solvedQuestions(saved).has(questionRewardKey(update.value)))await resourceStore.reserveLocalAnswer(ownerId,update.id,update.value);
+          }
+        }
+        const records = await adapter.update(update);
+        if(localAnswer&&update.id)await resourceStore?.creditLocalAnswer?.(ownerId,update.id,update.value);
         state.pending.shift();
         state.failed = false;
         overlay(state, records);
@@ -140,7 +156,7 @@ export function createSubjectProgressStore({ storage = null, onError = console.w
     }
     const key = update.value;
     if (![key.ownerId, key.subjectId, key.lessonId, key.partId].every((id) => typeof id === "string" && id)) throw new TypeError("Progress identity is required.");
-    if (update.type === "answer") resourceStore?.spend(key.ownerId, update.id, key);
+    if (update.type === "answer" && adapter.isRemoteOwner?.(key.ownerId)) resourceStore?.spend(key.ownerId, update.id, key);
     const state = stateFor(key.ownerId);
     state.pending.push(update);
     state.records = applyCached(state.records, update);

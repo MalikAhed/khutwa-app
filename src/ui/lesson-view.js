@@ -19,6 +19,7 @@ export { renderLessonError } from "./lesson/status.js";
  * reviewStepId?:string|null, onReviewComplete?:()=>void, getCompletionOutcome?:()=>CompletionOutcome, onExitLesson?:()=>void, onFinishLesson?:()=>void,
  * getMathFilterCatalog?:(scope:string)=>Promise<Array<object>>, mathFilterState?:{scope:string,stepIds:string[]},
  * questionFilterIds?:string[],
+ * deferDailyStreak?:(outcome:any)=>boolean,
  * demoMode?:boolean, onLessonEvent?:(event:any)=>void, getQuestionFeedback?:(stepId:string)=>any, getQuestionExplanation?:(step:any)=>any,
  * onMathFilterApply?:(value:any)=>string[]|undefined}} LessonOptions */
 /** @param {HTMLElement} container @param {string|number} day @param {{title:string,authoringSource?:string}|null} lesson @param {LessonOptions} [options]

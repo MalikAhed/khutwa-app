@@ -32,6 +32,7 @@ test("reports, ratings and personal hiding validate ownership and published ques
     });
     return { status:response.status,body:await response.json() };
   };
+  const startingHearts = store.progress.readResources(actors[0].id).hearts;
   const report = { ...key,type:"report",reason:"answer",details:"Please check the answer." };
   assert.equal((await send(report,actors[0],{ Cookie:"" })).status,401);
   assert.equal((await send(report,actors[0],{ Origin:"https://other.example" })).status,403);
@@ -58,7 +59,7 @@ test("reports, ratings and personal hiding validate ownership and published ques
   assert.deepEqual((await send()).body.hiddenQuestions,[{ subjectId:key.subjectId,stepId:key.stepId }]);
   assert.deepEqual((await send(null,actors[1])).body.hiddenQuestions,[]);
   assert.deepEqual(store.progress.read(actors[0].id),[]);
-  assert.equal(store.progress.readResources(actors[0].id).hearts,10);
+  assert.equal(store.progress.readResources(actors[0].id).hearts,startingHearts,"reports, ratings and hiding cannot spend hearts");
   assert.equal(store.questionFeedback.reports(actors[0].id).length,1);
   store.close();
   store = createAccountStore({ databasePath });
