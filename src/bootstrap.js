@@ -2,6 +2,9 @@ import { createSplashScreen } from "./ui/splash-screen.js";
 import { waitForImage } from "./ui/media-ready.js";
 import { readRoute } from "./app/route.js";
 import { warmLearningExperience } from "./app/background-loading.js";
+import { mountAppInstall } from "./ui/app-install.js";
+
+mountAppInstall();
 
 // Touch-triggered/programmatic focus should not draw keyboard rings. A real
 // keyboard event restores them, including on phones with an external keyboard.
@@ -141,7 +144,7 @@ async function start() {
       // the reliable retry without changing routes or persisted account data.
       if (application && !completed.has("app")) location.reload();
       else void start();
-    }, error?.code === "offline-reconnect" ? "اتصل بالإنترنت للتحقّق من حسابك وتجديد الوصول دون اتصال. إجاباتك المحفوظة على هذا الجهاز باقية." : undefined);
+    }, error?.code === "account-unavailable" ? error.message : error?.code === "offline-reconnect" ? "تعذّر الاتصال بخدمة الحساب. أعد المحاولة؛ إجاباتك المحفوظة على هذا الجهاز باقية." : undefined);
   }
 }
 void start();

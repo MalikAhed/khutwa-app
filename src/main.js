@@ -80,7 +80,10 @@ const productService = createLearnerSession({
 const restoredSession = await productService.restoreSession();
 // A verified lease can resume offline. Otherwise show reconnect recovery;
 // never clear answers or mistake an outage for a confirmed sign-out.
-if (restoredSession.status === "unavailable") throw Object.assign(new Error("Reconnect to verify offline access. Saved work is preserved."), { code:"offline-reconnect" });
+if (restoredSession.status === "unavailable") {
+  const message = 'error' in restoredSession && restoredSession.error;
+  throw Object.assign(new Error(message || "Reconnect to verify offline access. Saved work is preserved."), { code:message ? "account-unavailable" : "offline-reconnect" });
+}
 productService.subscribe(configureBackgroundLoading({getAccountType:() => productService.getAccountType()}));
 await progressStore.ready(productService.getLearnerProgressOwner());
 let progressOwner = productService.getLearnerProgressOwner();

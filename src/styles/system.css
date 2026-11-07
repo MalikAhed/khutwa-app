@@ -163,4 +163,4 @@ body:is(.product-flow-active,.ui-lab-open) .coming-soon-toast { display:none; }
 .offline-access::backdrop { background:rgb(15 23 42 / .6); }
 .offline-access h2 { margin-top:0; }
 .offline-access p { line-height:1.8; }
-.offline-access button { min-height:48px; padding:10px 20px; border:0; border-radius:12px; background:var(--system-blue-action-ink); color:#fff; font:inherit; cursor:pointer; }
+.offline-access button { min-height:48px; padding:10px 20px; border:0; border-radius:12px; background:var(--system-blue-action); color:#fff; font:inherit; cursor:pointer; }

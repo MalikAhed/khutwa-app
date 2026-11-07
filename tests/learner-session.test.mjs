@@ -83,6 +83,18 @@ test("failed API session restoration clears temporary member state", async () =>
   assert.equal(storage.getItem(TEMPORARY_ACCOUNT_STORAGE_KEY), null);
 });
 
+test("session device restrictions retain their account error instead of a connection warning", async () => {
+  const service = createLearnerSession({
+    storage:new MemoryStorage(),
+    apiBase:"/api/auth",
+    fetchImpl:async () => ({ ok:false, status:403, json:async () => ({ status:"device-limit" }) }),
+  });
+  const result = await service.restoreSession();
+  assert.equal(result.status, "unavailable");
+  assert.match(result.error, /وصلت للحدّ المسموح/);
+  assert.equal(service.getAccountType(), "guest");
+});
+
 test("malformed successful API responses fail closed without changing account state", async () => {
   const errors = [];
   const service = createLearnerSession({

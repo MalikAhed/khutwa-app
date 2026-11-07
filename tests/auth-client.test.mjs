@@ -65,6 +65,22 @@ test("session retries are bounded and do not retry rejected or anonymous session
   assert.equal(writes, 1);
 });
 
+test("session restoration allows the local proxy time to respond", async () => {
+  let calls = 0;
+  const client = createAuthClient({ baseUrl:"/api/auth", fetchImpl:(_url, { signal }) => {
+    calls++;
+    return new Promise((resolve, reject) => {
+      const timer = setTimeout(() => resolve({ ok:true, status:200, json:async () => ({ account:{ id:"returning" } }) }), 4500);
+      signal.addEventListener("abort", () => {
+        clearTimeout(timer);
+        reject(new DOMException("Aborted", "AbortError"));
+      }, { once:true });
+    });
+  } });
+  assert.equal((await client.restoreSession()).body.account?.id, "returning");
+  assert.equal(calls, 1);
+});
+
 for (const rejectsBody of [false, true]) {
   test(`cancellation while reading the response body stays aborted (${rejectsBody ? "rejected" : "resolved"} body)`, async () => {
     let finishBody;

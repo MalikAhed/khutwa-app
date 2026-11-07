@@ -30,7 +30,9 @@ export function createAuthClient({
     const abortFromCaller = () => requestController.abort(externalSignal?.reason);
     if (externalSignal?.aborted) abortFromCaller();
     else externalSignal?.addEventListener("abort", abortFromCaller, { once:true });
-    const timeout = setTimeout(() => requestController.abort(), path === "/session" ? Math.min(timeoutMs, 4000) : timeoutMs);
+    // Leave time for the development proxy's five-second upstream deadline.
+    // Two bounded attempts still fit inside the app's startup deadline.
+    const timeout = setTimeout(() => requestController.abort(), path === "/session" ? Math.min(timeoutMs, 8000) : timeoutMs);
 
     try {
       requestController.signal.throwIfAborted();

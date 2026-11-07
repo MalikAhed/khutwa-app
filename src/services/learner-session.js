@@ -187,7 +187,7 @@ export function createLearnerSession({
         if (!result.ok) {
           offlineAccess.revoke();
           useApiAccount(null);
-          return { status:"unavailable", accountType:"guest" };
+          return { status:"unavailable", accountType:"guest", error:accountFailure(result.body).error || "تعذّر التحقّق من الحساب. حاول مجددًا." };
         }
         const payload = readApiAccount(result, { optional:true });
         if (!payload.valid) return { status:"unavailable", accountType:activeAccount?.type || "guest" };

@@ -1,0 +1,21 @@
+.app-install { position:fixed; z-index:90; inset-inline:16px; top:calc(env(safe-area-inset-top,0px) + 12px); bottom:auto; display:grid; grid-template-columns:96px minmax(0,1fr); align-items:center; gap:0 14px; max-width:440px; margin-inline:auto; padding:18px; border:1px solid #d6e5ed; border-radius:22px; background:#fff; color:#24465b; box-shadow:0 6px 24px #24465b1f; direction:rtl; touch-action:none; user-select:none; }
+.app-install__icon { display:block; width:96px; height:104px; object-fit:contain; pointer-events:none; }
+.app-install__copy { min-width:0; }
+.app-install__copy strong { display:block; padding-inline-end:22px; font-size:16px; line-height:1.5; }
+.app-install__action { display:flex; width:100%; align-items:center; justify-content:center; gap:8px; min-height:44px; margin:12px 0 0; padding:8px 12px; border:0; border-radius:12px; background:var(--system-blue-action,#1cb0f6); color:#fff; font:inherit; font-weight:750; cursor:pointer; }
+.app-install__action:disabled { opacity:.6; cursor:wait; }
+.app-install__close { position:absolute; top:4px; inset-inline-end:4px; display:grid; place-items:center; width:44px; height:44px; margin:0; padding:0; border:0; border-radius:50%; background:none; color:#547184; font:inherit; font-size:24px; cursor:pointer; }
+.app-install button:focus-visible { outline:3px solid var(--system-blue,#1cb0f6); outline-offset:3px; }
+.app-install__help { grid-column:1 / -1; margin-top:12px; padding-top:12px; border-top:1px solid #e8f0f5; font-size:13px; line-height:1.7; max-height:28vh; overflow:auto; touch-action:pan-y; user-select:text; }
+.app-install:has(.app-install__help:not([hidden])) { touch-action:pan-y; }
+.app-install__help ol { margin:0; padding-inline-start:20px; }
+.app-install__status { grid-column:1 / -1; margin:10px 0 0; font-size:13px; line-height:1.6; }
+.app-install__status:empty { display:none; }
+body[data-startup] .app-install,
+body:has(.lesson-mode) .app-install,
+body:has(dialog[open]) .app-install,
+body:has(.rocky-app-tour:not([hidden])) .app-install,
+body:has([data-onboarding-step]) .app-install,
+body:has([data-sign-in-form]) .app-install { display:none; }
+@media (max-width:360px) { .app-install { inset-inline:8px; grid-template-columns:80px minmax(0,1fr); column-gap:10px; padding:16px 12px; } .app-install__icon { width:80px; height:96px; } }
+@media (display-mode:standalone) { .app-install { display:none; } }
