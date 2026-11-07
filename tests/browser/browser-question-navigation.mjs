@@ -36,6 +36,8 @@ try {
       },id);
     };
     await centered('nav-1');
+    assert.equal(await track.evaluate(node=>getComputedStyle(node).direction),'rtl');
+    assert.ok(await page.locator('[data-question-jump="nav-1"]').evaluate(node=>node.getBoundingClientRect().x>node.nextElementSibling.getBoundingClientRect().x),'later questions appear to the left for a rightward swipe');
     // Select an already-visible number: it must still move to the center.
     const id = width===390 ? 'nav-4' : 'nav-8';
     const before = await track.evaluate(node=>node.scrollLeft);
@@ -53,10 +55,10 @@ try {
     const samples=await page.evaluate(()=>window.firstNavigationSamples);
     await centered(id);
     const after = await track.evaluate(node=>node.scrollLeft);
-    assert.ok(after>before+30,`${width}: visible selection moves to center`);
+    assert.ok(after<before-30,`${width}: visible selection moves to center`);
     assert.ok(await page.evaluate(()=>window.navigationScrollRequests.some(request=>request.behavior==='smooth')),'selection requests native smooth scrolling');
     // Headless WebKit can coalesce touch scroll positions; Chromium also checks intermediate frames.
-    if(process.env.BROWSER_ENGINE!=='webkit')assert.ok(samples.some(value=>value>before+1&&value<after-1),`${width}: scrolling animates through intermediate positions ${JSON.stringify({before,after,samples})}`);
+    if(process.env.BROWSER_ENGINE!=='webkit')assert.ok(samples.some(value=>value<before-1&&value>after+1),`${width}: scrolling animates through intermediate positions ${JSON.stringify({before,after,samples})}`);
     // Replacing the question must preserve a strip that is already scrolled.
     const secondId = width===390 ? 'nav-6' : 'nav-11';
     await track.evaluate(node=>{
@@ -68,7 +70,7 @@ try {
     await page.locator(`[data-question-jump="${secondId}"][aria-current]`).waitFor();
     await centered(secondId);
     const continued = await page.evaluate(()=>window.navigationSamples);
-    assert.ok(continued.every(value=>value>=after-1),`${width}: question replacement does not reset the strip to the start ${JSON.stringify({after,continued})}`);
+    assert.ok(continued.every(value=>value<=after+1),`${width}: question replacement does not reset the strip to the start ${JSON.stringify({after,continued})}`);
     assert.equal(await page.locator('[aria-current="step"]').count(),1);
     const themed = await page.locator('.question-number[aria-current]').evaluate(node=>{
       const style=getComputedStyle(node);return {border:style.borderColor,subject:style.getPropertyValue('--subject-color'),shadow:style.boxShadow,background:style.backgroundColor,outline:style.outlineStyle};
@@ -77,6 +79,10 @@ try {
     assert.notEqual(themed.shadow,'none');assert.notEqual(themed.background,'rgb(255, 255, 255)');
     // Keyboard can reach and center either edge, with a visible focus indicator.
     await page.locator(`[data-question-jump="${secondId}"]`).focus();
+    await page.keyboard.press('ArrowLeft');
+    assert.equal(await page.evaluate(()=>document.activeElement.dataset.questionJump),`nav-${Number(secondId.slice(4))+1}`,'Left arrow follows the next number to the left');
+    await page.keyboard.press('ArrowRight');
+    assert.equal(await page.evaluate(()=>document.activeElement.dataset.questionJump),secondId,'Right arrow returns to the prior number');
     await page.keyboard.press('End');await centered('nav-160');
     assert.equal(await page.locator('[data-question-jump="nav-160"]').evaluate(node=>node===document.activeElement),true);
     assert.equal(await page.locator('[data-question-jump="nav-160"]').evaluate(node=>getComputedStyle(node).outlineStyle),'solid');

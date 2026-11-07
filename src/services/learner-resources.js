@@ -173,11 +173,11 @@ export function createLearnerResources({ storage, getAccountType, hasSuperAccess
         if (!response.ok || `account:${result.accountId}` !== owner || !Number.isInteger(result.resources?.hearts))
           return "تعذّر تأكيد الرصيد من الخادم. حاول مجددًا.";
         confirm(owner, result.resources);
-        return hasFreeLessonPractice(key) || get(owner).hearts > 0 ? undefined : "نفدت قلوب اليوم. تتجدد القلوب السبعة عند منتصف الليل بتوقيت فلسطين.";
+        return hasFreeLessonPractice(key) || get(owner).hearts > 0 ? undefined : "نفدت طاقة اليوم. تتجدد طاقتك اليومية عند منتصف الليل بتوقيت فلسطين.";
       } catch {
         if (!response) onConnectionRequired();
         return response ? "تعذّر تأكيد الرصيد من الخادم. حاول مجددًا."
-          : "اتصل بالإنترنت لتأكيد قلوبك والإجابة. دروسك المحمّلة وتقدّمك المحفوظ متاحان دون اتصال.";
+          : "اتصل بالإنترنت لتأكيد طاقتك والإجابة. دروسك المحمّلة وتقدّمك المحفوظ متاحان دون اتصال.";
       }
     },
     hasExplanation:(owner,key) => (get(owner).explanationUnlocks || []).includes(questionRewardKey(key)),

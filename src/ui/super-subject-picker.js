@@ -1,11 +1,13 @@
 import { COURSE_SUBJECTS } from '../data/course.js';
 import { escapeHtml } from '../lib/dom.js';
 
-export function superContactUrl(plan, subjects = []) {
+export function superContactUrl(plan, subjects = [], learnerName = '') {
   const message = subjects.length
     ? `مرحبا، كيف بقدر أشترك بخطوة سوبر؟\nالمواد المختارة: ${subjects.map(subject => subject.name).join('، ')}.\nعدد المواد: ${subjects.length}.\nالمجموع: ${subjects.length * plan.priceIls} شيكل بالسنة (${plan.priceIls} شيكل لكل مادة).`
     : `مرحبا، كيف بقدر أشترك بخطوة سوبر؟\nبدي اشتراك ${plan.label} بـ${plan.priceIls} شيكل بالسنة.`;
-  return `https://wa.me/972598419620?text=${encodeURIComponent(message)}`;
+  const name = String(learnerName || '').trim();
+  const contactMessage = name ? `${message}\nاسم الطالب: ${name}` : message;
+  return `https://wa.me/972598419620?text=${encodeURIComponent(contactMessage)}`;
 }
 
 export function superSubjectPickerMarkup(priceIls) {
@@ -25,7 +27,7 @@ export function superSubjectPickerMarkup(priceIls) {
   </section>`;
 }
 
-export function mountSuperSubjectPicker({ dialog, plan, signal }) {
+export function mountSuperSubjectPicker({ dialog, plan, signal, learnerName = '' }) {
   const picker = dialog.querySelector('[data-super-picker]');
   const layout = dialog.querySelector('.heart-depletion__layout');
   const continueLink = picker.querySelector('[data-super-picker-continue]');
@@ -37,7 +39,7 @@ export function mountSuperSubjectPicker({ dialog, plan, signal }) {
     picker.querySelector('[data-super-total]').textContent = subjects.length * plan.priceIls;
     continueLink.setAttribute('aria-disabled', String(!subjects.length));
     continueLink.tabIndex = subjects.length ? 0 : -1;
-    if (subjects.length) continueLink.href = superContactUrl(plan, subjects);
+    if (subjects.length) continueLink.href = superContactUrl(plan, subjects, learnerName);
     else continueLink.removeAttribute('href');
   };
   const back = () => {

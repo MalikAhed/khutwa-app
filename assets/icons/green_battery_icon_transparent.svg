@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Green Battery with White Lightning Bolt</title>
+  <desc id="desc">A straight, rounded green battery icon with a light green shine and white lightning bolt.</desc>
+  <defs>
+    <linearGradient id="green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0DD73A"/>
+      <stop offset="0.46" stop-color="#0CD539"/>
+      <stop offset="1" stop-color="#0CD738"/>
+    </linearGradient>
+  </defs>
+  <!-- Battery: 1536 x 1024 viewBox, original proportions and alignment. -->
+  <path fill="url(#green)" d="M302.6 146
+    H1169.3
+    C1238.6 146 1305 207.3 1305 286.2
+    V695
+    C1305 808.2 1204.1 840 1180.7 840
+    H281.6
+    C252.2 840 158 801.7 158 698.7
+    V284.8
+    C158 220.8 211.6 146 302.6 146Z"/>
+  <!-- Rounded battery terminal -->
+  <path fill="#0CD539" d="M1379 367 H1402
+    C1425 367 1444 386 1444 411
+    V598
+    C1444 620 1427 635 1405 635
+    H1373
+    C1351 635 1335 618 1335 599
+    V411
+    C1335 386 1354 367 1379 367Z"/>
+  <!-- Soft, light-green diagonal shine -->
+  <path fill="#67E981" d="M307 204 H459.7
+    C476.4 204 513.5 230.5 482 273
+    L288 535
+    C283.7 541 278 547 260 550
+    H253
+    C231.9 550 215 528.9 215 505
+    V309
+    C215 249.9 261.6 204 307 204Z"/>
+  <!-- White lightning shape (fully outlined, no font glyph) -->
+  <path fill="#FEFEFE" d="M774 236.7
+    C789 236.7 802 249 802 266
+    V427.5
+    H910
+    C932 427.5 943 441 943 458
+    C943 466 939.8 473.5 936.5 479
+    L758 734.5
+    C749 745.8 740 748 728 748
+    C713 748 704 735 704 720
+    V557
+    H590
+    C573.5 557 562 543 562 526
+    C562 519 565 511 569.5 505
+    L748.5 250
+    C755.5 240 764 236.7 774 236.7Z"/>
+</svg>

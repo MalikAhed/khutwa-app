@@ -51,7 +51,7 @@ const scopeLabel = student => student.subscriptionSubjects == null ? 'جميع �
 export function studentRow(student) {
   return `<article class="student" role="listitem"><div class="student-person">${avatar(student)}<div><h2>${esc(student.username)}</h2><p><bdi>${esc(student.phone || 'لا يوجد رقم هاتف')}</bdi></p></div></div>
     <div class="student-course"><span class="cell-primary">${curriculumLabel(student)}</span><span class="cell-secondary">${pathLabel(student)}</span></div>
-    <div class="student-plan">${badge(student)}<span class="cell-secondary">${subscribed(student) || expired(student) ? esc(scopeLabel(student)) : 'دروس البداية وقلوب يومية'}</span>${student.subscriptionExpiresAt ? `<span class="cell-secondary mobile-expiry">الانتهاء: ${date(student.subscriptionExpiresAt)}</span>` : ''}</div>
+    <div class="student-plan">${badge(student)}<span class="cell-secondary">${subscribed(student) || expired(student) ? esc(scopeLabel(student)) : 'دروس البداية وطاقة يومية'}</span>${student.subscriptionExpiresAt ? `<span class="cell-secondary mobile-expiry">الانتهاء: ${date(student.subscriptionExpiresAt)}</span>` : ''}</div>
     <div class="student-date"><span class="cell-primary">${date(student.createdAt)}</span><span class="cell-secondary">${student.subscriptionExpiresAt ? `الانتهاء: ${date(student.subscriptionExpiresAt)}` : subscribed(student) ? 'اشتراك دائم' : 'تاريخ التسجيل'}</span></div>
     <button type="button" class="button button-soft" data-student-id="${esc(student.id)}" aria-label="عرض تفاصيل ${esc(student.username)}"><span>فتح الملف</span>${icon('arrow')}</button></article>`;
 }

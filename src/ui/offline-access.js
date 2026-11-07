@@ -20,7 +20,7 @@ export function mountOfflineAccess({ service, resourceStore, reconnect, getStudy
       : 'الحساب المجاني يحتاج إلى اتصال بالإنترنت للدراسة. تحقّق من الاتصال للمتابعة؛ الدراسة دون إنترنت متاحة مع سوبر.';
     const grant = service.getAccessState(key);
     const scopeBlocked = !grant.allowed && grant.reason === 'valid' && service.isOffline?.() && key?.subjectId && service.getAccountType() === 'subscribed' && !service.hasSuperAccess?.(key);
-    if (scopeBlocked) dialog.querySelector('[data-offline-access-message]').textContent = 'هذه المادة غير مشمولة باشتراكك. اتصل بالإنترنت لاستخدام القلوب المجانية، أو عد إلى المواد المشمولة للدراسة دون اتصال.';
+    if (scopeBlocked) dialog.querySelector('[data-offline-access-message]').textContent = 'هذه المادة غير مشمولة باشتراكك. اتصل بالإنترنت لاستخدام الطاقة المجانية، أو عد إلى المواد المشمولة للدراسة دون اتصال.';
     returnHome.hidden = !scopeBlocked || !onReturnHome;
     // Home stays available during an outage. Gate the study attempt before it
     // loads a subject, without spending or resetting any saved free hearts.
@@ -31,7 +31,7 @@ export function mountOfflineAccess({ service, resourceStore, reconnect, getStudy
       if (dialog.open) dialog.close();
       if (!paywall) {
         attemptedKey = key;
-        paywall = mountHeartDepletion({resourceStore,ownerId:service.getLearnerProgressOwner(),studyKey:key,autoShowEmpty:false,
+        paywall = mountHeartDepletion({resourceStore,ownerId:service.getLearnerProgressOwner(),learnerName:service.getLearnerDisplayName?.(),studyKey:key,autoShowEmpty:false,
           onReturnHome:() => {closePaywall();onReturnHome?.();check();}});
         paywall.show('offline');
       }

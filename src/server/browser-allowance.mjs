@@ -37,7 +37,7 @@ export function withBrowserAllowance(handler, { accountStore, readJsonBody, orig
       }
       if (!reservation) {
         sendJson(response,429,{status:'browser-heart-limit',accountId:account.id,
-          error:'نفدت قلوب هذا المتصفح لليوم. تتجدد القلوب السبعة عند منتصف الليل بتوقيت فلسطين. يمكنك متابعة أول درسين في كل مادة دون قلوب.',
+          error:'نفدت طاقة هذا المتصفح لليوم. تتجدد طاقتك اليومية عند منتصف الليل بتوقيت فلسطين. يمكنك متابعة أول درسين في كل مادة دون استهلاك طاقة.',
           resources:await balance(accountStore.progress.readResources(account.id))});
         return;
       }

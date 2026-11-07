@@ -49,7 +49,7 @@ export function mountQuestionNavigation({ shell, signal, locale, getQuestions, g
       slider.dataset.questionSlider = '';
       slider.setAttribute('aria-label',locale === 'ar' ? 'قائمة الأسئلة' : 'Questions');
       track = document.createElement('div');
-      track.className = 'question-number-track';track.dir = 'ltr';
+      track.className = 'question-number-track';track.dir = 'rtl';
       slider.append(track);
       if (QUESTION_NAVIGATION_LIMIT_ENABLED && getNavigationStatus) {
         const status = document.createElement('small');
@@ -109,14 +109,14 @@ export function mountQuestionNavigation({ shell, signal, locale, getQuestions, g
     },{signal});
     track.addEventListener('wheel',event => {
       if (track.scrollWidth <= track.clientWidth + 2 || Math.abs(event.deltaX) >= Math.abs(event.deltaY)) return;
-      event.preventDefault();track.scrollLeft += event.deltaY;
+      event.preventDefault();track.scrollLeft -= event.deltaY;
     },{signal,passive:false});
     track.addEventListener('keydown',event => {
       if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
       const index = buttons.indexOf(event.target);
       if (index < 0) return;
       event.preventDefault();
-      const next = event.key === 'Home' ? 0 : event.key === 'End' ? buttons.length - 1 : Math.max(0,Math.min(buttons.length - 1,index + (event.key === 'ArrowRight' ? 1 : -1)));
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? buttons.length - 1 : Math.max(0,Math.min(buttons.length - 1,index + (event.key === 'ArrowLeft' ? 1 : -1)));
       buttons.forEach((button,i) => {button.tabIndex = i === next ? 0 : -1;});
       buttons[next].focus({preventScroll:true});reveal(buttons[next]);
     },{signal});

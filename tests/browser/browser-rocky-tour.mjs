@@ -15,6 +15,7 @@ async function learner(name,width=390,reduced=true,arm=true){
  await context.request.post(`${base}/api/auth/sign-in`,{data:{identifier:name,password:'Test-only-123'}});
  const page=await context.newPage(),errors=[];page.on('pageerror',error=>errors.push(error.message));
  await page.goto(base);await page.waitForFunction(()=>!document.querySelector('#app-splash'));
+ if(width===390)assert.ok(await page.locator('.nav-links').evaluate(nav=>{const home=nav.querySelector('[data-page="learn"]'),x=home.getBoundingClientRect().left;return [...nav.children].filter(node=>node.getBoundingClientRect().width>0).every(node=>node.getBoundingClientRect().left<=x);}), 'Home is the rightmost mobile navigation item');
  if(arm)await page.evaluate(owner=>localStorage.setItem(`tawjihi:rocky-first-run:v1:${owner}`,JSON.stringify({version:3,status:'active',stage:'wait-question',seen:[]})),`account:${account.id}`);
  return {page,context,errors,owner:`account:${account.id}`};
 }
@@ -30,7 +31,11 @@ async function shot(page,name){
 }
 async function swipeSlider(page){
  await stage(page,'slider');assert.equal(await page.locator('[data-rocky-tour-next]').isVisible(),false);
- await page.locator('.question-number-track').hover();await page.mouse.wheel(320,0);await page.waitForTimeout(600);assert.equal(await page.locator('.rocky-app-tour:not([hidden]):not(.is-leaving)[data-tour-step=report]').count(),0,'report guidance waits while the slider is being explored');await stage(page,'report');
+ const gesture=await page.locator('.rocky-tour-gesture').getAttribute('src');
+ assert.match(gesture,/guidance-slide-right(?:-still)?\.svg$/,'slider guidance swipes toward the right, including reduced motion');
+ const report=page.locator('[data-question-report]');
+ assert.ok(await report.evaluate(node=>{const source=node.parentElement.querySelector('.lesson-question-source');return !source||node.getBoundingClientRect().left>source.getBoundingClientRect().right;}),'report flag is to the right of the question tag');
+ await page.locator('.question-number-track').hover();await page.mouse.wheel(-320,0);await page.waitForTimeout(600);assert.equal(await page.locator('.rocky-app-tour:not([hidden]):not(.is-leaving)[data-tour-step=report]').count(),0,'report guidance waits while the slider is being explored');await stage(page,'report');
 }
 async function reportPreview(page){
  await page.locator('[data-question-report]').click();await stage(page,'report-send');
@@ -105,7 +110,7 @@ try{
    await stage(page,id);await shot(page,`${width}-${id}`);
    if(id==='hearts'||id==='gems'){
     assert.deepEqual(await page.locator('.rocky-inline-equation .ui-number').allTextContents(),[id==='hearts'?'1':'50','1']);
-    assert.ok((await page.locator('.rocky-inline-equation img').getAttribute('src')).endsWith(id==='hearts'?'nav-heart.svg':'nav-gem.svg'));
+    assert.ok((await page.locator('.rocky-inline-equation img').getAttribute('src')).endsWith(id==='hearts'?'green_battery_icon_transparent.svg':'nav-gem.svg'));
    }
    if(id==='companion'||id==='goodbye'){
     assert.equal(await page.locator('.rocky-app-tour').getAttribute('data-layout'),'centered');
@@ -135,6 +140,7 @@ try{
    const readingHeight=await page.locator('.level-layout-task').evaluate(node=>node.clientHeight);
    const beforeCard=await page.locator('[data-exam-card]').boundingBox();
    await page.locator('.rocky-app-tour:not([hidden]):not(.is-leaving)[data-tour-step="flashcard"]').waitFor();
+   assert.ok(await page.locator('[data-question-report]').evaluate(node=>{const source=node.parentElement.querySelector('.lesson-question-source');return !source||node.getBoundingClientRect().left>source.getBoundingClientRect().right;}),'flashcard report flag is to the right of the source tag');
    const cue=page.locator('.rocky-tour-gesture');await page.waitForFunction(()=>document.querySelector('.rocky-tour-gesture').classList.contains('is-visible'));
    const entrance=await cue.evaluate(async node=>{const frames=[],start=performance.now();while(performance.now()-start<420){const style=getComputedStyle(node);frames.push({opacity:+style.opacity,scale:new DOMMatrixReadOnly(style.transform).a});await new Promise(requestAnimationFrame);}return frames;});
    if(width===1440)assert.ok(entrance.some(frame=>frame.opacity>0&&frame.opacity<1&&frame.scale>0&&frame.scale<1),'gesture fades and scales in');
@@ -204,7 +210,7 @@ try{
   await report.page.locator('[data-question-report-form] button[type=submit]').click();await stage(report.page,'report-close');
   assert.equal((await savedTour(report.page,report.owner)).seen.includes('report-hide'),true,'a submitted report does not leave the walkthrough waiting for its removed hide control');
   await report.page.locator('[data-report-close]').click();await stage(report.page,'slider');
-  await report.page.locator('.question-number-track').hover();await report.page.mouse.wheel(320,0);await stage(report.page,'exit');
+  await report.page.locator('.question-number-track').hover();await report.page.mouse.wheel(-320,0);await stage(report.page,'exit');
   assert.deepEqual(report.errors,[]);await report.context.close();
   console.log('Cross-tab skip, reload, account switches, existing-student enrollment and submitted-report progression passed.');
  }

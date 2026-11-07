@@ -105,7 +105,7 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor, onEvent }) => {
       const rect=element=>{const r=element.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height}};
       return {viewport:innerWidth,hidden:getComputedStyle(document.querySelector('.nav-resources')).display==='none',signOut:rect(document.querySelector('[data-auth-sign-out]')),resources:[...document.querySelectorAll('.nav-resource')].map(element=>({rect:rect(element),source:element.querySelector('img').getAttribute('src'),image:rect(element.querySelector('img')),text:element.textContent.trim(),color:getComputedStyle(element).color}))};
     })()`);
-    assert.deepEqual(result.resources.map(resource => resource.source), ["assets/icons/nav-gem.svg","assets/icons/nav-heart.svg","assets/icons/streak-freeze.svg"], `${label}: all three navigation SVGs are present`);
+    assert.deepEqual(result.resources.map(resource => resource.source), ["assets/icons/nav-gem.svg","assets/icons/green_battery_icon_transparent.svg","assets/icons/streak-freeze.svg"], `${label}: all three navigation SVGs are present`);
     assert.deepEqual(result.resources.slice(0,2).map(resource => resource.text), ["200","10"], `${label}: a new account starts with 200 gems and 10 hearts`);
     assert.deepEqual(result.resources.slice(0,2).map(resource => resource.color), ["rgb(28, 176, 246)","rgb(255, 75, 75)"], `${label}: balance text matches its SVG color`);
     assert.equal(result.hidden, true, `${label}: unreleased resource balances stay hidden`);

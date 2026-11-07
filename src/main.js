@@ -136,7 +136,7 @@ mountLearnerDashboard({
   resourceStore,
   onSuperTrial:() => {
     const operation = viewLifecycle.begin();
-    const offer = mountHeartDepletion({ resourceStore, ownerId:productService.getLearnerProgressOwner(),
+    const offer = mountHeartDepletion({ resourceStore, ownerId:productService.getLearnerProgressOwner(), learnerName:productService.getLearnerDisplayName(),
       signal:operation.signal, autoShowEmpty:false, returnFocus:elements.navigationItems[0] });
     operation.add(offer.destroy);
     offer.showOffer();

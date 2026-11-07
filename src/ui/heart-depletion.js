@@ -9,7 +9,7 @@ const subjectPlan = SUPER_PLANS.find(plan => plan.id === 'one-subject');
 const infinityMark = '<svg class="super-benefit__infinity" viewBox="0 0 36 22" fill="none" aria-hidden="true"><path d="M18 11c-4-5-6-7-9-7a7 7 0 0 0 0 14c3 0 5-2 9-7s6-7 9-7a7 7 0 0 1 0 14c-3 0-5-2-9-7Z" stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
 /** One full-screen invitation shared by hearts and gems. */
-export function mountHeartDepletion({ resourceStore, ownerId, studyKey, signal, returnFocus, autoShowEmpty = true, onReturnHome, onReturnToSubject }) {
+export function mountHeartDepletion({ resourceStore, ownerId, learnerName = '', studyKey, signal, returnFocus, autoShowEmpty = true, onReturnHome, onReturnToSubject }) {
   const controller = new AbortController();
   let dialog = null, opener = null, timer = null;
   let shownEmpty = false;
@@ -27,7 +27,7 @@ export function mountHeartDepletion({ resourceStore, ownerId, studyKey, signal, 
     if (returnHome && !controller.signal.aborted) onReturnHome?.();
   };
   const copy = reason => ({
-    hearts:['نفدت قلوب اليوم','قلوبك السبعة مشتركة على هذا المتصفح وتتجدد عند منتصف الليل بتوقيت فلسطين. يمكنك متابعة أول درسين في كل مادة دون قلوب.'],
+    hearts:['نفدت طاقة اليوم','طاقتك اليومية مشتركة على هذا المتصفح وتتجدد عند منتصف الليل بتوقيت فلسطين. يمكنك متابعة أول درسين في كل مادة دون استهلاك طاقة.'],
     gems:['نفدت الجواهر','رصيد الجواهر غير كافٍ. افتح الشروح بلا حدود مع سوبر.'],
     navigation:['اختر أي سؤال مع سوبر','اختر أي سؤال مجانًا في أول درسين من كل مادة. في الدروس الأخرى، يمكنك الرجوع إلى الأسئلة التي حللتها، أو متابعة الأسئلة الجديدة بالترتيب. اختيار سؤال جديد من الشريط متاح مع سوبر.'],
     offline:['الدراسة دون إنترنت مع خطوة سوبر','الدراسة دون إنترنت ميزة مدفوعة. اشترك في خطوة سوبر لهذه المادة لتتابع دروسها دون اتصال.'],
@@ -49,7 +49,7 @@ export function mountHeartDepletion({ resourceStore, ownerId, studyKey, signal, 
     dialog.querySelector('[data-heart-title]').textContent = title;
     dialog.querySelector('[data-heart-status]').textContent = message;
     dialog.querySelector('[data-heart-resume]').textContent = reason === 'gems' ? 'العودة إلى سؤالي' : reason === 'hearts' || !onReturnToSubject ? 'العودة إلى الرئيسية' : 'العودة إلى مسار المادة';
-    dialog.querySelector('[data-super-balance]').textContent = `حساب مجاني · ${balance.hearts} / ٧ قلوب · ${balance.gems} جوهرة`;
+    dialog.querySelector('[data-super-balance]').textContent = `حساب مجاني · ${balance.hearts} / ٧ طاقة · ${balance.gems} جوهرة`;
     dialog.querySelector('[data-gem-reward-progress]').textContent = `كل سؤال مختلف تحلّه بشكل صحيح يمنحك ${CORRECT_ANSWER_GEM_REWARD} جواهر.`;
     const timed = reason === 'hearts';
     dialog.querySelector('[data-heart-timer-wrap]').hidden = !timed;
@@ -89,11 +89,11 @@ export function mountHeartDepletion({ resourceStore, ownerId, studyKey, signal, 
         </div>
         <div class="heart-depletion__scene" data-heart-scene>
           <div class="super-invitation__rocky">
-            <img class="heart-depletion__rocky" data-heart-rocky src="assets/mascot/rocky-floating-banner.svg" alt="روكي بنظّاراته الشمسية يطفو مع القلوب والجواهر" width="800" height="620">
+            <img class="heart-depletion__rocky" data-heart-rocky src="assets/mascot/rocky-floating-banner.svg" alt="روكي بنظّاراته الشمسية يطفو مع الطاقة والجواهر" width="800" height="620">
           </div>
         </div>
         <h1 id="heart-depletion-title" data-heart-title></h1>
-        <div class="heart-depletion__refill" data-heart-timer-wrap><img src="assets/icons/nav-heart.svg" width="28" height="28" alt="" aria-hidden="true"><strong dir="ltr" data-heart-timer role="timer" aria-label="الوقت المتبقي لتجدّد القلوب عند منتصف الليل"></strong></div>
+        <div class="heart-depletion__refill" data-heart-timer-wrap><img src="assets/icons/green_battery_icon_transparent.svg" width="28" height="28" alt="" aria-hidden="true"><span class="heart-depletion__refill-label">تتجدد طاقتك بعد</span><strong dir="ltr" data-heart-timer role="timer" aria-label="الوقت المتبقي لتجدّد الطاقة عند منتصف الليل"></strong></div>
         <div class="heart-depletion__refill heart-depletion__refill--gems" data-gem-balance-wrap hidden><img src="assets/icons/nav-gem.svg" width="28" height="28" alt="" aria-hidden="true"><strong dir="ltr" data-gem-balance></strong><span class="super-invitation__sr-only">جوهرة</span></div>
         <p class="heart-depletion__status" data-heart-status role="status"></p>
         <p class="super-invitation__balance" data-super-balance></p>
@@ -103,14 +103,14 @@ export function mountHeartDepletion({ resourceStore, ownerId, studyKey, signal, 
         <ul class="super-invitation__benefits">${SUPER_BENEFITS.map(benefit => `<li><span class="super-benefit__icon super-benefit__icon--${benefit.id}" aria-hidden="true"><img src="${benefit.icon}" width="48" height="48" alt="">${benefit.id === 'questions' ? infinityMark : ''}</span><span class="super-benefit__copy" aria-hidden="true"><strong>${benefit.title}</strong></span><span class="super-invitation__sr-only">${benefit.label}</span></li>`).join('')}</ul>
         <p class="super-invitation__reward">يتطلّب سوبر الاتصال مرة كل ٧ أيام لمزامنة التقدّم واستقبال التحديثات والمزايا الجديدة.</p>
         <fieldset class="super-invitation__plans"><legend class="super-invitation__sr-only">اختر خطتك السنوية</legend>${SUPER_PLANS.map((plan,index) => `<label class="super-plan ${plan.recommended ? 'super-plan--recommended' : ''}"><input type="radio" name="super-plan" value="${plan.id}" ${index === 0 ? 'checked' : ''}>${plan.recommended ? '<span class="super-plan__recommendation"><img src="assets/icons/dashboard-levels.svg" alt="" width="14" height="14">موصى بها</span>' : ''}<span class="super-plan__main"><span class="super-plan__label">${plan.label}</span><span class="super-plan__pricing"><span class="super-plan__price"><bdi dir="ltr"><span class="super-plan__amount">${plan.priceIls}${plan.recommended ? `<del class="super-plan__original-price" aria-hidden="true">${plan.separatePriceIls}<span class="super-plan__original-currency"> ₪</span></del>` : ''}</span> ₪ <small>/ ${plan.period}</small></bdi>${plan.recommended ? `<span class="super-invitation__sr-only">وفّر ${plan.savingsPercent}% مقابل شراء ٩ مواد منفصلة بسعر ${plan.separatePriceIls} شيكل سنويًا، مقابل ${plan.priceIls} شيكل للخطة الشاملة. النسبة مقربة.</span>` : ''}</span></span></span></label>`).join('')}</fieldset>
-        <a class="system-action system-action--gold heart-depletion__activate" data-super-subscribe href="${superContactUrl(SUPER_PLANS[0])}" target="_blank" rel="noopener noreferrer"><span class="heart-depletion__activate-label">متابعة الاشتراك</span></a>
+        <a class="system-action system-action--gold heart-depletion__activate" data-super-subscribe href="${superContactUrl(SUPER_PLANS[0], [], learnerName)}" target="_blank" rel="noopener noreferrer"><span class="heart-depletion__activate-label">متابعة الاشتراك</span></a>
         <button class="system-action system-action--gold heart-depletion__activate" data-super-choose-subjects type="button" hidden><span class="heart-depletion__activate-label">متابعة الاشتراك</span></button>
         <p class="super-invitation__reward" data-gem-reward-progress></p>
         <section data-heart-trial hidden></section>
         <button class="system-action heart-depletion__resume" data-heart-resume type="button">العودة إلى سؤالي</button>
       </section>
     </div>${superSubjectPickerMarkup(subjectPlan.priceIls)}`;
-    const picker = mountSuperSubjectPicker({ dialog:active, plan:subjectPlan, signal:controller.signal });
+    const picker = mountSuperSubjectPicker({ dialog:active, plan:subjectPlan, signal:controller.signal, learnerName });
     active.addEventListener('cancel',event => {event.preventDefault();if (active.dataset.step === 'subjects') picker.back();else dismiss();},{signal:controller.signal});
     active.querySelector('[data-heart-close]').addEventListener('click',dismiss,{signal:controller.signal});
     active.querySelector('[data-heart-resume]').addEventListener('click',() => {

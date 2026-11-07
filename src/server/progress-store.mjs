@@ -261,7 +261,7 @@ export function createDatabaseProgressStore(database, { questionFeedback, now = 
             const balance = readResources(accountId,value);
             if (!balance.unlimited && !hasFreeLessonPractice(value)) {
               const spent = spendHeart(balance, now());
-              if (!spent) throw Object.assign(new Error('نفدت قلوب اليوم. تتجدد القلوب السبعة عند منتصف الليل بتوقيت فلسطين.'), {status:429});
+              if (!spent) throw Object.assign(new Error('نفدت طاقة اليوم. تتجدد طاقتك اليومية عند منتصف الليل بتوقيت فلسطين.'), {status:429});
               saveResources.run(accountId, spent.hearts, spent.gems, spent.refillAt);
             }
           }

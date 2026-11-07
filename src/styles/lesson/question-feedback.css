@@ -1,5 +1,5 @@
-.lesson-question-meta { display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; margin:0 0 14px; direction:rtl; }
-.lesson-question-meta>.lesson-question-source { min-width:0; margin:0; }
+.lesson-question-meta { display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; margin:0 0 14px; direction:ltr; }
+.lesson-question-meta>.lesson-question-source { min-width:0; margin:0; direction:rtl; }
 .lesson-question-meta>.question-report-button { margin-inline-start:auto; }
 .ui-lab-mcq>.lesson-question-meta { margin:0; }
 .question-report-button { flex:0 0 44px; width:44px; height:44px; display:grid; place-items:center; border:0; border-radius:10px; background:transparent; color:#77818b; cursor:pointer; }

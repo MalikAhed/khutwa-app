@@ -27,7 +27,7 @@ try {
     const {mountHeartDepletion}=await import('/src/ui/heart-depletion.js');
     const balance={hearts:0,gems:0,unlimited:false,navigationRemaining:0,nextHeartAt:Date.now()+3600000};
     const store={get:()=>balance,subscribe:()=>()=>{}};
-    const invitation=mountHeartDepletion({resourceStore:store,ownerId:'fixture',autoShowEmpty:false,onReturnHome:()=>{document.body.dataset.homeReturns=String(Number(document.body.dataset.homeReturns||0)+1);}});
+    const invitation=mountHeartDepletion({resourceStore:store,ownerId:'fixture',learnerName:'ليان أحمد',autoShowEmpty:false,onReturnHome:()=>{document.body.dataset.homeReturns=String(Number(document.body.dataset.homeReturns||0)+1);}});
     document.querySelector('#opener').addEventListener('click',()=>invitation.show('hearts'));
     document.querySelector('#opener').addEventListener('show-gems',event=>{balance.gems=event.detail;invitation.show('gems');});
     await document.fonts.ready;
@@ -49,7 +49,7 @@ try {
       rewards:document.querySelectorAll('.krf-orbit-x').length,
      }));
      assert.equal(identity.id,'krf-banner','the supplied floating SVG is used');
-     assert.equal(identity.rewards,4,'the supplied SVG contains two hearts and two gems');
+     assert.equal(identity.rewards,4,'the supplied SVG contains two energy batteries and two gems');
      assert.equal(identity.animations>0,motion==='no-preference','the supplied SVG respects reduced motion');
     } finally {await artwork.close();}
    }
@@ -60,14 +60,14 @@ try {
    assert.equal(await sheet.locator('.super-plan__detail').count(),0);
    assert.equal(await sheet.locator('.super-plan__original-price').textContent(),'135 ₪');
    assert.equal(await sheet.locator('.super-invitation__benefits li').count(),4);
-   assert.equal(await sheet.locator('.super-benefit__icon--questions img').getAttribute('src'),'assets/icons/nav-heart.svg');
+   assert.equal(await sheet.locator('.super-benefit__icon--questions img').getAttribute('src'),'assets/icons/super-energy.svg');
    assert.equal(await sheet.locator('.super-benefit__infinity').count(),1);
    assert.equal(await sheet.locator('.super-benefit__icon--skips').count(),1);
    assert.equal((await sheet.locator('[data-super-subscribe]').textContent()).trim(),'متابعة الاشتراك');
    assert.equal(await sheet.locator('[data-heart-status]').isVisible(),false,'secondary marketing copy stays hidden');
    assert.equal(await sheet.locator('.heart-depletion__content [data-heart-timer-wrap]').count(),0);
-   assert.equal(await sheet.locator('.super-invitation__visual [data-heart-timer-wrap] img').getAttribute('src'),'assets/icons/nav-heart.svg');
-   assert.match((await sheet.locator('[data-heart-timer-wrap]').innerText()).trim(),/^\d{2}:\d{2}:\d{2}$/,'the countdown has no extra visible text');
+   assert.equal(await sheet.locator('.super-invitation__visual [data-heart-timer-wrap] img').getAttribute('src'),'assets/icons/green_battery_icon_transparent.svg');
+   assert.match((await sheet.locator('[data-heart-timer-wrap]').innerText()).trim(),/تتجدد طاقتك بعد\s*\d{2}:\d{2}:\d{2}$/,'the countdown explains when energy resets');
    assert.equal(await sheet.locator('[data-heart-resume]').evaluate(node=>getComputedStyle(node).backgroundColor),'rgba(0, 0, 0, 0)');
    assert.equal(await sheet.locator('[data-heart-resume]').evaluate(node=>getComputedStyle(node).borderTopWidth),'0px');
    const offerStyle=await sheet.evaluate(node=>{
@@ -84,7 +84,7 @@ try {
    assert.equal(offerStyle.strike,offerStyle.savingInk);
    assert.ok(Math.abs(offerStyle.strikeTop-offerStyle.oldHeight/2)<1,'the strike crosses the number at half its height');
    assert.ok(offerStyle.priceCenterOffset<1,'the old price aligns with the current price');
-   assert.equal(await sheet.locator('[data-heart-timer]').evaluate(node=>getComputedStyle(node).color),'rgb(217, 54, 54)');
+   assert.equal(await sheet.locator('[data-heart-timer]').evaluate(node=>getComputedStyle(node).color),'rgb(21, 158, 53)');
    assert.equal(await sheet.locator('.super-plan__label').last().textContent(),'مواد محددة');
    assert.doesNotMatch(await sheet.locator('.super-plan__label').first().textContent(),/[٩9]/);
    const alignment=await plans.evaluateAll(cards=>cards.map(card=>{const a=card.getBoundingClientRect(),b=card.querySelector('.super-plan__main').getBoundingClientRect();return {height:a.height,offset:Math.abs((a.top+a.bottom-b.top-b.bottom)/2)};}));
@@ -135,7 +135,7 @@ try {
     const url=new URL(await subscribe.getAttribute('href'));
     assert.equal(url.origin,'https://wa.me');
     assert.equal(url.pathname,'/972598419620');
-    assert.equal(url.searchParams.get('text'),`مرحبا، كيف بقدر أشترك بخطوة سوبر؟\nبدي اشتراك ${label} بـ${price} شيكل بالسنة.`);
+    assert.equal(url.searchParams.get('text'),`مرحبا، كيف بقدر أشترك بخطوة سوبر؟\nبدي اشتراك ${label} بـ${price} شيكل بالسنة.\nاسم الطالب: ليان أحمد`);
     if(width===1440||width===390) {
      const opened=context.waitForEvent('page');
      if(width===1440) {await subscribe.focus();await page.keyboard.press('Enter');}
@@ -184,7 +184,7 @@ try {
    const selectedUrl=new URL(await continueLink.getAttribute('href'));
    assert.equal(selectedUrl.origin,'https://wa.me');
    assert.equal(selectedUrl.pathname,'/972598419620');
-   assert.equal(selectedUrl.searchParams.get('text'),'مرحبا، كيف بقدر أشترك بخطوة سوبر؟\nالمواد المختارة: الرياضيات 1، الرياضيات 2.\nعدد المواد: 2.\nالمجموع: 30 شيكل بالسنة (15 شيكل لكل مادة).');
+   assert.equal(selectedUrl.searchParams.get('text'),'مرحبا، كيف بقدر أشترك بخطوة سوبر؟\nالمواد المختارة: الرياضيات 1، الرياضيات 2.\nعدد المواد: 2.\nالمجموع: 30 شيكل بالسنة (15 شيكل لكل مادة).\nاسم الطالب: ليان أحمد');
    const selectedChat=context.waitForEvent('page');
    await continueLink.click();
    const chat=await selectedChat;

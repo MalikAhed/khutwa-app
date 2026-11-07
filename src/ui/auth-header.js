@@ -64,10 +64,10 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
     for (const resource of ["hearts", "gems"]) {
       document.querySelectorAll(`[data-resource-${resource}]`).forEach(count => {
         count.textContent = balance.unlimited ? "∞" : String(balance[resource]);
-        const name = resource === "hearts" ? "قلوب" : "جواهر";
+        const name = resource === "hearts" ? "طاقة" : "جواهر";
         count.parentElement.setAttribute("aria-label", balance.unlimited ? `${name} غير محدودة` : `${balance[resource]} ${name}`);
         count.parentElement.title = resource === "hearts" && !balance.unlimited
-          ? "٧ قلوب يوميًا مشتركة على هذا المتصفح، تتجدد عند منتصف الليل بتوقيت فلسطين. أول درسين في كل مادة دون قلوب."
+          ? "٧ وحدات طاقة يوميًا مشتركة على هذا المتصفح، تتجدد عند منتصف الليل بتوقيت فلسطين. أول درسين في كل مادة دون استهلاك طاقة."
           : balance.unlimited ? `${name} غير محدودة مع سوبر` : `كل سؤال جديد تحلّه بشكل صحيح يمنحك ${CORRECT_ANSWER_GEM_REWARD} جواهر. الشرح مقابل ٥٠ جوهرة.`;
       });
     }

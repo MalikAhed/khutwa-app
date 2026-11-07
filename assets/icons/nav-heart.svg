@@ -1,1 +1,55 @@
-<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.65625 13.4717C2.65625 16.2267 4.05262 18.6627 6.19106 20.1401L15.3112 28.0973C16.3946 29.0426 18.0133 29.03 19.0819 28.0679L28.254 19.8104C30.1391 18.3144 31.3438 16.0307 31.3438 13.4717C31.3438 8.96552 27.6079 5.3125 22.9993 5.3125C20.6443 5.3125 18.5172 6.26635 17 7.80049C15.4828 6.26635 13.3557 5.3125 11.0008 5.3125C6.39223 5.3125 2.65625 8.96552 2.65625 13.4717Z" fill="#FF4B4B" stroke="white" stroke-width="2"/><path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M10.6619 16.9888C12.5042 16.9888 13.9977 15.4513 13.9977 13.5546C13.9977 11.6579 12.5042 10.1204 10.6619 10.1204C8.81964 10.1204 7.32617 11.6579 7.32617 13.5546C7.32617 15.4513 8.81964 16.9888 10.6619 16.9888Z" fill="white"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Green Battery with White Lightning Bolt</title>
+  <desc id="desc">A straight, rounded green battery icon with a light green shine and white lightning bolt.</desc>
+  <defs>
+    <linearGradient id="green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0DD73A"/>
+      <stop offset="0.46" stop-color="#0CD539"/>
+      <stop offset="1" stop-color="#0CD738"/>
+    </linearGradient>
+  </defs>
+  <!-- Battery: 1536 x 1024 viewBox, original proportions and alignment. -->
+  <path fill="url(#green)" d="M302.6 146
+    H1169.3
+    C1238.6 146 1305 207.3 1305 286.2
+    V695
+    C1305 808.2 1204.1 840 1180.7 840
+    H281.6
+    C252.2 840 158 801.7 158 698.7
+    V284.8
+    C158 220.8 211.6 146 302.6 146Z"/>
+  <!-- Rounded battery terminal -->
+  <path fill="#0CD539" d="M1379 367 H1402
+    C1425 367 1444 386 1444 411
+    V598
+    C1444 620 1427 635 1405 635
+    H1373
+    C1351 635 1335 618 1335 599
+    V411
+    C1335 386 1354 367 1379 367Z"/>
+  <!-- Soft, light-green diagonal shine -->
+  <path fill="#67E981" d="M307 204 H459.7
+    C476.4 204 513.5 230.5 482 273
+    L288 535
+    C283.7 541 278 547 260 550
+    H253
+    C231.9 550 215 528.9 215 505
+    V309
+    C215 249.9 261.6 204 307 204Z"/>
+  <!-- White lightning shape (fully outlined, no font glyph) -->
+  <path fill="#FEFEFE" d="M774 236.7
+    C789 236.7 802 249 802 266
+    V427.5
+    H910
+    C932 427.5 943 441 943 458
+    C943 466 939.8 473.5 936.5 479
+    L758 734.5
+    C749 745.8 740 748 728 748
+    C713 748 704 735 704 720
+    V557
+    H590
+    C573.5 557 562 543 562 526
+    C562 519 565 511 569.5 505
+    L748.5 250
+    C755.5 240 764 236.7 774 236.7Z"/>
+</svg>
