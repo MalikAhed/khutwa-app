@@ -55,6 +55,20 @@ guidance:
 افحص الشرط ثم رتب السجلات؛ اكتب أسماء الحقول كما وردت.
 :::`;
 const nextQuestion = fixture.replaceAll("written-source-one", "written-source-two");
+const unequalFaces = `:::exam-question
+id: written-unequal-faces
+title: سؤال كتابي
+question: قارن بين القيمتين.
+reference: مصدر الاختبار، PDF ص 3، السؤال 3
+answer-label: حل تعليمي للمقارنة
+body:
+قارن بين القيمتين.
+final-answer:
+- **أ)** القيمة الأولى تساوي سبعة.
+- **ب)** القيمة الثانية تساوي واحدًا على سبعة.
+solution:
+نحسب كل قيمة على حدة، ثم نكتب النتيجتين بالترتيب المطلوب.
+:::`;
 const port = await getAvailablePort();
 const server = spawn(process.execPath, ["dev-server.mjs"], {
   env:{ ...process.env, PORT:String(port), LIVE_RELOAD:"0", LEARN_BACKEND:"local", DEV_AUTO_LOGIN:"0", ACCOUNTS_DATABASE_PATH:":memory:" }, stdio:"ignore",
@@ -111,7 +125,7 @@ try {
       assert.equal(await page.locator("[data-live-authored-step]").getAttribute("data-lesson-step"), "written-source-one");
       assert.equal(await page.locator(".lesson-exam-question table").first().locator("tbody tr").count(), 2);
       assert.equal(await page.locator(".lesson-exam-question ol li").count(), 2);
-      assert.match(await page.locator(".lesson-exam-question pre code").innerText(), /SELECT Student\.Name.*ORDER BY Student\.Mark DESC;/);
+      assert.match((await page.locator(".lesson-exam-question pre code").innerText()).replace(/\s+/g, ' '), /SELECT Student\.Name.*ORDER BY Student\.Mark DESC;/);
       assert.equal(await page.locator("[data-exam-front] img").getAttribute("alt"), "الشكل الأصلي للسؤال");
       const figureZoom = page.locator("[data-exam-front] [data-summary-scan-zoom]");
       await figureZoom.focus();
@@ -164,7 +178,7 @@ try {
       }, {once:true}));
       await questionScroll.press("Enter");
       assert.equal(await page.locator("[data-exam-solution]").isVisible(), true);
-      assert.equal(await page.locator('.level-question-rating-panel').evaluate(node => node.inert), false);
+      assert.equal(await page.locator('.level-question-rating-panel').evaluate(node => node.inert), true, 'ratings wait for the explicit self assessment');
       const turnState = await page.evaluate(() => window.turnState);
       assert.equal(turnState.reducedMotion, reducedMotion === 'reduce', 'browser applies requested motion preference');
       if (reducedMotion === 'no-preference') {
@@ -178,6 +192,7 @@ try {
       }
       await page.waitForFunction(()=>document.querySelector('[data-exam-front]').hidden);
       assert.equal(await page.locator('.lesson-flashcard-rotor').evaluate(node => node.classList.contains('is-flipping')), false);
+      await page.waitForFunction(() => document.activeElement === document.querySelector('[data-exam-solution] .lesson-flashcard-scroll'));
       assert.equal(await page.evaluate(() => document.activeElement === document.querySelector("[data-exam-solution] .lesson-flashcard-scroll")), true);
       assert.match(await page.locator("[data-exam-solution]").innerText(), /الناتج المرجعي: علي ثم سارة/);
       assert.doesNotMatch(await page.locator("[data-exam-solution]").innerText(), /الخطوة|قارن قيم السجلات|افحص الشرط/, "neither explanation nor guidance leaks into the card");
@@ -221,6 +236,7 @@ try {
       assert.deepEqual(await page.locator('[data-exam-card]').boundingBox(),fixedBounds);
       await page.locator("[data-exam-correct=true]").focus();
       await page.locator("[data-exam-correct=true]").press("Space");
+      assert.equal(await page.locator('.level-question-rating-panel').evaluate(node => node.inert), false, 'self assessment reveals the rating controls');
       assert.equal(await page.locator("[data-template-primary]").isEnabled(), true);
       await page.locator("[data-template-primary]").focus();
       await page.locator("[data-template-primary]").press("Enter");
@@ -233,7 +249,7 @@ try {
       await page.keyboard.press('Enter');
       await page.locator('[data-exam-correct=false]').click();
       assert.deepEqual(await page.evaluate(() => window.examAnswers.at(-1)), {stepId:"written-source-one",correct:true,reviewing:false}, "a selection is saved only after Continue");
-      await page.locator("[data-template-back]").click();
+      await page.locator('[data-question-jump="written-source-one"]').click();
       await page.locator('[data-lesson-step="written-source-one"]').waitFor();
       assert.equal(await page.locator("[data-exam-solution]").isVisible(), false);
       // Cancelling a turn when navigating away must leave no live animation or save.
@@ -242,6 +258,51 @@ try {
       await page.locator('[data-exam-card]').evaluate(node=>node.click());
       assert.equal(await page.locator('[data-exam-solution]').getAttribute('aria-hidden'),'false','cleanup detaches stale flip listeners');
       assert.equal(await page.locator('.lesson-flashcard-rotor').evaluate(node=>node.getAnimations().length),0);
+
+      // Ordinary cards must keep their size too, even when neither face fills
+      // the viewport. Two overflowing faces alone cannot expose a shrinking turn.
+      await page.evaluate(async source => {
+        const [{ parseLessonMarkdown }, { renderAuthoredInteractiveLesson }] = await Promise.all([
+          import("/src/markdown/lesson-authoring.js"), import("/src/ui/lesson/authored.js"),
+        ]);
+        const { steps, issues } = parseLessonMarkdown(source, { published:true });
+        if (issues.length) throw new Error(issues.join("; "));
+        window.examCleanup = renderAuthoredInteractiveLesson(document.querySelector('.lesson-card'), 'تدريب',
+          { title:'بطاقة مراجعة', authoringSource:source }, steps, { onAnswer:() => {}, onProgress:() => {} });
+      }, unequalFaces);
+      await page.evaluate(() => document.fonts.ready);
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+      const unequalBounds = await page.locator('[data-exam-card]').boundingBox();
+      const front = page.locator('[data-exam-front]');
+      const back = page.locator('[data-exam-solution]');
+      assert.equal(await back.isVisible(), false);
+      assert.equal(await back.evaluate(node => node.inert), true);
+      await front.locator('.lesson-flashcard-scroll').focus();
+      await page.keyboard.press('Enter');
+      await page.waitForFunction(() => document.querySelector('[data-exam-front]').hidden);
+      assert.deepEqual(await page.locator('[data-exam-card]').boundingBox(), unequalBounds, 'unequal short faces keep the same card bounds');
+      assert.equal(await front.isVisible(), false);
+      assert.equal(await front.evaluate(node => node.inert), true);
+      assert.equal(await back.getAttribute('aria-hidden'), 'false');
+      const answerLines = await back.locator('.lesson-final-answer li').evaluateAll(items => items.map(item => item.getBoundingClientRect().top));
+      assert.equal(answerLines.length, 2);
+      assert.ok(answerLines[1] > answerLines[0], 'separate subanswers retain separate lines');
+      await back.locator('.lesson-flashcard-scroll').press('Space');
+      await page.waitForFunction(() => document.querySelector('[data-exam-solution]').hidden);
+      await page.waitForFunction(() => document.activeElement === document.querySelector('[data-exam-front] .lesson-flashcard-scroll'));
+      assert.deepEqual(await page.locator('[data-exam-card]').boundingBox(), unequalBounds, 'returning to the question keeps the same card bounds');
+      assert.equal(await back.isVisible(), false);
+      assert.equal(await back.evaluate(node => node.inert), true);
+      assert.equal(await front.getAttribute('aria-hidden'), 'false');
+      await page.evaluate(() => {
+        const scroll = document.querySelector('[data-exam-front] .lesson-flashcard-scroll');
+        scroll.focus();
+        scroll.dispatchEvent(new KeyboardEvent('keydown', { key:'Enter', bubbles:true, cancelable:true }));
+        window.examCleanup();
+        document.querySelector('[data-template-primary]').focus();
+      });
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+      assert.equal(await page.locator('[data-template-primary]').evaluate(node => node === document.activeElement), true, 'a cancelled flip cannot reclaim keyboard focus');
       assert.deepEqual(mutations, [], "written answers stay offline and are never submitted for grading");
       assert.deepEqual(errors, []);
       console.log(`Flashcard viewport passed: ${viewport.width}×${viewport.height}, ${reducedMotion}.`);

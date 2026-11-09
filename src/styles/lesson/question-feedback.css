@@ -1,4 +1,5 @@
 .lesson-question-meta { display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; margin:0 0 14px; direction:ltr; }
+.lesson-flashcard-copy > .lesson-question-meta { min-height:44px; }
 .lesson-question-meta>.lesson-question-source { min-width:0; margin:0; direction:rtl; }
 .lesson-question-meta>.question-report-button { margin-inline-start:auto; }
 .ui-lab-mcq>.lesson-question-meta { margin:0; }

@@ -208,7 +208,8 @@ export function createLearnerResources({ storage, getAccountType, hasSuperAccess
         if (!response.ok) throw Object.assign(new Error("Explanation could not be unlocked."),
           {code:response.status === 402 ? "insufficient-gems" : response.status === 422 ? "unavailable" : "request-failed"});
         if (typeof result.explanation?.markdown !== "string" || !result.explanation.markdown.trim()) throw new Error("Invalid explanation.");
-        return result.explanation;
+        // The confirmed receipt grants access; the lesson owns the current copy.
+        return explanation || result.explanation;
       }
       const explanation = questionExplanation(step);
       signal?.throwIfAborted();

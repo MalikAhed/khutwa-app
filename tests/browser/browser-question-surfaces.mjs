@@ -13,20 +13,21 @@ await mkdir(evidence, { recursive:true });
 const questions = [];
 for (const key of subjectLessonRegistry.keys()) {
   const [subjectId, lessonId] = key.split(":");
+  if (process.env.QUESTION_SUBJECT_PREFIX && !subjectId.startsWith(process.env.QUESTION_SUBJECT_PREFIX)) continue;
   const lesson = await loadSubjectLesson(subjectId, lessonId);
   const parsed = parseLessonMarkdown(lesson.authoringSource, { published:true });
   assert.deepEqual(parsed.issues, [], `${key}: published authoring parses`);
   for (const step of parsed.steps.filter(step => flashcardAnswersOnly ? step.type === "exam-question" : ["mcq", "exam-question"].includes(step.type))) {
     if (step.type === "exam-question") assert.ok(step.content.finalAnswer?.trim(), `${key}:${step.id}: explicit final answer`);
     questions.push({ id:`${key}:${step.id}`, subjectId, lessonId, title:lesson.title,
-      locale:subjectId === "english" ? "en" : "ar", step });
+      locale:lesson.locale || (subjectId === "english" ? "en" : "ar"), step });
   }
 }
 
 const port = await getAvailablePort();
 const base = `http://127.0.0.1:${port}/`;
 const server = spawn(process.execPath, ["dev-server.mjs"], {
-  env:{ ...process.env, PORT:String(port), LIVE_RELOAD:"0", DEV_AUTO_LOGIN:"1", ACCOUNTS_DATABASE_PATH:":memory:" },
+  env:{ ...process.env, PORT:String(port), LIVE_RELOAD:"0", LEARN_BACKEND:"local", DEV_AUTO_LOGIN:"1", ACCOUNTS_DATABASE_PATH:":memory:" },
   stdio:"ignore",
 });
 let browser;
@@ -189,7 +190,7 @@ try {
 
   // Real runtime layouts: select each subject/type, its longest reading surface,
   // and global table, formula and image outliers. This is risk sampling, not a
-  // claim of visually inspecting every one of the 7,229 questions.
+  // claim of visually inspecting every question in the selected corpus.
   const selected = new Map();
   const byId = new Map(questions.map(question => [question.id, question]));
   const add = risk => { if (risk) selected.set(risk.id, byId.get(risk.id)); };

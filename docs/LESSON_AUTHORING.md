@@ -73,7 +73,7 @@ solution:
 :::
 ```
 
-Omit the image line when absent. Use `final-answer:` for the final result only; retain worked explanations and original solution crops under `solution:` for the Explain section. When the textbook wording is already transcribed, keep the quotation and its page citation without a duplicate book scan. Keep required diagrams and extracts whose wording is not transcribed. An answer derived from explicit book evidence must be labelled accordingly, not presented as a printed answer key. Document source corrections with their evidence; if the supplied sources cannot resolve the conflict, keep the item blocked.
+Omit the image line when absent. Use `final-answer:` for the final result only; retain worked explanations and original solution crops under `solution:` for the Explain section. Give each explicit subanswer its own Markdown list item or paragraph; a single newline is a soft break and can merge answers on screen. In worked explanations, state why the rule applies, show substitutions or derivations in separate fenced `mathml`/`latex` blocks, then give the result. Keep short symbols inline and preserve the exact wording and evidence of source quotations. When the textbook wording is already transcribed, keep the quotation and its page citation without a duplicate book scan. Keep required diagrams and extracts whose wording is not transcribed. An answer derived from explicit book evidence must be labelled accordingly, not presented as a printed answer key. Document source corrections with their evidence; if the supplied sources cannot resolve the conflict, keep the item blocked.
 
 ## Existing component owners
 

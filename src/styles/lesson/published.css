@@ -50,8 +50,9 @@
 .lesson-flashcard-rotor { position:relative; display:grid; grid-template-rows:minmax(0, 1fr); width:100%; min-height:0; transform-style:preserve-3d; transform:rotateY(0deg); transition:none; }
 .lesson-flashcard-rotor.is-flipped { transform:rotateY(180deg); }
 .lesson-flashcard-face { position:relative; grid-area:1 / 1; display:grid; grid-template-rows:minmax(0, 1fr); min-width:0; min-height:0; border:3px solid #cbd4dd; border-radius:14px; background:#fff; color:#30363d; overflow:hidden; backface-visibility:hidden; -webkit-backface-visibility:hidden; cursor:pointer; }
-.lesson-flashcard-face[inert] { position:absolute; inset:0; }
-.lesson-flashcard-face[hidden] { display:none; }
+/* Both faces size the same grid cell, so turning a short answer never resizes
+   the card. Hidden faces retain their layout while inert/ARIA hide interaction. */
+.lesson-flashcard-face[hidden] { display:grid; visibility:hidden; }
 .lesson-flashcard-back { transform:rotateY(180deg); }
 .lesson-flashcard-scroll { --flashcard-padding:clamp(20px, 3vw, 36px); display:flex; flex-direction:column; min-height:0; min-width:0; padding:var(--flashcard-padding); border-radius:11px; overflow-x:hidden; overflow-y:auto; overscroll-behavior:contain; scrollbar-gutter:stable; scrollbar-width:thin; scrollbar-color:#8a98a4 #e9eef2; touch-action:pan-x pan-y; }
 .question-overlays .lesson-flashcard-scroll { padding-top:calc(var(--flashcard-padding) + var(--question-header-overhang,0px)); }

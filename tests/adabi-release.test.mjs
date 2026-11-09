@@ -11,18 +11,31 @@ const manifest = {
   geography:[492,253,239,0], history:[292,122,170,0], "information-technology":[257,99,158,0],
   "islamic-education":[689,257,432,0], mathematics:[521,263,258,0], "scientific-culture":[376,179,197,0],
 };
-// Semantic fingerprints of the independently audited corpus after removing
-// private PDF link targets while preserving their exact visible citation text.
+// Reviewed corpus after the subject-by-subject explanation and answer-layout pass.
+// Original question surfaces have their separate unchanged fingerprints below.
 const fingerprints = {
-  "arabic-1": "c857be60a8abd9a36f67e2a69a01811a633019f16d07046e95a2a54dae83ef07",
-  "arabic-2": "5b52f034a70b58e995c1efaa35e24e8a9914a8a76a519cc91ddd5776c81e5c97",
-  "english": "06a7e5f228399ec9630d079ef7ad0b380c83eb48f14ad078a9e009c0e82e1058",
-  "geography": "36c1f5c6ffba1fc9ab75999bddfe46a544f398ec1c82c9139cfbe77d32d0962a",
-  "history": "4de35a96fec527cb0c00804bb3e9de36cf6172dc173a4b8dbdf3321d31eb8b10",
-  "information-technology": "919c9d1920bd9fb988170eb5975fa4896afe45cb0bd99e755b7324968f81b175",
-  "islamic-education": "d28dca16612c92f0f7bb859b669ca72217cb9b88b8c355acc6032a9cb8953ab4",
-  "mathematics": "4e964c655201f473e4e9864e13042a380a99bfc62b91b7b4c5a51ef93707261c",
-  "scientific-culture": "2feba3a0b22aec8248812321c45cfd8597ea6d3a2e151b7fc3d81aa501f8b187"
+  "arabic-1": "4d5cb29524e7ed902d7ca636ad6dbdd63ea56a7a23a6390c0486637e26f8ae7d",
+  "arabic-2": "01243e6a0e095943ca83e20628ae410d907efa0ce15b50a5b498e3187ee7d6fb",
+  "english": "c7f92e8848c973bc9d6843e50c51d45cd5ef3137e76a374c7c2a71bfd6f4506f",
+  "geography": "122ceba3e82f0d20fbe5289fce690a3c1e4145589885c7d50860777f760f4d05",
+  "history": "75e9776d4a23328977fd226a236530c8aa5fcf3f7160dee8b3838dd13af8a0a6",
+  "information-technology": "a784d69bd790796161fd60c3744180fb02fb327f2564283b80ca46f3728af806",
+  "islamic-education": "a9ca3da2b04f66d5a9c77d903b66ca947eca38dad63f37e0ba6c1b488aaeb627",
+  "mathematics": "4a649491c60d2aec717e2d064cbe318fc22d9420960eb52167f219e5abcea2a8",
+  "scientific-culture": "fcddd0cb5527ea4f68510aad3b299e00b90140f47a781cf9cf550665d14d3eb2"
+};
+// These pre-edit fingerprints keep prompts, choices, correct keys, citations and
+// progress identities fixed while teaching prose and answer layout are revised.
+const questionFingerprints = {
+  "arabic-1":"6d4d5b53abd2c75a46b83f1d100b5b272b505ecc7a38914de07d1b59d6f34859",
+  "arabic-2":"27b3c2137048adc8fea85b78f347b4b20ec2f6bc247e984779ee2e6921cdcd80",
+  english:"d48712dc1c3aa1afc90aae120822ef59969dc255c75dd94d30338a0d6f84d0fe",
+  geography:"c9742fa1159bd357c7ef1e7fdc9a9ce05b8e80b0238c032fb152b5c597279411",
+  history:"6623121217deef0afb476d75fe0074b914b6b29622f860b8aae8f56b53300cb3",
+  "information-technology":"b6a5cee8d5fb13fa3c841b4480215fc0ce7dc22ba64b9a23c343023aca000525",
+  "islamic-education":"ff36dd900abe83f609ecb6dd016fae498445ed796bfda8d3fc3774052436dd98",
+  mathematics:"ae60359f46d3e65727d2c7306c66f7671a3b6a3671e4581a08b3b195f550a935",
+  "scientific-culture":"4fe4fe3f57f106af270b0fb16484bc5a6d7be9d41b0d7030d9ddf01df477e506",
 };
 const pairedIds = new Set([
   "en-t-p009-q03","en-t-p009-q04","en-t-p009-q05","en-t-p009-q10","en-t-p012-q18",
@@ -41,6 +54,7 @@ async function subject(slug) {
     const base = `src/data/lessons/adabi/${slug}/`;
     const course = await import(new URL(`${base}course.js`, root));
     const hash = createHash("sha256");
+    const questionHash = createHash("sha256");
     hash.update(JSON.stringify(canonical({ units:course.ADABI_UNITS,
       lessons:course.ADABI_LESSONS.map(({id,unitId,label,pages,pdfPages,questionCount,parts}) => ({id,unitId,label,pages,pdfPages,questionCount,parts})) })));
     const steps = new Map();
@@ -57,10 +71,13 @@ async function subject(slug) {
           assert.doesNotMatch(value, /assets\/books\/adabi\//, `${slug}/${step.id}: private document dependency`);
         }
         hash.update(JSON.stringify(canonical({lessonId:catalog.id,id:step.id,type:step.type,content:step.content})));
+        const questionContent = { ...step.content };
+        for (const field of ["correctFeedback", "incorrectFeedback", "solution", "finalAnswer"]) delete questionContent[field];
+        questionHash.update(JSON.stringify(canonical({lessonId:catalog.id,id:step.id,type:step.type,content:questionContent})));
         steps.set(step.id, { ...step, lessonId:catalog.id });
       }
     }
-    return { course, steps, fingerprint:hash.digest("hex") };
+    return { course, steps, fingerprint:hash.digest("hex"), questionFingerprint:questionHash.digest("hex") };
   })());
   return subjects.get(slug);
 }
@@ -92,6 +109,13 @@ test("compiled Adabi preserves all source identities and MCQ/written formats", a
     totals.runtime += steps.size; totals.lessons += course.ADABI_LESSONS.length;
   }
   assert.deepEqual(totals,{records:5029,mcq:1739,written:3290,runtime:5038,lessons:143});
+});
+
+test("explanation and answer-layout edits preserve every published question and correct key", async () => {
+  for (const slug of Object.keys(manifest)) {
+    const { questionFingerprint } = await subject(slug);
+    assert.equal(questionFingerprint,questionFingerprints[slug],`${slug}: published prompt, key, reference or identity changed`);
+  }
 });
 
 test("compiled prompts, keys, answers, per-step feedback and page citations match the audited bank", async () => {

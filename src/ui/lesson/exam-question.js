@@ -120,11 +120,21 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
     }
     if (flipped && !revealed) { revealed = true; onReveal?.(); }
     const visibleFace = flipped ? solution : front;
-    visibleFace.querySelector(".lesson-flashcard-scroll").focus({ preventScroll:true });
+    const visibleScroll = visibleFace.querySelector(".lesson-flashcard-scroll");
     if (prefersReducedMotion() || !rotor.animate) {
       hideInactiveFace();
+      visibleScroll.focus({ preventScroll:true });
+      // Let the retained 3D face paint before retrying a deferred focus change.
+      window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
+        if (signal.aborted || flipped !== showAnswer || !visibleScroll.isConnected || visibleFace.hidden || visibleFace.inert) return;
+        const active = document.activeElement;
+        if (active === document.body || (active?.matches(".lesson-flashcard-scroll") && card.contains(active))) {
+          visibleScroll.focus({ preventScroll:true });
+        }
+      }));
       return;
     }
+    visibleScroll.focus({ preventScroll:true });
     // Native scrollbars and resize-driven cues should not repaint through a 3D turn.
     rotor.classList.add("is-flipping");
     const turn = rotor.animate([

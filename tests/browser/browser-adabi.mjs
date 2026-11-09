@@ -35,6 +35,11 @@ for (const course of ADABI_COURSES) {
           : [["body", content.body], ["final-answer", content.finalAnswer], ["solution", content.solution]] });
       if (!samples.mcq && step.type === "mcq") samples.mcq = sample;
       if (!samples.flashcard && step.type === "exam-question") samples.flashcard = sample;
+      if (step.type === "exam-question" && !samples.multilineAnswer
+        && (content.finalAnswer.match(/^[-*] /gm)?.length || 0) >= 2) samples.multilineAnswer = sample;
+      if (course.subjectId === "adabi-mathematics" && !samples.workedCalculation
+        && ((content.correctFeedback || content.solution || "").match(/^```(?:mathml|latex)/gm)?.length || 0) >= 2)
+        samples.workedCalculation = sample;
       if (!samples.readingFlashcard && step.type === "exam-question" && /\n### /.test(content.body) && content.body.length > 1000) samples.readingFlashcard = sample;
       if (course.subjectId === "adabi-english" && ["en-t-p033-q08", "en-t-p035-q15"].includes(step.id))
         (samples.contextRepairs ||= []).push(sample);
@@ -276,6 +281,46 @@ try {
         await capture(course.subjectId);
         await explanation(page, course.mcq);
       }
+
+      // Real subject answers must retain separate rows inside a stable card.
+      for (const course of routes) {
+        const sample = course.multilineAnswer || course.flashcard;
+        await openQuestion(page, sample);
+        await page.evaluate(async () => {
+          await document.fonts.ready;
+          await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+        });
+        const card = page.locator("[data-exam-card]");
+        const before = await card.boundingBox();
+        await page.locator("[data-exam-front] .lesson-flashcard-scroll").press("Enter");
+        await page.waitForFunction(() => document.querySelector("[data-exam-front]")?.hidden);
+        const after = await card.boundingBox();
+        assert.ok(Math.abs(before.height - after.height) <= 1 && Math.abs(before.y - after.y) <= 1,
+          `${width}px ${course.subjectId}: flipping keeps the answer card in place: ${JSON.stringify({before,after})}`);
+        if (course.multilineAnswer) {
+          const rows = await page.locator("[data-exam-final-answer]").evaluate(answer =>
+            [...answer.querySelectorAll("ul,ol")].map(list => [...list.children].filter(item => item.tagName === "LI")
+              .map(item => item.getBoundingClientRect().top)));
+          assert.ok(rows.some(list => list.length >= 2), `${sample.step.id}: explicit subanswers render as list rows`);
+          assert.ok(rows.every(list => list.every((top,index) => index === 0 || top > list[index - 1])),
+            `${sample.step.id}: consecutive subanswers occupy separate lines`);
+        }
+        await layout(page, `${width}px ${course.subjectId} formatted answer`);
+        await capture(`${course.subjectId}-answer-rows`);
+      }
+      const calculation = routes.find(course => course.subjectId === "adabi-mathematics").workedCalculation;
+      assert.ok(calculation, "Adabi math includes separately boxed worked steps");
+      await openQuestion(page, calculation);
+      await page.locator("[data-question-explain]").click();
+      const worked = page.locator('.question-explanation-dialog [data-explanation-body][aria-busy="false"]');
+      await worked.waitFor();
+      assert.ok(await worked.locator(".lesson-math-sample").count() >= 2, "worked steps use the shared formula boxes");
+      assert.equal(await worked.locator(".lesson-math-error").count(), 0);
+      assert.equal(await worked.evaluate(node => node.scrollWidth > node.clientWidth + 1), false,
+        `${width}px: worked formulas scroll inside their boxes`);
+      await capture("math-worked-boxes");
+      await page.keyboard.press("Escape");
+      await worked.waitFor({ state:"detached" });
 
       const english = routes.find(course => course.subjectId === "adabi-english");
       assert.equal(english.contextRepairs.length, 2);

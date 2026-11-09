@@ -12,13 +12,14 @@ await mkdir(evidence, { recursive:true });
 const publishedExplanations = [];
 for (const key of subjectLessonRegistry.keys()) {
   const [subjectId, lessonId] = key.split(":");
+  if (process.env.EXPLANATION_SUBJECT_PREFIX && !subjectId.startsWith(process.env.EXPLANATION_SUBJECT_PREFIX) && subjectId !== "ict") continue;
   const bank = await loadSubjectLesson(subjectId, lessonId);
   for (const step of parseLessonMarkdown(bank.authoringSource).steps) {
     const markdown = questionExplanation(step)?.markdown;
     if (!markdown) continue;
     const tableCount = markdown.match(/^\|(?:\s*:?-+:?\s*\|)+\s*$/gm)?.length || 0;
     publishedExplanations.push({ id:`${subjectId}:${step.id}`, markdown, tableCount,
-      locale:subjectId === "english" ? "en" : "ar" });
+      locale:bank.locale || (subjectId === "english" ? "en" : "ar") });
   }
 }
 const publishedTables = publishedExplanations.filter(sample => sample.id.startsWith("ict:") && sample.tableCount);
@@ -56,7 +57,7 @@ const fixture = [
 const port = await getAvailablePort();
 const base = `http://127.0.0.1:${port}/`;
 const server = spawn(process.execPath, ["dev-server.mjs"], {
-  env:{ ...process.env, PORT:String(port), LIVE_RELOAD:"0", DEV_AUTO_LOGIN:"1", ACCOUNTS_DATABASE_PATH:":memory:" },
+  env:{ ...process.env, PORT:String(port), LIVE_RELOAD:"0", LEARN_BACKEND:"local", DEV_AUTO_LOGIN:"1", ACCOUNTS_DATABASE_PATH:":memory:" },
   stdio:"ignore",
 });
 let browser;

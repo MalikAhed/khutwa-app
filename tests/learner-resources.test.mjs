@@ -251,6 +251,42 @@ test("explanation receipts update balances without letting older progress receip
   assert.equal(resources.hasExplanation("account:2",key),false);
 });
 
+test("new HTTP purchases show the current lesson explanation after server confirmation", async () => {
+  const key = {subjectId:"biology",lessonId:"lesson",partId:"part",stepId:"question"};
+  for (const type of ["mcq", "exam-question"]) {
+    const step = {type, content:type === "mcq" ? {correctFeedback:"Reviewed explanation"} : {solution:"Reviewed explanation"}};
+    let requests = 0;
+    const resources = createLearnerResources({getAccountType:() => "free",now:() => 1_000_000,apiBase:"/api/progress",
+      fetchImpl:async () => {
+        requests++;
+        return {ok:true,json:async () => ({accountId:"1",
+          resources:{hearts:7,gems:150,refillAt:1_000_000,explanationUnlocks:[questionRewardKey(key)]},
+          explanation:{markdown:"Older account-service explanation"}})};
+      }});
+    assert.equal((await resources.unlockExplanation("account:1",key,{step})).markdown,"Reviewed explanation");
+    assert.equal(requests,1,"a new purchase still requires server confirmation");
+    assert.equal(resources.get("account:1").gems,150);
+    assert.equal(resources.hasExplanation("account:1",key),true);
+    assert.equal((await resources.unlockExplanation("account:1",key,{step})).markdown,"Reviewed explanation");
+    assert.equal(requests,1,"reopening uses the confirmed entitlement without another purchase");
+  }
+});
+
+test("current authored text cannot bypass a rejected or wrong-account purchase", async () => {
+  const key = {subjectId:"biology",lessonId:"lesson",partId:"part",stepId:"question"};
+  const step = {type:"mcq",content:{correctFeedback:"Reviewed explanation"}};
+  for (const status of [402,200]) {
+    const resources = createLearnerResources({getAccountType:() => "free",now:() => 1_000_000,apiBase:"/api/progress",
+      fetchImpl:async () => ({ok:status === 200,status,json:async () => ({accountId:status === 200 ? "2" : "1",
+        resources:{hearts:7,gems:0,refillAt:1_000_000,explanationUnlocks:[]},
+        explanation:{markdown:"Older account-service explanation"}})})});
+    await assert.rejects(resources.unlockExplanation("account:1",key,{step}),
+      status === 402 ? {code:"insufficient-gems"} : /active account changed/);
+    assert.equal(resources.hasExplanation("account:1",key),false);
+    assert.equal(resources.get("account:1").gems,status === 402 ? 0 : 200);
+  }
+});
+
 test("fixture explanation purchases persist atomically and reopen without another charge", async () => {
   const values = new Map();
   const storage = {getItem:key => values.get(key),setItem:(key,value) => values.set(key,value)};
