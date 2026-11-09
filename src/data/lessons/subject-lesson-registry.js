@@ -1,3 +1,4 @@
+import { ADABI_LESSON_LOADERS } from "./adabi/registry.js";
 import { MATHEMATICS_LESSONS } from "./mathematics/math-course.js";
 import { CHEMISTRY_LESSONS } from "./chemistry/chemistry-course.js";
 import { ISLAMIC_LESSONS } from "../subject-catalog.js";
@@ -115,6 +116,8 @@ export const subjectLessonRegistry = new Map([
   [lessonKey("arabic", "arabic-u06-l01"), () => import("./arabic/arabic-u06-l01.js")],
   [lessonKey("arabic", "arabic-u06-l02"), () => import("./arabic/arabic-u06-l02.js")],
 ]);
+
+for (const [key, loader] of ADABI_LESSON_LOADERS) subjectLessonRegistry.set(key, loader);
 
 // Register each canonical book lesson once. Legacy routes resolve below.
 for (const lesson of ISLAMIC_LESSONS) {

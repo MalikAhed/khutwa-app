@@ -1,3 +1,4 @@
+import { getCourseSubjects } from "../data/course.js";
 import { SUPER_PAYWALL_ASSETS } from '../domain/super-plans.js';
 import { updateOfflineDownloadStatus } from "../ui/offline-download-status.js";
 import { createDownloadQueue } from "../services/download-queue.js";
@@ -7,6 +8,27 @@ let initialization, queue, manifest, cache, selected, started = false;
 let offlineFiles = new Set(), offlineReady = false, savingShell, finishOffline = async () => {};
 let offlineIssue = false;
 let getAccountType = () => "guest";
+let getSelection = () => null;
+let offlinePath = null;
+const verifiedFiles = new Set();
+const pathLessons = (catalog, selection) => {
+  if (!selection?.path) return catalog.lessons;
+  const ids = new Set(getCourseSubjects(selection).map(subject => subject.id));
+  return catalog.lessons.filter(lesson => ids.has(lesson.subjectId));
+};
+const installationFiles = catalog => [...new Set([...catalog.onboarding, ...catalog.helpers,
+  ...pathLessons(catalog, getSelection()).flatMap(lesson => [...lesson.first, ...lesson.files])])];
+function refreshOfflineScope() {
+  const path = getSelection()?.path || "";
+  if (!manifest || path === offlinePath) return;
+  shellController?.abort();
+  offlinePath = path;
+  offlineReady = false;
+  document.documentElement.removeAttribute("data-offline-ready");
+  const required = installationFiles(manifest);
+  offlineTotal = required.length;
+  offlineFiles = new Set(required.filter(file => !verifiedFiles.has(file)));
+}
 const installsOffline = () => getAccountType() === "subscribed";
 let offlineTotal = 0, lastRefresh = 0;
 let quietUntil = 0, interactionTimer, refreshDownloads = () => {};
@@ -63,13 +85,14 @@ async function initialize() {
     }
     manifest = catalog;
     // Installation includes lesson figures and explanations, not only the shell.
-    offlineFiles = new Set([...catalog.onboarding, ...catalog.helpers,
-      ...catalog.lessons.flatMap(lesson => [...lesson.first, ...lesson.files])]);
-    offlineTotal = offlineFiles.size;
+    offlinePath = null;
+    refreshOfflineScope();
     const release = document.querySelector('meta[name="learn-release"]')?.content;
     // Never mix a running release with a manifest from a newer deployment.
     if (release && manifest.version !== release) throw new Error("Content catalog changed");
-    const files = [...offlineFiles];
+    // The worker may serve any previously saved path without removing its files.
+    const files = [...new Set([...catalog.onboarding, ...catalog.helpers,
+      ...catalog.lessons.flatMap(lesson => [...lesson.first, ...lesson.files])])];
     const messageWorker = (worker, message) => new Promise(resolve => {
       const channel = new MessageChannel();
       const finish = value => { clearTimeout(timer); channel.port1.close(); resolve(value); };
@@ -105,8 +128,8 @@ async function initialize() {
         // Validate resumed files, including entries saved by an older worker.
         // A former subscriber can retain a complete cache. Free startup must not
         // read/hash that entire installation just to warm one lesson.
-        const resumeFiles = installsOffline() ? files : backgroundFiles(catalog, {
-          accountType:getAccountType(), selectedLesson:!selected?.signal?.aborted ? selected : null, connection:navigator.connection,
+        const resumeFiles = installsOffline() ? installationFiles(catalog) : backgroundFiles(catalog, {
+          accountType:getAccountType(), selection:getSelection(), selectedLesson:!selected?.signal?.aborted ? selected : null, connection:navigator.connection,
         });
         const saved = new Set((resumeFiles.length ? await cache.keys() : []).map(request => request.url));
         for (const file of resumeFiles) {
@@ -114,7 +137,7 @@ async function initialize() {
           const url = new URL(file, base());
           if (saved.has(url.href) && await savedContentMatches(await cache.match(url), file)) completedFiles.push(file);
         }
-        for (const file of completedFiles) offlineFiles.delete(file);
+        for (const file of completedFiles) { verifiedFiles.add(file); offlineFiles.delete(file); }
       } catch { cache = null; /* Retry storage on the next download. */ }
       // Configure the client before downloads can finish: a free user can go
       // offline immediately after the invitation artwork is saved. Failed
@@ -140,7 +163,10 @@ async function initialize() {
         shellHeaders.delete("content-encoding"); shellHeaders.delete("content-length");
         await cache.put(new URL("index.html", base()), new Response(await shell.arrayBuffer(), { status:200, headers:shellHeaders }));
         const worker = await configureWorker();
-        offlineReady = await messageWorker(worker, { type:"OFFLINE_READY" });
+        controller.signal.throwIfAborted();
+        const confirmed = await messageWorker(worker, { type:"OFFLINE_READY" });
+        controller.signal.throwIfAborted();
+        offlineReady = confirmed;
         if (!offlineReady) throw new Error("Offline confirmation was not received");
         if (offlineReady) {
           document.documentElement.dataset.offlineReady = "true";
@@ -161,7 +187,7 @@ async function initialize() {
       const url = new URL(file, base());
       if (!cache && release && "caches" in window) cache = await caches.open(cacheName(release));
       if (installsOffline() && release && !cache) throw new Error("Offline storage unavailable");
-      try { if (cache && await savedContentMatches(await cache.match(url), file)) { offlineFiles.delete(file); offlineIssue = false; await finishOfflineShell(); return; } } catch (error) { cache = null; throw error; }
+      try { if (cache && await savedContentMatches(await cache.match(url), file)) { verifiedFiles.add(file); offlineFiles.delete(file); offlineIssue = false; await finishOfflineShell(); return; } } catch (error) { cache = null; throw error; }
       const response = await fetch(url, { signal:AbortSignal.any([signal, AbortSignal.timeout(20000)]), priority,
         cache:/[?&]v=/.test(url.search) ? "default" : "no-cache", headers:{ "X-Learn-Download":"1" } });
       if (!response.ok) throw new Error(`Content download failed: ${response.status}`);
@@ -173,7 +199,7 @@ async function initialize() {
       if (cache) {
         const headers = new Headers(response.headers);
         headers.delete("content-encoding"); headers.delete("content-length");
-        try { await cache.put(url, new Response(bytes, { status:response.status, headers })); offlineFiles.delete(file); offlineIssue = false; await finishOfflineShell(); }
+        try { await cache.put(url, new Response(bytes, { status:response.status, headers })); verifiedFiles.add(file); offlineFiles.delete(file); offlineIssue = false; await finishOfflineShell(); }
         catch (error) { cache = null; showOfflineStatus(); throw error; }
       }
     } });
@@ -185,10 +211,12 @@ async function initialize() {
 }
 
 // Account changes replace only pending work; previously saved files stay intact.
-export function configureBackgroundLoading({ getAccountType:readAccountType }) {
+export function configureBackgroundLoading({ getAccountType:readAccountType, getSelection:readSelection = () => null }) {
   getAccountType = readAccountType;
+  getSelection = readSelection;
   const refresh = () => {
     queue?.pause();
+    refreshOfflineScope();
     if (!installsOffline()) shellController?.abort();
     showOfflineStatus();
     refreshDownloads();
@@ -197,12 +225,12 @@ export function configureBackgroundLoading({ getAccountType:readAccountType }) {
   return refresh;
 }
 
-export function backgroundFiles(catalog, { accountType, selectedLesson, connection } = {}) {
+export function backgroundFiles(catalog, { accountType, selectedLesson, connection, selection = undefined } = {}) {
   const current = selectedLesson && catalog.lessons.find(lesson => lesson.subjectId === selectedLesson.subjectId && lesson.lessonId === selectedLesson.lessonId);
   const currentFiles = current ? [...current.first, ...current.files] : [];
   const paywallFiles = catalog.helpers.filter(file => SUPER_PAYWALL_ASSETS.includes(file));
   if (accountType === "subscribed") return [...new Set([...currentFiles, ...paywallFiles, ...catalog.onboarding, ...catalog.helpers,
-    ...catalog.lessons.flatMap(lesson => lesson.first), ...catalog.lessons.flatMap(lesson => lesson.files)])];
+    ...pathLessons(catalog, selection).flatMap(lesson => lesson.first), ...pathLessons(catalog, selection).flatMap(lesson => lesson.files)])];
   if (accountType !== "free") return [];
   if (!current) return paywallFiles;
   // Only one neighboring lesson, and only when the link can afford speculation.
@@ -233,7 +261,7 @@ export function warmLearningExperience() {
       if (!downloads) return;
       if (!backgroundAllowed()) { downloads.pause(); return; }
       showOfflineStatus();
-      downloads.start(backgroundFiles(manifest, { accountType:getAccountType(),
+      downloads.start(backgroundFiles(manifest, { accountType:getAccountType(), selection:getSelection(),
         selectedLesson:!selected?.signal?.aborted ? selected : null, connection:navigator.connection }));
       downloads.resume();
       void finishOffline();

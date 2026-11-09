@@ -1,5 +1,5 @@
 import { escapeHtml as esc } from '../lib/dom.js';
-import { COURSE_SUBJECTS } from '../data/course.js';
+import { COURSE_SUBJECTS, getCourseSubjects } from '../data/course.js';
 import { getSubjectRoadmapLesson } from '../data/subject-roadmaps.js';
 
 const paths = {
@@ -60,13 +60,16 @@ function accountControls(student) {
   if (!Number.isSafeInteger(student.version)) return '<p class="notice">إدارة الاشتراك متاحة من خدمة الحسابات المتصلة.</p>';
   const hasSubscription = subscribed(student) || student.subscriptionType === 'subscribed';
   const selected = student.subscriptionSubjects;
+  const pathSubjects = getCourseSubjects(student);
+  // Retain existing grants outside this path when saving an older account.
+  const choices = [...pathSubjects, ...COURSE_SUBJECTS.filter(subject => selected?.includes(subject.id) && !pathSubjects.includes(subject))];
   return `<section class="account-management"><div class="section-heading">${icon('card')}<div><h3>الاشتراك والمواد</h3><p>حدّد المواد والمدة، ثم احفظ التغيير.</p></div></div>
     <p id="action-status" role="status" aria-live="polite"></p><button type="button" class="button button-outline" data-reload-student hidden>${icon('refresh')}تحديث بيانات الطالب</button>
     <fieldset id="account-controls"><legend class="visually-hidden">إدارة الاشتراك والوصول</legend>
       <form id="subscription-form"><fieldset class="scope-options"><legend>المواد المشمولة</legend>
         <label><input type="radio" name="subscriptionScope" value="all" ${selected == null ? 'checked' : ''}>${icon('book')}<span>جميع المواد<small>اشتراك شامل</small></span></label>
         <label><input type="radio" name="subscriptionScope" value="selected" ${selected != null ? 'checked' : ''}>${icon('check')}<span>مواد محددة<small>اختيار مادة أو أكثر</small></span></label></fieldset>
-        <fieldset class="subject-picker" ${selected == null ? 'hidden' : ''}><legend>اختر المواد</legend>${COURSE_SUBJECTS.map(subject => `<label><input type="checkbox" name="subscriptionSubjects" value="${subject.id}" ${selected?.includes(subject.id) ? 'checked' : ''}><span>${icon(subjectIcons[subject.id])}${subject.name}</span></label>`).join('')}</fieldset>
+        <fieldset class="subject-picker" ${selected == null ? 'hidden' : ''}><legend>اختر المواد</legend>${choices.map(subject => `<label><input type="checkbox" name="subscriptionSubjects" value="${subject.id}" ${selected?.includes(subject.id) ? 'checked' : ''}><span>${icon(subjectIcons[subject.id] || subjectIcons[subject.artwork] || 'book')}${subject.name}${pathSubjects.includes(subject) ? '' : ' (اشتراك سابق)'}</span></label>`).join('')}</fieldset>
         <p class="selection-summary" data-scope-summary role="status">${selected == null ? 'سوبر متاح في جميع المواد.' : `${number(selected.length)} مواد مختارة`}</p>
         <div class="subscription-fields"><label for="subscription-duration">مدة الاشتراك<select id="subscription-duration" name="duration"><option value="keep" ${hasSubscription ? '' : 'hidden'} ${subscribed(student) ? 'selected' : ''}>الاحتفاظ بتاريخ الانتهاء الحالي</option><option value="year" ${subscribed(student) ? '' : 'selected'}>سنة من اليوم</option><option value="month">شهر من اليوم</option><option value="week">أسبوع من اليوم</option><option value="permanent">دائم</option><option value="custom">تاريخ محدد</option></select></label>
         <label data-expiry-field hidden>تاريخ الانتهاء<input type="date" id="subscription-expiry" name="expiresAt" min="${new Date(Date.now() + 86400000).toISOString().slice(0,10)}"></label></div>

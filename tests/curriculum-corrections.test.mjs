@@ -6,12 +6,15 @@ import { subjectLessonRegistry, loadSubjectLesson } from "../src/data/lessons/su
 import { parseLessonMarkdown } from "../src/markdown/lesson-authoring.js";
 import { questionExplanation } from "../src/domain/question-explanations.js";
 import { getSubjectRoadmap } from "../src/data/subject-roadmaps.js";
+import { getCourseSubjects } from "../src/data/course.js";
 import { readRoute } from "../src/app/route.js";
 
-test("the canonical curriculum contains exactly 7,229 questions with complete authored explanations", async () => {
+test("the canonical scientific curriculum contains exactly 7,229 questions with complete authored explanations", async () => {
   const questions = new Map();
   const localAssets = new Set();
-  for (const [key, load] of subjectLessonRegistry) {
+  const subjects = new Set(getCourseSubjects({ path:"scientific" }).map(subject => subject.id));
+  const registry = [...subjectLessonRegistry].filter(([key]) => subjects.has(key.split(":")[0]));
+  for (const [key] of registry) {
     const [subject, lessonId] = key.split(":");
     const lessons = [await loadSubjectLesson(subject, lessonId)];
     for (const lesson of lessons) {
@@ -35,7 +38,7 @@ test("the canonical curriculum contains exactly 7,229 questions with complete au
   }
   for (const asset of localAssets) await assert.doesNotReject(access(new URL(`../${asset}`, import.meta.url)), `Missing question/source asset: ${asset}`);
   assert.equal(questions.size, 7229);
-  assert.equal(subjectLessonRegistry.size, 124);
+  assert.equal(registry.length, 124);
   assert.equal(subjectLessonRegistry.has("physics:latex-test"), false);
   assert.equal(subjectLessonRegistry.has("islamic-education:islamic-quran"), false);
   assert.equal(subjectLessonRegistry.has("mathematics:matrices"), false);

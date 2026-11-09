@@ -63,19 +63,27 @@ export function normalizeQuestionRewardKey(key) {
 
 // Navigation metadata supplies current identities without loading question banks.
 // Aliases and duplicate placements share one reward; hidden examples earn none.
-const identities = [...new Set(COURSE_SUBJECTS.filter(subject => subject.status === "available")
-  .flatMap(subject => (getSubjectRoadmap(subject.id)?.units || []).flatMap(unit => unit.lessons
-    .filter(lesson => !lesson.hidden && !lesson.optional)
-    .flatMap(lesson => lesson.parts.flatMap(part => (part.questionIds || getIctPartQuestionIds(part.id))
-      .map(stepId => questionRewardKey({ subjectId:subject.id, stepId })))))))].sort();
+function pathQuestionRewards(path) {
+  const identities = [...new Set(COURSE_SUBJECTS.filter(subject => subject.status === "available"
+    && (subject.path || "scientific") === path)
+    .flatMap(subject => (getSubjectRoadmap(subject.id)?.units || []).flatMap(unit => unit.lessons
+      .filter(lesson => !lesson.hidden && !lesson.optional)
+      .flatMap(lesson => lesson.parts.flatMap(part => (part.questionIds || getIctPartQuestionIds(part.id))
+        .map(stepId => questionRewardKey({ subjectId:subject.id, stepId })))))))].sort();
+  // Each path retains the same level scale. Adding a path must never reprice
+  // existing scientific answers or reduce students' previously earned XP.
+  return identities.map((key, index) => {
+    const [subjectId, stepId] = JSON.parse(key);
+    const xp = Math.floor((index + 1) * MAX_LEVEL_XP / identities.length)
+      - Math.floor(index * MAX_LEVEL_XP / identities.length);
+    return Object.freeze({ subjectId, stepId, xp });
+  });
+}
 
-// Integer differences distribute the remainder evenly and sum to exactly 49,900.
-export const QUESTION_REWARDS = Object.freeze(identities.map((key, index) => {
-  const [subjectId, stepId] = JSON.parse(key);
-  const xp = Math.floor((index + 1) * MAX_LEVEL_XP / identities.length)
-    - Math.floor(index * MAX_LEVEL_XP / identities.length);
-  return Object.freeze({ subjectId, stepId, xp });
-}));
+export const QUESTION_REWARDS = Object.freeze([
+  ...pathQuestionRewards("scientific"),
+  ...pathQuestionRewards("literary"),
+]);
 const rewards = new Map(QUESTION_REWARDS.map(question => [questionRewardKey(question), question.xp]));
 
 export const getQuestionXp = question => rewards.get(questionRewardKey(question)) || 0;

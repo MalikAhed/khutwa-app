@@ -485,7 +485,7 @@ export function createSubjectLearningController({
         );
         operation.add(rendered.destroy);
         if (resourceStore) {
-          heartDepletion = mountHeartDepletion({ resourceStore, ownerId, learnerName:productService.getLearnerDisplayName(), studyKey:{subjectId:nextSubjectId,lessonId:nextLessonId}, signal:operation.signal, returnFocus:elements.lessonContent, onReturnHome,
+          heartDepletion = mountHeartDepletion({ resourceStore, ownerId, learnerName:productService.getLearnerDisplayName(), selection:productService.getVisitorSelection(), studyKey:{subjectId:nextSubjectId,lessonId:nextLessonId}, signal:operation.signal, returnFocus:elements.lessonContent, onReturnHome,
             autoShowEmpty:!hasFreeLessonPractice({subjectId:nextSubjectId,lessonId:nextLessonId}),
             onReturnToSubject:() => returnToRoadmap() });
           operation.add(heartDepletion.destroy);

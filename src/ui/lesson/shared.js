@@ -25,6 +25,7 @@ export function spaceWorkedEquations(container) {
 }
 
 export function lessonLocale(lesson) {
+  if (lesson?.locale === "ar" || lesson?.locale === "en") return lesson.locale;
   return /[\u0600-\u06ff]/.test(
     `${lesson?.title || ""} ${lesson?.summary || ""}`,
   )

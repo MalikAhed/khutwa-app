@@ -118,15 +118,25 @@ function validateContentDirectiveBlocks(source, issues) {
 
 function containsRawHtml(source) {
   let fenced = false;
-  return source.split("\n").some((line) => {
+  let underlineDepth = 0;
+  const invalidMarkup = source.split("\n").some((line) => {
     if (/^```/.test(line.trim())) {
       fenced = !fenced;
       return false;
     }
     if (fenced) return false;
     const withoutInlineCode = line.replace(/`[^`\n]*`/g, "");
-    return /<\/?[A-Za-z][A-Za-z0-9-]*(?=\s|\/?>)/.test(withoutInlineCode);
+    // Original source questions refer to underlined words. Preserve that semantic
+    // formatting without admitting arbitrary HTML or author-controlled attributes.
+    let invalidUnderline = false;
+    const withoutUnderlines = withoutInlineCode.replace(/<u>|<\/u>/g, (tag) => {
+      underlineDepth += tag === "<u>" ? 1 : -1;
+      if (underlineDepth < 0 || underlineDepth > 1) invalidUnderline = true;
+      return "";
+    });
+    return invalidUnderline || /<\/?[A-Za-z][A-Za-z0-9-]*(?=\s|\/?>)/.test(withoutUnderlines);
   });
+  return invalidMarkup || underlineDepth !== 0;
 }
 
 function commonConfig(source, type, index) {

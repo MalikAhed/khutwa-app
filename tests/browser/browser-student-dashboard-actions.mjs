@@ -158,11 +158,11 @@ try {
   const beforeScope = mutations.length;
   await page.locator('#subscription-form button').click();
   assert.equal(mutations.length,beforeScope,'empty subject selection cannot save');
-  await page.locator('[name=subscriptionSubjects][value=physics]').check();
-  await page.locator('[name=subscriptionSubjects][value=ict]').check();
+  await page.locator('[name=subscriptionSubjects][value=adabi-history]').check();
+  await page.locator('[name=subscriptionSubjects][value=adabi-information-technology]').check();
   await page.locator('#subscription-form button').click();
   await page.waitForFunction(() => document.querySelector('#action-status')?.textContent === 'تم حفظ التغيير.');
-  assert.deepEqual(mutations.at(-1).subscriptionSubjects,['physics','ict']);
+  assert.deepEqual(mutations.at(-1).subscriptionSubjects,['adabi-history','adabi-information-technology']);
   assert.equal(await page.locator('[name=subscriptionSubjects]:checked').count(),2,'saved subjects survive a detail refresh');
   await page.screenshot({path:`/tmp/khutwa-admin-subscriptions-${engine}.png`});
   await page.setViewportSize({width:390,height:844});

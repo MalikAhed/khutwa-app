@@ -15,7 +15,7 @@ import {
 } from "./visitor-flow-markup.js";
 
 const FLOW_IDS = new Set(["entry", "register", "sign-in"]);
-const UNAVAILABLE_ONBOARDING_CHOICES = new Set(["curriculum:full-palestinian", "path:literary"]);
+const UNAVAILABLE_ONBOARDING_CHOICES = new Set(["curriculum:full-palestinian"]);
 function onboardingChoiceError(name, value) {
   return UNAVAILABLE_ONBOARDING_CHOICES.has(`${name}:${value}`)
     ? "عذرًا، غير متاح حاليًا."

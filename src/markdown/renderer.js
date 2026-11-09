@@ -335,9 +335,9 @@ function directMixedText(markup, locale) {
     const node = walker.currentNode;
     if (!node.parentElement?.closest("code,pre,math,bdi,kbd,samp")) nodes.push(node);
   }
-  // A phrase can include programming names, simple formulas and file extensions.
+  // A phrase can include programming names, formulas, extensions and contractions.
   // Sentence punctuation stays outside the isolated phrase.
-  const phrase = /(?:\.?[A-Za-z0-9][A-Za-z\p{Number}.+#/_:=<>*^%×÷−±≤≥≠≈→←⇌′″°-]*)(?:[ \t]+(?:[+*=<>/-][ \t]+)?\.?[A-Za-z0-9][A-Za-z\p{Number}.+#/_:=<>*^%×÷−±≤≥≠≈→←⇌′″°-]*)*(?:[ \t]+[+*=<>/-])?/gu;
+  const phrase = /(?:\.?[A-Za-z0-9][A-Za-z\p{Number}.+#/_:=<>*^%×÷−±≤≥≠≈→←⇌′″°-]*(?:['’][A-Za-z][A-Za-z\p{Number}.+#/_:=<>*^%×÷−±≤≥≠≈→←⇌′″°-]*)*)(?:[ \t]+(?:[+*=<>/-][ \t]+)?\.?[A-Za-z0-9][A-Za-z\p{Number}.+#/_:=<>*^%×÷−±≤≥≠≈→←⇌′″°-]*(?:['’][A-Za-z][A-Za-z\p{Number}.+#/_:=<>*^%×÷−±≤≥≠≈→←⇌′″°-]*)*)*(?:[ \t]+[+*=<>/-])?/gu;
   nodes.forEach(node => {
     const text = node.textContent;
     if (!/[A-Za-z]/.test(text)) return;

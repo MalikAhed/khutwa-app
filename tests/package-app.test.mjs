@@ -44,7 +44,8 @@ test('static artifact is self-contained, fixture-only and excludes private/sourc
   const retainedTeaching = 'assets/lessons/ict/summary/access-p003-relational.webp';
   assert.equal(catalogFiles.has(retainedTeaching), false, 'historical teaching is outside the active download catalog');
   await access(path.join(output, retainedTeaching));
-  assert.ok(files.every(file => !file.endsWith('.pdf')), 'source PDFs are archived outside the website');
+  assert.ok(files.every(file => !file.endsWith('.pdf')), 'original textbooks remain private');
+  assert.ok(files.every(file => !/src\/data\/lessons\/adabi\/[^/]+\/(?:authoring|source-coverage)\.json$/.test(file)), 'private authoring and audit ledgers are excluded');
   await access(path.join(output, 'assets/lessons/ict/exams/source-pages/classified-p006.webp'));
   await access(path.join(output, 'node_modules/dompurify/LICENSE'));
   const { createLearnerResources } = await import(pathToFileURL(path.join(output, 'src/services/learner-resources.js')));
@@ -52,9 +53,10 @@ test('static artifact is self-contained, fixture-only and excludes private/sourc
   const { parseLessonMarkdown } = await import(pathToFileURL(path.join(output, 'src/markdown/lesson-authoring.js')));
   const step = parseLessonMarkdown(lesson.authoringSource).steps.find(step => step.type === 'mcq');
   const resources = createLearnerResources({ getAccountType:() => 'free', fetchImpl:() => { throw new Error('Packaged explanations must use authored content.'); } });
+  const initialGems = resources.get('demo:package').gems;
   const explanation = await resources.unlockExplanation('demo:package', { subjectId:'mathematics', lessonId:'average-change', partId:'average-change-practice', stepId:step.id }, { step });
   assert.equal(explanation.markdown, step.content.correctFeedback);
-  assert.equal(resources.get('demo:package').gems, 150);
+  assert.equal(resources.get('demo:package').gems, initialGems, 'free starter explanations preserve the existing balance');
 
 });
 

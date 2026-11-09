@@ -97,10 +97,11 @@ export async function packageApp({ server = false } = {}) {
   const entries = await readdir(outputDirectory, { recursive:true, withFileTypes:true });
   const files = entries.filter(entry => entry.isFile());
   for (const file of files) bytes += (await stat(path.join(file.parentPath, file.name))).size;
-  // Nine subject paths retain 7,229 questions, worked explanations and needed
-  // figures. Transcribed textbook quotations replace redundant scans; original
-  // archives and authoring ledgers stay outside the browser artifact.
-  if (bytes > 64 * 1024 * 1024) throw new Error("Packaged app exceeds the 64 MiB question-course budget. Review asset use before deliberately adjusting the budget.");
+  // The combined eighteen-subject artifact includes both nine-subject paths;
+  // automatic study downloads still follow the learner's selected path.
+  // Question figures remain included; authoring ledgers and exam archives stay
+  // outside the browser artifact.
+  if (bytes > 80 * 1024 * 1024) throw new Error("Packaged app exceeds the 80 MiB question-course budget. Review asset use before deliberately adjusting the budget.");
   console.log(`Packaged ${mode} app: ${outputDirectory} (${files.length} files, ${(bytes / 1024 / 1024).toFixed(2)} MiB)`);
   return outputDirectory;
 }

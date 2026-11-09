@@ -44,6 +44,7 @@ export function createRockyTour({service,storage,onHome,onComplete}) {
   const finish=()=>{state.finish();clearPrompt();onComplete?.();};
   const remainingLessonTips=(delay=260)=>{
     for(const id of ['slider','report','exit']) {
+      if(!descriptions[id].selectors.some(selector=>document.querySelector(selector)))continue;
       if(id==='report' ? !state.has('report-hide') : !state.has(id)){go(id,delay);return;}
     }
     go('wait-answer');
@@ -204,7 +205,7 @@ export function createRockyTour({service,storage,onHome,onComplete}) {
         if(questionType==='exam-question'&&!state.has('flashcard'))go('flashcard',700);
         else if(changed)go('wait-answer');
       }
-      if(event.type==='reveal'){state.mark('flashcard');if(!state.has('assess'))go('assess',1400);else go('wait-answer');}
+      if(event.type==='reveal'){state.mark('flashcard');if(!state.has('assess')&&document.querySelector('[data-exam-self-check]'))go('assess',1400);else go('wait-answer');}
       if(event.type==='flip'&&!event.revealed&&state.read().stage==='flip-back'){state.mark('flip-back');afterOutcome(1200);}
       if(event.type==='answer'){
         if(questionType==='exam-question')state.mark('assess');

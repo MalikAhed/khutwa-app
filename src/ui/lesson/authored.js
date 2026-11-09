@@ -70,7 +70,10 @@ export function renderAuthoredInteractiveLesson(
     questionFilterIds,
   } = options;
   const shell = container.closest(".lesson-shell") || container;
-  const demo = demoMode ? selectLessonDemo(authoredSteps, { firstMcq:shell.dataset.subject === "ict" }) : null;
+  const demo = demoMode ? selectLessonDemo(authoredSteps, {
+    firstMcq:shell.dataset.subject === "ict",
+    preserveTypes:shell.dataset.subject?.startsWith("adabi-"),
+  }) : null;
   if (demo) authoredSteps = demo.steps;
   const questionFeedbackFor = id => getQuestionFeedback?.(demo?.sources.get(id)?.stepId || id);
   const controller = new AbortController();

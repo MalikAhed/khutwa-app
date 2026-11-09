@@ -9,7 +9,7 @@ const subjectPlan = SUPER_PLANS.find(plan => plan.id === 'one-subject');
 const infinityMark = '<svg class="super-benefit__infinity" viewBox="0 0 36 22" fill="none" aria-hidden="true"><path d="M18 11c-4-5-6-7-9-7a7 7 0 0 0 0 14c3 0 5-2 9-7s6-7 9-7a7 7 0 0 1 0 14c-3 0-5-2-9-7Z" stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
 /** One full-screen invitation shared by hearts and gems. */
-export function mountHeartDepletion({ resourceStore, ownerId, learnerName = '', studyKey, signal, returnFocus, autoShowEmpty = true, onReturnHome, onReturnToSubject }) {
+export function mountHeartDepletion({ resourceStore, ownerId, learnerName = '', selection = undefined, studyKey, signal, returnFocus, autoShowEmpty = true, onReturnHome, onReturnToSubject }) {
   const controller = new AbortController();
   let dialog = null, opener = null, timer = null;
   let shownEmpty = false;
@@ -109,8 +109,8 @@ export function mountHeartDepletion({ resourceStore, ownerId, learnerName = '', 
         <section data-heart-trial hidden></section>
         <button class="system-action heart-depletion__resume" data-heart-resume type="button">العودة إلى سؤالي</button>
       </section>
-    </div>${superSubjectPickerMarkup(subjectPlan.priceIls)}`;
-    const picker = mountSuperSubjectPicker({ dialog:active, plan:subjectPlan, signal:controller.signal, learnerName });
+    </div>${superSubjectPickerMarkup(subjectPlan.priceIls, selection)}`;
+    const picker = mountSuperSubjectPicker({ dialog:active, plan:subjectPlan, signal:controller.signal, learnerName, selection });
     active.addEventListener('cancel',event => {event.preventDefault();if (active.dataset.step === 'subjects') picker.back();else dismiss();},{signal:controller.signal});
     active.querySelector('[data-heart-close]').addEventListener('click',dismiss,{signal:controller.signal});
     active.querySelector('[data-heart-resume]').addEventListener('click',() => {

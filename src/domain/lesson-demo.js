@@ -8,13 +8,20 @@ function complexity(step) {
     + (content.example ? 400 : 0);
 }
 
-export function selectLessonDemo(authoredSteps, { firstMcq = false } = {}) {
+export function selectLessonDemo(authoredSteps, { firstMcq = false, preserveTypes = false } = {}) {
   const questions = authoredSteps.filter(step => ["mcq", "exam-question"].includes(step.type));
   if (!questions.length) throw new Error("The lesson has no questions for a demo.");
   const choose = type => questions.filter(step => step.type === type).sort((a, b) => complexity(a) - complexity(b))[0];
   let mcq = firstMcq ? questions.find(step => step.type === "mcq") : choose("mcq");
   let card = choose("exam-question");
   const sources = new Map();
+  if (preserveTypes) {
+    // A short source-faithful demo never turns written answers into distractors
+    // or changes an authored question's format or progress identity.
+    const step = mcq || card;
+    sources.set(step.id, { stepId:step.id, type:step.type, save:true });
+    return { steps:[step], sources };
+  }
   if (mcq) sources.set(mcq.id, { stepId:mcq.id, type:"mcq", save:true });
   else {
     const source = card;

@@ -30,6 +30,7 @@ const fixture = [
   "# مقارنة أنواع البيانات",
   "نوع Integer يشغل 2 بايت، ونوع Single يشغل 4 بايت.",
   "Integer and Single are numeric types.",
+  "العبارة **I don't enjoy parties** تصف عادة، والصياغة **I don’t enjoy parties** تحمل المعنى نفسه.",
   "نختار `Integer` للأعداد الصحيحة و`Single` للأعداد الكسرية.",
   "==معلومة **مهمة**==: هذا تمييز مرئي.",
   "| النوع | الاسم في البرنامج | السعة | الاستخدام | مثال |",
@@ -159,6 +160,14 @@ try {
   assert.equal(directions.arabic, "الطلبة", "Arabic identifiers retain RTL inside SQL");
   assert.ok(directions.font.includes("Amiri"));
   assert.ok(directions.mathFont.every(font => /Math|Amiri/.test(font)), "equations retain a mathematical font");
+  const contractions = await sheet.evaluate(node => {
+    const paragraph = [...node.querySelectorAll("p")].find(p => p.textContent.includes("I don't enjoy parties"));
+    return [...paragraph.querySelectorAll("strong")].map(term => ({
+      text:term.textContent, isolated:[...term.querySelectorAll('bdi[dir="ltr"]')].map(part => part.textContent),
+    }));
+  });
+  assert.deepEqual(contractions, ["I don't enjoy parties", "I don’t enjoy parties"].map(text => ({ text, isolated:[text] })),
+    "ASCII and curly contractions remain complete LTR phrases inside Arabic explanations");
   const emphasis = await page.evaluate(async () => {
     const { renderMarkdownDocument } = await import("./src/markdown/renderer.js");
     const { highlightEnglishText } = await import("./src/ui/lesson/english-text.js");

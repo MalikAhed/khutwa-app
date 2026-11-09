@@ -10,7 +10,9 @@ export async function applyServerDataReset({ allowOffline = false } = {}) {
   try { response = await fetch("/api/app-state", { cache:"no-store", signal:AbortSignal.timeout(5000) }); }
   catch (error) {
     if (allowOffline && savedBaseline()) return false;
-    throw Object.assign(error instanceof Error ? error : new Error("Connection failed", { cause:error }), { code:"offline-reconnect" });
+    // DOMException.code is read-only. Keep the original failure as the cause
+    // instead of mutating an AbortError/TimeoutError returned by fetch.
+    throw Object.assign(new Error(error instanceof Error ? error.message : "Connection failed", { cause:error }), { code:"offline-reconnect" });
   }
   if (response.status >= 500 && allowOffline && savedBaseline()) return false;
   if (!response.ok) throw new Error("The app's data state could not be checked.");

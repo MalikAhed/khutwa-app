@@ -37,7 +37,7 @@ const offlineAccess = createOfflineAccess({ storage:offlineStorage });
 if (appConfig.accountMode === "http") {
   try { await applyServerDataReset({ allowOffline:offlineAccess.inspect().allowed }); }
   catch (error) {
-    if (navigator.onLine === false) throw Object.assign(error, { code:"offline-reconnect" });
+    if (navigator.onLine === false) throw Object.assign(new Error(error instanceof Error ? error.message : "Reconnect to verify offline access.", { cause:error }), { code:"offline-reconnect" });
     throw error;
   }
 }
@@ -84,7 +84,7 @@ if (restoredSession.status === "unavailable") {
   const message = 'error' in restoredSession && restoredSession.error;
   throw Object.assign(new Error(message || "Reconnect to verify offline access. Saved work is preserved."), { code:message ? "account-unavailable" : "offline-reconnect" });
 }
-productService.subscribe(configureBackgroundLoading({getAccountType:() => productService.getAccountType()}));
+productService.subscribe(configureBackgroundLoading({getAccountType:() => productService.getAccountType(), getSelection:() => productService.getVisitorSelection()}));
 await progressStore.ready(productService.getLearnerProgressOwner());
 let progressOwner = productService.getLearnerProgressOwner();
 productService.subscribe(() => {
@@ -131,7 +131,7 @@ const viewLifecycle = createViewLifecycle();
 let pathScrollPosition = 0;
 let pendingMapReturn = false;
 let pendingAccountRoute = null;
-renderCourseMap(elements.courseUnits);
+renderCourseMap(elements.courseUnits, { selection:productService.getVisitorSelection() });
 mountLearnerDashboard({
   container: elements.courseUnits,
   service: productService,
@@ -139,7 +139,7 @@ mountLearnerDashboard({
   resourceStore,
   onSuperTrial:() => {
     const operation = viewLifecycle.begin();
-    const offer = mountHeartDepletion({ resourceStore, ownerId:productService.getLearnerProgressOwner(), learnerName:productService.getLearnerDisplayName(),
+    const offer = mountHeartDepletion({ resourceStore, ownerId:productService.getLearnerProgressOwner(), learnerName:productService.getLearnerDisplayName(), selection:productService.getVisitorSelection(),
       signal:operation.signal, autoShowEmpty:false, returnFocus:elements.navigationItems[0] });
     operation.add(offer.destroy);
     offer.showOffer();
@@ -310,11 +310,12 @@ function selectPage(
   const isLearnPage = page === "learn";
   const isSubjectsPage = isLearnPage || page === "rated-questions";
   elements.courseUnits.dataset.page = page;
-  if (isSubjectsPage && (page === "rated-questions" || elements.courseUnits.querySelector(".subject-map")?.dataset.catalog !== page)) {
+  if (isSubjectsPage && (page === "rated-questions" || elements.courseUnits.querySelector(".subject-map")?.dataset.catalog !== page || elements.courseUnits.querySelector(".subject-map")?.dataset.path !== (productService.getVisitorSelection()?.path || "scientific"))) {
     renderCourseMap(elements.courseUnits, {
       ratedQuestions:page === "rated-questions",
       snapshot:productService.getLearnerHomeSnapshot(),
       questionFeedback,
+      selection:productService.getVisitorSelection(),
     });
   }
   if (page === "rated-questions") {

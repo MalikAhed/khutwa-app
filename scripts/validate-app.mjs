@@ -4,7 +4,7 @@ import { access, readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import { builtinModules } from "node:module";
 import { fileURLToPath } from "node:url";
-import { COURSE_SUBJECTS, TOTAL_SUBJECTS } from "../src/data/course.js";
+import { COURSE_SUBJECTS, TOTAL_SUBJECTS, getCourseSubjects } from "../src/data/course.js";
 import { loadSubjectLesson, subjectLessonRegistry } from "../src/data/lessons/subject-lesson-registry.js";
 import { validateOwners } from "./project-map.mjs";
 import { STUDENT_DASHBOARD_PATH } from "../src/server/student-dashboard.mjs";
@@ -38,12 +38,15 @@ async function collectJavaScript(directory, result = []) {
 assert(TOTAL_SUBJECTS > 0, "the subject catalog must not be empty");
 assert(new Set(COURSE_SUBJECTS.map(({ id }) => id)).size === TOTAL_SUBJECTS, "every subject must have a unique id");
 assert(COURSE_SUBJECTS.every(({ name, status }) => name && ["available", "unpublished"].includes(status)), "every subject must have a name and an explicit publication status");
-assert(COURSE_SUBJECTS.filter(({ status }) => status === "available").map(({ id }) => id).join() === "ict,mathematics,mathematics-2,physics,biology,chemistry,english,arabic,islamic-education", "published question courses are available");
+for (const path of ["scientific", "literary"]) {
+  const subjects = getCourseSubjects({ path });
+  assert(subjects.length === 9 && subjects.every(subject => subject.status === "available"), `${path} has nine published subjects`);
+}
 
 const indexHtml = await readFile(path.join(projectRoot, "index.html"), "utf8");
 for (const match of indexHtml.matchAll(/(?:src|href)="([^"#]+)"/g)) {
-  const reference = match[1];
-  if (/^(?:https?:|data:)/.test(reference)) continue;
+  const reference = match[1].split(/[?#]/, 1)[0];
+  if (!reference || /^(?:https?:|data:)/.test(reference)) continue;
   // Authenticated HTML is served by this registered HTTP route. Its page and
   // access restrictions are exercised by student-dashboard.test.mjs.
   if (reference === STUDENT_DASHBOARD_PATH) continue;

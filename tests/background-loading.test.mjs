@@ -31,3 +31,19 @@ test('free accounts prepare only paywall artwork before selecting a lesson',()=>
  assert.deepEqual(backgroundFiles(withPaywall,{accountType:'guest'}),[]);
  assert.ok(backgroundFiles(withPaywall,{accountType:'free',selectedLesson}).includes(art));
 });
+
+
+test('paid background downloads follow the active path while keeping requested content available', () => {
+ const mixed = { ...catalog, lessons:[
+  {subjectId:'ict',lessonId:'1',first:['scientific-first'],files:['scientific-lesson']},
+  {subjectId:'adabi-history',lessonId:'1',first:['history-first'],files:['history-lesson']},
+  {subjectId:'adabi-english',lessonId:'1',first:['english-first'],files:['english-lesson']},
+ ] };
+ const literary = backgroundFiles(mixed,{accountType:'subscribed',selection:{path:'literary'}});
+ assert.ok(literary.includes('history-lesson') && literary.includes('english-lesson'));
+ assert.ok(!literary.includes('scientific-lesson'));
+ const scientific = backgroundFiles(mixed,{accountType:'subscribed',selection:{path:'scientific'}});
+ assert.ok(scientific.includes('scientific-lesson'));
+ assert.ok(!scientific.includes('history-lesson') && !scientific.includes('english-lesson'));
+ assert.ok(scientific.includes('shell') && literary.includes('shell'));
+});

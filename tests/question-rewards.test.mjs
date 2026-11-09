@@ -33,27 +33,30 @@ test("cross-part aliases redirect only from their declared lesson and part and s
   }
 });
 
-test("every unique question is needed to reach level 500 and the integer XP adds up exactly", () => {
+test("each path reaches level 500 only after all its questions and integer XP adds up exactly", () => {
   assert.equal(MAX_LEVEL, 500);
   assert.equal(MAX_LEVEL_XP, 49900);
-  const rewards = QUESTION_REWARDS.map(question => question.xp);
-  assert.ok(rewards.every(xp => Number.isSafeInteger(xp) && xp > 0));
-  assert.ok(Math.max(...rewards) - Math.min(...rewards) <= 1);
-  assert.equal(new Set(QUESTION_REWARDS.map(questionRewardKey)).size, rewards.length);
-  let total = 0;
-  for (const [index, xp] of rewards.entries()) {
-    total += xp;
-    assert.equal(getLevelProgress(total).level === MAX_LEVEL, index === rewards.length - 1);
+  for (const literary of [false, true]) {
+    const pool = QUESTION_REWARDS.filter(question => question.subjectId.startsWith("adabi-") === literary);
+    const rewards = pool.map(question => question.xp);
+    assert.ok(rewards.every(xp => Number.isSafeInteger(xp) && xp > 0));
+    assert.ok(Math.max(...rewards) - Math.min(...rewards) <= 1);
+    assert.equal(new Set(pool.map(questionRewardKey)).size, rewards.length);
+    let total = 0;
+    for (const [index, xp] of rewards.entries()) {
+      total += xp;
+      assert.equal(getLevelProgress(total).level === MAX_LEVEL, index === rewards.length - 1);
+    }
+    assert.equal(total, MAX_LEVEL_XP);
+    const allCorrect = new Map();
+    for (const question of pool) {
+      const key = partKey({ subjectId:question.subjectId, lessonId:"all", partId:"all" });
+      if (!allCorrect.has(key)) allCorrect.set(key, emptyPart());
+      allCorrect.get(key).review.push({ stepId:question.stepId, misses:0, active:false, solved:true });
+    }
+    assert.equal([...recalculateQuestionRewards(allCorrect).values()].reduce((sum, record) => sum + record.rewardXp, 0), MAX_LEVEL_XP);
+    for (const xp of rewards) assert.ok(getLevelProgress(total - xp).level < MAX_LEVEL);
   }
-  assert.equal(total, MAX_LEVEL_XP);
-  const allCorrect = new Map();
-  for (const question of QUESTION_REWARDS) {
-    const key = partKey({ subjectId:question.subjectId, lessonId:"all", partId:"all" });
-    if (!allCorrect.has(key)) allCorrect.set(key, emptyPart());
-    allCorrect.get(key).review.push({ stepId:question.stepId, misses:0, active:false, solved:true });
-  }
-  assert.equal([...recalculateQuestionRewards(allCorrect).values()].reduce((sum, record) => sum + record.rewardXp, 0), MAX_LEVEL_XP);
-  for (const xp of rewards) assert.ok(getLevelProgress(total - xp).level < MAX_LEVEL);
   assert.equal(getQuestionXp({ subjectId:"physics", stepId:"physics-latex-mcq" }), 0);
   assert.equal(getQuestionXp({ subjectId:"ict", stepId:"retired-teaching-question" }), 0);
 });

@@ -14,18 +14,44 @@ test("every published lesson supports an MCQ/flashcard demo without changing sou
       if (!lesson?.authoringSource) continue;
       const steps = compileLessonMarkdown(lesson.authoringSource).parsed.steps;
       const before = JSON.stringify(steps);
-      const demo = selectLessonDemo(steps, { firstMcq:subject.id === "ict" });
+      const preserveTypes = subject.id.startsWith("adabi-");
+      const demo = selectLessonDemo(steps, { firstMcq:subject.id === "ict", preserveTypes });
       if (subject.id === "ict") assert.equal(demo.steps[0].id,steps.find(step => step.type === "mcq").id,"ICT starts with its first published MCQ");
-      assert.deepEqual(demo.steps.map(step => step.type),["mcq","exam-question"],`${subject.id}/${item.id}`);
-      assert.ok(demo.steps[0].content.answers.length >= 2);
-      assert.equal(demo.steps[0].content.answers.filter(answer => answer.correct).length,1);
-      assert.ok(demo.steps[1].content.body && demo.steps[1].content.finalAnswer);
+      assert.deepEqual(demo.steps.map(step => step.type),preserveTypes
+        ? [steps.some(step => step.type === "mcq") ? "mcq" : "exam-question"]
+        : ["mcq","exam-question"],`${subject.id}/${item.id}`);
+      for (const step of demo.steps) {
+        if (step.type === "mcq") {
+          assert.ok(step.content.answers.length >= 2);
+          assert.equal(step.content.answers.filter(answer => answer.correct).length,1);
+        } else assert.ok(step.content.body && step.content.finalAnswer);
+        if (preserveTypes) assert.strictEqual(step,steps.find(source => source.id === step.id));
+      }
       for (const source of demo.sources.values()) assert.ok(steps.some(step => step.id === source.stepId));
       assert.equal(JSON.stringify(steps),before);
       checked += 1;
     }
   }
   assert.ok(checked >= COURSE_SUBJECTS.length);
+});
+
+test("source-preserving demos keep a single written card without inventing an MCQ or distractors", () => {
+  const card = { id:"original-written",type:"exam-question",content:{body:"Define the term.",finalAnswer:"The definition.",solution:"Source explanation."} };
+  const demo = selectLessonDemo([card], {preserveTypes:true});
+  assert.deepEqual(demo.steps,[card]);
+  assert.strictEqual(demo.steps[0],card);
+  assert.deepEqual([...demo.sources],[['original-written',{stepId:'original-written',type:'exam-question',save:true}]]);
+  const sameAnswer = {...card,id:'another-written'};
+  assert.deepEqual(selectLessonDemo([card,sameAnswer],{preserveTypes:true}).steps,[card]);
+});
+
+test("source-preserving demos prefer a real MCQ and keep its choices and source identity", () => {
+  const mcq = {id:'original-choice',type:'mcq',content:{prompt:'Question',answers:[{id:'a',text:'Answer',correct:true},{id:'b',text:'Other',correct:false}]}};
+  const card = {id:'original-card',type:'exam-question',content:{body:'Written question',finalAnswer:'Written answer'}};
+  const demo = selectLessonDemo([card,mcq],{preserveTypes:true});
+  assert.deepEqual(demo.steps,[mcq]);
+  assert.strictEqual(demo.steps[0],mcq);
+  assert.deepEqual(demo.sources.get(mcq.id),{stepId:mcq.id,type:'mcq',save:true});
 });
 
 test("showing an MCQ as a demo flashcard never claims its source question is correctly solved",() => {

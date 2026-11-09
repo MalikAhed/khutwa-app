@@ -116,7 +116,7 @@ Supported content syntax includes:
 - `:::reveal Optional title` for a learner-controlled disclosure. Use it for delayed reasoning or an answer, not essential content the learner may never open.
 - A supported YouTube URL alone on a line for a privacy-enhanced responsive player. Supported URL forms are `youtube.com/watch`, `youtu.be`, `/shorts/`, `/live/`, and `/embed/`, including `t` or `start` timestamps. A YouTube URL inside a sentence remains a link.
 
-Raw HTML is not lesson syntax. The authoring validator rejects it outside fenced code. Never use HTML, CSS, JSX, classes, inline styles, iframes, or wrappers to create lesson UI. HTML/CSS/JS inside a fenced code example is lesson subject matter and is allowed.
+Raw HTML is not lesson syntax, except balanced bare `<u>...</u>` spans preserving original source underlines (for example, questions asking about a word with a line beneath it). Underline attributes and nested underline tags are rejected. The authoring validator rejects other HTML outside fenced code. Never use HTML, CSS, JSX, classes, inline styles, iframes, or wrappers to create lesson UI. HTML/CSS/JS inside a fenced code example is lesson subject matter and is allowed.
 
 Math uses native MathML with local XITS and Amiri fonts. A fenced `mathml` block renders a formula card; optional `title="..."` adds its caption. Inline formulas use a code span prefixed with `mathml:`, including in MCQ prompts, choices and explanations. Each input must contain one well-formed `<math>` root; `dir="rtl"` is the default, and `dir="ltr"` preserves Latin notation. Use separate `<mi>` tokens for variables, `<mn>` for complete numbers and `<mtext dir="rtl">` for joined Arabic function names and prose. Set `stretchy="true"` on a single bracket beside a table. Add an Arabic `aria-label` when a verbal description helps. Styling and non-MathML elements are rejected or stripped. Mathematics follows the same question and progress pipeline as ICT. Symbol gallery samples live only in test fixtures.
 
@@ -183,7 +183,7 @@ Keep most MCQs to three useful choices. Two-choice questions remain supported, a
 - Use `<!-- lesson-step -->` between two consecutive explanation screens. Interactive directives already create their own step boundaries.
 - Published lessons must add `<!-- step-id: stable-kebab-id -->` to every explanation and `id: stable-kebab-id` to every interaction so saved progress remains stable. IDs must be unique lowercase kebab-case.
 - Unsupported directives and fields are validation errors. Do not add `phase:`, `critical:`, arbitrary attributes, or renderer options.
-- Raw HTML and nested directives are rejected inside interactive blocks. Content callouts must also close cleanly and cannot contain another directive.
+- Raw HTML other than the source underline syntax above, and nested directives, are rejected inside interactive blocks. Content callouts must also close cleanly and cannot contain another directive.
 
 ## Illustrated Rocky dialogue
 
@@ -254,6 +254,9 @@ Choose the answer style by the thinking the question requires, across all subjec
 Calculations, applications, code/SQL execution, diagram interpretation and questions requiring a deduction still get a clear explanation. An MCQ is not automatically a recall question. In a mixed question, quote the factual subparts and explain only the parts requiring reasoning. Preserve question IDs, answer keys, blocker status and existing review findings.
 
 ## Publishing and validation
+
+Adabi releases publish the compiled native lesson modules and only their referenced question figures. Original PDFs, `authoring.json`, `source-coverage.json`, and unused proof crops remain private local inputs covered by `.gitignore`. Run full source/quotation audits locally with those supplied inputs; public runtime tests use the compiled banks and do not need private source files. Source/page attribution stays readable without linking to unpublished PDFs.
+
 
 Follow `src/data/lessons/ict/course-introduction.js`: export the Markdown source, pass it to `defineMarkdownLesson(...)` with lesson metadata, register the module in `src/data/lessons/subject-lesson-registry.js`, and add its parts and stable boundary IDs to `src/data/subject-roadmaps.js`. Because the source currently lives in a JavaScript template literal, escape Markdown backticks and any literal `${` sequence.
 

@@ -34,6 +34,14 @@ Before any actual backend/schema/data migration: recover the editable Worker sou
 
 Cloudflare provides [D1 Time Travel](https://developers.cloudflare.com/d1/reference/time-travel/) (7 days Free / 30 days Paid) and [SQLite Durable Object recovery](https://developers.cloudflare.com/durable-objects/api/sqlite-storage-api/#pitr-point-in-time-recovery-api) (30 days). These are recovery windows, not permission to overwrite current student work. D1 recovery alone does not restore the `STUDENTS` namespace. The 2026-11-06 release saved private D1 SQL exports and all populated Authentication/StudentProgress SQL objects, restored them in isolation, and rehearsed the additive policy migration with original rows preserved. The recovered Worker candidate also passed isolated Workers-runtime checks and live staging HTTP checks. No production database was restored. Repeat recovery checks before future backend changes. Keep exports private and outside the repo/site; never restore over live students to test a backup.
 
+## Adabi catalog backend
+
+`scripts/prepare-adabi-worker.mjs` extends a SHA-256-pinned copy of the reviewed current Worker with `src/server/cloudflare-adabi-content.mjs`. It delegates only the new `adabi-` identities to the native literary catalog and retains scientific assets, rewards, account policies, bindings and storage. Never replace the live Worker with the isolated Node test backend. Run `tests/cloudflare-adabi-runtime.mjs` against the complete nine-subject candidate without preliminary aliases before staging and publication; retain the existing policy, security and isolated recovery checks.
+
+Once literary answers or subscription grants exist, retain Adabi backend support during any frontend rollback. A pre-Adabi backend rejects pending literary answers and cannot calculate their rewards. Roll Pages back independently or fix the backend forward; preserve every raw record and outbox operation, and never restore an older student-data snapshot as a code rollback.
+
+Keep original PDFs, authoring/source-coverage JSON and unused proof crops private and outside Git and hosting. The release contains compiled native questions, their readable source/page citations, and only referenced question figures. Run private source audits locally before publishing; CI runtime checks do not require those private inputs.
+
 ## Local development
 
 Use Node 24. Run `npm ci` only initially or after the lockfile changes, then `npm run dev` at `http://127.0.0.1:4173`. Use `npm run map -- <topic>` to find owners and focused tests. `npm run check` parses changed JS and checks existing types; `CHECK_BASE=<commit>` changes the comparison baseline. `npm run check:syntax -- --all` parses every module without executing it.

@@ -28,3 +28,14 @@ tmp-*.mjs
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal
+
+# Private Adabi authoring/reference inputs; publish compiled questions and required figures only.
+/assets/books/adabi/
+/src/data/lessons/adabi/*/authoring.json
+/src/data/lessons/adabi/*/source-coverage.json
+/assets/lessons/adabi/arabic-1/textbook-pages/
+/assets/lessons/adabi/arabic-2/source-context/
+/assets/lessons/adabi/islamic-education/evidence/
+/assets/lessons/adabi/mathematics/evidence/
+/assets/lessons/adabi/geography/assets/geo-e-p056-map3-fig01.webp
+/assets/lessons/adabi/**/*.json

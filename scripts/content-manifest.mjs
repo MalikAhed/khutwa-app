@@ -66,7 +66,7 @@ export async function createContentManifest(root) {
       if (item.hidden || item.optional || !item.parts?.length) continue;
       const loader = subjectLessonRegistry.get(`${subject.id}:${item.id}`);
       const module = loader?.toString().match(/import\(["']([^"']+)["']\)/)?.[1];
-      const entry = module ? path.posix.join("src/data/lessons", module) : "src/data/lessons/islamic-education/islamic-bank.js";
+      const entry = module ? path.posix.join(subject.id.startsWith("adabi-") ? "src/data/lessons/adabi" : "src/data/lessons", module) : "src/data/lessons/islamic-education/islamic-bank.js";
       const modules = [...await graph(entry)];
       if (subject.id === "ict") modules.push(...await graph("src/data/lessons/ict/exam-lessons.js"));
       const lesson = await loadSubjectLesson(subject.id, item.id);

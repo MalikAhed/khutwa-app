@@ -1,3 +1,4 @@
+import { ADABI_COURSES } from "./lessons/adabi/catalog.js";
 import { getIctPartQuestionIds } from "./lessons/ict/question-index.js";
 import { CHEMISTRY_UNITS, CHEMISTRY_LESSONS } from "./lessons/chemistry/chemistry-course.js";
 import { ENGLISH_UNITS, ENGLISH_LESSONS } from "./lessons/english/english-course.js";
@@ -279,7 +280,25 @@ const ARABIC_ROADMAP = Object.freeze({
   }))),
 });
 
+const ADABI_ROADMAPS = new Map(ADABI_COURSES.map(course => [course.subjectId, Object.freeze({
+  subjectId:course.subjectId,
+  questionsOnly:true,
+  units:Object.freeze(course.units.map(unit => Object.freeze({
+    ...unit,
+    lessons:Object.freeze(course.lessons.filter(lesson => lesson.unitId === unit.id).map(lesson => Object.freeze({
+      ...lesson,
+      xp:10,
+      parts:Object.freeze(lesson.parts || [Object.freeze({
+        id:`${lesson.id}-practice`, label:lesson.label, pages:lesson.pages,
+        startStepId:lesson.questionIds[0], questionIds:lesson.questionIds,
+      })]),
+    }))),
+  }))),
+})]));
+
 export function getSubjectRoadmap(subjectId) {
+  const adabi = ADABI_ROADMAPS.get(subjectId);
+  if (adabi) return adabi;
   if (subjectId === ARABIC_ROADMAP.subjectId) return ARABIC_ROADMAP;
   if (subjectId === ENGLISH_ROADMAP.subjectId) return ENGLISH_ROADMAP;
   if (subjectId === ICT_ROADMAP.subjectId) return ICT_ROADMAP;

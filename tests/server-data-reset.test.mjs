@@ -13,7 +13,8 @@ function setup(t, { baseline, locks = true } = {}) {
   const storage = data => ({ getItem:key => data.get(key) ?? null, setItem:(key,value) => data.set(key,value),
     removeItem:() => assert.fail('Student storage must not be removed'), clear:() => assert.fail('Student storage must not be cleared') });
   for (const [key, value] of Object.entries({ localStorage:storage(local), sessionStorage:storage(session),
-    indexedDB:{ deleteDatabase:() => assert.fail('Progress and the outbox must not be deleted') },
+    indexedDB:{ open:() => assert.fail('Continuity checks must not modify the saved progress or outbox'),
+      deleteDatabase:() => assert.fail('Progress and the outbox must not be deleted') },
     navigator:{ ...(locks ? {locks:{request:async (_key, run) => run()}} : {}) },
   })) {
     const descriptor = Object.getOwnPropertyDescriptor(globalThis, key);
@@ -89,4 +90,26 @@ test('reconnection verifies the backend even while the online hint is stale',asy
   Object.defineProperty(globalThis.navigator,'onLine',{value:false});
   state.resetId='known-database';
   assert.equal(await applyServerDataReset({allowOffline:true}),true);
+});
+
+for (const baseline of [undefined, 'known-database']) test(`an aborted continuity request preserves its cause and all saved work (baseline: ${baseline ?? 'none'})`, async t => {
+  const {local,session}=setup(t,{baseline});
+  const pending='[{"id":"pending-answer-001","ownerId":"account:1","type":"answer","stepId":"saved-question"}]';
+  local.set('pending-answer-fixture',pending);
+  session.set('pending-answer-fixture',pending);
+  const originalLocal=[...local],originalSession=[...session];
+  const abort=new DOMException('The operation was aborted.','AbortError');
+  t.mock.method(globalThis,'fetch',async()=>{throw abort;});
+  await assert.rejects(applyServerDataReset(), error => {
+    assert.ok(error instanceof Error);
+    assert.equal(error.code,'offline-reconnect');
+    assert.equal(error.message,abort.message);
+    assert.equal(error.cause,abort);
+    return true;
+  });
+  assert.equal(abort.code,20,'the original read-only DOMException is unchanged');
+  if (baseline !== undefined) assert.equal(await applyServerDataReset({allowOffline:true}),false);
+  else await assert.rejects(applyServerDataReset({allowOffline:true}),{code:'offline-reconnect'});
+  assert.deepEqual([...local],originalLocal);
+  assert.deepEqual([...session],originalSession);
 });

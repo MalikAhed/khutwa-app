@@ -1,6 +1,6 @@
 import { QUESTION_RATINGS, getRatedSubjectQuestions } from "../domain/question-ratings.js";
 import { renderRatingFace } from "./question-rating.js";
-import { COURSE_SUBJECTS } from "../data/course.js";
+import { COURSE_SUBJECTS, getCourseSubjects } from "../data/course.js";
 import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
 import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js";
 import { escapeHtml } from "../lib/dom.js";
@@ -63,19 +63,19 @@ export function getSubjectCardPresentation(subject, snapshot) {
   };
 }
 
-export function renderCourseMapMarkup({ ratedQuestions = false, questionFeedback } = {}) {
+export function renderCourseMapMarkup({ ratedQuestions = false, questionFeedback, selection = undefined } = {}) {
   if (ratedQuestions) {
-    const subjects = COURSE_SUBJECTS.map(subject => {
+    const subjects = getCourseSubjects(selection).map(subject => {
       const questions = getRatedSubjectQuestions(subject.id,questionFeedback);
       return `<article class="subject-card subject-card--rated" data-subject="${escapeHtml(subject.id)}" aria-label="${escapeHtml(subject.name)}">${subjectArtworkMarkup(subject)}<button type="button" class="subject-card__hero rated-subject-open" data-rated-subject="${escapeHtml(subject.id)}"><span class="subject-card__title"><h2>${escapeHtml(subject.name)}</h2></span></button><div class="rated-subject-difficulties" role="group" aria-label="اختر صعوبة الأسئلة للمراجعة">${QUESTION_RATINGS.map(({value,label}) => {
         const count = String(questions.filter(question => question.rating === value).length);
         return `<button type="button" class="rated-subject-difficulty rated-subject-difficulty--${value}" data-rated-subject="${escapeHtml(subject.id)}" data-rating="${value}" aria-label="${label}، ${count} سؤالًا">${renderRatingFace(value)}<bdi class="ui-number" style="--rating-count-digits:${count.length}" data-rating-count>${count}</bdi></button>`;
       }).join("")}</div></article>`;
     }).join("");
-    return `<section class="subject-map" data-catalog="rated-questions" aria-label="المواد الدراسية">${subjects}</section>`;
+    return `<section class="subject-map" data-path="${selection?.path === "literary" ? "literary" : "scientific"}" data-catalog="rated-questions" aria-label="المواد الدراسية">${subjects}</section>`;
   }
-  const subjects = COURSE_SUBJECTS.map((subject) => subjectCardMarkup(subject, getSubjectCardPresentation(subject))).join("");
-  return `<section class="subject-map" data-catalog="learn" aria-label="المواد الدراسية">${subjects}</section>`;
+  const subjects = getCourseSubjects(selection).map((subject) => subjectCardMarkup(subject, getSubjectCardPresentation(subject))).join("");
+  return `<section class="subject-map" data-path="${selection?.path === "literary" ? "literary" : "scientific"}" data-catalog="learn" aria-label="المواد الدراسية">${subjects}</section>`;
 }
 
 export function updateSubjectCards(container, snapshot) {
@@ -113,8 +113,8 @@ export function updateRatedSubjectCards(container, questionFeedback) {
   }
 }
 
-export function renderCourseMap(container, { ratedQuestions = false, snapshot = undefined, questionFeedback } = {}) {
-  const markup = renderCourseMapMarkup({ ratedQuestions,questionFeedback });
+export function renderCourseMap(container, { ratedQuestions = false, snapshot = undefined, questionFeedback, selection = undefined } = {}) {
+  const markup = renderCourseMapMarkup({ ratedQuestions,questionFeedback,selection });
   const current = container.querySelector(".subject-map");
   if (current) current.outerHTML = markup;
   else container.innerHTML = markup;

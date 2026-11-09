@@ -3,7 +3,7 @@ import test from "node:test";
 import { getPrototypeScenario } from "./fixtures/learner-scenarios.js";
 import { getIctPartQuestions } from "../src/data/lessons/ict/exam-lessons.js";
 import { getSubjectRoadmap } from "../src/data/subject-roadmaps.js";
-import { COURSE_SUBJECTS } from "../src/data/course.js";
+import { getCourseSubjects } from "../src/data/course.js";
 import { renderLearnerDashboardMarkup } from "../src/ui/learner-dashboard.js";
 import { getSubjectCardPresentation } from "../src/ui/course-map.js";
 import { getLessonQuestionProgress } from "../src/domain/subject-question-progress.js";
@@ -14,7 +14,7 @@ const ictQuestionTotal = getSubjectRoadmap("ict").units.flatMap(unit => unit.les
   .filter(lesson => !lesson.hidden)
   .flatMap(lesson => lesson.parts)
   .reduce((total, part) => total + getIctPartQuestions(part.id).length, 0);
-const subjects = COURSE_SUBJECTS.filter(subject => subject.status !== "unpublished");
+const subjects = getCourseSubjects({ path:"scientific" }).filter(subject => subject.status !== "unpublished");
 const lessons = subjects.flatMap(subject => getSubjectRoadmap(subject.id).units.flatMap(unit => unit.lessons))
   .filter(lesson => !lesson.hidden && !lesson.optional);
 const currentQuestionTotal = ictQuestionTotal + subjects.filter(subject => subject.id !== "ict")

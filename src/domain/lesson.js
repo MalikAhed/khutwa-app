@@ -305,10 +305,14 @@ export function validateLesson(candidate, { day } = {}) {
     issues.push("lesson.passingScore must be an integer between 1 and 100");
   }
 
+  const locale = candidate.locale;
+  if (locale !== undefined && locale !== "ar" && locale !== "en") issues.push("lesson.locale must be ar or en");
+
   const lesson = Object.freeze({
     title: readRequiredText(candidate, "title", "lesson", issues),
     summary: readRequiredText(candidate, "summary", "lesson", issues),
     status,
+    ...(locale ? { locale } : {}),
     outcome:readOptionalText(candidate, "outcome", "lesson", issues),
     mode:readOptionalText(candidate, "mode", "lesson", issues),
     mission: readOptionalText(candidate, "mission", "lesson", issues),
