@@ -19,13 +19,13 @@
   font-style:normal;
   font-display:swap;
 }
-.lesson-shell:is([data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="physics"])
-  :is(.lesson-flashcard-copy, .ui-lab-mcq > h1, .lesson-question-example) {
+/* Lesson copy shares Amiri across both paths; controls retain the app font. */
+.lesson-shell :is(.lesson-flashcard-copy, .ui-lab-mcq > h1, .lesson-question-example, .level-answer-list .lesson-answer > b),
+.question-explanation-dialog .markdown-rendered {
   --font-ui:"Rounded Digits", "Amiri", serif;
   font-family:"Rounded Digits", "Amiri", "Lesson Math", serif;
 }
-.lesson-shell:is([data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="physics"])
-  :is(.lesson-flashcard-copy button, .lesson-question-example button, .lesson-question-source) {
+.lesson-shell :is(.lesson-flashcard-copy button, .lesson-flashcard-copy summary, .lesson-question-example button, .lesson-question-source, .lesson-exam-source) {
   --font-ui:"Amiri Digits", "Rounded Digits", "Noto Sans Arabic", Tahoma, Arial, sans-serif;
   font-family:var(--font-ui);
 }

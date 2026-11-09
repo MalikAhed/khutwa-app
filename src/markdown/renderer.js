@@ -18,6 +18,11 @@ const CALLOUT_KINDS = new Set(LESSON_CONTENT_DIRECTIVES.filter((kind) => kind !=
 const mountedContainers = new WeakMap();
 let technicalTermId = 0;
 
+// Localize displayed copy only. URLs, source IDs, code and stored answers stay intact.
+function indicDigits(text) {
+  return text.replace(/[0-9]/g, digit => "٠١٢٣٤٥٦٧٨٩"[Number(digit)]);
+}
+
 export function parseYouTubeUrl(value) {
   let url;
   try {
@@ -160,6 +165,19 @@ const mathmlInlineExtension = {
   renderer(token) { return renderMathML(token.text); },
 };
 
+const numericFractionExtension = {
+  name:"numericFraction",
+  level:"inline",
+  start(source) { const index = source.search(/[٠-٩]+[⁄∕][٠-٩]+/); return index < 0 ? undefined : index; },
+  tokenizer(source) {
+    const match = /^([٠-٩]+)[⁄∕]([٠-٩]+)/.exec(source);
+    return match ? { type:"numericFraction", raw:match[0], numerator:match[1], denominator:match[2] } : undefined;
+  },
+  renderer(token) {
+    return renderMathML(`<math dir="rtl"><mfrac><mn>${token.numerator}</mn><mn>${token.denominator}</mn></mfrac></math>`);
+  },
+};
+
 const latexInlineExtension = {
   name:"latexInline",
   level:"inline",
@@ -172,7 +190,6 @@ const latexInlineExtension = {
       || /^\$(?![\s$])([^$\n]*?[^\s$\\])\$(?!\d)/.exec(source);
     return match ? { type:"latexInline", raw:match[0], text:match[1] } : undefined;
   },
-  renderer(token) { return renderLatex(token.text); },
 };
 
 const highlightExtension = {
@@ -223,27 +240,30 @@ const latexBlockExtension = {
       || /^[ \t]*\$\$([\s\S]*?)\$\$[ \t]*(?:\n|$)/.exec(source);
     return match ? { type:"latexBlock", raw:match[0], text:match[1] } : undefined;
   },
-  renderer(token) {
-    return `<figure class="lesson-math-sample"><div class="lesson-math-scroll" dir="ltr" tabindex="0" role="region" aria-label="معادلة">${renderLatex(token.text, { display:true })}</div></figure>`;
-  },
 };
 
+function latexFigure(text, locale, title = "") {
+  const math = renderLatex(text, { display:true, locale });
+  const direction = /^<math\b[^>]*\bdir="rtl"/.test(math) ? "rtl" : "ltr";
+  return `<figure class="lesson-math-sample">${title ? `<figcaption>${escapeHtml(title)}</figcaption>` : ""}<div class="lesson-math-scroll" dir="${direction}" tabindex="0" role="region" aria-label="معادلة">${math}</div></figure>`;
+}
+
 const codeRenderer = {
-  codespan({ text }) {
+  codespan({ text }, locale) {
     if (text.startsWith("mathml:")) return renderMathML(text.slice(7).trim());
-    if (text.startsWith("latex:")) return renderLatex(text.slice(6).trim());
+    if (text.startsWith("latex:")) return renderLatex(text.slice(6).trim(), { locale });
     if (isSqlStatement(text)) return `<code class="lesson-sql-code" dir="ltr">${escapeHtml(formatSqlForReading(text))}</code>`;
     const firstLetter = text.match(/[A-Za-z\p{Script=Arabic}]/u)?.[0] || "";
     const direction = /\p{Script=Arabic}/u.test(firstLetter) ? "rtl" : "ltr";
     return `<code dir="${direction}">${escapeHtml(text)}</code>`;
   },
-  code({ text, lang }) {
+  code({ text, lang }, locale) {
     const { language, title, highlightedLines } = parseCodeMeta(lang);
     // Formatting changes whitespace only; authored highlighted line numbers keep
     // their original positions when a code example explicitly supplies them.
     if (language === "sql" && !highlightedLines.size) text = formatSqlForReading(text);
     if (language === "latex") {
-      return `<figure class="lesson-math-sample">${title ? `<figcaption>${escapeHtml(title)}</figcaption>` : ""}<div class="lesson-math-scroll" dir="ltr" tabindex="0" role="region" aria-label="معادلة">${renderLatex(text, { display:true })}</div></figure>`;
+      return latexFigure(text, locale, title);
     }
     if (language === "mathml") {
       const caption = title ? `<figcaption>${escapeHtml(title)}</figcaption>` : "";
@@ -275,10 +295,16 @@ function markdownFor(locale = "en", highlightQuotes = false) {
   const markdown = new Marked({
   async:false,
   breaks:false,
-  extensions:[mathmlInlineExtension, latexInlineExtension, latexBlockExtension, highlightExtension, ...(highlightQuotes ? [quotedHighlightExtension] : []), { ...technicalTermExtension, renderer(token) { return technicalTermExtension.renderer(token, copy); } }, lessonDirectiveExtension, youtubeVideoExtension],
+  extensions:[mathmlInlineExtension, numericFractionExtension,
+    { ...latexInlineExtension, renderer(token) { return renderLatex(token.text, { locale:language }); } },
+    { ...latexBlockExtension, renderer(token) { return latexFigure(token.text, language); } },
+    highlightExtension, ...(highlightQuotes ? [quotedHighlightExtension] : []), { ...technicalTermExtension, renderer(token) { return technicalTermExtension.renderer(token, copy); } }, lessonDirectiveExtension, youtubeVideoExtension],
   gfm:true,
   pedantic:false,
-  renderer:codeRenderer,
+  renderer:{
+    codespan(token) { return codeRenderer.codespan(token, language); },
+    code(token) { return codeRenderer.code(token, language); },
+  },
   });
   markdownByLocale.set(key, markdown);
   return markdown;
@@ -311,6 +337,15 @@ function directMixedText(markup, locale) {
   const template = document.createElement("template");
   template.innerHTML = markup;
   const content = template.content;
+  if (locale === "ar") {
+    const digits = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
+    while (digits.nextNode()) {
+      const node = digits.currentNode;
+      if (node.parentElement?.closest("code,pre,kbd,samp")) continue;
+      // Keep embedded identifiers such as CO2 and HTTP1 intact, as with code.
+      node.textContent = node.textContent.replace(/(?<![A-Za-z0-9])[0-9]+(?:[.,][0-9]+)*(?![A-Za-z0-9])/g, indicDigits);
+    }
+  }
   // A list owns its markers and their padding. Derive its direction before
   // child paragraphs become isolated, which would hide their strong letters.
   content.querySelectorAll("ul,ol").forEach(list => {
@@ -375,7 +410,7 @@ export function renderMarkdownInline(source, { locale = "en" } = {}) {
 
 export function renderLessonInline(source, options = {}) {
   if (/^\s*[+−-]?[0-9٠-٩۰-۹]+(?:[.,٫][0-9٠-٩۰-۹]+)?\s*$/.test(String(source))) {
-    return `<bdi dir="ltr">${escapeHtml(source)}</bdi>`;
+    return `<bdi dir="ltr">${escapeHtml(options.locale === "ar" ? indicDigits(String(source)) : source)}</bdi>`;
   }
   if (isSqlStatement(source)) {
     return isolateArabicCode(`<code class="lesson-inline-code lesson-sql-code" dir="ltr">${escapeHtml(formatSqlForReading(source))}</code>`);

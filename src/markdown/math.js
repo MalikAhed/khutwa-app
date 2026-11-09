@@ -101,8 +101,30 @@ function formatOperators(math) {
   });
 }
 
+function stackNumericFractions(math) {
+  if (math.getAttribute("dir") !== "rtl") return;
+  // Imported fractional powers such as 2/5 must not reverse inside an RTL row.
+  // Match only a complete numeric fraction; unit slashes and larger expressions
+  // keep their authored structure.
+  for (const row of [...math.querySelectorAll("mrow")].reverse()) {
+    const children = [...row.children];
+    const sign = children.length === 4 && children[0].localName === "mo" && /^[−+-]$/.test(children[0].textContent)
+      ? children.shift() : null;
+    const [numerator, slash, denominator] = children;
+    if (children.length !== 3 || numerator.localName !== "mn" || denominator.localName !== "mn"
+      || !["mi", "mo"].includes(slash.localName) || !["/", "⁄", "∕"].includes(slash.textContent)) continue;
+    const fraction = math.ownerDocument.createElementNS(math.namespaceURI, "mfrac");
+    if (sign) {
+      const signed = math.ownerDocument.createElementNS(math.namespaceURI, "mrow");
+      signed.append(sign, numerator);
+      fraction.append(signed, denominator);
+    } else fraction.append(numerator, denominator);
+    row.replaceWith(fraction);
+  }
+}
+
 // LaTeX compiles to the same sanitized native MathML used by every question view.
-export function renderLatex(source, { display = false } = {}) {
+export function renderLatex(source, { display = false, locale = "en" } = {}) {
   try {
     const markup = katex.renderToString(source, {
       output:"mathml", displayMode:display, throwOnError:true, trust:false,
@@ -114,7 +136,10 @@ export function renderLatex(source, { display = false } = {}) {
     // the TeX annotation first so its source cannot become visible formula text.
     const formula = math.replace(/<annotation\b[\s\S]*?<\/annotation>/g, "")
       .replace(/<\/?semantics>/g, "");
-    return renderMathML(formula.replace("<math", '<math dir="ltr"'), { display });
+    // Arabic arithmetic uses the book's mirrored roots and powers. Latin/Greek
+    // variables and SI units retain their authored left-to-right notation.
+    const direction = locale === "ar" && !/[\p{Script=Latin}\p{Script=Greek}]/u.test(formula.replace(/<[^>]+>/g, "")) ? "rtl" : "ltr";
+    return renderMathML(formula.replace("<math", `<math dir="${direction}"`), { display });
   } catch {
     return '<span class="lesson-math-error" role="alert">صيغة LaTeX غير صالحة</span>';
   }
@@ -156,6 +181,7 @@ export function renderMathML(source, { display = false } = {}) {
   math.querySelectorAll("mi").forEach(node => {
     if (/\p{Script=Arabic}/u.test(node.textContent) && !node.hasAttribute("mathvariant")) node.setAttribute("mathvariant", "normal");
   });
+  stackNumericFractions(math);
   groupFences(math);
   formatOperators(math);
   return math.outerHTML;

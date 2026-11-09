@@ -21,20 +21,23 @@
 .subject-card--locked::after { content:""; position:absolute; inset:0; z-index:3; border-radius:inherit; background:rgba(15,23,42,.45); pointer-events:none; }
 /* Keep artwork and content in separate columns, including on mobile. */
 .subject-map .subject-card { --card-surface:var(--subject-color); --card-ink:color-mix(in srgb,var(--card-surface) 50%,#14222e); --card-accent:color-mix(in srgb,var(--card-surface) 86%,black); display:grid; grid-template-columns:42% minmax(0,1fr); padding-right:28px; grid-template-rows:1fr 1fr; column-gap:24px; min-height:184px; border:1px solid #ffffff7a; border-radius:23px; background:var(--card-surface) linear-gradient(110deg,color-mix(in srgb,var(--card-surface) 76%,white),var(--card-surface)); box-shadow:none; isolation:isolate; color:#fff; direction:ltr; }
-.subject-map .subject-card[data-subject="ict"] { --card-surface:#159ff7; --card-accent:#087ef4; }
-.subject-map .subject-card[data-subject^="mathematics"] { --card-surface:#ffcd26; --card-accent:#ffb600; }
+.subject-map .subject-card:is([data-subject="ict"],[data-subject="adabi-information-technology"]) { --card-surface:#159ff7; --card-accent:#087ef4; }
+.subject-map .subject-card:is([data-subject^="mathematics"],[data-subject="adabi-mathematics"]) { --card-surface:#ffcd26; --card-accent:#ffb600; }
 .subject-map .subject-card[data-subject="physics"] { --card-surface:#ff86aa; --card-accent:#ff3d67; }
 .subject-map .subject-card[data-subject="chemistry"] { --card-surface:#ad82e9; }
 /* Patterns belong to the card; transparent foreground art has no mask or fade. */
 .subject-map .subject-card::before { content:""; position:absolute; z-index:-1; inset:0; pointer-events:none; background-image:var(--card-pattern); background-size:var(--card-pattern-size,100% 100%); opacity:.5; }
-.subject-map [data-subject="ict"] { --card-pattern:repeating-linear-gradient(0deg,transparent 0 35px,#ffffff20 36px 37px,transparent 38px 72px),repeating-linear-gradient(90deg,transparent 0 71px,#ffffff20 72px 73px,transparent 74px 144px); }
-.subject-map [data-subject^="mathematics"] { --card-pattern:linear-gradient(#d99f1830 1px,transparent 1px),linear-gradient(90deg,#d99f1830 1px,transparent 1px); --card-pattern-size:28px 28px; }
+.subject-map :is([data-subject="ict"],[data-subject="adabi-information-technology"]) { --card-pattern:repeating-linear-gradient(0deg,transparent 0 35px,#ffffff20 36px 37px,transparent 38px 72px),repeating-linear-gradient(90deg,transparent 0 71px,#ffffff20 72px 73px,transparent 74px 144px); }
+.subject-map :is([data-subject^="mathematics"],[data-subject="adabi-mathematics"]) { --card-pattern:linear-gradient(#d99f1830 1px,transparent 1px),linear-gradient(90deg,#d99f1830 1px,transparent 1px); --card-pattern-size:28px 28px; }
 .subject-map [data-subject="physics"] { --card-pattern:repeating-radial-gradient(circle at 18% 50%,transparent 0 24px,#ffffff28 25px 27px,transparent 28px 52px); }
 .subject-map [data-subject="biology"] { --card-pattern:radial-gradient(ellipse at 15% 5%,#e5ff9b70 0 15%,transparent 15.5%),radial-gradient(ellipse at 45% 115%,#2baf5733 0 28%,transparent 28.5%),radial-gradient(ellipse at 90% 0%,#e5ff9b50 0 18%,transparent 18.5%); }
 .subject-map [data-subject="chemistry"] { --card-pattern:radial-gradient(circle at 10px 10px,#ffffff40 0 5px,transparent 6px),radial-gradient(circle at 44px 42px,#7047c326 0 11px,transparent 12px); --card-pattern-size:88px 76px; }
-.subject-map [data-subject="english"] { --card-pattern:repeating-linear-gradient(125deg,transparent 0 43px,#ffffff20 44px 46px,transparent 47px 90px); }
-.subject-map [data-subject="arabic"] { --card-pattern:radial-gradient(ellipse at 50% 100%,transparent 54%,#ffffff26 55% 57%,transparent 58%); --card-pattern-size:86px 60px; }
-.subject-map [data-subject="islamic-education"] { --card-pattern:linear-gradient(45deg,transparent 46%,#ffffff26 47% 49%,transparent 50%),linear-gradient(-45deg,transparent 46%,#ffffff26 47% 49%,transparent 50%); --card-pattern-size:64px 64px; }
+.subject-map :is([data-subject="english"],[data-subject="adabi-english"]) { --card-pattern:repeating-linear-gradient(125deg,transparent 0 43px,#ffffff20 44px 46px,transparent 47px 90px); }
+.subject-map :is([data-subject="arabic"],[data-subject="adabi-arabic-1"],[data-subject="adabi-arabic-2"]) { --card-pattern:radial-gradient(ellipse at 50% 100%,transparent 54%,#ffffff26 55% 57%,transparent 58%); --card-pattern-size:86px 60px; }
+.subject-map :is([data-subject="islamic-education"],[data-subject="adabi-islamic-education"]) { --card-pattern:linear-gradient(45deg,transparent 46%,#ffffff26 47% 49%,transparent 50%),linear-gradient(-45deg,transparent 46%,#ffffff26 47% 49%,transparent 50%); --card-pattern-size:64px 64px; }
+.subject-map [data-subject="adabi-history"] { --card-pattern:repeating-linear-gradient(90deg,transparent 0 42px,#ffffff20 43px 46px,transparent 47px 64px); }
+.subject-map [data-subject="adabi-geography"] { --card-pattern:repeating-radial-gradient(ellipse at 20% 90%,transparent 0 20px,#ffffff26 21px 23px,transparent 24px 44px); }
+.subject-map [data-subject="adabi-scientific-culture"] { --card-pattern:radial-gradient(circle at 18px 18px,#ffffff30 0 5px,transparent 6px),radial-gradient(circle at 58px 48px,#ffffff20 0 12px,transparent 13px); --card-pattern-size:88px 76px; }
 .subject-card__art { position:relative; grid-column:1; grid-row:1/-1; align-self:stretch; min-width:0; min-height:0; pointer-events:none; }
 .subject-card__art img { position:absolute; inset:0; display:block; width:100%; height:100%; padding:10px 12px; object-fit:contain; }
 .subject-map .subject-card__hero { grid-column:2; grid-row:1; display:flex; align-items:end; min-height:0; padding:22px 0 6px; overflow:visible; background:none; color:inherit; direction:rtl; }

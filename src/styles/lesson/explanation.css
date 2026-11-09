@@ -13,7 +13,7 @@
 .explanation-price { display:inline-flex; align-items:center; gap:5px; white-space:nowrap; }
 .explanation-price img { display:block; width:22px; height:22px; object-fit:contain; }
 .explanation-included { font-size:1.4em; line-height:1; }
-.question-explanation-dialog { position:fixed; inset:0; width:100%; max-width:none; height:100dvh; max-height:none; margin:0; padding:0; border:0; border-radius:0; background:#fff; color:var(--system-ink); font:400 1.2rem/1.9 "Rounded Digits","Amiri","Lesson Math",serif; overflow:hidden; }
+.question-explanation-dialog { position:fixed; inset:0; width:100%; max-width:none; height:100dvh; max-height:none; margin:0; padding:0; border:0; border-radius:0; background:#fff; color:var(--system-ink); font:400 1.2rem/1.9 var(--font-ui); overflow:hidden; }
 .question-explanation-dialog[open] { display:flex; flex-direction:column; animation:explanation-section-enter 320ms cubic-bezier(.2,.8,.2,1) both; }
 .question-explanation-dialog::backdrop { background:transparent; }
 .question-explanation-reading { position:relative; display:flex; flex:1; min-width:0; min-height:0; width:100%; max-width:960px; margin-inline:auto; overflow:hidden; }

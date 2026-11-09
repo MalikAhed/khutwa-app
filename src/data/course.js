@@ -16,9 +16,9 @@ export const ADABI_SUBJECTS = Object.freeze([
   { id:"adabi-arabic-2", name:"اللغة العربية 2", status:"available", path:"literary", artwork:"arabic" },
   { id:"adabi-english", name:"اللغة الإنجليزية", status:"available", path:"literary", artwork:"english" },
   { id:"adabi-mathematics", name:"الرياضيات", status:"available", path:"literary", artwork:"mathematics" },
-  { id:"adabi-history", name:"الدراسات التاريخية", status:"available", path:"literary", artwork:"arabic" },
-  { id:"adabi-geography", name:"الدراسات الجغرافية", status:"available", path:"literary", artwork:"biology" },
-  { id:"adabi-scientific-culture", name:"الثقافة العلمية", status:"available", path:"literary", artwork:"chemistry" },
+  { id:"adabi-history", name:"الدراسات التاريخية", status:"available", path:"literary", artwork:"history" },
+  { id:"adabi-geography", name:"الدراسات الجغرافية", status:"available", path:"literary", artwork:"geography" },
+  { id:"adabi-scientific-culture", name:"الثقافة العلمية", status:"available", path:"literary", artwork:"scientific-culture" },
   { id:"adabi-information-technology", name:"تكنولوجيا المعلومات", status:"available", path:"literary", artwork:"ict" },
 ]);
 

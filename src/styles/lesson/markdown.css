@@ -12,6 +12,7 @@
 .markdown-rendered :is(h4,h5,h6) { font-size:1em; }
 .markdown-rendered p { margin-block:0 1em; }
 .markdown-rendered :is(ul,ol) { margin-block:0 1em; padding-inline-start:1.7em; }
+.lesson-shell .markdown-rendered ol:lang(ar), .question-explanation-dialog .markdown-rendered ol:lang(ar) { list-style-type:arabic-indic; }
 .markdown-rendered li + li { margin-block-start:.5em; }
 .markdown-rendered li > :is(ul,ol) { margin-block:.5em 0; }
 .markdown-rendered strong { font-weight:700; }
