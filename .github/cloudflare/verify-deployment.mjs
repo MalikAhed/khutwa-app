@@ -4,11 +4,12 @@ import path from 'node:path';
 
 const base = process.env.DEPLOYMENT_URL;
 assert.ok(base?.startsWith('https://'), 'a deployment URL is required');
-// Pages can expose the assets before the new Function routes are available.
+// Pages can expose assets minutes before Function routes finish propagating.
+// Keep every assertion below; only wait longer for the temporary routing 404.
 async function fetchFunction(url, options) {
   for (let attempt = 0; ; attempt++) {
     const response = await fetch(url, options);
-    if (response.status !== 404 || attempt === 14) return response;
+    if (response.status !== 404 || attempt === 179) return response;
     await new Promise(resolve => setTimeout(resolve, 1000));
   }
 }
