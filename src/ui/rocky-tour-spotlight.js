@@ -2,9 +2,9 @@ import { prefersReducedMotion } from "../lib/dom.js";
 import { mountRockyCoach } from "./rocky-coach.js";
 
 const GESTURE_IMAGES=Object.freeze({
-  click:{animated:'assets/icons/guidance-click.svg',still:'assets/icons/guidance-click-still.svg'},
-  left:{animated:'assets/icons/guidance-slide-left.svg',still:'assets/icons/guidance-slide-left-still.svg'},
-  right:{animated:'assets/icons/guidance-slide-right.svg',still:'assets/icons/guidance-slide-right-still.svg'},
+  click:{animated:'assets/icons/guidance-click.svg',still:'assets/icons/guidance-click-still.svg',tip:[223/512,129/512]},
+  left:{animated:'assets/icons/guidance-slide-left.svg',still:'assets/icons/guidance-slide-left-still.svg',tip:[220/512,50/512]},
+  right:{animated:'assets/icons/guidance-slide-right.svg',still:'assets/icons/guidance-slide-right-still.svg',tip:[240/512,112/512]},
 });
 const SVG = "http://www.w3.org/2000/svg";
 const clamp = (value,min,max) => Math.max(min,Math.min(value,max));
@@ -113,17 +113,25 @@ export function createRockyTourSpotlight({ onNext,onSkip }) {
       x=clamp(b.x+b.width/2-w/2,12,width-w-12);
       y=b.y+b.height+h+24<height ? b.y+b.height+14 : b.y-h-14>=12 ? b.y-h-14 : height-h-12;
     }
-    // Keep small actionable targets clear even though the coach may overlay
-    // the lesson content. The card itself never changes size or position.
+    // Keep actionable targets clear when space permits, without moving the card.
     const anchor=boxes[0];
-    if(!centeredMode&&anchor&&anchor.height<180&&x<anchor.x+anchor.width&&x+w>anchor.x&&y<anchor.y+anchor.height&&y+h>anchor.y){
+    if(!centeredMode&&anchor&&x<anchor.x+anchor.width&&x+w>anchor.x&&y<anchor.y+anchor.height&&y+h>anchor.y){
       const below=anchor.y+anchor.height+16,above=anchor.y-h-16;
       if(below+h<height-12)y=below;else if(above>=12)y=above;
     }
     guide.style.left=`${clamp(x,12,width-w-12)}px`;guide.style.top=`${clamp(y,8,height-h-8)}px`;
     if(!gesture.hidden&&boxes.length){
-      const box=gestureTarget?.isConnected&&visibleBox(gestureTarget)||boxes[0],pointX=box.x+box.width*.55,pointY=box.y+Math.min(box.height*.35,64);
-      gesture.style.left=`${clamp(pointX-33,6,width-82)}px`;gesture.style.top=`${clamp(pointY-9,6,height-82)}px`;
+      const box=gestureTarget?.isConnected&&visibleBox(gestureTarget)||boxes[0];
+      const coach=guide.getBoundingClientRect(),left=box.x+4,right=box.x+box.width-4,top=box.y+4,bottom=box.y+box.height-4;
+      const pointX=clamp(box.x+box.width*.55,left,right),pointY=clamp(box.y+Math.min(box.height*.35,64),top,bottom);
+      // A large flashcard can extend behind the bubble. Point at its exposed part.
+      const candidates=[[pointX,pointY],[pointX,coach.bottom+24],[pointX,coach.top-24],[coach.left-24,pointY],[coach.right+24,pointY]];
+      const point=candidates.find(([px,py])=>px>=left&&px<=right&&py>=top&&py<=bottom
+        &&(px<coach.left-12||px>coach.right+12||py<coach.top-12||py>coach.bottom+12))||[pointX,pointY];
+      const [tipX,tipY]=gestureImage.tip;
+      gesture.style.transformOrigin=`${tipX*100}% ${tipY*100}%`;
+      // Anchor the fingertip, not the image bounds. The hand may extend offscreen.
+      gesture.style.left=`${point[0]-gesture.offsetWidth*tipX}px`;gesture.style.top=`${point[1]-gesture.offsetHeight*tipY}px`;
     }
   }
   const finishGestureExit=()=>{
@@ -196,9 +204,12 @@ export function createRockyTourSpotlight({ onNext,onSkip }) {
       const previewSources=preview.map(selector=>document.querySelector(selector)).filter(Boolean);
       const fragment=document.createDocumentFragment();let letterIndex=0;
       const appendText=text=>{
-        for(const {segment} of new Intl.Segmenter('ar',{granularity:'grapheme'}).segment(text)){
+        // Safari can break Arabic joining across separately animated letters.
+        // Keep each word in one text node and preserve spaces between words.
+        for(const segment of text.split(/(\s+)/u).filter(Boolean)){
+          if(/^\s+$/u.test(segment)){fragment.append(document.createTextNode(segment));letterIndex+=segment.length;continue;}
           const span=document.createElement('span');span.className='rocky-letter';span.textContent=segment;
-          span.style.setProperty('--letter-delay',`${letterIndex++*22}ms`);fragment.append(span);
+          span.style.setProperty('--letter-delay',`${letterIndex*22}ms`);letterIndex+=segment.length;fragment.append(span);
         }
       };
       const inlineAt=inlinePreview&&previewSources[0]?message.indexOf(inlinePreview):-1;
