@@ -63,16 +63,19 @@ await withBrowserPage(async ({ base, send, evaluate, waitFor }) => {
   assert.equal(await evaluate("Number(document.querySelector('[data-session-gems]').textContent)"),7,'session gems come from its acknowledged answer receipt');
   assert.equal(await evaluate("summaryResources.get(summaryOwner).gems"),207,'the reward increases the spendable balance');
   assert.equal(await evaluate("fetch('/api/progress',{headers:{'X-Progress-Owner':summaryOwner}}).then(response=>response.json()).then(data=>data.resources.gems)"),207,'the API retains the credited gems');
-  for(const [width,height] of [[390,844],[320,568]]) {
-    await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:true});
-    const layout=await evaluate(`(()=>{const gems=document.querySelector('.subject-session-gems').getBoundingClientRect(),task=document.querySelector('.level-layout-task').getBoundingClientRect();return {visible:gems.top>=task.top&&gems.bottom<=task.bottom,overflow:document.documentElement.scrollWidth>innerWidth};})()`);
-    assert.equal(layout.visible,true,'session gems stay visible on mobile');assert.equal(layout.overflow,false);
+  await waitFor("document.querySelector('.subject-completion').dataset.animationState === 'complete'");
+  for(const [width,height] of [[390,844],[320,568],[1440,900]]) {
+    await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:width<600});
+    const layout=await evaluate(`(()=>{
+      const rect=selector=>document.querySelector(selector).getBoundingClientRect();
+      const gems=rect('.subject-session-gems'),bar=rect('.completion-level .dashboard-level-progress'),meter=rect('.completion-level-meter'),task=rect('.level-layout-task');
+      return {visible:gems.top>=task.top&&gems.bottom<=task.bottom,underXp:Math.abs(gems.top-meter.bottom-4)<1&&Math.abs(gems.right-bar.right)<1,overflow:document.documentElement.scrollWidth>innerWidth};
+    })()`);
+    assert.deepEqual(layout,{visible:true,underXp:true,overflow:false},`session gems fit directly under the XP bar at ${width}px`);
     const shot=await send('Page.captureScreenshot',{format:'png'});
     await writeFile(`/tmp/khutwa-session-gems-${width}.png`,Buffer.from(shot.data,'base64'));
   }
-  await send('Emulation.setDeviceMetricsOverride',{width:1440,height:900,deviceScaleFactor:1,mobile:false});
   const elapsed = await gain('.subject-gain--quick');
-  await waitFor("document.querySelector('.subject-completion').dataset.animationState === 'complete'");
   await evaluate("window.resumedAt=performance.now();document.querySelector('[data-authored-review]').click()");
   assert.equal(await evaluate("document.querySelector('[data-live-authored-step]').dataset.lessonStep"), nextId);
   await finish();

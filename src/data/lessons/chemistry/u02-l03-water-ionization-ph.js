@@ -57,28 +57,37 @@ question: عند 25°س، حيث \\(K_w=1\\times10^{-14}\\)، إذا علمت أ
 - [ ] option-3 | \\(10^{-4}\\)
 - [ ] option-4 | \\(10^{-10}\\)
 explanation:
-pH هو سالب لوغاريتم تركيز الهيدرونيوم، و pOH هو سالب لوغاريتم تركيز الهيدروكسيد. عند 25° س مجموعهما 14؛ نطرح pOH من 14 لإيجاد pH.
+المعطى أن تركيز الهيدروكسيد يساوي \\(1\\times10^{-4}\\) مول/لتر، والمطلوب الرقم الهيدروجيني عند 25°س.
 
-المعطى [OH⁻] =10⁻⁴ مول/لتر. نستخرج pOH من تركيز OH⁻ ثم نطرحها من 14 عند 25° س.
+نكتب قانون الرقم الهيدروكسيلي ونعوّض.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy="false">(</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
+\`\`\`latex
+\\mathrm{pOH}=-\\log_{10}[\\mathrm{OH^-}]
 \`\`\`
 
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>4</mn><mo>=</mo><mn>10</mn></mrow></math>
+\`\`\`latex
+\\mathrm{pOH}=-\\log_{10}(1\\times10^{-4})
 \`\`\`
 
+اللوغاريتم بالأساس 10 يعطي الأس −4. سالب هذا العدد يساوي 4.
 
+\`\`\`latex
+\\mathrm{pOH}=-(-4)=4
+\`\`\`
 
+عند 25°س يكون مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي 14. نعوّض 4 عن الرقم الهيدروكسيلي.
 
-**المصدر:** الصفحات 31، 33 من الكتاب.
+\`\`\`latex
+\\mathrm{pH}+4=14
+\`\`\`
 
+بنقل الحد +4 إلى الطرف الآخر يصبح −4.
+
+\`\`\`latex
+\\mathrm{pH}=14-4
+\`\`\`
+
+نطرح 4 من 14، إذن **الرقم الهيدروجيني 10**.
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -101,8 +110,28 @@ pH هو سالب لوغاريتم الهيدرونيوم، و pOH هو سالب 
 المعطيات: pH=11.5، الحجم 250 مل. المطلوب مولات KOH. عند 25° س نحسب OH⁻؛ و KOH قاعدة قوية تعطي مولاً واحداً منه لكل مول.
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>11.5</mn><mo>=</mo><mn>2.5</mn></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>11.5</mn><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>11.5</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>11.5</mn></mrow></math>\`.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>11.5</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>2.5</mn></mrow></math>
 \`\`\`
 
 
@@ -144,12 +173,6 @@ pH هو سالب لوغاريتم الهيدرونيوم، و pOH هو سالب 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo>=</mo><mi>C</mi><mi>V</mi><mo>=</mo><mo stretchy="false">(</mo><mn>3.162</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.250</mn><mo stretchy="false">)</mo><mo>=</mo><mn>7.91</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** الصفحات 32، 33 من الكتاب.
-
 :::
 
 :::mcq
@@ -334,7 +357,13 @@ pH هو سالب لوغاريتم تركيز الهيدرونيوم؛ وبعكس
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>0.05</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.10</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>0.05</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>0.10</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
 \`\`\`
 
 
@@ -347,9 +376,6 @@ pH هو سالب لوغاريتم تركيز الهيدرونيوم؛ وبعكس
 
 
 HClO ضعيف، و KOH قاعدي، و HI بتركيز 0.2 يعطي pH≈0.70. تأين البروتون الثاني لـ H₂SO₄ غير تام تماماً في الوصف الأدق؛ الحساب هنا هو النموذج المدرسي.
-
-**المصدر:** صفحة 32 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -370,8 +396,28 @@ pH هو سالب لوغاريتم تركيز الهيدرونيوم، و pOH ه�
 المعطى pH=12. عند 25° س:
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>12</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>12</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>12</mn></mrow></math>\`.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>12</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -418,8 +464,28 @@ explanation:
 
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>11</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>11</mn><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>11</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>11</mn></mrow></math>\`.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>11</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -433,8 +499,28 @@ explanation:
 
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>2</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>2</mn></mrow></math>\`.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
@@ -515,7 +601,13 @@ Ba(OH)₂ قاعدة قوية تعطي مولين OH⁻ لكل مول. المع�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">[</mo><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>0.005</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.010</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>0.005</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>0.010</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
 \`\`\`
 
 
@@ -530,8 +622,28 @@ Ba(OH)₂ قاعدة قوية تعطي مولين OH⁻ لكل مول. المع�
 
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>2</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>2</mn></mrow></math>\`.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
@@ -559,8 +671,28 @@ pH هو سالب لوغاريتم الهيدرونيوم، و pOH هو سالب 
 المعطيات: pH=12، الحجم 250 سم³، الكتلة المولية 56 غم/مول. KOH قوي ويعطي OH⁻ بنسبة 1:1. عند 25° س:
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>12</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12</mn><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>12</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>12</mn></mrow></math>\`.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>12</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -584,7 +716,19 @@ pH هو سالب لوغاريتم الهيدرونيوم، و pOH هو سالب 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo>=</mo><mi>C</mi><mi>V</mi><mo>=</mo><mn>0.010</mn><mo stretchy="false">(</mo><mn>0.250</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.00250</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>=</mo><mi>C</mi><mi>V</mi></mrow></math>
+\`\`\`
+
+نعوّض بالقيم المعطاة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>=</mo><mn>0.010</mn><mo stretchy="false">(</mo><mn>0.250</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>=</mo><mn>0.00250</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
 \`\`\`
 
 
@@ -592,7 +736,19 @@ pH هو سالب لوغاريتم الهيدرونيوم، و pOH هو سالب 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>m</mi><mo>=</mo><mi>n</mi><mi>M</mi><mo>=</mo><mn>0.00250</mn><mo stretchy="false">(</mo><mn>56</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.140</mn><mtext>  </mtext><mi>g</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi><mo>=</mo><mi>n</mi><mi>M</mi></mrow></math>
+\`\`\`
+
+نعوّض بالقيم المعطاة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi><mo>=</mo><mn>0.00250</mn><mo stretchy="false">(</mo><mn>56</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi><mo>=</mo><mn>0.140</mn><mtext>  </mtext><mi>g</mi></mrow></math>
 \`\`\`
 
 
@@ -620,8 +776,28 @@ pH هو سالب لوغاريتم تركيز الهيدرونيوم، و pOH ه�
 المطلوب تركيز Ba(OH)₂. عند 25° س نحسب [OH⁻] أولاً، ثم نقسمه على 2 لأن كل مول قاعدة يعطي مولين هيدروكسيد.
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>13.2</mn><mo>=</mo><mn>0.8</mn></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>13.2</mn><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>13.2</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>13.2</mn></mrow></math>\`.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>13.2</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>0.8</mn></mrow></math>
 \`\`\`
 
 
@@ -689,7 +865,19 @@ pH هو سالب لوغاريتم الهيدرونيوم، فنستخرج الت
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo>=</mo><mi>C</mi><mi>V</mi><mo>=</mo><mn>0.50</mn><mo stretchy="false">(</mo><mn>0.400</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.200</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>=</mo><mi>C</mi><mi>V</mi></mrow></math>
+\`\`\`
+
+نعوّض بالقيم المعطاة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>=</mo><mn>0.50</mn><mo stretchy="false">(</mo><mn>0.400</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>=</mo><mn>0.200</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
 \`\`\`
 
 
@@ -697,7 +885,19 @@ pH هو سالب لوغاريتم الهيدرونيوم، فنستخرج الت
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>m</mi><mo>=</mo><mi>n</mi><mi>M</mi><mo>=</mo><mn>0.200</mn><mo stretchy="false">(</mo><mn>98</mn><mo stretchy="false">)</mo><mo>=</mo><mn>19.6</mn><mtext>  </mtext><mi>g</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi><mo>=</mo><mi>n</mi><mi>M</mi></mrow></math>
+\`\`\`
+
+نعوّض بالقيم المعطاة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi><mo>=</mo><mn>0.200</mn><mo stretchy="false">(</mo><mn>98</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi><mo>=</mo><mn>19.6</mn><mtext>  </mtext><mi>g</mi></mrow></math>
 \`\`\`
 
 
@@ -764,7 +964,17 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><msub><mo stretchy="false">]</mo><mi>f</mi></msub></mrow><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><msub><mo stretchy="false">]</mo><mi>i</mi></msub></mrow></mfrac><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup><mi mathvariant="normal">/</mi><msup><mn>10</mn><mrow><mo>−</mo><mn>11</mn></mrow></msup><mo>=</mo><msup><mn>10</mn><mn>2</mn></msup><mo>=</mo><mn>100</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mfrac><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><msub><mo stretchy="false">]</mo><mi>f</mi></msub></mrow><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><msub><mo stretchy="false">]</mo><mi>i</mi></msub></mrow></mfrac><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup><mi mathvariant="normal">/</mi><msup><mn>10</mn><mrow><mo>−</mo><mn>11</mn></mrow></msup></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><msub><mo stretchy="false">]</mo><mi>f</mi></msub></mrow><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><msub><mo stretchy="false">]</mo><mi>i</mi></msub></mrow></mfrac><mo>=</mo><msup><mn>10</mn><mn>2</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><msub><mo stretchy="false">]</mo><mi>f</mi></msub></mrow><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><msub><mo stretchy="false">]</mo><mi>i</mi></msub></mrow></mfrac><mo>=</mo><mn>100</mn></mrow></math>
 \`\`\`
 
 
@@ -842,7 +1052,17 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>0.0005</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.001</mn><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">l</mi><mtext> </mtext><msup><mi mathvariant="normal">L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></math>
+<math dir="ltr" display="block"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>0.0005</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>0.001</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">l</mi><mtext> </mtext><msup><mi mathvariant="normal">L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
 \`\`\`
 
 
@@ -942,12 +1162,6 @@ pH هو سالب لوغاريتم الهيدرونيوم، لذلك [H₃O⁺]=1
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">[</mo><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mo stretchy="false">]</mo><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>14</mn></mrow></msup><mi mathvariant="normal">/</mi><msup><mn>10</mn><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>13</mn></mrow></msup><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** الصفحات 31، 33 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1039,8 +1253,28 @@ pH هو سالب لوغاريتم تركيز الهيدرونيوم، و pOH ه�
 
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>13</mn></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>1</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>1</mn></mrow></math>\`.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>13</mn></mrow></math>
 \`\`\`
 
 
@@ -1077,8 +1311,28 @@ pH هو سالب لوغاريتم تركيز الهيدرونيوم، و pOH ه�
 المعطى pH للمحلول D يساوي 9. عند 25° س:
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>9</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>9</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>9</mn></mrow></math>\`.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>9</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
@@ -1088,12 +1342,6 @@ pH هو سالب لوغاريتم تركيز الهيدرونيوم، و pOH ه�
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">[</mo><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mo stretchy="false">]</mo><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** الصفحات 31، 33 من الكتاب.
-
 :::
 
 :::exam-question

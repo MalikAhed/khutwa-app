@@ -1,4 +1,5 @@
-import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { getCurrentSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { isCurriculumQuestionHidden, publishedPartLocation } from "../data/curriculum-visibility.js";
 import { getPartQuestionIds, questionRewardKey } from "./question-rewards.js";
 
 // Legacy answers may predate rating saves. Mistake history defaults to Hard.
@@ -10,16 +11,17 @@ export const QUESTION_RATINGS = Object.freeze([
 
 export function getRatedSubjectQuestions(subjectId, feedback) {
   const seen = new Set();
-  return (getSubjectRoadmap(subjectId)?.units || []).flatMap(unit => unit.lessons
+  return (getCurrentSubjectRoadmap(subjectId)?.units || []).flatMap(unit => unit.lessons
     .filter(lesson => !lesson.hidden && !lesson.optional)
-    .flatMap(lesson => lesson.parts.flatMap(part => getPartQuestionIds({ subjectId,lessonId:lesson.id,partId:part.id })
+    .flatMap(lesson => lesson.parts.flatMap(part => (part.questionIds || getPartQuestionIds({ subjectId,lessonId:lesson.id,partId:part.id }))
       .flatMap(stepId => {
-        const key = { subjectId,lessonId:lesson.id,partId:part.id,stepId };
+        if (isCurriculumQuestionHidden(stepId, subjectId, lesson.id, part.id)) return [];
+        const key = { ...publishedPartLocation(subjectId, lesson, part), stepId };
         const rating = feedback?.getRating(key);
         const identity = questionRewardKey(key);
         if (!rating || feedback?.isHidden(key) || seen.has(identity)) return [];
         seen.add(identity);
-        return [{ ...key,rating }];
+        return [{ subjectId,lessonId:lesson.id,partId:part.id,stepId,rating }];
       }))));
 }
 

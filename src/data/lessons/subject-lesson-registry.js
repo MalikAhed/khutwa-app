@@ -1,8 +1,10 @@
 import { ADABI_LESSON_LOADERS } from "./adabi/registry.js";
+import { OUTSIDE_GAZA_LOADERS } from "./outside-gaza-loaders.js";
 import { MATHEMATICS_LESSONS } from "./mathematics/math-course.js";
 import { CHEMISTRY_LESSONS } from "./chemistry/chemistry-course.js";
 import { ISLAMIC_LESSONS } from "../subject-catalog.js";
 import { getSubjectRoadmapLesson } from "../subject-roadmaps.js";
+import { getCourseSubject } from "../course.js";
 
 function lessonKey(subjectId, lessonId) {
   return `${subjectId}:${lessonId}`;
@@ -118,6 +120,7 @@ export const subjectLessonRegistry = new Map([
 ]);
 
 for (const [key, loader] of ADABI_LESSON_LOADERS) subjectLessonRegistry.set(key, loader);
+for (const [key, loader] of OUTSIDE_GAZA_LOADERS) subjectLessonRegistry.set(key, loader);
 
 // Register each canonical book lesson once. Legacy routes resolve below.
 for (const lesson of ISLAMIC_LESSONS) {
@@ -142,6 +145,19 @@ export function createSubjectLessonLoader({ registry = subjectLessonRegistry } =
     if (lessonCache.has(key)) return lessonCache.get(key);
 
     let load = registry.get(key);
+    if (!load && registry === subjectLessonRegistry && subjectId.startsWith("outside-gaza-")) {
+      const topic = roadmapLesson(subjectId, lessonId);
+      if (topic?.parts.length && topic.parts.every(part => part.source)) load = async () => {
+        const { createOutsideGazaLesson } = await import("./outside-gaza/lesson.js");
+        const sections = await Promise.all(topic.parts.map(async part => {
+          const { authoringSource } = await loadRegisteredSubjectLesson(part.source.subjectId, part.source.lessonId);
+          const active = new Set(part.questionIds);
+          return [...authoringSource.matchAll(/^:::(?:mcq|exam-question)[ \t]*\n[\s\S]*?^:::[ \t]*$/gm)]
+            .map(([block]) => block).filter(block => active.has(/^id:[ \t]*(\S+)/m.exec(block)?.[1]));
+        }));
+        return { default:createOutsideGazaLesson({ id:topic.id, title:topic.label, locale:getCourseSubject(subjectId)?.locale || "ar" }, sections.flat().join("\n\n")) };
+      };
+    }
     if (!load && registry === subjectLessonRegistry && subjectId === "islamic-education"
         && roadmapLesson(subjectId, lessonId)?.hidden) {
       load = () => import("./islamic-education/islamic-bank.js").then(({ createIslamicLesson }) => ({ default:createIslamicLesson(lessonId.replace(/^islamic-/, "")) }));

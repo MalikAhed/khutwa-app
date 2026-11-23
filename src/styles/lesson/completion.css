@@ -4,10 +4,7 @@
 .lesson-shell--completion .level-layout-content { container-type:size; }
 .lesson-shell--completion .level-layout-task { min-height:0; overflow:hidden; display:flex; align-items:center; justify-content:center; padding:var(--space-4) var(--page-gutter-right) var(--space-4) var(--page-gutter-left); }
 .subject-completion { position:relative; width:min(100%,660px); margin:auto; padding:0; color:var(--system-ink); text-align:center; }
-.subject-completion:has(.subject-session-gems) { --completion-extra-height:56px; }
-.subject-session-gems { display:flex; align-items:center; justify-content:center; gap:10px; width:fit-content; max-width:100%; min-height:44px; margin:12px auto 0; padding:4px 16px; border:2px solid #a7ddf8; border-radius:14px; background:#edf9ff; color:#175c85; font:800 14px/1.5 var(--font-ui); }
-.subject-session-gems img { flex:none; width:30px; height:30px; object-fit:contain; }
-.subject-session-gems bdi { font:900 24px/1.2 var(--font-numeric); }
+.subject-completion:has(.subject-session-gems) { --completion-extra-height:36px; }
 .subject-completion h1 { margin:0; color:var(--system-ink); font:var(--type-title); }
 .subject-completion-hero { display:grid; justify-items:center; }
 .subject-completion-scene { position:relative; width:min(100%,360px); height:clamp(40px,calc(100cqh - 280px - var(--completion-extra-height,0px)),310px); }
@@ -35,13 +32,17 @@
 .subject-gain-icon--accuracy,.subject-gain-icon--quick { width:31px; height:31px; object-fit:contain; }
 .subject-xp-particles { position:absolute; inset:0; z-index:5; overflow:visible; pointer-events:none; }
 .subject-xp-particle { position:absolute; top:0; left:0; width:24px; height:24px; object-fit:contain; filter:drop-shadow(0 3px 2px rgba(133,87,0,.18)); will-change:transform,opacity; }
-.completion-level { width:min(100%,460px); margin:24px auto 0; text-align:start; animation:completion-level-arrive 500ms cubic-bezier(.165,.84,.44,1) 180ms both paused; }
+.completion-level { --completion-meter-gap:12px; --completion-bolt-width:36px; width:min(100%,460px); margin:24px auto 0; text-align:start; animation:completion-level-arrive 500ms cubic-bezier(.165,.84,.44,1) 180ms both paused; }
 .completion-level-heading { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px; color:var(--system-muted); font:700 14px/1.5 var(--font-ui); }
 .completion-level-heading > span { color:var(--system-ink); }
-.completion-level-meter { display:flex; align-items:center; gap:12px; }
-.completion-level-bolt { flex:none; width:36px; height:40px; object-fit:contain; }
+.completion-level-meter { display:flex; align-items:center; gap:var(--completion-meter-gap); }
+.completion-level-bolt { flex:none; width:var(--completion-bolt-width); height:40px; object-fit:contain; }
 .completion-level .dashboard-level-progress { flex:1; --xp-bar-height:22px; overflow:visible; }
 .completion-level .dashboard-level-progress > span { transition:width 90ms linear; }
+.subject-session-gems { display:flex; align-items:center; gap:8px; margin-block-start:4px; margin-inline-start:calc(var(--completion-bolt-width) + var(--completion-meter-gap)); color:var(--system-ink); font:700 13px/1.55 var(--font-ui); }
+.subject-session-gem-value { display:inline-flex; align-items:center; gap:5px; min-height:28px; padding:2px 8px; border-radius:var(--radius-control); background:var(--system-blue-soft); }
+.subject-session-gem-value img { flex:none; object-fit:contain; }
+.subject-session-gem-value bdi { font:800 16px/1.2 var(--font-numeric); }
 .subject-completion--result { overflow:clip; }
 .subject-completion[data-animation-state] :is(.subject-gain,.subject-gain > span,.completion-level) { animation-play-state:running; }
 .subject-completion--result h1 { color:#ffc800; font:800 clamp(28px,4vw,42px)/1.6 var(--font-ui); }

@@ -28,30 +28,50 @@ import { createQuestionFeedback } from "./services/question-feedback.js";
 import { getSubjectRoadmap } from "./data/subject-roadmaps.js";
 import { watchPreviewUpdates } from "./services/preview-updates.js";
 import { configureBackgroundLoading } from './app/background-loading.js';
+import { createStudentPreviewStorage, verifyStudentPreview } from "./app/student-preview.js";
 
 const APP_TITLE = "خطوة";
 const ROCKY_TOUR_ENABLED = true;
 const appConfig = readAppConfig(document);
-const offlineStorage = { getItem:key => window.localStorage.getItem(key), setItem:(key,value) => window.localStorage.setItem(key,value) };
+const initialUrl = new URL(window.location.href);
+const previewRequested = initialUrl.searchParams.has("student-preview");
+const studentPreview = previewRequested ? await verifyStudentPreview(initialUrl.searchParams, appConfig.apiBase) : null;
+if (previewRequested) {
+  if (!studentPreview && initialUrl.searchParams.get("student-preview") === "student") {
+    throw Object.assign(new Error("تعذّر فتح معاينة الطالب. أعد المحاولة أو ارجع إلى لوحة إدارة الطلاب."), {code:"account-unavailable"});
+  }
+  if (studentPreview) initialUrl.searchParams.delete("flow");
+  else {
+    initialUrl.searchParams.delete("student-preview");
+    initialUrl.searchParams.delete("preview-plan");
+    initialUrl.searchParams.delete("student-id");
+  }
+  window.history.replaceState(window.history.state, "", initialUrl);
+}
+const remoteAccounts = appConfig.accountMode === "http" && !studentPreview;
+const fullPalestineAvailable = appConfig.fullPalestineAvailable || Boolean(studentPreview && !studentPreview.targetId);
+const subjectAvailable = subjectId => fullPalestineAvailable || !subjectId?.startsWith("outside-gaza-");
+const previewStorage = studentPreview ? createStudentPreviewStorage(studentPreview) : null;
+const offlineStorage = studentPreview ? null : { getItem:key => window.localStorage.getItem(key), setItem:(key,value) => window.localStorage.setItem(key,value) };
 const offlineAccess = createOfflineAccess({ storage:offlineStorage });
-if (appConfig.accountMode === "http") {
+if (remoteAccounts) {
   try { await applyServerDataReset({ allowOffline:offlineAccess.inspect().allowed }); }
   catch (error) {
     if (navigator.onLine === false) throw Object.assign(new Error(error instanceof Error ? error.message : "Reconnect to verify offline access.", { cause:error }), { code:"offline-reconnect" });
     throw error;
   }
 }
-const learnerStorage = getBrowserLearnerStorage(undefined, { persistent:appConfig.accountMode === "fixture" });
+const learnerStorage = studentPreview ? null : getBrowserLearnerStorage(undefined, { persistent:appConfig.accountMode === "fixture" });
 const browserLocalStorage = () => ({ getItem:(key) => window.localStorage.getItem(key) });
 const resourceStore = createLearnerResources({
-  storage:{ getItem:key => window.localStorage.getItem(key), setItem:(key,value) => window.localStorage.setItem(key,value) },
+  storage:previewStorage || offlineStorage,
   getAccountType:() => productService.getAccountType(),
   hasSuperAccess:key => productService.hasSuperAccess(key),
-  now:() => appConfig.accountMode === "http" ? offlineAccess.inspect().now : Date.now(),
-  apiBase:appConfig.accountMode === "http" ? "/api/progress" : null,
+  now:() => remoteAccounts ? offlineAccess.inspect().now : Date.now(),
+  apiBase:remoteAccounts ? "/api/progress" : null,
 });
 const reportProgressRecovery = (error, ownerId) => progressStore.reportRecoveryWarning(ownerId, error);
-const guestProgress = createSessionProgressAdapter({
+const guestProgress = studentPreview ? null : createSessionProgressAdapter({
   // Read lazily so a denied storage getter reaches the shared save feedback.
   storage:{
     getItem:(key) => window.sessionStorage.getItem(key),
@@ -59,11 +79,11 @@ const guestProgress = createSessionProgressAdapter({
   },
   onError:reportProgressRecovery,
 });
-const memberProgress = createIndexedDbProgressAdapter({ legacyStorage:browserLocalStorage(), onError:reportProgressRecovery });
-const serverProgress = appConfig.accountMode === "http" ? createServerProgressAdapter({local:memberProgress, onError:reportProgressRecovery, onResources:resourceStore.confirm,
+const memberProgress = studentPreview ? null : createIndexedDbProgressAdapter({ legacyStorage:browserLocalStorage(), onError:reportProgressRecovery });
+const serverProgress = remoteAccounts ? createServerProgressAdapter({local:memberProgress, onError:reportProgressRecovery, onResources:resourceStore.confirm,
   requiresOnlineAnswer:(_owner,key) => !productService.hasSuperAccess(key) && !(productService.getAccountType() === "subscribed" && hasFreeLessonPractice(key))}) : null;
 const progressAdapterFor = (owner) => owner === "guest" ? guestProgress : owner.startsWith("account:") && serverProgress ? serverProgress : memberProgress;
-const progressStore = createSubjectProgressStore({ resourceStore, adapter:{
+const progressStore = createSubjectProgressStore({ resourceStore, storage:previewStorage, adapter:studentPreview ? undefined : {
   isRemoteOwner:(owner) => owner.startsWith("account:") && Boolean(serverProgress),
   read:(owner) => progressAdapterFor(owner).read(owner),
   readCached:(owner) => progressAdapterFor(owner).readCached?.(owner) || progressAdapterFor(owner).read(owner),
@@ -75,7 +95,9 @@ const productService = createLearnerSession({
   progressStore,
   offlineAccess,
   storage: learnerStorage,
-  apiBase: appConfig.apiBase,
+  apiBase: remoteAccounts ? appConfig.apiBase : null,
+  studentPreview,
+  fullPalestineAvailable,
 });
 const restoredSession = await productService.restoreSession();
 // A verified lease can resume offline. Otherwise show reconnect recovery;
@@ -94,7 +116,7 @@ productService.subscribe(() => {
 const refreshProgress = async () => {
   if (document.hidden) return;
   // Check backend continuity and identity before any outbox upload.
-  if (appConfig.accountMode === "http") {
+  if (remoteAccounts) {
     try {
       if (!await applyServerDataReset({ allowOffline:true })) return;
       const restored = await productService.restoreSession();
@@ -108,11 +130,21 @@ window.addEventListener("online", refreshProgress);
 window.addEventListener("pageshow", refreshProgress);
 window.addEventListener("focus", refreshProgress);
 setInterval(refreshProgress, 60000);
-const offlineGate = appConfig.accountMode === "http" ? mountOfflineAccess({ service:productService, resourceStore, reconnect:refreshProgress,
+const offlineGate = remoteAccounts ? mountOfflineAccess({ service:productService, resourceStore, reconnect:refreshProgress,
   getStudyKey:() => {const route=readRoute(window.location.search);return {subjectId:route.subject,lessonId:route.lesson};},
   onReturnHome:() => selectPage(getPageTarget('learn'),{historyMode:'replace'}) }) : null;
 const elements = mountAppShell();
-watchPreviewUpdates({
+if (studentPreview?.targetId) {
+  const notice = document.createElement("p");
+  notice.className = "student-preview-notice";
+  const name = document.createElement("bdi");
+  name.textContent = studentPreview.displayName;
+  notice.append("معاينة حساب ", name, " · ", Array.isArray(studentPreview.ratings)
+    ? "إجاباتك وتقييماتك مؤقتة داخل المعاينة. رصيد الطاقة والجواهر تجريبي."
+    : "إجاباتك وتقييماتك مؤقتة داخل المعاينة. تظهر التقييمات المستنتجة من إجابات الطالب، والرصيد تجريبي.");
+  elements.courseUnits.before(notice);
+}
+if (!studentPreview) watchPreviewUpdates({
   canReload:() => !document.body.matches(".ui-lab-open,.product-flow-active")
     && !elements.main.matches(".lesson-mode,.coming-mode")
     && !document.querySelector('dialog[open]')
@@ -120,7 +152,7 @@ watchPreviewUpdates({
   subscribe:progressStore.subscribe,
   beforeReload:async () => {
     const owner = productService.getLearnerProgressOwner();
-    if (appConfig.accountMode !== 'http' || !owner.startsWith('account:')) return true;
+    if (!remoteAccounts || !owner.startsWith('account:')) return true;
     await progressStore.refresh(owner);
     return owner === productService.getLearnerProgressOwner() && (await memberProgress.pending(owner)).length === 0;
   },
@@ -155,6 +187,7 @@ const authHeader = createAuthHeader({
   courseContainer: elements.courseUnits,
   service: productService,
   progressStore,
+  onExitPreview: studentPreview ? () => window.location.assign("/students") : undefined,
   onFlow: (flow) => openVisitorFlow(flow),
 });
 
@@ -176,17 +209,18 @@ function writeRoute(route, historyMode) {
 }
 
 const questionFeedback = createQuestionFeedback({ service:productService, progressStore,
-  apiBase:appConfig.apiBase?.replace(/\/auth$/, ""),
-  storage:{ getItem:key => window.localStorage.getItem(key),setItem:(key,value) => window.localStorage.setItem(key,value) },
+  apiBase:remoteAccounts ? appConfig.apiBase?.replace(/\/auth$/, "") : null,
+  storage:previewStorage || offlineStorage,
 });
 const rockyTour = ROCKY_TOUR_ENABLED ? createRockyTour({ service:productService,
-  storage:{ getItem:key => window.localStorage.getItem(key),setItem:(key,value) => window.localStorage.setItem(key,value) },
+  storage:offlineStorage,
   onHome:() => openLearnHome({ historyMode:"replace", startTour:true }),
   onComplete:() => { pendingAccountRoute = null; },
 }) : null;
 const visitorFlowController = createVisitorFlow({
   container: elements.visitorFlowRoot,
   service: productService,
+  fullPalestineAvailable,
   onNavigate(flow, options) {
     openVisitorFlow(flow, options);
   },
@@ -246,7 +280,7 @@ function setViewMode(view = null) {
 }
 
 const subjectLearning = createSubjectLearningController({
-  canStudy:key => offlineGate?.checkStudy(key) ?? true,
+  canStudy:key => subjectAvailable(key?.subjectId) && (offlineGate?.checkStudy(key) ?? true),
   resourceStore,
   elements,
   productService,
@@ -310,12 +344,15 @@ function selectPage(
   const isLearnPage = page === "learn";
   const isSubjectsPage = isLearnPage || page === "rated-questions";
   elements.courseUnits.dataset.page = page;
-  if (isSubjectsPage && (page === "rated-questions" || elements.courseUnits.querySelector(".subject-map")?.dataset.catalog !== page || elements.courseUnits.querySelector(".subject-map")?.dataset.path !== (productService.getVisitorSelection()?.path || "scientific"))) {
+  const selection = productService.getVisitorSelection();
+  const subjectMap = elements.courseUnits.querySelector(".subject-map")?.dataset;
+  if (isSubjectsPage && (page === "rated-questions" || subjectMap?.catalog !== page
+    || subjectMap.path !== (selection?.path || "scientific") || subjectMap.curriculum !== (selection?.curriculum || "gaza"))) {
     renderCourseMap(elements.courseUnits, {
       ratedQuestions:page === "rated-questions",
       snapshot:productService.getLearnerHomeSnapshot(),
       questionFeedback,
-      selection:productService.getVisitorSelection(),
+      selection,
     });
   }
   if (page === "rated-questions") {
@@ -383,6 +420,10 @@ function applyCurrentRoute({ restorePath = false } = {}) {
   const mapExplanation = typeof pendingMapReturn === "object" ? pendingMapReturn : null;
   pendingMapReturn = false;
   const route = readRoute(window.location.search);
+  if (!subjectAvailable(route.subject)) {
+    selectPage(getPageTarget("learn"), { historyMode:"replace" });
+    return;
+  }
   if (route.flow === "entry" && productService.getAccountType() !== "guest") {
     selectPage(getPageTarget("learn"), { historyMode:"replace" });
     return;

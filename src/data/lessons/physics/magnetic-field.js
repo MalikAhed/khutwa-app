@@ -103,7 +103,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>4</mn><mn>100</mn></mfrac><mo>=</mo><mn>0.04</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>4</mn><mn>100</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mn>0.04</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -111,7 +117,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>+</mo><mn>4</mn></mrow><mn>100</mn></mfrac><mo>=</mo><mn>0.08</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>+</mo><mn>4</mn></mrow><mn>100</mn></mfrac></mrow></math>
+\`\`\`
+
+نجمع العددين في البسط.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mn>8</mn></mrow><mrow><mn>100</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام للحصول على الناتج.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mn>0.08</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -195,15 +213,11 @@ body:
 final-answer:
 **المجال المغناطيسي:** المنطقة المحيطة بالمغناطيس التي تظهر فيها آثار قوته المغناطيسية.
 solution:
-الإجابة: المجال المغناطيسي: المنطقة المحيطة بالمغناطيس التي تظهر فيها آثار قوته المغناطيسية.
+المجال المغناطيسي هو المنطقة المحيطة بالمغناطيس التي تظهر فيها آثار قوته المغناطيسية.
 
-الكتاب: المجال المغناطيسي، الصفحة المطبوعة \\(44\\)، صفحة \\(\\mathrm{PDF} 46\\).
+[رزمة غزة، المجال المغناطيسي](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=46)، الصفحة المطبوعة \\(44\\).
 
-> المنطقة المحيطة بالمغناطيس التي تظهر فيها آثار قوته المغناطيسية.
-
-
-
-
+[كتاب فلسطين الكامل، المجال المغناطيسي](https://moe.edu.ps/storage/app/class12/Physics12%202025%20Tawjihi.pdf#page=101)، الصفحة المطبوعة \\(97\\).
 :::
 
 :::exam-question
@@ -224,13 +238,8 @@ final-answer:
 solution:
 الإجابة: قانون أمبير: \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>∑</mo><mover accent="true"><mi>B</mi><mo>⃗</mo></mover><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mover accent="true"><mi>L</mi><mo>⃗</mo></mover><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mo>∑</mo><mi>I</mi></mrow></math>\`. التيارات في المجموع الجبري هي التي تخترق السطح المحاط بالمسار المغلق.
 
-الكتاب: قانون أمبير، الصفحة المطبوعة \\(49\\)، صفحة \\(\\mathrm{PDF} 51\\).
 
 > لأي مسار مغلق يكون مجموع حاصل الضرب النقطي لشدة المجال المغناطيسي مع طول ذلك الجزء في المسار المغلق يساوي المجموع الجبري للتيارات التي تخترق المسار المغلق، مضروباً في ثابت النفاذية المغناطيسية للفراغ
-
-
-
-
 :::
 
 :::exam-question
@@ -348,7 +357,17 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>h</mi><mo>=</mo><msqrt><mrow><mn>0.0100</mn><mo>−</mo><mn>0.0036</mn></mrow></msqrt><mo>=</mo><msqrt><mn>0.0064</mn></msqrt><mo>=</mo><mn>0.08</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>h</mi><mo>=</mo><msqrt><mrow><mn>0.0100</mn><mo>−</mo><mn>0.0036</mn></mrow></msqrt></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>h</mi><mo>=</mo><msqrt><mn>0.0064</mn></msqrt></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>h</mi><mo>=</mo><mn>0.08</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -572,7 +591,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>L</mi><mo>=</mo><mfrac><mn>3</mn><mn>100</mn></mfrac><mo>=</mo><mn>0.03</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>L</mi><mo>=</mo><mfrac><mn>3</mn><mn>100</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>L</mi><mo>=</mo><mn>0.03</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -982,9 +1007,7 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>B</mi><mn>2</mn></msub><msub><mi>B</mi><mn>1</mn></msub></mfrac><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow></math>
 \`\`\`
 
-
-
-
+نضرب العددين.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>B</mi><mn>2</mn></msub><msub><mi>B</mi><mn>1</mn></msub></mfrac><mo>=</mo><mn>4</mn></mrow></math>
@@ -1111,15 +1134,11 @@ body:
 final-answer:
 **خط المجال المغناطيسي:** المسار الذي يتبعه قطب شمالي افتراضي مفرد، حر الحركة، عند وضعه في المجال.
 solution:
-الإجابة: خط المجال المغناطيسي: المسار الذي يتبعه قطب شمالي افتراضي مفرد، حر الحركة، عند وضعه في المجال.
+خط المجال المغناطيسي خط تخيّلي يمثّل مسار قطب شمالي افتراضي مفرد حرّ الحركة عند وضعه في المجال. يبيّن اتجاه المماس للخط عند أي نقطة اتجاه المجال عندها.
 
-الكتاب: خط المجال المغناطيسي، الصفحة المطبوعة \\(44\\)، صفحة \\(\\mathrm{PDF} 46\\).
+[رزمة غزة، خط المجال المغناطيسي](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=46)، الصفحة المطبوعة \\(44\\).
 
-> إن خط المجال المغناطيسي خط قوة له اتجاه، ويعبر عنه بالمسار الذي يتبعه القطب الشمالي الافتراضي المفرد حر الحركة تحت تأثير القوى المغناطيسية المؤثرة فيه عندما يوضع في المجال المغناطيسي.
-
-
-
-
+[كتاب فلسطين الكامل، خط المجال المغناطيسي](https://moe.edu.ps/storage/app/class12/Physics12%202025%20Tawjihi.pdf#page=101)، الصفحة المطبوعة \\(97\\).
 :::
 
 :::exam-question
@@ -1228,55 +1247,42 @@ question: في الشكل المجاور سلكان متوازيان لا نها
 - [x] option-3 | \\(\\frac32 I_1\\) باتجاه معاكس له
 - [ ] option-4 | \\(\\frac23 I_1\\) بنفس الاتجاه
 explanation:
-النقطة خارج السلكين؛ بعدها عن الأول ضعف المسافة المرجعية وعن الثاني ثلاثة أمثالها.
+النقطة \\(x\\) خارج السلكين. نرمز بالمسافة \\(r\\) إلى الجزء الأصغر المبيّن في الرسم، فتكون المسافة إلى السلك الأول \\(2r\\) وإلى السلك الثاني \\(3r\\).
 
 ![الرسم الأصلي المرتبط بالسؤال](assets/lessons/curriculum-evidence/039b7470fef4da8d6919.webp)
 
+انعدام المجال المحصّل يعني أن المجالين عند النقطة متساويان في المقدار ومتعاكسان في الاتجاه. نساوي مقداريهما باستخدام قانون مجال السلك المستقيم الطويل.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mi>r</mi></mrow></math>
+\`\`\`latex
+\\frac{\\mu_0 I_1}{2\\pi(2r)}=\\frac{\\mu_0 I_2}{2\\pi(3r)}
 \`\`\`
 
+نقسم الطرفين على العامل المشترك \\(\\mu_0/(2\\pi)\\).
 
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn><mi>r</mi></mrow></math>
+\`\`\`latex
+\\frac{I_1}{2r}=\\frac{I_2}{3r}
 \`\`\`
 
+بالضرب التبادلي نضرب \\(I_1\\) في \\(3r\\)، ونضرب \\(I_2\\) في \\(2r\\).
 
-
-مجال السلك الطويل \\(B=\\mu _{0}I/(2\\pi r)\\)، فيتناسب مع \\(I/r\\). انعدام المحصلة يعني تساوي المقدارين، فنلغي العوامل المشتركة.
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>I</mi><mn>1</mn></msub></mrow><mrow><mn>2</mn><mi>π</mi><mo stretchy="false">(</mo><mn>2</mn><mi>r</mi><mo stretchy="false">)</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>I</mi><mn>2</mn></msub></mrow><mrow><mn>2</mn><mi>π</mi><mo stretchy="false">(</mo><mn>3</mn><mi>r</mi><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`latex
+(3r)I_1=(2r)I_2
 \`\`\`
 
+نقسم الطرفين على \\(2r\\) لعزل \\(I_2\\).
 
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>I</mi><mn>1</mn></msub><mrow><mn>2</mn><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><msub><mi>I</mi><mn>2</mn></msub><mrow><mn>3</mn><mi>r</mi></mrow></mfrac></mrow></math>
+\`\`\`latex
+I_2=\\frac{3r}{2r}I_1
 \`\`\`
 
+نختصر العامل \\(r\\) من البسط والمقام.
 
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mn>3</mn><mi>r</mi></mrow><mrow><mn>2</mn><mi>r</mi></mrow></mfrac><msub><mi>I</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><msub><mi>I</mi><mn>1</mn></msub></mrow></math>
+\`\`\`latex
+I_2=\\frac32 I_1
 \`\`\`
 
+بقاعدة اليد اليمنى، يعطي التيار الأول المتجه إلى اليمين مجالًا إلى داخل الصفحة عند النقطة أسفله. ولإلغاء المجال الأول يجب أن يكون مجال السلك الثاني عند النقطة إلى خارج الصفحة، لذلك يتجه تياره إلى اليسار. إذن **مقدار التيار الثاني \\(\\tfrac32 I_1\\) واتجاهه معاكس للتيار الأول**.
 
-
-نطبق قاعدة اليد اليمنى: الإبهام مع تيار \\(I_{1}\\)إلىاليمين، فيكون مجاله عند \\(x\\) أسفل السلك إلى داخل الصفحة. لإلغائه يجب أن يكون مجال السلك العلوي خارج الصفحة عند \\(x\\)؛ وهذا يتطلب \\(I_{2}\\)إلىاليسار.
-
-إذن \\(I_{2}=3I_{1}/2\\) وبعكس اتجاهه، الخيار الثالث.
 hint: راجع المعطيات والوحدات ثم اختر الإجابة وفق نص المصدر.
 example:
 ![سلكان متوازيان يحملان I₁ وI₂ والنقطة x أسفلهما على الأبعاد r و2r.](assets/lessons/curriculum-evidence/039b7470fef4da8d6919.webp)
@@ -1328,7 +1334,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>r</mi><mo>=</mo><mfrac><mn>10</mn><mn>100</mn></mfrac><mo>=</mo><mn>0.10</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>r</mi><mo>=</mo><mfrac><mn>10</mn><mn>100</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>r</mi><mo>=</mo><mn>0.10</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -1974,7 +1986,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>r</mi><mo>=</mo><mfrac><mn>10</mn><mn>100</mn></mfrac><mo>=</mo><mn>0.10</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>r</mi><mo>=</mo><mfrac><mn>10</mn><mn>100</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>r</mi><mo>=</mo><mn>0.10</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -2420,17 +2438,61 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mrow><mo fence="true">(</mo><mfrac><mn>4</mn><mn>0.02</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>0.04</mn></mfrac><mo fence="true">)</mo></mrow></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>0.0000001</mn><mo fence="true">(</mo><mfrac><mn>4</mn><mn>0.02</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>0.04</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mfrac><mn>4</mn><mn>0.02</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>0.04</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>200</mn><mo>+</mo><mfrac><mn>4</mn><mn>0.04</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>200</mn><mo>+</mo><mn>100</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>300</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo stretchy="false">(</mo><mn>200</mn><mo>+</mo><mn>100</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>0.0000001</mn><mo stretchy="false">(</mo><mn>200</mn><mo>+</mo><mn>100</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mn>0.0000002</mn><mo stretchy="false">(</mo><mn>200</mn><mo>+</mo><mn>100</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mn>0.0000002</mn><mo stretchy="false">(</mo><mn>300</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo stretchy="false">(</mo><mn>300</mn><mo stretchy="false">)</mo></mrow></math>
@@ -2699,7 +2761,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><msqrt><mn>4</mn></msqrt><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><msqrt><mn>4</mn></msqrt></mrow></math>
+\`\`\`
+
+نأخذ الجذر التربيعي.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -2773,9 +2841,25 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><mn>36</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow><mrow><mn>12</mn><mo>×</mo><mn>0.06</mn></mrow></mfrac></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><mn>36</mn><mo>×</mo><mn>0.0000001</mn></mrow><mrow><mn>12</mn><mo>×</mo><mn>0.06</mn></mrow></mfrac></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mn>0.0000036</mn><mrow><mn>12</mn><mo>×</mo><mn>0.06</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mn>0.0000036</mn><mn>0.72</mn></mfrac></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><mn>3.6</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow><mn>0.72</mn></mfrac></mrow></math>
@@ -2909,9 +2993,19 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mn>10</mn><mn>0.10</mn></mfrac><mo>=</mo><mfrac><msub><mi>I</mi><mn>2</mn></msub><mn>0.25</mn></mfrac></mrow></math>
 \`\`\`
 
+بالضرب التبادلي، نضرب بسط كل كسر في مقام الكسر الآخر.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mn>10</mn><mo>×</mo><mn>0.25</mn><mo>=</mo><msub><mi>I</mi><mn>2</mn></msub><mo>×</mo><mn>0.10</mn></mrow></math>
+\`\`\`
 
+نقسم الطرفين على \`mathml: <math dir="ltr" display="block"><mrow><mn>0.10</mn></mrow></math>\` لعزل \`mathml: <math dir="ltr" display="block"><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow></math>\`.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mn>10</mn><mo>×</mo><mn>0.25</mn></mrow><mrow><mn>0.10</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب قيمة الطرف الآخر.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mn>100</mn><mo stretchy="false">(</mo><mn>0.25</mn><mo stretchy="false">)</mo></mrow></math>
@@ -3057,17 +3151,13 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>B</mi><mi>c</mi></msub><msub><mi>B</mi><mi>s</mi></msub></mfrac><mo>=</mo><mfrac><mn>30</mn><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
 \`\`\`
 
-
-
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>B</mi><mi>c</mi></msub><msub><mi>B</mi><mi>s</mi></msub></mfrac><mo>=</mo><mfrac><mn>30</mn><mn>6</mn></mfrac></mrow></math>
 \`\`\`
 
-
-
-
+نقسم البسط على المقام.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>B</mi><mi>c</mi></msub><msub><mi>B</mi><mi>s</mi></msub></mfrac><mo>=</mo><mn>5</mn></mrow></math>
@@ -3287,13 +3377,8 @@ final-answer:
 solution:
 الإجابة: قانون أمبير: لأي مسار مغلق، يساوي مجموع حاصل الضرب القياسي لشدة المجال وطول عنصر المسار نفاذية الفراغ مضروبة في المجموع الجبري للتيارات التي تخترق المسار. \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>∑</mo><mover accent="true"><mi>B</mi><mo>⃗</mo></mover><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mover accent="true"><mi>L</mi><mo>⃗</mo></mover><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mo>∑</mo><mi>I</mi></mrow></math>\`.
 
-الكتاب: قانون أمبير، الصفحة المطبوعة \\(49\\)، صفحة \\(\\mathrm{PDF} 51\\).
 
 > لأي مسار مغلق يكون مجموع حاصل الضرب النقطي لشدة المجال المغناطيسي مع طول ذلك الجزء في المسار المغلق يساوي المجموع الجبري للتيارات التي تخترق المسار المغلق، مضروباً في ثابت النفاذية المغناطيسية للفراغ
-
-
-
-
 :::
 
 
@@ -3931,9 +4016,37 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mrow><mo fence="true">(</mo><mfrac><mn>3</mn><mn>0.06</mn></mfrac><mo>+</mo><mfrac><mn>6</mn><mn>0.12</mn></mfrac><mo fence="true">)</mo></mrow></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><mn>0.0000001</mn><mo fence="true">(</mo><mfrac><mn>3</mn><mn>0.06</mn></mfrac><mo>+</mo><mfrac><mn>6</mn><mn>0.12</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mfrac><mn>3</mn><mn>0.06</mn></mfrac><mo>+</mo><mfrac><mn>6</mn><mn>0.12</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>50</mn><mo>+</mo><mfrac><mn>6</mn><mn>0.12</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>50</mn><mo>+</mo><mn>50</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>100</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo stretchy="false">(</mo><mn>50</mn><mo>+</mo><mn>50</mn><mo stretchy="false">)</mo></mrow></math>
@@ -4128,7 +4241,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>h</mi><mo>=</mo><msqrt><mrow><mn>0.0100</mn><mo>−</mo><mn>0.0036</mn></mrow></msqrt><mo>=</mo><msqrt><mn>0.0064</mn></msqrt></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>h</mi><mo>=</mo><msqrt><mrow><mn>0.0100</mn><mo>−</mo><mn>0.0036</mn></mrow></msqrt></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>h</mi><mo>=</mo><msqrt><mn>0.0064</mn></msqrt></mrow></math>
 \`\`\`
 
 
@@ -4455,9 +4574,37 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mrow><mo fence="true">(</mo><mfrac><mn>2</mn><mn>0.04</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>0.08</mn></mfrac><mo fence="true">)</mo></mrow></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><mn>0.0000001</mn><mo fence="true">(</mo><mfrac><mn>2</mn><mn>0.04</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>0.08</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mfrac><mn>2</mn><mn>0.04</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>0.08</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>50</mn><mo>+</mo><mfrac><mn>4</mn><mn>0.08</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>50</mn><mo>+</mo><mn>50</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>100</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo stretchy="false">(</mo><mn>50</mn><mo>+</mo><mn>50</mn><mo stretchy="false">)</mo></mrow></math>
@@ -4609,9 +4756,55 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mo>−</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mfrac><mn>2</mn><mn>0.04</mn></mfrac><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mfrac><mn>8</mn><mn>0.08</mn></mfrac></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mo>−</mo><mn>2</mn><mo>×</mo><mn>0.0000001</mn><mfrac><mn>2</mn><mn>0.04</mn></mfrac><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mfrac><mn>8</mn><mn>0.08</mn></mfrac></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mrow><mo>−</mo><mn>0.0000002</mn></mrow><mfrac><mn>2</mn><mn>0.04</mn></mfrac><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mfrac><mn>8</mn><mn>0.08</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mrow><mo>−</mo><mn>0.0000002</mn></mrow><mn>50</mn><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mfrac><mn>8</mn><mn>0.08</mn></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mrow><mo>−</mo><mn>0.00001</mn></mrow><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mfrac><mn>8</mn><mn>0.08</mn></mfrac></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mrow><mo>−</mo><mn>0.00001</mn></mrow><mo>+</mo><mn>2</mn><mo>×</mo><mn>0.0000001</mn><mfrac><mn>8</mn><mn>0.08</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mrow><mo>−</mo><mn>0.00001</mn></mrow><mo>+</mo><mn>0.0000002</mn><mfrac><mn>8</mn><mn>0.08</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mrow><mo>−</mo><mn>0.00001</mn></mrow><mo>+</mo><mn>0.0000002</mn><mn>100</mn></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mrow><mo>−</mo><mn>0.00001</mn></mrow><mo>+</mo><mn>0.00002</mn></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mo>−</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup></mrow></math>

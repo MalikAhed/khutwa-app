@@ -245,7 +245,19 @@ solution:
 
 
 \`\`\`mathml
-<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><msub><mi mathvariant="normal">ج</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mn dir="ltr">٣</mn><mo>−</mo><mn dir="ltr">٢</mn><mo>−</mo><mn dir="ltr">٢</mn><mo>=</mo><mo>−</mo><mn dir="ltr">١</mn></mrow></mrow></math>
+<math dir="rtl"><mrow><msub><mi mathvariant="normal">ج</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mn dir="ltr">٣</mn><mo>−</mo><mn dir="ltr">٢</mn><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl"><mrow><msub><mi mathvariant="normal">ج</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mn dir="ltr">١</mn><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl"><mrow><msub><mi mathvariant="normal">ج</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo>−</mo><mn dir="ltr">١</mn></mrow></math>
 \`\`\`
 
 نضع الثابتين في القاعدة.
@@ -320,7 +332,23 @@ solution:
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">ف</mi><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>=</mo><msup><mn dir="ltr">٢</mn><mn dir="ltr">٣</mn></msup><mo>+</mo><msup><mn dir="ltr">٢</mn><mn dir="ltr">٢</mn></msup><mo>=</mo><mn dir="ltr">٨</mn><mo>+</mo><mn dir="ltr">٤</mn><mo>=</mo><mn dir="ltr">١٢</mn><mtext> </mtext><mi mathvariant="normal">م</mi></mrow></math>
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ف</mi><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>=</mo><msup><mn dir="ltr">٢</mn><mn dir="ltr">٣</mn></msup><mo>+</mo><msup><mn dir="ltr">٢</mn><mn dir="ltr">٢</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ف</mi><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>=</mo><mn dir="ltr">٨</mn><mo>+</mo><msup><mn dir="ltr">٢</mn><mn dir="ltr">٢</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ف</mi><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>=</mo><mn dir="ltr">٨</mn><mo>+</mo><mn dir="ltr">٤</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ف</mi><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>=</mo><mn dir="ltr">١٢</mn><mtext> </mtext><mi mathvariant="normal">م</mi></mrow></math>
 \`\`\`
 
 
@@ -572,8 +600,13 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">أ</mi><mo>−</mo><mn dir="ltr">٣</mn><mo>=</mo><mo>−</mo><mn dir="ltr">١</mn></mrow></math>
 \`\`\`
 
+بنقل الحد \`mathml: <math dir="rtl" display="block"><mrow><mo>−</mo><mn dir="ltr">٣</mn></mrow></math>\` إلى الطرف الآخر تتغيّر إشارته.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mn dir="ltr">٣</mn></mrow></math>
+\`\`\`
 
+نجري العملية الحسابية في الطرف الذي انتقل إليه الحد.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
@@ -745,7 +778,27 @@ solution:
 
 
 \`\`\`mathml
-<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><mi mathvariant="normal">ع</mi><mrow><mo stretchy="false">(</mo><mn dir="ltr">٥</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mfrac><msup><mn dir="ltr">٥</mn><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٣</mn><mo>=</mo><mfrac><mn dir="ltr">٢٥</mn><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mfrac><mn dir="ltr">٦</mn><mn dir="ltr">٢</mn></mfrac><mo>=</mo><mfrac><mn dir="ltr">٣١</mn><mn dir="ltr">٢</mn></mfrac><mtext> </mtext><mrow><mfrac><mi mathvariant="normal">م</mi><mi mathvariant="normal">ف</mi></mfrac></mrow></mrow></math>
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ع</mi><mo stretchy="false">(</mo><mn dir="ltr">٥</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><msup><mn dir="ltr">٥</mn><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٣</mn></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ع</mi><mo stretchy="false">(</mo><mn dir="ltr">٥</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn dir="ltr">٢٥</mn><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٣</mn></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ع</mi><mo stretchy="false">(</mo><mn dir="ltr">٥</mn><mo stretchy="false">)</mo><mo>=</mo><mn dir="ltr">١٢.٥</mn><mo>+</mo><mn dir="ltr">٣</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ع</mi><mo stretchy="false">(</mo><mn dir="ltr">٥</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn dir="ltr">٢٥</mn><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mfrac><mn dir="ltr">٦</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ع</mi><mo stretchy="false">(</mo><mn dir="ltr">٥</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn dir="ltr">٣١</mn><mn dir="ltr">٢</mn></mfrac><mtext> </mtext><mfrac><mi mathvariant="normal">م</mi><mi mathvariant="normal">ف</mi></mfrac></mrow></math>
 \`\`\`
 
 

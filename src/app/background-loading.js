@@ -9,7 +9,7 @@ let offlineFiles = new Set(), offlineReady = false, savingShell, finishOffline =
 let offlineIssue = false;
 let getAccountType = () => "guest";
 let getSelection = () => null;
-let offlinePath = null;
+let offlineCatalog = null;
 const verifiedFiles = new Set();
 const pathLessons = (catalog, selection) => {
   if (!selection?.path) return catalog.lessons;
@@ -19,10 +19,11 @@ const pathLessons = (catalog, selection) => {
 const installationFiles = catalog => [...new Set([...catalog.onboarding, ...catalog.helpers,
   ...pathLessons(catalog, getSelection()).flatMap(lesson => [...lesson.first, ...lesson.files])])];
 function refreshOfflineScope() {
-  const path = getSelection()?.path || "";
-  if (!manifest || path === offlinePath) return;
+  const selection = getSelection();
+  const catalog = JSON.stringify([selection?.curriculum || "gaza", selection?.path || ""]);
+  if (!manifest || catalog === offlineCatalog) return;
   shellController?.abort();
-  offlinePath = path;
+  offlineCatalog = catalog;
   offlineReady = false;
   document.documentElement.removeAttribute("data-offline-ready");
   const required = installationFiles(manifest);
@@ -85,7 +86,7 @@ async function initialize() {
     }
     manifest = catalog;
     // Installation includes lesson figures and explanations, not only the shell.
-    offlinePath = null;
+    offlineCatalog = null;
     refreshOfflineScope();
     const release = document.querySelector('meta[name="learn-release"]')?.content;
     // Never mix a running release with a manifest from a newer deployment.

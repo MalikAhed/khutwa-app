@@ -50,7 +50,7 @@ export async function createAppServer({root,config,contentManifest=null,remoteBa
         return;
       }
       if(pathname.startsWith('/api/auth/')) {await handleAuth(request,response,pathname);return;}
-      if(pathname===STUDENT_DASHBOARD_PATH||pathname.startsWith('/api/owner/')) {handleStudents(request,response,pathname);return;}
+      if(pathname===STUDENT_DASHBOARD_PATH||pathname.startsWith('/api/owner/')) {await handleStudents(request,response,pathname);return;}
       if(pathname==='/api/progress') {await handleProgress(request,response);return;}
       if(pathname==='/api/question-feedback') {await handleQuestionFeedback(request,response);return;}
       if(pathname.startsWith('/api/')) {sendJson(response,404,{error:'Not found'});return;}

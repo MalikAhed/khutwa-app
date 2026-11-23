@@ -174,6 +174,7 @@ try {
           cue:getComputedStyle(document.querySelector('[data-exam-solution] [data-content-scroll]')).visibility,
           scrollbarSupported:CSS.supports('scrollbar-color', 'transparent transparent'),
           scrollbar:getComputedStyle(document.querySelector('[data-exam-solution] .lesson-flashcard-scroll')).scrollbarColor,
+          nestedScrollbar:getComputedStyle(document.querySelector('[data-exam-front] pre')).scrollbarColor,
         };
       }, {once:true}));
       await questionScroll.press("Enter");
@@ -185,7 +186,11 @@ try {
         assert.equal(turnState.animating, true, 'turning the card animates');
         assert.equal(turnState.flipping, true);
         assert.equal(turnState.cue, 'hidden', 'scroll cue stays suppressed during the turn');
-        if (turnState.scrollbarSupported) assert.equal(turnState.scrollbar, 'rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)', 'native scrollbar stays suppressed during the turn');
+        if (turnState.scrollbarSupported) {
+          const transparent = 'rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)';
+          assert.equal(turnState.scrollbar, transparent, 'native scrollbar stays suppressed during the turn');
+          assert.equal(turnState.nestedScrollbar, transparent, 'horizontal scrollbars inside the card also stay suppressed');
+        }
       } else {
         assert.equal(turnState.animating, false, 'reduced motion switches faces without animation');
         assert.equal(turnState.flipping, false);

@@ -1,11 +1,26 @@
 import { escapeHtml, prefersReducedMotion } from "../../lib/dom.js";
 import { EXPLANATION_GEM_COST } from "../../domain/question-explanations.js";
-import { renderMarkdownDocument, mountMarkdownFeatures } from "../../markdown/renderer.js";
-import { spaceWorkedEquations } from "./shared.js";
+import { renderLessonInline, renderMarkdownDocument, mountMarkdownFeatures } from "../../markdown/renderer.js";
+import { spaceWorkedEquations, usesWesternLessonNotation } from "./shared.js";
 import { renderTemplateScrollIndicators, mountTemplateScrollIndicator } from "../template-shell.js";
+import { getLessonUiCopy, lessonChoiceMarker } from "../lesson-ui-copy.js";
+import { renderWrittenQuestionCopy } from "./exam-question.js";
+import { renderQuestionChoice, renderQuestionExample } from "./question-layout.js";
+import { highlightEnglishText } from "./english-text.js";
+import { mountSummaryScans } from "./summary-scans.js";
+
+function renderQuestionRecap(step, notation) {
+  if (!step) return "";
+  const { content, type } = step;
+  const { locale } = notation;
+  const question = type === "exam-question" ? renderWrittenQuestionCopy(content.body, notation)
+    : `<p class="question-explanation-prompt">${renderLessonInline(content.prompt, notation)}</p>${renderQuestionExample(content.example, notation)}<ol class="question-explanation-choices" role="list" aria-label="${getLessonUiCopy(locale).answerChoices}">${content.answers.map((answer, index) =>
+      `<li><span>${lessonChoiceMarker(index, locale)}</span><span>${renderQuestionChoice(answer, notation)}</span></li>`).join("")}</ol>`;
+  return `<section class="question-explanation-recap" aria-labelledby="question-explanation-recap-title"><h3 id="question-explanation-recap-title">${locale === "ar" ? "السؤال" : "Question"}</h3>${question}</section>`;
+}
 
 /** A purchase opens reading only; it never answers or completes the question. */
-export function mountQuestionExplanation({ host, explanation, locale = "ar", signal, onOpen }) {
+export function mountQuestionExplanation({ host, step = null, explanation, locale = "ar", signal, onOpen }) {
   if (!explanation) return;
   const ar = locale === "ar";
   const footer = host.querySelector(".level-layout-actions");
@@ -31,7 +46,7 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
   updateLabel();
   const unsubscribe = explanation.subscribe?.(updateLabel);
   signal.addEventListener("abort",() => unsubscribe?.(),{once:true});
-  primary.before(button);
+  (footer.querySelector("[data-template-back]") || primary).before(button);
   footer.classList.add("level-layout-actions--explanations");
   let dialog;
   let opening;
@@ -104,8 +119,14 @@ export function mountQuestionExplanation({ host, explanation, locale = "ar", sig
       if (unlockError) throw unlockError;
       if (requestSignal.aborted || dialog !== activeDialog) return;
       updateLabel();
-      body.innerHTML = `${result.note ? `<p class="question-explanation-note">${escapeHtml(result.note)}</p>` : ""}<div class="markdown-rendered">${renderMarkdownDocument(result.markdown,{locale,highlightQuotes:true})}</div>`;
-      spaceWorkedEquations(body);
+      const notation = { locale, westernNotation:usesWesternLessonNotation(activeDialog) };
+      body.innerHTML = `${renderQuestionRecap(step, notation)}${result.note ? `<p class="question-explanation-note">${escapeHtml(result.note)}</p>` : ""}<div class="markdown-rendered" data-explanation-solution>${renderMarkdownDocument(result.markdown,{ ...notation, highlightQuotes:true })}</div>`;
+      const recap = body.querySelector(".question-explanation-recap");
+      if (recap) {
+        if (ar) highlightEnglishText(recap);
+        mountSummaryScans(recap,{titleId:"question-explanation-recap",locale,signal:requestSignal,exam:true});
+      }
+      spaceWorkedEquations(body.querySelector("[data-explanation-solution]"));
       mountMarkdownFeatures(body,{locale,signal:requestSignal,scrollSurface:body});
       mountTemplateScrollIndicator(activeDialog.querySelector(".question-explanation-reading"),{surface:body,signal:requestSignal});
       onOpen?.();

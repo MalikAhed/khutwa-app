@@ -25,9 +25,6 @@ solution:
 ثابت التأين يقيس ميل الحمض أو القاعدة للتأين؛ قيمته الأكبر تعني قوة أكبر. عند تساوي التركيز نربط ذلك بتركيز الأيونات ثم pH.
 
 **HA**؛ الحموض متساوية التركيز، وكلما كبر Ka زاد التأين والهيدرونيوم وانخفض pH. أكبر ثابت في الجدول 8.6×10⁻⁴ وهو لـ HA.
-
-**المصدر:** صفحة 35 من الكتاب.
-
 :::
 
 :::exam-question
@@ -59,12 +56,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>K</mi><mo>=</mo><msub><mi>K</mi><mi>a</mi></msub><mo stretchy="false">(</mo><mi>H</mi><mi>A</mi><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><msub><mi>K</mi><mi>a</mi></msub><mo stretchy="false">(</mo><mi>H</mi><mi>D</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8.6</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo stretchy="false">)</mo><mo>=</mo><mn>14.3</mn><mo>&gt;</mo><mn>1</mn></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -92,9 +83,6 @@ solution:
 القاعدة الملازمة هي ما يتبقى من الحمض بعد فقد بروتون، والحمض الملازم يتكون بإضافة بروتون إلى القاعدة. قوة الحمض وقوة قاعدته الملازمة متعاكستان؛ الأقوى حمضًا يعطي قاعدة أضعف.
 
 **HC** له القاعدة الملازمة الأقوى C⁻؛ أصغر Ka في الجدول هو 4×10⁻⁶، فيكون HC أضعف الحموض. العلاقة العكسية بين قوة الحمض وقوة قاعدته تعني أن C⁻ أشد ميلاً لاستقبال البروتون.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::mcq
@@ -212,48 +200,51 @@ question: عند 25°س، حيث \\(K_w=1\\times10^{-14}\\)، ما قيمة \\([
 - [ ] option-3 | \\(2.5\\times10^{-9}\\)
 - [ ] option-4 | \\(4\\times10^{-5}\\)
 explanation:
-المعطى قاعدة ضعيفة B بتركيز C=٠٫٠٠١مول/لتر وثابت Kb=١٫٦×١٠⁻⁶. المطلوب الهيدرونيوم، فنوجد OH⁻ أولًا. القاعدة تستقبل بروتون الماء، فيتكون تركيزx من كل من BH⁺ وOH⁻، ويبقى C−x من B.
-معادلة التأين تبين نسبة١:١.
+نرمز إلى التركيز الابتدائي للقاعدة بـ \\(C\\)، وإلى ما تأين منها بـ \\(x\\). تنتج المعادلة أيون هيدروكسيد وأيون الحمض المرافق لكل جزيء يتأين.
 
+$$\\mathrm{B+H_2O\\rightleftharpoons BH^+ +OH^-}$$
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>⇌</mo><mi>B</mi><msup><mi>H</mi><mo>+</mo></msup><mo>+</mo><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup></mrow></math>
-\`\`\`
+عند الاتزان يصبح تركيز القاعدة \\(C-x\\)، ويصبح تركيز كل ناتج \\(x\\). نعوّض في تعبير ثابت التأين.
 
+$$K_b=\\frac{[\\mathrm{BH^+}][\\mathrm{OH^-}]}{[\\mathrm{B}]}=\\frac{x^2}{C-x}$$
 
-ثابت التأين يقسم حاصل ضرب تركيزي الأيونين على القاعدة المتبقية.
+نختبر شرط التقريب المستخدم في الكتاب.
 
+$$\\frac{C}{K_b}=\\frac{1.0\\times10^{-3}}{1.6\\times10^{-6}}=0.625\\times10^{3}=625$$
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>b</mi></msub><mo>=</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mi>C</mi><mo>−</mo><mi>x</mi></mrow></mfrac></mrow></math>
-\`\`\`
+النسبة أكبر من 400، فنقرّب \\(C-x\\) إلى \\(C\\).
 
+$$K_b\\approx\\frac{x^2}{C}$$
 
-يجيز الكتاب إهمال النقص الصغير عندماC/Kb>٤٠٠؛ هنا٠٫٠٠١/(١٫٦×١٠⁻⁶)=٦٢٥.
+نضرب الطرفين في \\(C\\) حتى يُختصر المقام، ثم نعوّض.
 
+$$x^2\\approx K_bC=(1.6\\times10^{-6})(1.0\\times10^{-3})$$
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>b</mi></msub><mo>≈</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mi>C</mi></mfrac><mo>⇒</mo><mi>x</mi><mo>≈</mo><msqrt><mrow><msub><mi>K</mi><mi>b</mi></msub><mi>C</mi></mrow></msqrt></mrow></math>
-\`\`\`
+نضرب المعاملين ونجمع الأسين.
 
+$$x^2\\approx1.6\\times10^{-9}=16\\times10^{-10}$$
 
-نعوض ونحسب الجذر.
+نأخذ الجذر الموجب لأن \\(x\\) تركيز.
 
+$$[\\mathrm{OH^-}]=x\\approx4.0\\times10^{-5}\\,\\mathrm{mol/L}$$
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>x</mi><mo>=</mo><msqrt><mrow><mo stretchy="false">(</mo><mn>1.6</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo stretchy="false">)</mo></mrow></msqrt><mo>=</mo><mn>4.0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">l</mi><mtext> </mtext><msup><mi mathvariant="normal">L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></math>
-\`\`\`
+وللتحقق، نقسم التركيز المتأين على التركيز الابتدائي ونضرب في 100. درجة التأين نحو 4%.
 
+$$\\frac{4.0\\times10^{-5}}{1.0\\times10^{-3}}\\times100\\%=4.0\\%$$
 
-التأين٤٪ يؤكد أن الجزء المهمل صغير. عند٢٥°س، حاصل تأين الماء يربط الأيونين.
+عند درجة الحرارة المعطاة نستخدم حاصل تأين الماء لإيجاد تركيز الهيدرونيوم.
 
+$$K_w=[\\mathrm{H_3O^+}][\\mathrm{OH^-}]$$
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mfrac><msub><mi>K</mi><mi>w</mi></msub><mrow><mo stretchy="false">[</mo><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup><mo stretchy="false">]</mo></mrow></mfrac><mo>=</mo><mfrac><msup><mn>10</mn><mrow><mo>−</mo><mn>14</mn></mrow></msup><mrow><mn>4.0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>2.5</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>10</mn></mrow></msup><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">l</mi><mtext> </mtext><msup><mi mathvariant="normal">L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></math>
-\`\`\`
+نقسم الطرفين على تركيز الهيدروكسيد ونعوّض.
 
+$$[\\mathrm{H_3O^+}]\\approx\\frac{1.0\\times10^{-14}}{4.0\\times10^{-5}}\\,\\mathrm{mol/L}$$
 
-الخيار١. المصدر: تعريف ثابت القاعدةPDF٤٠ وحسابهPDF٤١، وشرط التقريبPDF٣٩، وثابت الماءPDF٣٣.
+نقسم 1.0 على 4.0 ونطرح أس المقام من أس البسط.
+
+$$[\\mathrm{H_3O^+}]\\approx0.25\\times10^{-9}\\,\\mathrm{mol/L}$$
+
+نكتب الناتج بالصيغة العلمية. تركيز الهيدرونيوم **\\(2.5\\times10^{-10}\\,\\mathrm{mol/L}\\)**، وهو الخيار الأول.
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -276,7 +267,19 @@ pH هو سالب لوغاريتم الهيدرونيوم؛ نحسب التركي
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mi>C</mi><mi>α</mi><mo>=</mo><mn>0.2</mn><mo stretchy="false">(</mo><mn>0.04</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.008</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mi>C</mi><mi>α</mi></mrow></math>
+\`\`\`
+
+نعوّض بالقيم المعطاة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>0.2</mn><mo stretchy="false">(</mo><mn>0.04</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>0.008</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
 \`\`\`
 
 
@@ -491,9 +494,6 @@ explanation:
 الشرط غير متحقق؛ لذلك أبقينا C−x كاملاً.
 
 الإجابة: K_a≈6.85×10⁻⁵، الخيار الثاني.
-
-**المصدر:** صفحة 37 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -570,7 +570,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>x</mi><mo>=</mo><mn>0.15</mn><mo stretchy="false">(</mo><mn>2</mn><mi mathvariant="normal">/</mi><mn>100</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.15</mn><mo stretchy="false">(</mo><mn>0.02</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.003</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>=</mo><mn>0.15</mn><mo stretchy="false">(</mo><mn>2</mn><mi mathvariant="normal">/</mi><mn>100</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نعوّض بالقيم المعطاة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>=</mo><mn>0.15</mn><mo stretchy="false">(</mo><mn>0.02</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>=</mo><mn>0.003</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
 \`\`\`
 
 
@@ -596,12 +608,6 @@ explanation:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>a</mi></msub><mo>≈</mo><mo stretchy="false">(</mo><mn>0.003</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mi mathvariant="normal">/</mi><mn>0.15</mn><mo>=</mo><mn>6.0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 37 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -726,15 +732,26 @@ pOH هو سالب لوغاريتم تركيز OH⁻؛ عند 25° س يكون م
 
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4.009</mn><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>4.009</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>4.009</mn></mrow></math>\`.
+
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>4.009</mn><mo>=</mo><mn>9.991</mn><mo>≈</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
 استُخدم Kw عند 25° س ولم نحتج إهمال مقدار التأين.
-
-**المصدر:** صفحة 39 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -821,9 +838,6 @@ explanation:
 
 
 نسبة التأين≈0.10%، لذا التقريب 0.04 جائز.
-
-**المصدر:** صفحة 37 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -845,7 +859,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mo stretchy="false">[</mo><msup><mi>A</mi><mo>−</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>0.70</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.70</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mo stretchy="false">[</mo><msup><mi>A</mi><mo>−</mo></msup><mo stretchy="false">]</mo></mrow></math>
+\`\`\`
+
+نعوّض بالقيم المعطاة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>0.70</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>0.70</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
 \`\`\`
 
 
@@ -929,12 +955,6 @@ pH هو سالب لوغاريتم الهيدرونيوم؛ نستخرج منه �
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>α</mi><mi mathvariant="normal">%</mi><mo>=</mo><mfrac><mrow><mn>3.020</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow><mn>0.15</mn></mfrac><mo>×</mo><mn>100</mn><mo>=</mo><mn>2.01</mn><mi mathvariant="normal">%</mi><mo>≈</mo><mn>2</mn><mi mathvariant="normal">%</mi></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 37 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1034,15 +1054,26 @@ pOH هو سالب لوغاريتم تركيز الهيدروكسيد، و pH س�
 
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3.222</mn><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>3.222</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>3.222</mn></mrow></math>\`.
+
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>3.222</mn><mo>=</mo><mn>10.778</mn><mo>≈</mo><mn>10.78</mn></mrow></math>
 \`\`\`
 
 
 عند 25° س؛ الحل دون الإهمال يعطي 10.77 تقريباً.
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1078,9 +1109,6 @@ solution:
 
 
 التأين 0.002%، فالإهمال جائز. ثابت HNO₂ المعطى 5.6×10⁻⁴ أكبر بكثير؛ والأكبر Ka هو الأقوى.
-
-**المصدر:** الصفحات 35، 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1118,9 +1146,6 @@ solution:
 
 
 وهو أصغر من Ka(HNO₂)=5.6×10⁻⁴، فيكون HCN أضعف الحموض وقاعدته الملازمة CN⁻ أقوى القاعدتين.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1157,9 +1182,6 @@ solution:
 
 
 هذا أقل من 10⁻³ مول/لتر في N₂H₄؛ والهيدروكسيد الأقل يعني هيدرونيوم أكثر و pH أقل عند نفس الحرارة. التأين 0.00374%، فالتقريب صالح.
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1216,12 +1238,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>b</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>0.001</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><mn>0.999</mn></mfrac><mo>=</mo><mn>1.001</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo>≈</mo><mn>1.00</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1259,9 +1275,6 @@ KNO₂ يذوب معطياً K⁺ المتفرج و NO₂⁻ الذي يستقب
 
 
 من المعطيات Ka(HCN)≈(2×10⁻⁵)²/1=4×10⁻¹⁰ وهو أصغر من 5.6×10⁻⁴ لـ HNO₂؛ لذا HCN أضعف و NO₂⁻ أضعف من CN⁻. الاتزان يرجح **اليسار**، جهة الحمض والقاعدة الأضعف.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1297,9 +1310,6 @@ HX يمنح بروتوناً إلى Y⁻، فتكون المعادلة:
 
 
 الحموض متساوية التركيز؛ HX يعطي هيدرونيوم 10⁻⁶ مقابل 10⁻³ لـ HY، فهو الأضعف. لذلك Y⁻ أضعف من X⁻، ويرجح الاتزان **اليسار** نحو HX و Y⁻.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1424,12 +1434,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>b</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><mn>0.0999</mn></mfrac><mo>=</mo><mn>1.001</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo>≈</mo><mn>1.00</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1457,9 +1461,6 @@ solution:
 ثابت التأين يقيس ميل الحمض أو القاعدة للتأين؛ قيمته الأكبر تعني قوة أكبر. عند تساوي التركيز نربط ذلك بتركيز الأيونات ثم pH.
 
 **HA** له أقل pH؛ المحاليل متساوية التركيز 0.1 مول/لتر، وأكبر Ka هو 8.6×10⁻⁴ لـ HA. زيادة ثابت التأين تعني زيادة الجزء المتأين والهيدرونيوم؛ وبما أن pH سالب لوغاريتم الهيدرونيوم فإنها تنخفض.
-
-**المصدر:** صفحة 35 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1492,12 +1493,6 @@ Ka(HA)=8.6×10⁻⁴ أكبر من Ka(HD)=6×10⁻⁵؛ لذا HA أقوى و A�
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>H</mi><mi>A</mi><mo>+</mo><msup><mi>D</mi><mo>−</mo></msup><mo>⇌</mo><mi>H</mi><mi>D</mi><mo>+</mo><msup><mi>A</mi><mo>−</mo></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1567,9 +1562,6 @@ C/Ka≈167&lt;400، فلا يصح إهمال x. نحل التربيعية ونأ
 
 
 التأين 7.45% يؤكد ضرورة عدم الإهمال.
-
-**المصدر:** صفحة 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1611,12 +1603,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>a</mi></msub><mo stretchy="false">(</mo><mi>H</mi><mi>C</mi><mi>N</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4.2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>10</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1666,15 +1652,23 @@ pOH هو سالب لوغاريتم تركيز الهيدروكسيد، و pH س�
 
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4.523</mn><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>4.523</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>4.523</mn></mrow></math>\`.
+
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>4.523</mn><mo>=</mo><mn>9.477</mn><mo>≈</mo><mn>9.48</mn></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1728,9 +1722,6 @@ B تستقبل بروتون الماء وتعطي BH⁺ و OH⁻ بالتساو�
 
 
 يجوز تقريب النتيجة 9×10⁻⁸ لأن التأين 0.3% صغير.
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1783,9 +1774,6 @@ solution:
 
 
 Ka(HD)=10⁻¹⁰ هو الأصغر؛ إذن HD الأضعف و**D⁻ القاعدة الأقوى**. أبقينا النقص في المقامين، خاصة HX الذي تأينه 7.5%.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1838,9 +1826,6 @@ HD أحادي البروتون؛ إذا تأين تركيز x تكوّن x من 
 
 
 النسبة ضئيلة فتؤكد صلاحية التقريب؛ مساهمة تأين الماء هنا ضئيلة أيضاً.
-
-**المصدر:** صفحة 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1872,12 +1857,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>H</mi><mi>X</mi><mo>+</mo><msup><mi>A</mi><mo>−</mo></msup><mo>⇌</mo><msup><mi>X</mi><mo>−</mo></msup><mo>+</mo><mi>H</mi><mi>A</mi></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1933,12 +1912,6 @@ HA يعطي H₃O⁺ و A⁻ بنسبة 1:1؛ لذلك يستدل من تركي�
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>a</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>7</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><mn>0.099993</mn></mfrac><mo>=</mo><mn>4.9003</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>10</mn></mrow></msup><mo>≈</mo><mn>4.90</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>10</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1965,9 +1938,6 @@ solution:
 القاعدة الملازمة هي ما يتبقى من الحمض بعد فقد بروتون، والحمض الملازم يتكون بإضافة بروتون إلى القاعدة. قوة الحمض وقوة قاعدته الملازمة متعاكستان؛ الأقوى حمضًا يعطي قاعدة أضعف.
 
 **D⁻ أقوى**؛ Ka(HD)=6.4×10⁻⁵ أصغر من Ka(HC)=4.5×10⁻⁴، فيكون HD أضعف حمضاً. القاعدة الملازمة لحمض أضعف أشد ميلاً لاستقبال البروتون؛ لذلك تتعاكس القوتان.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1991,8 +1961,28 @@ pOH هو سالب لوغاريتم تركيز الهيدروكسيد، و pH س�
 المعطيات C(B)=0.03 مول/لتر و pH=10. عند 25° س نوجد OH⁻، وهو يساوي BH⁺ الناتج من تأين القاعدة.
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>10</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>10</mn><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>10</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>10</mn></mrow></math>\`.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>10</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -2026,12 +2016,6 @@ pOH هو سالب لوغاريتم تركيز الهيدروكسيد، و pH س�
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>b</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><mn>0.0299</mn></mfrac><mo>=</mo><mn>3.344</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo>≈</mo><mn>3.34</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2056,7 +2040,19 @@ pH هو سالب لوغاريتم الهيدرونيوم؛ نحسب التركي
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mi>C</mi><mi>α</mi><mo>=</mo><mn>0.2</mn><mo stretchy="false">(</mo><mn>0.04</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.008</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mi>C</mi><mi>α</mi></mrow></math>
+\`\`\`
+
+نعوّض بالقيم المعطاة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>0.2</mn><mo stretchy="false">(</mo><mn>0.04</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>0.008</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
 \`\`\`
 
 
@@ -2066,12 +2062,6 @@ pH هو سالب لوغاريتم الهيدرونيوم؛ نحسب التركي
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>0.008</mn><mo stretchy="false">)</mo><mo>=</mo><mn>2.0969</mn><mo>≈</mo><mn>2.10</mn></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2125,9 +2115,6 @@ HA أحادي البروتون؛ الجزء المتأين المحسوب من �
 
 
 التأين أقل من 5%، لذا تقريب المقام إلى 0.2 جائز ويعطي 3.2×10⁻⁴؛ استعملنا المقام الكامل للأدق.
-
-**المصدر:** صفحة 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2163,9 +2150,6 @@ solution:
 
 
 الإجابة **C₆H₅NH₃⁺**.
-
-**المصدر:** الصفحات 29، 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2199,9 +2183,6 @@ NH₂OH قاعدة تستقبل بروتوناً من الحمض N₂H₅⁺؛ �
 
 
 عدد الذرات والشحنة الكلية+1 محفوظان في الطرفين.
-
-**المصدر:** صفحة 29 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2238,9 +2219,6 @@ solution:
 
 
 Kb(NH₂OH)=8.7×10⁻⁹ أصغر من 1.3×10⁻⁶ لـ N₂H₄؛ إذن NH₂OH أضعف قاعدة، وحمض N₂H₄ الملازم N₂H₅⁺ أضعف حمضاً. الاتزان يفضل اجتماعهما في اليسار.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2311,9 +2289,6 @@ solution:
 
 
 النسبة أصغر كثيراً من 5%، فتؤكد التقريب.
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2341,9 +2316,6 @@ solution:
 ثابت التأين يقيس الميل إلى تكوين الأيونات من الماء؛ الأكبر ثابتًا هو الأقوى. عند تساوي التراكيز تعطي القاعدة الأقوى OH⁻ أكثر وpH أكبر، ويعطي الحمض الأقوى H₃O⁺ أكثر وpH أقل.
 
 **CH₃NH₂ أعلى pH**؛ عند تساوي التركيز تكون القاعدة ذات Kb الأكبر أكثر تأيناً وتنتج OH⁻ أكثر. قيمة 5×10⁻⁴ أكبر بكثير من 3.8×10⁻¹⁰ لـ C₆H₅NH₂؛ فينخفض الهيدرونيوم ويرتفع pH في ميثيل الأمين.
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2368,9 +2340,6 @@ solution:
 ثابت التأين يقيس الميل إلى تكوين الأيونات من الماء؛ الأكبر ثابتًا هو الأقوى.
 
 **HNO₂** هو الأقوى؛ أكبر Ka في الجدول 5.6×10⁻⁴، وثابت التأين الأكبر يدل على ميل أكبر لتكوين الأيونات ومنح البروتون للماء.
-
-**المصدر:** صفحة 35 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2395,9 +2364,6 @@ solution:
 القاعدة الملازمة تنتج بفقد الحمض بروتونًا واحدًا، والحمض الملازم ينتج بإضافة بروتون إلى القاعدة. قوة الحمض وقوة قاعدته الملازمة متعاكستان.
 
 **NO₂⁻** هو أضعف قاعدة ملازمة؛ حمضه HNO₂ له أكبر Ka=5.6×10⁻⁴، فهو أقوى الحموض. قوة الحمض تتعاكس مع قوة قاعدته الملازمة.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2422,9 +2388,6 @@ solution:
 القاعدة الملازمة تنتج بفقد الحمض بروتونًا واحدًا، والحمض الملازم ينتج بإضافة بروتون إلى القاعدة. قوة الحمض وقوة قاعدته الملازمة متعاكستان.
 
 **HCN**؛ أصغر Ka في الجدول 4.2×10⁻¹⁰، فهو أضعف الحموض. قاعدته الملازمة CN⁻ تكون الأقوى؛ لأن القاعدة الأقوى تستقبل البروتون الذي يفقده حمضها بصعوبة أكبر.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2449,9 +2412,6 @@ solution:
 ثابت التأين يقيس الميل إلى تكوين الأيونات من الماء؛ الأكبر ثابتًا هو الأقوى.
 
 **HNO₂**؛ ثابت تأينه 5.6×10⁻⁴ أكبر من بقية القيم. عند تساوي التركيز ينتج هيدرونيوم أكثر، ولأن pH سالب لوغاريتمه تكون القيمة أقل.
-
-**المصدر:** صفحة 35 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2476,9 +2436,6 @@ solution:
 في اتزان انتقال البروتون يُفضل الطرف الذي يجمع الحمض الأضعف والقاعدة الأضعف. نحدد القوة من ثابت التأين؛ الأكبر ثابتًا هو الأقوى.
 
 الاتزان يرجح **اليسار**. Ka(HCN)=4.2×10⁻¹⁰ أصغر من Ka(HClO)=2.9×10⁻⁸، فيكون HCN أضعف حمضاً و ClO⁻ أضعف قاعدة من CN⁻. الاتزان يفضل الطرف الذي يجمع الحمض والقاعدة الأضعف.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2502,12 +2459,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>C</mi><mn>6</mn></msub><msub><mi>H</mi><mn>5</mn></msub><mi>N</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>⇌</mo><msub><mi>C</mi><mn>6</mn></msub><msub><mi>H</mi><mn>5</mn></msub><mi>N</mi><msubsup><mi>H</mi><mn>3</mn><mo>+</mo></msubsup><mo>+</mo><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2563,9 +2514,6 @@ solution:
 ثابت التأين يقيس الميل إلى تكوين الأيونات من الماء؛ الأكبر ثابتًا هو الأقوى.
 
 **البيريدين C₅H₅N أقوى**؛ Kb له 1.4×10⁻⁹ أكبر من 3.8×10⁻¹⁰ للأنيلين. الثابت الأكبر يعني ميلاً أكبر لاستقبال بروتون من الماء وتكوين OH⁻.
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2630,12 +2578,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>b</mi></msub><mo stretchy="false">(</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>N</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** الصفحات 36، 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2748,12 +2690,6 @@ pH هو سالب لوغاريتم تركيز الهيدرونيوم، ولذلك
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>a</mi></msub><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mi>C</mi><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mi mathvariant="normal">/</mi><mn>0.599</mn><mo>=</mo><mn>1.669</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo>≈</mo><mn>1.67</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2778,9 +2714,6 @@ solution:
 ثابت التأين يقيس الميل إلى تكوين الأيونات من الماء؛ الأكبر ثابتًا هو الأقوى. عند تساوي التراكيز تعطي القاعدة الأقوى OH⁻ أكثر وpH أكبر، ويعطي الحمض الأقوى H₃O⁺ أكثر وpH أقل.
 
 **HF**؛ Ka له 6.8×10⁻⁴ وهو الأكبر في الجدول. عند تساوي التركيز يكون الأكثر تأيناً والأعلى هيدرونيوم، ومن ثم الأقل pH. هذا ترتيب الحموض وفق بيانات التأين المعطاة.
-
-**المصدر:** صفحة 35 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2805,9 +2738,6 @@ solution:
 القاعدة الملازمة تنتج بفقد الحمض بروتونًا واحدًا، والحمض الملازم ينتج بإضافة بروتون إلى القاعدة. قوة الحمض وقوة قاعدته الملازمة متعاكستان.
 
 **S²⁻**؛ HS⁻ أصغر Ka=1.3×10⁻¹³، فهو أضعف الحموض من حيث منح البروتون. نحذف بروتوناً واحداً من HS⁻ فتنخفض الشحنة من−1 إلى−2، وتكون S²⁻ أقوى القواعد الملازمة.
-
-**المصدر:** الصفحات 29، 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2862,9 +2792,6 @@ solution:
 
 
 المقارنة هنا بين محلول حمضي ومحلول يغلب عليه السلوك القاعدي؛ فلا تحتاج إلى تساوي التركيزين. يفترض ذلك المحاليل المائية المعتادة، دون إضافة حمض أو قاعدة أخرى.
-
-**المصدر:** صفحة 29 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2899,9 +2826,6 @@ solution:
 
 
 الاتزان يرجح **اليسار**؛ Ka(HCN)=4×10⁻¹⁰ أصغر من 5.6×10⁻⁴ لـ HNO₂. إذن HCN أضعف حمضاً و NO₂⁻ أضعف قاعدة، فيفضلهما الاتزان.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2925,12 +2849,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>H</mi><msub><mi>C</mi><mn>9</mn></msub><msub><mi>H</mi><mn>7</mn></msub><msub><mi>O</mi><mn>4</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>⇌</mo><msub><mi>C</mi><mn>9</mn></msub><msub><mi>H</mi><mn>7</mn></msub><msubsup><mi>O</mi><mn>4</mn><mo>−</mo></msubsup><mo>+</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 35 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3007,9 +2925,6 @@ pH هو سالب لوغاريتم تركيز الهيدرونيوم؛ بعد إ�
 
 
 الجذر السالب مرفوض؛ والتأين 17.3% يثبت أن الإهمال لا يصح.
-
-**المصدر:** صفحة 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3055,12 +2970,6 @@ HB يمنح بروتوناً واحداً للماء؛ لذا يساوي ترك�
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>a</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><mn>0.09997</mn></mfrac><mo>=</mo><mn>9.0027</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup><mo>≈</mo><mn>9.00</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3113,9 +3022,6 @@ solution:
 
 
 إذن **OH⁻ في HB أكبر**.
-
-**المصدر:** الصفحات 31، 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3153,12 +3059,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>H</mi><mi>B</mi><mo>+</mo><msup><mi>C</mi><mo>−</mo></msup><mo>⇌</mo><mi>H</mi><mi>C</mi><mo>+</mo><msup><mi>B</mi><mo>−</mo></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3215,8 +3115,28 @@ solution:
 pOH هو سالب لوغاريتم الهيدروكسيد، ومجموع pH و pOH عند 25°س يساوي 14.
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>11</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>11</mn><mo>+</mo><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>11</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>11</mn></mrow></math>\`.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>11</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -3330,9 +3250,6 @@ pH هو سالب لوغاريتم تركيز الهيدرونيوم، ولذلك
 
 
 الحل التربيعي دون الإهمال يعطي x=2.4197×10⁻³ و pH=2.62 تقريباً؛ الفرق نتيجة التقريب المقبول.
-
-**المصدر:** صفحة 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3357,9 +3274,6 @@ solution:
 ثابت التأين يقيس الميل إلى تكوين الأيونات من الماء؛ الأكبر ثابتًا هو الأقوى.
 
 **CH₃NH₂**؛ أكبر Kb في الجدول 5×10⁻⁴، فتكون أكثر ميلاً لاستقبال البروتون وتكوين OH⁻ من الماء. لذلك هي الأقوى بين القواعد الثلاث.
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3384,9 +3298,6 @@ solution:
 في اتزان انتقال البروتون يُفضل الطرف الذي يجمع الحمض الأضعف والقاعدة الأضعف. نحدد القوة من ثابت التأين؛ الأكبر ثابتًا هو الأقوى.
 
 ينحاز **نحو اليمين**. CH₃NH₂ أقوى قاعدة من C₅H₅N لأن 5×10⁻⁴>1.4×10⁻⁹؛ لذلك حمضها الملازم CH₃NH₃⁺ أضعف من C₅H₅NH⁺. الاتزان يفضل الحمض الأضعف والقاعدة الأضعف، وكلاهما في اليمين.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3454,15 +3365,23 @@ pOH هو سالب لوغاريتم تركيز OH⁻؛ وعند 25°س يكون p
 
 
 
+عند 25°س نكتب مجموع الرقم الهيدروجيني والرقم الهيدروكسيلي.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mi>O</mi><mi>H</mi><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نعوّض بالقيمة المعلومة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3.443</mn><mo>+</mo><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+بنقل الحد \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>+</mo><mn>3.443</mn></mrow></math>\` إلى الطرف الآخر يصبح \`mathml: <math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>−</mo><mn>3.443</mn></mrow></math>\`.
+
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo>=</mo><mn>14</mn><mo>−</mo><mn>3.443</mn><mo>=</mo><mn>10.557</mn><mo>≈</mo><mn>10.56</mn></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 39 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3532,12 +3451,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>H</mi><mi>B</mi><mo>&lt;</mo><mi>H</mi><mi>C</mi><mo>&lt;</mo><mi>H</mi><mi>A</mi><mo>&lt;</mo><mi>H</mi><mi>D</mi></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** الصفحات 31، 35 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3578,12 +3491,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>a</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">[</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo stretchy="false">]</mo><mo stretchy="false">[</mo><msup><mi>B</mi><mo>−</mo></msup><mo stretchy="false">]</mo></mrow><mrow><mo stretchy="false">[</mo><mi>H</mi><mi>B</mi><mo stretchy="false">]</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>7</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><mn>0.099993</mn></mfrac><mo>=</mo><mn>4.9003</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>10</mn></mrow></msup><mo>≈</mo><mn>4.90</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>10</mn></mrow></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 37 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3623,9 +3530,6 @@ solution:
 
 
 HA يعطي 2×10⁻⁴، وهو أكبر عند التركيز نفسه؛ لذا HA أقوى من HC، و A⁻ أضعف من C⁻. الاتزان يفضل الطرف الأضعف، فيرجح **اليمين** نحو HC و A⁻.
-
-**المصدر:** صفحة 36 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3686,12 +3590,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>H</mi><msub><mi>N</mi><mn>3</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>⇌</mo><msub><mi>H</mi><mn>3</mn></msub><msup><mi>O</mi><mo>+</mo></msup><mo>+</mo><msubsup><mi>N</mi><mn>3</mn><mo>−</mo></msubsup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 35 من الكتاب.
-
 :::
 
 :::exam-question

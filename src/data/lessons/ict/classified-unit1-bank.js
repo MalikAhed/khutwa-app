@@ -105,7 +105,7 @@ export const ICT_CLASSIFIED_UNIT1_QUESTIONS = [
       "د — الأيقونة في الشكل"
     ],
     "correctChoiceIndex": 3,
-    "explanation": "**الإجابة:** د — الأيقونة في الشكل.\n\nالأيقونة تمثل أمر **إظهار جدول** (`Show Table`). وظيفته عرض قائمة الجداول المتاحة لاختيار الجدول الذي نريد إضافته إلى مساحة العمل؛ لا ينشئ جدولًا جديدًا.\n\n**الشاهد من الكتاب:**\n\n> إظهار جدول\n\n**المصدر:** صفحة 30 من الكتاب.",
+    "explanation": "**الإجابة:** د — الأيقونة في الشكل.\n\nيفتح أمر **إظهار جدول** (`Show Table`) قائمة الجداول الموجودة. نختار منها الجدول ونضغط «إضافة» ليظهر في نافذة العلاقات؛ هذه الخطوة لا تنشئ جدولًا.\n\n[رزمة تكنولوجيا المعلومات، غزة — العلمي، ص ٧ (PDF ٩)](https://moe.edu.ps/m/4057#page=9)",
     "answerProvenance": "curriculum-corrected-2026-10-24",
     "figure": "assets/lessons/ict/exams/classified-p07-q09-icons.webp",
     "figureNeeded": true,
@@ -938,7 +938,7 @@ export const ICT_CLASSIFIED_UNIT1_QUESTIONS = [
       "INSERT INTO Book(B_id,B_name,pub_date) (2555,\"Numbers\",#20/5/2000#)"
     ],
     "correctChoiceIndex": 0,
-    "explanation": "نطابق ترتيب القيم مع الحقول: الرقم 2555، ثم الاسم، ثم التاريخ. يجب أن تأتي كلمة `VALUES` قبل القيم.\n\n```sql\nINSERT INTO Book (B_id, B_name, pub_date)\nVALUES (2555, \"Numbers\", #2000-05-20#);\n```\n\nإذن **الخيار أ** هو الصحيح؛ تغيير ترتيب التاريخ هنا إلى سنة-شهر-يوم يحافظ على 20 أيار 2000.\n\n**تصحيح مفتاح المصدر:** يضع مفتاح التصنيف الخيار د، لكن هذا الخيار يحذف كلمة `VALUES` المطلوبة. الصيغة الصحيحة هي الخيار أ كما في أمر الكتاب.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 27 مطبوعة (ص 29 في PDF).",
+    "explanation": "نطابق ترتيب القيم مع الحقول: الرقم 2555، ثم الاسم، ثم التاريخ. يجب أن تأتي كلمة `VALUES` قبل القيم.\n\n```sql\nINSERT INTO Book (B_id, B_name, pub_date)\nVALUES (2555, \"Numbers\", #2000-05-20#);\n```\n\nإذن **الخيار أ** هو الصحيح؛ تغيير ترتيب التاريخ هنا إلى سنة-شهر-يوم يحافظ على 20 أيار 2000.\n\n**مرجع الكتاب:** الدرس الثاني: الاستعلامات ولغة SQL، ص 27 مطبوعة (ص 29 في PDF).",
     "answerProvenance": "curriculum-corrected-2026-10-24",
     "reference": "[السؤال ص 20](assets/lessons/ict/exams/source-pages/classified-p020.webp) · [الإجابة ص 38](assets/lessons/ict/exams/source-pages/classified-p038.webp)",
     "originalSourceConflict": "مفتاح PDF ص38 يحدد د، لكنها صيغة ناقصة لا تحتوي VALUES؛ الصحيح أ.",

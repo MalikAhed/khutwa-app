@@ -6,9 +6,14 @@ export function renderCompletionLevel(outcome) {
   const gain = Math.max(0, Math.floor(outcome.xpGain || 0));
   const total = Math.max(gain, Math.floor(outcome.levelTotalXp ?? outcome.totalXp ?? gain));
   const { level, xp, levelXpGoal, levelProgress } = getLevelProgress(total);
+  const gems = Math.max(0, Math.floor(Number(outcome.gemGain) || 0));
   return `<div class="completion-level" data-xp-total="${total}" data-xp-gain="${gain}">
     <div class="completion-level-heading"><span>المستوى <bdi class="ui-number" data-level-number>${level}</bdi></span><bdi class="ui-number" data-level-caption>${level === MAX_LEVEL ? "المستوى الأقصى" : `${xp} / ${levelXpGoal} XP`}</bdi></div>
     <div class="completion-level-meter"><img class="completion-level-bolt" src="assets/icons/dashboard-levels.svg" alt="" aria-hidden="true"><div class="dashboard-level-progress" role="progressbar" aria-label="التقدّم في المستوى" aria-valuemin="0" aria-valuemax="${levelXpGoal}" aria-valuenow="${xp}" aria-valuetext="المستوى ${level}، ${xp} من ${levelXpGoal} XP"><span style="width:${levelProgress}%"></span></div></div>
+    ${outcome.demoMode ? "" : `<div class="subject-session-gems">
+      <span class="subject-session-gem-value"><img src="assets/icons/nav-gem.svg" width="18" height="18" alt=""><bdi class="ui-number" dir="ltr" data-session-gems>${gems}</bdi></span>
+      <span>الجواهر المكتسبة</span>
+    </div>`}
   </div>`;
 }
 

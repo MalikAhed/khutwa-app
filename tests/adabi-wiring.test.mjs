@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import test from 'node:test';
 import { ADABI_SUBJECTS, COURSE_SUBJECTS, SCIENTIFIC_SUBJECTS, getCourseSubjects } from '../src/data/course.js';
+import { isCurriculumQuestionHidden } from '../src/data/curriculum-visibility.js';
 import { getSubjectRoadmap } from '../src/data/subject-roadmaps.js';
 import { loadSubjectLessonPart } from '../src/data/lessons/subject-lesson-registry.js';
 import { QUESTION_REWARDS, getQuestionXp, resolveQuestionLocation } from '../src/domain/question-rewards.js';
@@ -13,13 +14,13 @@ import { createRouteUrl, readRoute } from '../src/app/route.js';
 
 const selection = { curriculum:'gaza', path:'literary' };
 
-test('each path shows its nine subjects in learning, rated questions and subscription selection', () => {
-  assert.equal(COURSE_SUBJECTS.length, 18);
+test('each curriculum and track shows its subjects in learning, rated questions and subscription selection', () => {
+  assert.equal(COURSE_SUBJECTS.length, 39);
   assert.deepEqual(getCourseSubjects(selection), ADABI_SUBJECTS);
   assert.deepEqual(getCourseSubjects({ path:'scientific' }), SCIENTIFIC_SUBJECTS);
-  assert.equal(new Set(COURSE_SUBJECTS.map(subject => subject.id)).size, 18);
-  for (const literary of [false, true]) {
-    const chosen = literary ? selection : { path:'scientific' };
+  assert.equal(new Set(COURSE_SUBJECTS.map(subject => subject.id)).size, COURSE_SUBJECTS.length);
+  for (const chosen of [selection, { path:'scientific' },
+    { curriculum:'full-palestinian', path:'scientific' }, { curriculum:'full-palestinian', path:'literary' }]) {
     const expected = getCourseSubjects(chosen).map(subject => subject.id);
     for (const ratedQuestions of [false, true]) {
       const markup = renderCourseMapMarkup({ selection:chosen, ratedQuestions });
@@ -32,26 +33,29 @@ test('each path shows its nine subjects in learning, rated questions and subscri
 });
 
 test('adding the literary path preserves every existing scientific question XP value', () => {
-  const scientific = QUESTION_REWARDS.filter(question => !question.subjectId.startsWith('adabi-'));
+  const scientific = QUESTION_REWARDS.filter(question => SCIENTIFIC_SUBJECTS.some(subject => subject.id === question.subjectId));
   assert.equal(scientific.length, 7227);
   assert.equal(createHash('sha256').update(JSON.stringify(scientific)).digest('hex'),
     'f193bdd02a32658f478983ffe68bfdc51047527823b8880e7cb5aec591889747');
-  for (const literary of [false, true]) {
-    const rewards = QUESTION_REWARDS.filter(question => question.subjectId.startsWith('adabi-') === literary);
+  for (const subjects of [SCIENTIFIC_SUBJECTS, ADABI_SUBJECTS]) {
+    const rewards = QUESTION_REWARDS.filter(question => subjects.some(subject => subject.id === question.subjectId));
     assert.equal(rewards.reduce((total, question) => total + question.xp, 0), 49900);
     assert.ok(rewards.every(question => getQuestionXp(question) > 0));
   }
 });
 
 test('Adabi roadmap parts resolve native lessons, question identities, free starters and durable routes', async () => {
+  const excludedCounts = { 'adabi-geography':17, 'adabi-scientific-culture':3 };
   for (const subject of ADABI_SUBJECTS) {
     const roadmap = getSubjectRoadmap(subject.id);
     assert.equal(roadmap.subjectId, subject.id);
     assert.equal(roadmap.questionsOnly, true);
     const lessons = roadmap.units.flatMap(unit => unit.lessons);
     assert.ok(lessons.length > 0);
-    const count = lessons.reduce((total, lesson) => total + lesson.parts.reduce((sum, part) => sum + part.questionIds.length, 0), 0);
-    assert.equal(getSubjectCardPresentation(subject).totalCount, count);
+    const ids = lessons.flatMap(lesson => lesson.parts.flatMap(part => part.questionIds));
+    const excluded = ids.filter(isCurriculumQuestionHidden);
+    assert.equal(excluded.length, excludedCounts[subject.id] || 0);
+    assert.equal(getSubjectCardPresentation(subject).totalCount, ids.length - excluded.length);
     for (const lesson of lessons) for (const part of lesson.parts) {
       const key = { subjectId:subject.id, lessonId:lesson.id, partId:part.id, stepId:part.questionIds[0] };
       assert.deepEqual(resolveQuestionLocation(key), key);

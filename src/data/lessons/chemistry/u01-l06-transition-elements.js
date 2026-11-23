@@ -525,7 +525,13 @@ X عدده الذري 24؛ فهو الكروم، وهو فلز صلب في ال�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">u</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mrow></msub><mo>=</mo><mn>5</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">u</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mrow></msub><mo>=</mo><mn>5</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">u</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mrow></msub><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 

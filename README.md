@@ -2,7 +2,7 @@
 
 Arabic Tawjihi study app. **Live:** [khutwaa.pages.dev](https://khutwaa.pages.dev/) · **Source:** [MalikAhed/khutwa-app](https://github.com/MalikAhed/khutwa-app)
 
-Work in `experiment-app/khutwa-app/`. The sibling `learn/` is a preserved legacy checkout, not the deployment source.
+Work in `khutwa-app/khutwa-app/`. The sibling `learn/` is a preserved legacy checkout, not the deployment source.
 
 ## Daily work
 

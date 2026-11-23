@@ -25,7 +25,7 @@ async function includeRuntimeFile(source, lessonImages) {
   return runtimeExtensions.has(path.extname(name)) && !name.endsWith(".scene.json");
 }
 
-export async function packageApp({ server = false } = {}) {
+export async function packageApp({ server = false, backendCatalog } = {}) {
   const contentManifest = await createContentManifest(root);
   const lessonImages = new Set([...contentManifest.onboarding, ...contentManifest.helpers,
     ...contentManifest.lessons.flatMap(lesson => [...lesson.first, ...lesson.files])].map(file => path.basename(file)));
@@ -49,6 +49,7 @@ export async function packageApp({ server = false } = {}) {
   const mode = server ? "http" : "fixture";
   let html = (await readFile(path.join(root, "index.html"), "utf8"))
     .replace('<meta name="learn-account-mode" content="http" />', `<meta name="learn-account-mode" content="${mode}" />`);
+  if (backendCatalog === "gaza") html = html.replace("</head>", '<meta name="learn-backend-catalog" content="gaza" /></head>');
   if (!html.includes(`name="learn-account-mode" content="${mode}"`)) throw new Error(`Package requires explicit ${mode} account mode.`);
   html = await versionPreview(outputDirectory, html, contentManifest.version);
   const { version } = JSON.parse(await readFile(path.join(outputDirectory, "release.json"), "utf8"));
@@ -93,15 +94,18 @@ export async function packageApp({ server = false } = {}) {
       if (gzipped.length < source.length) await writeFile(`${file}.gz`, gzipped);
     }
   }
-  let bytes = 0;
+  let bytes = 0, outsideGazaBytes = 0;
   const entries = await readdir(outputDirectory, { recursive:true, withFileTypes:true });
   const files = entries.filter(entry => entry.isFile());
-  for (const file of files) bytes += (await stat(path.join(file.parentPath, file.name))).size;
-  // The combined eighteen-subject artifact includes both nine-subject paths;
-  // automatic study downloads still follow the learner's selected path.
-  // Question figures remain included; authoring ledgers and exam archives stay
-  // outside the browser artifact.
-  if (bytes > 80 * 1024 * 1024) throw new Error("Packaged app exceeds the 80 MiB question-course budget. Review asset use before deliberately adjusting the budget.");
+  for (const file of files) {
+    const size = (await stat(path.join(file.parentPath, file.name))).size;
+    const directory = path.relative(outputDirectory, file.parentPath).split(path.sep);
+    if (directory.includes("outside-gaza") || file.name === "outside-gaza-loaders.js") outsideGazaBytes += size;
+    bytes += size;
+  }
+  // Keep the shared app and Gaza course budget when adding the separate bank.
+  if (bytes - outsideGazaBytes > 80 * 1024 * 1024 || outsideGazaBytes > 60 * 1024 * 1024)
+    throw new Error("Packaged app exceeds the 80 MiB app and Gaza budget or the 60 MiB outside-Gaza bank budget.");
   console.log(`Packaged ${mode} app: ${outputDirectory} (${files.length} files, ${(bytes / 1024 / 1024).toFixed(2)} MiB)`);
   return outputDirectory;
 }

@@ -1,3 +1,5 @@
+import { OUTSIDE_GAZA_CURRICULUM, OUTSIDE_GAZA_SUBJECTS } from "./lessons/outside-gaza/subjects.js";
+
 export const SCIENTIFIC_SUBJECTS = Object.freeze([
   { id:"mathematics", name:"الرياضيات 1", status:"available", artwork:"mathematics" },
   { id:"mathematics-2", name:"الرياضيات 2", status:"available", artwork:"mathematics" },
@@ -22,12 +24,18 @@ export const ADABI_SUBJECTS = Object.freeze([
   { id:"adabi-information-technology", name:"تكنولوجيا المعلومات", status:"available", path:"literary", artwork:"ict" },
 ]);
 
-// Both catalogs remain addressable for existing links and saved progress.
-export const COURSE_SUBJECTS = Object.freeze([...SCIENTIFIC_SUBJECTS, ...ADABI_SUBJECTS]);
+// All catalogs remain addressable for existing links and saved progress.
+export const COURSE_SUBJECTS = Object.freeze([
+  ...SCIENTIFIC_SUBJECTS, ...ADABI_SUBJECTS, ...OUTSIDE_GAZA_SUBJECTS.scientific, ...OUTSIDE_GAZA_SUBJECTS.literary,
+]);
 export const TOTAL_SUBJECTS = COURSE_SUBJECTS.length;
 
-/** @param {{path?:string}|null} [selection] */
+/** @param {{curriculum?:string, path?:string}|null} [selection] */
 export function getCourseSubjects(selection = undefined) {
+  if (selection?.curriculum === OUTSIDE_GAZA_CURRICULUM) {
+    const subjects = selection.path === "literary" ? OUTSIDE_GAZA_SUBJECTS.literary : OUTSIDE_GAZA_SUBJECTS.scientific;
+    return subjects.filter(subject => !subject.hiddenFromCurriculum);
+  }
   return selection?.path === "literary" ? ADABI_SUBJECTS : SCIENTIFIC_SUBJECTS;
 }
 

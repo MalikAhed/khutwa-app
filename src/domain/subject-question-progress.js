@@ -1,8 +1,11 @@
+import { isCurriculumQuestionHidden } from "../data/curriculum-visibility.js";
+
 // Only current questions contribute. Retired teaching and historical completion flags
 // remain stored, but cannot fill a ring for newly added questions.
 export function getLessonQuestionProgress(lesson, getPartProgress, getPartQuestionIds) {
   const parts = (lesson.parts || []).map(part => {
-    const ids = [...new Set(part.questionIds || getPartQuestionIds?.(lesson, part) || [])];
+    const ids = [...new Set(part.questionIds || getPartQuestionIds?.(lesson, part) || [])]
+      .filter(id => part.source || !isCurriculumQuestionHidden(id));
     return { part, ids, record:getPartProgress?.(lesson, part) };
   });
   const currentIds = new Set(parts.flatMap(part => part.ids));

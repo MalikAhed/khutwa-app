@@ -136,10 +136,7 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١٨</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mn dir="ltr">٣٦</mn></mrow></math>
@@ -358,11 +355,17 @@ solution:
 \`\`\`
 
 
-نبسط ونضرب في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٤</mn></mfrac></math>\`.
+نوحّد المقام داخل القوس، ثم نضرب في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٤</mn></mfrac></math>\`.
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn dir="ltr">٣٦</mn><mo>=</mo><mfrac><mn dir="ltr">٤</mn><mn dir="ltr">٣</mn></mfrac><mi mathvariant="normal">ج</mi><msqrt><mi mathvariant="normal">ج</mi></msqrt><mspace width="2em"/><mi mathvariant="normal">ج</mi><msqrt><mi mathvariant="normal">ج</mi></msqrt><mo>=</mo><mn dir="ltr">٢٧</mn></mrow></math>
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn dir="ltr">٣٦</mn><mo>=</mo><mfrac><mn dir="ltr">٤</mn><mn dir="ltr">٣</mn></mfrac><mi mathvariant="normal">ج</mi><msqrt><mi mathvariant="normal">ج</mi></msqrt></mrow></math>
+\`\`\`
+
+نضرب الطرفين في ثلاثة أرباع.
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">ج</mi><msqrt><mi mathvariant="normal">ج</mi></msqrt><mo>=</mo><mn dir="ltr">٢٧</mn></mrow></math>
 \`\`\`
 
 
@@ -370,7 +373,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">(</mo><msqrt><mi mathvariant="normal">ج</mi></msqrt><msup><mo stretchy="false">)</mo><mn dir="ltr">٣</mn></msup><mo>=</mo><mn dir="ltr">٢٧</mn><mspace width="2em"/><msqrt><mi mathvariant="normal">ج</mi></msqrt><mo>=</mo><mn dir="ltr">٣</mn><mspace width="2em"/><mi mathvariant="normal">ج</mi><mo>=</mo><mn dir="ltr">٩</mn></mrow></math>
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">(</mo><msqrt><mi mathvariant="normal">ج</mi></msqrt><msup><mo stretchy="false">)</mo><mn dir="ltr">٣</mn></msup><mo>=</mo><mn dir="ltr">٢٧</mn></mrow></math>
+\`\`\`
+
+نأخذ الجذر التكعيبي للطرفين لأن مكعب ثلاثة يساوي سبعة وعشرين.
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msqrt><mi mathvariant="normal">ج</mi></msqrt><mo>=</mo><mn dir="ltr">٣</mn></mrow></math>
+\`\`\`
+
+نربّع الطرفين لإيجاد قيمة ج.
+
+\`\`\`mathml
+<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">ج</mi><mo>=</mo><mn dir="ltr">٩</mn></mrow></math>
 \`\`\`
 
 
@@ -428,10 +443,7 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mn dir="ltr">١</mn></mrow></math>
@@ -459,7 +471,25 @@ solution:
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mrow><mn dir="ltr">٢</mn><mo>−</mo><mn dir="ltr">٠</mn></mrow><mrow><mn dir="ltr">١</mn><mo>−</mo><mn dir="ltr">٠</mn></mrow></mfrac><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mrow><mn dir="ltr">٢</mn><mo>−</mo><mn dir="ltr">٠</mn></mrow><mrow><mn dir="ltr">١</mn><mo>−</mo><mn dir="ltr">٠</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mn dir="ltr">٢</mn><mrow><mn dir="ltr">١</mn><mo>−</mo><mn dir="ltr">٠</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mn dir="ltr">٢</mn><mn dir="ltr">١</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
 \`\`\`
 
 
@@ -613,10 +643,7 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٨٨</mn><mn dir="ltr">١٥</mn></mfrac><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٧٢</mn><mn dir="ltr">٥</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نقسم البسط على المقام.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mfrac><mn dir="ltr">٣٠٤</mn><mn dir="ltr">١٥</mn></mfrac></mrow></math>
@@ -742,20 +769,43 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٤</mn><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٤</mn><mo>+</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نجمع العددين.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠</mn><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠</mn><mo>+</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>
@@ -936,20 +986,43 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٢</mn><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٢</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نجمع العددين.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠</mn><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠</mn><mo>+</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mn dir="ltr">١</mn></mrow></math>
@@ -1192,10 +1265,7 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mn dir="ltr">١</mn></mrow></math>
@@ -1347,10 +1417,7 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mn dir="ltr">١</mn></mrow></math>
@@ -1426,21 +1493,40 @@ solution:
 
 
 \`\`\`mathml
-<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl" display="block"><mrow><msup><mn dir="ltr">٩</mn><mrow><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac></mrow></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msqrt><mn dir="ltr">٩</mn></msqrt><mo stretchy="false">)</mo></mrow><mn dir="ltr">٣</mn></msup><mo>=</mo><msup><mn dir="ltr">٣</mn><mn dir="ltr">٣</mn></msup><mo>=</mo><mn dir="ltr">٢٧</mn></mrow></math>
+<math dir="rtl" display="block"><mrow><msup><mn dir="ltr">٩</mn><mrow><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac></mrow></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msqrt><mn dir="ltr">٩</mn></msqrt><mo stretchy="false">)</mo></mrow><mn dir="ltr">٣</mn></msup></mrow></math>
+\`\`\`
+
+نأخذ الجذر التربيعي.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msup><mn dir="ltr">٩</mn><mrow><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac></mrow></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mn dir="ltr">٣</mn><mo stretchy="false">)</mo></mrow><mn dir="ltr">٣</mn></msup></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msup><mn dir="ltr">٩</mn><mrow><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac></mrow></msup><mo>=</mo><msup><mn dir="ltr">٣</mn><mn dir="ltr">٣</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msup><mn dir="ltr">٩</mn><mrow><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac></mrow></msup><mo>=</mo><mn dir="ltr">٢٧</mn></mrow></math>
 \`\`\`
 
 
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mn dir="ltr">٤</mn><mn dir="ltr">٣</mn></mfrac><mo stretchy="false">(</mo><mn dir="ltr">٢٧</mn><mo>−</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn dir="ltr">١٠٤</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mn dir="ltr">٤</mn><mn dir="ltr">٣</mn></mfrac><mo stretchy="false">(</mo><mn dir="ltr">٢٧</mn><mo>−</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mn dir="ltr">١٠٤</mn><mn dir="ltr">٣</mn></mfrac></mrow></math>
 \`\`\`
 
 
 إذن **\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mfrac><mn dir="ltr">١٠٤</mn><mn dir="ltr">٣</mn></mfrac></math>\` وحدة مربعة** وفق قراءة المنطقة المحدودة داخل الربع الأول؛ حد الربع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٠</mn></mrow></math>\` داخل هذه القراءة للعبارة، وليس أحد الخطين الأفقيين.
-
-**المصدر:** صفحة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">١١٩</mn></math>\` من الكتاب.
-
 :::
 
 
@@ -1511,10 +1597,7 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٢٢</mn><mn dir="ltr">٣</mn></mfrac><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٢٧</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نقسم البسط على المقام.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mfrac><mn dir="ltr">١٢٥</mn><mn dir="ltr">٦</mn></mfrac></mrow></math>
@@ -1672,7 +1755,13 @@ explanation:
 من الشكل الجزء الأول فوق المحور والثاني تحته؛ التكامل يطرح المساحة السالبة.
 
 \`\`\`mathml
-<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٠</mn><mi mathvariant="normal">أ</mi></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٦</mn><mo>−</mo><mn dir="ltr">٤</mn><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
+<math dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٠</mn><mi mathvariant="normal">أ</mi></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٦</mn><mo>−</mo><mn dir="ltr">٤</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٠</mn><mi mathvariant="normal">أ</mi></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
 \`\`\`
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات.
 example:
@@ -1698,7 +1787,13 @@ explanation:
 من الشكل الجزء الأول موجب والثاني سالب.
 
 \`\`\`mathml
-<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٠</mn><mn dir="ltr">٤</mn></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٨</mn><mo>−</mo><mn dir="ltr">٦</mn><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
+<math dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٠</mn><mn dir="ltr">٤</mn></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٨</mn><mo>−</mo><mn dir="ltr">٦</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٠</mn><mn dir="ltr">٤</mn></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
 \`\`\`
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات.
 example:
@@ -1798,7 +1893,13 @@ explanation:
 المساحة الأولى موجبة وخمسة، والثانية سالبة؛ إذن تكاملها سالب اثنين.
 
 \`\`\`mathml
-<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٢</mn><mn dir="ltr">٤</mn></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٣</mn><mo>−</mo><mn dir="ltr">٥</mn><mo>=</mo><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>
+<math dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٢</mn><mn dir="ltr">٤</mn></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٣</mn><mo>−</mo><mn dir="ltr">٥</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٢</mn><mn dir="ltr">٤</mn></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٢</mn></mrow></math>
 \`\`\`
 
 المطلوب يعكس الحدين، فتتغير الإشارة.
@@ -1836,7 +1937,13 @@ explanation:
 الأول ثلاثة والثاني تسعة؛ نجمع المساحتين الموجبتين.
 
 \`\`\`mathml
-<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mrow><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi></mrow></mrow><mo>=</mo><mrow><mn dir="ltr">٣</mn><mo>+</mo><mn dir="ltr">٩</mn></mrow><mo>=</mo><mn dir="ltr">١٢</mn></mrow></math>
+<math dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">٣</mn><mo>+</mo><mn dir="ltr">٩</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl"><mrow><mi mathvariant="normal">أ</mi><mo>+</mo><mn dir="ltr">٣</mn><mi mathvariant="normal">أ</mi><mo>=</mo><mn dir="ltr">١٢</mn></mrow></math>
 \`\`\`
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات.
 example:
@@ -1868,7 +1975,13 @@ explanation:
 مجموع المساحتين عشرون، فيتبقى للجزء الأيمن ثلاثة عشر.
 
 \`\`\`mathml
-<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٠</mn><mn dir="ltr">٦</mn></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢٠</mn><mo>−</mo><mn dir="ltr">٧</mn><mo>=</mo><mn dir="ltr">١٣</mn></mrow></math>
+<math dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٠</mn><mn dir="ltr">٦</mn></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">٢٠</mn><mo>−</mo><mn dir="ltr">٧</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl"><mrow><msubsup><mo>∫</mo><mn dir="ltr">٠</mn><mn dir="ltr">٦</mn></msubsup><mi mathvariant="normal">ق</mi><mo stretchy="true">(</mo><mi mathvariant="normal">س</mi><mo stretchy="true">)</mo><mi mathvariant="normal">د</mi><mi mathvariant="normal">س</mi><mo>=</mo><mn dir="ltr">١٣</mn></mrow></math>
 \`\`\`
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات.
 example:
@@ -2176,20 +2289,67 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٤</mn><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٢</mn><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٢</mn><mo>+</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٥</mn><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٥</mn><mo>+</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">١.٥</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٢</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">١.٥</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
-
-
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>
@@ -2345,7 +2505,37 @@ solution:
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mrow><mo fence="true">(</mo><mn dir="ltr">٩</mn><mo>−</mo><mfrac><mn dir="ltr">٩</mn><mn dir="ltr">٢</mn></mfrac><mo fence="true">)</mo></mrow><mo>−</mo><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo fence="true">(</mo><mn dir="ltr">٩</mn><mo>−</mo><mfrac><mn dir="ltr">٩</mn><mn dir="ltr">٢</mn></mfrac><mo fence="true">)</mo><mo>−</mo><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo fence="true">(</mo><mn dir="ltr">٩</mn><mo>−</mo><mn dir="ltr">٤.٥</mn><mo fence="true">)</mo><mo>−</mo><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo fence="true">(</mo><mn dir="ltr">٤.٥</mn><mo fence="true">)</mo><mo>−</mo><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo fence="true">(</mo><mn dir="ltr">٤.٥</mn><mo fence="true">)</mo><mo>−</mo><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo>−</mo><mn dir="ltr">٠.٥</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo fence="true">(</mo><mn dir="ltr">٤.٥</mn><mo fence="true">)</mo><mo>−</mo><mo fence="true">(</mo><mn dir="ltr">٢.٥</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
 \`\`\`
 
 
@@ -2365,7 +2555,23 @@ solution:
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mn dir="ltr">٢</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo>+</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo>=</mo><mfrac><mrow><mn dir="ltr">٤</mn><mo>+</mo><mn dir="ltr">١٢</mn><mo>+</mo><mn dir="ltr">٣</mn></mrow><mn dir="ltr">٦</mn></mfrac><mo>=</mo><mfrac><mn dir="ltr">١٩</mn><mn dir="ltr">٦</mn></mfrac></mrow></math>
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mn dir="ltr">٢</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo>+</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mrow><mn dir="ltr">٤</mn><mo>+</mo><mn dir="ltr">١٢</mn><mo>+</mo><mn dir="ltr">٣</mn></mrow><mn dir="ltr">٦</mn></mfrac></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mrow><mn dir="ltr">١٦</mn><mo>+</mo><mn dir="ltr">٣</mn></mrow><mn dir="ltr">٦</mn></mfrac></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mn dir="ltr">١٩</mn><mn dir="ltr">٦</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -2407,7 +2613,45 @@ solution:
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٣٢</mn><mo>−</mo><mn dir="ltr">١٢</mn><mo stretchy="false">)</mo><mo>−</mo><mrow><mo fence="true">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo>−</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٤</mn></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><mn dir="ltr">٢٠</mn><mo>−</mo><mrow><mo fence="true">(</mo><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٤</mn></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><mfrac><mn dir="ltr">٨١</mn><mn dir="ltr">٤</mn></mfrac></mrow></math>
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٣٢</mn><mo>−</mo><mn dir="ltr">١٢</mn><mo stretchy="false">)</mo><mo>−</mo><mo fence="true">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo>−</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٤</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٢٠</mn><mo stretchy="false">)</mo><mo>−</mo><mo fence="true">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo>−</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٤</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٢٠</mn><mo stretchy="false">)</mo><mo>−</mo><mo fence="true">(</mo><mn dir="ltr">٠.٥</mn><mo>−</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٤</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٢٠</mn><mo stretchy="false">)</mo><mo>−</mo><mo fence="true">(</mo><mn dir="ltr">٠.٥</mn><mo>−</mo><mn dir="ltr">٠.٧٥</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٢٠</mn><mo stretchy="false">)</mo><mo>−</mo><mo fence="true">(</mo><mrow><mo>−</mo><mn dir="ltr">٠.٢٥</mn></mrow><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mn dir="ltr">٢٠</mn><mo>−</mo><mo fence="true">(</mo><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٤</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mn dir="ltr">٢٠</mn><mo>−</mo><mo fence="true">(</mo><mo>−</mo><mn dir="ltr">٠.٢٥</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mn dir="ltr">٨١</mn><mn dir="ltr">٤</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -2509,11 +2753,37 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٤</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٤</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٤</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٦٤</mn><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٤</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٤</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٦٤</mn><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><mn dir="ltr">١٦</mn><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٤</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٦٤</mn><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><mn dir="ltr">١٦</mn><mo>+</mo><mn dir="ltr">١٦</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٦٤</mn><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><mn dir="ltr">١٦</mn><mo>+</mo><mn dir="ltr">١٦</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٦٤</mn><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><mn dir="ltr">١٦</mn><mo>+</mo><mn dir="ltr">١٦</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">١٢</mn></mfrac><mo>−</mo><mn dir="ltr">٤</mn><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١٦</mn><mn dir="ltr">٣</mn></mfrac><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١٤</mn><mn dir="ltr">٣</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
@@ -2636,20 +2906,73 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٣</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٣</mn><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٩</mn><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٣</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٣</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٤.٥</mn><mo>+</mo><mn dir="ltr">٣</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٣</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٤.٥</mn><mo>+</mo><mn dir="ltr">٩</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٣</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٣</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٣</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٥</mn><mo>+</mo><mn dir="ltr">٣</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٥</mn><mo>+</mo><mn dir="ltr">٣</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٢.٥</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٩</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٢.٥</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
@@ -2699,7 +3022,35 @@ solution:
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mn dir="ltr">٣٢</mn><mo>+</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٤</mn></mfrac><mo stretchy="false">(</mo><mn dir="ltr">١٦</mn><mo stretchy="false">)</mo><mo>−</mo><mn dir="ltr">٠</mn><mo>=</mo><mn dir="ltr">٣٢</mn><mo>+</mo><mn dir="ltr">١٢</mn><mo>=</mo><mn dir="ltr">٤٤</mn></mrow></math>
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mn dir="ltr">٣٢</mn><mo>+</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٤</mn></mfrac><mo stretchy="false">(</mo><mn dir="ltr">١٦</mn><mo stretchy="false">)</mo><mo>−</mo><mn dir="ltr">٠</mn></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mn dir="ltr">٣٢</mn><mo>+</mo><mn dir="ltr">٠.٧٥</mn><mo stretchy="false">(</mo><mn dir="ltr">١٦</mn><mo stretchy="false">)</mo><mo>−</mo><mn dir="ltr">٠</mn></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mn dir="ltr">٣٢</mn><mo>+</mo><mn dir="ltr">١٢</mn><mo>−</mo><mn dir="ltr">٠</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mn dir="ltr">٤٤</mn><mo>−</mo><mn dir="ltr">٠</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mn dir="ltr">٣٢</mn><mo>+</mo><mn dir="ltr">١٢</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mn dir="ltr">٤٤</mn></mrow></math>
 \`\`\`
 
 
@@ -3007,10 +3358,19 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٥</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
@@ -3038,11 +3398,49 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mfrac><mn dir="ltr">٤</mn><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo>+</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo>+</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo>+</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٢</mn><mo>+</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٠.٥</mn><mo>+</mo><mn dir="ltr">٢</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١٠</mn><mn dir="ltr">٣</mn></mfrac><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١٣</mn><mn dir="ltr">٦</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
@@ -3165,20 +3563,67 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٤</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٤</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٤</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٤</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">١٦</mn><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٤</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٨</mn><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٤</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٨</mn><mo>+</mo><mn dir="ltr">١٦</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٩</mn><mn dir="ltr">٢</mn></mfrac><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٤.٥</mn><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٤.٥</mn><mo>+</mo><mn dir="ltr">١٢</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٧.٥</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١٥</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٧.٥</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
-
-
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>
@@ -3293,11 +3738,67 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٤</mn></msup><mn dir="ltr">٤</mn></mfrac><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٤</mn></msup><mn dir="ltr">٤</mn></mfrac><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٤</mn></mfrac><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٤</mn></msup><mn dir="ltr">٤</mn></mfrac><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٢٥</mn><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٤</mn></msup><mn dir="ltr">٤</mn></mfrac><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٢٥</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٤</mn></msup><mn dir="ltr">٤</mn></mfrac><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٢٥</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٤</mn></msup><mn dir="ltr">٤</mn></mfrac><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٢٥</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٠</mn><mn dir="ltr">٤</mn></mfrac><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٢٥</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠</mn><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٢٥</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠</mn><mo>−</mo><mfrac><mn dir="ltr">٠</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٢٥</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠</mn><mo>−</mo><mn dir="ltr">٠</mn><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٢٥</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo>+</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٢٥</mn><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo>+</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٥</mn><mn dir="ltr">١٢</mn></mfrac><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
@@ -3393,10 +3894,7 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mn dir="ltr">١</mn></mrow></math>
@@ -3424,20 +3922,43 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٤</mn><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٤</mn><mo>+</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نجمع العددين.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mn dir="ltr">٤</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٣</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mn dir="ltr">١</mn></mrow></math>
@@ -3520,10 +4041,13 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١٧</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٨.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
-
-
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mfrac><mn dir="ltr">١٧</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>
@@ -3551,11 +4075,37 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٩</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٩</mn><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٢٧</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٩</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٩</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٩</mn><mo>+</mo><mn dir="ltr">٩</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٩</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٩</mn><mo>+</mo><mn dir="ltr">٢٧</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٩</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٩</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>+</mo><mn dir="ltr">٩</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٢٦</mn><mn dir="ltr">٣</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
@@ -3610,7 +4160,35 @@ solution:
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">ت</mi><mo>=</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo>−</mo><mn dir="ltr">١٢</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn dir="ltr">٤</mn></mrow></math>
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ت</mi><mo>=</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo>−</mo><mn dir="ltr">١٢</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ت</mi><mo>=</mo><mn dir="ltr">٠.٥</mn><mo stretchy="false">(</mo><mn dir="ltr">٤</mn><mo>−</mo><mn dir="ltr">١٢</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ت</mi><mo>=</mo><mn dir="ltr">٠.٥</mn><mo stretchy="false">(</mo><mrow><mo>−</mo><mn dir="ltr">٨</mn></mrow><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ت</mi><mo>=</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ت</mi><mo>=</mo><mn dir="ltr">٠.٥</mn><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٨</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ت</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٤</mn></mrow></math>
 \`\`\`
 
 
@@ -3715,7 +4293,25 @@ solution:
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mrow><mn dir="ltr">٣</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٥</mn><mo stretchy="false">)</mo></mrow><mrow><mn dir="ltr">٣</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo></mrow></mfrac><mo>=</mo><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">٤</mn></mfrac><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mrow><mn dir="ltr">٣</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٥</mn><mo stretchy="false">)</mo></mrow><mrow><mn dir="ltr">٣</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mn dir="ltr">٨</mn><mrow><mn dir="ltr">٣</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mfrac><mn dir="ltr">٨</mn><mn dir="ltr">٤</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">م</mi><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
 \`\`\`
 
 
@@ -3730,7 +4326,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٣</mn><mo>−</mo><mn dir="ltr">٦</mn><mo>=</mo><mo>−</mo><mn dir="ltr">٣</mn></mrow></math>
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mn dir="ltr">٣</mn><mo>−</mo><mn dir="ltr">٦</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><mi mathvariant="normal">ب</mi><mo>=</mo><mo>−</mo><mn dir="ltr">٣</mn></mrow></math>
 \`\`\`
 
 
@@ -3984,10 +4586,19 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٤</mn></mfrac><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٠.٧٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٠.٧٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠.٥</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٤</mn></mfrac></mrow></math>
@@ -4025,10 +4636,19 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٤</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٤</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١.٥</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٠.٧٥</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mfrac><mn dir="ltr">٩</mn><mn dir="ltr">٤</mn></mfrac></mrow></math>
@@ -4194,10 +4814,7 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">١٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">١</mn></msub><mo>=</mo><mn dir="ltr">١٤</mn></mrow></math>
@@ -4225,20 +4842,43 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mo>+</mo><mn dir="ltr">٢٧</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mo>+</mo><mn dir="ltr">٢٧</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٢٧</mn><mo>+</mo><mn dir="ltr">٢٧</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mo>+</mo><mn dir="ltr">٢٧</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٢٧</mn><mo>+</mo><mn dir="ltr">٨١</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mo>+</mo><mn dir="ltr">٢٧</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نجمع العددين.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٥٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mo>+</mo><mn dir="ltr">٢٧</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٥٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٨</mn><mo>+</mo><mn dir="ltr">٢٧</mn><mo fence="true">(</mo><mn dir="ltr">٢</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٥٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٨</mn><mo>+</mo><mn dir="ltr">٥٤</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٥٤</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٤٦</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mn dir="ltr">٨</mn></mrow></math>
@@ -4364,10 +5004,13 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٦</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٩</mn><mn dir="ltr">٢</mn></mfrac><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٦</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٤.٥</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
-
-
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mfrac><mn dir="ltr">٣</mn><mn dir="ltr">٢</mn></mfrac></mrow></math>
@@ -4471,11 +5114,43 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٣</mn></msup><mn dir="ltr">٣</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">٠</mn><mn dir="ltr">٣</mn></mfrac><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo>−</mo><mn dir="ltr">٠</mn><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo>+</mo><mo fence="true">(</mo><mn dir="ltr">٠</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mfrac><mn dir="ltr">١</mn><mn dir="ltr">٣</mn></mfrac><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٠</mn><mo stretchy="false">)</mo></mrow></math>
@@ -4600,20 +5275,43 @@ solution:
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٦</mn><mrow><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٦</mn><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٩</mn><mo>+</mo><mn dir="ltr">٦</mn><mo fence="true">(</mo><mn dir="ltr">٣</mn><mo fence="true">)</mo><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٦</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">٩</mn><mo>+</mo><mn dir="ltr">١٨</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٦</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نجمع العددين.
 
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٩</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><msup><mrow><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo></mrow><mn dir="ltr">٢</mn></msup><mo>+</mo><mn dir="ltr">٦</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٩</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mn dir="ltr">٦</mn><mo fence="true">(</mo><mn dir="ltr">١</mn><mo fence="true">)</mo><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="rtl" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٩</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn dir="ltr">١</mn><mo>+</mo><mn dir="ltr">٦</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mo stretchy="false">(</mo><mn dir="ltr">٩</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn dir="ltr">٥</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="rtl" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">م</mi><mn dir="ltr">٢</mn></msub><mo>=</mo><mn dir="ltr">٤</mn></mrow></math>

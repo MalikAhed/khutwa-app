@@ -23,7 +23,7 @@ export const ICT_PAST_PAPER_QUESTIONS = [
       "Microsoft access"
     ],
     "correctChoiceIndex": 2,
-    "explanation": "**الإجابة:** `SketchUp`\n\n**الشاهد من الكتاب 1:**\n\n> استخدمت في الصف السابق برنامج Sketch up وتعرفت أنه يحفظ الملفات بامتداد (Skp)، كما قمت بتنفيذ بعض المهارات والأنشطة المختلفة باستخدام برنامج Sketch up، مستخدماً الأدوات التي يوفرها البرنامج.\n\n\n\n**الشاهد من الكتاب 2:**\n\n> رسم الخطوط والقطع المستقيمة\n> رسم المستطيلات المغلقة بقياس القطر\n> رسم الدوائر المغلقة بقياس نصف القطر\n> تجسيم الأسطح المغلقة وجعلها ثلاثية الأبعاد\n\n**المصدر:** صفحة 77 من الكتاب.\n\n\n\n**توضيح:** يعرض الكتاب `SketchUp` بأدوات الرسم وتجسيم الأسطح؛ أما `Access` و`Oracle` و`MySQL` فهي أمثلة أنظمة قواعد البيانات في الدرس الأول.",
+    "explanation": "**الإجابة:** `SketchUp`.\n\nتعدّ الرزمة `MySQL` و`Oracle` و`Microsoft Access` من أمثلة برامج إدارة قواعد البيانات. `SketchUp` برنامج للرسم والنمذجة ثلاثية الأبعاد.\n\n[رزمة تكنولوجيا المعلومات، غزة — العلمي، ص ٣ (PDF ٥)](https://moe.edu.ps/m/4057#page=5)",
     "answerProvenance": "curriculum-corrected-2026-10-24",
     "reference": "[السؤال ص 3](assets/lessons/ict/exams/source-crops/past-p6-q1-1-question.webp) · [الإجابة ص 5](assets/lessons/ict/exams/source-crops/past-p6-q1-1-answer.webp)",
     "type": "mcq",
@@ -489,7 +489,7 @@ export const ICT_PAST_PAPER_QUESTIONS = [
       "SMTP"
     ],
     "correctChoiceIndex": 1,
-    "explanation": "**الإجابة:** البروتوكول `PPTP`.\n\n**الشاهد من الكتاب:**\n\n> ومن أهم البروتوكولات المستخدمة فيها: ASP، PPTP، RPC، L2TP.\n\n**المصدر:** صفحة 57 من الكتاب.",
+    "explanation": "**الإجابة وفق تصنيف الرزمة:** `PPTP`.\n\nيَرِد `PPTP` في قائمة بروتوكولات طبقة الجلسة التي يتناولها درس «طبقات نموذج OSI».\n\n[رزمة تكنولوجيا المعلومات، غزة — العلمي، ص ٥٧ (PDF ٥٩)](https://moe.edu.ps/m/4057#page=59)",
     "answerProvenance": "curriculum-corrected-2026-10-24",
     "reference": "[السؤال ص 12](assets/lessons/ict/exams/source-crops/past-p124-q1-1-question.webp) · [الإجابة ص 15](assets/lessons/ict/exams/source-crops/past-p124-q1-1-answer.webp)",
     "type": "mcq",
@@ -679,7 +679,7 @@ export const ICT_PAST_PAPER_QUESTIONS = [
       "LLP"
     ],
     "correctChoiceIndex": 3,
-    "explanation": "**الإجابة:** البروتوكول `LLP`.\n\n**الشاهد من الكتاب:**\n\n> أهم البروتوكولات المستخدمة فيها: NDR، LLP، XDR.\n\n**المصدر:** صفحة 59 من الكتاب.",
+    "explanation": "**الإجابة وفق تصنيف الرزمة:** `LLP`.\n\nيرد `LLP` في قائمة بروتوكولات طبقة التقديم مع `NDR` و`XDR`.\n\n[رزمة تكنولوجيا المعلومات، غزة — العلمي، ص ٥٩ (PDF ٦١)](https://moe.edu.ps/m/4057#page=61)",
     "answerProvenance": "curriculum-corrected-2026-10-24",
     "reference": "[السؤال ص 12](assets/lessons/ict/exams/source-crops/past-p124-q1-8-question.webp) · [الإجابة ص 15](assets/lessons/ict/exams/source-crops/past-p124-q1-8-answer.webp)",
     "type": "mcq",
@@ -717,7 +717,7 @@ export const ICT_PAST_PAPER_QUESTIONS = [
       "النقل"
     ],
     "correctChoiceIndex": 0,
-    "explanation": "**الإجابة:** التقديم\n\n**الشاهد من الكتاب 1:**\n\n> ومن الأمثلة على خدمة طبقة التقديم تحويل ملف حاسوب نصي مشفر EBCDIC إلى ملف ترميز ASCII\n\n\n\n**الشاهد من الكتاب 2:**\n\n> الطبقة المسؤولة عن تنسيق المعلومات وتسليمها إلى طبقة التطبيقات، وتعمل على تخفيف العبء الناتج من الاختلاف في تمثيل البيانات داخل تطبيقات المستخدم عن طبقة التطبيقات.\n\n**المصدر:** صفحة 58 من الكتاب.",
+    "explanation": "**الإجابة:** طبقة **التقديم**.\n\n`EBCDIC` و`ASCII` نظامان **لترميز الحروف**، أي إن كل نظام يعبّر عن الحروف بأرقام وفق جدول مختلف. المطلوب تحويل تمثيل النص من جدول إلى الآخر مع بقاء الحروف نفسها، وهو من وظائف طبقة التقديم. تسمي الرزمة الملف «مشفّرًا» في صياغة المثال. المقصود هنا **ترميز البيانات**؛ أما التشفير للحماية فيهدف إلى منع غير المخوّلين من قراءة المحتوى.\n\n[رزمة تكنولوجيا المعلومات، غزة — العلمي، ص ٥٨ (PDF ٦٠)](https://moe.edu.ps/m/4057#page=60)",
     "answerProvenance": "curriculum-corrected-2026-10-24",
     "reference": "[السؤال ص 13](assets/lessons/ict/exams/source-crops/past-p125-q1-9-question.webp) · [الإجابة ص 15](assets/lessons/ict/exams/source-crops/past-p125-q1-9-answer.webp)",
     "type": "mcq",

@@ -699,12 +699,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><mi>H</mi><mi>C</mi><mi>l</mi><mo>→</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mi>C</mi><mi>l</mi><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 50 من الكتاب.
-
 :::
 
 :::exam-question

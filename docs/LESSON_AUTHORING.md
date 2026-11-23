@@ -253,9 +253,17 @@ Choose the answer style by the thinking the question requires, across all subjec
 
 Calculations, applications, code/SQL execution, diagram interpretation and questions requiring a deduction still get a clear explanation. An MCQ is not automatically a recall question. In a mixed question, quote the factual subparts and explain only the parts requiring reasoning. Preserve question IDs, answer keys, blocker status and existing review findings.
 
+Write calculation explanations as a student would lay them out in an exam. State the givens, identify the unknown, write the applicable rule, and substitute the values. Put a short Arabic explanation immediately above each changed equation. Show unit conversions, distribution, sign changes, common denominators, cancellation, and intermediate arithmetic where used. End with the result and its units or interpretation.
+
+- For a term that moves across the equals sign, write «بنقل الحد −١ إلى الطرف الآخر يصبح +١» and show the new equation before evaluating the side that received the term.
+- For a nonzero factor or denominator, name the multiplication or division that isolates the unknown. For example, write «بنقل المقام ٣ إلى الطرف الآخر يصبح عامل ضرب». For equal fractions with nonzero denominators, write «بالضرب التبادلي» and show both products before simplifying.
+- To reduce one fraction, show the common factor and divide the numerator and denominator by it. To add or subtract fractions, show how their denominators become equal before combining the numerators.
+
 ## Publishing and validation
 
 Adabi releases publish the compiled native lesson modules and only their referenced question figures. Original PDFs, `authoring.json`, `source-coverage.json`, and unused proof crops remain private local inputs covered by `.gitignore`. Run full source/quotation audits locally with those supplied inputs; public runtime tests use the compiled banks and do not need private source files. Source/page attribution stays readable without linking to unpublished PDFs.
+
+The full Palestinian curriculum uses the Scientific and Literary units in `Khutwa-Outside-Gaza-Question-Bank.zip`. Extract the ZIP to an ignored directory and run `node scripts/import-outside-gaza-bank.mjs <extracted-bank-directory>`. The importer checks counts, published Markdown, question IDs, and all figures before generating lesson modules and roadmap metadata. Keep published practice group placements when correcting the archive. If questions are added or removed, retain every existing question's subject, lesson and part IDs. The ZIP, notes and source page tracker stay with the authoring inputs.
 
 
 Follow `src/data/lessons/ict/course-introduction.js`: export the Markdown source, pass it to `defineMarkdownLesson(...)` with lesson metadata, register the module in `src/data/lessons/subject-lesson-registry.js`, and add its parts and stable boundary IDs to `src/data/subject-roadmaps.js`. Because the source currently lives in a JavaScript template literal, escape Markdown backticks and any literal `${` sequence.

@@ -19,23 +19,54 @@ try {
   await page.evaluate(async () => {
     const { renderAuthoredInteractiveLesson } = await import("/src/ui/lesson/authored.js");
     const { parseLessonMarkdown } = await import("/src/markdown/lesson-authoring.js");
+    const { questionExplanation } = await import("/src/domain/question-explanations.js");
     let cleanup;
     window.readingFixture = {
-      mount(subject,type) {
+      mount(subject,type,recap = false) {
         cleanup?.();
         const shell = document.querySelector(".lesson-shell"); shell.dataset.subject = subject;
         const copy = 'اختر ==المصطلح== في Access أو `SQL`.';
-        const table = '| النوع | القيمة |\n| --- | --- |\n| عدد | `Integer` |\n| نص | `Text` |';
+        const table = '| النوع | القيمة |\n| --- | --- |\n| عدد | `Integer` |\n| نص | `Text` |'
+          + (recap ? '\n\n![رسم السؤال](/assets/icons/nav-gem.svg)' : '');
         const source = type === "mcq"
           ? `:::mcq\nid: themed-mcq\ntitle: سؤال\nquestion: ${copy}\n- [x] a | ==قيمة== Access \`Integer\`\n- [ ] b | خيار آخر\nexplanation: الشرح\nhint: اختر المصطلح المناسب.\nexample:\n${table}\n:::`
           : `:::exam-question\nid: themed-written\ntitle: سؤال\nquestion: سؤال\nreference: مصدر\nanswer-label: الإجابة\nbody:\n${copy}\n\n${table}\nfinal-answer:\n==جواب== Access \`Integer\`\nsolution:\nالشرح\n:::`;
         const parsed = parseLessonMarkdown(source,{published:true});
         if (parsed.issues.length) throw new Error(parsed.issues.join("; "));
-        cleanup = renderAuthoredInteractiveLesson(document.querySelector(".lesson-card"),"الدرس",{title:"تدريب",summary:""},parsed.steps);
+        cleanup = renderAuthoredInteractiveLesson(document.querySelector(".lesson-card"),"الدرس",{title:"تدريب",summary:""},parsed.steps,{
+          getQuestionExplanation:recap ? step => ({isUnlocked:()=>true,unlock:async()=>questionExplanation(step)}) : undefined,
+        });
       },
       clear() { cleanup?.(); },
     };
   });
+  for (const width of [390,1440]) {
+    await page.setViewportSize({width,height:900});
+    for (const type of ["mcq","exam-question"]) {
+      await page.evaluate(type => window.readingFixture.mount("ict",type,true),type);
+      const front = page.locator(type === "mcq" ? ".lesson-question" : "[data-exam-front]");
+      await page.locator("[data-question-explain]").click();
+      const body = page.locator('[data-explanation-body][aria-busy="false"]');
+      await body.waitFor();
+      const recap = body.locator(":scope > :first-child");
+      assert.equal(await recap.locator(".question-explanation-prompt").textContent(),await front.locator("h1").textContent());
+      assert.deepEqual(await recap.locator("tr").allTextContents(),await front.locator("tr").allTextContents());
+      assert.equal(await recap.locator("img").getAttribute("src"),await front.locator("img").getAttribute("src"));
+      assert.equal(await recap.locator("img").getAttribute("alt"),"رسم السؤال");
+      if (type === "mcq") {
+        assert.deepEqual(await recap.locator("li > :last-child").allTextContents(),await front.locator(".lesson-answer b").allTextContents());
+        assert.equal(await recap.locator("[data-correct], .lesson-answer").count(),0);
+      }
+      assert.equal((await body.locator("[data-explanation-solution]").textContent()).trim(),"الشرح");
+      assert.ok(await body.evaluate(node => node.scrollWidth <= node.clientWidth + 1));
+      await recap.locator("[data-summary-scan-zoom]").click();
+      await page.locator("#question-explanation-recap-scan-1-viewer[open]").waitFor();
+      await page.keyboard.press("Escape");
+      assert.ok(await body.isVisible());
+      await page.keyboard.press("Escape");
+      await body.waitFor({state:"detached"});
+    }
+  }
   for (const subject of ["ict","mathematics","mathematics-2","physics","chemistry","biology","arabic","english","islamic-education"]) {
     for (const width of [390,1440]) {
       await page.setViewportSize({width,height:900});

@@ -21,7 +21,7 @@ solution:
 
 > Unfortunately, he didn’t get on well with the manager, and was soon playing in the reserve team.
 
-**المصدر:** صفحة 53 من الكتاب.
+**المصدر في كتاب غزة:** ص 53 للنص، وص 54 للتمرين المقتبس.
 
 
 
@@ -91,7 +91,7 @@ solution:
 
 > He still remembers the mixture of excitement and terror he felt.
 
-**المصدر:** صفحة 53 من الكتاب.
+**المصدر في كتاب غزة:** ص 53 للنص، وص 54 للتمرين المقتبس.
 
 
 
@@ -126,7 +126,7 @@ solution:
 
 > More importantly, it breaks one of my two personal rules for judging serious sports because it puts artificial limits on what can be done.
 
-**المصدر:** صفحة 55 من الكتاب.
+**المصدر في كتاب غزة:** ص 55 للنص، وص 56 للتمرين المقتبس.
 
 
 
@@ -163,7 +163,7 @@ solution:
 
 > Although some think it is only popular in the USA, it actually has a large following in South America and Asia too. The main reason for leaving it out, according to some, is a combination of geography and politics: there is little interest in the sport in Europe, and European members are in a majority on the IOC.
 
-**المصدر:** صفحة 55 من الكتاب.
+**المصدر في كتاب غزة:** ص 55 للنص، وص 56 للتمرين المقتبس.
 
 
 
@@ -198,7 +198,7 @@ solution:
 
 > but those who are infuriated by it often forget what players have to do to get to the top, and the risks involved.
 
-**المصدر:** صفحة 53 من الكتاب.
+**المصدر في كتاب غزة:** ص 53 للنص، وص 54 للتمرين المقتبس.
 
 
 
@@ -233,7 +233,7 @@ solution:
 
 > The figures are astonishing.
 
-**المصدر:** صفحة 53 من الكتاب.
+**المصدر في كتاب غزة:** ص 53 للنص، وص 54 للتمرين المقتبس.
 
 
 
@@ -267,7 +267,7 @@ solution:
 
 > There are various criteria that the IOC bases its decisions on, but the most important is probably international popularity. Sports tend to get included if they have a tradition and are played and watched by enough people in enough countries.
 
-**المصدر:** صفحة 55 من الكتاب.
+**المصدر في كتاب غزة:** ص 55 للنص، وص 56 للتمرين المقتبس.
 
 
 
@@ -301,7 +301,7 @@ solution:
 
 > My other rule is that the scoring has to be objective and measurable, not a matter of opinion.
 
-**المصدر:** صفحة 55 من الكتاب.
+**المصدر في كتاب غزة:** ص 55 للنص، وص 56 للتمرين المقتبس.
 
 
 
@@ -335,7 +335,7 @@ solution:
 
 > one of Manchester United’s many scouts, who was searching the lower levels of football for promising young players.
 
-**المصدر:** صفحة 53 من الكتاب.
+**المصدر في كتاب غزة:** ص 53 للنص، وص 54 للتمرين المقتبس.
 
 
 
@@ -369,7 +369,7 @@ solution:
 
 > Unfortunately, he didn’t get on well with the manager, and was soon playing in the reserve team.
 
-**المصدر:** صفحة 53 من الكتاب.
+**المصدر في كتاب غزة:** ص 53 للنص، وص 54 للتمرين المقتبس.
 
 
 
@@ -403,7 +403,7 @@ solution:
 
 > but those who are infuriated by it often forget what players have to do to get to the top, and the risks involved.
 
-**المصدر:** صفحة 53 من الكتاب.
+**المصدر في كتاب غزة:** ص 53 للنص، وص 54 للتمرين المقتبس.
 
 
 
@@ -621,7 +621,7 @@ solution:
 
 > There are various criteria that the IOC bases its decisions on, but the most important is probably international popularity. Sports tend to get included if they have a tradition and are played and watched by enough people in enough countries.
 
-**المصدر:** صفحة 55 من الكتاب.
+**المصدر في كتاب غزة:** ص 55 للنص، وص 56 للتمرين المقتبس.
 
 
 

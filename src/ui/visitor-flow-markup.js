@@ -94,7 +94,7 @@ export function registerMarkup() {
         <div class="onboarding-step-fields">
         <div class="onboarding-choice-grid onboarding-choice-grid--maps" role="radiogroup" aria-labelledby="curriculum-question" aria-describedby="auth-curriculum-error">
           <label class="onboarding-choice"><input type="radio" name="curriculum" value="gaza"/>${selectionMarker()}<span class="onboarding-choice__visual"><img loading="lazy" data-onboarding-image src="assets/maps/gaza-map.svg" alt=""/></span><strong>غزة</strong></label>
-          <label class="onboarding-choice"><input type="radio" name="curriculum" value="full-palestinian"/>${selectionMarker()}<span class="onboarding-choice__visual"><img loading="lazy" data-onboarding-image src="assets/maps/palestine-map.svg" alt=""/></span><strong>فلسطين</strong></label>
+          <label class="onboarding-choice"><input type="radio" name="curriculum" value="full-palestinian"/>${selectionMarker()}<span class="onboarding-choice__visual"><img loading="lazy" data-onboarding-image src="assets/maps/palestine-map.svg" alt=""/></span><strong>المنهاج الفلسطيني الكامل</strong></label>
         </div>
         ${fieldFeedback("curriculum")}
         </div>

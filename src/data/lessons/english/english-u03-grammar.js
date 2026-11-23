@@ -184,7 +184,7 @@ solution:
 قبل الانتقال إلى ألاسكا لم تكن قد رأت دبًا.
 see تصريفه الثالث seen؛ إذن hadn’t seen.
 
-تصح أيضًا She didn’t see a bear before she moved to Alaska إذا سُردت الفترة الماضية مباشرة؛ before تكفي لتوضيح ترتيبها. المفتاح hadn’t seen يبرز أنها لم تكن قد رأت دبًا حتى لحظة الانتقال.
+تصح أيضًا She didn’t see a bear before she moved to Alaska إذا سُردت الفترة الماضية مباشرة؛ before تكفي لتوضيح ترتيبها. استخدام hadn’t seen يبرز أنها لم تكن قد رأت دبًا حتى لحظة الانتقال.
 
 **المصدر:** صفحة 25 من الكتاب.
 
@@ -700,7 +700,7 @@ solution:
 تناول الإفطار حدث قبل الذهاب إلى المدرسة؛ after توضح الترتيب.
 الفعل have تصريفه الثالث had؛ لذلك had had. الأولى فعل مساعد والثانية فعل التناول.
 
-بعد after الواضحة في الترتيب يمكن استعمال he had his breakfast أيضًا. الماضي التام في المفتاح يبرز اكتمال الإفطار قبل الذهاب.
+بعد after الواضحة في الترتيب يمكن استعمال he had his breakfast أيضًا. الماضي التام يبرز اكتمال الإفطار قبل الذهاب.
 
 **المصدر:** صفحة 25 من الكتاب.
 
@@ -815,10 +815,10 @@ solution:
 **Answer:** While Laila was coming into the office, she realized that she had forgotten her mobile at home.
 
 الماضي المستمر يصف الحركة الجارية، والماضي التام \`had + التصريف الثالث\` يصف الحدث الأسبق.
-المفتاح يصور دخول ليلى أثناء إدراكها: was coming.
+نستخدم was coming لأن ليلى كانت تدخل في لحظة الإدراك.
 نسيان الهاتف سبق الإدراك: had forgotten.
 
-came into the office ممكن إذا عومل الدخول حدثًا كاملًا عند لحظة الإدراك. while ترجح التصوير الجاري الذي اختاره المفتاح.
+came into the office ممكن إذا عومل الدخول حدثًا كاملًا عند لحظة الإدراك. while ترجح التصوير الجاري.
 
 **المصدر:** صفحة 25 من الكتاب.
 
@@ -1282,7 +1282,7 @@ because تقدم السبب، والماضي التام \`had + التصريف �
 المذاكرة الطويلة سبقت النجاح؛ spend → spent، فنكتب had spent.
 نبدأ بالنتيجة I passed ثم نذكر السبب.
 
-إذا اقتصر المطلوب على الربط بـ because، تصح أيضًا I passed the exam easily because I spent a long time studying this subject. المفتاح يختار had spent لإبراز أن الدراسة تمت قبل النجاح.
+إذا اقتصر المطلوب على الربط بـ because، تصح أيضًا I passed the exam easily because I spent a long time studying this subject. نستخدم **had spent** لإبراز أن الدراسة تمت قبل النجاح.
 
 **المصدر:** الصفحات 24، 25 من الكتاب.
 

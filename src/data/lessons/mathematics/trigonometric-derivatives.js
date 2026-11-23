@@ -584,7 +584,31 @@ explanation:
 عند ربع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mi mathvariant="normal">π</mi></math>\` يكون \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">جا</mi><mo>⁡</mo><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></mrow></math>\` واحدًا و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mi mathvariant="normal">جتا</mi><mo>⁡</mo><mrow><mn dir="ltr">٢</mn><mi mathvariant="normal">س</mi></mrow></mrow></math>\` صفرًا.
 
 \`\`\`mathml
-<math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mrow><mrow><mi mathvariant="normal">صَ</mi><mo>(</mo><mfrac><mrow><mi mathvariant="normal">π</mi></mrow><mrow><mn dir="ltr">٤</mn></mrow></mfrac><mo>)</mo></mrow><mrow><mo>=</mo><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">١</mn><mo>+</mo><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">١</mn><mo>×</mo><mn dir="ltr">٠</mn></mrow><mrow><mo>=</mo><mn dir="ltr">٢</mn></mrow></mrow></math>
+<math dir="rtl"><mrow><mi mathvariant="normal">صَ</mi><mo>(</mo><mfrac><mrow><mi mathvariant="normal">π</mi></mrow><mrow><mn dir="ltr">٤</mn></mrow></mfrac><mo>)</mo><mo>=</mo><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">١</mn><mo>+</mo><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">١</mn><mo>×</mo><mn dir="ltr">٠</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="rtl"><mrow><mi mathvariant="normal">صَ</mi><mo>(</mo><mfrac><mrow><mi mathvariant="normal">π</mi></mrow><mrow><mn dir="ltr">٤</mn></mrow></mfrac><mo>)</mo><mo>=</mo><mn dir="ltr">٢</mn><mo>+</mo><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">١</mn><mo>×</mo><mn dir="ltr">٠</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="rtl"><mrow><mi mathvariant="normal">صَ</mi><mo>(</mo><mfrac><mrow><mi mathvariant="normal">π</mi></mrow><mrow><mn dir="ltr">٤</mn></mrow></mfrac><mo>)</mo><mo>=</mo><mn dir="ltr">٢</mn><mo>+</mo><mn dir="ltr">٢</mn><mo>×</mo><mn dir="ltr">٠</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="rtl"><mrow><mi mathvariant="normal">صَ</mi><mo>(</mo><mfrac><mrow><mi mathvariant="normal">π</mi></mrow><mrow><mn dir="ltr">٤</mn></mrow></mfrac><mo>)</mo><mo>=</mo><mn dir="ltr">٢</mn><mo>+</mo><mn dir="ltr">٠</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="rtl"><mrow><mi mathvariant="normal">صَ</mi><mo>(</mo><mfrac><mrow><mi mathvariant="normal">π</mi></mrow><mrow><mn dir="ltr">٤</mn></mrow></mfrac><mo>)</mo><mo>=</mo><mn dir="ltr">٢</mn></mrow></math>
 \`\`\`
 
 النتيجة: \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="rtl"><mn dir="ltr">٢</mn></math>\`.

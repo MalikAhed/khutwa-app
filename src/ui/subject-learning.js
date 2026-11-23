@@ -1,7 +1,12 @@
 import { filterRatedRoadmap, getRatedSubjectQuestions } from "../domain/question-ratings.js";
 import { mountRatedQuestionToggle } from "./rated-questions.js";
 import { getCourseSubject } from "../data/course.js";
-import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { getCurrentSubjectRoadmap, getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { isCurriculumQuestionHidden, publishedPartLocation } from "../data/curriculum-visibility.js";
+import { resolveDuplicateQuestionLink } from "../data/question-duplicates.js";
+import { isOutsideGazaMath, resolveMovedMathLink } from "../data/lessons/outside-gaza/math-roadmaps.js";
+import { resolveLegacyTextbookLink } from "../data/lessons/outside-gaza/textbook-practice.js";
+import { getPartQuestionIds as getPublishedPartQuestionIds } from "../domain/question-rewards.js";
 import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js";
 import { getSubjectPartAccess } from "../domain/subject-access.js";
 import { escapeHtml } from "../lib/dom.js";
@@ -96,7 +101,7 @@ export function createSubjectLearningController({
     subjectId = subject.id;
     lessonId = null;
     writeRoute({ subject:subject.id,...(rating ? {page:"rated-questions",rating} : {}) }, historyMode);
-    const roadmap = getSubjectRoadmap(subject.id);
+    const roadmap = getCurrentSubjectRoadmap(subject.id);
     const { ownerId, store } = progressContext();
     // Returning to a roadmap uses the already loaded local progress/preferences.
     // Never leave a dismantled question on screen while awaiting remote ratings.
@@ -119,7 +124,7 @@ export function createSubjectLearningController({
     let mountedRoadmap = null;
     if (roadmap) {
       const getPartQuestionIds = subject.id === "ict"
-        ? (_lesson, part) => getIctPartQuestionIds(part.id)
+        ? (_lesson, part) => part.questionIds ?? getIctPartQuestionIds(part.id)
         : roadmap.questionsOnly ? (_lesson, part) => part.questionIds || [] : undefined;
       if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
       mountedRoadmap = mountSubjectRoadmap({
@@ -130,17 +135,16 @@ export function createSubjectLearningController({
           initialReviewUnit:reviewUnitId,
           onReviewTabChange:(unitId) => { reviewUnitId = unitId; },
           getPartProgress: (lesson, part) => {
-            const key = { ownerId, subjectId:subject.id, lessonId:lesson.id, partId:part.id };
+            const key = { ownerId, ...publishedPartLocation(subject.id, lesson, part) };
             return rating ? store.getRatedProgress(key, rating) : { ...store.get(key), review:store.getReview(key) };
           },
-          getPartReview: (lesson, part) =>
-            store.getReview({
-              ownerId,
-              subjectId: subject.id,
-              lessonId: lesson.id,
-              partId: part.id,
-            }).filter(item => (!getPartQuestionIds || getPartQuestionIds(lesson, part).includes(item.stepId))
-              && !questionFeedback?.isHidden({ subjectId:subject.id,stepId:item.stepId })),
+          getPartReview: (lesson, part) => {
+            const key = publishedPartLocation(subject.id, lesson, part);
+            return store.getReview({ ownerId, ...key })
+              .filter(item => (!getPartQuestionIds || getPartQuestionIds(lesson, part).includes(item.stepId))
+              && !isCurriculumQuestionHidden(item.stepId, subject.id, lesson.id, part.id)
+              && !questionFeedback?.isHidden({ ...key,stepId:item.stepId }));
+          },
           isLessonLocked: requiresAccount,
           onRequireAccount,
           onStartLesson({
@@ -215,10 +219,28 @@ export function createSubjectLearningController({
     historyMode = "push",
   }) {
     if (requiresAccount()) return onRequireAccount("register");
+    const bookmark = { subjectId:nextSubjectId, lessonId:nextLessonId, partId, stepId:reviewStepId };
+    const legacy = resolveDuplicateQuestionLink(bookmark)
+      || (isOutsideGazaMath(nextSubjectId) ? resolveMovedMathLink(bookmark) : resolveLegacyTextbookLink(bookmark));
+    if (legacy) {
+      nextSubjectId = legacy.subjectId;
+      nextLessonId = legacy.lessonId;
+      partId = legacy.partId;
+      reviewStepId = legacy.stepId || reviewStepId;
+      historyMode = "replace";
+    }
     if (!canStudy({subjectId:nextSubjectId,lessonId:nextLessonId})) return;
-    const roadmap = getSubjectRoadmap(nextSubjectId);
-    const target = getSubjectPartAccess(roadmap, { lessonId:nextLessonId, partId });
+    const activeRoadmap = getCurrentSubjectRoadmap(nextSubjectId);
+    const destination = { lessonId:nextLessonId, partId };
+    const activeTarget = getSubjectPartAccess(activeRoadmap, destination);
+    const roadmap = !activeTarget && isOutsideGazaMath(nextSubjectId) ? getSubjectRoadmap(nextSubjectId) : activeRoadmap;
+    const target = activeTarget || getSubjectPartAccess(roadmap, destination);
     if (!target) return openSubject(nextSubjectId, null, { historyMode:"replace", focusContent:true });
+    const hiddenInLesson = stepId => isCurriculumQuestionHidden(stepId, nextSubjectId, nextLessonId);
+    if (hiddenInLesson(reviewStepId)) {
+      reviewStepId = null;
+      historyMode = "replace";
+    }
     const operation = viewLifecycle.begin();
     const { ownerId, store } = progressContext();
     const reference = lessonLabel || target.part.label;
@@ -241,13 +263,14 @@ export function createSubjectLearningController({
           questionFeedback?.ready?.({ signal:operation.signal, maxAge:30000 }),
         ]);
         if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
-        if (reviewStepId && questionFeedback?.isHidden({ subjectId:nextSubjectId,stepId:reviewStepId })) {
+        const requestedLocation = publishedPartLocation(nextSubjectId, target.lesson, target.part);
+        if (reviewStepId && questionFeedback?.isHidden({ ...requestedLocation,stepId:reviewStepId })) {
           returnToRoadmap();
           return;
         }
         const access = getSubjectPartAccess(roadmap, {
           lessonId:nextLessonId, partId,
-          getPartProgress:(lesson, part) => store.get({ ownerId, subjectId:nextSubjectId, lessonId:lesson.id, partId:part.id }),
+          getPartProgress:(lesson, part) => store.get({ ownerId, ...publishedPartLocation(nextSubjectId, lesson, part) }),
           accountRequired:requiresAccount(),
         });
         if (!["available", "in-progress", "completed"].includes(access.state)) {
@@ -259,16 +282,12 @@ export function createSubjectLearningController({
         // Old review URLs still open their part after source exercises replace
         // retired practice. Historical answers stay stored, not silently relabelled.
         if (reviewStepId && !lesson?.steps.some(step => step.id === reviewStepId)) reviewStepId = null;
-        const recordKey = {
-          ownerId,
-          subjectId: nextSubjectId,
-          lessonId: nextLessonId,
-          partId,
-        };
+        const recordKey = { ownerId, ...requestedLocation };
         const demoMode = Boolean(onboardingTour?.isDemo());
         // Keep each question in its published part record while displaying one full lesson.
         const partLessons = await Promise.all(target.lesson.parts.map(async part => ({
-          part, sourceLessonId:nextLessonId, lesson:await loadSubjectLessonPart(nextSubjectId, nextLessonId, part.id),
+          part, location:publishedPartLocation(nextSubjectId, target.lesson, part),
+          lesson:await loadSubjectLessonPart(nextSubjectId, nextLessonId, part.id),
         })));
         if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
         const isFilterSubject = nextSubjectId === "mathematics" || nextSubjectId === "mathematics-2" || nextSubjectId === "physics";
@@ -290,7 +309,8 @@ export function createSubjectLearningController({
           return loadedLessons.flatMap(({ item, lesson:loadedLesson }) => {
             const partByQuestion = new Map((item.parts || []).flatMap(part => (part.questionIds || []).map(id => [id, part])));
             return compileLessonMarkdown(loadedLesson.authoringSource).parsed.steps
-              .filter(step => step.type !== "markdown" && !questionFeedback?.isHidden({ subjectId:nextSubjectId,stepId:step.id }))
+              .filter(step => step.type !== "markdown" && !isCurriculumQuestionHidden(step.id, nextSubjectId, item.id)
+                && !questionFeedback?.isHidden({ subjectId:nextSubjectId,stepId:step.id }))
               .map(step => {
                 const part = partByQuestion.get(step.id);
                 return {
@@ -304,20 +324,19 @@ export function createSubjectLearningController({
               });
           });
         };
-        const questionKeys = new Map(partLessons.flatMap(({ part, lesson }) => lesson.steps.map(step => [step.id, { subjectId:nextSubjectId, lessonId:nextLessonId, partId:part.id, stepId:step.id }])));
+        const questionKeys = new Map(partLessons.flatMap(({ location, lesson }) => lesson.steps.map(step => [step.id, { ...location, stepId:step.id }])));
         const sourceKey = stepId => questionKeys.get(stepId) || { subjectId:nextSubjectId, lessonId:nextLessonId, partId, stepId };
-        const records = partLessons.map(({ part, sourceLessonId }) => {
-          const key = { ...recordKey, lessonId:sourceLessonId, partId:part.id };
+        const records = partLessons.map(({ location }) => {
+          const key = { ownerId, ...location };
           return { ...store.get(key), review:store.getReview(key) };
         });
-        const ratedRecords = rating ? partLessons.map(({ part, sourceLessonId }) =>
-          store.getRatedProgress({ ...recordKey, lessonId:sourceLessonId, partId:part.id }, rating)) : [];
+        const ratedRecords = rating ? partLessons.map(({ location }) => store.getRatedProgress({ ownerId, ...location }, rating)) : [];
+        const visibleLessonSteps = lesson.steps.filter(step => !hiddenInLesson(step.id));
         const saved = {
           completedStepIds:records.flatMap(record => record.completedStepIds),
-          completed:lesson.steps.every(step => records.some(record => record.completedStepIds.includes(step.id))),
+          completed:visibleLessonSteps.every(step => records.some(record => record.completedStepIds.includes(step.id))),
         };
-        const totalParts = getSubjectRoadmap(nextSubjectId)
-          .units.flatMap((unit) => unit.lessons)
+        const totalParts = roadmap.units.flatMap((unit) => unit.lessons)
           .flatMap((lesson) => lesson.parts || []).length;
         const outcomeKey = { ...recordKey, totalParts };
         const currentOutcome = () => {
@@ -325,7 +344,7 @@ export function createSubjectLearningController({
           const home = store.getHomeLearning(ownerId, [roadmap]);
           return { ...outcome, levelTotalXp:home.totalXp, progress:home.progress, completed:home.requiredLessonsCompleted, totalParts:home.curriculumLessonsTotal,
             completedQuestions:home.currentQuestionsSolved, totalQuestions:home.currentQuestionsTotal,
-            lessonShare:home.currentQuestionsTotal ? Math.round(lesson.steps.length / home.currentQuestionsTotal * 100) : undefined };
+            lessonShare:home.currentQuestionsTotal ? Math.round(visibleLessonSteps.length / home.currentQuestionsTotal * 100) : undefined };
         };
         const before = currentOutcome();
         const sessionGemUpdates = new Set();
@@ -399,7 +418,7 @@ export function createSubjectLearningController({
               const key = sourceKey(stepId);
               return {
                 subscribe:questionFeedback?.subscribe,
-                isHidden:() => questionFeedback?.isHidden(key) || false,
+                isHidden:() => hiddenInLesson(stepId) || questionFeedback?.isHidden(key) || false,
                 canHide:() => !onboardingTour?.protectQuestionHide(),
                 hide:(options) => questionFeedback?.hide(key,options),
                 getRating:() => questionFeedback?.getRating(key),
@@ -416,10 +435,10 @@ export function createSubjectLearningController({
             },
             reviewStepId,
             onReviewComplete: returnToRoadmap,
-            beforeAnswer:async () => {
+            beforeAnswer:async stepId => {
               if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return "انتهت جلسة التعلّم.";
               let connectionRequired = false;
-              const practiceKey = {subjectId:nextSubjectId,lessonId:nextLessonId};
+              const practiceKey = sourceKey(stepId);
               const blocked = await resourceStore?.checkAnswerAccess(ownerId, { signal:operation.signal, key:practiceKey,
                 onConnectionRequired:() => {connectionRequired = true;} });
               if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return "انتهت جلسة التعلّم.";
@@ -469,11 +488,11 @@ export function createSubjectLearningController({
               if (reviewStepId) return;
               if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
               const completedIds = new Set(completedStepIds);
-              for (const { part, sourceLessonId, lesson:partLesson } of partLessons) {
-                const stepIds = partLesson.steps.map(step => step.id);
-                const key = { ...recordKey, lessonId:sourceLessonId, partId:part.id };
+              for (const { part, location, lesson:partLesson } of partLessons) {
+                const stepIds = part.source ? getPublishedPartQuestionIds(location) : partLesson.steps.map(step => step.id);
+                const key = { ownerId, ...location };
                 const previous = store.get(key);
-                const completed = rating ? new Set([...previous.completedStepIds,...completedIds]) : completedIds;
+                const completed = rating || part.source ? new Set([...previous.completedStepIds,...completedIds]) : completedIds;
                 const done = stepIds.filter(id => completed.has(id));
                 if (!done.length || done.every(id => previous.completedStepIds.includes(id)) && (previous.completed || done.length < stepIds.length)) continue;
                 if (!operation.isCurrent() || ownerId !== productService.getLearnerProgressOwner()) return;
@@ -486,7 +505,7 @@ export function createSubjectLearningController({
         operation.add(rendered.destroy);
         if (resourceStore) {
           heartDepletion = mountHeartDepletion({ resourceStore, ownerId, learnerName:productService.getLearnerDisplayName(), selection:productService.getVisitorSelection(), studyKey:{subjectId:nextSubjectId,lessonId:nextLessonId}, signal:operation.signal, returnFocus:elements.lessonContent, onReturnHome,
-            autoShowEmpty:!hasFreeLessonPractice({subjectId:nextSubjectId,lessonId:nextLessonId}),
+            autoShowEmpty:!hasFreeLessonPractice({ subjectId:nextSubjectId, lessonId:nextLessonId }) && !hasFreeLessonPractice(recordKey),
             onReturnToSubject:() => returnToRoadmap() });
           operation.add(heartDepletion.destroy);
         }

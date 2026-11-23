@@ -1,9 +1,9 @@
-export function renderQuestionSourceTag(content) {
+export function renderQuestionHeader(content) {
   const title = String(content?.title || "").trim();
-  if (!title) return "";
   // A named question collection such as "الكامل" is not the textbook.
   const book = /^(?:الكتاب|كتاب|الرزمة التعليمية)(?:\s|،|,|$)/.test(title);
-  return `<span class="lesson-question-source" dir="rtl">${book ? "سؤال من الكتاب" : "سؤال امتحان سابق"}</span>`;
+  const source = title ? `<span class="lesson-question-source" dir="rtl">${book ? "سؤال من الكتاب" : "سؤال امتحان سابق"}</span>` : "";
+  return `<div class="lesson-question-meta">${source}</div>`;
 }
 
 export function lessonReferenceLabel(reference) {
@@ -55,4 +55,9 @@ export function lessonLocale(lesson) {
   )
     ? "ar"
     : "en";
+}
+
+export function usesWesternLessonNotation(container) {
+  const subject = container.closest("[data-subject]")?.getAttribute("data-subject");
+  return subject === "physics" || subject === "outside-gaza-scientific-physics";
 }

@@ -74,7 +74,7 @@ question: Choose the form that expresses a strong deduction about the past, rath
 - [x] option-1 | must have been
 - [ ] option-2 | could have been
 explanation:
-درجات جميع الطلبة العالية تقدم دليلًا لاستنتاج قوي عن سهولة أسئلة ماضية. الصيغة must + have + been، و been تصريف be الثالث. could have been ممكنة إذا قصد المتكلم احتمالًا أضعف؛ المفتاح يقصد الاستنتاج الأقوى.
+درجات جميع الطلبة العالية تقدم دليلًا لاستنتاج قوي عن سهولة أسئلة ماضية. الصيغة must + have + been، و been تصريف be الثالث. could have been ممكنة إذا قصد المتكلم احتمالًا أضعف، أما must have been فتعبّر عن الاستنتاج الأقوى.
 
 **المصدر:** الصفحات 87–88 من الكتاب.
 
@@ -738,7 +738,7 @@ question: Choose the form that presents this as a strong deduction from the iden
 - [x] option-1 | must
 - [ ] option-2 | should
 explanation:
-انفراد المنزل بالباب الأحمر قرينة لاستنتاج قوي عن الحاضر؛ نستخدم must + be. should be ممكنة إذا قصد توقعًا أقل يقينًا، لكن المفتاح يختار الاستنتاج الأقوى المدعوم بالعلامة المميزة.
+انفراد المنزل بالباب الأحمر قرينة لاستنتاج قوي عن الحاضر؛ نستخدم must + be. تدل **should be** على توقّع أقل يقينًا. أما **must be** فتعطي الاستنتاج القوي الذي تدعمه العلامة المميزة، وهي الباب الأحمر.
 
 
 **Answer:**

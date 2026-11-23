@@ -7,26 +7,10 @@ export function mountQuestionFeedback({ host, shell, feedback, signal, locale = 
   flag.setAttribute("aria-label",ar ? "الإبلاغ عن هذا السؤال" : "Report this question");
   flag.title = flag.getAttribute("aria-label");
   flag.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4m0 1c5-5 9 5 14 0v10c-5 5-9-5-14 0"/></svg>';
-  const source = host.querySelector(".lesson-question-source");
-  if (source) host.querySelectorAll(".lesson-flashcard-copy").forEach(copy => {
-    if (!copy.querySelector(".lesson-question-source")) copy.prepend(source.cloneNode(true));
-  });
-  const sourceRows = [...host.querySelectorAll(".lesson-question-source")].map(tag => {
-    const row = document.createElement("div");
-    row.className = "lesson-question-meta";
-    tag.before(row);
-    row.append(tag);
-    return row;
-  });
-  if (!sourceRows.length) {
-    const row = document.createElement("div");
-    row.className = "lesson-question-meta";
-    (host.querySelector(".level-lesson-copy") || host).prepend(row);
-    sourceRows.push(row);
-  }
+  const sourceRows = [...host.querySelectorAll(".lesson-question-meta")];
   const placeFlag = () => {
-    const row = sourceRows.find(item => !item.closest('[aria-hidden="true"]')) || sourceRows[0];
-    if (flag.parentElement !== row) row.append(flag);
+    const row = sourceRows.find(item => !item.closest('[aria-hidden="true"]'));
+    if (row && flag.parentElement !== row) row.append(flag);
   };
   placeFlag();
   let dialog = null;

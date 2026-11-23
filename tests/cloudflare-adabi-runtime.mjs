@@ -7,10 +7,12 @@ import { initializeAccountSchema } from '../src/server/account-schema.mjs';
 import { ADABI_COURSES } from '../src/data/lessons/adabi/catalog.js';
 import { ADABI_SUBJECTS } from '../src/data/course.js';
 import { loadAdabiLessonPart, readAdabiExplanation } from '../src/server/cloudflare-adabi-content.mjs';
+import { loadOutsideGazaLessonPart, readOutsideGazaExplanation } from '../src/server/cloudflare-outside-gaza-content.mjs';
+import { getSubjectRoadmap } from '../src/data/subject-roadmaps.js';
 import { getQuestionXp } from '../src/domain/question-rewards.js';
 
-const [bundlePath, runtimeModule] = process.argv.slice(2);
-if (!bundlePath || !runtimeModule) throw new Error('Usage: node tests/cloudflare-adabi-runtime.mjs <candidate-bundle.mjs> <miniflare-module-path>');
+const [bundlePath, runtimeModule, scope] = process.argv.slice(2);
+if (!bundlePath || !runtimeModule) throw new Error('Usage: node tests/cloudflare-adabi-runtime.mjs <candidate-bundle.mjs> <miniflare-module-path> [--outside-gaza]');
 const preliminary = process.env.ADABI_RUNTIME_PRELIMINARY === '1';
 if (!preliminary) {
   assert.equal(ADABI_COURSES.length, 9, 'The release must verify all nine Adabi subjects.');
@@ -26,16 +28,17 @@ const originalAssets = {
     steps:[{ id:original.stepId, type:'mcq', url:'scientific-step.json' }] },
   '/scientific-step.json':{ type:'mcq', content:{ correctFeedback:'Scientific explanation retained.' } },
 };
-const mf = new Miniflare(convertV4MiniflareOptions({
+const options = {
   script:readFileSync(bundlePath, 'utf8'), modules:true,
-  compatibilityDate:'2026-10-27', compatibilityFlags:['nodejs_compat'],
+  compatibilityDate:process.env.WORKER_TEST_COMPATIBILITY_DATE || '2026-10-27', compatibilityFlags:['nodejs_compat'],
   d1Databases:{ ACCOUNTS:'adabi-disposable-accounts' },
   durableObjects:{ AUTH:{ className:'Authentication', useSQLite:true }, STUDENTS:{ className:'StudentProgress', useSQLite:true } },
   serviceBindings:{ ASSETS:async request => {
     const value = originalAssets[new URL(request.url).pathname];
     return new Response(JSON.stringify(value || {}), { status:value ? 200 : 404, headers:{ 'Content-Type':'application/json' } });
   } },
-}));
+};
+const mf = new Miniflare(convertV4MiniflareOptions ? convertV4MiniflareOptions(options) : options);
 
 try {
   const db = await mf.getD1Database('ACCOUNTS');
@@ -206,6 +209,42 @@ try {
   const unchanged = await afterInvalid.json();
   assert.deepEqual(unchanged.records, preserved.records, 'Invalid subjects never modify saved work.');
   assert.equal(unchanged.resources.gems, preserved.resources.gems);
+  if (scope === '--outside-gaza') {
+    for (const [path, slug, partIndex, stepType, phone] of [
+      ['scientific', 'physics', 0, 'question', '+962790123456'],
+      ['literary', 'geography', 1, 'activity', '0591234780'],
+    ]) {
+      const registered = await call('/api/auth/register', { body:{
+        username:`outside-${path}`, phone, password:'Runtime123', curriculum:'full-palestinian', path,
+      } });
+      assert.equal(registered.status, 201, await registered.clone().text());
+      const { account } = await registered.json();
+      assert.equal(account.curriculum, 'full-palestinian');
+      assert.equal(account.path, path);
+      const cookie = registered.headers.getSetCookie().map(item => item.split(';')[0]).join('; ');
+      const owner = `account:${account.id}`;
+      const post = async body => {
+        const response = await call('/api/progress', { cookie, owner, body });
+        assert.equal(response.status, 200, await response.clone().text());
+        return response.json();
+      };
+      const subjectId = `outside-gaza-${path}-${slug}`;
+      const lesson = getSubjectRoadmap(subjectId).units[0].lessons[partIndex];
+      const part = lesson.parts[0];
+      const native = await loadOutsideGazaLessonPart(subjectId, lesson.id, part.id);
+      const step = native.steps.find(step => step.type === stepType);
+      assert.ok(step);
+      const key = { subjectId, lessonId:lesson.id, partId:part.id, stepId:step.id };
+      const answer = { ...key, type:'answer', id:`outside-answer-${path}`, correct:true };
+      const first = await post(answer);
+      assert.equal(savedPart(first.records, key).rewardXp, getQuestionXp(key));
+      assert.deepEqual((await post(answer)).records, first.records);
+      const explained = await post({ ...key, type:'explanation-unlock' });
+      assert.deepEqual(explained.explanation, await readOutsideGazaExplanation(key));
+      assert.equal(explained.resources.gems, first.resources.gems);
+    }
+    console.log('Outside-Gaza Worker passed registration, answers, rewards, retries and explanations on both tracks.');
+  }
   console.log(`${preliminary ? 'PRELIMINARY: ' : ''}Recovered Adabi Worker passed ${ADABI_COURSES.length} subject saves, ${loadedLessons} lesson modules, ${flashcards} flashcards, idempotent retries, included explanations, scientific asset/XP continuity and selected-subject projection.`);
 } finally {
   await mf.dispose();

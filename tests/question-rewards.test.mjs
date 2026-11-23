@@ -33,11 +33,14 @@ test("cross-part aliases redirect only from their declared lesson and part and s
   }
 });
 
-test("each path reaches level 500 only after all its questions and integer XP adds up exactly", () => {
+test("each published reward catalog reaches level 500 with integer XP that adds up exactly", () => {
   assert.equal(MAX_LEVEL, 500);
   assert.equal(MAX_LEVEL_XP, 49900);
-  for (const literary of [false, true]) {
-    const pool = QUESTION_REWARDS.filter(question => question.subjectId.startsWith("adabi-") === literary);
+  for (const [curriculum, path] of [["gaza", "scientific"], ["gaza", "literary"],
+    ["full-palestinian", "scientific"], ["full-palestinian", "literary"]]) {
+    const subjectIds = new Set(COURSE_SUBJECTS.filter(subject =>
+      (subject.curriculum || "gaza") === curriculum && (subject.path || "scientific") === path).map(subject => subject.id));
+    const pool = QUESTION_REWARDS.filter(question => subjectIds.has(question.subjectId));
     const rewards = pool.map(question => question.xp);
     assert.ok(rewards.every(xp => Number.isSafeInteger(xp) && xp > 0));
     assert.ok(Math.max(...rewards) - Math.min(...rewards) <= 1);

@@ -113,7 +113,13 @@ B يسبق E بثلاثة أماكن:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>Z</mi><mi>B</mi></msub><mo>=</mo><mn>18</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>15</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>Z</mi><mi>B</mi></msub><mo>=</mo><mn>18</mn><mo>−</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>Z</mi><mi>B</mi></msub><mo>=</mo><mn>15</mn></mrow></math>
 \`\`\`
 
 
@@ -125,7 +131,13 @@ C يسبق E بمكانين:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>Z</mi><mi>C</mi></msub><mo>=</mo><mn>18</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>16</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>Z</mi><mi>C</mi></msub><mo>=</mo><mn>18</mn><mo>−</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>Z</mi><mi>C</mi></msub><mo>=</mo><mn>16</mn></mrow></math>
 \`\`\`
 
 
@@ -218,9 +230,6 @@ Mg ينتهي 3s²، أما Al فينتهي 3p¹.
 نزع إلكترون Al من p الأعلى طاقة أسهل من نزع إلكترون Mg من s الممتلئ؛ لذلك تأين Mg أكبر من Al.
 المعطى Al=ط+10؛ والخيار الوحيد الأكبر هو ط+12.
 هذه مفاضلة بين الخيارات؛ الاتجاه الدوري وحده لايشتق مقدار 12.
-
-**المصدر:** الصفحات 20، 21 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 

@@ -55,7 +55,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">y</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>16</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">y</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">y</mi></mrow></msub><mo>=</mo><mo>−</mo><mn>16</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -93,7 +99,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>h</mi><mo>=</mo><mfrac><mn>180</mn><mn>100</mn></mfrac><mo>=</mo><mn>1.8</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>h</mi><mo>=</mo><mfrac><mn>180</mn><mn>100</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>h</mi><mo>=</mo><mn>1.8</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -129,7 +141,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1.8</mn><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1.8</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mn>20</mn><mo stretchy="false">(</mo><mn>1.8</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
 
@@ -139,7 +163,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><msqrt><mn>36</mn></msqrt><mo>=</mo><mn>6</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>v</mi><mo>=</mo><msqrt><mn>36</mn></msqrt></mrow></math>
+\`\`\`
+
+نحسب الجذر التربيعي.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>v</mi><mo>=</mo><mn>6</mn><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -157,7 +187,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mo>=</mo><mn>0.5</mn><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>=</mo><mn>0.5</mn><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>=</mo><mn>3</mn><mtext> </mtext><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -260,7 +296,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>p</mi><mi>i</mi></msub><mo>=</mo><mn>4</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>p</mi><mi>i</mi></msub><mo>=</mo><mn>4</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>p</mi><mi>i</mi></msub><mo>=</mo><mn>8</mn><mtext> </mtext><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -278,7 +320,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mn>8</mn><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>40</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mn>8</mn><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mn>40</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -306,7 +354,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>p</mi><mi>f</mi></msub><mo>=</mo><mn>8</mn><mo>+</mo><mn>40</mn><mo>=</mo><mn>48</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>p</mi><mi>f</mi></msub><mo>=</mo><mn>8</mn><mo>+</mo><mn>40</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>p</mi><mi>f</mi></msub><mo>=</mo><mn>48</mn><mtext> </mtext><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -367,7 +421,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>0.2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>90</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>18</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>0.2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>90</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mo>−</mo><mn>18</mn><mtext> </mtext><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -385,7 +445,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mrow><mo>−</mo><mn>18</mn></mrow><mn>0.2</mn></mfrac><mo>=</mo><mo>−</mo><mn>90</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mrow><mo>−</mo><mn>18</mn></mrow><mn>0.2</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mo>−</mo><mn>90</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
 \`\`\`
 
 
@@ -520,7 +586,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>V</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mn>400</mn></mrow><mn>500</mn></mfrac><mo>=</mo><mo>−</mo><mn>0.8</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mn>400</mn></mrow><mn>500</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mo>=</mo><mo>−</mo><mn>0.8</mn><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -584,7 +656,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>0.6</mn><mo stretchy="false">(</mo><mn>15</mn><mo stretchy="false">)</mo><mo>=</mo><mn>9</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>0.6</mn><mo stretchy="false">(</mo><mn>15</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>9</mn><mtext> </mtext><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -621,7 +699,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mn>0.6</mn><mo stretchy="false">(</mo><mn>15</mn><mo>−</mo><mn>0</mn><mo stretchy="false">)</mo><mo>=</mo><mn>9</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mn>0.6</mn><mo stretchy="false">(</mo><mn>15</mn><mo>−</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mn>0.6</mn><mo stretchy="false">(</mo><mn>15</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mn>9</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -637,7 +727,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>9</mn><mn>0.06</mn></mfrac><mo>=</mo><mn>150</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>9</mn><mn>0.06</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mn>150</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
 \`\`\`
 
 
@@ -704,7 +800,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>1600</mn><mo stretchy="false">(</mo><mo>−</mo><mn>7.1</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>11360</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>1600</mn><mo stretchy="false">(</mo><mo>−</mo><mn>7.1</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mo>−</mo><mn>11360</mn><mtext> </mtext><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -755,7 +857,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>i</mi></msub><mo>=</mo><mn>800</mn><mo stretchy="false">(</mo><mn>20.25</mn><mo stretchy="false">)</mo><mo>=</mo><mn>16200</mn><mtext> </mtext><mi mathvariant="normal">J</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>K</mi><mi>i</mi></msub><mo>=</mo><mn>800</mn><mo stretchy="false">(</mo><mn>20.25</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>K</mi><mi>i</mi></msub><mo>=</mo><mn>16200</mn><mtext> </mtext><mi mathvariant="normal">J</mi></mrow></math>
 \`\`\`
 
 
@@ -773,7 +881,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mi>f</mi></msub><mo>=</mo><mn>800</mn><mo stretchy="false">(</mo><mn>6.76</mn><mo stretchy="false">)</mo><mo>=</mo><mn>5408</mn><mtext> </mtext><mi mathvariant="normal">J</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>K</mi><mi>f</mi></msub><mo>=</mo><mn>800</mn><mo stretchy="false">(</mo><mn>6.76</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>K</mi><mi>f</mi></msub><mo>=</mo><mn>5408</mn><mtext> </mtext><mi mathvariant="normal">J</mi></mrow></math>
 \`\`\`
 
 
@@ -791,7 +905,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mrow><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mn>16200</mn><mo>−</mo><mn>5408</mn><mo>=</mo><mn>10792</mn><mtext> </mtext><mi mathvariant="normal">J</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>K</mi><mrow><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mn>16200</mn><mo>−</mo><mn>5408</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>K</mi><mrow><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mn>10792</mn><mtext> </mtext><mi mathvariant="normal">J</mi></mrow></math>
 \`\`\`
 
 
@@ -971,15 +1091,7 @@ body:
 final-answer:
 **الزخم:** كمية فيزيائية متجهة تساوي حاصل ضرب كتلة الجسم في سرعته، وتكون باتجاه السرعة.
 solution:
-الكتاب: الزخم الخطي، الصفحة المطبوعة \\(2\\)، صفحة \\(\\mathrm{PDF} 4\\).
-
-**الإجابة بنص الكتاب:**
-
-> الزخم: كمية فيزيائية متجهة تساوي حاصل ضرب كتلة الجسم في سرعته، وتكون باتجاه السرعة.
-
-
-
-
+الزخم كمية فيزيائية متجهة تساوي حاصل ضرب كتلة الجسم في سرعته المتجهة \\(\\vec p=m\\vec v\\)، وله اتجاه السرعة.
 :::
 
 :::exam-question
@@ -996,15 +1108,7 @@ body:
 final-answer:
 **الدفع:** كمية فيزيائية متجهة تساوي حاصل ضرب متوسط القوة في زمن تأثيرها، واتجاهه باتجاه القوة.
 solution:
-الكتاب: الدفع، الصفحة المطبوعة \\(3\\)، صفحة \\(\\mathrm{PDF} 5\\).
-
-**الإجابة بنص الكتاب:**
-
-> الدفع: كمية فيزيائية متجهة تساوي حاصل ضرب متوسط القوة في زمن تأثيرها، واتجاهه باتجاه القوة.
-
-
-
-
+الدفع كمية فيزيائية متجهة تساوي متوسط القوة مضروبًا في زمن تأثيرها، واتجاهه هو اتجاه متوسط القوة.
 :::
 
 :::exam-question
@@ -1021,15 +1125,11 @@ body:
 final-answer:
 **النظام المعزول:** مجموعة أجسام تكون محصلة القوى الخارجية المؤثرة فيها صفرًا.
 solution:
-الكتاب: حفظ الزخم — النظام المعزول، الصفحة المطبوعة \\(6\\)، صفحة \\(\\mathrm{PDF} 8\\).
+النظام المعزول مجموعة أجسام تكون محصّلة القوى الخارجية المؤثّرة فيها صفرًا.
 
-**الإجابة بنص الكتاب:**
+[رزمة غزة، النظام المعزول](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=8)، الصفحة المطبوعة \\(6\\).
 
-> فإذا كانت محصلة القوى الخارجية المؤثرة في مجموعة من الأجسام تساوي صفراً سميت مجموعة الأجسام بالنظام المعزول.
-
-
-
-
+[كتاب فلسطين الكامل، النظام المعزول](https://moe.edu.ps/storage/app/class12/Physics12%202025%20Tawjihi.pdf#page=14)، الصفحة المطبوعة \\(10\\).
 :::
 
 :::exam-question
@@ -1388,7 +1488,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mn>0.05</mn><mo stretchy="false">(</mo><mo>−</mo><mn>7.5</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>0.375</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mn>0.05</mn><mo stretchy="false">(</mo><mo>−</mo><mn>7.5</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mo>−</mo><mn>0.375</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -1554,9 +1660,13 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mrow><mn>5</mn><mo stretchy="false">(</mo><mn>9</mn><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mn>15</mn></mfrac></mrow></math>
 \`\`\`
 
+نطرح العدد الثاني من الأول.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mrow><mn>5</mn><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mn>15</mn></mfrac></mrow></math>
+\`\`\`
 
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>30</mn><mn>15</mn></mfrac></mrow></math>
@@ -1661,7 +1771,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>K</mi><mi>A</mi></msub><msub><mi>K</mi><mi>B</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>K</mi><mi>A</mi></msub><msub><mi>K</mi><mi>B</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>K</mi><mi>A</mi></msub><msub><mi>K</mi><mi>B</mi></msub></mfrac><mo>=</mo><mn>0.25</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>K</mi><mi>A</mi></msub><msub><mi>K</mi><mi>B</mi></msub></mfrac><mo>=</mo><mn>1</mn></mrow></math>
 \`\`\`
 
 
@@ -1798,7 +1920,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mn>8</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>6</mn><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mn>8</mn><mo>−</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mn>6</mn><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -1814,7 +1942,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>900</mn><mn>6</mn></mfrac><mo>=</mo><mn>150</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>900</mn><mn>6</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mn>150</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
 \`\`\`
 
 
@@ -1861,7 +1995,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mfrac><mn>5</mn><mn>100</mn></mfrac><mo>=</mo><mn>0.05</mn><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mfrac><mn>5</mn><mn>100</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mn>0.05</mn><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -1925,9 +2065,7 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>K</mi><mi>A</mi></msub><msub><mi>K</mi><mi>B</mi></msub></mfrac><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup></mrow></math>
 \`\`\`
 
-
-
-
+نحسب القوة.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>K</mi><mi>A</mi></msub><msub><mi>K</mi><mi>B</mi></msub></mfrac><mo>=</mo><mn>9</mn></mrow></math>
@@ -2002,7 +2140,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">∣</mi><msub><mi>p</mi><mi>X</mi></msub><mi mathvariant="normal">∣</mi></mrow><mrow><mi mathvariant="normal">∣</mi><msub><mi>p</mi><mi>Y</mi></msub><mi mathvariant="normal">∣</mi></mrow></mfrac><mo>=</mo><msqrt><mn>9</mn></msqrt><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">∣</mi><msub><mi>p</mi><mi>X</mi></msub><mi mathvariant="normal">∣</mi></mrow><mrow><mi mathvariant="normal">∣</mi><msub><mi>p</mi><mi>Y</mi></msub><mi mathvariant="normal">∣</mi></mrow></mfrac><mo>=</mo><msqrt><mn>9</mn></msqrt></mrow></math>
+\`\`\`
+
+نأخذ الجذر التربيعي.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">∣</mi><msub><mi>p</mi><mi>X</mi></msub><mi mathvariant="normal">∣</mi></mrow><mrow><mi mathvariant="normal">∣</mi><msub><mi>p</mi><mi>Y</mi></msub><mi mathvariant="normal">∣</mi></mrow></mfrac><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -2074,7 +2218,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>16</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mo>−</mo><mn>16</mn><mtext> </mtext><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -2151,16 +2301,9 @@ question: أي الكميات الفيزيائية الآتية لها نفس و
 - [ ] option-3 | الشغل
 - [ ] option-4 | القوة المؤثرة
 explanation:
-**الإجابة:** الزخم
+**الزخم** له وحدة الدفع نفسها.
 
-**الشاهد من الكتاب:**
-
-> بين أن وحدة الدفع هي وحدة الزخم نفسها.
-
-**المصدر:** صفحة \\(3\\) من الكتاب.
-
-
-
+[رزمة غزة، وحدة الدفع والزخم](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=5)، الصفحة المطبوعة \\(3\\).
 hint: راجع المعطيات والوحدات ثم اختر الإجابة وفق نص المصدر.
 :::
 
@@ -2190,7 +2333,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>40</mn><mo>−</mo><mn>30</mn><mo>=</mo><mn>10</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>40</mn><mo>−</mo><mn>30</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>10</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -2198,7 +2347,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>2</mn><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mn>4</mn><mo>−</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mn>2</mn><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -2206,7 +2361,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>F</mi><mo>=</mo><mfrac><mn>10</mn><mn>2</mn></mfrac><mo>=</mo><mn>5</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>F</mi><mo>=</mo><mfrac><mn>10</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>F</mi><mo>=</mo><mn>5</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
 \`\`\`
 
 
@@ -2303,7 +2464,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>40</mn><mn>4</mn></mfrac><mo>=</mo><mn>10</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>40</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mn>10</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
 \`\`\`
 
 
@@ -2349,9 +2516,7 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>v</mi><mo>=</mo><mfrac><mrow><mn>1050</mn><mo stretchy="false">(</mo><mn>30</mn><mo stretchy="false">)</mo></mrow><mn>900</mn></mfrac></mrow></math>
 \`\`\`
 
-
-
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>v</mi><mo>=</mo><mfrac><mn>31500</mn><mn>900</mn></mfrac></mrow></math>
@@ -2414,7 +2579,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>h</mi><mo>=</mo><mfrac><mn>180</mn><mn>100</mn></mfrac><mo>=</mo><mn>1.8</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>h</mi><mo>=</mo><mfrac><mn>180</mn><mn>100</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>h</mi><mo>=</mo><mn>1.8</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -2442,7 +2613,23 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1.8</mn><mo stretchy="false">)</mo></mrow></msqrt><mo>=</mo><msqrt><mn>36</mn></msqrt><mo>=</mo><mn>6</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1.8</mn><mo stretchy="false">)</mo></mrow></msqrt></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>v</mi><mo>=</mo><msqrt><mn>20</mn><mo stretchy="false">(</mo><mn>1.8</mn><mo stretchy="false">)</mo></msqrt></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>v</mi><mo>=</mo><msqrt><mn>36</mn></msqrt></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>v</mi><mo>=</mo><mn>6</mn><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -2605,7 +2792,33 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>K</mi><mi>Y</mi></msub><msub><mi>K</mi><mi>X</mi></msub></mfrac><mo>=</mo><msup><mrow><mo fence="true">(</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>16</mn></mfrac><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>K</mi><mi>Y</mi></msub><msub><mi>K</mi><mi>X</mi></msub></mfrac><mo>=</mo><msup><mrow><mo fence="true">(</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>K</mi><mi>Y</mi></msub><msub><mi>K</mi><mi>X</mi></msub></mfrac><mo>=</mo><msup><mrow><mo fence="true">(</mo><mn>0.25</mn><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>K</mi><mi>Y</mi></msub><msub><mi>K</mi><mi>X</mi></msub></mfrac><mo>=</mo><mn>0.0625</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>K</mi><mi>Y</mi></msub><msub><mi>K</mi><mi>X</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>16</mn></mfrac><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>K</mi><mi>Y</mi></msub><msub><mi>K</mi><mi>X</mi></msub></mfrac><mo>=</mo><mn>0.0625</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>K</mi><mi>Y</mi></msub><msub><mi>K</mi><mi>X</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -2659,9 +2872,7 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>p</mi><mi>a</mi></msub><msub><mi>p</mi><mi>b</mi></msub></mfrac><mo>=</mo><msqrt><mn>4</mn></msqrt></mrow></math>
 \`\`\`
 
-
-
-
+نأخذ الجذر التربيعي.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>p</mi><mi>a</mi></msub><msub><mi>p</mi><mi>b</mi></msub></mfrac><mo>=</mo><mn>2</mn></mrow></math>
@@ -2742,9 +2953,13 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>p</mi><mi>A</mi></msub><msub><mi>p</mi><mi>B</mi></msub></mfrac><mo>=</mo><msqrt><mfrac><mn>1</mn><mn>16</mn></mfrac></msqrt></mrow></math>
 \`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>p</mi><mi>A</mi></msub><msub><mi>p</mi><mi>B</mi></msub></mfrac><mo>=</mo><msqrt><mn>0.0625</mn></msqrt></mrow></math>
+\`\`\`
 
-
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>p</mi><mi>A</mi></msub><msub><mi>p</mi><mi>B</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
@@ -2829,9 +3044,7 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>0.3</mn><mo stretchy="false">(</mo><mo>−</mo><mn>20</mn><mo>−</mo><mn>30</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>0.3</mn><mo stretchy="false">(</mo><mo>−</mo><mn>50</mn><mo stretchy="false">)</mo></mrow></math>
@@ -2932,17 +3145,13 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>P</mi><mo>=</mo><mo stretchy="false">(</mo><mn>40</mn><mo>−</mo><mn>40</mn><mo stretchy="false">)</mo><mo>−</mo><mn>0</mn></mrow></math>
 \`\`\`
 
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>P</mi><mo>=</mo><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>−</mo><mn>0</mn></mrow></math>
 \`\`\`
 
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>P</mi><mo>=</mo><mn>0</mn></mrow></math>
@@ -3178,9 +3387,13 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>4</mn><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mo>−</mo><mn>48</mn></mrow></math>
 \`\`\`
 
+نقسم الطرفين على \`mathml: <math dir="ltr" display="block"><mrow><mn>4</mn></mrow></math>\` لعزل \`mathml: <math dir="ltr" display="block"><mrow><msub><mi>v</mi><mn>2</mn></msub></mrow></math>\`.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mo>−</mo><mn>48</mn></mrow><mrow><mn>4</mn></mrow></mfrac></mrow></math>
+\`\`\`
 
-
+نحسب قيمة الطرف الآخر.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mo>−</mo><mn>12</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
@@ -3209,7 +3422,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>144</mn><mo stretchy="false">)</mo><mo>=</mo><mn>288</mn><mtext> </mtext><mi mathvariant="normal">J</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>K</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>144</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>K</mi><mn>2</mn></msub><mo>=</mo><mn>288</mn><mtext> </mtext><mi mathvariant="normal">J</mi></mrow></math>
 \`\`\`
 
 
@@ -3322,9 +3541,7 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>K</mi><mi>a</mi></msub><msub><mi>K</mi><mi>b</mi></msub></mfrac><mo>=</mo><mn>4</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>K</mi><mi>a</mi></msub><msub><mi>K</mi><mi>b</mi></msub></mfrac><mo>=</mo><mn>8</mn></mrow></math>
@@ -3381,9 +3598,13 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>6</mn><mi>V</mi><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
+نقسم الطرفين على \`mathml: <math dir="ltr" display="block"><mrow><mn>6</mn></mrow></math>\` لعزل \`mathml: <math dir="ltr" display="block"><mrow><mi>V</mi></mrow></math>\`.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>V</mi><mo>=</mo><mfrac><mrow><mn>36</mn></mrow><mrow><mn>6</mn></mrow></mfrac></mrow></math>
+\`\`\`
 
-
+نحسب قيمة الطرف الآخر.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>V</mi><mo>=</mo><mn>6</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
@@ -3467,7 +3688,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>V</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mn>300</mn></mrow><mn>400</mn></mfrac><mo>=</mo><mo>−</mo><mn>0.75</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mn>300</mn></mrow><mn>400</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mo>=</mo><mo>−</mo><mn>0.75</mn><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -3557,7 +3784,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>m</mi><mo>=</mo><mfrac><mn>0.8</mn><mn>0.8</mn></mfrac><mo>=</mo><mn>1</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi><mo>=</mo><mfrac><mn>0.8</mn><mn>0.8</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi><mo>=</mo><mn>1</mn><mtext> </mtext><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></math>
 \`\`\`
 
 
@@ -3639,7 +3872,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mn>8</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>6</mn><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mn>8</mn><mo>−</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><mn>6</mn><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -3655,7 +3894,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>1200</mn><mn>6</mn></mfrac><mo>=</mo><mn>200</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>1200</mn><mn>6</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mn>200</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
 \`\`\`
 
 
@@ -3775,15 +4020,11 @@ body:
 final-answer:
 **النظام المغلق:** مجموعة أجسام تبقى كتلتها ثابتة خلال عملية تبادل القوى.
 solution:
-الإجابة: النظام المغلق مجموعة أجسام تبقى كتلتها ثابتة خلال عملية تبادل القوى.
+النظام المغلق مجموعة أجسام تبقى كتلتها الكلية ثابتة أثناء تبادل القوى.
 
-الكتاب: قانون حفظ الزخم — النظام المغلق، الصفحة المطبوعة \\(6\\)، صفحة \\(\\mathrm{PDF} 8\\).
+[رزمة غزة، النظام المغلق](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=8)، الصفحة المطبوعة \\(6\\).
 
-> مجموعة الأجسام التي تبقى كتلتها ثابتة خلال أية عملية تبادل للقوى
-
-
-
-
+[كتاب فلسطين الكامل، النظام المغلق](https://moe.edu.ps/storage/app/class12/Physics12%202025%20Tawjihi.pdf#page=14)، الصفحة المطبوعة \\(10\\).
 :::
 
 :::exam-question
@@ -3797,15 +4038,9 @@ body:
 final-answer:
 **نظرية الدفع–كمية التحرك:** الدفع الناتج عن القوة المحصلة يساوي التغير في زخم الجسم خلال فترة تأثيرها.
 solution:
-الإجابة: الدفع الناتج عن القوة المحصلة يساوي التغير في زخم الجسم خلال فترة تأثيرها.
+دفع القوة المحصّلة على الجسم يساوي التغيّر في زخمه خلال مدة تأثيرها.
 
-الكتاب: نظرية الدفع–الزخم، الصفحة المطبوعة \\(5\\)، صفحة \\(\\mathrm{PDF} 7\\).
-
-> الدفع الذي تحدثه القوة المحصلة في الجسم خلال فترة زمنية ما يساوي التغير في زخم الجسم خلال تلك الفترة.
-
-
-
-
+[رزمة غزة، نظرية الدفع والزخم](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=7)، الصفحة المطبوعة \\(5\\).
 :::
 
 :::exam-question
@@ -3819,15 +4054,11 @@ body:
 final-answer:
 **متوسط قوة الدفع:** القوة الثابتة التي تكسب الجسم الدفع نفسه الذي تكسبه القوة المتغيرة خلال المدة نفسها.
 solution:
-الإجابة: القوة الثابتة التي تكسب الجسم الدفع نفسه الذي تكسبه القوة المتغيرة خلال المدة نفسها.
+متوسط قوة الدفع هو القوة الثابتة التي تعطي الجسم الدفع نفسه الذي تعطيه القوة المتغيّرة، إذا أثّرتا خلال المدة الزمنية نفسها.
 
-الكتاب: متوسط قوة الدفع، الصفحة المطبوعة \\(4\\)، صفحة \\(\\mathrm{PDF} 6\\).
+[رزمة غزة، متوسط القوة](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=6)، الصفحة المطبوعة \\(4\\).
 
-> القوة الثابتة التي إذا أثرت في الجسم ... أكسبته نفس الكمية من الدفع.
-
-
-
-
+[كتاب فلسطين الكامل، متوسط القوة](https://moe.edu.ps/storage/app/class12/Physics12%202025%20Tawjihi.pdf#page=12)، الصفحة المطبوعة \\(8\\).
 :::
 
 
@@ -4226,7 +4457,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mn>2</mn></msub><mo>=</mo><mn>68</mn><mo>×</mo><mfrac><mn>9</mn><mn>17</mn></mfrac><mo>=</mo><mn>36</mn><mtext> </mtext><mi mathvariant="normal">J</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>K</mi><mn>2</mn></msub><mo>=</mo><mn>68</mn><mo>×</mo><mfrac><mn>9</mn><mn>17</mn></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>K</mi><mn>2</mn></msub><mo>=</mo><mn>36</mn><mtext> </mtext><mi mathvariant="normal">J</mi></mrow></math>
 \`\`\`
 
 
@@ -4400,9 +4637,43 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mn>10</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>−</mo><mn>10</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mn>40</mn><mo>−</mo><mn>10</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mn>40</mn><mo>−</mo><mn>20</mn><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mn>20</mn><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mn>20</mn><mo>−</mo><mn>0.5</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mn>20</mn><mo>−</mo><mn>1</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mn>20</mn><mo>−</mo><mn>10</mn></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mn>40</mn><mo>−</mo><mn>20</mn><mo>−</mo><mn>10</mn></mrow></math>
@@ -4523,9 +4794,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mn>0.5</mn><mo stretchy="false">(</mo><mn>20</mn><mo>−</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mn>0.5</mn><mo stretchy="false">(</mo><mn>20</mn><mo stretchy="false">)</mo></mrow></math>
@@ -4657,9 +4926,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>3</mn></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>8</mn><mo>−</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>3</mn></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo></mrow></math>
@@ -4683,9 +4950,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mn>0</mn><mo>→</mo><mn>4</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>0</mn><mo>−</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mn>4</mn></mfrac></mrow></math>
 \`\`\`
 
+نطرح العدد الثاني من الأول.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mn>0</mn><mo>→</mo><mn>4</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mn>4</mn></mfrac></mrow></math>
+\`\`\`
 
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mn>0</mn><mo>→</mo><mn>4</mn></mrow></msub><mo>=</mo><mfrac><mn>0</mn><mn>4</mn></mfrac></mrow></math>
@@ -4709,9 +4980,19 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mn>1</mn><mo>→</mo><mn>3</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>8</mn><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mrow><mn>3</mn><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></math>
 \`\`\`
 
+نطرح العدد الثاني من الأول.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mn>1</mn><mo>→</mo><mn>3</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mrow><mn>3</mn><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mn>1</mn><mo>→</mo><mn>3</mn></mrow></msub><mo>=</mo><mfrac><mn>8</mn><mrow><mn>3</mn><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mn>1</mn><mo>→</mo><mn>3</mn></mrow></msub><mo>=</mo><mfrac><mn>8</mn><mn>2</mn></mfrac></mrow></math>
@@ -4752,7 +5033,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>m</mi><mo>=</mo><mfrac><mn>50</mn><mn>1000</mn></mfrac><mo>=</mo><mn>0.05</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi><mo>=</mo><mfrac><mn>50</mn><mn>1000</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>m</mi><mo>=</mo><mn>0.05</mn><mtext> </mtext><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow></math>
 \`\`\`
 
 
@@ -4780,7 +5067,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">∣</mi><msub><mi>v</mi><mi>f</mi></msub><mi mathvariant="normal">∣</mi><mo>=</mo><mn>10</mn><msqrt><mn>0.64</mn></msqrt><mo>=</mo><mn>10</mn><mo stretchy="false">(</mo><mn>0.8</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">∣</mi><msub><mi>v</mi><mi>f</mi></msub><mi mathvariant="normal">∣</mi><mo>=</mo><mn>10</mn><msqrt><mn>0.64</mn></msqrt></mrow></math>
+\`\`\`
+
+نعوّض بالقيم المعطاة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">∣</mi><msub><mi>v</mi><mi>f</mi></msub><mi mathvariant="normal">∣</mi><mo>=</mo><mn>10</mn><mo stretchy="false">(</mo><mn>0.8</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">∣</mi><msub><mi>v</mi><mi>f</mi></msub><mi mathvariant="normal">∣</mi><mo>=</mo><mn>8</mn><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -4816,7 +5115,21 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mn>0.05</mn><mo stretchy="false">[</mo><mn>8</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mo>=</mo><mn>0.05</mn><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.9</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mn>0.05</mn><mo stretchy="false">[</mo><mn>8</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mn>0.05</mn><mo stretchy="false">[</mo><mn>18</mn><mo stretchy="false">]</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mn>0.05</mn><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mn>0.9</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -4834,7 +5147,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>0.9</mn><mn>0.03</mn></mfrac><mo>=</mo><mn>30</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>0.9</mn><mn>0.03</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mo>=</mo><mn>30</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
 \`\`\`
 
 
@@ -4997,7 +5316,25 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>10</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>+</mo><mn>12</mn></mrow><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo>=</mo><mn>80</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>10</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>+</mo><mn>12</mn></mrow><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>10</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>16</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>10</mn></mrow></msub><mo>=</mo><mn>8</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>10</mn></mrow></msub><mo>=</mo><mn>80</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -5007,7 +5344,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mrow><mn>10</mn><mo>→</mo><mn>20</mn></mrow></msub><mo>=</mo><mn>12</mn><mo stretchy="false">(</mo><mn>20</mn><mo>−</mo><mn>10</mn><mo stretchy="false">)</mo><mo>=</mo><mn>120</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>10</mn><mo>→</mo><mn>20</mn></mrow></msub><mo>=</mo><mn>12</mn><mo stretchy="false">(</mo><mn>20</mn><mo>−</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>10</mn><mo>→</mo><mn>20</mn></mrow></msub><mo>=</mo><mn>12</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>10</mn><mo>→</mo><mn>20</mn></mrow></msub><mo>=</mo><mn>120</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -5017,7 +5366,31 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mrow><mn>20</mn><mo>→</mo><mn>30</mn></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>30</mn><mo>−</mo><mn>20</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>12</mn><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>20</mn><mo>→</mo><mn>30</mn></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>30</mn><mo>−</mo><mn>20</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>12</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>20</mn><mo>→</mo><mn>30</mn></mrow></msub><mo>=</mo><mn>0.5</mn><mo stretchy="false">(</mo><mn>30</mn><mo>−</mo><mn>20</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>12</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>20</mn><mo>→</mo><mn>30</mn></mrow></msub><mo>=</mo><mn>0.5</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>12</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>20</mn><mo>→</mo><mn>30</mn></mrow></msub><mo>=</mo><mn>5</mn><mo stretchy="false">(</mo><mn>12</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>20</mn><mo>→</mo><mn>30</mn></mrow></msub><mo>=</mo><mn>60</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -5027,7 +5400,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>30</mn></mrow></msub><mo>=</mo><mn>80</mn><mo>+</mo><mn>120</mn><mo>+</mo><mn>60</mn><mo>=</mo><mn>260</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>30</mn></mrow></msub><mo>=</mo><mn>80</mn><mo>+</mo><mn>120</mn><mo>+</mo><mn>60</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>30</mn></mrow></msub><mo>=</mo><mn>200</mn><mo>+</mo><mn>60</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>30</mn></mrow></msub><mo>=</mo><mn>260</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -5055,7 +5440,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>80</mn><mn>4</mn></mfrac><mo>=</mo><mn>20</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>v</mi><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>80</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>v</mi><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -5098,9 +5489,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>10</mn><mo>−</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
@@ -5167,7 +5556,25 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>4</mn></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>13</mn><mo stretchy="false">)</mo><mo>=</mo><mn>26</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>4</mn></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>13</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>4</mn></mrow></msub><mo>=</mo><mn>0.5</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>13</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>4</mn></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>13</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>4</mn></mrow></msub><mo>=</mo><mn>26</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -5193,7 +5600,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>v</mi><mtext>max</mtext></msub><mo>=</mo><mn>2</mn><mo>+</mo><mfrac><mn>26</mn><mn>2</mn></mfrac><mo>=</mo><mn>15</mn><mtext> </mtext><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>v</mi><mtext>max</mtext></msub><mo>=</mo><mn>2</mn><mo>+</mo><mfrac><mn>26</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>v</mi><mtext>max</mtext></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>13</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>v</mi><mtext>max</mtext></msub><mo>=</mo><mn>15</mn><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -5203,7 +5622,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mrow><mn>4</mn><mo>→</mo><mn>6</mn></mrow></msub><mo>=</mo><mo>−</mo><mn>10</mn><mo stretchy="false">(</mo><mn>6</mn><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>20</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>4</mn><mo>→</mo><mn>6</mn></mrow></msub><mo>=</mo><mo>−</mo><mn>10</mn><mo stretchy="false">(</mo><mn>6</mn><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>4</mn><mo>→</mo><mn>6</mn></mrow></msub><mo>=</mo><mo>−</mo><mn>10</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>4</mn><mo>→</mo><mn>6</mn></mrow></msub><mo>=</mo><mo>−</mo><mn>20</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -5211,7 +5642,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>6</mn></mrow></msub><mo>=</mo><mn>26</mn><mo>−</mo><mn>20</mn><mo>=</mo><mn>6</mn><mtext> </mtext><mrow><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>6</mn></mrow></msub><mo>=</mo><mn>26</mn><mo>−</mo><mn>20</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>→</mo><mn>6</mn></mrow></msub><mo>=</mo><mn>6</mn><mtext> </mtext><mi mathvariant="normal">N</mi><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -5221,7 +5658,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mn>0</mn><mo>→</mo><mn>6</mn></mrow></msub><mo>=</mo><mfrac><mn>6</mn><mn>6</mn></mfrac><mo>=</mo><mn>1</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mn>0</mn><mo>→</mo><mn>6</mn></mrow></msub><mo>=</mo><mfrac><mn>6</mn><mn>6</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mn>0</mn><mo>→</mo><mn>6</mn></mrow></msub><mo>=</mo><mn>1</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
 \`\`\`
 
 
@@ -5231,7 +5674,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>15</mn><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>15</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mtext> </mtext><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -5348,7 +5797,23 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>F</mi><mo>=</mo><mfrac><mrow><mn>40</mn><mo>−</mo><mn>60</mn></mrow><mrow><mn>2</mn><mo>−</mo><mn>0</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>−</mo><mn>20</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mo>−</mo><mn>10</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>F</mi><mo>=</mo><mfrac><mrow><mn>40</mn><mo>−</mo><mn>60</mn></mrow><mrow><mn>2</mn><mo>−</mo><mn>0</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>F</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mn>20</mn></mrow><mrow><mn>2</mn><mo>−</mo><mn>0</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>F</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mn>20</mn></mrow><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>F</mi><mo>=</mo><mo>−</mo><mn>10</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
 \`\`\`
 
 
@@ -5377,9 +5842,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>10</mn><mi>t</mi><mo>=</mo><mn>60</mn></mrow></math>
 \`\`\`
 
+نقسم الطرفين على \`mathml: <math dir="ltr" display="block"><mrow><mn>10</mn></mrow></math>\` لعزل \`mathml: <math dir="ltr" display="block"><mrow><mi>t</mi></mrow></math>\`.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mn>60</mn></mrow><mrow><mn>10</mn></mrow></mfrac></mrow></math>
+\`\`\`
 
-
+نحسب قيمة الطرف الآخر.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>t</mi><mo>=</mo><mn>6</mn><mtext> </mtext><mi mathvariant="normal">s</mi></mrow></math>
@@ -5441,9 +5910,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>60</mn><mo stretchy="false">(</mo><mn>0</mn><mo>−</mo><mn>25</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
-
-
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>60</mn><mo stretchy="false">(</mo><mo>−</mo><mn>25</mn><mo stretchy="false">)</mo></mrow></math>
@@ -5503,9 +5970,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">∣</mi><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mi mathvariant="normal">w</mi><mi mathvariant="normal">h</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">l</mi></mrow></msub><mi mathvariant="normal">∣</mi></mrow><mrow><mi mathvariant="normal">∣</mi><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">t</mi></mrow></msub><mi mathvariant="normal">∣</mi></mrow></mfrac><mo>=</mo><mfrac><mn>0.5</mn><mn>0.001</mn></mfrac></mrow></math>
 \`\`\`
 
-
-
-
+نقسم البسط على المقام.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">∣</mi><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mi mathvariant="normal">w</mi><mi mathvariant="normal">h</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">l</mi></mrow></msub><mi mathvariant="normal">∣</mi></mrow><mrow><mi mathvariant="normal">∣</mi><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">t</mi></mrow></msub><mi mathvariant="normal">∣</mi></mrow></mfrac><mo>=</mo><mn>500</mn></mrow></math>
@@ -5615,9 +6080,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>7.5</mn><mi>F</mi><mo>=</mo><mn>150</mn></mrow></math>
 \`\`\`
 
+نقسم الطرفين على \`mathml: <math dir="ltr" display="block"><mrow><mn>7.5</mn></mrow></math>\` لعزل \`mathml: <math dir="ltr" display="block"><mrow><mi>F</mi></mrow></math>\`.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>F</mi><mo>=</mo><mfrac><mrow><mn>150</mn></mrow><mrow><mn>7.5</mn></mrow></mfrac></mrow></math>
+\`\`\`
 
-
+نحسب قيمة الطرف الآخر.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>F</mi><mo>=</mo><mn>20</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
@@ -5667,9 +6136,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mtext>max</mtext></msub><mo>=</mo><mfrac><msup><mn>150</mn><mn>2</mn></msup><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>K</mi><mtext>max</mtext></msub><mo>=</mo><mfrac><mn>22500</mn><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
 
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>K</mi><mtext>max</mtext></msub><mo>=</mo><mfrac><mn>22500</mn><mn>10</mn></mfrac></mrow></math>

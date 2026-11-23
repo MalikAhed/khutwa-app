@@ -31,9 +31,6 @@ explanation:
 
 وفق الترميز المقرر، المجاميع 8 و9 و10 تقع جميعًا في VIIIB.
 الإجابة: الدورة الرابعة والمجموعة VIIIB.
-
-**المصدر:** الصفحات 15، 16، 21 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -49,13 +46,9 @@ final-answer:
 **القانون الدوري:** تظهر الدورية في صفات العناصر عند ترتيبها حسب تسلسل أعدادها الذرية.
 
 solution:
-**الإجابة:** تظهر الدورية في صفات العناصر عند ترتيبها حسب تسلسل أعدادها الذرية.
+ينصّ **القانون الدوري** على تكرار صفات العناصر بصورة دورية عند ترتيبها تصاعديًا بحسب أعدادها الذرية.
 
-> تظهر الدورية في صفات العناصر إذا رتبت حسب تسلسل أعدادها الذرية.
-
-**المصدر:** صفحة 14 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 14](https://moe.edu.ps/m/4059#page=16)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 30](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=34).
 
 :::
 
@@ -117,7 +110,13 @@ A يسبقه بأربع خطوات:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>−</mo><mn>4</mn><mo>=</mo><mn>14</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>−</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>14</mn></mrow></math>
 \`\`\`
 
 
@@ -139,9 +138,6 @@ A يسبقه بأربع خطوات:
 
 
 الإجابة: الدورة الثالثة والمجموعة IVA.
-
-**المصدر:** الصفحات 11، 15، 16، 19 من الكتاب.
-
 :::
 
 :::mcq
@@ -160,7 +156,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>20</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>22</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>20</mn><mo>+</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>22</mn></mrow></math>
 \`\`\`
 
 
@@ -181,9 +183,6 @@ explanation:
 
 
 إذن مجموعته IVB.
-
-**المصدر:** الصفحات 9، 16 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -233,7 +232,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">u</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mrow></msub><mo>=</mo><mn>5</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">u</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mrow></msub><mo>=</mo><mn>5</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">u</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mrow></msub><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -255,13 +260,9 @@ question: ما العدد الذري للعنصر الذي يقع في دورة 
 - [ ] option-3 | 1
 - [ ] option-4 | 18
 explanation:
-**الإجابة:** 2؛ عنصر الهيليومHe في الدورة الأولى ومجموعةNe نفسهاVIIIA.
+العنصر هو **الهيليوم He** وعدده الذري **٢**. يقع مع الهيدروجين في الدورة الأولى، ومع النيون في مجموعة الغازات النبيلة.
 
-> He؛ 2؛ VIIIA
-
-**المصدر:** صفحة 14 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 14](https://moe.edu.ps/m/4059#page=16)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 30](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=34).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -277,13 +278,9 @@ question: أي التالية تميز العناصر الانتقالية ال�
 - [ ] option-3 | تحتوي فلزات ولافلزات
 - [ ] option-4 | جميعها غازات
 explanation:
-**الإجابة:** جميعها فلزات.
+العناصر الانتقالية الرئيسة **كلّها فلزات**.
 
-> العناصر الانتقالية (وجميعها فلزات)
-
-**المصدر:** صفحة 14 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 14](https://moe.edu.ps/m/4059#page=16)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 30](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=34).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -335,9 +332,6 @@ explanation:
 
 فيقع في IIIB أيضًا، وهو الإجابة.
 أما Ti ففي IVB؛ وGa وAl من المجموعة IIIA، أي من العناصر الممثلة لا مجموعة السكانديوم.
-
-**المصدر:** الصفحات 11، 16 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -388,15 +382,9 @@ question: ماذا يطلق على مجموعة العناصر الذي ينته
 - [ ] option-3 | قلوي
 - [x] option-4 | انتقالية رئيسية
 explanation:
-**الإجابة:** انتقالية رئيسية
+هذه هي **العناصر الانتقالية الرئيسة**. تدخل إلكتروناتها الأخيرة في المستوى الفرعي \\((n-1)d\\).
 
-**الشاهد من الكتاب:**
-
-> أما القطعتان الثالثة والرابعة، فتضمان مجموعات العناصر الانتقالية التي يرمز لها بالرمز B ... وينتهي التركيب الإلكتروني لجميع عناصرها بـ ns(n−1)d ... وتشكل العناصر الانتقالية الرئيسة.
-
-**المصدر:** صفحة 16 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 16](https://moe.edu.ps/m/4059#page=18)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 32](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=36).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -417,7 +405,19 @@ d له ℓ=2؛ وعدد أفلاكه 2ℓ+1:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
@@ -500,7 +500,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>25</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>20</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>25</mn></mrow></math>
 \`\`\`
 
 
@@ -522,13 +534,9 @@ question: أي العناصر الآتية ينتمي للفلزات القلو�
 - [ ] option-3 | \\(\\mathrm{_{10}Ne}\\)
 - [ ] option-4 | \\(\\mathrm{_{19}K}\\)
 explanation:
-**الإجابة:** Mg؛ الفلزات القلوية الترابية.
+المغنيسيوم **Mg** من الفلزات القلوية الترابية، في المجموعة الثانية.
 
-> الفلزات القلوية الترابية؛ Mg
-
-**المصدر:** صفحة 14 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 14](https://moe.edu.ps/m/4059#page=16)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 30](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=34).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -557,7 +565,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo stretchy="false">(</mo><msup><mi mathvariant="normal">M</mi><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>21</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo stretchy="false">(</mo><msup><mi mathvariant="normal">M</mi><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo stretchy="false">(</mo><msup><mi mathvariant="normal">M</mi><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo stretchy="false">)</mo><mo>=</mo><mn>21</mn></mrow></math>
 \`\`\`
 
 
@@ -565,7 +579,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo><mo>=</mo><mn>21</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo><mo>=</mo><mn>21</mn><mo>+</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
@@ -609,14 +629,23 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>25</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>20</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>25</mn></mrow></math>
 \`\`\`
 
 
 الإجابة: 25.
-
-**المصدر:** الصفحات 16، 21 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -736,7 +765,7 @@ explanation:
 بالترميز القديم في الكتاب تجمع VIIIB ثلاثة أعمدة:Fe و Co و Ni في الدورة الرابعة.
 لذلك Fe و Ni في المجموعة VIIIB نفسها.
 Sc هو IIIB و Zn هو IIB، و Cu هو IB، و Al هو IIIA؛ فالأزواج الأخرى لاتتفق.
-وفق ترقيم IUPAC الحديث Fe مجموعة 8 و Ni مجموعة 10؛ المفتاح مقيد بترميز المقرر.
+وفق ترقيم IUPAC الحديث Fe مجموعة 8 و Ni مجموعة 10؛ تستخدم الإجابة ترميز المقرر.
 
 **المصدر:** الصفحات 16، 21 من الكتاب.
 
@@ -795,7 +824,25 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>10</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>35</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>10</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>20</mn><mo>+</mo><mn>10</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>30</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>35</mn></mrow></math>
 \`\`\`
 
 
@@ -988,8 +1035,16 @@ C يسبق الغاز النبيل مباشرة فهو هالوجين شحنته
 لمعادلة الشحنات نحتاج F²⁺ مع اثنين من C⁻:
 
 
+نحسب حاصل الضرب.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">(</mo><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mo stretchy="false">(</mo><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>−</mo><mn>2</mn></mrow></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mo stretchy="false">(</mo><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>=</mo><mn>0</mn></mrow></math>
 \`\`\`
 
 
@@ -1063,9 +1118,6 @@ solution:
 
 
 الإجابة: الدورة الرابعة والمجموعة VIB.
-
-**المصدر:** الصفحات 9، 15، 16 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1103,7 +1155,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>24</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>21</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>24</mn><mo>−</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>21</mn></mrow></math>
 \`\`\`
 
 
@@ -1111,7 +1169,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>18</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>21</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>18</mn><mo>+</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>21</mn></mrow></math>
 \`\`\`
 
 
@@ -1159,7 +1223,13 @@ J فلز قلوي، فهو موضع Na؛ وC ينتهي بـ 3s²، فهو Mg.
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>13</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mn>13</mn></mrow></math>
 \`\`\`
 
 
@@ -1204,8 +1274,16 @@ D مؤكسد قوي في الدورة الثالثة، فهو Cl من VIIA؛ ي�
 التركيب المتعادل يحتاج واحداً من C واثنين من D:
 
 
+نحسب حاصل الضرب.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">(</mo><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mo stretchy="false">(</mo><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>−</mo><mn>2</mn></mrow></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mo stretchy="false">(</mo><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>=</mo><mn>0</mn></mrow></math>
 \`\`\`
 
 
@@ -1438,9 +1516,6 @@ solution:
 
 
 إذن الصيغة **JN₂**.
-
-**المصدر:** الصفحات 11، 14، 16 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1541,9 +1616,6 @@ D عدده الذري 28، وتوزيعه:
 
 
 المجموع 10 يندرج تحت VIIIB في الترميز المقرر؛ إذن D في الدورة الرابعة والمجموعة VIIIB.
-
-**المصدر:** الصفحات 9، 11، 15، 16 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1619,7 +1691,19 @@ E في الدورة الخامسة؛ وG في IVB، أي العمود الثان
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>36</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>40</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>36</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>38</mn><mo>+</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>40</mn></mrow></math>
 \`\`\`
 
 
@@ -2115,7 +2199,13 @@ D يأتي بعده بخطوتين:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>20</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn></mrow></math>
 \`\`\`
 
 
@@ -2124,7 +2214,13 @@ R يسبقه بخطوة واحدة:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>17</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>−</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo><mo>=</mo><mn>17</mn></mrow></math>
 \`\`\`
 
 
@@ -2323,7 +2419,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 

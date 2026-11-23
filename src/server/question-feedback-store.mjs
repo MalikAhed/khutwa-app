@@ -1,5 +1,6 @@
 import { defaultAnswerRating } from "../domain/question-ratings.js";
 import { questionRewardKey } from "../domain/question-rewards.js";
+import { listOwnerQuestionReports } from './owner-question-reports.mjs';
 
 export function createQuestionFeedbackStore(database) {
   database.exec(`
@@ -70,6 +71,14 @@ export function createQuestionFeedbackStore(database) {
     },
     reports(accountId) {
       return database.prepare("SELECT * FROM question_reports WHERE account_id=? ORDER BY id DESC").all(accountId);
+    },
+    ownerReports(cursor = '') {
+      return listOwnerQuestionReports({ cursor,
+        readAccounts:(id,inclusive,limit) => database.prepare(
+          `SELECT id,username FROM accounts WHERE id${inclusive ? '>=' : '>'}? ORDER BY id LIMIT ?`).all(id,limit),
+        readReports:(id,beforeId,limit) => database.prepare(`SELECT id,subject_id,lesson_id,part_id,step_id,reason,details,created_at
+          FROM question_reports WHERE account_id=? AND (?=0 OR id<?) ORDER BY id DESC LIMIT ?`).all(id,beforeId,beforeId,limit),
+      });
     },
   };
 }

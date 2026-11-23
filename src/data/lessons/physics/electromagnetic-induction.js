@@ -226,21 +226,9 @@ body:
 final-answer:
 **الحث الكهرومغناطيسي:** تولّد قوة دافعة كهربائية حثية عند تغير التدفق المغناطيسي، وتولّد تيار حثي إذا كانت الدارة مغلقة.
 solution:
-الإجابة: تولّد قوة دافعة كهربائية حثية عند تغير التدفق المغناطيسي، ويتولد تيار حثي إذا كانت الدارة مغلقة.
+الحث الكهرومغناطيسي هو تولّد قوة دافعة حثية عند تغيّر التدفق المغناطيسي. إذا كانت الدارة مغلقة يمرّ فيها تيار حثي.
 
-الكتاب: الحث الكهرومغناطيسي والتدفق، الصفحة المطبوعة \\(64\\)، صفحة \\(\\mathrm{PDF} 66\\).
-
-> أن تياراً كهربائياً يتولد في ملف عندما يتغير المجال المغناطيسي داخله، وبذلك يعمل الملف كمصدر للقوة الدافعة الكهربائية
-
-
-
-
-وفي الصفحة نفسها:
-
-> وبناءً على مفهوم التدفق المغناطيسي، يمكن تعميم النتيجة السابقة: يتولد تيار حثي في ملف، إذا حدث تغير في التدفق المغناطيسي خلاله.
-
-
-
+[رزمة غزة، الحث الكهرومغناطيسي](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=66)، الصفحة المطبوعة \\(64\\).
 :::
 
 :::exam-question
@@ -257,15 +245,7 @@ body:
 final-answer:
 **قاعدة لنز:** يكون اتجاه التيار الحثي بحيث يقاوم التغير في التدفق المغناطيسي الذي ولّده.
 solution:
-الإجابة: اتجاه التيار الحثي يكون بحيث يقاوم التغير في التدفق المغناطيسي الذي ولّده.
-
-الكتاب: قانون لنز، الصفحة المطبوعة \\(67\\)، صفحة \\(\\mathrm{PDF} 69\\).
-
-> يكون اتجاه التيار الحثي المتولد في دارة كهربائية أو ملف، بحيث يقاوم المولد له، وهو التغير في التدفق المغناطيسي
-
-
-
-
+ينشأ التيار الحثي في اتجاه يقاوم التغيّر في التدفق المغناطيسي الذي ولّده.
 :::
 
 :::exam-question
@@ -396,9 +376,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">∣</mi><msub><mi>ε</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">g</mi></mrow></msub><mi mathvariant="normal">∣</mi><mo>=</mo><mfrac><mrow><mn>500</mn><mo stretchy="false">(</mo><mn>0.002</mn><mo stretchy="false">)</mo></mrow><mn>0.1</mn></mfrac></mrow></math>
 \`\`\`
 
-
-
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">∣</mi><msub><mi>ε</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">g</mi></mrow></msub><mi mathvariant="normal">∣</mi><mo>=</mo><mfrac><mn>1</mn><mn>0.1</mn></mfrac></mrow></math>
@@ -640,17 +618,31 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mfrac><mrow><mn>0.15</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.75</mn><mo stretchy="false">)</mo></mrow><mrow><msup><mn>1</mn><mn>2</mn></msup><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mfrac></msqrt></mrow></math>
 \`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mfrac><mrow><mn>1.5</mn><mo stretchy="false">(</mo><mn>0.75</mn><mo stretchy="false">)</mo></mrow><mrow><msup><mn>1</mn><mn>2</mn></msup><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mfrac></msqrt></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mfrac><mn>1.125</mn><mrow><msup><mn>1</mn><mn>2</mn></msup><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mfrac></msqrt></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mfrac><mn>1.125</mn><mrow><mn>1</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mfrac></msqrt></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mfrac><mn>1.125</mn><mn>2</mn></mfrac></msqrt></mrow></math>
 \`\`\`
 
-
-
-
+نقسم البسط على المقام.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mn>0.5625</mn></msqrt></mrow></math>
@@ -787,17 +779,31 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mfrac><mrow><mn>0.15</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.75</mn><mo stretchy="false">)</mo></mrow><mrow><msup><mn>1</mn><mn>2</mn></msup><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mfrac></msqrt></mrow></math>
 \`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mfrac><mrow><mn>1.5</mn><mo stretchy="false">(</mo><mn>0.75</mn><mo stretchy="false">)</mo></mrow><mrow><msup><mn>1</mn><mn>2</mn></msup><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mfrac></msqrt></mrow></math>
+\`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mfrac><mn>1.125</mn><mrow><msup><mn>1</mn><mn>2</mn></msup><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mfrac></msqrt></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mfrac><mn>1.125</mn><mrow><mn>1</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mfrac></msqrt></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mfrac><mn>1.125</mn><mn>2</mn></mfrac></msqrt></mrow></math>
 \`\`\`
 
-
-
-
+نقسم البسط على المقام.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><msqrt><mn>0.5625</mn></msqrt></mrow></math>
@@ -821,9 +827,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mn>0.75</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mn>0.75</mn></mfrac></mrow></math>
 \`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mn>0.75</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mn>0.75</mn></mfrac></mrow></math>
+\`\`\`
 
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mfrac><mn>1.5</mn><mn>0.75</mn></mfrac></mrow></math>
@@ -975,15 +985,11 @@ question: ما المبدأ الذي استخدمه لنز لبناء قانون
 - [ ] option-3 | حفظ الزخم
 - [ ] option-4 | حفظ الكتلة
 explanation:
-الإجابة: مبدأ حفظ الطاقة، الخيار الثاني.
+استخدم لنز **مبدأ حفظ الطاقة** لتحديد اتجاه التيار الحثي.
 
-الكتاب: قانون لنز ومبدأ حفظ الطاقة، الصفحة المطبوعة \\(67\\)، صفحة \\(\\mathrm{PDF} 69\\).
+[رزمة غزة، قانون لنز](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=69)، الصفحة المطبوعة \\(67\\).
 
-> لقد استخدم لنز مبدأ حفظ الطاقة للتوصل إلى قاعدة لتحديد قطبية القوة الدافعة الكهربائية الحثية المتولدة في ملف أو سلك، وبالتالي اتجاه التيار الحثي المتولد في ملف عندما يتغير فيه التدفق المغناطيسي.
-
-
-
-
+[كتاب فلسطين الكامل، قانون لنز](https://moe.edu.ps/storage/app/class12/Physics12%202025%20Tawjihi.pdf#page=132)، الصفحة المطبوعة \\(128\\).
 hint: استخدم معطيات السؤال والعلاقات الفيزيائية في الكتاب.
 :::
 
@@ -1057,16 +1063,9 @@ question: ما وحدة قياس التدفق المغناطيسي؟
 - [ ] option-3 | \\(\\mathrm{T\\,m}\\)
 - [ ] option-4 | \\(\\mathrm{T/m}\\)
 explanation:
-**الإجابة:** \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">T</mi><mtext> </mtext><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow></math>\`
+وحدة قياس التدفق المغناطيسي هي **الويبر**. الويبر يساوي تسلا مضروبة في متر مربع \\(\\mathrm{Wb=T\\cdot m^2}\\).
 
-**الشاهد من الكتاب:**
-
-> \\(\\Phi _{B}\\): التدفق المغناطيسي، ويقاس بوحدة الويبر \\(\\mathrm{Wb} = T.m^{2}\\).
-
-**المصدر:** صفحة \\(64\\) من الكتاب.
-
-
-
+[رزمة غزة، التدفق المغناطيسي](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=66)، الصفحة المطبوعة \\(64\\).
 hint: استخدم معطيات السؤال والعلاقات الفيزيائية في الكتاب.
 :::
 
@@ -1157,9 +1156,13 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>−</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></math>
 \`\`\`
 
+نطرح العدد الثاني من الأول.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>−</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
 
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>−</mo><mn>2</mn></mrow><mn>1</mn></mfrac></mrow></math>
@@ -1301,9 +1304,13 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><mo>−</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></math>
 \`\`\`
 
+نطرح العدد الثاني من الأول.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mrow><mn>2</mn><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></math>
+\`\`\`
 
-
+نطرح العدد الثاني من الأول.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>1</mn></mfrac></mrow></math>
@@ -1423,7 +1430,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>L</mi><mrow><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi></mrow><mo separator="true">,</mo><mi>a</mi></mrow></msub><msub><mi>L</mi><mrow><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi></mrow><mo separator="true">,</mo><mi>b</mi></mrow></msub></mfrac><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>9</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>L</mi><mrow><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi></mrow><mo separator="true">,</mo><mi>a</mi></mrow></msub><msub><mi>L</mi><mrow><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi></mrow><mo separator="true">,</mo><mi>b</mi></mrow></msub></mfrac><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>L</mi><mrow><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi></mrow><mo separator="true">,</mo><mi>a</mi></mrow></msub><msub><mi>L</mi><mrow><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi></mrow><mo separator="true">,</mo><mi>b</mi></mrow></msub></mfrac><mo>=</mo><mn>9</mn></mrow></math>
 \`\`\`
 
 
@@ -2082,16 +2095,9 @@ question: وحدة قياس التدفق المغناطيسي هي:
 - [ ] option-3 | \\(\\mathrm{T\\cdot m/A}\\)
 - [ ] option-4 | \\(\\mathrm{T/(A\\cdot m)}\\)
 explanation:
-**الإجابة:** \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">T</mi><mo>⋅</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow></math>\`
+وحدة قياس التدفق المغناطيسي هي **الويبر**. الويبر يساوي تسلا مضروبة في متر مربع \\(\\mathrm{Wb=T\\cdot m^2}\\).
 
-**الشاهد من الكتاب:**
-
-> \\(\\Phi _{B}\\): التدفق المغناطيسي، ويقاس بوحدة الويبر \\(\\mathrm{Wb} = T.m^{2}\\).
-
-**المصدر:** صفحة \\(64\\) من الكتاب.
-
-
-
+[رزمة غزة، التدفق المغناطيسي](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=66)، الصفحة المطبوعة \\(64\\).
 hint: راجع المعطيات والوحدات ثم اختر الإجابة وفق نص المصدر.
 :::
 
@@ -2207,7 +2213,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mfrac><mn>20</mn><mn>100</mn></mfrac><mo>=</mo><mn>0.20</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mfrac><mn>20</mn><mn>100</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mn>0.20</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -2507,13 +2519,8 @@ final-answer:
 solution:
 الإجابة: متوسط القوة الدافعة الحثية يتناسب طردياً مع المعدل الزمني لتغير التدفق. لملف من \\(N\\) لفة: \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>ε</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">g</mi></mrow></msub><mo>=</mo><mo>−</mo><mi>N</mi><mi mathvariant="normal">Δ</mi><mi mathvariant="normal">Φ</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></math>\`، حيث \\(\\Phi\\) تدفق اللفة الواحدة.
 
-الكتاب: قانون فاراداي، الصفحة المطبوعة \\(66\\)، صفحة \\(\\mathrm{PDF} 68\\).
 
 > متوسط القوة الدافعة الكهربائية الحثية تتناسب طردياً مع المعدل الزمني للتغير في التدفق المغناطيسي الذي يخترق الدارة الكهربائية.
-
-
-
-
 :::
 
 :::exam-question
@@ -3133,7 +3140,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>L</mi><mo>=</mo><mfrac><mn>20</mn><mn>100</mn></mfrac><mo>=</mo><mn>0.20</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>L</mi><mo>=</mo><mfrac><mn>20</mn><mn>100</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>L</mi><mo>=</mo><mn>0.20</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -3331,7 +3344,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>−</mo><mn>0</mn></mrow><mn>0.4</mn></mfrac><mo>=</mo><mn>5</mn><mtext> </mtext><mrow><mi mathvariant="normal">A</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>−</mo><mn>0</mn></mrow><mn>0.4</mn></mfrac></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول في البسط.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>0.4</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام للحصول على الناتج.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mn>5</mn><mtext> </mtext><mi mathvariant="normal">A</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></math>
 \`\`\`
 
 
@@ -3534,7 +3559,31 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mi>g</mi></mrow><mrow><mi>B</mi><mi>L</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0.15</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow><mrow><mn>0.75</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mfrac><mo>=</mo><mn>2</mn><mtext> </mtext><mi mathvariant="normal">A</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mi>g</mi></mrow><mrow><mi>B</mi><mi>L</mi></mrow></mfrac></mrow></math>
+\`\`\`
+
+نعوّض بالقيم المعطاة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mn>0.15</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow><mrow><mn>0.75</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين في البسط.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mn>1.5</mn></mrow><mrow><mrow><mn>0.75</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين في المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mn>1.5</mn></mrow><mrow><mn>0.75</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام للحصول على الناتج.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>I</mi><mo>=</mo><mn>2</mn><mtext> </mtext><mi mathvariant="normal">A</mi></mrow></math>
 \`\`\`
 
 
@@ -3544,7 +3593,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">∣</mi><mi>ε</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi>I</mi><mi>R</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mtext> </mtext><mi mathvariant="normal">V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">∣</mi><mi>ε</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow></math>
+\`\`\`
+
+نعوّض بالقيم المعطاة.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">∣</mi><mi>ε</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">∣</mi><mi>ε</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mn>10</mn><mtext> </mtext><mi mathvariant="normal">V</mi></mrow></math>
 \`\`\`
 
 
@@ -3646,9 +3707,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><mfrac><mn>10</mn><mrow><mn>4</mn><mo stretchy="false">(</mo><mn>0.20</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
 \`\`\`
 
-
-
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><mfrac><mn>10</mn><mn>0.8</mn></mfrac></mrow></math>
@@ -3939,9 +3998,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mn>0.00864</mn><mrow><mn>0.072</mn><mo stretchy="false">(</mo><mn>0.40</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
 \`\`\`
 
-
-
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mn>0.00864</mn><mn>0.0288</mn></mfrac></mrow></math>
@@ -3973,9 +4030,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><mfrac><mn>0.36</mn><mrow><mn>0.3</mn><mo stretchy="false">(</mo><mn>0.40</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
 \`\`\`
 
-
-
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><mfrac><mn>0.36</mn><mn>0.12</mn></mfrac></mrow></math>
@@ -4088,9 +4143,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>0.5</mn><mo stretchy="false">(</mo><mn>0.50</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
 \`\`\`
 
-
-
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><mfrac><mn>1</mn><mn>0.25</mn></mfrac></mrow></math>
@@ -4491,9 +4544,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mn>0.15</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow><mrow><mn>0.75</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
 \`\`\`
 
+نحسب حاصل الضرب.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>I</mi><mo>=</mo><mfrac><mn>1.5</mn><mrow><mn>0.75</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
 
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mfrac><mn>1.5</mn><mn>0.75</mn></mfrac></mrow></math>
@@ -4565,9 +4622,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><mfrac><mn>15</mn><mrow><mn>0.75</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
 \`\`\`
 
-
-
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><mfrac><mn>15</mn><mn>0.75</mn></mfrac></mrow></math>

@@ -11,10 +11,9 @@ question: ما المجموعة الوظيفية في الحموض الكربو�
 - [ ] option-3 | ![–C(=O)–](assets/lessons/chemistry/source-crops/chemistry-gaza-p062-q01-a6-option-3.webp)
 - [x] option-4 | \\(\\mathrm{-COOH}\\)
 explanation:
-**الإجابة:** COOH، الخيار٤.
+المجموعة الوظيفية هي **الكربوكسيل** \\(\\mathrm{-COOH}\\).
 
-الشاهد: «تتميز الحموض الكربوكسيلية بوجود مجموعة الكربوكسيلCOOH، التي تتكون من مجموعتي الهيدروكسيلOH والكربونيلC=O، والصيغة العامة لها هيRCOOH.»
-**المصدر:** صفحة 58 من الكتاب.
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 58](https://moe.edu.ps/m/4059#page=60)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 126](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=130).
 
 [عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/d03d359ed37cbca9841f.webp)
 
@@ -110,10 +109,9 @@ question: أي المواد الآتية تختزل الحموض الكربوك�
 - [ ] option-3 | \\(\\mathrm{MnO_4^-}\\)
 - [ ] option-4 | \\(\\mathrm{H_2SO_4}\\)
 explanation:
-**الإجابة:** LiAlH₄، الخيار٢.
+المادة هي **هيدريد ليثيوم ألمنيوم** \\(\\mathrm{LiAlH_4}\\).
 
-الشاهد: «تختزل الحموض الكربوكسيلية بسهولة إلى الكحولات الأولية المناظرة مباشرة باستخدام هيدريد ليثيوم ألمنيومLiAlH₄ الذي يعد عاملًا مختزلًا قويًا.»
-**المصدر:** صفحة 59 من الكتاب.
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 59](https://moe.edu.ps/m/4059#page=61)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 127](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=131).
 
 [عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/22f87402d4375c6d8ce4.webp)
 
@@ -648,9 +646,6 @@ solution:
 
 
 إذن الناتج العضوي هو **1-بروبانول CH₃CH₂CH₂OH**.
-
-**المصدر:** صفحة 59 من الكتاب.
-
 :::
 
 :::exam-question
@@ -718,11 +713,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mi>H</mi><mo>+</mo><mn>2</mn><mo stretchy="false">[</mo><mi>O</mi><mo stretchy="false">]</mo><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mrow><mi>K</mi><mi>M</mi><mi>n</mi><msub><mi>O</mi><mn>4</mn></msub><mi mathvariant="normal">/</mi><msup><mi>H</mi><mo>+</mo></msup></mrow></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>O</mi><mi>O</mi><mi>H</mi><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
 \`\`\`
-
-
-
-**المصدر:** صفحة 54 من الكتاب.
-
 :::
 
 :::exam-question

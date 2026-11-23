@@ -64,7 +64,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>6</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
@@ -110,11 +122,7 @@ question: ما نوع وراثة صفة لون الأزهار في نبات ال
 explanation:
 **الإجابة:** أ. سيادة تامة
 
-**الشاهد من الكتاب:**
-
-> في نبات البازيلاء، صفة لون الأزهار الأرجوانية(P) سائدة على البيضاء(p)، ولون القرون الخضراء(G) سائدة على اللون الأصفر(g).
-
-**المصدر:** صفحة 26 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 26](https://moe.edu.ps/m/4061#page=26).
 
 
 
@@ -180,7 +188,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -206,7 +220,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>2</mn><mn>3</mn></msup><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>2</mn><mn>3</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
@@ -302,15 +322,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mtext> </mtext><mi mathvariant="normal">t</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>1</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mtext> </mtext><mi mathvariant="normal">t</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mtext> </mtext><mi mathvariant="normal">t</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة: أ، نوع واحد هو Ab.
-
-**المصدر:** صفحة 24 من الكتاب.
-
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -355,7 +378,31 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>25</mn><mi mathvariant="normal">%</mi></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نحوّل الاحتمال إلى نسبة مئوية بالضرب في 100%.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>×</mo><mn>100</mn><mo>%</mo></mrow></math>
+\`\`\`
+
+نضرب البسط في 100 ثم نقسم على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>100</mn><mn>4</mn></mfrac><mo>%</mo><mo>=</mo><mn>25</mn><mo>%</mo></mrow></math>
 \`\`\`
 
 
@@ -390,7 +437,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo>=</mo><mo stretchy="false">(</mo><mn>3</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mi mathvariant="normal">/</mi><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -415,7 +474,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>G</mi><mi>g</mi><mo>×</mo><mi>G</mi><mi>g</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>G</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>G</mi><mi>g</mi><mo>×</mo><mi>G</mi><mi>g</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>G</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نختصر بقسمة البسط والمقام على 2.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>G</mi><mi>g</mi><mo>×</mo><mi>G</mi><mi>g</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>G</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mo>÷</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>÷</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -423,7 +488,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>R</mi><mi>r</mi><mo>×</mo><mi>R</mi><mi>r</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>R</mi><mi>r</mi><mo>×</mo><mi>R</mi><mi>r</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نختصر بقسمة البسط والمقام على 2.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>R</mi><mi>r</mi><mo>×</mo><mi>R</mi><mi>r</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mo>÷</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>÷</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -433,7 +504,25 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>G</mi><mi>g</mi><mi>R</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>4</mn><mi mathvariant="normal">/</mi><mn>16</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>G</mi><mi>g</mi><mi>R</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>G</mi><mi>g</mi><mi>R</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>G</mi><mi>g</mi><mi>R</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نكتب كسرًا مكافئًا بضرب البسط والمقام في 4.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>G</mi><mi>g</mi><mi>R</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>4</mn></mrow><mrow><mn>4</mn><mo>×</mo><mn>4</mn></mrow></mfrac><mo>=</mo><mfrac><mn>4</mn><mn>16</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -452,44 +541,40 @@ question: عند حدوث تلقيح ذاتي لنبات طرازه الجيني
 - [ ] option-3 | ج. 1/8
 - [x] option-4 | د. 1/16
 explanation:
-التلقيح الذاتي يجعل النبات AaBbdd أباً وأماً في التزاوج نفسه؛ وتكون غاميتاته ABd و Abd و aBd و abd.
-نحتاج الأليلات المتنحية في المواضع الثلاثة:
+التلقيح الذاتي يعني أن الأبوين لهما الطراز نفسه AaBbdd. يحمل كل غاميت أليلًا واحدًا لكل موضع، فتكون الغاميتات ABd وAbd وaBd وabd. نريد ظهور aa وbb وdd معًا.
 
+عند الموضع A، ينتج التزاوج Aa مع Aa أربع خانات هي AA وAa وAa وaa. نعدّ الخانة المطلوبة ونقسم على المجموع.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>a</mi><mo>×</mo><mi>A</mi><mi>a</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn></mrow></math>
+\`\`\`latex
+P(aa)=\\frac14
 \`\`\`
 
+عند الموضع B، ينتج التزاوج Bb مع Bb أربع خانات هي BB وBb وBb وbb. نعدّ الخانة المطلوبة ونقسم على المجموع.
 
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mi>b</mi><mo>×</mo><mi>B</mi><mi>b</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>b</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn></mrow></math>
+\`\`\`latex
+P(bb)=\\frac14
 \`\`\`
 
+عند الموضع D يحمل كل غاميت الأليل d، إذن كل النسل dd.
 
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>d</mi><mi>d</mi><mo>×</mo><mi>d</mi><mi>d</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>d</mi><mi>d</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow></math>
+\`\`\`latex
+P(dd)=1
 \`\`\`
 
+بالتوزيع المستقل نضرب الاحتمالات الثلاثة.
 
-
-بالتوزيع المستقل نضرب الاحتمالات:
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mi>a</mi><mi>b</mi><mi>b</mi><mi>d</mi><mi>d</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mn>1</mn><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>16</mn></mrow></math>
+\`\`\`latex
+P(\\mathrm{aabbdd})=\\frac14\\times\\frac14\\times1
 \`\`\`
 
+نضرب البسوط ونضرب المقامات.
 
+\`\`\`latex
+P(\\mathrm{aabbdd})=\\frac{1\\times1\\times1}{4\\times4\\times1}=\\frac1{16}
+\`\`\`
 
-إذن د.
+إذن الاحتمال **1/16**.
+
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -526,7 +611,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mi>r</mi><mi>T</mi><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mi>r</mi><mi>T</mi><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mi>r</mi><mi>T</mi><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mi>r</mi><mi>T</mi><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -602,7 +699,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>18</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>6</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>18</mn></mrow></math>
 \`\`\`
 
 
@@ -678,7 +787,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>3</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>9</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>3</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>9</mn></mrow></math>
 \`\`\`
 
 
@@ -735,7 +850,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mi>b</mi><mo>×</mo><mi>B</mi><mi>b</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>B</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>B</mi><mi>b</mi><mo>×</mo><mi>B</mi><mi>b</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>B</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نختصر بقسمة البسط والمقام على 2.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mi>b</mi><mo>×</mo><mi>B</mi><mi>b</mi><mo>⇒</mo><mi>P</mi><mo stretchy="false">(</mo><mi>B</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mo>÷</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>÷</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -745,7 +866,31 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi>a</mi><mi>B</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>25</mn><mi mathvariant="normal">%</mi></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi>a</mi><mi>B</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi>a</mi><mi>B</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi>a</mi><mi>B</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نحوّل الاحتمال إلى نسبة مئوية بالضرب في 100%.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi>a</mi><mi>B</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>×</mo><mn>100</mn><mo>%</mo></mrow></math>
+\`\`\`
+
+نضرب البسط في 100 ثم نقسم على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi>a</mi><mi>B</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>100</mn><mn>4</mn></mfrac><mo>%</mo><mo>=</mo><mn>25</mn><mo>%</mo></mrow></math>
 \`\`\`
 
 
@@ -795,7 +940,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>2</mn><mn>3</mn></msup><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>2</mn><mn>3</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
@@ -853,7 +1004,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
@@ -1004,7 +1167,25 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi>A</mi><mi>b</mi><mi>b</mi><mi>C</mi><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>32</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi>A</mi><mi>b</mi><mi>b</mi><mi>C</mi><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi>A</mi><mi>b</mi><mi>b</mi><mi>C</mi><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>×</mo><mn>4</mn><mo>×</mo><mn>4</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب العاملين الأولين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi>A</mi><mi>b</mi><mi>b</mi><mi>C</mi><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>×</mo><mn>4</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mi>A</mi><mi>b</mi><mi>b</mi><mi>C</mi><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>32</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -1029,7 +1210,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -1060,7 +1247,7 @@ explanation:
 
 > يمثل الشكل(8) تلقيح تجريبي لأفراد الجيل الأول(رمادي طبيعي الأجنحة مع أسود ضامر الأجنحة)، فظهر أفراد النسل بنسبة1:1 رمادي اللون طبيعي الأجنحة إلى أسود اللون ضامر الأجنحة.
 
-**المصدر:** صفحة 34 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 34](https://moe.edu.ps/m/4061#page=34).
 
 
 
@@ -1068,7 +1255,7 @@ explanation:
 
 > إجراء تلقيح بين الفرد السائد مجهول النقاوة وفرد يحمل الصفة المتنحية
 
-**المصدر:** صفحة 48 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 48](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=52).
 
 
 
@@ -1250,7 +1437,25 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo>=</mo><mo stretchy="false">(</mo><mn>3</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>3</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>9</mn><mi mathvariant="normal">/</mi><mn>32</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>×</mo><mn>4</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب العاملين الأولين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mn>9</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>16</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>9</mn><mn>32</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -1304,7 +1509,25 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>t</mi><mi>t</mi><mi>r</mi><mi>r</mi><mi>b</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>32</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>t</mi><mi>t</mi><mi>r</mi><mi>r</mi><mi>b</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>t</mi><mi>t</mi><mi>r</mi><mi>r</mi><mi>b</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>×</mo><mn>4</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب العاملين الأولين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>t</mi><mi>t</mi><mi>r</mi><mi>r</mi><mi>b</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>16</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>t</mi><mi>t</mi><mi>r</mi><mi>r</mi><mi>b</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>32</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -1441,7 +1664,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>r</mi><mi>r</mi><mi>H</mi><mo>−</mo><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>r</mi><mi>r</mi><mi>H</mi><mo>−</mo><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>r</mi><mi>r</mi><mi>H</mi><mo>−</mo><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>r</mi><mi>r</mi><mi>H</mi><mo>−</mo><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -1526,7 +1761,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>44</mn><mo>=</mo><mn>90</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>44</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>90</mn></mrow></math>
 \`\`\`
 
 
@@ -1534,7 +1775,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>29</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>+</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>29</mn></mrow></math>
 \`\`\`
 
 
@@ -1544,7 +1791,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>15</mn><mo>=</mo><mn>61</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>15</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>61</mn></mrow></math>
 \`\`\`
 
 
@@ -1552,7 +1805,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>58</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>58</mn></mrow></math>
 \`\`\`
 
 
@@ -1596,7 +1855,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>44</mn><mo>=</mo><mn>90</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>44</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>90</mn></mrow></math>
 \`\`\`
 
 
@@ -1604,7 +1869,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>29</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>+</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>29</mn></mrow></math>
 \`\`\`
 
 
@@ -1614,7 +1885,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>15</mn><mo>=</mo><mn>61</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>15</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>61</mn></mrow></math>
 \`\`\`
 
 
@@ -1622,7 +1899,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>58</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>58</mn></mrow></math>
 \`\`\`
 
 
@@ -1666,7 +1949,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>44</mn><mo>=</mo><mn>90</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>44</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>90</mn></mrow></math>
 \`\`\`
 
 
@@ -1674,7 +1963,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>29</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>+</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>29</mn></mrow></math>
 \`\`\`
 
 
@@ -1684,7 +1979,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>15</mn><mo>=</mo><mn>61</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>15</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>61</mn></mrow></math>
 \`\`\`
 
 
@@ -1692,7 +1993,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>58</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>58</mn></mrow></math>
 \`\`\`
 
 
@@ -1741,7 +2048,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>44</mn><mo>=</mo><mn>90</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>44</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>طويل</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>90</mn></mrow></math>
 \`\`\`
 
 
@@ -1749,7 +2062,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>29</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>+</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>قصير</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>29</mn></mrow></math>
 \`\`\`
 
 
@@ -1759,7 +2078,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>15</mn><mo>=</mo><mn>61</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn><mo>+</mo><mn>15</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>أملس</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>61</mn></mrow></math>
 \`\`\`
 
 
@@ -1767,7 +2092,13 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>58</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>مجعد</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>58</mn></mrow></math>
 \`\`\`
 
 
@@ -1793,15 +2124,28 @@ T للطول السائد وt للقصر، وA للأملس السائد وa ل�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>a</mi><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>a</mi><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>a</mi><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0.75</mn><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>a</mi><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0.75</mn><mo>×</mo><mn>0.5</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>a</mi><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math>
 \`\`\`
 
 
 
 إذن الاحتمال **3/8**.
-
-**المصدر:** الصفحات 24، 25، 26 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1831,13 +2175,9 @@ body:
 final-answer:
 **التلقيح التجريبي:** تلقيح فرد ذي صفة سائدة مجهول النقاوة بفرد **متنحٍّ نقي**، للكشف عن الطراز الجيني للفرد السائد.
 solution:
-**الإجابة:** تلقيح الفرد ذي الصفة السائدة مجهول النقاوة بفرد متنحٍّ نقي؛ تكشف نتائج النسل طرازه الجيني.
+**التلقيح التجريبي** تزاوج الفرد ذي الصفة السائدة مجهول النقاوة مع فرد يحمل أليلين متنحيين. ظهور نسل متنحٍّ يكشف أن الفرد المختبَر يحمل أليلًا متنحيًا أيضًا.
 
-**الشاهد من الكتاب:**
-
-> إجراء تلقيح بين الفرد السائد مجهول النقاوة وفرد يحمل الصفة المتنحية
-
-**المصدر:** صفحة 48 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 48](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=52).
 
 
 
@@ -2297,7 +2637,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>b</mi><mi>l</mi><mi>a</mi><mi>c</mi><mi>k</mi><mo separator="true">,</mo><mi>l</mi><mi>o</mi><mi>n</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>3</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mi mathvariant="normal">/</mi><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>b</mi><mi>l</mi><mi>a</mi><mi>c</mi><mi>k</mi><mo separator="true">,</mo><mi>l</mi><mi>o</mi><mi>n</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>b</mi><mi>l</mi><mi>a</mi><mi>c</mi><mi>k</mi><mo separator="true">,</mo><mi>l</mi><mi>o</mi><mi>n</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>3</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>b</mi><mi>l</mi><mi>a</mi><mi>c</mi><mi>k</mi><mo separator="true">,</mo><mi>l</mi><mi>o</mi><mi>n</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -2466,7 +2818,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
@@ -2516,7 +2880,25 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>T</mi><mi>T</mi><mi>B</mi><mi>b</mi><mi>g</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>32</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>T</mi><mi>T</mi><mi>B</mi><mi>b</mi><mi>g</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>T</mi><mi>T</mi><mi>B</mi><mi>b</mi><mi>g</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>4</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب العاملين الأولين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>T</mi><mi>T</mi><mi>B</mi><mi>b</mi><mi>g</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>×</mo><mn>4</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>T</mi><mi>T</mi><mi>B</mi><mi>b</mi><mi>g</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>32</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -2541,7 +2923,25 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب العاملين الأولين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -2566,7 +2966,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -2608,7 +3020,7 @@ solution:
 
 > وينص قانون مندل الثاني(التوزيع المستقل) على ما يأتي: إذا تزاوج فردان مختلفان في أكثر من زوج من الصفات المتضادة فإن كل زوج من هذه الصفات يورث مستقلاً عن غيره من أزواج الصفات المتضادة الأخرى.
 
-**المصدر:** صفحة 25 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 25](https://moe.edu.ps/m/4061#page=25).
 
 
 
@@ -2636,7 +3048,7 @@ solution:
 
 > يمثل الشكل(8) تلقيح تجريبي لأفراد الجيل الأول(رمادي طبيعي الأجنحة مع أسود ضامر الأجنحة)، فظهر أفراد النسل بنسبة1:1 رمادي اللون طبيعي الأجنحة إلى أسود اللون ضامر الأجنحة.
 
-**المصدر:** صفحة 34 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 34](https://moe.edu.ps/m/4061#page=34).
 
 
 
@@ -3019,7 +3431,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mo>−</mo><mi>g</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>3</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mi mathvariant="normal">/</mi><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mo>−</mo><mi>g</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mo>−</mo><mi>g</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>3</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mo>−</mo><mi>g</mi><mi>g</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -3259,7 +3683,31 @@ R للأملس و r للمجعد، و A للأصفر و a للأخضر. من ا�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>s</mi><mi>m</mi><mi>o</mi><mi>o</mi><mi>t</mi><mi>h</mi><mo separator="true">,</mo><mi>g</mi><mi>r</mi><mi>e</mi><mi>e</mi><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>25</mn><mi mathvariant="normal">%</mi></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>s</mi><mi>m</mi><mi>o</mi><mi>o</mi><mi>t</mi><mi>h</mi><mo separator="true">,</mo><mi>g</mi><mi>r</mi><mi>e</mi><mi>e</mi><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>s</mi><mi>m</mi><mi>o</mi><mi>o</mi><mi>t</mi><mi>h</mi><mo separator="true">,</mo><mi>g</mi><mi>r</mi><mi>e</mi><mi>e</mi><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>s</mi><mi>m</mi><mi>o</mi><mi>o</mi><mi>t</mi><mi>h</mi><mo separator="true">,</mo><mi>g</mi><mi>r</mi><mi>e</mi><mi>e</mi><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نحوّل الاحتمال إلى نسبة مئوية بالضرب في 100%.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>s</mi><mi>m</mi><mi>o</mi><mi>o</mi><mi>t</mi><mi>h</mi><mo separator="true">,</mo><mi>g</mi><mi>r</mi><mi>e</mi><mi>e</mi><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>×</mo><mn>100</mn><mo>%</mo></mrow></math>
+\`\`\`
+
+نضرب البسط في 100 ثم نقسم على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>s</mi><mi>m</mi><mi>o</mi><mi>o</mi><mi>t</mi><mi>h</mi><mo separator="true">,</mo><mi>g</mi><mi>r</mi><mi>e</mi><mi>e</mi><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>100</mn><mn>4</mn></mfrac><mo>%</mo><mo>=</mo><mn>25</mn><mo>%</mo></mrow></math>
 \`\`\`
 
 
@@ -3380,7 +3828,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>B</mi><mo>−</mo><mi>e</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>B</mi><mo>−</mo><mi>e</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب البسوط معًا ونضرب المقامات معًا.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>B</mi><mo>−</mo><mi>e</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>×</mo><mn>4</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل ضرب البسط وحاصل ضرب المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>B</mi><mo>−</mo><mi>e</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -3416,13 +3876,13 @@ explanation:
 
 > بعض الجينات القاتلة سائدة مثل مرض هنتنغتون
 
-**المصدر:** صفحة 58 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 58](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=62).
 
 
 
 **تزاوج الكتاب المطابق للمسألة:**
 
-**المصدر:** صفحة 59 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 59](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=63).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/fdc801c147f2f6d61a66.webp)
 
@@ -3457,13 +3917,13 @@ explanation:
 
 > بعض الجينات القاتلة سائدة مثل مرض هنتنغتون
 
-**المصدر:** صفحة 58 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 58](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=62).
 
 
 
 **تزاوج الكتاب المطابق للمسألة:**
 
-**المصدر:** صفحة 59 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 59](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=63).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/fdc801c147f2f6d61a66.webp)
 
@@ -3511,7 +3971,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 

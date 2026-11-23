@@ -38,13 +38,13 @@ try {
     if(type==='written') {
      const initial=await page.evaluate(()=>{
       const header=document.querySelector('.lesson-top');
-      const scroll=document.querySelector('[data-exam-front] .lesson-flashcard-scroll');
+      const face=document.querySelector('[data-exam-front]');
       header.style.marginBottom='0px';
-      scroll.style.paddingTop=getComputedStyle(scroll).paddingBottom;
-      const original=document.querySelector('[data-exam-front] h1').getBoundingClientRect().top;
+      face.style.paddingTop='0px';
+      const original=face.querySelector('h1').getBoundingClientRect().top;
       header.style.removeProperty('margin-bottom');
-      scroll.style.removeProperty('padding-top');
-      return {original,expanded:document.querySelector('[data-exam-front] h1').getBoundingClientRect().top};
+      face.style.removeProperty('padding-top');
+      return {original,expanded:face.querySelector('h1').getBoundingClientRect().top};
      });
      assert.ok(Math.abs(initial.original-initial.expanded)<1,`flashcard starts in its original position: ${JSON.stringify(initial)}`);
     }

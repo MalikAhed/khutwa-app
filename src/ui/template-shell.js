@@ -61,7 +61,7 @@ export function mountTemplateContentZoom(container, { signal } = {}) {
 }
 
 /** Reveal remaining reading content without moving it until the learner asks. */
-export function mountTemplateScrollIndicator(container, { signal, surface = container.querySelector(".level-layout-task") } = {}) {
+export function mountTemplateScrollIndicator(container, { signal, surface = container.querySelector(".level-layout-task"), isPaused } = {}) {
   const button = container.querySelector("[data-content-scroll]");
   const leftButton = container.querySelector("[data-content-scroll-left]");
   if (!surface || !button) return;
@@ -101,7 +101,7 @@ export function mountTemplateScrollIndicator(container, { signal, surface = cont
   };
   let frame = 0;
   const update = () => {
-    if (signal?.aborted) return;
+    if (signal?.aborted || isPaused?.()) return;
     const zoom = Number(getComputedStyle(surface).zoom) || 1;
     const layout = surface.closest(".question-overlays");
     const overflow = surface.scrollHeight > (layout ? surface.clientHeight : surface.parentElement.clientHeight / zoom) + 2;
@@ -150,10 +150,11 @@ export function renderTemplateScrollIndicators({ scrollId, locale = "en", horizo
   return `<button class="lesson-scroll-cue" type="button" data-content-scroll hidden aria-controls="${escapeHtml(scrollId)}" aria-label="${escapeHtml(`${copy.moreBelow}: ${copy.showMoreContent}`)}"><span>${escapeHtml(copy.moreBelow)}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v10H3l9 8 9-8h-5V3Z"/></svg></button>${horizontal ? `<button class="lesson-scroll-cue lesson-scroll-cue--left" type="button" data-content-scroll-left hidden aria-controls="${escapeHtml(scrollId)}" aria-label="${escapeHtml(copy.moreLeft)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8H11V3l-8 9 8 9v-5h10Z"/></svg></button>` : ""}`;
 }
 
-export function renderTemplateShell({ content, footer, showScrollIndicator = true, horizontal = false, titleId = "ui-lab-content-title", locale = "en" }) {
+export function renderTemplateShell({ content, contentHeader = "", footer, showScrollIndicator = true, horizontal = false, titleId = "ui-lab-content-title", locale = "en" }) {
   const scrollId = `${titleId}-scroll`;
   return `<div class="level-layout-preview" lang="${locale}" dir="${locale === "ar" ? "rtl" : "ltr"}">
     <div class="level-layout-content">
+      ${contentHeader}
       <section class="level-layout-task" id="${escapeHtml(scrollId)}" aria-labelledby="${escapeHtml(titleId)}">${content}</section>
       ${showScrollIndicator ? renderTemplateScrollIndicators({ scrollId, locale, horizontal }) : ""}
     </div>

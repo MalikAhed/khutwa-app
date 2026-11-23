@@ -11,15 +11,9 @@ body:
 final-answer:
 **عدد البروتونات الموجودة في نواة العنصر.**
 solution:
-**الإجابة:** عدد البروتونات الموجودة في نواة العنصر.
+العدد الذري هو **عدد البروتونات في نواة الذرة**. يساوي عدد الإلكترونات في الذرة المتعادلة.
 
-**الشاهد من الكتاب:**
-
-> لكل عنصر عدد ذري خاص به، يميزه عن العناصر الأخرى، يساوي عدد البروتونات الموجودة في نواة العنصر، ويساوي أيضاً عدد الإلكترونات في الذرة المتعادلة.
-
-**المصدر:** صفحة 11 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 11](https://moe.edu.ps/m/4059#page=13)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 23](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=27).
 
 :::
 
@@ -68,7 +62,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">r</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>7</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">B</mi><mi mathvariant="normal">r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">B</mi><mi mathvariant="normal">r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>7</mn></mrow></math>
 \`\`\`
 
 
@@ -84,7 +84,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">A</mi><mi mathvariant="normal">r</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">A</mi><mi mathvariant="normal">r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">A</mi><mi mathvariant="normal">r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
@@ -100,7 +106,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">A</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">A</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">A</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
@@ -184,7 +196,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">Y</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">Y</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">Y</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -219,7 +237,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>9</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>7</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo>=</mo><mn>9</mn></mrow></math>
 \`\`\`
 
 
@@ -254,7 +278,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
@@ -323,7 +353,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">F</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">F</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
@@ -383,7 +419,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">A</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">A</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">A</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
@@ -447,7 +489,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>Q</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>Q</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>Q</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -476,7 +524,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>20</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn></mrow></math>
 \`\`\`
 
 
@@ -504,7 +558,13 @@ A يسبق D بثلاث خطوات في التسلسل:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>15</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>−</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn></mrow></math>
 \`\`\`
 
 
@@ -520,7 +580,13 @@ A يسبق D بثلاث خطوات في التسلسل:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
@@ -556,7 +622,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>8</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
@@ -615,7 +687,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>21</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>+</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mo>=</mo><mn>21</mn></mrow></math>
 \`\`\`
 
 
@@ -631,7 +709,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>v</mi></msub><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -675,7 +759,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>L</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>17</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>L</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>L</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>L</mi><mo stretchy="false">)</mo><mo>=</mo><mn>17</mn></mrow></math>
 \`\`\`
 
 
@@ -720,7 +816,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>+</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 

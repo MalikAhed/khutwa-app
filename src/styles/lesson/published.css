@@ -44,24 +44,26 @@
 .ready-lesson-copy {
   width: min(100%, 1080px);
 }
-.lesson-question-source { display:inline-block; justify-self:start; width:fit-content; margin:0 0 14px; padding:4px 10px; border:1px solid #dfe2e6; border-radius:6px; background:#f1f3f5; color:#626970; font:600 13px/1.6 var(--font-ui); }
 .ready-lesson-stage[data-lesson-presentation="flashcard"] .level-layout-task { height:100%; min-height:0; grid-template-rows:minmax(0, 1fr); overflow:hidden; zoom:1; padding:var(--space-1) var(--page-gutter-right) var(--space-1) var(--page-gutter-left); }
 .lesson-exam-question { display:grid; grid-template-rows:minmax(0, 1fr); width:min(100%, 900px); max-height:100%; min-height:0; min-width:0; perspective:1600px; text-align:start; -webkit-tap-highlight-color:transparent; }
 .lesson-flashcard-rotor { position:relative; display:grid; grid-template-rows:minmax(0, 1fr); width:100%; min-height:0; transform-style:preserve-3d; transform:rotateY(0deg); transition:none; }
 .lesson-flashcard-rotor.is-flipped { transform:rotateY(180deg); }
-.lesson-flashcard-face { position:relative; grid-area:1 / 1; display:grid; grid-template-rows:minmax(0, 1fr); min-width:0; min-height:0; border:3px solid #cbd4dd; border-radius:14px; background:#fff; color:#30363d; overflow:hidden; backface-visibility:hidden; -webkit-backface-visibility:hidden; cursor:pointer; }
+.lesson-flashcard-face { --flashcard-padding:clamp(20px, 3vw, 36px); position:relative; grid-area:1 / 1; display:grid; grid-template-rows:auto minmax(0, 1fr); min-width:0; min-height:0; border:3px solid #cbd4dd; border-radius:14px; background:#fff; color:#30363d; overflow:hidden; backface-visibility:hidden; -webkit-backface-visibility:hidden; cursor:pointer; }
 /* Both faces size the same grid cell, so turning a short answer never resizes
    the card. Hidden faces retain their layout while inert/ARIA hide interaction. */
 .lesson-flashcard-face[hidden] { display:grid; visibility:hidden; }
 .lesson-flashcard-back { transform:rotateY(180deg); }
-.lesson-flashcard-scroll { --flashcard-padding:clamp(20px, 3vw, 36px); display:flex; flex-direction:column; min-height:0; min-width:0; padding:var(--flashcard-padding); border-radius:11px; overflow-x:hidden; overflow-y:auto; overscroll-behavior:contain; scrollbar-gutter:stable; scrollbar-width:thin; scrollbar-color:#8a98a4 #e9eef2; touch-action:pan-x pan-y; }
-.question-overlays .lesson-flashcard-scroll { padding-top:calc(var(--flashcard-padding) + var(--question-header-overhang,0px)); }
-.lesson-flashcard-rotor.is-flipping .lesson-scroll-cue { visibility:hidden; }
-.lesson-flashcard-rotor.is-flipping .lesson-flashcard-scroll { scrollbar-color:transparent transparent; }
-.lesson-flashcard-rotor.is-flipping .lesson-flashcard-scroll::-webkit-scrollbar-thumb,
-.lesson-flashcard-rotor.is-flipping .lesson-flashcard-scroll::-webkit-scrollbar-track { background:transparent; }
+.question-overlays .lesson-flashcard-face { padding-top:var(--question-header-overhang,0px); }
+.lesson-flashcard-face > .lesson-question-meta { min-height:calc(44px + var(--space-1)); padding:var(--space-1) var(--flashcard-padding) 0; }
+.lesson-flashcard-rotor:has(.question-report-button) .lesson-question-meta:empty { display:flex; }
+.lesson-flashcard-scroll { grid-row:2; display:flex; flex-direction:column; min-height:0; min-width:0; padding:var(--flashcard-padding); border-radius:11px; overflow-x:hidden; overflow-y:auto; overscroll-behavior:contain; scrollbar-gutter:stable; scrollbar-width:thin; scrollbar-color:#8a98a4 #e9eef2; touch-action:pan-x pan-y; }
+.lesson-flashcard-rotor.is-flipping .lesson-scroll-cue { visibility:hidden; opacity:0; }
+.lesson-flashcard-rotor.is-flipping .lesson-scroll-cue svg { animation-play-state:paused; }
+.lesson-flashcard-rotor.is-flipping :is(.lesson-flashcard-scroll, .lesson-inline-scroll, .lesson-math-scroll, .markdown-table-scroll, pre) { scrollbar-color:transparent transparent; }
+.lesson-flashcard-rotor.is-flipping :is(.lesson-flashcard-scroll, .lesson-inline-scroll, .lesson-math-scroll, .markdown-table-scroll, pre)::-webkit-scrollbar-thumb,
+.lesson-flashcard-rotor.is-flipping :is(.lesson-flashcard-scroll, .lesson-inline-scroll, .lesson-math-scroll, .markdown-table-scroll, pre)::-webkit-scrollbar-track { background:transparent; }
 @media (max-height:500px) and (orientation:landscape) {
-  .lesson-flashcard-scroll { --flashcard-padding:16px; }
+  .lesson-flashcard-face { --flashcard-padding:16px; }
 }
 .lesson-flashcard-copy { flex:none; min-width:0; margin-block:auto; zoom:var(--lesson-content-zoom, 1); }
 .lesson-exam-question h1 { margin:0 0 20px; color:#30363d; font:700 clamp(20px, 2.4vw, 26px)/1.7 var(--font-ui); }
@@ -666,7 +668,7 @@
   border-radius: 14px;
   background: var(--quest-theme-surface);
 }
-.ready-lesson-stage.ui-lab-mcq-open .level-layout-task { min-height: 0; padding-block:8px 18px; overflow-y: auto; }
+.ready-lesson-stage.ui-lab-mcq-open .level-layout-task { min-height: 0; padding-block:12px; overflow-y: auto; }
 .lesson-video-head {
   display: flex;
   align-items: start;

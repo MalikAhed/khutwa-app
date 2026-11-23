@@ -3,6 +3,7 @@ import { spawn } from "node:child_process";
 import { mkdir } from "node:fs/promises";
 import { chromium } from "playwright";
 import { ENGLISH_LESSONS } from "../../src/data/lessons/english/english-course.js";
+import { getCurrentSubjectRoadmap } from "../../src/data/subject-roadmaps.js";
 import { loadSubjectLesson } from "../../src/data/lessons/subject-lesson-registry.js";
 import { parseLessonMarkdown } from "../../src/markdown/lesson-authoring.js";
 import { findChrome, getAvailablePort, waitForServer, terminateProcess } from "./browser-session.mjs";
@@ -11,12 +12,16 @@ const port = await getAvailablePort();
 const base = `http://127.0.0.1:${port}/`;
 const output = process.env.BROWSER_SCREENSHOT_DIR || "/tmp/english-course-check";
 await mkdir(output, { recursive:true });
-const server = spawn(process.execPath, ["dev-server.mjs"], { env:{ ...process.env, PORT:String(port), LIVE_RELOAD:"0", ACCOUNTS_DATABASE_PATH:":memory:" }, stdio:"ignore" });
+const server = spawn(process.execPath, ["dev-server.mjs"], { env:{ ...process.env, PORT:String(port), LEARN_BACKEND:"local", LIVE_RELOAD:"0", ACCOUNTS_DATABASE_PATH:":memory:" }, stdio:"ignore" });
 let browser;
 try {
   await waitForServer(port);
   browser = await chromium.launch({ executablePath:await findChrome(), args:["--no-sandbox"] });
   const page = await browser.newPage({ viewport:{ width:1440, height:900 }, reducedMotion:"reduce" });
+  const registration = await page.request.post(`${base}api/auth/register`, { data:{
+    username:"gaza-elmi-english", phone:"0598201732", password:"English-course-123", curriculum:"gaza", path:"scientific",
+  } });
+  assert.equal(registration.status(), 201);
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
   page.on("response", response => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
@@ -32,17 +37,18 @@ try {
     await noOverflow();
   };
   const reading = ENGLISH_LESSONS.find(lesson => lesson.id === "english-u01-reading");
+  const currentLessonIds = getCurrentSubjectRoadmap("english").units.flatMap(unit => unit.lessons.map(lesson => lesson.id));
   for (const width of [1440, 390]) {
     await page.setViewportSize({ width, height:900 });
     await page.goto(base + "?page=learn");
     const card = page.locator('.subject-card[data-subject="english"]');
     await card.waitFor();
     assert.equal(await card.isEnabled(), true);
-    assert.equal((await card.locator("[data-subject-count]").textContent()).trim(), "0 / 1229");
+    assert.equal((await card.locator("[data-subject-count]").textContent()).trim(), width === 1440 ? "0 / 979" : "1 / 979");
     await card.click();
     await page.locator('.subject-roadmap[data-subject="english"]').waitFor();
-    assert.equal(await page.locator(".roadmap-unit").count(), 9);
-    assert.deepEqual(await page.locator("[data-roadmap-lesson]").evaluateAll(nodes => nodes.map(node => node.dataset.roadmapLesson)), ENGLISH_LESSONS.map(lesson => lesson.id));
+    assert.equal(await page.locator(".roadmap-unit").count(), 5);
+    assert.deepEqual(await page.locator("[data-roadmap-lesson]").evaluateAll(nodes => [...new Set(nodes.map(node => node.dataset.roadmapLesson))]), currentLessonIds);
     await noOverflow();
     await page.screenshot({ path:`${output}/roadmap-${width}.png`, fullPage:true });
 
@@ -71,7 +77,7 @@ try {
     await page.screenshot({ path:`${output}/flashcard-answer-${width}.png`, fullPage:true });
   }
   await page.setViewportSize({ width:1440, height:900 });
-  for (const catalog of ENGLISH_LESSONS) {
+  for (const catalog of ENGLISH_LESSONS.filter(lesson => currentLessonIds.includes(lesson.id))) {
     await openQuestion(catalog, catalog.parts[0].startStepId);
     assert.ok(await page.locator("[data-ui-lab-answer], [data-exam-card]").count() > 0, catalog.id);
   }
@@ -81,7 +87,7 @@ try {
   const content = parseLessonMarkdown(source.authoringSource).steps[0].content.body;
   for (const word of ["bananas", "Jan", "complete stranger"]) assert.ok(content.includes(word));
   assert.deepEqual(errors, []);
-  console.log("English browser check passed: unlocked subject; 9 original units, 22 lessons, 1229 questions; complete reading passages; English LTR MCQ and flashcard interactions on desktop/mobile.");
+  console.log("English browser check passed: 5 Gaza Elmi units, 15 lessons, 979 current questions; English LTR MCQ and flashcard interactions on desktop/mobile.");
 } finally {
   await browser?.close();
   await terminateProcess(server);

@@ -41,8 +41,18 @@
     transform: scale(1.28) rotate(18deg);
   }
 }
+.ui-lab-mcq-open .level-layout-content {
+  display:grid;
+  grid-template-rows:auto minmax(0,1fr);
+}
+.ui-lab-mcq-open .level-layout-content > .lesson-question-meta {
+  padding:calc(var(--space-1) + var(--question-header-overhang,0px))
+    max(var(--page-gutter-right), calc((100% - 1100px) / 2))
+    0 max(var(--page-gutter-left), calc((100% - 1100px) / 2));
+}
 .ui-lab-mcq-open .level-layout-task {
-  align-items: stretch;
+  grid-row:2;
+  align-items:safe center;
   grid-template-rows: minmax(min-content, 1fr);
   justify-content: center;
   padding:var(--space-4) var(--page-gutter-right) var(--space-4) var(--page-gutter-left);
@@ -54,7 +64,6 @@
   width: min(100%, 1100px);
 }
 .ui-lab-mcq-open .ui-lab-mcq > * { flex: none; }
-.ui-lab-mcq-open .ui-lab-mcq > .lesson-question-source { align-self: start; margin: 0; }
 .lesson-question-reference { margin:0 0 12px; color:#43596c; font:600 14px/1.8 var(--font-ui); text-align:start; }
 .lesson-question-reference a { display:inline-block; padding:6px 4px; color:#185672; font:600 14px/1.8 var(--font-ui); text-decoration:underline; text-underline-offset:3px; }
 .lesson-question-reference a:focus-visible { outline:3px solid var(--system-focus); outline-offset:2px; border-radius:4px; }
@@ -68,7 +77,6 @@
 .ui-lab-mcq-open .ui-lab-mcq .level-answer-list {
   grid-template-columns: minmax(0, 1fr);
   gap: 14px;
-  margin-top: auto;
 }
 .ui-lab-mcq .lesson-question-example { width: min(100%, 900px); min-width: 0; min-height: 0; margin: 0 auto; padding: 0; text-align: start; }
 .ui-lab-mcq .lesson-question-example p:has(> img) { margin:0; text-align:center; }
@@ -182,10 +190,6 @@
   color: #d93636;
 }
 @media (max-width: 760px) {
-  .ui-lab-mcq-open .level-layout-task {
-    align-items: stretch;
-    justify-content: center;
-  }
   .ui-lab-mcq-open .ui-lab-mcq .level-answer-list,
   .ui-lab-mcq-open .ui-lab-mcq .level-answer-list:is([data-answer-count="2"], [data-answer-count="4"]) {
     grid-template-columns: minmax(0, 1fr);

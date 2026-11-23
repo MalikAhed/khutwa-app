@@ -20,7 +20,7 @@ solution:
 
 > It quickly became clear that the Minister’s words were controversial, with teachers and university heads reacting strongly to his advice.
 
-**المصدر:** صفحة 32 من الكتاب.
+**المصدر في كتاب غزة:** ص 32 للنص، وص 33 للتمرين المقتبس.
 
 
 
@@ -106,7 +106,7 @@ solution:
 
 > It’s part of a co-ordinated programme that aims to make students aware of the employment options available, and how to make the most of them. It’s too late to start talking about work in their final year.’
 
-**المصدر:** صفحة 32 من الكتاب.
+**المصدر في كتاب غزة:** ص 32 للنص، وص 33 للتمرين المقتبس.
 
 
 
@@ -166,7 +166,7 @@ solution:
 
 > Of course science and technology are important,’ said one, ‘but it would be completely wrong to neglect the arts. They provide important skills and an understanding of the world and people in general. Also, the economy depends as much on creativity as on technical knowledge.’
 
-**المصدر:** صفحة 32 من الكتاب.
+**المصدر في كتاب غزة:** ص 32 للنص، وص 33 للتمرين المقتبس.
 
 
 
@@ -387,7 +387,7 @@ solution:
 
 > In a speech yesterday, the Education Minister advised students to avoid arts subjects and choose science or maths if they want to improve their job prospects.
 
-**المصدر:** صفحة 32 من الكتاب.
+**المصدر في كتاب غزة:** ص 32 للنص، وص 33 للتمرين المقتبس.
 
 
 
@@ -421,7 +421,7 @@ solution:
 
 > Head teacher Harriet Downs believes it’s worth it, though:
 
-**المصدر:** صفحة 32 من الكتاب.
+**المصدر في كتاب غزة:** ص 32 للنص، وص 33 للتمرين المقتبس.
 
 
 
@@ -481,7 +481,7 @@ solution:
 
 > The emphasis on employment continues during the first two years at Milton,
 
-**المصدر:** صفحة 32 من الكتاب.
+**المصدر في كتاب غزة:** ص 32 للنص، وص 33 للتمرين المقتبس.
 
 
 

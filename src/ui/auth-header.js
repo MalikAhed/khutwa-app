@@ -1,7 +1,7 @@
 import { CORRECT_ANSWER_GEM_REWARD } from "../domain/learner-resources.js";
 import { readRoute } from '../app/route.js';
 
-export function createAuthHeader({ guest, member, label, flowButtons, signOutButton, courseContainer, service, progressStore, resourceStore, onFlow }) {
+export function createAuthHeader({ guest, member, label, flowButtons, signOutButton, courseContainer, service, progressStore, resourceStore, onFlow, onExitPreview }) {
   if (!guest || !member || !label || !signOutButton || !courseContainer || !service || !onFlow) throw new TypeError("auth header dependencies are required");
   const controller = new AbortController();
   const { signal } = controller;
@@ -9,9 +9,12 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
   const streakCount = document.querySelector?.("[data-header-streak-count]");
   const ownerLink = document.querySelector?.("[data-owner-dashboard]");
   const profileButton = document.querySelector?.("[data-mobile-profile]");
+  const signOutLabel = onExitPreview ? 'إنهاء المعاينة' : 'تسجيل الخروج';
+  if (onExitPreview) signOutButton.textContent = signOutLabel;
   let profileCard = null, profileOwner = null, signingOut = false;
   const closeProfile = () => profileCard?.close();
   const signOut = async () => {
+    if (onExitPreview) return onExitPreview();
     if (signingOut) return;
     signingOut = true;
     signOutButton.disabled = true;
@@ -45,6 +48,7 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
     card.style.setProperty('--profile-hue',profileButton.style.getPropertyValue('--profile-hue'));
     card.querySelector('h2').textContent = service.getLearnerDisplayName();
     card.querySelector('[data-profile-plan]').textContent = label.textContent;
+    card.querySelector('[data-profile-sign-out]').textContent = signOutLabel;
     card.querySelector('[data-profile-close]').addEventListener('click',closeProfile);
     card.querySelector('[data-profile-sign-out]').addEventListener('click',signOut);
     card.addEventListener('close', () => {
@@ -92,7 +96,8 @@ export function createAuthHeader({ guest, member, label, flowButtons, signOutBut
       if (isGuest || profileOwner !== service.getLearnerProgressOwner()) closeProfile();
     }
     if (ownerLink) ownerLink.hidden = !service.isOwner?.();
-    label.textContent = { free:"حساب مجاني", subscribed:"خطوة سوبر" }[type] || "";
+    const accountLabel = { free:"حساب مجاني", subscribed:"خطوة سوبر" }[type] || "";
+    label.textContent = onExitPreview ? `معاينة · ${accountLabel}` : accountLabel;
     label.lang = "ar";
     if (streakFreeze) streakFreeze.hidden = isGuest;
     if (streakCount) {

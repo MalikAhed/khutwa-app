@@ -1,25 +1,26 @@
 import { QUESTION_RATINGS, getRatedSubjectQuestions } from "../domain/question-ratings.js";
 import { renderRatingFace } from "./question-rating.js";
 import { COURSE_SUBJECTS, getCourseSubjects } from "../data/course.js";
-import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
+import { getCurrentSubjectRoadmap } from "../data/subject-roadmaps.js";
 import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js";
+import { getLessonQuestionProgress } from "../domain/subject-question-progress.js";
 import { escapeHtml } from "../lib/dom.js";
 import { isProgressLabelCovered } from "./learner-format.js";
 
 const LOCK_ICON = '<span class="subject-card__lock" aria-hidden="true"><img src="assets/icons/subject-lock.svg" alt="" /></span>';
-const ICT_QUESTION_TOTAL = getSubjectRoadmap("ict")?.units.flatMap(unit => unit.lessons)
+const ICT_QUESTION_TOTAL = getCurrentSubjectRoadmap("ict")?.units.flatMap(unit => unit.lessons)
   .filter(lesson => !lesson.hidden && !lesson.optional)
-  .reduce((total, lesson) => total + lesson.parts.reduce((count, part) => count + getIctPartQuestionIds(part.id).length, 0), 0) || 0;
+  .reduce((total, lesson) => total + getLessonQuestionProgress(lesson, undefined, (_lesson, part) => getIctPartQuestionIds(part.id)).total, 0) || 0;
 
 function roadmapQuestionTotal(subjectId) {
   if (subjectId === "ict") return ICT_QUESTION_TOTAL;
-  return getSubjectRoadmap(subjectId)?.units.flatMap(unit => unit.lessons)
+  return getCurrentSubjectRoadmap(subjectId)?.units.flatMap(unit => unit.lessons)
     .filter(lesson => !lesson.hidden && !lesson.optional)
-    .reduce((total, lesson) => total + lesson.parts.reduce((count, part) => count + (part.questionIds?.length || 0), 0), 0) || 0;
+    .reduce((total, lesson) => total + getLessonQuestionProgress(lesson).total, 0) || 0;
 }
 
 function roadmapLessonTotal(subjectId) {
-  return getSubjectRoadmap(subjectId)?.units.reduce((total, unit) => total + unit.lessons.filter(lesson => !lesson.hidden && !lesson.optional).length, 0) || 0;
+  return getCurrentSubjectRoadmap(subjectId)?.units.reduce((total, unit) => total + unit.lessons.filter(lesson => !lesson.hidden && !lesson.optional).length, 0) || 0;
 }
 
 function subjectArtworkMarkup(subject) {
@@ -35,7 +36,7 @@ function subjectCardMarkup(subject, view) {
 
 /** One presentation contract owns the initial card and later learner updates. */
 export function getSubjectCardPresentation(subject, snapshot) {
-  const questionsOnly = subject.id === "ict" || getSubjectRoadmap(subject.id)?.questionsOnly;
+  const questionsOnly = subject.id === "ict" || getCurrentSubjectRoadmap(subject.id)?.questionsOnly;
   const learning = snapshot?.learning?.subjects?.[subject.id]
     || (subject.id === "ict" || !questionsOnly ? snapshot?.learning : undefined);
   const unpublished = subject.status === "unpublished";
@@ -64,6 +65,8 @@ export function getSubjectCardPresentation(subject, snapshot) {
 }
 
 export function renderCourseMapMarkup({ ratedQuestions = false, questionFeedback, selection = undefined } = {}) {
+  const curriculum = escapeHtml(selection?.curriculum || "gaza");
+  const path = selection?.path === "literary" ? "literary" : "scientific";
   if (ratedQuestions) {
     const subjects = getCourseSubjects(selection).map(subject => {
       const questions = getRatedSubjectQuestions(subject.id,questionFeedback);
@@ -72,10 +75,10 @@ export function renderCourseMapMarkup({ ratedQuestions = false, questionFeedback
         return `<button type="button" class="rated-subject-difficulty rated-subject-difficulty--${value}" data-rated-subject="${escapeHtml(subject.id)}" data-rating="${value}" aria-label="${label}، ${count} سؤالًا">${renderRatingFace(value)}<bdi class="ui-number" style="--rating-count-digits:${count.length}" data-rating-count>${count}</bdi></button>`;
       }).join("")}</div></article>`;
     }).join("");
-    return `<section class="subject-map" data-path="${selection?.path === "literary" ? "literary" : "scientific"}" data-catalog="rated-questions" aria-label="المواد الدراسية">${subjects}</section>`;
+    return `<section class="subject-map" data-curriculum="${curriculum}" data-path="${path}" data-catalog="rated-questions" aria-label="المواد الدراسية">${subjects}</section>`;
   }
   const subjects = getCourseSubjects(selection).map((subject) => subjectCardMarkup(subject, getSubjectCardPresentation(subject))).join("");
-  return `<section class="subject-map" data-path="${selection?.path === "literary" ? "literary" : "scientific"}" data-catalog="learn" aria-label="المواد الدراسية">${subjects}</section>`;
+  return `<section class="subject-map" data-curriculum="${curriculum}" data-path="${path}" data-catalog="learn" aria-label="المواد الدراسية">${subjects}</section>`;
 }
 
 export function updateSubjectCards(container, snapshot) {

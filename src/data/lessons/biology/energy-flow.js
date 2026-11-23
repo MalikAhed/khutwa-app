@@ -16,7 +16,7 @@ explanation:
 
 > يتطلب حدوث التفاعلات الضوئية وجود الضوء، حيث ينشطر فيها الماء باستخدام الطاقة الضوئية إلى إلكترونين وأيوني هيدروجين التي تستخدم في اختزال نواقل الإلكترونات، والأكسجين الذي يتصاعد في الهواء الجوي. ويتم بواسطتها تحويل الطاقة الضوئية إلى طاقة مختزنة في ATP وNADPH.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -39,7 +39,7 @@ explanation:
 
 > توصل العلماء إلى أن الزيادة في كتلة النبات مصدرها ثاني أكسيد الكربون CO₂، الذي يتحول إلى سكر الغلوكوز في عملية البناء الضوئي، وأن الأكسجين الناتج مصدره الماء.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 6](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=10).
 
 
 
@@ -95,9 +95,6 @@ ATP حامل للطاقة؛ تستهلك هذه المجموعة 6ATP للاخت
 
 
 إذن الناتج **24 جزيئاً كلياً و4 جزيئات نهائياً**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -129,21 +126,30 @@ ATP يمد التفاعلات بالطاقة، وNADPH يمدها بالإلكت
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 إذن المستهلك **24 جزيء NADPH و12 جزيء CO₂**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -179,9 +185,6 @@ G3P ثلاثي الكربون، والغلوكوز سداسي الكربون؛ �
 
 
 الناتج **جزيئان من الغلوكوز**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -206,7 +209,7 @@ solution:
 
 > يتم تثبيت ثلاثة جزيئات CO₂ واحداً تلو الآخر
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -214,7 +217,7 @@ solution:
 
 > وينتج جزيئان من ثاني أكسيد الكربون وجزيء ATP
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -249,7 +252,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
@@ -261,9 +270,6 @@ solution:
 
 
 في الحالة المعطاة يتكون **24 جزيئاً من حمض غليسرين أحادي الفوسفات** في مرحلة التثبيت.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::mcq
@@ -276,13 +282,9 @@ reference: [الرزمة التعليمية، صفحة PDF 22](https://moe.edu.p
 - [x] option-3 | G3P
 - [ ] option-4 | ريبوز منقوص الأكسجين
 explanation:
-**الإجابة:** G3P
+**الإجابة:** G3P، وهو الناتج السكّري الأوّل الصافي من حلقة كالفن.
 
-**الشاهد من الكتاب:**
-
-> أما التفاعلات اللاضوئية (حلقة كالفن) فإنها تقوم بتثبيت ثاني أكسيد الكربون CO₂ باستخدام نواتج التفاعلات الضوئية (ATP وNADPH) لإنتاج سكر غليسر الدهايد أحادي الفوسفات (G3P)، الذي يمثل الهيكل الكربوني للمركبات العضوية، وهو أول مركب كربوهيدراتي ثابت ينتجه النبات.
-
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 13](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=17).
 
 
 
@@ -318,9 +320,6 @@ explanation:
 
 
 إذن يلزم **48 جزيء ماء**، وفق توفير NADPH من المسار اللاحلقي كما يفترض السؤال.
-
-**المصدر:** الصفحات 7، 8، 9 من الكتاب.
-
 hint: اقرأ السؤال وقارن بين البدائل الأصلية.
 :::
 
@@ -357,9 +356,6 @@ ATP المستهلك في الاختزال:
 
 
 إذن المستهلك **180 جزيء ATP**؛ ولا نضيف ATP مرحلة تجديد المستقبل.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -387,9 +383,6 @@ solution:
 
 
 الناتج **30 جزيء G3P نهائياً**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -424,9 +417,6 @@ G3P ثلاثي الكربون، والغلوكوز سداسي الكربون؛ �
 
 
 الناتج **15 جزيء غلوكوز**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -462,9 +452,6 @@ ATP المطلوب:
 
 
 إذن المستهلك **90 جزيء ATP**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -487,14 +474,17 @@ RuBP هو سكر خماسي الكربون يستقبل CO₂ في بداية ا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>R</mi><mi>u</mi><mi>B</mi><mi>P</mi><mo>=</mo><mn>90</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>90</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>R</mi><mi>u</mi><mi>B</mi><mi>P</mi><mo>=</mo><mn>90</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>R</mi><mi>u</mi><mi>B</mi><mi>P</mi><mo>=</mo><mn>90</mn></mrow></math>
 \`\`\`
 
 
 يعاد تصنيع **90 جزيئاً من RuBP**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::mcq
@@ -513,7 +503,7 @@ explanation:
 
 > يتطلب حدوث التفاعلات الضوئية وجود الضوء، حيث ينشطر فيها الماء باستخدام الطاقة الضوئية إلى إلكترونين وأيوني هيدروجين التي تستخدم في اختزال نواقل الإلكترونات، والأكسجين الذي يتصاعد في الهواء الجوي. ويتم بواسطتها تحويل الطاقة الضوئية إلى طاقة مختزنة في ATP وNADPH.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -550,9 +540,6 @@ ATP لجزيئي غلوكوز:
 
 
 الإجابة **36 جزيء ATP**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -566,36 +553,35 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 - [ ] option-3 | 72
 - [x] option-4 | 144
 explanation:
-المعطى استهلاك 96NADPH، والمطلوب مجموع ATP المستهلك في الحلقة.
-NADPH حامل للإلكترونات والهيدروجين، وATP حامل للطاقة.
-في كل مجموعة تثبيت 3CO₂ تستهلك الحلقة 6NADPH، و6ATP للاختزال و3ATP لتجديد المستقبل:
+المعطى أن الحلقة استهلكت 96 جزيئًا من NADPH. المطلوب عدد جزيئات ATP المستهلكة. لكل مجموعة تثبيت ثلاثة جزيئات من ثاني أكسيد الكربون، تستخدم الحلقة 6 جزيئات NADPH في الاختزال، و6 جزيئات ATP في الاختزال و3 في تجديد المستقبل.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>9</mn></mrow></math>
+\`\`\`latex
+6+3=9
 \`\`\`
 
+نرمز لعدد جزيئات ATP المطلوبة بـ \\(x\\). نساوي نسبة ATP إلى NADPH في الحالة الكلية بالنسبة في المجموعة الواحدة.
 
-عدد المجموعات:
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>96</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>16</mn></mrow></math>
+\`\`\`latex
+\\frac{x}{96}=\\frac96
 \`\`\`
 
+بالضرب التبادلي، نضرب x في 6 ونضرب 96 في 9.
 
-مجموع ATP:
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>16</mn><mo>×</mo><mn>9</mn><mo>=</mo><mn>144</mn></mrow></math>
+\`\`\`latex
+6x=96\\times9
 \`\`\`
 
+نحسب حاصل الضرب، ثم نقسم الطرفين على 6 لعزل العدد المطلوب.
 
-الإجابة **144 جزيء ATP**.
+\`\`\`latex
+6x=864
+\`\`\`
 
-**المصدر:** صفحة 9 من الكتاب.
+\`\`\`latex
+x=\\frac{864}{6}=144
+\`\`\`
 
+إذن المستهلك **144 جزيئًا من ATP**.
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -623,28 +609,43 @@ G3P ثلاثي الكربون، والغلوكوز سداسي؛ لذلك يلز�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>9</mn><mo>=</mo><mn>36</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>9</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
 
 الحلقة تستهلك ATP، فلا تنتجه كما يقول البديل الأخير.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -664,7 +665,7 @@ explanation:
 
 > يتطلب حدوث التفاعلات الضوئية وجود الضوء، حيث ينشطر فيها الماء باستخدام الطاقة الضوئية إلى إلكترونين وأيوني هيدروجين التي تستخدم في اختزال نواقل الإلكترونات، والأكسجين الذي يتصاعد في الهواء الجوي. ويتم بواسطتها تحويل الطاقة الضوئية إلى طاقة مختزنة في ATP وNADPH.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -687,7 +688,7 @@ explanation:
 
 > توصل العلماء إلى أن الزيادة في كتلة النبات مصدرها ثاني أكسيد الكربون CO₂، الذي يتحول إلى سكر الغلوكوز في عملية البناء الضوئي، وأن الأكسجين الناتج مصدره الماء.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -711,13 +712,19 @@ ATP مصدر للطاقة والفوسفات، وNADPH مصدر للإلكترو
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>9</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>6</mn><mo>+</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>9</mn></mrow></math>
 \`\`\`
 
 
 إذن المستهلك **9ATP و6NADPH**، وهو الخيار الثالث.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -743,9 +750,6 @@ explanation:
 
 
 الإجابة **18 جزيء CO₂**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -766,21 +770,30 @@ ATP حامل للطاقة؛ لكل جزيء نهائي تستهلك الحلقة
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>10</mn><mo>×</mo><mn>9</mn><mo>=</mo><mn>90</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>10</mn><mo>×</mo><mn>9</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>90</mn></mrow></math>
 \`\`\`
 
 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>10</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>30</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>10</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>30</mn></mrow></math>
 \`\`\`
 
 
 الإجابة **90ATP و30CO₂**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -800,7 +813,7 @@ explanation:
 
 > ويعمل مركب NADPH على اختزال حمض غليسرين ثنائي الفوسفات إلى غليسر الدهايد أحادي الفوسفات Glyceraldehyde 3-Phosphat أو اختصاراً G3P، حيث تتكون ستة جزيئات منه.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -833,7 +846,7 @@ explanation:
 إذن الفراغان هما **2e⁻ و2H⁺**، وهو الخيار الرابع.
 وإذا حذفنا H⁺ المشترك من الطرفين، نرى أن الاستهلاك الصافي بروتون واحد.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 example:
@@ -871,9 +884,6 @@ explanation:
 
 
 الإجابة **12 جزيء CO₂**.
-
-**المصدر:** الصفحات 7، 8، 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -892,7 +902,7 @@ explanation:
 
 ينص الكتاب على أن تفاعلات حلقة كالفن تحدث في ستروما البلاستيدة.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -921,14 +931,17 @@ G3P سكر ثلاثي الكربون. لكل جزيء نهائي تحتاج مر
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>=</mo><mn>72</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>72</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>=</mo><mn>72</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>=</mo><mn>72</mn></mrow></math>
 \`\`\`
 
 
 إذن يلزم **72 جزيء ماء** وفق توفير NADPH من المسار اللاحلقي.
-
-**المصدر:** الصفحات 7، 8، 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -948,7 +961,7 @@ explanation:
 
 > مركز التفاعل Reaction Center: نظام بروتيني يحتوي على جزيئين من كلوروفيل a، ومستقبل إلكتروني أولي Primary Electron Acceptor. ويكون جزيئا الكلوروفيل في مركز التفاعل قادرين على إطلاق إلكترونات منشطة.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6).
 
 
 
@@ -971,7 +984,7 @@ explanation:
 
 > وتعمل أصباغ كلوروفيل a وكلوروفيل b والكاروتين على امتصاص موجات الضوء الحمراء والزرقاء بكميات كبيرة، بينما تمتص أصباغ أخرى الموجات الضوئية بكميات قليلة.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6).
 
 
 
@@ -994,7 +1007,7 @@ explanation:
 
 > يتطلب حدوث التفاعلات الضوئية وجود الضوء، حيث ينشطر فيها الماء باستخدام الطاقة الضوئية إلى إلكترونين وأيوني هيدروجين التي تستخدم في اختزال نواقل الإلكترونات، والأكسجين الذي يتصاعد في الهواء الجوي. ويتم بواسطتها تحويل الطاقة الضوئية إلى طاقة مختزنة في ATP وNADPH.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -1017,14 +1030,17 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>18</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>9</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>18</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>9</mn></mrow></math>
 \`\`\`
 
 
 الإجابة **9 جزيئات O₂**، بافتراض أن NADPH المستهلك وفره المسار اللاحلقي.
-
-**المصدر:** الصفحات 7، 8، 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1044,7 +1060,7 @@ explanation:
 
 > مركز التفاعل Reaction Center: نظام بروتيني يحتوي على جزيئين من كلوروفيل a، ومستقبل إلكتروني أولي Primary Electron Acceptor. ويكون جزيئا الكلوروفيل في مركز التفاعل قادرين على إطلاق إلكترونات منشطة.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6).
 
 
 
@@ -1067,23 +1083,23 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 إذن الخيار الصحيح **12NADPH**.
 ولا يلزم4G3P أو9CO₂ أو24ATP؛ فالمقادير الموافقة لغلوكوز واحد هي2G3P و6CO₂ و18ATP.
 
-**المصدر:** صفحة 9 من الكتاب.
 
 **شاهد القاعدة أو السياق من الكتاب:**
 
 > المرحلة الأولى: تثبيت الكربون؛ المرحلة الثانية: الاختزال؛ المرحلة الثالثة: إعادة تصنيع مستقبل CO₂؛ رايبولوز ثنائي الفوسفات (RuBP)؛ حمض غليسرين أحادي الفوسفات؛ حمض غليسرين ثنائي الفوسفات؛ غليسر الدهايد أحادي الفوسفات (G3P).
-
-**المصدر:** صفحة 9 من الكتاب.
-
-
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1103,7 +1119,7 @@ explanation:
 
 > تستمر الإلكترونات في انتقالها من ناقل لآخر في سلسلة نقل الإلكترون، حيث تمر في عمليات أكسدة واختزال؛ حتى تصل إلى إنزيم مختزل NADP⁺ في النظام الضوئي الأول. وبالتالي يختزل NADP⁺ إلى NADPH.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -1126,7 +1142,7 @@ explanation:
 
 > ويدخل الكربون حلقة كالفن على شكل CO₂ ويغادرها على شكل سكر. ولتشغيل الحلقة يتم استهلاك جزيئات ATP كمصدر للطاقة، وNADPH كعامل اختزال قوي يضيف إلكترونات ذات طاقة عالية وأيونات هيدروجين لصنع جزيئات السكر.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -1149,14 +1165,17 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>6</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>6</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
 الإجابة **3 جزيئات O₂**.
-
-**المصدر:** الصفحات 7، 8 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1176,7 +1195,7 @@ explanation:
 
 > بعد ذلك تصل الإلكترونات إلى مركز التفاعل في النظام الضوئي الأول وقد استنفدت طاقتها؛ ليتم إعادة تنشيطها من جديد من خلال الجزيئات الصبغية في النظام الضوئي الأول، والتي تمتص الموجات الضوئية؛ مما يتسبب في انتقال الإلكترونات إلى المستقبل الأولي.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -1221,9 +1240,6 @@ G3P ثلاثي الكربون، وRuBP خماسي الكربون ويعمل مس
 
 
 الإجابة **15 جزيء G3P**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1273,7 +1289,13 @@ NADPH حامل للإلكترونات يزوّد بناء السكر بالقد�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">G</mi><mn>3</mn><mi mathvariant="normal">P</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">G</mi><mn>3</mn><mi mathvariant="normal">P</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">G</mi><mn>3</mn><mi mathvariant="normal">P</mi></mrow></msub><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -1281,15 +1303,18 @@ NADPH حامل للإلكترونات يزوّد بناء السكر بالقد�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">A</mi><mi mathvariant="normal">D</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">H</mi></mrow></msub><mo>=</mo><mn>4</mn><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">A</mi><mi mathvariant="normal">D</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">H</mi></mrow></msub><mo>=</mo><mn>4</mn><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">A</mi><mi mathvariant="normal">D</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">H</mi></mrow></msub><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة:24 جزيئاً من NADPH، الخيار الثاني، وفق معادلة الكتاب غير المختصرة.
-
-**المصدر:** الصفحات 5، 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1309,7 +1334,7 @@ explanation:
 
 > تصل الإلكترونات إلى مركز التفاعل في النظام الضوئي الأول، وتكون قد استنفدت طاقتها؛ ليتم إعادة تنشيطها من خلال الأصباغ التي تمتص الطاقة الضوئية، ومن ثم تنتقل إلى المستقبل الأولي في النظام الضوئي الأول، ثم إلى سلسلة نقل الإلكترون التي تربط بين النظامين الضوئيين؛ ليتم إنتاج جزيئات حاملات الطاقة ATP فقط.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -1332,7 +1357,7 @@ explanation:
 
 > نتيجة لاستمرار امتصاص الضوء يعمل إنزيم خاص في النظام الضوئي الثاني على فصل جزيئات الماء حسب المعادلة الآتية: H₂O → 2H⁺ + ½O₂ + 2e⁻.
 
-**المصدر:** صفحة 7 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 7](https://moe.edu.ps/m/4061#page=7).
 
 
 
@@ -1340,7 +1365,7 @@ explanation:
 
 > وبالتالي تزويد مركز تفاعل النظام الضوئي الثاني بالإلكترونات واحداً تلو الآخر، وترتبط ذرات الأكسجين معاً مكونة جزيئات أكسجين، حيث تنطلق إلى الجو كناتج نهائي عن البناء الضوئي.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -1363,7 +1388,7 @@ explanation:
 
 > توصل العلماء إلى أن الزيادة في كتلة النبات مصدرها ثاني أكسيد الكربون CO₂، الذي يتحول إلى سكر الغلوكوز في عملية البناء الضوئي، وأن الأكسجين الناتج مصدره الماء.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 6](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=10).
 
 
 
@@ -1386,7 +1411,7 @@ explanation:
 
 ![الشكل الأصلي المعتمد في السؤال](assets/lessons/curriculum-evidence/f02ef04c3c209b82956f.webp)
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 example:
@@ -1424,9 +1449,6 @@ G3P ثلاثي الكربون والغلوكوز سداسي؛ فيلزم جزي�
 
 الإجابة **4 جزيئات غلوكوز**.
 استخدمنا6ATP لكل مجموعة، لأن9ATP تشمل طاقة تجديد المستقبل أيضاً، وهي خارج المعطى.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1469,7 +1491,7 @@ explanation:
 
 > تستمر الإلكترونات في انتقالها من ناقل لآخر في سلسلة نقل الإلكترون، حيث تمر في عمليات أكسدة واختزال؛ حتى تصل إلى إنزيم مختزل NADP⁺ في النظام الضوئي الأول. وبالتالي يختزل NADP⁺ إلى NADPH.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -1501,9 +1523,6 @@ G3P سكر ثلاثي الكربون؛ في مجموعة تثبيت3CO₂ تتك
 
 
 الناتج **4 جزيئات G3P نهائياً**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1539,9 +1558,6 @@ ATP حامل للطاقة، وNADPH حامل للإلكترونات والهيد
 
 
 المستهلك **24 جزيء NADPH**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1576,9 +1592,6 @@ solution:
 
 
 المستهلك **12 جزيء CO₂**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1614,9 +1627,6 @@ solution:
 
 
 الناتج **جزيئان من الغلوكوز**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1662,7 +1672,7 @@ solution:
 
 > نظام ضوئي ثاني؛ نظام ضوئي أول؛ ATP؛ NADPH؛ H₂O؛ ½O₂.
 
-**المصدر:** صفحة 7 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 7](https://moe.edu.ps/m/4061#page=7).
 
 ![المخطط الأصلي الداعم للمقارنة](assets/lessons/curriculum-evidence/e50583846ced7cc6672e.webp)
 
@@ -1670,7 +1680,7 @@ solution:
 
 > ليتم إنتاج جزيئات حاملات الطاقة ATP فقط.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 ![المخطط الأصلي الداعم للمقارنة](assets/lessons/curriculum-evidence/160c7f6a0580a78ddec8.webp)
 
@@ -1695,7 +1705,7 @@ solution:
 
 > يتم تثبيت ثلاثة جزيئات CO₂ واحداً تلو الآخر، وذلك من خلال ربط كل جزيء بمركب خماسي الكربون يسمى رايبولوز ثنائي الفوسفات RuBP، بواسطة إنزيم يدعى اختصاراً روبيسكو RuBisCo، فينتج ثلاثة جزيئات من مركب نشط (سداسي الكربون) غير ثابت، سرعان ما ينشطر تلقائياً إلى جزيئين من حمض غليسرين أحادي الفوسفات.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -1726,14 +1736,20 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">G</mi><mn>3</mn><mi mathvariant="normal">P</mi><mo separator="true">,</mo><mi mathvariant="normal">f</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi></mrow></msub><mo>=</mo><mn>4</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">G</mi><mn>3</mn><mi mathvariant="normal">P</mi><mo separator="true">,</mo><mi mathvariant="normal">f</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi></mrow></msub><mo>=</mo><mn>4</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">G</mi><mn>3</mn><mi mathvariant="normal">P</mi><mo separator="true">,</mo><mi mathvariant="normal">f</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi></mrow></msub><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة المنهجية:4 جزيئات G3P نهائية، وفق طريقة عدّ الحلقة في المخطط.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 :::
 
@@ -1759,29 +1775,35 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>9</mn><mo>=</mo><mn>18</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>9</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>18</mn></mrow></math>
 \`\`\`
 
 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 إذن اللازم **18ATP و12NADPH**؛ فكلفة الجزيء الواحد لا تتغير بعدد مرات الحلقة المذكور.
 
-**المصدر:** صفحة 9 من الكتاب.
 
 **شاهد القاعدة أو السياق من الكتاب:**
 
 > المرحلة الأولى: تثبيت الكربون؛ المرحلة الثانية: الاختزال؛ المرحلة الثالثة: إعادة تصنيع مستقبل CO₂؛ رايبولوز ثنائي الفوسفات (RuBP)؛ حمض غليسرين أحادي الفوسفات؛ حمض غليسرين ثنائي الفوسفات؛ غليسر الدهايد أحادي الفوسفات (G3P).
-
-**المصدر:** صفحة 9 من الكتاب.
-
-
-
 :::
 
 :::exam-question
@@ -1806,7 +1828,7 @@ solution:
 
 > يتم تثبيت ثلاثة جزيئات CO₂ واحداً تلو الآخر
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -1814,7 +1836,7 @@ solution:
 
 > وينتج جزيئان من ثاني أكسيد الكربون وجزيء ATP
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -1838,7 +1860,7 @@ solution:
 يمنح NADPH هذا المركب الإلكترونات والهيدروجين، فيُختزل إلى G3P.
 لكل 3 CO₂ مثبتة تعالج المرحلة 6 جزيئات من الحمض وتستهلك 6 ATP و6 NADPH، وتنتج 6 G3P كلياً.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 :::
 
@@ -1867,9 +1889,6 @@ solution:
 
 
 الناتج **5 جزيئات G3P نهائياً**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1899,15 +1918,18 @@ NADPH حامل للإلكترونات والهيدروجين؛ يختزل كل �
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>=</mo><mn>36</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>36</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>=</mo><mn>36</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
 
 إذن يُشطر **36 جزيء ماء** لتوفير هذه الحوامل، وفق ترابط المرحلتين.
 لم نضرب36 في6؛ لأن المعطى G3P كلي، وليس G3P نهائياً يغادر الحلقة.
-
-**المصدر:** الصفحات 7، 8، 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1936,9 +1958,6 @@ solution:
 
 المثبت **18 جزيء CO₂**.
 المعطى كلي، فلا نستخدم نسبة CO₂ إلىG3P النهائي.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1974,9 +1993,6 @@ ATP المستهلك للتجديد:
 
 
 الإجابة **18 جزيء ATP**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1998,14 +2014,17 @@ NADPH يمنح الإلكترونات والهيدروجين؛ ويحتاج تح
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>36</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>36</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>36</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
 
 المستهلك **36 جزيء NADPH**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::mcq
@@ -2037,9 +2056,6 @@ RuBP هو المستقبل الخماسي لـCO₂؛ تعيد مرحلة الت
 
 
 إذن الإجابة **9ATP**، ولا يستهلك NADPH في مرحلة التجديد.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -2059,14 +2075,17 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>24</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>24</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 الإجابة **12 جزيء CO₂**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -2096,7 +2115,7 @@ solution:
 (3) السيتوكرومات: تقع في سلسلة النواقل بين النظامين، ويرتبط انتقال الإلكترونات خلالها بإنتاج ATP.
 (4) إنزيم مختزل NADP⁺: يقع عند نهاية المسار، قبل ناتج NADPH.
 
-**المصدر:** صفحة 7 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 7](https://moe.edu.ps/m/4061#page=7).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/a201ef2f5b0c2727e48a.webp)
 
@@ -2125,7 +2144,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -2133,14 +2158,17 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
 إذن عند **5 جزيئان O₂، وعند6 أربعة جزيئات NADPH**.
-
-**المصدر:** الصفحات 7، 8 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2164,7 +2192,7 @@ solution:
 
 ![الشكل الأصلي المعتمد في السؤال](assets/lessons/curriculum-evidence/902263ee6454747343fc.webp)
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 :::
 
@@ -2189,7 +2217,7 @@ solution:
 ثانياً يمنح NADPH المركبَ الإلكترونات والهيدروجين فيتحول إلى G3P.
 لكل 3 CO₂ تتكون 6 G3P كلياً، وتُستهلك 6 ATP و6 NADPH في هذه المرحلة.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 :::
 
@@ -2212,7 +2240,7 @@ solution:
 
 > ويعمل مركب NADPH على اختزال حمض غليسرين ثنائي الفوسفات إلى غليسر الدهايد أحادي الفوسفات Glyceraldehyde 3-Phosphat أو اختصاراً G3P، حيث تتكون ستة جزيئات منه.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -2238,7 +2266,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>24</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>24</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
@@ -2247,22 +2281,31 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>24</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>24</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>24</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>24</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
 إذن المقادير **12CO₂ مثبتة سابقاً، و24ATP و24NADPH لمرحلة الاختزال**.
 ATP المذكور يخص المرحلة كاملة، ولا يشمل طاقة تجديد المستقبل؛ كما أنه استُهلك قبل خطوة تحويل ثنائي الفوسفات إلىG3P نفسها.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2300,14 +2343,17 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>R</mi><mi>u</mi><mi>B</mi><mi>P</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>R</mi><mi>u</mi><mi>B</mi><mi>P</mi><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>R</mi><mi>u</mi><mi>B</mi><mi>P</mi><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 إذن يعاد تصنيع **12 جزيئاً منRuBP**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2342,9 +2388,6 @@ G3P سكر ثلاثي الكربون، وRuBP مستقبل خماسي الكرب
 
 
 تساوي العددين يوضح حفظ الكربون، وتجديد المستقبل ليستمر تثبيت CO₂.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2366,7 +2409,7 @@ solution:
 
 > رايبولوز ثنائي الفوسفات (RuBP)
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -2388,7 +2431,7 @@ solution:
 لأن NADPH يمنح مركبات الكربون إلكترونات عالية الطاقة وأيونات هيدروجين.
 اكتساب المركب لهذه الإلكترونات هو اختزال؛ فتتحول مركبات الكربون إلى G3P المستخدم في بناء السكريات.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 :::
 
@@ -2425,9 +2468,6 @@ NADPH اللازم لغلوكوز واحد:
 
 
 الناتج **4 جزيئات غلوكوز**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2449,7 +2489,7 @@ solution:
 
 > تسمى هذه التفاعلات حلقة كالفن Calvin Cycle نسبة إلى مكتشفها، وتحدث هذه التفاعلات في ستروما البلاستيدة حيث توجد الإنزيمات اللازمة لها، ودون الحاجة للضوء، ويتم فيها استخدام الطاقة المختزنة في نواتج التفاعلات الضوئية ATP وNADPH.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -2494,9 +2534,6 @@ solution:
 
 
 إذن المستهلك **27 جزيء ATP**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2520,7 +2557,7 @@ solution:
 
 > إنزيم بناء ATP
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -2528,7 +2565,7 @@ solution:
 
 > تستمر الإلكترونات في انتقالها من ناقل لآخر في سلسلة نقل الإلكترون، حيث تمر في عمليات أكسدة واختزال؛ حتى تصل إلى إنزيم مختزل NADP⁺ في النظام الضوئي الأول. وبالتالي يختزل NADP⁺ إلى NADPH.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -2536,7 +2573,7 @@ solution:
 
 > يتم تثبيت ثلاثة جزيئات CO₂ واحداً تلو الآخر، وذلك من خلال ربط كل جزيء بمركب خماسي الكربون يسمى رايبولوز ثنائي الفوسفات RuBP، بواسطة إنزيم يدعى اختصاراً روبيسكو RuBisCo، فينتج ثلاثة جزيئات من مركب نشط (سداسي الكربون) غير ثابت، سرعان ما ينشطر تلقائياً إلى جزيئين من حمض غليسرين أحادي الفوسفات.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -2563,7 +2600,7 @@ solution:
 
 > تصل الإلكترونات إلى مركز التفاعل في النظام الضوئي الأول، وتكون قد استنفدت طاقتها؛ ليتم إعادة تنشيطها من خلال الأصباغ التي تمتص الطاقة الضوئية، ومن ثم تنتقل إلى المستقبل الأولي في النظام الضوئي الأول، ثم إلى سلسلة نقل الإلكترون التي تربط بين النظامين الضوئيين؛ ليتم إنتاج جزيئات حاملات الطاقة ATP فقط.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -2590,7 +2627,7 @@ solution:
 (أ) السيتوكرومات؛ فهي في مستطيل سلسلة النقل عند الجزء المرتبط بإنتاج ATP.
 (ب) النظام الضوئي الأول؛ وهو النظام الفعّال الذي تخرج منه الإلكترونات ثم تعود إليه في المسار الحلقي.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/1a7c2bca175724175d7b.webp)
 
@@ -2641,7 +2678,7 @@ solution:
 
 > تمر هذه الإلكترونات المحملة بالطاقة إلى مستقبل الإلكترونات الأولي، الذي له جاذبية قوية للإلكترونات.
 
-**المصدر:** صفحة 7 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 7](https://moe.edu.ps/m/4061#page=7).
 
 
 
@@ -2668,7 +2705,7 @@ solution:
 (1) تثبيت الكربون؛ تقع عند دخول CO₂ وارتباطه بالمركب خماسي الكربون.
 (2) الاختزال؛ تقع بعد تكوّن المركبات ثلاثية الكربون وقبل خروج G3P، حيث تُستهلك طاقة ATP وإلكترونات NADPH لتكوين السكر.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/2b526c1509ade49a0046.webp)
 
@@ -2695,7 +2732,7 @@ solution:
 
 > يتم تثبيت ثلاثة جزيئات CO₂ واحداً تلو الآخر، وذلك من خلال ربط كل جزيء بمركب خماسي الكربون يسمى رايبولوز ثنائي الفوسفات RuBP، بواسطة إنزيم يدعى اختصاراً روبيسكو RuBisCo، فينتج ثلاثة جزيئات من مركب نشط (سداسي الكربون) غير ثابت، سرعان ما ينشطر تلقائياً إلى جزيئين من حمض غليسرين أحادي الفوسفات.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -2716,22 +2753,29 @@ body:
 final-answer:
 **108 جزيئات من ATP.**
 solution:
-ATP حامل للطاقة. كل3 CO₂ تحتاج6 ATP في الاختزال و3 في تجديد المستقبل، أي9 في مجمل كالفن.
+المعطى تثبيت 36 جزيئًا من ثاني أكسيد الكربون. نحسب جزيئات ATP المستهلكة في جميع مراحل حلقة كالفن.
 
 ![الشكل الأصلي المعتمد في السؤال](assets/lessons/curriculum-evidence/0b9c953390d4a70ea012.webp)
 
+لكل مجموعة تثبّت ثلاثة جزيئات من ثاني أكسيد الكربون. نقسم العدد الكلي على ثلاثة لحساب عدد المجموعات.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>3</mn><mo>=</mo><mn>12</mn><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mo stretchy="false">(</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>108</mn></mrow></math>
+\`\`\`latex
+N_{\\mathrm{groups}}=\\frac{36}{3}=12
 \`\`\`
 
+تستهلك المجموعة الواحدة 6 جزيئات ATP في الاختزال و3 في تجديد المستقبل. نجمع استهلاك المرحلتين.
 
+\`\`\`latex
+N_{\\mathrm{ATP,\\,per\\,group}}=6+3=9
+\`\`\`
 
-المستهلك108 ATP في مجمل الحلقة.
+نضرب استهلاك المجموعة الواحدة في عدد المجموعات التي حسبناها.
 
-**المصدر:** الصفحات 9، 10 من الكتاب.
+\`\`\`latex
+N_{\\mathrm{ATP}}=12\\times9=108
+\`\`\`
 
+إذن تُستهلك **108 جزيئات ATP**.
 :::
 
 :::exam-question
@@ -2759,7 +2803,7 @@ solution:
 (3) المستقبل الإلكتروني الأولي؛ يقع فوق مركز التفاعل ويستقبل الإلكترونات المنشطة.
 (4) إنزيم مختزل NADP⁺؛ يقع قبل ناتج NADPH مباشرة.
 
-**المصدر:** صفحة 7 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 7](https://moe.edu.ps/m/4061#page=7).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/a201ef2f5b0c2727e48a.webp)
 
@@ -2787,15 +2831,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج جزيئان منO₂.
-
-**المصدر:** الصفحات 7، 8، 10 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2820,15 +2867,18 @@ NADPH حامل الإلكترونات والهيدروجين المستخدم ف
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>1</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow></math>
 \`\`\`
 
 
 
 الناتجG3P نهائي واحد، بافتراض توافرATP وCO₂ اللازمين أيضاً.
-
-**المصدر:** الصفحات 9، 10 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2852,7 +2902,7 @@ solution:
 (1) حمض غليسرين أحادي الفوسفات؛ الرقم يشير إلى نواتج التثبيت الستة، وكل منها ثلاثي الكربون.
 (2) رايبولوز ثنائي الفوسفات RuBP؛ الرقم يشير إلى مستقبل CO₂ الذي تعيد الحلقة تصنيعه، وهو خماسي الكربون.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/2b526c1509ade49a0046.webp)
 
@@ -2873,22 +2923,29 @@ body:
 final-answer:
 **36 جزيئاً من ADP.**
 solution:
-ATP حامل للطاقة؛ وعندما يمنح الفوسفات والطاقة يتحول إلىADP. كل3 CO₂ تحتاج6 ATP للاختزال و3 لتجديد المستقبل، أي9 في الحلقة.
+المعطى 12 جزيئًا من ثاني أكسيد الكربون. نريد عدد جزيئات ADP الناتجة في حلقة كالفن.
 
 ![الشكل الأصلي المعتمد في السؤال](assets/lessons/curriculum-evidence/1e42ae35a7d6c167f22a.webp)
 
+تثبّت المجموعة الواحدة 3 جزيئات من ثاني أكسيد الكربون. نقسم العدد المعطى على ثلاثة.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>12</mn><mo>÷</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>D</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn></mrow></math>
+\`\`\`latex
+N_{\\mathrm{groups}}=\\frac{12}{3}=4
 \`\`\`
 
+تستهلك كل مجموعة 6 جزيئات ATP للاختزال و3 لتجديد المستقبل. نجمع العددين.
 
+\`\`\`latex
+N_{\\mathrm{ATP,\\,per\\,group}}=6+3=9
+\`\`\`
 
-إذن ينتج36 ADP.
+نضرب عدد المجموعات في استهلاك المجموعة الواحدة.
 
-**المصدر:** الصفحات 9، 11 من الكتاب.
+\`\`\`latex
+N_{\\mathrm{ATP}}=4\\times 9=36
+\`\`\`
 
+يتحوّل كل جزيء ATP مستهلك في حساب المسألة إلى جزيء ADP واحد. إذن ينتج **36 جزيئًا من ADP**.
 :::
 
 :::exam-question
@@ -2906,22 +2963,23 @@ body:
 final-answer:
 **36 جزيئاً من NADPH.**
 solution:
-NADPH حامل الإلكترونات والهيدروجين. يحتاج غليسرألدهيد أحادي الفوسفات (G3P) النهائي، وهو سكر ثلاثي الكربون،6 NADPH؛ والغلوكوز السداسي يحتاج جزيئين نهائيين.
+المطلوب عدد جزيئات NADPH اللازمة لإنتاج ثلاثة جزيئات غلوكوز.
 
 ![الشكل الأصلي المعتمد في السؤال](assets/lessons/curriculum-evidence/1e42ae35a7d6c167f22a.webp)
 
+كل جزيء غلوكوز سداسي الكربون، فنحتاج إلى جزيئين صافيين من G3P، وفي كل منهما ثلاث ذرات كربون. نضرب عدد جزيئات الغلوكوز في عدد جزيئات G3P اللازمة للجزيء الواحد.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>12</mn><mo>=</mo><mn>36</mn></mrow></math>
+\`\`\`latex
+N_{\\mathrm{G3P}}=3\\times 2=6
 \`\`\`
 
+تستهلك الحلقة 6 جزيئات NADPH لكل جزيء صافٍ من G3P. نضرب العدد الكلي من G3P في 6.
 
+\`\`\`latex
+N_{\\mathrm{NADPH}}=6\\times6=36
+\`\`\`
 
-المستهلك لإنتاج ثلاثة غلوكوز36 NADPH.
-
-**المصدر:** الصفحات 9، 11 من الكتاب.
-
+إذن المستهلك **36 جزيئًا من NADPH**.
 :::
 
 :::exam-question
@@ -2941,7 +2999,7 @@ solution:
 
 > مركز التفاعل Reaction Center: نظام بروتيني يحتوي على جزيئين من كلوروفيل a، ومستقبل إلكتروني أولي Primary Electron Acceptor. ويكون جزيئا الكلوروفيل في مركز التفاعل قادرين على إطلاق إلكترونات منشطة.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6).
 
 
 
@@ -2964,7 +3022,7 @@ solution:
 
 > يتطلب حدوث التفاعلات الضوئية وجود الضوء، حيث ينشطر فيها الماء باستخدام الطاقة الضوئية إلى إلكترونين وأيوني هيدروجين التي تستخدم في اختزال نواقل الإلكترونات، والأكسجين الذي يتصاعد في الهواء الجوي. ويتم بواسطتها تحويل الطاقة الضوئية إلى طاقة مختزنة في ATP وNADPH.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -3020,7 +3078,7 @@ solution:
 لأن الكلوروفيل يمتص موجات الأزرق والأحمر بكفاءة أكبر، بينما يكون امتصاص الأخضر قليلاً.
 ينعكس جزء كبير من الضوء الأخضر أو ينفذ، فيصل إلى العين ويبدو النبات أخضر.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6).
 
 :::
 
@@ -3052,10 +3110,8 @@ solution:
 
 إذن يحتوي المركب على **6 ذرات كربون**.
 
-**المصدر:** صفحة 9 من الكتاب.
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/2b526c1509ade49a0046.webp)
-
 :::
 
 :::exam-question
@@ -3086,10 +3142,8 @@ solution:
 
 إذن يحتوي على **مجموعتي فوسفات**.
 
-**المصدر:** صفحة 9 من الكتاب.
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/2b526c1509ade49a0046.webp)
-
 :::
 
 :::exam-question
@@ -3114,15 +3168,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mn>3</mn><mi>P</mi><mi>G</mi><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mn>3</mn><mi>P</mi><mi>G</mi><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mn>3</mn><mi>P</mi><mi>G</mi><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج12 جزيئاً من حمض غليسرين أحادي الفوسفات، ورمزه3PGA.
-
-**المصدر:** الصفحات 9، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3147,15 +3204,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
 
 المطلوب24 NADPH.
-
-**المصدر:** الصفحات 9، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3179,7 +3239,7 @@ solution:
 
 > يتم تثبيت ثلاثة جزيئات CO₂ واحداً تلو الآخر، وذلك من خلال ربط كل جزيء بمركب خماسي الكربون يسمى رايبولوز ثنائي الفوسفات RuBP، بواسطة إنزيم يدعى اختصاراً روبيسكو RuBisCo، فينتج ثلاثة جزيئات من مركب نشط (سداسي الكربون) غير ثابت، سرعان ما ينشطر تلقائياً إلى جزيئين من حمض غليسرين أحادي الفوسفات.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -3204,7 +3264,7 @@ solution:
 
 > يتم امتصاص الضوء في البلاستيدات بواسطة صبغة الكلوروفيل، والصبغات الأخرى الضرورية لعملية البناء الضوئي. وتترتب هذه الأصباغ في نظامين ضوئيين وظيفيين في غشاء الثايلاكويد.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6).
 
 
 
@@ -3229,7 +3289,7 @@ solution:
 
 > نتيجة لاستمرار امتصاص الضوء يعمل إنزيم خاص في النظام الضوئي الثاني على فصل جزيئات الماء حسب المعادلة الآتية: H₂O → 2H⁺ + ½O₂ + 2e⁻.
 
-**المصدر:** صفحة 7 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 7](https://moe.edu.ps/m/4061#page=7).
 
 
 
@@ -3237,7 +3297,7 @@ solution:
 
 > وبالتالي تزويد مركز تفاعل النظام الضوئي الثاني بالإلكترونات واحداً تلو الآخر، وترتبط ذرات الأكسجين معاً مكونة جزيئات أكسجين، حيث تنطلق إلى الجو كناتج نهائي عن البناء الضوئي.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -3261,15 +3321,28 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msup><mi>e</mi><mo lspace="0em" rspace="0em">−</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>12</mn><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msup><mi>e</mi><mo lspace="0em" rspace="0em">−</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msup><mi>e</mi><mo lspace="0em" rspace="0em">−</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
+\`\`\`
+
+نقسم عدد الإلكترونات على اثنين، لأن تكوين جزيء NADPH واحد يحتاج إلكترونين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج6 NADPH.
-
-**المصدر:** الصفحات 7، 8 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3290,15 +3363,18 @@ NADPH حامل الإلكترونات والهيدروجين. تثبيت3 CO₂ 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>18</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn></mrow></math>
 \`\`\`
 
 
 
 المثبت18 CO₂.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3319,15 +3395,28 @@ NADPH حامل الإلكترونات والهيدروجين. كل غليسرأ�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>12</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>12</mn></mrow></math>
+\`\`\`
+
+نقسم 36 جزيئًا من NADPH على احتياج جزيء غلوكوز واحد.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>12</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج3 جزيئات غلوكوز.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3348,15 +3437,18 @@ NADPH حامل الإلكترونات والهيدروجين، ويتطلب تك
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>36</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
 
 
 يُشطر36 ماء، بافتراض أن النواقل المستهلكة في كالفن تكوّنت في المسار اللاحلقي.
-
-**المصدر:** الصفحات 7، 8، 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3377,15 +3469,34 @@ NADPH حامل الإلكترونات والهيدروجين، وATP حامل ا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>6</mn><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mo stretchy="false">(</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>54</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب عدد المجموعات في عدد جزيئات ATP لكل مجموعة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mo stretchy="false">(</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>54</mn></mrow></math>
 \`\`\`
 
 
 
 المستهلك54 ATP في مجمل الحلقة.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3413,10 +3524,7 @@ solution:
 
 
 
-**المصدر:** صفحة 8 من الكتاب.
-
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/58bfe60ba23521752682.webp)
-
 :::
 
 :::exam-question
@@ -3436,7 +3544,7 @@ solution:
 
 > مركز التفاعل Reaction Center: نظام بروتيني يحتوي على جزيئين من كلوروفيل a، ومستقبل إلكتروني أولي Primary Electron Acceptor. ويكون جزيئا الكلوروفيل في مركز التفاعل قادرين على إطلاق إلكترونات منشطة.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 8](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=12).
 
 
 
@@ -3460,15 +3568,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>3</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج4 G3P نهائية.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3489,7 +3600,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>3</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -3499,15 +3616,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج جزيئان من الغلوكوز.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3528,15 +3648,30 @@ ATP حامل للطاقة. كل3 CO₂ تحتاج6 ATP للاختزال و3 لإ
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>12</mn><mo>÷</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>12</mn><mo>÷</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
 
 
 المستهلك الكلي36 ATP.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3557,15 +3692,24 @@ NADPH حامل الإلكترونات والهيدروجين. كل3 CO₂ تعط
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>12</mn><mo>÷</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mn>6</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>12</mn><mo>÷</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
 
 المستهلك24 NADPH.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3587,7 +3731,7 @@ solution:
 
 > يتم تثبيت ثلاثة جزيئات CO₂ واحداً تلو الآخر، وذلك من خلال ربط كل جزيء بمركب خماسي الكربون يسمى رايبولوز ثنائي الفوسفات RuBP، بواسطة إنزيم يدعى اختصاراً روبيسكو RuBisCo، فينتج ثلاثة جزيئات من مركب نشط (سداسي الكربون) غير ثابت، سرعان ما ينشطر تلقائياً إلى جزيئين من حمض غليسرين أحادي الفوسفات.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -3616,7 +3760,7 @@ solution:
 (2) ناقل للإلكترونات؛ ينقلها بين المستقبل الأولي والسيتوكرومات.
 (3) السيتوكرومات؛ تمر بها الإلكترونات قبل أن تعود إلى النظام الأول، وترتبط هذه السلسلة بإنتاج ATP.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/1a7c2bca175724175d7b.webp)
 
@@ -3643,7 +3787,7 @@ solution:
 
 > تصل الإلكترونات إلى مركز التفاعل في النظام الضوئي الأول، وتكون قد استنفدت طاقتها؛ ليتم إعادة تنشيطها من خلال الأصباغ التي تمتص الطاقة الضوئية، ومن ثم تنتقل إلى المستقبل الأولي في النظام الضوئي الأول، ثم إلى سلسلة نقل الإلكترون التي تربط بين النظامين الضوئيين؛ ليتم إنتاج جزيئات حاملات الطاقة ATP فقط.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -3670,7 +3814,7 @@ solution:
 
 > تصل الإلكترونات إلى مركز التفاعل في النظام الضوئي الأول، وتكون قد استنفدت طاقتها؛ ليتم إعادة تنشيطها من خلال الأصباغ التي تمتص الطاقة الضوئية، ومن ثم تنتقل إلى المستقبل الأولي في النظام الضوئي الأول، ثم إلى سلسلة نقل الإلكترون التي تربط بين النظامين الضوئيين؛ ليتم إنتاج جزيئات حاملات الطاقة ATP فقط.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -3691,7 +3835,23 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>3</mn><mo>=</mo><mn>4</mn><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+نضرب عدد المجموعات في ستة لحساب جزيئات NADPH.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
@@ -3701,15 +3861,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة24 جزيء ماء.
-
-**المصدر:** الصفحات 7، 8، 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -3728,15 +3891,18 @@ NADPH حامل الإلكترونات والهيدروجين، وعند منح �
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>12</mn><mo>÷</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mn>6</mn><mo>=</mo><mn>24</mn><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msup><mi>P</mi><mo lspace="0em" rspace="0em">+</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>12</mn><mo>÷</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mn>6</mn><mo>=</mo><mn>24</mn></mrow></math>
+\`\`\`
+
+كل جزيء NADPH مستهلك يقابله جزيء NADP⁺ ناتج.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msup><mi>P</mi><mo lspace="0em" rspace="0em">+</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة24 NADP⁺. تعطي الكمية غلوكوزين و24 جزيئاً من حمض غليسرين أحادي الفوسفات، وتستهلكATP ولا تنتجه.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -3756,7 +3922,7 @@ explanation:
 
 > مركز التفاعل Reaction Center: نظام بروتيني يحتوي على جزيئين من كلوروفيل a، ومستقبل إلكتروني أولي Primary Electron Acceptor. ويكون جزيئا الكلوروفيل في مركز التفاعل قادرين على إطلاق إلكترونات منشطة.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 8](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=12).
 
 
 
@@ -3779,7 +3945,7 @@ explanation:
 
 > مركز التفاعل Reaction Center: نظام بروتيني يحتوي على جزيئين من كلوروفيل a، ومستقبل إلكتروني أولي Primary Electron Acceptor. ويكون جزيئا الكلوروفيل في مركز التفاعل قادرين على إطلاق إلكترونات منشطة.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 8](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=12).
 
 
 
@@ -3802,7 +3968,7 @@ explanation:
 
 > أما التفاعلات اللاضوئية (حلقة كالفن) فإنها تقوم بتثبيت ثاني أكسيد الكربون CO₂ باستخدام نواتج التفاعلات الضوئية (ATP وNADPH) لإنتاج سكر غليسر الدهايد أحادي الفوسفات (G3P)، الذي يمثل الهيكل الكربوني للمركبات العضوية، وهو أول مركب كربوهيدراتي ثابت ينتجه النبات.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -3828,7 +3994,7 @@ solution:
 
 > مركز التفاعل Reaction Center: نظام بروتيني يحتوي على جزيئين من كلوروفيل a، ومستقبل إلكتروني أولي Primary Electron Acceptor. ويكون جزيئا الكلوروفيل في مركز التفاعل قادرين على إطلاق إلكترونات منشطة.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 8](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=12).
 
 
 
@@ -3854,7 +4020,7 @@ solution:
 
 > تصل الإلكترونات إلى مركز التفاعل في النظام الضوئي الأول، وتكون قد استنفدت طاقتها؛ ليتم إعادة تنشيطها من خلال الأصباغ التي تمتص الطاقة الضوئية، ومن ثم تنتقل إلى المستقبل الأولي في النظام الضوئي الأول، ثم إلى سلسلة نقل الإلكترون التي تربط بين النظامين الضوئيين؛ ليتم إنتاج جزيئات حاملات الطاقة ATP فقط.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -3862,7 +4028,7 @@ solution:
 
 > تستمر الإلكترونات في انتقالها من ناقل لآخر في سلسلة نقل الإلكترون، حيث تمر في عمليات أكسدة واختزال؛ حتى تصل إلى إنزيم مختزل NADP⁺ في النظام الضوئي الأول. وبالتالي يختزل NADP⁺ إلى NADPH.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -3888,7 +4054,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
@@ -3910,9 +4082,6 @@ ATP المستهلك في التجديد:
 
 
 إذن **الأولى: صفر ATP مباشرةً؛ والثالثة: 24 جزيئاً من ATP**.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3941,9 +4110,6 @@ solution:
 يتكون12 جزيئاً من حمض غليسرين أحادي الفوسفات.
 الاختزال: تدخل هذه الجزيئات الاثنا عشر مع 12 ATP و12 NADPH؛ فيمنح ATP الفوسفات، ويمنح NADPH الإلكترونات والهيدروجين، فيتكون 12 G3P كلياً.
 يخرج اثنان نهائياً لتكوين الغلوكوز، وتُستخدم عشرة لتجديد المستقبل.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3965,7 +4131,7 @@ solution:
 
 > مركز التفاعل Reaction Center: نظام بروتيني يحتوي على جزيئين من كلوروفيل a، ومستقبل إلكتروني أولي Primary Electron Acceptor. ويكون جزيئا الكلوروفيل في مركز التفاعل قادرين على إطلاق إلكترونات منشطة.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 8](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=12).
 
 
 
@@ -3990,7 +4156,7 @@ solution:
 
 > تصل الإلكترونات إلى مركز التفاعل في النظام الضوئي الأول، وتكون قد استنفدت طاقتها؛ ليتم إعادة تنشيطها من خلال الأصباغ التي تمتص الطاقة الضوئية، ومن ثم تنتقل إلى المستقبل الأولي في النظام الضوئي الأول، ثم إلى سلسلة نقل الإلكترون التي تربط بين النظامين الضوئيين؛ ليتم إنتاج جزيئات حاملات الطاقة ATP فقط.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -4015,7 +4181,7 @@ solution:
 
 > تسمى هذه التفاعلات حلقة كالفن Calvin Cycle نسبة إلى مكتشفها، وتحدث هذه التفاعلات في ستروما البلاستيدة حيث توجد الإنزيمات اللازمة لها، ودون الحاجة للضوء، ويتم فيها استخدام الطاقة المختزنة في نواتج التفاعلات الضوئية ATP وNADPH.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -4038,7 +4204,7 @@ solution:
 
 > يتم تثبيت ثلاثة جزيئات CO₂ واحداً تلو الآخر، وذلك من خلال ربط كل جزيء بمركب خماسي الكربون يسمى رايبولوز ثنائي الفوسفات RuBP، بواسطة إنزيم يدعى اختصاراً روبيسكو RuBisCo، فينتج ثلاثة جزيئات من مركب نشط (سداسي الكربون) غير ثابت، سرعان ما ينشطر تلقائياً إلى جزيئين من حمض غليسرين أحادي الفوسفات.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -4070,7 +4236,7 @@ solution:
 
 
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 :::
 
@@ -4093,7 +4259,7 @@ solution:
 
 > أنواع مختلفة من الصبغات، مثل: كلوروفيل a، وكلوروفيل b، والكاروتين، وتكون مرتبطة ببروتينات، وتعمل هذه الأصباغ كلاقطات تمتص الطاقة الضوئية، ومن ثم تمررها لمركز التفاعل.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6).
 
 
 
@@ -4119,15 +4285,28 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msup><mi>e</mi><mo lspace="0em" rspace="0em">−</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>10</mn><mi>n</mi><mo stretchy="false">(</mo><msup><mi>H</mi><mo lspace="0em" rspace="0em">+</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msup><mi>e</mi><mo lspace="0em" rspace="0em">−</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msup><mi>e</mi><mo lspace="0em" rspace="0em">−</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math>
+\`\`\`
+
+نضرب عدد جزيئات الماء في عدد البروتونات الناتجة من شطر جزيء واحد.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msup><mi>H</mi><mo lspace="0em" rspace="0em">+</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msup><mi>H</mi><mo lspace="0em" rspace="0em">+</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج10 إلكترونات و10 بروتوناتH⁺.
-
-**المصدر:** صفحة 7 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4149,7 +4328,7 @@ solution:
 
 > يتم تثبيت ثلاثة جزيئات CO₂ واحداً تلو الآخر، وذلك من خلال ربط كل جزيء بمركب خماسي الكربون يسمى رايبولوز ثنائي الفوسفات RuBP، بواسطة إنزيم يدعى اختصاراً روبيسكو RuBisCo، فينتج ثلاثة جزيئات من مركب نشط (سداسي الكربون) غير ثابت، سرعان ما ينشطر تلقائياً إلى جزيئين من حمض غليسرين أحادي الفوسفات.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -4175,7 +4354,7 @@ solution:
 
 > ويدخل الكربون حلقة كالفن على شكل CO₂ ويغادرها على شكل سكر. ولتشغيل الحلقة يتم استهلاك جزيئات ATP كمصدر للطاقة، وNADPH كعامل اختزال قوي يضيف إلكترونات ذات طاقة عالية وأيونات هيدروجين لصنع جزيئات السكر.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -4183,7 +4362,7 @@ solution:
 
 > أما التفاعلات اللاضوئية (حلقة كالفن) فإنها تقوم بتثبيت ثاني أكسيد الكربون CO₂ باستخدام نواتج التفاعلات الضوئية (ATP وNADPH) لإنتاج سكر غليسر الدهايد أحادي الفوسفات (G3P)، الذي يمثل الهيكل الكربوني للمركبات العضوية، وهو أول مركب كربوهيدراتي ثابت ينتجه النبات.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -4214,7 +4393,7 @@ solution:
 
 
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/58bfe60ba23521752682.webp)
 
@@ -4241,7 +4420,7 @@ solution:
 
 > يوجد الكلوروفيل في أغشية الثايلاكويد، الذي يكسب النبات اللون الأخضر، ويمكن النبات من القيام بعملية البناء الضوئي.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6).
 
 
 
@@ -4322,10 +4501,7 @@ solution:
 
 
 
-**المصدر:** صفحة 8 من الكتاب.
-
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/8e1715aee2e8feda012e.webp)
-
 :::
 
 :::exam-question
@@ -4355,7 +4531,7 @@ solution:
 (4) الأصباغ؛ الجزيئات التي تمتص الطاقة الضوئية داخل النظام.
 (5) المستقبل الإلكتروني الأولي؛ يستقبل الإلكترونات المنشطة من مركز التفاعل.
 
-**المصدر:** صفحة 7 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 7](https://moe.edu.ps/m/4061#page=7).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/a201ef2f5b0c2727e48a.webp)
 
@@ -4384,15 +4560,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
 
 إذن الناتج النهائي 4 جزيئات G3P، بافتراض توافر بقية متطلبات الحلقة.
-
-**المصدر:** الصفحات 9، 15 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4440,15 +4619,18 @@ G3P سكر ثلاثي الكربون، والعدد الكلي يشمل ما س�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>60</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج الكلي 60 جزيئاً من G3P.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4470,15 +4652,18 @@ NADPH حامل الإلكترونات والهيدروجين الذي يختزل
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>60</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn></mrow></math>
 \`\`\`
 
 
 
 المستهلك 60 NADPH.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4499,7 +4684,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>30</mn><mo>÷</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mn>6</mn><mo>=</mo><mn>60</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>30</mn><mo>÷</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn></mrow></math>
 \`\`\`
 
 
@@ -4509,15 +4706,24 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mspace width="2em"/><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>30</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn></mrow></math>
+\`\`\`
+
+نقسم عدد جزيئات الماء المشطورة على اثنين لحساب جزيئات الأكسجين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn></mrow></math>
 \`\`\`
 
 
 
 ينتج 30 O₂، بافتراض ترابط التفاعلات الضوئية مع استهلاك النواقل في كالفن.
-
-**المصدر:** الصفحات 7، 8، 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4539,7 +4745,7 @@ solution:
 
 > تسمى هذه التفاعلات حلقة كالفن Calvin Cycle نسبة إلى مكتشفها، وتحدث هذه التفاعلات في ستروما البلاستيدة حيث توجد الإنزيمات اللازمة لها، ودون الحاجة للضوء، ويتم فيها استخدام الطاقة المختزنة في نواتج التفاعلات الضوئية ATP وNADPH.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -4570,7 +4776,7 @@ solution:
 (هـ) النظام الضوئي الأول، وهو النظام الفعّال في هذا المسار.
 (ع) ATP، حامل الطاقة الناتج من انتقال الإلكترونات في الحلقة.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/1a7c2bca175724175d7b.webp)
 
@@ -4597,7 +4803,7 @@ solution:
 
 > تصل الإلكترونات إلى مركز التفاعل في النظام الضوئي الأول، وتكون قد استنفدت طاقتها؛ ليتم إعادة تنشيطها من خلال الأصباغ التي تمتص الطاقة الضوئية، ومن ثم تنتقل إلى المستقبل الأولي في النظام الضوئي الأول، ثم إلى سلسلة نقل الإلكترون التي تربط بين النظامين الضوئيين؛ ليتم إنتاج جزيئات حاملات الطاقة ATP فقط.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -4647,7 +4853,7 @@ solution:
 يمثل الشكل **التفاعلات اللاضوئية: حلقة كالفن**.
 تدخل CO₂ عند أعلى الرسم، وتُختزل مركبات الكربون إلى G3P، ويعود جزء منه لتجديد المستقبل RuBP؛ وهذه السمات تميّز الحلقة.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/2b526c1509ade49a0046.webp)
 
@@ -4674,17 +4880,23 @@ solution:
 يتكون المركب السداسي من RuBP ذي خمس ذرات كربون وذرة كربون من CO₂، ثم ينشطر إلى مركبين متساويين.
 
 
+نجمع العددين.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>÷</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>÷</mo><mn>2</mn><mo>=</mo><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo><mo>÷</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
 إذن يحتوي المركب (ص) على **3 ذرات كربون**.
 
-**المصدر:** صفحة 9 من الكتاب.
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/2b526c1509ade49a0046.webp)
-
 :::
 
 :::exam-question
@@ -4710,7 +4922,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -4720,15 +4938,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج 3 جزيئات غلوكوز.
-
-**المصدر:** الصفحات 9، 16 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4780,15 +5001,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>48</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>48</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>48</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>48</mn></mrow></math>
 \`\`\`
 
 
 
 المطلوب 48 NADPH.
-
-**المصدر:** الصفحات 9، 16 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4831,7 +5055,7 @@ solution:
 (س) السيتوكرومات؛ تقع في سلسلة النقل بين النظامين الضوئيين.
 (ص) إنزيم مختزل NADP⁺؛ يقع عند نهاية المسار حيث يتكون NADPH.
 
-**المصدر:** صفحة 7 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 7](https://moe.edu.ps/m/4061#page=7).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/a201ef2f5b0c2727e48a.webp)
 
@@ -4861,7 +5085,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -4871,15 +5101,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 إذن (1): ستة O₂، و(2): اثنا عشر NADPH.
-
-**المصدر:** الصفحات 7، 8، 17 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4905,15 +5138,24 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>9</mn><mo>÷</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mn>6</mn><mo>=</mo><mn>18</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>9</mn><mo>÷</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn></mrow></math>
 \`\`\`
 
 
 
 المستهلك 18 NADPH.
-
-**المصدر:** الصفحات 9، 28 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4936,7 +5178,7 @@ solution:
 المركب (2) هو **غليسر ألدهيد أحادي الفوسفات G3P**.
 يقع بعد اختزال المركب ثنائي الفوسفات بواسطة NADPH؛ يعود جزء منه لتجديد المستقبل ويخرج جزء نهائي من الحلقة.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/2b526c1509ade49a0046.webp)
 
@@ -4965,7 +5207,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>144</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>144</mn></mrow></math>
 \`\`\`
 
 
@@ -4981,9 +5229,6 @@ solution:
 
 
 يُشطر 144 ماء، بافتراض أن NADPH المطلوب تكوّن في المسار اللاحلقي.
-
-**المصدر:** الصفحات 7، 8، 9، 28 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5007,7 +5252,7 @@ solution:
 يوجد بعد مرحلة التجديد وقبل ارتباط CO₂، ويصفه الكتاب بأنه مركب خماسي الكربون.
 إذن يحتوي على **5 ذرات كربون**.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/2b526c1509ade49a0046.webp)
 
@@ -5035,7 +5280,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -5045,15 +5296,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج من تنفس الغلوكوز كله 12 CO₂.
-
-**المصدر:** الصفحات 9، 10، 11، 28 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5075,7 +5329,7 @@ solution:
 
 > ويعمل مركب NADPH على اختزال حمض غليسرين ثنائي الفوسفات إلى غليسر الدهايد أحادي الفوسفات Glyceraldehyde 3-Phosphat أو اختصاراً G3P، حيث تتكون ستة جزيئات منه.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -5100,15 +5354,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>48</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>48</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
 
 المثبت في بداية الحلقة 24 CO₂.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5131,7 +5388,23 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>48</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>8</mn><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>48</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
+\`\`\`
+
+نقسم عدد جزيئات G3P الصافية على اثنين لحساب جزيئات الغلوكوز.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -5141,15 +5414,24 @@ ATP حامل للطاقة. في التنفس يعطي كل غلوكوز صافي
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج المباشر الصافي 16 ATP، دون ناتج سلسلة نقل الإلكترونات.
-
-**المصدر:** الصفحات 9، 10، 11، 12 من الكتاب.
-
 :::
 
 :::mcq
@@ -5168,15 +5450,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة: 12 NADPH. أما ATP فيُستهلك قبل هذا الاختزال عند إضافة الفوسفات للحمض الأحادي.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -5197,15 +5482,28 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>24</mn><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
+\`\`\`
+
+نقسم عدد جزيئات G3P الكلية على ستة لحساب الجزيئات الصافية.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة: 4 G3P نهائية.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -5228,7 +5526,7 @@ solution:
 
 > يتم امتصاص الضوء في البلاستيدات بواسطة صبغة الكلوروفيل، والصبغات الأخرى الضرورية لعملية البناء الضوئي. وتترتب هذه الأصباغ في نظامين ضوئيين وظيفيين في غشاء الثايلاكويد.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6).
 
 
 
@@ -5253,15 +5551,18 @@ NADPH حامل الإلكترونات والهيدروجين. تكوين جزي�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج 3 جزيئات O₂.
-
-**المصدر:** الصفحات 7، 8 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5284,7 +5585,7 @@ solution:
 
 > يتطلب حدوث التفاعلات الضوئية وجود الضوء، حيث ينشطر فيها الماء باستخدام الطاقة الضوئية إلى إلكترونين وأيوني هيدروجين التي تستخدم في اختزال نواقل الإلكترونات، والأكسجين الذي يتصاعد في الهواء الجوي. ويتم بواسطتها تحويل الطاقة الضوئية إلى طاقة مختزنة في ATP وNADPH.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -5315,10 +5616,7 @@ solution:
 
 
 
-**المصدر:** صفحة 8 من الكتاب.
-
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/58bfe60ba23521752682.webp)
-
 :::
 
 :::exam-question
@@ -5337,7 +5635,7 @@ solution:
 لأن الكلوروفيل يمتص موجات الأزرق والأحمر بكفاءة عالية، ويمتص الأخضر بكميات قليلة.
 ينعكس جزء كبير من الأخضر أو ينفذ إلى العين، فيظهر النبات باللون الأخضر.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6).
 
 :::
 
@@ -5357,7 +5655,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>24</mn><mn>2</mn></mfrac><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>24</mn><mn>2</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
@@ -5367,15 +5671,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>72</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>72</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة: 72 جزيئًا من CO₂.
-
-**المصدر:** الصفحات 9، 10 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -5398,15 +5705,18 @@ RuBP هو المستقبل الخماسي الكربون الذي يرتبط ب�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>R</mi><mi>u</mi><mi>B</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>R</mi><mi>u</mi><mi>B</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>R</mi><mi>u</mi><mi>B</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة: ج، 6 جزيئات.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -5426,7 +5736,7 @@ explanation:
 
 > تسمى هذه التفاعلات حلقة كالفن Calvin Cycle نسبة إلى مكتشفها، وتحدث هذه التفاعلات في ستروما البلاستيدة حيث توجد الإنزيمات اللازمة لها، ودون الحاجة للضوء، ويتم فيها استخدام الطاقة المختزنة في نواتج التفاعلات الضوئية ATP وNADPH.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -5434,7 +5744,7 @@ explanation:
 
 > تحدث هذه المرحلة في سيتوسول جميع الخلايا الحية، وهذه العملية لا تتطلب وجود الأكسجين لإنتاج الطاقة. في هذه المرحلة ينشطر سكر الغلوكوز إلى جزيئين من سكر غليسر الدهايد (ثلاثي الكربون) ليتأكسد كل جزيء منهما؛ ليكونا في نهاية هذه المرحلة جزيئين من حمض البيروفيك (البيروفيت).
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -5458,7 +5768,7 @@ solution:
 
 > تمر هذه الإلكترونات المحملة بالطاقة إلى مستقبل الإلكترونات الأولي، الذي له جاذبية قوية للإلكترونات.
 
-**المصدر:** صفحة 7 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 7](https://moe.edu.ps/m/4061#page=7).
 
 
 
@@ -5480,7 +5790,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -5490,7 +5806,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mi mathvariant="normal">/</mi><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo>=</mo><mn>2</mn><mo>×</mo><mn>9</mn><mo>=</mo><mn>18</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>9</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo>=</mo><mn>18</mn></mrow></math>
 \`\`\`
 
 
@@ -5500,15 +5822,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>18</mn><mo>=</mo><mn>72</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>18</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>72</mn></mrow></math>
 \`\`\`
 
 
 
 المطلوب: 72 جزيئًا من ATP.
-
-**المصدر:** الصفحات 9، 10، 13 من الكتاب.
-
 :::
 
 :::mcq
@@ -5527,15 +5852,24 @@ NADPH حامل الإلكترونات والهيدروجين، وATP حامل ا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>18</mn><mo>÷</mo><mn>6</mn><mo stretchy="false">)</mo><mo>×</mo><mn>9</mn><mo>=</mo><mn>27</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>18</mn><mo>÷</mo><mn>6</mn><mo stretchy="false">)</mo><mo>×</mo><mn>9</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><mn>9</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>27</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة: د، 27 ATP.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -5555,7 +5889,7 @@ explanation:
 
 > يتطلب حدوث التفاعلات الضوئية وجود الضوء، حيث ينشطر فيها الماء باستخدام الطاقة الضوئية إلى إلكترونين وأيوني هيدروجين التي تستخدم في اختزال نواقل الإلكترونات، والأكسجين الذي يتصاعد في الهواء الجوي. ويتم بواسطتها تحويل الطاقة الضوئية إلى طاقة مختزنة في ATP وNADPH.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -5578,7 +5912,7 @@ explanation:
 
 > تستمر الإلكترونات في انتقالها من ناقل لآخر في سلسلة نقل الإلكترون، حيث تمر في عمليات أكسدة واختزال؛ حتى تصل إلى إنزيم مختزل NADP⁺ في النظام الضوئي الأول. وبالتالي يختزل NADP⁺ إلى NADPH.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -5600,15 +5934,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة: د، 5 جزيئات غلوكوز.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -5628,7 +5965,7 @@ explanation:
 
 > توصل العلماء إلى أن الزيادة في كتلة النبات مصدرها ثاني أكسيد الكربون CO₂، الذي يتحول إلى سكر الغلوكوز في عملية البناء الضوئي، وأن الأكسجين الناتج مصدره الماء.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -5651,7 +5988,13 @@ NADPH حامل للإلكترونات والهيدروجين في الاختزا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>12</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>12</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -5661,7 +6004,13 @@ NADPH حامل للإلكترونات والهيدروجين في الاختزا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mi mathvariant="normal">/</mi><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mi mathvariant="normal">/</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mi mathvariant="normal">/</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -5671,15 +6020,18 @@ NADPH حامل للإلكترونات والهيدروجين في الاختزا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج: 12 جزيئًا من CO₂ من كربس وحدها، دون CO₂ مرحلة تحويل البيروفيت.
-
-**المصدر:** الصفحات 9، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5698,7 +6050,13 @@ ATP حامل للطاقة. كل دورة كربس تنتج ATP واحداً مب
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1000</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>500</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1000</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>500</mn></mrow></math>
 \`\`\`
 
 
@@ -5708,15 +6066,18 @@ ATP حامل للطاقة. كل دورة كربس تنتج ATP واحداً مب
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>C</mi><mi>a</mi><mi>l</mi><mi>v</mi><mi>i</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>500</mn><mo>×</mo><mn>18</mn><mo>=</mo><mn>9000</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>C</mi><mi>a</mi><mi>l</mi><mi>v</mi><mi>i</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>500</mn><mo>×</mo><mn>18</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>C</mi><mi>a</mi><mi>l</mi><mi>v</mi><mi>i</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>9000</mn></mrow></math>
 \`\`\`
 
 
 
 المستهلك لبناء الغلوكوز نفسه9000 ATP.
-
-**المصدر:** الصفحات 9، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5750,7 +6111,7 @@ solution:
 
 
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/8e1715aee2e8feda012e.webp)
 
@@ -5764,7 +6125,7 @@ solution:
 
 
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/58bfe60ba23521752682.webp)
 
@@ -5788,7 +6149,7 @@ solution:
 
 > تصل الإلكترونات إلى مركز التفاعل في النظام الضوئي الأول، وتكون قد استنفدت طاقتها؛ ليتم إعادة تنشيطها من خلال الأصباغ التي تمتص الطاقة الضوئية، ومن ثم تنتقل إلى المستقبل الأولي في النظام الضوئي الأول، ثم إلى سلسلة نقل الإلكترون التي تربط بين النظامين الضوئيين؛ ليتم إنتاج جزيئات حاملات الطاقة ATP فقط.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -5796,7 +6157,7 @@ solution:
 
 > نظام ضوئي ثان؛ نظام ضوئي أول؛ مستقبل أولي؛ ناقل للإلكترونات؛ سيتوكرومات؛ إنزيم مختزل NADP⁺؛ أصباغ؛ ضوء؛ ATP؛ NADPH.
 
-**المصدر:** صفحة 7 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 7](https://moe.edu.ps/m/4061#page=7).
 
 
 
@@ -5820,7 +6181,7 @@ solution:
 
 > تصل الإلكترونات إلى مركز التفاعل في النظام الضوئي الأول، وتكون قد استنفدت طاقتها؛ ليتم إعادة تنشيطها من خلال الأصباغ التي تمتص الطاقة الضوئية، ومن ثم تنتقل إلى المستقبل الأولي في النظام الضوئي الأول، ثم إلى سلسلة نقل الإلكترون التي تربط بين النظامين الضوئيين؛ ليتم إنتاج جزيئات حاملات الطاقة ATP فقط.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -5828,7 +6189,7 @@ solution:
 
 > تستمر الإلكترونات في انتقالها من ناقل لآخر في سلسلة نقل الإلكترون، حيث تمر في عمليات أكسدة واختزال؛ حتى تصل إلى إنزيم مختزل NADP⁺ في النظام الضوئي الأول. وبالتالي يختزل NADP⁺ إلى NADPH.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -5852,7 +6213,7 @@ solution:
 
 > يتطلب حدوث التفاعلات الضوئية وجود الضوء، حيث ينشطر فيها الماء باستخدام الطاقة الضوئية إلى إلكترونين وأيوني هيدروجين التي تستخدم في اختزال نواقل الإلكترونات، والأكسجين الذي يتصاعد في الهواء الجوي. ويتم بواسطتها تحويل الطاقة الضوئية إلى طاقة مختزنة في ATP وNADPH.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -5860,7 +6221,7 @@ solution:
 
 > تصل الإلكترونات إلى مركز التفاعل في النظام الضوئي الأول، وتكون قد استنفدت طاقتها؛ ليتم إعادة تنشيطها من خلال الأصباغ التي تمتص الطاقة الضوئية، ومن ثم تنتقل إلى المستقبل الأولي في النظام الضوئي الأول، ثم إلى سلسلة نقل الإلكترون التي تربط بين النظامين الضوئيين؛ ليتم إنتاج جزيئات حاملات الطاقة ATP فقط.
 
-**المصدر:** صفحة 8 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 8](https://moe.edu.ps/m/4061#page=8).
 
 
 
@@ -5883,7 +6244,7 @@ explanation:
 
 > يتطلب حدوث التفاعلات الضوئية وجود الضوء، حيث ينشطر فيها الماء باستخدام الطاقة الضوئية إلى إلكترونين وأيوني هيدروجين التي تستخدم في اختزال نواقل الإلكترونات، والأكسجين الذي يتصاعد في الهواء الجوي. ويتم بواسطتها تحويل الطاقة الضوئية إلى طاقة مختزنة في ATP وNADPH.
 
-**المصدر:** صفحة 5 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 5](https://moe.edu.ps/m/4061#page=5).
 
 
 
@@ -5916,7 +6277,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi></mrow></msub><mi mathvariant="normal">/</mi><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -5932,9 +6299,6 @@ solution:
 
 
 الإجابة: 3 مولات من ATP. نصف مول كمية ممكنة؛ فلا يعني ذلك نصف جزيء منفرد.
-
-**المصدر:** الصفحات 9، 10، 11، 13 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5955,15 +6319,28 @@ NADPH حامل الإلكترونات والهيدروجين. كل G3P نهائ�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>12</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>12</mn></mrow></math>
+\`\`\`
+
+نقسم مجموع جزيئات NADPH على احتياج جزيء واحد من الغلوكوز.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>12</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج جزيئان من الغلوكوز.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5984,15 +6361,28 @@ G3P سكر ثلاثي الكربون. كل6 NADPH، حوامل الإلكترو�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>4</mn><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>r</mi><mi>e</mi><mi>g</mi><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>20</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+نضرب عدد المجموعات في خمسة لحساب عدد جزيئات G3P التي تدخل في التجديد.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>r</mi><mi>e</mi><mi>g</mi><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>r</mi><mi>e</mi><mi>g</mi><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn></mrow></math>
 \`\`\`
 
 
 
 يُستخدم20 G3P لتجديد المستقبل.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -6013,7 +6403,13 @@ NADPH حامل الإلكترونات والهيدروجين، وATP حامل ا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>r</mi><mi>o</mi><mi>u</mi><mi>p</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -6023,15 +6419,18 @@ NADPH حامل الإلكترونات والهيدروجين، وATP حامل ا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>r</mi><mi>e</mi><mi>g</mi><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>r</mi><mi>e</mi><mi>g</mi><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>r</mi><mi>e</mi><mi>g</mi><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 المطلوب12 ATP للتجديد وحده.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -6052,15 +6451,18 @@ NADPH يمنح كل مركب ثلاثي الإلكترونات والهيدرو�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>36</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج36 G3P كلياً، ومنها يخرج6 نهائياً وتُستخدم30 للتجديد.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -6082,15 +6484,18 @@ ATP يمنح مجموعة فوسفات لكل مركب ثلاثي، ثم يخت�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>r</mi><mi>e</mi><mi>d</mi><mi>u</mi><mi>c</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>36</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>r</mi><mi>e</mi><mi>d</mi><mi>u</mi><mi>c</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>r</mi><mi>e</mi><mi>d</mi><mi>u</mi><mi>c</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
 
 
 المستهلك36 ATP للاختزال وحده، دون ATP تجديد المستقبل.
-
-**المصدر:** صفحة 9 من الكتاب.
-
 :::
 
 :::mcq
@@ -6105,11 +6510,7 @@ reference: [الرزمة التعليمية، صفحة PDF 21](https://moe.edu.p
 explanation:
 **الإجابة:** حشوة الميتوكندريا
 
-**الشاهد من الكتاب:**
-
-> تتضمن سلسلة من التفاعلات؛ حيث تحدث في حشوة الميتوكندريون، وينتج عنها مركبات وسطية وفق الآتي:
-
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 18](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=22).
 
 
 
@@ -6128,11 +6529,7 @@ reference: [الرزمة التعليمية، صفحة PDF 21](https://moe.edu.p
 explanation:
 **الإجابة:** 4
 
-**الشاهد من الكتاب:**
-
-> تبدأ الحلقة بتفاعل جزيء أستيل مرافق الإنزيم أ مع مركب رباعي الكربون (C4) يسمى أوكسالواستيت Oxaloacetate، لينتج مركباً سداسي الكربون (C6)، هو الستريت Citrate حيث يمر الستريت بعدة مراحل لإعادة بناء الأوكسالواستيت من جديد.
-
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 18](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=22).
 
 
 
@@ -6151,11 +6548,7 @@ reference: [الرزمة التعليمية، صفحة PDF 21](https://moe.edu.p
 explanation:
 **الإجابة:** داخل حشوة الميتوكندريا إلى الحَيّز بين الغشائي
 
-**الشاهد من الكتاب:**
-
-> تعمل البروتينات في سلسلة نقل الإلكترون كمضخات للبروتونات H⁺، حيث تقوم بضخ H⁺ من داخل الحشوة إلى الحيز بين الغشائي باستخدام طاقة الإلكترون عبر سلسلة نقل الإلكترون.
-
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 20](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=24).
 
 
 
@@ -6180,15 +6573,28 @@ FADH₂ ناقل مختزل يحمل الإلكترونات إلى سلسلة ا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>2</mn><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم عدد جزيئات FADH₂ على اثنين لحساب عدد جزيئات الغلوكوز.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
 
 دخل التنفس10 جزيئات غلوكوز.
-
-**المصدر:** صفحة 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -6210,7 +6616,13 @@ FADH₂ ناقل إلكترونات، وينتج منه2 لكل غلوكوز، �
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
@@ -6220,15 +6632,24 @@ ATP حامل للطاقة. يعطي كل غلوكوز صافياً2 ATP مباش
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>40</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>40</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج المباشر الصافي40 ATP.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -6249,7 +6670,13 @@ FADH₂ وNADH ناقلان مختزلان يحملان الإلكترونات. 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
@@ -6259,15 +6686,24 @@ FADH₂ وNADH ناقلان مختزلان يحملان الإلكترونات. 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>×</mo><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج60 NADH من كربس وحدها.
-
-**المصدر:** صفحة 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -6288,7 +6724,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
@@ -6298,15 +6740,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>20</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn></mrow></math>
 \`\`\`
 
 
 
 ينتج20 CO₂ في مرحلة التحويل وحدها.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -6327,7 +6772,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
@@ -6337,15 +6788,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>60</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn></mrow></math>
 \`\`\`
 
 
 
 المستهلك60 جزيء O₂.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -6366,11 +6820,6 @@ solution:
 **الشاهد من الكتاب:**
 
 > يتحرر أثناء هذه الدورة مرافق الإنزيم أ ليكرر عمله في دورة أخرى، وينتج جزيئان من ثاني أكسيد الكربون وجزيء ATP، كما وينتج ثلاثة جزيئات من NADH وجزيء واحد من FADH₂ وذلك في كل دورة. تتكرر الدورة مرتين، مرة لكل جزيء من مجموعة الأستيل مرافق الإنزيم أ.
-
-**المصدر:** صفحة 11 من الكتاب.
-
-
-
 :::
 
 :::mcq
@@ -6389,7 +6838,13 @@ G3P مركب ثلاثي الكربون. من كل 6 جزيئات G3P كلية ت
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi mathvariant="normal">f</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi mathvariant="normal">f</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi mathvariant="normal">f</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -6409,15 +6864,18 @@ G3P مركب ثلاثي الكربون. من كل 6 جزيئات G3P كلية ت
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>9</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>9</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة: 9 جزيئات من NADH من كربس. لا نحتاج افتراض وجود نصف جزيء غلوكوز؛ المقارنة هنا تبدأ بالجزيئات الثلاثية نفسها.
-
-**المصدر:** الصفحات 9، 10، 11 من الكتاب.
-
 hint: اقرأ السؤال وقارن بين البدائل الأصلية.
 :::
 
@@ -6437,7 +6895,7 @@ explanation:
 
 > إن الطاقة (ATP) الناتجة بشكل مباشر من تحلل جزيء غلوكوز واحد هوائياً كانت قليلة (أربعة جزيئات من ATP: جزيئين من التحلل الغلايكولي، وجزيئين من حلقة كربس)، والسبب في ذلك يعود إلى أن النسبة الأكبر من الطاقة يتم تخزينها في جزيئات حاملات الطاقة (NADH وFADH₂)؛ لذلك لا بد من استخلاص الطاقة من هذه الجزيئات على شكل ATP من خلال سلسلة نقل الإلكترون.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -6460,7 +6918,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
@@ -6470,7 +6934,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi mathvariant="normal">d</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">t</mi><mo separator="true">,</mo><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mi mathvariant="normal">/</mi><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi mathvariant="normal">d</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">t</mi><mo separator="true">,</mo><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi mathvariant="normal">d</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">t</mi><mo separator="true">,</mo><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -6480,15 +6950,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi mathvariant="normal">d</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">t</mi><mo separator="true">,</mo><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>20</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi mathvariant="normal">d</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">t</mi><mo separator="true">,</mo><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi mathvariant="normal">d</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">t</mi><mo separator="true">,</mo><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة: 20 جزيئًا من ATP.
-
-**المصدر:** الصفحات 9، 10، 11 من الكتاب.
-
 hint: اقرأ السؤال وقارن بين البدائل الأصلية.
 :::
 
@@ -6512,7 +6985,7 @@ solution:
 
 > تحدث هذه المرحلة في سيتوسول جميع الخلايا الحية، وهذه العملية لا تتطلب وجود الأكسجين لإنتاج الطاقة. في هذه المرحلة ينشطر سكر الغلوكوز إلى جزيئين من سكر غليسر الدهايد (ثلاثي الكربون) ليتأكسد كل جزيء منهما؛ ليكونا في نهاية هذه المرحلة جزيئين من حمض البيروفيك (البيروفيت).
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -6520,7 +6993,7 @@ solution:
 
 > يدخل البيروفيت Pyruvate من السيتوسول إلى حشوة الميتوكندريا واحداً تلو الآخر في حالة وجود الأكسجين لإنتاج كمية أكبر من الطاقة، ثم يتحول إلى مركب أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -6541,21 +7014,27 @@ final-answer:
 - التحلل الغلايكولي: **8 جزيئات ATP صافية مباشرةً**.
 - تحول البيروفيت: **صفر ATP مباشرةً**.
 solution:
-ATP حامل للطاقة. في التحلل الغلايكولي لكل غلوكوز يُنتج4 ATP ويُستهلك2، فيكون الصافي2.
-لأربعة جزيئات غلوكوز:
+المعطى تحلل أربعة جزيئات غلوكوز هوائيًا، والمطلوب حصيلة ATP المباشرة الصافية في كل مرحلة.
 
+في التحلل الغلايكولي، ينتج كل جزيء غلوكوز أربعة جزيئات ATP قبل طرح المستهلك. نضرب عدد جزيئات الغلوكوز في أربعة.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>g</mi><mi>r</mi><mi>o</mi><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><mn>4</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>16</mn><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>u</mi><mi>s</mi><mi>e</mi><mi>d</mi></mrow></msub><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>8</mn><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>16</mn><mo>−</mo><mn>8</mn><mo>=</mo><mn>8</mn></mrow></math>
+\`\`\`latex
+N_{\\mathrm{produced}}=4\\times4=16
 \`\`\`
 
+تستهلك المرحلة جزيئَي ATP لكل جزيء غلوكوز. نضرب عدد جزيئات الغلوكوز في اثنين.
 
+\`\`\`latex
+N_{\\mathrm{used}}=4\\times2=8
+\`\`\`
 
-إذن التحلل يعطي8 ATP صافية مباشرةً. أما تحويل البيروفيت إلى أسيتيل مرافق الإنزيم أ فلا يعطي ATP مباشرةً: الناتج صفر.
+نطرح المستهلك من الناتج الكلي لإيجاد الصافي المباشر.
 
-**المصدر:** الصفحات 10، 11 من الكتاب.
+\`\`\`latex
+N_{\\mathrm{net}}=16-8=8
+\`\`\`
 
+إذن يعطي التحلل الغلايكولي **8 جزيئات ATP صافية مباشرةً**. أما تحوّل البيروفيت إلى الأسيتيل مرافق الإنزيم أ فلا يُنتج ATP مباشرةً، فحصيلته **صفر**.
 :::
 
 :::exam-question
@@ -6577,7 +7056,13 @@ NADH ناقل مختزل يحمل الإلكترونات والهيدروجين.
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>g</mi><mi>l</mi><mi>y</mi><mi>c</mi><mi>o</mi><mi>l</mi><mi>y</mi><mi>s</mi><mi>i</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>g</mi><mi>l</mi><mi>y</mi><mi>c</mi><mi>o</mi><mi>l</mi><mi>y</mi><mi>s</mi><mi>i</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>g</mi><mi>l</mi><mi>y</mi><mi>c</mi><mi>o</mi><mi>l</mi><mi>y</mi><mi>s</mi><mi>i</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
@@ -6587,15 +7072,24 @@ NADH ناقل مختزل يحمل الإلكترونات والهيدروجين.
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج12 NADH في كل من المرحلتين.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -6621,7 +7115,7 @@ solution:
 
 > غلوكوز؛ استهلاك 2ATP؛ إنتاج 4ATP؛ 2NADH؛ 2 بيروفيت؛ 2ATP.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -6629,7 +7123,7 @@ solution:
 
 > بيروفيت؛ CO₂؛ NAD⁺؛ NADH + H⁺؛ مرافق الإنزيم أ؛ أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -6655,7 +7149,7 @@ solution:
 
 > تحدث هذه المرحلة في سيتوسول جميع الخلايا الحية، وهذه العملية لا تتطلب وجود الأكسجين لإنتاج الطاقة. في هذه المرحلة ينشطر سكر الغلوكوز إلى جزيئين من سكر غليسر الدهايد (ثلاثي الكربون) ليتأكسد كل جزيء منهما؛ ليكونا في نهاية هذه المرحلة جزيئين من حمض البيروفيك (البيروفيت).
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -6663,7 +7157,7 @@ solution:
 
 > بيروفيت؛ CO₂؛ NAD⁺؛ NADH + H⁺؛ مرافق الإنزيم أ؛ أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -6687,7 +7181,7 @@ explanation:
 
 > بالإضافة إلى انقباض العضلات في الحيوانات وغيرها من الأنشطة التي تحتاج جميعها إلى طاقة.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -6712,7 +7206,7 @@ explanation:
 
 > بالإضافة إلى انقباض العضلات في الحيوانات وغيرها من الأنشطة التي تحتاج جميعها إلى طاقة.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -6738,7 +7232,7 @@ solution:
 
 > يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -6746,7 +7240,7 @@ solution:
 
 > في نهاية سلسلة نقل الإلكترون يكون الأكسجين هو المستقبل النهائي للإلكترونات، حيث يتم ربط الهيدروجين والأكسجين لتكوين H₂O.
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 
 
@@ -6768,7 +7262,7 @@ explanation:
 
 > تعمل البروتينات في سلسلة نقل الإلكترون كمضخات للبروتونات H⁺، حيث تقوم بضخ H⁺ من داخل الحشوة إلى الحيز بين الغشائي باستخدام طاقة الإلكترون عبر سلسلة نقل الإلكترون.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -6791,20 +7285,36 @@ NADH ناقل مختزل للإلكترونات. لكل غلوكوز يتكون2
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>+</mo><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة10 NADH في مجمل التنفس.
 
-**المصدر:** الصفحات 10، 11 من الكتاب.
 
 **شاهد القاعدة أو السياق من الكتاب 1:**
 
 > غلوكوز؛ استهلاك 2ATP؛ إنتاج 4ATP؛ 2NADH؛ 2 بيروفيت؛ 2ATP.
 
-**المصدر:** صفحة 10 من الكتاب.
 
 
 
@@ -6812,18 +7322,12 @@ NADH ناقل مختزل للإلكترونات. لكل غلوكوز يتكون2
 
 > بيروفيت؛ CO₂؛ NAD⁺؛ NADH + H⁺؛ مرافق الإنزيم أ؛ أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
 
 
 
 **شاهد القاعدة أو السياق من الكتاب 3:**
 
 > يتحرر أثناء هذه الدورة مرافق الإنزيم أ ليكرر عمله في دورة أخرى، وينتج جزيئان من ثاني أكسيد الكربون وجزيء ATP، كما وينتج ثلاثة جزيئات من NADH وجزيء واحد من FADH₂ وذلك في كل دورة. تتكرر الدورة مرتين، مرة لكل جزيء من مجموعة الأستيل مرافق الإنزيم أ.
-
-**المصدر:** صفحة 11 من الكتاب.
-
-
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -6839,11 +7343,7 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 explanation:
 **الإجابة:** 6
 
-**الشاهد من الكتاب:**
-
-> تبدأ الحلقة بتفاعل جزيء أستيل مرافق الإنزيم أ مع مركب رباعي الكربون (C4) يسمى أوكسالواستيت Oxaloacetate، لينتج مركباً سداسي الكربون (C6)، هو الستريت Citrate حيث يمر الستريت بعدة مراحل لإعادة بناء الأوكسالواستيت من جديد.
-
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -6866,7 +7366,7 @@ explanation:
 
 > إن الطاقة (ATP) الناتجة بشكل مباشر من تحلل جزيء غلوكوز واحد هوائياً كانت قليلة (أربعة جزيئات من ATP: جزيئين من التحلل الغلايكولي، وجزيئين من حلقة كربس)، والسبب في ذلك يعود إلى أن النسبة الأكبر من الطاقة يتم تخزينها في جزيئات حاملات الطاقة (NADH وFADH₂)؛ لذلك لا بد من استخلاص الطاقة من هذه الجزيئات على شكل ATP من خلال سلسلة نقل الإلكترون.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -6889,7 +7389,7 @@ explanation:
 
 > تحدث هذه المرحلة في سيتوسول جميع الخلايا الحية، وهذه العملية لا تتطلب وجود الأكسجين لإنتاج الطاقة. في هذه المرحلة ينشطر سكر الغلوكوز إلى جزيئين من سكر غليسر الدهايد (ثلاثي الكربون) ليتأكسد كل جزيء منهما؛ ليكونا في نهاية هذه المرحلة جزيئين من حمض البيروفيك (البيروفيت).
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -6939,15 +7439,24 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة6 ATP مباشرةً من كربس، دون طاقة نواقل الإلكترونات.
-
-**المصدر:** صفحة 11 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -6967,7 +7476,7 @@ explanation:
 
 > بيروفيت؛ CO₂؛ NAD⁺؛ NADH + H⁺؛ مرافق الإنزيم أ؛ أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -6975,7 +7484,7 @@ explanation:
 
 > يتحرر أثناء هذه الدورة مرافق الإنزيم أ ليكرر عمله في دورة أخرى، وينتج جزيئان من ثاني أكسيد الكربون وجزيء ATP، كما وينتج ثلاثة جزيئات من NADH وجزيء واحد من FADH₂ وذلك في كل دورة. تتكرر الدورة مرتين، مرة لكل جزيء من مجموعة الأستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -6997,15 +7506,24 @@ ATP حامل للطاقة. كل غلوكوز يدير كربس مرتين، وت
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة8 ATP مباشرةً من كربس.
-
-**المصدر:** صفحة 11 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -7025,7 +7543,7 @@ explanation:
 
 > السيتوكرومات (بروتينات تحتوي على ذرة حديد)
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -7047,15 +7565,18 @@ FADH₂ ناقل مختزل للإلكترونات. ينتج واحد في كل 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة5 جزيئات غلوكوز.
-
-**المصدر:** صفحة 11 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -7075,7 +7596,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>1</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow></math>
 \`\`\`
 
 
@@ -7085,7 +7612,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">p</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">p</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">p</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -7095,15 +7628,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة: ج، جزيئان من NADH في مرحلة التحويل وحدها.
-
-**المصدر:** الصفحات 9، 10، 11 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -7122,7 +7658,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -7132,15 +7674,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة8 ATP وفق هذا النموذج المنهجي.
-
-**المصدر:** الصفحات 11، 13 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -7154,13 +7699,9 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 - [ ] option-3 | حشوة المايتوكندريا
 - [ ] option-4 | الثايلاكويد
 explanation:
-**الإجابة:** السيتوسول
+**الإجابة:** السيتوسول، وهو السائل داخل الخلية.
 
-**الشاهد من الكتاب:**
-
-> تحدث هذه المرحلة في سيتوسول جميع الخلايا الحية، وهذه العملية لا تتطلب وجود الأكسجين لإنتاج الطاقة. في هذه المرحلة ينشطر سكر الغلوكوز إلى جزيئين من سكر غليسر الدهايد (ثلاثي الكربون) ليتأكسد كل جزيء منهما؛ ليكونا في نهاية هذه المرحلة جزيئين من حمض البيروفيك (البيروفيت).
-
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -7183,15 +7724,28 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>18</mn><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn></mrow></math>
+\`\`\`
+
+نضرب عدد الدورات في عدد جزيئات FADH₂ لكل دورة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة18 NADH و6 FADH₂. وينتج كذلك6 ATP و12 CO₂، لذلك بقية البدائل غير صحيحة.
-
-**المصدر:** صفحة 11 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -7211,7 +7765,7 @@ explanation:
 
 > يحدث هذا النوع من التنفس في معظم الكائنات الحية، حيث تعتمد على وجود الأكسجين وتطلق غاز ثاني أكسيد الكربون. ويتم استخدام الأكسجين في أكسدة المواد الغذائية مثل الغلوكوز لإنتاج الطاقة اللازمة لتأدية العمليات الحيوية التي تقوم بها الخلية. C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 38ATP.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -7234,7 +7788,7 @@ explanation:
 
 > تحدث هذه المرحلة في سيتوسول جميع الخلايا الحية، وهذه العملية لا تتطلب وجود الأكسجين لإنتاج الطاقة. في هذه المرحلة ينشطر سكر الغلوكوز إلى جزيئين من سكر غليسر الدهايد (ثلاثي الكربون) ليتأكسد كل جزيء منهما؛ ليكونا في نهاية هذه المرحلة جزيئين من حمض البيروفيك (البيروفيت).
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -7260,15 +7814,34 @@ NADH وFADH₂ ناقلان مختزلان ينقلان الإلكترونات �
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>22</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>22</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة22 ATP غير مباشرة؛ تُبنى في السلسلة من حوامل كربس، وليست ATP المباشرة الناتجة داخل الحلقة.
-
-**المصدر:** الصفحات 11، 12، 13 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -7287,15 +7860,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>30</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة30 ماء وفق المحصلة المنهجية؛ في نهاية السلسلة يتكون الماء بارتباط الأكسجين بالإلكترونات والبروتونات.
-
-**المصدر:** الصفحات 10، 13 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -7314,7 +7890,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -7324,15 +7906,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة12 CO₂ من جميع المراحل.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -7352,7 +7937,7 @@ explanation:
 
 > وتستخدم النترات NO₃⁻ أو السلفات SO₄²⁻ بدلاً عن الأكسجين، وتسمى هذه العملية التنفس اللاهوائي Anaerobic Respiration.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -7375,15 +7960,18 @@ FADH₂ ناقل إلكترونات مختزل، وATP حامل للطاقة.
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>40</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>40</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة **40 جزيئاً من ATP** وفق نموذج الكتاب.
-
-**المصدر:** صفحة 13 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -7406,7 +7994,7 @@ explanation:
 
 > تحدث هذه المرحلة في سيتوسول جميع الخلايا الحية، وهذه العملية لا تتطلب وجود الأكسجين لإنتاج الطاقة. في هذه المرحلة ينشطر سكر الغلوكوز إلى جزيئين من سكر غليسر الدهايد (ثلاثي الكربون) ليتأكسد كل جزيء منهما؛ ليكونا في نهاية هذه المرحلة جزيئين من حمض البيروفيك (البيروفيت).
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -7428,15 +8016,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة3 جزيئات غلوكوز؛ المقصود الماء في المحصلة الإجمالية.
-
-**المصدر:** صفحة 10 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -7457,7 +8048,7 @@ explanation:
 يتكوّن FADH₂ لاحقاً في حلقة كربس، وليس في التحويل.
 إذن الرقم المفقود **صفر**، مهما كان عدد جزيئات البيروفيت المحوّلة.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/0ca30b2aaeb93e753ffe.webp)
 
@@ -7486,7 +8077,7 @@ solution:
 يظهر الشكل تحويل البيروفيت إلى أستيل مرافق الإنزيم أ، ثم دخول الأستيل في حلقة كربس.
 تحدث المرحلتان في **حشوة الميتوكندريا**؛ لذلك لا يغير جمعهما في الرسم جواب الموقع.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/341e21065fbacd178769.webp)
 
@@ -7517,7 +8108,7 @@ solution:
 (3) FADH₂؛ الناقل المختزل الناتج من FAD في الحلقة.
 (4) ATP؛ حامل الطاقة الناتج عند أسفل الحلقة.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/0ca30b2aaeb93e753ffe.webp)
 
@@ -7558,7 +8149,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>0</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>0</mn><mo>+</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -7568,7 +8165,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo>=</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo>=</mo><mn>2</mn><mo>+</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
@@ -7578,15 +8181,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
 
 المجموع: 2 ATP مباشرة، و 8 NADH، و 6 CO₂.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -7608,7 +8214,7 @@ solution:
 
 > يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -7616,7 +8222,7 @@ solution:
 
 > ينتج عن كل جزيء NADH ثلاثة جزيئات ATP، بينما ينتج عن كل جزيء من FADH₂ جزيئان من ATP.
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 
 
@@ -7642,7 +8248,7 @@ solution:
 
 > في نهاية سلسلة نقل الإلكترون يكون الأكسجين هو المستقبل النهائي للإلكترونات، حيث يتم ربط الهيدروجين والأكسجين لتكوين H₂O.
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 
 
@@ -7650,7 +8256,7 @@ solution:
 
 > ينتج عن كل جزيء NADH ثلاثة جزيئات ATP، بينما ينتج عن كل جزيء من FADH₂ جزيئان من ATP.
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 
 
@@ -7675,7 +8281,7 @@ solution:
 
 > في نهاية سلسلة نقل الإلكترون يكون الأكسجين هو المستقبل النهائي للإلكترونات، حيث يتم ربط الهيدروجين والأكسجين لتكوين H₂O.
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 
 
@@ -7700,7 +8306,7 @@ solution:
 
 > تحدث هذه المرحلة في سيتوسول جميع الخلايا الحية، وهذه العملية لا تتطلب وجود الأكسجين لإنتاج الطاقة. في هذه المرحلة ينشطر سكر الغلوكوز إلى جزيئين من سكر غليسر الدهايد (ثلاثي الكربون) ليتأكسد كل جزيء منهما؛ ليكونا في نهاية هذه المرحلة جزيئين من حمض البيروفيك (البيروفيت).
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -7729,7 +8335,7 @@ solution:
 
 > غلوكوز؛ استهلاك 2ATP؛ إنتاج 4ATP؛ 2NADH؛ 2 بيروفيت؛ 2ATP.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -7754,7 +8360,7 @@ solution:
 
 > ويتم إنتاج الطاقة من خلال عملية التنفس الخلوي التي تقوم بواسطتها الكائنات الحية بتحليل المواد الغذائية مثل: الكربوهيدرات، وتحرير الطاقة المختزنة في الروابط الكيميائية الموجودة بين جزيئاتها.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -7779,7 +8385,7 @@ solution:
 
 > يدخل البيروفيت Pyruvate من السيتوسول إلى حشوة الميتوكندريا واحداً تلو الآخر في حالة وجود الأكسجين لإنتاج كمية أكبر من الطاقة، ثم يتحول إلى مركب أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -7804,11 +8410,11 @@ solution:
 لا يتكوّن ATP مباشرةً في مرحلة التحويل؛ فالكتاب يحصر ATP المباشر في التحلل الغلايكولي وكربس.
 إذن النواتج **CO₂ واحد، وNADH واحد، وصفر ATP مباشرةً**.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/0ca30b2aaeb93e753ffe.webp)
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/01f8dcf1d5e326fe6ba1.webp)
 
@@ -7865,7 +8471,7 @@ solution:
 
 > بيروفيت؛ CO₂؛ NAD⁺؛ NADH + H⁺؛ مرافق الإنزيم أ؛ أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -7891,15 +8497,28 @@ NADH وFADH₂ ناقلان مختزلان يحملان الإلكترونات. 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo><mo>=</mo><mn>50</mn><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>50</mn></mrow></math>
+\`\`\`
+
+نضرب عدد جزيئات الغلوكوز في اثنين لحساب مجموع جزيئات FADH₂.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج50 NADH و10 FADH₂.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -7980,31 +8599,40 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>2</mn><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب عدد جزيئات البيروفيت في ناتج جزيء واحد من NADH.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
 
 لا يتكونATP، حامل الطاقة، مباشرةً في التحويل. إذن النواتج:صفرATP مباشر، و2 NADH، و2 CO₂.
 
-**المصدر:** الصفحات 10، 11 من الكتاب.
 
 **شاهد القاعدة أو السياق من الكتاب 1:**
 
 > غلوكوز؛ استهلاك 2ATP؛ إنتاج 4ATP؛ 2NADH؛ 2 بيروفيت؛ 2ATP.
 
-**المصدر:** صفحة 10 من الكتاب.
 
 
 
 **شاهد القاعدة أو السياق من الكتاب 2:**
 
 > بيروفيت؛ CO₂؛ NAD⁺؛ NADH + H⁺؛ مرافق الإنزيم أ؛ أستيل مرافق الإنزيم أ.
-
-**المصدر:** صفحة 11 من الكتاب.
-
-
-
 :::
 
 :::exam-question
@@ -8027,7 +8655,7 @@ solution:
 (أ) هو **ثاني أكسيد الكربون CO₂** الخارج من البيروفيت.
 البيروفيت ثلاثي الكربون، بينما مجموعة الأسيتيل ثنائية الكربون؛ فتخرج ذرة الكربون الثالثة ضمن CO₂.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/0ca30b2aaeb93e753ffe.webp)
 
@@ -8054,7 +8682,7 @@ solution:
 
 > بيروفيت؛ CO₂؛ NAD⁺؛ NADH + H⁺؛ مرافق الإنزيم أ؛ أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -8080,7 +8708,7 @@ solution:
 تشير الخطوات إلى فقد البيروفيت CO₂، واختزال NAD⁺، ثم ارتباط مجموعة الأسيتيل بمرافق الإنزيم أ.
 هذه خطوات تحويل البيروفيت إلى أستيل مرافق الإنزيم أ، وتحدث جميعها في **حشوة الميتوكندريا**.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/341e21065fbacd178769.webp)
 
@@ -8132,7 +8760,7 @@ solution:
 المركب (ب) هو NADH؛ يتكوّن في الصورة باكتساب NAD⁺ الإلكترونات والهيدروجين.
 وفق نموذج الكتاب، يعطي NADH واحد **3 جزيئات من ATP** عند استثمار إلكتروناته في سلسلة النقل.
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/c7371551736597077b5f.webp)
 
@@ -8160,15 +8788,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>c</mi><mi>e</mi><mi>t</mi><mi>y</mi><mi>l</mi><mi>C</mi><mi>o</mi><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>c</mi><mi>e</mi><mi>t</mi><mi>y</mi><mi>l</mi><mi>C</mi><mi>o</mi><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>c</mi><mi>e</mi><mi>t</mi><mi>y</mi><mi>l</mi><mi>C</mi><mi>o</mi><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج6 جزيئات أسيتيل مرافق الإنزيم أ.
-
-**المصدر:** الصفحات 10، 11، 22 من الكتاب.
-
 :::
 
 :::exam-question
@@ -8191,15 +8822,28 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
+\`\`\`
+
+نحسب ناتج الماء على حدة. نضرب عدد جزيئات الغلوكوز في ستة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج النهائي الإجمالي12 CO₂ و12 H₂O.
-
-**المصدر:** صفحة 10 من الكتاب.
-
 :::
 
 :::exam-question
@@ -8223,8 +8867,16 @@ NADH وFADH₂ ناقلان يحملان إلكترونات تُستثمر طا�
 مجموع NADH لكل غلوكوز:
 
 
+نجمع العددين.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mn>4</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
@@ -8232,15 +8884,29 @@ NADH وFADH₂ ناقلان يحملان إلكترونات تُستثمر طا�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>10</mn><mo>×</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>30</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>34</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mn>10</mn><mo>×</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>30</mn><mo>+</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mn>10</mn><mo>×</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>34</mn></mrow></math>
 \`\`\`
 
 
 نضيف ATP المباشر من التحلل وكربس:
 
 
+نجمع العددين.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>34</mn><mo>=</mo><mn>38</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>34</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>34</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mn>4</mn><mo>+</mo><mn>34</mn><mo>=</mo><mn>38</mn></mrow></math>
 \`\`\`
 
 
@@ -8253,9 +8919,6 @@ NADH وFADH₂ ناقلان يحملان إلكترونات تُستثمر طا�
 
 
 الناتج **76 جزيئاً من ATP وفق نموذج الكتاب**.
-
-**المصدر:** الصفحات 10، 11، 13 من الكتاب.
-
 :::
 
 :::exam-question
@@ -8277,7 +8940,7 @@ solution:
 
 > تتضمن سلسلة من التفاعلات؛ حيث تحدث في حشوة الميتوكندريون، وينتج عنها مركبات وسطية وفق الآتي:
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -8302,7 +8965,7 @@ solution:
 
 > تبدأ الحلقة بتفاعل جزيء أستيل مرافق الإنزيم أ مع مركب رباعي الكربون (C4) يسمى أوكسالواستيت Oxaloacetate، لينتج مركباً سداسي الكربون (C6)، هو الستريت Citrate حيث يمر الستريت بعدة مراحل لإعادة بناء الأوكسالواستيت من جديد.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -8324,7 +8987,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>18</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>18</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -8334,7 +9003,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mi mathvariant="normal">/</mi><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -8344,15 +9019,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة:12 جزيئًا من NADH من كربس وحدها.
-
-**المصدر:** الصفحات 9، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -8375,7 +9053,7 @@ solution:
 تمثل الصورة **تحويل البيروفيت إلى أستيل مرافق الإنزيم أ**.
 يفقد البيروفيت CO₂، ويُختزل NAD⁺ إلى NADH، وترتبط مجموعة الأسيتيل بمرافق الإنزيم أ؛ وهذا تسلسل مرحلة التحويل.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/0ca30b2aaeb93e753ffe.webp)
 
@@ -8401,7 +9079,7 @@ solution:
 الصورة تمثل تحويل البيروفيت إلى أستيل مرافق الإنزيم أ.
 يدخل البيروفيت الحشوة الميتوكندرية وتحدث عملية التحويل هناك؛ إذن الموقع **حشوة الميتوكندريا**.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/341e21065fbacd178769.webp)
 
@@ -8428,7 +9106,7 @@ solution:
 (س) هو **CO₂**؛ يخرج من البيروفيت عند فقد إحدى ذرات كربونه.
 (ص) هو **أستيل مرافق الإنزيم أ**؛ يظهر بعد ارتباط مجموعة الأسيتيل الثنائية بمرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/0ca30b2aaeb93e753ffe.webp)
 
@@ -8456,7 +9134,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -8466,15 +9150,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج12 ATP من حوامل هذه المرحلة؛ ولا تعطي مرحلة التحويلATP مباشرةً.
-
-**المصدر:** الصفحات 10، 11، 13، 23 من الكتاب.
-
 :::
 
 :::exam-question
@@ -8498,7 +9185,7 @@ solution:
 (1) أستيل مرافق الإنزيم أ؛ يدخل إلى بداية الحلقة، ثم يتحرر منه مرافق الإنزيم أ.
 (2) ثاني أكسيد الكربون CO₂؛ يخرج من الحلقة أثناء أكسدة مركبات الكربون.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/4170e4633d227e8c6aac.webp)
 
@@ -8524,7 +9211,7 @@ solution:
 المركب (3) هو الأوكسالوأسيتات الذي يعاد تكوينه في نهاية الدورة.
 وهو مركب **رباعي الكربون: 4 ذرات كربون**؛ يرتبط بمجموعة أسيتيل ثنائية لتكوين الستريت السداسي.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/4170e4633d227e8c6aac.webp)
 
@@ -8553,15 +9240,24 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>18</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج18 NADH من كربس.
-
-**المصدر:** الصفحات 11، 23 من الكتاب.
-
 :::
 
 :::exam-question
@@ -8586,7 +9282,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -8602,9 +9304,6 @@ solution:
 
 
 إذن تحللت4 جزيئات غلوكوز، ويتفق العمودان.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -8630,15 +9329,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>72</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mn>72</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج72 ATP منNADH المذكور فقط، ولا يُضاف إليه حامل غير وارد في العمود المطلوب.
-
-**المصدر:** صفحة 13 من الكتاب.
-
 :::
 
 :::exam-question
@@ -8664,7 +9366,7 @@ solution:
 
 > تبدأ الحلقة بتفاعل جزيء أستيل مرافق الإنزيم أ مع مركب رباعي الكربون (C4) يسمى أوكسالواستيت Oxaloacetate، لينتج مركباً سداسي الكربون (C6)، هو الستريت Citrate حيث يمر الستريت بعدة مراحل لإعادة بناء الأوكسالواستيت من جديد.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -8693,7 +9395,7 @@ solution:
 
 > يدخل البيروفيت Pyruvate من السيتوسول إلى حشوة الميتوكندريا واحداً تلو الآخر في حالة وجود الأكسجين لإنتاج كمية أكبر من الطاقة، ثم يتحول إلى مركب أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -8717,15 +9419,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
 
 المتحلل3 جزيئات غلوكوز.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -8745,7 +9450,7 @@ solution:
 لا تُبنى جزيئات ATP فيها؛ تظهر الطاقة المنقولة على NADH، وهو ناقل إلكترونات، وتُستثمر لاحقاً في سلسلة النقل.
 إذن الناتج **صفر ATP مباشرةً في مرحلة التحويل**، حتى مع خروج 6 CO₂ منها.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![نواتج مرحلة التحويل](assets/lessons/curriculum-evidence/0ca30b2aaeb93e753ffe.webp)
 
@@ -8772,7 +9477,7 @@ solution:
 
 > يدخل البيروفيت Pyruvate من السيتوسول إلى حشوة الميتوكندريا واحداً تلو الآخر في حالة وجود الأكسجين لإنتاج كمية أكبر من الطاقة، ثم يتحول إلى مركب أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -8841,7 +9546,7 @@ solution:
 
 > بيروفيت؛ CO₂؛ NAD⁺؛ NADH + H⁺؛ مرافق الإنزيم أ؛ أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -8870,15 +9575,24 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>l</mi><mi>i</mi><mi>n</mi><mi>k</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج8 NADH في مرحلة التحويل.
-
-**المصدر:** الصفحات 10، 11، 24 من الكتاب.
-
 :::
 
 :::exam-question
@@ -8901,7 +9615,7 @@ solution:
 المركب (ص) هو أستيل مرافق الإنزيم أ، ناتج تحويل البيروفيت في الرسم.
 تدخل مجموعة الأسيتيل ذات ذرتي الكربون في تفاعل مع الأوكسالوأسيتات ذي أربع ذرات كربون، فيتكوّن الستريت السداسي وتبدأ حلقة كربس.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/e8fdd66891d94906bc56.webp)
 
@@ -8924,7 +9638,7 @@ solution:
 
 > يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -8954,7 +9668,13 @@ NADH ناقل إلكترونات مختزل، ويتكون منه2 لكل غلو
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -8970,9 +9690,6 @@ NADH ناقل إلكترونات مختزل، ويتكون منه2 لكل غلو
 
 
 المتحلل4 جزيئات غلوكوز.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9036,9 +9753,6 @@ NADH وFADH₂ ناقلان للإلكترونات، وATP حامل للطاقة
 
 
 إذن س24 ATP، وص24 NADH، وع88 ATP.
-
-**المصدر:** الصفحات 10، 11، 13 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9066,7 +9780,13 @@ NADH ناقل إلكترونات مختزل؛ والتحلل يعطي2 منه ل
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -9076,15 +9796,24 @@ ATP حامل الطاقة. كل غلوكوز يعطي صافياً2 ATP مباش
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج16 ATP مباشرةً وصافياً من جميع المراحل.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9124,10 +9853,7 @@ solution:
 
 
 
-**المصدر:** صفحة 13 من الكتاب.
-
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/db2d57977a0c617749dd.webp)
-
 :::
 
 :::exam-question
@@ -9147,7 +9873,7 @@ solution:
 
 > يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -9171,7 +9897,13 @@ ATP حامل للطاقة. كل غلوكوز يدير كربس مرتين، في
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -9187,9 +9919,6 @@ ATP حامل للطاقة. كل غلوكوز يدير كربس مرتين، في
 
 
 المتحلل6 جزيئات غلوكوز.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9211,7 +9940,7 @@ solution:
 
 > تبدأ الحلقة بتفاعل جزيء أستيل مرافق الإنزيم أ مع مركب رباعي الكربون (C4) يسمى أوكسالواستيت Oxaloacetate، لينتج مركباً سداسي الكربون (C6)، هو الستريت Citrate حيث يمر الستريت بعدة مراحل لإعادة بناء الأوكسالواستيت من جديد.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -9236,7 +9965,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -9246,15 +9981,28 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>22</mn><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>22</mn><mo>=</mo><mn>132</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>22</mn></mrow></math>
+\`\`\`
+
+نضرب عدد جزيئات الغلوكوز في ناتج السلسلة من حوامل كربس لكل جزيء غلوكوز.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>22</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>132</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج132 ATP غير مباشرة من حوامل كربس.
-
-**المصدر:** الصفحات 11، 13 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9276,7 +10024,13 @@ NADH ناقل إلكترونات مختزل، ويعطي التحلل الغلا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -9286,15 +10040,24 @@ ATP حامل الطاقة؛ ينتج4 ويُستهلك2 في التحلل لكل
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج المباشر الصافي12 ATP؛ أما الإنتاج الإجمالي قبل طرح المستهلك فهو24 ATP.
-
-**المصدر:** صفحة 10 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9322,10 +10085,7 @@ solution:
 
 
 
-**المصدر:** صفحة 13 من الكتاب.
-
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/9ddb1cb8ff585cfb1419.webp)
-
 :::
 
 :::exam-question
@@ -9349,7 +10109,7 @@ solution:
 
 > تتضمن سلسلة من التفاعلات؛ حيث تحدث في حشوة الميتوكندريون، وينتج عنها مركبات وسطية وفق الآتي:
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -9375,7 +10135,7 @@ solution:
 المركب (س) هو أستيل مرافق الإنزيم أ، ويحمل مجموعة الأسيتيل الثنائية إلى الحلقة.
 ترتبط مجموعة الأسيتيل بالأوكسالوأسيتات رباعي الكربون؛ فيتكوّن **الستريت، أو حمض الستريك، سداسي الكربون**.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/4170e4633d227e8c6aac.webp)
 
@@ -9403,15 +10163,24 @@ ATP حامل للطاقة. كل غلوكوز يعطي أسيتيلين، فتد�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج4 ATP مباشرةً.
-
-**المصدر:** الصفحات 11، 25 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9434,7 +10203,7 @@ solution:
 (ص) هو **FADH₂**؛ يقع عند خروج الصورة المختزلة من الناقل FAD في حلقة كربس.
 يكتسب FAD الإلكترونات والهيدروجين فيتحول إلى FADH₂، الذي يحملها لاحقاً إلى سلسلة النقل.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/4170e4633d227e8c6aac.webp)
 
@@ -9463,15 +10232,24 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج8 CO₂ من كربس وحدها؛ لا يشملCO₂ مرحلة تحويل البيروفيت.
-
-**المصدر:** الصفحات 11، 25 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9498,15 +10276,44 @@ NADH وFADH₂ ناقلان مختزلان للإلكترونات. في كربس
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>22</mn><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>22</mn><mo>=</mo><mn>44</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>18</mn><mo>+</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>22</mn></mrow></math>
+\`\`\`
+
+نحسب ناتج جزيئَي الغلوكوز بضرب ناتج الجزيء الواحد في اثنين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>22</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج44 ATP في السلسلة من حوامل كربس لغلوكوزين، ولا يشملATP كربس المباشر.
-
-**المصدر:** الصفحات 11، 13، 25 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9559,15 +10366,24 @@ ATP حامل للطاقة. في التحلل لكل غلوكوز يتكون4 و�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
 
 إذن التحلل يعطي8 ATP صافية مباشرةً. أما تحويل البيروفيت فيعطي صفرATP مباشر، مهما كان العدد المذكور؛ طاقته تُحمل علىNADH.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9590,7 +10406,7 @@ solution:
 الشكل يوضح استهلاك 2ATP وإنتاج 4ATP، مع تكوين NADH والبيروفيت؛ وهذه سمات **التحلل الغلايكولي**.
 تحدث هذه المرحلة في **سيتوسول الخلية**.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/c424291385415e00b4bb.webp)
 
@@ -9618,7 +10434,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -9628,15 +10450,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>g</mi><mi>l</mi><mi>y</mi><mi>c</mi><mi>o</mi><mi>l</mi><mi>y</mi><mi>s</mi><mi>i</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>g</mi><mi>l</mi><mi>y</mi><mi>c</mi><mi>o</mi><mi>l</mi><mi>y</mi><mi>s</mi><mi>i</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mrow><mi>g</mi><mi>l</mi><mi>y</mi><mi>c</mi><mi>o</mi><mi>l</mi><mi>y</mi><mi>s</mi><mi>i</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج6 NADH في هذه المرحلة.
-
-**المصدر:** الصفحات 10، 26 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9662,15 +10487,24 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج النهائي4 ATP صافية؛ أما الإنتاج الإجمالي فهو8 ATP.
-
-**المصدر:** الصفحات 10، 26 من الكتاب.
-
 :::
 
 :::exam-question
@@ -9709,7 +10543,7 @@ solution:
 
 > تعمل البروتينات في سلسلة نقل الإلكترون كمضخات للبروتونات H⁺، حيث تقوم بضخ H⁺ من داخل الحشوة إلى الحيز بين الغشائي باستخدام طاقة الإلكترون عبر سلسلة نقل الإلكترون.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -9717,7 +10551,7 @@ solution:
 
 > يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -9725,7 +10559,7 @@ solution:
 
 > استمرار ضخ البروتونات إلى الحيز بين الغشائي يؤدي إلى زيادة تركيز أيونات الهيدروجين H⁺ هناك، ويؤدي ذلك إلى انتقال أيونات الهيدروجين بفعل فرق التركيز إلى داخل الحشوة عبر إنزيم بناء ATP. هذا الانتقال يؤدي إلى تنشيط إنزيم بناء ATP، وبالتالي بناء ATP من جزيئات ADP ومجموعات الفوسفات.
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 
 
@@ -9799,15 +10633,44 @@ ATP حامل للطاقة. كربس لكل غلوكوز تدور مرتين، ف
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>22</mn><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>22</mn><mo>=</mo><mn>88</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>18</mn><mo>+</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>22</mn></mrow></math>
+\`\`\`
+
+نضرب الناتج لكل جزيء غلوكوز في أربعة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>22</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>88</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة88 ATP غير مباشرة من حوامل كربس.
-
-**المصدر:** الصفحات 11، 13 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -9827,7 +10690,7 @@ explanation:
 (2) **الستريت**؛ ينتج من اتحاد مجموعة الأسيتيل الثنائية مع الأوكسالوأسيتات الرباعية.
 إذن الترتيب الصحيح **مرافق الإنزيم أ ثم الستريت**، وهو الخيار الثالث.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/4170e4633d227e8c6aac.webp)
 
@@ -9848,11 +10711,7 @@ reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · ص�
 explanation:
 **الإجابة:** الغشاء الداخلي للميتوكندريا
 
-**الشاهد من الكتاب:**
-
-> يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
-
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -9875,7 +10734,7 @@ explanation:
 
 > استمرار ضخ البروتونات إلى الحيز بين الغشائي يؤدي إلى زيادة تركيز أيونات الهيدروجين H⁺ هناك، ويؤدي ذلك إلى انتقال أيونات الهيدروجين بفعل فرق التركيز إلى داخل الحشوة عبر إنزيم بناء ATP. هذا الانتقال يؤدي إلى تنشيط إنزيم بناء ATP، وبالتالي بناء ATP من جزيئات ADP ومجموعات الفوسفات.
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 
 
@@ -9897,7 +10756,25 @@ NADH ناقل مختزل للإلكترونات؛ يتكون لكل غلوكوز
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mo>÷</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mo>÷</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mo>÷</mo><mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mo>÷</mo><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -9907,15 +10784,18 @@ NADH ناقل مختزل للإلكترونات؛ يتكون لكل غلوكوز
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>12</mn><mo>=</mo><mn>72</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>12</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>P</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>72</mn></mrow></math>
 \`\`\`
 
 
 
 كل ماء مشطور يوفر إلكترونين لتكوينNADPH واحد، لذا يُشطر72 ماء. إذن يلزم **72 جزيئاً من الماء** لبناء الغلوكوز الذي نص السؤال على دخوله التنفس.
-
-**المصدر:** الصفحات 7، 8، 9، 10، 11 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -9940,7 +10820,7 @@ NADH وFADH₂ ناقلان مختزلان للإلكترونات. لكل غلو
 
 > غلوكوز؛ استهلاك 2ATP؛ إنتاج 4ATP؛ 2NADH؛ 2 بيروفيت؛ 2ATP.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -9948,7 +10828,7 @@ NADH وFADH₂ ناقلان مختزلان للإلكترونات. لكل غلو
 
 > بيروفيت؛ CO₂؛ NAD⁺؛ NADH + H⁺؛ مرافق الإنزيم أ؛ أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -9956,7 +10836,7 @@ NADH وFADH₂ ناقلان مختزلان للإلكترونات. لكل غلو
 
 > يتحرر أثناء هذه الدورة مرافق الإنزيم أ ليكرر عمله في دورة أخرى، وينتج جزيئان من ثاني أكسيد الكربون وجزيء ATP، كما وينتج ثلاثة جزيئات من NADH وجزيء واحد من FADH₂ وذلك في كل دورة. تتكرر الدورة مرتين، مرة لكل جزيء من مجموعة الأستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -9980,7 +10860,7 @@ solution:
 
 > يحدث هذا النوع من التنفس في معظم الكائنات الحية، حيث تعتمد على وجود الأكسجين وتطلق غاز ثاني أكسيد الكربون. ويتم استخدام الأكسجين في أكسدة المواد الغذائية مثل الغلوكوز لإنتاج الطاقة اللازمة لتأدية العمليات الحيوية التي تقوم بها الخلية. C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 38ATP.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -10003,7 +10883,7 @@ solution:
 
 > يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -10031,7 +10911,13 @@ ATP حامل للطاقة، وNADH وFADH₂ ناقلان مختزلان. عبا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>g</mi><mi>l</mi><mi>y</mi><mi>c</mi><mi>o</mi><mi>l</mi><mi>y</mi><mi>s</mi><mi>i</mi><mi>s</mi><mo separator="true">,</mo><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>g</mi><mi>l</mi><mi>y</mi><mi>c</mi><mi>o</mi><mi>l</mi><mi>y</mi><mi>s</mi><mi>i</mi><mi>s</mi><mo separator="true">,</mo><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>g</mi><mi>l</mi><mi>y</mi><mi>c</mi><mi>o</mi><mi>l</mi><mi>y</mi><mi>s</mi><mi>i</mi><mi>s</mi><mo separator="true">,</mo><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -10041,15 +10927,34 @@ ATP حامل للطاقة، وNADH وFADH₂ ناقلان مختزلان. عبا
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo>=</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>22</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo>=</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo>=</mo><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo>=</mo><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>18</mn><mo>+</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi><mo separator="true">,</mo><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>22</mn></mrow></math>
 \`\`\`
 
 
 
 إذن التحلل6 ATP غير مباشرة، وكربس22 ATP غير مباشرة لكل غلوكوز.
-
-**المصدر:** الصفحات 10، 11، 13 من الكتاب.
-
 :::
 
 :::exam-question
@@ -10072,7 +10977,7 @@ solution:
 
 > تحدث هذه المرحلة في سيتوسول جميع الخلايا الحية، وهذه العملية لا تتطلب وجود الأكسجين لإنتاج الطاقة. في هذه المرحلة ينشطر سكر الغلوكوز إلى جزيئين من سكر غليسر الدهايد (ثلاثي الكربون) ليتأكسد كل جزيء منهما؛ ليكونا في نهاية هذه المرحلة جزيئين من حمض البيروفيك (البيروفيت).
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -10080,7 +10985,7 @@ solution:
 
 > يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -10109,7 +11014,7 @@ solution:
 
 > غلوكوز؛ استهلاك 2ATP؛ إنتاج 4ATP؛ 2NADH؛ 2 بيروفيت؛ 2ATP.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -10117,7 +11022,7 @@ solution:
 
 > بيروفيت؛ CO₂؛ NAD⁺؛ NADH + H⁺؛ مرافق الإنزيم أ؛ أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -10125,7 +11030,7 @@ solution:
 
 > يتحرر أثناء هذه الدورة مرافق الإنزيم أ ليكرر عمله في دورة أخرى، وينتج جزيئان من ثاني أكسيد الكربون وجزيء ATP، كما وينتج ثلاثة جزيئات من NADH وجزيء واحد من FADH₂ وذلك في كل دورة. تتكرر الدورة مرتين، مرة لكل جزيء من مجموعة الأستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -10156,7 +11061,7 @@ solution:
 
 
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/9ddb1cb8ff585cfb1419.webp)
 
@@ -10213,7 +11118,7 @@ solution:
 المركب (س) هو **مرافق الإنزيم أ CoA**.
 يدخل عند الخطوة الأخيرة ليرتبط بمجموعة الأسيتيل الناتجة، فيتكوّن أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/0ca30b2aaeb93e753ffe.webp)
 
@@ -10247,10 +11152,8 @@ solution:
 
 إذن مجموعة الأسيتيل تحتوي **ذرتي كربون**؛ لا يعني ذلك أن جزيء مرافق الإنزيم أ كله ثنائي الكربون.
 
-**المصدر:** صفحة 11 من الكتاب.
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/0ca30b2aaeb93e753ffe.webp)
-
 :::
 
 :::exam-question
@@ -10310,7 +11213,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -10320,29 +11229,30 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>24</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
 \`\`\`
 
 
 
 المجموع24 CO₂ من جميع المراحل.
-
-**المصدر:** الصفحات 10، 11، 28 من الكتاب.
-
 :::
 
 :::exam-question
 id: bio-q-p029-q6-2
 title: تصنيف الأسئلة، صفحة 29، السؤال 6، الفرع 2
-question: الجدول المجاور يمثل مقارنة بين أنواع التنفس الخلوي، اذكر ما تدل عليه الأرقام الواردة في الجدول. العمود الذي ناتجه النهائيCO2 +H2O ويعطي38ATP لكل غلوكوز، ويحدث في السيتوسول +(9)، يحمل نوع التنفس(2) ومستقبل الإلكترون(6).
+question: تحديد نوع التنفس الخلوي من نواتجه
 reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · صفحة PDF 29
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
-الجدول المجاور يمثل مقارنة بين أنواع التنفس الخلوي، اذكر ما تدل عليه الأرقام الواردة في الجدول. العمود الذي ناتجه النهائيCO2 +H2O ويعطي38ATP لكل غلوكوز، ويحدث في السيتوسول +(9)، يحمل نوع التنفس(2) ومستقبل الإلكترون(6).
-
-ما نوع التنفس(2)؟
+ينتج عن الأكسدة الكاملة للغلوكوز في خلية حقيقية النواة ثاني أكسيد الكربون والماء، وتتحول بعض طاقة الغلوكوز إلى جزيئات ATP. ما نوع هذا التنفس الخلوي؟
 final-answer:
-**(2): التنفس الخلوي الهوائي.**
+**التنفس الخلوي الهوائي.**
 solution:
 **الإجابة:** التنفس الخلوي الهوائي.
 
@@ -10350,7 +11260,7 @@ solution:
 
 > يحدث هذا النوع من التنفس في معظم الكائنات الحية، حيث تعتمد على وجود الأكسجين وتطلق غاز ثاني أكسيد الكربون. ويتم استخدام الأكسجين في أكسدة المواد الغذائية مثل الغلوكوز لإنتاج الطاقة اللازمة لتأدية العمليات الحيوية التي تقوم بها الخلية. C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 38ATP.
 
-**المصدر:** صفحة 10 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 10](https://moe.edu.ps/m/4061#page=10).
 
 
 
@@ -10359,15 +11269,13 @@ solution:
 :::exam-question
 id: bio-q-p029-q6-6
 title: تصنيف الأسئلة، صفحة 29، السؤال 6، الفرع 6
-question: الجدول المجاور يمثل مقارنة بين أنواع التنفس الخلوي، اذكر ما تدل عليه الأرقام الواردة في الجدول. العمود الذي ناتجه النهائيCO2 +H2O ويعطي38ATP لكل غلوكوز، ويحدث في السيتوسول +(9)، يحمل نوع التنفس(2) ومستقبل الإلكترون(6).
+question: المستقبل النهائي للإلكترونات
 reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · صفحة PDF 29
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
-الجدول المجاور يمثل مقارنة بين أنواع التنفس الخلوي، اذكر ما تدل عليه الأرقام الواردة في الجدول. العمود الذي ناتجه النهائيCO2 +H2O ويعطي38ATP لكل غلوكوز، ويحدث في السيتوسول +(9)، يحمل نوع التنفس(2) ومستقبل الإلكترون(6).
-
-ما المستقبل النهائي للإلكترون(6)؟
+ما المستقبل النهائي للإلكترونات في سلسلة نقل الإلكترون أثناء التنفس الخلوي الهوائي؟
 final-answer:
-**(6): الأكسجين (O₂).**
+**الأكسجين (O₂).**
 solution:
 **الإجابة:** الأكسجينO2.
 
@@ -10375,7 +11283,7 @@ solution:
 
 > في نهاية سلسلة نقل الإلكترون يكون الأكسجين هو المستقبل النهائي للإلكترونات، حيث يتم ربط الهيدروجين والأكسجين لتكوين H₂O.
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 
 
@@ -10384,15 +11292,13 @@ solution:
 :::exam-question
 id: bio-q-p029-q6-9
 title: تصنيف الأسئلة، صفحة 29، السؤال 6، الفرع 9
-question: الجدول المجاور يمثل مقارنة بين أنواع التنفس الخلوي، اذكر ما تدل عليه الأرقام الواردة في الجدول. العمود الذي ناتجه النهائيCO2 +H2O ويعطي38ATP لكل غلوكوز، ويحدث في السيتوسول +(9)، يحمل نوع التنفس(2) ومستقبل الإلكترون(6).
+question: مكان المراحل اللاحقة من التنفس الخلوي
 reference: تصنيف أسئلة الأحياء توجيهي 2025 (1).pdf · صفحة PDF 29
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
-الجدول المجاور يمثل مقارنة بين أنواع التنفس الخلوي، اذكر ما تدل عليه الأرقام الواردة في الجدول. العمود الذي ناتجه النهائيCO2 +H2O ويعطي38ATP لكل غلوكوز، ويحدث في السيتوسول +(9)، يحمل نوع التنفس(2) ومستقبل الإلكترون(6).
-
-ما مكان الحدوث(9) المكمل للسيتوسول؟
+في خلية حقيقية النواة، يبدأ تحليل الغلوكوز في السيتوسول. في أي عضية تحدث أكسدة البيروفيت وحلقة كربس وسلسلة نقل الإلكترون أثناء التنفس الخلوي الهوائي؟
 final-answer:
-**(9): الميتوكندريا.**
+**الميتوكندريا.**
 solution:
 **الإجابة:** المايتوكندريا؛ أكسدة البيروفيت وكربس في الحشوة، وسلسلة نقل الإلكترون في الغشاء الداخلي.
 
@@ -10400,7 +11306,7 @@ solution:
 
 > يدخل البيروفيت Pyruvate من السيتوسول إلى حشوة الميتوكندريا واحداً تلو الآخر في حالة وجود الأكسجين لإنتاج كمية أكبر من الطاقة، ثم يتحول إلى مركب أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -10408,7 +11314,7 @@ solution:
 
 > تتضمن سلسلة من التفاعلات؛ حيث تحدث في حشوة الميتوكندريون، وينتج عنها مركبات وسطية وفق الآتي:
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 18](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=22).
 
 
 
@@ -10416,7 +11322,7 @@ solution:
 
 > يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -10444,7 +11350,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -10460,9 +11372,6 @@ solution:
 
 
 المتحلل6 جزيئات غلوكوز، والعمودان متفقان.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -10487,15 +11396,28 @@ NADH وFADH₂ ناقلان مختزلان للإلكترونات. في كربس
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>c</mi><mi>y</mi><mi>c</mi><mi>l</mi><mi>e</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>3</mn><mo>=</mo><mn>12</mn><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>c</mi><mi>y</mi><mi>c</mi><mi>l</mi><mi>e</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn><mo>÷</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>c</mi><mi>y</mi><mi>c</mi><mi>l</mi><mi>e</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
+\`\`\`
+
+نضرب عدد دورات كربس في ناتج الدورة الواحدة من FADH₂.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج12 FADH₂. وهذا يقابل6 غلوكوز، كل منها يدير دورتين.
-
-**المصدر:** صفحة 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -10517,7 +11439,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -10527,15 +11455,24 @@ ATP حامل للطاقة. في التحلل الغلايكولي يتكون4 م
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>n</mi><mi>e</mi><mi>t</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج الصافي8 ATP مباشرةً في التحلل، دونATP السلسلة.
-
-**المصدر:** الصفحات 5، 10 من الكتاب.
-
 :::
 
 :::exam-question
@@ -10558,7 +11495,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -10569,15 +11512,38 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>16</mn><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>24</mn><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn></mrow></math>
+\`\`\`
+
+نحسب ناتج NADH بضرب عدد جزيئات الغلوكوز في ستة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn></mrow></math>
+\`\`\`
+
+نحسب ناتج FADH₂ بضرب عدد جزيئات الغلوكوز في اثنين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
 
 نواتج كربس16 CO₂ و24 NADH و8 FADH₂.
-
-**المصدر:** الصفحات 5، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -10599,7 +11565,7 @@ solution:
 
 > يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -10624,7 +11590,7 @@ solution:
 
 > تعمل البروتينات في سلسلة نقل الإلكترون كمضخات للبروتونات H⁺، حيث تقوم بضخ H⁺ من داخل الحشوة إلى الحيز بين الغشائي باستخدام طاقة الإلكترون عبر سلسلة نقل الإلكترون.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -10632,7 +11598,7 @@ solution:
 
 > يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -10657,7 +11623,7 @@ solution:
 
 > تبدأ الحلقة بتفاعل جزيء أستيل مرافق الإنزيم أ مع مركب رباعي الكربون (C4) يسمى أوكسالواستيت Oxaloacetate، لينتج مركباً سداسي الكربون (C6)، هو الستريت Citrate حيث يمر الستريت بعدة مراحل لإعادة بناء الأوكسالواستيت من جديد.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -10704,15 +11670,28 @@ ATP حامل للطاقة، وNADH ناقل إلكترونات مختزل. لك�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>2</mn><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn><mo>÷</mo><mn>8</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>2</mn><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><mi>P</mi><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>8</mn></mrow></math>
+\`\`\`
+
+نقسم مجموع جزيئات ATP على حاصل جزيء غلوكوز واحد.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn><mo>÷</mo><mn>8</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
 
 المتحلل جزيئان من الغلوكوز. «غير مباشر» يُنسب لحوامل التحلل، مع أنATP نفسه يُبنى في السلسلة.
-
-**المصدر:** الصفحات 10، 13 من الكتاب.
-
 :::
 
 :::exam-question
@@ -10734,7 +11713,19 @@ ATP حامل الطاقة. وفق نموذج الرزمة يعطي التحلل 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn><mo>÷</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn><mo>÷</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn><mo>÷</mo><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -10744,15 +11735,24 @@ ATP حامل الطاقة. وفق نموذج الرزمة يعطي التحلل 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mrow><mn>2</mn><mo separator="true">,</mo><mi>K</mi><mi>r</mi><mi>e</mi><mi>b</mi><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج8 CO₂ من كربس وحدها.
-
-**المصدر:** الصفحات 10، 11، 13 من الكتاب.
-
 :::
 
 :::exam-question
@@ -10775,7 +11775,7 @@ solution:
 
 > يدخل البيروفيت Pyruvate من السيتوسول إلى حشوة الميتوكندريا واحداً تلو الآخر في حالة وجود الأكسجين لإنتاج كمية أكبر من الطاقة، ثم يتحول إلى مركب أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -10800,7 +11800,13 @@ ATP حامل للطاقة. وفق نموذج الرزمة يعطي التحلل 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn><mo>÷</mo><mn>8</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn><mo>÷</mo><mn>8</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -10810,15 +11816,18 @@ ATP حامل للطاقة. وفق نموذج الرزمة يعطي التحلل 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 المستهلك12 O₂ للمقدار نفسه من الغلوكوز.
-
-**المصدر:** الصفحات 10، 13 من الكتاب.
-
 :::
 
 :::exam-question
@@ -10842,7 +11851,7 @@ solution:
 العملية (أ) تظهر النظام الضوئي الأول ونهاية المسار الإلكتروني الضوئي؛ فتحدث في **غشاء الثايلاكويد** داخل البلاستيدة الخضراء.
 العملية (ب) تظهر تحويل البيروفيت إلى أستيل مرافق الإنزيم أ؛ فتحدث في **حشوة الميتوكندريا**.
 
-**المصدر:** صفحة 6 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 6](https://moe.edu.ps/m/4061#page=6).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/c8e442f68457097c5e7c.webp)
 
@@ -10899,7 +11908,7 @@ solution:
 (س) هو **NADPH**؛ يقع عند نهاية انتقال الإلكترونات بعد اختزال NADP⁺.
 (ع) هو **السيتوكرومات**؛ يقع في مستطيل سلسلة النقل قبل وصول الإلكترونات إلى النظام الأول.
 
-**المصدر:** صفحة 7 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 7](https://moe.edu.ps/m/4061#page=7).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/a201ef2f5b0c2727e48a.webp)
 
@@ -10925,7 +11934,7 @@ solution:
 العملية (ب) تمثل **تحويل البيروفيت إلى أستيل مرافق الإنزيم أ**.
 يفقد البيروفيت CO₂، ويُختزل NAD⁺ إلى NADH، ثم ترتبط مجموعة الأسيتيل بمرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/0ca30b2aaeb93e753ffe.webp)
 
@@ -10952,7 +11961,7 @@ solution:
 
 > يوجد في الغشاء الداخلي للميتوكندريون (الأعراف) مجموعة من الإنزيمات والبروتينات تترتب وفق نظام خاص يتيح لها إطلاق الطاقة عند نقل الإلكترونات من جزيئات حاملات الطاقة (NADH وFADH₂)، ويسمى هذا النظام سلسلة نقل الإلكترون. تنتقل الإلكترونات ضمن مستويات طاقة مختلفة من خلال مرورها من بروتين إلى آخر من السيتوكرومات (بروتينات تحتوي على ذرة حديد)، حيث تنطلق الطاقة المختزنة في النواقل الهيدروجينية NADH وFADH₂ عبر سلسلة نقل الإلكترون لتكوين جزيئات ATP. وتعرف هذه العملية بالفسفرة التأكسدية.
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 
 
@@ -10977,15 +11986,24 @@ ATP حامل للطاقة. المطلوب المباشر داخل الميتوك
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>m</mi><mi>i</mi><mi>t</mi><mi>o</mi><mi>c</mi><mi>h</mi><mi>o</mi><mi>n</mi><mi>d</mi><mi>r</mi><mi>i</mi><mi>a</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>m</mi><mi>i</mi><mi>t</mi><mi>o</mi><mi>c</mi><mi>h</mi><mi>o</mi><mi>n</mi><mi>d</mi><mi>r</mi><mi>i</mi><mi>a</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>m</mi><mi>i</mi><mi>t</mi><mi>o</mi><mi>c</mi><mi>h</mi><mi>o</mi><mi>n</mi><mi>d</mi><mi>r</mi><mi>i</mi><mi>a</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>m</mi><mi>i</mi><mi>t</mi><mi>o</mi><mi>c</mi><mi>h</mi><mi>o</mi><mi>n</mi><mi>d</mi><mi>r</mi><mi>i</mi><mi>a</mi><mo separator="true">,</mo><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج6 ATP مباشرةً في الميتوكندريا، دونATP السلسلة غير المباشر.
-
-**المصدر:** الصفحات 10، 11، 12 من الكتاب.
-
 :::
 
 :::exam-question
@@ -11007,7 +12025,7 @@ solution:
 
 > في نهاية سلسلة نقل الإلكترون يكون الأكسجين هو المستقبل النهائي للإلكترونات، حيث يتم ربط الهيدروجين والأكسجين لتكوين H₂O.
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 
 
@@ -11034,7 +12052,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -11044,15 +12068,44 @@ ATP حامل للطاقة. وفق نموذج الرزمة تنقل كل جزيئ
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>10</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>34</mn><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>34</mn><mo>=</mo><mn>102</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>10</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>30</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>30</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>30</mn><mo>+</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>34</mn></mrow></math>
+\`\`\`
+
+نضرب عدد جزيئات الغلوكوز في ناتج السلسلة لكل جزيء غلوكوز.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mn>34</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>102</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج102 ATP من السلسلة.
-
-**المصدر:** الصفحات 10، 11، 13 من الكتاب.
-
 :::
 
 :::mcq
@@ -11071,7 +12124,29 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>96</mn><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>96</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>16</mn><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>96</mn></mrow></math>
+\`\`\`
+
+نقسم عدد جزيئات G3P الكلية على ستة لحساب الجزيئات الصافية.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>96</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>G</mi><mn>3</mn><msub><mi>P</mi><mrow><mi>f</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الصافي من G3P على اثنين لحساب جزيئات الغلوكوز.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>16</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
@@ -11091,15 +12166,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>36</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة36 CO₂.
-
-**المصدر:** الصفحات 9، 10 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -11119,7 +12197,7 @@ explanation:
 
 > استمرار ضخ البروتونات إلى الحيز بين الغشائي يؤدي إلى زيادة تركيز أيونات الهيدروجين H⁺ هناك، ويؤدي ذلك إلى انتقال أيونات الهيدروجين بفعل فرق التركيز إلى داخل الحشوة عبر إنزيم بناء ATP. هذا الانتقال يؤدي إلى تنشيط إنزيم بناء ATP، وبالتالي بناء ATP من جزيئات ADP ومجموعات الفوسفات.
 
-**المصدر:** صفحة 13 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 13](https://moe.edu.ps/m/4061#page=13).
 
 
 
@@ -11162,7 +12240,13 @@ NADH ناقل إلكترونات مختزل. وفق معادلة الكتاب ي
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo>+</mo><msup><mi>H</mi><mo lspace="0em" rspace="0em">+</mo></msup><mo>⟶</mo><mi>N</mi><mi>A</mi><msup><mi>D</mi><mo lspace="0em" rspace="0em">+</mo></msup><mo>+</mo><mn>2</mn><msup><mi>e</mi><mo lspace="0em" rspace="0em">−</mo></msup><mo>+</mo><mn>2</mn><msup><mi>H</mi><mo lspace="0em" rspace="0em">+</mo></msup><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>30</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo>+</mo><msup><mi>H</mi><mo lspace="0em" rspace="0em">+</mo></msup><mo>⟶</mo><mi>N</mi><mi>A</mi><msup><mi>D</mi><mo lspace="0em" rspace="0em">+</mo></msup><mo>+</mo><mn>2</mn><msup><mi>e</mi><mo lspace="0em" rspace="0em">−</mo></msup><mo>+</mo><mn>2</mn><msup><mi>H</mi><mo lspace="0em" rspace="0em">+</mo></msup><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo>+</mo><msup><mi>H</mi><mo lspace="0em" rspace="0em">+</mo></msup><mo>⟶</mo><mi>N</mi><mi>A</mi><msup><mi>D</mi><mo lspace="0em" rspace="0em">+</mo></msup><mo>+</mo><mn>2</mn><msup><mi>e</mi><mo lspace="0em" rspace="0em">−</mo></msup><mo>+</mo><mn>2</mn><msup><mi>H</mi><mo lspace="0em" rspace="0em">+</mo></msup><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn></mrow></math>
 \`\`\`
 
 
@@ -11172,7 +12256,13 @@ NADH ناقل إلكترونات مختزل. وفق معادلة الكتاب ي
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>÷</mo><mn>10</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>÷</mo><mn>10</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -11182,15 +12272,24 @@ ATP حامل الطاقة؛ الناتج المباشر الصافي لكل غل
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة 12 ATP؛ عدد H⁺ هنا يخص طرف نواتج المعادلة المعطاة، ولا يمثل البروتونات التي تضخها السلسلة.
-
-**المصدر:** الصفحات 10، 11، 12 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -11210,7 +12309,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>6</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn><mo>÷</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -11220,15 +12325,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>6</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>C</mi><msub><mi>O</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة:12 جزيئًا من CO₂.
-
-**المصدر:** الصفحات 9، 10، 13 من الكتاب.
-
 :::
 
 :::exam-question
@@ -11253,7 +12361,39 @@ ATP حامل للطاقة، وNADH وFADH₂ ناقلان مختزلان. لكل
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>10</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>34</mn><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>204</mn><mo>÷</mo><mn>34</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>10</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>30</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>30</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>30</mn><mo>+</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>34</mn></mrow></math>
+\`\`\`
+
+نقسم حاصل السلسلة من ATP على الحاصل لكل جزيء غلوكوز.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>204</mn><mo>÷</mo><mn>34</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -11263,15 +12403,18 @@ ATP حامل للطاقة، وNADH وFADH₂ ناقلان مختزلان. لكل
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi>A</mi><mi>D</mi><msub><mi>H</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 الناتج12 FADH₂ وفق النموذج المنهجي.
-
-**المصدر:** الصفحات 10، 11، 13 من الكتاب.
-
 :::
 
 :::exam-question
@@ -11317,11 +12460,11 @@ solution:
 
 الحلقة (ص) تثبّت CO₂ وتنتج G3P وتعيد تصنيع مستقبله؛ فهي **حلقة كالفن**.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/2b526c1509ade49a0046.webp)
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/4170e4633d227e8c6aac.webp)
 
@@ -11349,7 +12492,7 @@ solution:
 
 > تسمى هذه التفاعلات حلقة كالفن Calvin Cycle نسبة إلى مكتشفها، وتحدث هذه التفاعلات في ستروما البلاستيدة حيث توجد الإنزيمات اللازمة لها، ودون الحاجة للضوء، ويتم فيها استخدام الطاقة المختزنة في نواتج التفاعلات الضوئية ATP وNADPH.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -11357,7 +12500,7 @@ solution:
 
 > تتضمن سلسلة من التفاعلات؛ حيث تحدث في حشوة الميتوكندريون، وينتج عنها مركبات وسطية وفق الآتي:
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -11409,7 +12552,7 @@ solution:
 
 > ويدخل الكربون حلقة كالفن على شكل CO₂ ويغادرها على شكل سكر. ولتشغيل الحلقة يتم استهلاك جزيئات ATP كمصدر للطاقة، وNADPH كعامل اختزال قوي يضيف إلكترونات ذات طاقة عالية وأيونات هيدروجين لصنع جزيئات السكر.
 
-**المصدر:** صفحة 9 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 9](https://moe.edu.ps/m/4061#page=9).
 
 
 
@@ -11437,9 +12580,6 @@ solution:
 
 
 الإجابة:7.5 مول من الغلوكوز. الكمية المولية قد تكون كسرية، خلاف عدّ جزيئات منفردة.
-
-**المصدر:** صفحة 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -11460,15 +12600,28 @@ ATP حامل للطاقة. كل دورة كربس تطلق2 CO₂ وتنتجATP 
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>c</mi><mi>y</mi><mi>c</mi><mi>l</mi><mi>e</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>÷</mo><mn>2</mn><mo>=</mo><mn>15</mn><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>15</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>c</mi><mi>y</mi><mi>c</mi><mi>l</mi><mi>e</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>÷</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>c</mi><mi>y</mi><mi>c</mi><mi>l</mi><mi>e</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn></mrow></math>
+\`\`\`
+
+نضرب عدد الدورات في ناتج الدورة الواحدة من ATP المباشر.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn><mo>×</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>d</mi><mi>i</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn></mrow></math>
 \`\`\`
 
 
 
 إذن الناتج **15 جزيئاً من ATP مباشرةً** في هذه المرحلة.
-
-**المصدر:** صفحة 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -11503,9 +12656,6 @@ solution:
 
 
 الإجابة:15 مولًا من NADH.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -11540,9 +12690,6 @@ solution:
 
 
 الإجابة:45 مولًا من O₂.
-
-**المصدر:** الصفحات 10، 11 من الكتاب.
-
 :::
 
 :::exam-question
@@ -11564,7 +12711,7 @@ solution:
 
 > تتضمن سلسلة من التفاعلات؛ حيث تحدث في حشوة الميتوكندريون، وينتج عنها مركبات وسطية وفق الآتي:
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 18](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=22).
 
 
 
@@ -11593,7 +12740,7 @@ solution:
 
 المركب الناتج هو **الستريت**، ويحتوي على **6 ذرات كربون**. أما أوكسالوأسيتات فهو المستقبل الرباعي، وليس ناتج الاتحاد.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 :::
 
@@ -11638,7 +12785,39 @@ ATP حامل للطاقة، وNADH وFADH₂ ناقلان مختزلان. وفق
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>10</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>34</mn><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>204</mn><mo>÷</mo><mn>34</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>10</mn><mo>×</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>30</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mo stretchy="false">(</mo><mn>30</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>30</mn><mo>+</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>A</mi><mi>T</mi><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi></mrow></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo>=</mo><mn>34</mn></mrow></math>
+\`\`\`
+
+نقسم حاصل السلسلة من ATP على الحاصل لكل جزيء غلوكوز.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>204</mn><mo>÷</mo><mn>34</mn></mrow></math>
+\`\`\`
+
+نقسم العدد الأول على الثاني.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>g</mi><mi>l</mi><mi>u</mi><mi>c</mi><mi>o</mi><mi>s</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -11648,15 +12827,18 @@ ATP حامل للطاقة، وNADH وFADH₂ ناقلان مختزلان. وفق
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>10</mn><mo>=</mo><mn>60</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>×</mo><mn>10</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>N</mi><mi>A</mi><mi>D</mi><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn></mrow></math>
 \`\`\`
 
 
 
 المستهلك في السلسلة60 NADH؛ ويتأكسد إلىNAD⁺ أثناء تسليم الإلكترونات.
-
-**المصدر:** الصفحات 10، 11، 12، 13 من الكتاب.
-
 :::
 
 :::mcq
@@ -11675,11 +12857,11 @@ explanation:
 
 يذكر الكتاب أن جزيئات ATP المباشرة تتكوّن في التحلل الغلايكولي وحلقة كربس؛ أما طاقة NADH الناتج هنا فتُستثمر لاحقاً في سلسلة النقل.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/0ca30b2aaeb93e753ffe.webp)
 
-**المصدر:** صفحة 12 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 12](https://moe.edu.ps/m/4061#page=12).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -11700,7 +12882,7 @@ explanation:
 
 > بيروفيت؛ CO₂؛ NAD⁺؛ NADH + H⁺؛ مرافق الإنزيم أ؛ أستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -11708,7 +12890,7 @@ explanation:
 
 > يتحرر أثناء هذه الدورة مرافق الإنزيم أ ليكرر عمله في دورة أخرى، وينتج جزيئان من ثاني أكسيد الكربون وجزيء ATP، كما وينتج ثلاثة جزيئات من NADH وجزيء واحد من FADH₂ وذلك في كل دورة. تتكرر الدورة مرتين، مرة لكل جزيء من مجموعة الأستيل مرافق الإنزيم أ.
 
-**المصدر:** صفحة 11 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 11](https://moe.edu.ps/m/4061#page=11).
 
 
 
@@ -11749,9 +12931,6 @@ ATP حامل للطاقة. ينتج لكل غلوكوز صافياً2 ATP مبا
 
 
 الإجابة:د،12 ATP مباشرةً وصافيةً من جميع المراحل، دونATP سلسلة النقل.
-
-**المصدر:** الصفحات 10، 11، 12 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::`;
 

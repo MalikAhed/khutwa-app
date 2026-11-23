@@ -3,6 +3,7 @@ import { COURSE_SUBJECTS, getCourseSubjects } from '../data/course.js';
 import { getSubjectRoadmapLesson } from '../data/subject-roadmaps.js';
 
 const paths = {
+  flag:'<path d="M5 21V3m0 1c5-4 9 4 14 0v11c-5 4-9-4-14 0"/>',
   users:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m20 0v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/><circle cx="9" cy="7" r="4"/>',
   card:'<rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 10h20M6 16h4"/>',
   book:'<path d="M12 5v16M3 3c4-1 6 0 9 2 3-2 5-3 9-2v16c-4-1-6 0-9 2-3-2-5-3-9-2Z"/>',
@@ -49,11 +50,15 @@ const avatar = student => `<span class="student-avatar tone-${Number(student.id)
 const scopeLabel = student => student.subscriptionSubjects == null ? 'جميع المواد' : student.subscriptionSubjects.map(subjectName).join('، ');
 
 export function studentRow(student) {
+  const expiryIn = Date.parse(student.subscriptionExpiresAt) - Date.now();
+  const expiresSoon = subscribed(student) && expiryIn > 0 && expiryIn <= 7 * 86400000;
+  const activity = Object.hasOwn(student,'lastActivity') ? `آخر تعلّم: ${date(student.lastActivity,'لم يبدأ بعد')}` : `سجّل: ${date(student.createdAt)}`;
   return `<article class="student" role="listitem"><div class="student-person">${avatar(student)}<div><h2>${esc(student.username)}</h2><p><bdi>${esc(student.phone || 'لا يوجد رقم هاتف')}</bdi></p></div></div>
     <div class="student-course"><span class="cell-primary">${curriculumLabel(student)}</span><span class="cell-secondary">${pathLabel(student)}</span></div>
-    <div class="student-plan">${badge(student)}<span class="cell-secondary">${subscribed(student) || expired(student) ? esc(scopeLabel(student)) : 'دروس البداية وطاقة يومية'}</span>${student.subscriptionExpiresAt ? `<span class="cell-secondary mobile-expiry">الانتهاء: ${date(student.subscriptionExpiresAt)}</span>` : ''}</div>
-    <div class="student-date"><span class="cell-primary">${date(student.createdAt)}</span><span class="cell-secondary">${student.subscriptionExpiresAt ? `الانتهاء: ${date(student.subscriptionExpiresAt)}` : subscribed(student) ? 'اشتراك دائم' : 'تاريخ التسجيل'}</span></div>
-    <button type="button" class="button button-soft" data-student-id="${esc(student.id)}" aria-label="عرض تفاصيل ${esc(student.username)}"><span>فتح الملف</span>${icon('arrow')}</button></article>`;
+    <div class="student-plan">${badge(student)}<span class="cell-secondary">${subscribed(student) || expired(student) ? esc(scopeLabel(student)) : 'دروس البداية وطاقة يومية'}</span>${student.subscriptionExpiresAt ? `<span class="cell-secondary${expiresSoon ? ' expiry-soon' : ''}">الانتهاء: ${date(student.subscriptionExpiresAt)}${expiresSoon ? ' · قريبًا' : ''}</span>` : ''}</div>
+    <div class="student-date"><span class="cell-primary">${activity}</span>${Number.isSafeInteger(student.questionsSolved) ? `<span class="cell-secondary">${number(student.questionsSolved)} إجابات صحيحة</span>` : ''}</div>
+    <div class="student-actions"><button type="button" class="button button-soft" data-student-id="${esc(student.id)}" aria-label="عرض تفاصيل ${esc(student.username)}">ملف الطالب</button>
+    <button type="button" class="button button-outline" data-student-id="${esc(student.id)}" data-student-tab="progress" aria-label="عرض تقدّم ${esc(student.username)}">${icon('chart')}التقدّم</button></div></article>`;
 }
 
 function accountControls(student) {
@@ -85,6 +90,7 @@ function accountControls(student) {
 export function studentDetail(student) {
   const parts = student.parts || [];
   return `<div class="detail-heading">${avatar(student)}<div><h2 id="detail-title">${esc(student.username)}</h2><p>رقم الحساب <bdi>#${esc(student.id)}</bdi> · ${pathLabel(student)}</p></div>${badge(student)}</div>
+    ${!suspended(student) ? `<a class="button button-primary student-view-link" href="/?student-preview=student&amp;student-id=${encodeURIComponent(student.id)}">${icon('monitor')}معاينة بحساب الطالب</a>` : ''}
     <div class="detail-tabs" role="tablist" aria-label="ملف الطالب"><button id="tab-overview" role="tab" aria-selected="true" aria-controls="panel-overview" data-detail-tab="overview">${icon('users')}نظرة عامة</button><button id="tab-subscription" role="tab" aria-selected="false" aria-controls="panel-subscription" data-detail-tab="subscription" tabindex="-1">${icon('card')}الاشتراك</button><button id="tab-progress" role="tab" aria-selected="false" aria-controls="panel-progress" data-detail-tab="progress" tabindex="-1">${icon('chart')}التعلّم</button></div>
     <section id="panel-overview" role="tabpanel" aria-labelledby="tab-overview"><div class="section-heading">${icon('users')}<div><h3>بيانات الطالب</h3><p>معلومات الحساب وحالة الاشتراك الحالية.</p></div></div>
     <dl class="account-info">${[['رقم الهاتف',student.phone || 'غير مسجّل','phone'],['المنهاج',curriculumLabel(student),'book'],['تاريخ التسجيل',date(student.createdAt),'calendar'],['آخر نشاط',date(student.lastActivity,'لم يبدأ بعد'),'clock'],['المواد المشمولة',hasPlan(student) ? scopeLabel(student) : 'حساب مجاني','card'],['انتهاء الاشتراك',date(student.subscriptionExpiresAt,hasPlan(student) ? 'دائم' : 'لا يوجد اشتراك'),'calendar']].map(([label,value,name]) => `<div><dt>${icon(name)}${label}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl>

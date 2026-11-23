@@ -3149,7 +3149,7 @@ export const MATHEMATICS_LESSONS = Object.freeze([
   },
   {
     "id": "integration-methods",
-    "label": "طرق التكامل: التعويض، الأجزاء، الكسور الجزئية",
+    "label": "طرق التكامل: التعويض والأجزاء",
     "unit": 3,
     "pages": "92–99",
     "bookPdfPages": [
@@ -4443,3 +4443,6 @@ export const MATHEMATICS_LESSONS = Object.freeze([
     ? "mathematics-2" : "mathematics",
   questionIds:Object.freeze(lesson.questionIds),
 })));
+
+export const PARTIAL_FRACTION_QUESTION_IDS = new Set(MATHEMATICS_LESSONS.find(lesson => lesson.id === "integration-methods")
+  .questionIds.filter(id => /^math-kamel-(?:u4-p04[0-2]-|u5-p(?:055-r[13]|056-r[17])$)/.test(id)));

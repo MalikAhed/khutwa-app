@@ -22,7 +22,7 @@ solution:
 
 > People often think experiences like this are evidence of something mysterious happening, some kind of hidden plan outside our knowledge.
 
-**المصدر:** صفحة 21 من الكتاب.
+**المصدر في كتاب غزة:** ص 21 للنص، وص 22 للتمرين المقتبس.
 
 
 
@@ -86,7 +86,7 @@ solution:
 
 > The scientific explanation is less exciting, and perhaps that’s why some people are reluctant to accept it.
 
-**المصدر:** صفحة 21 من الكتاب.
+**المصدر في كتاب غزة:** ص 21 للنص، وص 22 للتمرين المقتبس.
 
 
 
@@ -286,7 +286,7 @@ solution:
 
 > The scientific explanation is less exciting, and perhaps that’s why some people are reluctant to accept it.
 
-**المصدر:** صفحة 21 من الكتاب.
+**المصدر في كتاب غزة:** ص 21 للنص، وص 22 للتمرين المقتبس.
 
 
 

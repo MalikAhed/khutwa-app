@@ -14,7 +14,7 @@ test("every published lesson supports an MCQ/flashcard demo without changing sou
       if (!lesson?.authoringSource) continue;
       const steps = compileLessonMarkdown(lesson.authoringSource).parsed.steps;
       const before = JSON.stringify(steps);
-      const preserveTypes = subject.id.startsWith("adabi-");
+      const preserveTypes = subject.id.startsWith("adabi-") || subject.curriculum === "full-palestinian";
       const demo = selectLessonDemo(steps, { firstMcq:subject.id === "ict", preserveTypes });
       if (subject.id === "ict") assert.equal(demo.steps[0].id,steps.find(step => step.type === "mcq").id,"ICT starts with its first published MCQ");
       assert.deepEqual(demo.steps.map(step => step.type),preserveTypes

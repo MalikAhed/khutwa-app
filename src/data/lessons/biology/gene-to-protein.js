@@ -16,7 +16,7 @@ explanation:
 
 > AUG: ميثيونين أو بدء؛ UGG: تربتوفان؛ UGU وUGC: سيستين؛ CCU وCCC وCCA وCCG: برولين؛ UAU وUAC: تيروسين؛ UAA وUAG وUGA: توقف.
 
-**المصدر:** صفحة 15 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 15](https://moe.edu.ps/m/4061#page=15).
 
 
 
@@ -91,7 +91,7 @@ solution:
 
 > AUG: ميثيونين أو بدء؛ UGG: تربتوفان؛ UGU وUGC: سيستين؛ CCU وCCC وCCA وCCG: برولين؛ UAU وUAC: تيروسين؛ UAA وUAG وUGA: توقف.
 
-**المصدر:** صفحة 15 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 15](https://moe.edu.ps/m/4061#page=15).
 
 
 
@@ -99,7 +99,7 @@ solution:
 
 > تستمر عملية الترجمة حتى يقرأ الرايبوسوم أحد كودونات الإيقاف(UAA أوUAG أوUGA) علىmRNA في الموقع(A)، وهنا يرتبط عامل بروتيني للإيقافRelease Factor مع كودون الإيقاف في موقعA بدلاً منtRNA. وبذلك تنفصل سلسلة عديد الببتيد عنtRNA في موقع(P)، ثم تنفصل الوحدتان البنائيتان للرايبوسوم بعضهما عن بعض، وتتوقف عملية الترجمة، وتنطلق سلسلة عديد الببتيد.
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -121,7 +121,7 @@ explanation:
 
 > AUG: ميثيونين أو بدء؛ UGG: تربتوفان؛ UGU وUGC: سيستين؛ CCU وCCC وCCA وCCG: برولين؛ UAU وUAC: تيروسين؛ UAA وUAG وUGA: توقف.
 
-**المصدر:** صفحة 15 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 15](https://moe.edu.ps/m/4061#page=15).
 
 
 
@@ -144,7 +144,7 @@ explanation:
 
 > AUG: ميثيونين أو بدء؛ UGG: تربتوفان؛ UGU وUGC: سيستين؛ CCU وCCC وCCA وCCG: برولين؛ UAU وUAC: تيروسين؛ UAA وUAG وUGA: توقف.
 
-**المصدر:** صفحة 15 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 15](https://moe.edu.ps/m/4061#page=15).
 
 
 
@@ -167,7 +167,7 @@ explanation:
 
 > AUG: ميثيونين أو بدء؛ UGG: تربتوفان؛ UGU وUGC: سيستين؛ CCU وCCC وCCA وCCG: برولين؛ UAU وUAC: تيروسين؛ UAA وUAG وUGA: توقف.
 
-**المصدر:** صفحة 15 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 15](https://moe.edu.ps/m/4061#page=15).
 
 
 
@@ -194,7 +194,7 @@ explanation:
 
 > AUG: ميثيونين أو بدء؛ UGG: تربتوفان؛ UGU وUGC: سيستين؛ CCU وCCC وCCA وCCG: برولين؛ UAU وUAC: تيروسين؛ UAA وUAG وUGA: توقف.
 
-**المصدر:** صفحة 15 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 15](https://moe.edu.ps/m/4061#page=15).
 
 
 
@@ -202,11 +202,11 @@ explanation:
 
 > تمثل الشيفرة الوراثية تسلسل النيوكليوتيدات في DNA، والتي تمثل وحدات ثلاثية على جزيء mRNA بالكودون.
 
-**المصدر:** صفحة 14 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 14](https://moe.edu.ps/m/4061#page=14).
 
 
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -227,7 +227,7 @@ explanation:
 
 > AUG: ميثيونين أو بدء؛ UGG: تربتوفان؛ UGU وUGC: سيستين؛ CCU وCCC وCCA وCCG: برولين؛ UAU وUAC: تيروسين؛ UAA وUAG وUGA: توقف.
 
-**المصدر:** صفحة 15 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 15](https://moe.edu.ps/m/4061#page=15).
 
 
 
@@ -277,7 +277,7 @@ explanation:
 
 الإجابة: أ.
 
-**المصدر:** صفحة 16 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 16](https://moe.edu.ps/m/4061#page=16).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -308,7 +308,7 @@ solution:
 
 لكن الاختلاف لا يقتصر دائماً على الثالثة: UUA وCUA يشفران الليوسين، ويختلفان في القاعدة الأولى.
 
-**المصدر:** صفحة 15 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 15](https://moe.edu.ps/m/4061#page=15).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/6bf12ca76ec9c9270ea4.webp)
 
@@ -330,7 +330,7 @@ explanation:
 
 > AUG: ميثيونين أو بدء؛ UGG: تربتوفان؛ UGU وUGC: سيستين؛ CCU وCCC وCCA وCCG: برولين؛ UAU وUAC: تيروسين؛ UAA وUAG وUGA: توقف.
 
-**المصدر:** صفحة 15 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 15](https://moe.edu.ps/m/4061#page=15).
 
 
 
@@ -347,36 +347,38 @@ question: عدد النيوكليوتيدات في الكودونات التي �
 - [ ] option-3 | ج- 189
 - [ ] option-4 | د- 192
 explanation:
-توجد أربعة أنواع من قواعد RNA، وكل كودون يتألف من ثلاث قواعد.
-عدد الكودونات الممكنة:
+كل كودون يتكون من ثلاثة مواضع. في كل موضع يمكن اختيار قاعدة واحدة من أربعة أنواع. نضرب عدد الخيارات لكل موضع.
 
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>4</mn><mo>×</mo><mn>4</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>64</mn></mrow></math>
+\`\`\`latex
+N_{\\mathrm{codons}}=4\\times4\\times4
 \`\`\`
 
+نضرب 4 في 4 أولًا، ثم نضرب حاصل الضرب في 4.
 
-منها ثلاثة للإيقاف؛ إذن كودونات الأحماض الأمينية:
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>64</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>61</mn></mrow></math>
+\`\`\`latex
+N_{\\mathrm{codons}}=16\\times4=64
 \`\`\`
 
+من هذه الكودونات ثلاثة للإيقاف. نطرحها من العدد الكلي لحساب الكودونات التي تشفّر أحماضًا أمينية.
 
-عند عد قواعد هذه الكودونات جميعاً مرة واحدة:
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>61</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>183</mn></mrow></math>
+\`\`\`latex
+N_{\\mathrm{coding}}=64-3=61
 \`\`\`
 
+كل كودون فيه ثلاثة نيوكليوتيدات. نضرب عدد الكودونات المشفّرة في ثلاثة.
 
+\`\`\`latex
+N_{\\mathrm{nucleotides}}=61\\times3
+\`\`\`
 
- نيوكليوتيداً؛ فالاختيار ب.
+نضرب العشرات والآحاد على حدة ثم نجمع الحاصلين.
+
+\`\`\`latex
+61\\times3=(60\\times3)+(1\\times3)=180+3=183
+\`\`\`
+
+الإجابة **183 نيوكليوتيدًا، الاختيار ب**.
+
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -397,7 +399,7 @@ solution:
 
 > تمثل الشيفرة الوراثية تسلسل النيوكليوتيدات في DNA، والتي تمثل وحدات ثلاثية على جزيء mRNA بالكودون.
 
-**المصدر:** صفحة 14 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 14](https://moe.edu.ps/m/4061#page=14).
 
 
 
@@ -405,7 +407,7 @@ solution:
 
 > AUG: ميثيونين أو بدء؛ UGG: تربتوفان؛ UGU وUGC: سيستين؛ CCU وCCC وCCA وCCG: برولين؛ UAU وUAC: تيروسين؛ UAA وUAG وUGA: توقف.
 
-**المصدر:** صفحة 15 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 15](https://moe.edu.ps/m/4061#page=15).
 
 
 
@@ -437,7 +439,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mtext> </mtext><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>35</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>36</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mtext> </mtext><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mo stretchy="false">)</mo><mo>=</mo><mn>35</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mtext> </mtext><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">g</mi><mtext> </mtext><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mo stretchy="false">)</mo><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
 
@@ -461,11 +469,7 @@ reference: [الرزمة التعليمية، صفحة PDF 21](https://moe.edu.p
 explanation:
 **الإجابة:** هيدروجينية
 
-**الشاهد من الكتاب:**
-
-> يرتبط الكودون المضاد فيtRNA الحامل للحمض الأميني بروابط هيدروجينية مع الكودون المتمم علىmRNA في موقع(A).
-
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 34](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=38).
 
 
 
@@ -488,7 +492,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>21</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>20</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>21</mn></mrow></math>
 \`\`\`
 
 
@@ -498,15 +508,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>21</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>63</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">n</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>21</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">n</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>63</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة:63 نيوكليوتيدًا في المقطع المحدد.
-
-**المصدر:** الصفحات 15، 20 من الكتاب.
-
 hint: اقرأ السؤال وقارن بين البدائل الأصلية.
 :::
 
@@ -630,7 +643,7 @@ explanation:
 
 > ترتبط عوامل النسخ Transcription Factors وإنزيم بلمرة RNA على بداية الجين المراد نسخه من سلسلة DNA (3′→5′) وبالتحديد على تتابع معين من النيوكليوتيدات تسمى المحفز Promoter، حيث يتم فتح سلسلتي DNA الملتفتين في هذا الموقع، ويبدأ إنزيم بلمرة RNA بعملية النسخ.
 
-**المصدر:** صفحة 17 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 17](https://moe.edu.ps/m/4061#page=17).
 
 
 
@@ -680,7 +693,7 @@ explanation:
 
 الإجابة: ب.
 
-**المصدر:** صفحة 16 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 16](https://moe.edu.ps/m/4061#page=16).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -701,7 +714,7 @@ explanation:
 
 > يدخل في بناء الرايبوسوم، ويمثل الناحية الوظيفية فيه، ويعمل على ربط الحموض الأمينية المتجاورة بروابط ببتيدية أثناء عملية الترجمة، ويبنى rRNA على شكل كروي، حيث يوجد منه عدة أنواع.
 
-**المصدر:** صفحة 17 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 17](https://moe.edu.ps/m/4061#page=17).
 
 
 
@@ -709,7 +722,7 @@ explanation:
 
 > يعملrRNA في الوحدة البنائية الكبيرة كإنزيم رايبوزايم(Ribozyme) على تكوين رابطة ببتيدية بين الحمض الأميني في موقع(P) والحمض الأميني في موقع(A)، وعندها ينفصلtRNA في موقع(P) عن الحمض الأميني الحامل له، ويخرج من الموقع(E).
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -732,7 +745,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>9</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>9</mn></mrow></math>
 \`\`\`
 
 
@@ -742,15 +761,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>9</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>27</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>9</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>27</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة: ج،27 قاعدة نيتروجينية.
-
-**المصدر:** الصفحات 15، 20 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -797,7 +819,7 @@ explanation:
 
 أما الشريط أسفل الشكل فهو mRNA، والجزء السفلي الصغير هو الوحدة البنائية الصغيرة.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/8102b16e82cce9ef3046.webp)
 
@@ -822,7 +844,7 @@ explanation:
 
 > تستمر عملية الترجمة حتى يقرأ الرايبوسوم أحد كودونات الإيقاف(UAA أوUAG أوUGA) علىmRNA في الموقع(A)، وهنا يرتبط عامل بروتيني للإيقافRelease Factor مع كودون الإيقاف في موقعA بدلاً منtRNA. وبذلك تنفصل سلسلة عديد الببتيد عنtRNA في موقع(P)، ثم تنفصل الوحدتان البنائيتان للرايبوسوم بعضهما عن بعض، وتتوقف عملية الترجمة، وتنطلق سلسلة عديد الببتيد.
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -845,7 +867,7 @@ explanation:
 
 > يعمل إنزيم بلمرة RNA على إضافة نيوكليوتيدات، بحيث تكون متممة لتلك الموجودة على سلسلة DNA، التي تعمل كقالب، حيث تبدأ سلسلة mRNA في التكون، وبمجرد مرور الإنزيم تعود سلسلتا DNA للالتفاف مرة أخرى، ويستمر إضافة النيوكليوتيدات المتممة، ويحدث استطالة لجزيءmRNA.
 
-**المصدر:** صفحة 18 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 18](https://moe.edu.ps/m/4061#page=18).
 
 
 
@@ -868,7 +890,7 @@ explanation:
 
 > يرتبط الكودون المضاد فيtRNA الحامل للحمض الأميني بروابط هيدروجينية مع الكودون المتمم علىmRNA في موقع(A).
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -891,7 +913,7 @@ explanation:
 
 يرتبط هذا الجزيء بكودون البدء في الموقع P عند بدء الترجمة.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/8102b16e82cce9ef3046.webp)
 
@@ -943,7 +965,7 @@ explanation:
 
 الإجابة: ب؛ كلاهما 5′→3′ في المحاذاة المحددة.
 
-**المصدر:** صفحة 16 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 16](https://moe.edu.ps/m/4061#page=16).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -965,7 +987,7 @@ explanation:
 
 > ويتركب الرايبوسوم في الخلايا حقيقية النوى من وحدتين بنائيتين: وحدة بنائية صغيرة Small Subunit، ووحدة بنائية كبيرة Large Subunit. تتكون الوحدات البنائية للرايبوسوم من جزيئاتrRNA وبروتينات، وتمثل هذه البروتينات الأجزاء التركيبية للرايبوسوم، أما الأجزاء الوظيفية فتمثل جزيئاتrRNA.
 
-**المصدر:** صفحة 18 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 18](https://moe.edu.ps/m/4061#page=18).
 
 
 
@@ -991,7 +1013,7 @@ explanation:
 
 > ترتبط عوامل النسخ Transcription Factors وإنزيم بلمرة RNA على بداية الجين المراد نسخه من سلسلة DNA (3′→5′) وبالتحديد على تتابع معين من النيوكليوتيدات تسمى المحفز Promoter، حيث يتم فتح سلسلتي DNA الملتفتين في هذا الموقع، ويبدأ إنزيم بلمرة RNA بعملية النسخ.
 
-**المصدر:** صفحة 17 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 17](https://moe.edu.ps/m/4061#page=17)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 30](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=34).
 
 
 
@@ -1014,7 +1036,7 @@ explanation:
 
 > يدخل في بناء الرايبوسوم، ويمثل الناحية الوظيفية فيه، ويعمل على ربط الحموض الأمينية المتجاورة بروابط ببتيدية أثناء عملية الترجمة، ويبنى rRNA على شكل كروي، حيث يوجد منه عدة أنواع.
 
-**المصدر:** صفحة 17 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 17](https://moe.edu.ps/m/4061#page=17).
 
 
 
@@ -1022,7 +1044,7 @@ explanation:
 
 > يعملrRNA في الوحدة البنائية الكبيرة كإنزيم رايبوزايم(Ribozyme) على تكوين رابطة ببتيدية بين الحمض الأميني في موقع(P) والحمض الأميني في موقع(A)، وعندها ينفصلtRNA في موقع(P) عن الحمض الأميني الحامل له، ويخرج من الموقع(E).
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -1045,7 +1067,7 @@ explanation:
 
 > تستمر عملية الترجمة حتى يقرأ الرايبوسوم أحد كودونات الإيقاف(UAA أوUAG أوUGA) علىmRNA في الموقع(A)، وهنا يرتبط عامل بروتيني للإيقافRelease Factor مع كودون الإيقاف في موقعA بدلاً منtRNA. وبذلك تنفصل سلسلة عديد الببتيد عنtRNA في موقع(P)، ثم تنفصل الوحدتان البنائيتان للرايبوسوم بعضهما عن بعض، وتتوقف عملية الترجمة، وتنطلق سلسلة عديد الببتيد.
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -1064,11 +1086,7 @@ question: أين يرتبط إنزيم بلمرة RNA في مرحلة البدء
 explanation:
 **الإجابة:** ج- المحفز
 
-**الشاهد من الكتاب:**
-
-> ترتبط عوامل النسخ Transcription Factors وإنزيم بلمرة RNA على بداية الجين المراد نسخه من سلسلة DNA (3′→5′) وبالتحديد على تتابع معين من النيوكليوتيدات تسمى المحفز Promoter، حيث يتم فتح سلسلتي DNA الملتفتين في هذا الموقع، ويبدأ إنزيم بلمرة RNA بعملية النسخ.
-
-**المصدر:** صفحة 17 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 17](https://moe.edu.ps/m/4061#page=17).
 
 
 
@@ -1091,7 +1109,7 @@ explanation:
 
 > يدخل في بناء الرايبوسوم، ويمثل الناحية الوظيفية فيه، ويعمل على ربط الحموض الأمينية المتجاورة بروابط ببتيدية أثناء عملية الترجمة، ويبنى rRNA على شكل كروي، حيث يوجد منه عدة أنواع.
 
-**المصدر:** صفحة 17 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 17](https://moe.edu.ps/m/4061#page=17).
 
 
 
@@ -1099,7 +1117,7 @@ explanation:
 
 > يعملrRNA في الوحدة البنائية الكبيرة كإنزيم رايبوزايم(Ribozyme) على تكوين رابطة ببتيدية بين الحمض الأميني في موقع(P) والحمض الأميني في موقع(A)، وعندها ينفصلtRNA في موقع(P) عن الحمض الأميني الحامل له، ويخرج من الموقع(E).
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 34](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=38).
 
 
 
@@ -1330,7 +1348,7 @@ solution:
 
 > يرتبطmRNA بالوحدة البنائية الصغيرة في الرايبوسوم، بحيث يكون كودون البدء(AUG) في موقعP، ويرتبط جزيءtRNA الحامل للميثيونين على كودون البدء.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 
 
@@ -1403,11 +1421,7 @@ question: ما نوع الرابطة بين الكودون المضاد على t
 explanation:
 **الإجابة:** أ- هيدروجينية
 
-**الشاهد من الكتاب:**
-
-> يرتبط الكودون المضاد فيtRNA الحامل للحمض الأميني بروابط هيدروجينية مع الكودون المتمم علىmRNA في موقع(A).
-
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 34](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=38).
 
 
 
@@ -1652,7 +1666,7 @@ solution:
 
 > يصل إنزيم بلمرة RNA إلى تتابع معين من النيوكليوتيدات يسمى منطقة الإنهاء Termination Point، حيث ينفصل الإنزيم عن سلسلة DNA، وتطلق سلسلة mRNA الجديدة التي تم تصنيعها، وتعود سلسلتا DNA للالتفاف حول بعضهما ثانية. وتسمى السلسلة الناتجة mRNA الأولي Primary mRNA، حيث تمر هذه السلسلة بمرحلة معالجة لينتج من خلالها mRNA الناضج (الوظيفي) Functional mRNA.
 
-**المصدر:** صفحة 18 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 18](https://moe.edu.ps/m/4061#page=18).
 
 
 
@@ -1660,7 +1674,7 @@ solution:
 
 > تستمر عملية الترجمة حتى يقرأ الرايبوسوم أحد كودونات الإيقاف(UAA أوUAG أوUGA) علىmRNA في الموقع(A)، وهنا يرتبط عامل بروتيني للإيقافRelease Factor مع كودون الإيقاف في موقعA بدلاً منtRNA. وبذلك تنفصل سلسلة عديد الببتيد عنtRNA في موقع(P)، ثم تنفصل الوحدتان البنائيتان للرايبوسوم بعضهما عن بعض، وتتوقف عملية الترجمة، وتنطلق سلسلة عديد الببتيد.
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -1686,7 +1700,7 @@ solution:
 
 > يتم نسخ mRNA من إحدى سلاسل DNA (السلسلة 3′→5′ تشكل قالباً لعملية النسخ)، التي تمثل سلسلة مفردة تحمل المعلومات الخاصة ببناء البروتين الذي تحتاجه الخلية. ينتقل mRNA من النواة إلى السيتوسول، حيث يشكل قالباً لصنع البروتين من قبل الرايبوسوم.
 
-**المصدر:** صفحة 16 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 16](https://moe.edu.ps/m/4061#page=16).
 
 
 
@@ -1694,7 +1708,7 @@ solution:
 
 > يرتبطmRNA بالوحدة البنائية الصغيرة في الرايبوسوم، بحيث يكون كودون البدء(AUG) في موقعP، ويرتبط جزيءtRNA الحامل للميثيونين على كودون البدء.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 
 
@@ -1718,7 +1732,7 @@ solution:
 
 > يصل إنزيم بلمرة RNA إلى تتابع معين من النيوكليوتيدات يسمى منطقة الإنهاء Termination Point، حيث ينفصل الإنزيم عن سلسلة DNA، وتطلق سلسلة mRNA الجديدة التي تم تصنيعها، وتعود سلسلتا DNA للالتفاف حول بعضهما ثانية. وتسمى السلسلة الناتجة mRNA الأولي Primary mRNA، حيث تمر هذه السلسلة بمرحلة معالجة لينتج من خلالها mRNA الناضج (الوظيفي) Functional mRNA.
 
-**المصدر:** صفحة 18 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 18](https://moe.edu.ps/m/4061#page=18).
 
 
 
@@ -1726,7 +1740,7 @@ solution:
 
 > بعد الانتهاء من عملية الترجمة وإنتاج سلسلة عديد الببتيد، تخضع السلسلة لعمليات تعديل، لتكوين بروتين وظيفي فعال.
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 35](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=39).
 
 
 
@@ -1749,7 +1763,7 @@ solution:
 
 > ترتبط عوامل النسخ Transcription Factors وإنزيم بلمرة RNA على بداية الجين المراد نسخه من سلسلة DNA (3′→5′) وبالتحديد على تتابع معين من النيوكليوتيدات تسمى المحفز Promoter، حيث يتم فتح سلسلتي DNA الملتفتين في هذا الموقع، ويبدأ إنزيم بلمرة RNA بعملية النسخ.
 
-**المصدر:** صفحة 17 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 17](https://moe.edu.ps/m/4061#page=17)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 30](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=34).
 
 
 
@@ -1867,7 +1881,7 @@ solution:
 
 > يدخل في بناء الرايبوسوم، ويمثل الناحية الوظيفية فيه، ويعمل على ربط الحموض الأمينية المتجاورة بروابط ببتيدية أثناء عملية الترجمة، ويبنى rRNA على شكل كروي، حيث يوجد منه عدة أنواع.
 
-**المصدر:** صفحة 17 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 17](https://moe.edu.ps/m/4061#page=17).
 
 
 
@@ -1896,7 +1910,7 @@ solution:
 
 (3) **موقع ارتباط mRNA**؛ هو الانغماد الذي يمر فيه الشريط على الوحدة الصغيرة.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/8102b16e82cce9ef3046.webp)
 
@@ -1941,7 +1955,7 @@ solution:
 
 > ترتبط الوحدة البنائية الكبيرة بالوحدة البنائية الصغيرة. ومع نهاية المرحلة يكونtRNA الحامل للميثيونين في موقع(P)، والموقع(A) يكون فارغاً ومستعداً لاستقبال جزيءtRNA التالي.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 
 
@@ -2018,7 +2032,7 @@ solution:
 
 > AUG: ميثيونين أو بدء؛ UGG: تربتوفان؛ UGU وUGC: سيستين؛ CCU وCCC وCCA وCCG: برولين؛ UAU وUAC: تيروسين؛ UAA وUAG وUGA: توقف.
 
-**المصدر:** صفحة 15 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 15](https://moe.edu.ps/m/4061#page=15).
 
 
 
@@ -2026,7 +2040,7 @@ solution:
 
 > تستمر عملية الترجمة حتى يقرأ الرايبوسوم أحد كودونات الإيقاف(UAA أوUAG أوUGA) علىmRNA في الموقع(A)، وهنا يرتبط عامل بروتيني للإيقافRelease Factor مع كودون الإيقاف في موقعA بدلاً منtRNA. وبذلك تنفصل سلسلة عديد الببتيد عنtRNA في موقع(P)، ثم تنفصل الوحدتان البنائيتان للرايبوسوم بعضهما عن بعض، وتتوقف عملية الترجمة، وتنطلق سلسلة عديد الببتيد.
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -2080,7 +2094,7 @@ solution:
 
 > يرتبط الكودون المضاد فيtRNA الحامل للحمض الأميني بروابط هيدروجينية مع الكودون المتمم علىmRNA في موقع(A).
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -2088,7 +2102,7 @@ solution:
 
 > تستمر عملية الترجمة حتى يقرأ الرايبوسوم أحد كودونات الإيقاف(UAA أوUAG أوUGA) علىmRNA في الموقع(A)، وهنا يرتبط عامل بروتيني للإيقافRelease Factor مع كودون الإيقاف في موقعA بدلاً منtRNA. وبذلك تنفصل سلسلة عديد الببتيد عنtRNA في موقع(P)، ثم تنفصل الوحدتان البنائيتان للرايبوسوم بعضهما عن بعض، وتتوقف عملية الترجمة، وتنطلق سلسلة عديد الببتيد.
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -2217,7 +2231,7 @@ solution:
 
 > تمثل عملية ترجمة المعلومات من لغة جزيئية لأخرى، وذلك بتحويل تسلسل النيوكليوتيدات فيmRNA إلى تسلسل الحموض الأمينية في عملية بناء البروتين.
 
-**المصدر:** صفحة 18 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 18](https://moe.edu.ps/m/4061#page=18).
 
 
 
@@ -2340,7 +2354,7 @@ solution:
 
 > ويتركب الرايبوسوم في الخلايا حقيقية النوى من وحدتين بنائيتين: وحدة بنائية صغيرة Small Subunit، ووحدة بنائية كبيرة Large Subunit. تتكون الوحدات البنائية للرايبوسوم من جزيئاتrRNA وبروتينات، وتمثل هذه البروتينات الأجزاء التركيبية للرايبوسوم، أما الأجزاء الوظيفية فتمثل جزيئاتrRNA.
 
-**المصدر:** صفحة 18 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 18](https://moe.edu.ps/m/4061#page=18).
 
 
 
@@ -2348,7 +2362,7 @@ solution:
 
 > يحتوي الرايبوسوم على أربعة مواقع: موقع لارتباطmRNA: تمثل منطقة الانغماد بين الوحدتين البنائيتين. ثلاثة مواقع لارتباطtRNA: تمثل ثلاثة انغمادات على الوحدة البنائية الكبيرة للرايبوسوم، وموقعاً لارتباط جزيئاتtRNA، وهذه المواقع هي(A) و(P) و(E). وتعني ما يأتي:(A: Aminoacyl) و(P: Peptidyl) و(E: Exit).
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 
 
@@ -2394,27 +2408,31 @@ question: يتكون مقطع mRNA من كودون البدء حتى كودون 
 - [ ] option-3 | (39)
 - [ ] option-4 | (40)
 explanation:
-الكودون وحدة من ثلاث قواعد يقرأها الرايبوسوم. نعد الكودونات الأربعين في منطقة الترجمة مع كودون الإيقاف وفق نموذج الدرس.
-كودون الإيقاف لا يعطي حمضاً أمينياً؛ لذلك عدد الأحماض:
+المعطى 40 كودونًا من البدء حتى الإيقاف شاملًا. يعطي كل كودون في هذا المقطع حمضًا أمينيًا واحدًا، ويُحتسب كودون البدء ضمنها. كودون الإيقاف لا يشفّر حمضًا أمينيًا.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>40</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>39</mn></mrow></math>
+\`\`\`latex
+40=N_{\\mathrm{amino\\,acids}}+1
 \`\`\`
 
+بنقل الحد +1 إلى الطرف الآخر يصبح −1. نطرح واحدًا من 40.
 
-الرابطة الببتيدية تصل حمضين متجاورين. في سلسلة خطية، كل حمض بعد الأول يحتاج رابطة واحدة؛ لذلك عدد الروابط أقل من عدد الأحماض بواحد:
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>39</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>38</mn></mrow></math>
+\`\`\`latex
+N_{\\mathrm{amino\\,acids}}=40-1=39
 \`\`\`
 
+كل حمض أميني بعد الأول يحتاج رابطة لتوصيله بالسابق في السلسلة الخطية. عدد الأحماض الأمينية يساوي إذن عدد الروابط زائد واحد.
 
-الإجابة **38 رابطة ببتيدية، الخيار الثاني**، مع احتساب كودون الإيقاف ضمن الأربعين كما نص السؤال.
+\`\`\`latex
+39=N_{\\mathrm{bonds}}+1
+\`\`\`
 
-**المصدر:** الصفحات 14، 20 من الكتاب.
+بنقل الحد +1 إلى الطرف الآخر يصبح −1. نطرح واحدًا من 39.
 
+\`\`\`latex
+N_{\\mathrm{bonds}}=39-1=38
+\`\`\`
+
+النتيجة **38 رابطة ببتيدية، الخيار الثاني**.
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -2434,7 +2452,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>104</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>105</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>104</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>105</mn></mrow></math>
 \`\`\`
 
 
@@ -2444,15 +2468,18 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mn>105</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>315</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>105</mn><mo>×</mo><mn>3</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>315</mn></mrow></math>
 \`\`\`
 
 
 
 الإجابة:315 قاعدة نيتروجينية في المقطع المحدد.
-
-**المصدر:** الصفحات 15، 20 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -2472,7 +2499,7 @@ explanation:
 
 > يرتبطmRNA بالوحدة البنائية الصغيرة في الرايبوسوم، بحيث يكون كودون البدء(AUG) في موقعP، ويرتبط جزيءtRNA الحامل للميثيونين على كودون البدء.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 
 
@@ -2511,7 +2538,7 @@ explanation:
 
 > ترتبط الوحدة البنائية الكبيرة بالوحدة البنائية الصغيرة. ومع نهاية المرحلة يكونtRNA الحامل للميثيونين في موقع(P)، والموقع(A) يكون فارغاً ومستعداً لاستقبال جزيءtRNA التالي.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 
 
@@ -2554,7 +2581,7 @@ solution:
 
 > يحتوي الرايبوسوم على أربعة مواقع: موقع لارتباطmRNA: تمثل منطقة الانغماد بين الوحدتين البنائيتين. ثلاثة مواقع لارتباطtRNA: تمثل ثلاثة انغمادات على الوحدة البنائية الكبيرة للرايبوسوم، وموقعاً لارتباط جزيئاتtRNA، وهذه المواقع هي(A) و(P) و(E). وتعني ما يأتي:(A: Aminoacyl) و(P: Peptidyl) و(E: Exit).
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 
 
@@ -2577,7 +2604,7 @@ solution:
 
 > يرتبطmRNA بالوحدة البنائية الصغيرة في الرايبوسوم، بحيث يكون كودون البدء(AUG) في موقعP، ويرتبط جزيءtRNA الحامل للميثيونين على كودون البدء.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 
 
@@ -2615,7 +2642,7 @@ solution:
 
 > يدخل في بناء الرايبوسوم، ويمثل الناحية الوظيفية فيه، ويعمل على ربط الحموض الأمينية المتجاورة بروابط ببتيدية أثناء عملية الترجمة، ويبنى rRNA على شكل كروي، حيث يوجد منه عدة أنواع.
 
-**المصدر:** صفحة 17 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 17](https://moe.edu.ps/m/4061#page=17).
 
 
 
@@ -2639,7 +2666,7 @@ solution:
 
 > التي تمثل سلسلة مفردة تحمل المعلومات الخاصة ببناء البروتين الذي تحتاجه الخلية.
 
-**المصدر:** صفحة 16 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 16](https://moe.edu.ps/m/4061#page=16)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 29](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=33).
 
 
 
@@ -2647,7 +2674,7 @@ solution:
 
 > ويتكون tRNA من شريط مفرد يلتف على نفسه، ليكون 4 حلقات، انظر شكل (2)، حيث تحتوي الحلقة الثانية على ثلاثة نيوكليوتيدات تمثل كودوناً مضاداً يكون متمماً لأحد الكودونات على جزيء mRNA.
 
-**المصدر:** صفحة 16 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 16](https://moe.edu.ps/m/4061#page=16).
 
 
 
@@ -2673,7 +2700,7 @@ tRNA: ينقل الحموض الأمينية من السيتوسول إلى ال
 
 > يتم نسخ mRNA من إحدى سلاسل DNA (السلسلة 3′→5′ تشكل قالباً لعملية النسخ)، التي تمثل سلسلة مفردة تحمل المعلومات الخاصة ببناء البروتين الذي تحتاجه الخلية. ينتقل mRNA من النواة إلى السيتوسول، حيث يشكل قالباً لصنع البروتين من قبل الرايبوسوم.
 
-**المصدر:** صفحة 16 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 16](https://moe.edu.ps/m/4061#page=16).
 
 
 
@@ -2681,7 +2708,7 @@ tRNA: ينقل الحموض الأمينية من السيتوسول إلى ال
 
 > يقوم tRNA بنقل الحموض الأمينية من السيتوسول إلى الرايبوسوم، ليتم ربطها في سلسلة عديد الببتيد.
 
-**المصدر:** صفحة 16 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 16](https://moe.edu.ps/m/4061#page=16)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 29](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=33).
 
 
 
@@ -2705,7 +2732,7 @@ solution:
 
 > تستمر عملية الترجمة حتى يقرأ الرايبوسوم أحد كودونات الإيقاف(UAA أوUAG أوUGA) علىmRNA في الموقع(A)، وهنا يرتبط عامل بروتيني للإيقافRelease Factor مع كودون الإيقاف في موقعA بدلاً منtRNA. وبذلك تنفصل سلسلة عديد الببتيد عنtRNA في موقع(P)، ثم تنفصل الوحدتان البنائيتان للرايبوسوم بعضهما عن بعض، وتتوقف عملية الترجمة، وتنطلق سلسلة عديد الببتيد.
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -2731,7 +2758,7 @@ P موقع tRNA الذي يحمل سلسلة عديد الببتيد النام�
 
 > يرتبط الكودون المضاد فيtRNA الحامل للحمض الأميني بروابط هيدروجينية مع الكودون المتمم علىmRNA في موقع(A).
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 34](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=38).
 
 
 
@@ -2739,7 +2766,7 @@ P موقع tRNA الذي يحمل سلسلة عديد الببتيد النام�
 
 > يعملrRNA في الوحدة البنائية الكبيرة كإنزيم رايبوزايم(Ribozyme) على تكوين رابطة ببتيدية بين الحمض الأميني في موقع(P) والحمض الأميني في موقع(A)، وعندها ينفصلtRNA في موقع(P) عن الحمض الأميني الحامل له، ويخرج من الموقع(E).
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 34](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=38).
 
 
 
@@ -2747,7 +2774,7 @@ P موقع tRNA الذي يحمل سلسلة عديد الببتيد النام�
 
 > يتحركmRNA خلال الرايبوسوم بمقدار كودون واحد، فينتقلtRNA من موقع(A) إلى موقع(P)، ونتيجة لذلك يتغير موقعtRNA الحامل لعديد الببتيد من موقع(A) إلى موقع(P).
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -2900,7 +2927,7 @@ solution:
 
 (4) **كودون البدء AUG** على mRNA.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/8102b16e82cce9ef3046.webp)
 
@@ -3123,7 +3150,7 @@ solution:
 
 إذن الشكل يمثل **مرحلة البدء في الترجمة**.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/8102b16e82cce9ef3046.webp)
 
@@ -3248,7 +3275,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn><mo>−</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -3314,9 +3347,6 @@ explanation:
 
 
 إذن **41 كودوناً مع الإيقاف، الخيار د**. أما الكودونات المشفرة للأحماض وحدها فعددها40.
-
-**المصدر:** الصفحات 15، 20 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -3396,7 +3426,7 @@ solution:
 
 **ج يمثل كودونات tRNA المضادة**؛ تتكامل مع كودونات د وباتجاه معاكس.
 
-**المصدر:** صفحة 16 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 16](https://moe.edu.ps/m/4061#page=16).
 
 :::
 
@@ -3420,7 +3450,7 @@ solution:
 
 > يتم نسخ mRNA من إحدى سلاسل DNA (السلسلة 3′→5′ تشكل قالباً لعملية النسخ)، التي تمثل سلسلة مفردة تحمل المعلومات الخاصة ببناء البروتين الذي تحتاجه الخلية. ينتقل mRNA من النواة إلى السيتوسول، حيث يشكل قالباً لصنع البروتين من قبل الرايبوسوم.
 
-**المصدر:** صفحة 16 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 16](https://moe.edu.ps/m/4061#page=16).
 
 
 
@@ -3428,7 +3458,7 @@ solution:
 
 > يرتبطmRNA بالوحدة البنائية الصغيرة في الرايبوسوم، بحيث يكون كودون البدء(AUG) في موقعP، ويرتبط جزيءtRNA الحامل للميثيونين على كودون البدء.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 
 
@@ -3452,7 +3482,7 @@ solution:
 
 > ترتبط عوامل النسخ Transcription Factors وإنزيم بلمرة RNA على بداية الجين المراد نسخه من سلسلة DNA (3′→5′) وبالتحديد على تتابع معين من النيوكليوتيدات تسمى المحفز Promoter، حيث يتم فتح سلسلتي DNA الملتفتين في هذا الموقع، ويبدأ إنزيم بلمرة RNA بعملية النسخ.
 
-**المصدر:** صفحة 17 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 17](https://moe.edu.ps/m/4061#page=17)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 30](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=34).
 
 
 
@@ -3460,7 +3490,7 @@ solution:
 
 > يرتبطmRNA بالوحدة البنائية الصغيرة في الرايبوسوم، بحيث يكون كودون البدء(AUG) في موقعP، ويرتبط جزيءtRNA الحامل للميثيونين على كودون البدء.
 
-**المصدر:** صفحة 19 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 19](https://moe.edu.ps/m/4061#page=19).
 
 
 
@@ -3552,7 +3582,7 @@ explanation:
 
 > تستمر عملية الترجمة حتى يقرأ الرايبوسوم أحد كودونات الإيقاف(UAA أوUAG أوUGA) علىmRNA في الموقع(A)، وهنا يرتبط عامل بروتيني للإيقافRelease Factor مع كودون الإيقاف في موقعA بدلاً منtRNA. وبذلك تنفصل سلسلة عديد الببتيد عنtRNA في موقع(P)، ثم تنفصل الوحدتان البنائيتان للرايبوسوم بعضهما عن بعض، وتتوقف عملية الترجمة، وتنطلق سلسلة عديد الببتيد.
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 
@@ -3576,7 +3606,7 @@ solution:
 
 > ترتبط عوامل النسخ Transcription Factors وإنزيم بلمرة RNA على بداية الجين المراد نسخه من سلسلة DNA (3′→5′) وبالتحديد على تتابع معين من النيوكليوتيدات تسمى المحفز Promoter، حيث يتم فتح سلسلتي DNA الملتفتين في هذا الموقع، ويبدأ إنزيم بلمرة RNA بعملية النسخ.
 
-**المصدر:** صفحة 17 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 17](https://moe.edu.ps/m/4061#page=17)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 30](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=34).
 
 
 
@@ -3598,7 +3628,7 @@ explanation:
 
 > يتم نسخ mRNA من إحدى سلاسل DNA (السلسلة 3′→5′ تشكل قالباً لعملية النسخ)، التي تمثل سلسلة مفردة تحمل المعلومات الخاصة ببناء البروتين الذي تحتاجه الخلية. ينتقل mRNA من النواة إلى السيتوسول، حيث يشكل قالباً لصنع البروتين من قبل الرايبوسوم.
 
-**المصدر:** صفحة 16 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 16](https://moe.edu.ps/m/4061#page=16).
 
 
 
@@ -3638,7 +3668,7 @@ explanation:
 
 > يتحركmRNA خلال الرايبوسوم بمقدار كودون واحد، فينتقلtRNA من موقع(A) إلى موقع(P)، ونتيجة لذلك يتغير موقعtRNA الحامل لعديد الببتيد من موقع(A) إلى موقع(P).
 
-**المصدر:** صفحة 20 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 20](https://moe.edu.ps/m/4061#page=20).
 
 
 

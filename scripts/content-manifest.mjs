@@ -5,7 +5,7 @@ import ts from "typescript";
 import { parentPort, workerData } from "node:worker_threads";
 import { entryMarkup, registerMarkup, accountCompleteMarkup } from "../src/ui/visitor-flow-markup.js";
 import { COURSE_SUBJECTS } from "../src/data/course.js";
-import { getSubjectRoadmap } from "../src/data/subject-roadmaps.js";
+import { getCurrentSubjectRoadmap, getSubjectRoadmap } from "../src/data/subject-roadmaps.js";
 import { loadSubjectLesson, subjectLessonRegistry } from "../src/data/lessons/subject-lesson-registry.js";
 
 // Generated from the published catalog, never from account/progress storage.
@@ -62,12 +62,19 @@ export async function createContentManifest(root) {
   const subjects = [];
   for (const subject of COURSE_SUBJECTS) {
     const lessons = [];
-    for (const item of getSubjectRoadmap(subject.id)?.units.flatMap(unit => unit.lessons) || []) {
+    const roadmap = subject.id.startsWith("outside-gaza-") ? getCurrentSubjectRoadmap(subject.id) : getSubjectRoadmap(subject.id);
+    for (const item of roadmap?.units.flatMap(unit => unit.lessons) || []) {
       if (item.hidden || item.optional || !item.parts?.length) continue;
-      const loader = subjectLessonRegistry.get(`${subject.id}:${item.id}`);
-      const module = loader?.toString().match(/import\(["']([^"']+)["']\)/)?.[1];
-      const entry = module ? path.posix.join(subject.id.startsWith("adabi-") ? "src/data/lessons/adabi" : "src/data/lessons", module) : "src/data/lessons/islamic-education/islamic-bank.js";
-      const modules = [...await graph(entry)];
+      const projected = item.parts.some(part => part.source);
+      const entries = projected
+        ? item.parts.map(part => `${part.source.subjectId}:${part.source.lessonId}`) : [`${subject.id}:${item.id}`];
+      const modules = projected ? [...await graph("src/data/lessons/outside-gaza/lesson.js")] : [];
+      for (const key of new Set(entries)) {
+        const loader = subjectLessonRegistry.get(key);
+        const module = loader?.toString().match(/import\(["']([^"']+)["']\)/)?.[1];
+        const entry = module ? path.posix.join(key.startsWith("adabi-") ? "src/data/lessons/adabi" : "src/data/lessons", module) : "src/data/lessons/islamic-education/islamic-bank.js";
+        modules.push(...await graph(entry));
+      }
       if (subject.id === "ict") modules.push(...await graph("src/data/lessons/ict/exam-lessons.js"));
       const lesson = await loadSubjectLesson(subject.id, item.id);
       if (!lesson) continue;

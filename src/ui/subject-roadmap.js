@@ -225,14 +225,15 @@ export function mountSubjectRoadmap({ container, roadmap, onStartLesson, isLesso
     if (unitLabel) unitLabel.textContent = button.dataset.unitLabel;
     bubble.querySelector("[data-bubble-lesson]").textContent = button.dataset.lessonLabel;
     const summary = bubble.querySelector("[data-bubble-summary]");
-    summary.classList.toggle("roadmap-book-tag", !unavailable && !pathLocked);
+    const pages = button.dataset.partPages;
+    summary.hidden = !pages && !unavailable && !pathLocked;
+    summary.classList.toggle("roadmap-book-tag", !!pages && !unavailable && !pathLocked);
     summary.querySelector("svg").style.display = unavailable || pathLocked ? "none" : "";
     const summaryText = summary.querySelector("[data-bubble-summary-text]");
     summaryText.replaceChildren();
     if (pathLocked) summaryText.textContent = `أكمل «${activeAccess.previous.part.label}» أولًا لفتح هذا الجزء.`;
     else if (unavailable) summaryText.textContent = "هذا الجزء قيد الإعداد. إنشاء حساب لا يفتح الأجزاء غير المنشورة.";
     else {
-      const pages = button.dataset.partPages;
       summaryText.textContent = /\d/.test(pages)
         ? `الكتاب المدرسي: ${readablePageReferences(`ص ${pages}`)}` : pages;
     }

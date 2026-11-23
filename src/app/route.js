@@ -2,6 +2,8 @@
 import { getCourseSubject } from "../data/course.js";
 import { getSubjectRoadmap, getSubjectRoadmapLesson } from "../data/subject-roadmaps.js";
 import { resolveQuestionLocation } from "../domain/question-rewards.js";
+import { resolveMovedMathLink } from "../data/lessons/outside-gaza/math-roadmaps.js";
+import { resolveDuplicateQuestionLink } from "../data/question-duplicates.js";
 
 /** @typedef {{page:string, subject:string|null, lesson:string|null, part:string|null, flow:string|null, question?:string, rating?:string}} Route */
 /** @typedef {{page?:string, subject?:string|null, lesson?:string|null, part?:string|null, flow?:string|null, question?:string|null, rating?:string|null}} RouteTarget */
@@ -23,7 +25,8 @@ function lessonDestination(subject, lesson, part, question = null) {
   const target = getSubjectRoadmapLesson(subject, lesson);
   // Formerly unpublished topic links now resolve to the video covering that topic.
   let selected = target?.parts.find(candidate => candidate.id === part || ("aliases" in candidate && candidate.aliases.includes(part)));
-  const location = question && selected ? resolveQuestionLocation({ subjectId:subject, lessonId:target.id, partId:selected.id, stepId:question }) : null;
+  const projected = question && selected && "source" in selected && selected.questionIds.includes(question);
+  const location = question && selected && !projected ? resolveQuestionLocation({ subjectId:subject, lessonId:target.id, partId:selected.id, stepId:question }) : null;
   if (location) { question = location.stepId; selected = target.parts.find(part => part.id === location.partId); }
   if (selected && target && "hidden" in target && target.hidden) {
     if (subject === "islamic-education" && target.id.startsWith("islamic-"))
@@ -36,7 +39,7 @@ function lessonDestination(subject, lesson, part, question = null) {
   }
   return selected && target
     ? { lesson:target.id, part:selected.id,
-      ...(location ? { question:location.stepId } : {}),
+      ...(projected ? { question } : location ? { question:location.stepId } : {}),
     } : { lesson:null, part:null };
 }
 
@@ -56,9 +59,14 @@ export function readRoute(search = "") {
   if (page === "more") return { page, subject:null, lesson:null, part:null, flow:null };
 
   const requestedSubject = getCourseSubject(params.get("subject"));
-  const subject = lessonSubject(requestedSubject?.status === "available" ? requestedSubject.id : null, params.get("lesson"));
+  const lesson = params.get("lesson"), part = params.get("part"), question = params.get("question");
+  const requestedId = requestedSubject?.status === "available" ? requestedSubject.id : null;
+  const duplicate = resolveDuplicateQuestionLink({ subjectId:lessonSubject(requestedId, lesson), lessonId:lesson, partId:part, stepId:question });
+  const moved = duplicate || resolveMovedMathLink({ subjectId:requestedId, lessonId:lesson, partId:part, stepId:question });
+  const subject = lessonSubject(moved?.subjectId || requestedId, moved?.lessonId || lesson);
   const rating = page === "rated-questions" && ["easy","medium","hard"].includes(params.get("rating") || "") ? params.get("rating") || "easy" : "easy";
-  return { page, ...(page === "rated-questions" && subject ? { rating } : {}), subject, ...lessonDestination(subject, params.get("lesson"), params.get("part"), params.get("question")), flow:null };
+  return { page, ...(page === "rated-questions" && subject ? { rating } : {}), subject,
+    ...lessonDestination(subject, moved?.lessonId || lesson, moved?.partId || part, duplicate?.stepId || question), flow:null };
 }
 
 /** @param {string} currentHref @param {RouteTarget} [route] */
@@ -84,9 +92,11 @@ export function createRouteUrl(currentHref, route = {}) {
       url.searchParams.set("page",page);
       url.searchParams.set("rating",["easy","medium","hard"].includes(rating || "") ? rating || "easy" : "easy");
     }
-    const destinationSubject = lessonSubject(subject, lesson);
+    const duplicate = resolveDuplicateQuestionLink({ subjectId:lessonSubject(subject, lesson), lessonId:lesson, partId:part, stepId:question });
+    const moved = duplicate || resolveMovedMathLink({ subjectId:subject, lessonId:lesson, partId:part, stepId:question });
+    const destinationSubject = lessonSubject(moved?.subjectId || subject, moved?.lessonId || lesson);
     url.searchParams.set("subject", destinationSubject || "");
-    const destination = lessonDestination(destinationSubject, lesson, part, question);
+    const destination = lessonDestination(destinationSubject, moved?.lessonId || lesson, moved?.partId || part, duplicate?.stepId || question);
     if (destination.lesson && destination.part) {
       url.searchParams.set("lesson", destination.lesson);
       url.searchParams.set("part", destination.part);

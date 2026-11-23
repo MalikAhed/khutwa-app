@@ -15,12 +15,6 @@ import {
 } from "./visitor-flow-markup.js";
 
 const FLOW_IDS = new Set(["entry", "register", "sign-in"]);
-const UNAVAILABLE_ONBOARDING_CHOICES = new Set(["curriculum:full-palestinian"]);
-function onboardingChoiceError(name, value) {
-  return UNAVAILABLE_ONBOARDING_CHOICES.has(`${name}:${value}`)
-    ? "عذرًا، غير متاح حاليًا."
-    : "";
-}
 const TITLES = {
   entry: "خطوة",
   register: "إنشاء حساب",
@@ -39,6 +33,7 @@ function setSubmitting(form, submitting, label) {
 export function createVisitorFlow({
   container,
   service,
+  fullPalestineAvailable = true,
   onNavigate,
   onHome,
   onAccountCreated,
@@ -50,6 +45,8 @@ export function createVisitorFlow({
   let currentFlow = null;
   let viewController = new AbortController();
   let navigationPending = false;
+  const onboardingChoiceError = (name, value) => !fullPalestineAvailable && name === "curriculum" && value === "full-palestinian"
+    ? "عذرًا، غير متاح حاليًا." : "";
 
   const reduceMotion = () =>
     documentObject.defaultView?.matchMedia?.("(prefers-reduced-motion: reduce)")

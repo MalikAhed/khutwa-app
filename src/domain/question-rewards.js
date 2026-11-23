@@ -1,6 +1,7 @@
 import { COURSE_SUBJECTS } from "../data/course.js";
 import { getSubjectRoadmap } from "../data/subject-roadmaps.js";
 import { getIctPartQuestionIds } from "../data/lessons/ict/question-index.js";
+import { OUTSIDE_GAZA_CURRICULUM } from "../data/lessons/outside-gaza/subjects.js";
 import { MAX_LEVEL_XP } from "./progression.js";
 
 const persistedSubject = subjectId => subjectId === "mathematics-2" ? "mathematics" : subjectId;
@@ -63,9 +64,9 @@ export function normalizeQuestionRewardKey(key) {
 
 // Navigation metadata supplies current identities without loading question banks.
 // Aliases and duplicate placements share one reward; hidden examples earn none.
-function pathQuestionRewards(path) {
+function pathQuestionRewards(path, curriculum = "gaza") {
   const identities = [...new Set(COURSE_SUBJECTS.filter(subject => subject.status === "available"
-    && (subject.path || "scientific") === path)
+    && (subject.path || "scientific") === path && (subject.curriculum || "gaza") === curriculum)
     .flatMap(subject => (getSubjectRoadmap(subject.id)?.units || []).flatMap(unit => unit.lessons
       .filter(lesson => !lesson.hidden && !lesson.optional)
       .flatMap(lesson => lesson.parts.flatMap(part => (part.questionIds || getIctPartQuestionIds(part.id))
@@ -83,6 +84,8 @@ function pathQuestionRewards(path) {
 export const QUESTION_REWARDS = Object.freeze([
   ...pathQuestionRewards("scientific"),
   ...pathQuestionRewards("literary"),
+  ...pathQuestionRewards("scientific", OUTSIDE_GAZA_CURRICULUM),
+  ...pathQuestionRewards("literary", OUTSIDE_GAZA_CURRICULUM),
 ]);
 const rewards = new Map(QUESTION_REWARDS.map(question => [questionRewardKey(question), question.xp]));
 

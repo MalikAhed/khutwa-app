@@ -3,6 +3,7 @@ import { spawn } from "node:child_process";
 import { mkdir } from "node:fs/promises";
 import { chromium } from "playwright";
 import { CHEMISTRY_LESSONS } from "../../src/data/lessons/chemistry/chemistry-course.js";
+import { isCurriculumQuestionHidden } from "../../src/data/curriculum-visibility.js";
 import { findChrome, getAvailablePort, waitForServer, terminateProcess } from "./browser-session.mjs";
 
 const port = await getAvailablePort();
@@ -45,13 +46,14 @@ try {
     await page.goto(base + "?page=learn");
     const card = page.locator('.subject-card[data-subject="chemistry"]');
     await card.waitFor();
-    assert.equal((await card.locator('[data-subject-count]').textContent()).trim(), "0 / 912");
+    assert.equal((await card.locator('[data-subject-count]').textContent()).trim(), "0 / 892");
     assert.equal(requests.some(path => CHEMISTRY_LESSONS.some(lesson => path.endsWith(`/chemistry/${lesson.id}.js`))), false);
     await card.click();
     await page.locator('.subject-roadmap[data-subject="chemistry"]').waitFor();
     assert.equal(await page.locator('.roadmap-unit').count(), 3);
     assert.deepEqual(await page.locator('[data-roadmap-lesson]').evaluateAll(nodes => nodes.map(node => node.dataset.roadmapLesson)), CHEMISTRY_LESSONS.map(lesson => lesson.id));
-    assert.deepEqual(await page.locator('.roadmap-question-ring').evaluateAll(nodes => nodes.map(node => Number(node.getAttribute('aria-valuemax')))), CHEMISTRY_LESSONS.map(lesson => lesson.questionCount));
+    assert.deepEqual(await page.locator('.roadmap-question-ring').evaluateAll(nodes => nodes.map(node => Number(node.getAttribute('aria-valuemax')))),
+      CHEMISTRY_LESSONS.map(lesson => lesson.questionIds.filter(id => !isCurriculumQuestionHidden(id)).length));
     await noOverflow();
     await page.screenshot({ path:`${output}/roadmap-${width}.png`, fullPage:true });
   }
@@ -96,14 +98,16 @@ try {
     assert.equal(await page.locator('[data-template-primary]').isDisabled(), false);
     await noOverflow();
     await page.screenshot({ path:`${output}/flashcard-${width}.png`, fullPage:true });
-    await openStep("u01-l01-quantum-model", "chemistry-oj-p041-q01-a3");
-    const formulaCard = page.locator('[data-exam-front] .lesson-flashcard-scroll');
-    await formulaCard.focus();
-    await formulaCard.press("Enter");
-    await page.locator('[data-exam-solution]').waitFor({ state:"visible" });
-    assert.ok((await page.locator('[data-exam-solution] mtext').allTextContents()).some(text => text.includes("فوتون")));
+    const hiddenLink = new URLSearchParams({ subject:"chemistry", lesson:"u01-l01-quantum-model",
+      part:"u01-l01-quantum-model-practice", question:"chemistry-oj-p041-q01-a3" });
+    await page.goto(`${base}?${hiddenLink}`);
+    await page.locator('[data-question-slider]').waitFor();
+    assert.equal(new URL(page.url()).searchParams.has("question"), false);
+    const visibleIds = await page.locator('[data-question-jump]').evaluateAll(nodes => nodes.map(node => node.getAttribute("data-question-jump")));
+    assert.equal(visibleIds.length, 121);
+    assert.ok(visibleIds.includes("chemistry-oj-p041-q01-a6"));
+    assert.ok(!visibleIds.some(isCurriculumQuestionHidden));
     await noOverflow();
-    await page.screenshot({ path:`${output}/arabic-formula-${width}.png`, fullPage:true });
     await openStep("u01-l01-quantum-model", "chemistry-oj-p042-q13-a4");
     const orbitalCard = page.locator('[data-exam-front] .lesson-flashcard-scroll');
     await orbitalCard.focus();
@@ -116,7 +120,7 @@ try {
     await page.screenshot({ path:`${output}/orbital-boxes-${width}.png`, fullPage:true });
   }
   assert.deepEqual(errors, []);
-  console.log("Chemistry browser check passed: 3 units, 21 lessons, 912 questions, 76 original crops; desktop/mobile MCQ and flashcard flows.");
+  console.log("Chemistry browser check passed: 3 units, 21 lessons, 892 visible questions, 76 original crops; desktop/mobile MCQ and flashcard flows.");
 } finally {
   await browser?.close();
   await terminateProcess(server);

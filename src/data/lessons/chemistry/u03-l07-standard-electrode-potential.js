@@ -81,10 +81,9 @@ question: أي المواد الآتية تصلح للاستخدام كقطب ف
 - [ ] option-3 | الخارصين
 - [ ] option-4 | المغنيسيوم
 explanation:
-**الإجابة:** البلاتين، الخيار١.
+المادة هي **البلاتين**. يظهر موضعه في رسم قطب الهيدروجين القياسي.
 
-الشاهد: «سلك بلاتين؛ H₂(g) (١جوي)؛ قطبPt(s)؛ محلول حمض الهيدروكلوريك١مول/لتر.»
-**المصدر:** صفحة 63 من الكتاب.
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 63](https://moe.edu.ps/m/4059#page=65).
 
 ![شاهد الكتاب](assets/lessons/curriculum-evidence/483f35ea404c1e8d89aa.webp)
 
@@ -164,10 +163,9 @@ question: أي التالية تصلح كقطب في قطب الهيدروجين
 - [ ] option-3 | الخارصين
 - [ ] option-4 | النحاس
 explanation:
-**الإجابة:** البلاتين، الخيار١.
+المادة هي **البلاتين**. يوضّح الشكل تركيب قطب الهيدروجين القياسي وموضع البلاتين.
 
-الشاهد: «سلك بلاتين؛ H₂(g) (١جوي)؛ قطبPt(s)؛ محلول حمض الهيدروكلوريك١مول/لتر.»
-**المصدر:** صفحة 63 من الكتاب.
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 63](https://moe.edu.ps/m/4059#page=65)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 136](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=140).
 
 ![شاهد الكتاب](assets/lessons/curriculum-evidence/483f35ea404c1e8d89aa.webp)
 
@@ -200,7 +198,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>−</mo><mn>0</mn><mo>=</mo><mo>+</mo><mn>0.34</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>−</mo><mn>0</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.34</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -288,10 +292,9 @@ question: جهد قطب الهيدروجين القياسي بالفولت يس�
 - [x] option-3 | صفر
 - [ ] option-4 | 0.1
 explanation:
-**الإجابة:** صفر فولت، الخيار٣.
+جهد الاختزال القياسي لقطب الهيدروجين القياسي **صفر فولت** بالتعريف.
 
-الشاهد: «اتفق العلماء أن جهد الاختزال وجهد التأكسد القياسي لهذا القطب يساوي صفرًا في الظروف المعيارية: تركيز١مول/لتر للأيونات، و١ضغط جوي للغازات ودرجة حرارة٢٥°س.»
-**المصدر:** صفحة 63 من الكتاب.
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 63](https://moe.edu.ps/m/4059#page=65).
 
 [عرض الشاهد الأصلي في الكتاب](assets/lessons/curriculum-evidence/cd6d78c1e5978aa65168.webp)
 
@@ -346,8 +349,22 @@ Ni أقل في جهد الاختزال من Ag⁺، فيمنح الإلكترو�
 جهد التفاعل هو جهد اختزال المستقبل ناقص جهد اختزال المانح:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mn>0.80</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.23</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>1.03</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mn>0.80</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.23</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mn>0.80</mn><mo>+</mo><mn>0.23</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mo>+</mo><mn>1.03</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -601,8 +618,22 @@ Ni يمنح الإلكترونين، لذلك هو المختزل:
 ويؤيد ذلك جدول الكتاب؛ جهد اختزالBr₂=+١٫٠٦V وجهدNi²⁺=−٠٫٢٥V. فرق جهدي الاختزال موجب:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mn>1.06</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.25</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>1.31</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mn>1.06</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.25</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mn>1.06</mn><mo>+</mo><mn>0.25</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mo>+</mo><mn>1.31</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -630,15 +661,43 @@ Cd²⁺ جهده −0.40 V وAg⁺ جهده +0.80 V؛ وكلاهما أعلى م
 نحسب جهد التفاعل بطرح جهد اختزال Zn من جهد اختزال الأيون المستقبل:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mo>+</mo><mi>C</mi><msup><mi>d</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.40</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>0.36</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mo>+</mo><mi>C</mi><msup><mi>d</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.40</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mo>+</mo><mi>C</mi><msup><mi>d</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.40</mn><mo>+</mo><mn>0.76</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mo>+</mo><mi>C</mi><msup><mi>d</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.36</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mo>+</mo><mn>2</mn><mi>A</mi><msup><mi>g</mi><mo>+</mo></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.80</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>1.56</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mo>+</mo><mn>2</mn><mi>A</mi><msup><mi>g</mi><mo>+</mo></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.80</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mo>+</mo><mn>2</mn><mi>A</mi><msup><mi>g</mi><mo>+</mo></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.80</mn><mo>+</mo><mn>0.76</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mo>+</mo><mn>2</mn><mi>A</mi><msup><mi>g</mi><mo>+</mo></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>1.56</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -692,7 +751,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>−</mo><mn>0</mn><mo>=</mo><mo>+</mo><mn>0.34</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>−</mo><mn>0</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.34</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -719,8 +784,22 @@ explanation:
 نطرح جهد اختزال الفلز المانح من جهد اختزال المستقبل:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>C</mi><mo>+</mo><mn>2</mn><msup><mi>H</mi><mo>+</mo></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0</mn><mo>−</mo><mo stretchy="false">(</mo><mo>+</mo><mn>0.34</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>0.34</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>C</mi><mo>+</mo><mn>2</mn><msup><mi>H</mi><mo>+</mo></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0</mn><mo>−</mo><mo stretchy="false">(</mo><mo>+</mo><mn>0.34</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+نحذف قوس العدد الموجب ونبقي إشارة الطرح.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>C</mi><mo>+</mo><mn>2</mn><msup><mi>H</mi><mo>+</mo></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0</mn><mo>−</mo><mn>0.34</mn></mrow></math>
+\`\`\`
+
+نطرح القيمتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>C</mi><mo>+</mo><mn>2</mn><msup><mi>H</mi><mo>+</mo></msup></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.34</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -730,8 +809,22 @@ B له أقل جهد اختزال، −0.76 V؛ لذلك هو أقوى مختز�
 وفي خلية A–B يكون A مهبطاً؛ لأن −0.25 V أكبر من −0.76 V:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.25</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>0.51</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.25</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.25</mn><mo>+</mo><mn>0.76</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.51</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -790,8 +883,22 @@ explanation:
 نتحقق من تلقائيتها بفرق جهدي الاختزال:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mo>−</mo><mn>1.67</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2.92</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>1.25</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mo>−</mo><mn>1.67</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2.92</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mo>−</mo><mn>1.67</mn><mo>+</mo><mn>2.92</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>E</mi><mo>∘</mo></msup><mo>=</mo><mo>+</mo><mn>1.25</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -838,8 +945,22 @@ explanation:
 جهد الخلية هو جهد اختزال المهبط ناقص جهد اختزال المصعد:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.13</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>0.13</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.13</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0</mn><mo>+</mo><mn>0.13</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.13</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -868,7 +989,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mi>a</mi><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.76</mn><mo>−</mo><mn>0.34</mn><mo>=</mo><mo>−</mo><mn>1.10</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>a</mi><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.76</mn><mo>−</mo><mn>0.34</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>a</mi><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>1.10</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -876,15 +1003,35 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mi>b</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>−</mo><mn>0.80</mn><mo>=</mo><mo>−</mo><mn>0.46</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>b</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>−</mo><mn>0.80</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>b</mi><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.46</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
 في الخيار ج يختزل Cu²⁺ ويتأكسد Mg:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mi>c</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2.38</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>2.72</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>c</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2.38</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>c</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>+</mo><mn>2.38</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>c</mi><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>2.72</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -892,7 +1039,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mi>d</mi><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>2.38</mn><mo>−</mo><mn>0.80</mn><mo>=</mo><mo>−</mo><mn>3.18</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>d</mi><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>2.38</mn><mo>−</mo><mn>0.80</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>d</mi><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>3.18</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -929,7 +1082,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mi>b</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.800</mn><mo>−</mo><mn>1.498</mn><mo>=</mo><mo>−</mo><mn>0.698</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>b</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.800</mn><mo>−</mo><mn>1.498</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>b</mi><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.698</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -953,7 +1112,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mi>a</mi><mo>∘</mo></msubsup><mo>=</mo><mn>1.498</mn><mo>−</mo><mn>0.800</mn><mo>=</mo><mo>+</mo><mn>0.698</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>a</mi><mo>∘</mo></msubsup><mo>=</mo><mn>1.498</mn><mo>−</mo><mn>0.800</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>a</mi><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.698</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -967,8 +1132,22 @@ explanation:
 
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mi>c</mi><mo>∘</mo></msubsup><mo>=</mo><mn>1.498</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.760</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>2.258</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>c</mi><mo>∘</mo></msubsup><mo>=</mo><mn>1.498</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.760</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>c</mi><mo>∘</mo></msubsup><mo>=</mo><mn>1.498</mn><mo>+</mo><mn>0.760</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>c</mi><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>2.258</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -982,8 +1161,22 @@ explanation:
 
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mi>d</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.800</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.760</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>1.560</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>d</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.800</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.760</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>d</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.800</mn><mo>+</mo><mn>0.760</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>d</mi><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>1.560</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -1053,16 +1246,44 @@ explanation:
 نتحقق بطرح جهد اختزال الفلز المانح من جهد اختزال الأيون المستقبل:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>M</mi><mi>g</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>r</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.74</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2.38</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>1.64</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>M</mi><mi>g</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>r</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.74</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2.38</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>M</mi><mi>g</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>r</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.74</mn><mo>+</mo><mn>2.38</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>M</mi><mi>g</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>r</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>1.64</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
 الجهد موجب، فيتفاعل مع Cr³⁺ في المقارنة القياسية.
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>M</mi><mi>g</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>a</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>2.84</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2.38</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>0.46</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>M</mi><mi>g</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>a</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>2.84</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2.38</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>M</mi><mi>g</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>a</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>2.84</mn><mo>+</mo><mn>2.38</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>M</mi><mi>g</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>a</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.46</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -1103,16 +1324,44 @@ explanation:
 إذن نختار **Fe**، ونتحقق:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>r</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.74</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.44</mn><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mn>0.30</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>r</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.74</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.44</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>r</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.74</mn><mo>+</mo><mn>0.44</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>r</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.30</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
 الجهد سالب، فيمكن حفظ محلول Cr³⁺ في الوعاء وفق هذا النموذج.
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>N</mi><mi>i</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.25</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.44</mn><mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><mn>0.19</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>N</mi><mi>i</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.25</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.44</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>N</mi><mi>i</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.25</mn><mo>+</mo><mn>0.44</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>N</mi><mi>i</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.19</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 

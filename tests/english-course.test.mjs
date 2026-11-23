@@ -3,8 +3,10 @@ import test from "node:test";
 import { readFile } from "node:fs/promises";
 import { ENGLISH_UNITS, ENGLISH_LESSONS } from "../src/data/lessons/english/english-course.js";
 import { getCourseSubject } from "../src/data/course.js";
-import { getSubjectRoadmap } from "../src/data/subject-roadmaps.js";
+import { getCurrentSubjectRoadmap, getSubjectRoadmap } from "../src/data/subject-roadmaps.js";
 import { loadSubjectLesson, loadSubjectLessonPart } from "../src/data/lessons/subject-lesson-registry.js";
+import { getQuestionXp, resolveQuestionLocation } from "../src/domain/question-rewards.js";
+import { emptyPart, homeLearningSummary, partKey } from "../src/domain/subject-progress.js";
 import { parseLessonMarkdown } from "../src/markdown/lesson-authoring.js";
 import { readRoute } from "../src/app/route.js";
 import { lessonLocale } from "../src/ui/lesson/shared.js";
@@ -27,6 +29,31 @@ test("English is unlocked with the supplied original units and distinct curricul
     assert.deepEqual(roadmap.units.find(candidate => candidate.id === unit.id).lessons.map(lesson => lesson.id),
       ENGLISH_LESSONS.filter(lesson => lesson.unit === unit.number).map(lesson => lesson.id));
   }
+});
+
+test("Gaza English follows each track's packet and retains previous Elmi progress", () => {
+  const subjectId = "english";
+  const published = getSubjectRoadmap(subjectId);
+  const visible = getCurrentSubjectRoadmap(subjectId);
+  assert.deepEqual(visible.units.map(unit => unit.id), [1, 3, 7, 8, 9].map(unit => `english-unit-${unit}`));
+  const adabi = getCurrentSubjectRoadmap("adabi-english");
+  assert.equal(adabi.units.length, 7);
+  assert.match(adabi.units[1].label, /Making changes/);
+  assert.match(adabi.units.at(-1).label, /Past History/);
+  const [archivedLesson] = published.units.find(unit => unit.id === "english-unit-2").lessons;
+  const [part] = archivedLesson.parts;
+  const archived = { subjectId, lessonId:archivedLesson.id, partId:part.id, stepId:part.questionIds[0] };
+  const xp = getQuestionXp(archived);
+  assert.ok(xp > 0);
+  assert.deepEqual(resolveQuestionLocation(archived), archived);
+  const saved = { ...emptyPart(), completedStepIds:[archived.stepId], completed:true, rewardXp:xp };
+  const records = new Map([[partKey(archived), saved]]);
+  const progress = homeLearningSummary(records, [published]);
+  assert.equal(progress.currentQuestionsTotal, 979);
+  assert.equal(progress.currentQuestionsSolved, 0);
+  assert.equal(progress.totalXp, xp);
+  assert.equal(progress.curriculumLessonsTotal, 15);
+  assert.strictEqual(records.get(partKey(archived)), saved);
 });
 
 test("all available source tasks retain unique IDs, original formats and native question bookmarks", async () => {

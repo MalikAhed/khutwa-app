@@ -1,16 +1,20 @@
 import { escapeHtml as esc } from "../lib/dom.js";
 import { icon, number, date, studentRow, studentDetail } from './student-dashboard-view.js';
+import { mountStudentReports } from './student-dashboard-reports.js';
 
 document.querySelectorAll('[data-icon]').forEach(element => { element.innerHTML = icon(element.dataset.icon); });
 
 const list = document.querySelector('#students'), status = document.querySelector('#status');
 const loadMore = document.querySelector('#load-more'), loadStatus = document.querySelector('#load-status');
 const dialog = document.querySelector('#student-detail'), detail = document.querySelector('#detail-content');
+const overview = document.querySelector('#student-overview');
 const filters = { all:'جميع الطلاب', subscribed:'الطلاب المشتركون', free:'الحسابات المجانية', suspended:'الحسابات الموقوفة' };
 let nextOffset = 0, search = '', filter = 'all', listRequest, detailRequest, activeStudent, saving = false;
 let loadedStudents = [], loading = false, hasMore = false, detailStudentId;
+let dashboardPage = 'students';
+let overviewRequest;
 const scrollObserver = new IntersectionObserver(entries => {
-  if (entries.some(entry => entry.isIntersecting) && hasMore && !loading) void loadStudents({append:true});
+  if (dashboardPage === 'students' && entries.some(entry => entry.isIntersecting) && hasMore && !loading) void loadStudents({append:true});
 }, {rootMargin:'0px 0px 400px 0px'});
 async function request(url, {signal, body} = {}) {
   // Older iPhones do not support AbortSignal.any/timeout. Keep cancellation and
@@ -30,6 +34,39 @@ async function request(url, {signal, body} = {}) {
   } finally {clearTimeout(timeout);signal?.removeEventListener('abort',cancel);}
 }
 
+const reports = mountStudentReports({request});
+function showTotal(type, total) {
+  if (Number.isSafeInteger(total) && total >= 0) overview.querySelector(`[data-student-total="${type}"]`).textContent = number(total);
+}
+
+async function loadOverview() {
+  overviewRequest?.abort();
+  const controller = new AbortController();
+  overviewRequest = controller;
+  const types = Object.keys(filters).filter(type => search || type !== filter);
+  await Promise.allSettled(types.map(async type => {
+    const data = await request(`/api/owner/students?${new URLSearchParams({filter:type,offset:'0'})}`, {signal:controller.signal});
+    if (!controller.signal.aborted) showTotal(type,data.total);
+  }));
+}
+
+function selectDashboardPage(page) {
+  dashboardPage = page;
+  const isReports = page === 'reports';
+  overview.hidden = isReports;
+  document.querySelector('.student-preview').hidden = isReports;
+  document.querySelector('#students-panel').hidden = isReports;
+  document.querySelector('#reports-panel').hidden = !isReports;
+  document.querySelector('#student-search').hidden = isReports;
+  document.querySelector('#reports-header').hidden = !isReports;
+  document.querySelector('[data-dashboard-page="reports"]').setAttribute('aria-pressed',String(isReports));
+  document.querySelectorAll('[data-filter]').forEach(button => button.setAttribute('aria-pressed',String(!isReports && button.dataset.filter === filter)));
+  document.querySelector('#page-title').textContent = isReports ? 'بلاغات الأسئلة' : filters[filter];
+  document.querySelector('#page-description').textContent = isReports ? 'ملاحظات الطلاب على الأسئلة، مع السؤال وإجابته للمراجعة.' : 'تابع نشاط الطلاب واشتراكاتهم وتقدّمهم.';
+  if (isReports) {scrollObserver.disconnect();reports.open();}
+  else {reports.cancel();if (hasMore) scrollObserver.observe(loadMore);}
+}
+
 function renderStudents(students, append = false) {
   if (append && !students.length) return;
   if (!students.length) {
@@ -38,7 +75,7 @@ function renderStudents(students, append = false) {
   }
   const rows = students.map(studentRow).join('');
   if (append) list.querySelector('[role="list"]').insertAdjacentHTML('beforeend',rows);
-  else list.innerHTML = `<div class="list-head" aria-hidden="true"><span>الطالب</span><span>المنهاج والمسار</span><span>الاشتراك</span><span>التواريخ</span><span>الملف</span></div><div role="list" aria-label="حسابات الطلاب">${rows}</div>`;
+  else list.innerHTML = `<div class="list-head" aria-hidden="true"><span>الطالب</span><span>المنهاج والمسار</span><span>الاشتراك</span><span>نشاط التعلّم</span><span>الإجراءات</span></div><div role="list" aria-label="حسابات الطلاب">${rows}</div>`;
 }
 
 async function loadStudents({append = false} = {}) {
@@ -68,6 +105,7 @@ async function loadStudents({append = false} = {}) {
     renderStudents(append ? students.slice(loadedStudents.length) : students, append);
     loadedStudents = students; nextOffset = cursor; hasMore = more;
     document.querySelector('#student-count').textContent = number(data.total);
+    if (!search) showTotal(filter,data.total);
     status.textContent = data.total ? `${number(data.total)} طالب · آخر تحديث ${new Date().toLocaleTimeString('ar', {hour:'2-digit', minute:'2-digit'})}` : search ? 'لا يوجد طلاب مطابقون للبحث.' : 'لا يوجد طلاب في هذه القائمة.';
     document.querySelector('#loaded-count').textContent = data.total ? `عرض ${number(students.length)} من ${number(data.total)} طالب` : '';
     loadStatus.textContent = '';
@@ -149,6 +187,7 @@ async function changeAccount(change) {
       if (message) message.textContent = 'تم حفظ التغيير.';
       void loadStudents();
     }
+    void loadOverview();
   } catch (error) {
     actionStatus.textContent = error.message;
     // A timeout can happen after the server accepted a write. Require a fresh
@@ -177,16 +216,20 @@ document.querySelector('#search').addEventListener('search', event => {
   if (!event.target.value) { search = ''; loadedStudents = []; void loadStudents(); }
 });
 document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
+  if (button.closest('#student-overview')) {
+    search = '';
+    document.querySelector('#search').value = '';
+  }
   filter = button.dataset.filter; loadedStudents = [];
-  document.querySelectorAll('[data-filter]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-  document.querySelector('#page-title').textContent = filters[filter];
+  selectDashboardPage('students');
   void loadStudents();
 }));
-document.querySelector('#refresh').addEventListener('click', () => void loadStudents());
+document.querySelector('[data-dashboard-page="reports"]').addEventListener('click',() => selectDashboardPage('reports'));
+document.querySelector('#refresh').addEventListener('click', () => { void loadStudents(); void loadOverview(); });
 loadMore.addEventListener('click', () => void loadStudents({append:true}));
 list.addEventListener('click', event => {
   const button = event.target.closest('[data-student-id]');
-  if (button) void showStudent(button.dataset.studentId);
+  if (button) void showStudent(button.dataset.studentId,button.dataset.studentTab);
 });
 detail.addEventListener('change', event => {
   if (event.target.name === 'subscriptionScope' || event.target.name === 'subscriptionSubjects') updateScope();
@@ -242,7 +285,8 @@ dialog.addEventListener('close', () => {
   detailRequest?.abort(); activeStudent = null; detail.replaceChildren();
   document.querySelector(`[data-student-id="${CSS.escape(detailStudentId || '')}"]`)?.focus({preventScroll:true});
 });
-window.addEventListener('pagehide', () => { listRequest?.abort(); detailRequest?.abort(); scrollObserver.disconnect(); });
+window.addEventListener('pagehide', () => { listRequest?.abort(); detailRequest?.abort(); reports.cancel();scrollObserver.disconnect(); });
 window.addEventListener('pageshow', event => { if (event.persisted) location.reload(); });
-document.addEventListener('visibilitychange', () => { if (!document.hidden && !saving) void loadStudents(); });
+document.addEventListener('visibilitychange', () => { if (!document.hidden && !saving) {if (dashboardPage === 'reports') reports.load();else void loadStudents();} });
 void loadStudents();
+void loadOverview();

@@ -105,7 +105,7 @@ You’d better revise the material before the exam. (the teacher advised his stu
 final-answer:
 The teacher advised his students **to revise** the material before the exam.
 solution:
-You'd better تقدم نصيحة. نبني نقلها: \`advised + الشخص\` \`his students + to + الفعل المجرد\` revise؛ نحذف عبارة You'd better.
+You’d better صيغة نصح، و’d اختصار **had** في هذه العبارة. لنقل النصيحة نستخدم **advised + الشخص الذي تلقّى النصيحة + to + الفعل بصيغته الأساسية**. الشخص هنا **his students**، والفعل **revise**، فنكتب **advised his students to revise** ونحتفظ بالظرف **before the exam**.
 
 **المصدر:** صفحة 45 من الكتاب.
 
@@ -176,7 +176,7 @@ You should stop for a rest when you feel exhausted. (the trainer/advised)
 final-answer:
 The trainer advised him **to stop** for a rest when he felt exhausted.
 solution:
-نستخدم \`advised + المفعول + to stop\`؛ ونغير you إلى he و feel إلى felt عند النقل في الماضي. افترض المفتاح أن المخاطب ذكر مفرد؛ إذا اختلف المخاطب جاز me أو us أو her مع الضمير المناسب.
+نستخدم \`advised + المفعول + to stop\`؛ ونغير you إلى he و feel إلى felt عند النقل في الماضي. يُستخدم he إذا كان المخاطب ذكرًا مفردًا؛ إذا اختلف المخاطب جاز me أو us أو her مع الضمير المناسب.
 
 **المصدر:** صفحة 45 من الكتاب.
 

@@ -72,7 +72,7 @@ export function renderAuthoredInteractiveLesson(
   const shell = container.closest(".lesson-shell") || container;
   const demo = demoMode ? selectLessonDemo(authoredSteps, {
     firstMcq:shell.dataset.subject === "ict",
-    preserveTypes:shell.dataset.subject?.startsWith("adabi-"),
+    preserveTypes:/^(?:adabi|outside-gaza)-/.test(shell.dataset.subject || ""),
   }) : null;
   if (demo) authoredSteps = demo.steps;
   const questionFeedbackFor = id => getQuestionFeedback?.(demo?.sources.get(id)?.stepId || id);
@@ -680,7 +680,7 @@ export function renderAuthoredInteractiveLesson(
     }
     if (step.type === "exam-question") {
       const examController = new AbortController();
-      const destroyExam = renderExamQuestion(host, step, { locale, onBack:goBack, selfCheck:!demoMode, beforeAnswer,
+      const destroyExam = renderExamQuestion(host, step, { locale, onBack:goBack, selfCheck:!demoMode, beforeAnswer:() => beforeAnswer?.(step.id),
         registerSessionSave:save => { saveCurrentAssessment = save; },
         onAssess:({ correct }) => {
           void Promise.resolve(questionFeedbackFor(step.id)?.saveRating(correct ? "easy" : "hard", { automatic:true })).catch(() => {});
@@ -693,7 +693,7 @@ export function renderAuthoredInteractiveLesson(
           return goNext();
         }, onReveal:() => onLessonEvent?.({ type:"reveal",step }), onFlip:({revealed}) => onLessonEvent?.({type:"flip",step,revealed}) });
       mountQuestionFeedback({ host,shell,onReportOpen:() => onLessonEvent?.({type:"report"}),feedback:questionFeedbackFor(step.id),signal:examController.signal,locale,onHidden:() => hideCurrent(step) });
-      mountQuestionExplanation({host,onOpen:() => onLessonEvent?.({type:"explanation",step}),explanation:demoMode ? null : getQuestionExplanation?.(step),locale,signal:examController.signal});
+      mountQuestionExplanation({host,step,onOpen:() => onLessonEvent?.({type:"explanation",step}),explanation:demoMode ? null : getQuestionExplanation?.(step),locale,signal:examController.signal});
       const back = host.querySelector("[data-template-back]");
       back.disabled = currentIndex === 0;
       back.hidden = currentIndex === 0;
@@ -705,7 +705,7 @@ export function renderAuthoredInteractiveLesson(
     const questionController = new AbortController();
     const destroyQuestion = renderQuestion(host, {
       definition: step,
-      beforeAnswer,
+      beforeAnswer:() => beforeAnswer?.(step.id),
       onBack: goBack,
       onContinue: goNext,
       onAnswer: (result) => {
@@ -718,7 +718,7 @@ export function renderAuthoredInteractiveLesson(
       locale,
     });
     mountQuestionFeedback({ host,shell,onReportOpen:() => onLessonEvent?.({type:"report"}),feedback:questionFeedbackFor(step.id),signal:questionController.signal,locale,onHidden:() => hideCurrent(step) });
-    mountQuestionExplanation({host,onOpen:() => onLessonEvent?.({type:"explanation",step}),explanation:demoMode ? null : getQuestionExplanation?.(step),locale,signal:questionController.signal});
+    mountQuestionExplanation({host,step,onOpen:() => onLessonEvent?.({type:"explanation",step}),explanation:demoMode ? null : getQuestionExplanation?.(step),locale,signal:questionController.signal});
     revealWhenReady(host.querySelector(".level-layout-task"), { signal:questionController.signal, animate:!instantEntry });
     destroyStep = () => { questionController.abort(); destroyQuestion(); };
     const stepBackButton = host.querySelector("[data-template-back]");

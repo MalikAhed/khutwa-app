@@ -1004,7 +1004,7 @@ solution:
 
 > Many people think ‘This is the way I am and I’ll never change’, using this as an excuse for not trying something new.
 
-**المصدر:** صفحة 4 من الكتاب.
+**المصدر في كتاب غزة:** ص 4 للنص، وص 5 للتمرين المقتبس.
 
 
 

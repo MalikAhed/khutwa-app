@@ -59,9 +59,9 @@ body:
 final-answer:
 **تميه الأملاح:** قدرة بعض أيونات الأملاح على التفاعل مع الماء وإنتاج أيونات H₃O⁺ أو OH⁻ أو كليهما.
 solution:
-**تميه الأملاح:** «قدرة بعض أيونات الأملاح على التفاعل مع الماء وإنتاج أيوناتH₃O⁺ أوOH⁻ أوكليهما».
+تميه الأملاح هو تفاعل بعض أيونات الملح مع الماء لإنتاج أيونات الهيدرونيوم \\(\\mathrm{H_3O^+}\\) أو الهيدروكسيد \\(\\mathrm{OH^-}\\) أو كليهما.
 
-**المصدر:** صفحة 41 من الكتاب.
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 41](https://moe.edu.ps/m/4059#page=43)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 73](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=77).
 
 ![شاهد الكتاب](assets/lessons/curriculum-evidence/9c41d2b341c47ab2275a.webp)
 
@@ -281,9 +281,6 @@ explanation:
 عند25°س يكون pH للمحلول المتعادل7، وللقاعدي أكبر من7.
 
 إذن الأملاح الثلاثة الأخرى أعلىpH منNaNO₃ المتعادل. هذا وصف للأملاح المحددة؛ فصفة «أمفوتيري» وحدها لا تعني أن كل أيون أمفوتيري قاعدي.
-
-**المصدر:** الصفحات 29، 41 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -634,12 +631,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msup><mi>N</mi><mo>−</mo></msup><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mo>⇌</mo><mi>H</mi><mi>C</mi><mi>N</mi><mo>+</mo><mi>O</mi><msup><mi>H</mi><mo>−</mo></msup></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** الصفحات 36، 41 من الكتاب.
-
 :::
 
 :::exam-question
@@ -1091,12 +1082,6 @@ pH هو سالب لوغاريتم الهيدرونيوم؛ لذلك نحول pH=
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>N</mi><mi>a</mi><mi>D</mi><mo stretchy="false">)</mo><mo>&lt;</mo><mi>p</mi><mi>H</mi><mo stretchy="false">(</mo><mi>N</mi><mi>a</mi><mi>A</mi><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** الصفحات 36، 41 من الكتاب.
-
 :::
 
 :::exam-question

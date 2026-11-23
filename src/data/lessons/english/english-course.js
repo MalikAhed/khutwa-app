@@ -27,19 +27,19 @@ export const ENGLISH_UNITS = Object.freeze([
   {
     "id": "english-unit-7",
     "number": 7,
-    "label": "Unit 7: The world of work",
+    "label": "Unit 4: The world of work",
     "title": "The world of work"
   },
   {
     "id": "english-unit-8",
     "number": 8,
-    "label": "Unit 8: In Business",
+    "label": "Unit 5: In business",
     "title": "In Business"
   },
   {
     "id": "english-unit-9",
     "number": 9,
-    "label": "Unit 9: Only a game",
+    "label": "Unit 6: Only a game?",
     "title": "Only a game"
   },
   {

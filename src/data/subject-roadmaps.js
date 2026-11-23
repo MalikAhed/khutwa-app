@@ -1,4 +1,7 @@
 import { ADABI_COURSES } from "./lessons/adabi/catalog.js";
+import { currentCurriculumRoadmap } from "./curriculum-visibility.js";
+import { OUTSIDE_GAZA_ROADMAPS } from "./lessons/outside-gaza/roadmaps.js";
+import { OUTSIDE_GAZA_MATH_2 } from "./lessons/outside-gaza/math-roadmaps.js";
 import { getIctPartQuestionIds } from "./lessons/ict/question-index.js";
 import { CHEMISTRY_UNITS, CHEMISTRY_LESSONS } from "./lessons/chemistry/chemistry-course.js";
 import { ENGLISH_UNITS, ENGLISH_LESSONS } from "./lessons/english/english-course.js";
@@ -296,7 +299,12 @@ const ADABI_ROADMAPS = new Map(ADABI_COURSES.map(course => [course.subjectId, Ob
   }))),
 })]));
 
+const OUTSIDE_GAZA_MATH_2_RECORDS = Object.freeze({ subjectId:OUTSIDE_GAZA_MATH_2, questionsOnly:true, units:Object.freeze([]) });
+
 export function getSubjectRoadmap(subjectId) {
+  if (Object.hasOwn(OUTSIDE_GAZA_ROADMAPS, subjectId)) return OUTSIDE_GAZA_ROADMAPS[subjectId];
+  // The second paper projects the original bank; its published records still belong to Math 1.
+  if (subjectId === OUTSIDE_GAZA_MATH_2) return OUTSIDE_GAZA_MATH_2_RECORDS;
   const adabi = ADABI_ROADMAPS.get(subjectId);
   if (adabi) return adabi;
   if (subjectId === ARABIC_ROADMAP.subjectId) return ARABIC_ROADMAP;
@@ -315,7 +323,14 @@ export function getSubjectRoadmapLesson(subjectId, lessonId) {
   const roadmap = getSubjectRoadmap(subjectId);
   const lesson = roadmap?.units.flatMap(({ lessons }) => lessons).find(({ id }) => id === lessonId);
   if (lesson) return lesson;
+  const current = currentCurriculumRoadmap(roadmap);
+  const currentLesson = current === roadmap ? undefined : current?.units.flatMap(({ lessons }) => lessons).find(({ id }) => id === lessonId);
+  if (currentLesson) return currentLesson;
   return subjectId === "islamic-education"
     ? ISLAMIC_LEGACY_LESSONS.find(lesson => lesson.id === lessonId) || null
     : null;
+}
+
+export function getCurrentSubjectRoadmap(subjectId) {
+  return currentCurriculumRoadmap(getSubjectRoadmap(subjectId));
 }

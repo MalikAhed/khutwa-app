@@ -20,7 +20,7 @@ solution:
 
 > In fact, many studies have shown that an important factor in helping people feel positive about themselves is the feeling that they are developing and making progress in their lives.
 
-**المصدر:** صفحة 4 من الكتاب.
+**المصدر في كتاب غزة:** ص 4 للنص، وص 5 للتمرين المقتبس.
 
 
 
@@ -80,7 +80,7 @@ solution:
 
 > Your comfort zone is, as the name suggests, the area where you feel comfortable. We all have one, whether we know it or not: it’s the set of routines and known abilities that make us feel safe because we’re confident that we can manage and are unlikely to be challenged by anything unexpected or worrying.
 
-**المصدر:** صفحة 4 من الكتاب.
+**المصدر في كتاب غزة:** ص 4 للنص، وص 5 للتمرين المقتبس.
 
 
 
@@ -180,7 +180,7 @@ solution:
 
 > You won’t reach your full potential if you only do what you know you are able to do. We all want to improve ourselves, for example by learning something new, becoming more creative or getting fit.
 
-**المصدر:** صفحة 4 من الكتاب.
+**المصدر في كتاب غزة:** ص 4 للنص، وص 5 للتمرين المقتبس.
 
 
 
@@ -215,7 +215,7 @@ solution:
 
 > Many people think ‘This is the way I am and I’ll never change’, using this as an excuse for not trying something new.
 
-**المصدر:** صفحة 4 من الكتاب.
+**المصدر في كتاب غزة:** ص 4 للنص، وص 5 للتمرين المقتبس.
 
 
 
@@ -250,7 +250,7 @@ solution:
 
 > In fact, many studies have shown that an important factor in helping people feel positive about themselves is the feeling that they are developing and making progress in their lives.
 
-**المصدر:** صفحة 4 من الكتاب.
+**المصدر في كتاب غزة:** ص 4 للنص، وص 5 للتمرين المقتبس.
 
 
 
@@ -344,7 +344,7 @@ solution:
 
 > Your comfort zone is, as the name suggests, the area where you feel comfortable. We all have one, whether we know it or not: it’s the set of routines and known abilities that make us feel safe because we’re confident that we can manage and are unlikely to be challenged by anything unexpected or worrying.
 
-**المصدر:** صفحة 4 من الكتاب.
+**المصدر في كتاب غزة:** ص 4 للنص، وص 5 للتمرين المقتبس.
 
 
 
@@ -378,7 +378,7 @@ solution:
 
 > You won’t reach your full potential if you only do what you know you are able to do. We all want to improve ourselves, for example by learning something new, becoming more creative or getting fit.
 
-**المصدر:** صفحة 4 من الكتاب.
+**المصدر في كتاب غزة:** ص 4 للنص، وص 5 للتمرين المقتبس.
 
 
 
@@ -575,7 +575,7 @@ solution:
 
 > Many people think ‘This is the way I am and I’ll never change’, using this as an excuse for not trying something new.
 
-**المصدر:** صفحة 4 من الكتاب.
+**المصدر في كتاب غزة:** ص 4 للنص، وص 5 للتمرين المقتبس.
 
 
 
@@ -610,7 +610,7 @@ solution:
 
 > You won’t reach your full potential if you only do what you know you are able to do. We all want to improve ourselves, for example by learning something new, becoming more creative or getting fit.
 
-**المصدر:** صفحة 4 من الكتاب.
+**المصدر في كتاب غزة:** ص 4 للنص، وص 5 للتمرين المقتبس.
 
 
 

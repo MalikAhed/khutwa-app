@@ -11,15 +11,9 @@ question: أي العبارات الآتية صحيحة فيما يخص الفل
 - [ ] option-3 | تزداد سعته بزيادة قيمة (n).
 - [ ] option-4 | يتغير شكله الكروي بتغير قيمة (n).
 explanation:
-**الإجابة:** يتواجد في جميع المستويات الرئيسة.
+في كل مستوى رئيس يوجد المستوى الفرعي \\(s\\)، لأن \\(\\ell=0\\) مسموح بها لكل قيمة من \\(n\\).
 
-**الشاهد من الكتاب:**
-
-> وتتشابه أفلاك s في جميع المستويات في الشكل، وتختلف في الحجم والطاقة، وتزداد طاقة الفلك وحجمه بزيادة قيمة (n).
-
-**المصدر:** صفحة 5 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 3](https://moe.edu.ps/m/4059#page=5).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -148,15 +142,9 @@ body:
 final-answer:
 **الفلك:** حيز حول النواة يحتمل تواجد الإلكترون فيه، أو تتمركز كثافة الموجة الإلكترونية فيه.
 solution:
-**الإجابة:** حيز حول النواة يحتمل تواجد الإلكترون فيه، أو تتمركز كثافة الموجة الإلكترونية فيه.
+الفلك حيّز حول النواة يُحتمل وجود الإلكترون فيه، حيث تتركّز الكثافة الإلكترونية.
 
-**الشاهد من الكتاب:**
-
-> حسب نظرية الميكانيك الكمي فإن الفلك هو حيز حول النواة يحتمل تواجد الإلكترون فيه، أو تتمركز كثافة الموجة الإلكترونية فيه.
-
-**المصدر:** صفحة 4 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 4](https://moe.edu.ps/m/4059#page=6)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 15](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=19).
 
 :::
 
@@ -242,15 +230,9 @@ body:
 final-answer:
 **العدد الكمي الفرعي** \\(\\ell\\).
 solution:
-**الإجابة:** العدد الكمي الفرعي \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ℓ</mi></mrow></math>\`.
+يحدّد **العدد الكمي الفرعي \\(\\ell\\)** شكل الفلك.
 
-**الشاهد من الكتاب:**
-
-> ويحدد العدد الكمي الفرعي طاقة المستوى الفرعي وشكله.
-
-**المصدر:** صفحة 2 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 2](https://moe.edu.ps/m/4059#page=4)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 14](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=18).
 
 :::
 
@@ -564,14 +546,14 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mtext>max</mtext></msub><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mtext>max</mtext></msub><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn></mrow></math>
 \`\`\`
 
+نضرب العددين.
 
-
-
-**المصدر:** الصفحات 4، 7 من الكتاب.
-
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mtext>max</mtext></msub><mo>=</mo><mn>6</mn></mrow></math>
+\`\`\`
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -830,7 +812,7 @@ id: chemistry-oj-p028-q07
 title: الوحدة ١ · الدرس ١ · ص ٢٨ · س ٧
 kicker: وزاري ٢٠٢٤ رزم غزة
 reference: [الملزمة، ص ٢٨](https://chatgpt.com/api/library/files/libfile_d6f8fd6cedc0819189c667772787424c/download#page=28)
-question: ما النظرية التي فسرت أطياف الذرات عديدة الإلكترونات؟
+question: ما النظرية التي قدّمت تفسيرًا لبنية الذرات عديدة الإلكترونات باستخدام معادلة الموجة؟
 - [ ] option-1 | بور
 - [ ] option-2 | رذرفورد
 - [ ] option-3 | تومسون
@@ -838,15 +820,9 @@ question: ما النظرية التي فسرت أطياف الذرات عديد
 explanation:
 الإجابة: نظرية الميكانيك الكمي، الخيار الرابع.
 
-في الكتاب الكامل، ص 13 المطبوعة، صفحة PDF17، يوضح سياق الفقرتين أن هذه النظرية جاءت لمعالجة قصور بور في الذرات عديدة الإلكترونات:
+تستخدم النظرية معادلة شرودنجر الموجية لوصف بنية الذرة، ومنها نحصل على الأعداد الكمية الرئيس والفرعي والمغناطيسي.
 
-> ورغم هذا النجاح، إلا أنها فشلت في حساب طاقة المستويات وفي تفسير أطياف الذرات عديدة الإلكترونات، والأكثر تعقيداً من ذرة الهيدروجين؛ لذا كان لا بد من وضع نظرية جديدة في محاولة لفهم بنية ذرات كافة العناصر، بطريقة أكثر دقة ووضوحاً.
-
-ثم يذكر مباشرة:
-
-> قدمت نظرية الميكانيك الكمي (الموجي) تفسيراً مقبولاً، وفهماً شاملاً، لبنية الذرات عديدة الإلكترونات.
-
-[فتح صفحة الكتاب](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=17)
+[الرزمة التعليمية، ص ٢](https://moe.edu.ps/m/4059#page=4)
 
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
@@ -927,7 +903,19 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>9</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>9</mn></mrow></math>
 \`\`\`
 
 
@@ -961,7 +949,19 @@ n يحدد رقم المستوى الرئيس، و ℓ يحدد نوعه؛ n=4 �
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>4</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
@@ -969,14 +969,14 @@ n يحدد رقم المستوى الرئيس، و ℓ يحدد نوعه؛ n=4 �
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mtext>max</mtext></msub><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mtext>max</mtext></msub><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn></mrow></math>
 \`\`\`
 
+نضرب العددين.
 
-
-
-**المصدر:** الصفحات 4، 7 من الكتاب.
-
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mtext>max</mtext></msub><mo>=</mo><mn>10</mn></mrow></math>
+\`\`\`
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1017,15 +1017,9 @@ question: فيم تختلف أفلاك (p) لنفس المستوى الرئيس�
 - [ ] option-3 | السعة
 - [x] option-4 | الاتجاه الفراغي
 explanation:
-**الإجابة:** الاتجاه الفراغي
+تختلف أفلاك \\(p\\) الثلاثة في المستوى الرئيس نفسه في **الاتجاه الفراغي**، أي في المحور الذي يمتد عليه الفلك.
 
-**الشاهد من الكتاب:**
-
-> من الملاحظ أن أفلاك p لنفس المستوى الرئيس، تتشابه في الشكل والحجم والطاقة، لكنها تختلف في الاتجاه الفراغي.
-
-**المصدر:** صفحة 5 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 5](https://moe.edu.ps/m/4059#page=7)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 16](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=20).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -1075,15 +1069,9 @@ question: ما العدد الكمي الذي يحدد الشكل العام ل�
 - [x] option-3 | \\(\\ell\\)
 - [ ] option-4 | \\(n\\)
 explanation:
-**الإجابة:** \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">ℓ</mi></mrow></math>\`
+يحدّد **العدد الكمي الفرعي \\(\\ell\\)** شكل الفلك.
 
-**الشاهد من الكتاب:**
-
-> ويحدد العدد الكمي الفرعي طاقة المستوى الفرعي وشكله.
-
-**المصدر:** صفحة 2 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 2](https://moe.edu.ps/m/4059#page=4)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 14](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=18).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -1171,10 +1159,8 @@ explanation:
 
 هذه مقارنة فروق الطاقة في النموذج المدرسي، ولا تفصل شروط السماح الطيفي لانتقال أحادي الفوتون.
 
-**المصدر:** صفحة 10 من الكتاب.
 
 ![الشاهد الأصلي من الكتاب](assets/lessons/curriculum-evidence/f2a50cf34e363cd40434.webp)
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1196,7 +1182,13 @@ n يحدد مستوى الطاقة الرئيسي، وℓ يحدد نوع الم
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi mathvariant="normal">ℓ</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>3</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi mathvariant="normal">ℓ</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>3</mn><mo>−</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi mathvariant="normal">ℓ</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -1422,15 +1414,30 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>10</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>32</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>10</mn><mo>+</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>8</mn><mo>+</mo><mn>10</mn><mo>+</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>18</mn><mo>+</mo><mn>14</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>32</mn></mrow></math>
 \`\`\`
 
 
 
 إذن **السعة القصوى 32 إلكتروناً**.
-
-**المصدر:** الصفحات 2، 7 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1461,7 +1468,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mn>16</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><msup><mn>4</mn><mn>2</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>16</mn></mrow></math>
 \`\`\`
 
 
@@ -1535,15 +1548,9 @@ question: ما الخاصية الفيزيائية التي يحددها الع�
 - [ ] option-3 | الاتجاه المغزلي للفلك
 - [x] option-4 | الشكل العام للفلك
 explanation:
-**الإجابة:** الشكل العام للفلك
+يحدّد **العدد الكمي الفرعي \\(\\ell\\)** شكل الفلك.
 
-**الشاهد من الكتاب:**
-
-> ويحدد العدد الكمي الفرعي طاقة المستوى الفرعي وشكله.
-
-**المصدر:** صفحة 2 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 2](https://moe.edu.ps/m/4059#page=4)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 14](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=18).
 
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -1564,7 +1571,19 @@ n=3 يحدد الغلاف، و ℓ=2 يعني المستوى 3d.
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>4</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
@@ -1572,14 +1591,14 @@ n=3 يحدد الغلاف، و ℓ=2 يعني المستوى 3d.
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mtext>max</mtext></msub><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mtext>max</mtext></msub><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn></mrow></math>
 \`\`\`
 
+نضرب العددين.
 
-
-
-**المصدر:** الصفحات 4، 7 من الكتاب.
-
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mtext>max</mtext></msub><mo>=</mo><mn>10</mn></mrow></math>
+\`\`\`
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1611,9 +1630,6 @@ explanation:
 عند تساوي المجموع، يكون المستوى ذوn الأكبر أعلى طاقة.
 
 بين4f و5d و6p، أكبرn هو6؛ إذن **6p أعلى طاقة**.
-
-**المصدر:** الصفحات 8، 9 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1698,9 +1714,13 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
+بنقل الحد \`mathml: <math dir="ltr" display="block"><mrow><mo>−</mo><mn>1</mn></mrow></math>\` إلى الطرف الآخر تتغيّر إشارته.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo>=</mo><mn>3</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
 
-
+نجري العملية الحسابية في الطرف الذي انتقل إليه الحد.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></math>
@@ -1711,7 +1731,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mn>16</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>4</mn><mn>2</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>16</mn></mrow></math>
 \`\`\`
 
 
@@ -1743,8 +1769,16 @@ explanation:
 
 
 
+نحسب حاصل الضرب.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -1766,9 +1800,6 @@ explanation:
 2d غير موجود؛ لأنℓ=2 لا تقل عنn=2.
 
 4d¹¹ غير مقبول؛ لأن سعةd خمسة أفلاك، لكل منها إلكترونان، أي10 إلكترونات فقط.
-
-**المصدر:** الصفحات 2، 7 من الكتاب.
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -1847,16 +1878,20 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>9</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>9</mn></mrow></math>
 \`\`\`
 
 
 إذن **9 أفلاك**.
 
-**المصدر:** صفحة 9 من الكتاب.
 
 ![الشاهد الأصلي من الكتاب](assets/lessons/curriculum-evidence/81c07bde8572a21ad641.webp)
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -2050,10 +2085,7 @@ explanation:
 
 
 
-**المصدر:** صفحة 9 من الكتاب.
-
 ![الشاهد الأصلي من الكتاب](assets/lessons/curriculum-evidence/81c07bde8572a21ad641.webp)
-
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -2069,7 +2101,7 @@ question: في نموذج ترتيب طاقات الذرة عديدة الإلك
 - [x] option-3 | تساوي مستويان فرعيان في الطاقة
 - [ ] option-4 | تشابه فلكان في الشكل
 explanation:
-المفتاح المقرر: تساوي مستويين فرعيين في الطاقة، عند الكلام عن مستويات الذرة عديدة الإلكترونات في الترتيب المدرسي.
+الإجابة: تساوي مستويين فرعيين في الطاقة، عند الكلام عن مستويات الذرة عديدة الإلكترونات في الترتيب المدرسي.
 يجوز تساوي طاقة فلكين من المستوى الفرعي نفسه، ويجوز لإلكترونين في فلكين مختلفين أن يتفقا في mₛ، كما تتشابه أفلاك النوع نفسه في الشكل.
 هذا الحكم خاص بنموذج ترتيب الطاقات للذرة عديدة الإلكترونات، كما حدد السؤال. في الهيدروجين تتساوى طاقات المستويات ذات n نفسه مهما اختلف ℓ، فلا نطبق عليه هذا الترتيب.
 
@@ -2315,7 +2347,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -2323,7 +2367,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>7</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>6</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>7</mn></mrow></math>
 \`\`\`
 
 
@@ -2345,19 +2401,9 @@ final-answer:
 - **2s:** كروي.
 - **\\(2p_x\\):** ذو فصين ممتدين على محور x.
 solution:
-**الإجابة:** 2s كروي، و2p_x ذو فصين ممتدين على محورx.
+فلك \\(2s\\) كروي، وفلك \\(2p_x\\) ذو فصّين يمتدّان على جانبي محور \\(x\\).
 
-> فالمستوى الفرعيs يتكون من فلك واحد فقط، عبارة عن كرة ضبابية
-
-**المصدر:** صفحة 4 من الكتاب.
-
-
-
-> أما المستوى الفرعيp فيحتوي على ثلاثة أفلاك، كل منها ضبابية ممتدة على المحور وتشبه(∞) ومركزها النواة.
-
-**المصدر:** صفحة 5 من الكتاب.
-
-
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 5](https://moe.edu.ps/m/4059#page=7)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 16](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=20).
 
 :::
 
@@ -2391,9 +2437,6 @@ solution:
 
 
 إذن 6s أقل طاقة من 4f.
-
-**المصدر:** الصفحات 8، 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2445,9 +2488,6 @@ d له ℓ=2 و s له ℓ=0.
 
 
 إذن 4d أعلى طاقة من 5s.
-
-**المصدر:** الصفحات 8، 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2481,9 +2521,6 @@ s له ℓ=0 و d له ℓ=2.
 
 لذلك 4s أقل طاقة من 3d في ترتيب الملء المدرسي.
 هذا ترتيب الملء؛ وعند تكوين أيونات العناصر الانتقالية تنزع إلكترونات 4s أولاً.
-
-**المصدر:** الصفحات 8، 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2525,9 +2562,6 @@ solution:
 |---|---|---|---|
 | 2 | d | \`latex: 2\\times2+1=5\` | \`latex: 5\\times2=10\` إلكترونات |
 | 3 | f | \`latex: 2\\times3+1=7\` | \`latex: 7\\times2=14\` إلكتروناً |
-
-**المصدر:** الصفحات 4، 7 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2553,9 +2587,6 @@ solution:
 | عدد المستويات الفرعية |2|3|
 | السعة |2×2²=8|2×3²=18|
 | البعد |أقرب|أبعد|
-
-**المصدر:** الصفحات 2، 7 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2588,11 +2619,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>4</mn><mi>d</mi><mo>&lt;</mo><mn>5</mn><mi>p</mi><mo>&lt;</mo><mn>6</mn><mi>s</mi><mo>&lt;</mo><mn>4</mn><mi>f</mi></mrow></math>
 \`\`\`
-
-
-
-**المصدر:** الصفحات 8، 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2616,7 +2642,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi>o</mi><mi>r</mi><mi>b</mi><mi>i</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>s</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi>o</mi><mi>r</mi><mi>b</mi><mi>i</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>s</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi>o</mi><mi>r</mi><mi>b</mi><mi>i</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>s</mi></mrow></msub><mo>=</mo><mn>4</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi>o</mi><mi>r</mi><mi>b</mi><mi>i</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>s</mi></mrow></msub><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
@@ -2624,7 +2662,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>5</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>10</mn></mrow></math>
 \`\`\`
 
 
@@ -2634,7 +2678,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi>o</mi><mi>r</mi><mi>b</mi><mi>i</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>s</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi>o</mi><mi>r</mi><mi>b</mi><mi>i</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>s</mi></mrow></msub><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi>o</mi><mi>r</mi><mi>b</mi><mi>i</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>s</mi></mrow></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi>o</mi><mi>r</mi><mi>b</mi><mi>i</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>s</mi></mrow></msub><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
 
@@ -2642,7 +2698,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>3</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mi>e</mi></msub><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -2650,9 +2712,6 @@ solution:
 إذن سعة(n−1)d هي **10 إلكترونات**، وسعةnp هي **6 إلكترونات**.
 
 يشترط وجود المستويين؛d يبدأ من العدد الرئيس3، لذا(n−1)≥3، أيn≥4.
-
-**المصدر:** صفحة 7 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2835,23 +2894,15 @@ solution:
 :::exam-question
 id: chemistry-oj-p041-q01-a1
 title: الوحدة ١ · الدرس ١ · ص ٤١ · س أسئلة الحل س١ · a١ · وزاري ٢٠٢٤ دورة أولى
-question: الشكل المجاور يبين عدة انتقالات للإلكترون عند عودته في ذرة الهيدروجين، وأجب عما يأتي: (8 علامات)
+question: مقارنة طاقة المستويين الرئيسين K وN
 reference: [الملزمة، ص ٤١](https://chatgpt.com/api/library/files/libfile_d6f8fd6cedc0819189c667772787424c/download#page=41)
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
-الشكل المجاور يبين عدة انتقالات للإلكترون عند عودته في ذرة الهيدروجين، وأجب عما يأتي: (8 علامات)
-
-أي المدارات أكبر طاقة K أم N؟
-
-![انتقالات إلكترون الهيدروجين بين المستويات K وL وM وN](assets/lessons/curriculum-evidence/4e879b08e2f22f7e5195.webp)
+أي المستويين الرئيسين أعلى طاقة: K أم N؟
 final-answer:
 المستوى **N أعلى طاقة** من المستوى **K**.
 solution:
-ترتفع طاقة مستويات الهيدروجين بزيادة العدد الرئيس n، أي تصبح أقل سلبية.
-
-![الانتقالات المعطاة](assets/lessons/curriculum-evidence/4e879b08e2f22f7e5195.webp)
-
-في الشكل K يقابل n=1، و N يقابل n=4؛ لذلك N أعلى طاقة.
+تزداد طاقة المستوى الرئيس بزيادة العدد الكمي الرئيس. المستوى K يقابل n=1، والمستوى N يقابل n=4؛ لذلك N أعلى طاقة.
 
 **المصدر:** صفحة 2 من الكتاب.
 
@@ -2932,9 +2983,19 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>E</mi><mi>γ</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>2.18</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>18</mn></mrow></msup><mo stretchy="false">)</mo><mrow><mo fence="true">(</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>−</mo><mfrac><mn>1</mn><mn>16</mn></mfrac><mo fence="true">)</mo></mrow></mrow></math>
 \`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>E</mi><mi>γ</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>2.18</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>18</mn></mrow></msup><mo stretchy="false">)</mo><mo fence="true">(</mo><mn>0.25</mn><mo>−</mo><mfrac><mn>1</mn><mn>16</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>E</mi><mi>γ</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>2.18</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>18</mn></mrow></msup><mo stretchy="false">)</mo><mo fence="true">(</mo><mn>0.25</mn><mo>−</mo><mn>0.0625</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>E</mi><mi>γ</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>2.18</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>18</mn></mrow></msup><mo stretchy="false">)</mo><mfrac><mn>3</mn><mn>16</mn></mfrac></mrow></math>
@@ -2947,12 +3008,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>E</mi><mi>γ</mi></msub><mo>=</mo><mn>4.0875</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>19</mn></mrow></msup><mtext> </mtext><mi mathvariant="normal">J</mi></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 10 من الكتاب.
-
 :::
 
 :::exam-question
@@ -2978,7 +3033,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>6</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>5</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>6</mn></mrow></math>
 \`\`\`
 
 
@@ -2991,21 +3058,15 @@ solution:
 :::exam-question
 id: chemistry-oj-p041-q01-a5
 title: الوحدة ١ · الدرس ١ · ص ٤١ · س أسئلة الحل س١ · a٥ · وزاري ٢٠٢٤ دورة أولى؛ وزاري ٢٠٢٣ مكرر٢
-question: الشكل المجاور يبين عدة انتقالات للإلكترون عند عودته في ذرة الهيدروجين، وأجب عما يأتي: (8 علامات)
+question: المستويات الفرعية في الغلاف M
 reference: [الملزمة، ص ٤١](https://chatgpt.com/api/library/files/libfile_d6f8fd6cedc0819189c667772787424c/download#page=41)
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
-الشكل المجاور يبين عدة انتقالات للإلكترون عند عودته في ذرة الهيدروجين، وأجب عما يأتي: (8 علامات)
-
 ما رموز المستويات الفرعية للمستوى الرئيس M؟
-
-![انتقالات إلكترون الهيدروجين بين المستويات K وL وM وN](assets/lessons/curriculum-evidence/4e879b08e2f22f7e5195.webp)
 final-answer:
 **3s، 3p، 3d.**
 solution:
 العدد الرئيس n يحدد الغلاف، ويسمح بالقيم الفرعية من 0 إلى n−1.
-
-![الانتقالات المعطاة](assets/lessons/curriculum-evidence/4e879b08e2f22f7e5195.webp)
 
 الغلاف M هو n=3، فتكون ℓ=0 و 1 و 2.
 تقابل هذه القيم s و p و d؛ فالرموز 3s و 3p و 3d.
@@ -3017,21 +3078,15 @@ solution:
 :::exam-question
 id: chemistry-oj-p041-q01-a6
 title: الوحدة ١ · الدرس ١ · ص ٤١ · س أسئلة الحل س١ · a٦ · وزاري ٢٠٢٤ دورة أولى
-question: الشكل المجاور يبين عدة انتقالات للإلكترون عند عودته في ذرة الهيدروجين، وأجب عما يأتي: (8 علامات)
+question: العدد الكمي الفرعي في الغلاف N
 reference: [الملزمة، ص ٤١](https://chatgpt.com/api/library/files/libfile_d6f8fd6cedc0819189c667772787424c/download#page=41)
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
-الشكل المجاور يبين عدة انتقالات للإلكترون عند عودته في ذرة الهيدروجين، وأجب عما يأتي: (8 علامات)
-
-ما قيم العدد الكمي الفرعي \`mathml: <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">ℓ</mi><mo stretchy="false">)</mo></mrow></math>\` للمستوى N؟
-
-![انتقالات إلكترون الهيدروجين بين المستويات K وL وM وN](assets/lessons/curriculum-evidence/4e879b08e2f22f7e5195.webp)
+ما القيم الممكنة للعدد الكمي الفرعي ℓ في المستوى الرئيس N؟
 final-answer:
 **\\(\\ell=0,1,2,3\\).**
 solution:
 قيم العدد الفرعي ℓ تكون صحيحة من 0 إلى n−1.
-
-![الانتقالات المعطاة](assets/lessons/curriculum-evidence/4e879b08e2f22f7e5195.webp)
 
 الغلاف N هو n=4؛ لذلك القيم الممكنة 0 و 1 و 2 و 3.
 
@@ -3208,7 +3263,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -3324,7 +3385,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>5</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
 
@@ -3352,7 +3425,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mn>16</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><msup><mn>4</mn><mn>2</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>16</mn></mrow></math>
 \`\`\`
 
 
@@ -3384,9 +3463,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
+بنقل الحد \`mathml: <math dir="ltr" display="block"><mrow><mo>−</mo><mn>1</mn></mrow></math>\` إلى الطرف الآخر تتغيّر إشارته.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo>=</mo><mn>3</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
 
-
+نجري العملية الحسابية في الطرف الذي انتقل إليه الحد.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></math>
@@ -3422,9 +3505,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
+بنقل الحد \`mathml: <math dir="ltr" display="block"><mrow><mo>−</mo><mn>1</mn></mrow></math>\` إلى الطرف الآخر تتغيّر إشارته.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo>=</mo><mn>3</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
 
-
+نجري العملية الحسابية في الطرف الذي انتقل إليه الحد.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></math>
@@ -3462,9 +3549,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>3</mn></mrow></math>
 \`\`\`
 
+بنقل الحد \`mathml: <math dir="ltr" display="block"><mrow><mo>−</mo><mn>1</mn></mrow></math>\` إلى الطرف الآخر تتغيّر إشارته.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>n</mi><mo>=</mo><mn>3</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
 
-
+نجري العملية الحسابية في الطرف الذي انتقل إليه الحد.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></math>
@@ -3566,9 +3657,6 @@ solution:
 
 
 إذن المستوى الذي انطلق منه الإلكترون هو **الخامس**، مع مراعاة تقريب المعطيات.
-
-**المصدر:** الصفحات 10، 12 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3630,9 +3718,6 @@ solution:
 عدد المستويات الفرعية في مستوى رئيس يساويn، لأنℓ يأخذ القيم من0 إلىn−1.
 
 لـn=5 تكونℓ=0 و1 و2 و3 و4؛ إذن **5 مستويات فرعية**.
-
-**المصدر:** الصفحات 10، 12 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3680,12 +3765,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>λ</mi><mo>≈</mo><mn>102.6</mn><mtext> </mtext><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">m</mi></mrow></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 12 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3728,10 +3807,6 @@ solution:
 يحدد الكتاب الضوء المرئي بين380 و750نانومتراً.
 
 102.6نانومتر أقل من380؛ لذلك الطيف **فوق بنفسجي وغير مرئي للعين**.
-
-
-**المصدر:** الصفحات 5، 12 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3782,9 +3857,6 @@ solution:
 
 
 إذن المستوى الذي عاد منه الإلكترون هو **الثالث**.
-
-**المصدر:** صفحة 10 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3849,9 +3921,6 @@ solution:
 | 3s | \`latex: 2\\times0+1=1\` | \`latex: 1\\times2=2\` إلكترونان |
 | 3p | \`latex: 2\\times1+1=3\` | \`latex: 3\\times2=6\` إلكترونات |
 | 3d | \`latex: 2\\times2+1=5\` | \`latex: 5\\times2=10\` إلكترونات |
-
-**المصدر:** صفحة 10 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3958,7 +4027,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>9</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>N</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><mn>9</mn></mrow></math>
 \`\`\`
 
 
@@ -3967,8 +4042,16 @@ solution:
 
 
 
+نجمع العددين.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>1</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>9</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mn>1</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mn>4</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>9</mn></mrow></math>
 \`\`\`
 
 
@@ -4119,9 +4202,6 @@ solution:
 
 
 يبقى 4 إلكترونات منفردة.
-
-**المصدر:** الصفحات 4، 7، 10 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4162,8 +4242,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>−</mo><mn>1</mn><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
+بنقل الحد \`mathml: <math dir="ltr" display="block"><mrow><mo>−</mo><mn>1</mn></mrow></math>\` إلى الطرف الآخر تتغيّر إشارته.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>=</mo><mn>5</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
 
+نجري العملية الحسابية في الطرف الذي انتقل إليه الحد.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>=</mo><mn>6</mn></mrow></math>
@@ -4198,14 +4283,23 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><msqrt><mfrac><mn>1</mn><mn>0.25</mn></mfrac></msqrt><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><msqrt><mfrac><mn>1</mn><mn>0.25</mn></mfrac></msqrt></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><msqrt><mn>4</mn></msqrt></mrow></math>
+\`\`\`
+
+نأخذ الجذر التربيعي.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
 إذن **n₁=6 وn₂=2**، مع مراعاة تقريب المعطيات.
-
-**المصدر:** صفحة 10 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4247,8 +4341,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>−</mo><mn>1</mn><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
+بنقل الحد \`mathml: <math dir="ltr" display="block"><mrow><mo>−</mo><mn>1</mn></mrow></math>\` إلى الطرف الآخر تتغيّر إشارته.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>=</mo><mn>5</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
 
+نجري العملية الحسابية في الطرف الذي انتقل إليه الحد.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>=</mo><mn>6</mn></mrow></math>
@@ -4283,7 +4382,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><msqrt><mfrac><mn>1</mn><mn>0.25</mn></mfrac></msqrt><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><msqrt><mfrac><mn>1</mn><mn>0.25</mn></mfrac></msqrt></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><msqrt><mn>4</mn></msqrt></mrow></math>
+\`\`\`
+
+نأخذ الجذر التربيعي.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -4315,10 +4426,6 @@ solution:
 
 
 تقع410.3نانومتر ضمن المجال المرئي380–750نانومتراً، لذلك **يمكن رؤيتها في الطرف البنفسجي**.
-
-
-**المصدر:** الصفحات 5، 10، 12 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4359,8 +4466,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>−</mo><mn>1</mn><mo>=</mo><mn>5</mn></mrow></math>
 \`\`\`
 
+بنقل الحد \`mathml: <math dir="ltr" display="block"><mrow><mo>−</mo><mn>1</mn></mrow></math>\` إلى الطرف الآخر تتغيّر إشارته.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>=</mo><mn>5</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
 
+نجري العملية الحسابية في الطرف الذي انتقل إليه الحد.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>=</mo><mn>6</mn></mrow></math>
@@ -4395,7 +4507,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><msqrt><mfrac><mn>1</mn><mn>0.25</mn></mfrac></msqrt><mo>=</mo><mn>2</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><msqrt><mfrac><mn>1</mn><mn>0.25</mn></mfrac></msqrt></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><msqrt><mn>4</mn></msqrt></mrow></math>
+\`\`\`
+
+نأخذ الجذر التربيعي.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn></mrow></math>
 \`\`\`
 
 
@@ -4433,20 +4557,16 @@ solution:
 
 
 إذن **2.664×10⁻²⁰جول للفوتون، أو16.05كيلوجول/مول**.
-
-
-**المصدر:** صفحة 10 من الكتاب.
-
 :::
 
 :::exam-question
 id: chemistry-oj-p042-q14-a4
 title: الوحدة ١ · الدرس ١ · ص ٤٢ · س أسئلة الحل س١٤ · a٤ · تجريبي ٢٠٢٤
-question: انتقل إلكترون في ذرة هيدروجين من المدار ن1 إلى المدار ن2 فأطلق فوتوناً طاقته 291.78 كيلوجول/مول، إذا علمت أن المدار (ن1 − 1) يتسع لـ50 إلكترون، جد ما يلي:
+question: عدد الأفلاك من سعة الغلاف السابق
 reference: [الملزمة، ص ٤٢](https://chatgpt.com/api/library/files/libfile_d6f8fd6cedc0819189c667772787424c/download#page=42)
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
-انتقل إلكترون في ذرة هيدروجين من المدار ن1 إلى المدار ن2 فأطلق فوتوناً طاقته 291.78 كيلوجول/مول، إذا علمت أن المدار (ن1 − 1) يتسع لـ50 إلكترون، جد ما يلي:
+إذا كانت السعة القصوى للغلاف الرئيس السابق للغلاف ن1 تساوي 50 إلكترونًا، فأجب عما يأتي:
 
 ما مجموع أعداد القيم المسموح بها لـ \\(m_\\ell\\) في المستويات الفرعية للغلاف ن1، مع عدّ القيمة المشتركة مرةً في كل مستوى فرعي (أي عدد الأفلاك)؟
 
@@ -4496,14 +4616,41 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>9</mn><mo>+</mo><mn>11</mn><mo>=</mo><mn>36</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>9</mn><mo>+</mo><mn>11</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>4</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>9</mn><mo>+</mo><mn>11</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>9</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>9</mn><mo>+</mo><mn>11</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>16</mn><mo>+</mo><mn>9</mn><mo>+</mo><mn>11</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>25</mn><mo>+</mo><mn>11</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo>=</mo><mn>36</mn></mrow></math>
 \`\`\`
 
 
 إذن المطلوب 36 فلكًا. القيمة العددية نفسها لـmℓ قد تظهر في أكثر من مستوى فرعي؛ وقد طلب السؤال عدّها في كل مستوى فرعي على حدة، لا عدّ القيم العددية المميزة فقط.
-
-**المصدر:** الصفحات 2، 4، 7 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4568,9 +4715,6 @@ solution:
 ذرة Z=21 توزيعها [Ar]4s²3d¹؛ لذلك الغلاف الثاني ممتلئ:2s²2p⁶.
 في 2s فلك mℓ=0، وفي 2p أيضاً فلك واحد mℓ=0.
 كل منهما مزدوج بإلكترونين متعاكسي الغزل؛ فيكون العدد 2+2=4 إلكترونات.
-
-**المصدر:** الصفحات 4، 7، 9 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4697,7 +4841,19 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>25</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>18</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>20</mn><mo>+</mo><mn>5</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>Z</mi><mo>=</mo><mn>25</mn></mrow></math>
 \`\`\`
 
 

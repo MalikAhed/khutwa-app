@@ -16,7 +16,8 @@ import { createLearnerStorage, defaultErrorReporter, GUEST_TRIAL_STORAGE_KEY, TE
 /** @typedef {{status:'invalid'|'unavailable'|'aborted'|'forbidden'|'rate-limited'|'duplicate'|'device-limit', error?:string, field?:string, fieldErrors?:Record<string,string>}} AccountFailure */
 /** @typedef {{status:'created'|'signed-in', accountType:AccountType}|AccountFailure} AccountResult */
 /** @typedef {{status:'available', field:string}|AccountFailure} AvailabilityResult */
-/** @typedef {{storage?:Storage|null, progressStore?:ReturnType<typeof import('./subject-progress-store.js').createSubjectProgressStore>|null, onError?:(error:Error)=>void, apiBase?:string|null, fetchImpl?:typeof fetch, offlineStorage?:Storage|null, offlineAccess?:ReturnType<typeof createOfflineAccess>}} SessionOptions */
+/** @typedef {VisitorSelection & {accountType:'free'|'subscribed',displayName?:string,subscriptionSubjects?:string[]|null}} StudentPreview */
+/** @typedef {{storage?:Storage|null, progressStore?:ReturnType<typeof import('./subject-progress-store.js').createSubjectProgressStore>|null, onError?:(error:Error)=>void, apiBase?:string|null, fetchImpl?:typeof fetch, offlineStorage?:Storage|null, offlineAccess?:ReturnType<typeof createOfflineAccess>, studentPreview?:StudentPreview|null, fullPalestineAvailable?:boolean}} SessionOptions */
 /** @typedef {import('./auth-client.js').RequestOptions} RequestOptions */
 
 /** @param {unknown} body @returns {AccountFailure} */
@@ -60,6 +61,8 @@ export function createLearnerSession({
   fetchImpl = globalThis.fetch,
   offlineStorage = null,
   offlineAccess = createOfflineAccess({ storage:offlineStorage }),
+  studentPreview = null,
+  fullPalestineAvailable = true,
 } = {}) {
   /** @type {VisitorSelection|null} */
   let visitorSelection = null;
@@ -75,8 +78,18 @@ export function createLearnerSession({
   const saved = persistence.restore();
   if (isValidVisitorSelection(saved.selection)) visitorSelection = Object.freeze({ ...saved.selection });
   if (accountTypes.has(saved.account?.type) && typeof saved.account?.displayName === "string") activeAccount = { ...saved.account, type:availableAccountType(saved.account.type) };
+  if (studentPreview) {
+    const { curriculum, path, accountType } = studentPreview;
+    visitorSelection = Object.freeze({ curriculum, path });
+    activeAccount = { progressOwner:"student-preview", type:accountType, displayName:studentPreview.displayName || "طالب تجريبي",
+      subscriptionSubjects:readSubscriptionSubjects(studentPreview.subscriptionSubjects),
+      homeScenarioId:accountType === "subscribed" ? "student-paid" : "student-free-new" };
+  }
 
   const { save, remove } = persistence;
+  // Keep the stored profile intact while production still serves its previous catalog.
+  const studySelection = () => !fullPalestineAvailable && visitorSelection?.curriculum === "full-palestinian"
+    ? { ...visitorSelection, curriculum:"gaza" } : visitorSelection;
   const notify = () => subscribers.forEach((subscriber) => subscriber());
   // A browser disconnect locks free study immediately. Only an actual account
   // response clears it; the online event alone never proves connectivity.
@@ -141,7 +154,10 @@ export function createLearnerSession({
     },
     getEffectiveNow:() => accountApi ? offlineAccess.inspect().now : Date.now(),
     isOffline:() => offline,
-    getVisitorSelection:() => visitorSelection ? { ...visitorSelection } : null,
+    getVisitorSelection:() => {
+      const selection = studySelection();
+      return selection ? { ...selection } : null;
+    },
     /** @param {VisitorSelection} selection */
     saveVisitorSelection(selection) {
       if (!isValidVisitorSelection(selection)) throw new TypeError("visitor selection is invalid");
@@ -158,7 +174,7 @@ export function createLearnerSession({
     getLearnerHomeSnapshot:() => {
       if (!activeAccount) return null;
       const learning = progressStore ? progressStore.getHomeLearning(activeAccount.progressOwner,
-        getCourseSubjects(visitorSelection).filter(subject => subject.status !== "unpublished").map(subject => getSubjectRoadmap(subject.id)).filter(roadmap => roadmap !== null)) : {
+        getCourseSubjects(studySelection()).filter(subject => subject.status !== "unpublished").map(subject => getSubjectRoadmap(subject.id)).filter(roadmap => roadmap !== null)) : {
         activity:"none", completion:"not-started", progress:0, mastery:"no-evidence",
         requiredLessonsCompleted:0, requiredLessonsTotal:0, mustReviewCount:0, xp:0, level:1,
         levelXpGoal:200, rank:null, rankTotal:16, questionsSolved:0, dailyStreak:0, curriculumLessonsTotal:72,

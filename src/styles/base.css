@@ -86,17 +86,17 @@
   --main-top-gap:28px;
 }
 /* One subject palette for Home and each subject's lesson roadmap. */
-[data-subject="ict"], [data-subject="adabi-information-technology"] { --subject-color:#0a8dea; }
-[data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="adabi-mathematics"] { --subject-color:#ffcc00; }
-[data-subject="physics"] { --subject-color:#a66bff; }
-[data-subject="biology"] { --subject-color:#58cc02; }
-[data-subject="chemistry"] { --subject-color:#ff784f; }
-[data-subject="english"], [data-subject="adabi-english"] { --subject-color:#ff4b4b; }
-[data-subject="arabic"], [data-subject="adabi-arabic-1"], [data-subject="adabi-arabic-2"] { --subject-color:#ff9f1a; }
-[data-subject="islamic-education"], [data-subject="adabi-islamic-education"] { --subject-color:#0dccaa; }
-[data-subject="adabi-history"] { --subject-color:#cf7846; }
-[data-subject="adabi-geography"] { --subject-color:#319f6e; }
-[data-subject="adabi-scientific-culture"] { --subject-color:#9971db; }
+[data-subject="ict"], [data-subject$="-information-technology"] { --subject-color:#0a8dea; }
+[data-subject="mathematics"], [data-subject="mathematics-2"], [data-subject="adabi-mathematics"], [data-subject$="-math"], [data-subject="outside-gaza-scientific-math-2"] { --subject-color:#ffcc00; }
+[data-subject="physics"], [data-subject="outside-gaza-scientific-physics"] { --subject-color:#a66bff; }
+[data-subject="biology"], [data-subject="outside-gaza-scientific-biology"] { --subject-color:#58cc02; }
+[data-subject="chemistry"], [data-subject="outside-gaza-scientific-chemistry"] { --subject-color:#ff784f; }
+[data-subject="english"], [data-subject$="-english"], [data-subject="outside-gaza-literary-english-reading-plus"] { --subject-color:#ff4b4b; }
+[data-subject="arabic"], [data-subject$="-arabic-1"], [data-subject$="-arabic-2"] { --subject-color:#ff9f1a; }
+[data-subject="islamic-education"], [data-subject$="-islamic-education"], [data-subject$="-christian-education"] { --subject-color:#0dccaa; }
+[data-subject="adabi-history"], [data-subject="outside-gaza-literary-history"] { --subject-color:#cf7846; }
+[data-subject="adabi-geography"], [data-subject="outside-gaza-literary-geography"] { --subject-color:#319f6e; }
+[data-subject="adabi-scientific-culture"], [data-subject="outside-gaza-literary-scientific-culture"] { --subject-color:#9971db; }
 * { box-sizing:border-box; }
 body { margin:0; overflow-x:hidden; background:var(--canvas); color:var(--system-ink); font:var(--type-body); direction:rtl; }
 button { appearance:none; }

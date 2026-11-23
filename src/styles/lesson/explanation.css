@@ -1,14 +1,14 @@
-/* Question explanations keep Back, Explain and Continue together on the last row. */
+/* Keep Explain on the left and the primary action on the right. */
 .level-layout-actions--explanations {
-  grid-template-columns:128px minmax(0,1fr) 240px;
+  grid-template-columns:240px minmax(0,1fr) 240px;
   grid-template-rows:auto auto auto;
   min-height:92px;
   row-gap:12px;
 }
 .level-layout-actions--explanations > .level-feedback { grid-column:1 / -1; grid-row:1; justify-self:start; width:fit-content; }
-.level-layout-actions--explanations [data-template-back] { grid-column:1; grid-row:3; }
+.level-layout-actions--explanations [data-template-back] { grid-column:2; grid-row:3; justify-self:start; width:min(100%,128px); }
 .level-layout-actions--explanations [data-template-primary] { grid-column:3; grid-row:3; }
-.level-layout-actions--explanations [data-question-explain] { grid-column:2; grid-row:3; justify-self:center; width:min(100%,240px); }
+.level-layout-actions--explanations [data-question-explain] { grid-column:1; grid-row:3; }
 .level-action--explain { flex-wrap:wrap; gap:6px 12px; }
 .explanation-price { display:inline-flex; align-items:center; gap:5px; white-space:nowrap; }
 .explanation-price img { display:block; width:22px; height:22px; object-fit:contain; }
@@ -27,18 +27,22 @@
 .question-explanation-dialog .markdown-rendered :is(.markdown-callout,.markdown-reveal) { margin-block:24px; }
 .question-explanation-dialog .markdown-rendered :is(.markdown-table-scroll,.markdown-code-block,.lesson-math-sample) { width:100%; }
 .question-explanation-dialog .lesson-math-scroll { max-width:100%; }
+.question-explanation-recap { margin-block-end:24px; padding-block-end:16px; border-block-end:1px solid #e5e7eb; overflow-wrap:anywhere; }
+.question-explanation-recap h3 { margin-block:0 8px; font-size:1rem; }
+.question-explanation-prompt { margin-block:0 12px; font-weight:700; }
+.question-explanation-choices { margin:0; padding:0; list-style:none; }
+.question-explanation-choices li { display:grid; grid-template-columns:max-content minmax(0,1fr); gap:10px; }
 .question-explanation-note { padding:12px 16px; border-inline-start:4px solid #dfac20; background:#fff8df; line-height:1.8; }
 @keyframes explanation-section-enter {
   from { transform:translateY(100%); }
   to { transform:translateY(0); }
 }
 @media(max-width:760px) {
-  .level-layout-actions--explanations { grid-template-columns:minmax(52px,.6fr) minmax(100px,1fr) minmax(88px,1fr); column-gap:8px; }
-  .level-layout-actions--explanations:not(:has([data-template-back]:not([hidden]))) { grid-template-columns:minmax(100px,1fr) minmax(100px,1fr); }
-  .level-layout-actions--explanations:not(:has([data-template-back]:not([hidden]))) [data-question-explain] { grid-column:1; }
-  .level-layout-actions--explanations:not(:has([data-template-back]:not([hidden]))) [data-template-primary] { grid-column:2; }
+  .level-layout-actions--explanations { grid-template-columns:minmax(100px,1fr) minmax(52px,.6fr) minmax(88px,1fr); column-gap:8px; }
+  .level-layout-actions--explanations:is(.level-layout-actions--question-slider,:not(:has([data-template-back]:not([hidden])))) { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .level-layout-actions--explanations:is(.level-layout-actions--question-slider,:not(:has([data-template-back]:not([hidden])))) [data-template-primary] { grid-column:2; }
   .level-layout-actions--explanations .level-action { padding-inline:7px; font-size:.8125rem; }
-  .level-layout-actions--explanations [data-question-explain] { width:100%; gap:4px 6px; }
+  .level-layout-actions--explanations [data-question-explain] { gap:4px 6px; }
 }
 @media(prefers-reduced-motion:reduce) {
   .question-explanation-dialog[open] { animation:none; }

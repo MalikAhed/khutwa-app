@@ -11,11 +11,11 @@ body:
 final-answer:
 **المعايرة:** الإضافة التدريجية لمحلول قاعدة إلى محلول حمضي أو العكس؛ لتحديد تركيز أحدهما بمعلومية حجم المحلول الآخر وتركيزه.
 solution:
-**الإجابة:** الإضافة التدريجية لمحلول قاعدة إلى محلول حمضي أو العكس، بهدف تحديد تركيز أحدهما بمعلومية حجم المحلول الآخر وتركيزه.
+المعايرة إضافة محلول حمض إلى محلول قاعدة، أو العكس، بصورة تدريجية لتحديد تركيز أحد المحلولين باستخدام حجم المحلول الآخر وتركيزه المعلوم.
+
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 43](https://moe.edu.ps/m/4059#page=45)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 79](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=83).
 
 ![نص الكتاب](assets/lessons/curriculum-evidence/4513038d51a3f3413c6b.webp)
-
-**المصدر:** صفحة 43 من الكتاب.
 
 :::
 
@@ -53,52 +53,61 @@ question: ما حجم محلول NaOH تركيزه \\((0.4\\text{ \\char"0645\\c
 - [x] option-3 | 200 مل
 - [ ] option-4 | 250 مل
 explanation:
-عند التكافؤ تتساوى مولاتH₃O⁺ وOH⁻ المستهلكة؛ تحدد معاملات المعادلة عدد مولات الحمض لكل مول قاعدة. التركيز المولاري هو المولات لكل لتر، لذلكn=CV بعد تحويل الحجم إلى لتر بقسمته بالملليلتر أو سم³ على١٠٠٠.
+المطلوب حجم محلول هيدروكسيد الصوديوم. المعطى تركيزه 0.4 مول/لتر، وحجم الحمض 200 مل وتركيزه 0.2 مول/لتر.
 
-المعطيات: C(NaOH)=0.4 مول/لتر، V(H₂SO₄)=200 مل، C(H₂SO₄)=0.2 مول/لتر. عند التكافؤ تتساوى المكافئات الحمضية والقاعدية؛ المعادلة تبين أن كل مول حمض يحتاج مولين قاعدة.
+نكتب المعادلة الموزونة. يقابل كل مول من الحمض مولان من القاعدة.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>S</mi><msub><mi>O</mi><mn>4</mn></msub><mo>+</mo><mn>2</mn><mi>N</mi><mi>a</mi><mi>O</mi><mi>H</mi><mo>→</mo><mi>N</mi><msub><mi>a</mi><mn>2</mn></msub><mi>S</mi><msub><mi>O</mi><mn>4</mn></msub><mo>+</mo><mn>2</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`latex
+\\mathrm{H_2SO_4+2NaOH\\longrightarrow Na_2SO_4+2H_2O}
 \`\`\`
 
+نحوّل حجم الحمض من ملليلتر إلى لتر بالقسمة على 1000.
 
-نحوّل الحجم إلى لتر، ثم نستخدم n=CV.
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>V</mi><mi>a</mi></msub><mo>=</mo><mn>0.200</mn><mtext>  </mtext><mi>L</mi></mrow></math>
+\`\`\`latex
+V_a=\\frac{200}{1000}\\,\\mathrm L=0.200\\,\\mathrm L
 \`\`\`
 
+نحسب مولات الحمض من حاصل ضرب التركيز في الحجم.
 
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mi>a</mi></msub><mo>=</mo><mn>0.2</mn><mo stretchy="false">(</mo><mn>0.200</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.040</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
+\`\`\`latex
+n_a=C_aV_a
 \`\`\`
 
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mi>b</mi></msub><mo>=</mo><mn>2</mn><msub><mi>n</mi><mi>a</mi></msub><mo>=</mo><mn>0.080</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
+\`\`\`latex
+n_a=(0.2\\,\\mathrm{mol/L})(0.200\\,\\mathrm L)=0.040\\,\\mathrm{mol}
 \`\`\`
 
+نكتب نسبة مولات القاعدة إلى مولات الحمض حسب المعادلة.
 
-نعكس العلاقة لإيجاد حجم القاعدة.
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>V</mi><mi>b</mi></msub><mo>=</mo><msub><mi>n</mi><mi>b</mi></msub><mi mathvariant="normal">/</mi><msub><mi>C</mi><mi>b</mi></msub><mo>=</mo><mn>0.080</mn><mi mathvariant="normal">/</mi><mn>0.4</mn><mo>=</mo><mn>0.200</mn><mtext>  </mtext><mi>L</mi><mo>=</mo><mn>200</mn><mtext>  </mtext><mi>m</mi><mi>L</mi></mrow></math>
+\`\`\`latex
+\\frac{n_b}{0.040}=\\frac{2}{1}
 \`\`\`
 
+بالضرب التبادلي، نضرب مولات القاعدة في 1 ونضرب 0.040 في 2.
 
+\`\`\`latex
+1\\times n_b=0.040\\times2
+\`\`\`
 
+إذن \\(n_b=0.080\\,\\mathrm{mol}\\). لإيجاد الحجم، نبدأ بعلاقة مولات القاعدة وتركيزها.
 
-**المصدر:** صفحة 43 من الكتاب.
+\`\`\`latex
+n_b=C_bV_b
+\`\`\`
 
+نقسم الطرفين على تركيز القاعدة لعزل الحجم.
+
+\`\`\`latex
+V_b=\\frac{n_b}{C_b}=\\frac{0.080\\,\\mathrm{mol}}{0.4\\,\\mathrm{mol/L}}
+\`\`\`
+
+نقسم العددين، فتُختصر وحدة المول ويبقى اللتر.
+
+\`\`\`latex
+V_b=0.200\\,\\mathrm L
+\`\`\`
+
+نضرب في 1000 للتحويل إلى الملليلتر؛ الحجم المطلوب **200 مل**.
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -113,44 +122,55 @@ question: ما تركيز محلول \\(\\mathrm{Sr(OH)_2}\\) (بوحدة مول
 - [ ] option-3 | 0.15
 - [ ] option-4 | 0.2
 explanation:
-عند التكافؤ تتساوى مولاتH₃O⁺ وOH⁻ المستهلكة؛ تحدد معاملات المعادلة عدد مولات الحمض لكل مول قاعدة. التركيز المولاري هو المولات لكل لتر، لذلكn=CV بعد تحويل الحجم إلى لتر بقسمته بالملليلتر أو سم³ على١٠٠٠.
+المطلوب تركيز محلول هيدروكسيد السترونشيوم. حجم محلول القاعدة 200 مل، وحجم محلول الحمض 400 مل، وتركيز الحمض 0.1 مول/لتر.
 
-المعطيات V للقاعدة 200 مل، وللحمض 400 مل، وتركيز HNO₃=0.1 مول/لتر. عند التكافؤ تتناسب المولات حسب المعادلة؛ كل مول Sr(OH)₂ يعادل مولين HNO₃.
+نكتب المعادلة الموزونة. يعادل مول واحد من القاعدة مولين من الحمض.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>S</mi><mi>r</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><msub><mo stretchy="false">)</mo><mn>2</mn></msub><mo>+</mo><mn>2</mn><mi>H</mi><mi>N</mi><msub><mi>O</mi><mn>3</mn></msub><mo>→</mo><mi>S</mi><mi>r</mi><mo stretchy="false">(</mo><mi>N</mi><msub><mi>O</mi><mn>3</mn></msub><msub><mo stretchy="false">)</mo><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`latex
+\\mathrm{Sr(OH)_2+2HNO_3\\longrightarrow Sr(NO_3)_2+2H_2O}
 \`\`\`
 
+نحوّل الحجمين إلى اللتر بالقسمة على 1000.
 
-نستخدم n=CV بعد تحويل الملليلتر إلى لتر.
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mi>a</mi></msub><mo>=</mo><mn>0.1</mn><mo stretchy="false">(</mo><mn>0.400</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.040</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
+\`\`\`latex
+V_a=\\frac{400}{1000}\\,\\mathrm L=0.400\\,\\mathrm L
 \`\`\`
 
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mi>b</mi></msub><mo>=</mo><mn>0.040</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>0.020</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
+\`\`\`latex
+V_b=\\frac{200}{1000}\\,\\mathrm L=0.200\\,\\mathrm L
 \`\`\`
 
+نحسب مولات الحمض بضرب التركيز في الحجم.
 
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>C</mi><mi>b</mi></msub><mo>=</mo><msub><mi>n</mi><mi>b</mi></msub><mi mathvariant="normal">/</mi><msub><mi>V</mi><mi>b</mi></msub><mo>=</mo><mn>0.020</mn><mi mathvariant="normal">/</mi><mn>0.200</mn><mo>=</mo><mn>0.100</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi><mtext> </mtext><msup><mi>L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
+\`\`\`latex
+n_a=C_aV_a=(0.1)(0.400)=0.040\\,\\mathrm{mol}
 \`\`\`
 
+من معاملات المعادلة تكون نسبة مولات القاعدة إلى مولات الحمض 1 إلى 2.
 
+\`\`\`latex
+\\frac{n_b}{0.040}=\\frac12
+\`\`\`
 
+بالضرب التبادلي، نضرب مولات القاعدة في 2 ونضرب 0.040 في 1.
 
-**المصدر:** صفحة 43 من الكتاب.
+\`\`\`latex
+2n_b=0.040
+\`\`\`
 
+نقسم الطرفين على 2.
+
+\`\`\`latex
+n_b=\\frac{0.040}{2}=0.020\\,\\mathrm{mol}
+\`\`\`
+
+من العلاقة \\(n_b=C_bV_b\\)، نقسم الطرفين على حجم القاعدة لعزل التركيز. نعوّض بالقيم ونقسم.
+
+\`\`\`latex
+C_b=\\frac{n_b}{V_b}=\\frac{0.020\\,\\mathrm{mol}}{0.200\\,\\mathrm L}
+\`\`\`
+
+تركيز القاعدة **0.100 مول/لتر**.
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -165,44 +185,51 @@ question: إذا تعادل \\((0.735\\text{ \\char"063A\\char"0645})\\) من ح
 - [ ] option-3 | 49 غم/مول
 - [ ] option-4 | \\(7.5\\times10^{-3}\\) غم/مول
 explanation:
-عند التكافؤ تتساوى مولاتH₃O⁺ وOH⁻ المستهلكة؛ تحدد معاملات المعادلة عدد مولات الحمض لكل مول قاعدة. التركيز المولاري هو المولات لكل لتر، لذلكn=CV بعد تحويل الحجم إلى لتر بقسمته بالملليلتر أو سم³ على١٠٠٠.
+المطلوب الكتلة المولية للحمض. كتلته 0.735 غم، وقد عادل 100 سم³ من محلول KOH تركيزه 0.15 مول/لتر.
 
-المعطيات m للحمض 0.735 غم، V(KOH)=100 سم³=0.100 لتر، C=0.15 مول/لتر. الحمض ثنائي البروتون فيستهلك مولين KOH لكل مول.
+نكتب معادلة التعادل. يحتاج كل مول من الحمض الثنائي البروتون مولين من KOH.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>A</mi><mo>+</mo><mn>2</mn><mi>K</mi><mi>O</mi><mi>H</mi><mo>→</mo><msub><mi>K</mi><mn>2</mn></msub><mi>A</mi><mo>+</mo><mn>2</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
+\`\`\`latex
+\\mathrm{H_2A+2KOH\\longrightarrow K_2A+2H_2O}
 \`\`\`
 
+اللتر يساوي 1000 سم³. نقسم الحجم المعطى على 1000.
 
-عدد المولات يساوي التركيز في الحجم، ثم نقسم مولات القاعدة على 2.
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mrow><mi>K</mi><mi>O</mi><mi>H</mi></mrow></msub><mo>=</mo><mn>0.15</mn><mo stretchy="false">(</mo><mn>0.100</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.0150</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
+\`\`\`latex
+V_{\\mathrm{KOH}}=\\frac{100}{1000}\\,\\mathrm L=0.100\\,\\mathrm L
 \`\`\`
 
+نحسب عدد مولات القاعدة من حاصل ضرب تركيزها في حجمها.
 
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mrow><mi>a</mi><mi>c</mi><mi>i</mi><mi>d</mi></mrow></msub><mo>=</mo><mn>0.0150</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>0.00750</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
+\`\`\`latex
+n_{\\mathrm{KOH}}=CV=(0.15)(0.100)=0.0150\\,\\mathrm{mol}
 \`\`\`
 
+نكتب نسبة مولات الحمض إلى مولات القاعدة من المعادلة الموزونة.
 
-الكتلة المولية هي كتلة مول واحد، فتحسب بقسمة الكتلة على المولات.
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>M</mi><mo>=</mo><mi>m</mi><mi mathvariant="normal">/</mi><mi>n</mi><mo>=</mo><mn>0.735</mn><mi mathvariant="normal">/</mi><mn>0.00750</mn><mo>=</mo><mn>98.0</mn><mtext>  </mtext><mi>g</mi><mtext> </mtext><mi>m</mi><mi>o</mi><msup><mi>l</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>
+\`\`\`latex
+\\frac{n_a}{0.0150}=\\frac12
 \`\`\`
 
+بالضرب التبادلي نحصل على ضعف مولات الحمض في أحد الطرفين.
 
+\`\`\`latex
+2n_a=0.0150
+\`\`\`
 
+نقسم الطرفين على 2.
 
-**المصدر:** صفحة 43 من الكتاب.
+\`\`\`latex
+n_a=\\frac{0.0150}{2}=0.00750\\,\\mathrm{mol}
+\`\`\`
 
+نقسم كتلة الحمض على عدد مولاته.
+
+\`\`\`latex
+M=\\frac{m}{n_a}=\\frac{0.735\\,\\mathrm g}{0.00750\\,\\mathrm{mol}}
+\`\`\`
+
+بقسمة 0.735 على 0.00750 نحصل على كتلة مولية مقدارها **98.0 غم/مول**.
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -217,44 +244,39 @@ question: احسب كتلة \\(\\mathrm{Ba(OH)_2}\\) بالغرام (ك.م = 171
 - [ ] option-3 | 17.5
 - [ ] option-4 | 28.3
 explanation:
-عند التكافؤ تتساوى مولاتH₃O⁺ وOH⁻ المستهلكة؛ تحدد معاملات المعادلة عدد مولات الحمض لكل مول قاعدة. التركيز المولاري هو المولات لكل لتر، لذلكn=CV بعد تحويل الحجم إلى لتر بقسمته بالملليلتر أو سم³ على١٠٠٠.
+المطلوب كتلة هيدروكسيد الباريوم عند نقطة التكافؤ. نكتب المعادلة الموزونة لنحدد نسبة المولات.
 
-المطلوب كتلة Ba(OH)₂ عند التكافؤ؛ HCl حجمه 500 مل وتركيزه 0.5 مول/لتر. كل مول من القاعدة يعادل مولين من الحمض.
+$$\\mathrm{Ba(OH)_2+2HCl\\longrightarrow BaCl_2+2H_2O}$$
 
+يستهلك كل مول من القاعدة مولين من الحمض. نبدأ بتحويل حجم الحمض إلى اللتر بالقسمة على 1000.
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mi>a</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><msub><mo stretchy="false">)</mo><mn>2</mn></msub><mo>+</mo><mn>2</mn><mi>H</mi><mi>C</mi><mi>l</mi><mo>→</mo><mi>B</mi><mi>a</mi><mi>C</mi><msub><mi>l</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
-\`\`\`
+$$V_a=\\frac{500}{1000}\\,\\mathrm{L}=0.500\\,\\mathrm{L}$$
 
+نضرب تركيز الحمض في حجمه. تُختصر وحدة اللتر ويبقى المول.
 
-نحسب مولات الحمض من n=CV بالحجم باللتر، ثم نستعمل نسبة 2:1.
+$$n_a=C_aV_a=(0.5\\,\\mathrm{mol/L})(0.500\\,\\mathrm{L})$$
 
+$$n_a=0.250\\,\\mathrm{mol}$$
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mi>a</mi></msub><mo>=</mo><mn>0.5</mn><mo stretchy="false">(</mo><mn>0.500</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.250</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
-\`\`\`
+نكتب نسبة مولات القاعدة إلى مولات الحمض وفق معاملات المعادلة.
 
+$$\\frac{n_b}{0.250}=\\frac{1}{2}$$
 
+بالضرب التبادلي نضرب مولات القاعدة في 2 ونضرب 0.250 في 1.
 
+$$2n_b=0.250\\times1=0.250$$
 
+نقسم الطرفين على 2 لعزل عدد مولات القاعدة.
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mi>b</mi></msub><mo>=</mo><mn>0.250</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>0.125</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
-\`\`\`
+$$n_b=\\frac{0.250}{2}\\,\\mathrm{mol}=0.125\\,\\mathrm{mol}$$
 
+نضرب عدد المولات في الكتلة المولية. تُختصر وحدة المول ويبقى الغرام.
 
-الكتلة تساوي المولات في الكتلة المولية 171 غم/مول.
+$$m=n_bM=(0.125\\,\\mathrm{mol})(171\\,\\mathrm{g/mol})$$
 
+$$m=21.375\\,\\mathrm{g}$$
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>m</mi><mo>=</mo><mn>0.125</mn><mo stretchy="false">(</mo><mn>171</mn><mo stretchy="false">)</mo><mo>=</mo><mn>21.375</mn><mtext>  </mtext><mi>g</mi></mrow></math>
-\`\`\`
-
-
-الكتلة الصحيحة **21.375 غم**، وتساوي **21.4 غم لأقرب عُشر**. 
-
-**المصدر:** صفحة 43 من الكتاب.
-
+الكتلة اللازمة **21.375 غم**، أي **21.4 غم** لأقرب عُشر.
 hint: اقرأ المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -269,11 +291,11 @@ body:
 final-answer:
 **نقطة النهاية:** النقطة التي يتغير عندها لون الكاشف بشكل دائم، ويقاس عندها حجم المحلول المضاف في المعايرة، وقد تختلف قليلًا عن نقطة التكافؤ.
 solution:
-**الإجابة:** النقطة التي يتغير عندها لون الكاشف بشكل دائم، ويقاس عندها حجم المحلول المضاف في عملية المعايرة، والتي تختلف قليلاً عن نقطة التكافؤ.
+نقطة النهاية هي النقطة التي يبقى فيها تغيّر لون الكاشف ظاهرًا ويُقرأ عندها حجم المحلول المضاف. وهي قريبة من نقطة التكافؤ.
+
+**المصدر:** [رزمة الكيمياء التعليمية لغزة ٢٠٢٤، ص 43](https://moe.edu.ps/m/4059#page=45)، و[كتاب الكيمياء للصف الثاني عشر، المنهاج الفلسطيني الكامل، ص 80](https://moe.edu.ps/storage/app/class12/Chemistry12%202025%20Tawjihi%20Elmi.pdf#page=84).
 
 ![نص الكتاب](assets/lessons/curriculum-evidence/e0a4190bc030261062c6.webp)
-
-**المصدر:** صفحة 43 من الكتاب.
 
 :::
 
@@ -291,44 +313,37 @@ body:
 final-answer:
 **حجم حمض النيتريك الإضافي: 300 مل.**
 solution:
-عند التكافؤ تتساوى مولاتH₃O⁺ وOH⁻ المستهلكة؛ تحدد معاملات المعادلة عدد مولات الحمض لكل مول قاعدة. التركيز المولاري هو المولات لكل لتر، لذلكn=CV بعد تحويل الحجم إلى لتر بقسمته بالملليلتر أو سم³ على١٠٠٠.
+تركيز الهيدروكسيد المطلوب يساوي تركيزه في الماء المتعادل عند 25°س، فنحسب الكمية اللازمة للوصول إلى التكافؤ. تُظهر المعادلة الموزونة أن مولًا واحدًا من حمض النيتريك يعادل مولًا واحدًا من هيدروكسيد الصوديوم.
 
-المطلوب الوصول إلى [OH⁻]=10⁻⁷ مول/لتر، أي التعادل عند 25° س لحمض وقاعدة قويين. المعادلة بنسبة 1:1:
+$$\\mathrm{HNO_3+NaOH\\longrightarrow NaNO_3+H_2O}$$
 
+نحوّل حجم القاعدة إلى اللتر بالقسمة على 1000.
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>H</mi><mi>N</mi><msub><mi>O</mi><mn>3</mn></msub><mo>+</mo><mi>N</mi><mi>a</mi><mi>O</mi><mi>H</mi><mo>→</mo><mi>N</mi><mi>a</mi><mi>N</mi><msub><mi>O</mi><mn>3</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
-\`\`\`
+$$V_b=\\frac{200}{1000}\\,\\mathrm{L}=0.200\\,\\mathrm{L}$$
 
+نضرب التركيز في الحجم لنحسب مولات القاعدة قبل الخلط.
 
-نستخدم n=CV بالأحجام باللتر؛ مولات القاعدة الأصلية تحدد مجموع مولات الحمض اللازم.
+$$n_b=C_bV_b=(0.4\\,\\mathrm{mol/L})(0.200\\,\\mathrm{L})=0.080\\,\\mathrm{mol}$$
 
+نحوّل حجم الحمض المضاف بالفعل ونحسب عدد مولاته.
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mi>b</mi></msub><mo>=</mo><mn>0.200</mn><mo stretchy="false">(</mo><mn>0.4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.080</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
-\`\`\`
+$$V_{a,\\mathrm{added}}=\\frac{100}{1000}\\,\\mathrm{L}=0.100\\,\\mathrm{L}$$
 
+$$n_{a,\\mathrm{added}}=(0.2\\,\\mathrm{mol/L})(0.100\\,\\mathrm{L})=0.020\\,\\mathrm{mol}$$
 
+يعادل 0.020 مول من الحمض الكمية نفسها من القاعدة. نطرح مولات القاعدة التي تعادلت من مولاتها الأصلية.
 
+$$n_{b,\\mathrm{remaining}}=0.080-0.020=0.060\\,\\mathrm{mol}$$
 
+نحتاج 0.060 مول إضافي من الحمض لأن نسبة التعادل 1 إلى 1. نبدأ من علاقة المولات بالتركيز والحجم.
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>V</mi><mrow><mi>a</mi><mi>c</mi><mi>i</mi><mi>d</mi><mo separator="true">,</mo><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi></mrow></msub><mo>=</mo><msub><mi>n</mi><mi>b</mi></msub><mi mathvariant="normal">/</mi><msub><mi>C</mi><mi>a</mi></msub><mo>=</mo><mn>0.080</mn><mi mathvariant="normal">/</mi><mn>0.2</mn><mo>=</mo><mn>0.400</mn><mtext>  </mtext><mi>L</mi><mo>=</mo><mn>400</mn><mtext>  </mtext><mi>m</mi><mi>L</mi></mrow></math>
-\`\`\`
+$$n_{a,\\mathrm{extra}}=C_aV_{a,\\mathrm{extra}}$$
 
+نقسم الطرفين على تركيز الحمض لعزل الحجم الإضافي.
 
-أضيف 100 مل بالفعل، لذا **الحجم الإضافي 300 مل**؛ أما مجموع حجم الحمض عند التكافؤ فهو 400 مل.
+$$V_{a,\\mathrm{extra}}=\\frac{n_{a,\\mathrm{extra}}}{C_a}=\\frac{0.060\\,\\mathrm{mol}}{0.2\\,\\mathrm{mol/L}}=0.300\\,\\mathrm{L}$$
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>V</mi><mrow><mi>a</mi><mi>d</mi><mi>d</mi><mi>i</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><mo>=</mo><mn>400</mn><mo>−</mo><mn>100</mn><mo>=</mo><mn>300</mn><mtext>  </mtext><mi>m</mi><mi>L</mi></mrow></math>
-\`\`\`
-
-
-
-
-**المصدر:** صفحة 43 من الكتاب.
-
+نضرب الحجم باللتر في 1000 للتحويل إلى الملليلتر. الحجم الإضافي **300 مل**.
 :::
 
 :::exam-question
@@ -370,44 +385,37 @@ body:
 final-answer:
 **كتلة Ba(OH)₂ اللازمة: 3.42 غم.**
 solution:
-عند التكافؤ تتساوى مولاتH₃O⁺ وOH⁻ المستهلكة؛ تحدد معاملات المعادلة عدد مولات الحمض لكل مول قاعدة. التركيز المولاري هو المولات لكل لتر، لذلكn=CV بعد تحويل الحجم إلى لتر بقسمته بالملليلتر أو سم³ على١٠٠٠.
+المطلوب كتلة هيدروكسيد الباريوم التي تعادل الحمض. نبدأ بالمعادلة الموزونة.
 
-المعطيات V(HNO₃)=200 مل=0.200 لتر، C=0.2 مول/لتر، M(Ba(OH)₂)=171 غم/مول. عند التعادل كل مول قاعدة يستهلك مولين حمض.
+$$\\mathrm{Ba(OH)_2+2HNO_3\\longrightarrow Ba(NO_3)_2+2H_2O}$$
 
+يستهلك مول واحد من القاعدة مولين من الحمض. نحوّل حجم محلول الحمض إلى اللتر بالقسمة على 1000.
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mi>a</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><msub><mo stretchy="false">)</mo><mn>2</mn></msub><mo>+</mo><mn>2</mn><mi>H</mi><mi>N</mi><msub><mi>O</mi><mn>3</mn></msub><mo>→</mo><mi>B</mi><mi>a</mi><mo stretchy="false">(</mo><mi>N</mi><msub><mi>O</mi><mn>3</mn></msub><msub><mo stretchy="false">)</mo><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow></math>
-\`\`\`
+$$V_a=\\frac{200}{1000}\\,\\mathrm{L}=0.200\\,\\mathrm{L}$$
 
+نضرب تركيز الحمض في حجمه لإيجاد عدد مولاته.
 
-نحسب مولات الحمض من n=CV ثم نطبق نسبة المعادلة.
+$$n_a=C_aV_a=(0.2\\,\\mathrm{mol/L})(0.200\\,\\mathrm{L})$$
 
+$$n_a=0.040\\,\\mathrm{mol}$$
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mi>a</mi></msub><mo>=</mo><mn>0.2</mn><mo stretchy="false">(</mo><mn>0.200</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.040</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
-\`\`\`
+من معاملات المعادلة تكون نسبة مولات القاعدة إلى مولات الحمض 1 إلى 2.
 
+$$\\frac{n_b}{0.040}=\\frac{1}{2}$$
 
+بالضرب التبادلي نضرب مولات القاعدة في 2 ونضرب 0.040 في 1.
 
+$$2n_b=0.040\\times1=0.040$$
 
+نقسم الطرفين على 2.
 
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>n</mi><mi>b</mi></msub><mo>=</mo><mn>0.040</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>0.020</mn><mtext>  </mtext><mi>m</mi><mi>o</mi><mi>l</mi></mrow></math>
-\`\`\`
+$$n_b=\\frac{0.040}{2}\\,\\mathrm{mol}=0.020\\,\\mathrm{mol}$$
 
+نضرب عدد مولات القاعدة في كتلتها المولية. تُختصر وحدة المول.
 
-نحوّل المولات إلى كتلة بضربها في الكتلة المولية.
+$$m=n_bM=(0.020\\,\\mathrm{mol})(171\\,\\mathrm{g/mol})$$
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>m</mi><mo>=</mo><msub><mi>n</mi><mi>b</mi></msub><mi>M</mi><mo>=</mo><mn>0.020</mn><mo stretchy="false">(</mo><mn>171</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3.42</mn><mtext>  </mtext><mi>g</mi></mrow></math>
-\`\`\`
-
-
-
-
-**المصدر:** صفحة 43 من الكتاب.
-
+الكتلة المطلوبة **3.42 غم**.
 :::
 `;
 

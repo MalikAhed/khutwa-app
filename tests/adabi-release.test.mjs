@@ -11,31 +11,31 @@ const manifest = {
   geography:[492,253,239,0], history:[292,122,170,0], "information-technology":[257,99,158,0],
   "islamic-education":[689,257,432,0], mathematics:[521,263,258,0], "scientific-culture":[376,179,197,0],
 };
-// Reviewed corpus after the subject-by-subject explanation and answer-layout pass.
-// Original question surfaces have their separate unchanged fingerprints below.
+// Reviewed corpus after source corrections and explanation improvements.
+// The question surfaces have separate fingerprints below.
 const fingerprints = {
-  "arabic-1": "4d5cb29524e7ed902d7ca636ad6dbdd63ea56a7a23a6390c0486637e26f8ae7d",
-  "arabic-2": "01243e6a0e095943ca83e20628ae410d907efa0ce15b50a5b498e3187ee7d6fb",
-  "english": "c7f92e8848c973bc9d6843e50c51d45cd5ef3137e76a374c7c2a71bfd6f4506f",
-  "geography": "122ceba3e82f0d20fbe5289fce690a3c1e4145589885c7d50860777f760f4d05",
-  "history": "75e9776d4a23328977fd226a236530c8aa5fcf3f7160dee8b3838dd13af8a0a6",
-  "information-technology": "a784d69bd790796161fd60c3744180fb02fb327f2564283b80ca46f3728af806",
-  "islamic-education": "a9ca3da2b04f66d5a9c77d903b66ca947eca38dad63f37e0ba6c1b488aaeb627",
-  "mathematics": "4a649491c60d2aec717e2d064cbe318fc22d9420960eb52167f219e5abcea2a8",
-  "scientific-culture": "fcddd0cb5527ea4f68510aad3b299e00b90140f47a781cf9cf550665d14d3eb2"
+  "arabic-1": "579cdb51e04e185dddd1ffc4f2a1597b89268448c565a303c1a55f18148400d2",
+  "arabic-2": "8bad0b1ebafe9a1f67e92fd87e94dabe87c27bde4032fddec2b2b21a8304e9d3",
+  "english": "7e11bd8d560f943810108d2e7433f5007d88ae2e970f18a1a742395c1eadbcfd",
+  "geography": "a53c03a0424ed8c5f1dc2223942773a8f77ed035ae94fb8d11e317edd773097e",
+  "history": "faa9ecb898d83056d67d72bfba0b2819afa5fc3bc236f7b45b2e8d730df27ec3",
+  "information-technology": "0c0122a7847131b160a8a86cf2f622808b482fd973c511ccdc8a9c00ab69fa8a",
+  "islamic-education": "d23cebe7d16e61f543ba7dc40a493912569e5b28677372a7d575708ecfe1af31",
+  "mathematics": "cbd65b41a7ed4fd822627df7cdf31780557af8d1eef8b89ae66b6fdf1318b68c",
+  "scientific-culture": "b1b7f04b52febf891897752898fb8d370826669bb4d2d722190af17d45ac4b99"
 };
-// These pre-edit fingerprints keep prompts, choices, correct keys, citations and
-// progress identities fixed while teaching prose and answer layout are revised.
+// Question fingerprints pin audited prompts, choices, keys, citations and progress
+// identities independently of teaching prose and answer layout.
 const questionFingerprints = {
   "arabic-1":"6d4d5b53abd2c75a46b83f1d100b5b272b505ecc7a38914de07d1b59d6f34859",
   "arabic-2":"27b3c2137048adc8fea85b78f347b4b20ec2f6bc247e984779ee2e6921cdcd80",
-  english:"d48712dc1c3aa1afc90aae120822ef59969dc255c75dd94d30338a0d6f84d0fe",
-  geography:"c9742fa1159bd357c7ef1e7fdc9a9ce05b8e80b0238c032fb152b5c597279411",
-  history:"6623121217deef0afb476d75fe0074b914b6b29622f860b8aae8f56b53300cb3",
-  "information-technology":"b6a5cee8d5fb13fa3c841b4480215fc0ce7dc22ba64b9a23c343023aca000525",
+  english:"0976f7b8772aee12a1b483b34494bec0db9560ece35b7eae6d118016e338ab70",
+  geography:"46eed4f7047ba323b7212acdfdae4c1f98d8dcdb668f8d065028d1f34079248d",
+  history:"fa3902cdc169dabb1a2323c01338e08570f31deebb6e927f978afe7a87bac1ac",
+  "information-technology":"a2762e37801465593cc04334552f0277d2237c1eb141ee25f33d5fe5fd271a36",
   "islamic-education":"ff36dd900abe83f609ecb6dd016fae498445ed796bfda8d3fc3774052436dd98",
-  mathematics:"ae60359f46d3e65727d2c7306c66f7671a3b6a3671e4581a08b3b195f550a935",
-  "scientific-culture":"4fe4fe3f57f106af270b0fb16484bc5a6d7be9d41b0d7030d9ddf01df477e506",
+  mathematics:"8ed3bfe56dc41bdb24a7d7e40cc69e00a5a4d7f15fc7610de7b6f97cc904cce0",
+  "scientific-culture":"68f19e4a7ec434c19abb8d2764b91a23e7c7e2cec19007a940ed10133969b6b1",
 };
 const pairedIds = new Set([
   "en-t-p009-q03","en-t-p009-q04","en-t-p009-q05","en-t-p009-q10","en-t-p012-q18",

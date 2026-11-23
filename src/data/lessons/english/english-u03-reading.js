@@ -1562,7 +1562,7 @@ question: Decide whether the following statement is True (T) or False (F). The w
 - [ ] option-1 | True
 - [x] option-2 | False
 explanation:
-القول ينسب إليه تقليل تكرار المصادفات مقارنة بتوقعنا. أما النص فيبين كثرة الفرص ويختم بأن الغريب هو ألا تتكرر أكثر؛ لذلك المفتاح False مناسب.
+تقول العبارة إن المصادفات تحدث أقل مما نتوقع. لكن الكاتب يوضح أن كثرة فرص حدوثها تجعل الغريب هو ألّا تقع مرات أكثر. العبارة تعكس رأيه، لذلك الإجابة **False**.
 
 **الإجابة:**
 False. The writer argues that coincidences are not really surprising when we consider how complex our lives are.

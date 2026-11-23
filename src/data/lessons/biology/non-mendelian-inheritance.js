@@ -87,7 +87,7 @@ explanation:
 ولكل طراز هنا مظهر مختلف، فتكون النسبة الشكلية نفسها1:2:1.
 نميز النسبة الشكلية من الجينية: في السيادة التامة قد تظهر نسبة جينية 1:2:1 أيضًا، لكن الطرز الشكلية تكون 3:1، بخلاف النسبة الشكلية المحددة هنا.
 
-**المصدر:** صفحة 28 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 28](https://moe.edu.ps/m/4061#page=28).
 
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -186,7 +186,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>R</mi><mi>R</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>16</mn><mo>=</mo><mn>34</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>R</mi><mi>R</mi><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>16</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>R</mi><mi>R</mi><mo stretchy="false">)</mo><mo>=</mo><mn>34</mn></mrow></math>
 \`\`\`
 
 
@@ -194,7 +200,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>R</mi><mi>W</mi><mo stretchy="false">)</mo><mo>=</mo><mn>32</mn><mo>+</mo><mn>32</mn><mo>=</mo><mn>64</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>R</mi><mi>W</mi><mo stretchy="false">)</mo><mo>=</mo><mn>32</mn><mo>+</mo><mn>32</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>R</mi><mi>W</mi><mo stretchy="false">)</mo><mo>=</mo><mn>64</mn></mrow></math>
 \`\`\`
 
 
@@ -202,7 +214,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>W</mi><mi>W</mi><mo stretchy="false">)</mo><mo>=</mo><mn>14</mn><mo>+</mo><mn>16</mn><mo>=</mo><mn>30</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>W</mi><mi>W</mi><mo stretchy="false">)</mo><mo>=</mo><mn>14</mn><mo>+</mo><mn>16</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>W</mi><mi>W</mi><mo stretchy="false">)</mo><mo>=</mo><mn>30</mn></mrow></math>
 \`\`\`
 
 
@@ -219,7 +237,7 @@ solution:
 
 إذن وراثة لون الأزهار **سيادة غير تامة**، كما يوضح مظهر الزهري والنسبة معاً.
 
-**المصدر:** صفحة 28 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 28](https://moe.edu.ps/m/4061#page=28).
 
 :::
 
@@ -377,7 +395,7 @@ explanation:
 
 > يعد نظام الدم من الأمثلة على الأليلات المتعددة، وفي هذا النظام توجد ثلاثة أليلات هيIᴬ وIᴮ وi حيث تشغل نفس الموقع على الكروموسوم رقم9، والمسؤولة عن ظهور أربعة طرز شكلية مختلفة بالاعتماد على وجود أي من الأنتيجينين(مولد الضد)A وB، أو وجودهما معاً، أو عدم وجودهما على أغشية خلايا الدم الحمراء.
 
-**المصدر:** صفحة 30 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 30](https://moe.edu.ps/m/4061#page=30).
 
 
 
@@ -414,11 +432,7 @@ reference: [الرزمة التعليمية، صفحة PDF 40](https://moe.edu.p
 explanation:
 **الإجابة:** A
 
-**الشاهد من الكتاب:**
-
-> فصيلة الدمA: أنتيجينA؛ فصيلة الدمB: أنتيجينB؛ فصيلة الدمAB: أنتيجينA وأنتيجينB؛ فصيلة الدمO: لا يوجد.
-
-**المصدر:** صفحة 30 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 30](https://moe.edu.ps/m/4061#page=30)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 55](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=59).
 
 
 
@@ -441,7 +455,7 @@ explanation:
 
 > فصيلة الدمA: الأنتيجينA، الأجسام المضادة في بلازما الدمAnti-B؛ فصيلة الدمAB: الأنتيجينA وB، لا توجد أجسام مضادة.
 
-**المصدر:** صفحة 31 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 31](https://moe.edu.ps/m/4061#page=31).
 
 
 
@@ -571,7 +585,7 @@ solution:
 
 > فصيلة الدمA: أنتيجينA؛ فصيلة الدمB: أنتيجينB؛ فصيلة الدمAB: أنتيجينA وأنتيجينB؛ فصيلة الدمO: لا يوجد.
 
-**المصدر:** صفحة 30 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 30](https://moe.edu.ps/m/4061#page=30).
 
 
 
@@ -809,7 +823,7 @@ solution:
 
 > فصيلة الدمA: أنتيجينA؛ فصيلة الدمB: أنتيجينB؛ فصيلة الدمAB: أنتيجينA وأنتيجينB؛ فصيلة الدمO: لا يوجد.
 
-**المصدر:** صفحة 30 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 30](https://moe.edu.ps/m/4061#page=30).
 
 
 
@@ -953,7 +967,7 @@ explanation:
 
 > أما عند الطيور وبعض أنواع الحشرات كالفراش، وبعض أنواع الأسماك، فإن نظامZZ-ZW هو الشائع، أي أن الأنثى هي المسؤولة عن تحديد الجنس.
 
-**المصدر:** صفحة 32 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 32](https://moe.edu.ps/m/4061#page=32).
 
 
 
@@ -1762,7 +1776,7 @@ explanation:
 
 > هي الصفات التي تحمل جيناتها على الكروموسومات الجسمية، ولكنها تتأثر بالهرمونات الجنسية، ومن الأمثلة عليها صفة الصلع عند الإنسان. حيث يكون جين الصلع(b) سائداً على جين وجود الشعر الطبيعي(b⁺) عند الذكور، أما عند الإناث فيكون جين وجود الشعر الطبيعي سائداً على جين الصلع.
 
-**المصدر:** صفحة 33 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 33](https://moe.edu.ps/m/4061#page=33).
 
 
 
@@ -2089,7 +2103,7 @@ solution:
 
 > هي الصفات التي تحمل جيناتها على الكروموسومات الجسمية، ولكنها تتأثر بالهرمونات الجنسية، ومن الأمثلة عليها صفة الصلع عند الإنسان. حيث يكون جين الصلع(b) سائداً على جين وجود الشعر الطبيعي(b⁺) عند الذكور، أما عند الإناث فيكون جين وجود الشعر الطبيعي سائداً على جين الصلع.
 
-**المصدر:** صفحة 33 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 33](https://moe.edu.ps/m/4061#page=33).
 
 
 
@@ -2262,7 +2276,7 @@ solution:
 
 > هي الصفات التي تحمل جيناتها على الكروموسومات الجسمية، ولكنها تتأثر بالهرمونات الجنسية، ومن الأمثلة عليها صفة الصلع عند الإنسان. حيث يكون جين الصلع(b) سائداً على جين وجود الشعر الطبيعي(b⁺) عند الذكور، أما عند الإناث فيكون جين وجود الشعر الطبيعي سائداً على جين الصلع.
 
-**المصدر:** صفحة 33 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 33](https://moe.edu.ps/m/4061#page=33).
 
 
 
@@ -2343,37 +2357,38 @@ body:
 final-answer:
 **3/8 (37.5%).**
 solution:
-الصلع صفة متأثرة بالجنس: يكون b سائدًا عند الذكور ومتنحيًا عند الإناث. الأم غير صلعاء، لكنها أعطت ابنتها الأليل b؛ لذلك يكون طراز الأم b⁺b. وطراز الأب b⁺b معطى صراحة.
+نستخدم نموذج السؤال، حيث يكون b سائدًا عند الذكور ومتنحيًا عند الإناث. الأم غير صلعاء لكنها أعطت الطفلَة الأليل b، فطرازها b⁺b. طراز الأب b⁺b مُعطى. يحمل كل غاميت أليلًا واحدًا من أليلي الأب أو الأم.
 
 | غاميتا الأبوين | b⁺ | b |
 |---|---|---|
 | b⁺ | b⁺b⁺ | b⁺b |
 | b | b⁺b | bb |
 
-عند الذكر، الطرازان b⁺b و bb يظهران الصلع؛ فاحتمال الصلع بشرط أن المولود ذكر هو 3/4.
+يظهر الصلع عند الذكر في الطراز b⁺b الموجود في خانتين والطراز bb الموجود في خانة واحدة. نجمع الخانات الملائمة ونقسم على أربع خانات متساوية الاحتمال.
 
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">d</mi></mrow><mo>∣</mo><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`latex
+\\frac{2+1}{4}=\\frac34
 \`\`\`
 
+احتمال الذكر يساوي النصف. نضربه في احتمال الصلع بشرط أن المولود ذكر.
 
-
-نضرب في احتمال إنجاب ذكر، وهو 1/2. لا تدخل صفة نزف الدم في المطلوب الحالي.
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi><mtext> </mtext><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">d</mi><mtext> </mtext><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">d</mi></mrow><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math>
+\`\`\`latex
+\\frac12\\times\\frac34
 \`\`\`
 
+نضرب البسطين معًا والمقامين معًا.
 
+\`\`\`latex
+\\frac{1\\times3}{2\\times4}=\\frac38
+\`\`\`
 
-الإجابة:3/8، أي 37.5%.
+نضرب الكسر في 100% لتحويله إلى نسبة مئوية.
 
-**المصدر:** صفحة 33 من الكتاب.
+\`\`\`latex
+\\frac38\\times100\\%=\\frac{300}{8}\\%=37.5\\%
+\`\`\`
 
+إذن احتمال إنجاب ذكر أصلع هو **3/8، أي 37.5%**.
 :::
 
 :::exam-question
@@ -2646,7 +2661,63 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>8</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>0.5</mn><mo>×</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>0.5</mn><mo>×</mo><mn>0.25</mn><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>0.125</mn><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>0.125</mn><mo>+</mo><mn>0.5</mn><mo>×</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>0.125</mn><mo>+</mo><mn>0.5</mn><mo>×</mo><mn>0.75</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>0.125</mn><mo>+</mo><mn>0.375</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>0.125</mn><mo>+</mo><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>0.125</mn><mo>+</mo><mn>0.375</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>طبيعي الشعر</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
 \`\`\`
 
 
@@ -2658,15 +2729,28 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mn>0.5</mn><mo>×</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mn>0.5</mn><mo>×</mo><mn>0.25</mn></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>P</mi><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math>
 \`\`\`
 
 
 
 إذن احتمال فرد فصيلتهB وطبيعي الشعر **1/8**.
-
-**المصدر:** الصفحات 30، 31، 33 من الكتاب.
-
 :::
 
 :::mcq
@@ -2764,14 +2848,22 @@ body:
 final-answer:
 **ارتباط غير تام مع عبور بنسبة 9%**؛ التراكيب الأبوية **91%**، والتراكيب الجديدة الناتجة بالعبور **9%**.
 solution:
-\`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` سائد للأسود و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` للأبيض، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` سائد للطويل و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>t</mtext></math>\` للقصير. الأنثى بيضاء قصيرة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bbtt</mtext></math>\` فلا تعطي إلا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` ؛
-لذلك يكشف كل طراز في النسل غاميت الأب مباشرة.
-الفئتان الكبيرتان أسود طويل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>45.5%</mtext></math>\` وأبيض قصير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>45.5%</mtext></math>\` تعكسان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>BT</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` الأبويتين؛
-والفئتان الصغيرتان أبيض طويل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4.5%</mtext></math>\` وأسود قصير \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4.5%</mtext></math>\` تعكسان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bT</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Bt</mtext></math>\` الناتجتين بالعبور.
-وجود الفئتين الكبيرتين بمجموع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>45.5+45.5=91%</mtext></math>\` يدل على استمرار التراكيب المرتبطة.
-ونتيجة العبور في الانقسام المنصف تظهر التراكيب الجديدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bT</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Bt</mtext></math>\` بمجموع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4.5+4.5=9%</mtext></math>\`.
-العبور تبادل قطع بين كروماتيدين غير شقيقين لكروموسومين متناظرين؛
-لذلك تظهر أربع فئات بنسب غير متساوية بدلاً من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1:1:1:1</mtext></math>\` المتوقعة عند الاستقلال في التزاوج الاختباري.
+B سائد للأسود وb للأبيض، وT سائد للذيل الطويل وt للقصير. الأنثى بيضاء قصيرة الذيل وطرازها bbtt، فتُنتج غاميتات bt فقط. لذلك يكشف كل طراز في النسل الغاميت الذي أخذه من الأب.
+
+الفئتان الأكبر هما الأسود طويل الذيل والأبيض قصير الذيل، ونسبة كل منهما 45.5%. تقابلان غاميتَي الأب BT وbt. نجمع النسبتين لإيجاد نسبة التراكيب الأبوية.
+
+\`\`\`latex
+45.5\\%+45.5\\%=91\\%
+\`\`\`
+
+الفئتان الأصغر هما الأبيض طويل الذيل والأسود قصير الذيل، ونسبة كل منهما 4.5%. تقابلان الغاميتين الجديدتين bT وBt. نجمع النسبتين لإيجاد نسبة العبور.
+
+\`\`\`latex
+4.5\\%+4.5\\%=9\\%
+\`\`\`
+
+تكوّن العبور من تبادل قطع بين كروماتيدين غير شقيقين في الانقسام المنصف. احتفظ معظم النسل بالتراكيب الأبوية، وظهرت تراكيب جديدة بنسبة **9%**. النتيجة تدل على **ارتباط غير تام**. عند الاستقلال نتوقع أربع فئات متساوية في التلقيح الاختباري.
+
 :::
 
 :::mcq
@@ -2789,8 +2881,8 @@ explanation:
 المعطى ارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>85%</mtext></math>\` ، إذن العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−85%=15%</mtext></math>\`.
 الاختيار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>15%</mtext></math>\`. لا نقسم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>15%</mtext></math>\` على \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2</mtext></math>\` إلا إذا طُلبت نسبة كل فئة جديدة على حدة مع تساويهما.
 
-**المصدر:** صفحة 66 من الكتاب.
 
+[سؤال الرزمة، ص 40](https://moe.edu.ps/m/4061#page=40).
 hint: اقرأ السؤال وقارن بين البدائل الأصلية.
 :::
 
@@ -2951,14 +3043,29 @@ question: فرد طرازه الجيني لصفتين مرتبطتين معاً 
 - [ ] option-3 | ج. AB 40%، ab 40%، Ab 10%، aB 10%
 - [ ] option-4 | د. Ab 40%، aB 40%، AB 10%، ab 10%
 explanation:
-وجود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` مع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>b</mtext></math>\` على كروموسوم واحد يجعل الطور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Ab/aB</mtext></math>\` ؛
-وهما الغاميتان الأبويتان. العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>10%</mtext></math>\` يعني أن مجموع الغاميتين الجديدتين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ab</mtext></math>\` يساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>10%</mtext></math>\`.
-نسبة كل مؤتلف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=10%÷2=5%</mtext></math>\`.
-مجموع الأبويتين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−10%=90%</mtext></math>\` ؛
-نسبة كل واحدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=90%÷2=45%</mtext></math>\`.
-إذن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>aB45%</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Ab45%</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>AB5%</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ab5%</mtext></math>\` ، الاختيار ب.
+وجود A مع b على كروموسوم واحد يحدد الطور Ab/aB. إذن الغاميتان الأبويتان Ab وaB، والجديدتان بالعبور AB وab.
 
-**المصدر:** صفحة 66 من الكتاب.
+المعطى أن نسبة الغاميتين الجديدتين معًا 10%. نقسم النسبة على 2 لأن النوعين متساويان في نموذج المسألة.
+
+\`\`\`latex
+\\frac{10\\%}{2}=5\\%
+\`\`\`
+
+نطرح نسبة التراكيب الجديدة من مجموع النسب لإيجاد نسبة النوعين الأبويين معًا.
+
+\`\`\`latex
+100\\%-10\\%=90\\%
+\`\`\`
+
+نقسم النسبة الأبوية على 2 لتحديد نسبة كل غاميت أبوي.
+
+\`\`\`latex
+\\frac{90\\%}{2}=45\\%
+\`\`\`
+
+إذن **Ab وaB بنسبة 45% لكل منهما، وAB وab بنسبة 5% لكل منهما**، الاختيار ب.
+
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 66](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=70).
 
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -2973,14 +3080,29 @@ question: في خريطة الجينات المجاورة ما نسبة الار
 - [ ] option-3 | ج. 96%
 - [ ] option-4 | د. 10%
 explanation:
-وحدة الخريطة الواحدة تقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` تراكيب جديدة في نموذج المنهج.
+نريد نسبة الارتباط بين الجينين F وH من الخريطة.
+
 ![الخريطة الأصلية](assets/lessons/curriculum-evidence/a6d4dc5bd6ce1c6f7e67.webp)
-من الخريطة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>F</mtext></math>\` إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G=4</mtext></math>\` ، ومن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H=6</mtext></math>\` ؛
-المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>F–H=4+6=10</mtext></math>\` وحدات، أي عبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>10%</mtext></math>\`.
-نسبة الارتباط هي الباقي الأبوي : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%−10%=90%</mtext></math>\` ، الاختيار أ.
 
-**المصدر:** صفحة 66 من الكتاب.
+يمر المسار من F إلى H عبر G. نجمع مسافة F إلى G وهي 4 وحدات، ومسافة G إلى H وهي 6 وحدات.
 
+\`\`\`latex
+d_{FH}=4+6=10\\,\\mathrm{cM}
+\`\`\`
+
+كل وحدة خريطة تقابل 1% من التراكيب الجديدة في نموذج المسألة. نضرب عدد الوحدات في 1%. فتكون نسبة العبور 10%.
+
+\`\`\`latex
+10\\times1\\%=10\\%
+\`\`\`
+
+نطرح نسبة التراكيب الجديدة من مجموع النسب للحصول على نسبة التراكيب الأبوية المرتبطة.
+
+\`\`\`latex
+100\\%-10\\%=90\\%
+\`\`\`
+
+إذن نسبة الارتباط **90%**، الاختيار أ.
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 example:
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/a6d4dc5bd6ce1c6f7e67.webp)
@@ -2998,9 +3120,6 @@ question: إذا كانت نسبة الارتباط بين الجينين 80% ف
 explanation:
 الارتباط هنا نسبة التراكيب الأبوية، والعبور نسبة التراكيب الجديدة، ومجموعهما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
 المعطى ارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>80%</mtext></math>\` ، إذن نسبة العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−80%=20%</mtext></math>\` ، الاختيار د.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -3016,9 +3135,6 @@ question: إذا كانت نسبة تكرار عملية العبور بين ج�
 explanation:
 نسبة الارتباط في اصطلاح المسألة هي النسبة المتبقية للتراكيب الأبوية بعد استبعاد المؤتلفات الناتجة بالعبور.
 المعطى عبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>30%</mtext></math>\` ، لذا الارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−30%=70%</mtext></math>\` ، الاختيار ج.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -3035,9 +3151,6 @@ explanation:
 العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>27%</mtext></math>\` يمثل مجموع التراكيب الجديدة بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` ؛
 والارتباط يمثل التراكيب الأبوية الباقية.
 الارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−27%=73%</mtext></math>\` ، الاختيار د. لا نطرح ضعف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>27%</mtext></math>\` لأنه مجموع المؤتلفات وليس نسبة فئة واحدة.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -3051,13 +3164,23 @@ question: ما نسبة تكرار العبور بين الجينين h وf في
 - [x] option-3 | ج. 14%
 - [ ] option-4 | د. 7%
 explanation:
-كل وحدة خريطة تقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` تراكيب جديدة في نموذج المسألة.
+نريد نسبة تكرار العبور بين الجينين f وh.
+
 ![الخريطة الأصلية](assets/lessons/curriculum-evidence/898ef5e7e4f71de6eb1e.webp)
-المسار من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>f</mtext></math>\` إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>h</mtext></math>\` يمر عبر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g: f–g=5</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>g–h=9</mtext></math>\`.
-المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=5+9=14</mtext></math>\` وحدة، فتكرار العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>14%</mtext></math>\` ، الاختيار ج. لا نضيف المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>e–f</mtext></math>\` لأنها خارج الطرفين المطلوبين.
 
-**المصدر:** صفحة 66 من الكتاب.
+يقع g بين f وh، لذلك نجمع مسافة f إلى g وهي 5 وحدات، ومسافة g إلى h وهي 9 وحدات.
 
+\`\`\`latex
+d_{fh}=5+9=14\\,\\mathrm{cM}
+\`\`\`
+
+يقابل كل سنتيمورغان 1% من التراكيب الجديدة في حساب المسألة.
+
+\`\`\`latex
+14\\times1\\%=14\\%
+\`\`\`
+
+إذن تكرار العبور **14%**، الاختيار ج. اقتصر الحساب على القطعتين بين f وh.
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 example:
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/898ef5e7e4f71de6eb1e.webp)
@@ -3076,7 +3199,7 @@ explanation:
 السنتيمورغان وحدة خريطة تقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` من التراكيب المعاد تركيبها بين جينين في النموذج المدرسي.
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–B=18</mtext></math>\` سنتيمورغان، إذن نسبة تكرار العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>18%</mtext></math>\` ، الاختيار د. أما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>82%</mtext></math>\` فهي نسبة الارتباط المكملة وليست المطلوب.
 
-**المصدر:** صفحة 66 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 66](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=70).
 
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -3112,15 +3235,31 @@ question: كانت نتائج التلقيح التجريبي (AaBb × aabb): أ
 - [ ] option-3 | ج. 9
 - [x] option-4 | د. 10
 explanation:
-في التلقيح الاختباري تكشف فئات النسل غاميتات الفرد غير النقي؛
-فتُحسب نسبة التراكيب الجديدة بقسمة عددها على النسل كله ثم الضرب في \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100</mtext></math>\`.
-العدد الكلي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=900+100=1000</mtext></math>\`.
-نسبة التراكيب الجديدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=(100÷1000)×100=10%</mtext></math>\`.
-كل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` يقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1</mtext></math>\` سنتيمورغان؛
-المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>10</mtext></math>\` سنتيمورغان، الاختيار د.
+في التلقيح الاختباري يكشف النسل أنواع غاميتات الفرد غير النقي. المعطى 900 فرد بالتراكيب الأبوية و100 فرد بتراكيب جديدة. نجمع العددين لحساب حجم النسل كله.
 
-**المصدر:** صفحة 66 من الكتاب.
+\`\`\`latex
+N=900+100=1000
+\`\`\`
 
+نقسم عدد أصحاب التراكيب الجديدة على العدد الكلي.
+
+\`\`\`latex
+\\frac{100}{1000}
+\`\`\`
+
+نختصر الكسر بقسمة بسطه ومقامه على 100.
+
+\`\`\`latex
+\\frac{100\\div100}{1000\\div100}=\\frac{1}{10}
+\`\`\`
+
+نضرب في 100% لتحويل الكسر إلى نسبة مئوية.
+
+\`\`\`latex
+\\frac{1}{10}\\times100\\%=\\frac{100}{10}\\%=10\\%
+\`\`\`
+
+في نموذج المنهج، يقابل كل 1% من التراكيب الجديدة سنتيمورغان واحد. إذن المسافة **10 سنتيمورغان**، الاختيار د.
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -3155,13 +3294,22 @@ final-answer:
 - التراكيب الأبوية: **47.5% صفراء مستديرة** و**47.5% خضراء مجعدة**.
 - التراكيب الناتجة بالعبور: **2.5% صفراء مجعدة** و**2.5% خضراء مستديرة**.
 solution:
-نرمز \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R</mtext></math>\` للمستدير السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>r</mtext></math>\` للمجعد، و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Y</mtext></math>\` للأصفر السائد و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>y</mtext></math>\` للأخضر، وفق ترميز البازيلاء المعتاد في المسألة. التلقيح التجريبي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RrYy × rryy</mtext></math>\` يجعل الكاشف يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ry</mtext></math>\` فقط.
-الفئتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>47.5%</mtext></math>\` صفراء مستديرة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>47.5%</mtext></math>\` خضراء مجعدة تكشفان غاميتين أبويتين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RY</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ry</mtext></math>\` ؛
-إذن النبات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RY/ry</mtext></math>\`.
-الفئتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2.5%</mtext></math>\` صفراء مجعدة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2.5%</mtext></math>\` خضراء مستديرة تكشفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rY</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Ry</mtext></math>\` ؛
-نتجتا بتبادل قطع بين كروماتيدين غير شقيقين.
-الارتباط أبقى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>47.5+47.5=95%</mtext></math>\` أبوية، والعبور أعطى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2.5+2.5=5%</mtext></math>\` مؤتلفات.
-اتحاد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RY</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ry</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rY</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Ry</mtext></math>\` مع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>ry</mtext></math>\` يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>RrYy</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rryy</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>rrYy</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Rryy</mtext></math>\` على الترتيب.
+نرمز بـ R للمستدير السائد وr للمجعد، وبـ Y للأصفر السائد وy للأخضر. في التلقيح الاختباري RrYy × rryy لا يُنتج النبات الكاشف إلا غاميتات ry. لذلك نستدل من كل طراز في النسل على الغاميت من النبات RrYy.
+
+الفئتان الأكبر هما الصفراء المستديرة والخضراء المجعدة. نسبة كل منهما 47.5%، فتقابلان الغاميتين الأبويتين RY وry. إذن ترتيب الأليلات الأبوي RY/ry. نجمع نسبتي الفئتين الأبويتين.
+
+\`\`\`latex
+47.5\\%+47.5\\%=95\\%
+\`\`\`
+
+الفئتان الأصغر هما الصفراء المجعدة والخضراء المستديرة. نسبة كل منهما 2.5%، فتقابلان الغاميتين الجديدتين rY وRy الناتجتين بالعبور. نجمع النسبتين.
+
+\`\`\`latex
+2.5\\%+2.5\\%=5\\%
+\`\`\`
+
+ينتج من اتحاد غاميتات RY وry وrY وRy مع غاميت الكاشف ry على الترتيب: RrYy وrryy وrrYy وRryy. إذن الارتباط **غير تام** ونسبة العبور **5%**.
+
 :::
 
 :::exam-question
@@ -3237,9 +3385,6 @@ solution:
 العدد الكلي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=92+88+9+11=200</mtext></math>\`.
 النسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=(20÷200)×100=10%</mtext></math>\`.
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>10</mtext></math>\` سنتيمورغان. لا نستخدم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>92</mtext></math>\` أو \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>88</mtext></math>\` في البسط لأنهما فئتان أبويتان.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3280,9 +3425,6 @@ solution:
 فتُعد الفئتان الكبيرتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>45.5%</mtext></math>\` سوداء طويلة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>45.5%</mtext></math>\` بيضاء قصيرة أبويتين، والصغيرتان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4.5%</mtext></math>\` بيضاء طويلة و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4.5%</mtext></math>\` سوداء قصيرة جديدتين.
 نسبة المؤتلفات تساوي مجموع الفئتين الجديدتين : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4.5%+4.5%=9%</mtext></math>\`.
 إذن المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>9</mtext></math>\` سنتيمورغان. المقصود رصد العبور بين الجينين، فلا نجمع الفئات الأبوية.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3549,9 +3691,6 @@ M للون السائد وm لغيابه، وB للأملس السائد وb ل�
 
 
 إذن المسافة **7.6 وحدات خريطة**.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3579,9 +3718,6 @@ solution:
 للزوج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` ارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>97%</mtext></math>\` ؛
 إذن العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−97%=3%</mtext></math>\`.
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–G=3</mtext></math>\` وحدات خريطة.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3609,9 +3745,6 @@ solution:
 مع \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T–A=7</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T–D=18</mtext></math>\` تكون المسافات \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>7+3+8=18</mtext></math>\` ، فيلائمها الترتيب \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>T</mtext></math>\` ثم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` ثم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` ثم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D</mtext></math>\`.
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–D=3+8=11</mtext></math>\` وحدة؛
 إذن العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>11%</mtext></math>\` ، والارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−11%=89%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3638,9 +3771,6 @@ solution:
 النسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−92%=8%</mtext></math>\`.
 لو أريدت المسافة لكانت \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>8</mtext></math>\` وحدات خريطة؛
 هنا الجواب نسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>8%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3680,9 +3810,6 @@ solution:
 ![الخريطة الأصلية في الإجابات](assets/lessons/curriculum-evidence/743b931369ed6ac13336.webp)
 توافق المسافات المتتالية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>7</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>8</mtext></math>\` جميع معطيات الجدول؛
 وعكس الاتجاه يعطي الخريطة نفسها.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3711,7 +3838,7 @@ solution:
 
 > نستنتج مما سبق أن الجينات المرتبطةLinked Genes هي تلك الجينات(عددها أكثر من زوج من الجينات) التي تقع على الكروموسوم نفسه، وتكون قريبة بعضها من بعض، ومرتبطة بعضها مع بعض؛ لذا فهي تورث معاً كوحدة واحدة.
 
-**المصدر:** صفحة 34 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 34](https://moe.edu.ps/m/4061#page=34)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 64](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=68).
 
 
 
@@ -3737,9 +3864,6 @@ solution:
 إذا وضعنا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>0</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>5</mtext></math>\` ، فيلزم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2</mtext></math>\` ، لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2+2+1=5</mtext></math>\`.
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–D=2+2=4</mtext></math>\` ؛
 العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4%</mtext></math>\` ، فالارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−4%=96%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3761,9 +3885,6 @@ solution:
 إذا وضعنا \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>0</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>5</mtext></math>\` ، فيلزم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C</mtext></math>\` عند \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2</mtext></math>\` ، لأن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2+2+1=5</mtext></math>\`.
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C–B=2+1=3</mtext></math>\` وحدات؛
 إذن نسبة العبور بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` تساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3785,7 +3906,7 @@ solution:
 
 > التي تمثل ترتيباً خطياً افتراضياً لمواقع الجينات على طول كروموسوم معين
 
-**المصدر:** صفحة 66 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 66](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=70).
 
 
 
@@ -3820,9 +3941,6 @@ solution:
 ![الخريطة الأصلية في الإجابات](assets/lessons/curriculum-evidence/932bdc06962e52b79696.webp)
 إذن المسافات المتتالية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1</mtext></math>\` ؛
 وتحقق \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–B=5</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C–D=2</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D–B=1</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C–A=2</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3843,9 +3961,6 @@ solution:
 عدد الجديد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=51+49=100</mtext></math>\` ؛
 العدد الكلي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=151+149+51+49=400</mtext></math>\`.
 النسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=(100÷400)×100=25%</mtext></math>\`. إذن المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>25</mtext></math>\` وحدة خريطة.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3914,7 +4029,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mi>A</mi><mo>=</mo><mn>100</mn><mo>−</mo><mn>96</mn><mo>=</mo><mn>4</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>B</mi><mi>A</mi><mo>=</mo><mn>100</mn><mo>−</mo><mn>96</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mi>A</mi><mo>=</mo><mn>4</mn></mrow></math>
 \`\`\`
 
 
@@ -3922,7 +4043,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mi>D</mi><mo>=</mo><mn>100</mn><mo>−</mo><mn>87</mn><mo>=</mo><mn>13</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>B</mi><mi>D</mi><mo>=</mo><mn>100</mn><mo>−</mo><mn>87</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mi>D</mi><mo>=</mo><mn>13</mn></mrow></math>
 \`\`\`
 
 
@@ -3930,7 +4057,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mi>E</mi><mo>=</mo><mn>100</mn><mo>−</mo><mn>92</mn><mo>=</mo><mn>8</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>B</mi><mi>E</mi><mo>=</mo><mn>100</mn><mo>−</mo><mn>92</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mi>E</mi><mo>=</mo><mn>8</mn></mrow></math>
 \`\`\`
 
 
@@ -3946,15 +4079,18 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>E</mi><mi>A</mi><mo>=</mo><mn>8</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>12</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>E</mi><mi>A</mi><mo>=</mo><mn>8</mn><mo>+</mo><mn>4</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>E</mi><mi>A</mi><mo>=</mo><mn>12</mn></mrow></math>
 \`\`\`
 
 
 
 إذن نسبة تكرار العبور بينE وA **12%**.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -3982,9 +4118,6 @@ solution:
 المعطى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H–M</mtext></math>\` ارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>95%</mtext></math>\` ، إذن العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−95%=5%</mtext></math>\`.
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H–M=5</mtext></math>\` وحدات خريطة؛
 لا نستخدم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>15%</mtext></math>\` الواردة للزوج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>F</mtext></math>\` لأنه زوج مختلف.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4026,9 +4159,6 @@ solution:
 
 ![الخريطة الأصلية في الإجابات](assets/lessons/curriculum-evidence/d10e02743a3e475d71ae.webp)
 المسافات المتتالية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>10</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>5</mtext></math>\` ، وتحقق جميع أزواج الجدول.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4059,9 +4189,6 @@ solution:
 الطرفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M</mtext></math>\` أبعد زوج؛
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–M=3+10+5=18</mtext></math>\` وحدة خريطة.
 كل وحدة تقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` تراكيب جديدة، لذلك أكبر نسبة تكرار عبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>18%</mtext></math>\` بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4088,9 +4215,6 @@ solution:
 العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B–D=8%</mtext></math>\`.
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–E=A–D+D–E=12+5=17</mtext></math>\` ؛
 العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–A=17%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4115,9 +4239,6 @@ solution:
 الارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D–C=100%−3%=97%</mtext></math>\`.
 العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D–A</mtext></math>\` معطى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>12%</mtext></math>\` ؛
 الارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D–A=100%−12%=88%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4131,13 +4252,9 @@ body:
 final-answer:
 **السنتيمورغان (وحدة خريطة).**
 solution:
-**الإجابة:** وحدة خريطة، وتسمى السنتيمورغان.
+**وحدة الخريطة (السنتيمورغان).**
 
-**الشاهد من الكتاب:**
-
-> الوحدة المستخدمة للتعبير عن المسافات بين جينين في الخريطة الجينية هي السنتيمورغان.
-
-**المصدر:** صفحة 66 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 66](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=70).
 
 
 
@@ -4160,7 +4277,7 @@ solution:
 
 > نستنتج مما سبق أن حالة الارتباط هذه يمكن أن تتغير عند تبادل أجزاء بين كروموسومين متماثلين بعملية العبور، ما يؤدي إلى إعادة تشكيل أو تركيب الأليلات.
 
-**المصدر:** صفحة 35 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 35](https://moe.edu.ps/m/4061#page=35).
 
 
 
@@ -4284,7 +4401,7 @@ solution:
 المسافة المباشرة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–B</mtext></math>\` في الرسم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3</mtext></math>\` وحدات؛
 لذلك نسبة العبور بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` تساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3%</mtext></math>\`.
 
-**المصدر:** صفحة 66 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 66](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=70).
 
 :::
 
@@ -4308,9 +4425,6 @@ solution:
 المسار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C</mtext></math>\` يمر عبر \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B:</mtext></math>\` المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=3+6=9</mtext></math>\` وحدات؛
 العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>9%</mtext></math>\`.
 الارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–C=100%−9%=91%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4332,7 +4446,7 @@ solution:
 ![الخريطة الأصلية](assets/lessons/curriculum-evidence/409b3c15fe0e542d38f5.webp)
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B–C</mtext></math>\` مباشرة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>6</mtext></math>\` وحدات، إذن نسبة الجديد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>6%</mtext></math>\`. لا نأخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>94%</mtext></math>\` لأنها نسبة الارتباط المكملة، وليست الجديد المطلوب.
 
-**المصدر:** صفحة 66 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 66](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=70).
 
 :::
 
@@ -4355,9 +4469,6 @@ solution:
 ![الخريطة الأصلية](assets/lessons/curriculum-evidence/409b3c15fe0e542d38f5.webp)
 أبعد زوج هو الطرفان \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E</mtext></math>\`. المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–E=3+6+4=13</mtext></math>\` وحدة، إذن العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>13%</mtext></math>\`.
 أقل نسبة ارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−13%=87%</mtext></math>\` بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4383,9 +4494,6 @@ solution:
 السنتيمورغان الواحد يقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` تكرار عبور في نموذج هذه المسائل. نقرأ صف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` وعمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D</mtext></math>\` في الجدول فنجد المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2</mtext></math>\` سنتيمورغان.
 إذن نسبة العبور بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>D</mtext></math>\` تساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2%</mtext></math>\` ؛
 لا نضيف مسافات أخرى لأن البعد المباشر معطى.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4411,9 +4519,6 @@ solution:
 الجدول يعطي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–C=1</mtext></math>\` سنتيمورغان؛
 كل وحدة تقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` جديد. إذن العبور بينهما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\`.
 الارتباط نسبة التراكيب الأبوية الباقية : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%−1%=99%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4450,9 +4555,6 @@ solution:
 ![الخريطة الأصلية في الإجابات](assets/lessons/curriculum-evidence/e5376834a1eb485b54cb.webp)
 المسافات المتتالية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2</mtext></math>\` ؛
 وتحقق \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–B=4+2=6</mtext></math>\` وبقية الجدول.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::mcq
@@ -4471,9 +4573,6 @@ explanation:
 في الشكل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–B=10</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B–C=18</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C–R=6</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R–G=14</mtext></math>\`. المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–G=10+18+6+14=48</mtext></math>\` ؛
 بينما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>R–G=14</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C–B=18</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>C–R=6</mtext></math>\`.
 أبعد زوج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>G</mtext></math>\` ، فلهما أقل ارتباط، ومقداره وفق النموذج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100−48=52%</mtext></math>\`. الاختيار الأول.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 hint: راجع معطيات السؤال وقارن البدائل الأصلية.
 example:
 ![الشكل الأصلي المرافق للسؤال](assets/lessons/curriculum-evidence/6d2908f5ff38141d8ac0.webp)
@@ -4492,9 +4591,6 @@ explanation:
 كل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` من التراكيب الجينية الجديدة يقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1</mtext></math>\` سنتيمورغان في الخريطة المدرسية.
 المعطى الجديد بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B</mtext></math>\` يساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>10%</mtext></math>\` ؛
 المسافة إذن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>10</mtext></math>\` سنتيمورغان، الاختيار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>10</mtext></math>\`. لا نأخذ \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>90</mtext></math>\` لأنها نسبة الأبويين المكملة.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 hint: راجع معطيات السؤال وقارن البدائل الأصلية.
 :::
 
@@ -4514,9 +4610,6 @@ explanation:
 إذن \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>9N=8100</mtext></math>\`.
 \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>N=8100÷9=900</mtext></math>\` فرد.
 التحقق : \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>81÷900=0.09=9%</mtext></math>\` ، فالاختيار \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>900</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 hint: راجع معطيات السؤال وقارن البدائل الأصلية.
 :::
 
@@ -4779,7 +4872,7 @@ solution:
 
 > التي تمثل ترتيباً خطياً افتراضياً لمواقع الجينات على طول كروموسوم معين
 
-**المصدر:** صفحة 66 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 66](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=70).
 
 
 
@@ -4808,7 +4901,7 @@ solution:
 كل سنتيمورغان يقابل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1%</mtext></math>\` من التراكيب الجديدة في نموذج المنهج.
 نقرأ صف \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M</mtext></math>\` وعمود \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E:</mtext></math>\` المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>7</mtext></math>\` سنتيمورغان، فتكون نسبة تكرار العبور بين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>M</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E</mtext></math>\` تساوي \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>7%</mtext></math>\`.
 
-**المصدر:** صفحة 66 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 66](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=70).
 
 :::
 
@@ -4834,9 +4927,6 @@ final-answer:
 solution:
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>P–H</mtext></math>\` في الجدول \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4</mtext></math>\` سنتيمورغان، أي تكرار عبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4%</mtext></math>\`. نسبة الارتباط هي نسبة الأبويين المكملة إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
 الارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>P–H=100%−4%=96%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4863,7 +4953,7 @@ solution:
 تقابل نسبتها عدد وحدات الخريطة.
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>H–E=6</mtext></math>\` سنتيمورغان من الجدول، فتكرار التراكيب الجديدة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>6%</mtext></math>\`. لا نطرح من \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100</mtext></math>\` لأن المطلوب الجديد نفسه.
 
-**المصدر:** صفحة 66 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 66](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=70).
 
 :::
 
@@ -4902,7 +4992,7 @@ solution:
 ![الخريطة الأصلية في الإجابات](assets/lessons/curriculum-evidence/bbb611a45283601db084.webp)
 المسافات المتتالية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>1</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2</mtext></math>\` ، وعكس الرسم يمثل الترتيب نفسه.
 
-**المصدر:** صفحة 66 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 66](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=70).
 
 :::
 
@@ -4931,9 +5021,6 @@ solution:
 مجموعهما \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
 للزوج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–B</mtext></math>\` العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2%</mtext></math>\` ، فالارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−2%=98%</mtext></math>\`.
 للزوج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–D</mtext></math>\` العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>12%</mtext></math>\` ، فالارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−12%=88%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -4962,9 +5049,6 @@ solution:
 العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−88%=12%</mtext></math>\`.
 للزوج \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>A–E</mtext></math>\` ارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>82%</mtext></math>\` ؛
 العبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=100%−82%=18%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5003,9 +5087,6 @@ solution:
 ![الخريطة الأصلية في الإجابات](assets/lessons/curriculum-evidence/9c9ba55603cc7ebdc000.webp)
 المسافات المتتالية \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>6</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>6</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>4</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>2</mtext></math>\` ؛
 تحقق جميع أزواج الجدول، ومنها \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>B–C=16−6=10</mtext></math>\` و \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–C=18−6=12</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5031,9 +5112,6 @@ final-answer:
 solution:
 المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>E–F=3</mtext></math>\` وحدات خريطة في الجدول، أي عبور \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>3%</mtext></math>\`. الارتباط هو الباقي الأبوي إلى \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
 نسبة الارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>F–E=100%−3%=97%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5081,9 +5159,6 @@ solution:
 | \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>Bt</mtext></math>\` | \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>(19÷400)×100=4.75%</mtext></math>\` |
 
 الفروق الصغيرة عن 45% و5% تنتج من أخذ عينة. غاميت الأم \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>bt</mtext></math>\` وحده بنسبة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>100%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5105,9 +5180,6 @@ solution:
 نسبة الارتباط تمثل الأبويين. عدد الأبويين \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=179+181=360</mtext></math>\`
 ومجموع النسل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>179+181+21+19=400</mtext></math>\`.
 نسبة الارتباط \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=(360÷400)×100=90%</mtext></math>\`.
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5130,9 +5202,6 @@ solution:
 مجموع النسل \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=179+181+21+19=400</mtext></math>\`.
 نسبة الجديد \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>=(40÷400)×100=10%</mtext></math>\`.
 إذن المسافة \`mathml: <math xmlns="http://www.w3.org/1998/Math/MathML" dir="ltr"><mtext>10</mtext></math>\` وحدات خريطة «سنتيمورغان».
-
-**المصدر:** صفحة 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -5177,11 +5246,6 @@ explanation:
 **شاهد القاعدة أو السياق من الكتاب:**
 
 > متلازمة داون Down Syndrom؛ متلازمة إدواردز Edwards Syndrom؛ متلازمة تيرنر Turner Syndrom؛ متلازمة كلينفلتر Klinefelter Syndrom؛ X؛ Y؛ XXY؛ XO؛ 21؛ 18.
-
-**المصدر:** صفحة 37 من الكتاب.
-
-
-
 hint: اقرأ السؤال وقارن بين البدائل الأصلية.
 :::
 
@@ -5201,7 +5265,7 @@ explanation:
 
 > متلازمة داون Down Syndrom؛ 21.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5224,7 +5288,7 @@ explanation:
 
 > متلازمة تيرنر Turner Syndrom؛ XO.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5243,11 +5307,7 @@ question: ما نوع الطفرة الكروموسومية التي تحدث ع
 explanation:
 **الإجابة:** ب. طفرة تكرار
 
-**الشاهد من الكتاب:**
-
-> حذف: حذف أو فقد جزء من الكروموسوم؛ تكرار: تكرار جزء من الكروموسوم؛ انقلاب: تنفصل قطعة من الكروموسوم وتنقلب180درجة لتتصل بشكل معكوس مع الكروموسوم؛ انتقال: تبادل لقطعتين مختلفتين بين كروموسومين غير متناظرين.
-
-**المصدر:** صفحة 36 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 36](https://moe.edu.ps/m/4061#page=36).
 
 
 
@@ -5269,7 +5329,7 @@ explanation:
 
 يعرض شكل الكتاب الانقلاب بوصفه فصل قطعة وقلب اتجاهها 180 درجة ثم اتصالها في الكروموسوم نفسه.
 
-**المصدر:** صفحة 36 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 36](https://moe.edu.ps/m/4061#page=36).
 
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
@@ -5290,7 +5350,7 @@ explanation:
 
 > حذف: حذف أو فقد جزء من الكروموسوم؛ تكرار: تكرار جزء من الكروموسوم؛ انقلاب: تنفصل قطعة من الكروموسوم وتنقلب180درجة لتتصل بشكل معكوس مع الكروموسوم؛ انتقال: تبادل لقطعتين مختلفتين بين كروموسومين غير متناظرين.
 
-**المصدر:** صفحة 36 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 36](https://moe.edu.ps/m/4061#page=36).
 
 
 
@@ -5347,11 +5407,7 @@ question: كم يبلغ عدد الكروموسومات الجنسية لفرد 
 explanation:
 **الإجابة:** ب. كروموسومان جنسيان؛ الزيادة في داون تخص الكروموسوم الجسمي21.
 
-**الشاهد من الكتاب:**
-
-> متلازمة داون Down Syndrom؛ 21؛ X.
-
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5376,11 +5432,6 @@ explanation:
 **شاهد القاعدة أو السياق من الكتاب:**
 
 > متلازمة داون Down Syndrom؛ متلازمة إدواردز Edwards Syndrom؛ متلازمة تيرنر Turner Syndrom؛ متلازمة كلينفلتر Klinefelter Syndrom؛ X؛ Y؛ XXY؛ XO؛ 21؛ 18.
-
-**المصدر:** صفحة 37 من الكتاب.
-
-
-
 hint: راجع المعطيات وحدد المطلوب، ثم قارن الخيارات الأصلية.
 :::
 
@@ -5400,7 +5451,7 @@ explanation:
 
 > مرض فينيل كيتونيوريا Phenylketonuria (PKU)، مرض وراثي سببه طفرة جينية متنحية على الكروموسوم رقم12.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5455,7 +5506,7 @@ solution:
 
 > انقلاب: تنفصل قطعة من الكروموسوم وتنقلب180درجة لتتصل بشكل معكوس مع الكروموسوم؛ انتقال: تبادل لقطعتين مختلفتين بين كروموسومين غير متناظرين.
 
-**المصدر:** صفحة 36 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 36](https://moe.edu.ps/m/4061#page=36).
 
 
 
@@ -5584,7 +5635,7 @@ solution:
 
 > حذف: حذف أو فقد جزء من الكروموسوم؛ تكرار: تكرار جزء من الكروموسوم؛ انقلاب: تنفصل قطعة من الكروموسوم وتنقلب180درجة لتتصل بشكل معكوس مع الكروموسوم؛ انتقال: تبادل لقطعتين مختلفتين بين كروموسومين غير متناظرين.
 
-**المصدر:** صفحة 36 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 36](https://moe.edu.ps/m/4061#page=36).
 
 
 
@@ -5609,7 +5660,7 @@ solution:
 
 > متلازمة كلينفلتر Klinefelter Syndrom؛ XXY.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5634,7 +5685,7 @@ solution:
 
 > متلازمة تيرنر Turner Syndrom؛ XO.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5656,11 +5707,11 @@ solution:
 
 **داون: XX للأنثى أوXY للذكر.** الزيادة المسببة لداون في الكروموسوم21، وهو جسمي؛ لذلك لا يحدد داون جنس الفرد. تبقى قاعدةXX للأنثى وXY للذكر كما يشرح درس تحديد الجنس.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/5b74e4213dae7691e111.webp)
 
-**المصدر:** صفحة 32 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 32](https://moe.edu.ps/m/4061#page=32).
 
 :::
 
@@ -5681,7 +5732,7 @@ solution:
 
 > مرض كرابي Krabbe Disease، مرض وراثي ناتج عن طفرة جينية متنحية على الكروموسوم رقم14.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5708,7 +5759,7 @@ solution:
 
 > تغير دائم في تسلسل القواعد النيتروجينية، ومن الأمثلة على الاختلالات الوراثية التي لها علاقة بالطفرات الجينية: مرض فينيل كيتونيوريا Phenylketonuria (PKU)، مرض وراثي سببه طفرة جينية متنحية على الكروموسوم رقم12. مرض كرابي Krabbe Disease، مرض وراثي ناتج عن طفرة جينية متنحية على الكروموسوم رقم14. حمى البحر الأبيض المتوسط Familial Mediterranean Fever، مرض وراثي سببه طفرة جينية متنحية على الكروموسوم رقم16.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5733,7 +5784,7 @@ solution:
 
 > تغير دائم في تسلسل القواعد النيتروجينية.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5760,7 +5811,7 @@ solution:
 
 > تغير دائم في تسلسل القواعد النيتروجينية، ومن الأمثلة على الاختلالات الوراثية التي لها علاقة بالطفرات الجينية: مرض فينيل كيتونيوريا Phenylketonuria (PKU)، مرض وراثي سببه طفرة جينية متنحية على الكروموسوم رقم12. مرض كرابي Krabbe Disease، مرض وراثي ناتج عن طفرة جينية متنحية على الكروموسوم رقم14. حمى البحر الأبيض المتوسط Familial Mediterranean Fever، مرض وراثي سببه طفرة جينية متنحية على الكروموسوم رقم16.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5870,7 +5921,7 @@ solution:
 
 > مرض فينيل كيتونيوريا Phenylketonuria (PKU)، مرض وراثي سببه طفرة جينية متنحية على الكروموسوم رقم12.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5948,7 +5999,7 @@ solution:
 
 > حمى البحر الأبيض المتوسط Familial Mediterranean Fever، مرض وراثي سببه طفرة جينية متنحية على الكروموسوم رقم16.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -5956,7 +6007,7 @@ solution:
 
 > وأن زوج الكروموسومات الجنسية رقم 23 تحدد الجنس (XX في الأنثى، XY في الذكر)
 
-**المصدر:** صفحة 32 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 32](https://moe.edu.ps/m/4061#page=32).
 
 
 
@@ -5964,7 +6015,7 @@ solution:
 
 > XᴿY أب طبيعي؛ XᴿXʳ أم طبيعية حاملة؛ XʳY ذكر مصاب.
 
-**المصدر:** صفحة 32 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 32](https://moe.edu.ps/m/4061#page=32).
 
 
 
@@ -6059,7 +6110,7 @@ explanation:
 > مرض كرابي Krabbe Disease مرض وراثي ناتج عن طفرة جينية متنحية على الكروموسوم رقم 14.
 > حمى البحر الأبيض المتوسط Familial Mediterranean Fever، مرض وراثي سببه طفرة جينية متنحية على الكروموسوم رقم 16.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -6103,10 +6154,8 @@ solution:
 
 إذن المجموع **47 كروموسوماً**.
 
-**المصدر:** صفحة 37 من الكتاب.
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/70f58d1997b716996394.webp)
-
 :::
 
 :::exam-question
@@ -6129,7 +6178,7 @@ solution:
 > مرض كرابي Krabbe Disease مرض وراثي ناتج عن طفرة جينية متنحية على الكروموسوم رقم 14.
 > حمى البحر الأبيض المتوسط Familial Mediterranean Fever، مرض وراثي سببه طفرة جينية متنحية على الكروموسوم رقم 16.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37).
 
 
 
@@ -6156,7 +6205,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>جسمية طبيعية</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>22</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>44</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>جسمية طبيعية</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>22</mn><mo>×</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>جسمية طبيعية</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn></mrow></math>
 \`\`\`
 
 
@@ -6164,7 +6219,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>كلية طبيعية</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>46</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>كلية طبيعية</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>كلية طبيعية</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>46</mn></mrow></math>
 \`\`\`
 
 
@@ -6174,7 +6235,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>جسمية داون</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>45</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>جسمية داون</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>44</mn><mo>+</mo><mn>1</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>جسمية داون</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>45</mn></mrow></math>
 \`\`\`
 
 
@@ -6182,17 +6249,21 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>كلية داون</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>45</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>47</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>كلية داون</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>45</mn><mo>+</mo><mn>2</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>N</mi><mo stretchy="false">(</mo><mtext>كلية داون</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>47</mn></mrow></math>
 \`\`\`
 
 
 
 إذن **الطبيعي46 كلياً منها44 جسمياً؛ وداون47 كلياً منها45 جسمياً**.
 
-**المصدر:** صفحة 37 من الكتاب.
 
 ![الشاهد من الكتاب](assets/lessons/curriculum-evidence/70f58d1997b716996394.webp)
-
 :::
 
 :::exam-question
@@ -6214,7 +6285,7 @@ solution:
 
 > مرض كرابي Krabbe Disease، مرض وراثي ناتج عن طفرة جينية متنحية على الكروموسوم رقم14.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 70](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=74).
 
 
 
@@ -6301,7 +6372,7 @@ solution:
 
 > مرض وراثي مرتبط بالجنس سببه طفرة متنحية محمولة على الكروموسومX
 
-**المصدر:** صفحة 62 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 62](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=66).
 
 
 
@@ -6309,7 +6380,7 @@ solution:
 
 > مرض فينيل كيتونيوريا Phenylketonuria (PKU)، مرض وراثي سببه طفرة جينية متنحية على الكروموسوم رقم12.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 70](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=74).
 
 
 
@@ -6335,7 +6406,7 @@ solution:
 
 > مرض وراثي مرتبط بالجنس سببه طفرة متنحية محمولة على الكروموسومX
 
-**المصدر:** صفحة 62 من الكتاب.
+**المصدر:** [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 62](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=66).
 
 
 
@@ -6343,7 +6414,7 @@ solution:
 
 > مرض فينيل كيتونيوريا Phenylketonuria (PKU)، مرض وراثي سببه طفرة جينية متنحية على الكروموسوم رقم12.
 
-**المصدر:** صفحة 37 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 37](https://moe.edu.ps/m/4061#page=37)، [كتاب العلوم الحياتية للصف الثاني عشر العلمي، المنهاج الفلسطيني الكامل، ص 70](https://moe.edu.ps/storage/app/class12/Biology12%202025%20Tawjihi%20Elmi.pdf#page=74).
 
 
 
@@ -6788,7 +6859,7 @@ solution:
 
 > هي الصفات التي تحمل جيناتها على الكروموسومات الجسمية، ولكنها تتأثر بالهرمونات الجنسية، ومن الأمثلة عليها صفة الصلع عند الإنسان
 
-**المصدر:** صفحة 33 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 33](https://moe.edu.ps/m/4061#page=33).
 
 
 
@@ -6797,7 +6868,7 @@ solution:
 > يقصد بالأليلات المتعددة أن هنالك كثيراً من الجينات لديها أكثر من شكلين اثنين من الأليلات، ولكن لا يحصل الفرد الواحد منها إلا على أليلين فقط.
 يعد نظام الدم من الأمثلة على الأليلات المتعددة، وفي هذا النظام توجد ثلاثة أليلات
 
-**المصدر:** صفحة 30 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 30](https://moe.edu.ps/m/4061#page=30).
 
 
 
@@ -6805,7 +6876,7 @@ solution:
 
 > A: IᴬIᴬ أوIᴬi؛ B: IᴮIᴮ أوIᴮi؛ AB: IᴬIᴮ، أنتيجينA وأنتيجينB؛ O: ii.
 
-**المصدر:** صفحة 30 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 30](https://moe.edu.ps/m/4061#page=30).
 
 
 
@@ -7425,7 +7496,7 @@ solution:
 > يقصد بالأليلات المتعددة أن هنالك كثيراً من الجينات لديها أكثر من شكلين اثنين من الأليلات، ولكن لا يحصل الفرد الواحد منها إلا على أليلين فقط.
 يعد نظام الدم من الأمثلة على الأليلات المتعددة، وفي هذا النظام توجد ثلاثة أليلات
 
-**المصدر:** صفحة 30 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 30](https://moe.edu.ps/m/4061#page=30).
 
 
 
@@ -7433,7 +7504,7 @@ solution:
 
 > A: IᴬIᴬ أوIᴬi؛ B: IᴮIᴮ أوIᴮi؛ AB: IᴬIᴮ، أنتيجينA وأنتيجينB؛ O: ii.
 
-**المصدر:** صفحة 30 من الكتاب.
+**المصدر:** [رزمة العلوم الحياتية للفرع العلمي في غزة، ص 30](https://moe.edu.ps/m/4061#page=30).
 
 
 

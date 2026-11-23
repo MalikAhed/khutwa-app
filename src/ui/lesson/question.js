@@ -8,6 +8,7 @@ import { highlightEnglishText } from "./english-text.js";
 import { mountSummaryScans } from "./summary-scans.js";
 import { mountTemplateScrollIndicator } from "../template-shell.js";
 import { mountMarkdownFeatures } from "../../markdown/renderer.js";
+import { usesWesternLessonNotation } from "./shared.js";
 
 const CHECK_ACTION = Object.freeze({ CHECK:"check", RETRY:"retry", CONTINUE:"continue" });
 const QUESTION_RESULT_LABELS_ENABLED = false;
@@ -37,7 +38,7 @@ export function renderQuestion(container, { definition, onBack, onContinue, onAn
   const copy = getLessonUiCopy(locale);
   const config = definition.content;
   container.classList.add("ui-lab-template-open", "ui-lab-mcq-open");
-  replaceQuestionShell(container,renderQuestionLayout({ ...definition, content:config }, { locale }));
+  replaceQuestionShell(container,renderQuestionLayout({ ...definition, content:config }, { locale, westernNotation:usesWesternLessonNotation(container) }));
   if (locale === "ar") highlightEnglishText(container.querySelector(".ui-lab-mcq"));
   mountSummaryScans(container.querySelector(".ui-lab-mcq"), { titleId:definition.id || "mcq", locale, signal, exam:true });
   mountMarkdownFeatures(container.querySelector(".ui-lab-mcq"), { locale, signal, scrollSurface:container.querySelector(".level-layout-task") });

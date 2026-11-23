@@ -5,7 +5,7 @@ import { renderTemplateShell, renderTemplateFooter, renderTemplateScrollIndicato
 import { mountQuestionRating, renderQuestionRatingControls } from "../question-rating.js";
 import { highlightEnglishText } from "./english-text.js";
 import { mountSummaryScans } from "./summary-scans.js";
-import { renderQuestionSourceTag, spaceWorkedEquations } from "./shared.js";
+import { renderQuestionHeader, spaceWorkedEquations, usesWesternLessonNotation } from "./shared.js";
 
 function layoutWrittenPrompt(source) {
   let text = source.trim();
@@ -20,6 +20,13 @@ function layoutWrittenPrompt(source) {
   return firstLine < 0 ? [text, ""] : [text.slice(0, firstLine), text.slice(firstLine).trim()];
 }
 
+export function renderWrittenQuestionCopy(source, notation, titleId) {
+  const [question, body] = layoutWrittenPrompt(source);
+  const prompt = renderLessonInline(question, notation);
+  const heading = titleId ? `<h1 id="${escapeHtml(titleId)}">${prompt}</h1>` : `<p class="question-explanation-prompt">${prompt}</p>`;
+  return heading + (body ? `<div class="markdown-rendered lesson-exam-body">${renderMarkdownDocument(body, notation)}</div>` : "");
+}
+
 /** Written answers are self-checked; worked solutions stay in the explanation dialog. */
 export function renderExamQuestion(container, step, { locale = "ar", onBack, onContinue, onReveal, onFlip, onAssess, onAnswer, beforeAnswer, registerSessionSave, selfCheck = true } = {}) {
   const controller = new AbortController();
@@ -28,26 +35,27 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
   const titleId = `exam-title-${step.id}`;
   const solutionId = `exam-solution-${step.id}`;
   const ar = locale === "ar";
-  const [question, body] = layoutWrittenPrompt(content.body);
+  const notation = { locale, westernNotation:usesWesternLessonNotation(container) };
+  const questionHeader = renderQuestionHeader(content);
   container.dataset.lessonPresentation = "flashcard";
   replaceQuestionShell(container,renderTemplateShell({
     titleId, locale, showScrollIndicator:false,
     content:`<article class="level-lesson-copy lesson-exam-question" data-exam-card aria-label="${ar ? "بطاقة مراجعة" : "Review flashcard"}">
       <div class="lesson-flashcard-rotor">
         <section class="lesson-flashcard-face" data-exam-front aria-hidden="false">
+          ${questionHeader}
           <div id="${escapeHtml(titleId)}-scroll" class="lesson-flashcard-scroll" tabindex="0" role="region" aria-label="${ar ? "السؤال" : "Question"}" aria-keyshortcuts="Enter Space" aria-description="${ar ? "اضغط Enter أو مسافة لقلب البطاقة" : "Press Enter or Space to flip the card"}">
             <div class="lesson-flashcard-copy">
-              ${renderQuestionSourceTag(content)}
-              <h1 id="${escapeHtml(titleId)}">${renderLessonInline(question, { locale })}</h1>
-              ${body ? `<div class="markdown-rendered lesson-exam-body">${renderMarkdownDocument(body, { locale })}</div>` : ""}
+              ${renderWrittenQuestionCopy(content.body, notation, titleId)}
             </div>
           </div>
           ${renderTemplateScrollIndicators({ scrollId:`${titleId}-scroll`, locale, horizontal:true })}
         </section>
         <section id="${escapeHtml(solutionId)}" class="lesson-flashcard-face lesson-flashcard-back" data-exam-solution hidden inert aria-hidden="true">
+          ${questionHeader}
           <div id="${escapeHtml(solutionId)}-scroll" class="lesson-flashcard-scroll" tabindex="0" role="region" aria-label="${ar ? "الإجابة" : "Answer"}" aria-keyshortcuts="Enter Space" aria-description="${ar ? "اضغط Enter أو مسافة لقلب البطاقة" : "Press Enter or Space to flip the card"}">
             <div class="lesson-flashcard-copy">
-              <div class="markdown-rendered lesson-final-answer" data-exam-final-answer>${renderMarkdownDocument(content.finalAnswer || (ar ? "الإجابة النهائية غير متاحة حاليًا." : "The final answer is currently unavailable."), { locale })}</div>
+              <div class="markdown-rendered lesson-final-answer" data-exam-final-answer>${renderMarkdownDocument(content.finalAnswer || (ar ? "الإجابة النهائية غير متاحة حاليًا." : "The final answer is currently unavailable."), notation)}</div>
               ${selfCheck ? `<fieldset class="lesson-self-check" data-exam-self-check><legend>${ar ? "كيف كانت إجابتك؟" : "How did you do?"}</legend><div>
                 <button class="system-action system-action--primary" type="button" data-exam-correct="true" aria-pressed="false">${ar ? "صحيحة" : "Correct"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m8 14 4 4 8-8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
                 <button class="system-action system-action--primary" type="button" data-exam-correct="false" aria-pressed="false">${ar ? "خاطئة" : "Wrong"}<svg class="lesson-self-check-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="14" fill="#fff"/><path d="m10 10 8 8m0-8-8 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button>
@@ -88,20 +96,24 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
   let dragged = false;
 
   const refreshScrollIndicators = [];
+  const isFlipping = () => rotor.classList.contains("is-flipping");
   card.querySelectorAll(".lesson-flashcard-scroll").forEach((scroll, index) => {
     mountSummaryScans(scroll, { titleId:`${titleId}-face-${index}`, locale, signal, exam:true });
     mountMarkdownFeatures(scroll, { locale, signal, scrollSurface:scroll });
-    refreshScrollIndicators.push(mountTemplateScrollIndicator(scroll.parentElement, { signal, surface:scroll }));
+    refreshScrollIndicators.push(mountTemplateScrollIndicator(scroll.parentElement, { signal, surface:scroll, isPaused:isFlipping }));
   });
   const hideInactiveFace = () => {
     front.hidden = flipped;
     solution.hidden = !flipped;
-    refreshScrollIndicators.forEach(refresh => refresh?.());
     rotor.classList.remove("is-flipping");
+    refreshScrollIndicators.forEach(refresh => refresh?.());
   };
   const flip = showAnswer => {
     if (showAnswer === flipped || signal.aborted) return;
+    const animate = !prefersReducedMotion() && typeof rotor.animate === "function";
     const from = getComputedStyle(rotor).transform;
+    // Keep nested scrollbars and cues off both faces until the transform settles.
+    rotor.classList.toggle("is-flipping", animate);
     animation?.cancel();
     animation = null;
     front.hidden = false;
@@ -121,7 +133,7 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
     if (flipped && !revealed) { revealed = true; onReveal?.(); }
     const visibleFace = flipped ? solution : front;
     const visibleScroll = visibleFace.querySelector(".lesson-flashcard-scroll");
-    if (prefersReducedMotion() || !rotor.animate) {
+    if (!animate) {
       hideInactiveFace();
       visibleScroll.focus({ preventScroll:true });
       // Let the retained 3D face paint before retrying a deferred focus change.
@@ -135,8 +147,6 @@ export function renderExamQuestion(container, step, { locale = "ar", onBack, onC
       return;
     }
     visibleScroll.focus({ preventScroll:true });
-    // Native scrollbars and resize-driven cues should not repaint through a 3D turn.
-    rotor.classList.add("is-flipping");
     const turn = rotor.animate([
       { transform:from }, { transform:flipped ? "rotateY(180deg)" : "rotateY(0deg)" },
     ], { duration:420, easing:"cubic-bezier(.2,.7,.2,1)" });

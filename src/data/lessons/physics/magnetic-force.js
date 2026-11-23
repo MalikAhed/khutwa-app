@@ -255,16 +255,9 @@ question: ما نوع الجسيمات التي يتم الحصول عليها �
 - [ ] option-3 | غير مشحونة مختلفة في السرعة
 - [ ] option-4 | مشحونة مختلفة في السرعة
 explanation:
-**الإجابة:** مشحونة لها نفس السرعة
+تخرج من منتقي السرعات حزمة من **الجسيمات المشحونة ذات السرعة المحدّدة نفسها**.
 
-**الشاهد من الكتاب:**
-
-> يتبين من اسم هذا الجهاز أنه مرشح للسرعة، حيث يمكن باستخدامه التحكم في اختيار حزمة من الجسيمات المشحونة ذات سرعة محددة.
-
-**المصدر:** صفحة \\(60\\) من الكتاب.
-
-
-
+[رزمة غزة، منتقي السرعات](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=62)، الصفحة المطبوعة \\(60\\).
 hint: استخدم معطيات السؤال والعلاقات الفيزيائية في الكتاب.
 :::
 
@@ -588,8 +581,22 @@ solution:
 
 
 
+نحسب القوة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mn>0.06</mn><mn>2</mn></msup><mo>+</mo><msup><mn>0.08</mn><mn>2</mn></msup><mo>=</mo><msup><mn>0.10</mn><mn>2</mn></msup></mrow></math>
+<math dir="ltr" display="block"><mrow><msup><mn>0.06</mn><mn>2</mn></msup><mo>+</mo><msup><mn>0.08</mn><mn>2</mn></msup><mo>=</mo><mn>0.0036</mn><mo>+</mo><msup><mn>0.08</mn><mn>2</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mn>0.0036</mn><mo>+</mo><msup><mn>0.08</mn><mn>2</mn></msup><mo>=</mo><mn>0.0036</mn><mo>+</mo><mn>0.0064</mn></mrow></math>
+\`\`\`
+
+نكتب الناتج بالصورة المطلوبة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mn>0.0036</mn><mo>+</mo><mn>0.0064</mn><mo>=</mo><msup><mn>0.10</mn><mn>2</mn></msup></mrow></math>
 \`\`\`
 
 
@@ -723,190 +730,48 @@ question: أسئلة الفصل — س\\(6\\)
 reference: كتاب الفيزياء — الرزمة التعليمية 2024، صفحة PDF 65، أسئلة الفصل — س6
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
-ملف حلزوني هوائي طويل طوله \\(2\\pi\\,\\mathrm{cm}\\) وعدد لفاته \\(25\\) بين لوحين متوازيين يبعدان \\(10\\,\\mathrm{cm}\\)، وجهداهما \\(+150\\,\\mathrm{V}\\) و\\(-150\\,\\mathrm{V}\\). تمر شحنة \\(1\\,\\mu\\mathrm{C}\\) بالنقطة \\(a\\) بسرعة \\(2\\times10^6\\,\\mathrm{m/s}\\) نحو الصادات الموجب. مقدار قوة لورنتز \\(5\\times10^{-3}\\,\\mathrm{N}\\). ما تيار الملف؟
+ملف حلزوني هوائي طويل طوله \\(2\\pi\\,\\mathrm{cm}\\) وعدد لفاته \\(25\\) بين لوحين متوازيين يبعدان \\(10\\,\\mathrm{cm}\\)، وجهداهما \\(+150\\,\\mathrm{V}\\) و\\(-150\\,\\mathrm{V}\\). تمر شحنة \\(-1\\,\\mu\\mathrm{C}\\) بالنقطة \\(a\\) بسرعة \\(2\\times10^6\\,\\mathrm{m/s}\\) نحو الصادات الموجب. مقدار قوة لورنتز \\(5\\times10^{-3}\\,\\mathrm{N}\\). ما تيار الملف؟
 
 ![الرسم الأصلي من كتاب الفيزياء — أسئلة الفصل — س6.](assets/lessons/physics/source-crops/physics-book-2024-p065-review-6-figure-01.webp)
 
 final-answer:
 **شدة تيار الملف:** \\(4\\,\\mathrm{A}\\).
 solution:
-البادئة ميكرو تعني \\(10^{-6}\\) من الوحدة الأساسية؛ نُبقيها صريحة عند التعويض.
-
 ![الرسم الأصلي المرتبط بالسؤال](assets/lessons/physics/source-crops/physics-book-2024-p065-review-6-figure-01.webp)
 
-مجال الملف الحلزوني الطويل عند النقطة \\(a\\) يحسب من عدد لفاته \\(N\\) وطوله \\(L\\) وتياره \\(I\\)؛ إذ يتناسب مع عدد اللفات في وحدة الطول \\(N/L\\):
+كتابة الشحنة بإشارتها مهمة لاتجاه القوة. الشحنة هنا سالبة، فتكون القوة الكهربائية في عكس اتجاه المجال الكهربائي. المطلوب **مقدار** التيار، لذلك نستخدم مقدار الشحنة \\(|q|=1\\,\\mu\\mathrm C=10^{-6}\\,\\mathrm C\\) عند حساب مقادير القوى.
 
+بين لوحين متوازيين، شدة المجال الكهربائي هي مقدار فرق الجهد مقسومًا على المسافة بينهما. نطرح الجهد السالب من الموجب ونحوّل المسافة إلى المتر. ثم نضرب المجال في مقدار الشحنة للحصول على مقدار القوة الكهربائية.
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mfrac><mi>N</mi><mi>L</mi></mfrac><mi>I</mi></mrow></math>
+\`\`\`latex
+E=\\frac{150-(-150)}{0.10}=3000\\,\\mathrm{V/m}
 \`\`\`
 
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>μ</mi><mn>0</mn></msub><mo>=</mo><mn>4</mn><mi>π</mi><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mtext> </mtext><mrow><mi mathvariant="normal">T</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">A</mi></mrow></mrow></math>
+\`\`\`latex
+F_E=|q|E=(10^{-6})(3000)=3\\times10^{-3}\\,\\mathrm N
 \`\`\`
 
+المجال الكهربائي على امتداد محور الملف الأفقي، لذا تكون القوة الكهربائية أفقية. يتحرك الجسيم رأسيًا، فيكون اتجاه قوته المغناطيسية عموديًا على سرعته وعلى مجال الملف الأفقي، أي إلى داخل الصفحة أو خارجها. القوتان متعامدتان، فتكون قوة لورنتز وتر مثلث قائم. نستخدم نظرية فيثاغورس لحساب مقدار القوة المغناطيسية.
 
-
-بين لوحين متوازيين يكون المجال الكهربائي منتظماً، ومقداره فرق الجهد بينهما مقسوماً على المسافة: \\(E=\\Delta V/d\\). نعوض فرق الجهد \\(300\\,\\mathrm{V}\\) والمسافة \\(10\\,\\mathrm{cm}=0.10\\,\\mathrm{m}\\). المجال \\(E\\) يعني القوة لكل وحدة شحنة؛ لذلك تكون القوة الكهربائية في الشحنة \\(q\\) هي \\(F_{E}=qE\\).
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mn>150</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>150</mn><mo stretchy="false">)</mo></mrow><mn>0.10</mn></mfrac></mrow></math>
+\`\`\`latex
+F_B=\\sqrt{F^2-F_E^2}
+=\\sqrt{(5\\times10^{-3})^2-(3\\times10^{-3})^2}
+=4\\times10^{-3}\\,\\mathrm N
 \`\`\`
 
+السرعة عمودية على المجال المغناطيسي، لذلك \\(F_B=|q|vB\\). نقسم على حاصل ضرب مقدار الشحنة في السرعة.
 
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>E</mi><mo>=</mo><mfrac><mn>300</mn><mn>0.1</mn></mfrac></mrow></math>
+\`\`\`latex
+B=\\frac{4\\times10^{-3}}{(10^{-6})(2\\times10^6)}=2\\times10^{-3}\\,\\mathrm T
 \`\`\`
 
+مجال الملف الحلزوني الهوائي الطويل هو \\(B=\\mu_0(N/L)I\\) حيث \\(N\\) عدد اللفات و\\(L\\) طول الملف. نضرب في \\(L\\) ونقسم على \\(\\mu_0N\\). بعد تحويل طول الملف إلى المتر، نحصل على:
 
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>E</mi><mo>=</mo><mn>3000</mn><mtext> </mtext><mrow><mi mathvariant="normal">V</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">m</mi></mrow></mrow></math>
+\`\`\`latex
+I=\\frac{BL}{\\mu_0N}
+=\\frac{(2\\times10^{-3})(2\\pi\\times10^{-2})}{(4\\pi\\times10^{-7})(25)}
+=4\\,\\mathrm A
 \`\`\`
-
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>F</mi><mi>E</mi></msub><mo>=</mo><mi>q</mi><mi>E</mi></mrow></math>
-\`\`\`
-
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>F</mi><mi>E</mi></msub><mo>=</mo><mo stretchy="false">(</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>3000</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
-\`\`\`
-
-
-
-القوة الكهربائية موازية للمجال الكهربائي الأفقي، والقوة المغناطيسية عمودية على السرعة الرأسية ومجال الملف الأفقي، فتكون إلى داخل الصفحة أو خارجها. إذن القوتان متعامدتان؛ محصلة لورنتز تحقق فيثاغورس:
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mi>F</mi><mn>2</mn></msup><mo>=</mo><msubsup><mi>F</mi><mi>E</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>F</mi><mi>B</mi><mn>2</mn></msubsup></mrow></math>
-\`\`\`
-
-
-
-ننقل مربع القوة الكهربائية ونأخذ الجذر الموجب لأن المطلوب مقدار القوة:
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>=</mo><msqrt><mrow><msup><mi>F</mi><mn>2</mn></msup><mo>−</mo><msubsup><mi>F</mi><mi>E</mi><mn>2</mn></msubsup></mrow></msqrt></mrow></math>
-\`\`\`
-
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>=</mo><msqrt><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>−</mo><mo stretchy="false">(</mo><mn>3</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></msqrt></mrow></math>
-\`\`\`
-
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>=</mo><msqrt><mrow><mn>25</mn><mo>−</mo><mn>9</mn></mrow></msqrt><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>=</mo><msqrt><mn>16</mn></msqrt><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>=</mo><mn>4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
-\`\`\`
-
-
-
-القوة المغناطيسية على الشحنة المتحركة هي \\(|q|vB \\sin \\theta\\). السرعة عمودية على مجال الملف، فيساوي الجيب \\(1\\)؛ نعزل \\(B\\).
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><msub><mi>F</mi><mi>B</mi></msub><mrow><mi>q</mi><mi>v</mi></mrow></mfrac></mrow></math>
-\`\`\`
-
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow><mrow><mo stretchy="false">(</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
-\`\`\`
-
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mn>0.004</mn><mn>2</mn></mfrac></mrow></math>
-\`\`\`
-
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mtext> </mtext><mi mathvariant="normal">T</mi></mrow></math>
-\`\`\`
-
-
-
-نحول طول الملف إلى المتر بقسمة السنتيمتر على \\(100\\):
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>L</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi mathvariant="normal">/</mi><mn>100</mn><mo>=</mo><mn>2</mn><mi>π</mi><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>2</mn></mrow></msup><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
-\`\`\`
-
-
-
-من \\(B=\\mu _{0}NI/L\\) نضرب في \\(L\\) ونقسم على \\(\\mu _{0}N\\) لاستنتاج التيار:
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mi>B</mi><mi>L</mi></mrow><mrow><msub><mi>μ</mi><mn>0</mn></msub><mi>N</mi></mrow></mfrac></mrow></math>
-\`\`\`
-
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mi>π</mi><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mn>4</mn><mi>π</mi><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>25</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
-\`\`\`
-
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mi>π</mi></mrow><mrow><mn>1</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mi>π</mi></mrow></mfrac></mrow></math>
-\`\`\`
-
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>I</mi><mo>=</mo><mn>4</mn><mtext> </mtext><mi mathvariant="normal">A</mi></mrow></math>
-\`\`\`
-
-
 :::
 
 :::exam-question
@@ -961,9 +826,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mn>700</mn><mrow><mn>7</mn><mo>×</mo><msup><mn>10</mn><mn>4</mn></msup></mrow></mfrac></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mn>700</mn><mrow><mn>7</mn><mo>×</mo><mn>10000</mn></mrow></mfrac></mrow></math>
+\`\`\`
 
-
+نضرب العددين.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><mn>700</mn><mn>70000</mn></mfrac></mrow></math>
@@ -1242,43 +1111,11 @@ body:
 final-answer:
 مجال يؤثر بقوة **\\(0.5\\,\\mathrm{N}\\)** في شحنة مقدارها **\\(1\\,\\mathrm{C}\\)** تتحرك بسرعة **\\(1\\,\\mathrm{m/s}\\)** عموديًا عليه.
 solution:
-مقدار القوة المغناطيسية على شحنة متحركة يعتمد على مركبة السرعة العمودية على المجال. \\(\\theta\\) هي الزاوية بين السرعة والمجال؛ وإذا تعامدا فإن جيبها يساوي \\(1\\).
+شدة المجال نصف تسلا تعني أنه يؤثّر بقوة مغناطيسية مقدارها \\(0.5\\,\\mathrm N\\) على شحنة مقدارها \\(1\\,\\mathrm C\\) تتحرّك بسرعة \\(1\\,\\mathrm{m/s}\\) عموديًا على المجال.
 
+[رزمة غزة، التسلا](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=56)، الصفحة المطبوعة \\(54\\).
 
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>=</mo><mi mathvariant="normal">∣</mi><mi>q</mi><mi mathvariant="normal">∣</mi><mi>v</mi><mi>B</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></math>
-\`\`\`
-
-
-
-نربط شدة المجال بالقوة في شحنة تتحرك عموديًا عليه.
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo>=</mo><mfrac><msub><mi>F</mi><mi>B</mi></msub><mrow><mi mathvariant="normal">∣</mi><mi>q</mi><mi mathvariant="normal">∣</mi><mi>v</mi></mrow></mfrac><mspace width="1em"/><mo stretchy="false">(</mo><mi>θ</mi><mo>=</mo><msup><mn>90</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow></math>
-\`\`\`
-
-
-
-مجال نصف تسلا يؤثر بقوة نصف نيوتن في شحنة مقدارها كولوم واحد تتحرك بسرعة متر واحد لكل ثانية عموديًا عليه.
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.5</mn><mo stretchy="false">)</mo></mrow></math>
-\`\`\`
-
-
-
-
-
-\`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>=</mo><mn>0.5</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
-\`\`\`
-
-
+[كتاب فلسطين الكامل، التسلا](https://moe.edu.ps/storage/app/class12/Physics12%202025%20Tawjihi.pdf#page=115)، الصفحة المطبوعة \\(111\\).
 :::
 
 :::exam-question
@@ -1295,15 +1132,7 @@ body:
 final-answer:
 **قوة لورنتز:** محصلة القوتين الكهربائية والمغناطيسية المؤثرتين في جسم مشحون.
 solution:
-الإجابة: محصلة القوتين الكهربائية والمغناطيسية المؤثرتين في جسم مشحون.
-
-الكتاب: قوة لورنتز، الصفحة المطبوعة \\(60\\)، صفحة \\(\\mathrm{PDF} 62\\).
-
-> عند تعريض جسيم مشحون لكلا المجالين في آن واحد، فإن هذا الجسيم سيقع تحت تأثير القوتين الكهربائية والمغناطيسية، ومحصلة القوتين تعرف باسم قوة لورنتز
-
-
-
-
+قوة لورنتز هي المحصّلة المتجهة للقوتين الكهربائية والمغناطيسية المؤثرتين على جسيم مشحون.
 :::
 
 :::exam-question
@@ -1560,9 +1389,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>r</mi><mi>X</mi></msub><msub><mi>r</mi><mi>Y</mi></msub></mfrac><mo>=</mo><mn>2</mn><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>
 \`\`\`
 
+نقسم البسط على المقام.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><msub><mi>r</mi><mi>X</mi></msub><msub><mi>r</mi><mi>Y</mi></msub></mfrac><mo>=</mo><mn>2</mn><mo>×</mo><mn>0.5</mn></mrow></math>
+\`\`\`
 
-
+نضرب العددين.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><msub><mi>r</mi><mi>X</mi></msub><msub><mi>r</mi><mi>Y</mi></msub></mfrac><mo>=</mo><mn>1</mn></mrow></math>
@@ -1804,16 +1637,11 @@ body:
 final-answer:
 **التسلا:** شدة المجال المغناطيسي الذي يؤثر بقوة \\(1\\,\\mathrm{N}\\) في شحنة مقدارها \\(1\\,\\mathrm{C}\\) تتحرك بسرعة \\(1\\,\\mathrm{m/s}\\) عموديًا عليه.
 solution:
-**الإجابة:** التسلا وحدة شدة المجال المغناطيسي: المجال الذي يؤثر بقوة \\(1\\,\\mathrm{N}\\) في شحنة \\(1\\,\\mathrm{C}\\) تتحرك بسرعة \\(1\\,\\mathrm{m/s}\\) عمودياً عليه.
+التسلا وحدة شدة المجال المغناطيسي. شدته تسلا واحدة إذا أثّر بقوة مقدارها \\(1\\,\\mathrm N\\) على شحنة مقدارها \\(1\\,\\mathrm C\\) تتحرك بسرعة \\(1\\,\\mathrm{m/s}\\) عموديًا على المجال.
 
-**الشاهد من الكتاب:**
+[رزمة غزة، التسلا](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=56)، الصفحة المطبوعة \\(54\\).
 
-> التسلا: شدة المجال المغناطيسي الذي يؤثر بقوة مقدارها \\(1\\,\\mathrm{N}\\) في شحنة مقدارها \\(1\\,\\mathrm{C}\\)، تتحرك بسرعة \\(1\\mathrm{m/s}\\)، باتجاه يتعامد مع اتجاه المجال المغناطيسي.
-
-**المصدر:** صفحة \\(54\\) من الكتاب.
-
-
-
+[كتاب فلسطين الكامل، التسلا](https://moe.edu.ps/storage/app/class12/Physics12%202025%20Tawjihi.pdf#page=115)، الصفحة المطبوعة \\(111\\).
 :::
 
 :::mcq
@@ -2742,11 +2570,6 @@ explanation:
 **شاهد القاعدة أو السياق من الكتاب:**
 
 > القوة المتبادلة بين السلكين لكل وحدة طول \\((F/L)\\)، تعطى بالعلاقة: \\(F/L = \\mu _{0}I_{1}I_{2}/(2\\pi r)\\).
-
-**المصدر:** صفحة \\(59\\) من الكتاب.
-
-
-
 hint: راجع المعطيات والوحدات ثم اختر الإجابة وفق نص المصدر.
 :::
 
@@ -2854,9 +2677,13 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1.6</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>19</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>3</mn><mo>×</mo><msup><mn>10</mn><mn>7</mn></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.2</mn><mo stretchy="false">)</mo></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1.6</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>19</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>3</mn><mo>×</mo><mn>10000000</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.2</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
 
-
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1.6</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>0.2</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>19</mn><mo>+</mo><mn>7</mn></mrow></msup></mrow></math>
@@ -3345,9 +3172,13 @@ explanation:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><mn>5</mn><mo>×</mo><msup><mn>10</mn><mn>2</mn></msup></mrow><mn>0.1</mn></mfrac></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><mn>5</mn><mo>×</mo><mn>100</mn></mrow><mn>0.1</mn></mfrac></mrow></math>
+\`\`\`
 
-
+نضرب العددين.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>v</mi><mo>=</mo><mfrac><mn>500</mn><mn>0.1</mn></mfrac></mrow></math>
@@ -3522,7 +3353,7 @@ question: الزخم الخطي لجسيم مشحون
 reference: تصنيف أسئلة الفيزياء توجيهي 2025، ص 82، السؤال 31 · صياغة تعليمية معدّلة
 answer-label: الإجابة والشرح من المجموعة المصححة
 body:
-جسيم كتلته \\(m>0\\) وشحنته \\(q\\ne 0\\) يتحرك بسرعة غير صفرية في سيكلترون ذي مجال مغناطيسي منتظم مقداره \\(B>0\\). السرعة عمودية على المجال، ونصف قطر أكبر مسار مسموح داخل الجهاز \\(R>0\\). في النموذج غير النسبي، استنتج علاقة أقصى زخم للجسيم بـ \\(R\\) عند ثبات \\(B\\) و\\(|q|\\).
+جسيم كتلته \\(m>0\\) وشحنته \\(q\\ne 0\\) يتحرك بسرعة غير صفرية داخل جهاز ذي مجال مغناطيسي منتظم مقداره \\(B>0\\). السرعة عمودية على المجال، ونصف قطر أكبر مسار دائري مسموح داخل الجهاز \\(R>0\\). في النموذج غير النسبي، استنتج علاقة أقصى زخم للجسيم بـ \\(R\\) عند ثبات \\(B\\) و\\(|q|\\).
 final-answer:
 **أقصى زخم:** \\(p_{\\max}=|q|BR\\)، ويتناسب **طرديًا مع \\(R\\)** عند ثبات \\(B\\) و\\(|q|\\).
 solution:
@@ -3821,7 +3652,17 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>L</mi><mo>=</mo><msqrt><mrow><mn>16</mn><mo>+</mo><mn>9</mn></mrow></msqrt><mo>=</mo><msqrt><mn>25</mn></msqrt><mo>=</mo><mn>5</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>L</mi><mo>=</mo><msqrt><mrow><mn>16</mn><mo>+</mo><mn>9</mn></mrow></msqrt></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>L</mi><mo>=</mo><msqrt><mn>25</mn></msqrt></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>L</mi><mo>=</mo><mn>5</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -3922,23 +3763,9 @@ body:
 final-answer:
 **منتقي السرعات:** جهاز ينتقي حزمة من الجسيمات المشحونة ذات سرعة محددة باستخدام مجالين كهربائي ومغناطيسي متعامدين.
 solution:
-**الإجابة:** جهاز ينتقي حزمة من الجسيمات المشحونة ذات سرعة محددة باستخدام مجالين كهربائي ومغناطيسي متعامدين.
+منتقي السرعات جهاز يمرّر جسيمات مشحونة ذات سرعة محددة دون انحراف، لأن القوتين الكهربائية والمغناطيسية عليها تتساويان مقدارًا وتتعاكسان اتجاهًا.
 
-**الشاهد من الكتاب \\(1\\):**
-
-> يتبين من اسم هذا الجهاز أنه مرشح للسرعة، حيث يمكن باستخدامه التحكم في اختيار حزمة من الجسيمات المشحونة ذات سرعة محددة.
-
-**المصدر:** صفحة \\(60\\) من الكتاب.
-
-
-
-**الشاهد من الكتاب \\(2\\):**
-
-> لتمر في منطقة مجال كهربائي متعامد مع مجال مغناطيسي
-
-
-
-
+[رزمة غزة، منتقي السرعات](https://moe.edu.ps/storage/app/gaza/subjects/12s/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1%20%D9%A1%D9%A2%20%D8%AC%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D9%81%D8%AA%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B2%D8%A9.pdf#page=62)، الصفحة المطبوعة \\(60\\).
 :::
 
 
@@ -4354,9 +4181,37 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mrow><mo fence="true">(</mo><mfrac><mn>9</mn><mn>0.09</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>0.03</mn></mfrac><mo fence="true">)</mo></mrow></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><mn>0.0000001</mn><mo fence="true">(</mo><mfrac><mn>9</mn><mn>0.09</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>0.03</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mfrac><mn>9</mn><mn>0.09</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>0.03</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>100</mn><mo>+</mo><mfrac><mn>3</mn><mn>0.03</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>100</mn><mo>+</mo><mn>100</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>200</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>w</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo stretchy="false">(</mo><mn>100</mn><mo>+</mo><mn>100</mn><mo stretchy="false">)</mo></mrow></math>
@@ -4442,9 +4297,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>F</mi><mo>=</mo><mn>16</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>F</mi><mo>=</mo><mn>16</mn><mo>×</mo><mn>0.000001</mn><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
+\`\`\`
 
-
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>F</mi><mo>=</mo><mn>1.6</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mtext> </mtext><mi mathvariant="normal">N</mi></mrow></math>
@@ -5254,9 +5113,43 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000001</mn><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000001</mn><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>×</mo><mn>0.000001</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000001</mn><mrow><mo stretchy="false">(</mo><mn>0.000005</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000001</mn><mrow><mo stretchy="false">(</mo><mn>0.000005</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>1000</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000001</mn><mrow><mo stretchy="false">(</mo><mn>0.000005</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2000</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000001</mn><mn>0.01</mn></mfrac></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow><mn>0.01</mn></mfrac></mrow></math>
@@ -5298,9 +5191,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mn>2</mn></msub><mo>−</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow></math>
 \`\`\`
 
-
-
-
+بنقل الحد \`mathml: <math dir="ltr" display="block"><mrow><mo>−</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup></mrow></math>\` إلى الطرف الآخر تتغيّر إشارته.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mn>2</mn></msub><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup></mrow></math>
@@ -5332,9 +5223,37 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>0.03</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1.2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>0.03</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1.2</mn><mo>×</mo><mn>0.0001</mn><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>0.03</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.00012</mn><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>0.0000036</mn><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>0.0000036</mn><mrow><mn>2</mn><mo>×</mo><mn>0.0000001</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>0.0000036</mn><mn>0.0000002</mn></mfrac></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mn>3.6</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
@@ -5383,7 +5302,29 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><msup><mn>0.3</mn><mn>2</mn></msup><mo>+</mo><msup><mn>0.4</mn><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mn>0.25</mn></msqrt><mo>=</mo><mn>0.5</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block"><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><msup><mn>0.3</mn><mn>2</mn></msup><mo>+</mo><msup><mn>0.4</mn><mn>2</mn></msup></mrow></msqrt></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>d</mi><mo>=</mo><msqrt><mn>0.09</mn><mo>+</mo><msup><mn>0.4</mn><mn>2</mn></msup></msqrt></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>d</mi><mo>=</mo><msqrt><mn>0.09</mn><mo>+</mo><mn>0.16</mn></msqrt></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>d</mi><mo>=</mo><msqrt><mn>0.25</mn></msqrt></mrow></math>
+\`\`\`
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>d</mi><mo>=</mo><mn>0.5</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -5431,7 +5372,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mn>0.3</mn><mn>2</mn></msup><mo>=</mo><mn>0.09</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mn>0.3</mn><mn>2</mn></msup></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>0.09</mn></mrow></math>
 \`\`\`
 
 
@@ -5449,7 +5396,13 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>0.25</mn><mo>−</mo><mi>x</mi><mo>=</mo><mn>0.16</mn><mo>−</mo><mn>0.09</mn><mo>=</mo><mn>0.07</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><mn>0.25</mn><mo>−</mo><mi>x</mi><mo>=</mo><mn>0.16</mn><mo>−</mo><mn>0.09</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mn>0.25</mn><mo>−</mo><mi>x</mi><mo>=</mo><mn>0.07</mn></mrow></math>
 \`\`\`
 
 
@@ -5465,7 +5418,25 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mn>0.09</mn><mo>−</mo><msup><mn>0.18</mn><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mn>0.24</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mn>0.09</mn><mo>−</mo><msup><mn>0.18</mn><mn>2</mn></msup></mrow></msqrt></mrow></math>
+\`\`\`
+
+نحسب مربع العدد.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>=</mo><msqrt><mn>0.09</mn><mo>−</mo><mn>0.0324</mn></msqrt></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>=</mo><msqrt><mn>0.0576</mn></msqrt></mrow></math>
+\`\`\`
+
+نحسب الجذر التربيعي.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>y</mi><mo>=</mo><mn>0.24</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
 \`\`\`
 
 
@@ -5600,9 +5571,37 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mi>x</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>0.20</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mi>x</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>0.20</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>0.00001</mn><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mi>x</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>0.20</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.00002</mn><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mi>x</mi></msub><mo>=</mo><mfrac><mn>0.000004</mn><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mi>x</mi></msub><mo>=</mo><mfrac><mn>0.000004</mn><mrow><mn>2</mn><mo>×</mo><mn>0.0000001</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mi>x</mi></msub><mo>=</mo><mfrac><mn>0.000004</mn><mn>0.0000002</mn></mfrac></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mi>x</mi></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
@@ -6116,9 +6115,7 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><msub><mi>I</mi><mi>c</mi></msub></mrow><mn>0.08</mn></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mn>0.06</mn></mfrac></mrow></math>
 \`\`\`
 
-
-
-
+نحسب حاصل الضرب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><msub><mi>I</mi><mi>c</mi></msub></mrow><mn>0.08</mn></mfrac><mo>=</mo><mfrac><mn>9</mn><mn>0.06</mn></mfrac></mrow></math>
@@ -6527,7 +6524,43 @@ solution:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mi>I</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>400</mn></mrow></math>
+<math dir="ltr" display="block"><mrow><msup><mi>I</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msup><mi>I</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>4</mn><mo>×</mo><mn>0.00001</mn><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msup><mi>I</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>0.00004</mn><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msup><mi>I</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>0.00008</mn><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msup><mi>I</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>0.00008</mn><mrow><mn>2</mn><mo>×</mo><mn>0.0000001</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msup><mi>I</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>0.00008</mn><mn>0.0000002</mn></mfrac></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msup><mi>I</mi><mn>2</mn></msup><mo>=</mo><mn>400</mn></mrow></math>
 \`\`\`
 
 
@@ -6550,9 +6583,37 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>b</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mrow><mo fence="true">(</mo><mfrac><mn>20</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>20</mn><mn>4</mn></mfrac><mo fence="true">)</mo></mrow></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>b</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><mn>0.0000001</mn><mo fence="true">(</mo><mfrac><mn>20</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>20</mn><mn>4</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>b</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mfrac><mn>20</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>20</mn><mn>4</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>b</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>10</mn><mo>+</mo><mfrac><mn>20</mn><mn>4</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>b</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>10</mn><mo>+</mo><mn>5</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>b</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>15</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>b</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo stretchy="false">(</mo><mn>10</mn><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></math>
@@ -7075,9 +7136,13 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>30</mn><mi>x</mi><mo>=</mo><mn>5.4</mn></mrow></math>
 \`\`\`
 
+نقسم الطرفين على \`mathml: <math dir="ltr" display="block"><mrow><mn>30</mn></mrow></math>\` لعزل \`mathml: <math dir="ltr" display="block"><mrow><mi>x</mi></mrow></math>\`.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>5.4</mn></mrow><mrow><mn>30</mn></mrow></mfrac></mrow></math>
+\`\`\`
 
-
+نحسب قيمة الطرف الآخر.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>x</mi><mo>=</mo><mn>0.18</mn><mtext> </mtext><mi mathvariant="normal">m</mi></mrow></math>
@@ -7093,9 +7158,37 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>a</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mrow><mo fence="true">(</mo><mfrac><mn>18</mn><mn>0.10</mn></mfrac><mo>+</mo><mfrac><mn>12</mn><mn>0.40</mn></mfrac><mo fence="true">)</mo></mrow></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>a</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><mn>0.0000001</mn><mo fence="true">(</mo><mfrac><mn>18</mn><mn>0.10</mn></mfrac><mo>+</mo><mfrac><mn>12</mn><mn>0.40</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>a</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mfrac><mn>18</mn><mn>0.10</mn></mfrac><mo>+</mo><mfrac><mn>12</mn><mn>0.40</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>a</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>180</mn><mo>+</mo><mfrac><mn>12</mn><mn>0.40</mn></mfrac><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نقسم البسط على المقام.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>a</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>180</mn><mo>+</mo><mn>30</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mi>a</mi></msub><mo>=</mo><mn>0.0000002</mn><mo fence="true">(</mo><mn>210</mn><mo fence="true">)</mo></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mi>a</mi></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo stretchy="false">(</mo><mn>180</mn><mo>+</mo><mn>30</mn><mo stretchy="false">)</mo></mrow></math>
@@ -7198,9 +7291,49 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>×</mo><mn>0.000001</mn></mrow><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000004</mn><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000004</mn><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>0.000001</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000004</mn><mrow><mo stretchy="false">(</mo><mn>0.000002</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000004</mn><mrow><mo stretchy="false">(</mo><mn>0.000002</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>1000000</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000004</mn><mrow><mo stretchy="false">(</mo><mn>0.000002</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2000000</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mn>0.000004</mn><mn>4</mn></mfrac></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>B</mi><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow><mn>4</mn></mfrac></mrow></math>
@@ -7250,9 +7383,37 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mi>w</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>0.20</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1.18</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mi>w</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>0.20</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1.18</mn><mo>×</mo><mn>0.00001</mn><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mi>w</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>0.20</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.0000118</mn><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mi>w</mi></msub><mo>=</mo><mfrac><mn>0.00000236</mn><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
+\`\`\`
+
+نحسب القوة.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mi>w</mi></msub><mo>=</mo><mfrac><mn>0.00000236</mn><mrow><mn>2</mn><mo>×</mo><mn>0.0000001</mn></mrow></mfrac></mrow></math>
+\`\`\`
+
+نضرب العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><msub><mi>I</mi><mi>w</mi></msub><mo>=</mo><mfrac><mn>0.00000236</mn><mn>0.0000002</mn></mfrac></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>I</mi><mi>w</mi></msub><mo>=</mo><mfrac><mrow><mn>2.36</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></mfrac></mrow></math>
@@ -7363,9 +7524,25 @@ solution:
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mi>m</mi><mi>L</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mn>10</mn></mfrac></mrow></math>
 \`\`\`
 
+نحسب القوة.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><mi>m</mi><mi>L</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>4</mn><mo>×</mo><mn>0.000001</mn><mo stretchy="false">)</mo></mrow><mn>10</mn></mfrac></mrow></math>
+\`\`\`
 
+نضرب العددين.
 
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><mi>m</mi><mi>L</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>0.000004</mn><mo stretchy="false">)</mo></mrow><mn>10</mn></mfrac></mrow></math>
+\`\`\`
+
+نحسب حاصل الضرب.
+
+\`\`\`mathml
+<math dir="ltr" display="block"><mrow><mfrac><mi>m</mi><mi>L</mi></mfrac><mo>=</mo><mfrac><mn>0.000008</mn><mn>10</mn></mfrac></mrow></math>
+\`\`\`
+
+نكمل الحساب.
 
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mi>m</mi><mi>L</mi></mfrac><mo>=</mo><mfrac><mrow><mn>8</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow><mn>10</mn></mfrac></mrow></math>

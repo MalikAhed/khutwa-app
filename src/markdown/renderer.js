@@ -23,6 +23,11 @@ function indicDigits(text) {
   return text.replace(/[0-9]/g, digit => "٠١٢٣٤٥٦٧٨٩"[Number(digit)]);
 }
 
+function westernDigits(text) {
+  const localizedDigits = "٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۷۸۹";
+  return text.replace(/[٠-٩۰-۹]/g, digit => String(localizedDigits.indexOf(digit) % 10)).replaceAll("٫", ".");
+}
+
 export function parseYouTubeUrl(value) {
   let url;
   try {
@@ -287,23 +292,24 @@ const codeRenderer = {
 };
 
 const markdownByLocale = new Map();
-function markdownFor(locale = "en", highlightQuotes = false) {
+function markdownFor(locale = "en", highlightQuotes = false, westernNotation = false) {
   const language = locale === "ar" ? "ar" : "en";
-  const key = `${language}${highlightQuotes ? ":highlight-quotes" : ""}`;
+  const mathLocale = westernNotation ? "en" : language;
+  const key = `${language}:${highlightQuotes}:${westernNotation}`;
   if (markdownByLocale.has(key)) return markdownByLocale.get(key);
   const copy = getLessonUiCopy(language);
   const markdown = new Marked({
   async:false,
   breaks:false,
   extensions:[mathmlInlineExtension, numericFractionExtension,
-    { ...latexInlineExtension, renderer(token) { return renderLatex(token.text, { locale:language }); } },
-    { ...latexBlockExtension, renderer(token) { return latexFigure(token.text, language); } },
+    { ...latexInlineExtension, renderer(token) { return renderLatex(token.text, { locale:mathLocale }); } },
+    { ...latexBlockExtension, renderer(token) { return latexFigure(token.text, mathLocale); } },
     highlightExtension, ...(highlightQuotes ? [quotedHighlightExtension] : []), { ...technicalTermExtension, renderer(token) { return technicalTermExtension.renderer(token, copy); } }, lessonDirectiveExtension, youtubeVideoExtension],
   gfm:true,
   pedantic:false,
   renderer:{
-    codespan(token) { return codeRenderer.codespan(token, language); },
-    code(token) { return codeRenderer.code(token, language); },
+    codespan(token) { return codeRenderer.codespan(token, mathLocale); },
+    code(token) { return codeRenderer.code(token, mathLocale); },
   },
   });
   markdownByLocale.set(key, markdown);
@@ -332,23 +338,25 @@ function isolateArabicCode(markup) {
 
 // Isolate technical phrases as a unit, so Arabic punctuation cannot reverse
 // identifiers, operators or version numbers. MathML and code own their direction.
-function directMixedText(markup, locale) {
-  if (locale !== "ar" && !/\p{Script=Arabic}/u.test(markup)) return markup;
+function directMixedText(markup, locale, westernNotation) {
+  if (!westernNotation && locale !== "ar" && !/\p{Script=Arabic}/u.test(markup)) return markup;
   const template = document.createElement("template");
   template.innerHTML = markup;
   const content = template.content;
-  if (locale === "ar") {
+  if (locale === "ar" || westernNotation) {
     const digits = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
     while (digits.nextNode()) {
       const node = digits.currentNode;
       if (node.parentElement?.closest("code,pre,kbd,samp")) continue;
       // Keep embedded identifiers such as CO2 and HTTP1 intact, as with code.
-      node.textContent = node.textContent.replace(/(?<![A-Za-z0-9])[0-9]+(?:[.,][0-9]+)*(?![A-Za-z0-9])/g, indicDigits);
+      node.textContent = westernNotation ? westernDigits(node.textContent) :
+        node.textContent.replace(/(?<![A-Za-z0-9])[0-9]+(?:[.,][0-9]+)*(?![A-Za-z0-9])/g, indicDigits);
     }
   }
   // A list owns its markers and their padding. Derive its direction before
   // child paragraphs become isolated, which would hide their strong letters.
   content.querySelectorAll("ul,ol").forEach(list => {
+    if (westernNotation && list.localName === "ol") list.setAttribute("data-western-notation", "");
     if (list.hasAttribute("dir")) return;
     const firstLetter = list.textContent.match(/\p{Letter}/u)?.[0];
     if (firstLetter) list.dir = /\p{Script=Arabic}/u.test(firstLetter) ? "rtl" : "ltr";
@@ -399,18 +407,19 @@ function directMixedText(markup, locale) {
   return template.innerHTML;
 }
 
-export function renderMarkdownDocument(source, { locale = "en", highlightQuotes = false } = {}) {
-  return directMixedText(isolateArabicCode(sanitize(markdownFor(locale,highlightQuotes).parse(String(source)))), locale)
+export function renderMarkdownDocument(source, { locale = "en", highlightQuotes = false, westernNotation = false } = {}) {
+  return directMixedText(isolateArabicCode(sanitize(markdownFor(locale,highlightQuotes,westernNotation).parse(String(source)))), locale, westernNotation)
     .replace(/<math\b(?=[^>]*\bdisplay="inline")[\s\S]*?<\/math>/g, inlineMath);
 }
 
-export function renderMarkdownInline(source, { locale = "en" } = {}) {
-  return directMixedText(isolateArabicCode(sanitize(markdownFor(locale).parseInline(String(source)))), locale);
+export function renderMarkdownInline(source, { locale = "en", westernNotation = false } = {}) {
+  return directMixedText(isolateArabicCode(sanitize(markdownFor(locale,false,westernNotation).parseInline(String(source)))), locale, westernNotation);
 }
 
 export function renderLessonInline(source, options = {}) {
   if (/^\s*[+−-]?[0-9٠-٩۰-۹]+(?:[.,٫][0-9٠-٩۰-۹]+)?\s*$/.test(String(source))) {
-    return `<bdi dir="ltr">${escapeHtml(options.locale === "ar" ? indicDigits(String(source)) : source)}</bdi>`;
+    const number = String(source);
+    return `<bdi dir="ltr">${escapeHtml(options.westernNotation ? westernDigits(number) : options.locale === "ar" ? indicDigits(number) : number)}</bdi>`;
   }
   if (isSqlStatement(source)) {
     return isolateArabicCode(`<code class="lesson-inline-code lesson-sql-code" dir="ltr">${escapeHtml(formatSqlForReading(source))}</code>`);

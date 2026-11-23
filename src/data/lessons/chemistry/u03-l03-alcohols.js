@@ -1922,12 +1922,6 @@ solution:
 \`\`\`mathml
 <math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><msub><mi>H</mi><mn>2</mn></msub><mo>+</mo><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><msup><mi>H</mi><mo>+</mo></msup></mpadded></mover><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub><mi>C</mi><mi>H</mi><mo stretchy="false">(</mo><mi>O</mi><mi>H</mi><mo stretchy="false">)</mo><mi>C</mi><msub><mi>H</mi><mn>3</mn></msub></mrow></math>
 \`\`\`
-
-
-
-
-**المصدر:** صفحة 52 من الكتاب.
-
 :::
 
 :::exam-question

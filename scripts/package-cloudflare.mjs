@@ -17,7 +17,7 @@ export async function prepareCloudflare(directory) {
   await rename(path.join(directory, 'node_modules'), path.join(directory, 'assets/browser-libraries'));
   await writeFile(path.join(directory, '_redirects'), '/node_modules/* /assets/browser-libraries/:splat 200\n');
   const {version}=JSON.parse(await readFile(path.join(directory,'release.json'),'utf8'));
-  const dashboard=renderStudentDashboard({version});
+  const dashboard=renderStudentDashboard({version, reportsAvailable:false});
   const worker=await readFile(path.join(root,'.github/cloudflare/worker.mjs'),'utf8');
   const entry='export default createPagesWorker();';
   assert.equal(worker.split(entry).length,2,'Pages worker must have one dashboard entry point');
@@ -28,7 +28,8 @@ export async function prepareCloudflare(directory) {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   // Keep the existing release hash algorithm; only hosting/account routing differs.
-  const directory = await packageApp();
+  // The live account Worker currently recognizes the two Gaza tracks.
+  const directory = await packageApp({ backendCatalog:"gaza" });
   await prepareCloudflare(directory);
   console.log('Cloudflare package ready: HTTP accounts, API and Students routes preserved.');
 }

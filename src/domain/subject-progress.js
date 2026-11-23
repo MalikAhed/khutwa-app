@@ -2,6 +2,7 @@
 import { calculateStreak, getLevelProgress } from "./progression.js";
 import { canonicalQuestionStepId, getIncomingQuestionAliases, getPartQuestionIds, getQuestionXp, isSourceQuestionAlias, questionRewardKey, resolveQuestionLocation } from "./question-rewards.js";
 import { getLessonQuestionProgress } from "./subject-question-progress.js";
+import { currentCurriculumRoadmap, publishedPartLocation } from "../data/curriculum-visibility.js";
 
 /** @typedef {{ownerId:string, subjectId:string, lessonId:string, partId:string}} ProgressKey */
 /** @typedef {{stepId:string, misses:number, active:boolean, solved?:boolean}} ReviewItem */
@@ -202,29 +203,39 @@ export function summarizeParts(records, totalParts, date = localDateKey()) {
     mustReviewCount:values.reduce((sum, record) => sum + record.review.filter((item) => item.active).length, 0) };
 }
 
-/** @typedef {{subjectId:string, questionsOnly?:boolean, units:readonly {lessons:readonly {id:string, hidden?:boolean, optional?:boolean, parts:readonly {id:string, startStepId?:string, questionIds?:string[]}[]}[]}[]}} ProgressRoadmap */
+/** @typedef {{subjectId:string, questionsOnly?:boolean, units:readonly {lessons:readonly {id:string, hidden?:boolean, optional?:boolean, parts:readonly {id:string, startStepId?:string, questionIds?:string[], source?:Omit<ProgressKey, 'ownerId'>}[]}[]}[]}} ProgressRoadmap */
 /** @param {Map<string,PartRecord>} records @param {ProgressRoadmap[]} roadmaps @param {string} [date] @param {(lesson:object,part:object)=>string[]} [getPartQuestionIds] */
 export function homeLearningSummary(records, roadmaps, date = localDateKey(), getPartQuestionIds) {
+  roadmaps = roadmaps.map(currentCurriculumRoadmap);
   const lessons = roadmaps.flatMap((roadmap) => roadmap.units.flatMap((unit) => unit.lessons.map((lesson) => ({ ...lesson, subjectId:roadmap.subjectId }))));
-  const parts = lessons.flatMap((lesson) => lesson.parts.map((part) => ({ ...part, subjectId:lesson.subjectId, lessonId:lesson.id, partId:part.id })));
-  const values = parts.filter((part) => part.startStepId).map((part) => currentPartProgress(records, part));
+  const getRecord = (subjectId, lesson, part) => {
+    const record = currentPartProgress(records, publishedPartLocation(subjectId, lesson, part));
+    if (!part.source) return record;
+    const ids = new Set(part.questionIds);
+    const completedStepIds = record.completedStepIds.filter(id => ids.has(id));
+    return { ...record, completedStepIds, completed:record.completed && completedStepIds.length === ids.size,
+      review:record.review.filter(item => ids.has(item.stepId)) };
+  };
+  const parts = lessons.flatMap(lesson => lesson.parts.map(part => ({ lesson, part })));
+  const values = parts.filter(({ part }) => part.startStepId).map(({ lesson, part }) => getRecord(lesson.subjectId, lesson, part));
   const summary = summarizeParts(values, parts.length, date);
   const rewards = summarizeParts(records.values(), parts.length, date);
   const visibleLessons = lessons.filter(lesson => !lesson.hidden && !lesson.optional);
-  const completedLessons = visibleLessons.filter(lesson => lesson.parts.length && lesson.parts.every(part =>
-    part.startStepId && currentPartProgress(records, { subjectId:lesson.subjectId, lessonId:lesson.id, partId:part.id }).completed)).length;
+  const completedLessons = visibleLessons.filter(lesson => lesson.parts.some(part => part.source)
+    ? getLessonQuestionProgress(lesson, (item, part) => getRecord(lesson.subjectId, item, part)).completed
+    : lesson.parts.length && lesson.parts.every(part => part.startStepId && getRecord(lesson.subjectId, lesson, part).completed)).length;
   const subjects = Object.fromEntries(roadmaps.filter(roadmap => roadmap.questionsOnly || getPartQuestionIds && roadmap.subjectId === "ict")
     .map(roadmap => {
       const subjectLessons = roadmap.units.flatMap(unit => unit.lessons.filter(lesson => !lesson.hidden && !lesson.optional));
       const progress = subjectLessons.map(lesson => getLessonQuestionProgress(lesson,
-        (_lesson, part) => currentPartProgress(records, { subjectId:roadmap.subjectId, lessonId:lesson.id, partId:part.id }), getPartQuestionIds));
+        (item, part) => getRecord(roadmap.subjectId, item, part), getPartQuestionIds));
       const total = progress.reduce((sum, lesson) => sum + lesson.total, 0);
       const solved = progress.reduce((sum, lesson) => sum + lesson.solved, 0);
       return [roadmap.subjectId, {
         currentQuestionsTotal:total, currentQuestionsSolved:solved, progress:total ? Math.round(solved / total * 100) : 0,
         hasStarted:subjectLessons.some(lesson => lesson.parts.some(part => {
-          const record = records.get(partKey({ subjectId:roadmap.subjectId, lessonId:lesson.id, partId:part.id }));
-          return record?.completedStepIds.length || record?.review.length;
+          const record = getRecord(roadmap.subjectId, lesson, part);
+          return record.completedStepIds.length || record.review.length;
         })),
         curriculumLessonsTotal:subjectLessons.length, requiredLessonsCompleted:progress.filter(lesson => lesson.completed).length,
       }];

@@ -1854,7 +1854,7 @@ export const ICT_EXAM_QUESTIONS = [
     ],
     "question": "تأمل الشكل المجاور الذي تم اقتطاعه من أحد التطبيقات التي تم تصميمها باستخدام برنامج App Inventor، ثم أجب عما يلي:\n1. ماذا تسمى الواجهة التي أظهرت هذا الجزء في برنامج App Inventor؟\n2. ما اسم الشاشة التي يتم تصميمها في الشكل؟\n3. اذكر أربعاً من الأدوات المضافة على الشاشة؟\n4. ما الأمر المستخدم لتغيير اسم الأداة البرمجي إلى Btn_Start؟\n5. اذكر الخاصية لإظهار/إخفاء الأداة؟\n\n![شجرة Components وفيها Screen2 وImage1 وHorizontalArrangement1 وLabel1 وTextBox1 وBtn_Start ](assets/lessons/ict/exams/exam-p59-q4-d.webp)",
     "finalAnswer": "1. الواجهة: **`Designer` (واجهة التصميم)**.\n2. الشاشة: **`Screen2`**.\n3. أربع أدوات: **`Image1`، `HorizontalArrangement1`، `Label1`، `TextBox1`**.\n4. أمر تغيير الاسم البرمجي: **`Rename`**.\n5. خاصية الظهور والإخفاء: **`Visible`**؛ `true` للإظهار و`false` للإخفاء.",
-    "answer": "![شجرة المكونات الأصلية](assets/lessons/ict/exams/exam-p59-q4-d.webp)\n\nواجهة **`Designer`** تجمع أدوات التطبيق وترتبها، بينما **`Blocks`** تبرمج ما تفعله.\n\n1. هذه شجرة المكونات في واجهة التصميم **`Designer`**.\n\n2. نقرأ اسم الجذر أعلى الشجرة: الشاشة **`Screen2`**.\n\n3. أربعة مكونات ظاهرة: **`Image1`، `HorizontalArrangement1`، `Label1`، `TextBox1`**. ويظهر أيضاً الزر `Btn_Start`.\n\n4. أمر **`Rename`** يغير اسم المكون البرمجي إلى `Btn_Start`؛ أما `Text` فيغير النص الظاهر للمستخدم.\n\n5. خاصية **`Visible`** تتحكم في الظهور؛ `true` للإظهار و`false` للإخفاء.\n\n**مرجع الوظائف:** أدوات الواجهة — ص44 المطبوعة، PDF46، Rename وVisible — ص49 المطبوعة، PDF51.\n\n**الشاهد على اسم الواجهة:**\n\n> يحتوي برنامج App inventor على واجهتين ستحتاج استعمالهما أثناء عملك عليه لتطوير تطبيقاتك: الواجهة الأولى وتعرف باسم واجهة التصميم Designer وتستعمل لبناء الشكل العام لبرنامجك بحيث يتيح لك استعمال خاصية السحب والإفلات لبناء الشكل العام لتطبيقك. أما الواجهة الثانية فهي واجهة اللبنات Blocks والتي ستستعملها لبرمجة تطبيقك من خلال تجميع اللبنات الخاصة ببرنامجك، وربطها مع بعضها حسب المنطق الخاص بتطبيقك.\n\n**المصدر:** صفحة 41 من الكتاب.",
+    "answer": "![شجرة المكونات الأصلية](assets/lessons/ict/exams/exam-p59-q4-d.webp)\n\nواجهة **`Designer`** تجمع أدوات التطبيق وترتبها، بينما **`Blocks`** تبرمج ما تفعله.\n\n1. هذه شجرة المكونات في واجهة التصميم **`Designer`**.\n\n2. نقرأ اسم الجذر أعلى الشجرة: الشاشة **`Screen2`**.\n\n3. أربعة مكونات ظاهرة: **`Image1`، `HorizontalArrangement1`، `Label1`، `TextBox1`**. ويظهر أيضاً الزر `Btn_Start`.\n\n4. أمر **`Rename`** يغير اسم المكون البرمجي إلى `Btn_Start`؛ أما `Text` فيغير النص الظاهر للمستخدم.\n\n5. خاصية **`Visible`** تتحكم في الظهور؛ `true` للإظهار و`false` للإخفاء.\n\n[رزمة تكنولوجيا المعلومات، غزة — العلمي، ص ٤٤ (PDF ٤٦): بناء واجهة التطبيق وأدواته](https://moe.edu.ps/m/4057#page=46)\n\n[رزمة تكنولوجيا المعلومات، غزة — العلمي، ص ٤٩ (PDF ٥١): خصائص الظهور وإعادة التسمية](https://moe.edu.ps/m/4057#page=51)",
     "sourcePage": 59,
     "answerPage": 65,
     "paperLabel": "رام الله والبيرة — الامتحان التجريبي 2024/2025 — العلمي والصناعي",
@@ -3536,7 +3536,7 @@ export const ICT_EXAM_QUESTIONS = [
       52
     ],
     "question": "ناتج العملية؟",
-    "explanation": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/5b4b98ba4909b90daa85.webp)\n\nنبدأ من اللبنة الأعمق؛ كل نتيجة تصبح مدخلًا للبنة التي تحتويها.\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>4</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn><mo>=</mo><mn>2</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>3</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>5</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>4</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>20</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>50</mn><mo>−</mo><mn>20</mn><mo>=</mo><mn>30</mn></mrow></math>\n```\n\n**الناتج: 30.**\n\n**مرجع الكتاب:** الدرس الثاني: تطبيقي الخاص على هاتفي، ص 51 مطبوعة (ص 53 في PDF).",
+    "explanation": "![الصورة الأصلية المرتبطة بالخطوات](assets/lessons/curriculum-evidence/5b4b98ba4909b90daa85.webp)\n\nنبدأ من اللبنة الأعمق؛ كل نتيجة تصبح مدخلًا للبنة التي تحتويها.\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>4</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn><mo>=</mo><mn>2</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>3</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>5</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>4</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>20</mn></mrow></math>\n```\n\n```mathml\n<math dir=\"ltr\" xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mn>50</mn><mo>−</mo><mn>20</mn><mo>=</mo><mn>30</mn></mrow></math>\n```\n\n**الناتج: 30.**",
     "sourcePage": 78,
     "answerPage": null,
     "paperLabel": "قباطية — اختبار نهائي، فصل أول — 2024/12/31 — الثاني عشر العلمي",
@@ -4033,7 +4033,7 @@ export const ICT_EXAM_QUESTIONS = [
       "-5.5",
       "-5",
       "-6",
-      "-5.0"
+      "-7"
     ],
     "correctChoiceIndex": 2,
     "figurePage": 84,

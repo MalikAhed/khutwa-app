@@ -1,4 +1,18 @@
 // Navigation metadata only. Registered lesson modules load question sources lazily.
+export const FULL_BOOK_HYDROGEN_QUESTIONS = [
+  ["chemistry-oj-p042-q11-a1"],
+  ["chemistry-oj-p042-q11-a2"],
+  [
+    "chemistry-oj-p028-q02", "chemistry-oj-p029-q10", "chemistry-oj-p036-q03",
+    "chemistry-oj-p037-q11", "chemistry-oj-p040-q14",
+    "chemistry-oj-p041-q01-a2", "chemistry-oj-p041-q01-a3", "chemistry-oj-p041-q01-a4",
+    "chemistry-oj-p042-q09-a1", "chemistry-oj-p042-q09-a2",
+    "chemistry-oj-p042-q11-a3", "chemistry-oj-p042-q11-a4",
+    "chemistry-oj-p042-q12-b1", "chemistry-oj-p042-q12-b2", "chemistry-oj-p042-q12-b3",
+    "chemistry-oj-p042-q14-a1", "chemistry-oj-p042-q14-a2", "chemistry-oj-p042-q14-a3",
+  ],
+];
+
 export const CHEMISTRY_UNITS = Object.freeze([
   {
     "number": 1,

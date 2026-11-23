@@ -77,16 +77,20 @@ Ni²⁺ يكتسب إلكترونين ليصبح Ni؛ إذن قطب Ni هو ال
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.25</mn><mo>+</mo><mn>1.03</mn><mo>=</mo><mo>+</mo><mn>0.78</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.25</mn><mo>+</mo><mn>1.03</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.78</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
 الإشارة الموجبة تتفق مع تلقائية الاتجاه المعطى.
 
-**المصدر:** الصفحات 64، 66 من الكتاب.
 
 **تصحيح قيمة مرجعية:** يورد جدول الرزمة في صفحة 64 قيمة −1.03 V للزوج Mn²⁺/Mn، بينما يورد [جدول OpenStax لجهود الأقطاب](https://openstax.org/books/chemistry-2e/pages/17-3-electrode-and-cell-potentials) قيمة −1.185 V. هذا فرق يتجاوز التقريب؛ لذلك **0.78 V جواب الحساب بقيم التمرين المعطاة**، ولا يمثل جهد هذه الخلية المحسوب بالقيم المرجعية المصححة.
-
 :::
 
 :::exam-question
@@ -122,9 +126,6 @@ solution:
 
 
 البلاتين Pt سطح موصل خامل، فلا يدخل في المعادلة الكلية.
-
-**المصدر:** الصفحات 63، 64، 66 من الكتاب.
-
 :::
 
 :::exam-question
@@ -187,7 +188,13 @@ HBr وHCl يمدان المحلول بأيونات H⁺، وهذه لا تتغي
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>1.360</mn><mo>−</mo><mn>1.065</mn><mo>=</mo><mo>+</mo><mn>0.295</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>1.360</mn><mo>−</mo><mn>1.065</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.295</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -241,7 +248,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mi>Y</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.51</mn><mo>−</mo><mn>0.76</mn><mo>=</mo><mo>−</mo><mn>0.25</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>Y</mi><mo>∘</mo></msubsup><mo>=</mo><mn>0.51</mn><mo>−</mo><mn>0.76</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mi>Y</mi><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.25</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -284,7 +297,13 @@ Ni²⁺ يكتسب الإلكترونين؛ إذن يختزل عند المهب�
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.25</mn><mo>+</mo><mn>0.76</mn><mo>=</mo><mo>+</mo><mn>0.51</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.25</mn><mo>+</mo><mn>0.76</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.51</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -326,7 +345,13 @@ Ag جهده +0.800 V، وهو أعلى من جهد Cd البالغ −0.402 V.
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.800</mn><mo>+</mo><mn>0.402</mn><mo>=</mo><mo>+</mo><mn>1.202</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.800</mn><mo>+</mo><mn>0.402</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>1.202</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -361,7 +386,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.23</mn><mo>+</mo><mn>2.40</mn><mo>=</mo><mo>+</mo><mn>2.17</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.23</mn><mo>+</mo><mn>2.40</mn></mrow></math>
+\`\`\`
+
+نجمع العددين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>2.17</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -388,8 +419,22 @@ explanation:
 أعلى قيمة معطاة +0.80 V للفضة، وأدنى قيمة −0.76 V للخارصين:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>A</mi><mi>g</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.80</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1.56</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>A</mi><mi>g</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.80</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>A</mi><mi>g</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.80</mn><mo>+</mo><mn>0.76</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>A</mi><mi>g</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>1.56</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -397,22 +442,64 @@ explanation:
 ونتحقق من أن بقية الخيارات تعطي قيماً أصغر:
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>u</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1.10</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>u</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>u</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.34</mn><mo>+</mo><mn>0.76</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>C</mi><mi>u</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>1.10</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>F</mi><mi>e</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.41</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.35</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>F</mi><mi>e</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.41</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.76</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>F</mi><mi>e</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>−</mo><mn>0.41</mn><mo>+</mo><mn>0.76</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>Z</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>F</mi><mi>e</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.35</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
 
 
+نكتب عملية الطرح بالقيم المعطاة.
+
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>A</mi><mi>g</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.80</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.41</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1.21</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>A</mi><mi>g</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.80</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>0.41</mn><mo stretchy="false">)</mo></mrow></math>
+\`\`\`
+
+طرح عدد سالب يعادل جمع مقابله الموجب.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>A</mi><mi>g</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>0.80</mn><mo>+</mo><mn>0.41</mn></mrow></math>
+\`\`\`
+
+نجمع القيمتين مع مراعاة الإشارتين.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>F</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>A</mi><mi>g</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>1.21</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -455,7 +542,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>1.06</mn><mo>−</mo><mn>0.54</mn><mo>=</mo><mo>+</mo><mn>0.52</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>1.06</mn><mo>−</mo><mn>0.54</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.52</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 
@@ -499,7 +592,13 @@ explanation:
 
 
 \`\`\`mathml
-<math dir="ltr" xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>1.36</mn><mo>−</mo><mn>0.54</mn><mo>=</mo><mo>+</mo><mn>0.82</mn><mtext>  </mtext><mi>V</mi></mrow></math>
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mn>1.36</mn><mo>−</mo><mn>0.54</mn></mrow></math>
+\`\`\`
+
+نطرح العدد الثاني من الأول.
+
+\`\`\`mathml
+<math dir="ltr" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>E</mi><mrow><mi>c</mi><mi>e</mi><mi>l</mi><mi>l</mi></mrow><mo>∘</mo></msubsup><mo>=</mo><mo>+</mo><mn>0.82</mn><mtext>  </mtext><mi>V</mi></mrow></math>
 \`\`\`
 
 

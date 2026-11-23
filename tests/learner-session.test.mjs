@@ -19,6 +19,19 @@ test("visitor selection stays behind the fixture service boundary", () => {
   assert.throws(() => service.saveVisitorSelection({ curriculum:"unknown", path:"scientific" }), /invalid/);
 });
 
+test("a Gaza-only backend catalog preserves the saved profile and allows isolated Palestine previews", () => {
+  const storage = new MemoryStorage();
+  const saved = { curriculum:"full-palestinian", path:"literary" };
+  const serialized = JSON.stringify(saved);
+  storage.setItem(VISITOR_SELECTION_STORAGE_KEY, serialized);
+  const session = createLearnerSession({ storage, fullPalestineAvailable:false });
+  assert.deepEqual(session.getVisitorSelection(), { curriculum:"gaza", path:"literary" });
+  assert.equal(storage.getItem(VISITOR_SELECTION_STORAGE_KEY), serialized);
+  const preview = createLearnerSession({ studentPreview:{ ...saved, accountType:"subscribed" } });
+  assert.deepEqual(preview.getVisitorSelection(), saved);
+  assert.equal(preview.getLearnerProgressOwner(), "student-preview");
+});
+
 test("old guest trial state cannot restore learning access or a personal dashboard", async () => {
   const storage = new MemoryStorage();
   storage.setItem(GUEST_TRIAL_STORAGE_KEY, JSON.stringify({ active:true, completedFirstLesson:true }));
