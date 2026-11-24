@@ -60,7 +60,7 @@ export function createAuthApi({ accountStore, readJsonBody, rateLimiter = create
       }
       const device = browserRegistration(request.headers);
       const account = accountStore.getAccountForSession(token);
-      if (account && !await accountStore.claimDevice(account.id,device)) { sendJson(response,403,DEVICE_LIMIT); return; }
+      if (account && account.isOwner !== true && !await accountStore.claimDevice(account.id,device)) { sendJson(response,403,DEVICE_LIMIT); return; }
       // Establish the browser identity before submitting credentials. A lost
       // sign-in receipt can then retry the same permanent registration.
       sendJson(response, 200, { account }, {
@@ -174,7 +174,7 @@ export function createAuthApi({ accountStore, readJsonBody, rateLimiter = create
         return;
       }
       const device = browserRegistration(request.headers);
-      if (!await accountStore.claimDevice(account.id, device)) {
+      if (account.isOwner !== true && !await accountStore.claimDevice(account.id, device)) {
         sendJson(response, 403, DEVICE_LIMIT);
         return;
       }

@@ -28,8 +28,7 @@ export async function prepareCloudflare(directory) {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   // Keep the existing release hash algorithm; only hosting/account routing differs.
-  // The live account Worker currently recognizes the two Gaza tracks.
-  const directory = await packageApp({ backendCatalog:"gaza" });
+  const directory = await packageApp();
   await prepareCloudflare(directory);
   console.log('Cloudflare package ready: HTTP accounts, API and Students routes preserved.');
 }

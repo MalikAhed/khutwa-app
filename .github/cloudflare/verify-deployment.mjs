@@ -16,6 +16,7 @@ async function fetchFunction(url, options) {
 const root = path.resolve(process.env.SITE_DIR || '_site');
 const html = await fetch(base).then(response => response.text());
 assert.match(html, /name="learn-account-mode" content="http"/, 'production uses the real account service');
+assert.doesNotMatch(html, /name="learn-backend-catalog" content="gaza"/, 'both Palestinian tracks are open in the published app');
 const release = JSON.parse(await readFile(path.join(root, 'release.json'), 'utf8'));
 assert.deepEqual(await fetch(new URL('/release.json', base)).then(response => response.json()), release);
 const appleIconHref = /rel="apple-touch-icon"[^>]*href="(\/apple-touch-icon\.png(?:\?[^"]*)?)"/.exec(html)?.[1];

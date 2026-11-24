@@ -13,7 +13,7 @@ export function withBrowserAllowance(handler, { accountStore, readJsonBody, orig
       return handler(request,response,pathname);
     const policy = accountStore.browserPolicy;
     const device = browserRegistration(request.headers);
-    if (!await policy.claimDevice(account.id,device)) { sendJson(response,403,DEVICE_LIMIT); return; }
+    if (account.isOwner !== true && !await policy.claimDevice(account.id,device)) { sendJson(response,403,DEVICE_LIMIT); return; }
     let body, replay = request;
     if (request.method === 'POST') {
       try { body = await readJsonBody(request); }

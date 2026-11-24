@@ -6,6 +6,7 @@ import path from 'node:path';
 import {DatabaseSync} from 'node:sqlite';
 import {createAppServer} from '../src/server/app-server.mjs';
 import {readRuntimeConfig} from '../src/server/runtime-config.mjs';
+import {provisionOwner} from '../scripts/owner-account.mjs';
 import {getPartQuestionIds} from '../src/domain/question-rewards.js';
 import {getSubjectRoadmap} from '../src/data/subject-roadmaps.js';
 import {hasFreeLessonPractice} from '../src/domain/free-practice.js';
@@ -20,13 +21,35 @@ async function fixture(t) {
  let app=await createAppServer({root:process.cwd(),config,logger:()=>{}});
  let base=`http://127.0.0.1:${await app.listen()}`;
  t.after(async()=>{await app.close();await rm(directory,{recursive:true,force:true});});
- const call=async(route,{cookie='',body,owner}={})=>{
-   const response=await fetch(base+route,{method:body?'POST':'GET',headers:{Cookie:cookie,...(body?{'Content-Type':'application/json'}:{}),...(owner?{'X-Progress-Owner':owner}:{})},...(body?{body:JSON.stringify(body)}:{})});
+ const call=async(route,{cookie='',body,owner,agent}={})=>{
+   const response=await fetch(base+route,{method:body?'POST':'GET',headers:{Cookie:cookie,...(body?{'Content-Type':'application/json'}:{}),...(owner?{'X-Progress-Owner':owner}:{}),...(agent?{'User-Agent':agent}:{})},...(body?{body:JSON.stringify(body)}:{})});
    return {status:response.status,json:await response.json(),cookie:response.headers.getSetCookie().map(x=>x.split(';')[0]).join('; ')};
  };
  return {call,databasePath,get store(){return app.accountStore;},async restart(){await app.close();app=await createAppServer({root:process.cwd(),config,logger:()=>{}});base=`http://127.0.0.1:${await app.listen()}`;}};
 }
 const registration=name=>({username:name,phone:name==='browser-one'?'0591234501':'0591234502',password:'Policy123',curriculum:'gaza',path:'scientific'});
+
+test('the authenticated owner can restore sessions and read progress on any browser',async t=>{
+ const f=await fixture(t);
+ const credentials={identifier:'test-owner',password:'Policy123'};
+ await provisionOwner({databasePath:f.databasePath,username:credentials.identifier,password:credentials.password});
+ const account=await f.store.authenticate(credentials.identifier,credentials.password);
+ for (const kind of ['computer','phone']) assert.equal(f.store.claimDevice(account.id,{kind,tokenHash:'prior-'+kind}),true);
+ const sessions=[];
+ for (const agent of ['Desktop Browser One','Desktop Browser Two','iPhone Browser One','iPhone Browser Two']) {
+   const signed=await f.call('/api/auth/sign-in',{agent,body:credentials});
+   assert.equal(signed.status,200);
+   assert.equal(signed.json.account.isOwner,true);
+   sessions.push({agent,cookie:signed.cookie});
+ }
+ for (const {agent,cookie} of sessions) {
+   const restored=await f.call('/api/auth/session',{agent,cookie});
+   assert.equal(restored.json.account.id,account.id);
+   assert.equal((await f.call('/api/progress',{agent,cookie,owner:`account:${account.id}`})).status,200);
+ }
+ const invalid=await f.call('/api/auth/sign-in',{body:{...credentials,password:'wrong'}});
+ assert.equal(invalid.status,401);
+});
 
 test('one browser can create one account, including simultaneous registrations and restart',async t=>{
  const f=await fixture(t);

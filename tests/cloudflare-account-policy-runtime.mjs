@@ -94,5 +94,22 @@ try {
  assert.equal(finalReward.resources.gems,270);
  const rewardRetry=await request('/api/progress',{cookie:rewardCookies,owner:rewardOwner,body:{...part,...freeLocation,stepId:freeIds[9],correct:true,id:'runtime-gem-9'}});
  assert.equal((await rewardRetry.json()).resources.gems,270);
- console.log('Recovered Worker passed: one-account browser registration, seven-heart quota across browsers, Super-only jumps, free starter lessons, unique rewards and idempotent retries.');
+ const ownerCredentials={identifier:'runtime-owner',password:'Owner123'};
+ const ownerSignup=await request('/api/auth/register',{ip:'192.0.2.10',body:{
+   username:ownerCredentials.identifier,phone:'0591234510',password:ownerCredentials.password,curriculum:'gaza',path:'scientific',
+ }});
+ assert.equal(ownerSignup.status,201,await ownerSignup.clone().text());
+ const ownerAccountId=(await ownerSignup.json()).account.id;
+ await db.prepare("UPDATE accounts SET staff_role='owner' WHERE id=?").bind(Number(ownerAccountId)).run();
+ for(const [index,agent] of [ua.computer,ua.computer,ua.phone,ua.phone].entries()) {
+   const ip=`192.0.2.${11+index}`;
+   const login=await request('/api/auth/sign-in',{agent,ip,body:ownerCredentials});
+   assert.equal(login.status,200,await login.clone().text());
+   const cookie=cookies(login);
+   const restored=await request('/api/auth/session',{agent,ip,cookie});
+   assert.equal(restored.status,200,await restored.clone().text());
+   assert.equal((await restored.json()).account.isOwner,true);
+   assert.equal((await request('/api/progress',{agent,ip,cookie,owner:`account:${ownerAccountId}`})).status,200);
+ }
+ console.log('Recovered Worker passed: unlimited owner devices, one-account browser registration, seven-heart quota across browsers, Super-only jumps, free starter lessons, unique rewards and idempotent retries.');
 }finally{await mf.dispose();}

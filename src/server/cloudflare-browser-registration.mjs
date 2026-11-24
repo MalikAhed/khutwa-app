@@ -1,6 +1,12 @@
 import { browserCookie, browserRegistration, DEVICE_LIMIT, BROWSER_ACCOUNT_LIMIT, digestDeviceToken, readCookie } from "./browser-registration.mjs";
 import { createBrowserPolicyStore } from './browser-policy-store.mjs';
 
+function withDeviceCookie(response, token) {
+  const headers = new Headers(response.headers);
+  headers.append("Set-Cookie", browserCookie(token, true));
+  return new Response(response.body, { status:response.status, headers });
+}
+
 // Extend the recovered live class without replacing its authentication,
 // rate limits, account access decisions, or existing Durable Object namespace.
 export function withBrowserRegistration(Authentication) {
@@ -22,10 +28,8 @@ export function withBrowserRegistration(Authentication) {
         await policy.cancelRegistration(device.tokenHash,claim);
       if (request.method === "GET" && pathname === "/api/auth/session" && response.ok) {
         const account = (await response.clone().json()).account;
-        if (account && !await policy.claimDevice(account.id,device)) return Response.json(DEVICE_LIMIT,{status:403});
-        const headers = new Headers(response.headers);
-        headers.append("Set-Cookie", browserCookie(device.token, true));
-        return new Response(response.body, { status:response.status, headers });
+        if (account && account.isOwner !== true && !await policy.claimDevice(account.id,device)) return Response.json(DEVICE_LIMIT,{status:403});
+        return withDeviceCookie(response,device.token);
       }
       if (request.method !== "POST" || !["/api/auth/register", "/api/auth/sign-in"].includes(pathname)
         || !response.ok) return response;
@@ -34,6 +38,7 @@ export function withBrowserRegistration(Authentication) {
       const session = response.headers.getSetCookie().map(cookie => readCookie(cookie, "tawjihi_session")).find(Boolean);
       if (!session) throw new Error("Missing authenticated session cookie.");
       if (claim) await policy.finishRegistration(device.tokenHash,claim,result.account.id);
+      if (result.account.isOwner === true) return withDeviceCookie(response,device.token);
       try {
         const id = Number(result.account.id);
         const db = this.env.ACCOUNTS;
@@ -53,9 +58,7 @@ export function withBrowserRegistration(Authentication) {
         await this.env.ACCOUNTS.prepare("DELETE FROM sessions WHERE token_hash=?").bind(digestDeviceToken(session)).run();
         throw error;
       }
-      const headers = new Headers(response.headers);
-      headers.append("Set-Cookie", browserCookie(device.token, true));
-      return new Response(response.body, { status:response.status, headers });
+      return withDeviceCookie(response,device.token);
     }
   };
 }
