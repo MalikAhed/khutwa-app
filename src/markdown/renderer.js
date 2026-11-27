@@ -432,6 +432,24 @@ export function renderLessonInline(source, options = {}) {
       : ` class="lesson-inline-code"${attributes}`}>`);
 }
 
+function typesetPhysicsListMarkers(container) {
+  if (!container.closest('[data-subject="physics"], [data-subject="outside-gaza-scientific-physics"]')) return;
+  container.querySelectorAll(".markdown-rendered ol:not([data-math-list-markers])").forEach(list => {
+    const items = [...list.children];
+    let number = list.reversed && !list.hasAttribute("start") ? items.length : list.start;
+    list.dataset.mathListMarkers = "";
+    list.setAttribute("role", "list");
+    for (const item of items) {
+      if (item.hasAttribute("value")) number = item.value;
+      const marker = list.ownerDocument.createElement("span");
+      marker.className = "lesson-math-list-marker";
+      marker.innerHTML = renderLatex(`${number}.`);
+      item.prepend(marker);
+      number += list.reversed ? -1 : 1;
+    }
+  });
+}
+
 function wrapTables(container, copy) {
   container.querySelectorAll(".markdown-rendered table").forEach((table) => {
     table.querySelectorAll("thead th:not([scope])").forEach(header => header.setAttribute("scope", "col"));
@@ -467,6 +485,7 @@ function mountYouTubeVideos(container, copy) {
 
 export function mountMarkdownFeatures(container, { signal, scrollSurface, locale = "en" } = {}) {
   const copy = getLessonUiCopy(locale);
+  typesetPhysicsListMarkers(container);
   // Answer buttons own keyboard interaction; their scrollable content must not
   // create nested focus targets. Standalone formulas remain keyboard reachable.
   container.querySelectorAll("button .lesson-inline-scroll").forEach(region => {

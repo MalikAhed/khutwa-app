@@ -50,12 +50,16 @@ test("Both physics banks use Western digits and valid notation on every question
           assert.doesNotMatch(math, /<mi\b[^>]*>[^<]*\p{Script=Arabic}/u, step.id);
           formulas++;
         }
-        const prose = source.replace(latex, "").replace(/```mathml[\s\S]*?```|`mathml:[\s\S]*?`|!\[[^\]]*\]\([^)]*\)|\]\([^)]*\)/g, "")
-          .replace(/^\s*(?:-\s+)?\d+[.)-](?=\s)/gm, "");
+        const formulaBoundaries = source.replace(latex, "\x00")
+          .replace(/```mathml[\s\S]*?```|`mathml:[\s\S]*?`/g, "\x00");
+        assert.doesNotMatch(formulaBoundaries, /\x00[ \t]*[٫٬·⋅×÷→←↔=+±−≤≥⊥]+[ \t]*\x00|\x00[°%]/u,
+          `${step.id}: a mathematical operator is outside its formula`);
+        const prose = formulaBoundaries.replaceAll("\x00", "").replace(/!\[[^\]]*\]\([^)]*\)|\]\([^)]*\)/g, "")
+          .replace(/^\s*(?:-\s+)?\d+[.)](?=\s)/gm, "");
         // Written prompts can also use inline list markers before the lesson lays them out.
         const withoutListMarkers = step.type === "exam-question" && source === content.body && /:\s+1\.\s/.test(prose)
           ? prose.replace(/(?<=[:.]\s)\d+\.(?=\s)/g, "") : prose;
-        assert.doesNotMatch(withoutListMarkers, /[A-Za-z0-9α-ωΑ-Ω⁰¹²³⁴⁵⁶⁷⁸⁹₀-₉ℓ]/u,
+        assert.doesNotMatch(withoutListMarkers, /[\p{Script=Latin}\p{Script=Greek}\p{Number}]/u,
           `${step.id}: unformatted notation in ${withoutListMarkers.slice(0, 160)}`);
       }
     }

@@ -12,7 +12,11 @@
 .markdown-rendered :is(h4,h5,h6) { font-size:1em; }
 .markdown-rendered p { margin-block:0 1em; }
 .markdown-rendered :is(ul,ol) { margin-block:0 1em; padding-inline-start:1.7em; }
-.lesson-shell .markdown-rendered ol:lang(ar):not([data-western-notation]), .question-explanation-dialog .markdown-rendered ol:lang(ar):not([data-western-notation]) { list-style-type:arabic-indic; }
+.lesson-shell .markdown-rendered ol:lang(ar):not([data-western-notation], [data-math-list-markers]), .question-explanation-dialog .markdown-rendered ol:lang(ar):not([data-western-notation], [data-math-list-markers]) { list-style-type:arabic-indic; }
+.markdown-rendered ol[data-math-list-markers] { list-style:none; }
+.markdown-rendered ol[data-math-list-markers] > li { position:relative; }
+.lesson-math-list-marker { position:absolute; inset-inline-end:100%; padding-inline-end:.35em; white-space:nowrap; }
+.lesson-math-list-marker .lesson-math { font-size:inherit; }
 .markdown-rendered li + li { margin-block-start:.5em; }
 .markdown-rendered li > :is(ul,ol) { margin-block:.5em 0; }
 .markdown-rendered strong { font-weight:700; }
