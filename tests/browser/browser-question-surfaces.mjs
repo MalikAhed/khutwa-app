@@ -93,8 +93,8 @@ try {
   const risks = [];
   for (let offset = 0; offset < questions.length; offset += 100) {
     const results = await page.evaluate(async ({ questions, flashcardAnswersOnly }) => {
-      const [{ renderMarkdownDocument, renderMarkdownInline, renderLessonInline }, { renderQuestionContent }] = await Promise.all([
-        import("./src/markdown/renderer.js"), import("./src/ui/lesson/question-layout.js"),
+      const [{ renderMarkdownDocument, renderMarkdownInline, renderLessonInline }, { renderQuestionContent }, { usesWesternLessonNotation }] = await Promise.all([
+        import("./src/markdown/renderer.js"), import("./src/ui/lesson/question-layout.js"), import("./src/ui/lesson/shared.js"),
       ]);
       return questions.map(question => {
         const { step, locale } = question;
@@ -110,16 +110,23 @@ try {
         // Inspect markup without starting thousands of incidental image loads.
         // The bounded decode pass below verifies every image in the live document.
         const host = document.implementation.createHTMLDocument("").createElement("div");
+        host.dataset.subject = question.subjectId;
+        const notation = { locale, westernNotation:usesWesternLessonNotation(host) };
         if (step.type === "mcq") {
           // Exercise the same complete prompt/options markup used by the runtime.
-          host.innerHTML = renderQuestionContent(content, { locale });
+          host.innerHTML = renderQuestionContent(content, notation);
           if (host.querySelectorAll("[data-ui-lab-answer]").length !== content.answers.length) issues.push("lost answer control");
+          if (notation.westernNotation && /[٠-٩۰-۹]/u.test(host.textContent)) issues.push("question: non-Western digits");
         }
         for (const [name, source, inline] of surfaces) {
           if (!source) continue;
           fieldCount++;
-          host.innerHTML = inline ? (step.type === "mcq" ? renderLessonInline(source) : renderMarkdownInline(source, { locale }))
-            : renderMarkdownDocument(source, { locale });
+          host.innerHTML = inline
+            ? (step.type === "mcq" ? renderLessonInline(source, notation.westernNotation ? notation : undefined) : renderMarkdownInline(source, notation))
+            : renderMarkdownDocument(source, notation);
+          if (notation.westernNotation && (/[٠-٩۰-۹]/u.test(host.textContent) || host.querySelector("ol:not([data-western-notation])"))) {
+            issues.push(`${name}: non-Western numbers`);
+          }
           const expectedMath = source.match(/<math\b/g)?.length || 0;
           const expectedTables = source.match(/^\|(?:\s*:?-+:?\s*\|)+\s*$/gm)?.length || 0;
           const renderedMath = host.querySelectorAll("math").length;

@@ -6,22 +6,29 @@ import { OUTSIDE_GAZA_LOADERS } from "../src/data/lessons/outside-gaza-loaders.j
 import { loadSubjectLesson } from "../src/data/lessons/subject-lesson-registry.js";
 import { parseLessonMarkdown } from "../src/markdown/lesson-authoring.js";
 import { renderLessonInline } from "../src/markdown/renderer.js";
+import { usesWesternLessonNotation } from "../src/ui/lesson/shared.js";
 
-test("physics numerical choices use Western digits while Arabic prose keeps its locale", () => {
-  const options = { locale:"ar", westernNotation:true };
-  assert.equal(renderLessonInline("−١٢٫٥", options), '<bdi dir="ltr">−12.5</bdi>');
-  assert.equal(renderLessonInline("۳.۷", options), '<bdi dir="ltr">3.7</bdi>');
-  assert.equal(renderLessonInline("75", options), '<bdi dir="ltr">75</bdi>');
-  assert.equal(renderLessonInline("75", { locale:"ar" }), '<bdi dir="ltr">٧٥</bdi>');
+test("Gaza and full Palestinian science questions isolate Western numerical choices", () => {
+  const notationFor = subject => ({
+    locale:"ar",
+    westernNotation:usesWesternLessonNotation({ closest:() => ({ getAttribute:() => subject }) }),
+  });
+  for (const subject of ["physics", "outside-gaza-scientific-physics", "chemistry", "outside-gaza-scientific-chemistry"]) {
+    const notation = notationFor(subject);
+    assert.equal(renderLessonInline("−١٢٫٥", notation), '<bdi dir="ltr">−12.5</bdi>', subject);
+    assert.equal(renderLessonInline("۳.۷", notation), '<bdi dir="ltr">3.7</bdi>', subject);
+    assert.equal(renderLessonInline("75", notation), '<bdi dir="ltr">75</bdi>', subject);
+  }
+  assert.equal(renderLessonInline("75", notationFor("mathematics")), '<bdi dir="ltr">٧٥</bdi>');
 });
 
 test("Both physics banks use Western digits and valid notation on every question surface", async () => {
   let questions = 0, formulas = 0;
-  const gaza = PHYSICS_LESSONS.map(({ id }) => ({ id, load:() => loadSubjectLesson("physics", id), normalized:true }));
+  const gaza = PHYSICS_LESSONS.map(({ id }) => ({ id, load:() => loadSubjectLesson("physics", id) }));
   const outside = [...OUTSIDE_GAZA_LOADERS].filter(([key]) => key.startsWith("outside-gaza-scientific-physics:"))
-    .map(([id, loader]) => ({ id, load:async () => (await loader()).default, normalized:false }));
+    .map(([id, loader]) => ({ id, load:async () => (await loader()).default }));
   const latex = /\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\x60\x60\x60latex[^\n]*\n([\s\S]*?)\x60\x60\x60/g;
-  for (const { id, load, normalized } of [...gaza, ...outside]) {
+  for (const { id, load } of [...gaza, ...outside]) {
     const lesson = await load();
     const parsed = parseLessonMarkdown(lesson.authoringSource, { published:true });
     assert.deepEqual(parsed.issues, [], id);
@@ -43,12 +50,13 @@ test("Both physics banks use Western digits and valid notation on every question
           assert.doesNotMatch(math, /<mi\b[^>]*>[^<]*\p{Script=Arabic}/u, step.id);
           formulas++;
         }
-        if (normalized) {
-          const prose = source.replace(latex, "").replace(/```mathml[\s\S]*?```|`mathml:[\s\S]*?`|!\[[^\]]*\]\([^)]*\)|\]\([^)]*\)/g, "")
-            .replace(/^\s*\d+[.)-](?=\s)/gm, "");
-          assert.doesNotMatch(prose, /[A-Za-z0-9α-ωΑ-Ω⁰¹²³⁴⁵⁶⁷⁸⁹₀-₉ℓ]/u,
-            `${step.id}: unformatted notation in ${prose.slice(0, 160)}`);
-        }
+        const prose = source.replace(latex, "").replace(/```mathml[\s\S]*?```|`mathml:[\s\S]*?`|!\[[^\]]*\]\([^)]*\)|\]\([^)]*\)/g, "")
+          .replace(/^\s*(?:-\s+)?\d+[.)-](?=\s)/gm, "");
+        // Written prompts can also use inline list markers before the lesson lays them out.
+        const withoutListMarkers = step.type === "exam-question" && source === content.body && /:\s+1\.\s/.test(prose)
+          ? prose.replace(/(?<=[:.]\s)\d+\.(?=\s)/g, "") : prose;
+        assert.doesNotMatch(withoutListMarkers, /[A-Za-z0-9α-ωΑ-Ω⁰¹²³⁴⁵⁶⁷⁸⁹₀-₉ℓ]/u,
+          `${step.id}: unformatted notation in ${withoutListMarkers.slice(0, 160)}`);
       }
     }
   }
