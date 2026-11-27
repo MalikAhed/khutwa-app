@@ -59,5 +59,6 @@ export function lessonLocale(lesson) {
 
 export function usesWesternLessonNotation(container) {
   const subject = container.closest("[data-subject]")?.getAttribute("data-subject");
-  return subject === "physics" || subject === "outside-gaza-scientific-physics";
+  return subject === "physics" || subject === "outside-gaza-scientific-physics"
+    || subject === "chemistry" || subject === "outside-gaza-scientific-chemistry";
 }
